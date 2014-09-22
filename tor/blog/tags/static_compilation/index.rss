@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged static_compilation</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/static_compilation/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Apple broke OpenSSL which breaks Tor on OS X</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Apple_broke_OpenSSL_which_breaks_Tor_on_OS_X/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Apple_broke_OpenSSL_which_breaks_Tor_on_OS_X/</link>
+
+
+	<category>/tags/apple_os_x</category>
+
+	<category>/tags/new_packages</category>
+
+	<category>/tags/no_love_from_apple</category>
+
+	<category>/tags/openssl</category>
+
+	<category>/tags/static_compilation</category>
+
+
+	<pubDate>Wed, 27 Jan 2010 12:14:35 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:49:16Z</dcterms:modified>
+
+	<description>&lt;p&gt;Apple OS X Security Update 2010-001 removes OpenSSL renegotation, &lt;a href=&quot;http://support.apple.com/kb/HT1222&quot; title=&quot;http://support.apple.com/kb/HT1222&quot; rel=&quot;nofollow&quot;&gt;http://support.apple.com/kb/HT1222&lt;/a&gt;.  We&#39;ve filed a bug report with Apple on this issue.  Their standard response so far is &lt;a href=&quot;http://support.apple.com/kb/HT4004&quot; title=&quot;http://support.apple.com/kb/HT4004&quot; rel=&quot;nofollow&quot;&gt;http://support.apple.com/kb/HT4004&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In the meanwhile, we have bug #1225 open, &lt;a href=&quot;https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=1225&quot; title=&quot;https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=1225&quot; rel=&quot;nofollow&quot;&gt;https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=1225&lt;/a&gt;.  Add yourself to the Notifications if you want updates as they happen.  A fine explanation of why Tor is not affected by the TLS renegotiation bug can be found at &lt;a href=&quot;https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=1225&amp;amp;area=comments#3804&quot; title=&quot;https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=1225&amp;amp;area=comments#3804&quot; rel=&quot;nofollow&quot;&gt;https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=1225&amp;amp;area=c...&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Packages for testing are available at:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/dist/testing/&quot; title=&quot;https://www.torproject.org/dist/testing/&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/dist/testing/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;READ THIS FINE PRINT&lt;/strong&gt;: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/apple-broke-openssl-which-breaks-tor-os-x&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ol&gt;
+&lt;li&gt; These will only work on OSX 10.5 and 10.6 (both i386 and powerpc).   Tor fails to compile when using the 10.4 libraries and static openssl.&lt;/li&gt;
+&lt;li&gt; Tor-0.2.2.8-alpha-i386-Bundle.dmg is compiled to replace the tor&lt;br /&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Apple_broke_OpenSSL_which_breaks_Tor_on_OS_X/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

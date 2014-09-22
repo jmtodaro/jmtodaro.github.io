@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>June 2008 Progress Report</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:10:24Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/comment_1/"/>
+
+	<author><name>Loyal Tor User (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:19Z</updated>
+	<published>2008-07-26T11:10:19Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hi,&lt;br /&gt;
+As you know Tor (including Vidalia, Privoxy) is a great package for the anonymous user. Working together these individual components are providing core services for anonymity. I would like to bring an attention sideways to the recognized area:&lt;/p&gt;
+
+&lt;p&gt;It is --- the newest version of i2p software. It may be worthwhile endeavor to bundle i2p with Tor as a complementary service. There are some areas where Tor is good at (anonymous web browsing). And maybe others areas which may be simpler to use the newer i2p network. &lt;/p&gt;
+
+&lt;p&gt;To help support the anonymity efforts i hope you will evaluate the i2p software for packaging because it will help strengthen i2p as an option for the users. It does not need to be a burden for the Tor maintainers either because i2p team is doing most of the hard work. Many user dont know about it but i2p very good now since version 0.6.  The headless* package very is easy to install. Almost no work needed - this forum thread describes installation proceedure:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://forum.i2p2.de/viewtopic.php?t=1625&amp;amp;sid=756d4ae34bc5162c1383b39f1a7b9d75&quot; rel=&quot;nofollow&quot;&gt;http://forum.i2p2.de/viewtopic.php?t=1625&amp;amp;sid=756d4ae34bc5162c1383b39f1a7b9d75&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Its 1 script to start i2p daemon and hooked into the &quot;Start Vidalia&quot; will add i2p onto the existing Tor startup. You may need a button in the control panel to let users select the i2p daemon ( for example &quot;Enable i2p&quot; option ). &lt;/p&gt;
+
+&lt;p&gt;You should know that the i2p does not interfere with Tor in any way.  For FoxyProxy. The setting is localhost:4444. And FoxyProxy whitelist pattern=*://*.i2p/* will catch the site ending with .i2p extension.&lt;/p&gt;
+
+&lt;p&gt;*i have tested the headless package which is recommended, version 0.62 or later. (POSIX)&lt;br /&gt;
+*** For software license - please speak to &lt;a href=&quot;http://www.i2p2.i2p/index.html&quot; rel=&quot;nofollow&quot;&gt;i2p development team&lt;/a&gt;.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/comment_2/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:20Z</updated>
+	<published>2008-08-01T11:10:20Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hi&lt;br /&gt;
+I&#39;ve installed tor on my ubuntu 8.04 AMD64 and it works for my fine but now a few days that tor is not works for my any more:( it says that :&lt;br /&gt;
+Aug 01 12:40:37.409 [notice] I learned some more directory information, but not enough to build a circuit.&lt;br /&gt;
+Aug 01 12:40:45.269 [notice] We now have enough directory information to build circuits.&lt;/p&gt;
+
+&lt;p&gt;and then nothing just scilence. It didn&#39;t work anymore. And i&#39;m in trouble fetching news in my country.&lt;/p&gt;
+
+&lt;p&gt;Can my contry state block tor itself?&lt;br /&gt;
+Please help me in by response in your blog or by mailing me or even by fixing any bug in your very helpfull project Tor.&lt;br /&gt;
+Thanks.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/comment_3/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:21Z</updated>
+	<published>2008-08-02T11:10:21Z</published>
+
+	<content type="html" xml:lang="en">
+	The RISING [version 20.55.51, updated on 2008-08-02] found out a Trojan.PSW.Win32.Undef.adp in the vidalia programme. The proxy.exe file had been deleted automatically by the RISING. Trojan.PSW.Win32.Undef.adp also found out in the stable version vidalia-bundle-0.2.0.30-0.1.6.exe and cannot be installed. Please give some advice for solving the problem.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/comment_4/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:22Z</updated>
+	<published>2008-08-02T11:10:22Z</published>
+
+	<content type="html" xml:lang="en">
+	The RISING [version 20.55.51, updated on 2008-08-02] found out a Trojan.PSW.Win32.Undef.adp in the vidalia programme. The proxy.exe file had been deleted automatically by the RISING. Trojan.PSW.Win32.Undef.adp also found out in the stable version vidalia-bundle-0.2.0.30-0.1.6.exe and cannot be installed. Please give some advice for solving the problem.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/comment_5/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:23Z</updated>
+	<published>2008-08-03T11:10:23Z</published>
+
+	<content type="html" xml:lang="en">
+	Maybe because the exe file is using the same binary structure/packer/crypter as most of the trojans.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/comment_6/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:24Z</updated>
+	<published>2008-08-05T11:10:24Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;We use the NullSoft installer (&lt;a href=&quot;https://www.torproject.org/svn/trunk/contrib/tor-mingw.nsi.in&quot; title=&quot;https://www.torproject.org/svn/trunk/contrib/tor-mingw.nsi.in&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/svn/trunk/contrib/tor-mingw.nsi.in&lt;/a&gt;) for building the Windows exe installer.  It uses &quot;SetCompressor /SOLID LZMA&quot; as the compressor to shrink the total package size down.&lt;/p&gt;
+
+&lt;p&gt;There is no proxy.exe file in the official Tor packages.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+
+</feed>

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged i18n</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/i18n/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>ioerror: TorCheck rewritten and relaunched!</title>
+	<dcterms:creator>ioerror</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/TorCheck_rewritten_and_relaunched/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/TorCheck_rewritten_and_relaunched/</link>
+
+
+	<category>/tags/TorCheck</category>
+
+	<category>/tags/i18n</category>
+
+	<category>/tags/l10n</category>
+
+
+	<pubDate>Thu, 01 May 2008 04:26:30 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:06:55Z</dcterms:modified>
+
+	<description>&lt;p&gt;Nick encouraged me to rewrite TorCheck in Python. Roger encouraged me to automatically translate TorCheck messages into a given locale when specifically requested. This is finished, reasonably stable and live right now.&lt;/p&gt;
+
+&lt;p&gt;As usual, TorCheck queries the &lt;a href=&quot;http://exitlist.torproject.org/&quot; rel=&quot;nofollow&quot;&gt;TorDNSEL&lt;/a&gt; to determine if the visitor is possibly using a proper Tor exit node.&lt;/p&gt;
+
+&lt;p&gt;As an added bonus, TorCheck is now localized with useful information in &lt;a href=&quot;http://localhost//check.torproject.org/?lang=pt_BR&quot; rel=&quot;nofollow&quot;&gt;Brazilian Portuguese&lt;/a&gt;, &lt;a href=&quot;https://check.torproject.org/?lang=zh_CN&quot; rel=&quot;nofollow&quot;&gt;Chinese&lt;/a&gt;, &lt;a href=&quot;http://localhost//check.torproject.org/?lang=en_US&quot; rel=&quot;nofollow&quot;&gt;English&lt;/a&gt;, &lt;a href=&quot;http://localhost//check.torproject.org/?lang=de&quot; rel=&quot;nofollow&quot;&gt;German&lt;/a&gt;, &lt;a href=&quot;http://localhost//check.torproject.org/?lang=fa_IR&quot; rel=&quot;nofollow&quot;&gt;Farsi&lt;/a&gt;, &lt;a href=&quot;http://localhost//check.torproject.org/?lang=ja&quot; rel=&quot;nofollow&quot;&gt;Japanese&lt;/a&gt;, &lt;a href=&quot;https://check.torproject.org/?lang=pl&quot; rel=&quot;nofollow&quot;&gt;Polish&lt;/a&gt; and &lt;a href=&quot;https://check.torproject.org/?lang=es_ES&quot; rel=&quot;nofollow&quot;&gt;Spanish&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Users of the &lt;a href=&quot;https://www.torproject.org/torbrowser/&quot; rel=&quot;nofollow&quot;&gt;TorBrowser &lt;/a&gt; will now automatically have a fully translated browsing experience. Any other user can simply select the proper ISO 3166 Code for their country and make a GET request with a properly set LANG query string as linked above. There&#39;s a good chance that your locale will be supported in the future if it isn&#39;t already.&lt;/p&gt;
+
+&lt;p&gt;If you&#39;d like to pitch in and translate TorCheck into your locale, we&#39;d love the help! Feel free to &lt;a href=&quot;https://tor-svn.freehaven.net/svn/check/trunk/i18n/&quot; rel=&quot;nofollow&quot;&gt;check the translations directory for current translations&lt;/a&gt; and see if your locale has been translated. If you&#39;d like to add a locale we haven&#39;t translated, download a copy of &lt;a href=&quot;https://tor-svn.freehaven.net/svn/check/trunk/i18n/TorCheck.pot&quot; rel=&quot;nofollow&quot;&gt;the PO template file&lt;/a&gt; and translate away!&lt;/p&gt;
+
+&lt;p&gt;Give the new &lt;a href=&quot;https://check.torproject.org&quot; rel=&quot;nofollow&quot;&gt;TorCheck&lt;/a&gt; a try today!&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/TorCheck_rewritten_and_relaunched/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

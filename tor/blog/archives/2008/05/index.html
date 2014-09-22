@@ -1,0 +1,868 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>05</title>
+
+<link rel="stylesheet" href="../../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=archives%2F2008%2F05&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+<div class="sidebar">
+<div><div class="calendar"><table class="month-calendar">
+    <tr>
+    <th class="month-calendar-arrow"><a href="../04/" title="April">&larr;</a></th>
+    <th class="month-calendar-head" colspan="5"><span class="selflink">May 2008</span></th>
+    <th class="month-calendar-arrow"><a href="../06/" title="June">&rarr;</a></th>
+    </tr>
+    <tr>
+        <th class="month-calendar-day-head Sunday" title="Sunday">S</th>
+        <th class="month-calendar-day-head Monday" title="Monday">M</th>
+        <th class="month-calendar-day-head Tuesday" title="Tuesday">T</th>
+        <th class="month-calendar-day-head Wednesday" title="Wednesday">W</th>
+        <th class="month-calendar-day-head Thursday" title="Thursday">T</th>
+        <th class="month-calendar-day-head Friday" title="Friday">F</th>
+        <th class="month-calendar-day-head Saturday" title="Saturday">S</th>
+    </tr>
+    <tr>
+        <td class="month-calendar-day-noday Sunday">&nbsp;</td>
+        <td class="month-calendar-day-noday Monday">&nbsp;</td>
+        <td class="month-calendar-day-noday Tuesday">&nbsp;</td>
+        <td class="month-calendar-day-noday Wednesday">&nbsp;</td>
+        <td class="month-calendar-day-link Thursday"><a href="../../../posts/TorCheck_rewritten_and_relaunched/" title="TorCheck rewritten and relaunched">1</a></td>
+        <td class="month-calendar-day-nolink Friday">2</td>
+        <td class="month-calendar-day-nolink Saturday">3</td>
+    </tr>
+    <tr>
+        <td class="month-calendar-day-nolink Sunday">4</td>
+        <td class="month-calendar-day-nolink Monday">5</td>
+        <td class="month-calendar-day-link Tuesday"><a href="../../../posts/Congrats_2008_Google_Summer_of_Code_Students/" title="Congrats 2008 Google Summer of Code Students">6</a></td>
+        <td class="month-calendar-day-link Wednesday"><a href="../../../posts/Tor_Browser_Bundle_1_0_2_released_/" title="Tor Browser Bundle 1 0 2 released ">7</a></td>
+        <td class="month-calendar-day-nolink Thursday">8</td>
+        <td class="month-calendar-day-nolink Friday">9</td>
+        <td class="month-calendar-day-nolink Saturday">10</td>
+    </tr>
+    <tr>
+        <td class="month-calendar-day-nolink Sunday">11</td>
+        <td class="month-calendar-day-nolink Monday">12</td>
+        <td class="month-calendar-day-link Tuesday"><a href="../../../posts/The_Debian_OpenSSL_flaw_what_does_it_mean_for_Tor_clients/" title="The Debian OpenSSL flaw what does it mean for Tor clients">13</a></td>
+        <td class="month-calendar-day-link Wednesday"><a href="../../../posts/April_2008_Progress_Report/" title="April 2008 Progress Report">14</a></td>
+        <td class="month-calendar-day-nolink Thursday">15</td>
+        <td class="month-calendar-day-nolink Friday">16</td>
+        <td class="month-calendar-day-nolink Saturday">17</td>
+    </tr>
+    <tr>
+        <td class="month-calendar-day-nolink Sunday">18</td>
+        <td class="month-calendar-day-nolink Monday">19</td>
+        <td class="month-calendar-day-nolink Tuesday">20</td>
+        <td class="month-calendar-day-nolink Wednesday">21</td>
+        <td class="month-calendar-day-nolink Thursday">22</td>
+        <td class="month-calendar-day-nolink Friday">23</td>
+        <td class="month-calendar-day-nolink Saturday">24</td>
+    </tr>
+    <tr>
+        <td class="month-calendar-day-nolink Sunday">25</td>
+        <td class="month-calendar-day-nolink Monday">26</td>
+        <td class="month-calendar-day-nolink Tuesday">27</td>
+        <td class="month-calendar-day-nolink Wednesday">28</td>
+        <td class="month-calendar-day-link Thursday"><a href="../../../posts/Jacob_and_Matt_join_the_Tor_Project/" title="Jacob and Matt join the Tor Project">29</a></td>
+        <td class="month-calendar-day-nolink Friday">30</td>
+        <td class="month-calendar-day-nolink Saturday">31</td>
+    </tr>
+</table>
+</div></div>
+
+
+<form action="../../../" method="get">
+<div id="blogform">
+<input type="hidden" name="do" value="blog" />
+<input type="hidden" name="from" value="posts" />
+<input type="hidden" name="subpage" value="1" />
+
+<input name="title" size="20" />
+<input type="submit" value="Edit" />
+</div>
+</form>
+
+
+<div class="actions">
+<ul>
+
+<li><a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=archives%2F2008%2F05&amp;do=edit" rel="nofollow">Edit</a></li>
+
+
+<li><a href="../../../recentchanges/">RecentChanges</a></li>
+
+
+
+
+<li><a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?do=prefs">Preferences</a></li>
+
+
+
+
+
+</ul>
+</div>
+
+
+</div>
+
+
+<span class="parentlinks">
+
+<a href="../../../">The Tor Blog</a>/ 
+
+<a href="../../">archives</a>/ 
+
+<a href="../">2008</a>/ 
+
+</span>
+<span class="title">
+<a href="">05</a>
+
+</span>
+
+
+<div id="content">
+<div class="inlinepage">
+
+<div class="inlineheader">
+<span class="header">
+
+<a href="../../../posts/TorCheck_rewritten_and_relaunched/">TorCheck rewritten and relaunched!</a>
+
+</span>
+</div>
+
+
+<span class="pagedate">
+Posted <span class="date">Thu 01 May 2008 04:26:30 AM CDT</span> 
+
+<span class="author"> by 
+
+<a href="/blogs/ioerror">ioerror</a>
+
+</span>
+<a class="editlink" href="" rel="nofollow">Edit</a>
+
+</span>
+
+
+
+<span class="tags">
+Tags:
+
+<a href="../../../tags/TorCheck/" rel="tag">TorCheck</a>
+
+<a href="../../../tags/i18n/" rel="tag">i18n</a>
+
+<a href="../../../tags/l10n/" rel="tag">l10n</a>
+
+</span>
+
+
+
+
+<div class="inlinecontent">
+<p>Nick encouraged me to rewrite TorCheck in Python. Roger encouraged me to automatically translate TorCheck messages into a given locale when specifically requested. This is finished, reasonably stable and live right now.</p>
+
+<p>As usual, TorCheck queries the <a href="http://exitlist.torproject.org/" rel="nofollow">TorDNSEL</a> to determine if the visitor is possibly using a proper Tor exit node.</p>
+
+<p>As an added bonus, TorCheck is now localized with useful information in <a href="//check.torproject.org/?lang=pt_BR" rel="nofollow">Brazilian Portuguese</a>, <a href="https://check.torproject.org/?lang=zh_CN" rel="nofollow">Chinese</a>, <a href="//check.torproject.org/?lang=en_US" rel="nofollow">English</a>, <a href="//check.torproject.org/?lang=de" rel="nofollow">German</a>, <a href="//check.torproject.org/?lang=fa_IR" rel="nofollow">Farsi</a>, <a href="//check.torproject.org/?lang=ja" rel="nofollow">Japanese</a>, <a href="https://check.torproject.org/?lang=pl" rel="nofollow">Polish</a> and <a href="https://check.torproject.org/?lang=es_ES" rel="nofollow">Spanish</a>.</p>
+
+<p>Users of the <a href="https://www.torproject.org/torbrowser/" rel="nofollow">TorBrowser </a> will now automatically have a fully translated browsing experience. Any other user can simply select the proper ISO 3166 Code for their country and make a GET request with a properly set LANG query string as linked above. There's a good chance that your locale will be supported in the future if it isn't already.</p>
+
+<p>If you'd like to pitch in and translate TorCheck into your locale, we'd love the help! Feel free to <a href="https://tor-svn.freehaven.net/svn/check/trunk/i18n/" rel="nofollow">check the translations directory for current translations</a> and see if your locale has been translated. If you'd like to add a locale we haven't translated, download a copy of <a href="https://tor-svn.freehaven.net/svn/check/trunk/i18n/TorCheck.pot" rel="nofollow">the PO template file</a> and translate away!</p>
+
+<p>Give the new <a href="https://check.torproject.org" rel="nofollow">TorCheck</a> a try today!</p>
+
+</div>
+
+<div class="inlinefooter">
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+<div class="inlinepage">
+
+<div class="inlineheader">
+<span class="header">
+
+<a href="../../../posts/Congrats_2008_Google_Summer_of_Code_Students/">Congrats 2008 Google Summer of Code Students!</a>
+
+</span>
+</div>
+
+
+<span class="pagedate">
+Posted <span class="date">Tue 06 May 2008 11:47:15 PM CDT</span> 
+
+<span class="author"> by 
+
+<a href="/blogs/phobos">phobos</a>
+
+</span>
+<a class="editlink" href="" rel="nofollow">Edit</a>
+
+</span>
+
+
+
+<span class="tags">
+Tags:
+
+<a href="../../../tags/gsoc/" rel="tag">gsoc</a>
+
+</span>
+
+
+
+
+<div class="inlinecontent">
+<p>The <a href="http://www.eff.org" rel="nofollow">EFF</a> and <a href="https://www.torproject.org" rel="nofollow">The Tor Project</a> announce the final selection of students for the <a href="http://code.google.com/soc/2008/" rel="nofollow">2008 Google Summer of Code</a>.  </p>
+
+<p>We're happy to welcome:</p>
+
+<ul>
+<li>Aleksei Gorny working on <a href="http://code.google.com/soc/2008/eff/appinfo.html?csaid=99C7DA39A557AF3B" rel="nofollow">Tor exit scanner improvements</a></li>
+<li>Camilo Viecco working on <a href="http://code.google.com/soc/2008/eff/appinfo.html?csaid=5A3C0C85AD67C283" rel="nofollow">Providing Blossom functionality to Vidalia</a></li>
+<li>Domenik Bork working on <a href="http://code.google.com/soc/2008/eff/appinfo.html?csaid=86500DD2D78BB5D9" rel="nofollow">Configuration of Hidden Services with User Authorization in Vidalia</a></li>
+<li>Sebastian Hahn working on <a href="http://code.google.com/soc/2008/eff/appinfo.html?csaid=3A225E2DCCBA5B3A" rel="nofollow">A networking application to automatically carry out tests for Tor</a></li>
+<li>Simon Johansson working on a <a href="http://code.google.com/soc/2008/eff/appinfo.html?csaid=DC95E0B31F075870" rel="nofollow">Translation Wiki</a></li>
+<li>Christian Wilms working on <a href="http://code.google.com/soc/2008/eff/appinfo.html?csaid=CD5716F7F50B4036" rel="nofollow">Performance Enhancing Measures for Tor Hidden Services</a></li>
+<li>Fallon Chen working on <a href="http://code.google.com/soc/2008/eff/appinfo.html?csaid=1542D2C9D3CBC005" rel="nofollow">Improving Tor Path Selection</a></li>
+</ul>
+
+<p>There were a total of 40 applications <a href="http://code.google.com/soc/2008/eff/about.html" rel="nofollow">for 7 slots</a> this year.  Congratulations to Aleksei, Camilo, Domenik, Sebastian, Simon, Christian, and Fallon for their excellent applications and subsequent selection.  We look forward to releasing their completed projects as functionality for the benefit of the Tor user community.</p>
+
+</div>
+
+<div class="inlinefooter">
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+<div class="inlinepage">
+
+<div class="inlineheader">
+<span class="header">
+
+<a href="../../../posts/Tor_Browser_Bundle_1_0_2_released_/">Tor Browser Bundle 1.0.2 released.</a>
+
+</span>
+</div>
+
+
+<span class="pagedate">
+Posted <span class="date">Wed 07 May 2008 12:14:15 AM CDT</span> 
+
+<span class="author"> by 
+
+<a href="/blogs/phobos">phobos</a>
+
+</span>
+<a class="editlink" href="" rel="nofollow">Edit</a>
+
+</span>
+
+
+
+<span class="tags">
+Tags:
+
+<a href="../../../tags/torbrowser/" rel="tag">torbrowser</a>
+
+</span>
+
+
+
+
+<div class="inlinecontent">
+<p>The <a href="https://www.torproject.org/torbrowser/" rel="nofollow">Tor Browser Bundle</a> is released.  Changes include an update to Firefox Portable 2.0.0.14, Tor 0.2.0.25-rc, Vidalia r2539, and TorButton 1.1.18-alpha. </p>
+
+<p>Tor updates include fixed threading on BSD-family implentations and <a href="http://archives.seul.org/or/talk/May-2008/msg00014.html" rel="nofollow">other minor features</a>.</p>
+
+<p>Vidalia updates include the ability to start polipo as Vidalia itself starts up.  </p>
+
+<p>Torbutton updates include a <a href="http://archives.seul.org/or/talk/Apr-2008/msg00162.html" rel="nofollow">number of bugfixes</a> and new translations for French, Russian, Farsi, Italian, and Spanish. </p>
+
+<p>Please test out the bundle and submit any bugs you may find.  Thanks and enjoy.</p>
+
+</div>
+
+<div class="inlinefooter">
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+<div class="inlinepage">
+
+<div class="inlineheader">
+<span class="header">
+
+<a href="../../../posts/Security_critical_Tor-0_2_0_26-rc_released/">Security critical Tor-0.2.0.26-rc released</a>
+
+</span>
+</div>
+
+
+<span class="pagedate">
+Posted <span class="date">Tue 13 May 2008 11:38:48 AM CDT</span> 
+
+<span class="author"> by 
+
+<a href="/blogs/phobos">phobos</a>
+
+</span>
+<a class="editlink" href="" rel="nofollow">Edit</a>
+
+</span>
+
+
+
+<span class="tags">
+Tags:
+
+<a href="../../../tags/debian/" rel="tag">debian</a>
+
+<a href="../../../tags/openssl/" rel="tag">openssl</a>
+
+<a href="../../../tags/release_candidate/" rel="tag">release candidate</a>
+
+<a href="../../../tags/security_critical/" rel="tag">security critical</a>
+
+<a href="../../../tags/tor/" rel="tag">tor</a>
+
+</span>
+
+
+
+
+<div class="inlinecontent">
+<p>Tor-0.2.0.26-rc replaces several V3 directory authority keys affected by a recent <a href="http://lists.debian.org/debian-security-announce/2008/msg00152.html" rel="nofollow">Debian OpenSSL bug</a>. </p>
+
+<p><strong>This is a security-critical release.</strong></p>
+
+<p>Everybody running any version in the 0.2.0.x series should upgrade, whether<br />
+they are running Debian or not.  Also, all servers running any version of Tor<br />
+whose keys were generated by Debian, Ubuntu, or any derived distribution may<br />
+have to replace their identity keys.  See our <a href="http://archives.seul.org/or/announce/May-2008/msg00000.html" rel="nofollow">security advisory</a> for full details.  As always, you can find Tor 0.2.0.26-rc on the <a href="https://www.torproject.org/download" rel="nofollow">downloads page</a>.</p>
+
+<p><p>Changes in version 0.2.0.26-rc - 2008-05-13<br />
+Major security fixes:</p>
+
+<ul>
+<li>Use new V3 directory authority keys on the tor26, gabelmoo, and moria1 V3 directory authorities. The old keys were generated with a vulnerable version of Debian's OpenSSL package, and must be considered compromised. Other authorities' keys were not generatedwith an affected version of OpenSSL.</li>
+</ul>
+
+<p><p>Major bugfixes:</p>
+
+<ul>
+<li>List authority signatures as "unrecognized" based on DirServer lines, not on cert cache. Bugfix on 0.2.0.x.</li>
+</ul>
+
+<p><p>Minor features:</p>
+
+<ul>
+<li>Add a new V3AuthUseLegacyKey option to make it easier for authorities to change their identity keys if they have to.</li>
+</ul>
+
+</div>
+
+<div class="inlinefooter">
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+<div class="inlinepage">
+
+<div class="inlineheader">
+<span class="header">
+
+<a href="../../../posts/The_Debian_OpenSSL_flaw_what_does_it_mean_for_Tor_clients/">The Debian OpenSSL flaw: what does it mean for Tor clients?</a>
+
+</span>
+</div>
+
+
+<span class="pagedate">
+Posted <span class="date">Tue 13 May 2008 08:22:24 PM CDT</span> 
+
+<span class="author"> by 
+
+<a href="/blogs/arma">arma</a>
+
+</span>
+<a class="editlink" href="" rel="nofollow">Edit</a>
+
+</span>
+
+
+
+<span class="tags">
+Tags:
+
+<a href="../../../tags/openssl/" rel="tag">openssl</a>
+
+<a href="../../../tags/security_advisory/" rel="tag">security advisory</a>
+
+</span>
+
+
+
+
+<div class="inlinecontent">
+<p>There have been a lot of questions today about just what <a href="http://lists.debian.org/debian-security-announce/2008/msg00152.html" rel="nofollow">the<br />
+recent Debian OpenSSL</a> flaw means for Tor clients. Here's an attempt to<br />
+explain it in a bit more detail. (Go read <a href="http://archives.seul.org/or/announce/May-2008/msg00000.html" rel="nofollow">the Tor security advisory</a> before<br />
+reading this post.)</p>
+
+<p>First, let's look at the security/anonymity implications for users who<br />
+aren't running on Debian, Ubuntu, or similar. These implications all<br />
+stem from the fact that some of the Tor relays and v3 directory authorities<br />
+have weak keys, so the Tor network isn't able to provide as much anonymity<br />
+as we would like.</p>
+
+<p>The biggest issue is that perhaps 300 Tor relays were running with<br />
+weak keys and weak crypto, out of the roughly 1500-2000 total running<br />
+relays. What can an attacker do from this? If you happen to pick three<br />
+weak relays in a row for your circuit, then somebody watching your local<br />
+network connection (or watching the first relay you pick) could break all<br />
+the layers of Tor encryption and read the traffic as if they were watching<br />
+it at the exit relay. <span class="read-more"><a href="http://blog.torproject.org/blog/debian-openssl-flaw%3A-what-does-it-mean-tor-clients%3F"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+</div>
+
+<div class="inlinefooter">
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+<div class="inlinepage">
+
+<div class="inlineheader">
+<span class="header">
+
+<a href="../../../posts/April_2008_Progress_Report/">April 2008 Progress Report</a>
+
+</span>
+</div>
+
+
+<span class="pagedate">
+Posted <span class="date">Wed 14 May 2008 11:53:24 AM CDT</span> 
+
+<span class="author"> by 
+
+<a href="/blogs/phobos">phobos</a>
+
+</span>
+<a class="editlink" href="" rel="nofollow">Edit</a>
+
+</span>
+
+
+
+<span class="tags">
+Tags:
+
+<a href="../../../tags/progress_report/" rel="tag">progress report</a>
+
+<a href="../../../tags/release_candidate/" rel="tag">release candidate</a>
+
+<a href="../../../tags/torbrowser/" rel="tag">torbrowser</a>
+
+<a href="../../../tags/torbutton/" rel="tag">torbutton</a>
+
+<a href="../../../tags/translation/" rel="tag">translation</a>
+
+</span>
+
+
+
+
+<div class="inlinecontent">
+<p>Tor 0.2.0.24-rc (released Apr 22) adds dizum (run by Alex de Joode)<br />
+as the new sixth v3 directory authority, makes relays with dynamic IP<br />
+addresses and no DirPort notice more quickly when their IP address<br />
+changes, fixes a few rare crashes and memory leaks, and fixes a few<br />
+other miscellaneous bugs. Tor 0.2.0.25-rc (released Apr 23) makes Tor<br />
+work again on OS X and certain BSDs.<br />
+<a href="http://archives.seul.org/or/talk/May-2008/msg00014.html" title="http://archives.seul.org/or/talk/May-2008/msg00014.html" rel="nofollow">http://archives.seul.org/or/talk/May-2008/msg00014.html</a></p>
+
+<p>Torbutton 1.1.18 (released Apr 17) fixes many usability and interoperability<br />
+items, in an attempt to make the new Torbutton not so obnoxious in its<br />
+zeal to protect the user. It also includes new translations for French,<br />
+Russian, Farsi, Italian, and Spanish.</p>
+
+<p>We did a complete overhaul of the <a href="https://check.torproject.org/" title="https://check.torproject.org/" rel="nofollow">https://check.torproject.org/</a><br />
+page. Now it accepts a language choice,<br />
+e.g. <a href="https://check.torproject.org/?lang=fa-IR" title="https://check.torproject.org/?lang=fa-IR" rel="nofollow">https://check.torproject.org/?lang=fa-IR</a><br />
+Available languages are German, English, Spanish, Italian, Farsi,<br />
+Japanese, Polish, Portugese, Russian, and Chinese. The Tor Browser<br />
+Bundle automatically uses the appropriate language as its home page,<br />
+based on which language of the Browser Bundle was downloaded.</p>
+
+<p>Started on a documentation page to explain to users what bridges are,<br />
+how they can decide whether they need one, and how to configure their<br />
+Tor client to use them:<br />
+<a href="https://www.torproject.org/bridges.html" title="https://www.torproject.org/bridges.html" rel="nofollow">https://www.torproject.org/bridges.html</a></p>
+
+<p>We've also started working on a design proposal for making it easier<br />
+to set up a private or testing Tor network. With the advent of the v3<br />
+directory protocol, it currently takes up to 30 minutes before a test<br />
+network will produce a useful networkstatus consensus. Also, there are<br />
+a dozen different config options that need to be set correctly for<br />
+a Tor network running on a single IP address to not trigger various<br />
+security defenses. This approach should let more people set up their<br />
+own Tor networks, either for testing or because they can't reach the<br />
+main Tor network. <span class="read-more"><a href="http://blog.torproject.org/blog/april-2008-progress-report"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+</div>
+
+<div class="inlinefooter">
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+<div class="inlinepage">
+
+<div class="inlineheader">
+<span class="header">
+
+<a href="../../../posts/Jacob_and_Matt_join_the_Tor_Project/">Jacob and Matt join the Tor Project</a>
+
+</span>
+</div>
+
+
+<span class="pagedate">
+Posted <span class="date">Thu 29 May 2008 03:36:47 PM CDT</span> 
+
+<span class="author"> by 
+
+phobos
+
+</span>
+<a class="editlink" href="" rel="nofollow">Edit</a>
+
+</span>
+
+
+
+<span class="tags">
+Tags:
+
+<a href="../../../tags/auto-update/" rel="tag">auto-update</a>
+
+<a href="../../../tags/exitlist/" rel="tag">exitlist</a>
+
+<a href="../../../tags/tor/" rel="tag">tor</a>
+
+<a href="../../../tags/tor_check/" rel="tag">tor check</a>
+
+<a href="../../../tags/translation/" rel="tag">translation</a>
+
+<a href="../../../tags/upnp/" rel="tag">upnp</a>
+
+<a href="../../../tags/vidalia/" rel="tag">vidalia</a>
+
+<a href="../../../tags/vidalia_bundle/" rel="tag">vidalia bundle</a>
+
+</span>
+
+
+
+
+<div class="inlinecontent">
+<p>Jacob Appelbaum joins us to help out with:</p>
+
+<ul>
+<li>developing a translation portal.  This should help us find translators<br />
+and make their updates easier.</li>
+<li>coordinating the Tor translation team and getting parts that need<br />
+translating, translated.</li>
+<li>helping to better document Tor for non-technical users.</li>
+<li>writing an auto-responder to use Google's gmail to deliver Tor to<br />
+users who request it</li>
+<li>helping to get auto-updating for Tor and Vidalia working seamlessly</li>
+<li>maintaining the code that runs the tor exitlist</li>
+<li>generally advocating Tor</li>
+</ul>
+
+<p>Matt Edman joins the Tor Project.  Matt joins to help us enhance Tor's<br />
+interactions with Vidalia.  Specifically, he's working on:</p>
+
+<ul>
+<li>integrating upnp libraries into vidalia to make it easier to setup servers</li>
+<li>displaying Tor's startup status more visually in Vidalia to help users<br />
+understand what's going on as Tor starts</li>
+<li>assist with making translating Vidalia's interface and help files<br />
+easier for translators</li>
+<li>helping to flesh out proposals in queue on or-dev</li>
+<li>helping to get auto-updating or Tor and Vidalia working seamlessly</li>
+<li>tackling the "matt" section of the <a href="http://www.torproject.org/svn/trunk/doc/TODO" rel="nofollow">TODO file.</a></li>
+</ul>
+
+<p>Welcome Jacob and Matt!</p>
+
+</div>
+
+<div class="inlinefooter">
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 05:04:27 PM CDT</span>
+<!-- Created <span class="date">Tue 05 Apr 2011 05:04:27 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

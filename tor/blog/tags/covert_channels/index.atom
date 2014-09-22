@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged covert_channels</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/covert_channels/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/covert_channels/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/covert_channels/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:05:51Z</updated>
+<entry>
+	<title>&#x22;Media</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Media_coverage_of_-Covert_channel_vulnerabilities_in_anonymity_systems-/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Media_coverage_of_-Covert_channel_vulnerabilities_in_anonymity_systems-/"/>
+
+	<author><name>sjmurdoch</name></author>
+
+
+
+
+
+
+	<category term="/tags/attacks" />
+
+	<category term="/tags/covert_channels" />
+
+	<category term="/tags/media_coverage" />
+
+	<category term="/tags/tor" />
+
+
+	<updated>2011-04-05T11:05:51Z</updated>
+	<published>2008-02-03T23:07:14Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Over the past few days there has been some coverage of my &lt;a href=&quot;http://www.lightbluetouchpaper.org/2007/12/10/covert-channel-vulnerabilities-in-anonymity-systems/&quot; rel=&quot;nofollow&quot;&gt;PhD thesis&lt;/a&gt;, and its relationship to Tor, on blogs and online news sites. It seems like this wave started with a &lt;a href=&quot;http://mcpmag.com/columns/article.asp?editorialsid=2470&quot; rel=&quot;nofollow&quot;&gt;column&lt;/a&gt; by Russ Cooper, which triggered articles in &lt;a href=&quot;http://www.pcworld.com/article/id,142094-pg,1/article.html&quot; rel=&quot;nofollow&quot;&gt;PC World&lt;/a&gt; and &lt;a href=&quot;http://www.darkreading.com/document.asp?doc_id=144606&amp;amp;WT.svl=news2_3&quot; rel=&quot;nofollow&quot;&gt;Dark Reading&lt;/a&gt;. The media attention came as a bit of a surprise to me, since nobody asked to interview me over this. I&#39;d encourage other journalists writing about Tor to contact someone from the project as we&#39;re happy to help give some context.&lt;/p&gt;
+
+&lt;p&gt;My thesis is a fairly diverse collection of work, but the articles emphasize the impact of the attacks I discuss on users of anonymity networks like Tor. Actually, my thesis doesn&#39;t aim to show that Tor is insecure; the reason I selected Tor as a test case was that it&#39;s one of the few (and by far the largest) low-latency system that aims to stand up to observation.  Other, simpler, systems have comparatively well understood weaknesses, and so there is less value in researching them.&lt;/p&gt;
+
+&lt;p&gt;Quantifying the security of anonymity systems is a difficult question and still being actively worked on. Comparing different systems is even harder since they make different assumptions on the capabilities of attackers (the &amp;#8220;threat model&amp;#8221;). The mere chance of attacks doesn&#39;t indicate that a system is insecure, since they might make assumptions about the environment that are not met, or are insufficiently reliable for the scenario being considered.&lt;/p&gt;
+
+&lt;p&gt;The actual goal of my thesis was try to better understand the strengths and weaknesses of systems like Tor, but more importantly to also to suggest a more general methodology for discovering, and resolving flaws. I proposed that the work from the well-established field of &lt;a href=&quot;http://en.wikipedia.org/wiki/Covert_channel&quot; rel=&quot;nofollow&quot;&gt;covert channels&lt;/a&gt; could be usefully applied, and used examples, including Tor, to justify this.&lt;/p&gt;
+
+&lt;p&gt;There remains much work to be done before it&#39;s possible to be sure how secure anonymity systems are, but hopefully this framework will be a useful one in moving forward. Since in September 2007 I joined the Tor project, I hope I&#39;ll also help in other ways too.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Media_coverage_of_-Covert_channel_vulnerabilities_in_anonymity_systems-/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Media_coverage_of_-Covert_channel_vulnerabilities_in_anonymity_systems-/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

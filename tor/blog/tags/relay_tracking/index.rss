@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged relay_tracking</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/relay_tracking/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Weather Change</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Weather_Change/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Weather_Change/</link>
+
+
+	<category>/tags/feature_enhancements</category>
+
+	<category>/tags/relay_tracking</category>
+
+	<category>/tags/weather</category>
+
+
+	<pubDate>Sat, 29 Jan 2011 07:58:00 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:13:44Z</dcterms:modified>
+
+	<description>&lt;p&gt;Announcing the vastly improved &lt;a href=&quot;https://weather.torproject.org/&quot; rel=&quot;nofollow&quot;&gt;Tor Weather&lt;/a&gt;!  &lt;/p&gt;
+
+&lt;p&gt;The new weather incorporates many new features designed to make it far more useful to relay operators new and old.  &lt;/p&gt;
+
+&lt;p&gt;The new Tor Weather now checks the current consensus and can notify the relay operators if:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;their node is offline for a specified period of time,&lt;/li&gt;
+&lt;li&gt;their node has been seeing very little usage,&lt;/li&gt;
+&lt;li&gt;their node&#39;s Tor version is out of date,&lt;/li&gt;
+&lt;li&gt;and if they&#39;ve passed the threshold to receive a free Tor t-shirt.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This complete re-write and enhancement of Tor Weather was done by &lt;a href=&quot;http://ndanner.web.wesleyan.edu/&quot; rel=&quot;nofollow&quot;&gt;Professor Danner&#39;s&lt;/a&gt; students during their summer &lt;a href=&quot;http://hfoss.wesleyan.edu/&quot; rel=&quot;nofollow&quot;&gt;The Humanitarian Free and Open Source Software at Wesleyan University&lt;/a&gt; course.  Thanks to Jeff, Kate, and Michael for designing, coding, and testing this new Tor Weather release.  Thanks to our own Kaner for mentoring the students and integrating their changes into the infrastructure.&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Weather_Change/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

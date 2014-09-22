@@ -1,0 +1,488 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Web Developers and Firefox Hackers: Help us with Firefox 4</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FWeb_Developers_and_Firefox_Hackers_Help_us_with_Firefox_4&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Web Developers and Firefox Hackers: Help us with Firefox 4</a>
+
+</span>
+
+
+<div id="content">
+<p>We need some web-savvy people to help us audit the <a href="https://www.torproject.org/torbutton/" rel="nofollow">Torbutton alpha series</a> for Firefox 4.  I've performed a preliminary audit, and Torbutton 1.3.2-alpha should be safe from major issues, but a lot more testing is needed. In particular, we need people to test the <a href="https://developer.mozilla.org/en/Firefox_4_for_developers" rel="nofollow">new Firefox 4 features</a>.</p>
+
+<p>The <a href="https://gitweb.torproject.org/torbutton.git/blob_plain/HEAD:/website/design/FF40_AUDIT" rel="nofollow">notes from my preliminary audit</a> are available in the Torbutton git repository, but note that I have not tested everything that struck me as potentially troublesome, and there may be other things I missed too.</p>
+
+<p>As a reminder, the types of things we are looking for are things that violate the <a href="https://www.torproject.org/torbutton/en/design/#requirements" rel="nofollow">Torbutton Security Requirements</a>, which may include new ways to bypass proxy settings, to fingerprint users, or to use novel identifiers to correlate Tor and Non-Tor activity.</p>
+
+<p>In addition, we may have some funding to address <a href="https://www.torproject.org/torbutton/en/design/#FirefoxBugs" rel="nofollow">outstanding Torbutton-related bugs</a> in Firefox. If you know C++ and/or Firefox internals, we should be able to pay you for your time to address these issues and shepherd the relevant patches through Mozilla's review process.</p>
+
+<p>If you find issues, or if you are interested in working on fixing these bugs, please contact us at tor-assistants at torproject dot org. Torbutton bugs that you find can be added to the growing pile at the <a href="https://trac.torproject.org/projects/tor/report/14" rel="nofollow">Torbutton Bug Tracker</a>.</p>
+
+<p>The sooner we get these issues taken care of, the sooner we can confidently release a stable Torbutton for Firefox 4.</p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/firefox_updates/" rel="tag">firefox updates</a>
+
+<a href="../../tags/tbb/" rel="tag">tbb</a>
+
+<a href="../../tags/tor_browser_bundle/" rel="tag">tor browser bundle</a>
+
+<a href="../../tags/torbrowser/" rel="tag">torbrowser</a>
+
+<a href="../../tags/updated_packages/" rel="tag">updated packages</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-60127a261bc6d4230cd2b959ef4f8e79">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+How about a Tor bug bounty? <img src="../../smileys/smile.png" alt=":)" />
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 25 Mar 2011 07:17:48 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e15f457655a5932e49e667f404a54236">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>This is exactly what we are planning for the Firefox bugs. We also can pay for certain Tor tasks as well, but usually we want those done on a larger amount of work/timescale than per-bug basis, mostly because it is painful to assign a public dollar amount to *every* issue and task we want completed.</p>
+
+<p>Do you think we should assign explicit, public dollar amounts to the Firefox bugs? The problem I see with this is that the Mozilla code review process is an especially painful one. You can literally end up shepherding a patch for years (I'm not kidding: see <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=280661" rel="nofollow">Bug 280661</a>).</p>
+
+<p>I think this means we probably should assign two sets of hourly rates, one before code review and one after, perhaps with two ceilings on these amounts. The rate before code review/submission would be higher, to encourage better work up front. Or perhaps this not right either.</p>
+
+<p>But, I think if we do not figure out a way to both allow people to bill before the patch is actually merged (perhaps once we merge it into Tor Browser Bundle, for example), and also to get compensated for dealing with Mozilla bureaucracy, we're going to end up with only partially written patches that never get finished, and/or we're not going to get any responses from people who have dealt with Mozilla before.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fmikeperry&amp;do=goto">mikeperry</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 26 Mar 2011 07:17:49 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-cb8a14f157022f9a620dc2393f7f6d73">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>Oh, I just realized you want to be paid for exploits of Tor ;).</p>
+
+<p>Hrmm, we'll need to think about this. Not all of Torbutton's Security Requirements are of equal worth/importance. #1 is proxy bypass, #2 is correlation of tor to non-tor. Then, much farther down, are things like fingerprinting and anonymity set reduction.</p>
+
+<p>If you find a bug against #1 (and maybe also #2, depending on the strength of correlation), we could possibly work something out <img src="../../smileys/smile.png" alt=":)" /></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fmikeperry&amp;do=goto">mikeperry</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 26 Mar 2011 07:17:50 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4bafffd176db63b42760cb1dd902d95b">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<p>Peace be with you.<br />
+Just to let you know that i/we do really appreciate the paramount drive to keep us up our and/or  every of individual dignity and respect to privacy which we consider part of our life sanctity.<br />
+Keep it on!<br />
+God Bless.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 26 Mar 2011 07:17:51 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ba17dc6fd7e88bcf8ec15a53fe4a80ed">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>It would help if you would Update the outstanding Torbutton-related bugs page:</p>
+
+<p>=============</p>
+
+<p>6.1. Bugs impacting security</p>
+
+<p>2. Bug 280661 - RESOLVED FIXED </p>
+
+<p>3. Bug 418986 - Bounty by someone else</p>
+
+<p>"JonDonym 2010-09-10 11:40:46 PDT<br />
+We would pay 300 Euro for someone fixing this bug and putting it in the<br />
+official Mozilla code. And another 300 Euro for fixing it with CSS media<br />
+queries. Just contact me for further questions and discussions about the<br />
+implementation."</p>
+
+<p>=============</p>
+
+<p>6.2. Bugs blocking functionality</p>
+
+<p>1. Bug 445696 - RESOLVED DUPLICATE of bug 484832<br />
+2. Bug 290456 - RESOLVED FIXED </p>
+
+<p>============<br />
+6.3. Low Priority Bugs</p>
+
+<p>1. Bug 435151 - RESOLVED FIXED </p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 31 Mar 2011 07:17:52 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8d74fbc5636e9c8d563ae6c8dd3fbf76">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+Ok, I've updated the design doc bug list to take care of this. The list also needs another update to cover TLS issues, and new fingerprinting issues introduced in FF4.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fmikeperry&amp;do=goto">mikeperry</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 04 Apr 2011 07:17:53 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FWeb_Developers_and_Firefox_Hackers_Help_us_with_Firefox_4&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 07:17:48 AM CDT</span>
+<!-- Created <span class="date">Fri 25 Mar 2011 06:36:47 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

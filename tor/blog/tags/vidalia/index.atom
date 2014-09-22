@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged vidalia</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/vidalia/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/vidalia/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/vidalia/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:10:27Z</updated>
+<entry>
+	<title>Mac OS X Vidalia Bundle with 0.2.2.17-alpha out</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Mac_OS_X_Vidalia_Bundle_with_0_2_2_17-alpha_out/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Mac_OS_X_Vidalia_Bundle_with_0_2_2_17-alpha_out/"/>
+
+	<author><name>erinn</name></author>
+
+
+
+
+
+
+	<category term="/tags/geoip" />
+
+	<category term="/tags/geoip_fixes" />
+
+	<category term="/tags/osx" />
+
+	<category term="/tags/osx_fixes" />
+
+	<category term="/tags/vidalia" />
+
+	<category term="/tags/vidalia_bundle" />
+
+	<category term="/tags/vidalia_network_map" />
+
+
+	<updated>2011-04-05T12:10:27Z</updated>
+	<published>2010-10-28T08:12:37Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Vidalia 0.2.10 changed the way we deal with the &lt;a href=&quot;https://blog.torproject.org/blog/vidalia-0210-released&quot; rel=&quot;nofollow&quot;&gt;geoip databases by dropping the remote geoip lookups&lt;/a&gt;. This caused a lot of headaches for OS X users because of the layout of the package, but it&#39;s fixed in this version. You can download the new version &lt;a href=&quot;https://www.torproject.org/dist/vidalia-bundles/&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Please let us know if you have further problems by &lt;a href=&quot;https://trac.torproject.org/projects/tor&quot; rel=&quot;nofollow&quot;&gt;reporting a bug&lt;/a&gt;.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Mac_OS_X_Vidalia_Bundle_with_0_2_2_17-alpha_out/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Mac_OS_X_Vidalia_Bundle_with_0_2_2_17-alpha_out/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Shutting down the Vidalia GeoIP mapping server</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Shutting_down_the_Vidalia_GeoIP_mapping_server/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Shutting_down_the_Vidalia_GeoIP_mapping_server/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/city_mapping" />
+
+	<category term="/tags/geoip" />
+
+	<category term="/tags/vidalia" />
+
+	<category term="/tags/vidalia_network_map" />
+
+	<category term="/tags/volunteer_run" />
+
+
+	<updated>2011-04-05T12:09:38Z</updated>
+	<published>2010-10-01T00:32:52Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Vidalia is the graphical controller for the Tor software.  It provides an easy to use interface to control some basic functionality of the Tor software and to give you graphical feedback as to what your Tor software is doing as you use it.  &lt;/p&gt;
+
+&lt;p&gt;The Vidalia Project is shutting down the server that gives you the city-level location for tor relays in the Network Map. If you are running a version of Vidalia that is earlier than 0.2.10, you will lose your country flags and relays appearing in the Network Map.  This is a display issue and does not affect the functionality of the Tor software itself.  The main change in Vidalia 0.2.10 was to rely on the Tor software&#39;s local country-level GeoIP database that ships with the Tor software. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/shutting-down-vidalia-geoip-mapping-server&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Shutting_down_the_Vidalia_GeoIP_mapping_server/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Shutting_down_the_Vidalia_GeoIP_mapping_server/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Vidalia 0.2.10 Released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bugfixes" />
+
+	<category term="/tags/geoip_fixes" />
+
+	<category term="/tags/osx_fixes" />
+
+	<category term="/tags/vidalia" />
+
+
+	<updated>2011-04-05T12:08:39Z</updated>
+	<published>2010-09-28T15:31:45Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;The latest version of the graphical controller for tor, Vidalia, is now available.  The main change is the use of Tor&#39;s native geoip database to map relay IP addresses to country.  This removes the remote geoip resolution that occurred over Tor in previous versions of Vidalia.&lt;/p&gt;
+
+&lt;p&gt;Vidalia can be found at &lt;a href=&quot;https://www.torproject.org/vidalia/&quot; title=&quot;https://www.torproject.org/vidalia/&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/vidalia/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The full changelog is: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/vidalia-0210-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Drop remote GeoIP lookups. Instead, the default behavior now is to use the country-level GeoIP database that ships with Tor to map an IP address to a country code, and then map the country code to latitude and longitude with a separate database built into Vidalia.&lt;/li&gt;
+&lt;li&gt;Add a -DUSE_GEOIP build option to enable building with MaxMind&#39;s GeoIP C library for using a local city-level or country-level database instead of Tor&#39;s database. See README.geoip for details on use.&lt;/li&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>New Linux packaging of Tor and Vidalia now available</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/New_Linux_packaging_of_Tor_and_Vidalia_now_available/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/New_Linux_packaging_of_Tor_and_Vidalia_now_available/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/deb" />
+
+	<category term="/tags/packaging" />
+
+	<category term="/tags/respositories" />
+
+	<category term="/tags/rpm" />
+
+	<category term="/tags/tor" />
+
+	<category term="/tags/vidalia" />
+
+
+	<updated>2011-04-05T11:50:35Z</updated>
+	<published>2010-02-13T16:02:57Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;As announced here, &lt;a href=&quot;http://archives.seul.org/or/talk/Feb-2010/msg00033.html&quot; title=&quot;http://archives.seul.org/or/talk/Feb-2010/msg00033.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Feb-2010/msg00033.html&lt;/a&gt;, we now produce rpms and debs of Tor and Vidalia for easier installation. &lt;/p&gt;
+
+&lt;p&gt;When using ubuntu, opensuse, fedora, centos/redhat, or debian, you can simply add our repositories to your package management application (yum, apt, apttitude, zypper, etc) and always have the latest -stable or -alpha tor and vidalia.&lt;/p&gt;
+
+&lt;p&gt;This is a direct result of hiring Erinn in December.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/New_Linux_packaging_of_Tor_and_Vidalia_now_available/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/New_Linux_packaging_of_Tor_and_Vidalia_now_available/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor Browser Bundle 1.1.11 Released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_11_Released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_11_Released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/alpha_release" />
+
+	<category term="/tags/portable_tor" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+	<category term="/tags/torbutton" />
+
+	<category term="/tags/vidalia" />
+
+
+	<updated>2011-04-05T11:21:56Z</updated>
+	<published>2009-03-31T19:19:52Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;An updated Tor Browser Bundle is released to address the Firefox 3.0.7 security issues.  It includes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Update Firefox to 3.0.8&lt;/li&gt;
+&lt;li&gt;Add Italian language bundles&lt;/li&gt;
+&lt;li&gt;Update Torbutton to 1.2.1&lt;/li&gt;
+&lt;li&gt;Update Vidalia to 0.1.12&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This updated TBB can be downloaded from &lt;a href=&quot;https://www.torproject.org/easy-download&quot; title=&quot;https://www.torproject.org/easy-download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/easy-download&lt;/a&gt; as the &quot;zero install bundle&quot;.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_11_Released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_11_Released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Technology Preview:  Marble and Vidalia-0.2.0</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/Qt_updates" />
+
+	<category term="/tags/drag_and_drop_OS_X_install" />
+
+	<category term="/tags/experimental" />
+
+	<category term="/tags/kde_marble" />
+
+	<category term="/tags/msi_installer" />
+
+	<category term="/tags/technology_preview" />
+
+	<category term="/tags/vidalia" />
+
+
+	<updated>2011-04-05T11:21:41Z</updated>
+	<published>2009-03-29T01:21:39Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;One of the most requested upgrades to &lt;a href=&quot;https://www.torproject.org/vidalia/&quot; rel=&quot;nofollow&quot;&gt;Vidalia&lt;/a&gt; is a better map of the world.  We looked into a few different technologies and decided on &lt;a href=&quot;http://edu.kde.org/marble/&quot; rel=&quot;nofollow&quot;&gt;KDE&#39;s Marble&lt;/a&gt; interface.  Marble enables an accurate mapping of nodes according to their geolocation, allows for future enhancements such as &quot;click a country to start or end your Tor circuit&quot;, and plugins for extra data views.  This also gives us the ability to use Qt&#39;s Webkit browser to display custom information about nodes, circuits, or anything else in a pop-up window.  An anonymous funder covered the costs involved in developing this feature.  We thank them for their support. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/technology-preview-marble-and-vidalia020&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor Browser Bundle 1.1.9 Released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_9_Released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_9_Released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/alpha_release" />
+
+	<category term="/tags/tor_browser" />
+
+	<category term="/tags/vidalia" />
+
+
+	<updated>2011-04-05T11:19:29Z</updated>
+	<published>2009-02-19T05:21:58Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor Browser Bundle 1.1.9 is released.  &lt;/p&gt;
+
+&lt;p&gt;It includes the following changes:&lt;/p&gt;
+
+&lt;p&gt;Update Tor to 0.2.1.12-alpha&lt;br /&gt;
+Update Firefox to 3.0.6&lt;br /&gt;
+Update Vidalia to 0.1.11&lt;/p&gt;
+
+&lt;p&gt;It&#39;s available at &lt;a href=&quot;https://www.torproject.org/torbrowser/&quot; title=&quot;https://www.torproject.org/torbrowser/&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/torbrowser/&lt;/a&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_9_Released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_9_Released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>October 2008 Progress Report</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/October_2008_Progress_Report/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/October_2008_Progress_Report/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/auto-updater" />
+
+	<category term="/tags/censorship_circumvention" />
+
+	<category term="/tags/china" />
+
+	<category term="/tags/crashes" />
+
+	<category term="/tags/farsi" />
+
+	<category term="/tags/torbutton" />
+
+	<category term="/tags/translations" />
+
+	<category term="/tags/vidalia" />
+
+
+	<updated>2011-04-05T11:15:19Z</updated>
+	<published>2008-12-02T00:43:12Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;strong&gt;Design&lt;/strong&gt;&lt;br /&gt;
+We continued enhancements to the Chinese and Russian Tor website translations. We also have a second Chinese translator for the website now, so hopefully we will get more prompt translations there. Our Farsi translation from this summer is slowly becoming obsolete; we should solve that at some point.&lt;/p&gt;
+
+&lt;p&gt;We added a new &quot;30 second summary&quot; web page for Tor:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/30seconds&quot; title=&quot;https://www.torproject.org/30seconds&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/30seconds&lt;/a&gt;&lt;br /&gt;
+and a new &quot;easy download&quot; page since the original is so complex:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/easy-download&quot; title=&quot;https://www.torproject.org/easy-download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/easy-download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In the upcoming Vidalia 0.2.0 development release:&lt;br /&gt;
+  - Support changing UI languages without having to restart Vidalia.&lt;br /&gt;
+  - Updated Czech, Polish, Romanian and Turkish translations.&lt;/p&gt;
+
+&lt;p&gt;In the upcoming Vidalia 0.1.10 stable release:&lt;br /&gt;
+  - Add a prettier dialog for prompting people for their control port password that also includes a checkbox for whether the user wants Vidalia to remember the entered password, a Help button, and a Reset button (Windows only).&lt;br /&gt;
+  - Fix a crash bug that occurred when the user clicks &#39;Clear&#39; in the message log toolbar followed by &#39;Save All&#39;.&lt;br /&gt;
+  - Uncheck the Torbutton options by default in the Windows bundle installer if Firefox is not installed.&lt;br /&gt;
+  - Add an Windows bundle installer page that warns the user that they should install Firefox, if it looks like they haven&#39;t already done so.&lt;/p&gt;
+
+&lt;p&gt;It looks like Australia is soon to be joining the ranks of countries with a nationwide filtering regime:&lt;br /&gt;
+&lt;a href=&quot;http://arstechnica.com/news.ars/post/20081016-net-filters-required-for-all-australians-no-opt-out.html&quot; title=&quot;http://arstechnica.com/news.ars/post/20081016-net-filters-required-for-all-australians-no-opt-out.html&quot; rel=&quot;nofollow&quot;&gt;http://arstechnica.com/news.ars/post/20081016-net-filters-required-for-a...&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Proposals&lt;/strong&gt;&lt;br /&gt;
+We finished the first iteration of our auto-updater spec:&lt;br /&gt;
+&lt;a href=&quot;https://svn.torproject.org/svn/updater/trunk/specs/thandy-spec.txt&quot; title=&quot;https://svn.torproject.org/svn/updater/trunk/specs/thandy-spec.txt&quot; rel=&quot;nofollow&quot;&gt;https://svn.torproject.org/svn/updater/trunk/specs/thandy-spec.txt&lt;/a&gt;&lt;br /&gt;
+We detail our current auto-updater progress below. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/october-2008-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/October_2008_Progress_Report/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/October_2008_Progress_Report/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Online Anonymity Debate in South Korea</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Online_Anonymity_Debate_in_South_Korea/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Online_Anonymity_Debate_in_South_Korea/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/alpha" />
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/facebook" />
+
+	<category term="/tags/lectures" />
+
+	<category term="/tags/media_articles" />
+
+	<category term="/tags/progress_report" />
+
+	<category term="/tags/rpm" />
+
+	<category term="/tags/stable" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+	<category term="/tags/vidalia" />
+
+
+	<updated>2011-04-05T11:12:54Z</updated>
+	<published>2008-10-17T02:06:17Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;a href=&quot;http://www.tmcnet.com/usubmit/-online-anonymity-hotly-debated-south-korea-/2008/10/15/3707066.htm&quot; rel=&quot;nofollow&quot;&gt;An article&lt;/a&gt; about the debate over online anonymity in South Korea caught my eye for a few reasons.  The topic of online anonymity periodically rises to the social consciousness in South Korea.  This time, it&#39;s about the suicide of a well-known actress, &lt;a href=&quot;http://en.wikipedia.org/wiki/Choi_Jin-sil&quot; rel=&quot;nofollow&quot;&gt;Choi Jin-sil&lt;/a&gt;.  It&#39;s sad that she chose to commit suicide, and I&#39;m sorry she felt she had no where to go for help.  However, blaming the Internet for her death is dubious at best.  The Internet is a collection of networks.  The Internet is a thing, not a person.  While I dislike rude telemarketers, I don&#39;t blame the telephone company for providing the connection.  In this case, there seemed to be a subset of people bent on defaming her regardless of the circumstances, while using the Internet as their communication medium.  &lt;/p&gt;
+
+&lt;p&gt;The real goal behind this upswelling of support for banning anonymity is to pass the Cyber Defamation Law.  This appears to be the equivalent of user verification where all online activities must be in a real name and, in some way, verifiable.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;&quot;We will press hard to pass the Cyber Defamation Law and the real-name system,&quot; Hong Joon-pyo, the ruling Grand National Party&#39;s floor leader, told reporters last week. &quot;It is wrong to neglect the fact that violence is rampant online, due to anonymity.&quot;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;p&gt;Defamation is already a crime in South Korea.  The irony is that the person who possibly first defamed Choi Jin-sil has been found, a person only known by their last name, Paik.  According to the article,&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;&quot;Paik was questioned by investigators soon after Choi&#39;s suicide and ultimately indicted for defamation.&quot; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/online-anonymity-debate-south-korea&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Online_Anonymity_Debate_in_South_Korea/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Online_Anonymity_Debate_in_South_Korea/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>July 2008 Progress Report</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/July_2008_Progress_Report/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/July_2008_Progress_Report/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bridges" />
+
+	<category term="/tags/progress_report" />
+
+	<category term="/tags/proposals" />
+
+	<category term="/tags/research" />
+
+	<category term="/tags/tor" />
+
+	<category term="/tags/torbrowser" />
+
+	<category term="/tags/torbutton" />
+
+	<category term="/tags/translation" />
+
+	<category term="/tags/vidalia" />
+
+
+	<updated>2011-04-05T11:10:45Z</updated>
+	<published>2008-08-18T03:11:31Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;strong&gt;Releases:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Torbutton 1.2.0rc5 (released July 6) provides improved addon compatibility, better preservation of Firefox preferences that we touch, fixing issues with Tor toggle breaking for some option combos, and an improved &#39;Restore Defaults&#39; button. This version also features Firefox 3 cookie jar support, and support for storing cookie jars in memory.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Jul-2008/msg00026.html&quot; title=&quot;http://archives.seul.org/or/talk/Jul-2008/msg00026.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Jul-2008/msg00026.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Vidalia 0.1.6 (released July 8) fixes a bug introduced in 0.1.3 that could cause excessive CPU usage or crashing on some platforms; continues to prepare Vidalia&#39;s strings for easier translation; adds a Romanian GUI and installer translation; and updated the Farsi, Finnish, French, German, and Swedish translations.&lt;br /&gt;
+&lt;a href=&quot;http://trac.vidalia-project.net/browser/vidalia/tags/vidalia-0.1.6/CHANGELOG&quot; title=&quot;http://trac.vidalia-project.net/browser/vidalia/tags/vidalia-0.1.6/CHANGELOG&quot; rel=&quot;nofollow&quot;&gt;http://trac.vidalia-project.net/browser/vidalia/tags/vidalia-0.1.6/CHANG...&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.0.29-rc (released July 8) fixes two big bugs with using bridges, fixes more hidden-service performance bugs, and fixes a bunch of smaller bugs.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Jul-2008/msg00038.html&quot; title=&quot;http://archives.seul.org/or/talk/Jul-2008/msg00038.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Jul-2008/msg00038.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Torbutton 1.2.0rc6 (released July 12) features fixes for a nasty history loss bug, an exception during Tor toggle, javascript being disabled in some tabs, better pref handling, and more.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Jul-2008/msg00049.html&quot; title=&quot;http://archives.seul.org/or/talk/Jul-2008/msg00049.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Jul-2008/msg00049.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.0.30 (released July 15) is the first stable release of the 0.2.0.x branch. The previous stable branch (0.1.2.x) went stable in April of 2007. We are still waiting for Torbutton and Vidalia to stabilize before announcing the Windows and OS X packages on the or-announce announcements&lt;br /&gt;
+list. We expect to do that in August.&lt;/p&gt;
+
+&lt;p&gt;Tor Browser Bundle 1.1.1 (released July 20) updates Vidalia to release 0.1.6, updates Pidgin Portable to 2.4.3, updates Pidgin OTR plugin to 3.2, updates Tor to 0.2.1.2-alpha, updates Torbutton to 1.2.0rc6, and sets TZ=UTC environment variable in RelativeLink (needed by Torbutton).&lt;br /&gt;
+&lt;a href=&quot;https://svn.torproject.org/svn/torbrowser/trunk/README&quot; title=&quot;https://svn.torproject.org/svn/torbrowser/trunk/README&quot; rel=&quot;nofollow&quot;&gt;https://svn.torproject.org/svn/torbrowser/trunk/README&lt;/a&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/july-2008-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/July_2008_Progress_Report/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/July_2008_Progress_Report/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

@@ -1,0 +1,703 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tor 0.2.1.12-alpha is released</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_1_12-alpha_is_released&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Tor 0.2.1.12-alpha is released</a>
+
+</span>
+
+
+<div id="content">
+<p>Tor 0.2.1.12-alpha features several more security-related fixes. You<br />
+should upgrade, especially if you run an exit relay (remote crash) or<br />
+a directory authority (remote infinite loop), or you're on an older<br />
+(pre-XP) or not-recently-patched Windows (remote exploit). It also<br />
+includes a big pile of minor bugfixes and cleanups.</p>
+
+<p><a href="https://www.torproject.org/download.html.en" title="https://www.torproject.org/download.html.en" rel="nofollow">https://www.torproject.org/download.html.en</a></p>
+
+<p>Changes in version 0.2.1.12-alpha - 2009-02-08<br />
+<strong>Security fixes:</strong></p>
+
+<ul>
+<li>Fix an infinite-loop bug on handling corrupt votes under certain<br />
+      circumstances. Bugfix on 0.2.0.8-alpha.</li>
+<li>Fix a temporary DoS vulnerability that could be performed by<br />
+      a directory mirror. Bugfix on 0.2.0.9-alpha; reported by lark.</li>
+<li>Avoid a potential crash on exit nodes when processing malformed<br />
+      input. Remote DoS opportunity. Bugfix on 0.2.1.7-alpha.</li>
+</ul>
+
+<p><strong>Minor bugfixes:</strong></p>
+
+<p><ul>
+<li>Let controllers actually ask for the "clients_seen" event for <span class="read-more"><a href="http://blog.torproject.org/blog/tor-0.2.1.12-alpha-released"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/alpha_release/" rel="tag">alpha release</a>
+
+<a href="../../tags/bug_fixes/" rel="tag">bug fixes</a>
+
+<a href="../../tags/improvements/" rel="tag">improvements</a>
+
+<a href="../../tags/security_fixes/" rel="tag">security fixes</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-8ceebe31b727ad9859282a2433323d97">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+Any TBB updates coming for this version? if so when?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FPETER%20%28not%20verified%29&amp;do=goto">PETER (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 09 Feb 2009 06:19:01 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fa811f1fc6e22dd7f87d12d5db069904">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+TOR will not install on OSX 10.5.6. I keep receiving an error at the end of install.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 10 Feb 2009 06:19:02 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a17ebc4f0167f6a4fa4b679731e8561e">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+Actually, it did install.  What most likely failed is the automatic installation of torbutton into Firefox.  This is literally the last thing the installer does.  Everything else is installed fine, I bet.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 15 Feb 2009 06:19:03 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-73331f620e093dec98e1a52fa9d3dda0">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+For what type of OS is it better?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 12 Feb 2009 06:19:04 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f4bac476836b3c56706838bc74783c2f">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>I have tried and can't work... </p>
+
+<p>BTW....where should i report this if I put this into a wrong post?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 13 Feb 2009 06:19:05 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-276fd526eb64ad0d32bcb90b929fc136">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+Sorry, can't say anything to ExitNodes {X,Y,...}, but for bug reports exits a bug tracking system on <a href="https://bugs.torproject.org" title="https://bugs.torproject.org" rel="nofollow">https://bugs.torproject.org</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FRandy%20McCallahan%20%28not%20verified%29&amp;do=goto">Randy McCallahan (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 15 Feb 2009 06:19:06 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-badfbaf2145f21aad08b50933547957b">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+TBB updates coming? Please answer
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FSASI%20%28not%20verified%29&amp;do=goto">SASI (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 15 Feb 2009 06:19:07 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8bb6e5c33a9bc1703d665fd345280762">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+yes, updates are coming..
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 16 Feb 2009 06:19:08 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1c552b51622cfda60ba8ba6c8335600f">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+thanx man ! Love 2 try it
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FSASI%20%28not%20verified%29&amp;do=goto">SASI (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 16 Feb 2009 06:19:09 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2e96f420abac0625ed75a6b2fece7de3">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+<p>Are there any updates regarding Tor and German Data Retention ?<br />
+I found only a relatively old update (<a href="https://blog.torproject.org/blog/tor%2C-germany%2C-and-data-retention" title="https://blog.torproject.org/blog/tor%2C-germany%2C-and-data-retention" rel="nofollow">https://blog.torproject.org/blog/tor%2C-germany%2C-and-data-retention</a>).</p>
+
+<p>I'm asking because some nodes in JAP implemented data retention recently: Here is what they log: (from <a href="http://anon.inf.tu-dresden.de/dataretention_en.html" title="http://anon.inf.tu-dresden.de/dataretention_en.html" rel="nofollow">http://anon.inf.tu-dresden.de/dataretention_en.html</a>)</p>
+
+<p>=============================<br />
+Therefore the Mixes of the AN.ON project will log the following data:<br />
+1. A first Mix logs the IP-address, the date and time of incoming connections as well as the outgoing channel numbers of the channels to the next Mix.<br />
+2. A middle Mix logs incoming and outgoing channel numbers as well as date and time of the channel openings.<br />
+3. A last Mix logs the incoming channel numbers, the date and time of channel openings and closings, the source port number of outgoing connections as well as the date and time of openings of outgoing connections.<br />
+...<br />
+neither IP-addresses of contacted servers nor requested URLs will be logged.<br />
+=============================</p>
+
+<p>German version of the same text is here: <a href="http://anon.inf.tu-dresden.de/dataretention_de.html" title="http://anon.inf.tu-dresden.de/dataretention_de.html" rel="nofollow">http://anon.inf.tu-dresden.de/dataretention_de.html</a>. In JAP forum however, however, it was explained that TU Dresden implemented more than required by law.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAlex%20%28not%20verified%29&amp;do=goto">Alex (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 15 Feb 2009 06:19:10 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-48e3bd75b1e9eb47b3a045bfd36b6179">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+<p>With the intoduction of version 2.1.6 Alpha you introduced a new seriouse security issue.<br />
+If you are a Chinese who risk go to prison for your opinions or a Russian journalist who risk to be assasined or an Amerikan citisen who don't wan't the goverment to spy on them, you are not safe anymore until you fixed this issue with TOR.<br />
+Even if people is not using the new country filter option in torrc...:<br />
+Example:<br />
+ExcludeNodes CN,GB,DE,US</p>
+
+<p>...but only uses IP filters &amp; namefilters...:<br />
+ExcludeNodes 0.0.0.0/5,147.0.0.0/8,111.111.111.111/32,jalopy,nixnix</p>
+
+<p>..that worked up until version 2.1.5 Alpha this will not work properly anymore.<br />
+TOR NOW USES NODES YOU BLOCK IN TORRC AS EXITNODES !!!<br />
+This is a very seriouse security issue that you failed to fix in version 2.1.7, 2.1.8, 2.1.9, 2.1.10, 2.1.11, 2.1.12.<br />
+How could you possibly miss to fix this issue?<br />
+Is it done on purpose to serve demands from certain country(s) ?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20-%20no%20more%20%28not%20verified%29&amp;do=goto">Anonymous - no more (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 26 Feb 2009 06:19:11 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3ff8c738a9697b99a8d6c2898b76e73d">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+<p>If no one reports these issues, then it's difficult for us to find them.  We welcome help in improving our unit tests and feature testing.</p>
+
+<p>We don't do any secret requests.  Everything we do is published via code commits (see or-cvs), blogged about, or tracked in the bug tracker.</p>
+
+<p>If this has been going on for so long, I'm surprised no one else opened a bug tracker issue for it.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 27 Feb 2009 06:19:12 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9c98373da4b365a23c2d94ca0a1a9545">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+Actually, it did install. What most likely failed is the automatic installation of torbutton into <a href="http://www.becomon.com" rel="nofollow">Firefox</a> . This is literally the last thing the installer does. Everything else is installed fine, I bet.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 13 Mar 2009 06:19:13 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_1_12-alpha_is_released&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:19:00 AM CDT</span>
+<!-- Created <span class="date">Mon 09 Feb 2009 05:29:18 PM CST</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

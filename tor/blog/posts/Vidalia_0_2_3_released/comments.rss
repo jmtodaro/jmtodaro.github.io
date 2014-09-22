@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Vidalia 0.2.3 released</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_3_released/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Biment (not verified): Comment 1</title>
+	<dcterms:creator>Biment (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_3_released/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_3_released/comment_1/</link>
+
+	<pubDate>Sun, 06 Sep 2009 06:34:57 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:34:57Z</dcterms:modified>
+
+	<description>Any specific reasons why QEvent subclasses are replaced with Qt&#39;s signals and slot?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 2</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_3_released/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_3_released/comment_2/</link>
+
+	<pubDate>Mon, 07 Sep 2009 06:34:58 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:34:58Z</dcterms:modified>
+
+	<description>The change resulted in much cleaner, simpler and shorter code that made implementing support for all the various status events displayed in 0.2.4 much easier. Informally, it also seems to have made the message log more responsive when logging at Tor&#39;s hyper-verbose debug level.
+</description>
+
+
+</item>
+
+</channel>
+</rss>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged funding</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/funding/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/funding/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/funding/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:20:59Z</updated>
+<entry>
+	<title>Why Tor is slow and what we&#x27;re going to do about it</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/"/>
+
+	<author><name>arma</name></author>
+
+
+
+
+
+
+	<category term="/tags/development_roadmap" />
+
+	<category term="/tags/funding" />
+
+	<category term="/tags/performance" />
+
+
+	<updated>2011-04-05T11:20:59Z</updated>
+	<published>2009-03-13T10:33:01Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;ve just finished writing up an explanation of all the various reasons why the Tor network is slow, and what we can do about each. Part of it comes down to design flaws; some of it is that a handful of users are overloading the network; and there&#39;s also simply not enough capacity to go around.&lt;/p&gt;
+
+&lt;p&gt;Specifically, we&#39;ve identified six categories of problems to address, and laid out some steps to resolve each of them.&lt;/p&gt;
+
+&lt;p&gt;You can read the pdf here:&lt;br /&gt;
+&lt;a href=&quot;https://svn.torproject.org/svn/projects/roadmaps/2009-03-11-performance.pdf&quot; rel=&quot;nofollow&quot;&gt;https://svn.torproject.org/svn/projects/roadmaps/2009-03-11-performance.pdf&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Andrew has also put together a real live &lt;a href=&quot;https://www.torproject.org/press/2009-03-12-performance-roadmap-press-release&quot; rel=&quot;nofollow&quot;&gt;press release&lt;/a&gt; to go with it.&lt;/p&gt;
+
+&lt;p&gt;Now all that remains is to do everything. So if you want to help, or especially if you know any organizations that can help with funding, please help us make this happen! &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/why-tor-is-slow&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>November 2008 Progress Report</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/November_2008_Progress_Report/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/November_2008_Progress_Report/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/censorship_circumvention" />
+
+	<category term="/tags/development_roadmap" />
+
+	<category term="/tags/funding" />
+
+	<category term="/tags/press_release" />
+
+
+	<updated>2011-04-05T11:16:27Z</updated>
+	<published>2008-12-25T04:29:44Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;strong&gt;Bug Fixes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.1.7-alpha (released November 8) fixes a major security problem in Debian and Ubuntu packages (and maybe other packages) noticed by Theo de Raadt, fixes a smaller security flaw that might allow an attacker to access local services, adds better defense against DNS poisoning attacks on exit relays, further improves hidden service performance, and fixes a variety of other issues.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Nov-2008/msg00229.html&quot; title=&quot;http://archives.seul.org/or/talk/Nov-2008/msg00229.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Nov-2008/msg00229.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.0.32 (released November 20) fixes a major security problem in Debian and Ubuntu packages (and maybe other packages) noticed by Theo de Raadt, fixes a smaller security flaw that might allow an attacker to access local services, further improves hidden service performance, and fixes a variety of other issues.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/announce/Dec-2008/msg00000.html&quot; title=&quot;http://archives.seul.org/or/announce/Dec-2008/msg00000.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/announce/Dec-2008/msg00000.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Vidalia 0.1.10 (released November 2) fixes some presentation bugs and some bugs in the Windows installer. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/november-2008-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/November_2008_Progress_Report/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/November_2008_Progress_Report/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Google funds an auto-update for Vidalia</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Google_funds_an_auto-update_for_Vidalia/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Google_funds_an_auto-update_for_Vidalia/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/auto-update" />
+
+	<category term="/tags/funding" />
+
+	<category term="/tags/google" />
+
+	<category term="/tags/tor" />
+
+	<category term="/tags/tor_software" />
+
+	<category term="/tags/vidalia" />
+
+
+	<updated>2011-04-05T11:07:28Z</updated>
+	<published>2008-06-07T02:13:30Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Google is funding a project to create an auto-update feature in Vidalia.  This &lt;a href=&quot;https://www.torproject.org/projects/google&quot; rel=&quot;nofollow&quot;&gt;auto-update feature&lt;/a&gt; will provide a better user experience for Tor users.  The goal is to create a system where Vidalia can detect when a new release is available, fetch the package, verify authenticity, and assist the user in upgrading the Vidalia/Tor package.  The auto-update feature preserves the user&#39;s privacy and anonymity.  Over the next six months we&#39;ll develop the auto-update system for general release around November 15, 2008.  &lt;/p&gt;
+
+&lt;p&gt;We&#39;re excited to work with Google on this project and look forward to the collaboration.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Google_funds_an_auto-update_for_Vidalia/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Google_funds_an_auto-update_for_Vidalia/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>The NLnet Foundation funds two projects</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/The_NLnet_Foundation_funds_two_projects/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/The_NLnet_Foundation_funds_two_projects/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/directory_services" />
+
+	<category term="/tags/funding" />
+
+	<category term="/tags/hidden_services" />
+
+	<category term="/tags/low_bandwidth_clients" />
+
+	<category term="/tags/nlnet" />
+
+	<category term="/tags/tor_protocol" />
+
+
+	<updated>2011-04-05T11:07:24Z</updated>
+	<published>2008-06-07T02:04:10Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;We&#39;re happy to announce the NLnet Foundation is funding two enhancements for the Tor software and network.  &lt;/p&gt;
+
+&lt;p&gt;The two projects are summarized below:&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.torproject.org/projects/lowbandwidth&quot; rel=&quot;nofollow&quot;&gt;Tor for low-bandwidth clients&lt;/a&gt;.
+&lt;p&gt;The Tor anonymity system is currently only usable by internet users who have high-bandwith connections. Upon the start of the Tor client, a large file with all Tor server descriptions is being downloaded. An evolution of the Tor protocol is aimed to reduce the initial download size. The new Tor protocol version shall change the way a client receives the information for its Tor circuit setup in a way, that the initial download can be performed over a slow modem line in less then three minutes.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.torproject.org/projects/hidserv&quot; rel=&quot;nofollow&quot;&gt;Speeding up Hidden Services&lt;/a&gt;.
+&lt;p&gt;The Tor anonymity system contains an important function that is called Tor Hidden Services, which allows users to set up anonymous information services, like websites, that can only be accessed through the Tor network and are protected against identification of the host that runs the services. Using these function, critical political and human rights information can be published in a way that protects the publisher and users of the service from repression and identification. The most critical limitation of this function is the time it takes until a Hidden Service is registered in the network and the latency of contact establishment when accessed by a user. The aim of this project is to develop the new protocol which will change the way Tor circuits are set up between the user and the Hidden Service as well as the way a Hidden Service is registered in the Tor network.&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/The_NLnet_Foundation_funds_two_projects/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/The_NLnet_Foundation_funds_two_projects/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

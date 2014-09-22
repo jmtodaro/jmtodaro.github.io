@@ -1,0 +1,460 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Fun with build machines</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FFun_with_build_machines&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Fun with build machines</a>
+
+</span>
+
+
+<div id="content">
+<p>Perhaps you've noticed that the packages for CentOS 4 and OSX Tiger/10.4 haven't been updated lately. Welcome to dead hard drives.</p>
+
+<p>For a long while, I used <a href="http://www.vmware.com/products/server/" rel="nofollow">VMware Server</a> for guest OSes to build the various rpm and windows packages.  This mostly worked well.  And then both drives in the physical server I used to host the vmware instance failed.  A two-drive RAID 1 array doesn't like it when both drives fail.  I replaced the drives, re-installed Debian, and attempted to install vmware server again.  The vmware kernel module refused to load.  I tried the old tricks to get it to work, nothing.  I finally looked at some script/patch that I found via Google, and got the module to load.  Then my license key didn't work anymore.  </p>
+
+<p>In frustration, I gave up and installed <a href="http://www.virtualbox.org/" rel="nofollow">VirtualBox</a>.  CentOS 4 defaults to using an SMP kernel on install, which Virtualbox (aka qemu) doesn't like at all.  CentOS 4 installs just fine, it just won't boot after install.  I haven't had time to further fix the problem.  For the time being, there's no CentOS 4 (Redhat 4 rpms) for Tor.  </p>
+
+<p>As for OSX, well, there was no raid array of any kind, just a single drive in a mac mini.  It died in a fit of 0xE0030005 (Undefined) errors and now won't boot at all.  A new drive is on the way.  I expect to have OSX Tiger/10.4 packages in a week or so.  The good news is that the <a href="http://www.everymac.com/systems/apple/imac/stats/imac_se_dv_400.html" rel="nofollow">Panther Mac</a> continues to work just fine.  </p>
+
+<p>Perhaps it's time to start using Amazon's EC2 or something similar instead of messing with all this hardware and virtualization software.  Or maybe I should work on hacking OSX 10.4 and 10.5 into virtualbox.</p>
+
+<p>** Update 2008-08-06:  new drive was DOA.  And it appears the logic board on the mac mini is fried.  Ugh.</p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/centos4/" rel="tag">centos4</a>
+
+<a href="../../tags/osx_10_4/" rel="tag">osx 10 4</a>
+
+<a href="../../tags/osx_tiger/" rel="tag">osx tiger</a>
+
+<a href="../../tags/packages/" rel="tag">packages</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-692c640ef520843283c148c8d3c854b5">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>maybe trying to fit OS X inside VirtualBox is not worth the hassle, on the other hand if you've a working OS X machine you can always build programs for the previous version of the operating system (in term of toolchain and basic libraries).<br />
+10.3 can build programs up to 10.1 if you install the Xcode Legacy Tools (see the "Developer Tools" section under the <a href="https://connect.apple.com/" rel="nofollow">ADC member site</a> I'm pretty confident that Tiger and Leopard will have something similar (at least you can always install Tiger Xcode 2.x in Leopard alongside its own 3.x)<br />
+btw, also my powerbook disk died recently <img src="../../smileys/ohwell.png" alt=":-/" /></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fsid77%20%28not%20verified%29&amp;do=goto">sid77 (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 06 Aug 2008 06:10:27 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d8e122f595ea384ba1b180da4b75e876">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+Well, we don't build the osx packages using xcode, but rather configure and makefiles.  Converting this system to xcode is not so easy; therefore this makes backporting challenging.  The other problem is I only have an older OS to use, not a newer.  So I can't forward compile the libs and such.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 06 Aug 2008 06:10:28 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f6d5dfabbc45a20ad3699bfe5b88b75b">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>There's a little of misunderstood here :-p<br />
+When I was talking about Xcode I was referring to the Xcode package itself rather then the single program.<br />
+And installing the Xcode package brings you a whole toolchain (glibc, gcc and binutils) plus a gui program called Xcode (and, well, several others) <img src="../../smileys/smile4.png" alt=";-)" /><br />
+So, in the end, there's no porting involving: you install Xcode and legacy tools (or the two versions of the package) and you can build programs with the toolchain of your current system and with the toolchains of the previous ones.<br />
+But yes, the problem regarding the version of the only working OS X is a stopper right now <img src="../../smileys/sad.png" alt=":(" /></p>
+
+<p>good luck!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fsid77%20%28not%20verified%29&amp;do=goto">sid77 (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 07 Aug 2008 06:10:29 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c1d9aff55512e68ac551857cf1cfece2">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<p>Not to sound snarky or rude, (God knows I certainly couldn't do the great Tor/Vidalia work you guys do) But, regardless of the virtualization issues you are having,  didn't you have a backup system in place?</p>
+
+<p>I have a back up for all my systems at home and the most important things I have are digital photos of my kids and a pirate collection of all 6 Mythbusters seasons.  It seems remarkably foolish to be working on Tor source code and NOT have it (and your working environments) back up AT LEAST to a network-connected hard drive, if not a full tape system.</p>
+
+<p>Of course, I have no clue about the financial situation you folks are in, so it may not be feasable to run a full tape backup.  But I would strongly recommend at least a big drive in a USB enclosure, or possibly uploading your data to a server somewhere between builds.</p>
+
+<p>I will also freely admit that I could be completely mis-reading your post, and you did have everything backed-up, and your only issue is re-building your working environments for CentOS and OSx.  If that's the case, neeeeeveer miiiind!  <img src="../../smileys/smile4.png" alt=";)" /></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FWearyman%20%28not%20verified%29&amp;do=goto">Wearyman (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 07 Aug 2008 06:10:30 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4f960ebe80e4d918d759dbf05e883723">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+Yes, everything is encrypted and backed up at least twice.  Getting replacement hardware that actually works is the issue.  I've been through two hard drives that arrived DOA.  I await drive #3 to arrive, hopefully this one works!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 17 Aug 2008 06:10:31 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-65d794c2cb274cb3bde8b608f95affdf">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+The mac mini is repaired and back online.  I've uploaded 0.2.1.4-alpha packages.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 31 Aug 2008 06:10:32 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FFun_with_build_machines&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:10:26 AM CDT</span>
+<!-- Created <span class="date">Tue 05 Aug 2008 09:50:21 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

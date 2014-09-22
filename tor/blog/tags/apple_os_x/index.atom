@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged apple_os_x</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/apple_os_x/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/apple_os_x/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/apple_os_x/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:49:16Z</updated>
+<entry>
+	<title>Apple broke OpenSSL which breaks Tor on OS X</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_broke_OpenSSL_which_breaks_Tor_on_OS_X/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_broke_OpenSSL_which_breaks_Tor_on_OS_X/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/apple_os_x" />
+
+	<category term="/tags/new_packages" />
+
+	<category term="/tags/no_love_from_apple" />
+
+	<category term="/tags/openssl" />
+
+	<category term="/tags/static_compilation" />
+
+
+	<updated>2011-04-05T11:49:16Z</updated>
+	<published>2010-01-27T18:14:35Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Apple OS X Security Update 2010-001 removes OpenSSL renegotation, &lt;a href=&quot;http://support.apple.com/kb/HT1222&quot; title=&quot;http://support.apple.com/kb/HT1222&quot; rel=&quot;nofollow&quot;&gt;http://support.apple.com/kb/HT1222&lt;/a&gt;.  We&#39;ve filed a bug report with Apple on this issue.  Their standard response so far is &lt;a href=&quot;http://support.apple.com/kb/HT4004&quot; title=&quot;http://support.apple.com/kb/HT4004&quot; rel=&quot;nofollow&quot;&gt;http://support.apple.com/kb/HT4004&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In the meanwhile, we have bug #1225 open, &lt;a href=&quot;https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=1225&quot; title=&quot;https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=1225&quot; rel=&quot;nofollow&quot;&gt;https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=1225&lt;/a&gt;.  Add yourself to the Notifications if you want updates as they happen.  A fine explanation of why Tor is not affected by the TLS renegotiation bug can be found at &lt;a href=&quot;https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=1225&amp;amp;area=comments#3804&quot; title=&quot;https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=1225&amp;amp;area=comments#3804&quot; rel=&quot;nofollow&quot;&gt;https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=1225&amp;amp;area=c...&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Packages for testing are available at:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/dist/testing/&quot; title=&quot;https://www.torproject.org/dist/testing/&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/dist/testing/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;READ THIS FINE PRINT&lt;/strong&gt;: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/apple-broke-openssl-which-breaks-tor-os-x&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ol&gt;
+&lt;li&gt; These will only work on OSX 10.5 and 10.6 (both i386 and powerpc).   Tor fails to compile when using the 10.4 libraries and static openssl.&lt;/li&gt;
+&lt;li&gt; Tor-0.2.2.8-alpha-i386-Bundle.dmg is compiled to replace the tor&lt;br /&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Apple_broke_OpenSSL_which_breaks_Tor_on_OS_X/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Apple_broke_OpenSSL_which_breaks_Tor_on_OS_X/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Updated packages for PowerPC-only OS X</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Updated_packages_for_PowerPC-only_OS_X/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Updated_packages_for_PowerPC-only_OS_X/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/10_3_9" />
+
+	<category term="/tags/anonymous_donor" />
+
+	<category term="/tags/apple_os_x" />
+
+	<category term="/tags/panther" />
+
+	<category term="/tags/updated_packages" />
+
+
+	<updated>2011-04-05T11:31:39Z</updated>
+	<published>2009-07-24T05:44:29Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Thanks to an anonymous donor for the working powerpc hardware, I was able to make 0.2.0.35, 0.2.1.17-rc, and Vidalia 0.1.15 packages on OS X 10.3.9 (Panther) this evening.&lt;/p&gt;
+
+&lt;p&gt;They are available in the usual places, such as &lt;a href=&quot;https://torproject.org/download&quot; title=&quot;https://torproject.org/download&quot; rel=&quot;nofollow&quot;&gt;https://torproject.org/download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Thanks for your patience.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Updated_packages_for_PowerPC-only_OS_X/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Updated_packages_for_PowerPC-only_OS_X/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Experimental OS X Drag and Drop Vidalia Bundle Installer</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/alpha_release" />
+
+	<category term="/tags/apple_os_x" />
+
+	<category term="/tags/experimental" />
+
+	<category term="/tags/polipo" />
+
+	<category term="/tags/vidalia_bundle" />
+
+
+	<updated>2011-04-05T11:17:15Z</updated>
+	<published>2009-01-13T16:26:22Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I asked for community feedback in &lt;a href=&quot;https://blog.torproject.org/blog/os-x-vidalia-bundle-thoughts&quot; rel=&quot;nofollow&quot;&gt;this post&lt;/a&gt; about drag and drop installation of the Vidalia bundle for Apple&#39;s OS X.  In working with the Vidalia team, we now have a drag and drop installer.  This is &lt;strong&gt;experimental&lt;/strong&gt;.  It&#39;s designed for a clean install.  It won&#39;t migrate your settings, nor will it configure anything for you.  Upon installing, your milk may sour and your salt may run off with your pepper.  Now that the disclaimers are over, here&#39;s what it contains and does do for you. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/experimental-os-x-drag-and-drop-vidalia-bundle-installer&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;It includes Universal binaries for:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Vidalia version 0.2.0-svn r3425&lt;/li&gt;
+&lt;li&gt;Polipo 1.0.4 configured to use Tor as a socksproxy&lt;/li&gt;
+&lt;li&gt;Tor 0.2.1.10-alpha compiled with prefix and bindir set to /Applications/Vidalia.app&lt;/li&gt;
+&lt;/ul&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Updates on Tor 0.2.0.32 for OS X Users</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Updates_on_Tor_0_2_0_32_for_OS_X_Users/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Updates_on_Tor_0_2_0_32_for_OS_X_Users/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/apple_os_x" />
+
+	<category term="/tags/packaging_errors" />
+
+	<category term="/tags/stable_release" />
+
+
+	<updated>2011-04-05T11:15:34Z</updated>
+	<published>2008-12-05T02:48:00Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;As detailed here, &lt;a href=&quot;http://archives.seul.org/or/talk/Dec-2008/msg00044.html&quot; title=&quot;http://archives.seul.org/or/talk/Dec-2008/msg00044.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Dec-2008/msg00044.html&lt;/a&gt;, there are some packaging fixes for OS X users in this 0.2.0.32 stable release.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;For OS X users, there is a packaging bugfix in 0.2.0.32 labelled as&lt;br /&gt;
+0.2.0.32a in the available packages.  It turns out for years we&#39;ve been&lt;br /&gt;
+shipping a Info.plist with an incorrect key.  The issue was discovered&lt;br /&gt;
+and reported as bug 876,&lt;br /&gt;
+&lt;a href=&quot;https://bugs.torproject.org/flyspray/index.php?id=876&amp;amp;do=details&quot; title=&quot;https://bugs.torproject.org/flyspray/index.php?id=876&amp;amp;do=details&quot; rel=&quot;nofollow&quot;&gt;https://bugs.torproject.org/flyspray/index.php?id=876&amp;amp;do=details&lt;/a&gt;.   &lt;/p&gt;
+&lt;p&gt;The commit to fix the problem in the 0_2_0 branch is r17472:&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/cvs/Dec-2008/msg00037.html&quot; title=&quot;http://archives.seul.org/or/cvs/Dec-2008/msg00037.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/cvs/Dec-2008/msg00037.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The commit to fix the problem in the Vidalia 0.1 branch is r3361:&lt;br /&gt;
+&lt;a href=&quot;http://trac.vidalia-project.net/browser/vidalia/branches/vidalia-0.1/pkg/osx?order=date&amp;amp;desc=1&quot; title=&quot;http://trac.vidalia-project.net/browser/vidalia/branches/vidalia-0.1/pkg/osx?order=date&amp;amp;desc=1&quot; rel=&quot;nofollow&quot;&gt;http://trac.vidalia-project.net/browser/vidalia/branches/vidalia-0.1/pkg...&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The bug is that the OS X Installer will prompt &quot;The chosen volume&lt;br /&gt;
+contains software which is newer then [sic] the software you are&lt;br /&gt;
+installing.&quot;&lt;/p&gt;
+&lt;p&gt;The problem is that the Installer looks in the file&lt;br /&gt;
+/Library/Receipts/Vidalia.pkg/Contents/Info.plist for&lt;br /&gt;
+CFBundleShortVersionString.  We mistakenly called it&lt;br /&gt;
+CFBundleSortVersionString, which Apple inserts &quot;1&quot; as the value.  The&lt;br /&gt;
+upgrade to Vidalia from 0.1.9 to 0.1.10 apparently triggered the issue.  &lt;/p&gt;
+&lt;p&gt;The fix is to put the correct value in place for the future.  The&lt;br /&gt;
+simplest way to do this is to have the users click &quot;Continue&quot; when&lt;br /&gt;
+prompted.  We could have spent a lot of time trying to fix it for the&lt;br /&gt;
+user to hide the issue, but well, that is fraught with problems and&lt;br /&gt;
+complexities.  A simple click of &quot;Continue&quot; is far simpler and less&lt;br /&gt;
+error prone.   &lt;/p&gt;
+&lt;p&gt;The difference between the released 0.2.0.32 Tor code is the inclusion&lt;br /&gt;
+of r17472.  It&#39;s not really 0.2.0.32a per se, but since we lack package&lt;br /&gt;
+versions, I had to distinguish it in some way. &lt;/p&gt;&lt;/blockquote&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Updates_on_Tor_0_2_0_32_for_OS_X_Users/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Updates_on_Tor_0_2_0_32_for_OS_X_Users/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Anonymity on the Internet is not going away.</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Anonymity_on_the_Internet_is_not_going_away_/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Anonymity_on_the_Internet_is_not_going_away_/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/apple_os_x" />
+
+	<category term="/tags/installation" />
+
+	<category term="/tags/vidalia_bundle" />
+
+
+	<updated>2011-04-05T11:14:18Z</updated>
+	<published>2008-11-07T23:00:53Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;A few people have told me about &lt;a href=&quot;http://www.techradar.com/news/computing/will-the-internet-always-be-anonymous--482519&quot; rel=&quot;nofollow&quot;&gt;this TechRadar&lt;/a&gt; story.  The implication is that the US Air Force is going to &lt;a href=&quot;https://www.fbo.gov/index?print_preview=1&amp;amp;s=opportunity&amp;amp;mode=form&amp;amp;id=e72854d6e3c1a044038563ef1e0fdfa6&amp;amp;tab=core&amp;amp;tabmode=list&amp;amp;cck=1&amp;amp;au=&amp;amp;ck=&quot; rel=&quot;nofollow&quot;&gt;do away&lt;/a&gt; with the anonymity of the Internet.  In reality, I think these people are looking for Tor&#39;s opinion on this sort of &quot;news&quot;.  Rather than pick apart the silliness of the statements, a few things bothered me about the TechRadar article; which I&#39;ve already heard many times.&lt;/p&gt;
+
+&lt;p&gt;Let&#39;s tackle the misnomer that the Internet is inherently anonymous.  This quote states the &quot;common wisdom&quot;:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;It&#39;s true that the TCP/IP protocol, as currently implemented, makes it very hard to verify the source of any given network packet, but that&#39;s purely because the network architects chose to make it that way.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;In fact, IP addresses are designed and used for routing.  It&#39;s easy to figure out where traffic originates if you have the IP address.  What&#39;s not so easy is figuring out if the owner of the system at that IP address was the actual sender of the traffic.  There&#39;s a popular notion that you are your IP address; and that actions taken with your IP can be tied back to you.  IP addresses are for routing, not authentication.  The Air Force plan wants to solve the latter problem of authentication (Network friend or foe).  A subpoena or legal demand of a provider (blog, forum, ISP, etc) can reveal the IP address and possibly its owner.&lt;/p&gt;
+
+&lt;p&gt;The larger concern with the article is that it states:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;But it&#39;s also what lets protesters protest and dissidents diss, so there are some genuinely valid reasons for wanting to preserve internet privacy&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;and then ends with &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/anonymity-internet-not-going-away.&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Anonymity_on_the_Internet_is_not_going_away_/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Anonymity_on_the_Internet_is_not_going_away_/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

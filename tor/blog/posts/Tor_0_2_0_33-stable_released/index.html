@@ -1,0 +1,1737 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tor 0.2.0.33-stable released</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_0_33-stable_released&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Tor 0.2.0.33-stable released</a>
+
+</span>
+
+
+<div id="content">
+<p>Tor 0.2.0.33 fixes a variety of bugs that were making relays less useful<br />
+to users. It also finally fixes a bug where a relay or client that's<br />
+been off for many days would take a long time to bootstrap.</p>
+
+<p>This update also fixes an important security-related bug reported by<br />
+Ilja van Sprundel. You should upgrade. (We'll send out more details<br />
+about the bug once people have had some time to upgrade.)</p>
+
+<p><a href="https://www.torproject.org/download.html" title="https://www.torproject.org/download.html" rel="nofollow">https://www.torproject.org/download.html</a></p>
+
+<p>Changes in version 0.2.0.33 - 2009-01-21<br />
+<strong>Security fixes:</strong></p>
+
+<ul>
+<li>Fix a heap-corruption bug that may be remotely triggerable on<br />
+      some platforms. Reported by Ilja van Sprundel.</li>
+</ul>
+
+<p><strong>Major bugfixes:</strong></p>
+
+<p><ul>
+<li>When a stream at an exit relay is in state "resolving" or<br />
+      "connecting" and it receives an "end" relay cell, the exit relay<br />
+      would silently ignore the end cell and not close the stream. If<br />
+      the client never closes the circuit, then the exit relay never <span class="read-more"><a href="http://blog.torproject.org/blog/tor-02033-stable-released"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/bug_fixes/" rel="tag">bug fixes</a>
+
+<a href="../../tags/security_fixes/" rel="tag">security fixes</a>
+
+<a href="../../tags/stable_release/" rel="tag">stable release</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-ef3c0f124e13c49e2f2e3e1a865155c2">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>Which platforms are affected? A mail would suffice.</p>
+
+<p>Craig / Gentoo Security<br />
+(<a href="https://bugs.gentoo.org/show_bug.cgi?id=256078" title="https://bugs.gentoo.org/show_bug.cgi?id=256078" rel="nofollow">https://bugs.gentoo.org/show_bug.cgi?id=256078</a>)</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FCraig%20%28not%20verified%29&amp;do=goto">Craig (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 23 Jan 2009 06:18:10 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fe26ddf314fa024d9017b60bfbed033e">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+We're giving people time to upgrade before announcing the details.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 25 Jan 2009 06:18:11 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bb5213abe8b5d877021f9eb98adf5b5a">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>I have searched the site but haven't found the following info:</p>
+
+<p>I already have an older version of Tor installed on my iMac (Leopard) and in order to install the new stable version, do I need to uninstall the previous one or does the installer simply overwrites the previous version?</p>
+
+<p>Thanks,<br />
+Gene</p>
+
+<p>p.s. the captcha is not visually impaired friendly...</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FGene%20%28not%20verified%29&amp;do=goto">Gene (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 23 Jan 2009 06:18:12 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-35a30541238a5e8164dea5c7c4666897">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+Tor packages overwrite the existing installation.  There is no need to un-install and then install at this time.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 25 Jan 2009 06:18:13 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-33767dfac2f0a388d5036a48305f5bd2">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>Runs quiet good. I'm running 0.2.0.33-stable at ~1600kilobyte/s with 60mb RAM usage. Before i was running 0.2.0.32-stable at ~1600kilobyte/s with 190mb RAM usage. And i think this release will speedup the tor network, because most node speed is limitit by RAM/CPU usage. </p>
+
+<p>so..Thanks for this release. <img src="../../smileys/smile.png" alt=":-)" /></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 25 Jan 2009 06:18:14 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b5e6b2d2c9094c63725614ae5222ff5a">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+How can I uninstall Tor?Tried it but don't like it.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 25 Jan 2009 06:18:15 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e3164827cbbfe790034580ec98143ef1">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p>For Windows, just run the uninstaller.</p>
+
+<p>For Apple, <a href="https://www.torproject.org/docs/tor-doc-osx.html.en#uninstall" title="https://www.torproject.org/docs/tor-doc-osx.html.en#uninstall" rel="nofollow">https://www.torproject.org/docs/tor-doc-osx.html.en#uninstall</a></p>
+
+<p>For linux, remove the rpms or whatever is your native package system</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 25 Jan 2009 06:18:16 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6990a7ba26c693654a385d335fc5234b">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+I dont have uninstall Tor in my computer. What I do to uninstall it? I use Windows Vista.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FKatia%20%28not%20verified%29&amp;do=goto">Katia (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 24 Jun 2009 06:18:17 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f14bfa5137784fd4a30d3205ad9ac39b">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+My operating system is XP,but I don't see uninstaller.I don't even see Tor in start menu or add or remove programs in control panel.Where can I find uninstaller?Thanks
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 26 Jan 2009 06:18:18 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f0032018c117e14c151ee695f3de58b5">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+you have to install it first. Then you might be able to uninstall it...
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 26 Jan 2009 06:18:19 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-cd100bbcd3979ecfc66dab7fdb41784f">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+If you downloaded TBB, it doesn't install.  It's a "zero-install" configuration.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 26 Jan 2009 06:18:20 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-86d25e0b32e0aeacdd965721f86d2103">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+So I can't uninstall this?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 29 Jan 2009 06:18:21 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-66d2bc8c87715ae1bb0b9c2af7802e3d">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+If you are using the TBB, there is no installation, therefore there is no "un-installation".  Simply delete the directory you created for the TBB.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 02 Feb 2009 06:18:22 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0021124103af10add2a14d62b97760af">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi there, my name is <a href="http://ezinearticles.com/?Natural-&lt;/p&gt;
+
+&lt;p&gt;Colon-Cleanse---The-Best-Natural-Colon-Cleanse-Method-That-Really&lt;/p&gt;
+
+&lt;p&gt;-Works&amp;id=2711200" rel="nofollow">Colon Cleanse</a>Very true. There is nothing </p>
+
+<p>more annoying than unsolicited advice. If a person isn’t asking </p>
+
+<p>you for help or advice, it’s none of your business to intrude.I </p>
+
+<p>totally agree with you.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fcolon%20cleanse%20%28not%20verified%29&amp;do=goto">colon cleanse (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 03 Nov 2009 06:18:23 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3708f7736c1c55545fc4e65ad1cc2616">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+<p>Will there soon be precompiled Suse Binaries?<br />
+I tried to ompile from source but it doesn't like my openssl.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 26 Jan 2009 06:18:24 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-53b9e0322e346ee3f5fffe355b17c3ba">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+They're coming soon, possibly tonight.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 26 Jan 2009 06:18:25 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6e4482943e86bcd29a89456e5f983263">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+based on opensuse 11, the rpms are now available.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 28 Jan 2009 06:18:26 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ada4b8e647d41df9c548cd32255f87c9">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+<p>Please look into the lastest bundles package for Windows  (vidalia-bundle-0.2.0.33-0.1.10.exe) and into the previous one (vidalia-bundle-0.2.0.32-0.1.10.exe).</p>
+
+<p>In both bundles Vidalia have the same version (1.1.0) but there are 3 files changed.</p>
+
+<p>In vidalia-bundle-0.2.0.33-0.1.10.exe:<br />
+SHA1(vidalia.exe)= 987592a629b9b768576bb3dd1f25be674eeb7609<br />
+SHA1(ssleay32.dll)= 152edc88462c8c2172e9b633f231d9713b7c5f8b<br />
+SHA1(QtCore4.dll)= 4a1d7f735a267f66c1616ba6c1b0ec99581326aa</p>
+
+<p>In vidalia-bundle-0.2.0.32-0.1.10.exe<br />
+SHA1(vidalia.exe)= 319fd6eaa6e8037af668bacb4cd9f90635d93df3<br />
+SHA1(ssleay32.dll)= 96fa129d753d27687525801df696fd900dcdfce0<br />
+SHA1(QtCore4.dll)=  e6a6789c72c690a9c7cd06f26285a965014ba105</p>
+
+<p>Why vidalia.exe is different ?</p>
+
+<p>Why the QtCore4.dll is different ? </p>
+
+<p>(both QtCore4.dll says to be version 4.4.3.0)</p>
+
+<p>Am I only a paranoid freak and all is OK ? </p>
+
+<p>Can we trust the new 0.2.0.33 bundle ?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 27 Jan 2009 06:18:27 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3190201a8e19ec69fbe8d2db333539fd">
+
+<div class="comment-subject">
+
+Comment 19
+
+</div>
+
+<div class="inlinecontent">
+<p>A few things:</p>
+
+<p>1) Vidalia for 0.2.0.32 was built by the Vidalia developer Matt, using my tor.exe.  0.2.0.33 vidalia-bundle was built by me from scratch; using the published steps.<br />
+2) ssl in the 0.2.0.33 bundle is openssl 0.9.8j, which is the latest version and newer than the version of openssl in 0.2.0.32 bundles.<br />
+3) Vidalia for 0.2.0.32 was built by the Vidalia developer Matt, using my tor.exe.  0.2.0.33 vidalia-bundle was built by me from scratch; using the published steps. I don't know why QtCore4.dll is different, since both Matt and I installed from the .exe on trolltech's website.  </p>
+
+<p>I signed the 0.2.0.33 bundle because I built it.  Matt signed the 0.2.0.32 bundle because he built it.  You're free to take our instructions and build your own bundle from the same source code I used.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 28 Jan 2009 06:18:28 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e35627ba7e9eff3fcdc60662b0fc03ca">
+
+<div class="comment-subject">
+
+Comment 20
+
+</div>
+
+<div class="inlinecontent">
+Pardon a query from an newbie, but I keep getting an error message that my flash player is not installed (although it is, and works fine when I run Firefox non-Tor), with the result that I can't view any videos.  Advice welcome.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 27 Jan 2009 06:18:29 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-162e43cfaa7e5541a599b30ef07bcd03">
+
+<div class="comment-subject">
+
+Comment 21
+
+</div>
+
+<div class="inlinecontent">
+<p><a href="https://www.torproject.org/torbutton/faq.html.en#noflash" title="https://www.torproject.org/torbutton/faq.html.en#noflash" rel="nofollow">https://www.torproject.org/torbutton/faq.html.en#noflash</a></p>
+
+<p>Basically, Flash is unsafe currently. Any website that you accept flash<br />
+from can de-anonymize you.</p>
+
+<p>Down the road, we hope to have some more well-understood VM-based<br />
+solution, like what Janus VM and Xerobank VM aim to do currently. But<br />
+for now, the best answer is either not to use flash with Tor, or to enable<br />
+plugins as the other comment suggested but then understand the risks.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Farma&amp;do=goto">arma</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 28 Jan 2009 06:18:30 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b5b58b6d2be7f309971e0daba55465e9">
+
+<div class="comment-subject">
+
+Comment 22
+
+</div>
+
+<div class="inlinecontent">
+I appreciate the help.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 28 Jan 2009 06:18:31 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d503e785cc55684e2fa77fb6ae789312">
+
+<div class="comment-subject">
+
+Comment 23
+
+</div>
+
+<div class="inlinecontent">
+Thanx  4 tellling tat !
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FPETER%20%28not%20verified%29&amp;do=goto">PETER (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 28 Jan 2009 06:18:32 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1265770b627d9b0a39b63c073232a2aa">
+
+<div class="comment-subject">
+
+Comment 24
+
+</div>
+
+<div class="inlinecontent">
+How do I enable plugins with Tor?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 01 May 2009 06:18:33 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7f9f9194168446fdf64c4c2ad0268220">
+
+<div class="comment-subject">
+
+Comment 25
+
+</div>
+
+<div class="inlinecontent">
+hey buddy go 2 the  Add on Tor button there is a option called Disable Plugins sume where, it is marked . unmark it  then it will work . Give it a try buddy!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FPETER%20%28not%20verified%29&amp;do=goto">PETER (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 27 Jan 2009 06:18:34 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f802d6ca0e72c9e2b20463635bf8dc9b">
+
+<div class="comment-subject">
+
+Comment 26
+
+</div>
+
+<div class="inlinecontent">
+Read what arma stated 3 comments up.  Flash over Tor isn't safe for your anonymity.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 28 Jan 2009 06:18:35 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4095521ef07b968b25e6bcacd8fcdb7d">
+
+<div class="comment-subject">
+
+Comment 27
+
+</div>
+
+<div class="inlinecontent">
+thanx!!! <img src="../../smileys/smile4.png" alt=";)" />
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 15 Jul 2010 06:18:36 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1f561826cc01d03a9a212af1f86f0ddb">
+
+<div class="comment-subject">
+
+Comment 28
+
+</div>
+
+<div class="inlinecontent">
+<p>I need some assistance please. I am a basic computer user but I have<br />
+been able to install Tor which I have been using daily for months now. My OS is MacOsx Panther 10.3.9 and the Tor bundle installed is 0.2.0.31. The OS is being operated from an external HD. </p>
+
+<p>I am no longer able to upgrade to the latest Tor versions (0.2.0.33) because as soon as I open the installer package of the new version I get the error message:</p>
+
+<p>       The Installer package "vidalia-bundle - 0.2.0.33-0.10-ppc" cannot be<br />
+        opened.</p>
+
+<p>        The Bill of Materials for this package was not found.</p>
+
+<p>I have tried several times with the same result. I have tried moving the old Tor, Privoxy and Vidalia folders to  the trash but I still get the error message!. Am I doing something wrong? I have always upgraded to<br />
+new stable versions of Tor this way.</p>
+
+<p>Thank you in advance for your help.</p>
+
+<p>Louis</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FLouis%20%28not%20verified%29&amp;do=goto">Louis (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 29 Jan 2009 06:18:37 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7859a1a846c5af7f3b4817f703231bc6">
+
+<div class="comment-subject">
+
+Comment 29
+
+</div>
+
+<div class="inlinecontent">
+Could you open a bug report at <a href="https://bugs.torproject.org/" title="https://bugs.torproject.org/" rel="nofollow">https://bugs.torproject.org/</a> ?  If you could attach the relevant parts of the install.log from /var/log/install.log to the bug that would be great.  Thanks!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 02 Feb 2009 06:18:38 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b60f3c3e4d5f61b02cdef40cd2dadc99">
+
+<div class="comment-subject">
+
+Comment 30
+
+</div>
+
+<div class="inlinecontent">
+<p>Thank you for the reply to my post. I shall look for the log, register at<br />
+the address you have given, post it there with an explanation of the<br />
+difficulty I am encountering.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FLouis%20%28not%20verified%29&amp;do=goto">Louis (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 03 Feb 2009 06:18:39 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-efd9ad5f131cf97a70a5a68bdec277e3">
+
+<div class="comment-subject">
+
+Comment 31
+
+</div>
+
+<div class="inlinecontent">
+This is fixed, and was tracked as bug 924.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 15 Feb 2009 06:18:40 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-afe6306b26f8084427c4cf076adf7a25">
+
+<div class="comment-subject">
+
+Comment 32
+
+</div>
+
+<div class="inlinecontent">
+<p>I thought Tor wasn't compatible with any Mac OS earlier than 10.4, but the 1-29-09 question from Louis (Re: Installation latest version of Tor) seemed to suggest that I can Run Tor on my OS 10.3.9.</p>
+
+<p>Can I run Tor on 10.3.9?  If so, what version and where do I get it?  Any assistance would be appreciated.</p>
+
+<p>Thanks,<br />
+Frank Marin</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FFrank%20Marin%20%28not%20verified%29&amp;do=goto">Frank Marin (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 10 Jun 2009 06:18:41 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c117537bd9640161b3622fd40a2fd7fb">
+
+<div class="comment-subject">
+
+Comment 33
+
+</div>
+
+<div class="inlinecontent">
+Yes, Tor works with OS X 10.3.9.  You can download it at <a href="https://www.torproject.org/download" title="https://www.torproject.org/download" rel="nofollow">https://www.torproject.org/download</a>.  Look at the second Apple icon where it says "PowerPC Only (OSX 10.3)".
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 11 Jun 2009 06:18:42 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1405bce541272bd63b71469667030300">
+
+<div class="comment-subject">
+
+Comment 34
+
+</div>
+
+<div class="inlinecontent">
+<p>I tried installing the Tor bundle on my mac running 10.5.7.  Installation failed with the following error.  "The following install step failed:  run postflight script for Tor"<br />
+Anyone know the reason for this?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Ftezzer%20%28not%20verified%29&amp;do=goto">tezzer (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 18 Jun 2009 06:18:43 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1a0aadff15bc29e67430df635aa8b2c2">
+
+<div class="comment-subject">
+
+Comment 35
+
+</div>
+
+<div class="inlinecontent">
+<p>I currently have Tor 0.2.31 installed on OS X 10.4.11. </p>
+
+<p>When I run the installer for the latest release (0.2.35) the installer says there is already a newer version of Tor installed. If I continue with the install anyway, it fails. There is no error message but the new version does not run.</p>
+
+<p>After restoring the old version of Tor (0.2.31) from backup, everything is OK. Then I tried to uninstall the old version using the supplied script, but it fails, giving me:</p>
+
+<p>root@sebago&gt; ./uninstall_tor_bundle.sh<br />
+. tor process appears to already be stopped<br />
+. Killing currently running privoxy process, pid is 196<br />
+./uninstall_tor_bundle.sh: line 123: ./package_list.txt: No such file or directory<br />
+. Removing created user _tor<br />
+delete: Invalid Path<br />
+. Cleaning up<br />
+rm: fts_read: No such file or directory<br />
+. Finished</p>
+
+<p>Next, I restored again from backup and tried to manually uninstall following the documentation. However, some of the files and directories that are supposed to be deleted do not exist on my installation. Other files and directories that obviously belong to Tor are not listed in the documentation of what to delete. </p>
+
+<p>After deleting everything I could find that looks like it belongs to Tor I ran the installer for version 0.2.35 again and it says the install was successful, but after restarting and trying to start vidalia, it doesn't run.</p>
+
+<p>Now I have 0.2.31 running again after restoring again from backup, but I am at a total loss as to how to properly uninstall or upgrade!!</p>
+
+<p>Please help!!!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FPaul%20Bergstein%20%28not%20verified%29&amp;do=goto">Paul Bergstein (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 26 Jun 2009 06:18:44 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-02a0ae3124d87811ae4a8a05f503a967">
+
+<div class="comment-subject">
+
+Comment 36
+
+</div>
+
+<div class="inlinecontent">
+I have the exact same problem. I installed the latest version of Tor, I am told a newer version is already installed, and then when I run Vidalia it doesn't work -- it loads about halfway but never connects to the network.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 12 Jul 2009 06:18:45 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a7de2b7827dce8dad4f1455c1ce1f3ba">
+
+<div class="comment-subject">
+
+Comment 37
+
+</div>
+
+<div class="inlinecontent">
+<p>same person as above: message log reports ...</p>
+
+<p>Jul 12 06:31:38.138 [Notice] Initialized libevent version 1.4.11-stable using method kqueue. Good.<br />
+Jul 12 06:31:38.138 [Notice] Opening Socks listener on 127.0.0.1:9050<br />
+Jul 12 06:31:38.139 [Notice] Opening Control listener on 127.0.0.1:9051<br />
+Jul 12 06:31:38.190 [Notice] Parsing GEOIP file.<br />
+Jul 12 06:31:39.822 [Notice] I learned some more directory information, but not enough to build a circuit: We have no network-status consensus.<br />
+Jul 12 06:31:39.822 [Notice] Bootstrapped 5%: Connecting to directory server.</p>
+
+<p>... this is where it stops every time.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 12 Jul 2009 06:18:46 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-87f64ca80f6860d782b2757f3352ad93">
+
+<div class="comment-subject">
+
+Comment 38
+
+</div>
+
+<div class="inlinecontent">
+<p>I have something similar - but different - have a black macbook os x 10.4.11 belong to a friend. I downloaded latest Tor release, now when I try to launch vidalia nothing happens. </p>
+
+<p>The app won't even launch. When I click on vidalia it doesn't even appear to start to launch, even when I view what happens in the 'dock'  i.e. the icon starts to launch then immediuately stops - no 'bouncing icon' if you know what I mean. </p>
+
+<p>Have tried to load various different versions of Vidalia/tor/polipo. None of them work. The only other version I have that I know works is the one I  use on my own titainium PPC G4 (10.4.11) which as I said, is for PPC so just out of curiosity I loaded that, which launches fine and reports that it connects to the tor-network but 'TOR button' reports that the 'proxy refusing connections.' which is not too surprising since it's for PPC</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 14 Dec 2009 06:18:47 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-926465b05e4dcd4029ab3cef7a96bc37">
+
+<div class="comment-subject">
+
+Comment 39
+
+</div>
+
+<div class="inlinecontent">
+I must admit that today is my first time I visit here. However, I have found so many interesting thing in your blog and I really love that. Keep up the good work!I think you should try <a href="http://www.goarticles.com/cgi-bin/showa.cgi?C=2392259" rel="nofollow">Reverse Phone Lookup</a>  atleast once
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 21 Dec 2009 06:18:48 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1ed995731e9bb6a7f2ca11540b457e63">
+
+<div class="comment-subject">
+
+Comment 40
+
+</div>
+
+<div class="inlinecontent">
+<p>I loaded that, which launches fine and reports that it connects to the tor-network but 'TOR button' reports that the 'proxy refusing connections.' which is not too surprising since it's for PPC.<br />
+Netflix                             </p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 08 Jan 2010 06:18:49 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5153313b68cdffca46f0634c041267c3">
+
+<div class="comment-subject">
+
+Comment 41
+
+</div>
+
+<div class="inlinecontent">
+<p>Thanks for taking the time to discuss this, I feel strongly about it and love learning more on this topic. If possible, as you gain expertise, would you mind updating your blog with more information? It is extremely helpful for me.</p>
+
+<p>Criminal Backgrond Check</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 10 Jan 2010 06:18:50 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5c01f7080e244aaef64e79125e7e5245">
+
+<div class="comment-subject">
+
+Comment 42
+
+</div>
+
+<div class="inlinecontent">
+I must say your post is fabulous. thanks for telling all this to us.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 28 Jan 2010 06:18:51 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-27569591eb0a4796fd9982513ce4e7fc">
+
+<div class="comment-subject">
+
+Comment 43
+
+</div>
+
+<div class="inlinecontent">
+How can i log on to my MT4 meter trader forex platform using tor, also how can i log on to skype using tor. i tried it several times but it did not work. can i log on to this sites with tor? do i need to enable any thing to log on? 
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 17 May 2010 06:18:52 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-76f2e74ea10277a6e531c04086c29a71">
+
+<div class="comment-subject">
+
+Comment 44
+
+</div>
+
+<div class="inlinecontent">
+How do I connect my forex meta trader 4 (mt4) to tor circuit
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 30 May 2010 06:18:53 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_0_33-stable_released&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:18:10 AM CDT</span>
+<!-- Created <span class="date">Thu 22 Jan 2009 01:25:00 PM CST</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

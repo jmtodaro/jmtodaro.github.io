@@ -1,0 +1,872 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tor Browser Bundle 1.2.7 Released</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_Browser_Bundle_1_2_7_Released&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Tor Browser Bundle 1.2.7 Released</a>
+
+</span>
+
+
+<div id="content">
+<p>Tor Browser Bundle 1.2.7 is released.  It is updated primarily due to Firefox 3.0.13 with its ssl fixes.</p>
+
+<p>The full changelist is:</p>
+
+<p>1.2.7: Released 2009-08-04</p>
+
+<ul>
+<li>update Firefox to 3.0.13</li>
+<li>add Polish translation</li>
+<li>update libevent to 1.4.12</li>
+</ul>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/firefox_updates/" rel="tag">firefox updates</a>
+
+<a href="../../tags/libevent_updates/" rel="tag">libevent updates</a>
+
+<a href="../../tags/tor_browser_bundle/" rel="tag">tor browser bundle</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-d1f5a04f7323e18cd6ec7143d6b951d2">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+I wrote this in the other post, but I'll just say it here.  Are we supposed to allow Firefox to self-update?  It has it's own update feature.  And in the default settings for the Tor Bundle, it is clicked.  I'm unsure of what to do.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 06 Aug 2009 06:32:50 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6697de83433fa7184c8169b5a49b2d80">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>The prefs.js file we ship comes with:<br />
+user_pref("app.update.auto", false);<br />
+user_pref("app.update.enabled", false);</p>
+
+<p>This means that firefox shouldn't be updating itself.  I can confirm that the Tor Browser Bundle we ship doesn't have any of the auto-update checked.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 07 Aug 2009 06:32:51 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6476a18cb1f3af45d1a7362103c1d78a">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>How is the TorVM going? why does n't anyone post something.<br />
+Many people dont even know there is a TorVM.torproject.org<br />
+please talk sth about it. Dont just say "its not dead." or "it hasn't been born"  (dystocia? =/ )</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 08 Aug 2009 06:32:52 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-428debc2f591318e8bc2b9bd516527a5">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+Because the main developer on it has been sidetracked with other things.  He is working on an update that should be out later this month.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 09 Aug 2009 06:32:53 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-505c1450bd70871ac2f625ca77f4f491">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+how about a future ability to block/prevent usage of specific Relays.. I've noticed a pattern of bad connection/timeouts using a specific relay (or three)
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 09 Aug 2009 06:32:54 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1c75fb27594cdd89ca05fc88e493b2ab">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+You can do this now.  You just have to edit the torrc file.  The option you want is ExcludeNodes or ExcludeExitNodes depending on what you think is overloaded.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 09 Aug 2009 06:32:55 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e957a1c8ec1e791ce2659960e0b1e4f1">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p>I just downloaded this new version of Tor bundle. When I try to view the network map I can no longer see the lines on the map. I'm referring  to the lines that go from country to country/city to city on the globe map itself. Everything else seems to be working just fine. </p>
+
+<p>Does this mean that Tor is not working properly?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 11 Aug 2009 06:32:56 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8c99be813ac61bc9c129572f533970d1">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+Do you have country flags next to your relays?  If not, this is why you don't have lines on the map, because Vidalia doesn't know where the relays are located.  If you leave it running for a bit, you should see country flags appear.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 11 Aug 2009 06:32:57 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0fc60039ed8d8e239b033dbbe131e9af">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+<p>No the country flags do not appear, instead I get question marks. And even after I let it run for a while I still have the same issue.</p>
+
+<p>I even reinstalled the browser bundle but still no lines or flags on the map. I tested Tor on several sites and it appears to be working right. Still not sure if this issue affects security in any way.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 12 Aug 2009 06:32:58 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-07900fef65d756fd11b4f4648a340154">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+<p>Just a follow-up to say I'm having the same problem!</p>
+
+<p>No country flags or network lines.</p>
+
+<p>I would like these features to work, as they did on the previous Tor bundle.</p>
+
+<p>The country flags in the Relay list won't populate; just have question marks.</p>
+
+<p>Yes, for me Tor is working, by checking IP addresses on sites, but would love to have those flags and lines back so I can see the network.</p>
+
+<p>I hope a Tor expert can fix this issue. It's such a great program, would be nice to have it working completely.</p>
+
+<p>Thank you.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FTor%20User%20%28not%20verified%29&amp;do=goto">Tor User (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 18 Aug 2009 06:32:59 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-123864bdda80457f2a3b96617bd1afdc">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+<p>Hello,</p>
+
+<p>I have the same problem as this anonymous poster.</p>
+
+<p>And no matter how long I let Tor run, the country flags or network lines do not appear.</p>
+
+<p>This has been a problem with the new Vidalia bundle.</p>
+
+<p>Like this other poster, I have deleted and downloaded the bundle again, but still the same problem.</p>
+
+<p>On the previous Tor bundle I was using, the country flags and network lines always appeared.</p>
+
+<p>I miss these features. Is there anything you/we can do about this?</p>
+
+<p>Thank you.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FTor%20User%20%28not%20verified%29&amp;do=goto">Tor User (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 18 Aug 2009 06:33:00 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3ff3643c13dd528e6e1b1c138739fbc6">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+Downloading and installing Tor Browser Bundle for Windows. Trying to start FirefoxPortable directly, i.e. connect to running Privoxy.  Works with file version 1.6.3.0 but not 1.6.6.0. Getting: Mozilla Firefox, Portable Edition cannot be started. You may wish to reinstall to fix this issue. (ERROR: firefox.exe could not be found).
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 12 Aug 2009 06:33:01 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0009563aa99ace01110808bc8eb3eed6">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+Same here.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 10 Mar 2011 06:33:02 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a0e4dd4ce634dd4f2257effd5a1e6069">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+<p>And just one more comment to get everyone's attention:</p>
+
+<p>I also do not have country flags or network lines in my "View the Tor network" window.</p>
+
+<p>And I also had the flags and lines in the previous version/bundle working correctly.</p>
+
+<p>I hope we can solve this problem.</p>
+
+<p>Thanks to the Tor people.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FTor%20Person%20%28not%20verified%29&amp;do=goto">Tor Person (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 18 Aug 2009 06:33:03 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0d9eb7e3ced2ae887464a4ea0019182e">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+<p>The -dev bundle should address this issue.  It's related to how openssl dlls are dependent upon Visual C re-distributable dlls.  The openssl in 1.2.7-dev are based on openssl statically compiled with Visual C.</p>
+
+<p><a href="https://blog.torproject.org/blog/testing-tor-browser-bundle-127dev" title="https://blog.torproject.org/blog/testing-tor-browser-bundle-127dev" rel="nofollow">https://blog.torproject.org/blog/testing-tor-browser-bundle-127dev</a></p>
+
+<p>If this doesn't work, respond here.  I'd like to know what vidalia is doing when it fails to do a geoip lookup.  </p>
+
+<p>Thanks.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 19 Aug 2009 06:33:04 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5faeb368f9ae621134e5cdc05a9b0792">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+Thank you very much. In the new 1.2.8 bundle, the network map, lines, and country flags have reappeared!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FA%20Satisfied%20Tor%20Customer%20%28not%20verified%29&amp;do=goto">A Satisfied Tor Customer (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 24 Aug 2009 06:33:05 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6cccafcce594ff48333022bacf401bd1">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+<p>I am new to TOR and have decided to donate some of my unused monthly download bandwidth quota to the community by running a relay.<br />
+I have AccountingMax enabled. The Tor Bandwidth Usage window shows fluctuating activity, totalling about 2GB each way after several days.<br />
+The Vidalia Network Map has country flags, I am in the list of relays in the left side pane, and Zoom to my relay works.<br />
+However, there are no lines on the map to/from me, but traffic is happening.<br />
+There are usually only 2-3 entries in the Connections pane. My relay was in there when I first started Tor, but it soon disappeared. There are lines on the map joining the relays listed in the Connections pane, and right-click Zoom highlights them.<br />
+Is this all normal and correct?<br />
+Is there a document somewhere explaining the Network Map and Tor Bandwidth windows?<br />
+[vidalia-bundle-0.2.1.19-0.1.15.exe (Windows)]</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnthony%20Mouse%20%28not%20verified%29&amp;do=goto">Anthony Mouse (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 21 Sep 2009 06:33:06 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3d1c5609b3690f70376f68924549ebe4">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi, </p>
+
+<p>I'm new to TOR and wondering how to set it so I can  access sites like if i was in the US? </p>
+
+<p>Thanks in advance</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FTakak%20%28not%20verified%29&amp;do=goto">Takak (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 05 Oct 2009 06:33:07 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_Browser_Bundle_1_2_7_Released&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:32:49 AM CDT</span>
+<!-- Created <span class="date">Thu 06 Aug 2009 10:12:42 AM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

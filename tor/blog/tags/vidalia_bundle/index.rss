@@ -1,0 +1,413 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged vidalia_bundle</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/vidalia_bundle/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>erinn: Mac OS X Vidalia Bundle with 0.2.2.17-alpha out</title>
+	<dcterms:creator>erinn</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Mac_OS_X_Vidalia_Bundle_with_0_2_2_17-alpha_out/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Mac_OS_X_Vidalia_Bundle_with_0_2_2_17-alpha_out/</link>
+
+
+	<category>/tags/geoip</category>
+
+	<category>/tags/geoip_fixes</category>
+
+	<category>/tags/osx</category>
+
+	<category>/tags/osx_fixes</category>
+
+	<category>/tags/vidalia</category>
+
+	<category>/tags/vidalia_bundle</category>
+
+	<category>/tags/vidalia_network_map</category>
+
+
+	<pubDate>Thu, 28 Oct 2010 03:12:37 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:10:27Z</dcterms:modified>
+
+	<description>&lt;p&gt;Vidalia 0.2.10 changed the way we deal with the &lt;a href=&quot;https://blog.torproject.org/blog/vidalia-0210-released&quot; rel=&quot;nofollow&quot;&gt;geoip databases by dropping the remote geoip lookups&lt;/a&gt;. This caused a lot of headaches for OS X users because of the layout of the package, but it&#39;s fixed in this version. You can download the new version &lt;a href=&quot;https://www.torproject.org/dist/vidalia-bundles/&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Please let us know if you have further problems by &lt;a href=&quot;https://trac.torproject.org/projects/tor&quot; rel=&quot;nofollow&quot;&gt;reporting a bug&lt;/a&gt;.&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Mac_OS_X_Vidalia_Bundle_with_0_2_2_17-alpha_out/#comments</comments>
+
+</item>
+<item>
+
+	<title>atagar: Summer Conclusion (ARM Project)</title>
+	<dcterms:creator>atagar</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Summer_Conclusion_-ARM_Project-/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Summer_Conclusion_-ARM_Project-/</link>
+
+
+	<category>/tags/drag_and_drop_OS_X_install</category>
+
+	<category>/tags/msi_installer</category>
+
+	<category>/tags/updated_packages</category>
+
+	<category>/tags/vidalia_bundle</category>
+
+
+	<pubDate>Mon, 07 Sep 2009 14:46:06 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:35:00Z</dcterms:modified>
+
+	<description>&lt;p&gt;Throughout the summer I&#39;ve been working on a project called &#39;arm&#39; (which stands for the &#39;anonymizing relay monitor&#39;). It&#39;s a real-time, terminal monitor for Tor relays providing bandwidth/cpu/memory usage, relay configuration, event log, connections, and other details relay operators might find handy for checking Tor&#39;s status. The project&#39;s intended for command-line aficionados, ssh connections, and anyone stuck with a tty terminal.&lt;/p&gt;
+
+&lt;p&gt;Source, screen shots, and a development log are available on the &lt;a href=&quot;http://www.atagar.com/arm&quot; rel=&quot;nofollow&quot;&gt;project&#39;s page&lt;/a&gt; and an interview by Brenno Winter discussing the project is available &lt;a href=&quot;http://www.atagar.com/arm/HFM_INT_0001.mp3&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt;. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/summer-conclusion-arm-project&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Summer_Conclusion_-ARM_Project-/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Vidalia 0.2.3 released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_3_released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_3_released/</link>
+
+
+	<category>/tags/drag_and_drop_OS_X_install</category>
+
+	<category>/tags/updated_packages</category>
+
+	<category>/tags/vidalia_bundle</category>
+
+
+	<pubDate>Thu, 03 Sep 2009 08:48:53 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:34:56Z</dcterms:modified>
+
+	<description>&lt;p&gt;On August 27th, we released Vidalia 0.2.3.  This fixes some more bugs with &quot;Who has used by bridge&quot; functionality and switches to Qt signals for event handling.&lt;/p&gt;
+
+&lt;p&gt;The updated Vidalia packages can be found at &lt;a href=&quot;https://www.torproject.org/vidalia&quot; title=&quot;https://www.torproject.org/vidalia&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/vidalia&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The changes are: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/vidalia-023-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Create the data directory before trying to copy over the default&lt;br /&gt;
+    Vidalia configuration file from inside the application bundle on Mac&lt;br /&gt;
+    OS X. Affects only OS X drag-and-drop installer users without a&lt;br /&gt;
+    previous Vidalia installation.&lt;/li&gt;
+&lt;li&gt;Change all Tor event handling to use Qt&#39;s signals and slots mechanism&lt;br /&gt;
+    instead of custom QEvent subclasses.&lt;/li&gt;
+&lt;li&gt;Fix another bug that resulted in the &quot;Who has used my bridge?&quot; link&lt;br /&gt;
+    initially being visible when the user clicks &quot;Setup Relaying&quot; from&lt;br /&gt;
+    the control panel if they are running a non-bridge relay.&lt;br /&gt;
+    (Ticket #509, reported by &quot;vrapp&quot;)&lt;/li&gt;
+&lt;li&gt;Always hide the &quot;Who has used my bridge?&quot; link when Tor isn&#39;t running,&lt;br /&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_3_released/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Major changes to OS X Vidalia Bundle with 0.2.2.1-alpha</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Major_changes_to_OS_X_Vidalia_Bundle_with_0_2_2_1-alpha/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Major_changes_to_OS_X_Vidalia_Bundle_with_0_2_2_1-alpha/</link>
+
+
+	<category>/tags/alpha_release</category>
+
+	<category>/tags/anonymity_fixes</category>
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/improvements</category>
+
+	<category>/tags/os_x</category>
+
+	<category>/tags/packages</category>
+
+	<category>/tags/safe_statistic_collection</category>
+
+	<category>/tags/security_fixes</category>
+
+	<category>/tags/vidalia_bundle</category>
+
+
+	<pubDate>Wed, 02 Sep 2009 20:15:42 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:34:55Z</dcterms:modified>
+
+	<description>&lt;p&gt;As highlighted in the &lt;a href=&quot;http://blog.torproject.org/blog/tor-0221alpha-released&quot; rel=&quot;nofollow&quot;&gt;0.2.2.1-alpha release notes&lt;/a&gt;, the Vidalia Bundle for OS X includes some major changes.  Many of these are for ease of use and user experience improvements.  The release of OS X 10.6 (Snow Leopard) gave me a fine excuse to release the improvements.&lt;/p&gt;
+
+&lt;p&gt;It&#39;s best to &lt;a href=&quot;https://www.torproject.org/docs/tor-doc-osx.html.en#uninstall&quot; rel=&quot;nofollow&quot;&gt;un-install Tor/Vidalia&lt;/a&gt; and then install this new bundle; rather than upgrade.  If you want to upgrade, you&#39;ll need to update the paths for Tor and Polipo in the Vidalia Settings window. &lt;/p&gt;
+
+&lt;p&gt;There has been a lot of testing since this &lt;a href=&quot;http://blog.torproject.org/blog/experimental-os-x-drag-and-drop-vidalia-bundle-installer&quot; rel=&quot;nofollow&quot;&gt;test release&lt;/a&gt; of the drag and drop installer for OS X in January.  The main goal was to make installation far easier, less error prone, and keep all of the bundle in a single directory for easier configuration and un-installation. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/major-changes-os-x-vidalia-bundle-0221alpha&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Major_changes_to_OS_X_Vidalia_Bundle_with_0_2_2_1-alpha/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Tor Browser Bundle 1.2.8 released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_8_released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_8_released/</link>
+
+
+	<category>/tags/caching</category>
+
+	<category>/tags/faster_firefox</category>
+
+	<category>/tags/faster_tor</category>
+
+	<category>/tags/open_research</category>
+
+	<category>/tags/performance</category>
+
+	<category>/tags/polipo</category>
+
+	<category>/tags/privoxy</category>
+
+	<category>/tags/socks5</category>
+
+	<category>/tags/tor_browser_bundle</category>
+
+	<category>/tags/vidalia_bundle</category>
+
+
+	<pubDate>Wed, 19 Aug 2009 22:43:12 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:34:07Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor Browser Bundle 1.2.8 is released.  The big changes are the inclusion of statically linked openssl dlls to resolve a few geoip lookup and functionality issues with Vidalia, and the upgrade to the &lt;a href=&quot;http://localhost//blog.torproject.org/blog/vidalia-022-released&quot; rel=&quot;nofollow&quot;&gt;new Vidalia 0.2.2&lt;/a&gt;.  &lt;/p&gt;
+
+&lt;p&gt;Available at &lt;a href=&quot;https://torproject.org/torbrowser&quot; title=&quot;https://torproject.org/torbrowser&quot; rel=&quot;nofollow&quot;&gt;https://torproject.org/torbrowser&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The full list of updates and fixes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;update Torbutton to 1.2.2&lt;/li&gt;
+&lt;li&gt;update Vidalia to 0.2.2&lt;/li&gt;
+&lt;li&gt;compile OpenSSL 0.9.8k with Visual C to make dlls&lt;/li&gt;
+&lt;li&gt;update Pidgin to 2.6.1&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_8_released/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Experimental OS X Drag and Drop Vidalia Bundle Installer</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/</link>
+
+
+	<category>/tags/alpha_release</category>
+
+	<category>/tags/apple_os_x</category>
+
+	<category>/tags/experimental</category>
+
+	<category>/tags/polipo</category>
+
+	<category>/tags/vidalia_bundle</category>
+
+
+	<pubDate>Tue, 13 Jan 2009 10:26:22 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:17:15Z</dcterms:modified>
+
+	<description>&lt;p&gt;I asked for community feedback in &lt;a href=&quot;https://blog.torproject.org/blog/os-x-vidalia-bundle-thoughts&quot; rel=&quot;nofollow&quot;&gt;this post&lt;/a&gt; about drag and drop installation of the Vidalia bundle for Apple&#39;s OS X.  In working with the Vidalia team, we now have a drag and drop installer.  This is &lt;strong&gt;experimental&lt;/strong&gt;.  It&#39;s designed for a clean install.  It won&#39;t migrate your settings, nor will it configure anything for you.  Upon installing, your milk may sour and your salt may run off with your pepper.  Now that the disclaimers are over, here&#39;s what it contains and does do for you. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/experimental-os-x-drag-and-drop-vidalia-bundle-installer&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;It includes Universal binaries for:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Vidalia version 0.2.0-svn r3425&lt;/li&gt;
+&lt;li&gt;Polipo 1.0.4 configured to use Tor as a socksproxy&lt;/li&gt;
+&lt;li&gt;Tor 0.2.1.10-alpha compiled with prefix and bindir set to /Applications/Vidalia.app&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Anonymity on the Internet is not going away.</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Anonymity_on_the_Internet_is_not_going_away_/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Anonymity_on_the_Internet_is_not_going_away_/</link>
+
+
+	<category>/tags/apple_os_x</category>
+
+	<category>/tags/installation</category>
+
+	<category>/tags/vidalia_bundle</category>
+
+
+	<pubDate>Fri, 07 Nov 2008 17:00:53 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:14:18Z</dcterms:modified>
+
+	<description>&lt;p&gt;A few people have told me about &lt;a href=&quot;http://www.techradar.com/news/computing/will-the-internet-always-be-anonymous--482519&quot; rel=&quot;nofollow&quot;&gt;this TechRadar&lt;/a&gt; story.  The implication is that the US Air Force is going to &lt;a href=&quot;https://www.fbo.gov/index?print_preview=1&amp;amp;s=opportunity&amp;amp;mode=form&amp;amp;id=e72854d6e3c1a044038563ef1e0fdfa6&amp;amp;tab=core&amp;amp;tabmode=list&amp;amp;cck=1&amp;amp;au=&amp;amp;ck=&quot; rel=&quot;nofollow&quot;&gt;do away&lt;/a&gt; with the anonymity of the Internet.  In reality, I think these people are looking for Tor&#39;s opinion on this sort of &quot;news&quot;.  Rather than pick apart the silliness of the statements, a few things bothered me about the TechRadar article; which I&#39;ve already heard many times.&lt;/p&gt;
+
+&lt;p&gt;Let&#39;s tackle the misnomer that the Internet is inherently anonymous.  This quote states the &quot;common wisdom&quot;:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;It&#39;s true that the TCP/IP protocol, as currently implemented, makes it very hard to verify the source of any given network packet, but that&#39;s purely because the network architects chose to make it that way.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;In fact, IP addresses are designed and used for routing.  It&#39;s easy to figure out where traffic originates if you have the IP address.  What&#39;s not so easy is figuring out if the owner of the system at that IP address was the actual sender of the traffic.  There&#39;s a popular notion that you are your IP address; and that actions taken with your IP can be tied back to you.  IP addresses are for routing, not authentication.  The Air Force plan wants to solve the latter problem of authentication (Network friend or foe).  A subpoena or legal demand of a provider (blog, forum, ISP, etc) can reveal the IP address and possibly its owner.&lt;/p&gt;
+
+&lt;p&gt;The larger concern with the article is that it states:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;But it&#39;s also what lets protesters protest and dissidents diss, so there are some genuinely valid reasons for wanting to preserve internet privacy&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;and then ends with &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/anonymity-internet-not-going-away.&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Anonymity_on_the_Internet_is_not_going_away_/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Jacob and Matt join the Tor Project</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Jacob_and_Matt_join_the_Tor_Project/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Jacob_and_Matt_join_the_Tor_Project/</link>
+
+
+	<category>/tags/auto-update</category>
+
+	<category>/tags/exitlist</category>
+
+	<category>/tags/tor</category>
+
+	<category>/tags/tor_check</category>
+
+	<category>/tags/translation</category>
+
+	<category>/tags/upnp</category>
+
+	<category>/tags/vidalia</category>
+
+	<category>/tags/vidalia_bundle</category>
+
+
+	<pubDate>Thu, 29 May 2008 15:36:47 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:07:18Z</dcterms:modified>
+
+	<description>&lt;p&gt;Jacob Appelbaum joins us to help out with:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;developing a translation portal.  This should help us find translators&lt;br /&gt;
+and make their updates easier.&lt;/li&gt;
+&lt;li&gt;coordinating the Tor translation team and getting parts that need&lt;br /&gt;
+translating, translated.&lt;/li&gt;
+&lt;li&gt;helping to better document Tor for non-technical users.&lt;/li&gt;
+&lt;li&gt;writing an auto-responder to use Google&#39;s gmail to deliver Tor to&lt;br /&gt;
+users who request it&lt;/li&gt;
+&lt;li&gt;helping to get auto-updating for Tor and Vidalia working seamlessly&lt;/li&gt;
+&lt;li&gt;maintaining the code that runs the tor exitlist&lt;/li&gt;
+&lt;li&gt;generally advocating Tor&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Matt Edman joins the Tor Project.  Matt joins to help us enhance Tor&#39;s&lt;br /&gt;
+interactions with Vidalia.  Specifically, he&#39;s working on:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;integrating upnp libraries into vidalia to make it easier to setup servers&lt;/li&gt;
+&lt;li&gt;displaying Tor&#39;s startup status more visually in Vidalia to help users&lt;br /&gt;
+understand what&#39;s going on as Tor starts&lt;/li&gt;
+&lt;li&gt;assist with making translating Vidalia&#39;s interface and help files&lt;br /&gt;
+easier for translators&lt;/li&gt;
+&lt;li&gt;helping to flesh out proposals in queue on or-dev&lt;/li&gt;
+&lt;li&gt;helping to get auto-updating or Tor and Vidalia working seamlessly&lt;/li&gt;
+&lt;li&gt;tackling the &quot;matt&quot; section of the &lt;a href=&quot;http://www.torproject.org/svn/trunk/doc/TODO&quot; rel=&quot;nofollow&quot;&gt;TODO file.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Welcome Jacob and Matt!&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Jacob_and_Matt_join_the_Tor_Project/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Vidalia bundle, OSX and Qt bugs</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_bundle_OSX_and_Qt_bugs/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_bundle_OSX_and_Qt_bugs/</link>
+
+
+	<category>/tags/bugs</category>
+
+	<category>/tags/crashes</category>
+
+	<category>/tags/osx</category>
+
+	<category>/tags/qt</category>
+
+	<category>/tags/vidalia</category>
+
+	<category>/tags/vidalia_bundle</category>
+
+
+	<pubDate>Sun, 20 Jan 2008 12:50:53 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:05:46Z</dcterms:modified>
+
+	<description>&lt;p&gt;It appears Qt-4.3.3 has &lt;a href=&quot;http://trolltech.com/developer/task-tracker/index_html?method=entry&amp;amp;id=155700&quot; rel=&quot;nofollow&quot;&gt;a bug&lt;/a&gt; that is causing Vidalia to crash when the list of Tor nodes refreshes and is sorted.  The current 0.1.2.19-stable and 0.2.0.17-alpha bundles for OSX are built against Qt-4.3.3.  &lt;/p&gt;
+
+&lt;p&gt;I&#39;ve downgraded the build hosts to Qt-4.3.2.  The rebuilt OSX vidalia-bundle packages for both 0.1.2.19-stable and 0.2.0.17-alpha are available as:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.torproject.org/dist/vidalia-bundles/vidalia-bundle-0.1.2.19-0.0.16a-tiger.dmg&quot; rel=&quot;nofollow&quot;&gt;Bundle with 0.1.2.19-stable and Vidalia 16a&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.torproject.org/dist/vidalia-bundles/vidalia-bundle-0.2.0.17-alpha-0.0.16a-tiger.dmg&quot; rel=&quot;nofollow&quot;&gt;Bundle with 0.2.0.17-alpha and Vidalia 16a&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These bundles contain Vidalia compiled with Qt-4.3.2.  This makes Vidalia happy again.&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Vidalia_bundle_OSX_and_Qt_bugs/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

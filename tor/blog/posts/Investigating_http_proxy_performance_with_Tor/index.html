@@ -1,0 +1,816 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Investigating http proxy performance with Tor</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FInvestigating_http_proxy_performance_with_Tor&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Investigating http proxy performance with Tor</a>
+
+</span>
+
+
+<div id="content">
+<p><p>A while ago there was a thread on <a href="http://archives.seul.org/or/talk/" rel="nofollow">OR-TALK</a> that devolved into<br /></p>
+
+<blockquote>"why does Tor still ship ancient privoxy?"</p></blockquote>
+
+<p><p> and<br /></p>
+
+<blockquote>"why are you shipping polipo with the Tor Browser Bundle instead of current privoxy?"</p></blockquote>
+
+<p>For those interested, the thread is here, <a href="http://archives.seul.org/or/talk/Jul-2009/msg00063.html" title="http://archives.seul.org/or/talk/Jul-2009/msg00063.html" rel="nofollow">http://archives.seul.org/or/talk/Jul-2009/msg00063.html</a>.</p>
+
+<p>Scott had a good argument for why we should update the bundles to the latest privoxy, and I agree, we should.  But then I started thinking about why we needed a proxy at all.  Almost all browsers support socks5 direct, isn't that faster than a middleman proxy?</p>
+
+<p>This got me thinking about why polipo is in the TBB, but not the other packages.  The TBB "feels faster" when using Tor than using the installed Tor, Vidalia, and Privoxy.  However, I couldn't find any actual testing of performance of polipo vs. privoxy vs. socks5 direct. <span class="read-more"><a href="http://blog.torproject.org/blog/investigating-http-proxy-performance-tor"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-9febf18c7a001751b8e3999cc04a4e2a">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>"Out of 23 get requests for the Torproject.org/index.html.en, 17 are for the country flags. Perhaps we should load these last at the bottom of the page, or do something else to speed up the torproject page load."</p>
+
+<p>That would be very easy to optimise. Use a single image with all the flags in it, then use an image map to set the links on it.<br />
+Alternatively CSS sprites could be used (single file and links/flags displayed using an offset).<br />
+The image map is a nicer solution in my opinion.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 19 Aug 2009 06:33:50 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4a3f8b06dea00211469726d634dc297f">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>Firefox is buggy with socks proxy directly.<br />
+It has has a hard-coded 10 second timeout, and it blocks when waiting, so if you have one tab waiting to connect to socks, you cant use the other tabs.</p>
+
+<p>Polipo sucks please stop using it, watch what its doing with a packet sniffer.<br />
+Completely non-standard stuff there that breaks alot of sites, converting GET requests into HEAD etc which show blank pages!<br />
+Its annoying to be on a forum and click refresh only to get a blank page over and over, because polipo is sending HEAD requests to the server instead of GET which of course results in blank page as there is no response body to a HEAD request.<br />
+WTH is polipo thinking modifying a request, its supposed to be pass-through only.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 20 Aug 2009 06:33:51 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f099ef4b75913bf83ed8cd4f086ea1da">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>Have you reported this GET to HEAD request transformation to the polipo list as a bug?</p>
+
+<p>If you know of an open source, freely licensed caching proxy that works on windows, linuxes, unixes, and macs, then point it out.  I'll look into it.</p>
+
+<p>And yes, Firefox is buggy with SOCKS.  In fact, there's a 3-year old bug about the hard-coded timer waiting for someone at Mozilla to address it.  At one point, we even offered to pay someone at Mozilla to fix it.   The bug being, <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=280661" title="https://bugzilla.mozilla.org/show_bug.cgi?id=280661" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=280661</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 21 Aug 2009 06:33:52 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3a4c6925141e012c383c18e80f647a76">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<p>Nope I didn't report it.<br />
+I was under the impression that Polipo was not in active development.<br />
+Is that not true?</p>
+
+<p>Is there any point in caching?<br />
+I can see the advantage if multiple PC's share the same cache, but browsers already have their own caching anyway.</p>
+
+<p>I prefer to make connections via SSL anyway, and proxy's cant cache those.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 22 Aug 2009 06:33:53 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7752b297a79c1aca94872cf2b6398dda">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+I thought the main reason to use Privoxy was not to leak DNS by using Socks 4a. Is Socks 5 no longer leaking DNS?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 21 Aug 2009 06:33:54 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bdce84042356c3caed3b50bb98921f5c">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>Yes socks 5 still leaks DNS.<br />
+Socks 4a is the only socks that supports connecting to a host name, socks 4/5 only support IP, so you have to resolve the DNS to IP which leaks.</p>
+
+<p>Most apps don't support socks 4a, but HTTP proxy is very common.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 22 Aug 2009 06:33:55 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bcf3f8d085982a4ccea79ebd8c28e92e">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p>False. Socks 5 works fine.<br />
+Easy way to test: Have the vidalia Tor Network page open, and then load a page in Firefox. The connection will appear in the Tor Network page, and you can see it named the same way it's passed to Tor. If the browser passes an IP, you'll see it there, but if it passes the hostname, you'll also see it there. I always see hostnames there (except for when I'm purposely connecting to a specific IP).</p>
+
+<p>BTW The CAPTCHA here sucks, it's taken me a lot tries. You should use something like reCAPTCHA, works nicely for me on my site.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 23 Aug 2009 06:33:56 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-efa59d5d5597462ece5cccfdbf6e56a0">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+<p>firefox and socks5 with torbutton enabled works correctly.  Not all socks5 compatible applications will do name resolution via the socks proxy.</p>
+
+<p>Using recaptcha means trusting a 3rd party to serve up the captcha, and not log requests for the captcha.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 24 Aug 2009 06:33:57 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-40fd6f6a76e6dc22620988b5276c874e">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+<p>If Polipo works better than the other two, why change that? Just work with it, optimize it if you can, leave it at that. Unless there is some really good reason to switch, it's probably best to leave it alone.</p>
+
+<p>I use the Tor Browser Bundle, and it's always been pretty good for me. I've never had serious issues or lag with it.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FSoulmech%20%28not%20verified%29&amp;do=goto">Soulmech (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 24 Aug 2009 06:33:58 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3699c134ec005ca10b626a5424baf492">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+What will be the effect of removing a filtering proxy on the privacy of the user with respect to tracking cookies and locally stored data by flash objects?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FMathFox%20%28not%20verified%29&amp;do=goto">MathFox (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 25 Aug 2009 06:33:59 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b1332037c8ce4f8eed9303791ed25130">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+If the user is using torbutton defaults, then the cookies and such are wiped on toggle or restart of the browser.  Torbutton disables plugins, like flash, so one shouldn't have flash cookies from browsing with Tor.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 25 Aug 2009 06:34:00 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-08c189aa5dccfbe23f095583472b9abd">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+<p>i have tested firefox.3.5.2 with socks5 and work perfectly if we use only the browser but if we try to use java or a few application, sometime the DNS can be leaked.</p>
+
+<p>with privoxy, so far only flash leak DNS and bypass proxy, with last java and config it to not save data on system and use privoxy, it don't seem leaks DNS anymore. Flash stay very dangerous and bypass anyway the proxy.</p>
+
+<p>well my conculsion are:</p>
+
+<p>For me are possible yet to use java if the new nocript are installed with cs lite( cookie prevention) , so if someone need java for a specific site , it can be used safty.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FSwissTorExit%20%28not%20verified%29&amp;do=goto">SwissTorExit (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 25 Aug 2009 06:34:01 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-621b8c911250175d14ec215b04f1dde6">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+<p>Polipo is good but not stable, It has annoying issues when uploading big files.<br />
+and its development is inactive. but indeed its a promising candidate. Some people used to chain up squid and privoxy to speed up browsing. If there is a mini squid which is easy to setup i would dump polipo.</p>
+
+<p>but yeah, polipo has another advantage. If polipo is integrated into Tor Bundle(I never use this pack so I dont know). You can create a wizard to help set up a hidden service using polipo as a mini http server</p>
+
+<p>Off topic:<br />
+Will there be torIM plugin for Pidgin? I guess chatting through hidden service would be safer than chatting though 3rd party servers.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 27 Aug 2009 06:34:02 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5d2658260e9c122f93e7c0b36f7bdf5f">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+<p>Privoxy was used to shild against possible attacks which could compromise anonymity.</p>
+
+<p>It seems that users aren't protected any more.</p>
+
+<p>There is no hint that polipo can do the same; There has even been some discussion, that current Firefox 3.5 isn't as "solid" against such threats as FF 3.0 was (which will be discontinued). I think that investigating "performance" is not enough. Tor was not meant to enhance "performance" but anonymity.</p>
+
+<p>Privoxy, or any other (even tor build-in) shielding solution shold be part of the software package.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 03 Nov 2009 06:34:03 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9c822183ecdc4d9067a854f4fb02f56d">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+<p>There is always other reverse proxies like<br />
+<a href="http://www.delegate.org/delegate/" title="http://www.delegate.org/delegate/" rel="nofollow">http://www.delegate.org/delegate/</a> (windows/linux)</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 06 Dec 2009 06:34:04 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5245cc1ae446a70581f5aacd3a3c1727">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+<p>Since Polipo was substituted for Privoxy, tor has become much less useful. </p>
+
+<p>BUG: timing out martian query</p>
+
+<p>Configured to measure directory request statistics, but no GeoIP database found!<br />
+Configured to measure entry node statistics, but no GeoIP database found!<br />
+Bridge status changed.  Forgetting GeoIP stats.<br />
+%s\geoip<br />
+Unable to parse state in "%s". Moving it aside to "%s".  This could be a bug in Tor; please tell the developers.<br />
+Uh oh.  We couldn't even validate our own default state. This is a bug in Tor.<br />
+Initialized state<br />
+Unparseable bandwidth history state: %s<br />
+Unable to parse state in "%s"; too many saved bad state files to move aside. Discarding the old state file.<br />
+Bridges cannot be configured to measure additional GeoIP statistics as entry guards.<br />
+Unable to read state file "%s"<br />
+Error in accounting options<br />
+Error loading rendezvous service keys<br />
+Error creating cookie authentication file.<br />
+Error parsing already-validated policy options.<br />
+Previously validated hidden services line could not be added!<br />
+Weirdly, I couldn't even move the state aside. The OS gave an error of %s<br />
+Error initializing keys; exiting</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 06 Feb 2010 06:34:05 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FInvestigating_http_proxy_performance_with_Tor&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:33:50 AM CDT</span>
+<!-- Created <span class="date">Wed 19 Aug 2009 04:57:17 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

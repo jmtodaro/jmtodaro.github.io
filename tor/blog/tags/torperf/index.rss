@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged torperf</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/torperf/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>arma: Research problem: adaptive throttling of Tor clients by entry guards</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/</link>
+
+
+	<category>/tags/bandwidth_throttling</category>
+
+	<category>/tags/research</category>
+
+	<category>/tags/research_progress</category>
+
+	<category>/tags/thesis_idea</category>
+
+	<category>/tags/torperf</category>
+
+
+	<pubDate>Sun, 19 Sep 2010 17:02:14 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:01Z</dcterms:modified>
+
+	<description>&lt;p&gt;Looking for a paper topic (or a thesis topic)? Here&#39;s a Tor research area that needs more attention. The short version is: if we prevent the really loud users from using too much of the Tor network, how much can it help?&lt;/p&gt;
+
+&lt;p&gt;We&#39;ve instrumented Tor&#39;s entry relays so they can rate-limit connections from users, and we&#39;ve instrumented the directory authorities so they can change the rate-limiting parameters globally across the network. Which parameter values improve performance for the Tor network as a whole? How should relays adapt their rate-limiting parameters based on their capacity and based on the network load they see, and what rate-limiting algorithms will work best?&lt;/p&gt;
+
+&lt;p&gt;We&#39;d love to &lt;a href=&quot;https://www.torproject.org/research&quot;&gt;work with you&lt;/a&gt; to help answer these questions. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/research-problem-adaptive-throttling-tor-clients-entry-guards&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

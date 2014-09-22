@@ -1,0 +1,433 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Some notes on progress with IOCP and Libevent</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FSome_notes_on_progress_with_IOCP_and_Libevent&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Some notes on progress with IOCP and Libevent</a>
+
+</span>
+
+
+<div id="content">
+<p>Hi!  I recently wrote up a status report for the progress we're making on hacking Libevent, and I thought I'd post it here too.</p>
+
+<p>BACKGROUND</p>
+
+<p>Tor currently uses Libevent for its high-performance networking calls.  Libevent is a software library originally written by Niels Provos (then of UMichigan, now of Google), and now co-developed by Niels Provos and the Tor Project's Nick Mathewson.  Its purpose is to provide consistent fast interfaces to various operating systems' mutually incompatible fast networking facilities.  Libevent gives applications two basic interfaces to these networking layers: a low-level interface where the application is notified when an operation (like a network read or write) is ready to begin, and a higher-level interface where Libevent itself manages network operations and the application is notified when the network operations are completed. <span class="read-more"><a href="http://blog.torproject.org/blog/some-notes-progress-iocp-and-libevent"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/developerment/" rel="tag">developerment</a>
+
+<a href="../../tags/hacking/" rel="tag">hacking</a>
+
+<a href="../../tags/iocp/" rel="tag">iocp</a>
+
+<a href="../../tags/libevent/" rel="tag">libevent</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-d6e4d549207d5233f061194c6bc3c417">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>Vidalia is failing to clear proxy address.</p>
+
+<p>In Settings, entering an address for a proxy and a port number seems to be permanent. Even if the proxy details are cleared, starting Tor always results in an error message and the Log shows<br />
+Mar 26 01:45:43.562 [Notice] Tor v0.2.0.34 (r18423). This is experimental software. Do not rely on it for strong anonymity. (Running on Windows XP Service Pack 3 [workstation] {terminal services, single user})<br />
+Mar 26 01:45:45.812 [Warning] Couldn't look up "proxy"<br />
+Mar 26 01:45:45.812 [Warning] Failed to parse/validate config: HttpsProxy failed to parse or resolve. Please fix.<br />
+Mar 26 01:45:45.812 [Error] Reading config failed--see warnings above.</p>
+
+<p>Any help, short of re-installing Vidalia ? Thanks</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 25 Mar 2009 06:20:16 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-177ef82be19dbb6bfe118facf14617a3">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>So you are trying to use a proxy to reach the Tor network to get around a firewall or something like that?</p>
+
+<p>I'm not sure what sort of firewall it is, but telling your client to only connect to entry nodes on ports 80 or 443 or using bridges might be a better option. If one of those sounds good, say something, and me or someone else should be able to provide more detailed instructions.</p>
+
+<p>Anyway, have you tried manually editing the configuration file?</p>
+
+<p>Sorry, I'm not sure where it is stored on Windows, being a *nix user myself, but there should be a torrc and maybe a special Vidalia configuration file around somewhere.</p>
+
+<p>Not that you should have to edit the configuration file to disable something you enabled graphically, but until someone figures out why Vidalia isn't working as expected and releases an update, that's probably your best option.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 25 Mar 2009 06:20:17 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-394d2ed60259511565f7a31edf361d4a">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>Any updates on the progress of this? I noticed that</p>
+
+<p><a href="http://code.google.com/p/spserver/downloads/list" title="http://code.google.com/p/spserver/downloads/list" rel="nofollow">http://code.google.com/p/spserver/downloads/list</a></p>
+
+<p>has an implementation of IOCP + libevent available for the 1.4 and 2.0 branches.  Are you aware of this implementation?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 28 Sep 2009 06:20:18 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e49c3809047b2b29b42031dda6001981">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+Thank you, you answered the question I have been searching for which was whether or not to place keywords when blog commenting. <a href="http://www.hayda.net" title="mirc, cinsel sohbet, cinsellik, chat" rel="nofollow">mirc</a> . <a href="http://www.hayda.net" title="mirc, cinsel sohbet, cinsellik, chat" rel="nofollow">chat</a> . <a href="http://www.hayda.net/" title="http://www.hayda.net/" rel="nofollow">http://www.hayda.net/</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FThanks%20%28not%20verified%29&amp;do=goto">Thanks (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 13 Nov 2009 06:20:19 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3a8d0f91ed2c55910f5eb58871db40b8">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>I must add here that to run safely in multiple threads; to allow for arbitrary data filters (including SSL and compression) and connection restraints (including rate limiting); and to provide acceptable RAM usage by use of improved data structures.<br />
+http://pencilsharpenerelectric.com/<br />
+http://causesof-divorce.com/</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 18 Jul 2010 06:20:20 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FSome_notes_on_progress_with_IOCP_and_Libevent&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:20:15 AM CDT</span>
+<!-- Created <span class="date">Sun 01 Mar 2009 04:37:33 PM CST</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

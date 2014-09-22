@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged development</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/development/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/development/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/development/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:06:28Z</updated>
+<entry>
+	<title>July 2010 Progress Report</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/July_2010_Progress_Report/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/July_2010_Progress_Report/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/alpha_releases" />
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/development" />
+
+	<category term="/tags/enhancements" />
+
+	<category term="/tags/orbot" />
+
+	<category term="/tags/performance_improvements" />
+
+	<category term="/tags/portable_bundles" />
+
+	<category term="/tags/progress_report" />
+
+	<category term="/tags/research" />
+
+	<category term="/tags/research_progress" />
+
+	<category term="/tags/research_reports" />
+
+	<category term="/tags/research_results" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+
+	<updated>2011-04-05T12:06:28Z</updated>
+	<published>2010-08-12T14:25:08Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;strong&gt;New releases&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/july-2010-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;On July 4th, we released Tor Browser Bundle 1.3.7 for Microsoft Windows. This is a security update for Firefox and Pidgin. The changes are: update to Firefox 3.5.10 and Pidgin Instant Messenger 2.7.1r2 to fix some security issues.&lt;/li&gt;
+&lt;li&gt;On July 6th, we released Tor Browser Bundle 1.0.8 for GNU/Linux distributions. This fixes a number of security issues with included software. The updates include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Update libpng to 1.4.3 (see CVE-2010-1205)&lt;/li&gt;
+&lt;li&gt;Update Firefox to 3.5.10&lt;/li&gt;
+&lt;li&gt;Update HTTPS Everywhere to 0.2.1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/li&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/July_2010_Progress_Report/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/July_2010_Progress_Report/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

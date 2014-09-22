@@ -1,0 +1,1285 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Tips for Running an Exit Node with Minimal Harassment</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>mikeperry</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:04:07Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_1/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:20Z</updated>
+	<published>2009-06-21T12:03:20Z</published>
+
+	<content type="html" xml:lang="en">
+	Thanks so much for this post.  I was running an exit node a few days ago and ended up using ~20GB in 24 hours!  I had to shut it down because my ISP (Comcast, bastards) was checking my ports and seemed to be cutting me off, as the traffic on my circuits dropped WAY off.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_2/"/>
+
+	<author><name>arma</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:21Z</updated>
+	<published>2009-06-23T12:03:21Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;If comcast cut you off entirely because of the volume of traffic, you can rate limit to help with that problem:&lt;br /&gt;
+&lt;a href=&quot;https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#LimitBandwidth&quot; title=&quot;https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#LimitBandwidth&quot; rel=&quot;nofollow&quot;&gt;https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#LimitBandwidth&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In fact, I&#39;d recommend that all Tor relays add in rate limiting, for the reason that Mike gives in this blog post.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_3/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:22Z</updated>
+	<published>2009-06-23T12:03:22Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Yeah, it&#39;s likely you weren&#39;t discovered by port scanning and more likely by the total bandwidth use. However, if you&#39;re sure that is port scanning, you can put your Tor server on an unused high-numbered port (check /etc/services for blank ranges) and then customize your firewall rules to DROP as opposed to REJECT packets to your unused port ranges on your machine. DROP rules greatly increase the time it takes to port scan your machine, because scanner&#39;s packets need to be retransmitted many times to differentiate between normal packet loss and DROP rules. Also, choosing an infrequently used port will often completely escape scanners&#39; notice, because they typically scan frequently used ports to save time. You probably also want to disable your DirPort in this case too, as that is plain text http, often contains strings that say &quot;Tor&quot; and easily seen by filters at *your* ISP.&lt;/p&gt;
+
+&lt;p&gt;There are also rumors that some of Iran is blocking port 443, so putting your Tor server on strange ports is actually helpful for that too.&lt;/p&gt;
+
+&lt;p&gt;Note this likely only makes sense for middle and bridge nodes. Exit nodes will be so noisy you&#39;ll eventually get some sort of abuse complaint if you don&#39;t follow Mike&#39;s steps (and possibly sometimes even if you do, it sounds like).&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_4/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:23Z</updated>
+	<published>2009-06-24T12:03:23Z</published>
+
+	<content type="html" xml:lang="en">
+	The rationale here is understandable, but #1 &amp;amp; 2 appear to have the undesirable side effect of making exit point surveillance by Government Organizations easier, assuming that the ISP in question is colluding with them (frequently the case, and in many nations, mandated by law or regulation).  Is my conclusion in error?  This might be less of a problem if a TOR user could whitelist or blacklist specific exit point countries (this rests on a presumption that authorities in Venezuela, for example, would likely be relatively uninterested in issues that are locally &quot;sensitive&quot; in Iran, for another example, and vice versa).  Is there any tool in TOR that allows this?  I do understand that the trade-off for wide use of such a capability would be a potential net reduction of bandwidth in an already constrained network.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_5/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:24Z</updated>
+	<published>2009-06-24T12:03:24Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Exits are already listed in the Tor directory that clients use, which is public. The Tor project also provides a DNSRBL with Tor exit nodes to prevent incorrect blocking of Tor nodes that do not actually exit: &lt;a href=&quot;https://www.torproject.org/tordnsel/&quot; title=&quot;https://www.torproject.org/tordnsel/&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/tordnsel/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So the additional threat of government monitoring is not really a valid argument.&lt;br /&gt;
+However, it might be the case that your ISP doesn&#39;t figure it out until you till them, but that will only last until your first abuse complaint if you are running an exit.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_6/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:25Z</updated>
+	<published>2009-06-24T12:03:25Z</published>
+
+	<content type="html" xml:lang="en">
+	Another useful tactic might be to register your reverse DNS domain name with a top level country code that is not the same as the jurisdiction for your IP address. It might be the case that the &quot;copyright cartels&quot; (lol) and others will give up if they see a .se domain name, or similar &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_7/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:26Z</updated>
+	<published>2009-06-24T12:03:26Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;We&#39;ve run an exit node in the past.  Currently not running, will be again soon, I hope...&lt;/p&gt;
+
+&lt;p&gt;We had an excessively simple strategy for reducing entanglements:  being based in the US, we only allowed exit to IP space delegated to Europe, Asia, etc.&lt;/p&gt;
+
+&lt;p&gt;Reducing the chances that any local TLA would want to come knocking is a good thing.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_8/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:27Z</updated>
+	<published>2009-06-25T12:03:27Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Excessively simple perhaps, but arguably effective, for parties at both ends of the pipe.  Now if there was a mechanism for clients in a given location to select an exit node that only exited to IP space in some defined elsewhere, a user in that location could have a little bit more comfort (never guaranties!) in his or her privacy.from the snooping noses of das Heimatland Sicherheit and ilk.&lt;/p&gt;
+
+&lt;p&gt;&amp;gt;We had an excessively simple strategy for reducing entanglements: being based in the &amp;gt;US, we only allowed exit to IP space delegated to Europe, Asia, etc.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_9/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:28Z</updated>
+	<published>2009-06-27T12:03:28Z</published>
+
+	<content type="html" xml:lang="en">
+	Re the subject and previous comments.  Apparently this is possible, see TOR FAQ 3.15.  However, it is not recommended, for several reasons.  In that same FAQ item, there is a reference to using Blossom for this purpose.   Has anyone here tried this?  Is it possible to just run the Blossom client service that allows this option with an existing TOR client, or are the two clients mutually exclusive?  Also, my intent was not to hijack this thread; it might be best if someone could fork this into a separate topic.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_10/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:29Z</updated>
+	<published>2009-06-28T12:03:29Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Our non-US exit strategy was the outgrowth of an idea that seems to have been largely ignored by Tor developers.&lt;/p&gt;
+
+&lt;p&gt;IPv4 space is largely (not completely reliably) delegated to entities called Regional Internet Registries (RIR&#39;s) in large swaths.  The RIR is then responsible for passing out space to the entities in its region.  There are entanglements, such as multinationals, or legacy delegations, but in large part, you can wave your hands a bit and know that any IP address between 77.0.0.0 and 95.255.255.255 is handled by the European RIR, RIPE, IP addresses between 110.0.0.0 and 126.255.255.255 are handled by Asia Pacific&#39;s APNIC, etc.  You can fairly readily break down large chunks of space by RIR based on the first octet, sorting unknown or mixed use stuff into a different category.&lt;/p&gt;
+
+&lt;p&gt;This means that it would be fairly easy to generate &quot;buckets&quot; that roughly categorize IP space.  Tor nodes could be separated into each of these buckets, and you could have a rough idea that you&#39;d likely be crossing political boundaries anytime you went from one bucket to another, simply because most countries do not exist in multiple geographic regions.&lt;/p&gt;
+
+&lt;p&gt;So you categorize Tor nodes into buckets while indexing them: this is a 256-entry database plus a half page of code.&lt;/p&gt;
+
+&lt;p&gt;Now, you can do things with that data.  Rather than just &quot;randomly&quot; picking Tor nodes for a circuit, you could prefer a first hop outside your own bucket, a second hop in neither of those buckets, and a completely random third hop.  So when your US-based PC goes to Amsterdam for the first hop, Taiwan for the second, and ends up exiting in Canada, you&#39;ve done a lot to make it more difficult for any one country to track back to you.&lt;/p&gt;
+
+&lt;p&gt;Perhaps we don&#39;t have to worry about this in the US, but looks like the Iranians do.&lt;/p&gt;
+
+&lt;p&gt;Getting back to the previous comment, however ----&lt;/p&gt;
+
+&lt;p&gt;For those of you who would like to allow exit to non-local space, I suggest looking at&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.iana.org/assignments/ipv4-address-space/&quot; title=&quot;http://www.iana.org/assignments/ipv4-address-space/&quot; rel=&quot;nofollow&quot;&gt;http://www.iana.org/assignments/ipv4-address-space/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Determine your own RIR (ARIN, APNIC, etc) and then generate a list of prefixes that are served by *other* RIR&#39;s.  Allow exit to those prefixes.  For example, a host in America can probably more safely offer exit to 41.*, 51.*, 58-62.*, etc.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_11/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:30Z</updated>
+	<published>2010-07-17T12:03:30Z</published>
+
+	<content type="html" xml:lang="en">
+	It would be great to be able to choose the country of the exit node to overpass the IP filtering of some websites.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 12</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_12/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_12/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:31Z</updated>
+	<published>2010-07-30T12:03:31Z</published>
+
+	<content type="html" xml:lang="en">
+	You can, it&#39;s just not easy, &lt;a href=&quot;https://www.torproject.org/faq#ChooseEntryExit&quot; title=&quot;https://www.torproject.org/faq#ChooseEntryExit&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/faq#ChooseEntryExit&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 13</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_13/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_13/"/>
+
+	<author><name>OldSpewy (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:32Z</updated>
+	<published>2009-06-28T12:03:32Z</published>
+
+	<content type="html" xml:lang="en">
+	I am running a TOR Bridge here in Darwin Australia for the Nedanet i am under constant heavy network hacking attacks originating in china you name it and there trying it !! I think a good tip for anyone running Tor is to make sure you have a better than average firewall setup ... i also run a DMZ  from the router to a locked down  linux box ... i have noticed also no network scanning or attacks from iran .... makes me wonder if China helps Iran with their IT security ?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 14</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_14/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_14/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:33Z</updated>
+	<published>2009-06-28T12:03:33Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;If you are dealing with a box that is running other services besides Tor, simply assign it a second IP and firewall in a manner that puts on the the Tor service on that IP and disallow anything else.&lt;/p&gt;
+
+&lt;p&gt;Worked for me.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 15</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_15/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_15/"/>
+
+	<author><name>kencf0618 (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:34Z</updated>
+	<published>2009-06-29T12:03:34Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;ve followed mikeperry&#39;s advice and sent my ISP a heads-up, suggested URLs and all.  And, somewhat to my surprise, instead of some e-mail boilerplate in 48-hours or so, I got a phone call from &quot;Steve&quot; in within three hours.  Suffice to say, 1) I shall call him tomorrow and ask him to respond exclusively via e-mail from now on, as I&#39;m severely deaf, and 2) determine what level of service I can can be to Tor which is within the ambit of CableOne&#39;s AUP, savvy?&lt;/p&gt;
+
+&lt;p&gt;To wit:  &quot;This is to inform you that given the situation in Iran (and of course, China!) I shall be running Tor exit node kencf0618 mostly but not entirely from midnight to 5 a.m. I&#39;m still tweaking my settings with your AUP in mind, as it is not my intention to degrade anyone&#39;s service. &lt;a href=&quot;https://www.torproject.org/torusers.html.en&quot; title=&quot;https://www.torproject.org/torusers.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/torusers.html.en&lt;/a&gt; &lt;a href=&quot;https://www.torproject.org/overview.html.en&quot; title=&quot;https://www.torproject.org/overview.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/overview.html.en&lt;/a&gt; &lt;a href=&quot;https://www.torproject.org/eff/tor-legal-faq.html.en&quot; title=&quot;https://www.torproject.org/eff/tor-legal-faq.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/eff/tor-legal-faq.html.en&lt;/a&gt; &lt;a href=&quot;https://www.torproject.org/faq-abuse.html.en&quot; title=&quot;https://www.torproject.org/faq-abuse.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/faq-abuse.html.en&lt;/a&gt;&lt;br /&gt;
+Submission Date:    6/29/2009 2:43:39 PM&quot;       &lt;/p&gt;
+
+&lt;p&gt;I rather suspect that inasmuch as I had for a day or so checked off everything on Vidalia&#39;s exit node configuration, &quot;Steve&quot; shall play the Moral Panic card.  My usage was 1.5G in in March, 3.0 in in April, and 2.4 in May, but 8.0 in June due to Tor, so I figured that I might&#39;ve raised a red flag somewhere.&lt;/p&gt;
+
+&lt;p&gt;Any and all advice would be appreciated.  Basically, I want a stable state of whatever it is I can get away with re Tor within my ISP&#39;s AUP.   Think Venn diagram.&lt;/p&gt;
+
+&lt;p&gt;Thanks, folks!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 16</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_16/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_16/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:35Z</updated>
+	<published>2009-07-01T12:03:35Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;hi there,&lt;br /&gt;
+is it possible to have a special build only allowing my exit node for clients originating in china, iran etc.? unfortunately i don´t know very much about this software but am unwilling to hassle with problems from my isp. right now i´m running only in bridge mode.&lt;br /&gt;
+i think there might be a lot more people out there like me that would install a special iran package without having to think about it anymore&lt;/p&gt;
+
+&lt;p&gt;ftd&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 17</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_17/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_17/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:36Z</updated>
+	<published>2009-07-29T12:03:36Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;This wouldn&#39;t work.  The exits don&#39;t know where the client resides.  If this was possible, it would quickly turn the users into a special set which may be easier to track down.  Fragmenting the Tor network into a series of partitions makes everyone less anonymous.  &lt;/p&gt;
+
+&lt;p&gt;See &quot;Anonymity Loves Company&quot; at &lt;a href=&quot;http://freehaven.net/anonbib/cache/usability:weis2006.pdf&quot; title=&quot;http://freehaven.net/anonbib/cache/usability:weis2006.pdf&quot; rel=&quot;nofollow&quot;&gt;http://freehaven.net/anonbib/cache/usability:weis2006.pdf&lt;/a&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 18</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_18/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_18/"/>
+
+	<author><name>kencf0618 (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:37Z</updated>
+	<published>2009-07-01T12:03:37Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Despite the local CableOne tech telling me in the morning that Tor wasn&#39;t a problem and that bandwidth wasn&#39;t an issue (especially between midnight and noon), that afternoon I came home after work to a nasty DMCA take-down notice and a frozen ISP account.  I could receive mail, but that was it, and so perforce had to deal with the sanction by phone...  Apparently someone had sent a bit torrent through my machine.  Some game... I&#39;m no gamer.&lt;/p&gt;
+
+&lt;p&gt;Well!  I steered everyone and their dog to the EFF&#39;s legal boilerplate, but it was only today that I finally reached someone who knew what they were talking about, Tech No. 2, and he informed me that Tor on a residential account was in itself a no-no.  And by then I no longer had the nous to contest the matter.  I had acted in good faith &amp;amp; received bad information, and that was that.  Time to move on.  (He was very interested in the identity of Tech No. 1!)  &lt;/p&gt;
+
+&lt;p&gt;You learn by doing.  Knowing then what I know now, I probably would have stuck with a humble relay or bridge node and stayed under the radar.  Parse your TOS&#39;s and AUP&#39;s well!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 19</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_19/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_19/"/>
+
+	<author><name>kencf0618 (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:38Z</updated>
+	<published>2009-07-11T12:03:38Z</published>
+
+	<content type="html" xml:lang="en">
+	A local CableONE executive has admitted that their AUP is deliberately vague, but inasmuch as he hasn&#39;t told me what of Tor if anything I can run, I am currently running a bridge relay on occasion.  My reading of their AUP is that so long as I&#39;m not degrading anyone&#39;s service or doing anything illegal, I&#39;m good.  If I&#39;m wrong, there&#39;s always Qwest!
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 20</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_20/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_20/"/>
+
+	<author><name>Running (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:39Z</updated>
+	<published>2009-07-26T12:03:39Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I truely believe what you did say here because I read most of the things you write.&lt;br /&gt;
+But sometimes it just doesn&#39;t work for me.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 21</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_21/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_21/"/>
+
+	<author><name>bullwinkle the nouny moose (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:40Z</updated>
+	<published>2009-07-26T12:03:40Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&quot;Our non-US exit strategy was the outgrowth of an idea that seems to have been largely ignored by Tor developers.&quot;&lt;/p&gt;
+
+&lt;p&gt;I may yet have to try that strategy.  I thought I had found a viable alternative by using the &quot;excludeexitnodes&quot; directive in torrc, but experimentation indicates that even after paring the excluded jurisdictions down to just one, the directive is still ignored more often than honored in the interests of building what tor considers to be a viable network.  That is not a complaint, just a results report from one experiment.  More to follow.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 22</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_22/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_22/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:41Z</updated>
+	<published>2009-07-29T12:03:41Z</published>
+
+	<content type="html" xml:lang="en">
+	Did you set ExitNodes {country code} and StrictExitNodes 1?  Also, was there an exit node that allowed exit to the ports you wanted at the time?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 23</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_23/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_23/"/>
+
+	<author><name>itsmeagainamargaret (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:42Z</updated>
+	<published>2009-07-29T12:03:42Z</published>
+
+	<content type="html" xml:lang="en">
+	I may have taken the documentation of &quot;StrictExitNodes&quot; in the manual too literally, as it mentions its use only in conjunction with &quot;ExitNodes&quot;, not &quot;ExcludeExitNodes&quot; (and yes, I do have that one coded correctly &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/../../smileys/smile.png&quot; alt=&quot;:-)&quot; /&gt;  Thank you, that is worth a try.  Be right back...
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 24</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_24/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_24/"/>
+
+	<author><name>obsess much? (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:43Z</updated>
+	<published>2009-07-29T12:03:43Z</published>
+
+	<content type="html" xml:lang="en">
+	Unfortunately my first impression was correct.  Using &quot;StrictExitNodes 1&quot; with &quot;ExcludeExitNodes {XX}&quot; produces a log message &quot;[Warning] StrictExitNodes set, but no ExitNodes listed.&quot;  Of course there is an obvious, if ludicrous alternative - use &quot;StrictExitNodes 1&quot; with &quot;ExitNodes&quot;, passing the entire list of country codes except those to be excluded.  I&#39;ve already coded the list (good thing that wasn&#39;t tedious &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/../../smileys/smile.png&quot; alt=&quot;:-)&quot; /&gt;  It occurs to me to wonder if ExitNodes/torrc will accept an 800 char parameter string (246 each ISO 3166-1 alpha-2 codes x 4 chars [code + comma + space]).  I further wonder just how rigorously that part of teh code has been tested for bounds checking and buffer overflows :-0  I will learn at least some of those answers, I believe...
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 25</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_25/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_25/"/>
+
+	<author><name>Square 2 (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:44Z</updated>
+	<published>2009-07-29T12:03:44Z</published>
+
+	<content type="html" xml:lang="en">
+	No joy.  With 238 country codes specified on ExitNodes, the log message is &quot;[Notice] Have tried resolving or connecting to address &#39;[scrubbed]&#39; at 3 different places. Giving up.&quot;  Restoring the redacted country codes and/or changing &quot;StrictExitNodes 1&quot; to &quot;StrictExitNodes 0&quot; produces the same message.  Evidently it is choking on too long a parameter string, or the process is timing out while it attempts to process it (probably the latter).  I needed to try it though - thanks for the help.  I&#39;m back to &quot;ExcludeExitNodes {XX}&quot; - at least Tor takes that one &quot;under advisement&quot; &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/../../smileys/smile.png&quot; alt=&quot;:-)&quot; /&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 26</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_26/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_26/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:45Z</updated>
+	<published>2010-01-07T13:03:45Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I used to run an exit node on a server hosted by intergenia (server4you), germany.&lt;/p&gt;
+
+&lt;p&gt;I first got notified of a complaint they received reagrding botnet activity, so I restricted the outgoing ports to HTTP and a few similar only, as well as told them the usual (its running a TOR exit node, links to the FAQ and legal disclaimer, etc...)&lt;/p&gt;
+
+&lt;p&gt;It went well for a couple of month, when they contacted me again, after receiving another complaint from a corporation that complained about &quot;spying out information by electronic means&quot; which is a crime since a couple of years ago.&lt;br /&gt;
+the HTTP request in question was something like GET /internal/search?*.* HTTP/1.1&lt;br /&gt;
+on port 80&lt;/p&gt;
+
+&lt;p&gt;The ISP informed me that &quot;regardles of who or what caused that traffic originally, I&#39;d be legally responsible for traffic originating from my IP, and if they&#39;d get any more complains they&#39;d take the entire server of line at my cost, and terminate the contract.&quot;&lt;/p&gt;
+
+&lt;p&gt;I am no lawyer, though this sounds pretty much like bullshit to me.&lt;br /&gt;
+Nevertheless the TOR is no longer running as an exit node.&lt;br /&gt;
+Does anyone know a hosting provider in germany that will accept open proxies and the like in their IP range?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 27</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_27/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_27/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:46Z</updated>
+	<published>2010-08-02T12:03:46Z</published>
+
+	<content type="html" xml:lang="en">
+	I think the solution to the problem is simple. Use prepaid debit cards, pay monthly, and don&#39;t use your real name! They won&#39;t be able to come after you then. Nobody would have enough information to go after you at least. At least nobody with enough interest to. It wouldn&#39;t be a criminal matter. Setup the thing via a wifi connection at a coffee shop too because trying to go through Tor to sign-up for the ISP/host with get your account suspended from the get-go. Everybody thinks a foreign IP and/or changing IP means fraud.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 28</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_28/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_28/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:47Z</updated>
+	<published>2010-08-08T12:03:47Z</published>
+
+	<content type="html" xml:lang="en">
+	Another option is to contact the CCC in Germany and see if the ISP&#39;s legal thoughts are correct.  In most countries, Tor is like a common carrier, where you are not responsible for the traffic it carries.  ISPs generally bend this into &quot;your fault, not ours&quot; and people accept it.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 29</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_29/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_29/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:48Z</updated>
+	<published>2010-01-07T13:03:48Z</published>
+
+	<content type="html" xml:lang="en">
+	Perhaps this will help, &lt;a href=&quot;https://wiki.torproject.org/noreply/TheOnionRouter/GoodBadISPs&quot; title=&quot;https://wiki.torproject.org/noreply/TheOnionRouter/GoodBadISPs&quot; rel=&quot;nofollow&quot;&gt;https://wiki.torproject.org/noreply/TheOnionRouter/GoodBadISPs&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 30</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_30/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_30/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:49Z</updated>
+	<published>2010-01-20T13:03:49Z</published>
+
+	<content type="html" xml:lang="en">
+	Great tips. Tor is a traffic routing network. I personally have never experienced problems using the Tor Network. Generally, most computers that join Tor are good ones and have the intent to help others. Security is very important especially when it comes to your computer.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 31</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_31/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_31/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:50Z</updated>
+	<published>2010-02-13T13:03:50Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Nice one..&lt;br /&gt;
+I completely agree but I also think experimentation indicates that even after paring the excluded jurisdictions down to just one, the directive is still ignored more often than honored in the interests of building what tor considers to be a viable network.&lt;br /&gt;
+online games &lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 32</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_32/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_32/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:51Z</updated>
+	<published>2010-02-24T13:03:51Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I have a question for you ExitNode experts.  There are only a few people who run ExitNodes for the whole of the UK.  So, as a tor user,  if I always exit through one of those, say, 10 nodes does that mean that I always appear to have one of 10 ip addresses to programs that would check for my ip address ?&lt;/p&gt;
+
+&lt;p&gt;If the above is true then I would be surprised how easy it would be to ban those specific IPs as &#39;not really being trusted to only have people from the UK&#39;.  Or is there some IP trickery built into tor that keeps the IPs more random ... &lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 33</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_33/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_33/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:52Z</updated>
+	<published>2010-02-24T13:03:52Z</published>
+
+	<content type="html" xml:lang="en">
+	The ExitNode sends the final request, so the ExitNode&#39;s IP is what is seen. If they are all blocked you&#39;re out of luck.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 34</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_34/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_34/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:53Z</updated>
+	<published>2010-07-01T12:03:53Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Good article!!!!!!! Also the port 8088 is sometimes used for HTTP!!!!!&lt;/p&gt;
+
+&lt;p&gt;However, and i wrote this to the TorProject, there is the threat of ACTA on coming!!!! remember!?!!! «If it&#39;ll pass, you won&#39;t have anymore a safe harbor nor anything to protect tor nodes whenever they&#39;re used to download copyrighted things!!!!! It isn&#39;t something like the DMCA!!!!! It&#39;s a world-wide law (or almost!!) so it&#39;ll apply in the USA, Europe (Sweden and Germany included!!), Australia, Japan, and so on!!!!!!&lt;br /&gt;
+What&#39;s also funny, is that criticizing the pro-copyright (or anti-piracy) laws will be &quot;illegal&quot; too!!!!!!!!!!!!! It&#39;s the freedom of speech, as seen from lobbyists!!!!!&lt;br /&gt;
+Yeah!!! Say goodbye to the TorProject, if ACTA will go through!!!!!»&lt;/p&gt;
+
+&lt;p&gt;http://honeybeenet.phpbb3now.com/viewtopic.php?f=8&amp;amp;t=285&lt;/p&gt;
+
+&lt;p&gt;~bee!!!!!!!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 35</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_35/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_35/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:54Z</updated>
+	<published>2010-07-01T12:03:54Z</published>
+
+	<content type="html" xml:lang="en">
+	Tor won&#39;t go away.  The Tor Project, inc as a non-profit may have to cease to exist in the USA, but Tor won&#39;t go away.  Just like I2P, FreeNet, etc won&#39;t go away either.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 36</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_36/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_36/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:55Z</updated>
+	<published>2010-07-01T12:03:55Z</published>
+
+	<content type="html" xml:lang="en">
+	Is it normal for an exit node to only use 1/3rd of the bandwidth available? What would prevent tor from using all the available bandwidth?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 37</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_37/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_37/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:56Z</updated>
+	<published>2010-07-02T12:03:56Z</published>
+
+	<content type="html" xml:lang="en">
+	Give it time, clients will find it and use it.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 38</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_38/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_38/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:57Z</updated>
+	<published>2010-07-03T12:03:57Z</published>
+
+	<content type="html" xml:lang="en">
+	For we Windows uses that are not high tech as opposed to lazy --- How do we tell if the IP provider might be a problem? I have been running two bridges for a year and every so often the just stop showing any traffic. I have found the only way to get them going again is to uninstall the program and reinstall it. Yes I know I have been told I shouldn&#39;t have to do that but for now it that or just quit.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 39</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_39/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_39/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:58Z</updated>
+	<published>2010-07-03T12:03:58Z</published>
+
+	<content type="html" xml:lang="en">
+	Suffice to say, the EFF runs a relay, and so do I; CableOne has a three-strikes policy, and furthermore at the second and third strikes you have to deal, not with help desk morons by phone, but with lawyers by snail mail.  I wish I had had some of the fresher salient information in this thread a year ago, but as it is, a tip of the hat to those running exit nodes...!   (kencf0618)
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 40</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_40/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_40/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:03:59Z</updated>
+	<published>2010-07-08T12:03:59Z</published>
+
+	<content type="html" xml:lang="en">
+	How do we tell if the IP provider might be a problem? I have been running two bridges for a year and every so often the just stop showing any traffic. I have found the only way to get them going again is to uninstall the program and reinstall it.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 41</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_41/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_41/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:04:00Z</updated>
+	<published>2010-08-02T12:04:00Z</published>
+
+	<content type="html" xml:lang="en">
+	It&#39;s not the IP provider. And you meant to say ISP. It&#39;s something with your computer that is screwy it would appear most likely. Even if it isn&#39;t and it does haves something to do elsewhere it isn&#39;t the ISP. That&#39;s about the only thing you can be sure of. 
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 42</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_42/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_42/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:04:01Z</updated>
+	<published>2010-08-09T12:04:01Z</published>
+
+	<content type="html" xml:lang="en">
+	you should check your provider list. some of them forbid the use of their servers for tor and other anonymization systems.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 43</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_43/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_43/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:04:02Z</updated>
+	<published>2010-09-11T12:04:02Z</published>
+
+	<content type="html" xml:lang="en">
+	That thing about the separate IPs is helpful. It would also mean that you wouldn&#39;t experience slow-down.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 44</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_44/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_44/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:04:03Z</updated>
+	<published>2010-09-17T12:04:03Z</published>
+
+	<content type="html" xml:lang="en">
+	I just had to shut down my exit node due to DMCA complaints for bittorrent traffic. My exit node received 7 DMCA complaints within two months. After the first two, I restricted my exit policy just slightly more open than what&#39;s listed in this article, but still pretty limited. That delayed the next couple complaints, but they kept coming. The provider was very understanding, but were getting pressure from their upstream provider. I know it&#39;s a necessary evil, but the bittorrent traffic really hurts the tor network.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 45</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_45/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_45/"/>
+
+	<author><name>mikeperry</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:04:04Z</updated>
+	<published>2010-11-29T13:04:04Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;The key thing about the ports listed here is that there are only ~60 of them, which represent the 60 most commonly used ports. This drastically reduces the odds that a bittorrent user will select your node. &lt;/p&gt;
+
+&lt;p&gt;Since bittorrent clients can be run on any port, and most of them pick random ports, every port you add to your exit policy increases the probability of a bittorrent client using your exit node to connect to a monitored peer that is listening on that port. This means that enabling ranges of ports is especially bad, unfortunately. Each new port adds 1/65535 to your risk of getting DMCA takedowns.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 46</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_46/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_46/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:04:05Z</updated>
+	<published>2011-02-07T13:04:05Z</published>
+
+	<content type="html" xml:lang="en">
+	can someone help me in how use ExcludeExitNode and ExitNode in my toorc file..??StrictExitNode???? 
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 47</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_47/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_47/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:04:06Z</updated>
+	<published>2011-03-15T12:04:06Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I too am in the same situation.  There is very little documentation on the subject.  From what I can see, one simply adds ExcludeExitNodes 255.255.255.2,255.255.255.3 ... to thier torrc config file.  No matter what I do I just cant get this to work.  Tor continues to use the Excluded Exit nodes.  &lt;/p&gt;
+
+&lt;p&gt;Here&#39;s what I do,&lt;br /&gt;
+Add ExcludeExitNode XXX.XXX.XXX.XXX to my torrc file.&lt;br /&gt;
+Restart Tor&lt;br /&gt;
+run SIGNAL NEWNYM&lt;br /&gt;
+Check my external IP&lt;/p&gt;
+
+&lt;p&gt;Nothing say 1 in every 5 goes, TOR will use the IP I specified in ExcludeExitNode.  WTF?  Any help on this would be greatly appreciated.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 48</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_48/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comment_48/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:04:07Z</updated>
+	<published>2011-02-18T13:04:07Z</published>
+
+	<content type="html" xml:lang="en">
+	I&#39;ve been running a relay and a bridge relay continually since my last comment (in July 2010) without any trouble whatsoever.  Not a peep from anyone.  Given that my ISP  doesn&#39;t want to deal with the DMCA legal paper overhead, and just cuts you off at the knees if they get a take-down notice, I&#39;m sticking with what works.  I&#39;m not front line, exit node troop, I&#39;m a stable segment in the logistical tail. (kencf0618)           
+
+	</content>
+
+
+
+</entry>
+
+</feed>

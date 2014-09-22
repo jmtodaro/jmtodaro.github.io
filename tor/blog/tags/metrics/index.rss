@@ -1,0 +1,516 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged metrics</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/metrics/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: January 2011 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/January_2011_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/January_2011_Progress_Report/</link>
+
+
+	<category>/tags/anonymity_features</category>
+
+	<category>/tags/feature_enhancements</category>
+
+	<category>/tags/metrics</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/releases</category>
+
+	<category>/tags/research_reports</category>
+
+
+	<pubDate>Tue, 08 Feb 2011 10:20:11 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:14:52Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New releases&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;On January 4th, we released the latest in the alpha branch of torbutton,&lt;br /&gt;
+version 1.3.1, see&lt;br /&gt;
+&lt;a href=&quot;https://blog.torproject.org/blog/torbutton-alpha-131-released-testing&quot; title=&quot;https://blog.torproject.org/blog/torbutton-alpha-131-released-testing&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/torbutton-alpha-131-released-testing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;On January 7th, A new release of arm was released, including enhancements&lt;br /&gt;
+targeted at performance and cross platform compatibility. See,&lt;br /&gt;
+&lt;a href=&quot;http://www.atagar.com/arm/&quot; title=&quot;http://www.atagar.com/arm/&quot; rel=&quot;nofollow&quot;&gt;http://www.atagar.com/arm/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;On January 9th, The Tor Browser Bundles were updated with some important&lt;br /&gt;
+security fixes, see&lt;br /&gt;
+&lt;a href=&quot;https://blog.torproject.org/blog/new-tor-browser-bundle-packages-1&quot; title=&quot;https://blog.torproject.org/blog/new-tor-browser-bundle-packages-1&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/new-tor-browser-bundle-packages-1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;On January 10th, we updated the OS X PPC packages after a long hiatus due to&lt;br /&gt;
+failed hardware.  They are now available in stable (0.2.1.28) and alpha&lt;br /&gt;
+(0.2.2.20-alpha) versions, both with the latest Vidalia (0.2.10). See,&lt;br /&gt;
+&lt;a href=&quot;https://blog.torproject.org/blog/new-ppc-packages-available&quot; title=&quot;https://blog.torproject.org/blog/new-ppc-packages-available&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/new-ppc-packages-available&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;On January 15th, we released the latest in the stable Tor series, version&lt;br /&gt;
+Tor 0.2.1.29. See,&lt;br /&gt;
+&lt;a href=&quot;https://blog.torproject.org/blog/tor-02129-released-security-patches&quot; title=&quot;https://blog.torproject.org/blog/tor-02129-released-security-patches&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-02129-released-security-patches&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;On January 16, we released many updated packages. See,&lt;br /&gt;
+&lt;a href=&quot;https://blog.torproject.org/blog/lots-new-tor-packages&quot; title=&quot;https://blog.torproject.org/blog/lots-new-tor-packages&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/lots-new-tor-packages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;On January 15th, we released the latest in the Tor alpha series, version&lt;br /&gt;
+0.2.2.21-alpha. See,&lt;br /&gt;
+&lt;a href=&quot;https://blog.torproject.org/blog/tor-02221-alpha-out-security-patches&quot; title=&quot;https://blog.torproject.org/blog/tor-02221-alpha-out-security-patches&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-02221-alpha-out-security-patches&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;On January 20th, the TAILS LiveCD/USB team released an updated version,&lt;br /&gt;
+0.6.2.  It is available at &lt;a href=&quot;http://amnesia.boum.org/news/version_0.6.2/&quot; title=&quot;http://amnesia.boum.org/news/version_0.6.2/&quot; rel=&quot;nofollow&quot;&gt;http://amnesia.boum.org/news/version_0.6.2/&lt;/a&gt;. &lt;/li&gt;
+&lt;li&gt;On January 25th, we released Tor 0.2.2.22-alpha. See&lt;br /&gt;
+&lt;a href=&quot;https://blog.torproject.org/blog/tor-02222-alpha-out&quot; title=&quot;https://blog.torproject.org/blog/tor-02222-alpha-out&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-02222-alpha-out&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Released new VisiTor version 0.0.4 that contains a Python version of the&lt;br /&gt;
+weblog-parsing script contributed by Kiyoto Tamura and two minor fixes. See&lt;br /&gt;
+&lt;a href=&quot;https://metrics.torproject.org/tools.html#visitor&quot; title=&quot;https://metrics.torproject.org/tools.html#visitor&quot; rel=&quot;nofollow&quot;&gt;https://metrics.torproject.org/tools.html#visitor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Design, develop, and implement enhancements that make Tor a better&lt;br /&gt;
+tool for users in censored countries.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;From the 0.2.2.22-alpha release notes, Adjust our TLS Diffie-Hellman&lt;br /&gt;
+parameters to match those used by Apache&#39;s mod_ssl.  This is a slight tweak to&lt;br /&gt;
+Tor&#39;s TLS handshake that makes relays and bridges that run this new version&lt;br /&gt;
+reachable from Iran again.&lt;/li&gt;
+&lt;li&gt;Started discussion of TLS normalization. The developer discussion is at&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/dev/Jan-2011/msg00029.html&quot; title=&quot;http://archives.seul.org/or/dev/Jan-2011/msg00029.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/dev/Jan-2011/msg00029.html&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Continued discussions of pluggable transports.  The draft specification&lt;br /&gt;
+can be found at&lt;br /&gt;
+&lt;a href=&quot;https://gitweb.torproject.org/tor.git/blob/HEAD:/doc/spec/proposals/ideas/xxx-&quot; title=&quot;https://gitweb.torproject.org/tor.git/blob/HEAD:/doc/spec/proposals/ideas/xxx-&quot; rel=&quot;nofollow&quot;&gt;https://gitweb.torproject.org/tor.git/blob/HEAD:/doc/spec/proposals/idea...&lt;/a&gt;&lt;br /&gt;
+pluggable-transport.txt.  The start of the discussion can be found on the or-dev&lt;br /&gt;
+mailing list at &lt;a href=&quot;http://archives.seul.org/or/dev/Jan-2011/msg00018.html&quot; title=&quot;http://archives.seul.org/or/dev/Jan-2011/msg00018.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/dev/Jan-2011/msg00018.html&lt;/a&gt;. &lt;/li&gt;
+&lt;li&gt;Started discussion of Proposal 176 to change the version 3 handshake to&lt;br /&gt;
+not use TLS renegotiation.  Proposal 176 is at&lt;br /&gt;
+&lt;a href=&quot;https://gitweb.torproject.org/tor.git/blob/HEAD:/doc/spec/proposals/176-revising&quot; title=&quot;https://gitweb.torproject.org/tor.git/blob/HEAD:/doc/spec/proposals/176-revising&quot; rel=&quot;nofollow&quot;&gt;https://gitweb.torproject.org/tor.git/blob/HEAD:/doc/spec/proposals/176-...&lt;/a&gt;&lt;br /&gt;
+-handshake.txt.  The developer discussion starts at&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/dev/Jan-2011/msg00052.html&quot; title=&quot;http://archives.seul.org/or/dev/Jan-2011/msg00052.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/dev/Jan-2011/msg00052.html&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Andrew and Roger documented the features in the Tor -alpha software that&lt;br /&gt;
+allow users to use a SOCKS proxy as a circumvention method should Tor be blocked&lt;br /&gt;
+in some manner.  &lt;a href=&quot;https://www.torproject.org/docs/proxychain.html.en&quot; title=&quot;https://www.torproject.org/docs/proxychain.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/docs/proxychain.html.en&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Architecture and technical design docs for Tor enhancements&lt;br /&gt;
+related to blocking-resistance.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Continued discussions of pluggable transports.  The draft specification&lt;br /&gt;
+can be found at&lt;br /&gt;
+&lt;a href=&quot;https://gitweb.torproject.org/tor.git/blob/HEAD:/doc/spec/proposals/ideas/xxx-&quot; title=&quot;https://gitweb.torproject.org/tor.git/blob/HEAD:/doc/spec/proposals/ideas/xxx-&quot; rel=&quot;nofollow&quot;&gt;https://gitweb.torproject.org/tor.git/blob/HEAD:/doc/spec/proposals/idea...&lt;/a&gt;&lt;br /&gt;
+pluggable-transport.txt.  The start of the discussion can be found on the or-dev&lt;br /&gt;
+mailing list at &lt;a href=&quot;http://archives.seul.org/or/dev/Jan-2011/msg00018.html&quot; title=&quot;http://archives.seul.org/or/dev/Jan-2011/msg00018.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/dev/Jan-2011/msg00018.html&lt;/a&gt;. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Hide Tor&#39;s network signature.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;From the 0.2.2.22-alpha release notes, Adjust our TLS Diffie-Hellman&lt;br /&gt;
+parameters to match those used by Apache&#39;s mod_ssl.  This is a slight tweak to&lt;br /&gt;
+Tor&#39;s TLS handshake that makes relays and bridges that run this new version&lt;br /&gt;
+reachable from Iran again.&lt;/li&gt;
+&lt;li&gt;Started discussion of TLS normalization. The developer discussion is at&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/dev/Jan-2011/msg00029.html&quot; title=&quot;http://archives.seul.org/or/dev/Jan-2011/msg00029.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/dev/Jan-2011/msg00029.html&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Continued discussions of pluggable transports.  The draft specification&lt;br /&gt;
+can be found at&lt;br /&gt;
+&lt;a href=&quot;https://gitweb.torproject.org/tor.git/blob/HEAD:/doc/spec/proposals/ideas/xxx-&quot; title=&quot;https://gitweb.torproject.org/tor.git/blob/HEAD:/doc/spec/proposals/ideas/xxx-&quot; rel=&quot;nofollow&quot;&gt;https://gitweb.torproject.org/tor.git/blob/HEAD:/doc/spec/proposals/idea...&lt;/a&gt;&lt;br /&gt;
+pluggable-transport.txt.  The start of the discussion can be found on the or-dev&lt;br /&gt;
+mailing list at &lt;a href=&quot;http://archives.seul.org/or/dev/Jan-2011/msg00018.html&quot; title=&quot;http://archives.seul.org/or/dev/Jan-2011/msg00018.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/dev/Jan-2011/msg00018.html&lt;/a&gt;. &lt;/li&gt;
+&lt;li&gt;Started discussion of Proposal 176 to change the version 3 handshake to&lt;br /&gt;
+not use TLS renegotiation.  Proposal 176 is at&lt;br /&gt;
+&lt;a href=&quot;https://gitweb.torproject.org/tor.git/blob/HEAD:/doc/spec/proposals/176-revising&quot; title=&quot;https://gitweb.torproject.org/tor.git/blob/HEAD:/doc/spec/proposals/176-revising&quot; rel=&quot;nofollow&quot;&gt;https://gitweb.torproject.org/tor.git/blob/HEAD:/doc/spec/proposals/176-...&lt;/a&gt;&lt;br /&gt;
+-handshake.txt.  The developer discussion starts at&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/dev/Jan-2011/msg00052.html&quot; title=&quot;http://archives.seul.org/or/dev/Jan-2011/msg00052.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/dev/Jan-2011/msg00052.html&lt;/a&gt;&lt;/li&gt;
+&lt;p&gt;.
+&lt;/ul&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Grow the Tor network and user base. Outreach.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Held a successful public hackfest at MIT&#39;s Center for Future Civic&lt;br /&gt;
+Media,&lt;br /&gt;
+&lt;a href=&quot;https://blog.torproject.org/blog/boston-tor-hackers-join-us-saturday-january-&quot; title=&quot;https://blog.torproject.org/blog/boston-tor-hackers-join-us-saturday-january-&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/boston-tor-hackers-join-us-saturday-jan...&lt;/a&gt;&lt;br /&gt;
+15th.&lt;/li&gt;
+&lt;li&gt;Due to the events in Egypt, Tor usage by activists, and human rights&lt;br /&gt;
+organizations requesting our technical help, we were featured in over 30 news&lt;br /&gt;
+stories, interviews, and articles. The master list of the media highlights is at&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/press/inthemedia.html.en&quot; title=&quot;https://www.torproject.org/press/inthemedia.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/press/inthemedia.html.en&lt;/a&gt;.  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Bridge relay and bridge authority work.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Karsten did some work to publish sanitized bridge pool assignments. We&#39;re&lt;br /&gt;
+going to publish the information which distribution pool a bridge is assigned&lt;br /&gt;
+to.  The distribution pool defines whether we&#39;re giving out bridges via HTTP,&lt;br /&gt;
+via email, or not at all (reserved pool).  The plan is to remove all sensitive&lt;br /&gt;
+information from bridge pool assignments before making them available on&lt;br /&gt;
+&lt;a href=&quot;https://metrics.torproject.org/data.html&quot; title=&quot;https://metrics.torproject.org/data.html&quot; rel=&quot;nofollow&quot;&gt;https://metrics.torproject.org/data.html&lt;/a&gt;.  The discussion was started on&lt;br /&gt;
+the or-dev list&lt;br /&gt;
+at &lt;a href=&quot;http://archives.seul.org/or/dev/Jan-2011/msg00033.html&quot; title=&quot;http://archives.seul.org/or/dev/Jan-2011/msg00033.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/dev/Jan-2011/msg00033.html&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Scalability, load balancing, directory overhead, efficiency.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;We released an updated version of Tor&lt;br /&gt;
+Weather, &lt;a href=&quot;https://weather.torproject.org&quot; title=&quot;https://weather.torproject.org&quot; rel=&quot;nofollow&quot;&gt;https://weather.torproject.org&lt;/a&gt;.  Tor Weather is a web application used&lt;br /&gt;
+to allow tor relay operators to sign up for notices when their relay is offline,&lt;br /&gt;
+drops below a threshold of bandwidth served, and receive notifications when a&lt;br /&gt;
+new version of tor is released.  This version of the web application was written&lt;br /&gt;
+by the Wesleyan University Humantarian Free and Open Source Software (HFOSS)&lt;br /&gt;
+team working on Tor for their summer project, &lt;a href=&quot;http://hfoss.wesleyan.edu/&quot; title=&quot;http://hfoss.wesleyan.edu/&quot; rel=&quot;nofollow&quot;&gt;http://hfoss.wesleyan.edu/&lt;/a&gt;. &lt;/li&gt;
+&lt;li&gt;Karsten started improving metrics-db performance, so that it can scale to&lt;br /&gt;
+five years of data with 10K relays and 5K bridges.  This included a few tricks&lt;br /&gt;
+to avoid parsing the same data twice.  Also changed the database schema to use&lt;br /&gt;
+SQL arrays to store bandwidth histories, which is apparently a less used part of&lt;br /&gt;
+PostgreSQL, because he found a confirmed bug in PostgreSQL 8.2 (released&lt;br /&gt;
+2006-12-05).&lt;/li&gt;
+&lt;li&gt;Karsten found two major, if not blocking, bugs in Torouter when run on the&lt;br /&gt;
+suggested Buffalo hardware. The Excito hardware does not have these problems.&lt;br /&gt;
+The bug numbers are 2334,&lt;br /&gt;
+&lt;a href=&quot;https://trac.torproject.org/projects/tor/ticket/2334&quot; title=&quot;https://trac.torproject.org/projects/tor/ticket/2334&quot; rel=&quot;nofollow&quot;&gt;https://trac.torproject.org/projects/tor/ticket/2334&lt;/a&gt;, and 2376,&lt;br /&gt;
+&lt;a href=&quot;https://trac.torproject.org/projects/tor/ticket/2376&quot; title=&quot;https://trac.torproject.org/projects/tor/ticket/2376&quot; rel=&quot;nofollow&quot;&gt;https://trac.torproject.org/projects/tor/ticket/2376&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Karsten found and fixed a problematic bridge sanitizer bug that made us&lt;br /&gt;
+keep original IP addresses in reject lines.  Updated metrics-db and sanitized&lt;br /&gt;
+all bridge descriptors since May 2008 once again.  The latter kept two of our&lt;br /&gt;
+computers busy for 2.5 weeks.&lt;/li&gt;
+&lt;li&gt;Karsten started with exporting bridge pool assignments and restarted&lt;br /&gt;
+discussion about preserving hashed IP addresses in bridge descriptors.&lt;/li&gt;
+&lt;li&gt;Karsten upgraded Torperfs to output information about which circuits they&lt;br /&gt;
+used for measuring download times.  Made data available on metrics website.&lt;br /&gt;
+Added new graphs combining all Torperf sources and showing the fraction of&lt;br /&gt;
+timeouts and failures.  Started Torperfs with custom entry guard selection&lt;br /&gt;
+strategies.&lt;/li&gt;
+&lt;li&gt;Karsten talked to Björn Scheuermann and Florian Tschorsch about&lt;br /&gt;
+performance improvements in Tor.  Working on a patch with them to be included in&lt;br /&gt;
+Tor 0.2.3.x.&lt;/li&gt;
+&lt;li&gt;Karsten improved graphs on metrics-web by adding more countries and by&lt;br /&gt;
+allowing users to customize the graph image resolution.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;More reliable download mechanism.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Sebastian and Erinn started to tackle Thandy and Hudson work. They solved&lt;br /&gt;
+the Hudson issue on Windows and made a good deal of progress on getting Thandy&lt;br /&gt;
+set up, understanding the different roles and responsibilities of each in the&lt;br /&gt;
+Thandy system. Installing files by copying into the right place works, but the&lt;br /&gt;
+packaging db that would be required for TBB is not yet working.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Translations&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Updated translations for the following languages: af ak am arn ast be bg bn&lt;br /&gt;
+bn_IN csb cy dz eo eu fil fur ga gl gun ha he hi ht hu is it km kn kw lb ln lo&lt;br /&gt;
+lt lv mg mi mk ml mn mr ms mt nah nap ne nn nso oc pa pap pms ps sco son sw ta&lt;br /&gt;
+te tg th ti tk uk ur ve wa zh_HK zu.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/January_2011_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Measuring Tunisian Tor Usage</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tunisian_Tor_Usage/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tunisian_Tor_Usage/</link>
+
+
+	<category>/tags/circumvention</category>
+
+	<category>/tags/internet_censorship</category>
+
+	<category>/tags/metrics</category>
+
+	<category>/tags/tunisia</category>
+
+
+	<pubDate>Thu, 06 Jan 2011 20:28:34 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:11:44Z</dcterms:modified>
+
+	<description>&lt;p&gt;I&#39;ve been following the crackdown on Internet freedom in Tunisia over the past few weeks.  I run an unpublished &lt;a href=&quot;https://www.torproject.org/docs/bridges.html.en&quot;&gt;tor bridge&lt;/a&gt; for some Tunisian activists.  It&#39;s been used fairly well for the past 18 months, however it has not seen traffic for a week.  Tor usage from Tunisia has never been very high, but for those who need it, it&#39;s been a lifesaver; or so I&#39;ve been told.  An example of what&#39;s going on in the country: &lt;a href=&quot;http://jilliancyork.com/2011/01/06/tunisian-blogger-slim-amamou-arrested/&quot;&gt;Slim Amamou arrested&lt;/a&gt;, &lt;a href=&quot;http://globalvoicesonline.org/specialcoverage/tunisia-uprising-201011/&quot;&gt;Global Voices&#39; coverage of Tunisia&lt;/a&gt;, &lt;a href=&quot;http://advocacy.globalvoicesonline.org/categories/countries/tunisia/&quot;&gt;Global Voices Advocacy: Tunisia&lt;/a&gt;, and &lt;a href=&quot;http://english.aljazeera.net/indepth/features/2011/01/20111614145839362.html&quot;&gt;Tunisia&#39;s bitter cyberwar&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Out of interest, I wondered how Tor usage in Tunisia has fared over 2010. I wonder if Facebook, Twitter, and other social network services are seeing an increase of users logging into Tunisian social networks from Tor. &lt;/p&gt;
+
+&lt;p&gt;It appears we&#39;re having an impact in Tunisia.  More help is needed.&lt;/p&gt;
+
+&lt;p&gt;This is graph of Tor clients directly connecting to the rest of the network:&lt;br /&gt;
+&lt;img src=&quot;https://blog.torproject.org/files/direct-users-2010-12-31-tn-2010-01-01.png&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a graph of Tor clients connecting through bridges to the rest of the network:&lt;br /&gt;
+&lt;img src=&quot;https://blog.torproject.org/files/bridge-users-2010-12-31-tn-2010-01-01.png&quot;&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tunisian_Tor_Usage/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: October 2010 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/October_2010_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/October_2010_Progress_Report/</link>
+
+
+	<category>/tags/arm</category>
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/https_everywhere</category>
+
+	<category>/tags/metrics</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/tor_browser_bundle</category>
+
+	<category>/tags/translations</category>
+
+
+	<pubDate>Tue, 09 Nov 2010 14:24:09 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:11:05Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New Releases&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/october-2010-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;On October 29th, we released updated Tor Browser Bundles for OS X, Linux, and Windows.  This is an upgrade to Firefox 3.6.12 which fixes a critical bug and OS X users&#39; Torbutton will now show up. &lt;a href=&quot;https://blog.torproject.org/blog/new-tor-browser-bundles-released-take-two&quot; title=&quot;https://blog.torproject.org/blog/new-tor-browser-bundles-released-take-two&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/new-tor-browser-bundles-released-take-t...&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;On October 28th, we released new OSX Vidalia bundles which include Tor 0.2.2.17-alpha.  Vidalia 0.2.10 changed the way we deal with the geoip databases by dropping the remote geoip lookups. This caused a lot of headaches for OS X users because of the layout of the package, but it&#39;s fixed in this version. &lt;a href=&quot;https://blog.torproject.org/blog/mac-os-x-vidalia-bundle-02217-alpha-out&quot; title=&quot;https://blog.torproject.org/blog/mac-os-x-vidalia-bundle-02217-alpha-out&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/mac-os-x-vidalia-bundle-02217-alpha-out&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;On October 27th, we released a new Tor Check to fix links to documentation urls, and clarify what users should do when getting the success result. &lt;a href=&quot;https://check.torproject.org&quot; title=&quot;https://check.torproject.org&quot; rel=&quot;nofollow&quot;&gt;https://check.torproject.org&lt;/a&gt;.&lt;/li&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/October_2010_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>kjbbb: Tor Metrics - Google Summer of Code 2010</title>
+	<dcterms:creator>kjbbb</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Metrics_-_Google_Summer_of_Code_2010/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Metrics_-_Google_Summer_of_Code_2010/</link>
+
+
+	<category>/tags/gsoc</category>
+
+	<category>/tags/gsoc2010</category>
+
+	<category>/tags/metrics</category>
+
+
+	<pubDate>Thu, 14 Oct 2010 00:04:22 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:10:16Z</dcterms:modified>
+
+	<description>&lt;p&gt;Although it has been a while since GSoC ended, I want to give a quick run-down of my project and how everything went over the summer. The plan was to migrate the &lt;a href=&quot;https://metrics.torproject.org/index.html&quot; alt=&quot;tor metrics portal&quot; title=&quot;tor metrics portal&quot;&gt;Tor metrics portal&lt;/a&gt; from the file based system to a database driven one. This allows us to have a more dynamic website and a better interface to derive our statistics and visuals from. I spent most of my time designing the database schema (which had to be carefully optimized due to the amount of data we have), and the remainder of the time working on things such as &lt;a href=&quot;https://metrics.torproject.org/graphs.html&quot; alt=&quot;dynamic graphs&quot; title=&quot;dynamic graphs&quot;&gt;dynamic graphs&lt;/a&gt; and migrating the website to Java Server Pages. Thankfully, I finished almost everything I had planned to do, and it seems as though my work this summer is being put to good use! A significant amount of my metrics code has been merged, which is certainly a good feeling.  &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-metrics-google-summer-code-2010&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_Metrics_-_Google_Summer_of_Code_2010/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: April 2010 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/</link>
+
+
+	<category>/tags/alpha_releases</category>
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/enhancements</category>
+
+	<category>/tags/metrics</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/tor_browser_bundle</category>
+
+
+	<pubDate>Mon, 10 May 2010 15:22:32 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:31Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New releases&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;On April 24, we released Tor 0.2.2.13-alpha. This version addresses the recent connection and memory overload problems we’ve been seeing on relays, especially relays with their DirPort open. If your relay has been crashing, or you turned it off because it used too many resources, give this release a try.&lt;/p&gt;
+
+&lt;p&gt;o Major bugfixes:&lt;br /&gt;
+    - Teach relays to defend themselves from connection overload. Relays&lt;br /&gt;
+      now close idle circuits early if it looks like they were intended&lt;br /&gt;
+      for directory fetches. Relays are also more aggressive about closing&lt;br /&gt;
+      TLS connections that have no circuits on them. Such circuits are&lt;br /&gt;
+      unlikely to be re-used, and tens of thousands of them were piling&lt;br /&gt;
+      up at the fast relays, causing the relays to run out of sockets&lt;br /&gt;
+      and memory. Bugfix on 0.2.0.22-rc (where clients started tunneling&lt;br /&gt;
+      their directory fetches over TLS).&lt;/p&gt;
+
+&lt;p&gt;  o Minor features: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/april-2010-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: December 2009 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/December_2009_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/December_2009_Progress_Report/</link>
+
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/enhancements</category>
+
+	<category>/tags/metrics</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/releases</category>
+
+	<category>/tags/translations</category>
+
+
+	<pubDate>Sat, 13 Feb 2010 09:35:12 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:50:25Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New releases, new hires, new funding&lt;/strong&gt;&lt;br /&gt;
+Erinn Clark joins Tor to develop, enhance, and upgrade our package build system. Her initial goals are to configure, maintain, and automate builds of tor and vidalia for Windows, OS X, ubuntu, debian, centos, fedora, and opensuse systems. Secondary goals are to develop a builtbot system that includes as many disparate operating systems as possible, including Apple OS X and Microsoft&lt;br /&gt;
+Windows flavors. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/december-2009-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/December_2009_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>karsten: Measuring Tor and Iran (Part two)</title>
+	<dcterms:creator>karsten</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/</link>
+
+
+	<category>/tags/bridges</category>
+
+	<category>/tags/iran</category>
+
+	<category>/tags/metrics</category>
+
+
+	<pubDate>Wed, 01 Jul 2009 13:25:51 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:41Z</dcterms:modified>
+
+	<description>&lt;p&gt;Two weeks ago we posted early measurements about the &lt;a href=&quot;https://blog.torproject.org/blog/measuring-tor-and-iran&quot;&gt;growth of Tor usage in Iran&lt;/a&gt;. Since then we have improved our math, and used more data sources. This work is part of our &lt;a href=&quot;https://blog.torproject.org/blog/performance-measurements-and-blockingresistance-analysis-tor-network&quot;&gt;metrics project&lt;/a&gt;, where we&#39;re learning about the Tor network to improve its availability and performance while keeping our users safe. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/measuring-tor-and-iran-part-two&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/#comments</comments>
+
+</item>
+<item>
+
+	<title>karsten: On the Recent Growth of the Tor Network</title>
+	<dcterms:creator>karsten</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/</link>
+
+
+	<category>/tags/bridges</category>
+
+	<category>/tags/metrics</category>
+
+	<category>/tags/performance</category>
+
+
+	<pubDate>Mon, 22 Jun 2009 20:07:03 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:28:27Z</dcterms:modified>
+
+	<description>&lt;p&gt;In the past few days the Tor network is seeing a lot of new users &lt;a href=&quot;https://blog.torproject.org/blog/measuring-tor-and-iran&quot;&gt;coming from Iran&lt;/a&gt;. At the same time we have heard from many people who want to support the Tor network by setting up more relays and &lt;a href=&quot;https://www.torproject.org/bridges&quot;&gt;bridges&lt;/a&gt;. Now we wanted to know, are these just promises, or did the network really grow? Here are the results: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/recent-growth-tor-network&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: May 2009 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/</link>
+
+
+	<category>/tags/anonymity_advocacy</category>
+
+	<category>/tags/metrics</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/proposals</category>
+
+	<category>/tags/translations</category>
+
+
+	<pubDate>Wed, 10 Jun 2009 13:41:55 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:26:57Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New releases&lt;/strong&gt;&lt;br /&gt;
+On May 25, we released Tor 0.2.1.15-rc.&lt;br /&gt;
+On May 17, we released Tor VM 0.0.2.&lt;br /&gt;
+On May 25, we released Vidalia 0.1.13 containing &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/may-2009-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Remove an old warning on the relay settings page that running a bridge&lt;br /&gt;
+    relay requires Tor 0.2.0.8-alpha or newer. &lt;/li&gt;
+&lt;li&gt;Add a workaround for a bug that prevented Vidalia&#39;s tray icon from&lt;br /&gt;
+    getting added to the system notification area on Gnome when Vidalia was&lt;br /&gt;
+    run on system startup. Patch by Steve Tyree. (Ticket #247) &lt;/li&gt;
+&lt;li&gt;Fix a bug that prevented the control panel from displaying when&lt;br /&gt;
+    running on the Enlightenment window manager. Patch by Steve Tyree. &lt;/li&gt;
+&lt;li&gt;Rename the CMake variables used to store the location of Qt&#39;s lupdate&lt;br /&gt;
+    and lrelease executables. Recent versions of CMake decided to use the&lt;br /&gt;
+    same variable name, which was stomping on mine, resulting in the wrong&lt;br /&gt;
+    lupdate and lrelease executables being used. &lt;/li&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

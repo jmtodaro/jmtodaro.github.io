@@ -1,0 +1,699 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Two incentive designs for Tor</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTwo_incentive_designs_for_Tor&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Two incentive designs for Tor</a>
+
+</span>
+
+
+<div id="content">
+<p>One big challenge to making Tor fast is providing incentives for users to act as relays. So far we've been getting more relays by 1) building community through interacting more with relay operators, listing the fast ones prominently in the <a href="http://torstatus.kgprog.com/index.php?SR=Bandwidth&amp;SO=Desc" rel="nofollow">Tor status pages</a>, and generally making it clear that you will make the Tor network better if you do, and 2) making it really easy to configure and run a relay by adding a simple GUI interface in Vidalia and adding UPnP support. But we should also consider more direct incentive approaches, for example where Tor is faster for you if you're a relay.</p>
+
+<p>There are two papers that came out in 2008 that everybody pondering incentives in Tor should read. The first is <a href="http://freehaven.net/anonbib/#incentives-fc10" rel="nofollow">"Building Incentives into Tor"</a>, a tech report I coauthored with Johnny Ngan and Dan Wallach from Rice University (update: now it's an FC 2010 paper). The second is <a href="http://freehaven.net/anonbib/#raykova-pet2008" rel="nofollow">"Payment for Anonymous Routing"</a>, published at <a href="http://petsymposium.org/2008/program.php" rel="nofollow">PETS 2008</a> by Androulaki et al from Columbia University. <span class="read-more"><a href="http://blog.torproject.org/blog/two-incentive-designs-tor"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/incentives/" rel="tag">incentives</a>
+
+<a href="../../tags/performance/" rel="tag">performance</a>
+
+<a href="../../tags/research/" rel="tag">research</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-5d4da55edc42a14d5cbca8dd92fb5186">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>"BitBlender: Light-Weight Anonymity for BitTorrent"</p>
+
+<p><a href="http://freehaven.net/anonbib/#bauer:alpaca2008" title="http://freehaven.net/anonbib/#bauer:alpaca2008" rel="nofollow">http://freehaven.net/anonbib/#bauer:alpaca2008</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Farma&amp;do=goto">arma</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 17 Jan 2009 06:17:43 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-22cc9089d5665218ba1976980ff38146">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>Why not just go the I2P route and enable relays by default?</p>
+
+<p>Sure, there are downsides to doing this, but are they really greater then having to create an entire complex incentive system like the one you discuss?</p>
+
+<p>I constantly run Tor on my laptop because I like for it to be readily available to me, but I don't run as a relay because I move between several LANs on a daily basis, and I don't want to harm the network.  It is my opinion that the goal should be to make it harmless for people to run relays on computers that aren't guaranteed to have high uptime, and then make that the default.  It seems like this would be a much more elegant solution.</p>
+
+<p>This is just my opinion, of course.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 17 Jan 2009 06:17:44 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f3324f8ab1fe004d77381d337cb2b8c5">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>It already is harmless to run a relay that isn't up all the time. Tor will<br />
+automatically use it for cases that can handle unstable relays, and<br />
+won't use it for the cases that need stable relays.</p>
+
+<p>For your more general question, see<br />
+<a href="https://www.torproject.org/faq#EverybodyARelay" title="https://www.torproject.org/faq#EverybodyARelay" rel="nofollow">https://www.torproject.org/faq#EverybodyARelay</a><br />
+and also Section 4.2 of<br />
+<a href="https://svn.torproject.org/svn/tor/trunk/doc/roadmaps/2008-12-19-roadmap-full.pdf" title="https://svn.torproject.org/svn/tor/trunk/doc/roadmaps/2008-12-19-roadmap-full.pdf" rel="nofollow">https://svn.torproject.org/svn/tor/trunk/doc/roadmaps/2008-12-19-roadmap...</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Farma&amp;do=goto">arma</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 17 Jan 2009 06:17:45 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9a8fa626c8b07fa579a47f3de7dd68dd">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<p>Is there any option for a proxy to remain active for a certain period. Like if I want to remain connected to one proxy for 2 minutes or 5 minutes. Can it be set.<br />
+loking forward for the answer<br />
+Thanks</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 22 Jan 2009 06:17:46 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d6c833e3effde5295e1cf0502b8f9afe">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+You could consider the coins more like an advanced bit bucket, and give them a lifetime of say, 1 week, Being that, the longer you maintain gold start status the more coins you accrue, or have it related to amount of bandwidth transferred,  but also allow some type of tag in router id so that you can have router "groups" this would allow for some interesting options, chiefly being, you could have people with tor processing "groups" to, as an rpg player would say "farm coins" where they will more likely setup a farm because coins have a short lifetime, instead of only contributing when they want high speeds. Setting up access control for this type of group could be tricky but it would also allow them to handle any coin \ cash exchange themselves to sell \ rent out their coins to others. Also you could have coins with a short lifespan and coins with a long lifespan, the latter being more so to add a "ranking" for their farm then for bandwidth, as nothing gets people working harder then competition.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FKilroy%20%28not%20verified%29&amp;do=goto">Kilroy (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 14 May 2009 06:17:47 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c0b66b636fc9c1405ba26bb39bd46715">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>Hello,</p>
+
+<p>The idea are interessant but will be not better to have : 1) become reward when give some bandwitch and GB to can be more speed , 2) with coins for peoples who have not the possibility to give enough speed .</p>
+
+<p>I am impatient to can just a bit more speed, the problem are for me , when i use nx client for exemple, i need min 10 KB more to can run in remote...</p>
+
+<p>For the moment i can't Torify it...</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fswisstorexit%20%28not%20verified%29&amp;do=goto">swisstorexit (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 14 Jun 2009 06:17:48 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-11b22d2fa5b2922f461cec3da15a7a90">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+People in countries that have more internet infrastructure would always win the gold status.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 07 Jul 2009 06:17:49 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-30063dce02f6ba99194358c41be953f9">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+is that a bad thing? some people will contribute more to the network. they will be rewarded more. everybody already has free access to tor. some people need better service. why not give them the option of getting better service by making the network better for everybody?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 10 Aug 2010 06:17:50 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a0ed2469d24272d10a8414c159aaf485">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+<p>Here's my idea:<br />
+-TorProject has a public key, and they RSA sign the current date/time; Anyone who has paid Torproject can *authenticate* (bear with me).. and obtain the latest key value.</p>
+
+<p>-Due to this authentication, the value should be rounded, e.g. to the nearest hour, etc, so that many people will get the same key, and everyone is (fairly) anonymous.</p>
+
+<p>-People who haven't paid Torproject can't get them directly, but can still sniff values *from the traffic they carry*, the more traffic you carry, the more likely you are to know a recent key.</p>
+
+<p>-So having a recent key doesn't mean you have paid, you might have just sniffed it; but either way, a recent key proves you have been somehow helpful (i.e. if you sniffed it from traffic, then you carried traffic).</p>
+
+<p>-Then, nodes can prioritize traffic based on the presence of a key, and on how recent the key is.</p>
+
+<p>-Note that this still works even if you don't have any money involved, and you just have Torproject giving them out randomly to various nodes which are online.</p>
+
+<p>-And, you can also include other organizations, e.g. some charity might also have a recognized key, and the charity gives out keys, too.</p>
+
+<p>-It's along the lines of digital coins, except that everyone who sees a coin can copy it for themselves, and double spending is ENCOURAGED, but they eventually fade away to become worthless.</p>
+
+<p>-also, by using the time, and RSA signing, it means anyone can verify them, without the need for a centralized server (except for the issuing, which can also be decentralized)</p>
+
+<p>-To stop wide-spread replication (_post your latest value here_) maybe some kind of centralized revocation, etc might work, but it can also be decentralized: every time you see a particular key, it becomes less meaningful (i.e. if you see the 10pm key 100 times, but the 9pm key 3 times, then the 9pm actually becomes more prioritized even though it's older)</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 09 Feb 2010 06:17:51 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b11a2a1c576679d4364174b217dd816a">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+My primary concern is being able to successfully and consistently hide my ip address and login information at various sites without the risk that an attacker will be able to steal my information for the purpose of identity theft or any other kind of theft.I bring this up because recently my banking information was stolen and my account cleaned out. I'm not exactly sure how it was done but I suspect spyware was used then it the gathered information to log into my account and perform an illegal transfer. I have since put a block on all transfers but it bothers me greatly that this person was able to steal my information so easily. I wasn't using TOR at the time because it was having trouble connecting to the network and perhaps this theft might not have happened if I had used TOR. What I want to see are faster connections , a debug feature and perhaps a compatability wizard to account for the various operating systems that are currently in use. The bottom line is that I want to be able to completely hide beyond all recognition my identity and any information that could potentially put me at risk for theft of any kind.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 29 Mar 2010 06:17:52 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-38850948e6eabaa9e53d8f7bd516eb5f">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+<p>Major moment which must not be lost from attention -- it is consequences for a physical person, which is an operator of tor exit node.  There are precedents which logically cannot be explained ( http://news.cnet.com/8301-13739_3-9779225-46.html and linked article http://itnomad.wordpress.com/2007/09/16/tor-madness-reloaded/ ).  But nevertheless they take place and some operators of tor exit nodes will ANSWER by the OWN HIDEs in similar histories.  Which person in right mind will go for it, if he/she knows about possible consequences.  There is such "phenomenon" as lawlessness of guys in blue uniform.  It is not explainable from the point of view of logic and common sense.</p>
+
+<p>While there is no protection from such events, when the operator of tor exit node remains one on one with lawlessness of official force, and he will not gain any help &amp; use in that particular moment in life neither from transparent and honest relationships with the internet provider, nor from constitution or human rights, or other nonsense, there is no special sense to discuss expansion of tor network by means of commoners.</p>
+
+<p>This is a REAL problem.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 19 Apr 2010 06:17:53 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5bf4511cc7e21c62f81825fb0e75860b">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+Are any of you aware of the bitcoin project? www.bitcoin.org the idea is anonymous untraceable crypto-cash. So far it's in its infancy but worth thinking about for your digital coins.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 17 Aug 2010 06:17:54 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-690a849b1375f2fe06f8154b0ee2fa9d">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+<p>If you're going to add digital cash to Tor, you should check out this software:</p>
+
+<p>https://github.com/FellowTraveler/Open-Transactions/wiki</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Feb 2011 06:17:55 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTwo_incentive_designs_for_Tor&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:17:42 AM CDT</span>
+<!-- Created <span class="date">Sat 17 Jan 2009 02:42:56 PM CST</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

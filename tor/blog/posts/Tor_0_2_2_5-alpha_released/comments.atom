@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Tor 0.2.2.5-alpha released</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_5-alpha_released/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_5-alpha_released/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_5-alpha_released/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:39:04Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_5-alpha_released/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_5-alpha_released/comment_1/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:39:00Z</updated>
+	<published>2009-10-12T11:39:00Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;In polish version LOG are in english&lt;br /&gt;
+no help!&lt;br /&gt;
+And in WWW no image translated&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_5-alpha_released/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_5-alpha_released/comment_2/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:39:01Z</updated>
+	<published>2009-10-13T11:39:01Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;perhaps no one has translated the log entries to polish, we have a fine translation portal to do just that.&lt;/p&gt;
+
+&lt;p&gt;no one ever translates the images because our volunteer translators aren&#39;t graphic artists.&lt;/p&gt;
+
+&lt;p&gt;Will you help us translate these things?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_5-alpha_released/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_5-alpha_released/comment_3/"/>
+
+	<author><name>Cav Edwards (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:39:02Z</updated>
+	<published>2009-10-17T11:39:02Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;We have been doing some testing of Tor.&lt;br /&gt;
+We are using this bandwidth test tool:&lt;br /&gt;
+&lt;a href=&quot;http://i.dslr.net/iphone_speedtest.html&quot; title=&quot;http://i.dslr.net/iphone_speedtest.html&quot; rel=&quot;nofollow&quot;&gt;http://i.dslr.net/iphone_speedtest.html&lt;/a&gt; (clicking the GPS test)&lt;/p&gt;
+
+&lt;p&gt;We have found the following results:&lt;br /&gt;
+&lt;a href=&quot;http://docs.google.com/fileview?id=0B6YAzYus3pVYZWEwZmUxNTgtODlhZi00ZjE1LTk2Y2UtMDE0NDhiMTZiOTNi&amp;amp;hl=en&quot; title=&quot;http://docs.google.com/fileview?id=0B6YAzYus3pVYZWEwZmUxNTgtODlhZi00ZjE1LTk2Y2UtMDE0NDhiMTZiOTNi&amp;amp;hl=en&quot; rel=&quot;nofollow&quot;&gt;http://docs.google.com/fileview?id=0B6YAzYus3pVYZWEwZmUxNTgtODlhZi00ZjE1...&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;What we cannot understand is why there is a difference when constrained socks size is set to the default of 8KB in the torrc file as opposed to leaving it unset and defaulting. We thought the default was 8KB. This means the results for 8KB set explicitly and 8KB set by default (no option set for ConstrainedSocksSize in torrc) should deliver similar performance.&lt;/p&gt;
+
+&lt;p&gt;In our graph, the &#39;not set&#39; option and the 8KB option are wildly different. The explicitly set 8KB option seems to consistently perform the best.&lt;/p&gt;
+
+&lt;p&gt;Can someone explain our results. We had thought that circuit quality could change dramatically over the lifetime that Tor is running, which means our results could be random. We did a crude &#39;burn in&#39; before taking the results and ran them multiple times though.&lt;/p&gt;
+
+&lt;p&gt;Maybe others could corroborate our results.&lt;/p&gt;
+
+&lt;p&gt;Many thanks for your time...&lt;/p&gt;
+
+&lt;p&gt;Cav Edwards&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_5-alpha_released/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_5-alpha_released/comment_4/"/>
+
+	<author><name>Cav Edwards (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:39:03Z</updated>
+	<published>2009-10-22T11:39:03Z</published>
+
+	<content type="html" xml:lang="en">
+	I guess, reviewing that last post, the question boils down to &#39;what is the default socket size&#39; for Tor ?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_5-alpha_released/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_5-alpha_released/comment_5/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:39:04Z</updated>
+	<published>2009-10-28T11:39:04Z</published>
+
+	<content type="html" xml:lang="en">
+	skype（proxy）+TOR------&amp;gt;http://clip2net.com/clip/m13179/thumb640/1256720327-clip-30kb.png
+
+	</content>
+
+
+
+</entry>
+
+</feed>

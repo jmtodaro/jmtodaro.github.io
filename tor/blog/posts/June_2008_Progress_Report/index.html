@@ -1,0 +1,481 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>June 2008 Progress Report</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FJune_2008_Progress_Report&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">June 2008 Progress Report</a>
+
+</span>
+
+
+<div id="content">
+<p>Torbutton 1.2.0rc1 (released June 1), the first release candidate for the next stable series of the security-enhanced Torbutton Firefox extension, features functional support for Firefox 3. However, this support has not been extensively tested. In particular, timezone masking does not work at all. The workaround is to manually set the environment variable 'TZ' to 'UTC' before starting Firefox. This works on both Linux and Windows:<br />
+<a href="http://archives.seul.org/or/talk/Jun-2008/msg00044.html" title="http://archives.seul.org/or/talk/Jun-2008/msg00044.html" rel="nofollow">http://archives.seul.org/or/talk/Jun-2008/msg00044.html</a></p>
+
+<p>Tor 0.2.0.27-rc (released June 3) adds a few features we left out of the earlier release candidates. In particular, we now include an IP-to-country GeoIP database, so controllers can easily look up what country a given relay is in, and so bridge relays can give us some sanitized summaries about which countries are making use of bridges. (See proposal 126-geoip-fetching.txt for details.)<br />
+<a href="http://archives.seul.org/or/talk/Jun-2008/msg00055.html" title="http://archives.seul.org/or/talk/Jun-2008/msg00055.html" rel="nofollow">http://archives.seul.org/or/talk/Jun-2008/msg00055.html</a></p>
+
+<p>Torbutton 1.2.0rc2 (released June 8) features a fix for an annoying bug on MacOS, and adds much clamored for options to start Firefox in a specific Tor state:<br />
+<a href="http://archives.seul.org/or/talk/Jun-2008/msg00103.html" title="http://archives.seul.org/or/talk/Jun-2008/msg00103.html" rel="nofollow">http://archives.seul.org/or/talk/Jun-2008/msg00103.html</a></p>
+
+<p>Tor 0.2.0.28-rc (released June 13) fixes an anonymity-related bug, fixes a hidden-service performance bug, and fixes a bunch of smaller bugs.<br />
+<a href="http://archives.seul.org/or/talk/Jun-2008/msg00165.html" title="http://archives.seul.org/or/talk/Jun-2008/msg00165.html" rel="nofollow">http://archives.seul.org/or/talk/Jun-2008/msg00165.html</a></p>
+
+<p>Tor 0.2.1.1-alpha (released June 13) fixes a lot of memory fragmentation problems that were making the Tor process bloat especially on Linux; makes our TLS handshake blend in better; sends "bootstrap phase" status events to the controller, so it can keep the user informed of progress (and problems) fetching directory information and establishing circuits; and adds a variety of smaller features. <a href="http://archives.seul.org/or/talk/Jun-2008/msg00185.html" title="http://archives.seul.org/or/talk/Jun-2008/msg00185.html" rel="nofollow">http://archives.seul.org/or/talk/Jun-2008/msg00185.html</a></p>
+
+<p>Vidalia 0.1.4 (released June 13) adds a bootstrap progress bar, UPnP support, a new set of freely licensed GUI icons, and fixes a few bugs. <span class="read-more"><a href="http://blog.torproject.org/blog/june-2008-progress-report"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/bridges/" rel="tag">bridges</a>
+
+<a href="../../tags/openssl/" rel="tag">openssl</a>
+
+<a href="../../tags/progress_report/" rel="tag">progress report</a>
+
+<a href="../../tags/tor/" rel="tag">tor</a>
+
+<a href="../../tags/tor_browser_bundle/" rel="tag">tor browser bundle</a>
+
+<a href="../../tags/translations/" rel="tag">translations</a>
+
+<a href="../../tags/vidalia/" rel="tag">vidalia</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-2e28653dbadb50744862f9b482b75404">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi,<br />
+As you know Tor (including Vidalia, Privoxy) is a great package for the anonymous user. Working together these individual components are providing core services for anonymity. I would like to bring an attention sideways to the recognized area:</p>
+
+<p>It is --- the newest version of i2p software. It may be worthwhile endeavor to bundle i2p with Tor as a complementary service. There are some areas where Tor is good at (anonymous web browsing). And maybe others areas which may be simpler to use the newer i2p network. </p>
+
+<p>To help support the anonymity efforts i hope you will evaluate the i2p software for packaging because it will help strengthen i2p as an option for the users. It does not need to be a burden for the Tor maintainers either because i2p team is doing most of the hard work. Many user dont know about it but i2p very good now since version 0.6.  The headless* package very is easy to install. Almost no work needed - this forum thread describes installation proceedure:</p>
+
+<p><a href="http://forum.i2p2.de/viewtopic.php?t=1625&amp;sid=756d4ae34bc5162c1383b39f1a7b9d75" rel="nofollow">http://forum.i2p2.de/viewtopic.php?t=1625&amp;sid=756d4ae34bc5162c1383b39f1a7b9d75</a></p>
+
+<p>Its 1 script to start i2p daemon and hooked into the "Start Vidalia" will add i2p onto the existing Tor startup. You may need a button in the control panel to let users select the i2p daemon ( for example "Enable i2p" option ). </p>
+
+<p>You should know that the i2p does not interfere with Tor in any way.  For FoxyProxy. The setting is localhost:4444. And FoxyProxy whitelist pattern=*://*.i2p/* will catch the site ending with .i2p extension.</p>
+
+<p>*i have tested the headless package which is recommended, version 0.62 or later. (POSIX)<br />
+*** For software license - please speak to <a href="http://www.i2p2.i2p/index.html" rel="nofollow">i2p development team</a>.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FLoyal%20Tor%20User%20%28not%20verified%29&amp;do=goto">Loyal Tor User (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 26 Jul 2008 06:10:19 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-dcca230c5df03f98b5a9460e03dfaab9">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi<br />
+I've installed tor on my ubuntu 8.04 AMD64 and it works for my fine but now a few days that tor is not works for my any more:( it says that :<br />
+Aug 01 12:40:37.409 [notice] I learned some more directory information, but not enough to build a circuit.<br />
+Aug 01 12:40:45.269 [notice] We now have enough directory information to build circuits.</p>
+
+<p>and then nothing just scilence. It didn't work anymore. And i'm in trouble fetching news in my country.</p>
+
+<p>Can my contry state block tor itself?<br />
+Please help me in by response in your blog or by mailing me or even by fixing any bug in your very helpfull project Tor.<br />
+Thanks.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 01 Aug 2008 06:10:20 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fe1f1515ef70f299fd0bc03187078467">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+The RISING [version 20.55.51, updated on 2008-08-02] found out a Trojan.PSW.Win32.Undef.adp in the vidalia programme. The proxy.exe file had been deleted automatically by the RISING. Trojan.PSW.Win32.Undef.adp also found out in the stable version vidalia-bundle-0.2.0.30-0.1.6.exe and cannot be installed. Please give some advice for solving the problem.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 02 Aug 2008 06:10:21 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-afd0cc8da0d9ba6da119ebb94225cf1a">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+The RISING [version 20.55.51, updated on 2008-08-02] found out a Trojan.PSW.Win32.Undef.adp in the vidalia programme. The proxy.exe file had been deleted automatically by the RISING. Trojan.PSW.Win32.Undef.adp also found out in the stable version vidalia-bundle-0.2.0.30-0.1.6.exe and cannot be installed. Please give some advice for solving the problem.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 02 Aug 2008 06:10:22 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-555cba7b08ae1d133d7cc761a04f19e1">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+Maybe because the exe file is using the same binary structure/packer/crypter as most of the trojans.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 03 Aug 2008 06:10:23 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a1bc640c410868d1449aeb4f59fda577">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>We use the NullSoft installer (<a href="https://www.torproject.org/svn/trunk/contrib/tor-mingw.nsi.in" title="https://www.torproject.org/svn/trunk/contrib/tor-mingw.nsi.in" rel="nofollow">https://www.torproject.org/svn/trunk/contrib/tor-mingw.nsi.in</a>) for building the Windows exe installer.  It uses "SetCompressor /SOLID LZMA" as the compressor to shrink the total package size down.</p>
+
+<p>There is no proxy.exe file in the official Tor packages.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 05 Aug 2008 06:10:24 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FJune_2008_Progress_Report&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:10:19 AM CDT</span>
+<!-- Created <span class="date">Tue 22 Jul 2008 10:25:34 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

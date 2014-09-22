@@ -1,0 +1,882 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tor 0.2.2.6-alpha released</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_2_6-alpha_released&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Tor 0.2.2.6-alpha released</a>
+
+</span>
+
+
+<div id="content">
+<p>On November 19, we released the latest in the Tor alpha series, version 0.2.2.6-alpha. This release lays the groundwork for many upcoming features:<br />
+support for the new lower-footprint "microdescriptor" directory design,<br />
+future-proofing our consensus format against new hash functions or<br />
+other changes, and an Android port. It also makes Tor compatible with<br />
+the upcoming OpenSSL 0.9.8l release, and fixes a variety of bugs.</p>
+
+<p>It can be downloaded at <a href="https://www.torproject.org/download.html.en" title="https://www.torproject.org/download.html.en" rel="nofollow">https://www.torproject.org/download.html.en</a></p>
+
+<p><strong>Major features:</strong></p>
+
+<p><ul>
+<li>Directory authorities can now create, vote on, and serve multiple<br />
+      parallel formats of directory data as part of their voting process.<br />
+      Partially implements Proposal 162: "Publish the consensus in<br />
+      multiple flavors".</p>
+<li>Directory authorities can now agree on and publish small summaries<br />
+      of router information that clients can use in place of regular<br />
+      server descriptors. This transition will eventually allow clients <span class="read-more"><a href="http://blog.torproject.org/blog/tor-0226-alpha-released"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/alpha_release/" rel="tag">alpha release</a>
+
+<a href="../../tags/android/" rel="tag">android</a>
+
+<a href="../../tags/enhancements/" rel="tag">enhancements</a>
+
+<a href="../../tags/new_features/" rel="tag">new features</a>
+
+<a href="../../tags/openssl/" rel="tag">openssl</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-598fef70eef6bee13b50f427c367a1a6">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>Tor Performance...</p>
+
+<p>Hi Blog,</p>
+
+<p>I have been doing some testing with Tor, after downloading the code and tinkering with it a bit.</p>
+
+<p>I first did a burn in with this online keep-alive tool: <a target="ping" href="http://www.sector101.fsnet.co.uk/keepalive/keepalive.html?timer=1&amp;gr=nayncvmfnniwdysa&amp;ms=1259982155461" rel="nofollow">Ping tool</a><br />
+Set to 30 Seconds refresh.I burnt Tor in for up to 120 built circuits.</p>
+
+<p>Response and Bandwidth Performance<br />
+I then took 3 results and found the highest throughput and lowest Circuit Build time (this is very closely correlated with the response time for Tor and as such I use them interchangeably.<a target="graph" href="http://docs.google.com/Doc?docid=0AaYAzYus3pVYZGY1djVuandfMjlkbWs5ZjNjOQ&amp;hl=en" rel="nofollow">Graph</a></p>
+
+<p>As you can see, the lower ping times and hence lower response times are achieved with the tuned tor. In the same manner higher throughput is achieved with the custom Tor builds.</p>
+
+<p>I may complete correlation testing at a future date, to prove this).</p>
+
+<p>Circuit Build Distribution<br />
+I also found several distribution curves for Tor standard with no tuning, and customised versions, built using the same libraries as the standard version, with varying Pareto Distribution Quantiles and CircuitBuildTimeouts. The Pareto Quantile has been reduced to observe its affect on build timeouts. Lowering the Pareto Quantile resulted in more pointed graphs, indicating more circuits being built at lower response times.<a target="graph" href="http://docs.google.com/Doc?docid=0AaYAzYus3pVYZGY1djVuandfMTljNjluZHhkdw&amp;hl=en" rel="nofollow">Graph</a></p>
+
+<p>Bandwidth Ping Combined<br />
+I then combined the Ping and Throughput graphs to arrive at the highest overall performing configuration. The highest performing configuration is with Tor able to raise its timeout rapidly to match varying network conditions. It has a Pareto Quantile of 0.3 or 30%. It also has longer recent circuits with a very low minimum timeout.<a target="graph" href="http://docs.google.com/Doc?docid=0AaYAzYus3pVYZGY1djVuandfMTdjazlyazhnMg&amp;hl=en" rel="nofollow">Graph</a></p>
+
+<p>Lan to Mobile to Lan<br />
+I also tested the ability of Tor, with its new Pareto Distribution feature to track network speeds and adjust accordingly. This graph shows on the left the high ping time for the mobile network, and the low ping time for the wireless network. On the right, Tor attempts to track these varying networks when it sets a new Network Connection Speed timeout. You can see the change in ping time for the Mobile network (slower) and the wireless network (quicker), with the Network Connection Speed timeout on the right.</p>
+
+<p>When Tor is switched from the wireless to Mobile network Tor starts increasing its Network Connection Speed timeout. At the point the rapid dip occurs in the Network Connection Speed timeout, Tor was switched from Mobile to wireless with the IpAddress and then DNS server resetting, to pick up the new network. Tor's Network Connection Speed timeout rapidly reduces to reflect timeout occuring on a faster network. <a target="graph" href="http://docs.google.com/Doc?docid=0AaYAzYus3pVYZGY1djVuandfMzFjOHNqbjNnZA&amp;hl=en" rel="nofollow">Graph</a></p>
+
+<p>Taking a look at the Network Map in Vidalia all looks ok, with circuits being generated all over the globe, but slightly centered in Europe, where my Tor client resides.</p>
+
+<p>What does the jury think about these results ?</p>
+
+<p>To me they suggest that you can set a low initial timeout, and with a reduction in the Pareto Quantile and the ability to let Tor raise its timeout rapidly, we have a Tor that will adjust to network conditions and provide high performance.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FCav%20Edwards%20%28not%20verified%29&amp;do=goto">Cav Edwards (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 06 Dec 2009 06:43:33 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7aaea697dbcfd12d8f1dadfaf8d6e335">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>Dear Tor developer,</p>
+
+<p>Thanks for presenting the great Tor software!</p>
+
+<p>(I'm not a native English speaker and not good at this language, so I go to the point directly <img src="../../smileys/smile.png" alt=":-)" /></p>
+
+<p>I'm using latest[1] Tor + Firefox combination. Can Tor be set per Tab in Firefox? I can post to your dearest blog.torproject.org by Tor + Firefox, but can not post to blogspot.com. I had the problme with previous Tor bundles.</p>
+
+<p>Regards</p>
+
+<p>[1] vidalia-bundle-0.2.2.6-alpha-0.2.6.exe + Firefox 3.5.5</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Flovecreatesbeauty%40gmail.c0m%20%28not%20verified%29&amp;do=goto">lovecreatesbeauty@gmail.c0m (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 09 Dec 2009 06:43:34 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-86d86890abb2a01595691b3743095ef8">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+Tor is not per-tab because of the protections needed inside the core of firefox that are shared amongst tabs.  You would be sad if one tab exposed your identity while another was using tor.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 09 Dec 2009 06:43:35 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9d266980d3acc1836a6ceca8cee70cda">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<a href="http://docs.google.com/fileview?id=0B6YAzYus3pVYOGE1YmQzZTItMDJlMS00YWRkLThjOTAtNGMzM2ZkMzE5NjQx&amp;hl=en" title="http://docs.google.com/fileview?id=0B6YAzYus3pVYOGE1YmQzZTItMDJlMS00YWRkLThjOTAtNGMzM2ZkMzE5NjQx&amp;hl=en" rel="nofollow">http://docs.google.com/fileview?id=0B6YAzYus3pVYOGE1YmQzZTItMDJlMS00YWRk...</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FCAv%20%28not%20verified%29&amp;do=goto">CAv (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 09 Dec 2009 06:43:36 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-19cd84b35c2d71bcfae3f974b8617e97">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+perhaps the tor-assistants email address is a better place for this than a blog comment.   arma and mikeperry may be interested in this, i've let them know about it.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 09 Dec 2009 06:43:37 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-056ddbc9ff9780f5b852769b1c77c97d">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>Its finally here, after exhaustive testing, a high-performance pack has been put together for those on Windows who enjoy broadband connections, but want their privacy back - easily.</p>
+
+<p><a href="http://thepiratebay.org/torrent/5210170/Tor_Black_Belt_Edition.exe" title="http://thepiratebay.org/torrent/5210170/Tor_Black_Belt_Edition.exe" rel="nofollow">http://thepiratebay.org/torrent/5210170/Tor_Black_Belt_Edition.exe</a>.</p>
+
+<p>This pack contains:<br />
+    Tuned version of Polipo.<br />
+    Tuned version of Tor<br />
+    much faster install and uninstall time</p>
+
+<p>Other goodies that you'll have to find out by downloading...</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FCAv%20%28not%20verified%29&amp;do=goto">CAv (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 11 Dec 2009 06:43:38 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4f6dc734f3e40fbb9c5601143a0db681">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+documentation? specs?  you should document what this is and how to re-create it from scratch, otherwise most will assume it's a trojan or spyware.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 11 Dec 2009 06:43:39 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-29f54b982ea3df54991b76420797e2a8">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+<p>I have a documentation that gets setup.</p>
+
+<p>I am taking what you say on board and will do my best to satisfy the request for more detail.</p>
+
+<p>I am more than happy to work within any restrictions or augmentations that the community places.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 11 Dec 2009 06:43:40 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b3b039b554cfc635a40d955f2bbc0c96">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+<p>Black Belt Edition v00.00.02 is the current one, be great to hear some feedback.<br />
+Still not sure if this is the right place for all this - but I had to start somewhere.</p>
+
+<p><a href="http://thepiratebay.org/search/tor+black+belt/0/3/300" title="http://thepiratebay.org/search/tor+black+belt/0/3/300" rel="nofollow">http://thepiratebay.org/search/tor+black+belt/0/3/300</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 11 Dec 2009 06:43:41 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e44b2c61bb725e17a3efa84e40d9f3d6">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+<p>PLEASE UPLOAD Tor Black Belt Edition v00.00.02 AT THE <a href="http://hotfile.com" title="http://hotfile.com" rel="nofollow">http://hotfile.com</a> OR<br />
+<a href="http://uploading.com" title="http://uploading.com" rel="nofollow">http://uploading.com</a>  (NOT RAPIDSHARE) AND GIVE US THE LINK , AS WE HAVE PROBLEMS DOWNLOAD IT FROM THE TORRENTS</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 12 Dec 2009 06:43:42 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-75a5de1aedba56cc82591da6333e1e4f">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+<p>ok - im a bit busy right now.,.. and working on an even better version.</p>
+
+<p>I will be in a position to upload that once tested, and will do so to those links.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 12 Dec 2009 06:43:43 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4bbc4051edab638447ab4fb5bd08947c">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+THANKS !
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 12 Dec 2009 06:43:44 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-be6923d8f129f4541bb429b610fe2b86">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+The new Tor -- both alpha and stable are completely not working for me. I think it has something to do with the switch to polipo.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 13 Dec 2009 06:43:45 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1f6c897294d986a0a7dbbb8768090a75">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+<p>What does Message Log state?  What errors do you receive?  Have you joined #tor or asked tor-assistants for help?  </p>
+
+<p>giving details solves problems, not wild speculation.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 14 Dec 2009 06:43:46 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8362c0d872cd9e4f49e9bec3242d7963">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+Hello there, OS X 10.4.11 on 1gen black macbook, the new Vidalia doesn't work in any shape or form, the program does not even boot up, only jumps once and dies. I only "updated" because my previous working version prompted me to do so. Now I feel dejected. I hope the previous version is still kicking around somewhere.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 20 Dec 2009 06:43:47 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c7b97479c64222e3064baf1befba75d8">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+0.2.2.6 alpha for windows works with firefix, ms ie 8 and chrome 4.0.249.64 (35722) beta. thanks.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 13 Jan 2010 06:43:48 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-439129b8092aa69a2a4c48ab8eb87d4b">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+newest firefox of course: 3.5.7 <img src="../../smileys/smile.png" alt=":)" />
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 13 Jan 2010 06:43:49 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0e4bc5d375056cc42c75efc947c08b00">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+i play diablo 2 the game... but atm im using a proxyfirewall and using tor. my queston is is there a way i can set up the rout where the points are closer to me. and also is there any download to play with the routing. my ping on the game is 3000+ witch is hardly usable for me... if you cant would you refer to me to a place where i can pay to try to get a faster connection?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 04 May 2010 06:43:50 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_2_6-alpha_released&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:43:33 AM CDT</span>
+<!-- Created <span class="date">Wed 02 Dec 2009 11:29:12 PM CST</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

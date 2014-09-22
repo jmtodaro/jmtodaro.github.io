@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>TorFlow Node Capacity, Integrity and Reliability Measurements at HotPETS</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/TorFlow_Node_Capacity_Integrity_and_Reliability_Measurements_at_HotPETS/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/TorFlow_Node_Capacity_Integrity_and_Reliability_Measurements_at_HotPETS/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>mikeperry</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/TorFlow_Node_Capacity_Integrity_and_Reliability_Measurements_at_HotPETS/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:28:18Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/TorFlow_Node_Capacity_Integrity_and_Reliability_Measurements_at_HotPETS/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/TorFlow_Node_Capacity_Integrity_and_Reliability_Measurements_at_HotPETS/comment_1/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:18Z</updated>
+	<published>2010-01-15T12:28:18Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;ve tried https://svn.torproject.org/svn/torflow/trunk and it haven&#39;t worked on my machine. Ubuntu/8.10/x64. Tor v0.2.1.21.&lt;/p&gt;
+
+&lt;p&gt;1) ExitAuthority/soat_config_real.py is missing, I take it it soat_config.py should be used as the template.&lt;br /&gt;
+2) ErrorReply: 515 Authentication failed: Wrong length on authentication cookie.&lt;/p&gt;
+
+&lt;p&gt;It&#39;s 32 bytes.&lt;br /&gt;
+-rw------- 1 debian-tor debian-tor      32 Jan 16 03:43 control_auth_cookie&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;br /&gt;
+Here is the log file:&lt;br /&gt;
+========================================&lt;br /&gt;
+Jan 16 03:43:41.111 [notice] Tor v0.2.1.21. This is experimental software. Do not rely on it for strong anonymity. (Running on Linux x86_64)&lt;br /&gt;
+Jan 16 03:43:41.112 [notice] Initialized libevent version 1.3e using method epoll. Good.&lt;br /&gt;
+Jan 16 03:43:41.112 [notice] Opening Socks listener on 127.0.0.1:9210&lt;br /&gt;
+Jan 16 03:43:41.112 [notice] Opening Control listener on 127.0.0.1:9211&lt;/p&gt;
+
+&lt;p&gt;# ./soat.py --ssl --html --http --dnsrebind&lt;br /&gt;
+DEBUG [ Sat Jan 16 03:43:59 2010 ]: Read tor config. Got Socks proxy: 9210&lt;br /&gt;
+INFO [ Sat Jan 16 03:43:59 2010 ]: Connecting to Tor at 127.0.0.1:9211&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:00 2010 ]: Hibernating router bmwanon is running, flags: HSDir Named Running Valid&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:00 2010 ]: No bandwidth for live router EmuWikiTORService, flags: Running Stable Unnamed V2Dir Valid&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:00 2010 ]: Hibernating router blablub is running, flags: Named Running Valid&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:00 2010 ]: No bandwidth for live router OhDannyBoy, flags: Exit Running V2Dir Valid&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:00 2010 ]: No bandwidth for live router DOBERMANN, flags: Exit Running V2Dir Valid&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:00 2010 ]: Hibernating router fuga is running, flags: HSDir Named Running Valid&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:01 2010 ]: Hibernating router ThinkPenguin is running, flags: HSDir Named Running Valid&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:01 2010 ]: Hibernating router Pegdymmiv2 is running, flags: HSDir Named Running Valid&lt;br /&gt;
+NOTICE [ Sat Jan 16 03:44:01 2010 ]: Running router Key=9B301F461E54083C080825EE0E23298150B07DE1 has no descriptor&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:01 2010 ]: Hibernating router bingsFreeNet is running, flags: Named Running Valid&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:01 2010 ]: Hibernating router GravenTORServer is running, flags: HSDir Named Running Valid&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:01 2010 ]: Hibernating router agate is running, flags: Named Running Valid&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:01 2010 ]: Hibernating router CarlaB is running, flags: Named Running Valid&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:01 2010 ]: No bandwidth for live router Unnamed, flags: Exit Running V2Dir Valid&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:02 2010 ]: No bandwidth for live router DOK, flags: Exit Running V2Dir Valid&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:02 2010 ]: Hibernating router GoElephantGoGoGo is running, flags: Named Running Valid&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:02 2010 ]: Hibernating router JucHadCod8 is running, flags: Named Running Valid&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:02 2010 ]: Hibernating router saveprivacyde is running, flags: Named Running Valid&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:02 2010 ]: Hibernating router TorNode140 is running, flags: Running Valid&lt;br /&gt;
+NOTICE [ Sat Jan 16 03:44:02 2010 ]: Running router PPrivComLuxembourg3=1ADABAC444018AB38B672F53E067EC9F3740D1FA has no descriptor&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:02 2010 ]: Hibernating router rwxrwxrwx is running, flags: HSDir Running Valid&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:02 2010 ]: No bandwidth for live router Infinity, flags: Exit Running Unnamed V2Dir Valid&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:03 2010 ]: Hibernating router q867401q is running, flags: Named Running Valid&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:03 2010 ]: Hibernating router ssnthnet is running, flags: HSDir Named Running Valid&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 33261B47E7D35D3AD24073827CF167357E8E6513&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 8CE47A57689199F3CB47BF798ABAB971BFA912A7&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 0EF3B88271121837EAFA8DEF91923BF3CAF2A0E2&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 9A356DA25A8D9DCF0865800A0DE863B21D1FCBEA&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router C60AB5E1A17DD1597F4D05DA063A89104ACD8382&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 8A05E6B624AE3494604726A7B99CD1C70A58D775&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 1F689A58746D4A8E3BFFC46B2E92C27A31075715&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 945D08433DEB34F0BA3954C625356FD860B9DC3E&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router D91B26D377E00B78D43CFEC3053CB9143C8C8487&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 079AF6C8558C5EEA6B81B3DA4F23498178A73ADC&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router A620BA8FC8E9E4C2C0127FEA39194C2AFE736AA9&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router A40C88E5ACDD01A6BA02F6F1DCBC8CC363CAE737&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 371ED81C2EA31EE18C347BFC043E790A66C92334&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router E8CA0174C05AEC05EDAB8C208F089DE84C32CE1F&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router B3298ADED2385D9D28365F6620218C5BF978244A&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 657CECEA84681DAE50BFB6FBAA7E0E4BF2DD0CE3&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 54C452F119A859BA3C7C0E38288A36D15A182642&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router D8DCC504908AD1D64076ACE4AB19FA5A3DC1E65B&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 55C39AD47B3C8FA3A7FF876FCD97142FE93824C7&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 01340C8CDF5E90B9D4FF1AEBDCA403CD2FF6E562&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 5EF5A140C6DF64235E0CE6FCDC43CA178E968013&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 984F2FB60447EAB1B473A44B8AE93A65337808A5&lt;br /&gt;
+DEBUG [ Sat Jan 16 03:44:04 2010 ]: Reconfigure with consensus&lt;br /&gt;
+DEBUG [ Sat Jan 16 03:44:04 2010 ]: E = 102561829, G = 181165749, T = 263302898, g_ratio = 0.688050721721, e_ratio = 0.389520319674, bw_per_hop = 131651449.0&lt;br /&gt;
+DEBUG [ Sat Jan 16 03:44:04 2010 ]: Bw: 78480838/263302898. The exit-weight is: 0, guard weight is: 0.273309388079&lt;br /&gt;
+DEBUG [ Sat Jan 16 03:44:04 2010 ]: E = 102561829, G = 181165749, T = 263302898, g_ratio = 0.688050721721, e_ratio = 0.389520319674, bw_per_hop = 131651449.0&lt;br /&gt;
+DEBUG [ Sat Jan 16 03:44:04 2010 ]: Bw: 78480838/263302898. The exit-weight is: 0, guard weight is: 0.273309388079&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:04 2010 ]: Read 1455/1479 routers&lt;br /&gt;
+DEBUG [ Sat Jan 16 03:44:04 2010 ]: SETEVENTS EXTENDED STREAM BW NEWCONSENSUS NEWDESC CIRC STREAM_BW&lt;/p&gt;
+
+&lt;p&gt;INFO [ Sat Jan 16 03:44:04 2010 ]: Monitoring REMAP events for weirdness&lt;br /&gt;
+ERROR [ Sat Jan 16 03:44:04 2010 ]: An unexpected error occured.&lt;br /&gt;
+Traceback (most recent call last):&lt;br /&gt;
+  File &quot;./soat.py&quot;, line 2828, in &lt;br /&gt;
+    main(sys.argv)&lt;br /&gt;
+  File &quot;./soat.py&quot;, line 2678, in main&lt;br /&gt;
+    scanhdlr.check_dns_rebind()&lt;br /&gt;
+  File &quot;./soat.py&quot;, line 259, in check_dns_rebind&lt;br /&gt;
+    c.authenticate()&lt;br /&gt;
+  File &quot;../../TorCtl/TorCtl.py&quot;, line 721, in authenticate&lt;br /&gt;
+    self.sendAndRecv(&quot;AUTHENTICATE &quot;%s&quot;\r\n&quot;%secret)&lt;br /&gt;
+  File &quot;../../TorCtl/TorCtl.py&quot;, line 710, in sendAndRecv&lt;br /&gt;
+    raise ErrorReply(&quot;%s %s&quot;%(tp, msg))&lt;br /&gt;
+ErrorReply: 515 Authentication failed: Wrong length on authentication cookie.&lt;br /&gt;
+INFO [ Sat Jan 16 03:44:04 2010 ]: Resetting __LeaveStreamsUnattached=0 and FetchUselessDescriptors=1&lt;br /&gt;
+NOTICE [ Sat Jan 16 03:44:04 2010 ]: Tor closed control connection. Exiting event thread.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+
+</feed>

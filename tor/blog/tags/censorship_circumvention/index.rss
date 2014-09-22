@@ -1,0 +1,471 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged censorship_circumvention</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/censorship_circumvention/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: five minutes to speak</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/five_minutes_to_speak/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/five_minutes_to_speak/</link>
+
+
+	<category>/tags/censorship_circumvention</category>
+
+	<category>/tags/cyberutopian</category>
+
+	<category>/tags/peer_to_peer</category>
+
+	<category>/tags/policy</category>
+
+	<category>/tags/policy_makers</category>
+
+	<category>/tags/technology</category>
+
+
+	<pubDate>Sun, 13 Feb 2011 08:52:43 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:15:03Z</dcterms:modified>
+
+	<description>&lt;p&gt;I was asked to give a five minute speech to open a panel in front of a number of policy makers and advisors in Washington, DC in the past few weeks.  The discussion was under &lt;a href=&quot;https://secure.wikimedia.org/wikipedia/en/wiki/Chatham_House_Rule&quot; rel=&quot;nofollow&quot;&gt;Chatham House Rule&lt;/a&gt;.  A number of people have encouraged me to publish the speech notes as a blog post, it is as follows.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Here I am, a technologist in a room full of policy people.  I&#39;ll stick&lt;br /&gt;
+to what I know and try not to put anyone to sleep in the next five&lt;br /&gt;
+minutes.&lt;/p&gt;
+&lt;p&gt;Technology is agnostic, who uses and how they use it matters.  Roads,&lt;br /&gt;
+cars, phones, email, websites are all technologies used for good and bad.&lt;br /&gt;
+In the 1930s, the feds and police warned of mass chaos if the interstate&lt;br /&gt;
+highway system was built in the US.  The ability for criminals to quickly&lt;br /&gt;
+transit between cities was of grave concern. Crime would spread faster,&lt;br /&gt;
+further, and this would hasten the breakdown of the very fabric of the&lt;br /&gt;
+American society, community. Time has shown the benefits vastly outweighed&lt;br /&gt;
+the costs.  This same principle has shown to be true of the internet&lt;br /&gt;
+and computer technology.  Sure, we may have new kinds of crime with botnets,&lt;br /&gt;
+zombies, phishing, but do we really?  Lying, impersonation, and tricking&lt;br /&gt;
+someone into doing your work are the same crimes they have been for the&lt;br /&gt;
+past few millenia.  It&#39;s just that the substrate that is used, has changed.&lt;br /&gt;
+What are some of the largest companies in the world?  GE, IBM, Apple,&lt;br /&gt;
+Microsoft, Google.  What one should or should not do is policy and law,&lt;br /&gt;
+what one can actually do or not do is technology.&lt;/p&gt;
+&lt;p&gt;Circumvention, anonymity, and privacy tools used in a free world can be&lt;br /&gt;
+a minor annoyance, i.e. wikileaks used wikis, ssl, email, and yes, tor,&lt;br /&gt;
+but in the end, it&#39;s an annoyance.  We don&#39;t have people in the streets&lt;br /&gt;
+rioting trying to overthrow our govt. Wikipedia uses the same technology&lt;br /&gt;
+in wikis, ssl, and email. Everyone loves Wikipedia and considers it a net positive.&lt;/p&gt;
+&lt;p&gt;The same circumvention, anonymity, and privacy tools are deadly to&lt;br /&gt;
+repressive regimes.  The free flow of information and education are of&lt;br /&gt;
+great concern to a regime trying to control the horizontal and vertical&lt;br /&gt;
+of every day life. The tactics a regime can use are legal, technical,&lt;br /&gt;
+and physical.  The regime can switch between tactics, generally&lt;br /&gt;
+depending upon what&#39;s economical and most effective.&lt;/p&gt;
+&lt;p&gt;Roughly 1 billion people are online in some way.  Berkman did a study&lt;br /&gt;
+that found roughly 2% of that billion know what a proxy is, or even that&lt;br /&gt;
+technology exists to circumvent internet censorship.  98% of the world&lt;br /&gt;
+accepts that facebook, google, cnn, and the bbc, are blocked and doesn&#39;t&lt;br /&gt;
+try to find ways around it. This doesn&#39;t even broach the topic of online&lt;br /&gt;
+privacy relating to commercial entities nor law enforcement and&lt;br /&gt;
+intelligence agencies trying to learn the who, what, where, and how of your Internet activities.&lt;/p&gt;
+&lt;p&gt;Arguing about which proxy technology should get all of the funding and&lt;br /&gt;
+attention is silly.  The budgets and adversaries vastly outweigh the&lt;br /&gt;
+funding and research into proxies.  It&#39;s not a zero-sum game, and&lt;br /&gt;
+the different technologies take very different approaches to success;&lt;br /&gt;
+freegate/ultrasurf, vpns, psiphon, and web proxies play a game of cat&lt;br /&gt;
+and mouse with ip addresses and sometimes encryption; tor uses the&lt;br /&gt;
+strategy of R&amp;amp;D and protecting ones anonymity and privacy first, the&lt;br /&gt;
+secondary effects of this are well-suited to circumvention too.  Tor,&lt;br /&gt;
+freegate, psiphon, and vpns sum up to roughly $50m in funding from the US govt&lt;br /&gt;
+of the past few years.  Only a very small fraction of that total has made it to actual technology.  Compare that to the billions spent on snakeoil&lt;br /&gt;
+black box technology by the DoD and intelligence agencies preparing for&lt;br /&gt;
+a cyberwar arms race, much like the nuclear arms race, to deter other&lt;br /&gt;
+nations from attacking us.&lt;/p&gt;
+&lt;p&gt;I talked to a member of a terrorist organization in Vietnam.  He&#39;s been&lt;br /&gt;
+stalked, harassed, and had everything confiscated multiple times by his&lt;br /&gt;
+government.  You know his organization as Deutsche Welle.  He&#39;s a&lt;br /&gt;
+reporter.  He had no idea how his plans, documents, and contacts were&lt;br /&gt;
+being discovered and used against him. His ability to understand the&lt;br /&gt;
+differences between Tor, JAP, and Freegate was like asking which tires&lt;br /&gt;
+are best for gravel, snow, or tarmac.  The question he didn&#39;t even know&lt;br /&gt;
+to ask is, &quot;What are safe and secure computing and online practices?&quot;&lt;br /&gt;
+to use my analogy, &quot;what car do I want for those tires?  the answer is&lt;br /&gt;
+a rally car.&quot;   I spent 4 hours going over how the internet works,&lt;br /&gt;
+how to think about adversaries online, what is ssl, what it means, what&lt;br /&gt;
+are phishing, viruses, botnets, and state-sponsored malware.  By the&lt;br /&gt;
+end of the 4th hour, he understood how tor is different than a simple&lt;br /&gt;
+vpn or proxy server, and when to use tor and when it isn&#39;t needed. 3.5h&lt;br /&gt;
+of that discussion was basic operational, computer, and online security&lt;br /&gt;
+and safe practices.&lt;/p&gt;
+&lt;p&gt;So where does this leave us?  It leaves us with a mix of education,&lt;br /&gt;
+technology, and many, many unanswered questions.  This is a young field&lt;br /&gt;
+overall.  As the censorship providers and technologies get better, so&lt;br /&gt;
+will those circumvention technologies.  Educating users about internet&lt;br /&gt;
+safety, risks, and making the tools vastly easier and safer to use&lt;br /&gt;
+should be a goal.&lt;/p&gt;
+&lt;p&gt;Tor published a &quot;10 things to think about circumvention tools&quot; paper to&lt;br /&gt;
+try to distill what we&#39;ve learned over the past 10 years of doing this.&lt;br /&gt;
+In a few of these areas, tor is not the best choice, for now.&lt;/p&gt;
+&lt;p&gt;What about technology?  Isn&#39;t it going to save us all?  Currently,&lt;br /&gt;
+freegate/ultrasurf, vpns, and web proxies are looking for money to fund&lt;br /&gt;
+their growing infrastructure costs. The more users you have, the more&lt;br /&gt;
+servers, more bandwidth, and more costs you incur.  Its a quick way to&lt;br /&gt;
+spend lots of money and get lots of users.  However becoming the ISP for&lt;br /&gt;
+the world gets very expensive, very quickly as you scale up to hundreds&lt;br /&gt;
+of millions of users.  Look at the infrastructures of google, facebook,&lt;br /&gt;
+yahoo, and microsoft to see the challenges that lie ahead for these tools.&lt;/p&gt;
+&lt;p&gt;Tor and &quot;distributed tools&quot; look to improve the research and development&lt;br /&gt;
+and rely on the scaling of users to both provide the circumvention and&lt;br /&gt;
+grow to become a self-sustaining ISP to the world.  We have only begun&lt;br /&gt;
+to see the power and effects of these technologies with bittorrent, jap,&lt;br /&gt;
+skype, freenet, i2p, and tor.&lt;/p&gt;&lt;/blockquote&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/five_minutes_to_speak/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Ten Things to Look for in a Circumvention Tool</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Ten_Things_to_Look_for_in_a_Circumvention_Tool/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Ten_Things_to_Look_for_in_a_Circumvention_Tool/</link>
+
+
+	<category>/tags/article</category>
+
+	<category>/tags/censorship_circumvention</category>
+
+	<category>/tags/circumvention_tools</category>
+
+	<category>/tags/ten_things</category>
+
+
+	<pubDate>Fri, 17 Sep 2010 08:41:30 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:07:53Z</dcterms:modified>
+
+	<description>&lt;p&gt;As more countries crack down on Internet use, people around the world are turning to anti-censorship software that lets them reach blocked websites. Many types of software, also known as circumvention tools, have been created to answer the threat to freedom online. These tools provide different features and levels of security, and it&#39;s important for users to understand the tradeoffs.&lt;/p&gt;
+
+&lt;p&gt;This article lays out ten features you should consider when evaluating a circumvention tool. The goal isn&#39;t to advocate for any specific tool, but to point out what kind of tools are useful for different situations.&lt;/p&gt;
+
+&lt;p&gt;The full article is available here, &lt;a href=&quot;https://www.torproject.org/press/presskit/2010-09-16-circumvention-features.pdf&quot; title=&quot;https://www.torproject.org/press/presskit/2010-09-16-circumvention-features.pdf&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/press/presskit/2010-09-16-circumvention-featu...&lt;/a&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Ten_Things_to_Look_for_in_a_Circumvention_Tool/#comments</comments>
+
+</item>
+<item>
+
+	<title>sjmurdoch: On the risks of serving whenever you surf</title>
+	<dcterms:creator>sjmurdoch</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/On_the_risks_of_serving_whenever_you_surf/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/On_the_risks_of_serving_whenever_you_surf/</link>
+
+
+	<category>/tags/anonymity</category>
+
+	<category>/tags/bridges</category>
+
+	<category>/tags/censorship_circumvention</category>
+
+	<category>/tags/research</category>
+
+
+	<pubDate>Wed, 23 Dec 2009 16:27:12 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:45:05Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/bridges&quot; rel=&quot;nofollow&quot;&gt;Bridge nodes&lt;/a&gt; are one of Tor&#39;s key architectural components for allowing wide access to the network. These act like normal Tor nodes, except there is no centralized list available to download, so it&#39;s harder to block access to all of them. Users who cannot access the Tor network in the normal way can find the IP addresses of a few bridges, and connect to the rest of the Tor network via these nodes. The bridge node IP addresses are distributed in a way such that anyone should be able to find a few, but it should be difficult for someone to find (and block access to) them all. Currently they are available by email or the web, but more strategies are being considered, such as instant messaging or MMORPGs. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/risks-serving-whenever-you-surf&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/On_the_risks_of_serving_whenever_you_surf/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: November 2009 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/</link>
+
+
+	<category>/tags/advocacy</category>
+
+	<category>/tags/censorship_circumvention</category>
+
+	<category>/tags/performance</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/torjava</category>
+
+	<category>/tags/translation</category>
+
+
+	<pubDate>Mon, 14 Dec 2009 22:33:37 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:44:40Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New releases, new hires, new funding&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Bruce Leidl joins to work on developing Tor in Java. Bruce will write a fully functional Tor in Java in order to provide a solid foundation for other java-based projects; such as Tor on mobile platforms like Maemo and Android.&lt;/p&gt;
+
+&lt;p&gt;On November 2nd we released Vidalia 0.2.6. &lt;a href=&quot;https://blog.torproject.org/blog/vidalia-026-released&quot; title=&quot;https://blog.torproject.org/blog/vidalia-026-released&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/vidalia-026-released&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;On November 20th, we released Tor Browser Bundle 1.2.10. &lt;a href=&quot;https://blog.torproject.org/blog/tor-browser-bundle-1210-released&quot; title=&quot;https://blog.torproject.org/blog/tor-browser-bundle-1210-released&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-browser-bundle-1210-released&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;On November 19th, we released Tor 0.2.2.6-alpha. &lt;a href=&quot;https://blog.torproject.org/blog/tor-0226-alpha-released&quot; title=&quot;https://blog.torproject.org/blog/tor-0226-alpha-released&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-0226-alpha-released&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Design, develop, and implement enhancements that make&lt;br /&gt;
+Tor a better tool for users in censored countries.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Roger met with his class at KAIST working on bridge deployment strategies. A few teams developed some creative strategies. Roger is continuing to work with the leading teams to further refine their ideas before publishing. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/november-2009-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Picturing Tor censorship in China</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Picturing_Tor_censorship_in_China/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Picturing_Tor_censorship_in_China/</link>
+
+
+	<category>/tags/bridges</category>
+
+	<category>/tags/censorship</category>
+
+	<category>/tags/censorship_circumvention</category>
+
+	<category>/tags/china</category>
+
+	<category>/tags/directory_requests</category>
+
+	<category>/tags/graphs</category>
+
+	<category>/tags/great_firewall_of_china</category>
+
+
+	<pubDate>Tue, 13 Oct 2009 21:56:10 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:39:06Z</dcterms:modified>
+
+	<description>&lt;p&gt;As &lt;a href=&quot;https://blog.torproject.org/blog/tor-partially-blocked-china&quot;&gt;reported&lt;/a&gt;, Tor was partially blocked by China on September 25th or so in anticipation of the CCP October 1, 2009 60th anniversary.  &lt;/p&gt;
+
+&lt;p&gt;Here&#39;s what one directory mirror recorded for September, &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://blog.torproject.org/files/2009-10-12-china-dirreq-trusted.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And here&#39;s the growth of &lt;a href=&quot;https://www.torproject.org/bridges&quot;&gt;bridge&lt;/a&gt; users in response.  Alas, like our graphs of &lt;a href=&quot;https://blog.torproject.org/blog/measuring-tor-and-iran-part-two&quot;&gt;bridge use in Iran in June 2009&lt;/a&gt;, we only have relative counts for bridge use, not absolute counts. But with a 70x increase in a week, we are talking about 10000+ bridge users:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://blog.torproject.org/files/2009-10-12-china-bridge-usage.png&quot; /&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Picturing_Tor_censorship_in_China/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: September 2009 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/September_2009_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/September_2009_Progress_Report/</link>
+
+
+	<category>/tags/advocacy</category>
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/censorship_circumvention</category>
+
+	<category>/tags/china</category>
+
+	<category>/tags/doj</category>
+
+	<category>/tags/fbi</category>
+
+	<category>/tags/iran</category>
+
+	<category>/tags/performance_improvements</category>
+
+	<category>/tags/senators</category>
+
+
+	<pubDate>Sat, 10 Oct 2009 07:16:46 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:38:38Z</dcterms:modified>
+
+	<description>&lt;p&gt;Here&#39;s what the Tor Project accomplished in September 2009.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;New Hires&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/september-2009-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Carolyn Anhalt is our new Translation and Community Manager. Carolyn has years of experience managing and growing content translation, as well as wrangling online communities and developing volunteer moderators and support roles from the community. She’s fluent or conversant in a number of languages, such as: Russian, French, English, German, Italian, and Welsh. Carolyn’s initial goals are to grow the translator community to keep everything Tor translated, work out better translation tools for translators, and to generally assist translators.&lt;/li&gt;
+&lt;li&gt;Karen Reilly joins us as our Development Director. Karen has years of experience in growing both community-based and foundation-based funding, as well as helping to fulfill the mission of organizations through outreach and community-building. Karen’s initial goals are to further develop community funding, work with our current donors, help create an annual report, and expand Tor’s outreach efforts.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/September_2009_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: A seminar at Salzburg Global</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/A_seminar_at_Salzburg_Global/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/A_seminar_at_Salzburg_Global/</link>
+
+
+	<category>/tags/analog_elders</category>
+
+	<category>/tags/censorship_circumvention</category>
+
+	<category>/tags/digital_natives</category>
+
+	<category>/tags/new_media</category>
+
+	<category>/tags/old_media</category>
+
+	<category>/tags/salzburg_global</category>
+
+	<category>/tags/strengthening_independent_media</category>
+
+
+	<pubDate>Thu, 08 Oct 2009 03:27:01 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:38:31Z</dcterms:modified>
+
+	<description>&lt;p&gt;I was invited to attend a seminar on &quot;Seeding Tomorrow&#39;s Media:  Strategies for More Effective Engagement and Investment&quot;.  This invite came with an all expense paid trip to the &lt;a href=&quot;http://sim.salzburgglobal.org/&quot; rel=&quot;nofollow&quot;&gt;Salzburg Global Trust&lt;/a&gt; in Salzburg, Austria.  The group was an interesting mix of &quot;new media&quot; bloggers and activists and &quot;old media&quot; foundations and journalists.  We decided &quot;new media vs old media&quot; is a false dichotomy; perhaps community vs. institutionalized media is a more apt description. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/seminar-salzburg-global&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/A_seminar_at_Salzburg_Global/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: June 2009 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/June_2009_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/June_2009_Progress_Report/</link>
+
+
+	<category>/tags/anonymity_advocacy</category>
+
+	<category>/tags/bugfixes</category>
+
+	<category>/tags/censorship_circumvention</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/releases</category>
+
+
+	<pubDate>Sat, 11 Jul 2009 21:06:32 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:30:13Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New releases&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;On June 20th we released Tor 0.2.1.16-rc.&lt;br /&gt;
+On June 21st, we released Tor Browser Bundle 1.2.1.&lt;br /&gt;
+On June 23rd, we released Tor Browser Bundle 1.2.2.&lt;br /&gt;
+On June 24th, we released Tor 0.2.0.35-stable.  We expect that this release is the last of the 0.2.0.x -stable series, soon to be replaced with the 0.2.1.x series.&lt;br /&gt;
+On June 30th, we released Vidalia 0.1.14.  &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Censorship circumvention&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Packaged rpms for Red Flag Linux version 6.  Red Flag Linux is reported to be the new operating system for all Internet cafe&#39;s in China.  So far, no one has seen this conversion actually happen, but now we&#39;re ready if it does.&lt;/p&gt;
+
+&lt;p&gt;Our email autoresponder, gettor , received a number of patches to deal with dkim issues, including finding a dkim bug that prevented yahoo email users from fetching Tor. This bug has been fixed. Additionally, we&#39;ve whitelisted some domains where we &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/june-2009-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/June_2009_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>karsten: Measuring the Tor Network from Public Directory Information</title>
+	<dcterms:creator>karsten</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Measuring_the_Tor_Network_from_Public_Directory_Information/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Measuring_the_Tor_Network_from_Public_Directory_Information/</link>
+
+
+	<category>/tags/censorship_circumvention</category>
+
+	<category>/tags/performance</category>
+
+	<category>/tags/research</category>
+
+
+	<pubDate>Tue, 16 Jun 2009 13:25:31 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:27:12Z</dcterms:modified>
+
+	<description>&lt;p&gt;On this year&#39;s &lt;a href=&quot;http://petsymposium.org/2009/hotpets.php&quot; rel=&quot;nofollow&quot;&gt;HotPETs workshop&lt;/a&gt; (August 5-7 in Seattle, WA, USA) I&#39;m going to present some results on &lt;a href=&quot;http://freehaven.net/~karsten/metrics/measuring-tor-public-dir-info-final.pdf&quot; rel=&quot;nofollow&quot;&gt;Measuring the Tor Network from Public Directory Information&lt;/a&gt;. The main idea is to observe trends in the Tor network without having to measure any data other than &lt;a href=&quot;https://git.torproject.org/checkout/tor/master/doc/spec/dir-spec.txt&quot; rel=&quot;nofollow&quot;&gt;public directory information&lt;/a&gt;. These data are there anyway as they are required for clients to make good path selection decisions and build circuits. The results of this paper reveal problems in the current Tor network that need to be addressed, e.g., by &lt;a href=&quot;https://git.torproject.org/checkout/metrics/master/report/dirarch/flagrequirements-2009-04-11.pdf&quot; rel=&quot;nofollow&quot;&gt;lowering requirements for assigning certain flags&lt;/a&gt;, facilitating the upgrade process, improving support for dynamic IP addresses, possibly calculating bandwidth capacity more reliably, and clarifying legal issues for running relays in view of data retention laws. The next step in understanding the problems of the Tor network requires an &lt;a href=&quot;https://blog.torproject.org/blog/performance-measurements-and-blockingresistance-analysis-tor-network&quot; rel=&quot;nofollow&quot;&gt;extension of network measurements&lt;/a&gt; to improve &lt;a href=&quot;https://blog.torproject.org/blog/why-tor-is-slow&quot; rel=&quot;nofollow&quot;&gt;performance&lt;/a&gt; and blocking-resistance of Tor.&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Measuring_the_Tor_Network_from_Public_Directory_Information/#comments</comments>
+
+</item>
+<item>
+
+	<title>karsten: Performance measurements and blocking-resistance analysis in the Tor network</title>
+	<dcterms:creator>karsten</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/</link>
+
+
+	<category>/tags/censorship_circumvention</category>
+
+	<category>/tags/performance</category>
+
+	<category>/tags/research</category>
+
+
+	<pubDate>Thu, 21 May 2009 15:19:22 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:25:02Z</dcterms:modified>
+
+	<description>&lt;p&gt;The Tor network has grown to more than one thousand relays and millions of casual users over the past few years. We are proud of our network&#39;s popularity, but with growth has come increasing &lt;a href=&quot;https://blog.torproject.org/blog/why-tor-is-slow&quot; rel=&quot;nofollow&quot;&gt;performance problems&lt;/a&gt; and attempts by some countries to block access to the Tor network. In order to address these problems, we need to learn more about the Tor network. In this post, I describe the current state of network measurements in Tor and some proposed additions to help us understand the network better. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/performance-measurements-and-blockingresistance-analysis-tor-network&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

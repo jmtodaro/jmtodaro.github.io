@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged 10_5</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/10_5/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/10_5/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/10_5/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:49:49Z</updated>
+<entry>
+	<title>Apple workaround for openssl issues on OS X 10.5 and 10.6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/10_3" />
+
+	<category term="/tags/10_4" />
+
+	<category term="/tags/10_5" />
+
+	<category term="/tags/10_6" />
+
+	<category term="/tags/confused_users" />
+
+	<category term="/tags/openssl" />
+
+	<category term="/tags/osx" />
+
+	<category term="/tags/packaging_mess" />
+
+	<category term="/tags/tls_renegotiation" />
+
+
+	<updated>2011-04-05T11:49:49Z</updated>
+	<published>2010-02-01T03:10:14Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Apple responded to my bug report about a broken openssl.  I&#39;ve since built test packages for OS X 10.5 and 10.6 users.  Their response is:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;
+Thank you for your report of this issue with Tor.&lt;/p&gt;
+&lt;p&gt;The issue you&#39;re seeing is because the current versions of the development tools were created before the OpenSSL security fix, and so do not include the &quot;SSL3_FLAGS_ALLOW_UNSAFE_LEGACY_RENEGOTIATION&quot; definition in the OpenSSL headers.&lt;/p&gt;
+&lt;p&gt;You can work around this issue by supplying the definition to Tor directly, for example by compiling Tor using&lt;/p&gt;
+&lt;p&gt;CPPFLAGS=&#39;-DSSL3_FLAGS_ALLOW_UNSAFE_LEGACY_RENEGOTIATION=0x0010&#39; ./configure &amp;amp;&amp;amp; make&lt;/p&gt;
+&lt;p&gt;This will work on both Leopard and Snow Leopard.
+&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;If you have an Intel (i386) Mac, use the normal i386 packages for Tor 0.2.2.8-alpha release at &lt;a href=&quot;https://www.torproject.org/download&quot; title=&quot;https://www.torproject.org/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you have a PowerPC (ppc) Mac AND are running OS X 10.5 or 10.6, use these packages: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/apple-workaround-openssl-issues-os-x-105-and-106&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

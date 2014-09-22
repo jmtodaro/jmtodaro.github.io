@@ -1,0 +1,2248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>New Stable released, Tor 0.2.1.21</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FNew_Stable_released_Tor_0_2_1_21&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">New Stable released, Tor 0.2.1.21</a>
+
+</span>
+
+
+<div id="content">
+<p>Tor 0.2.1.21 fixes an incompatibility with the most recent OpenSSL<br />
+library. If you use Tor on Linux / Unix and you're getting SSL<br />
+renegotiation errors, upgrading should help. We also recommend an<br />
+upgrade if you're an exit relay.</p>
+
+<p><a href="https://www.torproject.org/easy-download" title="https://www.torproject.org/easy-download" rel="nofollow">https://www.torproject.org/easy-download</a></p>
+
+<p>Changes in version 0.2.1.21 - 2009-12-21<br />
+<strong>Major bugfixes:</strong></p>
+
+<ul>
+<li> Work around a security feature in OpenSSL 0.9.8l that prevents our<br />
+      handshake from working unless we explicitly tell OpenSSL that we<br />
+      are using SSL renegotiation safely. We are, of course, but OpenSSL<br />
+      0.9.8l won't work unless we say we are.</li>
+<li> Avoid crashing if the client is trying to upload many bytes and the<br />
+      circuit gets torn down at the same time, or if the flip side<br />
+      happens on the exit relay. Bugfix on 0.2.0.1-alpha; fixes bug 1150.</li>
+</ul>
+
+<p><strong>Minor bugfixes:</strong> <span class="read-more"><a href="http://blog.torproject.org/blog/new-stable-released-tor-02121"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+<p><ul>
+<li> Do not refuse to learn about authority certs and v2 networkstatus<br /></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/bug_fixes/" rel="tag">bug fixes</a>
+
+<a href="../../tags/exit_relays/" rel="tag">exit relays</a>
+
+<a href="../../tags/openssl_fixes/" rel="tag">openssl fixes</a>
+
+<a href="../../tags/stable_release/" rel="tag">stable release</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-d01414d4540eb90b109515a30da0583f">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+Will there be an update for tor-devel/alpha users? Should I wait for this or should I change from alpha to stable?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 30 Dec 2009 06:45:15 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-eaab8141f66dd45e27f3600a5f5b36fa">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+Openssl fixes are coming in 0.2.2.7-alpha, which should be released soon.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 31 Dec 2009 06:45:16 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-435cede5e06b0a02af9af453e2ae94ab">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+Tnx, so I'll wait for it.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 04 Jan 2010 06:45:17 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4cabbcbf7158c3713b94984638aa46a9">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+Downloaded and installed v 0.2.1.21 (only Tor, no bundle). Starts and runs faster than version .20. Thanks for the improvement! Running Win XP Pro sp3 with Privoxy 3.0.12 (stable).
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 01 Jan 2010 06:45:18 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b6273e86cc6847965d52c7a66120d1ea">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+Just out of curiosity, why Privoxy and not Polipo?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 02 Jan 2010 06:45:19 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c7033e1a312cc33970a10140d1f472a7">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>It still comes with polipo for me <img src="../../smileys/sad.png" alt=":(" /><br />
+Did you install have privoxy and they changed it later? or you already have privoxy from previous version?<br />
+polipo sucks.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 04 Jan 2010 06:45:20 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e4a07a108554601cf9a35f61248d3880">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+The bundles we produce all come with polipo.  If you don't like polipo, don't install it.  You can use torbutton in firefox directly with tor.  you'll receive lots of "network errors", but it does work most of the time.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 04 Jan 2010 06:45:21 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-cc7f99d59a98ed2220af7d651030f18d">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+<p>I think you guys made a big mistake putting polipo on the release version without even testing it in beta first.</p>
+
+<p>Polipo doesn't work properly with some sites. always blank pages and missing images, never had that problem with privoxy, i could even privoxy to auto-retry broken connection so all pages always load perfectly.</p>
+
+<p>Polipo looks good and fast at first look, but after a while using it you start to see the little things where it fails.</p>
+
+<p>Firefox already has caching (that actually works properly), polipo doesn't do anything for increasing speed that increasing the memory cache size in firefox cant match.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 04 Jan 2010 06:45:22 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-da754fb68852857e4f72bf14bafc53e5">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+<p>Everything is tested in alpha first, then beta, then release.  Polipo has been in the tor browser bundles for 3 years.  It may have some problems, but overall it is fast, reliable and supports newer features like http 1.1 and pipelining.</p>
+
+<p>As I've stated numerous times, if the firefox socks layer worked correctly, we wouldn't use an http proxy in between tor and the browser at all.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 06 Jan 2010 06:45:23 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-62da11e1c6ac71c07d0014db8a40c7f1">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+<p>ژانويه 09 23:44:30.343 [Notice] Tor v0.2.1.21. This is experimental software. Do not rely on it for strong anonymity. (Running on Windows XP Service Pack 3 [workstation] {terminal services, single user})<br />
+ژانويه 09 23:44:30.453 [Notice] Initialized libevent version 1.4.13-stable using method win32. Good.<br />
+ژانويه 09 23:44:30.453 [Notice] Opening Socks listener on 127.0.0.1:9050<br />
+ژانويه 09 23:44:30.562 [Notice] Opening Control listener on 127.0.0.1:9051<br />
+ژانويه 09 23:44:30.671 [Notice] Parsing GEOIP file.<br />
+ژانويه 09 23:44:35.062 [Warning] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 1; recommendation warn)<br />
+ژانويه 09 23:44:35.093 [Notice] No current certificate known for authority moria1; launching request.<br />
+ژانويه 09 23:44:35.093 [Notice] No current certificate known for authority tor26; launching request.<br />
+ژانويه 09 23:44:35.093 [Notice] No current certificate known for authority dizum; launching request.<br />
+ژانويه 09 23:44:35.093 [Notice] No current certificate known for authority ides; launching request.<br />
+ژانويه 09 23:44:35.093 [Notice] No current certificate known for authority gabelmoo; launching request.<br />
+ژانويه 09 23:44:35.093 [Notice] No current certificate known for authority dannenberg; launching request.<br />
+ژانويه 09 23:44:35.093 [Notice] No current certificate known for authority urras; launching request.<br />
+ژانويه 09 23:44:35.328 [Warning] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 2; recommendation warn)<br />
+ژانويه 09 23:44:35.546 [Warning] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 3; recommendation warn)<br />
+ژانويه 09 23:45:18.781 [Notice] Renaming old configuration file to "C:\Documents and Settings\BytePtr\Application Data\Vidalia\torrc.orig.1"<br />
+ژانويه 09 23:45:20.609 [Notice] Tor v0.2.1.21. This is experimental software. Do not rely on it for strong anonymity. (Running on Windows XP Service Pack 3 [workstation] {terminal services, single user})<br />
+ژانويه 09 23:45:20.609 [Notice] Initialized libevent version 1.4.13-stable using method win32. Good.<br />
+ژانويه 09 23:45:20.609 [Notice] Opening Socks listener on 127.0.0.1:9050<br />
+ژانويه 09 23:45:20.718 [Notice] Opening Control listener on 127.0.0.1:9051<br />
+ژانويه 09 23:45:20.718 [Notice] Parsing GEOIP file.<br />
+ژانويه 09 23:45:23.968 [Warning] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 1; recommendation warn)<br />
+ژانويه 09 23:45:24.031 [Notice] No current certificate known for authority moria1; launching request.<br />
+ژانويه 09 23:45:24.031 [Notice] No current certificate known for authority tor26; launching request.<br />
+ژانويه 09 23:45:24.031 [Notice] No current certificate known for authority dizum; launching request.<br />
+ژانويه 09 23:45:24.031 [Notice] No current certificate known for authority ides; launching request.<br />
+ژانويه 09 23:45:24.031 [Notice] No current certificate known for authority gabelmoo; launching request.<br />
+ژانويه 09 23:45:24.031 [Notice] No current certificate known for authority dannenberg; launching request.<br />
+ژانويه 09 23:45:24.031 [Notice] No current certificate known for authority urras; launching request.<br />
+ژانويه 09 23:45:24.312 [Warning] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 2; recommendation warn)<br />
+ژانويه 09 23:45:24.328 [Warning] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 3; recommendation warn)<br />
+ژانويه 09 23:45:50.125 [Notice] Tor v0.2.1.21. This is experimental software. Do not rely on it for strong anonymity. (Running on Windows XP Service Pack 3 [workstation] {terminal services, single user})<br />
+ژانويه 09 23:45:50.234 [Notice] Initialized libevent version 1.4.13-stable using method win32. Good.<br />
+ژانويه 09 23:45:50.234 [Notice] Opening Socks listener on 127.0.0.1:9050<br />
+ژانويه 09 23:45:50.234 [Notice] Opening Control listener on 127.0.0.1:9051<br />
+ژانويه 09 23:45:50.234 [Notice] Parsing GEOIP file.<br />
+ژانويه 09 23:45:54.234 [Warning] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 1; recommendation warn)</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 09 Jan 2010 06:45:24 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ceeb9c929759fea9390ad6b6033979af">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+<p>Jan 14 10:25:14.921 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 1; recommendation warn)</p>
+
+<p>Jan 14 10:33:03.578 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 1; recommendation warn)</p>
+
+<p>Jan 14 10:37:07.093 [Notice] Tor v0.2.1.21. This is experimental software. Do not rely on it for strong anonymity. (Running on Windows XP Service Pack 3 [workstation] {terminal services, single user})<br />
+Jan 14 10:37:07.093 [Notice] Initialized libevent version 1.4.13-stable using method win32. Good.<br />
+Jan 14 10:37:07.093 [Notice] Opening Socks listener on 127.0.0.1:9050<br />
+Jan 14 10:37:07.093 [Notice] Opening Control listener on 127.0.0.1:9051<br />
+Jan 14 10:37:07.093 [Notice] Parsing GEOIP file.<br />
+Jan 14 10:37:30.921 [Warning] Problem bootstrapping. Stuck at 80%: Connecting to the Tor network. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 1; recommendation warn)<br />
+Jan 14 10:37:31.031 [Warning] Problem bootstrapping. Stuck at 80%: Connecting to the Tor network. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 2; recommendation warn)<br />
+Jan 14 10:37:34.859 [Warning] Problem bootstrapping. Stuck at 80%: Connecting to the Tor network. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 3; recommendation warn)<br />
+Jan 14 10:37:34.875 [Warning] Problem bootstrapping. Stuck at 80%: Connecting to the Tor network. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 4; recommendation warn)<br />
+Jan 14 10:37:35.078 [Warning] Problem bootstrapping. Stuck at 80%: Connecting to the Tor network. (No route to host [WSAEHOSTUNREACH ]; NOROUTE; count 5; recommendation warn)<br />
+Jan 14 10:37:36.078 [Warning] Problem bootstrapping. Stuck at 80%: Connecting to the Tor network. (No route to host [WSAEHOSTUNREACH ]; NOROUTE; count 6; recommendation warn)<br />
+Jan 14 10:37:37.078 [Warning] Problem bootstrapping. Stuck at 80%: Connecting to the Tor network. (No route to host [WSAEHOSTUNREACH ]; NOROUTE; count 7; recommendation warn)<br />
+Jan 14 10:37:38.078 [Warning] Problem bootstrapping. Stuck at 80%: Connecting to the Tor network. (No route to host [WSAEHOSTUNREACH ]; NOROUTE; count 8; recommendation warn)<br />
+Jan 14 10:37:39.078 [Warning] Problem bootstrapping. Stuck at 80%: Connecting to the Tor network. (No route to host [WSAEHOSTUNREACH ]; NOROUTE; count 9; recommendation warn)<br />
+Jan 14 10:38:01.000 [Warning] Problem bootstrapping. Stuck at 80%: Connecting to the Tor network. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 10; recommendation warn)<br />
+Jan 14 10:38:02.968 [Warning] Problem bootstrapping. Stuck at 80%: Connecting to the Tor network. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 11; recommendation warn)<br />
+Jan 14 10:38:04.109 [Notice] Bootstrapped 85%: Finishing handshake with first hop.<br />
+Jan 14 10:38:32.031 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 12; recommendation warn)<br />
+Jan 14 10:40:21.953 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 13; recommendation warn)<br />
+Jan 14 10:40:23.156 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 14; recommendation warn)<br />
+Jan 14 10:40:25.015 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 15; recommendation warn)<br />
+Jan 14 10:40:37.046 [Notice] Tried for 120 seconds to get a connection to [scrubbed]:443. Giving up. (waiting for circuit)<br />
+Jan 14 10:40:45.140 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 16; recommendation warn)<br />
+Jan 14 10:40:46.015 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 17; recommendation warn)<br />
+Jan 14 10:41:07.109 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 18; recommendation warn)<br />
+Jan 14 10:41:09.078 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 19; recommendation warn)<br />
+Jan 14 10:41:28.984 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 20; recommendation warn)<br />
+Jan 14 10:41:31.062 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 21; recommendation warn)<br />
+Jan 14 10:41:49.984 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 22; recommendation warn)<br />
+Jan 14 10:41:53.046 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 23; recommendation warn)<br />
+Jan 14 10:42:10.984 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 24; recommendation warn)<br />
+Jan 14 10:42:14.156 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 25; recommendation warn)<br />
+Jan 14 10:42:31.984 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 26; recommendation warn)<br />
+Jan 14 10:42:36.031 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 27; recommendation warn)<br />
+Jan 14 10:42:59.875 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (DONE; DONE; count 28; recommendation warn)<br />
+Jan 14 10:42:59.953 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (DONE; DONE; count 29; recommendation warn)<br />
+Jan 14 10:42:59.953 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (DONE; DONE; count 30; recommendation warn)<br />
+Jan 14 10:42:59.953 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 31; recommendation warn)<br />
+Jan 14 10:42:59.968 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 32; recommendation warn)<br />
+Jan 14 10:43:00.078 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (No route to host [WSAEHOSTUNREACH ]; NOROUTE; count 33; recommendation warn)<br />
+Jan 14 10:43:01.093 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (No route to host [WSAEHOSTUNREACH ]; NOROUTE; count 34; recommendation warn)<br />
+Jan 14 10:43:22.078 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (No route to host [WSAEHOSTUNREACH ]; NOROUTE; count 35; recommendation warn)<br />
+Jan 14 10:43:23.093 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (No route to host [WSAEHOSTUNREACH ]; NOROUTE; count 36; recommendation warn)<br />
+Jan 14 10:43:24.078 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (No route to host [WSAEHOSTUNREACH ]; NOROUTE; count 37; recommendation warn)<br />
+Jan 14 10:43:25.093 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (No route to host [WSAEHOSTUNREACH ]; NOROUTE; count 38; recommendation warn)<br />
+Jan 14 10:43:26.093 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (No route to host [WSAEHOSTUNREACH ]; NOROUTE; count 39; recommendation warn)<br />
+Jan 14 10:43:27.093 [Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (No route to host [WSAEHOSTUNREACH ]; NOROUTE; count 40; recommendation warn)</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 16 Jan 2010 06:45:25 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-37ab12d5d2340f876e4223c460647efb">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+<p>Sounds like you need a bridge to get access to the rest of the world, or your local network is disconnecting you for some reason.  </p>
+
+<p>Windows also has a problem where if it runs out of sockets, it needs a reboot to let Tor work again.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 18 Jan 2010 06:45:26 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9daaf908cc7945cdbfef53f9dd12c2ee">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+Is it possible that the Chinese or Iranians are jamming TOR relays ? Your Captcha is almost unreadable <img src="../../smileys/sad.png" alt=":(" />
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 16 Jan 2010 06:45:27 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7993cee595164f2abbf9f554ab52eed4">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+<p>China is blocking the public relays.  One has to use bridges to get access to the rest of the Tor network and then on to the open internet.  </p>
+
+<p>Iran seems to be just throttling all ssl to make everything slower.</p>
+
+<p>The captcha seems readable by a ton of automated spam bots.  It's green on black.  If you're green colorblind, that could be a problem.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 18 Jan 2010 06:45:28 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-77f483fba8ac3c6ba026cac00f969800">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+It seems possible that a denial of service attack could be the reason for the connection problems. TOR is definitely an issue for repressive regimes, and they do have plenty of resources to stage such attacks.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 16 Jan 2010 06:45:29 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4a458f4527bb8d4b166d6e146632157c">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+According to the debug log the [WSAENOTCONN ] message means that the software is failing to connect to the network properly, which isn't a local problem. It's a networking problem that will be addressed soon hopefully. Some of us feel that captchas are simply a way to prevent people from using the internet, since they seem to directly affect users of TOR. 
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 20 Jan 2010 06:45:30 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-27b39adaa558fec47068049ac9fd04f4">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+<p>Am I the only one having connect problems to the network? I get 'Establishing a Tor circuit failed (done)'. Was  working fine up to 2 days ago (Monday).</p>
+
+<p>Or is it the guys 'over there'?</p>
+
+<p>Thanks.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 20 Jan 2010 06:45:31 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-cc53e48a296cc420ab1aa2603f869b70">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+<p>It appears that the Mac OS X Security Update 2010-001 (Snow Leopard) disables renegotiation in openssl - breaks current release of Tor (Vidalia) with version 0.2.1.22 of the TOR executable. I thought this problem had been addressed already, but the new update seems to break even the latest version. </p>
+
+<p>http://support.apple.com/kb/HT4004</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 21 Jan 2010 06:45:32 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-20600cc48874df9f24b814fdbba37901">
+
+<div class="comment-subject">
+
+Comment 19
+
+</div>
+
+<div class="inlinecontent">
+I'm also experiencing this problem on OS X 10.6.2 with the security update applied running Tor 0.2.1.22.  The following appears in the log: [Warning] TLS error: unexpected close while renegotiating.  Makes sense if renegotiation has been disabled, but I thought this was fixed with the latest version of Tor since this is now the default behavior of OpenSSL 0.9.8l. I don't understand the complete change in the openssl codebase, but I wouldn't be surprised if Apple did something different in their update.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 22 Jan 2010 06:45:33 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-602c86ba80ea456aab08abd1b7039aaf">
+
+<div class="comment-subject">
+
+Comment 20
+
+</div>
+
+<div class="inlinecontent">
+Yea, apple disabled SSL renegotiation in its entirety.  I've spent all night trying to re-enable it.  No luck, I don't understand OpenSSL well enough.  Guess we have to wait for Apple on this one.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 23 Jan 2010 06:45:34 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d2b05a3f247427eed81e2127025f8dc7">
+
+<div class="comment-subject">
+
+Comment 21
+
+</div>
+
+<div class="inlinecontent">
+<p>Same problem here. Installed latest sec. update yesterday. Since then: TLS renegotiation error.<br />
+Apple support page: no word on "Tor".<br />
+Please let me know when this is solved. (Twitter @Whizzbizz)<br />
+I'll try to post here, when I get a solution.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 23 Jan 2010 06:45:35 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-06a4f70cb8bb19a75dd4f108cbb28a96">
+
+<div class="comment-subject">
+
+Comment 22
+
+</div>
+
+<div class="inlinecontent">
+BTW: vers.0.2.2.7 doesn't solve the problem…
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 23 Jan 2010 06:45:36 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9501d0ae10a617bdfd0085a6ee716d46">
+
+<div class="comment-subject">
+
+Comment 23
+
+</div>
+
+<div class="inlinecontent">
+<p>yes, everyone knows Apple did not really fixed the OpenSSL issue but made a "by-pass" fix. In fact, this is a mistake, as we can see it with Tor: it does not work anymore. Damn, why? why?<br />
+How to disable or uninstall this Apple security fix?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 23 Jan 2010 06:45:37 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-dc8c859adccb535e604e8562b646df59">
+
+<div class="comment-subject">
+
+Comment 24
+
+</div>
+
+<div class="inlinecontent">
+<p>I have met the same error with 10.5.8 after installing the damn SecUpdate 2010-001. I can believe that how apple dare make a such fix. Hope this problem would be solved soon.<br />
+I wasted a whole morning for changing bridges!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 27 Jan 2010 06:45:38 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-945b26e37163434cf4fa747172a54c23">
+
+<div class="comment-subject">
+
+Comment 25
+
+</div>
+
+<div class="inlinecontent">
+<p>http://archives.seul.org/or/talk/Jan-2010/msg00161.html</p>
+
+<p>"You should upgrade to Tor 0.2.1.22 or 0.2.2.7-alpha:<br />
+https://www.torproject.org/download.html.en</p>
+
+<p>In early January we discovered that two of the seven directory<br />
+authorities were compromised (moria1 and gabelmoo), along with<br />
+metrics.torproject.org, a new server we'd recently set up to serve<br />
+metrics data and graphs. The three servers have since been reinstalled<br />
+with service migrated to other servers.</p>
+
+<p>We made fresh identity keys for the two directory authorities, which is<br />
+why you need to upgrade."</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 22 Jan 2010 06:45:39 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0115aca2c45bd1452efe79c50ec9bee5">
+
+<div class="comment-subject">
+
+Comment 26
+
+</div>
+
+<div class="inlinecontent">
+0.2.2.7-alpha  still has the stuck during bootstrapping problem, but it seems to be much less frequent.   
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 23 Jan 2010 06:45:40 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-11d2145b89004baed6570ae3b243d269">
+
+<div class="comment-subject">
+
+Comment 27
+
+</div>
+
+<div class="inlinecontent">
+I too have the Apple completely disabled OpenSSL renegociation problem with latest tor. Wouldn't it be possible to build a statically linked tor binary for OS X with a less restrictive OpenSSL? If the system OpenSSL breaks you just don't use it.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 24 Jan 2010 06:45:41 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3ace36af8c6598c1e9f16eb7fb9676a0">
+
+<div class="comment-subject">
+
+Comment 28
+
+</div>
+
+<div class="inlinecontent">
+OK, so I compiled tor 0.2.1.22 manually linking it to the /opt/local libevent/libssl (the MacPorts versions) and now it works fine. I tried making a static version but apparently compiling static binaries on OS X is a PIA if not impossible.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 24 Jan 2010 06:45:42 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bdabbe1c89bb51650286dea43652cd2f">
+
+<div class="comment-subject">
+
+Comment 29
+
+</div>
+
+<div class="inlinecontent">
+Awesome.  Can you post instructions for those of us with less technical competency?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 24 Jan 2010 06:45:43 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bd3ded60cc9bcad067287efb693b1316">
+
+<div class="comment-subject">
+
+Comment 30
+
+</div>
+
+<div class="inlinecontent">
+yep, useful instructions and requirements would be very nice indeed.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 24 Jan 2010 06:45:44 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3f1a953ae033c477aa69876aaf12a8bb">
+
+<div class="comment-subject">
+
+Comment 31
+
+</div>
+
+<div class="inlinecontent">
+<p>Install MacPorts if you don't already have it,<br />
+install libevent and openssl,<br />
+get the tor src<br />
+CPPFLAGS="-I/opt/local/include" LDFLAGS="-L/opt/local/lib" ./configure<br />
+make all<br />
+sudo cp src/or/tor /Applications/Vidalia.app/Contents/MacOS/tor</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 25 Jan 2010 06:45:45 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-56b660bb2123437fc5bd4bc0c1e6cbab">
+
+<div class="comment-subject">
+
+Comment 32
+
+</div>
+
+<div class="inlinecontent">
+<ul>
+<li>MacPorts if you don't already have it</li>
+<li>install libevent and openssl</li>
+<li>get the tor src</li>
+<li>CPPFLAGS="-I/opt/local/include" LDFLAGS="-L/opt/local/lib" ./configure</li>
+<li>make all</li>
+<li>sudo cp src/or/tor /Applications/Vidalia.app/Contents/MacOS/tor</li>
+</ul>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 25 Jan 2010 06:45:46 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f2a2948a35aa38bb881eddf960bd730e">
+
+<div class="comment-subject">
+
+Comment 33
+
+</div>
+
+<div class="inlinecontent">
+Tks very much for providing a solution. However, with litter computer knowledge, I can not totally understand your description. Would you please show some illustrating pictures. I would appreciate it if you do me a favor to mail me the download link of necessary software and instructions to xianyu185@gmail.com.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 27 Jan 2010 06:45:47 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6f8639bf5649dee1a8dee5c6aacec1fc">
+
+<div class="comment-subject">
+
+Comment 34
+
+</div>
+
+<div class="inlinecontent">
+<p>Yup it works. Here's a more detailed description</p>
+
+<ul>
+<li>Download MacPorts (www.macports.org) &amp; the existing Tor Vidalia if you don't already have it</li>
+<li>Install libevent and openssl by typing <code>sudo port install libevent</code> and <code>sudo port install openssl</code> in a Terminal (If you don't know what a Terminal is, google it)</li>
+<li>Download the "Source Tarballs" in the "Available Linux/Unix Downloads" Page</li>
+<li>In your Terminal, change into the folder(directory) to where you downloaded and uncompressed the source. If you downloaded into Downloads, it is most likely to be in <code>/Users/</code>username<code>/Downloads/tor-</code>version.<br />
+To do this type: <code>cd /Users/</code>username<code>/Downloads/tor-0.2.1.22</code> </li>
+<li>Then type the following codes:
+<ul>
+<li><code>CPPFLAGS="-I/opt/local/include" LDFLAGS="-L/opt/local/lib" ./configure</code></li>
+<li><code>make all</code></li>
+<li><code>sudo cp src/or/tor /Applications/Vidalia.app/Contents/MacOS/tor</code></li>
+</ul>
+</li>
+</ul>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 31 Jan 2010 06:45:48 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-98b674bcce6a546a6b06adc87f09adac">
+
+<div class="comment-subject">
+
+Comment 35
+
+</div>
+
+<div class="inlinecontent">
+<p><p>You don't have to do all that. You can just run 2 commands</p>
+
+<p><code>sudo port install tor;  </code></p>
+
+<p><code>sudo cp /opt/local/bin/tor /Applications/Vidalia.app/Contents/MacOS/tor</code></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 12 Feb 2010 06:45:49 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0cb2e647bfb9b5c693389be3b0a0046d">
+
+<div class="comment-subject">
+
+Comment 36
+
+</div>
+
+<div class="inlinecontent">
+<p>great, that worked fine!<br />
+i even just changed the tor-path in settings to <code>/opt/local/bin/tor</code></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 14 Feb 2010 06:45:50 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-27bf59095da3b46d96cfd9ae1a43958c">
+
+<div class="comment-subject">
+
+Comment 37
+
+</div>
+
+<div class="inlinecontent">
+my mac powerpc vidalia is not connecting anymore since the recent security update either. has anyone got a fix or workaround for me please
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 25 Jan 2010 06:45:51 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2be81014c7d65affdab3a1fab10c1b35">
+
+<div class="comment-subject">
+
+Comment 38
+
+</div>
+
+<div class="inlinecontent">
+Same problem here. Even though it seems like the relay still works!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 29 Jan 2010 06:45:52 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-717e67163229c0d17c0fb8f774b46652">
+
+<div class="comment-subject">
+
+Comment 39
+
+</div>
+
+<div class="inlinecontent">
+Oops, retracting my statement - just connected after 20 minutes trying!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 29 Jan 2010 06:45:53 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b0e5a38036ec8b4fe6587aef132771b1">
+
+<div class="comment-subject">
+
+Comment 40
+
+</div>
+
+<div class="inlinecontent">
+<p>I installed openssl and libevent from mac ports, instead of compiling from source I then installed the mac ports version of tor and linked vidala to the new binary in /opt/local/bin/tor</p>
+
+<p>Seems to work so far...</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 26 Jan 2010 06:45:54 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-63316afcfc196293f552c55e344fe00f">
+
+<div class="comment-subject">
+
+Comment 41
+
+</div>
+
+<div class="inlinecontent">
+<p>PLEASE CREATE A PROPER FIX for MAC OS X asap please.<br />
+The new security update has locked me out!!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 27 Jan 2010 06:45:55 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f7397f24075afca28d80a2c3a125e468">
+
+<div class="comment-subject">
+
+Comment 42
+
+</div>
+
+<div class="inlinecontent">
+<p>I'm trying to do the fix and I've installed Mac Ports on my macbook running 10.5.8, but I don't exactly understand how to </p>
+
+<p>get the tor src<br />
+CPPFLAGS="-I/opt/local/include" LDFLAGS="-L/opt/local/lib" ./configure<br />
+make all<br />
+sudo cp src/or/tor /Applications/Vidalia.app/Contents/MacOS/tor</p>
+
+<p>just a little more explanation would be helpful.  Thanks!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 28 Jan 2010 06:45:56 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-08c75839ec2488c7873d3d517bb798ff">
+
+<div class="comment-subject">
+
+Comment 43
+
+</div>
+
+<div class="inlinecontent">
+<p>On Mac OS 10.5.8 I had the same problems as described above. With fink I did<br />
+fink install tor<br />
+Then in Vidalia I changed the Tor-Application to<br />
+/sw/bin/tor<br />
+Now everything is fine, Tor works again.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 30 Jan 2010 06:45:57 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a16501283068875f3f1c458e375cd817">
+
+<div class="comment-subject">
+
+Comment 44
+
+</div>
+
+<div class="inlinecontent">
+<p>I tried to use the above fix, but when I tried to install libevent I got the following eror. Any ideas?</p>
+
+<p>Error: Target org.macports.configure returned: configure failure: shell command " cd "/opt/local/var/macports/build/_opt_local_var_macports_sources_rsync.macports.org_release_ports_devel_libevent/work/libevent-1.4.13-stable" &amp;&amp; ./configure --prefix=/opt/local --mandir=/opt/local/share/man " returned error 77<br />
+Command output: checking for a BSD-compatible install... /usr/bin/install -c<br />
+checking whether build environment is sane... yes<br />
+checking for a thread-safe mkdir -p... ./install-sh -c -d<br />
+checking for gawk... no<br />
+checking for mawk... no<br />
+checking for nawk... no<br />
+checking for awk... awk<br />
+checking whether make sets $(MAKE)... no<br />
+checking for gcc... /usr/bin/gcc-4.0<br />
+checking for C compiler default output file name...<br />
+configure: error: in `/opt/local/var/macports/build/_opt_local_var_macports_sources_rsync.macports.org_release_ports_devel_libevent/work/libevent-1.4.13-stable':<br />
+configure: error: C compiler cannot create executables<br />
+See `config.log' for more details.</p>
+
+<p>Error: Status 1 encountered during processing.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 31 Jan 2010 06:45:58 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a944e582ec5e87beca995eaf198d9006">
+
+<div class="comment-subject">
+
+Comment 45
+
+</div>
+
+<div class="inlinecontent">
+<p>Can you please provide the output file "config.log" ?<br />
+But seeing your error, you don't have gcc installed.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 31 Jan 2010 06:45:59 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6e839f7a4be3a9d4cff32565e72ddf31">
+
+<div class="comment-subject">
+
+Comment 46
+
+</div>
+
+<div class="inlinecontent">
+Forgive me if I appear dense, but where do I find the file 'config log', and what is gcc please?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 03 Feb 2010 06:46:00 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-75f65d10a705deffe9289c88737635c0">
+
+<div class="comment-subject">
+
+Comment 47
+
+</div>
+
+<div class="inlinecontent">
+<p>You really make it seem so easy with your presentation but I find this topic to be really something which I think I would never understand. It seems too complicated and very broad for me. I am looking forward for your next post, I will try to get the hang of it!<br />
+Reverse Phone Lookup</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 11 Feb 2010 06:46:01 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b0739d6926ce57a251c8c1283a3b4293">
+
+<div class="comment-subject">
+
+Comment 48
+
+</div>
+
+<div class="inlinecontent">
+<p>Having the exact same problem here.<br />
+Macports server also seems to be down, can anyone provide an alternate source?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 16 Feb 2010 06:46:02 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ba33a687f7d969983cc6a30416ff8aa0">
+
+<div class="comment-subject">
+
+Comment 49
+
+</div>
+
+<div class="inlinecontent">
+<p>EASIEST fix:<br />
+Just download the 0.2.2.8-alpha version for powerpc or intel.  Done!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 16 Feb 2010 06:46:03 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b86ef28552bbc0d8fe33939416c58eff">
+
+<div class="comment-subject">
+
+Comment 50
+
+</div>
+
+<div class="inlinecontent">
+downloading the alpha did the job ... thanks!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 06 Mar 2010 06:46:04 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-028efd0e98fdfae716ed200b98d6f61f">
+
+<div class="comment-subject">
+
+Comment 51
+
+</div>
+
+<div class="inlinecontent">
+Do you know how to make a static binary in other unix distros?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 12 Apr 2010 06:46:05 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-57adb4d9c2a4ed6886cd51e31e1f081c">
+
+<div class="comment-subject">
+
+Comment 52
+
+</div>
+
+<div class="inlinecontent">
+<p>vidalia-bundle-0.2.1.26-0.2.9.exe</p>
+
+<p>do any of you actually use tor with polipo on windows ? (windows server 2003).</p>
+
+<p>if you are going to advise us to use polipo then maybe you should visit the polipo website and see what a mess windows installation of polipo is.<br />
+e.g. there are several folders that need to be created for polipo to actually run in the first place, usr etc var (with subfolders) and create the resolv.conf file.</p>
+
+<p>When those folders are in place the first thing vidalia does when starting is advise "connecting to the tor network failed (no route to host).</p>
+
+<p>I though the idea of vidalia bundle was to be able to download it, run it under windows and startup tor. That is to be able to run tor without having to set up polipo.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 07 Aug 2010 06:46:06 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6be0ad753e7c7d80cca36c80b8bfc761">
+
+<div class="comment-subject">
+
+Comment 53
+
+</div>
+
+<div class="inlinecontent">
+<p>Polipo in the vidalia-bundle is pre-configured to work with Tor.  You don't need to configure polipo, it already is configured for Tor.</p>
+
+<p>If you have specific issues, please open a bug at <a href="https://trac.torproject.org" title="https://trac.torproject.org" rel="nofollow">https://trac.torproject.org</a>.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 08 Aug 2010 06:46:07 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9ea5ee2fdee0db844b0d301fe6a15e16">
+
+<div class="comment-subject">
+
+Comment 54
+
+</div>
+
+<div class="inlinecontent">
+<p>i have a problem in installing my tor in red hat 5 linux </p>
+
+<p>this is what the problem is </p>
+
+<p>checking for u_int64_t... yes<br />
+checking for u_int32_t... yes<br />
+checking for u_int16_t... yes<br />
+checking for u_int8_t... yes<br />
+checking for libevent directory... (system)<br />
+checking whether we need extra options to link libevent... configure: error: Found linkable libevent in (system), but it does not seem to run, even with -R. Maybe specify another using --with-libevent-dir}<br />
+[sam@dhcpc0 tor-0.2.2.17-alpha]# </p>
+
+<p>can u give me the solution please .. <img src="../../smileys/sad.png" alt=":(" /> </p>
+
+<p>my email id is pwdumpcracker@ymail.com </p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 23 Oct 2010 06:46:08 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a19d84698def2b4b569d8db68802dca4">
+
+<div class="comment-subject">
+
+Comment 55
+
+</div>
+
+<div class="inlinecontent">
+<p>Hello, everybody!<br />
+I want to use tor browser, but can't do it on my job.<br />
+Here you can find "Massage log" without bridge and then with it.<br />
+---------------------<br />
+[Notice] Tor v0.2.1.26. This is experimental software. Do not rely on it for strong anonymity. (Running on Windows XP Service Pack 3 [workstation] {terminal services, single user})<br />
+[Notice] Initialized libevent version 1.4.13-stable using method win32. Good.<br />
+[Notice] Opening Socks listener on 127.0.0.1:9050<br />
+[Notice] Opening Control listener on 127.0.0.1:9051<br />
+[Notice] Parsing GEOIP file.<br />
+[Notice] OpenSSL OpenSSL 0.9.8l 5 Nov 2009 looks like version 0.9.8l; I will try SSL3_FLAGS to enable renegotation.<br />
+[Notice] We now have enough directory information to build circuits.<br />
+[Notice] Bootstrapped 80%: Connecting to the Tor network.<br />
+[Notice] Bootstrapped 85%: Finishing handshake with first hop.<br />
+[Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (DONE; DONE; count 10; recommendation warn)<br />
+[Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (DONE; DONE; count 11; recommendation warn)<br />
+[Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (DONE; DONE; count 12; recommendation warn)<br />
+[Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (DONE; DONE; count 13; recommendation warn)<br />
+[Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (DONE; DONE; count 14; recommendation warn)<br />
+[Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (DONE; DONE; count 15; recommendation warn)<br />
+------------------------------<br />
+[Notice] Tor v0.2.1.26. This is experimental software. Do not rely on it for strong anonymity. (Running on Windows XP Service Pack 3 [workstation] {terminal services, single user})<br />
+[Notice] Initialized libevent version 1.4.13-stable using method win32. Good.<br />
+[Notice] Opening Socks listener on 127.0.0.1:9050<br />
+[Notice] Opening Control listener on 127.0.0.1:9051<br />
+[Notice] Parsing GEOIP file.<br />
+[Notice] OpenSSL OpenSSL 0.9.8l 5 Nov 2009 looks like version 0.9.8l; I will try SSL3_FLAGS to enable renegotation.<br />
+[Notice] new bridge descriptor 'Unnamed' (cached)<br />
+[Notice] Bootstrapped 5%: Connecting to directory server.<br />
+[Notice] new bridge descriptor 'unknow' (cached)<br />
+[Notice] new bridge descriptor 'PimPamLacasitos' (cached)<br />
+[Notice] We now have enough directory information to build circuits.<br />
+[Notice] Bootstrapped 80%: Connecting to the Tor network.<br />
+[Notice] Bootstrapped 85%: Finishing handshake with first hop.<br />
+[Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 4; recommendation warn)<br />
+[Warning] Problem bootstrapping. Stuck at 85%: Finishing handshake with first hop. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 5; recommendation warn)<br />
+[Notice] no known bridge descriptors running yet; stalling<br />
+[Notice] Our directory information is no longer up-to-date enough to build circuits: No live bridge descriptors.<br />
+---------------------------<br />
+If somebody knows what the problem is, or what i should do, please let me know here or palyanitsyn@ya.ru<br />
+Thanks!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 12 Nov 2010 06:46:09 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fe594baf4d96f1cf8f37cac7261bd3ab">
+
+<div class="comment-subject">
+
+Comment 56
+
+</div>
+
+<div class="inlinecontent">
+<p>^I have the same problem as the above, but I do use the bridges reccomended.</p>
+
+<p>It works at home, but not at school...</p>
+
+<p>abltcheeseburger@gmail.com &lt; please email me</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 30 Nov 2010 06:46:10 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FNew_Stable_released_Tor_0_2_1_21&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:45:14 AM CDT</span>
+<!-- Created <span class="date">Wed 30 Dec 2009 08:21:46 AM CST</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged tor_software</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/tor_software/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/tor_software/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/tor_software/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:07:28Z</updated>
+<entry>
+	<title>Google funds an auto-update for Vidalia</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Google_funds_an_auto-update_for_Vidalia/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Google_funds_an_auto-update_for_Vidalia/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/auto-update" />
+
+	<category term="/tags/funding" />
+
+	<category term="/tags/google" />
+
+	<category term="/tags/tor" />
+
+	<category term="/tags/tor_software" />
+
+	<category term="/tags/vidalia" />
+
+
+	<updated>2011-04-05T11:07:28Z</updated>
+	<published>2008-06-07T02:13:30Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Google is funding a project to create an auto-update feature in Vidalia.  This &lt;a href=&quot;https://www.torproject.org/projects/google&quot; rel=&quot;nofollow&quot;&gt;auto-update feature&lt;/a&gt; will provide a better user experience for Tor users.  The goal is to create a system where Vidalia can detect when a new release is available, fetch the package, verify authenticity, and assist the user in upgrading the Vidalia/Tor package.  The auto-update feature preserves the user&#39;s privacy and anonymity.  Over the next six months we&#39;ll develop the auto-update system for general release around November 15, 2008.  &lt;/p&gt;
+
+&lt;p&gt;We&#39;re excited to work with Google on this project and look forward to the collaboration.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Google_funds_an_auto-update_for_Vidalia/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Google_funds_an_auto-update_for_Vidalia/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

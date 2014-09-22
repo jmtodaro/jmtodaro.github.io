@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged incognito</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/incognito/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/incognito/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/incognito/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:12:48Z</updated>
+<entry>
+	<title>Tor 0.2.1.6-alpha Released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_6-alpha_Released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_6-alpha_Released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bridges" />
+
+	<category term="/tags/incognito" />
+
+	<category term="/tags/progress_report" />
+
+	<category term="/tags/releases" />
+
+	<category term="/tags/stable_release" />
+
+	<category term="/tags/tor_weather" />
+
+	<category term="/tags/translations" />
+
+	<category term="/tags/updates" />
+
+
+	<updated>2011-04-05T11:12:48Z</updated>
+	<published>2008-10-15T00:25:11Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor 0.2.1.6-alpha further improves performance and robustness of hidden&lt;br /&gt;
+services, starts work on supporting per-country relay selection, and&lt;br /&gt;
+fixes a variety of smaller issues.&lt;/p&gt;
+
+&lt;p&gt;The original announcement can be found at&lt;br /&gt;
+ &lt;a href=&quot;http://archives.seul.org/or/talk/Oct-2008/msg00093.html&quot; title=&quot;http://archives.seul.org/or/talk/Oct-2008/msg00093.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Oct-2008/msg00093.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.6-alpha - 2008-09-30 &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-0.2.1.6-alpha-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Major features:&lt;/li&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Implement proposal 121: make it possible to build hidden services&lt;br /&gt;
+      that only certain clients are allowed to connect to. This is&lt;br /&gt;
+      enforced at several points, so that unauthorized clients are unable&lt;br /&gt;
+      to send INTRODUCE cells to the service, or even (depending on the&lt;br /&gt;
+      type of authentication) to learn introduction points. This feature&lt;br /&gt;
+      raises the bar for certain kinds of active attacks against hidden&lt;br /&gt;
+      services. Code by Karsten Loesing.&lt;/li&gt;
+&lt;li&gt;Relays now store and serve v2 hidden service descriptors by default,&lt;br /&gt;
+      i.e., the new default value for HidServDirectoryV2 is 1. This is&lt;br /&gt;
+      the last step in proposal 114, which aims to make hidden service&lt;br /&gt;
+      lookups more reliable.&lt;/li&gt;
+&lt;li&gt;Start work to allow node restrictions to include country codes. The&lt;br /&gt;
+      syntax to exclude nodes in a country with country code XX is&lt;br /&gt;
+      &quot;ExcludeNodes {XX}&quot;. Patch from Robert Hogan. It still needs some&lt;br /&gt;
+      refinement to decide what config options should take priority if&lt;br /&gt;
+      you ask to both use a particular node and exclude it.&lt;/li&gt;
+&lt;li&gt;Allow ExitNodes list to include IP ranges and country codes, just&lt;br /&gt;
+      like the Exclude*Nodes lists. Patch from Robert Hogan.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;li&gt;Major bugfixes:&lt;br /&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_6-alpha_Released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_6-alpha_Released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Incognito and The Tor Project sign a licensing agreement</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Incognito_and_The_Tor_Project_sign_a_licensing_agreement/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Incognito_and_The_Tor_Project_sign_a_licensing_agreement/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/incognito" />
+
+	<category term="/tags/tor" />
+
+	<category term="/tags/trademarks" />
+
+
+	<updated>2011-04-05T11:09:35Z</updated>
+	<published>2008-06-27T21:42:44Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;a href=&quot;http://anonymityanywhere.com/incognito/&quot;&gt;Incognito&lt;/a&gt; is an open source LiveDistro assisting you to securely and anonymously use the Internet almost anywhere you go.   Incognito can be used from either a CD or a USB drive and has several Internet applications (Web browser, IRC client, Mail client, Instant messenger, etc.) pre-configured with security in mind, and all Internet traffic will be anonymized.&lt;/p&gt;
+
+&lt;p&gt;At the core of this anonymity is the Tor&amp;#0153 software and network.  In recognition of the transparency, open source base, continued development, and improvement of the Incognito software, The Tor Project is proud to list Incognito as a licensee of the Tor brands.&lt;/p&gt;
+
+&lt;p&gt;Incognito has the right to use the Tor name and the Tor onion logo&amp;#0153 as needed.  The high quality graphics will improve the user experience.  The usage of the Tor brand will only further reinforce that Incognito is a legitimate solution using the Tor software. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/incognito-and-tor-project-sign-licensing-agreement&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Incognito_and_The_Tor_Project_sign_a_licensing_agreement/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Incognito_and_The_Tor_Project_sign_a_licensing_agreement/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>January 2008 Progress Report</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/January_2008_Progress_Report/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/January_2008_Progress_Report/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bridges" />
+
+	<category term="/tags/incognito" />
+
+	<category term="/tags/progress_report" />
+
+	<category term="/tags/tor" />
+
+	<category term="/tags/torbrowser" />
+
+	<category term="/tags/torbutton" />
+
+
+	<updated>2011-04-05T11:05:53Z</updated>
+	<published>2008-02-19T00:09:33Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor 0.2.0.18-alpha (released Jan 25) adds a sixth v3 directory authority run by CCC, fixes a big memory leak in 0.2.0.17-alpha, and adds new config options that can warn or reject connections to ports generally associated with vulnerable-plaintext protocols.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Jan-2008/msg00442.html&quot; title=&quot;http://archives.seul.org/or/talk/Jan-2008/msg00442.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Jan-2008/msg00442.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.0.16-alpha and 0.2.0.17-alpha (released Jan 17) add a fifth v3 directory authority run by Karsten Loesing, and generally clean up a lot of features and minor bugs.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Jan-2008/msg00254.html&quot; title=&quot;http://archives.seul.org/or/talk/Jan-2008/msg00254.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Jan-2008/msg00254.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Tor 0.1.2.19 (released Jan 17) fixes a huge memory leak on exit relays, makes the default exit policy a little bit more conservative so it&#39;s safer to run an exit relay on a home system, and fixes a variety of smaller issues.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/announce/Jan-2008/msg00000.html&quot; title=&quot;http://archives.seul.org/or/announce/Jan-2008/msg00000.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/announce/Jan-2008/msg00000.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We continued work on the &quot;BridgeDB&quot; module: major progress on January was to improve robustness of the email subsystem so it is better at detecting forged mails that claim to be from gmail but are actually from elsewhere.&lt;/p&gt;
+
+&lt;p&gt;Work continued toward the upcoming Torbutton 1.1.13 release (which came out Feb 1). This new release has several significant security-related fixes:&lt;br /&gt;
+&lt;a href=&quot;https://torbutton.torproject.org/dev/CHANGELOG&quot; title=&quot;https://torbutton.torproject.org/dev/CHANGELOG&quot; rel=&quot;nofollow&quot;&gt;https://torbutton.torproject.org/dev/CHANGELOG&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Work continued toward the upcoming Vidalia 0.1.0 release: support for launching Firefox and Polipo as supporting applications; support for learning from Tor when the first circuit is ready so it can inform the user; and many other bugfixes including a few security fixes:&lt;br /&gt;
+&lt;a href=&quot;http://trac.vidalia-project.net/browser/vidalia/trunk/CHANGELOG&quot; title=&quot;http://trac.vidalia-project.net/browser/vidalia/trunk/CHANGELOG&quot; rel=&quot;nofollow&quot;&gt;http://trac.vidalia-project.net/browser/vidalia/trunk/CHANGELOG&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We added a &quot;How do I find a bridge?&quot; link and corresponding help text to Vidalia&#39;s &#39;Network&#39; settings page.&lt;/p&gt;
+
+&lt;p&gt;From the Tor 0.2.0.16-alpha ChangeLog:&lt;br /&gt;
+“Do not try to download missing certificates until we have tried to check our fallback consensus.” This change gets us closer to being able to bootstrap without ever needing to contact the central directory authorities. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/january-2008-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/January_2008_Progress_Report/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/January_2008_Progress_Report/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

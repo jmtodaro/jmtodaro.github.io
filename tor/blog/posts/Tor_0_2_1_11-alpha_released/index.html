@@ -1,0 +1,631 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tor 0.2.1.11-alpha released</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_1_11-alpha_released&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Tor 0.2.1.11-alpha released</a>
+
+</span>
+
+
+<div id="content">
+<p>Tor 0.2.1.11-alpha finishes fixing the "if your Tor is off for a week it<br />
+will take a long time to bootstrap again" bug. It also fixes an important<br />
+security-related bug reported by Ilja van Sprundel. You should upgrade.<br />
+(We'll send out more details about the bug once people have had some<br />
+time to upgrade.)</p>
+
+<p><a href="https://www.torproject.org/download.html.en" title="https://www.torproject.org/download.html.en" rel="nofollow">https://www.torproject.org/download.html.en</a></p>
+
+<p>Changes in version 0.2.1.11-alpha - 2009-01-20<br />
+<strong>Security fixes:</strong></p>
+
+<ul>
+<li>Fix a heap-corruption bug that may be remotely triggerable on<br />
+      some platforms. Reported by Ilja van Sprundel.</li>
+</ul>
+
+<p><strong>Major bugfixes:</strong></p>
+
+<ul>
+<li>Discard router descriptors as we load them if they are more than<br />
+      five days old. Otherwise if Tor is off for a long time and then<br />
+      starts with cached descriptors, it will try to use the onion<br />
+      keys in those obsolete descriptors when building circuits. Bugfix<br />
+      on 0.2.0.x. Fixes bug 887.</li>
+</ul>
+
+<p><strong>Minor features:</strong> <span class="read-more"><a href="http://blog.torproject.org/blog/tor-0.2.1.11-alpha-released"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+<p><ul></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/alpha_release/" rel="tag">alpha release</a>
+
+<a href="../../tags/bugfixes/" rel="tag">bugfixes</a>
+
+<a href="../../tags/security_fixes/" rel="tag">security fixes</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-b4ed6f1e95e5ef61c7748288d9d59353">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>@TOR developers</p>
+
+<p>Please wait for publishing of security-related bug information until BSD users are able to upgrade their system. Keep in mind that the BSD ports collection sometimes will be updated with a delay. This means that the time a tor server operator decides to update his system has to be added to the delayed time the new tor version is really available in the BSD ports collection tree.</p>
+
+<p>Tnx<br />
+RMcC</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FRandy%20McCallahan%20%28not%20verified%29&amp;do=goto">Randy McCallahan (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 23 Jan 2009 06:17:58 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0570e1808f4f7e4b24c4215b90313910">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+Yes, we're waiting to disclose the details in order to give users and node operators time to upgrade.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 25 Jan 2009 06:17:59 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-958996c9f2902235da6166e856f3a77e">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>Can you give us some hint about when you think BSD users will be in better shape? We're currently planning to wait a few weeks, but we weren't planning to wait a few months. Is that too short?</p>
+
+<p>(I need to go bug the Ubuntu people to stop shipping Tor 0.1.2.x and move<br />
+to 0.2.0.x, so that's another stumbling block that's holdiing us up.)</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Farma&amp;do=goto">arma</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 31 Jan 2009 06:18:00 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a2f3ddff236c94dbd17be4bed6f944a9">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+Warning message in TBB Controler used oboselete addr-mappings/GETINFO Key; use-address-mappings/instead. Please fix it.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FPETER%20%28not%20verified%29&amp;do=goto">PETER (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 24 Jan 2009 06:18:01 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0647e3272fa3f7e7673dec2dffa4b70f">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+This is a problem with Vidalia.  It will be fixed in the next release of Vidalia.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 25 Jan 2009 06:18:02 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3d343f342c54fa4cbd56686b692b1309">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+Thanx 4 ur reply phobos!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FPETER%20%28not%20verified%29&amp;do=goto">PETER (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 25 Jan 2009 06:18:03 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-66202a223f077b5e5ef03856a8d68542">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+when will be the next release?After releasing it willl be posted here. Please answer.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FPETER%20%28not%20verified%29&amp;do=goto">PETER (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 26 Jan 2009 06:18:04 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-86cc0ed683bb7bce3f29838031358e2a">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+Vidalia is still very much under active development. I don't know the release schedule at this time.  For now, just ignore that message.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 26 Jan 2009 06:18:05 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4e956c4efb94fefe4b2f43b8e093024f">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+k phobos thanx  4  answering my questions. Looking forward 2  c more.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FPETER%20%28not%20verified%29&amp;do=goto">PETER (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 26 Jan 2009 06:18:06 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-58ed9669d9a14ab00c2433a9c0daa995">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+<p>Since 29. January the FreeBSD ports of Tor are up to date.</p>
+
+<p><a href="http://www.freshports.org/security/tor-devel/" title="http://www.freshports.org/security/tor-devel/" rel="nofollow">http://www.freshports.org/security/tor-devel/</a><br />
+<a href="http://www.freshports.org/security/tor" title="http://www.freshports.org/security/tor" rel="nofollow">http://www.freshports.org/security/tor</a></p>
+
+<p>Now it's up to the tor operator to update his system.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FRandy%20McCallahan%20%28not%20verified%29&amp;do=goto">Randy McCallahan (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 01 Feb 2009 06:18:07 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-be1f095aa5da394bc8af65491e66e635">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+<p>Great to hear.</p>
+
+<p>But just to keep things exciting, we put out a new stable and development<br />
+release today (0.2.0.34 / 0.2.1.12-alpha), with more security fixes. <img src="../../smileys/smile.png" alt=":)" /></p>
+
+<p>Hopefully these new fixes will last us for a while yet.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Farma&amp;do=goto">arma</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 10 Feb 2009 06:18:08 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_1_11-alpha_released&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:17:57 AM CDT</span>
+<!-- Created <span class="date">Thu 22 Jan 2009 01:08:54 PM CST</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

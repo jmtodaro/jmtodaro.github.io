@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged great_firewall</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/great_firewall/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: China blocking Tor:  Round Two</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/China_blocking_Tor__Round_Two/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/China_blocking_Tor__Round_Two/</link>
+
+
+	<category>/tags/bridge_blocking</category>
+
+	<category>/tags/censorship</category>
+
+	<category>/tags/china</category>
+
+	<category>/tags/great_firewall</category>
+
+	<category>/tags/relay_blocking</category>
+
+
+	<pubDate>Thu, 11 Mar 2010 19:49:18 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:52:07Z</dcterms:modified>
+
+	<description>&lt;p&gt;Experts in China tell us Tor is not being singled out, that all &quot;circumvention&quot; tools are being subjected to the censorship regime of the Great Firewall of China as politically sensitive anniversaries come about.  We also hear people in China need &lt;a href=&quot;http://en.wikipedia.org/wiki/Human_flesh_search_engine&quot;&gt;their privacy too&lt;/a&gt;, even if they never leave the Chinese Internet.  &lt;/p&gt;
+
+&lt;p&gt;However, it appears China is getting better at blocking Tor.  Here&#39;s a graph of returning users to the Tor Network from China:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://metrics.torproject.org/graphs/direct-users/china-direct-180d.png&quot;&gt;&lt;img src=&quot;https://blog.torproject.org/files/china-direct-180d.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;However, most Tor users in China switched to non-public relays, called bridges, over the past few months.  Interestingly, the GFW has also started blocking some of the more popular bridges: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/china-blocking-tor-round-two&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/China_blocking_Tor__Round_Two/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

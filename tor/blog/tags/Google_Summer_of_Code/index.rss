@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged Google_Summer_of_Code</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/Google_Summer_of_Code/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Polipo changes maintainer</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Polipo_changes_maintainer/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Polipo_changes_maintainer/</link>
+
+
+	<category>/tags/Google_Summer_of_Code</category>
+
+	<category>/tags/maintainer</category>
+
+	<category>/tags/new_features</category>
+
+	<category>/tags/performance</category>
+
+	<category>/tags/polipo</category>
+
+	<category>/tags/volunteer</category>
+
+
+	<pubDate>Fri, 11 Dec 2009 15:02:36 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:44:16Z</dcterms:modified>
+
+	<description>&lt;p&gt;Congratulations to Chrisd for assuming maintainership of the Polipo codebase from Juliusz.  The full announcement is available at &lt;a href=&quot;http://sourceforge.net/mailarchive/forum.php?thread_name=87d42l7fka.fsf%40trurl.pps.jussieu.fr&amp;amp;forum_name=polipo-users&quot; rel=&quot;nofollow&quot;&gt;the mailing list archives&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Why Chris?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Chrisd was a 2009 Google Summer of Code for Tor/EFF.  His project was &lt;a href=&quot;https://blog.torproject.org/blog/polipo-portability-enhancements-summary&quot; rel=&quot;nofollow&quot;&gt;Polipo Portability Enhancements&lt;/a&gt;.  Chris has proven himself to be a very competent coder and able to design and implement features as needed.  He even wrote a SOCKS layer fix for Firefox bugs, &lt;a href=&quot;https://bugzilla.mozilla.org/show_bug.cgi?id=280661&quot; title=&quot;https://bugzilla.mozilla.org/show_bug.cgi?id=280661&quot; rel=&quot;nofollow&quot;&gt;https://bugzilla.mozilla.org/show_bug.cgi?id=280661&lt;/a&gt;.  &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;What does this mean to Tor?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;It means we have a fantastic new coder maintaining the polipo codebase.  Bugfixes, features, and more frequent releases should help improve polipo beyond where it is today.  &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Is Tor going to control Polipo?&lt;/em&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/polipo-changes-maintainer&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Polipo_changes_maintainer/#comments</comments>
+
+</item>
+<item>
+
+	<title>Sebastian: BitTorrent support for Thandy</title>
+	<dcterms:creator>Sebastian</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/BitTorrent_support_for_Thandy/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/BitTorrent_support_for_Thandy/</link>
+
+
+	<category>/tags/BitTorrent</category>
+
+	<category>/tags/Google_Summer_of_Code</category>
+
+	<category>/tags/google</category>
+
+	<category>/tags/gsoc</category>
+
+	<category>/tags/thandy</category>
+
+
+	<pubDate>Thu, 10 Sep 2009 14:16:03 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:35:18Z</dcterms:modified>
+
+	<description>&lt;p&gt;As a returning &lt;a href=&quot;http://socghop.appspot.com/org/home/google/gsoc2009/eff&quot; rel=&quot;nofollow&quot;&gt;Google Summer of Code&lt;/a&gt; student for the second year in a row, I was thrilled to hear that I had been accepted again.&lt;/p&gt;
+
+&lt;p&gt;My task was to add &lt;a href=&quot;http://www.bittorrent.com/&quot; rel=&quot;nofollow&quot;&gt;BitTorrent&lt;/a&gt; support to &lt;a href=&quot;https://git.torproject.org/checkout/thandy/master/&quot; rel=&quot;nofollow&quot;&gt;Thandy&lt;/a&gt;, the secure automated updater &lt;a href=&quot;http://google-opensource.blogspot.com/2009/03/thandy-secure-update-for-tor.html&quot; rel=&quot;nofollow&quot;&gt;developed&lt;/a&gt; by the Tor project, along with setting up and testing the necessary infrastructure. The goal is to better mitigate load spikes following the release of new software versions and allowing volunteers to easily help users to fetch Tor. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/bittorrent-support-thandy&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/BitTorrent_support_for_Thandy/#comments</comments>
+
+</item>
+<item>
+
+	<title>karsten: EFF and Tor in Google Summer of Code 2009</title>
+	<dcterms:creator>karsten</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/EFF_and_Tor_in_Google_Summer_of_Code_2009/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/EFF_and_Tor_in_Google_Summer_of_Code_2009/</link>
+
+
+	<category>/tags/Google_Summer_of_Code</category>
+
+	<category>/tags/gsoc</category>
+
+	<category>/tags/gsoc_2009</category>
+
+
+	<pubDate>Fri, 20 Mar 2009 21:30:25 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:21:39Z</dcterms:modified>
+
+	<description>&lt;p&gt;Great news! We have been accepted as a mentoring organization for &lt;a href=&quot;http://socghop.appspot.com/program/home/google/gsoc2009&quot; rel=&quot;nofollow&quot;&gt;Google Summer of Code 2009&lt;/a&gt; together with &lt;a href=&quot;https://www.eff.org/&quot; rel=&quot;nofollow&quot;&gt;The Electronic Frontier Foundation&lt;/a&gt;. Yay!&lt;/p&gt;
+
+&lt;p&gt;This will be our third Google Summer of Code after 2007 and &lt;a href=&quot;https://blog.torproject.org/blog/tor-project-google-summer-code-2008%21&quot; rel=&quot;nofollow&quot;&gt;2008&lt;/a&gt;. In our &lt;a href=&quot;http://code.google.com/soc/2007/eff/about.html&quot; rel=&quot;nofollow&quot;&gt;first year&lt;/a&gt; we had four students working on making relays work better (and not crash) on Windows, on a library and tool to try alternative path selection algorithms, on a fuzzing library to look for parsing problems, and on scalability and privacy for hidden services. In our &lt;a href=&quot;http://code.google.com/soc/2008/eff/about.html&quot; rel=&quot;nofollow&quot;&gt;second year&lt;/a&gt; we had seven students. One of our successful students of the 2008 program wrote a nice &lt;a href=&quot;https://blog.torproject.org/blog/google-summer-code-2008-review&quot; rel=&quot;nofollow&quot;&gt;blog post&lt;/a&gt; reviewing how GSoC went for him, for the other students, and for the project in general. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/eff-and-tor-google-summer-code-2009&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/EFF_and_Tor_in_Google_Summer_of_Code_2009/#comments</comments>
+
+</item>
+<item>
+
+	<title>Sebastian: Google Summer of Code 2008 review</title>
+	<dcterms:creator>Sebastian</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Google_Summer_of_Code_2008_review/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Google_Summer_of_Code_2008_review/</link>
+
+
+	<category>/tags/Google_Summer_of_Code</category>
+
+	<category>/tags/gsoc</category>
+
+	<category>/tags/gsoc_2008</category>
+
+
+	<pubDate>Mon, 09 Mar 2009 06:48:11 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:20:40Z</dcterms:modified>
+
+	<description>&lt;p&gt;As we started preparing to apply for the Google Summer of Code 2009, we realized that we haven&#39;t reported how last year&#39;s Summer of Code went for us.&lt;/p&gt;
+
+&lt;p&gt;Tor&#39;s 2008 Google Summer of Code was a victim of Tor&#39;s increasing growth! We&#39;ve got a lot more people involved now, and we have a lot more projects we want to tackle. But that also means we need to work harder at coordinating everything, and that&#39;s not as smooth as we&#39;d hoped.&lt;/p&gt;
+
+&lt;p&gt;Tor had the luxury to receive seven slots for students. GSoC 2008 overall, was a success; as the students and projects contributed a lot to the Tor project. Also, here I am, a former GSoC student writing a blog post for the project.&lt;/p&gt;
+
+&lt;p&gt;Below is an overview over the GSoC 2008 projects and a summary of their results. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/google-summer-code-2008-review&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Google_Summer_of_Code_2008_review/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

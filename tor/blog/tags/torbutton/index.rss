@@ -1,0 +1,455 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged torbutton</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/torbutton/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>erinn: Firefox 4 Tor Browser Bundles for OS X</title>
+	<dcterms:creator>erinn</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/</link>
+
+
+	<category>/tags/firefox</category>
+
+	<category>/tags/tor</category>
+
+	<category>/tags/torbutton</category>
+
+
+	<pubDate>Sun, 27 Mar 2011 18:07:00 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:17:55Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;UPDATE:&lt;/strong&gt; there were some issues with the first set of bundles which have been fixed. I&#39;ve updated the links below. The changelog is &lt;a href=&quot;https://gitweb.torproject.org/erinn/torbrowser.git/commitdiff/f9a70aadab4d4a950d55df0f373bb4804ef9e012?hp=48cb945f7f180baad7f536405d4a0cf3ddfa3714&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;We have new Firefox 4 Tor Browser Bundles available for OS X. (Worry not, users of other operating systems, your turn is coming in the next few days!) They come in 64- and 32-bit versions, and one important fix for 10.6 64-bit users is that Firefox no longer crashes on initial startup. These are alpha, but they are going to be a permanent addition to the Tor Browser Bundle family and will be maintained from now on. You can download them here: &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.torproject.org/dist/torbrowser/osx/TorBrowser-2.2.23-2-alpha-osx-x86_64-en-US.zip&quot; rel=&quot;nofollow&quot;&gt;64-bit OS X Tor Browser Bundle with Firefox 4&lt;/a&gt; (&lt;a href=&quot;https://www.torproject.org/dist/torbrowser/osx/TorBrowser-2.2.23-12alpha-osx-x86_64-en-US.zip.asc&quot; rel=&quot;nofollow&quot;&gt;sig&lt;/a&gt;) &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.torproject.org/dist/torbrowser/osx/TorBrowser-2.2.23-2-alpha-osx-i386-en-US.zip&quot; rel=&quot;nofollow&quot;&gt;32-bit OS X Tor Browser Bundle with Firefox 4&lt;/a&gt; (&lt;a href=&quot;https://www.torproject.org/dist/torbrowser/osx/TorBrowser-2.2.23-2-alpha-osx-i386-en-US.zip.asc&quot; rel=&quot;nofollow&quot;&gt;sig&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These have thus far only been tested on Snow Leopard, but the 32-bit bundle ought to work on Leopard. If it doesn&#39;t please let me know! And as usual, please &lt;a href=&quot;https://trac.torproject.org/projects/tor&quot; rel=&quot;nofollow&quot;&gt;file any bugs&lt;/a&gt; you discover.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tor Browser Bundle (2.2.23-1) alpha; suite=osx&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Create new bundles for Firefox 4, both i386 and x86_64 (closes: &lt;a href=&quot;https://trac.torproject.org/projects/tor/ticket/2140&quot; rel=&quot;nofollow&quot;&gt;#2140&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Update Tor to 0.2.2.23-alpha&lt;/li&gt;
+&lt;li&gt;Update Torbutton to 1.3.2-alpha&lt;/li&gt;
+&lt;li&gt;Update OpenSSL to 1.0.0d&lt;/li&gt;
+&lt;li&gt;Update HTTPS-Everywhere to 0.9.9.development.4&lt;/li&gt;
+&lt;li&gt;Update NoScript to 2.0.9.9&lt;/li&gt;
+&lt;li&gt;Update BetterPrivacy to 1.49&lt;/li&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Torbutton-alpha 1.3.1 released for testing</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Torbutton-alpha_1_3_1_released_for_testing/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Torbutton-alpha_1_3_1_released_for_testing/</link>
+
+
+	<category>/tags/alpha_release</category>
+
+	<category>/tags/firefox</category>
+
+	<category>/tags/torbutton</category>
+
+
+	<pubDate>Tue, 04 Jan 2011 17:05:46 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:11:42Z</dcterms:modified>
+
+	<description>&lt;p&gt;Torbutton 1.3.1-alpha has been released at:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/dist/torbutton/torbutton-1.3.1-alpha.xpi&quot; title=&quot;https://www.torproject.org/dist/torbutton/torbutton-1.3.1-alpha.xpi&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/dist/torbutton/torbutton-1.3.1-alpha.xpi&lt;/a&gt; and .asc&lt;/p&gt;
+
+&lt;p&gt;This release features a fix for the nasty pref dialog issue in 1.3.0 (bug #2011), as well as Firefox 4.0 support. Thanks to new APIs in Firefox 3.5 and better privacy options in Firefox 4, Torbutton has now been simplified as well. While we still provide a number of XPCOM components, the number of native Firefox components we replace has shrunk from 5 to just one.&lt;/p&gt;
+
+&lt;p&gt;However, the amount of changes involved in supporting Firefox 4 were substantial, and it is likely that these changes as well as the removal of old code has introduced new bugs. We&#39;ve done our best to test out operation on Firefox 3.6 and 4.0, but we have not tested Firefox 3.0, and may have missed other issues as well. Please report any issues you notice on our bugtracker: &lt;a href=&quot;https://trac.torproject.org/projects/tor/report/14&quot; title=&quot;https://trac.torproject.org/projects/tor/report/14&quot; rel=&quot;nofollow&quot;&gt;https://trac.torproject.org/projects/tor/report/14&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is the complete changelog: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/torbutton-alpha-131-released-testing&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Torbutton-alpha_1_3_1_released_for_testing/#comments</comments>
+
+</item>
+<item>
+
+	<title>erinn: New Tor Browser Bundles released (take two)</title>
+	<dcterms:creator>erinn</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/</link>
+
+
+	<category>/tags/microsoft_windows</category>
+
+	<category>/tags/osx</category>
+
+	<category>/tags/osx_fixes</category>
+
+	<category>/tags/tbb</category>
+
+	<category>/tags/tor_browser_bundle</category>
+
+	<category>/tags/torbutton</category>
+
+	<category>/tags/windows_bundles</category>
+
+
+	<pubDate>Fri, 29 Oct 2010 05:22:01 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:10:31Z</dcterms:modified>
+
+	<description>&lt;p&gt;We have some more new Tor Browser Bundles out. This is an upgrade to Firefox 3.6.12 which fixes a critical bug and OS X users&#39; Torbutton will now show up.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.torproject.org/projects/torbrowser.html.en&quot; alt=&quot;download here!&quot; rel=&quot;nofollow&quot;&gt;Tor Browser Bundle for Windows 1.3.12&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;1.3.12: Release 2010-10-28&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Update Firefox to 3.6.12&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.torproject.org/projects/torbrowser.html.en&quot; alt=&quot;download here!&quot; rel=&quot;nofollow&quot;&gt;Tor Browser Bundle for Mac OS X 1.0.4&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;1.0.4: Released 2010-10-28&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Update Firefox to 3.6.12&lt;/li&gt;
+&lt;li&gt;Fix weird Torbutton location so users can tell it&#39;s installed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.torproject.org/projects/torbrowser.html.en&quot; alt=&quot;download here!&quot; rel=&quot;nofollow&quot;&gt;Tor Browser Bundle for GNU/Linux 1.0.15&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;1.0.15: Released 2010-10-28&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Update Firefox to 3.6.12&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/#comments</comments>
+
+</item>
+<item>
+
+	<title>mikeperry: Google Chrome Incognito Mode, Tor, and Fingerprinting</title>
+	<dcterms:creator>mikeperry</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Google_Chrome_Incognito_Mode_Tor_and_Fingerprinting/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Google_Chrome_Incognito_Mode_Tor_and_Fingerprinting/</link>
+
+
+	<category>/tags/EFF</category>
+
+	<category>/tags/chrome</category>
+
+	<category>/tags/firefox</category>
+
+	<category>/tags/google</category>
+
+	<category>/tags/panopticlick</category>
+
+	<category>/tags/privacy</category>
+
+	<category>/tags/private_browsing</category>
+
+	<category>/tags/threat_models</category>
+
+	<category>/tags/torbutton</category>
+
+
+	<pubDate>Tue, 14 Sep 2010 09:08:02 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:07:22Z</dcterms:modified>
+
+	<description>&lt;p&gt;A few months back, I posted that &lt;a href=&quot;https://blog.torproject.org/blog/firefox-private-browsing-mode-torbutton-and-fingerprinting&quot;&gt;we have been in discussion&lt;/a&gt; with Mozilla about improving their Private Browsing mode to resist &lt;a href=&quot;https://wiki.mozilla.org/Fingerprinting&quot;&gt;fingerprinting&lt;/a&gt; and the &lt;a href=&quot;https://wiki.mozilla.org/Security/Anonymous_Browsing&quot;&gt;network adversary&lt;/a&gt;. As I mentioned there, we have also been doing the same thing with Google for Google Chrome. Google has taken the same approach as Firefox for their Incognito mode, which means that it provides little to no protections against a network adversary.&lt;/p&gt;
+
+&lt;p&gt;This means that Chrome Incognito mode is not safe to use with Tor. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/google-chrome-incognito-mode-tor-and-fingerprinting&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Google_Chrome_Incognito_Mode_Tor_and_Fingerprinting/#comments</comments>
+
+</item>
+<item>
+
+	<title>mikeperry: Firefox Private Browsing Mode, Torbutton, and Fingerprinting</title>
+	<dcterms:creator>mikeperry</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Firefox_Private_Browsing_Mode_Torbutton_and_Fingerprinting/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Firefox_Private_Browsing_Mode_Torbutton_and_Fingerprinting/</link>
+
+
+	<category>/tags/EFF</category>
+
+	<category>/tags/firefox</category>
+
+	<category>/tags/panopticlick</category>
+
+	<category>/tags/privacy</category>
+
+	<category>/tags/private_browsing</category>
+
+	<category>/tags/threat_models</category>
+
+	<category>/tags/torbutton</category>
+
+
+	<pubDate>Wed, 30 Jun 2010 02:51:07 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:03:07Z</dcterms:modified>
+
+	<description>&lt;p&gt;Last week, &lt;a href=&quot;http://www.eff.org/about/staff/peter-eckersley&quot; rel=&quot;nofollow&quot;&gt;Peter Eckersley&lt;/a&gt; and I met with the Mozilla team in Mountain view to discuss web fingerprinting, privacy and Torbutton. I gave &lt;a href=&quot;https://www.torproject.org/torbutton/design/MozillaBrownBag.pdf&quot; rel=&quot;nofollow&quot;&gt;an updated version of my Torbutton Design talk&lt;/a&gt;, and Peter discussed &lt;a href=&quot;http://panopticlick.eff.org/&quot; rel=&quot;nofollow&quot;&gt;Panopticlick&lt;/a&gt;. Mozilla was primarily interested in hearing about these projects in the context of their &lt;a href=&quot;https://support.mozilla.com/en-us/kb/private+browsing&quot; rel=&quot;nofollow&quot;&gt;Private Browsing Mode&lt;/a&gt;, which they unveiled in Firefox 3.5. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/firefox-private-browsing-mode-torbutton-and-fingerprinting&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Firefox_Private_Browsing_Mode_Torbutton_and_Fingerprinting/#comments</comments>
+
+</item>
+<item>
+
+	<title>mikeperry: Torbutton Release 1.2.5, Google Captchas, and addons.mozilla.org</title>
+	<dcterms:creator>mikeperry</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/</link>
+
+
+	<category>/tags/captchas</category>
+
+	<category>/tags/data_retention</category>
+
+	<category>/tags/firefox</category>
+
+	<category>/tags/google</category>
+
+	<category>/tags/logging</category>
+
+	<category>/tags/mozilla</category>
+
+	<category>/tags/torbutton</category>
+
+
+	<pubDate>Sat, 10 Apr 2010 05:48:05 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:55:13Z</dcterms:modified>
+
+	<description>&lt;p&gt;Torbutton 1.2.5 has been released. You can download it from &lt;a href=&quot;https://www.torproject.org/torbutton/&quot;&gt;the torbutton homepage&lt;/a&gt;. It has also been submitted to &lt;a href=&quot;https://addons.mozilla.org/en-US/firefox/addon/2275/&quot;&gt;addons.mozilla.org&lt;/a&gt;, though it may take a while for Mozilla to review the addon.&lt;/p&gt;
+
+&lt;p&gt;In addition to the numerous bug fixes mentioned in the &lt;a href=&quot;https://gitweb.torproject.org//torbutton.git?a=blob;hb=HEAD;f=src/CHANGELOG&quot;&gt;changelog&lt;/a&gt;, one of the new features of this release is to provide the ability to automatically redirect to an alternate search engine when Google presents you with a captcha. The current options are &lt;a href=&quot;https://www.ixquick.com&quot;&gt;IxQuick&lt;/a&gt;, &lt;a href=&quot;http://www.bing.com&quot;&gt;Bing&lt;/a&gt;, &lt;a href=&quot;http://search.yahoo.com&quot;&gt;Yahoo&lt;/a&gt;, and &lt;a href=&quot;https://ssl.scroogle.org&quot;&gt;Scroogle&lt;/a&gt;. Since it supports SSL, and appears to have a &lt;a href=&quot;https://www.ixquick.com/eng/protect-privacy.html&quot;&gt;progressive stance on user privacy&lt;/a&gt;, IxQuick is the current default. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/torbutton-release-125-google-captchas-and-addonsmozillaorg&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/#comments</comments>
+
+</item>
+<item>
+
+	<title>mikeperry: EFF&#x27;s Panopticlick and Torbutton</title>
+	<dcterms:creator>mikeperry</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/EFFs_Panopticlick_and_Torbutton/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/EFFs_Panopticlick_and_Torbutton/</link>
+
+
+	<category>/tags/EFF</category>
+
+	<category>/tags/online_anonymity</category>
+
+	<category>/tags/panopticlick</category>
+
+	<category>/tags/privacy</category>
+
+	<category>/tags/tor</category>
+
+	<category>/tags/torbutton</category>
+
+
+	<pubDate>Fri, 29 Jan 2010 11:43:06 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:49:39Z</dcterms:modified>
+
+	<description>&lt;p&gt;The EFF has recently released a &lt;a href=&quot;http://panopticlick.eff.org/&quot; rel=&quot;nofollow&quot;&gt;browser fingerprinting test suite&lt;/a&gt; that they call &lt;a href=&quot;http://panopticlick.eff.org/about.php&quot; rel=&quot;nofollow&quot;&gt;Panopticlick&lt;/a&gt;. The idea is that in normal operation, your browser leaks a lot of information about its configuration which &lt;a href=&quot;https://www.eff.org/deeplinks/2010/01/tracking-by-user-agent&quot; rel=&quot;nofollow&quot;&gt;can be used to uniquely fingerprint you&lt;/a&gt; independent of your cookies.&lt;/p&gt;
+
+&lt;p&gt;Because of how EFF&#39;s testing tool functions, it has created some confusion and concern among Tor users, so I wanted to make a few comments to try to clear things up. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/effs-panopticlick-and-torbutton&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/EFFs_Panopticlick_and_Torbutton/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Tor Browser Bundle 1.3.0 Released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_0_Released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_0_Released/</link>
+
+
+	<category>/tags/firefox_updates</category>
+
+	<category>/tags/pidgin_updates</category>
+
+	<category>/tags/tor_browser_bundle</category>
+
+	<category>/tags/torbutton</category>
+
+
+	<pubDate>Sun, 03 Jan 2010 20:25:20 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:46:12Z</dcterms:modified>
+
+	<description>&lt;p&gt;On December 31, 2009, I released the latest in the Tor Browser Bundle series, 1.3.0.  The version bump from 1.2.10 to 1.3.0 is due to the change to Firefox 3.5.6 (from Firefox 3.0.15).  &lt;/p&gt;
+
+&lt;p&gt;You can get the latest TBB in 12 languages at &lt;a href=&quot;https://www.torproject.org/torbrowser/&quot; title=&quot;https://www.torproject.org/torbrowser/&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/torbrowser/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Torbutton 1.2.4 fixes a number of privacy and anonymity issues with the Firefox 3.5.x code base.&lt;/p&gt;
+
+&lt;p&gt;The official changelog is:&lt;/p&gt;
+
+&lt;p&gt;- upgrade Firefox to 3.5.6&lt;br /&gt;
+- update Pidgin to 2.6.4&lt;br /&gt;
+- update Torbutton to 1.2.4&lt;/p&gt;
+
+&lt;p&gt;Feel free to file bugs at&lt;br /&gt;
+&lt;a href=&quot;https://bugs.torproject.org/flyspray/index.php?tasks=all&amp;amp;project=4&quot; title=&quot;https://bugs.torproject.org/flyspray/index.php?tasks=all&amp;amp;project=4&quot; rel=&quot;nofollow&quot;&gt;https://bugs.torproject.org/flyspray/index.php?tasks=all&amp;amp;project=4&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The original announcement is at &lt;a href=&quot;http://archives.seul.org/or/talk/Jan-2010/msg00037.html&quot; title=&quot;http://archives.seul.org/or/talk/Jan-2010/msg00037.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Jan-2010/msg00037.html&lt;/a&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_0_Released/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Tor Browser Bundle 1.1.11 Released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_11_Released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_11_Released/</link>
+
+
+	<category>/tags/alpha_release</category>
+
+	<category>/tags/portable_tor</category>
+
+	<category>/tags/tor_browser_bundle</category>
+
+	<category>/tags/torbutton</category>
+
+	<category>/tags/vidalia</category>
+
+
+	<pubDate>Tue, 31 Mar 2009 14:19:52 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:21:56Z</dcterms:modified>
+
+	<description>&lt;p&gt;An updated Tor Browser Bundle is released to address the Firefox 3.0.7 security issues.  It includes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Update Firefox to 3.0.8&lt;/li&gt;
+&lt;li&gt;Add Italian language bundles&lt;/li&gt;
+&lt;li&gt;Update Torbutton to 1.2.1&lt;/li&gt;
+&lt;li&gt;Update Vidalia to 0.1.12&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This updated TBB can be downloaded from &lt;a href=&quot;https://www.torproject.org/easy-download&quot; title=&quot;https://www.torproject.org/easy-download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/easy-download&lt;/a&gt; as the &quot;zero install bundle&quot;.&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_11_Released/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: October 2008 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/October_2008_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/October_2008_Progress_Report/</link>
+
+
+	<category>/tags/auto-updater</category>
+
+	<category>/tags/censorship_circumvention</category>
+
+	<category>/tags/china</category>
+
+	<category>/tags/crashes</category>
+
+	<category>/tags/farsi</category>
+
+	<category>/tags/torbutton</category>
+
+	<category>/tags/translations</category>
+
+	<category>/tags/vidalia</category>
+
+
+	<pubDate>Mon, 01 Dec 2008 18:43:12 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:15:19Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;Design&lt;/strong&gt;&lt;br /&gt;
+We continued enhancements to the Chinese and Russian Tor website translations. We also have a second Chinese translator for the website now, so hopefully we will get more prompt translations there. Our Farsi translation from this summer is slowly becoming obsolete; we should solve that at some point.&lt;/p&gt;
+
+&lt;p&gt;We added a new &quot;30 second summary&quot; web page for Tor:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/30seconds&quot; title=&quot;https://www.torproject.org/30seconds&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/30seconds&lt;/a&gt;&lt;br /&gt;
+and a new &quot;easy download&quot; page since the original is so complex:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/easy-download&quot; title=&quot;https://www.torproject.org/easy-download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/easy-download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In the upcoming Vidalia 0.2.0 development release:&lt;br /&gt;
+  - Support changing UI languages without having to restart Vidalia.&lt;br /&gt;
+  - Updated Czech, Polish, Romanian and Turkish translations.&lt;/p&gt;
+
+&lt;p&gt;In the upcoming Vidalia 0.1.10 stable release:&lt;br /&gt;
+  - Add a prettier dialog for prompting people for their control port password that also includes a checkbox for whether the user wants Vidalia to remember the entered password, a Help button, and a Reset button (Windows only).&lt;br /&gt;
+  - Fix a crash bug that occurred when the user clicks &#39;Clear&#39; in the message log toolbar followed by &#39;Save All&#39;.&lt;br /&gt;
+  - Uncheck the Torbutton options by default in the Windows bundle installer if Firefox is not installed.&lt;br /&gt;
+  - Add an Windows bundle installer page that warns the user that they should install Firefox, if it looks like they haven&#39;t already done so.&lt;/p&gt;
+
+&lt;p&gt;It looks like Australia is soon to be joining the ranks of countries with a nationwide filtering regime:&lt;br /&gt;
+&lt;a href=&quot;http://arstechnica.com/news.ars/post/20081016-net-filters-required-for-all-australians-no-opt-out.html&quot; title=&quot;http://arstechnica.com/news.ars/post/20081016-net-filters-required-for-all-australians-no-opt-out.html&quot; rel=&quot;nofollow&quot;&gt;http://arstechnica.com/news.ars/post/20081016-net-filters-required-for-a...&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Proposals&lt;/strong&gt;&lt;br /&gt;
+We finished the first iteration of our auto-updater spec:&lt;br /&gt;
+&lt;a href=&quot;https://svn.torproject.org/svn/updater/trunk/specs/thandy-spec.txt&quot; title=&quot;https://svn.torproject.org/svn/updater/trunk/specs/thandy-spec.txt&quot; rel=&quot;nofollow&quot;&gt;https://svn.torproject.org/svn/updater/trunk/specs/thandy-spec.txt&lt;/a&gt;&lt;br /&gt;
+We detail our current auto-updater progress below. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/october-2008-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/October_2008_Progress_Report/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

@@ -1,0 +1,2796 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Detecting Certificate Authority compromises and web browser collusion</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>ioerror</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:17:32Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_1/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:15:51Z</updated>
+	<published>2011-03-22T12:15:51Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;First!&lt;/p&gt;
+
+&lt;p&gt;but seriously. very interesting read Jacob!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_2/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:15:52Z</updated>
+	<published>2011-03-23T12:15:52Z</published>
+
+	<content type="html" xml:lang="en">
+	Thank you.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_3/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:15:53Z</updated>
+	<published>2011-03-24T12:15:53Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Comodo has announced acquisition of DNS.com, the managed domain name system services provider, and the launch of Comodo Authoritative DNS Service one day before loose the certificate.&lt;/p&gt;
+
+&lt;p&gt;http://home.nestor.minsk.by/computers/news/2011/03/1406.html&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_4/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:15:54Z</updated>
+	<published>2011-03-22T12:15:54Z</published>
+
+	<content type="html" xml:lang="en">
+	The verification process for buying a certificate is a joke with most cert vendors. All they care about is the email address registered with the domain registrar. Hijack the domain and you can order yourself all the certs you want for the domain. Next, ISVs and so-called software consultants are constantly implementing code in orgs where certificates are explicitly trusted. Most commercial software developers treat certs as a liability. PKI is totally bankrupt as a trust service.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_5/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:15:55Z</updated>
+	<published>2011-03-23T12:15:55Z</published>
+
+	<content type="html" xml:lang="en">
+	Why do you think it&#39;s even important to validate the email address. An SSL cert is (or at least was) used for the sole purpose of making a site secure. It was never intended to assert the site owners identity, or their trustworthiness. The latter has only come to market with the launch of extended validation services.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_6/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:15:56Z</updated>
+	<published>2011-03-23T12:15:56Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;This is not really true. Back in the &quot;good old days&quot; in 1994, EV-type stuff was the NORM. I got an SSL cert for Netscape Server from Verisign and it took about 2 weeks to get all the verifications in order. The truth is that CAs got greedy and loosened their processes. More than half of the sites out there get their certs issued in a matter of seconds...you can set up a reseller account and get certs issued on your clients&#39; behalf with essentially NO verification. &lt;/p&gt;
+
+&lt;p&gt;The system relies on honesty, and someone was dishonest. I would imagine there was no exploitation here other than someone trying to get a cert for a high-value domain and succeeding. It was like brute force through multiple vendors.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_7/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:15:57Z</updated>
+	<published>2011-03-23T12:15:57Z</published>
+
+	<content type="html" xml:lang="en">
+	Encryption is useless without authentication: what is the point of keeping things secret so only your peer can read it if you don&#39;t know who the peer is?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_8/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:15:58Z</updated>
+	<published>2011-03-23T12:15:58Z</published>
+
+	<content type="html" xml:lang="en">
+	I think a lot of people would take issue with your statement that TLS is not meant to assert identity. This is why WebAppSec folk argue that a login page should be on an TLS supported page as opposed to only POSTing to an TLS supported page.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_9/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:15:59Z</updated>
+	<published>2011-03-23T12:15:59Z</published>
+
+	<content type="html" xml:lang="en">
+	TLS is for making a connection to a site secure, yes. That means you have to know you&#39;re talking to the site, and not some system in between. That in turn implies that you have to know that the cert belongs to the site, which implies validation. Drop that, and https is no better than http.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_10/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:00Z</updated>
+	<published>2011-03-23T12:16:00Z</published>
+
+	<content type="html" xml:lang="en">
+	CAs have used the &quot;we must verify who you are&quot; argument for justifying the cost. The crypto is free, process is the only possible justification. Apparently there was only voluntary enforcement, no regulation. We had a race to the bottom and it&#39;s too late to go back.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_11/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:01Z</updated>
+	<published>2011-03-29T12:16:01Z</published>
+
+	<content type="html" xml:lang="en">
+	You&#39;d do well to research a little more before you post. CA&#39;s not only have to validate your request for a certificate - which, in my experience, is strict to the point of nitpickery, at least among the major CA&#39;s - but they also have to host a server farm to process OCSP and CRL requests, process requests to revoke certificates, and have to adhere to a large bundle of rules and regulations. In the US I believe they use FIPS, in Europe it&#39;s Directive 99/93/EC which has been worked out into ETSI TS 101 456 and ETSI TS 102 042.  These specify requirements of constant internal audits and annual external audits bij ISO-certified independent bodies. Also, CA&#39;s must keep records for years in case of a legal dispute where the information is required as evidence. All this isn&#39;t free and go a good way to explaining the prices of certificates.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 12</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_12/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_12/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:02Z</updated>
+	<published>2011-03-22T12:16:02Z</published>
+
+	<content type="html" xml:lang="en">
+	This, in  combination  with the recent compromise of some of RSA&#39;s more important systems and one other event I&#39;m not at liberty to disclose has my subconscious working overtime, is it a pattern, or just a coincidence ..
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 13</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_13/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_13/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:03Z</updated>
+	<published>2011-03-22T12:16:03Z</published>
+
+	<content type="html" xml:lang="en">
+	please make ready tor application with Firefox 4 .
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 14</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_14/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_14/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:04Z</updated>
+	<published>2011-03-23T12:16:04Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Comodo was also the company that previous had problems with resellers not checking domains at all - see Mozilla bug 470897.  They also allow certificates for domains that don&#39;t exist, such as Mozilla bug 526560, and certificates that name companies that don&#39;t exist, bug 599856.&lt;/p&gt;
+
+&lt;p&gt;Mozilla, at least, refuses to enact any sort of punishment because they think users will blame Firefox when the SSL sites using those certificates stop working.  Essentially, they believe they cannot do anything that might possibly actually fix the problem of... well, the CA being crap.&lt;/p&gt;
+
+&lt;p&gt;At least these particular changes managed to land just in time for Firefox 4; it is the last commit on the relevant branch.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 15</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_15/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_15/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:05Z</updated>
+	<published>2011-03-23T12:16:05Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;That wasn’t the sort of security problem that should have been kept secret until patches were shipped — it was clear from the beginning that:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;bad guys were already able to exploit the bogus certificates,&lt;/li&gt;
+&lt;li&gt;disclosing the existence of the bogus certificates would not have allowed more people to perform the attack they enabled, and&lt;/li&gt;
+&lt;li&gt;waiting to disclose the existence of the bogus certs only aided the ‘cyber-terrorists’ who had obtained them, by allowing the certs to be used for a longer period of time.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;On their blog, I asked Mozilla why they agreed to keep this event secret: https://blog.mozilla.com/security/2011/03/22/firefox-blocking-fraudulent-certificates/#comment-109640&lt;/p&gt;
+
+&lt;p&gt;But I should ask you a few questions about &lt;em&gt;your&lt;/em&gt; conduct in this matter as well:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;You wrote above: “Mozilla expressed some concern about disclosure and I offered to embargo this document until Tuesday March 22nd, the launch day for Firefox 4.”  What concerns did they express, and why did those concerns convince you to aid in an attack by concealing the existence of these fraudulent certificates?&lt;/li&gt;
+&lt;li&gt;Did you inform anyone else affiliated with The Tor Project, Inc. before offering to ‘embargo this document’, or was that decision yours alone?&lt;/li&gt;
+&lt;li&gt;Do you believe that Mozilla would have included Comodo&#39;s root certificates as ‘trusted’ CAs in the final release of Firefox 4 if you had disclosed your discovery immediately, rather than delaying your disclosure?&lt;/li&gt;
+&lt;/ol&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 16</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_16/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_16/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:06Z</updated>
+	<published>2011-03-23T12:16:06Z</published>
+
+	<content type="html" xml:lang="en">
+	Exactly! Why the embargo ?? This isn&#39;t something that should be a traditional responsible disclosure issue. Jake you of all people I assume would&#39;ve understood this.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 17</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_17/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_17/"/>
+
+	<author><name>ioerror</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:07Z</updated>
+	<published>2011-03-23T12:16:07Z</published>
+
+	<content type="html" xml:lang="en">
+	I&#39;m sorry that I agreed to the embargo at all at this point.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 18</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_18/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_18/"/>
+
+	<author><name>ioerror</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:08Z</updated>
+	<published>2011-03-23T12:16:08Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;To reply your your questions:&lt;/p&gt;
+
+&lt;p&gt;1) They expressed concerns about being able to ship a fix to Firefox - that is a brand new Firefox binary with hardcoded serials in their blocklist.&lt;br /&gt;
+1a) We need Firefox to release before we can update the Tor Browser Bundle because our current build process on Windows does not include building Firefox from source. We probably need to change that but it is not my call.&lt;/p&gt;
+
+&lt;p&gt;2) I agreed to the embargo on my own - I informed people internally that I was looking for this when I started out and I informed Tor internally when I discovered it, I also again informed Tor when I agreed to the embargo.&lt;br /&gt;
+2a) I let helix (the main Tor build engineer) know that Firefox would be releasing on Tuesday. Specifically, I explained why and what needs to happen for Tor users to be safe. See point 1a on why this is a PITA for Tor&#39;s hard working build engineer.&lt;br /&gt;
+2b) I started advocating requiring (it&#39;s already enabled) OCSP checking from the moment that I realized it would provide a mitigation - I didn&#39;t embargo myself for mitigations, only some of the specific details.&lt;/p&gt;
+
+&lt;p&gt;3) Mozilla will not give the Comodo CA in question an Internet Death Sentence. We do not know the extent of the compromise and Mozilla did not put off their launch for this extremely serious issue. I think that at the very least, this was a difficult choice for Mozilla. I believe that it was a mistake to not mark the direct signing cert of the certificates in question as untrusted. The rest of the root should have a closer inspection after release, of course. None of that was done for the same reason that OCSP checking isn&#39;t required - Mozilla makes these calls and decided they know best.&lt;/p&gt;
+
+&lt;p&gt;I obviously disagree with these security choices because they rob the user of their autonomy; users need information to protect their activities on the internet.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 19</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_19/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_19/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:09Z</updated>
+	<published>2011-03-23T12:16:09Z</published>
+
+	<content type="html" xml:lang="en">
+	I thank you for your work in this area, and also for your warning/recommendation about enabling forced OCSP checking. It&#39;s good to know, when there are so many that are trying to tear down, that some are trying to get the protection out there.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 20</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_20/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_20/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:10Z</updated>
+	<published>2011-03-23T12:16:10Z</published>
+
+	<content type="html" xml:lang="en">
+	It&#39;s funny how when I enabled OSCP in Firefox I couldn&#39;t access the EFF link you posted anymore...
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 21</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_21/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_21/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:11Z</updated>
+	<published>2011-03-23T12:16:11Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Worse, EFF uses wildcard certificate.&lt;/p&gt;
+
+&lt;p&gt;CN = *.eff.org&lt;br /&gt;
+OU = Comodo PremiumSSL Wildcard&lt;br /&gt;
+O = Electronic Frontier Foundation&lt;br /&gt;
+Object Identifier (2 5 4 9) = 454 Shotwell St&lt;br /&gt;
+L = San Francisco&lt;br /&gt;
+ST = California&lt;br /&gt;
+Object Identifier (2 5 4 17) = 94110&lt;br /&gt;
+C = US&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 22</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_22/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_22/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:12Z</updated>
+	<published>2011-03-23T12:16:12Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&quot;Last week, a smoking gun came into sight: A Certification Authority appeared to be compromised in some capacity, and the attacker issued themselves valid HTTPS certificates for high-value web sites. With these certificates, the attacker could impersonate the identities of the victim web sites or other related systems, probably undetectably for the majority of users on the internet.&quot;&lt;/p&gt;
+
+&lt;p&gt;Did they attacker gain access to the additional information required for &#39;extended validation&#39;? An SSL Cert is only used to secure a site - not to say anything about the site owner. That is unless, they have been issued and EVC.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 23</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_23/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_23/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:13Z</updated>
+	<published>2011-03-23T12:16:13Z</published>
+
+	<content type="html" xml:lang="en">
+	SSL has always been for both confidentiality and verifying the identity of a server.  Why do you think certificates have a subject DN field if they are only for encryption and decryption?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 24</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_24/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_24/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:14Z</updated>
+	<published>2011-03-23T12:16:14Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;This is obviously a conspiracy between the illuminati, browser vendors, and ioerror.  We should add it to https://secure.wikimedia.org/wikipedia/en/wiki/List_of_conspiracy_theori...&lt;/p&gt;
+
+&lt;p&gt;All software is written by the new world order.  The Internet was developed by the US Dept of Defense to build a perfect tracking system.  Google, Microsoft, Oracle, Verisign, RSA, Symantec are all members of the same collusion set with the NSA, and other world governments.  &lt;/p&gt;
+
+&lt;p&gt;Disconnect now, or be subject to their whims and wrath.  &lt;/p&gt;
+
+&lt;p&gt;I&#39;ve said too much for the black helicopters approach.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 25</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_25/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_25/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:15Z</updated>
+	<published>2011-03-24T12:16:15Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;m guessing you&#39;re british or north american. Your government lies to your face continuously and launches wars in your name. Kills, assassinates, bombs civilians, tortures people or sends them away to secret holes to be tortured by their lackeys. &lt;/p&gt;
+
+&lt;p&gt;How about them conspiracies?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 26</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_26/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_26/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:16Z</updated>
+	<published>2011-03-24T12:16:16Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;1. He&#39;s joking&lt;br /&gt;
+2. Which government do you think the NSA is in, exactly?&lt;/p&gt;
+
+&lt;p&gt;ioerror, this is a superb analysis, thanks.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 27</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_27/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_27/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:17Z</updated>
+	<published>2011-03-23T12:16:17Z</published>
+
+	<content type="html" xml:lang="en">
+	this paper looks interesting in the light of this event: files.cloudprivacy.net/ssl-mitm.pdf
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 28</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_28/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_28/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:18Z</updated>
+	<published>2011-03-23T12:16:18Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;There is already an implicit trust system built in that may be used in the meantime: DNS. This is what the RFC 4398 CERT resource record could help achieve.&lt;/p&gt;
+
+&lt;p&gt;IANA is already a trusted 3rd party. IANA runs IP, AS, and DNS address allocation. If you want to connect to TORPROJECT.ORG, 86.59.30.36, or AS1 for that matter, look no further than an implicit trust chain emanating from ARIN. The question is, is ARIN more trustworthy than a random CA that Mozilla has mated with? I believe so, and I think many others believe so as well. Let the users decide.&lt;/p&gt;
+
+&lt;p&gt;But alas, no implementation of RFC 4398, c. 2006, exists to date... We have all sorts of crazy iPhone apps, but no CERT RR implementation. The RFC likely needs expansive interpretation or outright modification for use in tandem with TLS and other widely used protocols. I hope some programmers that are well versed with browser plugins, libc/libresolv/windns/dnsapi/etc., and protocol considerations will get involved.&lt;/p&gt;
+
+&lt;p&gt;Just get something working, it has to be better than this. Otherwise, good article.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 29</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_29/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_29/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:19Z</updated>
+	<published>2011-03-23T12:16:19Z</published>
+
+	<content type="html" xml:lang="en">
+	DNS-Records without DNSSEC are no replacement for even the weakest CA infrastructure. *Every* possible exploitation scenario that involves a fraudulent certificate in an HTTPS connection -- i.e. every scenario which storing certificates in the DNS would supposedly fix -- give the attacker direct (if the user was lured to the wrong site by some sort of DNS manipulation) or indirect (if the attacker is on the same network as the user or on the path from user to original site) control over the DNS and therefore the CERT records.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 30</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_30/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_30/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:20Z</updated>
+	<published>2011-03-23T12:16:20Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;DNSSEC is part of DNS as of RFC 4035, c. March 2005, which predates and is accounted for in RFC 4398 CERT resource records. In addition, use of IPSec could possibly bring confidentiality to recursive queries and authentication to stub queries.&lt;/p&gt;
+
+&lt;p&gt;In other words, these concerns are largely moot.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 31</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_31/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_31/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:21Z</updated>
+	<published>2011-03-23T12:16:21Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;No one uses DNSSEC or IPSec or IPv6.&lt;/p&gt;
+
+&lt;p&gt;None of them are perfect either, so that they are /designed/ to mitigate things does not mean that they actually do.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 32</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_32/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_32/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:22Z</updated>
+	<published>2011-03-23T12:16:22Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;We Must Fix HTTPS: http://web.monkeysphere.info/news/We-Must-Fix-HTTPS/&lt;/p&gt;
+
+&lt;p&gt;An interesting set of slides on https model.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 33</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_33/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_33/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:23Z</updated>
+	<published>2011-03-23T12:16:23Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;When Certstar got caught issuing a certificate for mozilla.com without doing valid checks (http://it.slashdot.org/article.pl?sid=08/12/23/0046258) people started calling out Comodo because Certstar was a Comodo reseller and Comodo shouldn’t have let that happen. That resulted in Comodo suspending that reseller’s ability to issue certifications because they were not fulfilling their proper contractual obligations to Comodo… During that process people were looking closely at Comodo trust paths, and Comodo was being nice and answering questions in forums to try and clear their name. During this questioning AddTrust came up. If you follow the thread around it reveals that AddTrust AB no longer exists as a company, but Comodo bought the certificates from them, and the rights to continue to use their root CA which bear the AddTrust name.&lt;/p&gt;
+
+&lt;p&gt;The history is illustrative, basically the AddTrust company was acquired by ScandTrust (out of Malmö, Sweden), which was a Swedish CA, and then Comodo purchased the AddTrust root from ScandTrust. Then Comodo also purchased UserTrust, which had four roots and those also became part of Comodo when UserTrust became a “Comodo Group Company”.&lt;/p&gt;
+
+&lt;p&gt;In both of the above cases the key material was removed from its original sites of operation (in Sweden and Salt Lake City, respectively) and trafserred into Comodo&#39;s data centres and backup centres.&lt;/p&gt;
+
+&lt;p&gt;This is interesting because defunct companies, that had been sold, transferred their key material around to different parties. I think that this is the wrong way to do this, and that the right way to do this is to revoke the certificates and the CA, but thats an expensive operation. So, I think what they do with these certs is that they actually recognize the lower value of such a CA, and what they do is is sell these certs at a cheaper cost, because they haven&#39;t been under the control of Comodo from the beginning. &lt;/p&gt;
+
+&lt;p&gt;They call these “Usertrust” CAs and they offer 3rd party vendors, such as Gandi to issue these certs, which are way cheaper than Comodo’s in-house generated ones.&lt;/p&gt;
+
+&lt;p&gt;micah&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 34</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_34/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_34/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:24Z</updated>
+	<published>2011-03-23T12:16:24Z</published>
+
+	<content type="html" xml:lang="en">
+	What about phobos&#39; https://blog.torproject.org/blog/life-without-ca  surely phobos and those like him would notice the cert changed?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 35</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_35/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_35/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:25Z</updated>
+	<published>2011-03-23T12:16:25Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Can we at least start scoping SSL certs by internet domain to limit the damage?  Let a root CA sign for any domain, but create a COM CA that can only sign for *.com, and let it sell a google.com CA to google that can only sign for *.google.com and so on...&lt;br /&gt;
+Or is this too detrimental to the business model to ever happen?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 36</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_36/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_36/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:26Z</updated>
+	<published>2011-03-23T12:16:26Z</published>
+
+	<content type="html" xml:lang="en">
+	Too many questions unanswered - what about domains that don&#39;t want to maintain their own CA? Who operates the *.com?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 37</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_37/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_37/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:27Z</updated>
+	<published>2011-03-23T12:16:27Z</published>
+
+	<content type="html" xml:lang="en">
+	Why the embargo ? Seems like this isn&#39;t a case for responsible disclosure because this isn&#39;t a traditional vulnerability. 
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 38</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_38/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_38/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:28Z</updated>
+	<published>2011-03-23T12:16:28Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Yes we could do with a better system based on gpg or something but they&#39;re struggling to get dns security right.&lt;/p&gt;
+
+&lt;p&gt;Untill it is right and used by all then all a website owner can do in this regard is look after his key, data once received and mail systems. It&#39;s a joke the EV and CA costs for a &lt;strong&gt;false sense of security&lt;/strong&gt; which is making it take longer for a general consensus to want to find a new system. I&#39;m glad you can get the certs accepted by browsers for free. I&#39;d use self signed if browsers didn&#39;t say the worlds gonna end when you do. I think microsoft probably contemplated shutting your computer down the way IE reacts.&lt;/p&gt;
+
+&lt;p&gt;Black helicopters were mentioned, the openbsd list had a discussion recently part of which was that the government can get CAs to cooperate and can MITM the network legally. Assuming they&#39;re systems don&#39;t have gaping holes, (quite probable running cisco and M$ rubbish at great expense) and they&#39;re employees are trustworthy (hmmm), then if you can still be MITM then you likely have far greater problems than SSL.&lt;/p&gt;
+
+&lt;p&gt;CAs are dead&lt;br /&gt;
+Long live, hmmm&lt;/p&gt;
+
+&lt;p&gt;bastion hosts&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 39</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_39/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_39/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:29Z</updated>
+	<published>2011-03-23T12:16:29Z</published>
+
+	<content type="html" xml:lang="en">
+	Shouldn&#39;t the browsers be able to spot this behavior fairly easily by taking &quot;signatures&quot; of the certs that they are presented with and comparing certs that are supposedly for the same host names? I know this is would be detecting the problem after the fact but it seems fairly reasonable, no?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 40</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_40/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_40/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:30Z</updated>
+	<published>2011-03-23T12:16:30Z</published>
+
+	<content type="html" xml:lang="en">
+	Microsoft&#39;s response: http://www.microsoft.com/technet/security/advisory/2524375.mspx
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 41</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_41/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_41/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:31Z</updated>
+	<published>2011-03-23T12:16:31Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;A source at Microsoft says the following certs were obtained.&lt;br /&gt;
+• login.live.com&lt;br /&gt;
+• mail.google.com&lt;br /&gt;
+• www.google.com&lt;br /&gt;
+• login.yahoo.com (3 certificates)&lt;br /&gt;
+• login.skype.com&lt;br /&gt;
+• addons.mozilla.org&lt;br /&gt;
+• &quot;Global Trustee&quot;&lt;/p&gt;
+
+&lt;p&gt;I&#39;m not sure what the &quot;Global Trustee&quot; means.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 42</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_42/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_42/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:32Z</updated>
+	<published>2011-03-23T12:16:32Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;http://www.comodo.com/Comodo-Fraud-Incident-2011-03-23.html&lt;/p&gt;
+
+&lt;p&gt;IP Address: 212.95.136.18&lt;br /&gt;
+City: Tehran&lt;br /&gt;
+State or Region: Tehran&lt;br /&gt;
+Country: Iran, Islamic Republic of&lt;/p&gt;
+
+&lt;p&gt;1. Steal certs&lt;br /&gt;
+2. Redirect DNS inside Iran to fake sites&lt;br /&gt;
+3. Block OCSP / access to CRL&lt;br /&gt;
+4. Capture logins&lt;br /&gt;
+5. Snoop on gmail, hotmail, yahoo email boxes&lt;br /&gt;
+6. Round up activists&lt;br /&gt;
+7. Torture&lt;br /&gt;
+8. Repeat&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 43</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_43/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_43/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:33Z</updated>
+	<published>2011-03-24T12:16:33Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;9. ???&lt;br /&gt;
+10. PROFIT!!!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 44</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_44/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_44/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:34Z</updated>
+	<published>2011-03-24T12:16:34Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;++++++++++++++++++++++++++&lt;br /&gt;
+we need a international action toward Iran government&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 45</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_45/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_45/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:35Z</updated>
+	<published>2011-03-26T12:16:35Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;1. It&#39;s not necessarily Iran. China has been interfering with GMail lately, for example.&lt;br /&gt;
+2. Fixing the PKI is cheaper than “international action”&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 46</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_46/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_46/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:36Z</updated>
+	<published>2011-03-23T12:16:36Z</published>
+
+	<content type="html" xml:lang="en">
+	Update: Comodo has published an incident report: http://www.comodo.com/Comodo-Fraud-Incident-2011-03-23.html
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 47</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_47/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_47/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:37Z</updated>
+	<published>2011-03-23T12:16:37Z</published>
+
+	<content type="html" xml:lang="en">
+	Does anyone know what&#39;s Safari&#39;s status is with blacklisting revoked certificates?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 48</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_48/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_48/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:38Z</updated>
+	<published>2011-03-23T12:16:38Z</published>
+
+	<content type="html" xml:lang="en">
+	so we don&#39;t trust this douche-b (comodo) to release information about a huge security breach in a timely fashion but we /do/ trust him to name the &quot;state actor&quot; behind the attacks?? what a shocker that they named iran, the USSA&#39;s enemy du jour. i dont believe that bullshit for a second, now if u had said USSA&#39;s 51st satellite apartheid state, THEN i&#39;d believe you. who was behind STUXNET? who is more inclined to pull off this bullshit and blame it on others (by way of deception....) stop being so fucking stupid.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 49</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_49/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_49/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:39Z</updated>
+	<published>2011-03-23T12:16:39Z</published>
+
+	<content type="html" xml:lang="en">
+	I share your concern about Comodo&#39;s practices but at this point, I don&#39;t think they have much to gain by fudging or hiding info. Their reputation is seriously at stake and if they mess up, they will be history very soon.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 50</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_50/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_50/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:40Z</updated>
+	<published>2011-03-23T12:16:40Z</published>
+
+	<content type="html" xml:lang="en">
+	Send them another Christmas present for their efforts.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 51</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_51/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_51/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:41Z</updated>
+	<published>2011-03-23T12:16:41Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Microsoft update regarding this issue here,&lt;/p&gt;
+
+&lt;p&gt;http://www.microsoft.com/technet/security/advisory/2524375.mspx&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 52</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_52/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_52/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:42Z</updated>
+	<published>2011-03-23T12:16:42Z</published>
+
+	<content type="html" xml:lang="en">
+	Does the SSL Observatory have any legit certs with global trustee in the cn or san fields?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 53</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_53/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_53/"/>
+
+	<author><name>ioerror</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:43Z</updated>
+	<published>2011-03-24T12:16:43Z</published>
+
+	<content type="html" xml:lang="en">
+	I asked Seth from the EFF and he reported that he did not find anything with that string in the Observatory data.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 54</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_54/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_54/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:44Z</updated>
+	<published>2011-03-23T12:16:44Z</published>
+
+	<content type="html" xml:lang="en">
+	http://blogs.comodo.com/it-security/data-security/the-recent-ca-compromi...
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 55</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_55/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_55/"/>
+
+	<author><name>ioerror</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:45Z</updated>
+	<published>2011-03-23T12:16:45Z</published>
+
+	<content type="html" xml:lang="en">
+	They&#39;re still missing a few serious points.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 56</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_56/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_56/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:46Z</updated>
+	<published>2011-03-23T12:16:46Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I may be completely wrong here, but couldn&#39;t an attacker beat revocation by serving a man-in-the-middle victim an old version of the CRL, downloaded before the cert was revoked.&lt;br /&gt;
+The CRL files are all stored on http servers, not https.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 57</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_57/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_57/"/>
+
+	<author><name>ioerror</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:47Z</updated>
+	<published>2011-03-23T12:16:47Z</published>
+
+	<content type="html" xml:lang="en">
+	The HTTP 500 trick does that without any crypto trickery.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 58</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_58/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_58/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:48Z</updated>
+	<published>2011-03-23T12:16:48Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;There are some relevant comments in a paper of mine that will appear at next week&#39;s Security Protocols Workshop and that was put online by the workshop organisers today. The direct URL is&lt;/p&gt;
+
+&lt;p&gt;  http://spw.stca.herts.ac.uk/2.pdf&lt;/p&gt;
+
+&lt;p&gt;Ross Anderson&lt;br /&gt;
+www.ross-anderson.com&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 59</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_59/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_59/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:49Z</updated>
+	<published>2011-03-23T12:16:49Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Oh, that wacky Comodo / Usertrust / UTN CA.&lt;/p&gt;
+
+&lt;p&gt;For debian and ubuntu users, here is a quick way to quit trusting this CA. I posted it back in 2008, when they issued a certificate they shouldn&#39;t have (see slashdot link above).&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sudo sed -ri &#39;/comodo|utn|addtrust/Is/^!*/!/&#39; /etc/ca-certificates.conf; sudo update-ca-certificates&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;For firefox users on linux, run this with firefox closed:&lt;br /&gt;
+&lt;code&gt;locate -er &#39;/cert8\.db$&#39; |sed &#39;s;[^/]*$;;&#39; |while read db; do echo $db; certutil -d &quot;$db&quot; -L |egrep -i &#39;comodo|utn|usertrust|addtrust&#39; |sed -re &#39;s; +[a-zA-Z]*,.*;;&#39; |while read cn; do echo &quot;- $cn&quot;; certutil -d &quot;$db&quot; -M -t cw,cw,cw -n &quot;$cn&quot;; certutil -d &quot;$db&quot; -D -n &quot;$cn&quot;; done; done&lt;br /&gt;
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;For firefox users, using a gui:&lt;br /&gt;
+http://benjamin.smedbergs.us/blog/2008-12-24/how-to-disable-the-comodo-r...&lt;/p&gt;
+
+&lt;p&gt;Somewhere there is a UserTrust cert that signs itself:&lt;br /&gt;
+http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=589023&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 60</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_60/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_60/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:50Z</updated>
+	<published>2011-03-23T12:16:50Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;ve marked all my CAs as invalid and use the perspectives firefox extension:&lt;/p&gt;
+
+&lt;p&gt;http://www.networknotary.org/firefox.html&lt;/p&gt;
+
+&lt;p&gt;Not perfect, but if I am seeing a cert that doesn&#39;t correspond to the notaries, it will inform me.  (it doesn&#39;t override firefiox xpi signatures, so installs will simply fail).&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 61</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_61/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_61/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:51Z</updated>
+	<published>2011-03-23T12:16:51Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Wonderful, wonderful. Unearthing this is clearly a sackload of work, for which kudos. Also notice how it is necessary and not something a random user would do. Since it IS necessary, it means safely using the thing is just about impossible except for experts.&lt;/p&gt;
+
+&lt;p&gt;This, by the way, is a glaring error, omission, and oversight in security thinking. It keeps on cropping up any time crypto is introduced, and is closely related to the problems detailed in _Why Johnny Can&#39;t Encrypt_. Even Appelbaum thinks about this technically. The biggest concern is not that, it&#39;s that without deep technical understanding of the system it can be used neither safely nor securely. How&#39;s that for userfriendlyness? --bounce&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 62</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_62/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_62/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:52Z</updated>
+	<published>2011-03-23T12:16:52Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Went to upgrade FF, upgrade failed. Downloaded 4 and installed.  Immediately got OCSP errors going to Facebook. Turned on WS and started sniffing packets. Fatal error, bad certificates! Checked against list. Nope different numbers. Did about:config and made sure OCSP was turned on. &lt;/p&gt;
+
+&lt;p&gt;It fails if it does not get a response. Good.&lt;/p&gt;
+
+&lt;p&gt;Checked  the IP where I was getting errors. Skype. Other errors, Facebook. &lt;/p&gt;
+
+&lt;p&gt;Read the Freedom To Tinker post, aha. Read this post, aha. Nice.&lt;/p&gt;
+
+&lt;p&gt;Noticed that both CA use c=US in their name but do not support the listing of their X.509v3 certs in a  c=US X.500 directory when it is just simpler to hard code them into browsers and make the process opaque to users. &lt;/p&gt;
+
+&lt;p&gt;The error becomes obvious, if one could easily lookup the right certificates one would not trust the rogue ones. Following the path in browsers has led me down strange alleyways smothered with snake oil, non-working addresses, and some developer who rolled up a demo and it ends up being on a financial site that I am supposed to be able to use to check a balance. Why, because no one is really paying attention, they just want to turn on the crypto, and who cares if it is valid.&lt;/p&gt;
+
+&lt;p&gt;But tell that to a browser. Any software with LDAP could fetch that certificate and make a comparison if the CAs supported the name space they have been exploiting. RFC4398...please give me a break. This is a systemic problem that is killing privacy for convenience. &lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 63</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_63/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_63/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:53Z</updated>
+	<published>2011-03-23T12:16:53Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&quot;Comodo also clearly demonstrate a mis-understanding - they believe that checks for revocation are proof positive that certificates are being used&quot;&lt;/p&gt;
+
+&lt;p&gt;I might be being dense - but isn&#39;t this statement backwards.  Shouldn&#39;t this be: they believe that NO checks for revocation are proof positive that the certificates are NOT being used.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 64</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_64/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_64/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:54Z</updated>
+	<published>2011-03-24T12:16:54Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Report of incident on 15-MAR-2011&lt;br /&gt;
+An RA suffered an attack that resulted in a breach of one user account of that specific RA.&lt;br /&gt;
+This RA account was then used fraudulently to issue 9 certificates (across 7 different domains).&lt;/p&gt;
+
+&lt;p&gt;http://www.comodo.com/Comodo-Fraud-Incident-2011-03-23.html&lt;/p&gt;
+
+&lt;p&gt;This only means that someone had got hold of a RA username and password. Comodo uses 2Tiers for their reselling. This has nothing to do with any CA certificate or breach of the PKI infrastrukture. The Certificate was revoked, as normal procedure in such circumstances. However, customes are protected by the Comodo insurance if they suffered any loss because of this, based on the type of certificate that was issued.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 65</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_65/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_65/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:55Z</updated>
+	<published>2011-03-25T12:16:55Z</published>
+
+	<content type="html" xml:lang="en">
+	If it was an attack by Iranian authorities, like they suggest, the loss will be that they are hanged slowly in the Evin prison. That&#39;s not covered by the insurance, I&#39;m pretty sure.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 66</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_66/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_66/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:56Z</updated>
+	<published>2011-03-24T12:16:56Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I propose a very different approach, that does not use public key encryption at all:&lt;br /&gt;
+http://home.tiscali.nl/jhvdburg/intro-lkmap.pdf&lt;/p&gt;
+
+&lt;p&gt;Jan-Hein van der Burg.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 67</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_67/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_67/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:57Z</updated>
+	<published>2011-03-24T12:16:57Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Infidels! One day great nation of Iran will have the funds to purchase their own CA like your NSA.&lt;/p&gt;
+
+&lt;p&gt;Hey, you still getting molested at the airport Jacob?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 68</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_68/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_68/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:58Z</updated>
+	<published>2011-03-24T12:16:58Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;In a perfect world&lt;br /&gt;
+people who invest their time in detecting and reporting security holes which affect the entire world,&lt;br /&gt;
+people who helped reporters from Egypt and Libya to bypass censorship&lt;br /&gt;
+should deserve a medal.&lt;/p&gt;
+
+&lt;p&gt;In this brave new world they only get harassed in US airports.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 69</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_69/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_69/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:16:59Z</updated>
+	<published>2011-03-24T12:16:59Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Jake, in your update you have harsh words for Comodo. This is surely justified.&lt;/p&gt;
+
+&lt;p&gt;Yet your own company, Tor, is hardly a sterling example of protecting its users.&lt;/p&gt;
+
+&lt;p&gt;The Torbutton extension for Firefox is one of the most frequently downloaded extensions on that site, 4,687,639 downloads to date and 182,056 daily users on March 23rd. Torbutton bundles Tor, Polipo, and Vidalia.&lt;/p&gt;
+
+&lt;p&gt;It advertises itself as &quot;currently the only addon that will safely manage your Tor browsing to prevent IP address leakage, cookie leakage, and general privacy attacks&quot;, thus giving the user a reasonable expectation of privacy.&lt;/p&gt;
+
+&lt;p&gt;Yet it was last updated April 19, 2010 -- nearly a year ago!&lt;/p&gt;
+
+&lt;p&gt;Since then there have been many bugfixes to Tor, including fixes to serious security-relevant issues. When will these bugfixes find their way into Torbutton?&lt;/p&gt;
+
+&lt;p&gt;By not updating Torbutton, you are putting millions of users of the extension at risk. Some of them may be dissidents in brutal dictatorships and the consequences to them of being found out are dire.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 70</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_70/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_70/"/>
+
+	<author><name>ioerror</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:00Z</updated>
+	<published>2011-03-24T12:17:00Z</published>
+
+	<content type="html" xml:lang="en">
+	I think you&#39;re mistaken and I&#39;ve pointed Mike at your comment. He&#39;ll address them shortly.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 71</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_71/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_71/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:01Z</updated>
+	<published>2011-03-24T12:17:01Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;You seem to misunderstand what Torbutton does. It only handles the Firefox side of things and has nothing to do with Tor core.&lt;/p&gt;
+
+&lt;p&gt;Aside from Firefox 4 compatibility and a couple addon conflicts, not much new in the way of security updates for Torbutton has been needed. If you want Firefox 4 support and fixes for some minor issues, use the alpha series at:&lt;br /&gt;
+https://www.torproject.org/torbutton/&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 72</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_72/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_72/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:02Z</updated>
+	<published>2011-03-24T12:17:02Z</published>
+
+	<content type="html" xml:lang="en">
+	The &#39;global trustee&#39; cert sounds to me like it could be a signing certificate rather than simply a normal normal site certificate. If so then the attacker could sign further certs of their own. Even worse is that OCSP is generally only applied to the leaf of trust, meaning that even if OCSP worked properly it wouldn&#39;t help should this be true.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 73</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_73/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_73/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:03Z</updated>
+	<published>2011-03-24T12:17:03Z</published>
+
+	<content type="html" xml:lang="en">
+	Lots of talk about Mozilla, IE, and Chrome but what about Opera and Safari?  Are they posting patches?  Do they automatically check CRLs?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 74</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_74/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_74/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:04Z</updated>
+	<published>2011-03-24T12:17:04Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Great post.&lt;/p&gt;
+
+&lt;p&gt;1.  I have a question here, you mention how browsers soft fail on a OCSP/CRL attempts. Now, assuming they are coded to hard fail. Even  then an adversary can MITM the OCSP request and defeat this  process right ? In this case, the browsers will be helpless sitting birds, unless the OCSP contact made by browser to CA has some measures in place to avoid a MITM.&lt;/p&gt;
+
+&lt;p&gt;2. Opera seems to be maintaining a separate server of their own with certificates etc. Need to dig this deeper, but it seems to evade the whole CA down thing (assuming Opera will try to ensure that those servers are up)&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 75</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_75/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_75/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:05Z</updated>
+	<published>2011-03-24T12:17:05Z</published>
+
+	<content type="html" xml:lang="en">
+	I wonder why if the lead byte of cert serial is &amp;gt; 0x7F they pre-pend that 0x00?  Anyone gone through source to see why that is?  Not an issue, just curious.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 76</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_76/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_76/"/>
+
+	<author><name>ioerror</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:06Z</updated>
+	<published>2011-03-24T12:17:06Z</published>
+
+	<content type="html" xml:lang="en">
+	It&#39;s a certificate encoding issue - Chrome does the same thing internally.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 77</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_77/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_77/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:07Z</updated>
+	<published>2011-03-24T12:17:07Z</published>
+
+	<content type="html" xml:lang="en">
+	Great information.Thanks.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 78</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_78/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_78/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:08Z</updated>
+	<published>2011-03-24T12:17:08Z</published>
+
+	<content type="html" xml:lang="en">
+	Chinese gov action would be possible
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 79</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_79/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_79/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:09Z</updated>
+	<published>2011-03-24T12:17:09Z</published>
+
+	<content type="html" xml:lang="en">
+	fuck all
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 80</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_80/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_80/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:10Z</updated>
+	<published>2011-03-24T12:17:10Z</published>
+
+	<content type="html" xml:lang="en">
+	hello all, i say f4ck all
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 81</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_81/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_81/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:11Z</updated>
+	<published>2011-03-24T12:17:11Z</published>
+
+	<content type="html" xml:lang="en">
+	Thanks all
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 82</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_82/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_82/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:12Z</updated>
+	<published>2011-03-24T12:17:12Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;What makes you guys think that solving for the CA&#39;s private key from the public key is all that hard.  Have you looked into how much (or how little) computation power is need these days to do this?  It certainly is within the capability of large corporations and even small countries.&lt;/p&gt;
+
+&lt;p&gt;The whole https security thing is bogus anyway unless the domain name server system can be secured.   Most companies are better off using their own (self created) certificates and changing them frequently (like weekly or daily).  The browser preapproved CA list just encourages forgery.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 83</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_83/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_83/"/>
+
+	<author><name>ioerror</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:13Z</updated>
+	<published>2011-03-25T12:17:13Z</published>
+
+	<content type="html" xml:lang="en">
+	It depends on the private key in question - do you know of any keys smaller than 1024bits in major browsers?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 84</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_84/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_84/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:14Z</updated>
+	<published>2011-03-25T12:17:14Z</published>
+
+	<content type="html" xml:lang="en">
+	There is no proof that finding the private key from the public key is a &#39;hard&#39; or &#39;large&#39; problem in the mathematical algorithmic sense - only that most people don&#39;t know how to do it efficiently.   In any event it is certainly no &#39;bigger&#39; than the factoring problem (factoring the product of two large primes) in which there has been alot of progress algoritmically.  Practically, in light of modern processors, say clusters of GPUs, backsolving private keys is almost personally affordable.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 85</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_85/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_85/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:15Z</updated>
+	<published>2011-03-25T12:17:15Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Comodo has not been hacked, but the user credentials of a sovereign account at UserTrust were leaked. The scandal is not the hack, but that these accounts even exist and are allowed to generate certificates at will.&lt;/p&gt;
+
+&lt;p&gt;An unknown entity just tried to gain the same level of arbitrary access to the CA system, that western states already have.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 86</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_86/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_86/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:16Z</updated>
+	<published>2011-03-25T12:17:16Z</published>
+
+	<content type="html" xml:lang="en">
+	Amazing research, fascinating article. Thank you for your work on this issue and on Tor in general.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 87</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_87/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_87/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:17Z</updated>
+	<published>2011-03-25T12:17:17Z</published>
+
+	<content type="html" xml:lang="en">
+	I have some contacts with human rights activists working in Iran. What kind of precautions do they need to take in light of the possibility that the attack originated from the state?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 88</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_88/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_88/"/>
+
+	<author><name>ioerror</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:18Z</updated>
+	<published>2011-03-25T12:17:18Z</published>
+
+	<content type="html" xml:lang="en">
+	They should be using Tor with bridges or without to avoid targeted HTTPS MITM attacks. It&#39;s very hard to target every gmail user if you&#39;re not trying to connect to gmail.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 89</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_89/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_89/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:19Z</updated>
+	<published>2011-03-25T12:17:19Z</published>
+
+	<content type="html" xml:lang="en">
+	I notice more and more certificates are getting added and updated all the time.  Is there a better and more secure and safe way than certificates or can more safeguards be applied to help keep certificates safe.  If Iran did indeed have dealings in this then we must in carefully analyze the information and discover how to better safeguard and protect certificates to prevent man in the middle attacks from happening.  Furthermore, what other safeguards besides obvious ones like passwords, biometrics, secure limited access, need to know data, etc. can be used to safeguard information.  I know certain things could just be done the old fashioned way by pen and paper and safeguarded in a vault and/or an older computer that has access restricted to only a few individuals with supplies carefully protected and fully scanned to entrance to vault.  We still need more and better ideas and soon.  Thank you.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 90</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_90/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_90/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:20Z</updated>
+	<published>2011-03-25T12:17:20Z</published>
+
+	<content type="html" xml:lang="en">
+	I notice more and more certificates are getting added and updated all the time.  Is there a better and more secure and safe way than certificates or can more safeguards be applied to help keep certificates safe.  If Iran did indeed have dealings in this then we must in carefully analyze the information and discover how to better safeguard and protect certificates to prevent man in the middle attacks from happening.  Furthermore, what other safeguards besides obvious ones like passwords, biometrics, secure limited access, need to know data, etc. can be used to safeguard information.  I know certain things could just be done the old fashioned way by pen and paper and safeguarded in a vault and/or an older computer that has access restricted to only a few individuals with supplies carefully protected and fully scanned to entrance to vault.  We still need more and better ideas and soon.  Thank you.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 91</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_91/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_91/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:21Z</updated>
+	<published>2011-03-25T12:17:21Z</published>
+
+	<content type="html" xml:lang="en">
+	So how come security.OCSP.require is set to false in the latest Tor Browser Bundle if you yourself have repeatedly and strongly recommended setting it to true.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 92</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_92/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_92/"/>
+
+	<author><name>ioerror</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:22Z</updated>
+	<published>2011-03-25T12:17:22Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I don&#39;t produce the TBB. I&#39;ve argued internally that we should enable this flag and this build fixes the immediate compromise problems at hand.&lt;/p&gt;
+
+&lt;p&gt;Anyone who hasn&#39;t upgraded should enable that flag by hand, of course.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 93</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_93/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_93/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:23Z</updated>
+	<published>2011-03-25T12:17:23Z</published>
+
+	<content type="html" xml:lang="en">
+	How about disabling entirely so as not to notify third parties that the site in question is being accessed?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 94</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_94/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_94/"/>
+
+	<author><name>ioerror</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:24Z</updated>
+	<published>2011-03-26T12:17:24Z</published>
+
+	<content type="html" xml:lang="en">
+	Personally, I think that we should run an anonymous OCSP or CRL caching proxy on a hidden service. I don&#39;t have time to write one but it does seem like a reasonable compromise for hard failure modes and privacy concerns.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 95</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_95/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_95/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:25Z</updated>
+	<published>2011-03-25T12:17:25Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Don&#39;t trust CAs that you do not actually know. Who is Comodo ? I don&#39;t know anyone there, hence I don&#39;t trust them. Same goes for all the others, I just live without any CAs on my &quot;trusted browser&quot;.&lt;/p&gt;
+
+&lt;p&gt;I trust my friends CAs, I trust my bank and other services certificates because I manually verify them. For the non important stuff, I take the risk of reading an altered blog post (or use my &quot;non trusted browser&quot;).&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 96</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_96/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_96/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:26Z</updated>
+	<published>2011-03-27T12:17:26Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;It appears that the Microsoft update doesn’t just contain the certificate serial numbers, but the whole certificates.  They include in the subject:&lt;/p&gt;
+
+&lt;p&gt;OU = Hosted by GTI Group Corporation&lt;/p&gt;
+
+&lt;p&gt;I’d guess that makes the registration authority GlobalTrust Inc (a division of GTI Group Corporation).  They’re in Italy, which matches some news reports.  Their websites have also done a disappearing act.&lt;/p&gt;
+
+&lt;p&gt;I wonder if this goes some way to explaining the strange &quot;global trustee&quot; certificate.  I apologise if this is already common knowledge, but I’ve not seen it mentioned anywhere yet.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 97</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_97/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_97/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:27Z</updated>
+	<published>2011-03-27T12:17:27Z</published>
+
+	<content type="html" xml:lang="en">
+	The extent of the problem is surely a matter of whether the signing key was obtained or not. If the attackers obtained that, then revoking the certs issued on the CA&#39;s computer are almost immaterial as the attacker can continue issuing certs on their own computer. Gah, this is such a mess.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 98</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_98/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_98/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:28Z</updated>
+	<published>2011-03-29T12:17:28Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Google&#39;s ones :&lt;br /&gt;
+047ecbe9fca55f7bd09eae36e10cae1e&lt;br /&gt;
+d8f35f4eb7872b2dab0692e315382fb0&lt;br /&gt;
+b0b7133ed096f9b56fae91c874bd3ac0&lt;br /&gt;
+9239d5348f40d1695a745470e1f23f43&lt;br /&gt;
+d7558fdaf5f1105bb213282b707729a3&lt;br /&gt;
+f5c86af36162f13a64f54f6dc9587c06&lt;/p&gt;
+
+&lt;p&gt;Mozilla&#39;s ones :&lt;br /&gt;
+009239d5348f40d1695a745470e1f23f43&lt;br /&gt;
+00d8f35f4eb7872b2dab0692e315382fb0&lt;br /&gt;
+72032105c50c08573d8ea5304efee8b0&lt;br /&gt;
+00b0b7133ed096f9b56fae91c874bd3ac0&lt;br /&gt;
+00e9028b9578e415dc1a710a2b88154447&lt;br /&gt;
+00d7558fdaf5f1105bb213282b707729a3&lt;br /&gt;
+047ecbe9fca55f7bd09eae36e10cae1e&lt;br /&gt;
+00f5c86af36162f13a64f54f6dc9587c06&lt;br /&gt;
+392a434f0e07df1f8aa305de34e0c229&lt;br /&gt;
+3e75ced46b693021218830ae86a82a71&lt;/p&gt;
+
+&lt;p&gt;G9239... == M009239 ...&lt;br /&gt;
+Gf5c8 == M00f5c8&lt;br /&gt;
+Gd755 == M00d755&lt;br /&gt;
+Gb0b7 == M00b0b7&lt;br /&gt;
+Gd8f3 = M00d8f3&lt;br /&gt;
+G047ecb == M047ecb&lt;/p&gt;
+
+&lt;p&gt;Every hash in the Google list are found in the Mozilla list : just a matter of visual representation.&lt;br /&gt;
+db&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 99</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_99/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_99/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:29Z</updated>
+	<published>2011-03-29T12:17:29Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Certificate information of 72032105C50C08573D8EA5304EFEE8B0 is the followings.&lt;/p&gt;
+
+&lt;p&gt;---------------------------------------------&lt;/p&gt;
+
+&lt;p&gt;Subject:&lt;br /&gt;
+    CN=kuix.de,OU=Comodo Trial SSL,OU=TEST USE ONLY - NO WARRANTY ATTACHED,OU=For Testing Purposes Only,O=Kai Engert,STREET=Test Street,L=Test City,ST=Test State,postalCode=12345,C=DE&lt;br /&gt;
+Issuer:&lt;br /&gt;
+    CN=UTN-USERFirst-Hardware,OU=http://www.usertrust.com,O=The USERTRUST Network,L=Salt Lake City,ST=UT,C=US&lt;br /&gt;
+Serial Number:&lt;br /&gt;
+    72:03:21:05:c5:0c:08:57:3d:8e:a5:30:4e:fe:e8:b0&lt;br /&gt;
+Issuer DER Base64:&lt;br /&gt;
+MIGXMQswCQYDVQQGEwJVUzELMAkGA1UECBMCVVQxFzAVBgNVBAcTDlNhbHQgTGFr&lt;br /&gt;
+ZSBDaXR5MR4wHAYDVQQKExVUaGUgVVNFUlRSVVNUIE5ldHdvcmsxITAfBgNVBAsT&lt;br /&gt;
+GGh0dHA6Ly93d3cudXNlcnRydXN0LmNvbTEfMB0GA1UEAxMWVVROLVVTRVJGaXJz&lt;br /&gt;
+dC1IYXJkd2FyZQ==&lt;br /&gt;
+Serial DER Base64:&lt;br /&gt;
+cgMhBcUMCFc9jqUwTv7osA==&lt;br /&gt;
+Serial DER as C source:&lt;br /&gt;
+{ 16, &quot;\x72\x03\x21\x05\xc5\x0c\x08\x57\x3d\x8e\xa5\x30\x4e\xfe\xe8\xb0&quot; }&lt;br /&gt;
+Fingerprint (MD5):&lt;br /&gt;
+    F7:5F:98:BC:D8:64:0C:16:E5:AE:EE:AA:00:F6:1F:07&lt;br /&gt;
+Fingerprint (SHA1):&lt;br /&gt;
+    82:61:4B:EC:97:48:15:DE:CC:9A:CC:6E:84:21:71:79:B2:64:20:40&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 100</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_100/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_100/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:30Z</updated>
+	<published>2011-03-29T12:17:30Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Revocation date of 9 certificates are the followings.&lt;br /&gt;
+----------------------------------------------------&lt;/p&gt;
+
+&lt;p&gt;http://crl.comodoca.com/UTN-USERFirst-Hardware.crl&lt;/p&gt;
+
+&lt;p&gt;    Serial Number: 047ECBE9FCA55F7BD09EAE36E10CAE1E&lt;br /&gt;
+        Revocation Date: Mar 15 19:04:03 2011 GMT&lt;br /&gt;
+    Serial Number: F5C86AF36162F13A64F54F6DC9587C06&lt;br /&gt;
+        Revocation Date: Mar 15 19:04:24 2011 GMT&lt;br /&gt;
+    Serial Number: E9028B9578E415DC1A710A2B88154447&lt;br /&gt;
+        Revocation Date: Mar 15 19:05:26 2011 GMT&lt;br /&gt;
+    Serial Number: 9239D5348F40D1695A745470E1F23F43&lt;br /&gt;
+        Revocation Date: Mar 15 20:15:20 2011 GMT&lt;br /&gt;
+    Serial Number: D7558FDAF5F1105BB213282B707729A3&lt;br /&gt;
+        Revocation Date: Mar 15 20:15:26 2011 GMT&lt;br /&gt;
+    Serial Number: 392A434F0E07DF1F8AA305DE34E0C229&lt;br /&gt;
+        Revocation Date: Mar 15 20:15:38 2011 GMT&lt;br /&gt;
+    Serial Number: 3E75CED46B693021218830AE86A82A71&lt;br /&gt;
+        Revocation Date: Mar 15 20:15:47 2011 GMT&lt;br /&gt;
+    Serial Number: B0B7133ED096F9B56FAE91C874BD3AC0&lt;br /&gt;
+        Revocation Date: Mar 15 20:16:03 2011 GMT&lt;br /&gt;
+    Serial Number: D8F35F4EB7872B2DAB0692E315382FB0&lt;br /&gt;
+        Revocation Date: Mar 15 20:19:04 2011 GMT&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 101</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_101/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_101/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:31Z</updated>
+	<published>2011-03-30T12:17:31Z</published>
+
+	<content type="html" xml:lang="en">
+	Shouldn&#39;t people update their Namoroka (modified Firefox shipped with TOR) to detect these certs?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 102</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_102/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_102/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:32Z</updated>
+	<published>2011-04-01T12:17:32Z</published>
+
+	<content type="html" xml:lang="en">
+	I don&#39;t understand sth. Why has the industry chosen to &#39;ignore&#39; returned errors on the crl queries? Are there a lot of false positives? And is it i.a. a calculated risk they are willing to take? 
+
+	</content>
+
+
+
+</entry>
+
+</feed>

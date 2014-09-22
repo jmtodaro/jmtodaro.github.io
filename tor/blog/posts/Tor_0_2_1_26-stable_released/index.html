@@ -1,0 +1,2310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tor 0.2.1.26-stable released</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_1_26-stable_released&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Tor 0.2.1.26-stable released</a>
+
+</span>
+
+
+<div id="content">
+<p>Tor 0.2.1.26 addresses the recent connection and memory overload problems we've been seeing on relays, especially relays with their DirPort open. If your relay has been crashing, or you turned it off because it used too many resources, give this release a try.</p>
+
+<p>This release also fixes yet another instance of broken OpenSSL libraries that was causing some relays to drop out of the consensus.</p>
+
+<p>Available for download at <a href="https://www.torproject.org/easy-download" title="https://www.torproject.org/easy-download" rel="nofollow">https://www.torproject.org/easy-download</a></p>
+
+<p>Changes in version 0.2.1.26<br />
+<strong>Major bugfixes:</strong></p>
+
+<p><ul>
+<li>Teach relays to defend themselves from connection overload. Relays<br />
+      now close idle circuits early if it looks like they were intended<br />
+      for directory fetches. Relays are also more aggressive about closing<br />
+      TLS connections that have no circuits on them. Such circuits are<br />
+      unlikely to be re-used, and tens of thousands of them were piling<br />
+      up at the fast relays, causing the relays to run out of sockets <span class="read-more"><a href="http://blog.torproject.org/blog/tor-02126-stable-released"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/connection_overload/" rel="tag">connection overload</a>
+
+<a href="../../tags/stable_release/" rel="tag">stable release</a>
+
+<a href="../../tags/test_suite_fixes/" rel="tag">test suite fixes</a>
+
+<a href="../../tags/v3_directories/" rel="tag">v3 directories</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-3b833272cfffa0c06ec4220eb6c10b94">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+pls am in nigeria and like to use tor help me 
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 11 Jun 2010 07:00:01 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-89b08de9b006d8a6da4fb809bc4bb0ac">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+Hey i can tell you how to use tor send me an email to ak47rundown@yahoo.com.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 05 Jul 2010 07:00:02 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-09b7a8e4adff42c7f4acbbd744340dd6">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>after U  install vidalia bundle go to the tools on the top of your explorer,<br />
+then go to lan setup and write in http : 127.0.0.1 port 8118 then write in socks:1.7.0.0.1 and the port 9050 close the explorer and open it again chieck your IP U `ll find it form other country Tor hide your real IP</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 28 Aug 2010 07:00:03 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2e54b25c76d3a11da9cb9e669f0cf46b">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<p>I couldn't get the new version to install at the default destination in Windows 7. I thought that the download data might have gotten damaged and downloaded the package again. Same problem. I'm a novice, and I should have copied the notification down; ".dll" was in the statement, I recall. I have no idea whether the problem event is rare or unique.</p>
+
+<p>I decided to try installing to the desktop. It took, and I'm using the new version now.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 13 Jun 2010 07:00:04 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0eea22867cb7b1a0b6f57ef7e73d94f2">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>When I get a good chance to speak favorably about Tor, I usually mention repression of free expressivon in some countries, and whistleblowing, and (in a general way) personal privacy. I'll be less general about the personal privacy from now on, having just seen the  potentially unsafe detail that IP address geolocation may deliver. Being no expert in such matters, I was recently taken aback.</p>
+
+<p>While visiting an IP-related site that I had not regularly visited, without Tor enabled, I saw that the site identified not only the external IP address of this computer, but the very apartment complex in which the personal cable broadband account is operative. At the electronic-lock gate here there's an electronic directory box. In the directory box anyone can access the last name and first initial of any tenant and get a three digit code. Enter the code and the tenant's phone is rung so that an entry command may be sent to the gate and/or conversation may be had. (I would find that set-up troubling even if we'd never had a stalker.) For some, merely visiting a web site unprotected can make readily available a path to one's door and into one's life.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 13 Jun 2010 07:00:05 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-beee6536a8e5469b7ba8c324022f4da1">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>i am student, i tried to operate private tor network following the given procedure, i received the following notices, there is on enough information to build the circuit and DNS provider gave an answer for "2764bwocwcms4sf", which is not supposed to exist, i initiate the torrc file (empy1.torrc) as following<br />
+TestingTorNetwork 1<br />
+DirServer mohamedlaptop v3ident=143915A74E03911C3A5BEFBA2DFEC090C3B52F4E orport=9001 127.34.23.1:9030 6026 EF47 AF32 1200 B8E0 5AEB 6178 9E66 1418 C905<br />
+ORPort 9001<br />
+SocksPort 0<br />
+Address 192.168.0.1<br />
+DirPort 9030<br />
+V3AuthoritativeDirectory 1<br />
+v2AuthoritativeDirectory 1<br />
+AuthoritativeDirectory 1<br />
+ContactInfo test@test.test<br />
+ i used tor v 0.2.1.26<br />
+thank you<br />
+M. Younis</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 14 Jun 2010 07:00:06 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-522a3cfaad36392dc6441dc3c575ff3a">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p>Hello there 8-)</p>
+
+<p>Can anyone tell me where I can put some programming related questions about tor?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 15 Jun 2010 07:00:07 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-83459071cab2e604028ce4c785ac8d4c">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+email tor-assistants or open tickets at trac.torproject.org
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 15 Jun 2010 07:00:08 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-12ab35a10a2d86e6f3d3e05292d611a5">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+<p>I have been using Tor for quite a while now, I am a journalist and have enjoyed the enefits that come with Tor and Vidalia, but there is a particualr problem i have, Tor doesn't seem to work with both Yahoo messenger and Windows Live messenger. i have searched all over the Internet in a bid to catch something related to the resolve of the issue and i am still yet to find one. could you please help out with this<br />
+I use a Sony Viao, with Windows XP2 on it.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 15 Jun 2010 07:00:09 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-173c267b66b955cdf0ccf476d0fd9845">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+you need to configure them for SOCKS proxies.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 16 Jun 2010 07:00:10 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-989bd5c9b1248628c9c30e14943e47f1">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+i use compaq presario cz700, and yahoo messanger is not working tor, how do i fix the problem.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 19 Jun 2010 07:00:11 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4544209142f5a620f123bc3c4159d62d">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+You cannot use yahoo messenger with tor.  complain to yahoo.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 19 Jun 2010 07:00:12 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-23c8c3fd339bde0cc254afd5bd8f09aa">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+<p>am in nigeria and our tor network was perfect but since two days back it cant connect again what might be the fault please me<br />
+THANKS </p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Jun 2010 07:00:13 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9417e0d1036c5b6efacf84904c2da13f">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+Give Tor bridges a try, see if that works.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 25 Jun 2010 07:00:14 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bc1322d9c3a15462abda277e375b826b">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+I'm also having the same problem. My tor can't connect.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Jun 2010 07:00:15 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1c4caf10743d08548dd8f67e772d3faa">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+yes, help us down here in Nigeria! TOR is no longer working here, please.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 25 Jun 2010 07:00:16 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1f6d67687a3e4d39ce5975dc5462c4b1">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+yes, help us down here in Nigeria, Tor is no longer working in Nigeria!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 25 Jun 2010 07:00:17 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6edd3109b4cef42a36d417b4e1acd998">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+<a href="https://www.torproject.org/faq#SupportMail" title="https://www.torproject.org/faq#SupportMail" rel="nofollow">https://www.torproject.org/faq#SupportMail</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 25 Jun 2010 07:00:18 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1006801e240e17cfdf792206bed6c563">
+
+<div class="comment-subject">
+
+Comment 19
+
+</div>
+
+<div class="inlinecontent">
+Hello Good-day.here in Nigeria.Tor is not work again...........Mobile Telecommunication network (MTN)
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 26 Jun 2010 07:00:19 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7ea417e395459001d201627b415b07e2">
+
+<div class="comment-subject">
+
+Comment 20
+
+</div>
+
+<div class="inlinecontent">
+pls help us with tor is no longer working in nigeria!!!!! my email kamsyboy2005@yahoo.com
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 26 Jun 2010 07:00:20 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3c8c6b47ea578bee8574a01a2ed5b1dc">
+
+<div class="comment-subject">
+
+Comment 21
+
+</div>
+
+<div class="inlinecontent">
+pls help us tor is not working in nigeria pls my email is kamsyboy2005@yahoo.com
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 26 Jun 2010 07:00:21 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-031b5718c7d3a6bc627cea6d0cc96615">
+
+<div class="comment-subject">
+
+Comment 22
+
+</div>
+
+<div class="inlinecontent">
+<p>Hello Good-day.please in Nigeria Tor is not working anymore,kindly help us.our network have black it.the network is mobile telecommunication network.(MTN) </p>
+
+<p>Thanks for you help.............Rob</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 26 Jun 2010 07:00:22 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-db94ee8fcf8af93fe10f8777b677d0b9">
+
+<div class="comment-subject">
+
+Comment 23
+
+</div>
+
+<div class="inlinecontent">
+tor is no more connecting in with mtn nigeria, what we do, even with all the bridges
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 27 Jun 2010 07:00:23 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c22c265778888493042552fdb2823c53">
+
+<div class="comment-subject">
+
+Comment 24
+
+</div>
+
+<div class="inlinecontent">
+I'm also aving the same issue here too... please if anybody has the solution, u can chat or send me a mail on mistumike@yahoo.com.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 28 Jun 2010 07:00:24 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-73773fe975651f1138febdf23278c8a9">
+
+<div class="comment-subject">
+
+Comment 25
+
+</div>
+
+<div class="inlinecontent">
+I'm also aving the same issue here too... please if anybody has the solution, u can chat or send me a mail on mistumike@yahoo.com.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 28 Jun 2010 07:00:25 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a0ea6dbc14c6e7edc6980de5b8adb5a7">
+
+<div class="comment-subject">
+
+Comment 26
+
+</div>
+
+<div class="inlinecontent">
+same thing here in Nigeria Tor is no longer working pls help and Save Our Soul jamescoc2003@yahoo.com or jcforeal2000@yahoo.com 
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 29 Jun 2010 07:00:26 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5781e991aa8268da636a4e420a83e2a1">
+
+<div class="comment-subject">
+
+Comment 27
+
+</div>
+
+<div class="inlinecontent">
+pls help us.we luv tor
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 30 Jun 2010 07:00:27 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5b8be476c891320e4b82517b1cab71cb">
+
+<div class="comment-subject">
+
+Comment 28
+
+</div>
+
+<div class="inlinecontent">
+tor in no longer working in nigeris mk_timothy@yahoo.com
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 01 Jul 2010 07:00:28 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6832f91a1a70bae8b9f8939653276e3b">
+
+<div class="comment-subject">
+
+Comment 29
+
+</div>
+
+<div class="inlinecontent">
+pls pls pls we are in luv wit tor its no longer workin in Nigeria we really luv tor to come back to us my email is francozico2000@yahoo.com
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 05 Jul 2010 07:00:29 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ca7ca6a8576aaf90891fcf90ed04ed72">
+
+<div class="comment-subject">
+
+Comment 30
+
+</div>
+
+<div class="inlinecontent">
+<p>l am in Nigeria and l  am using  tor and free gate since 2007 network was perfect but since two days back it cant connect again what might be the fault l use mobile telecommunication network.(MTN) please me ;- email :-  { itunuola2009@yahoo.com }<br />
+THANKS and GOD BLESS YOU SIR</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 05 Jul 2010 07:00:30 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-df3263ea9636b53e3548502cfdccabfb">
+
+<div class="comment-subject">
+
+Comment 31
+
+</div>
+
+<div class="inlinecontent">
+<p>I am a Nigeria and l am been using  tor and freegate to bypass network in my county and l was using perfect but since two days back it cant connect again what might be the fault please me and l am using mobile telecommunication network.(MTN) and thanks for helping me out for the configuration.email:- { itunuola2009@yahoo.com  }<br />
+THANKS you and GOD BLESS YOU SIR</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 05 Jul 2010 07:00:31 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-92431bcf77ea965f5e38a5b9c0877fad">
+
+<div class="comment-subject">
+
+Comment 32
+
+</div>
+
+<div class="inlinecontent">
+<p>I am a Nigeria and l am been using tor perfectly to bypass network in my county and l was using perfect but since middle last month it cant connect again what might be the fault please me and l am using mobile telecommunication network.(MTN) and thanks for helping me out for the configuration.email:- { deiqonfx@gmail.com }<br />
+THANKS you and GOD BLESS YOU SIR</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 05 Jul 2010 07:00:32 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6253da4cb666d0a01895829e65b9bea6">
+
+<div class="comment-subject">
+
+Comment 33
+
+</div>
+
+<div class="inlinecontent">
+Please help us from Nigeria this Tor is no longer going, what shall we do...?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 05 Jul 2010 07:00:33 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7d4825dc4b0d96909a8d6f88e9f569ba">
+
+<div class="comment-subject">
+
+Comment 34
+
+</div>
+
+<div class="inlinecontent">
+Please help us from Nigeria this Tor is no longer going, what shall we do...?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 05 Jul 2010 07:00:34 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-84b0ee2492b21c5aed8aa32de53c3013">
+
+<div class="comment-subject">
+
+Comment 35
+
+</div>
+
+<div class="inlinecontent">
+pls and pls tor project MTN Nigeria has blocked tor and its no longer working...pls do something.....(harunagodwins@yahoo.com)
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 06 Jul 2010 07:00:35 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-04992feb0f2df808160b1feb410433db">
+
+<div class="comment-subject">
+
+Comment 36
+
+</div>
+
+<div class="inlinecontent">
+<p>I am a Nigeria and l am been using tor perfectly to bypass network in my county and l was using perfect but since middle last month it cant connect again what might be the fault please me and l am using mobile telecommunication network.(MTN) and thanks for helping me out for the configuration.email:- { itunuola2009@yahoo.com }<br />
+THANKS you and GOD BLESS YOU SIR</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 06 Jul 2010 07:00:36 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fc2d13a163b86625f0c7ed1db4bf41c2">
+
+<div class="comment-subject">
+
+Comment 37
+
+</div>
+
+<div class="inlinecontent">
+Hello ladies and gentlemen av been using tor for a while now and all of a sudden it stopped, pls if anyone has a solution pls do help me. this is my e-mail address: lokomen26@yahoo.com.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 06 Jul 2010 07:00:37 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ca34e2cc5ecfb54db7531cc1066f77e0">
+
+<div class="comment-subject">
+
+Comment 38
+
+</div>
+
+<div class="inlinecontent">
+I use tor network and for a while now its been down help me, this is my e-mail address: lokomen26@yahoo.com. 
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 06 Jul 2010 07:00:38 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5e82af34e9ce525f394f231fd2a338b1">
+
+<div class="comment-subject">
+
+Comment 39
+
+</div>
+
+<div class="inlinecontent">
+<p>those were some serious bugs you fixed. tor rocks my socks now <img src="../../smileys/smile.png" alt=":)" /><br />
+some predefined tips of the day would be nice to see in vidalia</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 06 Jul 2010 07:00:39 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-883d216c717b752e5c81a1038f863867">
+
+<div class="comment-subject">
+
+Comment 40
+
+</div>
+
+<div class="inlinecontent">
+please will this New Version of work in Nigeria with MTN? email me {deiqonfx@gmail.com}
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 07 Jul 2010 07:00:40 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-09479f687357c9d1c939c7042935e5c4">
+
+<div class="comment-subject">
+
+Comment 41
+
+</div>
+
+<div class="inlinecontent">
+I use tor network for a while, but now its no longer working, please help me. MTN Nigeria is what i'm using (m.anefu@yahoo.co.uk). Thank you very much. 
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 07 Jul 2010 07:00:41 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6a7d8304350a51b9fe7e778862b45269">
+
+<div class="comment-subject">
+
+Comment 42
+
+</div>
+
+<div class="inlinecontent">
+guys i am having same problem with you guys, please any solution?? my email ahmadtjk@yahoo.com........I am using MTN..
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 08 Jul 2010 07:00:42 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6edf69f7bf5112d1fe41da274a2270fb">
+
+<div class="comment-subject">
+
+Comment 43
+
+</div>
+
+<div class="inlinecontent">
+I am in Nigeria and I am yet to be connected to Tor for some days now . Kindly help me. My e-mail is mykorhe@yahoo.com
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 10 Jul 2010 07:00:43 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e3f922d88d49f9128d496caa392f22c4">
+
+<div class="comment-subject">
+
+Comment 44
+
+</div>
+
+<div class="inlinecontent">
+am not left out guyz ama need some help too here is ma email (smart.slim@yahoo.com) benjamin from 99999ja too.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 11 Jul 2010 07:00:44 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-db1ebc0bc1e28c8034f3cebe01796653">
+
+<div class="comment-subject">
+
+Comment 45
+
+</div>
+
+<div class="inlinecontent">
+I'm in Nigeria too and tor is no longer working.Pls help us .Mtn has blocked it again. My e-mail addy is kapee40@yahoo.com
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 13 Jul 2010 07:00:45 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-116c4e00be3b39abcf020f8951039eab">
+
+<div class="comment-subject">
+
+Comment 46
+
+</div>
+
+<div class="inlinecontent">
+thank you Tor for your services, i have been enjoyin browsing with privacy online while i was in school in London. but i am back now in Nigeria &amp; I cant connect to the Tor network anymore. dont knw what the problem is. it bootstraps to 10% n stops. please help....&gt;Curtis in Nigeria.....curtischukwu@yahoo.com
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 13 Jul 2010 07:00:46 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d7c8a806d094ab5a6c2c9d45756cd491">
+
+<div class="comment-subject">
+
+Comment 47
+
+</div>
+
+<div class="inlinecontent">
+i have been enjoying tor software for quit some time, but right now its no longer working in nigeria,plssssssssssssss help my email is billkingkacy@gmail.com.thanks
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 15 Jul 2010 07:00:47 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-82a57b6d7dbb7e6d5a56699a7fc23381">
+
+<div class="comment-subject">
+
+Comment 48
+
+</div>
+
+<div class="inlinecontent">
+pls culd some help tor is no longer working in nigeria my email billkingkacy@gmail.com
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 15 Jul 2010 07:00:48 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f7a0dc60b068c6f4ab34404c7b93576a">
+
+<div class="comment-subject">
+
+Comment 49
+
+</div>
+
+<div class="inlinecontent">
+<p>i have it,posting it would be very stupid,cos mtn demselves check out sites just like we do,so call &amp; i text it u,call on 08134699936,den appreciate me 4 just mtn #400.call if u really wanna browse again.<br />
+NAIJA dis is 4 u</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 19 Jul 2010 07:00:49 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-029c4329a8dfc58cf8d7ff3441310c99">
+
+<div class="comment-subject">
+
+Comment 50
+
+</div>
+
+<div class="inlinecontent">
+pls guys i'm left out my tor stopped working too,i use mtn nigeria rigth here in nigeria,pls help,the money mtn charge for browsing is too much, pls i dey beg,my email is vision4future1989@gmail.com
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 19 Jul 2010 07:00:50 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d71b32db4392876a02f98c0c27913537">
+
+<div class="comment-subject">
+
+Comment 51
+
+</div>
+
+<div class="inlinecontent">
+Is there any hope for those using Tor in Nigeria i need your reply as soon as possible kindly reach me at adelove4smiletou@yahoo.com
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 24 Jul 2010 07:00:51 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a330d93153b8cc2acfadd9dc3ca719de">
+
+<div class="comment-subject">
+
+Comment 52
+
+</div>
+
+<div class="inlinecontent">
+Is there any hope for those using Tor in Nigeria i need your reply as soon as possible kindly reach me at adelove4smiletou@yahoo.com
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 24 Jul 2010 07:00:52 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-72017b63ed18659f7cf7290ae450b501">
+
+<div class="comment-subject">
+
+Comment 53
+
+</div>
+
+<div class="inlinecontent">
+hello, pls tor is no longer wworking in nigeria.pls help us out.abbey4victor@gmail.com. one love
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 25 Jul 2010 07:00:53 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e3f2ec7330fd3f8f371effa50e18c566">
+
+<div class="comment-subject">
+
+Comment 54
+
+</div>
+
+<div class="inlinecontent">
+am a Nigerian I love tor.I used it for a week .but it doesnot work again after downloading tor 0.2.1.26. please help me. email chiemenao@yahoo.com
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 28 Jul 2010 07:00:54 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-255d19b38f9919e8b1fce1f4edceac4c">
+
+<div class="comment-subject">
+
+Comment 55
+
+</div>
+
+<div class="inlinecontent">
+<p>you can find a proxy from your region and use that 'before' the chain.<br />
+Find an 'open proxy' and edit, I believe it's called the tor.rc file? I haven't used the extra settings for a while so just ask here and I may be able to help if I have time. </p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 31 Jul 2010 07:00:55 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0dbb2092afc5e3d0609adbc12b749d2e">
+
+<div class="comment-subject">
+
+Comment 56
+
+</div>
+
+<div class="inlinecontent">
+hello having a problem getting Tor to work downloaded the Tor Portable to put on my USB drive, when i click on Start Tor Browser Tor starts up and connects but when Firefox Portable starts it crashes, Im new to Tor and would like to tell my friends about the Tor network but i cant get it to work ,, thank you for your time and any help would and welcome feel free to e-mail me @ ( think.tank@live.co.uk )
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 01 Aug 2010 07:00:56 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0def662e3b28cbee650a3cf3f303388e">
+
+<div class="comment-subject">
+
+Comment 57
+
+</div>
+
+<div class="inlinecontent">
+<p>I am a bit confused. I see alot of messages from people in nigeria stating that tor does not work.</p>
+
+<p>Are these the guys and girls that send me the I NEED MONEY mails, send me some and ill give you 500.000.000 dollars?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 02 Aug 2010 07:00:57 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d8b2bfd3185119cd51d2cdd38030974b">
+
+<div class="comment-subject">
+
+Comment 58
+
+</div>
+
+<div class="inlinecontent">
+Nigeria has millions of Internet users, just like any country.  The core of the problem with Tor and these people seems to be that two ISPs have closed a loophole which allowed free internet access (as in without paying for an account nor subscription).  We've heard from plenty of other people in Nigeria that the government nor ISPs mandate any Internet censorship.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 08 Aug 2010 07:00:58 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4ca664a0691c3e6996711189576c65f5">
+
+<div class="comment-subject">
+
+Comment 59
+
+</div>
+
+<div class="inlinecontent">
+<p>Thanks so much for tor group it`s wondrful to use it, But I have a question<br />
+I enter arabic free chatting and I like to change MY Ip with each entry because I always get a baned 4 my sweet ugly tongue, b4 I just open another page and enter again now I can`t do it!!<br />
+Which download do I have to inslall plz help<br />
+10000000000000 thanks<br />
+M5awi aljen<br />
+beshayer1982@hotmail.com</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 28 Aug 2010 07:00:59 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e692b3b1458928e8c902df91877dedec">
+
+<div class="comment-subject">
+
+Comment 60
+
+</div>
+
+<div class="inlinecontent">
+<p>Hey guys I need help<br />
+I used tor and vidalia for long time I enjoy it really but now I got a notice telling me my tor is old need a new version I use win XP which one do I have to install<br />
+waiting 4 reply</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 28 Aug 2010 07:01:00 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8751ffe81a2b59e0973cc772f52a722f">
+
+<div class="comment-subject">
+
+Comment 61
+
+</div>
+
+<div class="inlinecontent">
+<a href="https://www.torproject.org/easy-download" title="https://www.torproject.org/easy-download" rel="nofollow">https://www.torproject.org/easy-download</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 28 Aug 2010 07:01:01 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1d56e54a5f9020864e1ba601255ba04a">
+
+<div class="comment-subject">
+
+Comment 62
+
+</div>
+
+<div class="inlinecontent">
+hi guys, i was just wondering what the new setting for mtn, etisalat and zain will be for this month of september. Does Tor still work with some nigeria networks? if  it does can i get the config, thanx.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 02 Sep 2010 07:01:02 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9ad1fde98bbe2ab6d6cc6cb1c0f90ff5">
+
+<div class="comment-subject">
+
+Comment 63
+
+</div>
+
+<div class="inlinecontent">
+<p>i think tor is not working any more<br />
+rahman</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 06 Sep 2010 07:01:03 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b9c34659e515150d2bc71320324ef6b0">
+
+<div class="comment-subject">
+
+Comment 64
+
+</div>
+
+<div class="inlinecontent">
+plz i am from Nigeria and i need the settings for mtn on vidalia tor. thanks my email is kaby2big@yahoo.com
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 14 Sep 2010 07:01:04 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1a19169b9b29256a81c31c8103548fc7">
+
+<div class="comment-subject">
+
+Comment 65
+
+</div>
+
+<div class="inlinecontent">
+<p>Link  broken?<br />
+https://www.torproject.org/overview</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 10 Oct 2010 07:01:05 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8c67062b86a57c20118dc84174227f19">
+
+<div class="comment-subject">
+
+Comment 66
+
+</div>
+
+<div class="inlinecontent">
+hello, i use tor before mtn disconnects us please can you send me the new configuration for mtn nigeria? kay22rhyme@yahoo.com
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 08 Nov 2010 07:01:06 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_1_26-stable_released&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 07:00:00 AM CDT</span>
+<!-- Created <span class="date">Wed 09 Jun 2010 10:18:21 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

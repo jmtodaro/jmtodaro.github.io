@@ -1,0 +1,884 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Research problem: measuring the safety of the Tor network</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FResearch_problem_measuring_the_safety_of_the_Tor_network&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Research problem: measuring the safety of the Tor network</a>
+
+</span>
+
+
+<div id="content">
+<p>We need a better understanding of how much anonymity the Tor network provides against a partial network adversary who observes and/or operates some of the network. Specifically, we want to understand the chances that this class of adversary can observe a user's traffic coming into the network and also the corresponding traffic exiting the network.</p>
+
+<p>Most of our graphs historically have looked at the total number of relays over time. But this simple scalar doesn't take into account relay capacity, exit policies, geographic or network location, etc.</p>
+
+<p>One concrete problem from this bad metric is that when many new relays show up (e.g. due to a <a href="https://blog.torproject.org/files/relays-diff-2011-01-28.png">political event</a>), we really don't have any insight about how the diversity of the new relays compares to the rest of the network. The simplistic metric also gets misused in academic research papers to produce misleading results like "I can sign up 2% of the Tor relays and capture 50% of the paths," when what they mean is "I can provide half the capacity in the Tor network and capture half the paths."</p>
+
+<p>There are four parts to this research problem. First, we need a broad array of metrics that reflect various instances of our partial network adversary. Second, we need to understand for each metric how stable it is (sensitivity analysis) and what changes in the Tor network would efficiently improve (or harm) it. Third, we should make the calculations as realistic as possible based on actual Tor client behavior. Last, we need a better infrastructure for comparing the safety impact from alternate design scenarios, for example different path selection or route balancing algorithms.</p>
+
+<p>We'd love to <a href="https://www.torproject.org/research">work with you</a> to help answer these questions. <span class="read-more"><a href="http://blog.torproject.org/blog/research-problem-measuring-safety-tor-network"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/research/" rel="tag">research</a>
+
+<a href="../../tags/research_progress/" rel="tag">research progress</a>
+
+<a href="../../tags/thesis_idea/" rel="tag">thesis idea</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-9a1bdc2fa64abf6a9a9908b1db280b09">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+I am wondering for what AS stands for?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 06 Feb 2011 07:14:33 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9006c6145373c429c09aeba711d79dc7">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>Autonomous system. Think ISP or "internet zone".</p>
+
+<p><a href="http://en.wikipedia.org/wiki/Autonomous_system_%28Internet%29" title="http://en.wikipedia.org/wiki/Autonomous_system_%28Internet%29" rel="nofollow">http://en.wikipedia.org/wiki/Autonomous_system_%28Internet%29</a></p>
+
+<p>I've clarified it in the above text too. Thanks!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Farma&amp;do=goto">arma</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 06 Feb 2011 07:14:34 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0c5d4c068ef79f872be7ca6825088070">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+May I suggest Tor begin its own journal, like the R project's? In my experience, a lot of research is simply shelved because academia sees no "use" for it... Maybe it's just me. Another advantage (especially with the open access model) would be that current research which would otherwise take years to complete and publish could be shared quickly. Would Tor be interested in "amateur" research?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 06 Feb 2011 07:14:35 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-08beb1c96972d0d41c9296b019a5bf2b">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<p>The main academic publication venue for anonymity research is the Privacy Enhancing Technologies Symposium (<a href="http://petsymposium.org/" title="http://petsymposium.org/" rel="nofollow">http://petsymposium.org/</a>). But you're right that the requirements for successful academic publication often have little to do with the quality or relevance of the research.</p>
+
+<p>Karsten has been putting up tech reports at <a href="http://metrics.torproject.org/papers.html" title="http://metrics.torproject.org/papers.html" rel="nofollow">http://metrics.torproject.org/papers.html</a> as he finishes them.</p>
+
+<p>And some of the more important papers Tor has written lately, like the blocking-resistance design and the performance docs, aren't in the right format for formal submission, and I'm just fine with that:<br />
+<a href="https://svn.torproject.org/svn/projects/design-paper/blocking.pdf" title="https://svn.torproject.org/svn/projects/design-paper/blocking.pdf" rel="nofollow">https://svn.torproject.org/svn/projects/design-paper/blocking.pdf</a><br />
+<a href="https://blog.torproject.org/blog/why-tor-is-slow" title="https://blog.torproject.org/blog/why-tor-is-slow" rel="nofollow">https://blog.torproject.org/blog/why-tor-is-slow</a></p>
+
+<p>We get pretty good peer review from the PETS community because we're high-profile.</p>
+
+<p>As for "amateur" research, sure, so long as the results themselves are convincing!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Farma&amp;do=goto">arma</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 06 Feb 2011 07:14:36 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-07dac4bf41530bc142c0a0a5989348e5">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>Thanks for the reply, and the pointers, I'll be sure to try submitting to PETS.</p>
+
+<p>Regarding the research topic, I've only begun looking into it, but this article seems to be a good place to start and gather ideas from:</p>
+
+<p>Vardi, Y. (1996). Network Tomography: Estimating source-destination traffic intensities from link data. JASA Theory and Method, 91 (433), 365-377.</p>
+
+<p>Best wishes to the Tor Project!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 16 Feb 2011 07:14:37 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-54010abacc9a77d74949db85902358de">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>How about you concentrate resources on fixing the fact that Tor is trivially controlled by third parties first before engaging in studies into how secure the current broken design is?</p>
+
+<p>Really does seem like you've disappeared up your own assholes these days.  Too scared to upset the masters watching eye, no doubt.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 06 Feb 2011 07:14:38 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6364844c45c04e695a7a11205fad4d76">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p>Well, it depends what you mean by trivially controlled by. If you mean that the current Tor network is too small compared to the capacity that a well-funded adversary could dump into it, I want to know just how small that is.</p>
+
+<p>If you mean that we should run the whole network ourselves so it's harder to attack, I disagree. There are plenty of networks out there that are centralized, and that centralization introduces critical problems of its own.</p>
+
+<p>If you mean the blocking-resistance question ("Iran can censor connections to the Tor network"), I agree that's a worthwhile problem to tackle, and we are tackling it (stay tuned), but it isn't this one.</p>
+
+<p>As for concentrating our resources, many academic research groups ask me what they and their students should look at, so fleshing out the question of diversity seems like a great avenue for them to look at.</p>
+
+<p>As for a "fixed" Tor design, we're all ears.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Farma&amp;do=goto">arma</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 06 Feb 2011 07:14:39 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8b588f4de3d8b9436c755229556459f4">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+<p>I personally like packets routed through as many countries as possible. Preferably through countries that don't like each other. <img src="../../smileys/smile.png" alt=":)" /></p>
+
+<p>Thank you for providing this vital anonymity service. There's little doubt it will become even more vital in the near feature.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 06 Feb 2011 07:14:40 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7081daf67142f804951bf6b8074d8c7c">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+<p>It might help if people are routed through more than one network hub. This uses probability to protect people but might interfere with capacity as it could overload the system. I don't know anything about the mechanics of how this is done. I am not a CS person I studied math.</p>
+
+<p>Going through 2 hubs:<br />
+If you assume the probability of a hub being compromised is 2% than a single jump has a 1/50 chance of recording your internet use. If you go through two independent hubs that chance that they are both owned by an organization spying on you is reduced to 0.04% (as .02*.02=.0004). </p>
+
+<p>This analysis assumes that the organization is able to put the information together. If for instance the (.02) threat was divided between 5 different players the probability that the same organization would own both compromised hubs is less than 0.04% as this is the total threat of accessing two compromised hubs. Assuming Iran and Egypt both do not play well with others; they might not actually combine their information to spy on web traffic effectively. </p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 07 Feb 2011 07:14:41 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-648a6a72797512348644ab24ef755e5e">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+<p>I choose safety over performance. I hope nobody is trying to voip over Tor. My understanding is the network is meant for web browsing and irc mostly.</p>
+
+<p>More people operate middle relays than entrance or exit relays. Assigning many more entry guard flags to relays running on residential modems is a great idea. Currently I believe entry guard flags is something only handed out through the Tor community, not given to everyone.</p>
+
+<p>Because there's more middle relays it would seem like they would be the key point for adding padded data to throw off an adversary controlling both entrance and exit relays. Middle relays need a constant flow of traffic running through them to make timing attacks between entrance and exit more difficult. Maybe even a small transmission delay at middle relays could help prevent this.</p>
+
+<p>Tor states padding and transmission delays cause too much performance loss and aren't used. It probably does but if that's what it takes for safety, I say go for it. More people are willing to run entrance and middle relays because there's less risk of legal backlash, such as being served DMCA infringement notices.</p>
+
+<p>Take advantage of the huge number of entry and middle relays that can be created and come up with an algorithm which selects the most random path imaginable and keeps a client-side record of relays used to build paths in the past. This record could prevent previously built path combination from being used over again. Adding to randomness.</p>
+
+<p>I agree having an algorithm that puts weight on high bandwidth over the safety of random paths is prone to abuse. I would rather the path algorithm put weight on randomness rather than speed. </p>
+
+<p>Hope I don't sound patronizing. I'm sure your more knowledgeable than me, but even I can imagine how a determined and well funded adversary could compare transmission sizes and timing info. from router logs at major ISPs. All without ever running a single Tor relay. Just off major ISP router logs!</p>
+
+<p>Seems like it would be harder to monitor Tor with random byte padding and timing delays. Unless I'm missing something, perhaps it's time to implement this stuff.</p>
+
+<p>Data padding for sure, because I've heard it's possible to tell what web page Tor users visit simply by comparing the webpage size to the encrypted Tor stream size. No need to crack encryption, just compare sizes!</p>
+
+<p>Thanks for all your hard work. I can't do it so I depend on the Tor people. I truly am grateful and believe your efforts at anonymity are sincere.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 07 Feb 2011 07:14:42 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-cdc852ec2af7a829dc18a0767b6763e2">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+The data is very good.Thanks for the post and I’ll bookmark your site to read again.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 07 Feb 2011 07:14:43 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-606b7867718523c3a415c6e10dfd3188">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+<p>I think a lot of problems regarding Tor problems in recent months comes from your side because you all as academicians and scientists reveal all your plans and secrets in your academic papers.I myself am a scientist,but I have the advantage of living long times in both democratic and dictatorship societies.You have to understand that you are in a war ( technologically-wise ) and you MUST NOT REVEAL your point of attack to your adversary ( or your enemy,if you will ).<br />
+Your adversary reads carefully and analyze thoroughly your papers and information you so carelessly reveal.Again,DO NOT FORGET THAT IT IS A WAR AND IN A WAR YOU MUST SAFEGUARD ALL YOUR SENSITIVE PLANS AND POINTS OF ATTACKS .</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 07 Feb 2011 07:14:44 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c2fe6038915be8d988ac226d0ace838f">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+Please read up on Kerckhoffs's Principle, <a href="https://secure.wikimedia.org/wikipedia/en/wiki/Kerckhoffs%27s_Principle" title="https://secure.wikimedia.org/wikipedia/en/wiki/Kerckhoffs%27s_Principle" rel="nofollow">https://secure.wikimedia.org/wikipedia/en/wiki/Kerckhoffs%27s_Principle</a>.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 21 Feb 2011 07:14:45 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5b0cc3dd33a083898263bc28a2c7f753">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+<p>I would like to see paths viewed from an MPLS/WDM path layer. Even AS level views expose merely administrative domains, many of which may traverse a single SVC / fiber / right-of-way.</p>
+
+<p>While the number of attackers who can position at such backbone layers are small, the advantages of analysis at this level are significant; it would be interesting to quantify per discussion above.</p>
+
+<p>(Consider the aggregation at trans-oceanic fiber landings and large IX facilities.)</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 07 Feb 2011 07:14:46 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-765e12d3e79974adecae1edc7dd5f02a">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+<p>There is a threat of hi-tech targeted totalitarianism but it only has resources for so many targets. I would describe it as the digital continuity of the covert personality destruction programs of the last century, whose targets have delivered their testimonies in the United States of North America. Choice of target is not limited along lines of religion or nationality or lack thereof, but it is systematically targeting the most advanced political idealists on the digital frontier. Homeschooled people are at the highest risk. </p>
+
+<p>It is kind of politically suicidal because it attacks potential allies turning them into determined enemies. Ironically the best method to verify whether targeted totalitarianism is surrounding you with artificial synchronicities is to fake an orgasm on the net. No individual who is not a bigot will work for these programs, so the feedback will be significant. Should you happen to be on their list, they do not hesitate to seize an opportunity for personality destruction even when it might be a trap, and that betrays them. </p>
+
+<p>These programs are an irresponsible waste of dignity and resources in the first place so there is nothing in them that could stop them. Except those of us who feel they will never surrender to plausible deniability. It must end. Finally.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 21 Feb 2011 07:14:47 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1883cc625573d7c11398d1df41d5eb5f">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+From the adversary perspective the most interesting point for a two-front attack against the network would be the chronological footprint an user leaves on a website. How many pages are requested over what period of time and how much time is passing between those requests? It seems that the probability to successfully correlate this information is growing exponentially with the size of the footprint. The very habit of real time browsing can be treacherous. Are there any solutions to this other than avoid behaving like in the privacy of one's own home?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Feb 2011 07:14:48 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5f77329b5e91e700f9ed7754baca9089">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+<p>what about relay operated by same organization, but distributed in many country for example, there is tens of relays called Banadora 01 ,Banadora 02, Banadora 0X<br />
+and each one is in different country, so it is possible that i fount more than one Banadora 0x in my bath, and if there was one as entry and other at exit node then my connection is unmasked for this organization,</p>
+
+<p>an other case, what if this organization renamed it servers, to different non related names?<br />
+is it possible to make the connection goes in simultaneous stream, so only part of the data goes through certain relay, i am talk about adding option of: make more than one active circuit at certain moment, and dividing data to segments, and send  each segment through different path (circuit), thus if bad exit node got a segment&lt; then it got only part of the data, (at least they know only the user name, not both the user name and password!)</p>
+
+<p>i want to say, thanks for people of tor who care about people in poor county,,</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 06 Mar 2011 07:14:49 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6520a6c76b1598e29ad596e9e822f807">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+<p> I am a "half-geek" having been around mini/micro PCs for over 30 years and have just started using Tor. I have tried to sell Tor to some of my more PC knowledgeable friends but they balk at the Options section, finding that referring to your site for how each works and what it does. Printing the web page is a mess.</p>
+
+<p> I think that if you would make the Installation and Manual pages available a .pdf files this would make Tor attractive to a much wider "clientele".</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 07 Mar 2011 07:14:50 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FResearch_problem_measuring_the_safety_of_the_Tor_network&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 07:14:33 AM CDT</span>
+<!-- Created <span class="date">Sat 05 Feb 2011 11:18:00 PM CST</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

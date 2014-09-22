@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Some notes on progress with IOCP and Libevent</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Some_notes_on_progress_with_IOCP_and_Libevent/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Some_notes_on_progress_with_IOCP_and_Libevent/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>nickm</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Some_notes_on_progress_with_IOCP_and_Libevent/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:20:20Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Some_notes_on_progress_with_IOCP_and_Libevent/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Some_notes_on_progress_with_IOCP_and_Libevent/comment_1/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:20:16Z</updated>
+	<published>2009-03-25T11:20:16Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Vidalia is failing to clear proxy address.&lt;/p&gt;
+
+&lt;p&gt;In Settings, entering an address for a proxy and a port number seems to be permanent. Even if the proxy details are cleared, starting Tor always results in an error message and the Log shows&lt;br /&gt;
+Mar 26 01:45:43.562 [Notice] Tor v0.2.0.34 (r18423). This is experimental software. Do not rely on it for strong anonymity. (Running on Windows XP Service Pack 3 [workstation] {terminal services, single user})&lt;br /&gt;
+Mar 26 01:45:45.812 [Warning] Couldn&#39;t look up &quot;proxy&quot;&lt;br /&gt;
+Mar 26 01:45:45.812 [Warning] Failed to parse/validate config: HttpsProxy failed to parse or resolve. Please fix.&lt;br /&gt;
+Mar 26 01:45:45.812 [Error] Reading config failed--see warnings above.&lt;/p&gt;
+
+&lt;p&gt;Any help, short of re-installing Vidalia ? Thanks&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Some_notes_on_progress_with_IOCP_and_Libevent/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Some_notes_on_progress_with_IOCP_and_Libevent/comment_2/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:20:17Z</updated>
+	<published>2009-03-25T11:20:17Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;So you are trying to use a proxy to reach the Tor network to get around a firewall or something like that?&lt;/p&gt;
+
+&lt;p&gt;I&#39;m not sure what sort of firewall it is, but telling your client to only connect to entry nodes on ports 80 or 443 or using bridges might be a better option. If one of those sounds good, say something, and me or someone else should be able to provide more detailed instructions.&lt;/p&gt;
+
+&lt;p&gt;Anyway, have you tried manually editing the configuration file?&lt;/p&gt;
+
+&lt;p&gt;Sorry, I&#39;m not sure where it is stored on Windows, being a *nix user myself, but there should be a torrc and maybe a special Vidalia configuration file around somewhere.&lt;/p&gt;
+
+&lt;p&gt;Not that you should have to edit the configuration file to disable something you enabled graphically, but until someone figures out why Vidalia isn&#39;t working as expected and releases an update, that&#39;s probably your best option.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Some_notes_on_progress_with_IOCP_and_Libevent/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Some_notes_on_progress_with_IOCP_and_Libevent/comment_3/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:20:18Z</updated>
+	<published>2009-09-28T11:20:18Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Any updates on the progress of this? I noticed that&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://code.google.com/p/spserver/downloads/list&quot; title=&quot;http://code.google.com/p/spserver/downloads/list&quot; rel=&quot;nofollow&quot;&gt;http://code.google.com/p/spserver/downloads/list&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;has an implementation of IOCP + libevent available for the 1.4 and 2.0 branches.  Are you aware of this implementation?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Some_notes_on_progress_with_IOCP_and_Libevent/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Some_notes_on_progress_with_IOCP_and_Libevent/comment_4/"/>
+
+	<author><name>Thanks (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:20:19Z</updated>
+	<published>2009-11-13T12:20:19Z</published>
+
+	<content type="html" xml:lang="en">
+	Thank you, you answered the question I have been searching for which was whether or not to place keywords when blog commenting. &lt;a href=&quot;http://www.hayda.net&quot; title=&quot;mirc, cinsel sohbet, cinsellik, chat&quot; rel=&quot;nofollow&quot;&gt;mirc&lt;/a&gt; . &lt;a href=&quot;http://www.hayda.net&quot; title=&quot;mirc, cinsel sohbet, cinsellik, chat&quot; rel=&quot;nofollow&quot;&gt;chat&lt;/a&gt; . &lt;a href=&quot;http://www.hayda.net/&quot; title=&quot;http://www.hayda.net/&quot; rel=&quot;nofollow&quot;&gt;http://www.hayda.net/&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Some_notes_on_progress_with_IOCP_and_Libevent/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Some_notes_on_progress_with_IOCP_and_Libevent/comment_5/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:20:20Z</updated>
+	<published>2010-07-18T11:20:20Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I must add here that to run safely in multiple threads; to allow for arbitrary data filters (including SSL and compression) and connection restraints (including rate limiting); and to provide acceptable RAM usage by use of improved data structures.&lt;br /&gt;
+http://pencilsharpenerelectric.com/&lt;br /&gt;
+http://causesof-divorce.com/&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+
+</feed>

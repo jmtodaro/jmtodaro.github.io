@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Vidalia 0.2.3 released</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_3_released/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_3_released/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_3_released/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:34:58Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_3_released/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_3_released/comment_1/"/>
+
+	<author><name>Biment (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:34:57Z</updated>
+	<published>2009-09-06T11:34:57Z</published>
+
+	<content type="html" xml:lang="en">
+	Any specific reasons why QEvent subclasses are replaced with Qt&#39;s signals and slot?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_3_released/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_3_released/comment_2/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:34:58Z</updated>
+	<published>2009-09-07T11:34:58Z</published>
+
+	<content type="html" xml:lang="en">
+	The change resulted in much cleaner, simpler and shorter code that made implementing support for all the various status events displayed in 0.2.4 much easier. Informally, it also seems to have made the message log more responsive when logging at Tor&#39;s hyper-verbose debug level.
+
+	</content>
+
+
+
+</entry>
+
+</feed>

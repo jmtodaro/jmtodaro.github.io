@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged apple_osx_love</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/apple_osx_love/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/apple_osx_love/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/apple_osx_love/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:18:13Z</updated>
+<entry>
+	<title>Windows Bridge-by-Default Bundle</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Windows_Bridge-by-Default_Bundle/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Windows_Bridge-by-Default_Bundle/"/>
+
+	<author><name>erinn</name></author>
+
+
+
+
+
+
+	<category term="/tags/apple_osx_love" />
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/tbb" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+	<category term="/tags/torbrowser" />
+
+	<category term="/tags/updated_packages" />
+
+
+	<updated>2011-04-05T12:18:13Z</updated>
+	<published>2011-04-01T01:17:16Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Last year we had &lt;a href=&quot;http://blog.torproject.org/blog/technology-preview-bridge-default-microsoft-windows-clients&quot; rel=&quot;nofollow&quot;&gt;bridge by default&lt;/a&gt; bundles as a technology preview but we&#39;re going to bring them back on a consistent basis. We have an updated &lt;a href=&quot;https://www.torproject.org/dist/vidalia-bundles/vidalia-bridge-bundle-0.2.2.23-alpha-0.2.10.exe&quot; rel=&quot;nofollow&quot;&gt;bridge by default Vidalia bundle&lt;/a&gt; (&lt;a href=&quot;https://www.torproject.org/dist/vidalia-bundles/vidalia-bridge-bundle-0.2.2.23-alpha-0.2.10.exe.asc&quot; rel=&quot;nofollow&quot;&gt;sig&lt;/a&gt;) for Windows available with &lt;a href=&quot;http://blog.torproject.org/blog/tor-02223-alpha-out&quot; rel=&quot;nofollow&quot;&gt;Tor 0.2.2.23-alpha&lt;/a&gt;. We will soon have OS X bridge by default bundles as well -- you can follow along &lt;a href=&quot;https://trac.torproject.org/projects/tor/ticket/2821&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt; if you&#39;re interested in the technical details. &lt;/p&gt;
+
+&lt;p&gt;We&#39;re very interested in getting feedback about how many new bridges these bundles create, so please comment here or on our &lt;a href=&quot;https://trac.torproject.org/projects/tor&quot; rel=&quot;nofollow&quot;&gt;bug tracking system&lt;/a&gt; and let us know.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Windows_Bridge-by-Default_Bundle/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Windows_Bridge-by-Default_Bundle/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Mac OS X packages fixed</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Mac_OS_X_packages_fixed/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Mac_OS_X_packages_fixed/"/>
+
+	<author><name>erinn</name></author>
+
+
+
+
+
+
+	<category term="/tags/apple_osx_love" />
+
+	<category term="/tags/updated_packages" />
+
+
+	<updated>2011-04-05T12:12:06Z</updated>
+	<published>2011-01-18T18:59:20Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;The &lt;a href=&quot;https://trac.torproject.org/projects/tor/ticket/2406&quot; rel=&quot;nofollow&quot;&gt;packaging bug&lt;/a&gt; has been fixed in the OS X packages and all users can now upgrade. Packages are available on the &lt;a href=&quot;https://www.torproject.org/download&quot; rel=&quot;nofollow&quot;&gt;download&lt;/a&gt; page.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Mac_OS_X_packages_fixed/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Mac_OS_X_packages_fixed/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Lots of new Tor packages</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Lots_of_new_Tor_packages/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Lots_of_new_Tor_packages/"/>
+
+	<author><name>erinn</name></author>
+
+
+
+
+
+
+	<category term="/tags/alpha_releases" />
+
+	<category term="/tags/apple_osx_love" />
+
+	<category term="/tags/ppc" />
+
+	<category term="/tags/security_fixes" />
+
+	<category term="/tags/security_updates" />
+
+	<category term="/tags/stable_releases" />
+
+	<category term="/tags/tbb" />
+
+	<category term="/tags/tor" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+	<category term="/tags/torbrowser" />
+
+	<category term="/tags/updated_packages" />
+
+
+	<updated>2011-04-05T12:12:05Z</updated>
+	<published>2011-01-17T17:36:38Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;A new Tor stable (&lt;a href=&quot;https://www.torproject.org/dist/tor-0.2.1.29.tar.gz&quot; rel=&quot;nofollow&quot;&gt;0.2.1.29&lt;/a&gt;) (&lt;a href=&quot;https://www.torproject.org/dist/tor-0.2.1.29.tar.gz.asc&quot; rel=&quot;nofollow&quot;&gt;sig&lt;/a&gt;) and Tor alpha (&lt;a href=&quot;https://www.torproject.org/dist/tor-0.2.2.21-alpha.tar.gz&quot; rel=&quot;nofollow&quot;&gt;0.2.2.21-alpha&lt;/a&gt;) (&lt;a href=&quot;https://www.torproject.org/dist/tor-0.2.2.21-alpha.tar.gz.asc&quot; rel=&quot;nofollow&quot;&gt;sig&lt;/a&gt;) have been released and all users are strongly encouraged to upgrade.&lt;/p&gt;
+
+&lt;p&gt;The following packages have been released:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Windows expert packages (stable &amp;amp; alpha)&lt;/li&gt;
+&lt;li&gt;Vidalia bundles (stable &amp;amp; alpha for Windows, and OS X ppc &amp;amp; x86)&lt;/li&gt;
+&lt;li&gt;Tor Browser Bundles for Windows, Linux, and OS X (see below for other updates)&lt;/li&gt;
+&lt;li&gt;RPM packages (stable &amp;amp; alpha)&lt;/li&gt;
+&lt;li&gt;Debian and Ubuntu packages (stable &amp;amp; alpha)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can download all of these from &lt;a href=&quot;https://www.torproject.org/download&quot; rel=&quot;nofollow&quot;&gt;our download page&lt;/a&gt; or package repositories.&lt;/p&gt;
+
+&lt;p&gt;If you encounter any problems, please file a bug on our &lt;a href=&quot;https://trac.torproject.org/&quot; rel=&quot;nofollow&quot;&gt;bug tracker&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tor Browser Bundles&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Windows Bundles&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;1.3.17: Released 2011-01-16&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Update Tor to 0.2.1.29&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Linux Bundles&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;1.1.3:  Released 2011-01-16&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Update Tor to 0.2.2.21-alpha&lt;/li&gt;
+&lt;li&gt;Update NoScript to 2.0.9.3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;OS X Bundles&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;1.0.10: Released 2011-01-16&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Update Tor to 0.2.2.21-alpha&lt;/li&gt;
+&lt;li&gt;Update NoScript to 2.0.9.3&lt;/li&gt;
+&lt;/ul&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Lots_of_new_Tor_packages/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Lots_of_new_Tor_packages/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>New PPC packages available</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/New_PPC_packages_available/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/New_PPC_packages_available/"/>
+
+	<author><name>erinn</name></author>
+
+
+
+
+
+
+	<category term="/tags/alpha_releases" />
+
+	<category term="/tags/apple_osx_love" />
+
+	<category term="/tags/ppc" />
+
+	<category term="/tags/stable_releases" />
+
+	<category term="/tags/tor" />
+
+	<category term="/tags/updated_packages" />
+
+
+	<updated>2011-04-05T12:11:59Z</updated>
+	<published>2011-01-10T18:14:14Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;The OS X PPC packages have been updated! They are now available in &lt;a href=&quot;https://www.torproject.org/dist/vidalia-bundles/vidalia-bundle-0.2.1.28-0.2.10-ppc.dmg&quot; rel=&quot;nofollow&quot;&gt;stable (0.2.1.28)&lt;/a&gt; (&lt;a href=&quot;https://www.torproject.org/dist/vidalia-bundles/vidalia-bundle-0.2.1.28-0.2.10-ppc.dmg.asc&quot; rel=&quot;nofollow&quot;&gt;sig&lt;/a&gt;) and &lt;a href=&quot;https://www.torproject.org/dist/vidalia-bundles/vidalia-bundle-0.2.2.20-alpha-0.2.10-ppc.dmg&quot; rel=&quot;nofollow&quot;&gt;alpha (0.2.2.20-alpha)&lt;/a&gt; (&lt;a href=&quot;https://www.torproject.org/dist/vidalia-bundles/vidalia-bundle-0.2.2.20-alpha-0.2.10-ppc.dmg.asc&quot; rel=&quot;nofollow&quot;&gt;sig&lt;/a&gt;) versions, both with the latest &lt;a href=&quot;https://blog.torproject.org/blog/vidalia-0210-released&quot; rel=&quot;nofollow&quot;&gt;Vidalia (0.2.10)&lt;/a&gt;. As usual, if you experience any problems, please &lt;a href=&quot;https://trac.torproject.org/&quot; rel=&quot;nofollow&quot;&gt;report a bug&lt;/a&gt;.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/New_PPC_packages_available/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/New_PPC_packages_available/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>New Stable Version 0.2.1.24 released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/New_Stable_Version_0_2_1_24_released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/New_Stable_Version_0_2_1_24_released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/apple_osx_love" />
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/enhancements" />
+
+	<category term="/tags/performance_enhancements" />
+
+	<category term="/tags/stable_release" />
+
+	<category term="/tags/tor_update" />
+
+
+	<updated>2011-04-05T11:50:51Z</updated>
+	<published>2010-03-03T20:14:34Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor 0.2.1.23 fixes a huge client-side performance bug, makes Tor work again on the latest OS X, and updates the location of a directory authority.&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.1.24 makes Tor work again on the latest OS X -- this time for sure!&lt;/p&gt;
+
+&lt;p&gt;The Windows and OS X bundles also come with a newer version of Polipo that fixes some stability and security problems.&lt;/p&gt;
+
+&lt;p&gt;People using Tor as a client should upgrade:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/easy-download&quot; title=&quot;https://www.torproject.org/easy-download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/easy-download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.23 - 2010-02-13&lt;br /&gt;
+&lt;strong&gt;Major bugfixes (performance):&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/new-stable-version-02124-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;We were selecting our guards uniformly at random, and then weighting which of our guards we&#39;d use uniformly at random. This imbalance meant that Tor clients were severely limited on throughput (and probably latency too) by the first hop in their circuit. Now we select guards weighted by currently advertised bandwidth. We also automatically discard guards picked using the old algorithm. Fixes bug 1217; bugfix on 0.2.1.3-alpha. Found by Mike Perry.&lt;/li&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/New_Stable_Version_0_2_1_24_released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/New_Stable_Version_0_2_1_24_released/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

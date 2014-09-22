@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged packaging</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/packaging/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: New Linux packaging of Tor and Vidalia now available</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Linux_packaging_of_Tor_and_Vidalia_now_available/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Linux_packaging_of_Tor_and_Vidalia_now_available/</link>
+
+
+	<category>/tags/deb</category>
+
+	<category>/tags/packaging</category>
+
+	<category>/tags/respositories</category>
+
+	<category>/tags/rpm</category>
+
+	<category>/tags/tor</category>
+
+	<category>/tags/vidalia</category>
+
+
+	<pubDate>Sat, 13 Feb 2010 10:02:57 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:50:35Z</dcterms:modified>
+
+	<description>&lt;p&gt;As announced here, &lt;a href=&quot;http://archives.seul.org/or/talk/Feb-2010/msg00033.html&quot; title=&quot;http://archives.seul.org/or/talk/Feb-2010/msg00033.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Feb-2010/msg00033.html&lt;/a&gt;, we now produce rpms and debs of Tor and Vidalia for easier installation. &lt;/p&gt;
+
+&lt;p&gt;When using ubuntu, opensuse, fedora, centos/redhat, or debian, you can simply add our repositories to your package management application (yum, apt, apttitude, zypper, etc) and always have the latest -stable or -alpha tor and vidalia.&lt;/p&gt;
+
+&lt;p&gt;This is a direct result of hiring Erinn in December.&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/New_Linux_packaging_of_Tor_and_Vidalia_now_available/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

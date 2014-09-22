@@ -1,0 +1,550 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>EFF&#x27;s Panopticlick and Torbutton</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FEFFs_Panopticlick_and_Torbutton&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">EFF&#x27;s Panopticlick and Torbutton</a>
+
+</span>
+
+
+<div id="content">
+<p>The EFF has recently released a <a href="http://panopticlick.eff.org/" rel="nofollow">browser fingerprinting test suite</a> that they call <a href="http://panopticlick.eff.org/about.php" rel="nofollow">Panopticlick</a>. The idea is that in normal operation, your browser leaks a lot of information about its configuration which <a href="https://www.eff.org/deeplinks/2010/01/tracking-by-user-agent" rel="nofollow">can be used to uniquely fingerprint you</a> independent of your cookies.</p>
+
+<p>Because of how EFF's testing tool functions, it has created some confusion and concern among Tor users, so I wanted to make a few comments to try to clear things up. <span class="read-more"><a href="http://blog.torproject.org/blog/effs-panopticlick-and-torbutton"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/EFF/" rel="tag">EFF</a>
+
+<a href="../../tags/online_anonymity/" rel="tag">online anonymity</a>
+
+<a href="../../tags/panopticlick/" rel="tag">panopticlick</a>
+
+<a href="../../tags/privacy/" rel="tag">privacy</a>
+
+<a href="../../tags/tor/" rel="tag">tor</a>
+
+<a href="../../tags/torbutton/" rel="tag">torbutton</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-76cbcd7320ba8ca08896ddb6af255b48">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+I noticed that Torbutton sets the window size to be equal to the screen size, but this is very unusual. Wouldn't it be better to set the screen size to be a standard screen size, as close to the window size as possible?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 31 Jan 2010 06:49:39 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0ad348a0fca9adbceecf4cdfd3b5582f">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+This is likely to leak information in the form of the amount of overhead you need. Different platforms and devices will have different needs for decoration overhead in terms of this differential. Better to behave as if this overhead is always 0. My feeling was that webapps really only need to know the total size available to the render window, and should behave as if this is the maximal size available for them to work with anyways. I've always hated websites that try to increase the window size to utilize more of your available desktop, which seems to be the only use case for this information that I can think of. They should be working with the space you have given them.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fmikeperry&amp;do=goto">mikeperry</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 07 Feb 2010 06:49:40 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fb7def6c123a279a1a1cfae2b7bb1b15">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+I wonder whether it would be possible to plug holes opened up by plugins, eg font enumeration via flash? 
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 01 Feb 2010 06:49:41 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4d450d3d4b35f994d70c046a8bd9b2e7">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+Yes it is possible, but not really feasible because you have to operate with these plugins on a binary level, not on a javascript or even programmable API level. I have written prototype code to instrument flash on Windows to prevent it from making its own socket calls for example. It is even possible to do this relatively cross-platform - ie to abstract the hooking procedures for different binary formats. However, making this stable and not run afoul of antivirus software on various platforms is a daunting task, not to mention working with plugins that operate partially out of process, like adobe's acroread, for example.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fmikeperry&amp;do=goto">mikeperry</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 07 Feb 2010 06:49:42 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ebdd7480306d39e505281383c36d9169">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>WinXp Pro and Firefox 3.6</p>
+
+<p>Downloaded the latest inst. bundle of Tor for windows:<br />
+http://www.torproject.org/easy-download.html.en</p>
+
+<p>Polipo.exe causing difficulties to get to internet though Tor and Vidalia seem to work ok and connecting properly.<br />
+I unchecked in Torbutton Polipo and found everything seemed to work OK.<br />
+Wondering if do not use Polipo at all, is there any disadvantage?<br />
+How can I get Polipo working. </p>
+
+<p>In earlier version of Tor there was Privoxy and it was giving no problems.</p>
+
+<p>Sorry if this is not a correct site, but I could not find anything else.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 01 Feb 2010 06:49:43 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f7484ba744a59ae85cc5ea1174db9b07">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+IIRC Firefox used to have a DNS leaking problem and an additional proxy took care of that. Polipo is chosen instead of Privoxy for speed, also I think later versions of Privoxy had also some leaking problems.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 05 Mar 2010 06:49:44 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f6cec6d9c2efdc06f56099c0dcfb8d4f">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p>Panopticlick didn't include the CSS site history thing because Peter felt that visited URL history changes too frequently (e.g. when users visit new sites, or when old visited sites expire from their history) to be a reliable and stable identifier.  This is different from other browser properties which don't change under normal day-to-day browsing behavior but only when the user makes a configuration change to their computer.</p>
+
+<p>However, another researcher has been looking into how reliably site history can be used with fuzzy matching techniques so there should be some preliminary experiments and data about this soon.  There is obviously some kind of trade-off between the false positive rate and the false negative rate in recognizing users from their fingerprints based on what data sources you integrate into the fingerprint and how you match them.  Using visited site history would probably decrease false positives at the cost of increasing false negatives, but it will be interesting to see data that shows whether it might be worth it.</p>
+
+<p>The Panopticlick site also explains that Panopticlick is not aiming to catalogue every metric that might be used for device or browser fingerprinting, but just to gather some hard data on the distribution of some specific browser features to make their tracking potential more concrete.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 02 Feb 2010 06:49:45 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c736d4d11a27278be97fca08929e2a94">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+<p>Yes - interesting. I suppose the EFF was right in that they have plenty of bits to work with as it is..</p>
+
+<p>I've always suspected that the best way to do this is to make a bit vector space and to classify users by their nearest neighbour in the space, but I suppose it is a difficult problem when to create a new user entry vs classifying them as being close to an existing user.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fmikeperry&amp;do=goto">mikeperry</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 07 Feb 2010 06:49:46 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b78d618f8122ad4de094c51491b2f7ca">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+Between this and Ccleaner (Piriform) (keeping everthing clean/empty) im not concerned bout the media part lol
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 06 Feb 2010 06:49:47 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FEFFs_Panopticlick_and_Torbutton&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:49:39 AM CDT</span>
+<!-- Created <span class="date">Fri 29 Jan 2010 11:43:06 AM CST</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

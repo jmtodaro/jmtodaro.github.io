@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged tor_protocol</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/tor_protocol/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/tor_protocol/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/tor_protocol/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:07:24Z</updated>
+<entry>
+	<title>The NLnet Foundation funds two projects</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/The_NLnet_Foundation_funds_two_projects/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/The_NLnet_Foundation_funds_two_projects/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/directory_services" />
+
+	<category term="/tags/funding" />
+
+	<category term="/tags/hidden_services" />
+
+	<category term="/tags/low_bandwidth_clients" />
+
+	<category term="/tags/nlnet" />
+
+	<category term="/tags/tor_protocol" />
+
+
+	<updated>2011-04-05T11:07:24Z</updated>
+	<published>2008-06-07T02:04:10Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;We&#39;re happy to announce the NLnet Foundation is funding two enhancements for the Tor software and network.  &lt;/p&gt;
+
+&lt;p&gt;The two projects are summarized below:&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.torproject.org/projects/lowbandwidth&quot; rel=&quot;nofollow&quot;&gt;Tor for low-bandwidth clients&lt;/a&gt;.
+&lt;p&gt;The Tor anonymity system is currently only usable by internet users who have high-bandwith connections. Upon the start of the Tor client, a large file with all Tor server descriptions is being downloaded. An evolution of the Tor protocol is aimed to reduce the initial download size. The new Tor protocol version shall change the way a client receives the information for its Tor circuit setup in a way, that the initial download can be performed over a slow modem line in less then three minutes.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.torproject.org/projects/hidserv&quot; rel=&quot;nofollow&quot;&gt;Speeding up Hidden Services&lt;/a&gt;.
+&lt;p&gt;The Tor anonymity system contains an important function that is called Tor Hidden Services, which allows users to set up anonymous information services, like websites, that can only be accessed through the Tor network and are protected against identification of the host that runs the services. Using these function, critical political and human rights information can be published in a way that protects the publisher and users of the service from repression and identification. The most critical limitation of this function is the time it takes until a Hidden Service is registered in the network and the latency of contact establishment when accessed by a user. The aim of this project is to develop the new protocol which will change the way Tor circuits are set up between the user and the Hidden Service as well as the way a Hidden Service is registered in the Tor network.&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/The_NLnet_Foundation_funds_two_projects/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/The_NLnet_Foundation_funds_two_projects/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

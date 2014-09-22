@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged tunisia</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/tunisia/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/tunisia/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/tunisia/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:12:02Z</updated>
+<entry>
+	<title>Update on Tor usage in Tunisia</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Update_on_Tor_usage_in_Tunisia/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Update_on_Tor_usage_in_Tunisia/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/cautious_optimism" />
+
+	<category term="/tags/internet_censorship" />
+
+	<category term="/tags/tunisia" />
+
+	<category term="/tags/users" />
+
+
+	<updated>2011-04-05T12:12:02Z</updated>
+	<published>2011-01-14T02:54:20Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;It has been reported that the Tunisian President has &lt;a href=&quot;http://english.aljazeera.net/news/africa/2011/01/2011113192110570350.html&quot;&gt;stopped the Internet censorship&lt;/a&gt; in the country. We have confirmation from a few Tunisians that Tor works from within the country, without requiring bridges.  And that Youtube and some other sites are no longer censored.  There is cautious optimism that this is real, however many continue to use Tor to protect their Internet traffic as a safeguard.&lt;/p&gt;
+
+&lt;p&gt;Two graphs show the current state of Tor usage in Tunisia:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://blog.torproject.org/files/bridge-users-2011-01-14-tn-2010-10-16.png&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://blog.torproject.org/files/direct-users-2011-01-14-tn-2010-10-16.png&quot;&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Update_on_Tor_usage_in_Tunisia/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Update_on_Tor_usage_in_Tunisia/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Measuring Tunisian Tor Usage</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tunisian_Tor_Usage/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Measuring_Tunisian_Tor_Usage/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/circumvention" />
+
+	<category term="/tags/internet_censorship" />
+
+	<category term="/tags/metrics" />
+
+	<category term="/tags/tunisia" />
+
+
+	<updated>2011-04-05T12:11:44Z</updated>
+	<published>2011-01-07T02:28:34Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;ve been following the crackdown on Internet freedom in Tunisia over the past few weeks.  I run an unpublished &lt;a href=&quot;https://www.torproject.org/docs/bridges.html.en&quot;&gt;tor bridge&lt;/a&gt; for some Tunisian activists.  It&#39;s been used fairly well for the past 18 months, however it has not seen traffic for a week.  Tor usage from Tunisia has never been very high, but for those who need it, it&#39;s been a lifesaver; or so I&#39;ve been told.  An example of what&#39;s going on in the country: &lt;a href=&quot;http://jilliancyork.com/2011/01/06/tunisian-blogger-slim-amamou-arrested/&quot;&gt;Slim Amamou arrested&lt;/a&gt;, &lt;a href=&quot;http://globalvoicesonline.org/specialcoverage/tunisia-uprising-201011/&quot;&gt;Global Voices&#39; coverage of Tunisia&lt;/a&gt;, &lt;a href=&quot;http://advocacy.globalvoicesonline.org/categories/countries/tunisia/&quot;&gt;Global Voices Advocacy: Tunisia&lt;/a&gt;, and &lt;a href=&quot;http://english.aljazeera.net/indepth/features/2011/01/20111614145839362.html&quot;&gt;Tunisia&#39;s bitter cyberwar&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Out of interest, I wondered how Tor usage in Tunisia has fared over 2010. I wonder if Facebook, Twitter, and other social network services are seeing an increase of users logging into Tunisian social networks from Tor. &lt;/p&gt;
+
+&lt;p&gt;It appears we&#39;re having an impact in Tunisia.  More help is needed.&lt;/p&gt;
+
+&lt;p&gt;This is graph of Tor clients directly connecting to the rest of the network:&lt;br /&gt;
+&lt;img src=&quot;https://blog.torproject.org/files/direct-users-2010-12-31-tn-2010-01-01.png&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a graph of Tor clients connecting through bridges to the rest of the network:&lt;br /&gt;
+&lt;img src=&quot;https://blog.torproject.org/files/bridge-users-2010-12-31-tn-2010-01-01.png&quot;&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Measuring_Tunisian_Tor_Usage/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Measuring_Tunisian_Tor_Usage/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

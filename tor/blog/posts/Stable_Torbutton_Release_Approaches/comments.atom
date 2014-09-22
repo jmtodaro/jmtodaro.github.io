@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Stable Torbutton Release Approaches</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>mikeperry</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:10:16Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_1/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:09:59Z</updated>
+	<published>2008-07-06T11:09:59Z</published>
+
+	<content type="html" xml:lang="en">
+	Thanks! Useful button. Does it works with Firefox 2.0.0.15?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_2/"/>
+
+	<author><name>mikeperry</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:00Z</updated>
+	<published>2008-07-07T11:10:00Z</published>
+
+	<content type="html" xml:lang="en">
+	Yes. Both Firefox 2.0 and 3.0 are supported.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_3/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:01Z</updated>
+	<published>2008-07-08T11:10:01Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Thanks, Torbutton is really useful for non-technical users of Firefox.&lt;/p&gt;
+
+&lt;p&gt;However, what about Thunderbird, is it supported or not ?&lt;br /&gt;
+I tried to install the extension from&lt;br /&gt;
+&lt;a href=&quot;https://addons.mozilla.org/en-US/thunderbird/addon/2275&quot; title=&quot;https://addons.mozilla.org/en-US/thunderbird/addon/2275&quot; rel=&quot;nofollow&quot;&gt;https://addons.mozilla.org/en-US/thunderbird/addon/2275&lt;/a&gt;&lt;br /&gt;
+The page says it&#39;s Thunderbird extension but Thunderbird 2.0.0.14 refuses to install it because it is incompatible.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_4/"/>
+
+	<author><name>mikeperry</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:02Z</updated>
+	<published>2008-07-08T11:10:02Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I have no idea how that Thunderbird page was created. Well, I do have an idea how it was created, but I don&#39;t know why it still exists. Torbutton used to support basic proxy switching on Thunderbird back in the 1.0 days, but that support has been removed because it has not been analyzed for security. My developer tools page on addons.mozilla.org clearly lists Firefox support only, so I don&#39;t know why they didn&#39;t delete that Thunderbird listing. &lt;/p&gt;
+
+&lt;p&gt;I am not a Thunderbird user and unfortunately, I don&#39;t have time to analyze the security issues involved with toggling proxy settings in that app. It likely suffers from similar (but not identical) state and proxy leak issues with html mail, embedded images, javascript, plugins and automatic network access. My recommendation is to create a completely separate Thunderbird profile for your Tor accounts and use that instead of trying to toggle proxy settings. But if you really like to roll fast and loose with your IP, you could try another proxy switcher like ProxyButton, SwitchProxy or FoxyProxy (if any of those happen to support thunderbird).&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_5/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:03Z</updated>
+	<published>2008-07-14T11:10:03Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hi, how do i block unwanted IPs in TOR. Some one the tor nodes are malicious, they are injecting ActiveX in HTML code and modifies the data.&lt;/p&gt;
+
+&lt;p&gt;How do I block IPs doing this?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_6/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:04Z</updated>
+	<published>2008-07-14T11:10:04Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Find the exit node and put it in &quot;exclude nodes&quot; in your torrc file.&lt;/p&gt;
+
+&lt;p&gt;However, you shouldn&#39;t be using a browser that honors activex through Tor.  Your anonymity can be compromised through activex.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_7/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:05Z</updated>
+	<published>2008-07-15T11:10:05Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;ExcludeNodes&lt;br /&gt;
+nick,nick,nick,nick,nick&lt;/p&gt;
+
+&lt;p&gt;TOR won&#39;t start when I write this in my torrc. Is there other way to write it or can I block whole countries? Like in this one; &lt;a href=&quot;http://archives.seul.org/or/talk/Jul-2006/msg00079.html&quot; title=&quot;http://archives.seul.org/or/talk/Jul-2006/msg00079.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Jul-2006/msg00079.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Im running Windows btw.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_8/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:06Z</updated>
+	<published>2008-07-15T11:10:06Z</published>
+
+	<content type="html" xml:lang="en">
+	There isn&#39;t an easy way to do this in windows.  In linux distros, there&#39;s tork.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_9/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:07Z</updated>
+	<published>2008-07-16T11:10:07Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Easier to block with.&lt;/p&gt;
+
+&lt;p&gt;ReachableAddresses reject x.x.x.x/16:*,accept *:80,accept *:443,reject *:*&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_10/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:08Z</updated>
+	<published>2008-07-17T11:10:08Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;is there somebody else who experienced this bug...?&lt;/p&gt;
+
+&lt;p&gt;I can´t uninstall&lt;/p&gt;
+
+&lt;p&gt;the program leaves xp-install/unistall-window but remain in the tray and keep sending up configuration-window.&lt;/p&gt;
+
+&lt;p&gt;how can I get rid of this version?  (experimental vers)&lt;/p&gt;
+
+&lt;p&gt;I want the stable version instead...&lt;/p&gt;
+
+&lt;p&gt;best regards&lt;/p&gt;
+
+&lt;p&gt;mike&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_11/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:09Z</updated>
+	<published>2008-07-17T11:10:09Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;problem solved!&lt;/p&gt;
+
+&lt;p&gt;did manage to uninstall at last...&lt;/p&gt;
+
+&lt;p&gt;best regards&lt;/p&gt;
+
+&lt;p&gt;mike&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 12</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_12/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_12/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:10Z</updated>
+	<published>2008-07-19T11:10:10Z</published>
+
+	<content type="html" xml:lang="en">
+	I can&#39;t figure out how to submit when I have tor enabled. My form buttons don&#39;t work. I can&#39;t check email or anything.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 13</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_13/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_13/"/>
+
+	<author><name>Deja Dannielle (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:11Z</updated>
+	<published>2008-07-20T11:10:11Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Router Login continuously reloads &quot;Status Webpage&quot; only.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Firefox 3.01&lt;br /&gt;
+Dlink DGL-4300 Firmware v1.6&lt;br /&gt;
+Torbutton 1.2.0rc6&lt;br /&gt;
+Firebug 1.2.0b3&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Temporary Solution: Disable both Torbutton and Firebug Plug-in extensions.&lt;/p&gt;
+
+&lt;p&gt;Can someone please explain why these two plug-in extensions cause the Dlink router status webpage to continuously reload? Is this a Dlink, Firefox or plug-in extension issue here?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 14</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_14/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_14/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:12Z</updated>
+	<published>2008-07-22T11:10:12Z</published>
+
+	<content type="html" xml:lang="en">
+	It sounds like it&#39;s a dlink issue.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 15</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_15/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_15/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:13Z</updated>
+	<published>2008-07-26T11:10:13Z</published>
+
+	<content type="html" xml:lang="en">
+	Hi ,I recently installed the stable download for windows xp but after I realised I had to use firefox I uninstalled it .Due to the recent net security flaw scare about network vulnerability I went on Doxpara and tested my system to see if my provider was patched and it keeps coming up with toorrr.com is trying to gain access to my ports ...is that you guys? could there be still remnants of the program on my pc after uninstall.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 16</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_16/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_16/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:14Z</updated>
+	<published>2008-08-17T11:10:14Z</published>
+
+	<content type="html" xml:lang="en">
+	that&#39;s not us.  It&#39;s the domain Kaminsky used to test your dns.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 17</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_17/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_17/"/>
+
+	<author><name>Tarpeian (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:15Z</updated>
+	<published>2009-01-03T12:10:15Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Have uninstalled not just torbutton but all the related TOR suite, yet Mozilla Firefox still won&#39;t accepted needed cookies for such things as gmail.  All the correct preferences in Mozilla for cookies are checked.  Mozilla now twice reinstalled.  Even Did a p[re-TOR System Restore.  Cookies still not accepted.&lt;/p&gt;
+
+&lt;p&gt;Have switched back to IE, but would prefer Mozilla.&lt;/p&gt;
+
+&lt;p&gt;Any help appreciated.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 18</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_18/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/comment_18/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:16Z</updated>
+	<published>2009-01-04T12:10:16Z</published>
+
+	<content type="html" xml:lang="en">
+	have you tried changing your cookie preferences?
+
+	</content>
+
+
+
+</entry>
+
+</feed>

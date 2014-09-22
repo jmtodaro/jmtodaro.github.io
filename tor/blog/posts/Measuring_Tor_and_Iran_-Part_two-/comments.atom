@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Measuring Tor and Iran (Part two)</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>karsten</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:29:58Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_1/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:29:41Z</updated>
+	<published>2009-07-01T11:29:41Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;hi there,&lt;br /&gt;
+is it possible to have a special build only allowing my exit node for clients originating in china, iran etc.? unfortunately i don´t know very much about this software but am unwilling to hassle with problems from my isp. right now i´m running only in bridge mode.&lt;br /&gt;
+i think there might be a lot more people out there like me that would install a special iran package without having to think about it anymore&lt;/p&gt;
+
+&lt;p&gt;ftd&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_2/"/>
+
+	<author><name>keb (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:29:42Z</updated>
+	<published>2009-07-01T11:29:42Z</published>
+
+	<content type="html" xml:lang="en">
+	It is not possible for an exit node to know the originator of requests, without sniffing the data (violating user privacy and legally endangering yourself).
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_3/"/>
+
+	<author><name>SATtva (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:29:43Z</updated>
+	<published>2009-07-02T11:29:43Z</published>
+
+	<content type="html" xml:lang="en">
+	This is false: there&#39;s no *technical* way for the exit node to know the client except with collusion with other nodes in the circuit. If only legal consequences be the stopper for the exit node to figure out the client then Tor would be dead before birth.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_4/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:29:44Z</updated>
+	<published>2009-07-03T11:29:44Z</published>
+
+	<content type="html" xml:lang="en">
+	Chinese people need tor to surf the internet freely indeed.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_5/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:29:45Z</updated>
+	<published>2009-07-04T11:29:45Z</published>
+
+	<content type="html" xml:lang="en">
+	Tor is apparently blocked in Iran and nothing happens when you try to connect hrough Tor... the relays list is empty... even bridges do not work... disappointing... really disappointing.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_6/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:29:46Z</updated>
+	<published>2009-07-04T11:29:46Z</published>
+
+	<content type="html" xml:lang="en">
+	seems the situation in Iran is worse than China....
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_7/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:29:47Z</updated>
+	<published>2009-07-05T11:29:47Z</published>
+
+	<content type="html" xml:lang="en">
+	It depends upon your network.  Tor is working fine for me in Iran.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_8/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:29:48Z</updated>
+	<published>2009-07-06T11:29:48Z</published>
+
+	<content type="html" xml:lang="en">
+	Some user from China say can&#39;t connect the tor network these days, but it&#39;s work fine for me since the beginning.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_9/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:29:49Z</updated>
+	<published>2009-07-09T11:29:49Z</published>
+
+	<content type="html" xml:lang="en">
+	i use tor in iran since the election and its working for me but it is really slow....another thing i use macos maybe this why...
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_10/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:29:50Z</updated>
+	<published>2009-07-10T11:29:50Z</published>
+
+	<content type="html" xml:lang="en">
+	Please keep everyone updated about the status of TOR connection in Iran.  If demonstrations intensify again soon, it would be good to coordinate to provide them with more relays.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_11/"/>
+
+	<author><name>iranian boy (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:29:51Z</updated>
+	<published>2009-07-22T11:29:51Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;from now on tor doesnt work in iran...i there is no tor connection anymore and i used every bridge i could find..plz inform me what i have to do?&lt;br /&gt;
+i have macosx and use tor network via vidalia&lt;br /&gt;
+plz inform me&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 12</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_12/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_12/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:29:52Z</updated>
+	<published>2009-07-23T11:29:52Z</published>
+
+	<content type="html" xml:lang="en">
+	You should some people running bridges, or follow the directions at &lt;a href=&quot;https://www.torproject.org/bridges#UsingBridges&quot; title=&quot;https://www.torproject.org/bridges#UsingBridges&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/bridges#UsingBridges&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 13</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_13/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_13/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:29:53Z</updated>
+	<published>2009-07-09T11:29:53Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Why there is no info on torproject.org about torchat?&lt;br /&gt;
+It seems to me easier to quickly deploy for oppressed people.&lt;br /&gt;
+Is&#39;t a bad project? (compared to trying to use tor+pidgin+pifgin-otr, not easy on *nix boxes?&lt;br /&gt;
+&lt;a href=&quot;http://en.wikipedia.org/wiki/TorChat&quot; title=&quot;http://en.wikipedia.org/wiki/TorChat&quot; rel=&quot;nofollow&quot;&gt;http://en.wikipedia.org/wiki/TorChat&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://code.google.com/p/torchat/&quot; title=&quot;http://code.google.com/p/torchat/&quot; rel=&quot;nofollow&quot;&gt;http://code.google.com/p/torchat/&lt;/a&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 14</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_14/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_14/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:29:54Z</updated>
+	<published>2009-07-11T11:29:54Z</published>
+
+	<content type="html" xml:lang="en">
+	Because we don&#39;t produce torchat and no one has thoroughly analyzed the code.  Feel free to submit a detailed security analysis.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 15</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_15/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_15/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:29:55Z</updated>
+	<published>2009-07-10T11:29:55Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;a href=&quot;https://git.torproject.org/checkout/tor/master/doc/tor-win32-mingw-creation.txt&quot; title=&quot;https://git.torproject.org/checkout/tor/master/doc/tor-win32-mingw-creation.txt&quot; rel=&quot;nofollow&quot;&gt;https://git.torproject.org/checkout/tor/master/doc/tor-win32-mingw-creat...&lt;/a&gt;  &amp;lt;--- check this out...&lt;br /&gt;
+ i can&#39;t create a &quot;tor-mingw&quot; directory&lt;br /&gt;
+please help me;;;;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 16</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_16/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_16/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:29:56Z</updated>
+	<published>2009-07-10T11:29:56Z</published>
+
+	<content type="html" xml:lang="en">
+	&quot;mkdir tor-mingw&quot;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 17</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_17/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_17/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:29:57Z</updated>
+	<published>2009-07-14T11:29:57Z</published>
+
+	<content type="html" xml:lang="en">
+	The tor nodes in China increase in recent months.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 18</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_18/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/comment_18/"/>
+
+	<author><name>Werry (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:29:58Z</updated>
+	<published>2009-11-13T12:29:58Z</published>
+
+	<content type="html" xml:lang="en">
+	Thank you, you answered the question I have been searching for which was whether or not to place keywords when blog commenting. &lt;a href=&quot;http://www.hayda.net&quot; title=&quot;mirc, cinsel sohbet, cinsellik, chat&quot; rel=&quot;nofollow&quot;&gt;mirc&lt;/a&gt; . &lt;a href=&quot;http://www.hayda.net&quot; title=&quot;mirc, cinsel sohbet, cinsellik, chat&quot; rel=&quot;nofollow&quot;&gt;chat&lt;/a&gt; . &lt;a href=&quot;http://www.hayda.net/&quot; title=&quot;http://www.hayda.net/&quot; rel=&quot;nofollow&quot;&gt;http://www.hayda.net/&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+
+</feed>

@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Research problem: measuring the safety of the Tor network</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>arma</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:14:50Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_1/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:14:33Z</updated>
+	<published>2011-02-06T13:14:33Z</published>
+
+	<content type="html" xml:lang="en">
+	I am wondering for what AS stands for?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_2/"/>
+
+	<author><name>arma</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:14:34Z</updated>
+	<published>2011-02-06T13:14:34Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Autonomous system. Think ISP or &quot;internet zone&quot;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Autonomous_system_%28Internet%29&quot; title=&quot;http://en.wikipedia.org/wiki/Autonomous_system_%28Internet%29&quot; rel=&quot;nofollow&quot;&gt;http://en.wikipedia.org/wiki/Autonomous_system_%28Internet%29&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I&#39;ve clarified it in the above text too. Thanks!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_3/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:14:35Z</updated>
+	<published>2011-02-06T13:14:35Z</published>
+
+	<content type="html" xml:lang="en">
+	May I suggest Tor begin its own journal, like the R project&#39;s? In my experience, a lot of research is simply shelved because academia sees no &quot;use&quot; for it... Maybe it&#39;s just me. Another advantage (especially with the open access model) would be that current research which would otherwise take years to complete and publish could be shared quickly. Would Tor be interested in &quot;amateur&quot; research?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_4/"/>
+
+	<author><name>arma</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:14:36Z</updated>
+	<published>2011-02-06T13:14:36Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;The main academic publication venue for anonymity research is the Privacy Enhancing Technologies Symposium (&lt;a href=&quot;http://petsymposium.org/&quot; title=&quot;http://petsymposium.org/&quot; rel=&quot;nofollow&quot;&gt;http://petsymposium.org/&lt;/a&gt;). But you&#39;re right that the requirements for successful academic publication often have little to do with the quality or relevance of the research.&lt;/p&gt;
+
+&lt;p&gt;Karsten has been putting up tech reports at &lt;a href=&quot;http://metrics.torproject.org/papers.html&quot; title=&quot;http://metrics.torproject.org/papers.html&quot; rel=&quot;nofollow&quot;&gt;http://metrics.torproject.org/papers.html&lt;/a&gt; as he finishes them.&lt;/p&gt;
+
+&lt;p&gt;And some of the more important papers Tor has written lately, like the blocking-resistance design and the performance docs, aren&#39;t in the right format for formal submission, and I&#39;m just fine with that:&lt;br /&gt;
+&lt;a href=&quot;https://svn.torproject.org/svn/projects/design-paper/blocking.pdf&quot; title=&quot;https://svn.torproject.org/svn/projects/design-paper/blocking.pdf&quot; rel=&quot;nofollow&quot;&gt;https://svn.torproject.org/svn/projects/design-paper/blocking.pdf&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://blog.torproject.org/blog/why-tor-is-slow&quot; title=&quot;https://blog.torproject.org/blog/why-tor-is-slow&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/why-tor-is-slow&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We get pretty good peer review from the PETS community because we&#39;re high-profile.&lt;/p&gt;
+
+&lt;p&gt;As for &quot;amateur&quot; research, sure, so long as the results themselves are convincing!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_5/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:14:37Z</updated>
+	<published>2011-02-16T13:14:37Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Thanks for the reply, and the pointers, I&#39;ll be sure to try submitting to PETS.&lt;/p&gt;
+
+&lt;p&gt;Regarding the research topic, I&#39;ve only begun looking into it, but this article seems to be a good place to start and gather ideas from:&lt;/p&gt;
+
+&lt;p&gt;Vardi, Y. (1996). Network Tomography: Estimating source-destination traffic intensities from link data. JASA Theory and Method, 91 (433), 365-377.&lt;/p&gt;
+
+&lt;p&gt;Best wishes to the Tor Project!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_6/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:14:38Z</updated>
+	<published>2011-02-06T13:14:38Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;How about you concentrate resources on fixing the fact that Tor is trivially controlled by third parties first before engaging in studies into how secure the current broken design is?&lt;/p&gt;
+
+&lt;p&gt;Really does seem like you&#39;ve disappeared up your own assholes these days.  Too scared to upset the masters watching eye, no doubt.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_7/"/>
+
+	<author><name>arma</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:14:39Z</updated>
+	<published>2011-02-06T13:14:39Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Well, it depends what you mean by trivially controlled by. If you mean that the current Tor network is too small compared to the capacity that a well-funded adversary could dump into it, I want to know just how small that is.&lt;/p&gt;
+
+&lt;p&gt;If you mean that we should run the whole network ourselves so it&#39;s harder to attack, I disagree. There are plenty of networks out there that are centralized, and that centralization introduces critical problems of its own.&lt;/p&gt;
+
+&lt;p&gt;If you mean the blocking-resistance question (&quot;Iran can censor connections to the Tor network&quot;), I agree that&#39;s a worthwhile problem to tackle, and we are tackling it (stay tuned), but it isn&#39;t this one.&lt;/p&gt;
+
+&lt;p&gt;As for concentrating our resources, many academic research groups ask me what they and their students should look at, so fleshing out the question of diversity seems like a great avenue for them to look at.&lt;/p&gt;
+
+&lt;p&gt;As for a &quot;fixed&quot; Tor design, we&#39;re all ears.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_8/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:14:40Z</updated>
+	<published>2011-02-06T13:14:40Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I personally like packets routed through as many countries as possible. Preferably through countries that don&#39;t like each other. &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Thank you for providing this vital anonymity service. There&#39;s little doubt it will become even more vital in the near feature.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_9/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:14:41Z</updated>
+	<published>2011-02-07T13:14:41Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;It might help if people are routed through more than one network hub. This uses probability to protect people but might interfere with capacity as it could overload the system. I don&#39;t know anything about the mechanics of how this is done. I am not a CS person I studied math.&lt;/p&gt;
+
+&lt;p&gt;Going through 2 hubs:&lt;br /&gt;
+If you assume the probability of a hub being compromised is 2% than a single jump has a 1/50 chance of recording your internet use. If you go through two independent hubs that chance that they are both owned by an organization spying on you is reduced to 0.04% (as .02*.02=.0004). &lt;/p&gt;
+
+&lt;p&gt;This analysis assumes that the organization is able to put the information together. If for instance the (.02) threat was divided between 5 different players the probability that the same organization would own both compromised hubs is less than 0.04% as this is the total threat of accessing two compromised hubs. Assuming Iran and Egypt both do not play well with others; they might not actually combine their information to spy on web traffic effectively. &lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_10/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:14:42Z</updated>
+	<published>2011-02-07T13:14:42Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I choose safety over performance. I hope nobody is trying to voip over Tor. My understanding is the network is meant for web browsing and irc mostly.&lt;/p&gt;
+
+&lt;p&gt;More people operate middle relays than entrance or exit relays. Assigning many more entry guard flags to relays running on residential modems is a great idea. Currently I believe entry guard flags is something only handed out through the Tor community, not given to everyone.&lt;/p&gt;
+
+&lt;p&gt;Because there&#39;s more middle relays it would seem like they would be the key point for adding padded data to throw off an adversary controlling both entrance and exit relays. Middle relays need a constant flow of traffic running through them to make timing attacks between entrance and exit more difficult. Maybe even a small transmission delay at middle relays could help prevent this.&lt;/p&gt;
+
+&lt;p&gt;Tor states padding and transmission delays cause too much performance loss and aren&#39;t used. It probably does but if that&#39;s what it takes for safety, I say go for it. More people are willing to run entrance and middle relays because there&#39;s less risk of legal backlash, such as being served DMCA infringement notices.&lt;/p&gt;
+
+&lt;p&gt;Take advantage of the huge number of entry and middle relays that can be created and come up with an algorithm which selects the most random path imaginable and keeps a client-side record of relays used to build paths in the past. This record could prevent previously built path combination from being used over again. Adding to randomness.&lt;/p&gt;
+
+&lt;p&gt;I agree having an algorithm that puts weight on high bandwidth over the safety of random paths is prone to abuse. I would rather the path algorithm put weight on randomness rather than speed. &lt;/p&gt;
+
+&lt;p&gt;Hope I don&#39;t sound patronizing. I&#39;m sure your more knowledgeable than me, but even I can imagine how a determined and well funded adversary could compare transmission sizes and timing info. from router logs at major ISPs. All without ever running a single Tor relay. Just off major ISP router logs!&lt;/p&gt;
+
+&lt;p&gt;Seems like it would be harder to monitor Tor with random byte padding and timing delays. Unless I&#39;m missing something, perhaps it&#39;s time to implement this stuff.&lt;/p&gt;
+
+&lt;p&gt;Data padding for sure, because I&#39;ve heard it&#39;s possible to tell what web page Tor users visit simply by comparing the webpage size to the encrypted Tor stream size. No need to crack encryption, just compare sizes!&lt;/p&gt;
+
+&lt;p&gt;Thanks for all your hard work. I can&#39;t do it so I depend on the Tor people. I truly am grateful and believe your efforts at anonymity are sincere.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_11/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:14:43Z</updated>
+	<published>2011-02-07T13:14:43Z</published>
+
+	<content type="html" xml:lang="en">
+	The data is very good.Thanks for the post and I’ll bookmark your site to read again.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 12</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_12/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_12/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:14:44Z</updated>
+	<published>2011-02-07T13:14:44Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I think a lot of problems regarding Tor problems in recent months comes from your side because you all as academicians and scientists reveal all your plans and secrets in your academic papers.I myself am a scientist,but I have the advantage of living long times in both democratic and dictatorship societies.You have to understand that you are in a war ( technologically-wise ) and you MUST NOT REVEAL your point of attack to your adversary ( or your enemy,if you will ).&lt;br /&gt;
+Your adversary reads carefully and analyze thoroughly your papers and information you so carelessly reveal.Again,DO NOT FORGET THAT IT IS A WAR AND IN A WAR YOU MUST SAFEGUARD ALL YOUR SENSITIVE PLANS AND POINTS OF ATTACKS .&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 13</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_13/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_13/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:14:45Z</updated>
+	<published>2011-02-21T13:14:45Z</published>
+
+	<content type="html" xml:lang="en">
+	Please read up on Kerckhoffs&#39;s Principle, &lt;a href=&quot;https://secure.wikimedia.org/wikipedia/en/wiki/Kerckhoffs%27s_Principle&quot; title=&quot;https://secure.wikimedia.org/wikipedia/en/wiki/Kerckhoffs%27s_Principle&quot; rel=&quot;nofollow&quot;&gt;https://secure.wikimedia.org/wikipedia/en/wiki/Kerckhoffs%27s_Principle&lt;/a&gt;.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 14</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_14/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_14/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:14:46Z</updated>
+	<published>2011-02-07T13:14:46Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I would like to see paths viewed from an MPLS/WDM path layer. Even AS level views expose merely administrative domains, many of which may traverse a single SVC / fiber / right-of-way.&lt;/p&gt;
+
+&lt;p&gt;While the number of attackers who can position at such backbone layers are small, the advantages of analysis at this level are significant; it would be interesting to quantify per discussion above.&lt;/p&gt;
+
+&lt;p&gt;(Consider the aggregation at trans-oceanic fiber landings and large IX facilities.)&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 15</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_15/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_15/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:14:47Z</updated>
+	<published>2011-02-21T13:14:47Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;There is a threat of hi-tech targeted totalitarianism but it only has resources for so many targets. I would describe it as the digital continuity of the covert personality destruction programs of the last century, whose targets have delivered their testimonies in the United States of North America. Choice of target is not limited along lines of religion or nationality or lack thereof, but it is systematically targeting the most advanced political idealists on the digital frontier. Homeschooled people are at the highest risk. &lt;/p&gt;
+
+&lt;p&gt;It is kind of politically suicidal because it attacks potential allies turning them into determined enemies. Ironically the best method to verify whether targeted totalitarianism is surrounding you with artificial synchronicities is to fake an orgasm on the net. No individual who is not a bigot will work for these programs, so the feedback will be significant. Should you happen to be on their list, they do not hesitate to seize an opportunity for personality destruction even when it might be a trap, and that betrays them. &lt;/p&gt;
+
+&lt;p&gt;These programs are an irresponsible waste of dignity and resources in the first place so there is nothing in them that could stop them. Except those of us who feel they will never surrender to plausible deniability. It must end. Finally.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 16</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_16/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_16/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:14:48Z</updated>
+	<published>2011-02-23T13:14:48Z</published>
+
+	<content type="html" xml:lang="en">
+	From the adversary perspective the most interesting point for a two-front attack against the network would be the chronological footprint an user leaves on a website. How many pages are requested over what period of time and how much time is passing between those requests? It seems that the probability to successfully correlate this information is growing exponentially with the size of the footprint. The very habit of real time browsing can be treacherous. Are there any solutions to this other than avoid behaving like in the privacy of one&#39;s own home?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 17</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_17/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_17/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:14:49Z</updated>
+	<published>2011-03-06T13:14:49Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;what about relay operated by same organization, but distributed in many country for example, there is tens of relays called Banadora 01 ,Banadora 02, Banadora 0X&lt;br /&gt;
+and each one is in different country, so it is possible that i fount more than one Banadora 0x in my bath, and if there was one as entry and other at exit node then my connection is unmasked for this organization,&lt;/p&gt;
+
+&lt;p&gt;an other case, what if this organization renamed it servers, to different non related names?&lt;br /&gt;
+is it possible to make the connection goes in simultaneous stream, so only part of the data goes through certain relay, i am talk about adding option of: make more than one active circuit at certain moment, and dividing data to segments, and send  each segment through different path (circuit), thus if bad exit node got a segment&amp;lt; then it got only part of the data, (at least they know only the user name, not both the user name and password!)&lt;/p&gt;
+
+&lt;p&gt;i want to say, thanks for people of tor who care about people in poor county,,&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 18</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_18/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comment_18/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:14:50Z</updated>
+	<published>2011-03-07T13:14:50Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt; I am a &quot;half-geek&quot; having been around mini/micro PCs for over 30 years and have just started using Tor. I have tried to sell Tor to some of my more PC knowledgeable friends but they balk at the Options section, finding that referring to your site for how each works and what it does. Printing the web page is a mess.&lt;/p&gt;
+
+&lt;p&gt; I think that if you would make the Installation and Manual pages available a .pdf files this would make Tor attractive to a much wider &quot;clientele&quot;.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+
+</feed>

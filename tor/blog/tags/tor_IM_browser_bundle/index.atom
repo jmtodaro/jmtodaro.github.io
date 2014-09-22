@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged tor_IM_browser_bundle</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/tor_IM_browser_bundle/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/tor_IM_browser_bundle/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/tor_IM_browser_bundle/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:23:41Z</updated>
+<entry>
+	<title>Tor Browser Bundle 1.1.12 released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/tor_IM_browser_bundle" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+
+	<updated>2011-04-05T11:23:41Z</updated>
+	<published>2009-04-13T22:31:24Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Updated Tor Browser and Tor IM Browser bundles are released.  The updated bundles can be found at &lt;a href=&quot;https://www.torproject.org/torbrowser/&quot; title=&quot;https://www.torproject.org/torbrowser/&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/torbrowser/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The changes from 1.1.11 are:&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Update OpenSSL to 0.9.8k&lt;/li&gt;
+&lt;li&gt;Update Tor to 0.2.1.14-rc&lt;/li&gt;&lt;/p&gt;
+
+&lt;p&gt;Also fixes a bug where Chinese (zh_CN) translations weren&#39;t being used in Vidalia, see &lt;a href=&quot;http://archives.seul.org/or/cvs/Apr-2009/msg00001.html&quot; title=&quot;http://archives.seul.org/or/cvs/Apr-2009/msg00001.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/cvs/Apr-2009/msg00001.html&lt;/a&gt; for details.  &lt;/p&gt;
+
+&lt;p&gt;Tor Browser and Tor IM Browser Bundles are also known as the &quot;Zero Install Client&quot; for Windows.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

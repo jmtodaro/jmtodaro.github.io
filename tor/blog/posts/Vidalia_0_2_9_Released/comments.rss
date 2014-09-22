@@ -1,0 +1,359 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Vidalia 0.2.9 Released</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Anonymous: Comment 1</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_1/</link>
+
+	<pubDate>Wed, 26 May 2010 06:57:56 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:56Z</dcterms:modified>
+
+	<description>Awesome! I would love to see a new TBB with updated Vidalia and Tor!
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 2</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_2/</link>
+
+	<pubDate>Sat, 29 May 2010 06:57:57 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:57Z</dcterms:modified>
+
+	<description>&lt;p&gt;It seems that all tor links from China have been cut off by &quot;Great Firewall&quot;! I tried frequently in the past weeks with newly retrieved bridges, and no luck at all. It&#39;s possible that the GFW could be able to tell TOR traffic by some kind of protocol signatures. Is there any possible way to fight it? &lt;/p&gt;
+
+&lt;p&gt;Thanks!&lt;br /&gt;
+Waterson&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 3</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_3/</link>
+
+	<pubDate>Sat, 29 May 2010 06:57:58 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:58Z</dcterms:modified>
+
+	<description>Our research shows they are blocking IP address:port combinations, nothing more fancy than that.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 4</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_4/</link>
+
+	<pubDate>Sat, 29 May 2010 06:57:59 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:59Z</dcterms:modified>
+
+	<description>Yes,just a &quot;blocking IP address:port&quot;with an extending &quot;black list&quot;,and nothing more.We can still use Tor in the mainland China,only the connection becomes a more slow progress. And most bridges cease to be effective.  
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 5</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_5/</link>
+
+	<pubDate>Mon, 31 May 2010 06:58:00 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:58:00Z</dcterms:modified>
+
+	<description>&lt;p&gt;Sorry for posting my question here, but i could find the answer anywhere else.&lt;/p&gt;
+
+&lt;p&gt;Is it possible to run multiple instances of Tor (client) on one machine ?&lt;/p&gt;
+
+&lt;p&gt;At program start Tor opens a socks listener on port 9050 so when i try to run another instance Tor fails to connect. I don&#39;t know how to overcome this.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 6</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_6/</link>
+
+	<pubDate>Tue, 01 Jun 2010 06:58:01 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:58:01Z</dcterms:modified>
+
+	<description>You need to have multiple torrc files, each with unique ports, data directories, and log files configured.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 7</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_7/</link>
+
+	<pubDate>Mon, 31 May 2010 06:58:02 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:58:02Z</dcterms:modified>
+
+	<description>&lt;p&gt;polipo not working, Mac 10.4.11 &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/../../smileys/sad.png&quot; alt=&quot;:(&quot; /&gt;&lt;br /&gt;
+even with older version .&lt;br /&gt;
+So torbutton is useless, so, what can I do ???&lt;br /&gt;
+on mac firewall, I have allowed ports for 8118 and 9050.&lt;br /&gt;
+Vidalia say it is connected to TOR !!! SO how can I use it ?&lt;br /&gt;
+Thanks a lot,&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 8</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_8/</link>
+
+	<pubDate>Tue, 01 Jun 2010 06:58:03 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:58:03Z</dcterms:modified>
+
+	<description>What happens when you restart vidalia?  Vidalia should start polipo.  You don&#39;t need to allow any ports on the mac firewall, as you aren&#39;t accepting traffic from outside.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 9</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_9/</link>
+
+	<pubDate>Tue, 15 Jun 2010 06:58:04 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:58:04Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hi,&lt;br /&gt;
+I am a different user from OP, a bit of NuB here, but generally highly fluent in o.s. tech.&lt;br /&gt;
+I am likewise seeing problems as OP mentioned.  I am on OSX 10.5.8.  I do not run a firewall.&lt;br /&gt;
+Firefox and Camino both state seeing a problem with the proxy when enabled.&lt;br /&gt;
+My Firefox has the Torbutton installed from the official app pkg for Mac–Intel.&lt;br /&gt;
+For Camino I have Vidalia.app launched from same app pkg, and inserted user_pref lines into its js files.&lt;br /&gt;
+btw Over at the wget mail-list, we have found that OSX 10.5 and 10.4 have older openssl provided by Apple (let’s not get into why they won’t upgrade it).  Indeed the log for vidalia+tor mentions the back-level on my machine:&lt;br /&gt;
+&amp;gt; […]&lt;br /&gt;
+&amp;gt; Jun 15 07:28:07.549 [Notice] OpenSSL OpenSSL 0.9.7l 28 Sep 2006 [9070cf] looks like it&#39;s older than 0.9.8l, but some vendors have backported 0.9.8l&#39;s renegotiation code to earlier versions, and some have backported the code from 0.9.8m or 0.9.8n.  I&#39;ll set both SSL3_FLAGS and SSL_OP just to be safe.&lt;br /&gt;
+&amp;gt; […]&lt;br /&gt;
+Also the local web-browsers can’t access port 9051 (control panel).  I specifically set “none” and un-check the random password setting.  I verified by looking at the various conf files et al.  But the browser ends up displaying a plain–text message saying Authentification Required.&lt;br /&gt;
+&amp;gt; […]&lt;br /&gt;
+&amp;gt; Jun 15 07:28:07.168 [Warning] ControlPort is open, but no authentication method has been configured.  This means that any program on your computer can reconfigure your Tor.  That&#39;s bad!  You should upgrade your Tor controller as soon as possible.&lt;br /&gt;
+&amp;gt; […]&lt;br /&gt;
+I think I am going to need to compile from src tarball, as I have some of the requisite pkgs (OpenSSL–1.0.0a on the wget problem for ex), and I do have enough X11/glib/gtk+ to run Pan news-reader (plain *ix type apps).  But I do hate dealing with Qt etc on a OSX platform.  &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/../../smileys/smile4.png&quot; alt=&quot;;)&quot; /&gt;&lt;br /&gt;
+Anyway, would these problems be candidates to file into the tor bug system?&lt;br /&gt;
+Thank you.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 10</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_10/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_10/</link>
+
+	<pubDate>Tue, 15 Jun 2010 06:58:05 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:58:05Z</dcterms:modified>
+
+	<description>&lt;p&gt;You&#39;ve misconfigured your tor.  Tor works around the OS X openssl nonsense and uses it correctly.  You don&#39;t need to upgrade openssl to use tor.&lt;/p&gt;
+
+&lt;p&gt;Web browsers and other applications want to use 127.0.0.1:9050.  9051 is the control port to allow other control applications to configure your Tor, like vidalia.  You definitely want to have a password or cookie authentication enabled, otherwise malicious websites can reconfigure your tor for you.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 11</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_11/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_11/</link>
+
+	<pubDate>Mon, 31 May 2010 06:58:06 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:58:06Z</dcterms:modified>
+
+	<description>&lt;p&gt;Seems Tor is unusable now in China with or without bridges...any suggestion?&lt;br /&gt;
+Best regards, Yan&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 12</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_12/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_12/</link>
+
+	<pubDate>Tue, 01 Jun 2010 06:58:07 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:58:07Z</dcterms:modified>
+
+	<description>Yes, this appears to be true.  China GFW is blocking all of the public relays by IP:Port combination.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 13</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_13/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_13/</link>
+
+	<pubDate>Wed, 02 Jun 2010 06:58:08 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:58:08Z</dcterms:modified>
+
+	<description>So...what should we do to enable Tor in China?
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 14</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_14/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_14/</link>
+
+	<pubDate>Wed, 09 Jun 2010 06:58:09 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:58:09Z</dcterms:modified>
+
+	<description>find bridges that are not from &lt;a href=&quot;https://bridges.torproject.org&quot; title=&quot;https://bridges.torproject.org&quot; rel=&quot;nofollow&quot;&gt;https://bridges.torproject.org&lt;/a&gt;.  We suspect China has crawled that website and found all of the bridges.  email, instant messaging, social networking methods of finding bridges are still working.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 15</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_15/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_15/</link>
+
+	<pubDate>Sat, 05 Jun 2010 06:58:10 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:58:10Z</dcterms:modified>
+
+	<description>&lt;p&gt;Yes, what can we do to enable Tor in China?&lt;/p&gt;
+
+&lt;p&gt;It seems like they are blocking the directory servers as well&lt;/p&gt;
+
+&lt;p&gt;Always crashing at Bootstrapped 10%, cannot connect to directory server.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 16</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_16/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_16/</link>
+
+	<pubDate>Tue, 08 Jun 2010 06:58:11 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:58:11Z</dcterms:modified>
+
+	<description>pls how can tor work in Nigeria
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 17</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_17/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comment_17/</link>
+
+	<pubDate>Wed, 09 Jun 2010 06:58:12 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:58:12Z</dcterms:modified>
+
+	<description>From what we&#39;ve heard from others in Nigeria, it works fine.  Open a ticket, trac.torproject.org with your issue.
+</description>
+
+
+</item>
+
+</channel>
+</rss>

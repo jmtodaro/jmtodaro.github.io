@@ -1,0 +1,443 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>October 2008 Progress Report</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FOctober_2008_Progress_Report&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">October 2008 Progress Report</a>
+
+</span>
+
+
+<div id="content">
+<p><strong>Design</strong><br />
+We continued enhancements to the Chinese and Russian Tor website translations. We also have a second Chinese translator for the website now, so hopefully we will get more prompt translations there. Our Farsi translation from this summer is slowly becoming obsolete; we should solve that at some point.</p>
+
+<p>We added a new "30 second summary" web page for Tor:<br />
+<a href="https://www.torproject.org/30seconds" title="https://www.torproject.org/30seconds" rel="nofollow">https://www.torproject.org/30seconds</a><br />
+and a new "easy download" page since the original is so complex:<br />
+<a href="https://www.torproject.org/easy-download" title="https://www.torproject.org/easy-download" rel="nofollow">https://www.torproject.org/easy-download</a></p>
+
+<p>In the upcoming Vidalia 0.2.0 development release:<br />
+  - Support changing UI languages without having to restart Vidalia.<br />
+  - Updated Czech, Polish, Romanian and Turkish translations.</p>
+
+<p>In the upcoming Vidalia 0.1.10 stable release:<br />
+  - Add a prettier dialog for prompting people for their control port password that also includes a checkbox for whether the user wants Vidalia to remember the entered password, a Help button, and a Reset button (Windows only).<br />
+  - Fix a crash bug that occurred when the user clicks 'Clear' in the message log toolbar followed by 'Save All'.<br />
+  - Uncheck the Torbutton options by default in the Windows bundle installer if Firefox is not installed.<br />
+  - Add an Windows bundle installer page that warns the user that they should install Firefox, if it looks like they haven't already done so.</p>
+
+<p>It looks like Australia is soon to be joining the ranks of countries with a nationwide filtering regime:<br />
+<a href="http://arstechnica.com/news.ars/post/20081016-net-filters-required-for-all-australians-no-opt-out.html" title="http://arstechnica.com/news.ars/post/20081016-net-filters-required-for-all-australians-no-opt-out.html" rel="nofollow">http://arstechnica.com/news.ars/post/20081016-net-filters-required-for-a...</a></p>
+
+<p><strong>Proposals</strong><br />
+We finished the first iteration of our auto-updater spec:<br />
+<a href="https://svn.torproject.org/svn/updater/trunk/specs/thandy-spec.txt" title="https://svn.torproject.org/svn/updater/trunk/specs/thandy-spec.txt" rel="nofollow">https://svn.torproject.org/svn/updater/trunk/specs/thandy-spec.txt</a><br />
+We detail our current auto-updater progress below. <span class="read-more"><a href="http://blog.torproject.org/blog/october-2008-progress-report"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/auto-updater/" rel="tag">auto-updater</a>
+
+<a href="../../tags/censorship_circumvention/" rel="tag">censorship circumvention</a>
+
+<a href="../../tags/china/" rel="tag">china</a>
+
+<a href="../../tags/crashes/" rel="tag">crashes</a>
+
+<a href="../../tags/farsi/" rel="tag">farsi</a>
+
+<a href="../../tags/torbutton/" rel="tag">torbutton</a>
+
+<a href="../../tags/translations/" rel="tag">translations</a>
+
+<a href="../../tags/vidalia/" rel="tag">vidalia</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-d2fa65cc971f21467147d637a6219ee7">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+I don't know why you're bothering to update Torbutton at all.  It completely disables Firefox, and is therefore completely worthless.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 14 Dec 2008 06:15:20 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3dba8ad469aa99700254188d2934be28">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+it disables anonymity attacks.  if you're life and job depend on being anonymous, torbutton is fantastic.  if you just want to browse privately, use relakks or anonymizer or some other thing to hide traffic.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 14 Dec 2008 06:15:21 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9232fa32b47f39a7201a42a43e7fab4d">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+downloaded the new version of tor 2.0.34. but it insists on asking for a password that i don't have. What do I do?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Freddog%20%28not%20verified%29&amp;do=goto">reddog (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 11 Feb 2009 06:15:22 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b10730eaacfdcd6da3f2a3e7d14d88b6">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<a href="https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#TorPasswordPrompt" title="https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#TorPasswordPrompt" rel="nofollow">https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#TorPasswordPro...</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 15 Feb 2009 06:15:23 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-de22f47763952d39247c82ac24107c6a">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>Is there any chance of syncing TorButton and JonDoFox headers (user agent, etc.)?</p>
+
+<p>Possible benefits:<br />
+* Tor users could choose whether they prefer to use TorButton or JonDoFox, but still get the same headers either way. JonDoFox already includes a Tor setting in its proxy switcher.<br />
+* JonDoFox is fully Firefox 3 compatible.<br />
+* The JonDos team does not change their settings very often, which makes it easier for a user of an alternate browser, such as Lynx or Konqueror, to attempt to duplicate the headers without constant maintenance.<br />
+* Collaboration on deciding what the optimum settings are.<br />
+* Anyone who uses both Tor and JonDo would be able to securely use the same settings for both - aside from the proxy setting, of course.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 18 Mar 2009 06:15:24 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FOctober_2008_Progress_Report&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:15:19 AM CDT</span>
+<!-- Created <span class="date">Mon 01 Dec 2008 06:43:12 PM CST</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

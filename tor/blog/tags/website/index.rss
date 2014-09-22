@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged website</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/website/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Runa: Website translation support for translation.torproject.org</title>
+	<dcterms:creator>Runa</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Website_translation_support_for_translation_torproject_org/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Website_translation_support_for_translation_torproject_org/</link>
+
+
+	<category>/tags/gsoc</category>
+
+	<category>/tags/translation</category>
+
+	<category>/tags/website</category>
+
+
+	<pubDate>Sun, 20 Sep 2009 11:45:56 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:36:39Z</dcterms:modified>
+
+	<description>&lt;p&gt;This summer I was working on a set of scripts that would make it possible to translate the &lt;a href=&quot;https://www.torproject.org/&quot; rel=&quot;nofollow&quot;&gt;Tor Project website&lt;/a&gt; via &lt;a href=&quot;http://translate.sourceforge.net/wiki/pootle&quot; rel=&quot;nofollow&quot;&gt;Pootle&lt;/a&gt; on &lt;a href=&quot;http://translation.torproject.org&quot; rel=&quot;nofollow&quot;&gt;translation.torproject.org&lt;/a&gt;. The website is based on a set of .wml files, but Pootle only takes files in the .pot and po format. The goal was to find a solution that would make it easy to not only translate from .wml to .po and back, but enable us to convert and keep the already translated documents. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/website-translation-support-translationtorprojectorg&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Website_translation_support_for_translation_torproject_org/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

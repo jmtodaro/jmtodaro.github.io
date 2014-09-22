@@ -1,0 +1,613 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tor 0.2.2.16-alpha released</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_2_16-alpha_released&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Tor 0.2.2.16-alpha released</a>
+
+</span>
+
+
+<div id="content">
+<p>Tor 0.2.2.16-alpha fixes a variety of old stream fairness bugs (most<br />
+evident at exit relays), and also continues to resolve all the little<br />
+bugs that have been filling up the bug tracker lately.</p>
+
+<p><a href="https://www.torproject.org/download.html.en" title="https://www.torproject.org/download.html.en" rel="nofollow">https://www.torproject.org/download.html.en</a></p>
+
+<p>Packages will be appearing over the next few days or weeks (except<br />
+on Windows, which apparently doesn't build -- stay tuned for an<br />
+0.2.2.17-alpha in that case).</p>
+
+<p>Changes in version 0.2.2.16-alpha - 2010-09-17<br />
+  o Major bugfixes (stream-level fairness):<br />
+    - When receiving a circuit-level SENDME for a blocked circuit, try<br />
+      to package cells fairly from all the streams that had previously<br />
+      been blocked on that circuit. Previously, we had started with the<br />
+      oldest stream, and allowed each stream to potentially exhaust<br />
+      the circuit's package window. This gave older streams on any<br />
+      given circuit priority over newer ones. Fixes bug 1937. Detected <span class="read-more"><a href="http://blog.torproject.org/blog/tor-02216-alpha-released"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/alpha_release/" rel="tag">alpha release</a>
+
+<a href="../../tags/enhancements/" rel="tag">enhancements</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-e2539fb429bbde3a54f344ae8390ee8b">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+How does megaupload evade tor?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 22 Sep 2010 07:08:28 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7a8895d61214dafd140d243a3ffef467">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>When sobebody write the qemu net /tor driver.<br />
+Or VirtualBox net driver only for tor.</p>
+
+<p>Flash, javascript, pidgin  whole system anonymity.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 02 Oct 2010 07:08:29 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c2bbba145ff93f6b04e9af0548592a1d">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>There seems to be an error on the downloadpage:</p>
+
+<p>Windows Stable linked to https://www.torproject.org/dist/vidalia-bundles/vidalia-bundle-0.2.1.26-... contains  -&gt; 0.2.2.15-alpha</p>
+
+<p>and the unstable linked to https://www.torproject.org/dist/vidalia-bundles/vidalia-bundle-0.2.2.15-... is -&gt; error 404</p>
+
+<p>kthxbai</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 23 Sep 2010 07:08:30 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ac0351015351050814f60b36e08d8ae9">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+You are correct.  Thank you for the notice.  It is fixed.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 23 Sep 2010 07:08:31 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3713b12ccb1b183ddfe871700c195403">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>I managed to get Tor 0.2.2.16-alpha to build on Windows.</p>
+
+<p>Im using:<br />
+  OpenSSL (openssl-0.9.8o)<br />
+  Zlib (libevent-1.4.14b-stable)</p>
+
+<p>I had to revert changes in eventdns.c to that of 0.2.2.15-alpha.</p>
+
+<p>Also when building the OpenSSL library I had to use this config statement:<br />
+   ./config -no-idea -no-rc5 -no-mdc2 -no-hw</p>
+
+<p>The -no-hw switch turns off the hardware support, since -no-engines does not currently work in this version.</p>
+
+<p>Also, with Vidalia 0.2.10, in the Network Map there does appear to be as many 'red dots' representing servers in the global map.</p>
+
+<p>Other than this its been running fine here, and on a beta testers machine, for several days.</p>
+
+<p>I hope this helps...</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 23 Sep 2010 07:08:32 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3c702620c542d5f20cf47c89d8bb6096">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>Does anyone know what can be done to avoid some sites from blocking Tor ?</p>
+
+<p>GodLikeProductions is one site that comes to mind that allows anonymous posters - but blocks Tor somehow...</p>
+
+<p>Is there anything that can be done in the options for polipo or Tor that can help get around this ?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 25 Sep 2010 07:08:33 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-dab5b090d20d62333463cac5e5f45d61">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p>I am trying to create a Youtube account. It doesn't let me, saying that:</p>
+
+<p>"Sorry for the interruption. We have been receiving a large volume of requests from your network. To continue with your YouTube experience, please enter the verification code below."</p>
+
+<p>It then prompts me infinite number of times to enter Captcha code. I enter everything correctly but keeps asking for more and more Captcha codes.</p>
+
+<p>WTF???</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 26 Sep 2010 07:08:34 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5aa75f7f14df7ad5e3e39c365be45c13">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+<p>You may need to make sure you have cookies enabled and javascript is allowed to run.</p>
+
+<p>I actually relax the security options in the Tor button just enough to allow me to watch youtube videos.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 27 Sep 2010 07:08:35 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b5dfb9b3d6de86e96317fc80000c1020">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+<p>Dear Tor developers,</p>
+
+<p>I couldn't use the latest 0.2.1.26 on my old Windows 2000 PC. It said similar messages: "some system calls can't be found on KERNEL.DLL.". Fortunately, I have a copy of vidalia-bundle-0.2.0.34-0.1.10 downloaded from your website. The 0.2.0.34 works on Windows 2000 and this is why I can read your dear site. Thanks</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 17 Oct 2010 07:08:36 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-152a624eb2c1094485b922aab061d2c0">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+I think you're confusing the two issues.  Tor itself works fine in Win200.  Vidalia, the graphical controller, does not.  See <a href="https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/TorFAQ#VidaliadoesntworkinWindows2000" title="https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/TorFAQ#VidaliadoesntworkinWindows2000" rel="nofollow">https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/TorFAQ#Vida...</a> for details.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 17 Oct 2010 07:08:37 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_2_16-alpha_released&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 07:08:27 AM CDT</span>
+<!-- Created <span class="date">Tue 21 Sep 2010 07:08:41 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

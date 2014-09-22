@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged metrics_apache</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/metrics_apache/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/metrics_apache/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/metrics_apache/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:09:39Z</updated>
+<entry>
+	<title>VisiTor - or: a script to tell you how many of your users are probably Tor users</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/VisiTor_-_or_a_script_to_tell_you_how_many_of_your_users_are_probably_Tor_users/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/VisiTor_-_or_a_script_to_tell_you_how_many_of_your_users_are_probably_Tor_users/"/>
+
+	<author><name>karsten</name></author>
+
+
+
+
+
+
+	<category term="/tags/metrics_apache" />
+
+
+	<updated>2011-04-05T12:09:39Z</updated>
+	<published>2010-10-04T07:10:54Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;We have heard from web server operators who are wondering how many of&lt;br /&gt;
+their visitors are using Tor to do so.&lt;/p&gt;
+
+&lt;p&gt;We can now answer this question. We have an exit list archive back to&lt;br /&gt;
+February 2010 and a tool to compare an Apache HTTP server log to these&lt;br /&gt;
+lists. We can further guess how many of the requests come from Torbutton&lt;br /&gt;
+users by looking at the user-agent string.&lt;/p&gt;
+
+&lt;p&gt;There&#39;s a lot of sensitive data involved here, which is why we give out&lt;br /&gt;
+the archived exit lists and our tool so that web server operators can&lt;br /&gt;
+run the comparison themselves. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/visitor-or-script-tell-you-how-many-your-users-are-probably-tor-users&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/VisiTor_-_or_a_script_to_tell_you_how_many_of_your_users_are_probably_Tor_users/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/VisiTor_-_or_a_script_to_tell_you_how_many_of_your_users_are_probably_Tor_users/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

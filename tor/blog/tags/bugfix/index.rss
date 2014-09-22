@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged bugfix</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/bugfix/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Tor 0.2.1.7-alpha released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_7-alpha_released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_7-alpha_released/</link>
+
+
+	<category>/tags/alpha_release</category>
+
+	<category>/tags/bugfix</category>
+
+	<category>/tags/bugs</category>
+
+
+	<pubDate>Thu, 20 Nov 2008 18:09:13 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:14:54Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor 0.2.1.7-alpha fixes a major security problem in Debian and Ubuntu&lt;br /&gt;
+packages (and maybe other packages) noticed by Theo de Raadt, fixes&lt;br /&gt;
+a smaller security flaw that might allow an attacker to access local&lt;br /&gt;
+services, adds better defense against DNS poisoning attacks on exit&lt;br /&gt;
+relays, further improves hidden service performance, and fixes a variety&lt;br /&gt;
+of other issues.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download&quot; title=&quot;https://www.torproject.org/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.7-alpha - 2008-11-08&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Security fixes:&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-0.2.1.7-alpha-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The &quot;ClientDNSRejectInternalAddresses&quot; config option wasn&#39;t being&lt;br /&gt;
+      consistently obeyed: if an exit relay refuses a stream because its&lt;br /&gt;
+      exit policy doesn&#39;t allow it, we would remember what IP address&lt;br /&gt;
+      the relay said the destination address resolves to, even if it&#39;s&lt;br /&gt;
+      an internal IP address. Bugfix on 0.2.0.7-alpha; patch by rovv.&lt;/li&gt;
+&lt;li&gt;The &quot;User&quot; and &quot;Group&quot; config options did not clear the&lt;br /&gt;
+      supplementary group entries for the Tor process. The &quot;User&quot; option&lt;br /&gt;
+      is now more robust, and we now set the groups to the specified&lt;br /&gt;
+      user&#39;s primary group. The &quot;Group&quot; option is now ignored. For more&lt;br /&gt;
+      detailed logging on credential switching, set CREDENTIAL_LOG_LEVEL&lt;br /&gt;
+      in common/compat.c to LOG_NOTICE or higher. Patch by Jacob Appelbaum&lt;br /&gt;
+      and Steven Murdoch. Bugfix on 0.0.2pre14. Fixes bug 848.&lt;/li&gt;
+&lt;li&gt;Do not use or believe expired v3 authority certificates. Patch&lt;br /&gt;
+      from Karsten. Bugfix in 0.2.0.x. Fixes bug 851.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_7-alpha_released/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

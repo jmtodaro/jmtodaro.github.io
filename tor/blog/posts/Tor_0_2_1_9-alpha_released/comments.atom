@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Tor 0.2.1.9-alpha released</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_9-alpha_released/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_9-alpha_released/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_9-alpha_released/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:16:43Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_9-alpha_released/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_9-alpha_released/comment_1/"/>
+
+	<author><name>PETER (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:16:40Z</updated>
+	<published>2009-01-04T12:16:40Z</published>
+
+	<content type="html" xml:lang="en">
+	Please update this 2 tor browser bundle. thanx
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_9-alpha_released/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_9-alpha_released/comment_2/"/>
+
+	<author><name>AnonymousS (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:16:41Z</updated>
+	<published>2009-01-10T12:16:41Z</published>
+
+	<content type="html" xml:lang="en">
+	Roger Dingledine recently said that file sharing consumes the majority of Tor&#39;s overall bandwidth, and that this is considered to be a problem. I was just wondering whether you shouldn&#39;t simply invite these users by encouraging a network of non-exit file sharing clients who could provide a wealth of middle nodes that would prop up the network, not clog the exit nodes, and improve anonymity for Tor&#39;s more serious uses.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_9-alpha_released/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_9-alpha_released/comment_3/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:16:42Z</updated>
+	<published>2009-01-11T12:16:42Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;NLnet not only funds Tor, but also this one:&lt;br /&gt;
+&lt;a href=&quot;http://www.nlnet.nl/project/anomos/&quot; title=&quot;http://www.nlnet.nl/project/anomos/&quot; rel=&quot;nofollow&quot;&gt;http://www.nlnet.nl/project/anomos/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Maybe the websiteshould say: If you want something for (legal &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_9-alpha_released/../../smileys/smile4.png&quot; alt=&quot;;-)&quot; /&gt; ) anonymous File sharing, use Freenet, Gnunet, MUTE or any of the programs whith Ants in their logo.&lt;/p&gt;
+
+&lt;p&gt;You can find a more complete list here:&lt;br /&gt;
+&lt;a href=&quot;http://www.planetpeer.de/wiki/index.php/Main_Page&quot; title=&quot;http://www.planetpeer.de/wiki/index.php/Main_Page&quot; rel=&quot;nofollow&quot;&gt;http://www.planetpeer.de/wiki/index.php/Main_Page&lt;/a&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_9-alpha_released/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_9-alpha_released/comment_4/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:16:43Z</updated>
+	<published>2009-07-30T11:16:43Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I still think the user should be allowed to use CircuitBuildTimeouts all the way down to 1. A sensible user will set this figure as low as their network will allow, raising it until their response time for circuits is acceptable.&lt;/p&gt;
+
+&lt;p&gt;This is what I do.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+
+</feed>

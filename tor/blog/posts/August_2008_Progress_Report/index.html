@@ -1,0 +1,2277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>August 2008 Progress Report</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FAugust_2008_Progress_Report&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">August 2008 Progress Report</a>
+
+</span>
+
+
+<div id="content">
+<p><strong>Releases</strong></p>
+
+<p>Vidalia 0.1.7 (released August 2) fixes a bug that caused Vidalia to not recognize Tor's version correctly in Tor 0.2.0.x, adds an "nsh2po" tool that helps Pootle translate the Vidalia bundle installer strings, adds "TZ=UTC" to the BrowserExecutable's environment variables when launched via Vidalia, and updates the Czech, French, and German translations.<br />
+<a href="http://trac.vidalia-project.net/browser/vidalia/tags/vidalia-0.1.7/CHANGELOG" title="http://trac.vidalia-project.net/browser/vidalia/tags/vidalia-0.1.7/CHANGELOG" rel="nofollow">http://trac.vidalia-project.net/browser/vidalia/tags/vidalia-0.1.7/CHANG...</a></p>
+
+<p>Incognito 2008.1 (released August 2) is a Gentoo-based Tor LiveCD. This new release adds a "walkthrough" which will launch on startup; adds language support for Arabic, Green, Hebrew, Russian, and Swedish; improves the support for Chinese and Japanese fonts; adds support for VMWare and partial support for VirtualBox; switches to Tor 0.2.0.30 and Torbutton 1.2.0; and adds some new privacy-supporting software and removes some applications that are too likely to leak private information.<br />
+<a href="https://svn.torproject.org/svn/incognito/trunk/ChangeLog" title="https://svn.torproject.org/svn/incognito/trunk/ChangeLog" rel="nofollow">https://svn.torproject.org/svn/incognito/trunk/ChangeLog</a></p>
+
+<p>Tor 0.2.1.3-alpha (released August 3) implements most of the pieces to prevent infinite-length circuit attacks (see proposal 110); fixes a bug that might cause exit relays to corrupt streams they send back; allows address patterns (e.g. 255.128.0.0/16) to appear in ExcludeNodes and ExcludeExitNodes config options; and fixes a big pile of bugs.<br />
+<a href="http://archives.seul.org/or/talk/Aug-2008/msg00039.html" title="http://archives.seul.org/or/talk/Aug-2008/msg00039.html" rel="nofollow">http://archives.seul.org/or/talk/Aug-2008/msg00039.html</a></p>
+
+<p>Tor 0.2.1.4-alpha (released August 4) fixes a pair of crash bugs in 0.2.1.3-alpha.<br />
+<a href="http://archives.seul.org/or/talk/Aug-2008/msg00039.html" title="http://archives.seul.org/or/talk/Aug-2008/msg00039.html" rel="nofollow">http://archives.seul.org/or/talk/Aug-2008/msg00039.html</a></p>
+
+<p>Tor Browser Bundle 1.1.2 (released August 9) updates Vidalia to version 0.1.6, updates Firefox to 2.0.0.16, updates Tor to 0.2.1.4-alpha, updates Torbutton to 1.2.0, and disables the TZ=UTC environment variable trick since Vidalia 0.1.7 now handles that for us.<br />
+<a href="https://svn.torproject.org/svn/torbrowser/trunk/README" title="https://svn.torproject.org/svn/torbrowser/trunk/README" rel="nofollow">https://svn.torproject.org/svn/torbrowser/trunk/README</a> <span class="read-more"><a href="http://blog.torproject.org/blog/august-2008-progress-report"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-ac6ba9c441790eb81a741c3d849912ba">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+You should include URLs to projects not listed on the main Tor site so we don't have to go searching for real information outside of a change log...
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 21 Sep 2008 06:11:35 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4441c329d47d2dcafa22059ef12b6722">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+Can you provide an example?  I can do this, I'm just wondering which outside projects we didn't link to in the post.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 27 Sep 2008 06:11:36 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b2072e60910e9a330cc0ed03145660cf">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>Hello,</p>
+
+<p>Just installed lastest TOR vidalia bundle 0.1.9. And now unable to change network preferences from TOR configuration back to regular. The window pane appears and won't allow the enable button to change back to normal.</p>
+
+<p>Running Apple OS 10.4.11</p>
+
+<p>thank you.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 21 Sep 2008 06:11:37 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-635a35680bb342e6616448467fe63eee">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+Did you click the lock and login as in admin?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 27 Sep 2008 06:11:38 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0fc12bd66f8a13dc7eccc7090aeeb8ad">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>I'm using Firefox.</p>
+
+<p> I uninstalled Tor after using it for a day because there are some issues with fitting it in with my pattern of internet working.</p>
+
+<p> But the message 'Tor Disabled' remains, in red, in the bar at the bottom of the screen.</p>
+
+<p> It is more than just a message. If I click on it then it will change to 'Tor Enabled' in green and I'll start to get errors from Firefox because it can't find proxy.</p>
+
+<p> Can anyone tell me how to get rid of this?</p>
+
+<p> regards,</p>
+
+<p> ab  <img src="../../smileys/smile.png" alt=":)" /></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 21 Sep 2008 06:11:39 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-85c3fbb2a7c9c542b46af3843642097d">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+You need to uninstall torbutton manually.  In Tools Menu, Choose Add-ons.  Select Torbutton, and click the uninstall button.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 27 Sep 2008 06:11:40 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0e31d000b2d4689b5fe10b0f82acb8a3">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p>There's better Captchas than that available out there - for free. I took me four attempts to make my last posting.</p>
+
+<p> <img src="../../smileys/smile.png" alt=":)" /></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fabrogard%20%28not%20verified%29&amp;do=goto">abrogard (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 21 Sep 2008 06:11:41 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2494d29dbb81d755f93c9562b0582349">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+<p>There's excellent free Forum software, such as Yabb, out there. I think a Forum would be very desirable for this Tor thing. Might I suggest you look into it. Or maybe I should set one up for you and you provide a link to it?</p>
+
+<p>regards,</p>
+
+<p> ab <img src="../../smileys/smile.png" alt=":)" /></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fabrogard%20%28not%20verified%29&amp;do=goto">abrogard (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 21 Sep 2008 06:11:42 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-61e5c10e392738c92d31f4d420d86851">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+Tor doesn't have an official forum.  Having a forum implies we're going to reply and provide support.  We would also want to make sure the forum discussions and advice were relevant and providing accurate information.  We don't have the resources to handle forum support at this time.  The mail lists and irc channel are the best we can offer at this time.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 27 Sep 2008 06:11:43 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-05f989275c92373f99249c36394a8e72">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+<p>I second the idea of a Forum. </p>
+
+<p>I can appreciate the concerns of the Tor Personnel in relation to time and resources, however, the benefits of having a Forum might outweigh the 'costs' of organising and maintaining it. </p>
+
+<p>Further, it will offer an opportunity for the folks interested in the core objectives of the Project to air some ideas and bounce them off each other; which could only speed up further development activities in the right direction.</p>
+
+<p>Have a nice day guys!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 02 Mar 2009 06:11:44 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-627c2181f5b7c626daa40217ef1b42d3">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+<p>We see the benefits of a forum, we just lack the time to set one up and maintain it.  We feel that writing code to improve Tor is a better use of our time and discussing the ideas in a forum.  The best places to discuss code and ideas with us is on the mailing lists, irc channels, or face to face at one of the many conferences we attend.</p>
+
+<p>Our goal is to have a forum of some sort online this year.  Anyone want to help?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 04 Mar 2009 06:11:45 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9eba2f517f33996b57208b38e783787d">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+TORPROJECT NEEDS A FORUM for users having trouble installing TOR.  Please consider allowing the forum to run on an SSL server and a normal web server.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 22 Sep 2008 06:11:46 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-feb7255448dc17b8d6ed4a9dc9c3c4b4">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+Would we not run a forum over ssl and maintain zero logs?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 04 Mar 2009 06:11:47 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b92451927296fe6d7250b88f0bd39d3c">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+@)%*#)@*^%() &lt;-- Captcha
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 22 Sep 2008 06:11:48 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c742b8914bb1d86352cdf6a7e6bfa1e4">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+<p>Is there any way to prevent Tor from using servers in a geographical area ?<br />
+For example, I may wish to prevent any servers from country A from being used to form circuits.</p>
+
+<p>Many thank you's for any help.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 22 Sep 2008 06:11:49 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8a2ddc9f5f3e334edb19ce00c28b70ad">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+Right now, Tor/Vidalia cannot do this.  If you're using linux, try TorK.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 27 Sep 2008 06:11:50 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-26ab9fd709de404b862362d1136fcbdc">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+Thanks.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 28 Sep 2008 06:11:51 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-88ac0da2ea9cabb9f4a4a2e470353c27">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+<p>I'm hoping someone can direct me to information on how to configure Tor relay with Panda Security 2008.</p>
+
+<p>I'd like to give back to the Tor community by enabling my computer as a relay, but I can't figure out how to convince Panda Firewall to allow Tor/Vidalia/Pivoxy to receive incoming connections.</p>
+
+<p>A previous comment said to open ports in router/firewall software. Panda Security doesn't provide this option (as far as I can see).</p>
+
+<p>More specific assistance would be greatly appreciated.</p>
+
+<p>Any suggestions on where to go to get help with this?</p>
+
+<p>Much thanks!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 23 Sep 2008 06:11:52 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8179a4f639f206010f7a3b4a316f4891">
+
+<div class="comment-subject">
+
+Comment 19
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi there,</p>
+
+<p>The router software resides at the boundary of your computers network. Its the physical box that connects you to the Net. It will have an administration page to enable you to modify its operating parameters. You usually access this from a browser. You'll need the routers admin url to do this, then usually log in.</p>
+
+<p>The panda firewall resides on your local machine.</p>
+
+<p>Provided you can either:<br />
+A: Put your machine's IP address in the DMZ field for the router, or<br />
+B. Find the port forwarding settings for the router and route these ports to your machines MAC address or IP address, depending on the router. If you use the IP address for port forwading, you also need to ensure that IP address is set aside for your PC, so it always gets issued that IP address during DCHP solicitation.</p>
+
+<p>This may sound a little complex at first, or forgive me if you are familiar with this already.</p>
+
+<p>If you need more help, I can give you more detailed instructions, if you can tell me what router model you have.</p>
+
+<p>In all cases, I hope this helps,</p>
+
+<p>CAv.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 23 Sep 2008 06:11:53 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6f57fb1f5fe165cf4c5af933b80dac44">
+
+<div class="comment-subject">
+
+Comment 20
+
+</div>
+
+<div class="inlinecontent">
+<p>In the interests of showing willingness to help I've put up a Forum at:</p>
+
+<p> <a href="http://brassrazoo.org/forum" title="http://brassrazoo.org/forum" rel="nofollow">http://brassrazoo.org/forum</a></p>
+
+<p>for TOR users.</p>
+
+<p> It is only intended as a stop gap measure until someone does something better but if it is useful to anyone then please use it.</p>
+
+<p>It was put up just five minutes ago, I've no more available time at the moment, so bear with it. There's nothing there. Only one forum, one welcome posting. </p>
+
+<p>But it is a forum. It is yours to use if you wish.</p>
+
+<p>regards,</p>
+
+<p>ab <img src="../../smileys/smile.png" alt=":)" /></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fabrogard%20%28not%20verified%29&amp;do=goto">abrogard (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 24 Sep 2008 06:11:54 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6411e5962d59906c148d65e2d4e12546">
+
+<div class="comment-subject">
+
+Comment 21
+
+</div>
+
+<div class="inlinecontent">
+Can I use Tor on this Mac OS Power PC ?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 28 Sep 2008 06:11:55 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-01abbca683aec68b283b79df7ad556cd">
+
+<div class="comment-subject">
+
+Comment 22
+
+</div>
+
+<div class="inlinecontent">
+i tried the vidalia 9 universal bundle and it said the program that created it could not be found
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 29 Sep 2008 06:11:56 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-816d9ec3b5839710df026dd04f77dc6b">
+
+<div class="comment-subject">
+
+Comment 23
+
+</div>
+
+<div class="inlinecontent">
+<p>I had an idea of how to make TOR more anonymous. It basically means connecting to TWO relays.</p>
+
+<p>Step 1. Connect to Relay#1 and Relay#2<br />
+Step 2. Relay#1(or #x, #x being anywhere in the circuit) connects to Relay#2<br />
+Step 3. Request Data normally.<br />
+Step 4. Instead of Relay#1 sending the data back to you, it is subverted to Relay#2.<br />
+Step 5. Relay#5 Sends the data to you.</p>
+
+<p>This looks like 2 seperate 1-way connections rather than just a proxy.</p>
+
+<p>Any suggestions?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 30 Sep 2008 06:11:57 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4df8b43a3250af04888a18d678a972b0">
+
+<div class="comment-subject">
+
+Comment 24
+
+</div>
+
+<div class="inlinecontent">
+Opps, Relay#2 sends data, not #5.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 30 Sep 2008 06:11:58 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d8b0a0bdf4a9614c2a6d9dada6650551">
+
+<div class="comment-subject">
+
+Comment 25
+
+</div>
+
+<div class="inlinecontent">
+i love tor any new updates 4 tor browser bundles . Please update it
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 04 Oct 2008 06:11:59 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b3e040f548283665725534c473361204">
+
+<div class="comment-subject">
+
+Comment 26
+
+</div>
+
+<div class="inlinecontent">
+<p>Tor is very slow. Please Help.</p>
+
+<p>I'm running tor on linux but seems to be pretty slow. Do you have any ideas?<br />
+Thanks!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 06 Oct 2008 06:12:00 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-accd488941627123aeab12316c22069e">
+
+<div class="comment-subject">
+
+Comment 27
+
+</div>
+
+<div class="inlinecontent">
+<p>go to :<br />
+<a href="http://wiki.noreply.org/noreply/TheOnionRouter/FireFoxTorPerf" title="http://wiki.noreply.org/noreply/TheOnionRouter/FireFoxTorPerf" rel="nofollow">http://wiki.noreply.org/noreply/TheOnionRouter/FireFoxTorPerf</a></p>
+
+<p><img src="../../smileys/smile4.png" alt=";-)" /></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 06 Oct 2008 06:12:01 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2b1bc7be347c274faf286937ab7681ba">
+
+<div class="comment-subject">
+
+Comment 28
+
+</div>
+
+<div class="inlinecontent">
+Thanks! You've been really helpful!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 09 Oct 2008 06:12:02 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a902e32d5048aabd39ce1b0dd7f9335d">
+
+<div class="comment-subject">
+
+Comment 29
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi, My English is not perfect so maybe its already written somewhere on this site but i didn´t found it. Here are the Q<br />
+If Alice and Bob are connected through game, it will also hide the connection between them? Or it works only for internet browsers?</p>
+
+<p>and second one</p>
+
+<p>If Alice needs to create several connections to Bob, will it be with same nodes or each connection will be provided by different path?</p>
+
+<p>Thanks</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 07 Oct 2008 06:12:03 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4dd3651e174638b859a3c5bbe1edd1fd">
+
+<div class="comment-subject">
+
+Comment 30
+
+</div>
+
+<div class="inlinecontent">
+<p>An answer to the first question is yes, tor works at a TCP layer.  Any tcp applications, of which a webbrowser is one, will have the traffic anonymized in transit.</p>
+
+<p>An answer to the second question is most likely over the same circuit.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 14 Oct 2008 06:12:04 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-802a44aab1d4efb0f672074808b16467">
+
+<div class="comment-subject">
+
+Comment 31
+
+</div>
+
+<div class="inlinecontent">
+my PC get bugged.. how to speed up? thanks
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 08 Oct 2008 06:12:05 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5f9ff4b6de228dae997c742b83159ce4">
+
+<div class="comment-subject">
+
+Comment 32
+
+</div>
+
+<div class="inlinecontent">
+<p>set a few entryguards with strict entrynodes:</p>
+
+<p>StrictEntryNodes 1<br />
+EntryNodes [name], [fingerprint]</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 10 Oct 2008 06:12:06 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7b920ebbe018fb064bb1ef3e9be7d63f">
+
+<div class="comment-subject">
+
+Comment 33
+
+</div>
+
+<div class="inlinecontent">
+Everytime i try to start TOR i keep getting a message to enter my control password. I do not have a password and was never asked to set one up any ideas.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fhalljw%20%28not%20verified%29&amp;do=goto">halljw (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 11 Oct 2008 06:12:07 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-61a1078e809bc1ff123f8b368de1ba98">
+
+<div class="comment-subject">
+
+Comment 34
+
+</div>
+
+<div class="inlinecontent">
+<a href="https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#TorPasswordPrompt" title="https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#TorPasswordPrompt" rel="nofollow">https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#TorPasswordPro...</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 14 Oct 2008 06:12:08 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6d0b6ab969641004b110411319d97da2">
+
+<div class="comment-subject">
+
+Comment 35
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi there,<br />
+I've just downloaded TOR and everything with its installation is just fine but I have the following issue: for certain reasons I must use Opera browser as Firefox causes some troubles, and it will be like this until I reinstall my entire Windows. Could you, please, provide me with info about how to activate TOR in Opera? Are they compatible at all?<br />
+Thanks in advance</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 13 Oct 2008 06:12:09 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9ff85fcc595b8df6353e50dfd96ddd4e">
+
+<div class="comment-subject">
+
+Comment 36
+
+</div>
+
+<div class="inlinecontent">
+Users tell us the current version of Opera works with Tor and doesn't leak dns requests anymore.  You'll need to configure Opera to talk to tor as a proxy server on "localhost:9050".
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 14 Oct 2008 06:12:10 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c4b4ffbf96e6c97d10df47509df8f302">
+
+<div class="comment-subject">
+
+Comment 37
+
+</div>
+
+<div class="inlinecontent">
+well what version is current? Opera have no own support for socks but instead point user to use sockscap so my own efort to get this thing to work is a bit hard.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 07 Dec 2008 06:12:11 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c1b66626cc75dd815db0ef9964d6c535">
+
+<div class="comment-subject">
+
+Comment 38
+
+</div>
+
+<div class="inlinecontent">
+<p>I've been having problems using Firefox 3 with NOSCRIPT &amp; TOR together. This is my config:</p>
+
+<p>NOSCRIPT<br />
+TOR<br />
+HTTPSENDREFFER .... modified to 0 so no page knows where I came from.<br />
+All Java off etc<br />
+Cookies off..</p>
+
+<p>Anyways, everytime I have noscript installed with TOR, whenever I try and load a page, it cannot connect with NOSCRIPT being installed. When I uninstall NOSCRIPT, TOR works fine, otherwise it doesn't work with it. Any suggestions?</p>
+
+<p>Thanks</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FLINUXPWNS%20%28not%20verified%29&amp;do=goto">LINUXPWNS (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 13 Oct 2008 06:12:12 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a45d09a89e8e74087a85adf2d78b34e9">
+
+<div class="comment-subject">
+
+Comment 39
+
+</div>
+
+<div class="inlinecontent">
+If you remove noscript and leave javascript disabled, does that work?  I'm fairly sure you need to have the Firefox setting for javascript enabled for noscript to work correctly.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 14 Oct 2008 06:12:13 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5cba4f5b4bd575e65fc32b7dc1edf94f">
+
+<div class="comment-subject">
+
+Comment 40
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi Folks,</p>
+
+<p>Is there a way to persuade Tor to get a 'New Identity' on an interval ?</p>
+
+<p>I use this feature at times on sites that try to block Tor, and was hoping to make it an automated behaviour.</p>
+
+<p>I am on Windows, with Vidalia 0.1.9.</p>
+
+<p>Many thanks in advance.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 15 Oct 2008 06:12:14 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-56771b84341af89fe2886a7530cdb774">
+
+<div class="comment-subject">
+
+Comment 41
+
+</div>
+
+<div class="inlinecontent">
+I have repeatedly tried to install the latest stable OS X package (both the PPC and the Universal versions) but only get a cryptic try-again message right at the very end of the process. Can anyone direct me to where help and/or suggestions might be available? Thanks!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 16 Oct 2008 06:12:15 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c1c720af587efa862c8c22b6b531accc">
+
+<div class="comment-subject">
+
+Comment 42
+
+</div>
+
+<div class="inlinecontent">
+<p>I was just turned on to Tor yesterday and heard there is a actual "Onion router" which is wireless. is this true? If so where do you get it? Since I am new to this Tor thing I dont get it..... </p>
+
+<p>Is it just for browsing?<br />
+If I want to use Bit torrent does it still hide you?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Ffiber%20%28not%20verified%29&amp;do=goto">fiber (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 16 Oct 2008 06:12:16 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-cac94e3e7060ff35829841efe0c79abd">
+
+<div class="comment-subject">
+
+Comment 43
+
+</div>
+
+<div class="inlinecontent">
+Tor is software, there is no hardware router product from The Tor Project.  There may be commercial routers which include Tor however.  This will help you understand what tor is for, <a href="https://www.torproject.org/overview.html.en" title="https://www.torproject.org/overview.html.en" rel="nofollow">https://www.torproject.org/overview.html.en</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 16 Oct 2008 06:12:17 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-41ccff75c6492af546b64d356aed2456">
+
+<div class="comment-subject">
+
+Comment 44
+
+</div>
+
+<div class="inlinecontent">
+<p>I read that with Blossom you can specify a specific country you want Tor to connect to. But I saw the site was offline. Is there an alternative for Blossom?<br />
+Thanks in advance for your reply!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 20 Oct 2008 06:12:18 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-eea8c8f35a9b729f1057f1d942ec0f43">
+
+<div class="comment-subject">
+
+Comment 45
+
+</div>
+
+<div class="inlinecontent">
+<a href="https://svn.torproject.org/svn/blossom/trunk/" title="https://svn.torproject.org/svn/blossom/trunk/" rel="nofollow">https://svn.torproject.org/svn/blossom/trunk/</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 18 Nov 2008 06:12:19 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-33423a8ae91632add82685a01c9d7b30">
+
+<div class="comment-subject">
+
+Comment 46
+
+</div>
+
+<div class="inlinecontent">
+Hi. I'm pretty new to Tor and I really like the software and am using it with Firefox 'fitted with Torbutton'.  My question is, is there a way to make Tor stay in one IP address longer?  It seems to change IP address every say from between 10 to 30 seconds.  I'd like it to stay in one IP longer than that. Perhaps this question had been asked before, if so would someone kindly point a link. Thank you in advance.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 20 Oct 2008 06:12:20 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-84bbf21fa20b1e93d9e0460de256f8d8">
+
+<div class="comment-subject">
+
+Comment 47
+
+</div>
+
+<div class="inlinecontent">
+Look at <a href="http://www.torproject.org/tor-manual.html.en" title="http://www.torproject.org/tor-manual.html.en" rel="nofollow">http://www.torproject.org/tor-manual.html.en</a>  and the setting for TrackHostExits
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 18 Nov 2008 06:12:21 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-492cedd8346cad16b26d03db0406b537">
+
+<div class="comment-subject">
+
+Comment 48
+
+</div>
+
+<div class="inlinecontent">
+hi.whenever i connect to tor it says unable to start tor..check if the correct path of tor executable is set..the path is correct only...but it is not running..please help....
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnu%20%28not%20verified%29&amp;do=goto">Anu (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 14 Nov 2008 06:12:22 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4b3bc834d5d29fbbb78a014b2aa2d04a">
+
+<div class="comment-subject">
+
+Comment 49
+
+</div>
+
+<div class="inlinecontent">
+<p>i love this program i use it for a cleanser of ip bans on a game i play so they ban ip<br />
+i hit the subernet or w/e button and can join banned games cool program</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fburr%20%28not%20verified%29&amp;do=goto">burr (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 19 Nov 2008 06:12:23 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c715f2068264b7e20e9ed84fecc4ce2f">
+
+<div class="comment-subject">
+
+Comment 50
+
+</div>
+
+<div class="inlinecontent">
+i dont own the tor project site but i would say you need to go in the folder that says tor in it and select that folder for path ,and for me it runs in cmd prompt /mosds mode to run and when i hit run tor it loads for about 5 to 7 mins before it works
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fburr%20%28not%20verified%29&amp;do=goto">burr (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 19 Nov 2008 06:12:24 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ee16e0ae3313c120ccdf1e8d52e4a7de">
+
+<div class="comment-subject">
+
+Comment 51
+
+</div>
+
+<div class="inlinecontent">
+any updates for tor browser bundle? i need updates  4 tor browser  bundle. tor is getting slow &amp; weakened. most of the hidden sites  r down or cant acess it.wat is the solution 4 tat please tell me?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FPETER%20%28not%20verified%29&amp;do=goto">PETER (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 20 Nov 2008 06:12:25 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-352303c68962c0401250ca12dc6224ca">
+
+<div class="comment-subject">
+
+Comment 52
+
+</div>
+
+<div class="inlinecontent">
+performance is circuit dependent.  but yes, an updated tor bundle is coming.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 21 Nov 2008 06:12:26 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3a07ab3f765ce3c71a0075e274943d4f">
+
+<div class="comment-subject">
+
+Comment 53
+
+</div>
+
+<div class="inlinecontent">
+thanx phobos ! i am waiting 4  a updated tor browser bundle.hope it will come soon
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FPETER%20%28not%20verified%29&amp;do=goto">PETER (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 21 Nov 2008 06:12:27 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8620a840321e7fe352c7173ebc86299b">
+
+<div class="comment-subject">
+
+Comment 54
+
+</div>
+
+<div class="inlinecontent">
+any chance of tor bundle browser bundle 1.1.5 ? Please update it from tor browser 1.1,4 to 1.1.5.thanx
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FPETER%20%28not%20verified%29&amp;do=goto">PETER (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 21 Nov 2008 06:12:28 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-15e54e7f4dbb6437f10f3c7f6ca02617">
+
+<div class="comment-subject">
+
+Comment 55
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi there all,</p>
+
+<p>Has anyone considered compression for Tor's data stream ?</p>
+
+<p>If its not implemented already, given a compression ratio for text data of 90%, the entire Tor network would then be able to provide the same performance with 10 times the data being moved.</p>
+
+<p>I was thinking that this is feasible, since Tor (until the data leaves the circuit at both ends) is a closed system, so compressing the data stream on its way through a circuit is possible ?</p>
+
+<p>Does anyone have any thoughts on this ?</p>
+
+<p>Open source compression libraries exist to make implementing this free from licensing too....</p>
+
+<p>Would love to hear some thoughts</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 21 Nov 2008 06:12:29 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5b5dea22ae66c18be87911a1d0a54723">
+
+<div class="comment-subject">
+
+Comment 56
+
+</div>
+
+<div class="inlinecontent">
+<p>i have windows xp with vidalia bundle installed on it.<br />
+i want to change to New Identity through without using Vidalia Bundle.<br />
+Please let me know how to do this and how to  use tor commands too in windows.</p>
+
+<p>please reply.i tried everywhere on web. today i am here to ask your experts.<br />
+waiting.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fbhavin%20%28not%20verified%29&amp;do=goto">bhavin (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 02 Mar 2009 06:12:30 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-66037829c17185d8b4bd96fdfa1b0b4d">
+
+<div class="comment-subject">
+
+Comment 57
+
+</div>
+
+<div class="inlinecontent">
+<p>hi, i am using an nas storage incl. a torrent client. if i connect to "tor" i cannot actually reach my nas box anymore. how come? further, i am not sure if my box actually connects to "tor" since i cannot connect to it and thus i am visible with all my activities from the box. can anyone help?<br />
+cheers<br />
+leutnant hathi</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fleutnanthathi%20%28not%20verified%29&amp;do=goto">leutnanthathi (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 25 May 2009 06:12:31 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ed6e7df9c0c68a6fb61f0f0e041933bc">
+
+<div class="comment-subject">
+
+Comment 58
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi!</p>
+
+<p>I have the same problem as leutnant hathi. I use an iomega ix2 NAS (network access storage) for torrent downloads independently from the PC.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 25 Jun 2009 06:12:32 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9a3bb5363d1c67ec4de14e57c759825f">
+
+<div class="comment-subject">
+
+Comment 59
+
+</div>
+
+<div class="inlinecontent">
+<p>Marry X'mas,did you prepareed <img src="../../smileys/smile.png" alt=":)" /> your kids or your lover a gift.<a href="http://www.tiffanyonlinestore.co.uk/" rel="nofollow"><strong>tiffany jewelry</strong></a> was the most lovely bling-bling for you girl friend or you little beautiful princess.<a href="http://www.tiffanyonlinestore.us/7-tiffany-rings" rel="nofollow"><strong>tiffany rings</strong></a>:),<a href="http://www.tiffanyonlinestore.co.uk/3-tiffany-necklaces" rel="nofollow">tiffany necklaces</a> made from silver not too much expensive and also bring you great value,<br />
+<a href="http://www.buyreplicawatch.com/" rel="nofollow"><strong>replica watches</strong></a> were excellent choice.most replica watches were not easy tell from the original one.By only take a glance at the <a href="http://www.buyreplicawatch.com/rolex-datejusts-watches-c-12.html" rel="nofollow">Replica Rolex</a> no body could tell it from a genuine one.:) from micheal</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 27 Oct 2009 06:12:33 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b62eefb92e8a48d5ef5eb8dd477c03ac">
+
+<div class="comment-subject">
+
+Comment 60
+
+</div>
+
+<div class="inlinecontent">
+<p>Thanks for taking the time to discuss this, I feel strongly about it and love learning more on this topic. If possible, as you gain expertise, would you mind updating your blog with more information? It is extremely helpful for me.<br />
+<strong>wedding dresses</strong><br />
+<strong>Bridesmaid Dresses</strong><br />
+<strong>Mother Of The Bride Dresses</strong><br />
+<strong>Flower Girl Dresses</strong></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 25 Jan 2010 06:12:34 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c33a8617ea5de9fb177d0eea0c2846f9">
+
+<div class="comment-subject">
+
+Comment 61
+
+</div>
+
+<div class="inlinecontent">
+<p>Hello I got Tor problems.<br />
+Here are the logs from tor!<br />
+Feb 27 15:23:33.699 [Warning] No available nodes when trying to choose node. Failing.<br />
+Feb 27 15:23:33.699 [Warning] No available nodes when trying to choose node. Failing.<br />
+Feb 27 15:23:33.699 [Warning] No available nodes when trying to choose node. Failing.<br />
+Feb 27 15:23:33.699 [Warning] No available nodes when trying to choose node. Failing.<br />
+Feb 27 15:23:33.699 [Warning] No available nodes when trying to choose node. Failing.<br />
+Feb 27 15:23:33.699 [Warning] No available nodes when trying to choose node. Failing.</p>
+
+<p>Pls help <img src="../../smileys/ohwell.png" alt=":/" /></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 27 Feb 2011 06:12:35 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FAugust_2008_Progress_Report&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:11:34 AM CDT</span>
+<!-- Created <span class="date">Sun 21 Sep 2008 06:05:39 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

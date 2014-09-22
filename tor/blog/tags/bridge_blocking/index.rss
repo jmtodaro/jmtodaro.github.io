@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged bridge_blocking</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/bridge_blocking/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>erinn: Tor 0.2.2.22-alpha is out</title>
+	<dcterms:creator>erinn</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_22-alpha_is_out/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_22-alpha_is_out/</link>
+
+
+	<category>/tags/alpha_release</category>
+
+	<category>/tags/bridge_blocking</category>
+
+	<category>/tags/bridges</category>
+
+	<category>/tags/tor</category>
+
+
+	<pubDate>Thu, 27 Jan 2011 09:12:17 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:13:43Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download/download&quot; title=&quot;https://www.torproject.org/download/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download/download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.2.22-alpha - 2011-01-25&lt;br /&gt;
+&lt;strong&gt;Major bugfixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fix a bounds-checking error that could allow an attacker to&lt;br /&gt;
+      remotely crash a directory authority. Bugfix on 0.2.1.5-alpha.&lt;br /&gt;
+      Found by &quot;piebeer&quot;.&lt;/li&gt;
+&lt;li&gt;Don&#39;t assert when changing from bridge to relay or vice versa&lt;br /&gt;
+      via the controller. The assert happened because we didn&#39;t properly&lt;br /&gt;
+      initialize our keys in this case. Bugfix on 0.2.2.18-alpha; fixes&lt;br /&gt;
+      bug 2433. Reported by bastik.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Minor features:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Adjust our TLS Diffie-Hellman parameters to match those used by&lt;br /&gt;
+      Apache&#39;s mod_ssl.&lt;/li&gt;
+&lt;li&gt;Provide a log message stating which geoip file we&#39;re parsing&lt;br /&gt;
+      instead of just stating that we&#39;re parsing the geoip file.&lt;br /&gt;
+      Implements ticket 2432.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Minor bugfixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Check for and reject overly long directory certificates and&lt;br /&gt;
+      directory tokens before they have a chance to hit any assertions.&lt;br /&gt;
+      Bugfix on 0.2.1.28 / 0.2.2.20-alpha. Found by &quot;doorss&quot;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_22-alpha_is_out/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: China blocking Tor:  Round Two</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/China_blocking_Tor__Round_Two/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/China_blocking_Tor__Round_Two/</link>
+
+
+	<category>/tags/bridge_blocking</category>
+
+	<category>/tags/censorship</category>
+
+	<category>/tags/china</category>
+
+	<category>/tags/great_firewall</category>
+
+	<category>/tags/relay_blocking</category>
+
+
+	<pubDate>Thu, 11 Mar 2010 19:49:18 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:52:07Z</dcterms:modified>
+
+	<description>&lt;p&gt;Experts in China tell us Tor is not being singled out, that all &quot;circumvention&quot; tools are being subjected to the censorship regime of the Great Firewall of China as politically sensitive anniversaries come about.  We also hear people in China need &lt;a href=&quot;http://en.wikipedia.org/wiki/Human_flesh_search_engine&quot;&gt;their privacy too&lt;/a&gt;, even if they never leave the Chinese Internet.  &lt;/p&gt;
+
+&lt;p&gt;However, it appears China is getting better at blocking Tor.  Here&#39;s a graph of returning users to the Tor Network from China:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://metrics.torproject.org/graphs/direct-users/china-direct-180d.png&quot;&gt;&lt;img src=&quot;https://blog.torproject.org/files/china-direct-180d.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;However, most Tor users in China switched to non-public relays, called bridges, over the past few months.  Interestingly, the GFW has also started blocking some of the more popular bridges: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/china-blocking-tor-round-two&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/China_blocking_Tor__Round_Two/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

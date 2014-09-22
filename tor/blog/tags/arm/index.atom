@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged arm</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/arm/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/arm/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/arm/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:18:19Z</updated>
+<entry>
+	<title>Arm Release 1.4.2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Arm_Release_1_4_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Arm_Release_1_4_2/"/>
+
+	<author><name>atagar</name></author>
+
+
+
+
+
+
+	<category term="/tags/arm" />
+
+
+	<updated>2011-04-05T12:18:19Z</updated>
+	<published>2011-04-04T16:14:48Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hi, the next release of arm is now available. This one was focused on a full rewrite of the connection panel, improving its maintainability, performance, and (best of all) features. When rendered, the panel&#39;s baseline cpu usage is less than half of its previous incarnation, along with providing far more information...&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.atagar.com/transfer/tmp/armScreenshot-1.4.2.png&quot; title=&quot;http://www.atagar.com/transfer/tmp/armScreenshot-1.4.2.png&quot; rel=&quot;nofollow&quot;&gt;http://www.atagar.com/transfer/tmp/armScreenshot-1.4.2.png&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;- Full paths for your currently active Tor circuits&lt;br /&gt;
+- Identification of the applications attached to your socks, hidden service, and control ports&lt;br /&gt;
+- Identifying exit connections and the common uses for ports they&#39;re attached to&lt;br /&gt;
+- Much better accuracy in identifying client and directory connections&lt;br /&gt;
+- Expanded path information when there&#39;s space available (thanks to Fabian Keil)&lt;/p&gt;
+
+&lt;p&gt;... and many, many more enhancements and fixes. For the full list see:&lt;br /&gt;
+&lt;a href=&quot;http://www.atagar.com/arm/releaseNotes.php#1.4.2&quot; title=&quot;http://www.atagar.com/arm/releaseNotes.php#1.4.2&quot; rel=&quot;nofollow&quot;&gt;http://www.atagar.com/arm/releaseNotes.php#1.4.2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Also, thanks to pyllyukko arm is now on slackbuilds.org so there&#39;s simple install options available for:&lt;br /&gt;
+Debian, Ubuntu, Gentoo, Arch Linux, and Slackware&lt;/p&gt;
+
+&lt;p&gt;As always, screenshots and downloads are available from the project&#39;s homepage:&lt;br /&gt;
+&lt;a href=&quot;http://www.atagar.com/arm/&quot; title=&quot;http://www.atagar.com/arm/&quot; rel=&quot;nofollow&quot;&gt;http://www.atagar.com/arm/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Cheers! -Damian&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Arm_Release_1_4_2/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Arm_Release_1_4_2/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Arm Release 1.4.1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Arm_Release_1_4_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Arm_Release_1_4_1/"/>
+
+	<author><name>atagar</name></author>
+
+
+
+
+
+
+	<category term="/tags/arm" />
+
+
+	<updated>2011-04-05T12:11:47Z</updated>
+	<published>2011-01-08T06:58:06Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hi all. A new release of &lt;a href=&quot;http://www.atagar.com/arm/&quot; rel=&quot;nofollow&quot;&gt;arm&lt;/a&gt; is available, including enhancements targeted at performance and cross platform compatibility. In particular, this release provides... &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/arm-release-141&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Arm_Release_1_4_1/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Arm_Release_1_4_1/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Arm Release 1.4.0</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Arm_Release_1_4_0/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Arm_Release_1_4_0/"/>
+
+	<author><name>atagar</name></author>
+
+
+
+
+
+
+	<category term="/tags/arm" />
+
+
+	<updated>2011-04-05T12:11:26Z</updated>
+	<published>2010-12-01T05:21:06Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;After over a year it&#39;s about time that I announced an arm release so here it is! What&#39;s new since &lt;a href=&quot;http://archives.seul.org/or/talk/Aug-2009/msg00040.html&quot; rel=&quot;nofollow&quot;&gt;August of 2009&lt;/a&gt;, you ask? Lots. The project has been under very active development, continuing to add usability improvements to make relay operation nicer and less error prone. If you&#39;re really curious what I&#39;ve been up to this last year then it&#39;s all available in the &lt;a href=&quot;http://www.atagar.com/arm/log.php&quot; rel=&quot;nofollow&quot;&gt;change log&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For those unfamiliar, arm is a terminal monitor for Tor relays and, to a growing extent, end users. It provides: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/arm-release-140&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;resource usage (bandwidth, cpu, and memory usage)&lt;/li&gt;
+&lt;li&gt;general relaying information (nickname, fingerprint, flags, or/dir/controlports)&lt;/li&gt;
+&lt;li&gt;event log with optional regex filtering and deduplication&lt;/li&gt;
+&lt;li&gt;connections correlated against tor&#39;s consensus data (ip, connection types, relay details, etc)&lt;/li&gt;
+&lt;li&gt;an editor to quickly alter Tor&#39;s configuration&lt;/li&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Arm_Release_1_4_0/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Arm_Release_1_4_0/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>October 2010 Progress Report</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/October_2010_Progress_Report/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/October_2010_Progress_Report/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/arm" />
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/https_everywhere" />
+
+	<category term="/tags/metrics" />
+
+	<category term="/tags/progress_report" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+	<category term="/tags/translations" />
+
+
+	<updated>2011-04-05T12:11:05Z</updated>
+	<published>2010-11-09T20:24:09Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;strong&gt;New Releases&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/october-2010-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;On October 29th, we released updated Tor Browser Bundles for OS X, Linux, and Windows.  This is an upgrade to Firefox 3.6.12 which fixes a critical bug and OS X users&#39; Torbutton will now show up. &lt;a href=&quot;https://blog.torproject.org/blog/new-tor-browser-bundles-released-take-two&quot; title=&quot;https://blog.torproject.org/blog/new-tor-browser-bundles-released-take-two&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/new-tor-browser-bundles-released-take-t...&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;On October 28th, we released new OSX Vidalia bundles which include Tor 0.2.2.17-alpha.  Vidalia 0.2.10 changed the way we deal with the geoip databases by dropping the remote geoip lookups. This caused a lot of headaches for OS X users because of the layout of the package, but it&#39;s fixed in this version. &lt;a href=&quot;https://blog.torproject.org/blog/mac-os-x-vidalia-bundle-02217-alpha-out&quot; title=&quot;https://blog.torproject.org/blog/mac-os-x-vidalia-bundle-02217-alpha-out&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/mac-os-x-vidalia-bundle-02217-alpha-out&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;On October 27th, we released a new Tor Check to fix links to documentation urls, and clarify what users should do when getting the success result. &lt;a href=&quot;https://check.torproject.org&quot; title=&quot;https://check.torproject.org&quot; rel=&quot;nofollow&quot;&gt;https://check.torproject.org&lt;/a&gt;.&lt;/li&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/October_2010_Progress_Report/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/October_2010_Progress_Report/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Vidalia 0.2.4 Released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_4_Released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_4_Released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/arm" />
+
+	<category term="/tags/atagar" />
+
+	<category term="/tags/gsoc" />
+
+
+	<updated>2011-04-05T11:35:04Z</updated>
+	<published>2009-09-07T20:13:01Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Vidalia 0.2.4 is released.  The OS X -alpha bundles are updated to fix a bug in the default &quot;bootstrap&quot; vidalia.conf file that pointed to a non-existent Polipo configuration file, causing Polipo to fail on startup.&lt;/p&gt;
+
+&lt;p&gt;The Changelog for this release is: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/vidalia-024-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Split the message log into &quot;Basic&quot; and &quot;Advanced&quot; views. The&lt;br /&gt;
+    &quot;Advanced&quot; view contains standard log messages from Tor, while the new&lt;br /&gt;
+    experimental &quot;Basic&quot; view displays status events received from Tor.&lt;br /&gt;
+    (Ticket #265)&lt;/li&gt;
+&lt;li&gt;Apply an application-global stylesheet on OS X that forces all tree&lt;br /&gt;
+    widgets in Vidalia to use the 12pt font recommended by Apple&#39;s human&lt;br /&gt;
+    interface guidelines.&lt;/li&gt;
+&lt;li&gt;Add an OSX_FORCE_32BIT CMake option that can be used to force a 32-bit&lt;br /&gt;
+    build on Mac OS X versions that default to 64-bit builds (e.g., Snow&lt;br /&gt;
+    Leopard), if only 32-bit versions of the Qt libraries are available.&lt;/li&gt;
+&lt;li&gt;Fix a bug introduced in 0.2.3 that prevented Vidalia from correctly&lt;br /&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_4_Released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_4_Released/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

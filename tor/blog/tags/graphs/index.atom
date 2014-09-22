@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged graphs</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/graphs/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/graphs/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/graphs/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:39:06Z</updated>
+<entry>
+	<title>Picturing Tor censorship in China</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Picturing_Tor_censorship_in_China/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Picturing_Tor_censorship_in_China/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bridges" />
+
+	<category term="/tags/censorship" />
+
+	<category term="/tags/censorship_circumvention" />
+
+	<category term="/tags/china" />
+
+	<category term="/tags/directory_requests" />
+
+	<category term="/tags/graphs" />
+
+	<category term="/tags/great_firewall_of_china" />
+
+
+	<updated>2011-04-05T11:39:06Z</updated>
+	<published>2009-10-14T02:56:10Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;As &lt;a href=&quot;https://blog.torproject.org/blog/tor-partially-blocked-china&quot;&gt;reported&lt;/a&gt;, Tor was partially blocked by China on September 25th or so in anticipation of the CCP October 1, 2009 60th anniversary.  &lt;/p&gt;
+
+&lt;p&gt;Here&#39;s what one directory mirror recorded for September, &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://blog.torproject.org/files/2009-10-12-china-dirreq-trusted.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And here&#39;s the growth of &lt;a href=&quot;https://www.torproject.org/bridges&quot;&gt;bridge&lt;/a&gt; users in response.  Alas, like our graphs of &lt;a href=&quot;https://blog.torproject.org/blog/measuring-tor-and-iran-part-two&quot;&gt;bridge use in Iran in June 2009&lt;/a&gt;, we only have relative counts for bridge use, not absolute counts. But with a 70x increase in a week, we are talking about 10000+ bridge users:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://blog.torproject.org/files/2009-10-12-china-bridge-usage.png&quot; /&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Picturing_Tor_censorship_in_China/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Picturing_Tor_censorship_in_China/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

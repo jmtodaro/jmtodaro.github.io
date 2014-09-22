@@ -1,0 +1,1680 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Bittorrent over Tor isn&#x27;t a good idea</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Anonymous: Comment 1</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_1/</link>
+
+	<pubDate>Fri, 30 Apr 2010 06:56:14 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:14Z</dcterms:modified>
+
+	<description>&lt;p&gt;This is one of those times where I gasp, and say &quot;Oh sweet (Insert religious figure&#39;s name to use in vain)&quot;&lt;/p&gt;
+
+&lt;p&gt;Seriously, this is bad for a large number of people. Torrents were already kinda dead, but this might slay them.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 2</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_2/</link>
+
+	<pubDate>Sat, 01 May 2010 06:56:15 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:15Z</dcterms:modified>
+
+	<description>&lt;p&gt;Torrents are dead?&lt;br /&gt;
+How so?&lt;br /&gt;
+Bittorrent is probably the best way to share files right now and will be be for years.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 3</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_3/</link>
+
+	<pubDate>Mon, 03 May 2010 06:56:16 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:16Z</dcterms:modified>
+
+	<description>&lt;p&gt;Agreed. I use torrents on a regular basis, downloading everything save movies and music available in the United States with it. Never gotten caught, never used protection until very recently (protection being in the form of Peerblock).&lt;/p&gt;
+
+&lt;p&gt;I think that a lot of people are worrying too much over this and/or are using ISP&#39;s that are too freaking nosy for their own good.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 4</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_4/</link>
+
+	<pubDate>Fri, 30 Apr 2010 06:56:17 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:17Z</dcterms:modified>
+
+	<description>I2P is a &quot;darknet&quot; that supports Torrents very well. Nowadays one can easily get speeds up to 50 Kilobytes/s in good swarms. There are 2 good trackers with lots of uploads per day. Anomos is an option too but the tracker traffic is still &quot;in the open&quot; from what I know and there does not seem any good tracker around.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 5</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_5/</link>
+
+	<pubDate>Fri, 30 Apr 2010 06:56:18 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:18Z</dcterms:modified>
+
+	<description>&lt;p&gt;There is a simple way to distinguish bittorrent tracker traffic from everything else.&lt;/p&gt;
+
+&lt;p&gt;It always sends a GET request with info_hash peer_id and port variables.&lt;br /&gt;
+So tor could use this to identify it, its much better then using port 80, alot of trackers run on port 80 too so you cant use the port method to seperate trackers from websites.&lt;/p&gt;
+
+&lt;p&gt;If the tracker communication is SSL you cant see the request, but then the exit node cant read it either so no attack.&lt;/p&gt;
+
+&lt;p&gt;Everyone using BT over TOR should be using a firewall to make sure their torrent app can only communicate with tor.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 6</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_6/</link>
+
+	<pubDate>Mon, 03 May 2010 06:56:19 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:19Z</dcterms:modified>
+
+	<description>&lt;p&gt;Still, as explained, many clients publish your IP.&lt;/p&gt;
+
+&lt;p&gt;&quot;The attack is actually worse than that: apparently in some cases uTorrent, BitSpirit, and libTorrent simply write your IP address directly into the information they send to the tracker and/or to other peers. Tor is doing its job: Tor is _anonymously_ sending your IP address to the tracker or peer. Nobody knows where you&#39;re sending your IP address from. But that probably isn&#39;t what you wanted your Bittorrent client to send.&quot;&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 7</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_7/</link>
+
+	<pubDate>Fri, 30 Apr 2010 06:56:20 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:20Z</dcterms:modified>
+
+	<description>People who are interested in BitTorrent and Tor might want to look at the Anomos project ( http://www.anomos.info/ ).
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 8</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_8/</link>
+
+	<pubDate>Fri, 30 Apr 2010 06:56:21 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:21Z</dcterms:modified>
+
+	<description>Instead of separating ports by 80 and !=80 couldn&#39;t each port below 1024 get&#39;s own and &amp;gt;=1024 share one (since only root can open &amp;lt;1024 these are proper servers)? Obviously this doesn&#39;t help with the everything on port 80, but basically fixes the rest.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 9</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_9/</link>
+
+	<pubDate>Fri, 30 Apr 2010 06:56:22 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:22Z</dcterms:modified>
+
+	<description>How about the plain vanilla CLI client? 
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 10</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_10/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_10/</link>
+
+	<pubDate>Fri, 30 Apr 2010 06:56:23 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:23Z</dcterms:modified>
+
+	<description>I don&#39;t understand:  I have no idea what Tor is, but run uTorrent with Forced Protocol Encryption, Disallow legacy connections, and a software program called PeerGuardian.  Am I safe?  
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 11</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_11/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_11/</link>
+
+	<pubDate>Sat, 01 May 2010 06:56:24 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:24Z</dcterms:modified>
+
+	<description>&lt;p&gt;Safe from what?&lt;br /&gt;
+The encryption on bittorent is good if your ISP is throttling bittorrent traffic.  (It hides your use of bittorrent from them)  Your ip address is still shared with the tracker and other users.&lt;br /&gt;
+PeerGuardian blocks known lowlife ip addresses from connecting to you.  (RIAA MPAA, etc.)  But it will _never_ get them all.  (not possible) &lt;/p&gt;
+
+&lt;p&gt;What do you need to be &quot;safe&quot; from anyway?  (with bittorrent)&lt;br /&gt;
+There are more important things to use Tor for.&lt;/p&gt;
+
+&lt;p&gt;In the US, where i live, almost no ISP will disconnect you for downloading copyrighted material.  It&#39;s a major reason for having an internet connection in the first place.  &lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 12</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_12/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_12/</link>
+
+	<pubDate>Fri, 30 Apr 2010 06:56:25 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:25Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hi!!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;Well, i ain&#39;t very sure about the headline!!! I think that it could be cool to have a new bit-torrent application made to work with TOR!!! You could even call it &quot;TORrent&quot;!!! It&#39;s very easy!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!&lt;br /&gt;
+I think that something of missing in Tor is a robust publishing system to share documents, in a way to resist to the shut-down of a single server!!!! i think it to be the main flaw of WikiLeaks too!!! but also of Wikipedia, and every normal website: in the inner idea of a very well working Internet, there is the concept of &lt;strong&gt;decentralization!!!!!!&lt;/strong&gt; but that concept has been almost forgotten!!!!&lt;br /&gt;
+A super cool P2P system is another thing missing in TOR!!!!!!!&lt;br /&gt;
+At this time, i don&#39;t think a P2P system internal to TOR to be very useful, but in the future it&#39;ll be very necessary!!!!!! So, you&#39;d better to think about making one!!!!!!!!!!!!!!!!!!&lt;br /&gt;
+I think that the bittorrent client for TOR should work only within the TOR network!!! You can have some &quot;hidden services&quot; (those addresses ending with &quot;.onion&quot;) to work as HTTP-trackers!!!! So that all TORrent clients will have only tracker addresses to contact within the TOR network!!! All TORrent clients should be enabled as internal tor nodes, for the whole TOR network (to share the global network load too!!!) and every client should start one &quot;hidden service&quot; to accept incoming connections!!! Yeah, i think this could actually work!!!!! So, you can send your .onion address to the Tracker, and at the same time download the list of others peers sharing your same file!!!! You can then connect to the .onion hidden service of the others peers, and the others will do the same after having read your .onion address from the tracker!!!!!!&lt;br /&gt;
+I&#39;m sure, in this way, you&#39;ll have everything: a safe &amp;amp; secure bittorrent and a lot of bandwidth (because the lack of ExitNodes won&#39;t be important) to be used also for others purposes (so, when you are downloading/uploading something, but there is some free bandwidth, your node can be used also for the normal usage of TOR)!!!!!!!!!!!!!!!!!&lt;br /&gt;
+You can have the torrent client to automatically set the upload and download speed limit to 1/4 of the bandwidth set to be used for the same upload and download channel of your node!!!!!! it&#39;s because i think that when you are using .onion addresses your connection pass through four nodes (or three?!!! i saw once they were four nodes!!!!!!!!!!!). In this way, you can avoid to have a congestion in the network!!! Because if you share a file at 1MB/sec... it&#39;ll take 1MB*4nodes=4MB/sec of bandwidth to handle the bits stream!!!!!! So you need to go 1/4 slower to don&#39;t break the balance!!!!!!&lt;br /&gt;
+I&#39;ve got this idea, after reading this blog entry and another one on torrentfreak i read yesterday!!!!&lt;br /&gt;
+You should read this article too!!! It&#39;s on TF, and it&#39;s entitled «&lt;strong&gt;Child Pornography Is Great, Anti-Pirates Say&lt;/strong&gt;» ( http://tinyurl.com/2cgp8xy ). the whole article can be summarized in these two quotes:&lt;br /&gt;
+Johan Schlüter of the Danish Anti-Piracy Group enthusiastically said:&lt;br /&gt;
+&lt;code&gt;&lt;br /&gt;
+Child pornography is great. It is great because politicians understand child pornography. By playing that card, we can get them to act, and start blocking sites. And once they have done that, we can get them to start blocking file sharing sites.&lt;br /&gt;
+&lt;/code&gt;&lt;br /&gt;
+and Christian Engstrom (Pirate Party) heroically answered:&lt;br /&gt;
+&lt;code&gt;&lt;br /&gt;
+The big film and record companies want censorship of the net, and they are perfectly willing to cynically use child porn as an excuse to get it.&lt;br /&gt;
+&lt;/code&gt;&lt;br /&gt;
+Well, in don&#39;t want to enter in the discussion of child porn!!! (it&#39;s normal if pro-copyright organizations enjoy it!!!! they&#39;re usual to do the wrong things!!!!!!!!) But i want to very enter into the discussion of FILE SHARING and COPYRIGHT!!!!!! It isn&#39;t a fault of american people; but america&#39;s &lt;strong&gt;extremist capitalism and imperialism&lt;/strong&gt; are evil, and they must be fought!!! this is what pirate parties are actually doing!!!! and the intellectual property is only one excuse to add filters, censorship systems, to the Internet!!! to allow politicians (&lt;em&gt;read&lt;/em&gt; «puppets bribed by lobbyists»), to control the flow of information, and thus your life!!!!!!!! This is why i think that Tor, as it&#39;s a system made to be used against censorship and for political reasons, is perfect to be extended to be ready to be used as an alternative to the current centralized bit-torrent!!!!!!!!!!!!!!!!!!!!! I&#39;m sure that the RIAA and the MPAA, won&#39;t be happy nor agree with me; but it&#39;s a their fault, they didn&#39;t bribed me yet!!!!!!!!!!!!! hahah!!!!!!!!!!!!!!!!!!!!!&lt;br /&gt;
+~bee!!!!!!!!!!!!!!!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 13</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_13/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_13/</link>
+
+	<pubDate>Sat, 01 May 2010 06:56:26 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:26Z</dcterms:modified>
+
+	<description>&lt;p&gt;Who wants to join my anti-bee movement!?!  &lt;/p&gt;
+
+&lt;p&gt;I want to implore the Tor people to _stop_ allowing this thing called bee from posting until it learns how to write, or maybe we should send it a keyboard without the exclamation point key, and even then it&#39;s words are a waste, it needs to grow up.&lt;/p&gt;
+
+&lt;p&gt;I find it odd that thing called bee didn&#39;t spam it&#39;s silly little program like it always does while claiming Tor-Browser Bundle is insecure.   Maybe the thing called bee has learned part of it&#39;s lesson?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 14</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_14/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_14/</link>
+
+	<pubDate>Sun, 02 May 2010 06:56:27 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:27Z</dcterms:modified>
+
+	<description>bee is moxie marlinspike of http://thoughtcrime.org/
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 15</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_15/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_15/</link>
+
+	<pubDate>Mon, 03 May 2010 06:56:28 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:28Z</dcterms:modified>
+
+	<description>Is that true?  I have a hard time believing that, how do you know?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 16</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_16/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_16/</link>
+
+	<pubDate>Tue, 04 May 2010 06:56:29 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:29Z</dcterms:modified>
+
+	<description>Ever thought about bee wanting to disguise himself by using exclamation and a certain style of writing. Start thinking, stop complaining!
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 17</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_17/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_17/</link>
+
+	<pubDate>Wed, 05 May 2010 06:56:30 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:30Z</dcterms:modified>
+
+	<description>&lt;p&gt;Yea and that&#39;s a really stupid and annoying to do it.  I do think that bee lovers are actually bee posting without exclamation point &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/../../smileys/smile4.png&quot; alt=&quot;;-)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;He is a troll and a spammer.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 18</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_18/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_18/</link>
+
+	<pubDate>Sat, 01 May 2010 06:56:31 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:31Z</dcterms:modified>
+
+	<description>&lt;p&gt;I think that&#39;s a very good post, bee.  You make a lot of points that I agree with.  I&#39;ve been thinking for a while now that, you know, Tor and BitTorrent could almost be made for each over if they weren&#39;t so quick to dismiss each other (more so Tor because it rapes their exits).  The Tor network looks pretty stagnant to me, not growing very fast, and as a consequence is quite vulnerable due to it&#39;s small size/capacity.  Tor needs many more relays.  A BitTORrent system could easily provide that as it would offer an incentive to everyday users to want to engage in the Tor network.  I certainly would, if it was done right.&lt;/p&gt;
+
+&lt;p&gt;One comment from a Chinese Tor user in a recent blog post here said it quite well to me.  To paraphrase it went something like: &quot;How come they [GFW] can stop Tor, but file-sharing works fine?&quot;  I suggest the reason for that is that file-sharing &#39;technology&#39; is HIGHLY popular, often with networks running containing 10&#39;s/100&#39;s of thousands, even millions of nodes.  The total is certainly in the many millions out there.  But what has Tor?  Less than 2000 nodes at the moment?&lt;/p&gt;
+
+&lt;p&gt;BitTorrent shouldn&#39;t be dismissed so quickly if one&#39;s real aim is to create a network of strength, resilient to attacks from the controlling interests of a few.&lt;/p&gt;
+
+&lt;p&gt;But, about here is where things start to get political, I guess.  This is where you&#39;re going to get a split in people&#39;s reaction to such an idea.  It&#39;s highly likely that both government and business are NOT going to enjoy the thought of such a thing existing as it would threaten their interests (control, money, power, etc).  If you really want to build a network that can survive, these such entities have to have their efforts DENIED.  This could include Tor&#39;s masters, too (who pays the bills?).&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 19</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_19/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_19/</link>
+
+	<pubDate>Sun, 02 May 2010 06:56:32 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:32Z</dcterms:modified>
+
+	<description>&lt;p&gt;bittorrent is not designed to be private nor anonymous.  We&#39;ve said for years to not use bittorrent over tor because it will screw the user in some way.  Now we have an example of at least one of those ways.  &lt;/p&gt;
+
+&lt;p&gt;This is secondary to the problem of any bulk file transfers over tor that cause pain for everyone in the network.  We&#39;re addressing this problem with recent patches to the -alpha branch given to us by researchers at the University of Waterloo in Canada.  This patch went in with 0.2.2.7-alpha, &lt;a href=&quot;http://blog.torproject.org/blog/tor-0227-alpha-released&quot; title=&quot;http://blog.torproject.org/blog/tor-0227-alpha-released&quot; rel=&quot;nofollow&quot;&gt;http://blog.torproject.org/blog/tor-0227-alpha-released&lt;/a&gt;.  The goal here is to better weight circuits so busy ones (aka bulk file transfers) aren&#39;t dominating less busy circuits.&lt;/p&gt;
+
+&lt;p&gt;As for your conspiracy theory about Tor&#39;s masters.  Tor&#39;s masters are the developers.  We control the future of Tor.  If someone wants to see certain features in Tor, they are welcome to discuss it with us.  However, everything we do is released into the open, with source code, commit trails, and specifications.  &lt;/p&gt;
+
+&lt;p&gt;There are other networks willing to take your bulk file transfer traffic, such as bitblinder, i2p, freenet, gnunet, etc.  We haven&#39;t studied them in detail so we cannot make statements on their anonymity, safety, and functionality.  However, they exist.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 20</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_20/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_20/</link>
+
+	<pubDate>Sun, 02 May 2010 06:56:33 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:33Z</dcterms:modified>
+
+	<description>&lt;p&gt;I know BitTorrent isn&#39;t anonymous. I know the technology, and I also know that those things the research here highlight are trivial fixes to overcome.  Even now with the proper configuration of an appropriate client can these issues be overcome.  &#39;bee&#39; here suggests some rather interesting ideas here to fix those issues too, in my opinion.  I wouldn&#39;t be so quick to dismiss them personally.&lt;/p&gt;
+
+&lt;p&gt;Your problem of users using BitTorrent over Tor is not going to go away short of you devising some technical cludge to try to strap it down, and to me that doesn&#39;t sound like the kind of freedom of information access network I had envisaged for the Tor network.  You are, in effect, trying to stifle some aspect of users using the network to freely access and exchange information.  The pain is that all this data is being pushed across the bridges, relays and, especially, exits, isn&#39;t it?  Well if all those relays were &#39;BitTORrent&#39; clients and nothing went into bridges or out the exits, then you&#39;d have a great many more relays availiable for all Tor users, and considerably reduced load through bridges and exits.  Lets see China attempt to block 100&#39;s of thousands/millions of relays run from domestic addresses...&lt;/p&gt;
+
+&lt;p&gt;By the way... I contribute relays myself.  I&#39;m quite aware that file-sharing over Tor is a problem.  I totally support the idea of Tor, and appreciate the work that has gone into it.  I will still criticise it though.&lt;/p&gt;
+
+&lt;p&gt;My bulk traffic?  Who says *I* want to push bulk data over it? (the cheek, too, considering the bulk of the data I push here is RELAYING TOR USER TRAFFIC)  If I wanted to do that I&#39;d proxy µTorrent over the Tor socks interface, disable DHT/PEX/LPD, set bt.trans_disposition to &quot;1&quot;, write in a fake address for the &#39;ip/hostname to report to tracker&#39; field, force encryption, and run it on a separate Tor instance.  There&#39;s nothing stopping me pushing that bulk data right now, phobos, just as there isn&#39;t for all those out there using BitTorrent+Tor right now that you&#39;re all complaining about.&lt;/p&gt;
+
+&lt;p&gt;Like I said, I think you&#39;re quick to dismiss the possibilities here.  I suspect it&#39;s probably personal, actually, because you see BitTorrent/file-sharing as a threat to the health of your network.  But maybe I&#39;m wrong in that, in that you really have given it all a lot of thought and arrived at the conclusion that it wouldn&#39;t work for reasons xyz.  I don&#39;t know that, though I&#39;d be interested to hear why you think it wouldn&#39;t, or isn&#39;t a good idea.&lt;/p&gt;
+
+&lt;p&gt;You should know you&#39;re vulnerable right now.  China/Iran has already demonstrated it&#39;s entirely possible to block all relays and the large majority of bridges, effectively denying those that want to use the Tor network for precisely what it was designed for.  I see no reason they couldn&#39;t choose to mop it all up at any time if they wanted to.  Personally I&#39;d like to see them try that with 10,000,000 relays. &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Keep up the good work. &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/../../smileys/smile4.png&quot; alt=&quot;;)&quot; /&gt;&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 21</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_21/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_21/</link>
+
+	<pubDate>Sun, 02 May 2010 06:56:34 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:34Z</dcterms:modified>
+
+	<description>&lt;p&gt;Why don&#39;t you use applications that _want_ to transfer BT and ones that can handle the traffic without reducing the experience for others who actually need the anonymity/security? &lt;/p&gt;
+
+&lt;p&gt;Are you trying to tell us that some jack off downloading porn so she/he can flap all day, or someone downloading movies instead of renting them should have the right to reduce the usability of the Tor network for those who need it to the Internet (e.g., HTTP/S) to avoid physical violence or imprisonment?  If you answer yes I will tell you to grow up and realize your wish to use Tor for selfish reasons should not affect those who _need_ to use Tor for non-selfish reasons.&lt;/p&gt;
+
+&lt;p&gt;There are many options around that happily handle BT (and happen to have applications built around the protocol), namely I2P2, why not suggest everyone use that instead of focking with Tor and reducing the experience for the rest of us?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 22</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_22/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_22/</link>
+
+	<pubDate>Tue, 04 May 2010 06:56:35 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:35Z</dcterms:modified>
+
+	<description>&lt;p&gt;Are you incapable of reading the post I wrote?  Why are you attempting to infer that I use Tor as it is now for BitTorrenting?  Did you miss the part where I mentioned I run relays and am aware of the problem of BitTorrent (or heavy usage type in general)?&lt;/p&gt;
+
+&lt;p&gt;I&#39;m not suggesting I have all the answers... that I know what will and will not work.  What I am saying is that users will and do use Tor for bulk data exchange, and may possibly continue to do so in ever increasing numbers as a method of anonymising (to a sufficient degree) their file-sharing activities.  Now you can try to fight that with clever technology in the binaries if you want, though I&#39;m sceptical as to how effective that might be, and also where it may lead as Tor wanders off down the path to denying this, that, and the other, as it tries to fix its little problem.  Why not have all the exits block the heavy sites you don&#39;t want people accessing, too?  You could pop in code to block all of the file-sharing sites, video sites (most people only watch funny cat/cheesy pop/porn videos anyway), file hosts, ... and there you go, loads of bandwidth.&lt;/p&gt;
+
+&lt;p&gt;I think a problem with Tor is that there are not that many people willing to run systems for the purposes you mention.  The Tor network has proven easy to block.  It is probably also very easy for them to monitor who exactly is using it (if not what for).  It seems to me that what&#39;s needed is a great deal more systems involved in the network.  But what creates an incentive for people to want to do that?  You talk of a problem here with people using the Tor network to file share, and hope for technological solutions to cure those ills, but I don&#39;t see any entertainment of the idea of creating a network that could satisfy those demands and potentially cure the whole problem of users file-sharing across the network, and create many more intermediate relays, and prevent easy blocking.&lt;/p&gt;
+
+&lt;p&gt;If such a network where to exist, comprising many 10/100/1000 thousands of nodes in the act of relaying &#39;bulk&#39; data between themselves, then just what might that network provide in the form of bandwidth availiability for trivial http/s usage?  Web browsing comparred to bulk data sharing is like a flea biting an elephant.  The resources availiable could be huge for the purposes of providing a system for anonymous access to the Internet.  Any user could fire up &#39;TOR&#39; (whether as a dumb client or active &#39;file-sharing&#39; relay), connect to any of a huge number of other similar relays, bounce through 3, and pop out an exit to the net.  No government could block it if it was that popular.  People would be happy to participate in the network if it satisfied their interests.  Exits could enjoy far less loads placed upon them due to an internalised sharing system.  Bridges may be entirely unnecessary.&lt;/p&gt;
+
+&lt;p&gt;Look how popular this blog post is.  File-sharing is massively popular.  Look at the size of those networks comparred to Tor.  And the ambitions are not too disimilar either, I don&#39;t think.  Both attempt to break down attempts to control access to, and the dissemination of, information through a system of decentralisation.  Now times are changing a bit, new threats are emerging, and as a consequence popular file-sharing networks are being driven to look towards systems of anonymisation.  One obvious way to achieve that is through proxying networks like Tor where data is relayed in and out of every participant leaving no indication as to what the data is and where it came from.  The plausible deniability alone in acting within such a network could be enough to leave no indication to an outside observer as to whether a person is even engaged in such a thing as a &#39;Tor&#39; network as the relays involved would no longer consist of a rather convenient handful of publically listed IP addresses.  Users wanting to use a network like this to help prevent against &quot;physical violence or imprisonment&quot; would have a great deal more chance of avoiding so than to use the Tor network as it is now, assuming they&#39;re even able to if it hasn&#39;t already been blocked.&lt;/p&gt;
+
+&lt;p&gt;I think it&#39;s foolish to dismiss the potential.  Maybe you&#39;re scared of what&#39;s necessarily required to create what you feel you want to create, because you know it could bring degrees of heat your cute politically correct ideologies might have trouble trying to defend when stood up to authority.  A system that could really break systems, not pander to special interests.  Freedom to publish.  Freedom to access.  Freedom to remain anonymous.  Censorship resistant.  A popularised, ubiquitous, system that cannot easily be controlled.&lt;/p&gt;
+
+&lt;p&gt;But hey, it&#39;s just an idea.  Best of luck with your ambition of changing the way people use the Tor network. &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 23</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_23/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_23/</link>
+
+	<pubDate>Thu, 06 May 2010 06:56:36 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:36Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hi!!!!!!!!! Thank you!! for you honey posts and your kind words!!!!!!!!!! &lt;/p&gt;
+
+&lt;p&gt;I&#39;m asking myself; why it&#39;s wrong to download a file through &quot;Tor+BitTorrent&quot;, but it&#39;s ok if you download the same file via &quot;Tor+HTTP&quot;??????!!!!!!! I think that the application transfer protocol doesn&#39;t make any difference!!!!! Indeed, if you look into it, you&#39;ll find out that BitTorrent will improve the performance of the Tor network!!!!! If you download a file from one normal &quot;hidden website&quot;, the max download speed you&#39;ll have is going to be the upload speed of that hidden service!!! and its upload bandwidth is shared among all the users downloading the same file and all the others files hosted at the same server!!!! With bittorrent, you&#39;ll share your upload bandwidth too!!! it&#39;s shared among all the &quot;peers&quot; and this will indeed improve the performances!!!!!! a single &quot;tor hidden service&quot; isn&#39;t able to host big files, because the Tor network isn&#39;t yet made like RAID disks are made: Tor isn&#39;t able to increase its performance exploiting the redundancy of files!!!!!!!! And, guess what BitTorrent is able to do?!!!!!! There isn&#39;t a single centralized HTTP server serving the file(s) using its upload bandwidth alone, but increasing the number of peers and seeders you&#39;ll also increase the bandwidth available to download the files!!!!!!! You won&#39;t download anymore from a single website, but from &lt;strong&gt;multiple sources!!!!!!&lt;/strong&gt; bittorrent is also ok to automatically check if files were downloaded successfully (torrent clients check whenever the downloaded files hash values match against the hash keys memorized inside the `.torrent&#39; file!!!!!!!!!!). I think that the main problem, always pointed out, about the Tor network load, is described in a very biased way!!!!!!!! What i wanted to say 1 second ago with my entry question is that if ten people will download a 600MB ISO image from one HTTP hidden service they won&#39;t cause &quot;less network load&quot; than the same ten people downloading the same 600MB ISO image using the &quot;BitTORrent&quot; system!!!!!!!!! Indeed, if you think about it, you&#39;ll find out that it&#39;s much more easy to ask to &lt;em&gt;the ten people using bittorrent&lt;/em&gt; to share the Tor network load than asking to &lt;em&gt;the ten HTTP-downloaders&lt;/em&gt; to do the same!!!!!! If you had a BitTORrent client made in the way i described in my first post here, you&#39;ll also have ten people running tor nodes, and downloading at a moderate speed to avoid the congestion of the network!!!!!!! Of course people could use their BitTORrent clients to leech files and bandwidth, but even in this pessimistic worst case scenario you&#39;ll have no more than the same effect of downloading files via the HTTP protocol without sharing anything!!!!!!!! so, in the same way as torrents are alive only if you `seed&#39; them after downloading, also the network load will be balanced if people will begin to share it!!!!!! People using the «HTTP .onion protocol» alone (this is almost sure) won&#39;t share anything, and you&#39;ll have worse performance than in a &quot;BitTORrent-ready network&quot; and you&#39;ll put an heavier load on the Tor network because nobody will share neither the files (redundancy of files parts already downloaded) nor the bandwidth of the nodes!!!!!!!!! I really think that a &quot;BitTORrent Bundle&quot;, made with a patched version of a BitTorrent-client made to work within the Tor Network, and made with the original idea to share ALSO the network load (and not just the files), to be a very good idea!!!!!!!!!!!!!!!!! Giving to all people the general idea that «Bittorrent over Tor isn&#39;t a good idea» is a bit deceiving!!!!!! BitTorrent is only &lt;strong&gt;a protocol!!&lt;/strong&gt;!!!!!!!!!!! BitTORrent could be a great way to solve a lot of flaws related to TOR!!, allowing the Tor network to support big files, decentralizing the storage of hidden services (because the only hidden services you&#39;ll need, are very simple &quot;Hidden BitTORrent Open-Trackers&quot;, similar to openbittorrent.com and websites indexing small &quot;.torrent&quot; files), increasing the performance at sharing big files (this is the typical improvement that BitTorrent gives also on the normal Internet!!!), increasing the number of nodes and the bandwidth for the whole Tor network (average case scenario: the BitTORrent-bandwidth is balanced 1:1!!! worst case scenario:--&amp;gt;), and yet nothing is gonna change about denial-of-service effects, because it&#39;s possible to overload the Tor Network even downloading DVDs ISO without BitTORrent!!!!!!!!! so, if you apply the Occam&#39;s razor principle to &quot;Tor+Download(BitTorrent) = NetworkOverload&quot;, you&#39;ll find out that &quot;BitTorrent&quot; isn&#39;t required in that equation!!!!!!!! What about the bulk traffic and why are big files useful for the Tor Network?!!! Well, i don&#39;t know it!!!!!!!!!!!!!!!!!!!! Why were you asking it to me though?!!!!!!! Somebody could say that BitTorrent and Tor are both useless!!! Indeed, that&#39;s «right» for all the people that don&#39;t need them!!!! but it&#39;s very «wrong», for all the people using/needing them!!!!!! Also factorbee is useless for people using exclusively Windows, because it works only on Linux!!!!!!!!!!!!!!!!!!!!! So, it&#39;s a question i can&#39;t answer at, because it&#39;s something of personal, and i can&#39;t know what you&#39;re thinking and why you need Tor, BitTorrent or even BitTORrent!!!!!!! Finally, having a technology like BitTORrent cannot be wrong, if you don&#39;t need it, you won&#39;t use it!!! In the same way as, if you don&#39;t need Tor, you won&#39;t use it either!!!!!!!! But i&#39;m sure that a lot of people will find it useful!!!! (mostly to laugh at the non-working copyright-justified censorship!!!!!!!!!) Ah, thinking about DVDs ISOs!!! this is funny!!! Linux systems cannot be &quot;exported&quot; to non-free countries (Cuba, Iran, Iraq, North Korea, Sudan, and Syria; actually the only places where LINUX+OpenSSL+Tor+... are useful for real), because the cryptographic software in Linux, which is regulated under US Export laws, cannot be redistributed there!!!!!! Anyway, there is Canada, south America, there is the Europe and good places in Asia; but if there weren&#39;t those &lt;em&gt;free&lt;/em&gt; (for real) countries, used to share Linux ISOs, you could even had people with reasons to download LINUX!!!!!(the free and open source operating system!!!!!!) distros through TOR!!!!!!!!lol!!!!!!!!!! Now, this is off topic, but you&#39;ve got to ask yourself, how such a brainless and useless restriction is possible in a so called &quot;free country&quot;!!!!!!!! The `US&#39; is also the only problem i could think about BitTORrent!!!!!!!!!!!!!!!! Could the TorProject be liable for «helping the development of file sharing technologies»?!!!!!!!!!!!! Lets say &lt;em&gt;communist software?&lt;/em&gt;????!!!! ha ha!!!!!!! this is funny too lol!!!!!!!!!!!!!!! though it&#39;s something of important to be aware of, because even websites like http://openbittorrent.com are now outlaw in the USA!!!!!!!(they &lt;em&gt;could help&lt;/em&gt; copyright infringements!!!!) could it be something to be afraid of!!!!!!? In either case, i think that my BitTORrent idea is very nice, and it could work for real!!!!!!!!!!!!!!!!!! ~bee!!!!!!!!!!!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 24</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_24/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_24/</link>
+
+	<pubDate>Thu, 06 May 2010 06:56:37 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:37Z</dcterms:modified>
+
+	<description>The problem in your logic is few(er) people download big files with Tor via. HTTP than do with Tor via. BitTorrent, just like how few(er) people download big files with naked HTTP than do with naked BitTorrent.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 25</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_25/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_25/</link>
+
+	<pubDate>Sun, 02 May 2010 06:56:38 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:38Z</dcterms:modified>
+
+	<description>One exclamation mark.  One.  Not fucking fifty.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 26</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_26/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_26/</link>
+
+	<pubDate>Sun, 02 May 2010 06:56:39 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:39Z</dcterms:modified>
+
+	<description>&lt;p&gt;+1&lt;/p&gt;
+
+&lt;p&gt;The nice thing about the instability of bee is he/she makes herself/himself look like such a douche bag that many people (I assume) read right past bee&#39;s posts, thus bee isn&#39;t even having the effect bee so obviously hopes to have.&lt;/p&gt;
+
+&lt;p&gt;To hell with bee...&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 27</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_27/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_27/</link>
+
+	<pubDate>Sat, 08 May 2010 06:56:40 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:40Z</dcterms:modified>
+
+	<description>&lt;p&gt;I could live with the exclamation marks if there were any paragraph breaks, but the combination is hopeless. I just skip right on past.&lt;/p&gt;
+
+&lt;p&gt;Wookey&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 28</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_28/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_28/</link>
+
+	<pubDate>Sun, 23 May 2010 06:56:41 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:41Z</dcterms:modified>
+
+	<description>&lt;p&gt;I agree, why would anybody post anything more than 4 lines with out line breaks or paragraphs.. its hope less, I swear I tried, I couldn&#39;t get past line 4, now he&#39;s completely lost me.&lt;/p&gt;
+
+&lt;p&gt;Having said that I agree with this idea and its occurred to me as well, that bittorrent and tor can make things work very well if they can work cooperatively together. Where bittorrent traffic has to never exit the tor network, this will frustrate any attempts to eves drop on tor and make it much more resilient giving it protection of hiding in the crowd. And this is a huge crowd we are talking about about 16-28% of entire internet traffic, depending on who you are getting your stats from.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 29</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_29/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_29/</link>
+
+	<pubDate>Fri, 07 May 2010 06:56:42 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:42Z</dcterms:modified>
+
+	<description>&lt;p&gt;@bee&lt;br /&gt;
+Don&#39;t listen to the Anonymous, unless they beehave &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;~beenevolent o_-&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 30</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_30/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_30/</link>
+
+	<pubDate>Fri, 30 Apr 2010 06:56:43 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:43Z</dcterms:modified>
+
+	<description>so one is safe if one not use BT?
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 31</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_31/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_31/</link>
+
+	<pubDate>Sun, 02 May 2010 06:56:44 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:44Z</dcterms:modified>
+
+	<description>If you take into account our warnings, and understand what you are doing, then yes.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 32</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_32/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_32/</link>
+
+	<pubDate>Fri, 30 Apr 2010 06:56:45 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:45Z</dcterms:modified>
+
+	<description>&lt;p&gt;There was some work done in the last few years by a company making routers to identify and prioritize &quot;data streams&quot; as opposed to packets.  They extolled the virtues of this new approach specifically with regards to improving video streaming and of easily throttling BT traffic - both without the need for deep packet inspection.  Can&#39;t remember off hand who this was.  &lt;/p&gt;
+
+&lt;p&gt;The concept hinged on creating a &quot;stream&quot; for every IP/Port destination, and optimized the allocation of packets into streams by not trying to create new streams if the TCP sequence number didn&#39;t indicate the start.  I find this similar, conceptually, to your &quot;separate streams per destination port&quot; idea.  What&#39;s most interesting was that throttling was introduced not as an overall rate limit, but as a limit to the total number of active streams.  &lt;/p&gt;
+
+&lt;p&gt;If you go with the separate streams per destination port idea, skip the special casing, set an upper bound to the number of active circuits that can be created, and throw in a bit of circuit prioritization logic (default with high prioritization for circuits destined for 80/443, bonus priority for streams that are active), you&#39;ll probably end up hitting two birds with one stone - you&#39;ll not need create 50 different circuits, and you&#39;ll deter BT use of Tor. &lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 33</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_33/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_33/</link>
+
+	<pubDate>Fri, 30 Apr 2010 06:56:46 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:46Z</dcterms:modified>
+
+	<description>&lt;p&gt;I&#39;m surprised nobody is mentioning the existence of alternatives to regular bittorrent clients.&lt;/p&gt;
+
+&lt;p&gt;http://anomos.info&lt;br /&gt;
+proposes an alternative, but you must trust the tracker with your ip.  Apart from that your connection to all the other peers is through relays like tor.&lt;/p&gt;
+
+&lt;p&gt;There are works in progress for bigger anomos-based .atorrent sites if you care to look around, you will find them.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 34</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_34/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_34/</link>
+
+	<pubDate>Fri, 30 Apr 2010 06:56:47 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:47Z</dcterms:modified>
+
+	<description>&lt;p&gt;Bittorrent is not just for illegal usages.  Users of my linux distribution commonly download over tor using bittorrent.  They will now be identified and possibly pushed to fake mirrors downloading infected versions of linux.   We should update our instructions to block udp, force torrents over tcp over tor.&lt;/p&gt;
+
+&lt;p&gt;I do not have permission to say this by the company, so I will not name the linux distribution.  However, I work for a commercial linux company.  &lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 35</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_35/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_35/</link>
+
+	<pubDate>Fri, 30 Apr 2010 06:56:48 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:48Z</dcterms:modified>
+
+	<description>&lt;p&gt;Use Anomos! As of 0.9.2 there is a working client for Mac, Windows and Linux. It can even convert old torrent files to atorrents. It uses Tor-style onion layer encryption and the only weak point is the tracker must be trusted, however they run their own tracker as well, so one could expect a reasonable amount of privacy.&lt;/p&gt;
+
+&lt;p&gt;http://git.anomos.info/?p=protocol-specification;a=blob_plain;f=Protocol...&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 36</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_36/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_36/</link>
+
+	<pubDate>Fri, 30 Apr 2010 06:56:49 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:49Z</dcterms:modified>
+
+	<description>&lt;p&gt;http://anomos.info proposes an alternative, but you must trust the tracker with your ip. &lt;/p&gt;
+
+&lt;p&gt;It&#39;s about freakin time someone spills this little bit of truth to all the ANOMOS fanBoi&#39;s out there, not to mention the ones in this thread.&lt;/p&gt;
+
+&lt;p&gt;The anonmos trackers could just as well be owned, operated or under orders from the entities you fear the most. ANOMOS is fail because of this.&lt;/p&gt;
+
+&lt;p&gt;The only real solution is standard bittorrent clients using strong anon networks.&lt;br /&gt;
+Today that means I2P or Tor with OnionCat. Phantom is a strong future contender provided they interface with OnionCat.&lt;br /&gt;
+I2P is sufficient today. Just fire it up, set your node to give whatever bandwidth you can give. The link your BT client to it and you&#39;re done.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 37</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_37/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_37/</link>
+
+	<pubDate>Sat, 01 May 2010 06:56:50 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:50Z</dcterms:modified>
+
+	<description>&lt;p&gt;USENET everyone! USENET! is the answer to all your downloading needs!&lt;/p&gt;
+
+&lt;p&gt;For those who care to pay for VPN, cancel that VPN subscription and start using Usenet with the same amount of money approx 10$ and you get ssl privacy.&lt;/p&gt;
+
+&lt;p&gt;I wont give you a link, just search for usenet on google and you find what you need :P&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 38</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_38/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_38/</link>
+
+	<pubDate>Mon, 03 May 2010 06:56:51 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:51Z</dcterms:modified>
+
+	<description>The first rule of usenet is you don&#39;t talk about usenet.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 39</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_39/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_39/</link>
+
+	<pubDate>Sat, 01 May 2010 06:56:52 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:52Z</dcterms:modified>
+
+	<description>&lt;p&gt;Maybe tor client shoul create some small number of circuits and load balance&lt;br /&gt;
+requests bteewen them.&lt;br /&gt;
+Of course there is need to be a way to nesure that all circuits are using diffrent exit nodes.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 40</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_40/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_40/</link>
+
+	<pubDate>Sat, 01 May 2010 06:56:53 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:53Z</dcterms:modified>
+
+	<description>safe Bittorrent using Tor here  http://nodxgiifeywuslku.onion
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 41</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_41/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_41/</link>
+
+	<pubDate>Sat, 01 May 2010 06:56:54 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:54Z</dcterms:modified>
+
+	<description>&lt;p&gt;There is no safe Bittorrent use with your home ip address, especially in the USA...&lt;/p&gt;
+
+&lt;p&gt;The best way to download illegal things its obviously just hacking some random chinese server, put rTorrent or cTorrent, download the torrent (maybe some seeding), download file from the hacked server using http or ftp or whatever u like, clean the logs, disappear for a while &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/../../smileys/smile4.png&quot; alt=&quot;;)&quot; /&gt;&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 42</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_42/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_42/</link>
+
+	<pubDate>Sat, 01 May 2010 06:56:55 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:55Z</dcterms:modified>
+
+	<description>how about monitoring (unencrypted) data for the real ip, and blocking traffic, which contains the real ip as string?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 43</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_43/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_43/</link>
+
+	<pubDate>Sat, 01 May 2010 06:56:56 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:56Z</dcterms:modified>
+
+	<description>&lt;p&gt;To those who suggest Anomos over Tor:&lt;/p&gt;
+
+&lt;p&gt;The problem with BT over Tor is not only anonymity issues, it&#39;s _bandwidth_ issues, it has been stated by Tor peopole many, many times that BT is a major reason Tor is so slow for HTTP/S, etc.  Bittorrent _should not_ be used over Tor for the sake of bandwidth!  People who really need Tor, e.g., Iranian and Chinese dissidents, 1st world citizens who wish to surf without being tracked, etc, _should not_ have to suffer extremely low latency because BT users want to download copyrighted movies and music and porn!  Stop being so selfish!&lt;/p&gt;
+
+&lt;p&gt;If you want to use BT then use I2P2, they welcome BT traffic and have clients for such traffic.  Stop using Tor for BT traffic!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 44</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_44/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_44/</link>
+
+	<pubDate>Sat, 01 May 2010 06:56:57 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:57Z</dcterms:modified>
+
+	<description>&lt;p&gt;BT over Tor may not be good for Tor itself but it isn&#39;t such a bad idea as the paper and the commentary try to portray it. In fact all of the discussed privacy leaks can be easily eliminated.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&quot;The first attack&quot;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;No issue whatsoever, just enable proxy for both trackers and peers.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&quot;The second attack&quot;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;It appears that arma got entirely confused here. Please read the paper again and perhaps quote some supporting paragraphs. This attack does not build on the first one, but simply exploits DHT correlations. Again, the solution is trivial - disable DHT.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&quot;The third attack&quot;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This one is not even interesting and there is no need to wait for developers to resolve the weakness. All you have to do is run a second instance of Tor on a different &quot;SocksPort&quot;. Yes, it works on Windows too - flawlessly.&lt;/p&gt;
+
+&lt;p&gt;Those really paranoid should run BT/Tor always behind a NAT router, so BT must contact outside world to learn its public IP. Secondly, deploy an egress firewall and limit BT to localhost traffic only. On that note let&#39;s see what the authors of the paper think about it:&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;&quot;Although we have not tested the behavior of those clients, we suspect that they use a service to determine their IP address as seen from the Internet. As they will contact that service through Tor, the service will report the IP address of an exit node.&quot;&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;No, there are no services involved, the clients learn their IPs from each other and exchange them on the extension protocol handshake.&lt;/p&gt;
+
+&lt;p&gt;Conclusion.&lt;/p&gt;
+
+&lt;p&gt;Just like Firefox needs Totbutton, so does Bittorrent require a few specific configuration settings.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 45</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_45/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_45/</link>
+
+	<pubDate>Sat, 01 May 2010 06:56:58 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:58Z</dcterms:modified>
+
+	<description>&lt;p&gt;BT over Tor may not be good for Tor itself but it isn&#39;t such a bad idea as the paper and the commentary try to portray it. In fact all of the discussed privacy leaks can be easily eliminated.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&quot;The first attack&quot;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;No issue whatsoever, just enable proxy for both trackers and peers.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&quot;The second attack&quot;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;It appears that arma got entirely confused here. Please read the paper again and perhaps quote some supporting paragraphs. This attack does not build on the first one, but simply exploits DHT correlations. Again, the solution is trivial - disable DHT.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&quot;The third attack&quot;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This one is not even interesting and there is no need to wait for developers to resolve the weakness. All you have to do is run a second instance of Tor on a different &quot;SocksPort&quot;. Yes, it works on Windows too - flawlessly.&lt;/p&gt;
+
+&lt;p&gt;Those really paranoid should run BT/Tor always behind a NAT router, so BT must contact outside world to learn its public IP. Secondly, deploy an egress firewall and limit BT to localhost traffic only. On that note let&#39;s see what the authors of the paper think about it:&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;&quot;Although we have not tested the behavior of those clients, we suspect that they use a service to determine their IP address as seen from the Internet. As they will contact that service through Tor, the service will report the IP address of an exit node.&quot;&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;No, there are no services involved, the clients learn their IPs from each other and exchange them on the extension protocol handshake.&lt;/p&gt;
+
+&lt;p&gt;Conclusion.&lt;/p&gt;
+
+&lt;p&gt;Just like Firefox needs Totbutton, so does Bittorrent require a few specific configuration settings.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 46</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_46/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_46/</link>
+
+	<pubDate>Sat, 01 May 2010 06:56:59 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:56:59Z</dcterms:modified>
+
+	<description>&lt;p&gt;Usenet is not the answer.  Your Usenet provider must abide by the same laws that &quot;force&quot; Google and Yahoo to collect information about you for at least 90 days.  Any Usenet posts sent unencrypted are either sniffed before they enter your computer or through trojans already planted in your PC.  And, no, they don&#39;t need a warrant specifically for your activity.  They can fish for data and then seize your computer anyway.&lt;/p&gt;
+
+&lt;p&gt;Welcome to the year 2010.  Hope Tor can keep up.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 47</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_47/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_47/</link>
+
+	<pubDate>Sat, 01 May 2010 06:57:00 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:00Z</dcterms:modified>
+
+	<description>Run your bittorrent, tor, etc. inside a virtual machine where all network is forced through an IP anonymizer.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 48</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_48/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_48/</link>
+
+	<pubDate>Sat, 01 May 2010 06:57:01 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:01Z</dcterms:modified>
+
+	<description>&lt;p&gt;Well, if you want safe sharing for the objectionable content than Freenet is the only possible choice. But you&#39;ll have to sacrifice the speed. Choose -- security or speed. &lt;/p&gt;
+
+&lt;p&gt;BTW the more people will use the Freent, the faster it will be. &lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 49</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_49/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_49/</link>
+
+	<pubDate>Sun, 02 May 2010 06:57:02 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:02Z</dcterms:modified>
+
+	<description>&lt;p&gt;There is a TOR fork called BitBlinder specifically made for anonymous web and bittorrent traffic. Uses a &quot;credits&quot; system according to the amount of data you have relayed to others. Perhaps you should check it out: http://bitblinder.com/&lt;br /&gt;
+Comes with its own anonymized clients, free open source.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 50</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_50/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_50/</link>
+
+	<pubDate>Sun, 02 May 2010 06:57:03 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:03Z</dcterms:modified>
+
+	<description>&lt;p&gt;The problem with BT over Tor is not only anonymity issues, it&#39;s _bandwidth_ issues, it has been stated by Tor peopole many, many times that BT is a major reason Tor is so slow for HTTP/S, etc. Bittorrent _should not_ be used over Tor for the sake of bandwidth! People who really need Tor, e.g., Iranian and Chinese dissidents, 1st world citizens who wish to surf without being tracked, etc, _should not_ have to suffer extremely low latency because BT users want to download copyrighted movies and music and porn! Stop being so selfish!&lt;/p&gt;
+
+&lt;p&gt;If you want to use BT then use I2P2, they welcome BT traffic and have clients for such traffic. Stop using Tor for BT traffic! sesli sohbet&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 51</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_51/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_51/</link>
+
+	<pubDate>Sun, 02 May 2010 06:57:04 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:04Z</dcterms:modified>
+
+	<description>&lt;p&gt;Indeed, as our double-posting friend above has said, the problems identified in the paper are easily solvable. Most of them, anyway.&lt;/p&gt;
+
+&lt;p&gt;&quot;3.2 Simple Inspection of BitTorrent control messages&quot;&lt;br /&gt;
+Two problems here:&lt;/p&gt;
+
+&lt;p&gt;#1. Inspection of Announce messages sent to trackers can reveal the IP that some torrent clients embed in these messages (e.g. uTorrent).&lt;br /&gt;
+* NO SOLUTION THAT I CAN THINK OF (the Announce message is not affected by your torrent client&#39;s encryption settings, it&#39;s sent in plain text and it&#39;s readable by anyone who takes the time to set up a malicious TOR exit node).&lt;/p&gt;
+
+&lt;p&gt;#2. Inspection of Extended Handshake messages with other peers.&lt;br /&gt;
+* No problem, just force your torrent client to encrypt all your inter-peer communications and you&#39;re safe from this.&lt;/p&gt;
+
+&lt;p&gt;&quot;3.3 Hijacking Trackers’ Responses&quot;&lt;br /&gt;
+This is something that only works if your inter-peer communications are not anonymized (encryption makes no difference here).&lt;br /&gt;
+* Solution: route all your torrent traffic through TOR, not just the tracker connections. Sorry to say this, but going against TOR recommendations is the way to stay safe in this case. All I can tell you is to at least have the decency to cap your torrent transfer rate to make it more similar to other normal web communications in order not to overload the TOR network with your torrenting. Learn to live with the fact that better anonymity comes at a higher price. Just like you learned to respect your torrent peers by sticking around to seed even after you got what you needed, you should learn to respect your TOR peers by not hogging all their bandwidth with your torrents.&lt;/p&gt;
+
+&lt;p&gt;&quot;3.4 Exploiting the DHT&quot;&lt;br /&gt;
+*Solution: turn off DHT in your torrent client&#39;s settings, d&#39;oh.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 52</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_52/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_52/</link>
+
+	<pubDate>Mon, 03 May 2010 06:57:05 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:05Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;cite&gt;&quot;Inspection of Announce messages sent to trackers can reveal the IP that some torrent clients embed in these messages (e.g. uTorrent).&lt;br /&gt;
+* NO SOLUTION THAT I CAN THINK OF &quot;&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;BUT THERE IS NO PROBLEM&lt;/p&gt;
+
+&lt;p&gt;uTorrent does not announce IP info. The IP field is optional in BT announce protocol and not used by uTorrent. Tested on versions 1.8.2, 1.8.5, 2.0.0 and 2.0.1, behind NAT and on full proxy settings.&lt;/p&gt;
+
+&lt;p&gt;Otherwise, the solution would be to prevent BT from learning its public IP and firewall it of course.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 53</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_53/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_53/</link>
+
+	<pubDate>Tue, 04 May 2010 06:57:06 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:06Z</dcterms:modified>
+
+	<description>Sorry, but the authors of the paper cited above say uTorrent is one of the clients that are the most consistent in doing just that: embedding your real IP in the announce messages. It&#39;s their word against yours until I can test this myself. &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt; (I&#39;m not even sure how - Wireshark or something?)
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 54</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_54/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_54/</link>
+
+	<pubDate>Wed, 05 May 2010 06:57:07 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:07Z</dcterms:modified>
+
+	<description>Yes they did blame uTorrent. Perhaps it behaves differently with partial proxy and DHT enabled. Wireshark is ideal for testing uTorrent, but note that the announce protocol is a simple HTTP GET request, so a number of small, specialized net sniffers can do it too.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 55</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_55/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_55/</link>
+
+	<pubDate>Sun, 02 May 2010 06:57:08 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:08Z</dcterms:modified>
+
+	<description>&lt;p&gt;BitBlinder:&lt;br /&gt;
+Nope, sorry, not a solution. Since right now they&#39;re not taking money in the place of relay hosting, everyone who uses it is forced to run as a relay by default. It&#39;s all nice and fine that you&#39;re hidden as a peer by being routed through other people&#39;s machines, but the reverse is also true (unless you can disable it like in TOR): others can download torrents through your machine as well, and if you&#39;re an exit node, to the outside world it will again appear as though you&#39;re downloading torrents. Which is exactly what you were trying to avoid in the first place. *slaps forehead*&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 56</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_56/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_56/</link>
+
+	<pubDate>Sun, 02 May 2010 06:57:09 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:09Z</dcterms:modified>
+
+	<description>&lt;p&gt;Pay attention, it is a Tor fork. You don&#39;t have to run a relay, and they do have plans of accepting money instead or relaying traffic. Also, you do get to choose which type of traffic to relay: eg: web only, bittorrent only, all. Finally, you can choose not to be an exit node, just like Tor, and simply act as a &quot;Bridge&quot;.&lt;/p&gt;
+
+&lt;p&gt;BitBlinder is solving the bandwidth issue with the incentive of credits. You can transfer the same amount you have relayed. Many people/countries have no issues with relaying anonymous traffic, the point is the one seeding the content is never found, as an exit node, you are not the source, the sender remains anonymous, just like Tor.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 57</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_57/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_57/</link>
+
+	<pubDate>Sun, 02 May 2010 06:57:10 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:10Z</dcterms:modified>
+
+	<description>&lt;p&gt;&quot;Tor is doing its job: Tor is _anonymously_ sending your IP address to the tracker or peer. Nobody knows where you&#39;re sending your IP address from. But that probably isn&#39;t what you wanted your Bittorrent client to send.&quot;&lt;/p&gt;
+
+&lt;p&gt;LOOOL. Maybe this will remove BitTorrent traffic from the Tor network, which is painfully slow to use. I&#39;ve been running a relay occationally, pushing a few hundred K per second, but I find myself banned from many sites as a result even if I am not allowing anything to exit!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 58</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_58/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_58/</link>
+
+	<pubDate>Mon, 03 May 2010 06:57:11 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:11Z</dcterms:modified>
+
+	<description>&lt;p&gt;The New Dark Ages cometh.&lt;/p&gt;
+
+&lt;p&gt;The copyright-abuse industry is ramping up their lobbying in the world&#39;s governments, their attacks on any sort of fair use, and their criminalization of anything resembling freedom and free speech.  The content industries, print, video, and audio are turning copyright into their weapon of choice.  They are abusing it for far more than it was ever designed.  I worry that the content industry implied by Richard Stallman&#39;s essay entitled, &quot;The Right to Read&quot; will become a reality within my lifetime. See http://www.gnu.org/philosophy/right-to-read.html.&lt;/p&gt;
+
+&lt;p&gt;People are being boiled slowly like frogs in what was once cold water.  Very few are paying attention.  Those that are aware of the future path of copyright-abuse and freedom are marginalized and treated like paranoid freaks.  Government surveillance is growing ever more powerful.  Normal software makers are either ignoring the solutions or simply calculating, that so long as they are one step ahead of the normal user, secure software doesn&#39;t matter.  Jacob Appelbaum said it best during his 26C3 talk, &quot;We need to infiltrate these companies and fuck them from the inside&quot;.  There is no secret cabal planning all of this worldwide.  Everyone is working for their best interests; doing what they believe is the best.  Collectively, the world is afraid of the future and by thinking like lizards, turning their fears into reality.&lt;/p&gt;
+
+&lt;p&gt;That which cannot be controlled, is bad.  One possible pathway is that darknets are the future of freedom.  Technologies like hidden services, i2p, freenet, and others are just the beginning.  Possessing these technologies will soon be criminal around the world.  Tor will soon be illegal in many places in the world; whether you use it or not.  Just having it will brand you a terrorist in the eyes of the State; you are the new enemy.  This will soon be true for i2p, freenet, and the like.  The copyright industry is going to force this position.  You either pay up now, or quietly go dark soon.  &lt;/p&gt;
+
+&lt;p&gt;The future is naked.  Facebook is pushing hard for full transparency of every person, every activity, everything every hour.  There will be initial backlash.  A new facebook will rise, it will be naked.  TSA has gotten people used to being barefoot and minimal clothing for safety.  The millimeter wave scans will get everyone to equate nudity with safety. &lt;/p&gt;
+
+&lt;p&gt;A lack of signal will be suspicious.  Why don&#39;t you have a Facebook account?  What are you trying to hide?  Why don&#39;t you leave a trail of data crumbs behind? Why are you not normal?&lt;/p&gt;
+
+&lt;p&gt;Tor as a technology and philosophy is doomed to the extremists.  Look at how many people bought iPads in the first month alone.  How many people thought about the death of freedom as represented by that device?  People follow form, not function.  They do not care about long term effects.  &lt;/p&gt;
+
+&lt;p&gt;I run tor exit nodes, i2p nodes, and freenet nodes under fake identities and paid with anonymous credit cards.  These networks need to exist.  Any legal recourse is too late.&lt;/p&gt;
+
+&lt;p&gt;The darkness falls upon us all.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 59</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_59/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_59/</link>
+
+	<pubDate>Mon, 03 May 2010 06:57:12 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:12Z</dcterms:modified>
+
+	<description>&lt;p&gt;I hope *We* will live enough to resist, making - and projecting - and making again a future:&lt;br /&gt;
+the net as open as possible, with computers and with people , not the fake images taken from s**t like BigBrother show and reconstructed in one&#39;s mind.&lt;/p&gt;
+
+&lt;p&gt;I HOPE&lt;/p&gt;
+
+&lt;p&gt;Thx All of you/&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 60</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_60/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_60/</link>
+
+	<pubDate>Tue, 04 May 2010 06:57:13 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:13Z</dcterms:modified>
+
+	<description>&lt;p&gt;BitBlinder:&lt;br /&gt;
+YOU pay attention. I said _right_now_ they&#39;re not accepting money in place of relay activity and this is what it says on their website:&lt;br /&gt;
+&quot;During our beta testing we are not accepting payments, so you have to be a relay to continue using the network.&quot;&lt;/p&gt;
+
+&lt;p&gt;Also, uploading torrent content could very easily be considered your fault even if you were just an exit node and not the actual source of the material. You can be held responsible for whatever is being done from your IP unless you can provide very solid proof that you were hacked or had a virus/trojan/whatever or were simply ignorant of what was going on. I very much doubt that purposely running an anonymizing application would qualify as proof of innocence.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 61</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_61/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_61/</link>
+
+	<pubDate>Sat, 08 May 2010 06:57:14 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:14Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hmm you don&#39;t seem to get it, do you? I can be an exit node all i want and you can do nothing about it, your laws don&#39;t concern me period. Many people can be exit nodes safely in many countries, and its those people who help others in oppressed (and corporate controlled) regimes. That said, BitBlinder can act as a bridge, which will earn you credits more slowly, but you will anyway. Do you not know what a bridge is? It means you ONLY pass encrypted traffic between nodes, never directly to the net, thats the job of the exit nodes who can can show the middle finger to complains from other countries. There is no risk whatsoever in running a bridge.&lt;/p&gt;
+
+&lt;p&gt;The only reason Bittorrent traffic isn&#39;t going over plain Tor is bandwidth issues, which BitBlinder fixes. AND, BitBlinder also passes web traffic, just like Tor does.&lt;/p&gt;
+
+&lt;p&gt;In short, BitBlinder is Tor without bandwidth shortages.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 62</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_62/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_62/</link>
+
+	<pubDate>Mon, 24 May 2010 06:57:15 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:15Z</dcterms:modified>
+
+	<description>&lt;p&gt;First of all, they&#39;re not my laws, I hate those fucking anti-sharing laws as much as the next guy.&lt;/p&gt;
+
+&lt;p&gt;Secondly, the anti-sharing &quot;regimes&quot; are basically all the Western &quot;civilized&quot; nations and the only places where exit nodes can be run safely are probably the most backward/poor/uncivilized countries.&lt;/p&gt;
+
+&lt;p&gt;Thirdly, I&#39;ve seen complaints on the BitBlinder forum that people are getting piracy notices from their ISPs or other agencies even though they&#39;re torrenting through BitBlinder! If that thing&#39;s got leaks, I&#39;m not touching it with a tadpole.&lt;/p&gt;
+
+&lt;p&gt;And finally, there&#39;s plenty of information about which ports TOR uses for incoming and outgoing connections, so I have a good level of confidence that I can block everything I need to block with my firewall so that there&#39;s ZERO potential for me to be visible with any exit node activities. There&#39;s no such richness of port information about BitBlinder, so I can&#39;t take the chance, sorry.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 63</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_63/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_63/</link>
+
+	<pubDate>Wed, 05 May 2010 06:57:16 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:16Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hello, I don&#39;t know where I can ask about it...&lt;br /&gt;
+Is it possible make ready to work portable pocket based on Iron Browser like that you made for FireFox? I want it.Thanks.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 64</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_64/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_64/</link>
+
+	<pubDate>Sun, 09 May 2010 06:57:17 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:17Z</dcterms:modified>
+
+	<description>We have one, it is called Tor Browser Bundle, &lt;a href=&quot;https://torproject.org/torbrowser&quot; title=&quot;https://torproject.org/torbrowser&quot; rel=&quot;nofollow&quot;&gt;https://torproject.org/torbrowser&lt;/a&gt;
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 65</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_65/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_65/</link>
+
+	<pubDate>Mon, 10 May 2010 06:57:18 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:18Z</dcterms:modified>
+
+	<description>&lt;p&gt;It seems that all the bridges have been completely blocked in China by GFW, and the auto-block system may have been updated ,e.g.:&lt;/p&gt;
+
+&lt;p&gt;Before I run my tor program via the bridge &quot;xxx.xxx.xxx.xxx:8043&quot;,this is bridge is telnetable (I can telnet xxx.xxx.xxx.xxx port 8043). But after I run the tor program, this bridge soon becomes untelnetable. &lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 66</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_66/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_66/</link>
+
+	<pubDate>Mon, 10 May 2010 06:57:19 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:19Z</dcterms:modified>
+
+	<description>It seems Chinese authorities have crawled the &lt;a href=&quot;https://bridges.torproject.org&quot; title=&quot;https://bridges.torproject.org&quot; rel=&quot;nofollow&quot;&gt;https://bridges.torproject.org&lt;/a&gt; website and blocked all bridges given out through that method.  We have at least 3 other methods to give out bridges, so please try email or social networks.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 67</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_67/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_67/</link>
+
+	<pubDate>Mon, 10 May 2010 06:57:20 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:20Z</dcterms:modified>
+
+	<description>&lt;p&gt;bridges invalid&lt;br /&gt;
+tor in China has not connect, even if added to the latest bridges can not connect, have been shielded by Great Firewall.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 68</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_68/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_68/</link>
+
+	<pubDate>Tue, 11 May 2010 06:57:21 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:21Z</dcterms:modified>
+
+	<description>Yes!  This true!  Also good!  Tor now very fast!  Go, Communism!
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 69</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_69/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_69/</link>
+
+	<pubDate>Sun, 16 May 2010 06:57:22 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:22Z</dcterms:modified>
+
+	<description>hi, I tried to download a software online while using Tor and every time a prompt box pops out saying &quot;An external is needed to handle.... External applications are not safe by default and can unmask you! If this file is untrusted, you should either save it to view offline or in VM or consider using a transparent Tor proxy like Amnesia LiveCD, Torsocks or TorVM&quot; I have no idea what these suggestions mean and i don&#39;t know where to get them. Please if anyone can shed light on this issue, i will be very grateful, thanks - chimmy
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 70</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_70/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_70/</link>
+
+	<pubDate>Mon, 17 May 2010 06:57:23 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:23Z</dcterms:modified>
+
+	<description>please save the band-width, don&#39;t use tor to download large files!
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 71</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_71/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_71/</link>
+
+	<pubDate>Tue, 18 May 2010 06:57:24 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:24Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hi,&lt;br /&gt;
+   I&#39;m new to TOR, and thank you for the tip. I have NO experience with proxies.. ETC. What I was wondering though is if there is any way to create a new net-layer which only TOR is aware of, and actually blinds all software to the real ports (which only TOR is aware of) Thereby creating an outbound firewall which only TOR can get through. Actually, can this be done via firewall? Would this be a good way to make sure the only data to move around moves through TOR?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 72</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_72/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_72/</link>
+
+	<pubDate>Wed, 19 May 2010 06:57:25 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:25Z</dcterms:modified>
+
+	<description>You should probably use a VPN for that, if there&#39;s one out there you feel you can trust.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 73</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_73/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_73/</link>
+
+	<pubDate>Mon, 14 Jun 2010 06:57:26 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:26Z</dcterms:modified>
+
+	<description>How about you have TOR or the proxy application look over packets and if it contains your own IP address, physical address, name or other identifiable info to pop up a message saying what is about to be sent and to either accept or deny the sending of that info, similar to ZoneAlarm&#39;s privacy guard. Tho this would require more system resources to monitor all your outgoing packets.
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 74</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_74/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_74/</link>
+
+	<pubDate>Mon, 14 Jun 2010 06:57:27 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:27Z</dcterms:modified>
+
+	<description>We don&#39;t want to look at content of the packets or do any sort of deep packet inspection.  Also, which &quot;your own IP address?&quot;  The one assigned to the local interface?  The one assigned to the internet gateway?  Looking at content is fraught with complexities not to mention the legal liabilities.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 75</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_75/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_75/</link>
+
+	<pubDate>Mon, 14 Jun 2010 06:57:28 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:28Z</dcterms:modified>
+
+	<description>@Phobos thank you for the good job you have been doing you and your crew God bless you all and give you guys more talent please can i get a I.P and port scanner software from you which i can use in extracting I.P and ports from my Network orders cause it kinda of hard using the internet here please need you help on this.....Hope to hear from you soon....
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 76</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_76/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Bittorrent_over_Tor_isnt_a_good_idea/comment_76/</link>
+
+	<pubDate>Mon, 14 Jun 2010 06:57:29 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:29Z</dcterms:modified>
+
+	<description>@Phobos thank you for the good job you have been doing you and your crew God bless you all and give you guys more talent please can i get a I.P and port scanner software from you which i can use in extracting I.P and ports from my Network orders cause it kinda of hard using the internet here please need you help on this.....Hope to hear from you soon....
+</description>
+
+
+</item>
+
+</channel>
+</rss>

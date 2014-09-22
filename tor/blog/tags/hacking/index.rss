@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged hacking</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/hacking/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Tor Open Hackfest: February 19, 2011</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Open_Hackfest_February_19_2011/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Open_Hackfest_February_19_2011/</link>
+
+
+	<category>/tags/advocacy</category>
+
+	<category>/tags/coding</category>
+
+	<category>/tags/community</category>
+
+	<category>/tags/hacking</category>
+
+	<category>/tags/involvement</category>
+
+	<category>/tags/tor</category>
+
+
+	<pubDate>Tue, 25 Jan 2011 12:19:07 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:13:41Z</dcterms:modified>
+
+	<description>&lt;p&gt;We&#39;re holding a Tor hackfest on Saturday, February 19th. The bulk of the Tor developers are in town and coming to this event. Unlike last time when snow kept 75% of them outside the US.  &lt;/p&gt;
+
+&lt;p&gt;We&#39;ll be meeting starting at 10 AM in the new Media Lab building (E14), thanks to the Center for Future Civic Media at MIT. We&#39;re hoping to provide pizza and drinks for lunch.  Last time we had some fine Indian food for dinner.&lt;/p&gt;
+
+&lt;p&gt;Map: &lt;a href=&quot;http://whereis.mit.edu/?go=E14&quot; title=&quot;http://whereis.mit.edu/?go=E14&quot; rel=&quot;nofollow&quot;&gt;http://whereis.mit.edu/?go=E14&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Please attend if you have some interest in programming, advocacy, marketing, or research with Tor, or are willing to be persuaded to entertain an interest. &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/tags/hacking/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt; Tor&#39;s a small project (in terms of number of developers) that could really use your help.&lt;br /&gt;
+Hope to see you on Saturday!&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_Open_Hackfest_February_19_2011/#comments</comments>
+
+</item>
+<item>
+
+	<title>nickm: Some notes on progress with IOCP and Libevent</title>
+	<dcterms:creator>nickm</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Some_notes_on_progress_with_IOCP_and_Libevent/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Some_notes_on_progress_with_IOCP_and_Libevent/</link>
+
+
+	<category>/tags/developerment</category>
+
+	<category>/tags/hacking</category>
+
+	<category>/tags/iocp</category>
+
+	<category>/tags/libevent</category>
+
+
+	<pubDate>Sun, 01 Mar 2009 16:37:33 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:20:15Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hi!  I recently wrote up a status report for the progress we&#39;re making on hacking Libevent, and I thought I&#39;d post it here too.&lt;/p&gt;
+
+&lt;p&gt;BACKGROUND&lt;/p&gt;
+
+&lt;p&gt;Tor currently uses Libevent for its high-performance networking calls.  Libevent is a software library originally written by Niels Provos (then of UMichigan, now of Google), and now co-developed by Niels Provos and the Tor Project&#39;s Nick Mathewson.  Its purpose is to provide consistent fast interfaces to various operating systems&#39; mutually incompatible fast networking facilities.  Libevent gives applications two basic interfaces to these networking layers: a low-level interface where the application is notified when an operation (like a network read or write) is ready to begin, and a higher-level interface where Libevent itself manages network operations and the application is notified when the network operations are completed. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/some-notes-progress-iocp-and-libevent&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Some_notes_on_progress_with_IOCP_and_Libevent/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

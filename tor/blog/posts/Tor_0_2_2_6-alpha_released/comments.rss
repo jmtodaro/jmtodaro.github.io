@@ -1,0 +1,405 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Tor 0.2.2.6-alpha released</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Cav Edwards (not verified): Comment 1</title>
+	<dcterms:creator>Cav Edwards (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_1/</link>
+
+	<pubDate>Sun, 06 Dec 2009 06:43:33 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:43:33Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor Performance...&lt;/p&gt;
+
+&lt;p&gt;Hi Blog,&lt;/p&gt;
+
+&lt;p&gt;I have been doing some testing with Tor, after downloading the code and tinkering with it a bit.&lt;/p&gt;
+
+&lt;p&gt;I first did a burn in with this online keep-alive tool: &lt;a target=&quot;ping&quot; href=&quot;http://www.sector101.fsnet.co.uk/keepalive/keepalive.html?timer=1&amp;amp;gr=nayncvmfnniwdysa&amp;amp;ms=1259982155461&quot; rel=&quot;nofollow&quot;&gt;Ping tool&lt;/a&gt;&lt;br /&gt;
+Set to 30 Seconds refresh.I burnt Tor in for up to 120 built circuits.&lt;/p&gt;
+
+&lt;p&gt;Response and Bandwidth Performance&lt;br /&gt;
+I then took 3 results and found the highest throughput and lowest Circuit Build time (this is very closely correlated with the response time for Tor and as such I use them interchangeably.&lt;a target=&quot;graph&quot; href=&quot;http://docs.google.com/Doc?docid=0AaYAzYus3pVYZGY1djVuandfMjlkbWs5ZjNjOQ&amp;amp;hl=en&quot; rel=&quot;nofollow&quot;&gt;Graph&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;As you can see, the lower ping times and hence lower response times are achieved with the tuned tor. In the same manner higher throughput is achieved with the custom Tor builds.&lt;/p&gt;
+
+&lt;p&gt;I may complete correlation testing at a future date, to prove this).&lt;/p&gt;
+
+&lt;p&gt;Circuit Build Distribution&lt;br /&gt;
+I also found several distribution curves for Tor standard with no tuning, and customised versions, built using the same libraries as the standard version, with varying Pareto Distribution Quantiles and CircuitBuildTimeouts. The Pareto Quantile has been reduced to observe its affect on build timeouts. Lowering the Pareto Quantile resulted in more pointed graphs, indicating more circuits being built at lower response times.&lt;a target=&quot;graph&quot; href=&quot;http://docs.google.com/Doc?docid=0AaYAzYus3pVYZGY1djVuandfMTljNjluZHhkdw&amp;amp;hl=en&quot; rel=&quot;nofollow&quot;&gt;Graph&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Bandwidth Ping Combined&lt;br /&gt;
+I then combined the Ping and Throughput graphs to arrive at the highest overall performing configuration. The highest performing configuration is with Tor able to raise its timeout rapidly to match varying network conditions. It has a Pareto Quantile of 0.3 or 30%. It also has longer recent circuits with a very low minimum timeout.&lt;a target=&quot;graph&quot; href=&quot;http://docs.google.com/Doc?docid=0AaYAzYus3pVYZGY1djVuandfMTdjazlyazhnMg&amp;amp;hl=en&quot; rel=&quot;nofollow&quot;&gt;Graph&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Lan to Mobile to Lan&lt;br /&gt;
+I also tested the ability of Tor, with its new Pareto Distribution feature to track network speeds and adjust accordingly. This graph shows on the left the high ping time for the mobile network, and the low ping time for the wireless network. On the right, Tor attempts to track these varying networks when it sets a new Network Connection Speed timeout. You can see the change in ping time for the Mobile network (slower) and the wireless network (quicker), with the Network Connection Speed timeout on the right.&lt;/p&gt;
+
+&lt;p&gt;When Tor is switched from the wireless to Mobile network Tor starts increasing its Network Connection Speed timeout. At the point the rapid dip occurs in the Network Connection Speed timeout, Tor was switched from Mobile to wireless with the IpAddress and then DNS server resetting, to pick up the new network. Tor&#39;s Network Connection Speed timeout rapidly reduces to reflect timeout occuring on a faster network. &lt;a target=&quot;graph&quot; href=&quot;http://docs.google.com/Doc?docid=0AaYAzYus3pVYZGY1djVuandfMzFjOHNqbjNnZA&amp;amp;hl=en&quot; rel=&quot;nofollow&quot;&gt;Graph&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Taking a look at the Network Map in Vidalia all looks ok, with circuits being generated all over the globe, but slightly centered in Europe, where my Tor client resides.&lt;/p&gt;
+
+&lt;p&gt;What does the jury think about these results ?&lt;/p&gt;
+
+&lt;p&gt;To me they suggest that you can set a low initial timeout, and with a reduction in the Pareto Quantile and the ability to let Tor raise its timeout rapidly, we have a Tor that will adjust to network conditions and provide high performance.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>lovecreatesbeauty@gmail.c0m (not verified): Comment 2</title>
+	<dcterms:creator>lovecreatesbeauty@gmail.c0m (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_2/</link>
+
+	<pubDate>Wed, 09 Dec 2009 06:43:34 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:43:34Z</dcterms:modified>
+
+	<description>&lt;p&gt;Dear Tor developer,&lt;/p&gt;
+
+&lt;p&gt;Thanks for presenting the great Tor software!&lt;/p&gt;
+
+&lt;p&gt;(I&#39;m not a native English speaker and not good at this language, so I go to the point directly &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/../../smileys/smile.png&quot; alt=&quot;:-)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I&#39;m using latest[1] Tor + Firefox combination. Can Tor be set per Tab in Firefox? I can post to your dearest blog.torproject.org by Tor + Firefox, but can not post to blogspot.com. I had the problme with previous Tor bundles.&lt;/p&gt;
+
+&lt;p&gt;Regards&lt;/p&gt;
+
+&lt;p&gt;[1] vidalia-bundle-0.2.2.6-alpha-0.2.6.exe + Firefox 3.5.5&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 3</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_3/</link>
+
+	<pubDate>Wed, 09 Dec 2009 06:43:35 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:43:35Z</dcterms:modified>
+
+	<description>Tor is not per-tab because of the protections needed inside the core of firefox that are shared amongst tabs.  You would be sad if one tab exposed your identity while another was using tor.
+</description>
+
+
+</item>
+<item>
+
+	<title>CAv (not verified): Comment 4</title>
+	<dcterms:creator>CAv (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_4/</link>
+
+	<pubDate>Wed, 09 Dec 2009 06:43:36 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:43:36Z</dcterms:modified>
+
+	<description>&lt;a href=&quot;http://docs.google.com/fileview?id=0B6YAzYus3pVYOGE1YmQzZTItMDJlMS00YWRkLThjOTAtNGMzM2ZkMzE5NjQx&amp;amp;hl=en&quot; title=&quot;http://docs.google.com/fileview?id=0B6YAzYus3pVYOGE1YmQzZTItMDJlMS00YWRkLThjOTAtNGMzM2ZkMzE5NjQx&amp;amp;hl=en&quot; rel=&quot;nofollow&quot;&gt;http://docs.google.com/fileview?id=0B6YAzYus3pVYOGE1YmQzZTItMDJlMS00YWRk...&lt;/a&gt;
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 5</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_5/</link>
+
+	<pubDate>Wed, 09 Dec 2009 06:43:37 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:43:37Z</dcterms:modified>
+
+	<description>perhaps the tor-assistants email address is a better place for this than a blog comment.   arma and mikeperry may be interested in this, i&#39;ve let them know about it.
+</description>
+
+
+</item>
+<item>
+
+	<title>CAv (not verified): Comment 6</title>
+	<dcterms:creator>CAv (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_6/</link>
+
+	<pubDate>Fri, 11 Dec 2009 06:43:38 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:43:38Z</dcterms:modified>
+
+	<description>&lt;p&gt;Its finally here, after exhaustive testing, a high-performance pack has been put together for those on Windows who enjoy broadband connections, but want their privacy back - easily.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://thepiratebay.org/torrent/5210170/Tor_Black_Belt_Edition.exe&quot; title=&quot;http://thepiratebay.org/torrent/5210170/Tor_Black_Belt_Edition.exe&quot; rel=&quot;nofollow&quot;&gt;http://thepiratebay.org/torrent/5210170/Tor_Black_Belt_Edition.exe&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This pack contains:&lt;br /&gt;
+    Tuned version of Polipo.&lt;br /&gt;
+    Tuned version of Tor&lt;br /&gt;
+    much faster install and uninstall time&lt;/p&gt;
+
+&lt;p&gt;Other goodies that you&#39;ll have to find out by downloading...&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 7</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_7/</link>
+
+	<pubDate>Fri, 11 Dec 2009 06:43:39 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:43:39Z</dcterms:modified>
+
+	<description>documentation? specs?  you should document what this is and how to re-create it from scratch, otherwise most will assume it&#39;s a trojan or spyware.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 8</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_8/</link>
+
+	<pubDate>Fri, 11 Dec 2009 06:43:40 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:43:40Z</dcterms:modified>
+
+	<description>&lt;p&gt;I have a documentation that gets setup.&lt;/p&gt;
+
+&lt;p&gt;I am taking what you say on board and will do my best to satisfy the request for more detail.&lt;/p&gt;
+
+&lt;p&gt;I am more than happy to work within any restrictions or augmentations that the community places.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 9</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_9/</link>
+
+	<pubDate>Fri, 11 Dec 2009 06:43:41 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:43:41Z</dcterms:modified>
+
+	<description>&lt;p&gt;Black Belt Edition v00.00.02 is the current one, be great to hear some feedback.&lt;br /&gt;
+Still not sure if this is the right place for all this - but I had to start somewhere.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://thepiratebay.org/search/tor+black+belt/0/3/300&quot; title=&quot;http://thepiratebay.org/search/tor+black+belt/0/3/300&quot; rel=&quot;nofollow&quot;&gt;http://thepiratebay.org/search/tor+black+belt/0/3/300&lt;/a&gt;&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 10</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_10/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_10/</link>
+
+	<pubDate>Sat, 12 Dec 2009 06:43:42 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:43:42Z</dcterms:modified>
+
+	<description>&lt;p&gt;PLEASE UPLOAD Tor Black Belt Edition v00.00.02 AT THE &lt;a href=&quot;http://hotfile.com&quot; title=&quot;http://hotfile.com&quot; rel=&quot;nofollow&quot;&gt;http://hotfile.com&lt;/a&gt; OR&lt;br /&gt;
+&lt;a href=&quot;http://uploading.com&quot; title=&quot;http://uploading.com&quot; rel=&quot;nofollow&quot;&gt;http://uploading.com&lt;/a&gt;  (NOT RAPIDSHARE) AND GIVE US THE LINK , AS WE HAVE PROBLEMS DOWNLOAD IT FROM THE TORRENTS&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 11</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_11/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_11/</link>
+
+	<pubDate>Sat, 12 Dec 2009 06:43:43 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:43:43Z</dcterms:modified>
+
+	<description>&lt;p&gt;ok - im a bit busy right now.,.. and working on an even better version.&lt;/p&gt;
+
+&lt;p&gt;I will be in a position to upload that once tested, and will do so to those links.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 12</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_12/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_12/</link>
+
+	<pubDate>Sat, 12 Dec 2009 06:43:44 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:43:44Z</dcterms:modified>
+
+	<description>THANKS !
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 13</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_13/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_13/</link>
+
+	<pubDate>Sun, 13 Dec 2009 06:43:45 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:43:45Z</dcterms:modified>
+
+	<description>The new Tor -- both alpha and stable are completely not working for me. I think it has something to do with the switch to polipo.
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 14</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_14/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_14/</link>
+
+	<pubDate>Mon, 14 Dec 2009 06:43:46 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:43:46Z</dcterms:modified>
+
+	<description>&lt;p&gt;What does Message Log state?  What errors do you receive?  Have you joined #tor or asked tor-assistants for help?  &lt;/p&gt;
+
+&lt;p&gt;giving details solves problems, not wild speculation.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 15</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_15/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_15/</link>
+
+	<pubDate>Sun, 20 Dec 2009 06:43:47 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:43:47Z</dcterms:modified>
+
+	<description>Hello there, OS X 10.4.11 on 1gen black macbook, the new Vidalia doesn&#39;t work in any shape or form, the program does not even boot up, only jumps once and dies. I only &quot;updated&quot; because my previous working version prompted me to do so. Now I feel dejected. I hope the previous version is still kicking around somewhere.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 16</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_16/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_16/</link>
+
+	<pubDate>Wed, 13 Jan 2010 06:43:48 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:43:48Z</dcterms:modified>
+
+	<description>0.2.2.6 alpha for windows works with firefix, ms ie 8 and chrome 4.0.249.64 (35722) beta. thanks.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 17</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_17/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_17/</link>
+
+	<pubDate>Wed, 13 Jan 2010 06:43:49 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:43:49Z</dcterms:modified>
+
+	<description>newest firefox of course: 3.5.7 &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 18</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_18/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comment_18/</link>
+
+	<pubDate>Tue, 04 May 2010 06:43:50 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:43:50Z</dcterms:modified>
+
+	<description>i play diablo 2 the game... but atm im using a proxyfirewall and using tor. my queston is is there a way i can set up the rout where the points are closer to me. and also is there any download to play with the routing. my ping on the game is 3000+ witch is hardly usable for me... if you cant would you refer to me to a place where i can pay to try to get a faster connection?
+</description>
+
+
+</item>
+
+</channel>
+</rss>

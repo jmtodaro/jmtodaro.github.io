@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged false_positive</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/false_positive/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: AntiVir, Tor Browser Bundle, and trojan Dropper.Gen false positive</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/AntiVir_Tor_Browser_Bundle_and_trojan_Dropper_Gen_false_positive/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/AntiVir_Tor_Browser_Bundle_and_trojan_Dropper_Gen_false_positive/</link>
+
+
+	<category>/tags/anti-virus</category>
+
+	<category>/tags/false_positive</category>
+
+	<category>/tags/tor_browser_bundle</category>
+
+
+	<pubDate>Tue, 07 Apr 2009 09:53:30 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:22:16Z</dcterms:modified>
+
+	<description>&lt;p&gt;A number of people are reporting that AntiVir&#39;s latest update is reporting trojan Dropper.Gen in the Tor Browser Bundle version 1.1.11, specifically the &quot;Start Tor Browser.exe&quot; program.  &lt;/p&gt;
+
+&lt;p&gt;This appears to be a false positive from AntiVir.  No one has confirmed they&#39;ve checked the pgp signature with their download of TBB.  You may want to confirm you&#39;ve actually downloaded our package, &lt;a href=&quot;https://www.torproject.org/verifying-signatures&quot; title=&quot;https://www.torproject.org/verifying-signatures&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/verifying-signatures&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;False positives occurs often enough we have a FAQ entry about it, &lt;a href=&quot;https://www.torproject.org/faq#VirusFalsePositives&quot; title=&quot;https://www.torproject.org/faq#VirusFalsePositives&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/faq#VirusFalsePositives&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You can read more about the trojan at &lt;a href=&quot;http://www.avira.ro/en/threats/section/details/id_vir/3647/tr_dropper.gen.html&quot; title=&quot;http://www.avira.ro/en/threats/section/details/id_vir/3647/tr_dropper.gen.html&quot; rel=&quot;nofollow&quot;&gt;http://www.avira.ro/en/threats/section/details/id_vir/3647/tr_dropper.ge...&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I&#39;m building a VM to specifically test this AntiVir version against Start Tor Browser.exe to see what inside the executable is triggering the false positive.&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/AntiVir_Tor_Browser_Bundle_and_trojan_Dropper_Gen_false_positive/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

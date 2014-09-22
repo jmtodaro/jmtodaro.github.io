@@ -1,0 +1,1411 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Tor 0.2.1.15-rc released</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:26:53Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_1/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:09Z</updated>
+	<published>2009-06-01T11:26:09Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hello,&lt;/p&gt;
+
+&lt;p&gt;I have intstalled this version from 2 days and it seem to be stable and exit on more various exit node...&lt;/p&gt;
+
+&lt;p&gt;the only error i obtain sometime with all version are : eventdnd: all namesserveur failed&lt;/p&gt;
+
+&lt;p&gt;but it never cut or make problem just i found this message in log vidalia...&lt;/p&gt;
+
+&lt;p&gt;Thanks for all great work...&lt;/p&gt;
+
+&lt;p&gt;i have a question about browser.. i use the plugin for firefox &quot;jondofox&quot; for firefox 3 and are the button to enable TOR, JOndo or custom proxy, after test on different site it never send headers and make no leaks data.. Are for anti script and all important plugins inclus..&lt;/p&gt;
+
+&lt;p&gt;what do you mean about the security with it and tor?&lt;/p&gt;
+
+&lt;p&gt;my best&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_2/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:10Z</updated>
+	<published>2009-06-04T11:26:10Z</published>
+
+	<content type="html" xml:lang="en">
+	I don&#39;t think anyone has tested these two extensions with one another.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_3/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:11Z</updated>
+	<published>2009-06-01T11:26:11Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;You still haven&#39;t fixed the problem with values below 30 for CircuitBuildTimeout that no longer have is working since version 0.2.1.8A.&lt;/p&gt;
+
+&lt;p&gt;About the command CircuitBuildTimeout, before version 0.2.1.9 in the torrc one has been able to change this to lower values than 30, thats no longer the case, I think this is bad for one&#39;s privacy and bad for the overall speed of Tor, example:&lt;/p&gt;
+
+&lt;p&gt;If 2 of the 3 nodes in the circuit build fast (less than 2 sec) and the 3rd takes up to 28 sec then it&#39;s obviously either&lt;br /&gt;
+1 overloaded, and it would be better if some people(that change this value in torrc) waited less than 30 sec to try to build another circuit)or&lt;br /&gt;
+2 even worse it&#39;s doing some bad thing like an timing attacks(and you do absolutely not want use it then.).&lt;/p&gt;
+
+&lt;p&gt;It would of course not be good for ones privacy to use values like 2, 3 or similar(if that leads to that only 50 nods is fast enough) but one should definitely be able to use values like 5-29, the choice should really be up to people them selfs, not be forced upon them to use these high values.&lt;/p&gt;
+
+&lt;p&gt;Why do you make changes to Tor that purposely decreases peoples security &amp;amp; speed ?&lt;br /&gt;
+Are you going to implement this bad thing in the coming stable versions too ?&lt;/p&gt;
+
+&lt;p&gt;According to Figure 5 in the performance.pdf around 85-90% of the whole circuits(all 3 nodes) are created within 7 seconds, and around 70% within 5 seconds, so could you please allow people to choose values of 5-10 seconds for CircuitBuildTimeout in coming Tor versions.&lt;/p&gt;
+
+&lt;p&gt;People who needs higher security needs to lower this value to decrease the ability to illegally monitor them from organizations(like the NSA) that controls large parts the internet &amp;amp; Tor&#39;s traffic.&lt;/p&gt;
+
+&lt;p&gt;Otherwise you would create an unnecessary security risk for people that either would have to accept higher risk for timing attacks and similar (using version 0.2.1.9A-0.2.1.15RC).&lt;br /&gt;
+or be forced to use an old(version 0.2.1.8A or earlier) insecure(?) version of Tor, both a bad thing of course.&lt;/p&gt;
+
+&lt;p&gt;Please allow CircuitBuildTimeout values of 5-29.&lt;br /&gt;
+This should be allowed at least until you fix this new approach in the coming 0.2.2.x or later versions.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_4/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:12Z</updated>
+	<published>2009-06-04T11:26:12Z</published>
+
+	<content type="html" xml:lang="en">
+	This was released in 0.2.1.9-alpha, &lt;a href=&quot;https://blog.torproject.org/blog/tor-0.2.1.9-alpha-released&quot; title=&quot;https://blog.torproject.org/blog/tor-0.2.1.9-alpha-released&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-0.2.1.9-alpha-released&lt;/a&gt;.  It&#39;s a bugfix and designed to better protect your anonymity. If you have more recent research that shows a lower circuitbuildtimeout improves anonymity, we&#39;re happy to review it.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_5/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:13Z</updated>
+	<published>2009-06-08T11:26:13Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;If a couple of % of tor&#39;s users needs higher security against timing attacks and change there settings to 5-10 seconds instead of 120(earlier standard value), 60(standard value) or 30 lowest possible now with latest versions, it won&#39;t be a problem if:&lt;/p&gt;
+
+&lt;p&gt;According to Figure 5 in the performance.pdf around 85-90% of the whole circuits(all 3 nodes) are created within 7 seconds, and around 70% within 5 seconds, so could you please allow people to choose values of 5-10 seconds for CircuitBuildTimeout in coming Tor versions.&lt;/p&gt;
+
+&lt;p&gt;By taking away that possibility for the people who needs higher protection against timing attacks you give the bad guys who monitors &amp;amp; modifies traffic an helping hand.&lt;/p&gt;
+
+&lt;p&gt;By having all circuits in an smaller timespan(for example 0-5 sec),  compared to 0-30 or even worse 0-60 or 0-120 sec you make it harder for the bad guys who does timing attacks(on Tor network) to be able to isolate a particular persons circuits from other persons.&lt;/p&gt;
+
+&lt;p&gt;It&#39;s sad to see that the Tor project by this change has actively started to help NSA and similar organization to break peoples anonymity.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_6/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:14Z</updated>
+	<published>2009-07-25T11:26:14Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I have reverted to 0.2.1.8 specifically because it supports low value for circuit time-out.&lt;br /&gt;
+Interestingly I still get a good variety of nodes being used from all over the planet - so I am happy with a small time-out.&lt;/p&gt;
+
+&lt;p&gt;I wont be upgrading to the newer Tor version for this reason. If at some point 0.2.1.8 becomes a version that is extinct in terms of connecting to Tor then I will drop Tor altogether and stop hosting an exit node for others too.&lt;/p&gt;
+
+&lt;p&gt;I hate it when software designers make choices for us. We are grown up and adult to make those choices ourselves. &lt;/p&gt;
+
+&lt;p&gt;There is no point having fantastic anonymity if pages take 1 to 2 minutes to load - which they can on the newer Tor version with CircuitBuildTimeout set too low.&lt;/p&gt;
+
+&lt;p&gt;Also - for those who want more and more speed - i recommend on using the latest beta of Vidalia and Privoxy (on windows)&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_7/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:15Z</updated>
+	<published>2009-06-04T11:26:15Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Here&#39;s a better answer:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02114rc-released#comment-1124&quot; title=&quot;http://blog.torproject.org/blog/tor-02114rc-released#comment-1124&quot; rel=&quot;nofollow&quot;&gt;http://blog.torproject.org/blog/tor-02114rc-released#comment-1124&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&quot;You&#39;re right that in the older versions you could configure it to prefer the&lt;br /&gt;
+circuits that completed faster. Letting users set it too low is a bug: if&lt;br /&gt;
+everybody did that, the relays would get overwhelmed with circuit creation&lt;br /&gt;
+requests, making everything slower, and leading all the Tor clients to&lt;br /&gt;
+unwittingly launch DoS attacks on the network. We can&#39;t allow that.&lt;/p&gt;
+
+&lt;p&gt;The right answer is to have every Tor client automatically track how long it&lt;br /&gt;
+takes to build circuits, and then discard circuits that take more than a&lt;br /&gt;
+standard dev above the mean. For more details, check out Section 5.2 of the&lt;br /&gt;
+performance.pdf document I posted about here:&lt;br /&gt;
+&lt;a href=&quot;https://blog.torproject.org/blog/why-tor-is-slow&quot; title=&quot;https://blog.torproject.org/blog/why-tor-is-slow&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/why-tor-is-slow&lt;/a&gt;&lt;br /&gt;
+and also proposal 151:&lt;br /&gt;
+&lt;a href=&quot;https://git.torproject.org/checkout/tor/master/doc/spec/proposals/151-pa&quot; title=&quot;https://git.torproject.org/checkout/tor/master/doc/spec/proposals/151-pa&quot; rel=&quot;nofollow&quot;&gt;https://git.torproject.org/checkout/tor/master/doc/spec/proposals/151-pa&lt;/a&gt;...&lt;/p&gt;
+
+&lt;p&gt;We hope to have this dynamic-timeout-calculation feature in the Tor 0.2.2.x&lt;br /&gt;
+series. In the mean time, let&#39;s all try not to make the Tor network fall over.&quot;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_8/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:16Z</updated>
+	<published>2009-06-02T11:26:16Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Is this possible to do in windows XP ?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://img300.imageshack.us/img300/636/torprivoxysquid.png&quot; title=&quot;http://img300.imageshack.us/img300/636/torprivoxysquid.png&quot; rel=&quot;nofollow&quot;&gt;http://img300.imageshack.us/img300/636/torprivoxysquid.png&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;What programs do i use instead of squid then ?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_9/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:17Z</updated>
+	<published>2009-06-02T11:26:17Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hello,&lt;/p&gt;
+
+&lt;p&gt;i have try to make my full DNS , like exclude node and rendez-vous but it seem to not take in vidalia and work not so....&lt;/p&gt;
+
+&lt;p&gt;What can we do to fix that? That&#39;s will be great when we can accept more port, and all torrec config accepted...&lt;/p&gt;
+
+&lt;p&gt;thanks in advance for the answer &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;my best&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_10/"/>
+
+	<author><name>swisstorexit (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:18Z</updated>
+	<published>2009-06-03T11:26:18Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hello,&lt;/p&gt;
+
+&lt;p&gt;I have found how force vidalia to accept the TOR config modified from us, i have only create a new right and file for the config torrc and change the path in vidalia to use mine...&lt;/p&gt;
+
+&lt;p&gt;now it accept the name full DNS and i have use the command: excludeexitnodes (ip to block) and excludenodes too and seem to block the bad exit and node...&lt;/p&gt;
+
+&lt;p&gt;The version 02.1.15 are really more performant and run well... &lt;/p&gt;
+
+&lt;p&gt;i think that&#39;s will be good to accept another buildtimecircuit under 30 ...&lt;/p&gt;
+
+&lt;p&gt;For the best security i block spammer, hacker, hijacked, faker, pedophile , troyan and only very bad thinks with blocklist... &lt;/p&gt;
+
+&lt;p&gt;i don&#39;t know when that&#39;s really help against attack on TOR but the performance are very good and my speed are almost always good speed for the web...&lt;/p&gt;
+
+&lt;p&gt;Thanks to all devloper and staff for all great work and viva our privacy &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/../../smileys/smile4.png&quot; alt=&quot;;)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;my Best&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_11/"/>
+
+	<author><name>swisstorexit (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:19Z</updated>
+	<published>2009-06-04T11:26:19Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;hello,&lt;/p&gt;
+
+&lt;p&gt;I have block a few exit and node with ip and work perfect, i have try to add a country too but the problem are it will exit or use the country as it don&#39;t use...&lt;/p&gt;
+
+&lt;p&gt;I think country are only for choose exit or node you want but not too block it.. &lt;/p&gt;
+
+&lt;p&gt;it&#39;s that&#39;s so or have i do something wrong? &lt;/p&gt;
+
+&lt;p&gt;excludenodes 127.00.00,235.125.12.0,SE,DE    for exemple and without the country it block and with it use...&lt;/p&gt;
+
+&lt;p&gt;i work with the last geoip and this version tor 0.2.1.15-1 jaunty 64 bits&lt;/p&gt;
+
+&lt;p&gt;so i can confirm the country are reconize well by me , just not what i want &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/../../smileys/smile4.png&quot; alt=&quot;;)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;maybe need ip or country ?  Are somebody with same problem?&lt;/p&gt;
+
+&lt;p&gt;my best&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 12</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_12/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_12/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:20Z</updated>
+	<published>2009-06-08T11:26:20Z</published>
+
+	<content type="html" xml:lang="en">
+	ExcludeNodes {de}, {se}
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 13</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_13/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_13/"/>
+
+	<author><name>swisstorexit (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:21Z</updated>
+	<published>2009-06-08T11:26:21Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Thanks very much for your answer, i have try so but with big letter like {SE]  i will try next time like you siad...&lt;/p&gt;
+
+&lt;p&gt;At time i have only block ip and work very well , it&#39;s always excludes &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;my best&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 14</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_14/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_14/"/>
+
+	<author><name>swisstorexit (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:22Z</updated>
+	<published>2009-06-09T11:26:22Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;thanks, with little letter work fine like you have told me, super...&lt;/p&gt;
+
+&lt;p&gt;have a good time &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 15</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_15/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_15/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:23Z</updated>
+	<published>2009-06-05T11:26:23Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Steve Topletz, a Xerobank guy, claims:&lt;/p&gt;
+
+&lt;p&gt;&quot;It will quickly do an IP scan for network detection (instant) and can ban based on proxy detection, then it loads up about 25 proxy-breaking tests which take a half second to 3 seconds or so to complete each but can be run concurrently.&lt;/p&gt;
+
+&lt;p&gt;The point is not to be some evil tool but to demonstrate to everyone that they aren&#39;t as anonymous as they are being led to believe. This will change the game and put nearly all &quot;anonymity&quot; (privacy) services and networks to shame.&quot;&lt;/p&gt;
+
+&lt;p&gt;source:&lt;br /&gt;
+&lt;a href=&quot;http://www.wilderssecurity.com/showpost.php?p=1480717&amp;amp;postcount=24&quot; title=&quot;http://www.wilderssecurity.com/showpost.php?p=1480717&amp;amp;postcount=24&quot; rel=&quot;nofollow&quot;&gt;http://www.wilderssecurity.com/showpost.php?p=1480717&amp;amp;postcount=24&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Is there a big trouble?&lt;br /&gt;
+What are these 35 tests?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 16</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_16/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_16/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:24Z</updated>
+	<published>2009-06-08T11:26:24Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;m going to wait and see.  Every defcon/blackhat/usenixsec there is some presentation that claims to break Tor.  Most researchers talk to us in advance and offer suggestions to fix Tor, or explain how they broke Tor.  It&#39;s easy to break Tor in a lab environment, when you can control variables.  Attacking the OS is far easier than Tor itself. See &lt;a href=&quot;http://decloak.net/&quot; title=&quot;http://decloak.net/&quot; rel=&quot;nofollow&quot;&gt;http://decloak.net/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We know nothing more than you about this supposed proxy-breaking tool.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 17</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_17/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_17/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:25Z</updated>
+	<published>2009-06-08T11:26:25Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;In this thread you link to, SteveTX is lying here:&lt;/p&gt;
+
+&lt;p&gt;&quot;  Tor nodes are not &quot;allowed&quot; to keep logs. If they find out you keep logs or do injecting, they put you in a &quot;badnode&quot; list. So presumably, if every link in your circuit (3) kept logs they could find out who you are.  &quot;&lt;/p&gt;
+
+&lt;p&gt;Since the 1 jan 2009 all tor nodes in Germany have to log all traffic from ip, to ip,......&lt;br /&gt;
+If they don&#39;t, the police close them down &amp;amp; bring criminal charges against them.&lt;br /&gt;
+And as far as i know all the German nodes are not marked as bad and banned.&lt;br /&gt;
+Is this a feature you will implement soon ???&lt;br /&gt;
+It sounds like this guy(SteveTX) doesn&#39;t have a clue what he&#39;s talking about.....&lt;/p&gt;
+
+&lt;p&gt;Then you have the USA &amp;amp; Greatbritain that monitors all traffic going between euroupe &amp;amp; north america, the sweedes saves all data that passes throu sweden and so on, so a lot of the data is both logged and saved for later examination.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 18</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_18/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_18/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:26Z</updated>
+	<published>2009-07-31T11:26:26Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;As author of that site, I can answer your question validity.&lt;/p&gt;
+
+&lt;p&gt;Deanonymizer is a on going project since new bugs/vulnerablities are found frequently. It attempts to make your browser use third-party apps that are already installed on your system.  Yes, I know about HD&#39;s decloak(.net), and his test also address the same issue of bad security compromising your privacy.  I have initially chosen not include java or flash during the initial launch of the site because it&#39;s been done over and over already, but I may add it later...we&#39;ll see.&lt;/p&gt;
+
+&lt;p&gt;If you follow good security practices, use things like Torbutton and Noscript, then you should be good.  Some people will not be affected, some will.  If you make a decent attempt to secure your browser, then you should be alright.  NEVER USE INTERNET EXPLORER.&lt;/p&gt;
+
+&lt;p&gt;The point of the site is to point out bad security implementations in various different privacy/anonymity solutions or products; this is not affecting just Tor.&lt;/p&gt;
+
+&lt;p&gt;So to answer the question of this subject, no, Tor is not broken, but your web browsers security might be.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 19</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_19/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_19/"/>
+
+	<author><name>Kyle (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:27Z</updated>
+	<published>2009-07-31T11:26:27Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;haha, I just saw that I posted that last post anonymously.&lt;br /&gt;
+Good times in vegas....&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 20</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_20/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_20/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:28Z</updated>
+	<published>2009-08-01T11:26:28Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;topletz is an attention whore, maybe people will stop paying attention to these press release attacks some day.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.wilderssecurity.com/showthread.php?t=249426&quot; title=&quot;http://www.wilderssecurity.com/showthread.php?t=249426&quot; rel=&quot;nofollow&quot;&gt;http://www.wilderssecurity.com/showthread.php?t=249426&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;people are finally starting to realize this crap is just crap&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 21</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_21/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_21/"/>
+
+	<author><name>pietro (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:29Z</updated>
+	<published>2009-06-07T11:26:29Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;7 june &#39;09&lt;/p&gt;
+
+&lt;p&gt;hello, phobos, and from the outset, thank you&lt;/p&gt;
+
+&lt;p&gt;sorry if this post is in an incorrect spot, but&lt;/p&gt;
+
+&lt;p&gt;i recently installed tor and used some email accounts to do a rudimentary test.&lt;br /&gt;
+with my browser opened conventionally i went to an one email acct(a) and sent a message to a different acct(b). i then deleted all cookies/history when closing my browser (recently updated firefox.)&lt;/p&gt;
+
+&lt;p&gt;i then started vidalia, and connected to the tor network, reopened the browser and sent a second message from acct(a) to acct(b). I was surprised upon opening the full headers of the separate emails that they both contained the same originating ip.&lt;/p&gt;
+
+&lt;p&gt;when i view the message log it says, &quot;we now have enough directory information to build circuits&quot; and then &quot;tor has successfully opened a circuit. looks like client functionality is working.&quot;&lt;/p&gt;
+
+&lt;p&gt;yet the email headers/path would seem to indicate otherwise.&lt;br /&gt;
+what have i done incorrectly?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 22</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_22/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_22/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:30Z</updated>
+	<published>2009-06-08T11:26:30Z</published>
+
+	<content type="html" xml:lang="en">
+	If this was a mail client on your machine, tor doesn&#39;t clean content.  If this was a web mail account, was the IP address your IP address?  Or was it the exit node IP address?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 23</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_23/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_23/"/>
+
+	<author><name>pietro (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:31Z</updated>
+	<published>2009-06-08T11:26:31Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;thanks for your reply.&lt;/p&gt;
+
+&lt;p&gt;it was my actual ip. i have since backtracked and done some more research on my own, sorry for being a neophyte.&lt;br /&gt;
+even though the control panel and the message log say connected, the checktpo url said no. i believe the problem is i may not have the network settings in either, or both, vidalia/tor and my mac (yes, i installed the mac bundle) vis-a-vis proxies/ports set/id&#39;ed correctly.&lt;br /&gt;
+i lazily thought that privoxy as part of the bundle was going to automatically detect and prescribe these connections. embarrassingly i may not be enough of a systems admin sort a guy to accomplish this, yet  (i know its really just a dialogue box, but i don&#39;t understand the architectural references.) even though i remember elements of -ancient- ms-dos, and know some basic (X)HTML i am not facile enough in the terminal x environment, i.e., at the command line.&lt;br /&gt;
+plus i&#39;m connecting mostly through wifi, i assume that involves some more proxy voodoo.  i got some learnin&#39; to do...&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 24</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_24/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_24/"/>
+
+	<author><name>swisstorexit (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:32Z</updated>
+	<published>2009-06-07T11:26:32Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hello,&lt;/p&gt;
+
+&lt;p&gt;i see are the livevent 1.4.2 with tor experimental 0.2.1.15 rc and in my reposery jaunty 64 bits i have the 1.3e automatic when i will install tor from it, to work with 1.4.2 i need intsall the package from the site and intsall the geoip after and so it work with the 1.4.2..&lt;/p&gt;
+
+&lt;p&gt;What&#39;s the better for me stay with 1.4.2 or return with the normal 1.3e from my reposery?&lt;/p&gt;
+
+&lt;p&gt;thanks in advance for your answers&lt;/p&gt;
+
+&lt;p&gt;my best&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 25</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_25/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_25/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:33Z</updated>
+	<published>2009-06-08T11:26:33Z</published>
+
+	<content type="html" xml:lang="en">
+	Either works fine.  libevent just released 1.4.11.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 26</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_26/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_26/"/>
+
+	<author><name>swisstorexit (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:34Z</updated>
+	<published>2009-06-08T11:26:34Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;thanks very much, while i have not see a big deal and not many explain about change.. i see only it support other format...&lt;/p&gt;
+
+&lt;p&gt;i stay with the new so i will see when are bug... &lt;/p&gt;
+
+&lt;p&gt;to now are always the eventdns error : allnamesserveur failed..&lt;/p&gt;
+
+&lt;p&gt;but i see are many with same message .. excpet this log , i have never a error on linux jaunty 64 bits intel&lt;/p&gt;
+
+&lt;p&gt;my best&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 27</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_27/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_27/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:35Z</updated>
+	<published>2009-06-08T11:26:35Z</published>
+
+	<content type="html" xml:lang="en">
+	Can governments control Tor nodes on net?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 28</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_28/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_28/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:36Z</updated>
+	<published>2009-06-10T11:26:36Z</published>
+
+	<content type="html" xml:lang="en">
+	Tor is designed so that anyone can run a Tor node.  This includes governments.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 29</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_29/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_29/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:37Z</updated>
+	<published>2009-06-10T11:26:37Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hi phobos.&lt;/p&gt;
+
+&lt;p&gt;I&#39;ve been one of tor users for some time. I read a news before on the net. It said that governments or organizations in some contries control the underlying telcom or internet connection. Will tor nodes or networks be limited, controlled or blocked by those governments or organizations? Can tor immune to those interfaces?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 30</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_30/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_30/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:38Z</updated>
+	<published>2009-06-11T11:26:38Z</published>
+
+	<content type="html" xml:lang="en">
+	I can&#39;t tell you what governments or organizations will do in the future.  I can tell you that to date, Tor works in every country.  Perhaps it does work in North Korea, but no one has reported back to us from there, so we don&#39;t know.  If Tor becomes a threat to the organization trying to control the Internet in a country, they will try to block Tor.  The arms race will continue where they try to block us, we respond, they try something else, we respond, etc.  Our goal is to have an arms race as slow as possible.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 31</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_31/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_31/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:39Z</updated>
+	<published>2009-06-11T11:26:39Z</published>
+
+	<content type="html" xml:lang="en">
+	Yes, I get it. Tor works in Mainland China up to now.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 32</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_32/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_32/"/>
+
+	<author><name>swisstorexit (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:40Z</updated>
+	<published>2009-06-09T11:26:40Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Herllo,&lt;/p&gt;
+
+&lt;p&gt;i have tested with some exploit the system and in all case with accept java and flash, are never find DNS true ip of me , it&#39;s said always no info except external ip &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;my problem are in external NAT flash are found sometime my true ip but not always...&lt;/p&gt;
+
+&lt;p&gt;i will know what i can do to fix that?&lt;/p&gt;
+
+&lt;p&gt;With what i have read seem very good when the DNS are never my true ip and no info about external NAT...&lt;/p&gt;
+
+&lt;p&gt;Is that possible are while a torrent program work in external or are upnp option?&lt;/p&gt;
+
+&lt;p&gt;thanks for answer in advance..&lt;/p&gt;
+
+&lt;p&gt;my best&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 33</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_33/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_33/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:41Z</updated>
+	<published>2009-06-10T11:26:41Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I don&#39;t fully understand your question.  Flash and Java can be used to bypass your proxy settings in the browser.  In fact, neither flash nor java have to honor any proxy settings you configure in their settings.  Applets can simply ignore the proxy settings.&lt;/p&gt;
+
+&lt;p&gt;As for torrent programs, using Tor for a tracker is probably ok, but doing bulk data transfer over Tor simply overloads the network.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 34</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_34/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_34/"/>
+
+	<author><name>swisstorexit (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:42Z</updated>
+	<published>2009-06-11T11:26:42Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;hello,&lt;/p&gt;
+
+&lt;p&gt;sorry for my english,&lt;/p&gt;
+
+&lt;p&gt;my system block all plugins in basic to have no problem with that but i have try the test found in this blog to see with all accepted what was found for info of me...&lt;/p&gt;
+
+&lt;p&gt;After many test only the flash from external NAT was bypass, all others programms or plugins don&#39;t was bypass and give info... so the security are really great ..&lt;/p&gt;
+
+&lt;p&gt;in all case my browser and system don&#39;t accept and use flash ect....&lt;/p&gt;
+
+&lt;p&gt;So i have ask when you think was from a extern programm, like bittorent or a device who have give the true ip in test...&lt;/p&gt;
+
+&lt;p&gt;now with your answer, i know are the proxy bypassed from the flash only &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/../../smileys/smile4.png&quot; alt=&quot;;)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For torrent , that&#39;s sure i will never use TOR for the peer connections, what i take are many linux but i like to be connected to the tracker anonyme too. Trackers work great ! need only use a program who can resolve the host in proxy , so i never have more a leak data or ip...&lt;/p&gt;
+
+&lt;p&gt;Thanks for your answer, i have mean maybe i have forget to config something.... &lt;/p&gt;
+
+&lt;p&gt;my best&lt;br /&gt;
+Thanks&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 35</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_35/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_35/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:43Z</updated>
+	<published>2009-06-12T11:26:43Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Does Torbutton protect us from this issue?&lt;br /&gt;
+&lt;a href=&quot;http://www.trusteer.com/temporary-user-tracking-in-major-browsers&quot; title=&quot;http://www.trusteer.com/temporary-user-tracking-in-major-browsers&quot; rel=&quot;nofollow&quot;&gt;http://www.trusteer.com/temporary-user-tracking-in-major-browsers&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If no, can you add this protection? Please&lt;/p&gt;
+
+&lt;p&gt;Thanks&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 36</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_36/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_36/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:44Z</updated>
+	<published>2009-06-12T11:26:44Z</published>
+
+	<content type="html" xml:lang="en">
+	you can use noscript
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 37</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_37/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_37/"/>
+
+	<author><name>swisstorexit (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:45Z</updated>
+	<published>2009-06-16T11:26:45Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;hello,&lt;/p&gt;
+
+&lt;p&gt;Yesterday the TOR crash and said was 120 sec difference in the time and that&#39;s impossible! I have control the time and all was right..&lt;/p&gt;
+
+&lt;p&gt;Are someone with the same case?  After restart that&#39;s good but i have one more time lost my positon in statut of exit node....&lt;/p&gt;
+
+&lt;p&gt;my best&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 38</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_38/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_38/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:46Z</updated>
+	<published>2009-06-17T11:26:46Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Btw, it&#39;s Tor, not TOR.  &lt;/p&gt;
+
+&lt;p&gt;If you have info or debug level logs, can you open a bug report at &lt;a href=&quot;https://bugs.torproject.org&quot; title=&quot;https://bugs.torproject.org&quot; rel=&quot;nofollow&quot;&gt;https://bugs.torproject.org&lt;/a&gt;?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 39</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_39/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_39/"/>
+
+	<author><name>swisstorexit (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:47Z</updated>
+	<published>2009-06-17T11:26:47Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hello phobos,&lt;/p&gt;
+
+&lt;p&gt;i have not send in bugs, while was nothing write about that in logs....&lt;/p&gt;
+
+&lt;p&gt;only was on the vidalia logs when it was crashed at night... &lt;/p&gt;
+
+&lt;p&gt;So i have just say here when someone have same case ...&lt;/p&gt;
+
+&lt;p&gt;The last error sighaled on log are on 7 june....&lt;/p&gt;
+
+&lt;p&gt;sorry to cannot give more infos, have a good journey&lt;/p&gt;
+
+&lt;p&gt;my best&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 40</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_40/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_40/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:48Z</updated>
+	<published>2009-06-18T11:26:48Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;At least one of the fastest Tor nodes are constantly using wrong times , maby this is done on purpose to take advantage of some wonerability.&lt;br /&gt;
+I would recommend that you block(in torrc) this node &amp;amp; the other nodes from there nodefamily in case they do some nasty stuff to break your(&amp;amp; others) privacy.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 41</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_41/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_41/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:49Z</updated>
+	<published>2009-06-18T11:26:49Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;China government is going to ask manufactories to preinstall an internet censorship software green dam on pcs in the whole contry. They may break tor and similar proxies.&lt;/p&gt;
+
+&lt;p&gt;China Holds Firm on Software Filter, U.S. Firms Say&lt;br /&gt;
+&lt;a href=&quot;http://www.nytimes.com/2009/06/19/business/global/19censor.html?ref=global-home&quot; title=&quot;http://www.nytimes.com/2009/06/19/business/global/19censor.html?ref=global-home&quot; rel=&quot;nofollow&quot;&gt;http://www.nytimes.com/2009/06/19/business/global/19censor.html?ref=glob...&lt;/a&gt;&lt;br /&gt;
+Published: June 18, 2009&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 42</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_42/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_42/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:50Z</updated>
+	<published>2009-06-22T11:26:50Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;a href=&quot;http://www.reuters.com/article/rbssTechMediaTelecomNews/idUSPEK12189520090623&quot; title=&quot;http://www.reuters.com/article/rbssTechMediaTelecomNews/idUSPEK12189520090623&quot; rel=&quot;nofollow&quot;&gt;http://www.reuters.com/article/rbssTechMediaTelecomNews/idUSPEK121895200...&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;China sticks to Internet filter plan -Reuters,&lt;br /&gt;
+BEIJING, June 23 (Reuters) - China will not revoke its controversial plan requiring all new personal computers to be sold with &quot;Green Dam&quot; Internet filtering software from July 1..&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 43</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_43/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_43/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:51Z</updated>
+	<published>2009-06-25T11:26:51Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;a href=&quot;http://news.google.com/news/url?sa=t&amp;amp;ct2=us%2F3_0_s_0_0_t&amp;amp;usg=AFQjCNHFvW6aHzdPxU5Bm8duMa1AeHyCFg&amp;amp;cid=1377925846&amp;amp;ei=l0dDSuDoJpfzmQeU4v2kAQ&amp;amp;rt=HOMEPAGE&amp;amp;vm=STANDARD&amp;amp;url=http%3A%2F%2Fwww.washingtonpost.com%2Fwp-dyn%2Fcontent%2Farticle%2F2009%2F06%2F25%2FAR2009062500727.html&quot; title=&quot;http://news.google.com/news/url?sa=t&amp;amp;ct2=us%2F3_0_s_0_0_t&amp;amp;usg=AFQjCNHFvW6aHzdPxU5Bm8duMa1AeHyCFg&amp;amp;cid=1377925846&amp;amp;ei=l0dDSuDoJpfzmQeU4v2kAQ&amp;amp;rt=HOMEPAGE&amp;amp;vm=STANDARD&amp;amp;url=http%3A%2F%2Fwww.washingtonpost.com%2Fwp-dyn%2Fcontent%2Farticle%2F2009%2F06%2F25%2FAR2009062500727.html&quot; rel=&quot;nofollow&quot;&gt;http://news.google.com/news/url?sa=t&amp;amp;ct2=us%2F3_0_s_0_0_t&amp;amp;usg=AFQjCNHFvW...&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;US urges China to scrap Internet filter plan&lt;br /&gt;
+Washington Post - Chris Buckley, Doug Palmer - ‎1 hour ago‎&lt;br /&gt;
+BEIJING (Reuters) - China on Thursday stepped up accusations that Google is spreading obscene content, a day after US officials urged Beijing to abandon plans for controversial filtering software on new computers.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 44</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_44/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_44/"/>
+
+	<author><name>siwsstorexit (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:52Z</updated>
+	<published>2009-06-21T11:26:52Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hello,&lt;/p&gt;
+
+&lt;p&gt;I have updated to 2.1.16 rc in jaunty 64 bits and at install, with package, source ect... are not possible for TOR to find the library for livevent 1.4!&lt;/p&gt;
+
+&lt;p&gt;So it accept only the libevent 1.3e on it...&lt;/p&gt;
+
+&lt;p&gt;Thanks to look to make a change in the linux reposery to have no more the 1.3e and update to 1.4 or , change the path in TOR to can reconize libevent 1.4e&lt;/p&gt;
+
+&lt;p&gt;Thanks in adavance&lt;/p&gt;
+
+&lt;p&gt;my best&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 45</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_45/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comment_45/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:53Z</updated>
+	<published>2010-05-14T11:26:53Z</published>
+
+	<content type="html" xml:lang="en">
+	hi i am new to tor , i would like to know if i can use specific country ips instead of random addresses?
+
+	</content>
+
+
+
+</entry>
+
+</feed>

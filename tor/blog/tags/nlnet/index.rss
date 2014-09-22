@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged nlnet</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/nlnet/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: The NLnet Foundation funds two projects</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/The_NLnet_Foundation_funds_two_projects/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/The_NLnet_Foundation_funds_two_projects/</link>
+
+
+	<category>/tags/directory_services</category>
+
+	<category>/tags/funding</category>
+
+	<category>/tags/hidden_services</category>
+
+	<category>/tags/low_bandwidth_clients</category>
+
+	<category>/tags/nlnet</category>
+
+	<category>/tags/tor_protocol</category>
+
+
+	<pubDate>Fri, 06 Jun 2008 21:04:10 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:07:24Z</dcterms:modified>
+
+	<description>&lt;p&gt;We&#39;re happy to announce the NLnet Foundation is funding two enhancements for the Tor software and network.  &lt;/p&gt;
+
+&lt;p&gt;The two projects are summarized below:&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.torproject.org/projects/lowbandwidth&quot; rel=&quot;nofollow&quot;&gt;Tor for low-bandwidth clients&lt;/a&gt;.
+&lt;p&gt;The Tor anonymity system is currently only usable by internet users who have high-bandwith connections. Upon the start of the Tor client, a large file with all Tor server descriptions is being downloaded. An evolution of the Tor protocol is aimed to reduce the initial download size. The new Tor protocol version shall change the way a client receives the information for its Tor circuit setup in a way, that the initial download can be performed over a slow modem line in less then three minutes.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.torproject.org/projects/hidserv&quot; rel=&quot;nofollow&quot;&gt;Speeding up Hidden Services&lt;/a&gt;.
+&lt;p&gt;The Tor anonymity system contains an important function that is called Tor Hidden Services, which allows users to set up anonymous information services, like websites, that can only be accessed through the Tor network and are protected against identification of the host that runs the services. Using these function, critical political and human rights information can be published in a way that protects the publisher and users of the service from repression and identification. The most critical limitation of this function is the time it takes until a Hidden Service is registered in the network and the latency of contact establishment when accessed by a user. The aim of this project is to develop the new protocol which will change the way Tor circuits are set up between the user and the Hidden Service as well as the way a Hidden Service is registered in the Tor network.&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/The_NLnet_Foundation_funds_two_projects/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

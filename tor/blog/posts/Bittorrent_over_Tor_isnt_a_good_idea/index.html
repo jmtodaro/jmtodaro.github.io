@@ -1,0 +1,2842 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bittorrent over Tor isn&#x27;t a good idea</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FBittorrent_over_Tor_isnt_a_good_idea&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Bittorrent over Tor isn&#x27;t a good idea</a>
+
+</span>
+
+
+<div id="content">
+<p>An increasing number of people are asking us about the <a href="http://hal.inria.fr/docs/00/47/15/56/PDF/TorBT.pdf" rel="nofollow">recent paper</a> coming out of Inria in France around Bittorrent and privacy attacks. This post tries to explain the attacks and what they imply.</p>
+
+<p>There are three pieces to the attack (or three separate attacks that build on each other, if you prefer). <span class="read-more"><a href="http://blog.torproject.org/blog/bittorrent-over-tor-isnt-good-idea"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/BitTorrent/" rel="tag">BitTorrent</a>
+
+<a href="../../tags/anonymity_applications_attack/" rel="tag">anonymity applications attack</a>
+
+<a href="../../tags/different_exit/" rel="tag">different exit</a>
+
+<a href="../../tags/network/" rel="tag">network</a>
+
+<a href="../../tags/peer/" rel="tag">peer</a>
+
+<a href="../../tags/post_privacy_problem/" rel="tag">post privacy problem</a>
+
+<a href="../../tags/relay/" rel="tag">relay</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-5e3ce32e4057d2c748e51f19ca87670c">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>This is one of those times where I gasp, and say "Oh sweet (Insert religious figure's name to use in vain)"</p>
+
+<p>Seriously, this is bad for a large number of people. Torrents were already kinda dead, but this might slay them.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 30 Apr 2010 06:56:14 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-27c98857ced8dc29fae4b132e5b4ed89">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>Torrents are dead?<br />
+How so?<br />
+Bittorrent is probably the best way to share files right now and will be be for years.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 01 May 2010 06:56:15 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-94fc725f4ae150dbec1fbba1603b6343">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>Agreed. I use torrents on a regular basis, downloading everything save movies and music available in the United States with it. Never gotten caught, never used protection until very recently (protection being in the form of Peerblock).</p>
+
+<p>I think that a lot of people are worrying too much over this and/or are using ISP's that are too freaking nosy for their own good.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 03 May 2010 06:56:16 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4d04d0a60d86ba4baf5ca030023e8095">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+I2P is a "darknet" that supports Torrents very well. Nowadays one can easily get speeds up to 50 Kilobytes/s in good swarms. There are 2 good trackers with lots of uploads per day. Anomos is an option too but the tracker traffic is still "in the open" from what I know and there does not seem any good tracker around.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 30 Apr 2010 06:56:17 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2c8a93bb670a2c63e4b8a7a7c083884c">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>There is a simple way to distinguish bittorrent tracker traffic from everything else.</p>
+
+<p>It always sends a GET request with info_hash peer_id and port variables.<br />
+So tor could use this to identify it, its much better then using port 80, alot of trackers run on port 80 too so you cant use the port method to seperate trackers from websites.</p>
+
+<p>If the tracker communication is SSL you cant see the request, but then the exit node cant read it either so no attack.</p>
+
+<p>Everyone using BT over TOR should be using a firewall to make sure their torrent app can only communicate with tor.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 30 Apr 2010 06:56:18 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-94c2d0a312bd572c12912df00513bfb6">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>Still, as explained, many clients publish your IP.</p>
+
+<p>"The attack is actually worse than that: apparently in some cases uTorrent, BitSpirit, and libTorrent simply write your IP address directly into the information they send to the tracker and/or to other peers. Tor is doing its job: Tor is _anonymously_ sending your IP address to the tracker or peer. Nobody knows where you're sending your IP address from. But that probably isn't what you wanted your Bittorrent client to send."</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 03 May 2010 06:56:19 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4155de89527f07f9518cd2de8e33502e">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+People who are interested in BitTorrent and Tor might want to look at the Anomos project ( http://www.anomos.info/ ).
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 30 Apr 2010 06:56:20 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-95aebdaf02b52743691abd2ec1f9668a">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+Instead of separating ports by 80 and !=80 couldn't each port below 1024 get's own and &gt;=1024 share one (since only root can open &lt;1024 these are proper servers)? Obviously this doesn't help with the everything on port 80, but basically fixes the rest.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 30 Apr 2010 06:56:21 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8d64d3eb2306ce01f5706db26315c350">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+How about the plain vanilla CLI client? 
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 30 Apr 2010 06:56:22 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-452f5dffe0b39f6f74bdf6dbaffad61d">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+I don't understand:  I have no idea what Tor is, but run uTorrent with Forced Protocol Encryption, Disallow legacy connections, and a software program called PeerGuardian.  Am I safe?  
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 30 Apr 2010 06:56:23 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c605334de349779ced13925f495ea7f5">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+<p>Safe from what?<br />
+The encryption on bittorent is good if your ISP is throttling bittorrent traffic.  (It hides your use of bittorrent from them)  Your ip address is still shared with the tracker and other users.<br />
+PeerGuardian blocks known lowlife ip addresses from connecting to you.  (RIAA MPAA, etc.)  But it will _never_ get them all.  (not possible) </p>
+
+<p>What do you need to be "safe" from anyway?  (with bittorrent)<br />
+There are more important things to use Tor for.</p>
+
+<p>In the US, where i live, almost no ISP will disconnect you for downloading copyrighted material.  It's a major reason for having an internet connection in the first place.  </p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 01 May 2010 06:56:24 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f70f01ba5744094cf73d62e6017d75c3">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi!!!!!!!!</p>
+
+<p>Well, i ain't very sure about the headline!!! I think that it could be cool to have a new bit-torrent application made to work with TOR!!! You could even call it "TORrent"!!! It's very easy!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!<br />
+I think that something of missing in Tor is a robust publishing system to share documents, in a way to resist to the shut-down of a single server!!!! i think it to be the main flaw of WikiLeaks too!!! but also of Wikipedia, and every normal website: in the inner idea of a very well working Internet, there is the concept of <strong>decentralization!!!!!!</strong> but that concept has been almost forgotten!!!!<br />
+A super cool P2P system is another thing missing in TOR!!!!!!!<br />
+At this time, i don't think a P2P system internal to TOR to be very useful, but in the future it'll be very necessary!!!!!! So, you'd better to think about making one!!!!!!!!!!!!!!!!!!<br />
+I think that the bittorrent client for TOR should work only within the TOR network!!! You can have some "hidden services" (those addresses ending with ".onion") to work as HTTP-trackers!!!! So that all TORrent clients will have only tracker addresses to contact within the TOR network!!! All TORrent clients should be enabled as internal tor nodes, for the whole TOR network (to share the global network load too!!!) and every client should start one "hidden service" to accept incoming connections!!! Yeah, i think this could actually work!!!!! So, you can send your .onion address to the Tracker, and at the same time download the list of others peers sharing your same file!!!! You can then connect to the .onion hidden service of the others peers, and the others will do the same after having read your .onion address from the tracker!!!!!!<br />
+I'm sure, in this way, you'll have everything: a safe &amp; secure bittorrent and a lot of bandwidth (because the lack of ExitNodes won't be important) to be used also for others purposes (so, when you are downloading/uploading something, but there is some free bandwidth, your node can be used also for the normal usage of TOR)!!!!!!!!!!!!!!!!!<br />
+You can have the torrent client to automatically set the upload and download speed limit to 1/4 of the bandwidth set to be used for the same upload and download channel of your node!!!!!! it's because i think that when you are using .onion addresses your connection pass through four nodes (or three?!!! i saw once they were four nodes!!!!!!!!!!!). In this way, you can avoid to have a congestion in the network!!! Because if you share a file at 1MB/sec... it'll take 1MB*4nodes=4MB/sec of bandwidth to handle the bits stream!!!!!! So you need to go 1/4 slower to don't break the balance!!!!!!<br />
+I've got this idea, after reading this blog entry and another one on torrentfreak i read yesterday!!!!<br />
+You should read this article too!!! It's on TF, and it's entitled «<strong>Child Pornography Is Great, Anti-Pirates Say</strong>» ( http://tinyurl.com/2cgp8xy ). the whole article can be summarized in these two quotes:<br />
+Johan Schlüter of the Danish Anti-Piracy Group enthusiastically said:<br />
+<code><br />
+Child pornography is great. It is great because politicians understand child pornography. By playing that card, we can get them to act, and start blocking sites. And once they have done that, we can get them to start blocking file sharing sites.<br />
+</code><br />
+and Christian Engstrom (Pirate Party) heroically answered:<br />
+<code><br />
+The big film and record companies want censorship of the net, and they are perfectly willing to cynically use child porn as an excuse to get it.<br />
+</code><br />
+Well, in don't want to enter in the discussion of child porn!!! (it's normal if pro-copyright organizations enjoy it!!!! they're usual to do the wrong things!!!!!!!!) But i want to very enter into the discussion of FILE SHARING and COPYRIGHT!!!!!! It isn't a fault of american people; but america's <strong>extremist capitalism and imperialism</strong> are evil, and they must be fought!!! this is what pirate parties are actually doing!!!! and the intellectual property is only one excuse to add filters, censorship systems, to the Internet!!! to allow politicians (<em>read</em> «puppets bribed by lobbyists»), to control the flow of information, and thus your life!!!!!!!! This is why i think that Tor, as it's a system made to be used against censorship and for political reasons, is perfect to be extended to be ready to be used as an alternative to the current centralized bit-torrent!!!!!!!!!!!!!!!!!!!!! I'm sure that the RIAA and the MPAA, won't be happy nor agree with me; but it's a their fault, they didn't bribed me yet!!!!!!!!!!!!! hahah!!!!!!!!!!!!!!!!!!!!!<br />
+~bee!!!!!!!!!!!!!!!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 30 Apr 2010 06:56:25 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7c599cf81a9133dff733ca50383489ab">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+<p>Who wants to join my anti-bee movement!?!  </p>
+
+<p>I want to implore the Tor people to _stop_ allowing this thing called bee from posting until it learns how to write, or maybe we should send it a keyboard without the exclamation point key, and even then it's words are a waste, it needs to grow up.</p>
+
+<p>I find it odd that thing called bee didn't spam it's silly little program like it always does while claiming Tor-Browser Bundle is insecure.   Maybe the thing called bee has learned part of it's lesson?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 01 May 2010 06:56:26 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2494352b8f1c9d07f99ca7b666a4d2a9">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+bee is moxie marlinspike of http://thoughtcrime.org/
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 02 May 2010 06:56:27 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-cf9fcdfa2f6c40d20b853b8c556d54ea">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+Is that true?  I have a hard time believing that, how do you know?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 03 May 2010 06:56:28 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7cb2cb98e11983d22cb1baf32adcb33e">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+Ever thought about bee wanting to disguise himself by using exclamation and a certain style of writing. Start thinking, stop complaining!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 04 May 2010 06:56:29 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ef83ee02bdc06eb1227a86172bf57272">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+<p>Yea and that's a really stupid and annoying to do it.  I do think that bee lovers are actually bee posting without exclamation point <img src="../../smileys/smile4.png" alt=";-)" /></p>
+
+<p>He is a troll and a spammer.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 05 May 2010 06:56:30 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4e72a92aef24f54c7d8b714d77b1cf73">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+<p>I think that's a very good post, bee.  You make a lot of points that I agree with.  I've been thinking for a while now that, you know, Tor and BitTorrent could almost be made for each over if they weren't so quick to dismiss each other (more so Tor because it rapes their exits).  The Tor network looks pretty stagnant to me, not growing very fast, and as a consequence is quite vulnerable due to it's small size/capacity.  Tor needs many more relays.  A BitTORrent system could easily provide that as it would offer an incentive to everyday users to want to engage in the Tor network.  I certainly would, if it was done right.</p>
+
+<p>One comment from a Chinese Tor user in a recent blog post here said it quite well to me.  To paraphrase it went something like: "How come they [GFW] can stop Tor, but file-sharing works fine?"  I suggest the reason for that is that file-sharing 'technology' is HIGHLY popular, often with networks running containing 10's/100's of thousands, even millions of nodes.  The total is certainly in the many millions out there.  But what has Tor?  Less than 2000 nodes at the moment?</p>
+
+<p>BitTorrent shouldn't be dismissed so quickly if one's real aim is to create a network of strength, resilient to attacks from the controlling interests of a few.</p>
+
+<p>But, about here is where things start to get political, I guess.  This is where you're going to get a split in people's reaction to such an idea.  It's highly likely that both government and business are NOT going to enjoy the thought of such a thing existing as it would threaten their interests (control, money, power, etc).  If you really want to build a network that can survive, these such entities have to have their efforts DENIED.  This could include Tor's masters, too (who pays the bills?).</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 01 May 2010 06:56:31 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6010a2ceffa02a381ce4d7f16fd62599">
+
+<div class="comment-subject">
+
+Comment 19
+
+</div>
+
+<div class="inlinecontent">
+<p>bittorrent is not designed to be private nor anonymous.  We've said for years to not use bittorrent over tor because it will screw the user in some way.  Now we have an example of at least one of those ways.  </p>
+
+<p>This is secondary to the problem of any bulk file transfers over tor that cause pain for everyone in the network.  We're addressing this problem with recent patches to the -alpha branch given to us by researchers at the University of Waterloo in Canada.  This patch went in with 0.2.2.7-alpha, <a href="http://blog.torproject.org/blog/tor-0227-alpha-released" title="http://blog.torproject.org/blog/tor-0227-alpha-released" rel="nofollow">http://blog.torproject.org/blog/tor-0227-alpha-released</a>.  The goal here is to better weight circuits so busy ones (aka bulk file transfers) aren't dominating less busy circuits.</p>
+
+<p>As for your conspiracy theory about Tor's masters.  Tor's masters are the developers.  We control the future of Tor.  If someone wants to see certain features in Tor, they are welcome to discuss it with us.  However, everything we do is released into the open, with source code, commit trails, and specifications.  </p>
+
+<p>There are other networks willing to take your bulk file transfer traffic, such as bitblinder, i2p, freenet, gnunet, etc.  We haven't studied them in detail so we cannot make statements on their anonymity, safety, and functionality.  However, they exist.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 02 May 2010 06:56:32 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d6dc9e9448895d848291ea401bcb7282">
+
+<div class="comment-subject">
+
+Comment 20
+
+</div>
+
+<div class="inlinecontent">
+<p>I know BitTorrent isn't anonymous. I know the technology, and I also know that those things the research here highlight are trivial fixes to overcome.  Even now with the proper configuration of an appropriate client can these issues be overcome.  'bee' here suggests some rather interesting ideas here to fix those issues too, in my opinion.  I wouldn't be so quick to dismiss them personally.</p>
+
+<p>Your problem of users using BitTorrent over Tor is not going to go away short of you devising some technical cludge to try to strap it down, and to me that doesn't sound like the kind of freedom of information access network I had envisaged for the Tor network.  You are, in effect, trying to stifle some aspect of users using the network to freely access and exchange information.  The pain is that all this data is being pushed across the bridges, relays and, especially, exits, isn't it?  Well if all those relays were 'BitTORrent' clients and nothing went into bridges or out the exits, then you'd have a great many more relays availiable for all Tor users, and considerably reduced load through bridges and exits.  Lets see China attempt to block 100's of thousands/millions of relays run from domestic addresses...</p>
+
+<p>By the way... I contribute relays myself.  I'm quite aware that file-sharing over Tor is a problem.  I totally support the idea of Tor, and appreciate the work that has gone into it.  I will still criticise it though.</p>
+
+<p>My bulk traffic?  Who says *I* want to push bulk data over it? (the cheek, too, considering the bulk of the data I push here is RELAYING TOR USER TRAFFIC)  If I wanted to do that I'd proxy µTorrent over the Tor socks interface, disable DHT/PEX/LPD, set bt.trans_disposition to "1", write in a fake address for the 'ip/hostname to report to tracker' field, force encryption, and run it on a separate Tor instance.  There's nothing stopping me pushing that bulk data right now, phobos, just as there isn't for all those out there using BitTorrent+Tor right now that you're all complaining about.</p>
+
+<p>Like I said, I think you're quick to dismiss the possibilities here.  I suspect it's probably personal, actually, because you see BitTorrent/file-sharing as a threat to the health of your network.  But maybe I'm wrong in that, in that you really have given it all a lot of thought and arrived at the conclusion that it wouldn't work for reasons xyz.  I don't know that, though I'd be interested to hear why you think it wouldn't, or isn't a good idea.</p>
+
+<p>You should know you're vulnerable right now.  China/Iran has already demonstrated it's entirely possible to block all relays and the large majority of bridges, effectively denying those that want to use the Tor network for precisely what it was designed for.  I see no reason they couldn't choose to mop it all up at any time if they wanted to.  Personally I'd like to see them try that with 10,000,000 relays. <img src="../../smileys/smile.png" alt=":)" /></p>
+
+<p>Keep up the good work. <img src="../../smileys/smile4.png" alt=";)" /></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 02 May 2010 06:56:33 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0abe92fff4f9a5d346a505b36e567d97">
+
+<div class="comment-subject">
+
+Comment 21
+
+</div>
+
+<div class="inlinecontent">
+<p>Why don't you use applications that _want_ to transfer BT and ones that can handle the traffic without reducing the experience for others who actually need the anonymity/security? </p>
+
+<p>Are you trying to tell us that some jack off downloading porn so she/he can flap all day, or someone downloading movies instead of renting them should have the right to reduce the usability of the Tor network for those who need it to the Internet (e.g., HTTP/S) to avoid physical violence or imprisonment?  If you answer yes I will tell you to grow up and realize your wish to use Tor for selfish reasons should not affect those who _need_ to use Tor for non-selfish reasons.</p>
+
+<p>There are many options around that happily handle BT (and happen to have applications built around the protocol), namely I2P2, why not suggest everyone use that instead of focking with Tor and reducing the experience for the rest of us?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 02 May 2010 06:56:34 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5cec63c3803fcdee4bc02bc8f61aed21">
+
+<div class="comment-subject">
+
+Comment 22
+
+</div>
+
+<div class="inlinecontent">
+<p>Are you incapable of reading the post I wrote?  Why are you attempting to infer that I use Tor as it is now for BitTorrenting?  Did you miss the part where I mentioned I run relays and am aware of the problem of BitTorrent (or heavy usage type in general)?</p>
+
+<p>I'm not suggesting I have all the answers... that I know what will and will not work.  What I am saying is that users will and do use Tor for bulk data exchange, and may possibly continue to do so in ever increasing numbers as a method of anonymising (to a sufficient degree) their file-sharing activities.  Now you can try to fight that with clever technology in the binaries if you want, though I'm sceptical as to how effective that might be, and also where it may lead as Tor wanders off down the path to denying this, that, and the other, as it tries to fix its little problem.  Why not have all the exits block the heavy sites you don't want people accessing, too?  You could pop in code to block all of the file-sharing sites, video sites (most people only watch funny cat/cheesy pop/porn videos anyway), file hosts, ... and there you go, loads of bandwidth.</p>
+
+<p>I think a problem with Tor is that there are not that many people willing to run systems for the purposes you mention.  The Tor network has proven easy to block.  It is probably also very easy for them to monitor who exactly is using it (if not what for).  It seems to me that what's needed is a great deal more systems involved in the network.  But what creates an incentive for people to want to do that?  You talk of a problem here with people using the Tor network to file share, and hope for technological solutions to cure those ills, but I don't see any entertainment of the idea of creating a network that could satisfy those demands and potentially cure the whole problem of users file-sharing across the network, and create many more intermediate relays, and prevent easy blocking.</p>
+
+<p>If such a network where to exist, comprising many 10/100/1000 thousands of nodes in the act of relaying 'bulk' data between themselves, then just what might that network provide in the form of bandwidth availiability for trivial http/s usage?  Web browsing comparred to bulk data sharing is like a flea biting an elephant.  The resources availiable could be huge for the purposes of providing a system for anonymous access to the Internet.  Any user could fire up 'TOR' (whether as a dumb client or active 'file-sharing' relay), connect to any of a huge number of other similar relays, bounce through 3, and pop out an exit to the net.  No government could block it if it was that popular.  People would be happy to participate in the network if it satisfied their interests.  Exits could enjoy far less loads placed upon them due to an internalised sharing system.  Bridges may be entirely unnecessary.</p>
+
+<p>Look how popular this blog post is.  File-sharing is massively popular.  Look at the size of those networks comparred to Tor.  And the ambitions are not too disimilar either, I don't think.  Both attempt to break down attempts to control access to, and the dissemination of, information through a system of decentralisation.  Now times are changing a bit, new threats are emerging, and as a consequence popular file-sharing networks are being driven to look towards systems of anonymisation.  One obvious way to achieve that is through proxying networks like Tor where data is relayed in and out of every participant leaving no indication as to what the data is and where it came from.  The plausible deniability alone in acting within such a network could be enough to leave no indication to an outside observer as to whether a person is even engaged in such a thing as a 'Tor' network as the relays involved would no longer consist of a rather convenient handful of publically listed IP addresses.  Users wanting to use a network like this to help prevent against "physical violence or imprisonment" would have a great deal more chance of avoiding so than to use the Tor network as it is now, assuming they're even able to if it hasn't already been blocked.</p>
+
+<p>I think it's foolish to dismiss the potential.  Maybe you're scared of what's necessarily required to create what you feel you want to create, because you know it could bring degrees of heat your cute politically correct ideologies might have trouble trying to defend when stood up to authority.  A system that could really break systems, not pander to special interests.  Freedom to publish.  Freedom to access.  Freedom to remain anonymous.  Censorship resistant.  A popularised, ubiquitous, system that cannot easily be controlled.</p>
+
+<p>But hey, it's just an idea.  Best of luck with your ambition of changing the way people use the Tor network. <img src="../../smileys/smile.png" alt=":)" /></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 04 May 2010 06:56:35 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a46e8184a5a4beb6bff8850c389ac885">
+
+<div class="comment-subject">
+
+Comment 23
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi!!!!!!!!! Thank you!! for you honey posts and your kind words!!!!!!!!!! </p>
+
+<p>I'm asking myself; why it's wrong to download a file through "Tor+BitTorrent", but it's ok if you download the same file via "Tor+HTTP"??????!!!!!!! I think that the application transfer protocol doesn't make any difference!!!!! Indeed, if you look into it, you'll find out that BitTorrent will improve the performance of the Tor network!!!!! If you download a file from one normal "hidden website", the max download speed you'll have is going to be the upload speed of that hidden service!!! and its upload bandwidth is shared among all the users downloading the same file and all the others files hosted at the same server!!!! With bittorrent, you'll share your upload bandwidth too!!! it's shared among all the "peers" and this will indeed improve the performances!!!!!! a single "tor hidden service" isn't able to host big files, because the Tor network isn't yet made like RAID disks are made: Tor isn't able to increase its performance exploiting the redundancy of files!!!!!!!! And, guess what BitTorrent is able to do?!!!!!! There isn't a single centralized HTTP server serving the file(s) using its upload bandwidth alone, but increasing the number of peers and seeders you'll also increase the bandwidth available to download the files!!!!!!! You won't download anymore from a single website, but from <strong>multiple sources!!!!!!</strong> bittorrent is also ok to automatically check if files were downloaded successfully (torrent clients check whenever the downloaded files hash values match against the hash keys memorized inside the `.torrent' file!!!!!!!!!!). I think that the main problem, always pointed out, about the Tor network load, is described in a very biased way!!!!!!!! What i wanted to say 1 second ago with my entry question is that if ten people will download a 600MB ISO image from one HTTP hidden service they won't cause "less network load" than the same ten people downloading the same 600MB ISO image using the "BitTORrent" system!!!!!!!!! Indeed, if you think about it, you'll find out that it's much more easy to ask to <em>the ten people using bittorrent</em> to share the Tor network load than asking to <em>the ten HTTP-downloaders</em> to do the same!!!!!! If you had a BitTORrent client made in the way i described in my first post here, you'll also have ten people running tor nodes, and downloading at a moderate speed to avoid the congestion of the network!!!!!!! Of course people could use their BitTORrent clients to leech files and bandwidth, but even in this pessimistic worst case scenario you'll have no more than the same effect of downloading files via the HTTP protocol without sharing anything!!!!!!!! so, in the same way as torrents are alive only if you `seed' them after downloading, also the network load will be balanced if people will begin to share it!!!!!! People using the «HTTP .onion protocol» alone (this is almost sure) won't share anything, and you'll have worse performance than in a "BitTORrent-ready network" and you'll put an heavier load on the Tor network because nobody will share neither the files (redundancy of files parts already downloaded) nor the bandwidth of the nodes!!!!!!!!! I really think that a "BitTORrent Bundle", made with a patched version of a BitTorrent-client made to work within the Tor Network, and made with the original idea to share ALSO the network load (and not just the files), to be a very good idea!!!!!!!!!!!!!!!!! Giving to all people the general idea that «Bittorrent over Tor isn't a good idea» is a bit deceiving!!!!!! BitTorrent is only <strong>a protocol!!</strong>!!!!!!!!!!! BitTORrent could be a great way to solve a lot of flaws related to TOR!!, allowing the Tor network to support big files, decentralizing the storage of hidden services (because the only hidden services you'll need, are very simple "Hidden BitTORrent Open-Trackers", similar to openbittorrent.com and websites indexing small ".torrent" files), increasing the performance at sharing big files (this is the typical improvement that BitTorrent gives also on the normal Internet!!!), increasing the number of nodes and the bandwidth for the whole Tor network (average case scenario: the BitTORrent-bandwidth is balanced 1:1!!! worst case scenario:--&gt;), and yet nothing is gonna change about denial-of-service effects, because it's possible to overload the Tor Network even downloading DVDs ISO without BitTORrent!!!!!!!!! so, if you apply the Occam's razor principle to "Tor+Download(BitTorrent) = NetworkOverload", you'll find out that "BitTorrent" isn't required in that equation!!!!!!!! What about the bulk traffic and why are big files useful for the Tor Network?!!! Well, i don't know it!!!!!!!!!!!!!!!!!!!! Why were you asking it to me though?!!!!!!! Somebody could say that BitTorrent and Tor are both useless!!! Indeed, that's «right» for all the people that don't need them!!!! but it's very «wrong», for all the people using/needing them!!!!!! Also factorbee is useless for people using exclusively Windows, because it works only on Linux!!!!!!!!!!!!!!!!!!!!! So, it's a question i can't answer at, because it's something of personal, and i can't know what you're thinking and why you need Tor, BitTorrent or even BitTORrent!!!!!!! Finally, having a technology like BitTORrent cannot be wrong, if you don't need it, you won't use it!!! In the same way as, if you don't need Tor, you won't use it either!!!!!!!! But i'm sure that a lot of people will find it useful!!!! (mostly to laugh at the non-working copyright-justified censorship!!!!!!!!!) Ah, thinking about DVDs ISOs!!! this is funny!!! Linux systems cannot be "exported" to non-free countries (Cuba, Iran, Iraq, North Korea, Sudan, and Syria; actually the only places where LINUX+OpenSSL+Tor+... are useful for real), because the cryptographic software in Linux, which is regulated under US Export laws, cannot be redistributed there!!!!!! Anyway, there is Canada, south America, there is the Europe and good places in Asia; but if there weren't those <em>free</em> (for real) countries, used to share Linux ISOs, you could even had people with reasons to download LINUX!!!!!(the free and open source operating system!!!!!!) distros through TOR!!!!!!!!lol!!!!!!!!!! Now, this is off topic, but you've got to ask yourself, how such a brainless and useless restriction is possible in a so called "free country"!!!!!!!! The `US' is also the only problem i could think about BitTORrent!!!!!!!!!!!!!!!! Could the TorProject be liable for «helping the development of file sharing technologies»?!!!!!!!!!!!! Lets say <em>communist software?</em>????!!!! ha ha!!!!!!! this is funny too lol!!!!!!!!!!!!!!! though it's something of important to be aware of, because even websites like http://openbittorrent.com are now outlaw in the USA!!!!!!!(they <em>could help</em> copyright infringements!!!!) could it be something to be afraid of!!!!!!? In either case, i think that my BitTORrent idea is very nice, and it could work for real!!!!!!!!!!!!!!!!!! ~bee!!!!!!!!!!!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 06 May 2010 06:56:36 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-70679ac1297da3faa4c1ab960b6b1609">
+
+<div class="comment-subject">
+
+Comment 24
+
+</div>
+
+<div class="inlinecontent">
+The problem in your logic is few(er) people download big files with Tor via. HTTP than do with Tor via. BitTorrent, just like how few(er) people download big files with naked HTTP than do with naked BitTorrent.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 06 May 2010 06:56:37 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8f7e4533698d6a5cbeb76f24ed2bacbd">
+
+<div class="comment-subject">
+
+Comment 25
+
+</div>
+
+<div class="inlinecontent">
+One exclamation mark.  One.  Not fucking fifty.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 02 May 2010 06:56:38 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9cdcd07b3efd2ec41511a8d531a3fd56">
+
+<div class="comment-subject">
+
+Comment 26
+
+</div>
+
+<div class="inlinecontent">
+<p>+1</p>
+
+<p>The nice thing about the instability of bee is he/she makes herself/himself look like such a douche bag that many people (I assume) read right past bee's posts, thus bee isn't even having the effect bee so obviously hopes to have.</p>
+
+<p>To hell with bee...</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 02 May 2010 06:56:39 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ca8db5bd3952cf6990c1d531162c4dd8">
+
+<div class="comment-subject">
+
+Comment 27
+
+</div>
+
+<div class="inlinecontent">
+<p>I could live with the exclamation marks if there were any paragraph breaks, but the combination is hopeless. I just skip right on past.</p>
+
+<p>Wookey</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 08 May 2010 06:56:40 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b18dfdb880b9b2bf69f6d5d3496c4bff">
+
+<div class="comment-subject">
+
+Comment 28
+
+</div>
+
+<div class="inlinecontent">
+<p>I agree, why would anybody post anything more than 4 lines with out line breaks or paragraphs.. its hope less, I swear I tried, I couldn't get past line 4, now he's completely lost me.</p>
+
+<p>Having said that I agree with this idea and its occurred to me as well, that bittorrent and tor can make things work very well if they can work cooperatively together. Where bittorrent traffic has to never exit the tor network, this will frustrate any attempts to eves drop on tor and make it much more resilient giving it protection of hiding in the crowd. And this is a huge crowd we are talking about about 16-28% of entire internet traffic, depending on who you are getting your stats from.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 23 May 2010 06:56:41 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d264077b34052e47b62c6b15ddece308">
+
+<div class="comment-subject">
+
+Comment 29
+
+</div>
+
+<div class="inlinecontent">
+<p>@bee<br />
+Don't listen to the Anonymous, unless they beehave <img src="../../smileys/smile.png" alt=":)" /></p>
+
+<p>~beenevolent o_-</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 07 May 2010 06:56:42 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6ae2f4c6f9321a9058e98a42b11becb7">
+
+<div class="comment-subject">
+
+Comment 30
+
+</div>
+
+<div class="inlinecontent">
+so one is safe if one not use BT?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 30 Apr 2010 06:56:43 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8b47c7138adb71f8df5629f3d31a9ede">
+
+<div class="comment-subject">
+
+Comment 31
+
+</div>
+
+<div class="inlinecontent">
+If you take into account our warnings, and understand what you are doing, then yes.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 02 May 2010 06:56:44 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-07f6a8e4f633ce81c748b9d93e067c36">
+
+<div class="comment-subject">
+
+Comment 32
+
+</div>
+
+<div class="inlinecontent">
+<p>There was some work done in the last few years by a company making routers to identify and prioritize "data streams" as opposed to packets.  They extolled the virtues of this new approach specifically with regards to improving video streaming and of easily throttling BT traffic - both without the need for deep packet inspection.  Can't remember off hand who this was.  </p>
+
+<p>The concept hinged on creating a "stream" for every IP/Port destination, and optimized the allocation of packets into streams by not trying to create new streams if the TCP sequence number didn't indicate the start.  I find this similar, conceptually, to your "separate streams per destination port" idea.  What's most interesting was that throttling was introduced not as an overall rate limit, but as a limit to the total number of active streams.  </p>
+
+<p>If you go with the separate streams per destination port idea, skip the special casing, set an upper bound to the number of active circuits that can be created, and throw in a bit of circuit prioritization logic (default with high prioritization for circuits destined for 80/443, bonus priority for streams that are active), you'll probably end up hitting two birds with one stone - you'll not need create 50 different circuits, and you'll deter BT use of Tor. </p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 30 Apr 2010 06:56:45 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-62fdf785adc14ba7a04fcc7126b52c7f">
+
+<div class="comment-subject">
+
+Comment 33
+
+</div>
+
+<div class="inlinecontent">
+<p>I'm surprised nobody is mentioning the existence of alternatives to regular bittorrent clients.</p>
+
+<p>http://anomos.info<br />
+proposes an alternative, but you must trust the tracker with your ip.  Apart from that your connection to all the other peers is through relays like tor.</p>
+
+<p>There are works in progress for bigger anomos-based .atorrent sites if you care to look around, you will find them.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 30 Apr 2010 06:56:46 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-44f9e32a49c539a40be16b0d418474a5">
+
+<div class="comment-subject">
+
+Comment 34
+
+</div>
+
+<div class="inlinecontent">
+<p>Bittorrent is not just for illegal usages.  Users of my linux distribution commonly download over tor using bittorrent.  They will now be identified and possibly pushed to fake mirrors downloading infected versions of linux.   We should update our instructions to block udp, force torrents over tcp over tor.</p>
+
+<p>I do not have permission to say this by the company, so I will not name the linux distribution.  However, I work for a commercial linux company.  </p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 30 Apr 2010 06:56:47 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-829a760ec5ea36a4394bcaf7e5c443a1">
+
+<div class="comment-subject">
+
+Comment 35
+
+</div>
+
+<div class="inlinecontent">
+<p>Use Anomos! As of 0.9.2 there is a working client for Mac, Windows and Linux. It can even convert old torrent files to atorrents. It uses Tor-style onion layer encryption and the only weak point is the tracker must be trusted, however they run their own tracker as well, so one could expect a reasonable amount of privacy.</p>
+
+<p>http://git.anomos.info/?p=protocol-specification;a=blob_plain;f=Protocol...</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 30 Apr 2010 06:56:48 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ae8abd3927c28a0fb9a6ee9d2d5c7277">
+
+<div class="comment-subject">
+
+Comment 36
+
+</div>
+
+<div class="inlinecontent">
+<p>http://anomos.info proposes an alternative, but you must trust the tracker with your ip. </p>
+
+<p>It's about freakin time someone spills this little bit of truth to all the ANOMOS fanBoi's out there, not to mention the ones in this thread.</p>
+
+<p>The anonmos trackers could just as well be owned, operated or under orders from the entities you fear the most. ANOMOS is fail because of this.</p>
+
+<p>The only real solution is standard bittorrent clients using strong anon networks.<br />
+Today that means I2P or Tor with OnionCat. Phantom is a strong future contender provided they interface with OnionCat.<br />
+I2P is sufficient today. Just fire it up, set your node to give whatever bandwidth you can give. The link your BT client to it and you're done.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 30 Apr 2010 06:56:49 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ec395c297ba1dc04c6c4abff7c26cf88">
+
+<div class="comment-subject">
+
+Comment 37
+
+</div>
+
+<div class="inlinecontent">
+<p>USENET everyone! USENET! is the answer to all your downloading needs!</p>
+
+<p>For those who care to pay for VPN, cancel that VPN subscription and start using Usenet with the same amount of money approx 10$ and you get ssl privacy.</p>
+
+<p>I wont give you a link, just search for usenet on google and you find what you need :P</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 01 May 2010 06:56:50 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-68caad10f59ed0e472a004128aafafcd">
+
+<div class="comment-subject">
+
+Comment 38
+
+</div>
+
+<div class="inlinecontent">
+The first rule of usenet is you don't talk about usenet.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 03 May 2010 06:56:51 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-13e73865461ffc6f85475c4bf4589f94">
+
+<div class="comment-subject">
+
+Comment 39
+
+</div>
+
+<div class="inlinecontent">
+<p>Maybe tor client shoul create some small number of circuits and load balance<br />
+requests bteewen them.<br />
+Of course there is need to be a way to nesure that all circuits are using diffrent exit nodes.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 01 May 2010 06:56:52 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fc82624050f90efc2acae8f8b7ea222d">
+
+<div class="comment-subject">
+
+Comment 40
+
+</div>
+
+<div class="inlinecontent">
+safe Bittorrent using Tor here  http://nodxgiifeywuslku.onion
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 01 May 2010 06:56:53 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6d677f013dd2ef9cdd0b289fd623af0f">
+
+<div class="comment-subject">
+
+Comment 41
+
+</div>
+
+<div class="inlinecontent">
+<p>There is no safe Bittorrent use with your home ip address, especially in the USA...</p>
+
+<p>The best way to download illegal things its obviously just hacking some random chinese server, put rTorrent or cTorrent, download the torrent (maybe some seeding), download file from the hacked server using http or ftp or whatever u like, clean the logs, disappear for a while <img src="../../smileys/smile4.png" alt=";)" /></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 01 May 2010 06:56:54 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6de2ddc37baeee00934a5bf9fd12c1b7">
+
+<div class="comment-subject">
+
+Comment 42
+
+</div>
+
+<div class="inlinecontent">
+how about monitoring (unencrypted) data for the real ip, and blocking traffic, which contains the real ip as string?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 01 May 2010 06:56:55 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fbca186922a5fa044185eba84729729b">
+
+<div class="comment-subject">
+
+Comment 43
+
+</div>
+
+<div class="inlinecontent">
+<p>To those who suggest Anomos over Tor:</p>
+
+<p>The problem with BT over Tor is not only anonymity issues, it's _bandwidth_ issues, it has been stated by Tor peopole many, many times that BT is a major reason Tor is so slow for HTTP/S, etc.  Bittorrent _should not_ be used over Tor for the sake of bandwidth!  People who really need Tor, e.g., Iranian and Chinese dissidents, 1st world citizens who wish to surf without being tracked, etc, _should not_ have to suffer extremely low latency because BT users want to download copyrighted movies and music and porn!  Stop being so selfish!</p>
+
+<p>If you want to use BT then use I2P2, they welcome BT traffic and have clients for such traffic.  Stop using Tor for BT traffic!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 01 May 2010 06:56:56 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d442878b42a56125cb63492e7b35c2c0">
+
+<div class="comment-subject">
+
+Comment 44
+
+</div>
+
+<div class="inlinecontent">
+<p>BT over Tor may not be good for Tor itself but it isn't such a bad idea as the paper and the commentary try to portray it. In fact all of the discussed privacy leaks can be easily eliminated.</p>
+
+<p><strong>"The first attack"</strong></p>
+
+<p>No issue whatsoever, just enable proxy for both trackers and peers.</p>
+
+<p><strong>"The second attack"</strong></p>
+
+<p>It appears that arma got entirely confused here. Please read the paper again and perhaps quote some supporting paragraphs. This attack does not build on the first one, but simply exploits DHT correlations. Again, the solution is trivial - disable DHT.</p>
+
+<p><strong>"The third attack"</strong></p>
+
+<p>This one is not even interesting and there is no need to wait for developers to resolve the weakness. All you have to do is run a second instance of Tor on a different "SocksPort". Yes, it works on Windows too - flawlessly.</p>
+
+<p>Those really paranoid should run BT/Tor always behind a NAT router, so BT must contact outside world to learn its public IP. Secondly, deploy an egress firewall and limit BT to localhost traffic only. On that note let's see what the authors of the paper think about it:</p>
+
+<p><cite>"Although we have not tested the behavior of those clients, we suspect that they use a service to determine their IP address as seen from the Internet. As they will contact that service through Tor, the service will report the IP address of an exit node."</cite></p>
+
+<p>No, there are no services involved, the clients learn their IPs from each other and exchange them on the extension protocol handshake.</p>
+
+<p>Conclusion.</p>
+
+<p>Just like Firefox needs Totbutton, so does Bittorrent require a few specific configuration settings.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 01 May 2010 06:56:57 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ed75538ea0940017703a43c92794fe6a">
+
+<div class="comment-subject">
+
+Comment 45
+
+</div>
+
+<div class="inlinecontent">
+<p>BT over Tor may not be good for Tor itself but it isn't such a bad idea as the paper and the commentary try to portray it. In fact all of the discussed privacy leaks can be easily eliminated.</p>
+
+<p><strong>"The first attack"</strong></p>
+
+<p>No issue whatsoever, just enable proxy for both trackers and peers.</p>
+
+<p><strong>"The second attack"</strong></p>
+
+<p>It appears that arma got entirely confused here. Please read the paper again and perhaps quote some supporting paragraphs. This attack does not build on the first one, but simply exploits DHT correlations. Again, the solution is trivial - disable DHT.</p>
+
+<p><strong>"The third attack"</strong></p>
+
+<p>This one is not even interesting and there is no need to wait for developers to resolve the weakness. All you have to do is run a second instance of Tor on a different "SocksPort". Yes, it works on Windows too - flawlessly.</p>
+
+<p>Those really paranoid should run BT/Tor always behind a NAT router, so BT must contact outside world to learn its public IP. Secondly, deploy an egress firewall and limit BT to localhost traffic only. On that note let's see what the authors of the paper think about it:</p>
+
+<p><cite>"Although we have not tested the behavior of those clients, we suspect that they use a service to determine their IP address as seen from the Internet. As they will contact that service through Tor, the service will report the IP address of an exit node."</cite></p>
+
+<p>No, there are no services involved, the clients learn their IPs from each other and exchange them on the extension protocol handshake.</p>
+
+<p>Conclusion.</p>
+
+<p>Just like Firefox needs Totbutton, so does Bittorrent require a few specific configuration settings.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 01 May 2010 06:56:58 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7c4d5c903eabf2e37a1d284e855ceb56">
+
+<div class="comment-subject">
+
+Comment 46
+
+</div>
+
+<div class="inlinecontent">
+<p>Usenet is not the answer.  Your Usenet provider must abide by the same laws that "force" Google and Yahoo to collect information about you for at least 90 days.  Any Usenet posts sent unencrypted are either sniffed before they enter your computer or through trojans already planted in your PC.  And, no, they don't need a warrant specifically for your activity.  They can fish for data and then seize your computer anyway.</p>
+
+<p>Welcome to the year 2010.  Hope Tor can keep up.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 01 May 2010 06:56:59 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-445de3091d0c4edb2976380fc81b9446">
+
+<div class="comment-subject">
+
+Comment 47
+
+</div>
+
+<div class="inlinecontent">
+Run your bittorrent, tor, etc. inside a virtual machine where all network is forced through an IP anonymizer.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 01 May 2010 06:57:00 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fd4acf9bb97bb56f80da2d9c5331c0e5">
+
+<div class="comment-subject">
+
+Comment 48
+
+</div>
+
+<div class="inlinecontent">
+<p>Well, if you want safe sharing for the objectionable content than Freenet is the only possible choice. But you'll have to sacrifice the speed. Choose -- security or speed. </p>
+
+<p>BTW the more people will use the Freent, the faster it will be. </p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 01 May 2010 06:57:01 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-19cdef2cb3d904c63f546258434f541a">
+
+<div class="comment-subject">
+
+Comment 49
+
+</div>
+
+<div class="inlinecontent">
+<p>There is a TOR fork called BitBlinder specifically made for anonymous web and bittorrent traffic. Uses a "credits" system according to the amount of data you have relayed to others. Perhaps you should check it out: http://bitblinder.com/<br />
+Comes with its own anonymized clients, free open source.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 02 May 2010 06:57:02 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a034aa619ac1124e6d19cb6d5c5a9bdc">
+
+<div class="comment-subject">
+
+Comment 50
+
+</div>
+
+<div class="inlinecontent">
+<p>The problem with BT over Tor is not only anonymity issues, it's _bandwidth_ issues, it has been stated by Tor peopole many, many times that BT is a major reason Tor is so slow for HTTP/S, etc. Bittorrent _should not_ be used over Tor for the sake of bandwidth! People who really need Tor, e.g., Iranian and Chinese dissidents, 1st world citizens who wish to surf without being tracked, etc, _should not_ have to suffer extremely low latency because BT users want to download copyrighted movies and music and porn! Stop being so selfish!</p>
+
+<p>If you want to use BT then use I2P2, they welcome BT traffic and have clients for such traffic. Stop using Tor for BT traffic! sesli sohbet</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 02 May 2010 06:57:03 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b02e74bbc85b7c181732319f74d05d46">
+
+<div class="comment-subject">
+
+Comment 51
+
+</div>
+
+<div class="inlinecontent">
+<p>Indeed, as our double-posting friend above has said, the problems identified in the paper are easily solvable. Most of them, anyway.</p>
+
+<p>"3.2 Simple Inspection of BitTorrent control messages"<br />
+Two problems here:</p>
+
+<p>#1. Inspection of Announce messages sent to trackers can reveal the IP that some torrent clients embed in these messages (e.g. uTorrent).<br />
+* NO SOLUTION THAT I CAN THINK OF (the Announce message is not affected by your torrent client's encryption settings, it's sent in plain text and it's readable by anyone who takes the time to set up a malicious TOR exit node).</p>
+
+<p>#2. Inspection of Extended Handshake messages with other peers.<br />
+* No problem, just force your torrent client to encrypt all your inter-peer communications and you're safe from this.</p>
+
+<p>"3.3 Hijacking Trackers’ Responses"<br />
+This is something that only works if your inter-peer communications are not anonymized (encryption makes no difference here).<br />
+* Solution: route all your torrent traffic through TOR, not just the tracker connections. Sorry to say this, but going against TOR recommendations is the way to stay safe in this case. All I can tell you is to at least have the decency to cap your torrent transfer rate to make it more similar to other normal web communications in order not to overload the TOR network with your torrenting. Learn to live with the fact that better anonymity comes at a higher price. Just like you learned to respect your torrent peers by sticking around to seed even after you got what you needed, you should learn to respect your TOR peers by not hogging all their bandwidth with your torrents.</p>
+
+<p>"3.4 Exploiting the DHT"<br />
+*Solution: turn off DHT in your torrent client's settings, d'oh.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 02 May 2010 06:57:04 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6fa788d8e24d4993e0babdb34a71a3cd">
+
+<div class="comment-subject">
+
+Comment 52
+
+</div>
+
+<div class="inlinecontent">
+<p><cite>"Inspection of Announce messages sent to trackers can reveal the IP that some torrent clients embed in these messages (e.g. uTorrent).<br />
+* NO SOLUTION THAT I CAN THINK OF "</cite></p>
+
+<p>BUT THERE IS NO PROBLEM</p>
+
+<p>uTorrent does not announce IP info. The IP field is optional in BT announce protocol and not used by uTorrent. Tested on versions 1.8.2, 1.8.5, 2.0.0 and 2.0.1, behind NAT and on full proxy settings.</p>
+
+<p>Otherwise, the solution would be to prevent BT from learning its public IP and firewall it of course.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 03 May 2010 06:57:05 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e245c248d2b6794ffbb3a5e00d8552fe">
+
+<div class="comment-subject">
+
+Comment 53
+
+</div>
+
+<div class="inlinecontent">
+Sorry, but the authors of the paper cited above say uTorrent is one of the clients that are the most consistent in doing just that: embedding your real IP in the announce messages. It's their word against yours until I can test this myself. <img src="../../smileys/smile.png" alt=":)" /> (I'm not even sure how - Wireshark or something?)
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 04 May 2010 06:57:06 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f2337826d6888053ed4ec71bfeb75a69">
+
+<div class="comment-subject">
+
+Comment 54
+
+</div>
+
+<div class="inlinecontent">
+Yes they did blame uTorrent. Perhaps it behaves differently with partial proxy and DHT enabled. Wireshark is ideal for testing uTorrent, but note that the announce protocol is a simple HTTP GET request, so a number of small, specialized net sniffers can do it too.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 05 May 2010 06:57:07 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e754007946cbcc8c2517feda3bc18359">
+
+<div class="comment-subject">
+
+Comment 55
+
+</div>
+
+<div class="inlinecontent">
+<p>BitBlinder:<br />
+Nope, sorry, not a solution. Since right now they're not taking money in the place of relay hosting, everyone who uses it is forced to run as a relay by default. It's all nice and fine that you're hidden as a peer by being routed through other people's machines, but the reverse is also true (unless you can disable it like in TOR): others can download torrents through your machine as well, and if you're an exit node, to the outside world it will again appear as though you're downloading torrents. Which is exactly what you were trying to avoid in the first place. *slaps forehead*</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 02 May 2010 06:57:08 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4cde6e8a23cabae600cff676b78f5c41">
+
+<div class="comment-subject">
+
+Comment 56
+
+</div>
+
+<div class="inlinecontent">
+<p>Pay attention, it is a Tor fork. You don't have to run a relay, and they do have plans of accepting money instead or relaying traffic. Also, you do get to choose which type of traffic to relay: eg: web only, bittorrent only, all. Finally, you can choose not to be an exit node, just like Tor, and simply act as a "Bridge".</p>
+
+<p>BitBlinder is solving the bandwidth issue with the incentive of credits. You can transfer the same amount you have relayed. Many people/countries have no issues with relaying anonymous traffic, the point is the one seeding the content is never found, as an exit node, you are not the source, the sender remains anonymous, just like Tor.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 02 May 2010 06:57:09 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2069ca29438bf860c608e9545067d94a">
+
+<div class="comment-subject">
+
+Comment 57
+
+</div>
+
+<div class="inlinecontent">
+<p>"Tor is doing its job: Tor is _anonymously_ sending your IP address to the tracker or peer. Nobody knows where you're sending your IP address from. But that probably isn't what you wanted your Bittorrent client to send."</p>
+
+<p>LOOOL. Maybe this will remove BitTorrent traffic from the Tor network, which is painfully slow to use. I've been running a relay occationally, pushing a few hundred K per second, but I find myself banned from many sites as a result even if I am not allowing anything to exit!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 02 May 2010 06:57:10 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-44873d5df8650196ed785a44556573e7">
+
+<div class="comment-subject">
+
+Comment 58
+
+</div>
+
+<div class="inlinecontent">
+<p>The New Dark Ages cometh.</p>
+
+<p>The copyright-abuse industry is ramping up their lobbying in the world's governments, their attacks on any sort of fair use, and their criminalization of anything resembling freedom and free speech.  The content industries, print, video, and audio are turning copyright into their weapon of choice.  They are abusing it for far more than it was ever designed.  I worry that the content industry implied by Richard Stallman's essay entitled, "The Right to Read" will become a reality within my lifetime. See http://www.gnu.org/philosophy/right-to-read.html.</p>
+
+<p>People are being boiled slowly like frogs in what was once cold water.  Very few are paying attention.  Those that are aware of the future path of copyright-abuse and freedom are marginalized and treated like paranoid freaks.  Government surveillance is growing ever more powerful.  Normal software makers are either ignoring the solutions or simply calculating, that so long as they are one step ahead of the normal user, secure software doesn't matter.  Jacob Appelbaum said it best during his 26C3 talk, "We need to infiltrate these companies and fuck them from the inside".  There is no secret cabal planning all of this worldwide.  Everyone is working for their best interests; doing what they believe is the best.  Collectively, the world is afraid of the future and by thinking like lizards, turning their fears into reality.</p>
+
+<p>That which cannot be controlled, is bad.  One possible pathway is that darknets are the future of freedom.  Technologies like hidden services, i2p, freenet, and others are just the beginning.  Possessing these technologies will soon be criminal around the world.  Tor will soon be illegal in many places in the world; whether you use it or not.  Just having it will brand you a terrorist in the eyes of the State; you are the new enemy.  This will soon be true for i2p, freenet, and the like.  The copyright industry is going to force this position.  You either pay up now, or quietly go dark soon.  </p>
+
+<p>The future is naked.  Facebook is pushing hard for full transparency of every person, every activity, everything every hour.  There will be initial backlash.  A new facebook will rise, it will be naked.  TSA has gotten people used to being barefoot and minimal clothing for safety.  The millimeter wave scans will get everyone to equate nudity with safety. </p>
+
+<p>A lack of signal will be suspicious.  Why don't you have a Facebook account?  What are you trying to hide?  Why don't you leave a trail of data crumbs behind? Why are you not normal?</p>
+
+<p>Tor as a technology and philosophy is doomed to the extremists.  Look at how many people bought iPads in the first month alone.  How many people thought about the death of freedom as represented by that device?  People follow form, not function.  They do not care about long term effects.  </p>
+
+<p>I run tor exit nodes, i2p nodes, and freenet nodes under fake identities and paid with anonymous credit cards.  These networks need to exist.  Any legal recourse is too late.</p>
+
+<p>The darkness falls upon us all.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 03 May 2010 06:57:11 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-84b50590e052fd1f9478262555b90a87">
+
+<div class="comment-subject">
+
+Comment 59
+
+</div>
+
+<div class="inlinecontent">
+<p>I hope *We* will live enough to resist, making - and projecting - and making again a future:<br />
+the net as open as possible, with computers and with people , not the fake images taken from s**t like BigBrother show and reconstructed in one's mind.</p>
+
+<p>I HOPE</p>
+
+<p>Thx All of you/</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 03 May 2010 06:57:12 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d324ab207db03b5ddf9c78ba234b2251">
+
+<div class="comment-subject">
+
+Comment 60
+
+</div>
+
+<div class="inlinecontent">
+<p>BitBlinder:<br />
+YOU pay attention. I said _right_now_ they're not accepting money in place of relay activity and this is what it says on their website:<br />
+"During our beta testing we are not accepting payments, so you have to be a relay to continue using the network."</p>
+
+<p>Also, uploading torrent content could very easily be considered your fault even if you were just an exit node and not the actual source of the material. You can be held responsible for whatever is being done from your IP unless you can provide very solid proof that you were hacked or had a virus/trojan/whatever or were simply ignorant of what was going on. I very much doubt that purposely running an anonymizing application would qualify as proof of innocence.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 04 May 2010 06:57:13 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8d5664dd58270baf27b8163679bf8e0f">
+
+<div class="comment-subject">
+
+Comment 61
+
+</div>
+
+<div class="inlinecontent">
+<p>Hmm you don't seem to get it, do you? I can be an exit node all i want and you can do nothing about it, your laws don't concern me period. Many people can be exit nodes safely in many countries, and its those people who help others in oppressed (and corporate controlled) regimes. That said, BitBlinder can act as a bridge, which will earn you credits more slowly, but you will anyway. Do you not know what a bridge is? It means you ONLY pass encrypted traffic between nodes, never directly to the net, thats the job of the exit nodes who can can show the middle finger to complains from other countries. There is no risk whatsoever in running a bridge.</p>
+
+<p>The only reason Bittorrent traffic isn't going over plain Tor is bandwidth issues, which BitBlinder fixes. AND, BitBlinder also passes web traffic, just like Tor does.</p>
+
+<p>In short, BitBlinder is Tor without bandwidth shortages.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 08 May 2010 06:57:14 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b817f09f0259fc64e6a53d62b274cfd7">
+
+<div class="comment-subject">
+
+Comment 62
+
+</div>
+
+<div class="inlinecontent">
+<p>First of all, they're not my laws, I hate those fucking anti-sharing laws as much as the next guy.</p>
+
+<p>Secondly, the anti-sharing "regimes" are basically all the Western "civilized" nations and the only places where exit nodes can be run safely are probably the most backward/poor/uncivilized countries.</p>
+
+<p>Thirdly, I've seen complaints on the BitBlinder forum that people are getting piracy notices from their ISPs or other agencies even though they're torrenting through BitBlinder! If that thing's got leaks, I'm not touching it with a tadpole.</p>
+
+<p>And finally, there's plenty of information about which ports TOR uses for incoming and outgoing connections, so I have a good level of confidence that I can block everything I need to block with my firewall so that there's ZERO potential for me to be visible with any exit node activities. There's no such richness of port information about BitBlinder, so I can't take the chance, sorry.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 24 May 2010 06:57:15 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-89b1452b732d3366fea502e4c64df40c">
+
+<div class="comment-subject">
+
+Comment 63
+
+</div>
+
+<div class="inlinecontent">
+<p>Hello, I don't know where I can ask about it...<br />
+Is it possible make ready to work portable pocket based on Iron Browser like that you made for FireFox? I want it.Thanks.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 05 May 2010 06:57:16 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0efa25f651a028220020b91954de3a03">
+
+<div class="comment-subject">
+
+Comment 64
+
+</div>
+
+<div class="inlinecontent">
+We have one, it is called Tor Browser Bundle, <a href="https://torproject.org/torbrowser" title="https://torproject.org/torbrowser" rel="nofollow">https://torproject.org/torbrowser</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 09 May 2010 06:57:17 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9f9a4063588b2096ced6849c113c532c">
+
+<div class="comment-subject">
+
+Comment 65
+
+</div>
+
+<div class="inlinecontent">
+<p>It seems that all the bridges have been completely blocked in China by GFW, and the auto-block system may have been updated ,e.g.:</p>
+
+<p>Before I run my tor program via the bridge "xxx.xxx.xxx.xxx:8043",this is bridge is telnetable (I can telnet xxx.xxx.xxx.xxx port 8043). But after I run the tor program, this bridge soon becomes untelnetable. </p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 10 May 2010 06:57:18 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c0712be077f8760e7a1cac465cf63677">
+
+<div class="comment-subject">
+
+Comment 66
+
+</div>
+
+<div class="inlinecontent">
+It seems Chinese authorities have crawled the <a href="https://bridges.torproject.org" title="https://bridges.torproject.org" rel="nofollow">https://bridges.torproject.org</a> website and blocked all bridges given out through that method.  We have at least 3 other methods to give out bridges, so please try email or social networks.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 10 May 2010 06:57:19 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1d6daf301ccc1f2c392000b22e74678b">
+
+<div class="comment-subject">
+
+Comment 67
+
+</div>
+
+<div class="inlinecontent">
+<p>bridges invalid<br />
+tor in China has not connect, even if added to the latest bridges can not connect, have been shielded by Great Firewall.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 10 May 2010 06:57:20 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-537ae0f574dc6350937685059b403bb3">
+
+<div class="comment-subject">
+
+Comment 68
+
+</div>
+
+<div class="inlinecontent">
+Yes!  This true!  Also good!  Tor now very fast!  Go, Communism!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 11 May 2010 06:57:21 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bd8d6ff8e6f0c68fe5db678df92df537">
+
+<div class="comment-subject">
+
+Comment 69
+
+</div>
+
+<div class="inlinecontent">
+hi, I tried to download a software online while using Tor and every time a prompt box pops out saying "An external is needed to handle.... External applications are not safe by default and can unmask you! If this file is untrusted, you should either save it to view offline or in VM or consider using a transparent Tor proxy like Amnesia LiveCD, Torsocks or TorVM" I have no idea what these suggestions mean and i don't know where to get them. Please if anyone can shed light on this issue, i will be very grateful, thanks - chimmy
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 16 May 2010 06:57:22 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5e502a3d54ec6169ec90a6f1f0a7c2af">
+
+<div class="comment-subject">
+
+Comment 70
+
+</div>
+
+<div class="inlinecontent">
+please save the band-width, don't use tor to download large files!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 17 May 2010 06:57:23 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9cb410b70de74894c56141947c9edd32">
+
+<div class="comment-subject">
+
+Comment 71
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi,<br />
+   I'm new to TOR, and thank you for the tip. I have NO experience with proxies.. ETC. What I was wondering though is if there is any way to create a new net-layer which only TOR is aware of, and actually blinds all software to the real ports (which only TOR is aware of) Thereby creating an outbound firewall which only TOR can get through. Actually, can this be done via firewall? Would this be a good way to make sure the only data to move around moves through TOR?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 18 May 2010 06:57:24 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ada918a1ce8ddae29381f08d521eec9f">
+
+<div class="comment-subject">
+
+Comment 72
+
+</div>
+
+<div class="inlinecontent">
+You should probably use a VPN for that, if there's one out there you feel you can trust.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 19 May 2010 06:57:25 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7b9581ec2e94bd52a21de4060ce69943">
+
+<div class="comment-subject">
+
+Comment 73
+
+</div>
+
+<div class="inlinecontent">
+How about you have TOR or the proxy application look over packets and if it contains your own IP address, physical address, name or other identifiable info to pop up a message saying what is about to be sent and to either accept or deny the sending of that info, similar to ZoneAlarm's privacy guard. Tho this would require more system resources to monitor all your outgoing packets.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 14 Jun 2010 06:57:26 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-dcf9372ce34f6f703366dc9a66543a6b">
+
+<div class="comment-subject">
+
+Comment 74
+
+</div>
+
+<div class="inlinecontent">
+We don't want to look at content of the packets or do any sort of deep packet inspection.  Also, which "your own IP address?"  The one assigned to the local interface?  The one assigned to the internet gateway?  Looking at content is fraught with complexities not to mention the legal liabilities.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 14 Jun 2010 06:57:27 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ab4805f7ae09e117a9c75026bdb47e29">
+
+<div class="comment-subject">
+
+Comment 75
+
+</div>
+
+<div class="inlinecontent">
+@Phobos thank you for the good job you have been doing you and your crew God bless you all and give you guys more talent please can i get a I.P and port scanner software from you which i can use in extracting I.P and ports from my Network orders cause it kinda of hard using the internet here please need you help on this.....Hope to hear from you soon....
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 14 Jun 2010 06:57:28 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d77c600a49e80f137c93252060931caf">
+
+<div class="comment-subject">
+
+Comment 76
+
+</div>
+
+<div class="inlinecontent">
+@Phobos thank you for the good job you have been doing you and your crew God bless you all and give you guys more talent please can i get a I.P and port scanner software from you which i can use in extracting I.P and ports from my Network orders cause it kinda of hard using the internet here please need you help on this.....Hope to hear from you soon....
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 14 Jun 2010 06:57:29 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FBittorrent_over_Tor_isnt_a_good_idea&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:56:13 AM CDT</span>
+<!-- Created <span class="date">Fri 30 Apr 2010 01:06:37 AM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

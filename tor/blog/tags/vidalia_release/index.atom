@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged vidalia_release</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/vidalia_release/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/vidalia_release/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/vidalia_release/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:57:55Z</updated>
+<entry>
+	<title>Vidalia 0.2.9 Released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/stable_release" />
+
+	<category term="/tags/vidalia_release" />
+
+
+	<updated>2011-04-05T11:57:55Z</updated>
+	<published>2010-05-27T03:05:19Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;On May 20, we released Vidalia 0.2.9.  Fixes include Qt 4.6.2 compatibility, new cert, and some new translations.&lt;/p&gt;
+
+&lt;p&gt;You can download it at &lt;a href=&quot;https://www.torproject.org/vidalia/&quot; title=&quot;https://www.torproject.org/vidalia/&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/vidalia/&lt;/a&gt;.  Packages are slowly being updated to include this version of Vidalia.  &lt;/p&gt;
+
+&lt;p&gt;The full changelog is: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/vidalia-029-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Remove the GoDaddy CA certificate bundle since we changed the    certificate used to authenticate connections to geoips.vidalia-project.net for downloading GeoIP information from a commercial GoDaddy certificate to a free CACert certificate.&lt;/li&gt;
+&lt;li&gt;Define -D_WIN32_WINNT=0x0501 on Windows builds so that MiniUPnPc will build with the latest versions of MinGW.&lt;/li&gt;
+&lt;li&gt;Modify miniupnpc.c from MiniUPnPc&#39;s source so that it will build on    Mac OS X 10.4.&lt;/li&gt;
+&lt;li&gt;Work around Qt&#39;s new behavior for the QT_WA macro so that Vidalia will&lt;br /&gt;
+    work correctly again on Windows with Qt &amp;gt;= 4.6.&lt;/li&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Vidalia 0.2.6 Released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_6_Released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_6_Released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/vidalia_release" />
+
+
+	<updated>2011-04-05T11:40:50Z</updated>
+	<published>2009-11-12T14:06:56Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;On November 2, we released Vidalia 0.2.6.  Primarily a bugfix release for OS X issues.  The changed items are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Remove the erroneous comma in the default vidalia.conf in the&lt;br /&gt;
+    Mac OS X drag-and-drop bundle, since we now dump whatever the&lt;br /&gt;
+    user types into a QString rather than parsing it into a&lt;br /&gt;
+    QStringList.&lt;/li&gt;
+&lt;li&gt;Updated the Arabic, Russian and Slovenian translations.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Packages for OS X and Windows can be found at &lt;a href=&quot;https://www.torproject.org/vidalia/&quot; title=&quot;https://www.torproject.org/vidalia/&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/vidalia/&lt;/a&gt;.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_6_Released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_6_Released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Vidalia 0.2.5 Released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/usability_enhancements" />
+
+	<category term="/tags/vidalia_release" />
+
+
+	<updated>2011-04-05T11:39:48Z</updated>
+	<published>2009-10-17T12:21:56Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;On October 14th we released Vidalia 0.2.5.  Changes are:&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Add support in the Network settings page for configuring the&lt;br /&gt;
+    Socks4Proxy and Socks5Proxy* options that were added in&lt;br /&gt;
+    Tor 0.2.2.1-alpha. Patch from Christopher Davis.&lt;/li&gt;
+&lt;li&gt;Add a &quot;Automatically distribute my bridge address&quot; checkbox (enabled&lt;br /&gt;
+    by default) to the bridge relay settings options. (Ticket #524)&lt;/li&gt;
+&lt;li&gt;Add ports 7000 and 7001 to the list of ports excluded by the IRC&lt;br /&gt;
+    category in the exit policy configuration tab. (Ticket #517)&lt;/li&gt;
+&lt;li&gt;Add a context menu for highlighted event items in the &quot;Basic&quot; message&lt;br /&gt;
+    log view that allows the user to copy the selected item text to the&lt;br /&gt;
+    clipboard.&lt;/li&gt;
+&lt;li&gt;Maybe fix a time conversion bug that could result in Vidalia&lt;br /&gt;
+    displaying the wrong uptime for a relay in the network map.&lt;/li&gt;
+&lt;li&gt;Stop trying to enforce proper quoting and escaping of arguments to be&lt;br /&gt;
+    given to the proxy executable (e.g., Polipo). Now the user is on their &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/vidalia-025-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor Browser Bundle 1.2.9 Released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/firefox_update" />
+
+	<category term="/tags/pidgin_update" />
+
+	<category term="/tags/security_fixes" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+	<category term="/tags/vidalia_release" />
+
+
+	<updated>2011-04-05T11:35:23Z</updated>
+	<published>2009-09-12T01:55:03Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor Browser Bundle 1.2.9 is released today.  It updates Firefox and Pidgin Instant Messaging client to address the security issues in the older versions, and includes the latest and greatest Vidalia.&lt;/p&gt;
+
+&lt;p&gt;TBB can be downloaded from &lt;a href=&quot;https://www.torproject.org/torbrowser&quot; title=&quot;https://www.torproject.org/torbrowser&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/torbrowser&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The details of the changes are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;update Vidalia to 0.2.4&lt;/li&gt;
+&lt;li&gt;update Qt to 4.5.2&lt;/li&gt;
+&lt;li&gt;update Pidgin to 2.6.2&lt;/li&gt;
+&lt;li&gt;update Firefox to 3.0.14&lt;/li&gt;
+&lt;/ul&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor 0.2.2.1-alpha released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_1-alpha_released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_1-alpha_released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/openssl_fixes" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+	<category term="/tags/vidalia_release" />
+
+
+	<updated>2011-04-05T11:34:54Z</updated>
+	<published>2009-09-02T19:32:58Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor 0.2.2.1-alpha disables &quot;.exit&quot; address notation by default, allows&lt;br /&gt;
+Tor clients to bootstrap on networks where only port 80 is reachable,&lt;br /&gt;
+makes it more straightforward to support hardware crypto accelerators,&lt;br /&gt;
+and starts the groundwork for gathering stats safely at relays.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download&quot; title=&quot;https://www.torproject.org/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We&#39;ve been improving our packages and bundles:&lt;br /&gt;
+&lt;strong&gt;Packaging changes:&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-0221alpha-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Upgrade Vidalia from 0.1.15 to 0.2.3 in the Windows and OS X&lt;br /&gt;
+      installer bundles. See&lt;br /&gt;
+      &lt;a href=&quot;https://trac.vidalia-project.net/browser/vidalia/tags/vidalia-0.2.3/CHANGELOG&quot; title=&quot;https://trac.vidalia-project.net/browser/vidalia/tags/vidalia-0.2.3/CHANGELOG&quot; rel=&quot;nofollow&quot;&gt;https://trac.vidalia-project.net/browser/vidalia/tags/vidalia-0.2.3/CHAN...&lt;/a&gt;&lt;br /&gt;
+      for details of what&#39;s new in Vidalia 0.2.3.&lt;/li&gt;
+&lt;li&gt;Windows Vidalia Bundle: update Privoxy from 3.0.6 to 3.0.14-beta.&lt;/li&gt;
+&lt;li&gt;OS X Vidalia Bundle: move to Polipo 1.0.4 with Tor specific&lt;br /&gt;
+      configuration file, rather than the old Privoxy.&lt;/li&gt;
+&lt;li&gt;OS X Vidalia Bundle: Vidalia, Tor, and Polipo are compiled as&lt;br /&gt;
+      x86-only for better compatibility with OS X 10.6, aka Snow Leopard.&lt;/li&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_1-alpha_released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_1-alpha_released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Vidalia 0.2.1 released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_1_released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_1_released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/usability_enhancements" />
+
+	<category term="/tags/vidalia_release" />
+
+
+	<updated>2011-04-05T11:33:21Z</updated>
+	<published>2009-08-12T03:48:59Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Vidalia 0.2.1 is now available.  This is a test release of the 0.2.x branch, which we hope to soon make the mainline version; replacing the 0.1.x branch.&lt;/p&gt;
+
+&lt;p&gt;Vidalia can be downloaded at &lt;a href=&quot;https://www.torproject.org/vidalia/&quot; title=&quot;https://www.torproject.org/vidalia/&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/vidalia/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Changelog: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/vidalia-021-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Add a &quot;Find Bridges Now&quot; button that will attempt to automatically&lt;br /&gt;
+    download a set of bridge addresses and add them to the list of bridges&lt;br /&gt;
+    in the Network settings page.&lt;/li&gt;
+&lt;li&gt;Add support for building with Google&#39;s Breakpad crash reporting&lt;br /&gt;
+    library (currently disabled by default).&lt;/li&gt;
+&lt;li&gt;Show or hide the &quot;Who has used my bridge recently?&quot; link along with&lt;br /&gt;
+    the other bridge-related widgets when the user toggles the relay mode&lt;br /&gt;
+    in the Network settings page. (Ticket #480)&lt;/li&gt;
+&lt;li&gt;Tolerate bridge addresses that do not specify a port number, since Tor&lt;br /&gt;
+    now defaults to using port 443 in such cases.&lt;/li&gt;
+&lt;li&gt;Add support for viewing the map as a full screen widget when built&lt;br /&gt;
+    with KDE Marble support.&lt;/li&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_1_released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_1_released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor 0.2.0.35-stable bundles updated</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_bundles_updated/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_bundles_updated/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/stable_release" />
+
+	<category term="/tags/vidalia_release" />
+
+
+	<updated>2011-04-05T11:30:22Z</updated>
+	<published>2009-07-13T01:35:00Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Updated Vidalia-bundle packages with Tor 0.2.0.35 are released.  The only thing that&#39;s changed is the update of Vidalia from 0.1.14 to 0.1.15.  You can retrieve the updated packages from &lt;a href=&quot;https://www.torproject.org/easy-download&quot; title=&quot;https://www.torproject.org/easy-download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/easy-download&lt;/a&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_bundles_updated/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_bundles_updated/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

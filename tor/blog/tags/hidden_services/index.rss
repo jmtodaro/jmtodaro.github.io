@@ -1,0 +1,233 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged hidden_services</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/hidden_services/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>arma: Trip report, NSF data workshop</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Trip_report_NSF_data_workshop/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Trip_report_NSF_data_workshop/</link>
+
+
+	<category>/tags/alpha_releases</category>
+
+	<category>/tags/hidden_services</category>
+
+	<category>/tags/memory_leaks</category>
+
+	<category>/tags/performance_improvements</category>
+
+	<category>/tags/tor</category>
+
+
+	<pubDate>Mon, 30 Aug 2010 15:59:01 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:07:06Z</dcterms:modified>
+
+	<description>&lt;p&gt;On Friday (Aug 27), I attended the &quot;Workshop on Cyber Security Data for Experimentation&quot; organized by the National Science Foundation (NSF). The premise of the &lt;a href=&quot;http://www.gtisc.gatech.edu/nsf_workshop10_agenda.html&quot; rel=&quot;nofollow&quot;&gt;workshop&lt;/a&gt; was that many academics need real-world data sets to solve problems, whereas industry is the place with the real-world data sets and they don&#39;t have any real reason to share. By getting the academics and the industry people talking, with government funders nearby, they hoped to better understand the problems and maybe move things forward.&lt;/p&gt;
+
+&lt;p&gt;I was there (and on the first panel) because of Tor&#39;s work on &lt;a href=&quot;https://metrics.torproject.org/&quot; rel=&quot;nofollow&quot;&gt;gathering Tor network snapshots, performance data, and user statistics&lt;/a&gt;. Tor&#39;s approach represents one way out of the trap where researchers never quite get the data they want, or if they do it isn&#39;t open enough (which hinders whether anybody else can reproduce their results). &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/trip-report-nsf-data-workshop&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Trip_report_NSF_data_workshop/#comments</comments>
+
+</item>
+<item>
+
+	<title>karsten: Improvements on Hidden Service Performance -- or not?</title>
+	<dcterms:creator>karsten</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Improvements_on_Hidden_Service_Performance_--_or_not/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Improvements_on_Hidden_Service_Performance_--_or_not/</link>
+
+
+	<category>/tags/hidden_services</category>
+
+	<category>/tags/performance</category>
+
+
+	<pubDate>Thu, 15 Jan 2009 14:32:56 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:17:38Z</dcterms:modified>
+
+	<description>&lt;p&gt;During the past eight months we have been trying pretty hard to improve hidden service performance. This work was part of the project to &lt;a href=&quot;https://www.torproject.org/projects/hidserv.html&quot; rel=&quot;nofollow&quot;&gt;Speed Up Tor Hidden Services&lt;/a&gt;, generously funded by the NLnet Foundation. As of today, we know that we have succeeded in our attempts -- well, or not? &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/improvements-hidden-service-performance-or-not%3F&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Improvements_on_Hidden_Service_Performance_--_or_not/#comments</comments>
+
+</item>
+<item>
+
+	<title>nickm: The MD5 certificate collision attack, and what it means for Tor</title>
+	<dcterms:creator>nickm</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/The_MD5_certificate_collision_attack_and_what_it_means_for_Tor/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/The_MD5_certificate_collision_attack_and_what_it_means_for_Tor/</link>
+
+
+	<category>/tags/alpha_release</category>
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/hidden_services</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/translations</category>
+
+
+	<pubDate>Tue, 30 Dec 2008 10:53:04 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:16:31Z</dcterms:modified>
+
+	<description>&lt;p&gt;Today, a team of security researchers and cryptographers gave a talk at the &lt;a href=&quot;http://events.ccc.de/congress/2008/&quot; rel=&quot;nofollow&quot;&gt;25th Chaos Communication Congress (25C3)&lt;/a&gt;, about a &lt;a href=&quot;http://www.win.tue.nl/hashclash/rogue-ca/&quot; rel=&quot;nofollow&quot;&gt;nifty attack against X.509 certificates generated using the MD5 digest algorithm&lt;/a&gt;.  We figured that people will ask us about how this attack affects Tor, so I&#39;m writing an answer in advance.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The short version:&lt;/strong&gt; This attack doesn&#39;t affect Tor.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The medium version:&lt;/strong&gt; This attack doesn&#39;t affect Tor, since Tor doesn&#39;t ever use MD5 certificates, and since Tor doesn&#39;t care what certificate authorities say.  On the other hand, this attack probably &lt;em&gt;does&lt;/em&gt; affect your browser.  Check your browser vendor for updates over the next few days and weeks, and make sure you install them. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/md5-certificate-collision-attack%2C-and-what-it-means-tor&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/The_MD5_certificate_collision_attack_and_what_it_means_for_Tor/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: SHA-1 files by popular request</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/SHA-1_files_by_popular_request/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/SHA-1_files_by_popular_request/</link>
+
+
+	<category>/tags/hidden_services</category>
+
+	<category>/tags/onion_addresses</category>
+
+	<category>/tags/tor2web</category>
+
+
+	<pubDate>Thu, 18 Dec 2008 23:07:47 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:16:04Z</dcterms:modified>
+
+	<description>&lt;p&gt;We&#39;ve received requests for .sha1 files in addition to .asc for our packages.  Starting with 0.2.1.8-alpha, there are now .sha1 files in the &lt;a href=&quot;https://www.torproject.org/dist/&quot; rel=&quot;nofollow&quot;&gt;appropriate dist directories&lt;/a&gt;.  Displaying them on the download web page is still a bit tricky.  The current layout leaves the page even more cluttered with .sha1 links all over it.  &lt;/p&gt;
+
+&lt;p&gt;When you download a 0.2.1.8-alpha or later package, simply replace &quot;.asc&quot; with &quot;.sha1&quot; to get the hash file.&lt;/p&gt;
+
+&lt;p&gt;You&#39;ll then need to either &quot;openssl sha1 {package}&quot; or &quot;sha1sum {package}&quot; to see if the hash you downloaded matches the package you downloaded.  Note:  replace {package} with the name of the file you downloaded.&lt;/p&gt;
+
+&lt;p&gt;Enjoy.  &lt;/p&gt;
+
+&lt;p&gt;If you don&#39;t know what any of this means, &lt;a href=&quot;http://en.wikipedia.org/wiki/File_verification&quot; rel=&quot;nofollow&quot;&gt;start here&lt;/a&gt;.&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/SHA-1_files_by_popular_request/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Tor 0.2.0.32 Released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_32_Released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_32_Released/</link>
+
+
+	<category>/tags/hidden_services</category>
+
+	<category>/tags/security_fixes</category>
+
+	<category>/tags/stable_release</category>
+
+
+	<pubDate>Thu, 04 Dec 2008 20:42:03 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:15:26Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor 0.2.0.32 fixes a major security problem in Debian and Ubuntu packages&lt;br /&gt;
+(and maybe other packages) noticed by Theo de Raadt, fixes a smaller&lt;br /&gt;
+security flaw that might allow an attacker to access local services,&lt;br /&gt;
+further improves hidden service performance, and fixes a variety of&lt;br /&gt;
+other issues.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download.html&quot; title=&quot;https://www.torproject.org/download.html&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Or use our new &lt;a href=&quot;https://www.torproject.org/easy-download&quot; title=&quot;https://www.torproject.org/easy-download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/easy-download&lt;/a&gt; page. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02032-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;Changes in version 0.2.0.32 - 2008-11-20&lt;br /&gt;
+Security fixes:
+&lt;ul&gt;
+&lt;li&gt;The &quot;User&quot; and &quot;Group&quot; config options did not clear the&lt;br /&gt;
+      supplementary group entries for the Tor process. The &quot;User&quot; option&lt;br /&gt;
+      is now more robust, and we now set the groups to the specified&lt;br /&gt;
+      user&#39;s primary group. The &quot;Group&quot; option is now ignored. For more&lt;br /&gt;
+      detailed logging on credential switching, set CREDENTIAL_LOG_LEVEL&lt;br /&gt;
+      in common/compat.c to LOG_NOTICE or higher. Patch by Jacob Appelbaum&lt;br /&gt;
+      and Steven Murdoch. Bugfix on 0.0.2pre14. Fixes bug 848 and 857.&lt;/li&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_32_Released/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: The NLnet Foundation funds two projects</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/The_NLnet_Foundation_funds_two_projects/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/The_NLnet_Foundation_funds_two_projects/</link>
+
+
+	<category>/tags/directory_services</category>
+
+	<category>/tags/funding</category>
+
+	<category>/tags/hidden_services</category>
+
+	<category>/tags/low_bandwidth_clients</category>
+
+	<category>/tags/nlnet</category>
+
+	<category>/tags/tor_protocol</category>
+
+
+	<pubDate>Fri, 06 Jun 2008 21:04:10 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:07:24Z</dcterms:modified>
+
+	<description>&lt;p&gt;We&#39;re happy to announce the NLnet Foundation is funding two enhancements for the Tor software and network.  &lt;/p&gt;
+
+&lt;p&gt;The two projects are summarized below:&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.torproject.org/projects/lowbandwidth&quot; rel=&quot;nofollow&quot;&gt;Tor for low-bandwidth clients&lt;/a&gt;.
+&lt;p&gt;The Tor anonymity system is currently only usable by internet users who have high-bandwith connections. Upon the start of the Tor client, a large file with all Tor server descriptions is being downloaded. An evolution of the Tor protocol is aimed to reduce the initial download size. The new Tor protocol version shall change the way a client receives the information for its Tor circuit setup in a way, that the initial download can be performed over a slow modem line in less then three minutes.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.torproject.org/projects/hidserv&quot; rel=&quot;nofollow&quot;&gt;Speeding up Hidden Services&lt;/a&gt;.
+&lt;p&gt;The Tor anonymity system contains an important function that is called Tor Hidden Services, which allows users to set up anonymous information services, like websites, that can only be accessed through the Tor network and are protected against identification of the host that runs the services. Using these function, critical political and human rights information can be published in a way that protects the publisher and users of the service from repression and identification. The most critical limitation of this function is the time it takes until a Hidden Service is registered in the network and the latency of contact establishment when accessed by a user. The aim of this project is to develop the new protocol which will change the way Tor circuits are set up between the user and the Hidden Service as well as the way a Hidden Service is registered in the Tor network.&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/The_NLnet_Foundation_funds_two_projects/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

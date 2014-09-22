@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged uglyrumors</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/uglyrumors/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>mikeperry: Stable Torbutton Release Approaches</title>
+	<dcterms:creator>mikeperry</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/</link>
+
+
+	<category>/tags/torbutton</category>
+
+	<category>/tags/uglyrumors</category>
+
+
+	<pubDate>Sun, 06 Jul 2008 20:45:08 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:09:58Z</dcterms:modified>
+
+	<description>&lt;p&gt;For those of you just tuning in: Over the past year, I have been the maintainer of the &lt;a href=&quot;https://torbutton.torproject.org/dev/&quot; rel=&quot;nofollow&quot;&gt;Torbutton Firefox extension&lt;/a&gt;, adding a number of features and security enhancements to transform Torbutton from a simple proxy switcher into a secure way to &lt;a href=&quot;https://torbutton.torproject.org/dev/design/#requirements&quot; rel=&quot;nofollow&quot;&gt;fully isolate all browser state&lt;/a&gt; from one proxy state to another and defend against all known &lt;a href=&quot;https://torbutton.torproject.org/dev/design/#adversary&quot; rel=&quot;nofollow&quot;&gt;privacy and IP address leakage attacks&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The release candidate phase of the extension started about a month ago, but with the release of Firefox 3 and Torbutton 1.2.0rc series occurring at the same time, we&#39;ve hit a number of unexpected rough spots and snags. However, with the 1.2.0rc5 release of Torbutton, I&#39;m pleased to report that the majority of those now seem to be &lt;a href=&quot;https://torbutton.torproject.org/dev/CHANGELOG&quot; rel=&quot;nofollow&quot;&gt;behind us&lt;/a&gt; (a few annoying &lt;a href=&quot;https://torbutton.torproject.org/dev/design/#FirefoxBugs&quot; rel=&quot;nofollow&quot;&gt;Firefox bugs&lt;/a&gt; notwithstanding).&lt;/p&gt;
+
+&lt;p&gt;Thanks to contributions from &lt;a href=&quot;http://www.fdn.fr/~arenevier/&quot; rel=&quot;nofollow&quot;&gt;arno&lt;/a&gt;, the Cookie Jar features now work with Firefox 3. They have even been improved to allow cookies to persist in memory-based jars across Tor toggle (as opposed to requiring Tor cookies to be written to disk to preserve them), which I personally already find very useful. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/stable-torbutton-release-approaches&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Stable_Torbutton_Release_Approaches/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

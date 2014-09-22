@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged onion_addresses</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/onion_addresses/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: SHA-1 files by popular request</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/SHA-1_files_by_popular_request/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/SHA-1_files_by_popular_request/</link>
+
+
+	<category>/tags/hidden_services</category>
+
+	<category>/tags/onion_addresses</category>
+
+	<category>/tags/tor2web</category>
+
+
+	<pubDate>Thu, 18 Dec 2008 23:07:47 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:16:04Z</dcterms:modified>
+
+	<description>&lt;p&gt;We&#39;ve received requests for .sha1 files in addition to .asc for our packages.  Starting with 0.2.1.8-alpha, there are now .sha1 files in the &lt;a href=&quot;https://www.torproject.org/dist/&quot; rel=&quot;nofollow&quot;&gt;appropriate dist directories&lt;/a&gt;.  Displaying them on the download web page is still a bit tricky.  The current layout leaves the page even more cluttered with .sha1 links all over it.  &lt;/p&gt;
+
+&lt;p&gt;When you download a 0.2.1.8-alpha or later package, simply replace &quot;.asc&quot; with &quot;.sha1&quot; to get the hash file.&lt;/p&gt;
+
+&lt;p&gt;You&#39;ll then need to either &quot;openssl sha1 {package}&quot; or &quot;sha1sum {package}&quot; to see if the hash you downloaded matches the package you downloaded.  Note:  replace {package} with the name of the file you downloaded.&lt;/p&gt;
+
+&lt;p&gt;Enjoy.  &lt;/p&gt;
+
+&lt;p&gt;If you don&#39;t know what any of this means, &lt;a href=&quot;http://en.wikipedia.org/wiki/File_verification&quot; rel=&quot;nofollow&quot;&gt;start here&lt;/a&gt;.&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/SHA-1_files_by_popular_request/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

@@ -1,0 +1,528 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>On the risks of serving whenever you surf</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FOn_the_risks_of_serving_whenever_you_surf&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">On the risks of serving whenever you surf</a>
+
+</span>
+
+
+<div id="content">
+<p><a href="https://www.torproject.org/bridges" rel="nofollow">Bridge nodes</a> are one of Tor's key architectural components for allowing wide access to the network. These act like normal Tor nodes, except there is no centralized list available to download, so it's harder to block access to all of them. Users who cannot access the Tor network in the normal way can find the IP addresses of a few bridges, and connect to the rest of the Tor network via these nodes. The bridge node IP addresses are distributed in a way such that anyone should be able to find a few, but it should be difficult for someone to find (and block access to) them all. Currently they are available by email or the web, but more strategies are being considered, such as instant messaging or MMORPGs. <span class="read-more"><a href="http://blog.torproject.org/blog/risks-serving-whenever-you-surf"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/anonymity/" rel="tag">anonymity</a>
+
+<a href="../../tags/bridges/" rel="tag">bridges</a>
+
+<a href="../../tags/censorship_circumvention/" rel="tag">censorship circumvention</a>
+
+<a href="../../tags/research/" rel="tag">research</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-da464dca6644a20beae367dcca168285">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>"For example, the default Tor configuration could be set to make Tor clients automatically a bridge if they are reachable from the Internet and sufficiently reliable."</p>
+
+<p>This idea sounds good.Will it be put into practice soon? I'm a Chinese user.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 25 Dec 2009 06:45:06 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2137e4d91728df241e45c3bddfa592ab">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>I've had a bridge running for a few months here but it looks to have gone quiet since the 24th December.  Maybe China has blocked my address, I don't know.  Is there a way I can test for that?  It looks like inbound connections are being reset on their end (DPI intercept?) before a connection can be established.</p>
+
+<p><code>bridge &lt; syn &lt; user<br />
+bridge &gt; syn ack &gt; user<br />
+bridge &lt; rst ack &lt; user<br />
+bridge &lt; rst ack &lt; user<br />
+bridge &lt; ack &lt; user<br />
+bridge &gt; rst &gt; user<br />
+bridge &lt; rst ack &lt; user<br />
+bridge &lt; rst &lt; user</code></p>
+
+<p>or</p>
+
+<p><code>bridge &lt; syn &lt; user<br />
+bridge &gt; syn ack &gt; user<br />
+bridge &lt; ack &lt; user<br />
+bridge &lt; rst ack &lt; user<br />
+bridge &lt; psh ack &lt; user (ssl packet)<br />
+bridge &lt; rst ack &lt; user<br />
+bridge &lt; rst &lt; user<br />
+bridge &lt; rst &lt; user<br />
+bridge &lt; rst ack &lt; user<br />
+bridge &lt; rst &lt; user</code></p>
+
+<p>(etc...)</p>
+
+<p>Not sure what to make of it really.  I don't think I've changed anything this side... <img src="../../smileys/question.png" alt="(?)" /></p>
+
+<p>* sorry it's a little off-topic *</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 25 Dec 2009 06:45:07 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-352c5facccc92396cda19c122a54a632">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+It seems on Dec 24, China updated the GFW with a list of new IP addresses to block.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 30 Dec 2009 06:45:08 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-dda3aa3e5cdacbe15df8faa03919db6a">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<p>The current stable release of Incognito has a related problem, where unplugging and plugging in the ethernet cord at eth0 will cause an unauthorized tor server to start leaking your IP onto the internet:</p>
+
+<p>NOTICE   (1 of 1) Received reload signal (hup). Reloading config.<br />
+NOTICE  (1 of 1) Opening OR listener on 0.0.0.0:9001<br />
+NOTICE  (1 of 1) Opening Directory listener on 0.0.0.0:9030<br />
+NOTICE  (1 of 1) Your Tor server's identity key fingerprint is 'REDACTED'<br />
+NOTICE  (1 of 2) Now checking whether ORPort REDACTED:9001 and DirPort REDACTED:9030 are reachable... (this may take up to 20 m<br />
+NOTICE  (2 of 2) inutes -- look for log messages indicating success)<br />
+WARN    (1 of 2) Your server (REDACTED:9001) has not managed to confirm that its ORPort is reachable. Please check your firewalls, p<br />
+WARN    (2 of 2) orts, address, /etc/hosts file, etc.<br />
+WARN    (1 of 2) Your server (REDACTED:9030) has not managed to confirm that its DirPort is reachable. Please check your firewalls,<br />
+WARN    (2 of 2) ports, address, /etc/hosts file, etc.</p>
+
+<p>It is contacting my real external IP from my exit node to see if my new unwanted server is reachable. This is a problem in any case, as it is unauthorized, but it is a very serious problem if I am using StrictExitNodes. I have just been completely identified and my potential anonymity drops to zero.</p>
+
+<p>It appears that any hup will cause this behavior. And hups start to happen for various reasons after the system has been running for several hours or a day.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 26 Dec 2009 06:45:09 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d36fea367eca8ca12c8dc8b0862a4316">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>I'm not sure this is the place to be asking questions about Incog distro.</p>
+
+<p>The Incog distro's message forum is at:</p>
+
+<p><a href="http://www.linuxquestions.org/questions/incognito-85/" title="http://www.linuxquestions.org/questions/incognito-85/" rel="nofollow">http://www.linuxquestions.org/questions/incognito-85/</a></p>
+
+<p>I wish you the best of luck with any tor distro you use, especially from anonymous sources. I wouldn't trust any of them where closed binaries are used and where you personally didn't roll them. No disrespect to the honest and good intentioned distro maintainers out there but in today's world the philosophy is: trust no one unless you've seen the source yourself, especially when it comes to privacy soft.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 26 Dec 2009 06:45:10 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f8816bd620ec6a67f4703647c269cb72">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>一月 02 13:24:44.031 [Notice] Now checking whether ORPort 220.170.52.39:443 and DirPort 220.170.52.39:9030 are reachable... (this may take up to 20 minutes -- look for log messages indicating success)<br />
+一月 02 13:24:53.437 [Notice] Self-testing indicates your DirPort is reachable from the outside. Excellent.<br />
+一月 02 13:26:18.671 [Notice] Your DNS provider gave an answer for "bsk2xlrnxhi.invalid", which is not supposed to exist.  Apparently they are hijacking DNS failures. Trying to correct for this.  We've noticed 1 possibly bad address so far.<br />
+一月 02 13:26:19.187 [Notice] Your DNS provider has given "222.246.129.82" as an answer for 11 different invalid addresses. Apparently they are hijacking DNS failures. I'll try to correct for this by treating future occurrences of "222.246.129.82" as 'not found'.<br />
+一月 02 13:44:33.546 [Warning] Your server (220.170.52.39:443) has not managed to confirm that its ORPort is reachable. Please check your firewalls, ports, address, /etc/hosts file, etc.</p>
+
+<p>ps:i run tor as a relay in China using a adsl internet conection.it seems that something don't work,i don't know...</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 01 Jan 2010 06:45:11 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b3ee43eabae9a03df985c653dcfa20c1">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p>It seems your relay is not working because your orport is not reachable. If you're inside china, this is expected, since China is actively blocking public tor relays.</p>
+
+<p>As for the dns errors, your ISP gives answers when it should give nxdomain responses.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 04 Jan 2010 06:45:12 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FOn_the_risks_of_serving_whenever_you_surf&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:45:05 AM CDT</span>
+<!-- Created <span class="date">Wed 23 Dec 2009 04:27:12 PM CST</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

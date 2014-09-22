@@ -1,0 +1,788 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Technology Preview:  Bridge by default for Microsoft Windows clients</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Anonymous: Comment 1</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_1/</link>
+
+	<pubDate>Sun, 06 Jun 2010 06:59:20 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:20Z</dcterms:modified>
+
+	<description>Is it still possible to fingerprint (and block) bridges?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 2</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_2/</link>
+
+	<pubDate>Sun, 06 Jun 2010 06:59:21 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:21Z</dcterms:modified>
+
+	<description>&lt;p&gt;I&#39;d downloaded and installed this version of Tor, and I can ping the default bridges. But I can&#39;t connect to Tor network. &lt;/p&gt;
+
+&lt;p&gt;Jun 07 11:37:35.542 [Notice] Bootstrapped 10%: Finishing handshake with directory server.&lt;br /&gt;
+Jun 07 11:37:35.759 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (DONE; DONE; count 3; recommendation warn)&lt;br /&gt;
+Jun 07 11:52:37.845 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (DONE; DONE; count 6; recommendation warn)&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 3</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_3/</link>
+
+	<pubDate>Mon, 07 Jun 2010 06:59:22 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:22Z</dcterms:modified>
+
+	<description>There are no default bridges.  This package turns you into a bridge relay.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 4</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_4/</link>
+
+	<pubDate>Sun, 06 Jun 2010 06:59:23 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:23Z</dcterms:modified>
+
+	<description>Very good, but I ask:  Why put the bridges on port 9001?  Doesn&#39;t that make it extremely easy to block?
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 5</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_5/</link>
+
+	<pubDate>Mon, 07 Jun 2010 06:59:24 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:24Z</dcterms:modified>
+
+	<description>Any port is easy to block.  The point of this is a technology preview, not final configuration.  It&#39;s unclear that port 443 is less likely to be blocked than 9001, or heck  31337.  However, concern about 9001 standing out is registered.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 6</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_6/</link>
+
+	<pubDate>Thu, 10 Jun 2010 06:59:25 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:25Z</dcterms:modified>
+
+	<description>Actually, not all ports are so easy to block.  443, for instance, would not be so easy to block for obvious reasons.  Any *single* port aside from 443 and a handful of others, if assigned to all Tor bridges, would be easy to block.  What wouldn&#39;t be so easy to block, would be if all of those UPNP-based automatic port opening clients chose a port at random from a pool, say 1024-65535. &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 7</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_7/</link>
+
+	<pubDate>Fri, 11 Jun 2010 06:59:26 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:26Z</dcterms:modified>
+
+	<description>Technically, just block tcp/443.  Whether a company or country wants to do so is another question.  The technology exists to do so, however.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 8</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_8/</link>
+
+	<pubDate>Mon, 07 Jun 2010 06:59:27 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:27Z</dcterms:modified>
+
+	<description>&lt;p&gt;This may happen fairly often: A nonexpert user would like to try a Linux distribution on a Windows machine, but wants Tor (preferably with the latest Vidalia) and is not confident that he could get it going on most (if any) distributions. From web search I have formed the impression that installation would be much easier on some distributions than on others. The impression.&lt;/p&gt;
+
+&lt;p&gt;Is there a resource that identifies which Linux distributions are most amenable to Tor/Vidalia installation by the nonexpert? Would anyone who knows kindly identify the distributions here? Information would be appreciated, so thanks in advance.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 9</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_9/</link>
+
+	<pubDate>Mon, 07 Jun 2010 06:59:28 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:28Z</dcterms:modified>
+
+	<description>&lt;p&gt;We maintain our own repositories for tor rpms and debs for linux distributions.  See &lt;a href=&quot;https://www.torproject.org/download-unix.html.en&quot; title=&quot;https://www.torproject.org/download-unix.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download-unix.html.en&lt;/a&gt;  Most native distribution repositories are out of date with respect to Tor versions.&lt;/p&gt;
+
+&lt;p&gt;Windows and Mac operating systems are reliant on the user either noticing new versions through Vidalia prompts, or subscribing to this blog&#39;s rss feed or or-announce mailing list.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 10</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_10/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_10/</link>
+
+	<pubDate>Mon, 07 Jun 2010 06:59:29 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:29Z</dcterms:modified>
+
+	<description>&lt;p&gt;You are doing great things, tor means lots to me, thank you&lt;br /&gt;
+A Chinese tor user&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 11</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_11/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_11/</link>
+
+	<pubDate>Mon, 07 Jun 2010 06:59:30 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:30Z</dcterms:modified>
+
+	<description>&lt;p&gt;&amp;gt; the 300 Chinese users who used my bridge on one of the test networks,&lt;br /&gt;
+&amp;gt; only to have it go away a day later.&lt;/p&gt;
+
+&lt;p&gt;For the past dozen of weeks, I&#39;ve experienced the same problem. Whenever I retrieved a few new bridges via gmail, they would go away soon (less than a day) if they did work for the first time. Most of them didn&#39;t work at all. It&#39;s dubious that Tor traffic is being monitored and screened by some kind of automatic mechanisms. We just can&#39;t image that this is all done by hand.&lt;/p&gt;
+
+&lt;p&gt;It&#39;d be better if we look into more robust bridging systems, and double check whether the tor traffic has some kind of easily discernible protocol signature or not. I&#39;d like to be a volunteer for the tests if you need any, I hold a degree on computer science.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 12</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_12/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_12/</link>
+
+	<pubDate>Tue, 08 Jun 2010 06:59:31 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:31Z</dcterms:modified>
+
+	<description>Current testing from within China shows simple IP:port blocks.  We&#39;ve found that bridges are more volatile than relays.  People seem to set them up with a temporary mindset.  Yes, we need a better way to bootstrap into the network if the default public relay list doesn&#39;t work.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 13</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_13/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_13/</link>
+
+	<pubDate>Mon, 07 Jun 2010 06:59:32 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:32Z</dcterms:modified>
+
+	<description>Why not make the default configuration be a relay for all Tor? This effectively turns Tor into a darknet, but not a F2F net, since users don&#39;t need to know and trust each other beforehand. 
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 14</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_14/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_14/</link>
+
+	<pubDate>Tue, 08 Jun 2010 06:59:33 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:33Z</dcterms:modified>
+
+	<description>&lt;p&gt;We&#39;re working on it. See&lt;br /&gt;
+ &lt;a href=&quot;http://archives.seul.org/or/dev/Mar-2010/msg00028.html&quot; title=&quot;http://archives.seul.org/or/dev/Mar-2010/msg00028.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/dev/Mar-2010/msg00028.html&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 15</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_15/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_15/</link>
+
+	<pubDate>Tue, 08 Jun 2010 06:59:34 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:34Z</dcterms:modified>
+
+	<description>Yes, this will make it more difficult for the damn GFW to block tor user in China mainland. Thank you very much.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 16</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_16/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_16/</link>
+
+	<pubDate>Tue, 08 Jun 2010 06:59:35 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:35Z</dcterms:modified>
+
+	<description>This will make it more difficult for the damn GFW to block tor users in China mainland. Thank you very much.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 17</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_17/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_17/</link>
+
+	<pubDate>Tue, 08 Jun 2010 06:59:36 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:36Z</dcterms:modified>
+
+	<description>This will make it more difficult for the damn GFW to block tor users in China mainland. Thank you very much.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 18</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_18/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_18/</link>
+
+	<pubDate>Thu, 10 Jun 2010 06:59:37 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:37Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor is great. Using other proxies, I can be very proud that members of this community are really working hard.&lt;br /&gt;
+I would love to contribute to the improvement of Tor but at the same time remain very very anonymous. How?&lt;br /&gt;
+Can I use my Forex platform with Tor though it&#39;s experimental, if yes how do I configure such. &lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 19</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_19/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_19/</link>
+
+	<pubDate>Fri, 11 Jun 2010 06:59:38 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:38Z</dcterms:modified>
+
+	<description>&lt;p&gt;suggest：&lt;br /&gt;
+proxy download Bridge&lt;br /&gt;
+default 优先 link Cache，last link Bridge&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 20</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_20/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_20/</link>
+
+	<pubDate>Sat, 12 Jun 2010 06:59:39 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:39Z</dcterms:modified>
+
+	<description>&lt;p&gt;Another thing:&lt;br /&gt;
+please move from gmail to another email provider for sending bridges.&lt;br /&gt;
+Depending on you ip address, gmail may ask for SMS VERIFICATION.&lt;br /&gt;
+This is not a joke, see http://googlesystem.blogspot.com/2009/07/creating-gmail-account-requires...&lt;br /&gt;
+I and many people don&#39;t have cell phones, and it makes creating gmail accounts harder as a proxy or tor exit node in a country without the verification is needed, and many people will be unable to get them, even for people with cell phones many carriers are not supported and I have heard of many cases of people entering the number, not getting the sms, and then they could not use the number again as it has already been used a few times.&lt;br /&gt;
+Even the people with cell phones who care about privacy will not accept this, no other free webmail provider involves these kinds of privacy violations for setting up an account, tor should not require the webmail provider with the most privacy violations, please move to a differerent webmail provider that is more secure and accessible.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 21</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_21/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_21/</link>
+
+	<pubDate>Sat, 12 Jun 2010 06:59:40 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:40Z</dcterms:modified>
+
+	<description>&lt;p&gt;We are aware of this.  The issue is gmail may require an sms verification, frequently it does not.  gmail seems to ask for sms verification when lots of new account requests occur from a single IP, like a tor exit node.  We&#39;re working on incorporating other email providers that offer ssl and provide dkim headers.&lt;/p&gt;
+
+&lt;p&gt;Ticket &lt;a href=&quot;https://trac.torproject.org/projects/tor/ticket/1562&quot; title=&quot;https://trac.torproject.org/projects/tor/ticket/1562&quot; rel=&quot;nofollow&quot;&gt;https://trac.torproject.org/projects/tor/ticket/1562&lt;/a&gt; is to track this progress.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 22</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_22/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_22/</link>
+
+	<pubDate>Sun, 13 Jun 2010 06:59:41 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:41Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hi!!!!!!!!!!!!!!!!!!!!!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;Very good post Anonymous!!!!!!!!!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;All people using google services are dumb, i don&#39;t know why they want to land all their personal details to the evilest multinational company ever!!!!!!!! Google is the only web search engine awarded of the &lt;strong&gt;Hostile to Privacy&lt;/strong&gt; black medal, due to its practice of data-gathering just through their public search engine!!!!! Look at the Consultation Report 2007 of Privacy International http://www.privacyinternational.org/issues/internet/interimrankings.pdf !!! Yeah, I know it&#39;s a shame that the TorProject forces you to register to google!!!!!! hopefully that&#39;s going to change!!!!!!! By the way, Google has added the phone verification &lt;em&gt;after&lt;/em&gt;, in a later time when Tor was already using gmail, so the TorProject is actually a victim of Google as well!!!&lt;/p&gt;
+
+&lt;p&gt;I&#39;ve never registered one Gmail account, because i know it&#39;s for sure the worst email service ever!!!!!!!!!!!!! But due to my curiosity, i went to look for their registration policy and i also noticed that every time Google asked me for my cellphone number!!!!! Hah!! They want to link each email address with a cellphone, no more &quot;anonymous&quot; accounts filled up with fake personal details!!!!!!! Google is very evil, and people caring about theirs privacy mustn&#39;t use anything provided by or related to Google!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;I&#39;m currently using GMX as my email provider, it has one interface better than Yahoo Mail and it provides the HTTPS connection!!!!!!!! https://www.gmx.com/ &lt;/p&gt;
+
+&lt;p&gt;bye!!!!!!!!!!!!&lt;br /&gt;
+~bee!!!!!!!!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 23</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_23/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_23/</link>
+
+	<pubDate>Mon, 14 Jun 2010 06:59:42 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:42Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hi Bee,&lt;/p&gt;
+
+&lt;p&gt;&amp;gt;&amp;gt;I&#39;ve never registered one Gmail account&lt;br /&gt;
+&amp;gt;&amp;gt;it has one interface better than Yahoo Mail &lt;/p&gt;
+
+&lt;p&gt;You&#39;ve never registered one Gmail account? It has one interface? You&#39;re Chinese, aren&#39;t you. Using a literal translation of  一个  is a classic grammatical mistake made by Chinese speakers of English. Remember, English has an indefinite article (&quot;a&quot;). English goes not use &quot;one&quot; in this way.&lt;/p&gt;
+
+&lt;p&gt;If you had been paying attention in English class you would have said, &quot;I&#39;ve never registered a Gmail account&quot;, and &quot;It has a better interface than Yahoo Mail&quot;.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 24</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_24/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_24/</link>
+
+	<pubDate>Tue, 15 Jun 2010 06:59:43 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:43Z</dcterms:modified>
+
+	<description>Huh. I always thought that bee was just a moron. Anyway, if bee actually *is* Chinese, be nice; learning a language is hard.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 25</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_25/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_25/</link>
+
+	<pubDate>Thu, 24 Jun 2010 06:59:44 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:44Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hahaha, me too, I think bee is a moron and so so arrogant.  &lt;/p&gt;
+
+&lt;p&gt;Even if bee is Chinese I think bee would know enough to not be so arrogant and brash and not use so many damn exclamation points.  It&#39;s funny to me that bee has been booted out of lots of online communities like Mozilla blog, Wikipedia (bee tried to make a page for bee&#39;s unnecessary option to Tor Browser Bundle only to have Wikipedia people delete his page right away and stop him from making another) and now, thankfully, the Tor devs are also shunning bee...happy days!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 26</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_26/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_26/</link>
+
+	<pubDate>Sat, 26 Jun 2010 06:59:45 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:45Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hi!!!!!!!!!!&lt;br /&gt;
+That&#39;s quite wrong!!!!! Well, at wikipedia, they did removed my page about factorbee, but they also explained me that it&#39;s possible to make it again, when i&#39;ll find articles talking about my browser bundle!!!!!! yeah!! and also, there is for example my &lt;strong&gt;bee su&lt;/strong&gt; at Wikipedia, i added it long time ago in its proper page http://tinyurl.com/27pfbv5 !!!!!!!! (there are plenty of articles about bee su, so that&#39;s ok!!!!!!!!!!)&lt;br /&gt;
+What is strange about wikipedia, is when you send emails to Jimbo (the dictator of wikipedia), and the team of wikipedia answers in place of him!!!!!!!! I don&#39;t think that is what you had to expect!!!!&lt;br /&gt;
+As for AMOs, read Googlezilla, they&#39;re usual to remove all the posts they dislike, so they did it with mine as well!!!! I decided to leave, because i don&#39;t like AMOs!!!!!!!!!!!!!!! i never liked them!!!!! AMO sucks!!!!! They&#39;re usual to censor everything you say against google and them!!!!!!!&lt;br /&gt;
+I don&#39;t know about what you said about TOR, but i think it&#39;s mostly untrue!!!!! Since i&#39;m here, and so far only mike perry proved himself to be nasty with me!!!!!!!!!!! But i very like phobos (the blogger), erinn (which has accepted my suggestion for the TorBundle with Openssl) and andrew (which for first sent me nice emails)!!!!!!!!!&lt;br /&gt;
+A website you forgot to mention is fedora-forum!!!!! There are a lot of people, and admins, liking me!!!! but i decided to leave because it has gone downhill, turned into a boring place and therefore one admin banned me!!!!! hahah!!!!!!!!!!! yeah, it&#39;s no more honey like it was in the past, i&#39;ve never had an afterthought about quit that board!!!!! this is funny!!!!!!!!!!&lt;br /&gt;
+Anyway, it seems to me like you&#39;ve some troubles with english too!!!!!!!!! If you write &quot;out of lots of online communities&quot; and you give only two, maybe three, examples!!! well yeah, it&#39;s just one or two more than &quot;one&quot;!!!!!!! yeah!!!! it&#39;s not really the meaning of &lt;em&gt;lots of&lt;/em&gt;!!!!!!!!!!!!!! &lt;em&gt;Out of &quot;a couple of&quot;/&quot;a few of&quot; online communities&lt;/em&gt; seems to me to have a better logic!!!!!!!!!! is it?!!!!!!!!!!!!!!!?!!&lt;/p&gt;
+
+&lt;p&gt;bye!!!!!!!!!!!&lt;br /&gt;
+~bee!!!!!!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 27</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_27/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_27/</link>
+
+	<pubDate>Sat, 26 Jun 2010 06:59:46 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:46Z</dcterms:modified>
+
+	<description>&lt;p&gt;As a Chinese tor user, I am grateful for the great things torproject did.&lt;br /&gt;
+I don&#39;t know whether Bee is Chinese. Even he is, what bee did just represent himself, does not mean Chinese is arrogant.&lt;br /&gt;
+Even if Bee deserved being taunted, that should because of  his arrogant behavior, not just because he is a Chinese made some grammatical mistakes.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 28</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_28/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_28/</link>
+
+	<pubDate>Fri, 18 Jun 2010 06:59:47 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:47Z</dcterms:modified>
+
+	<description>You can no longer connect to filesurf.ru unless you get rid of all entryNodes and exitNodes entries.
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 29</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_29/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_29/</link>
+
+	<pubDate>Sat, 19 Jun 2010 06:59:48 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:48Z</dcterms:modified>
+
+	<description>it is more likely they were blocking certain exit nodes based on traffic from that IP address.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 30</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_30/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_30/</link>
+
+	<pubDate>Sat, 19 Jun 2010 06:59:49 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:49Z</dcterms:modified>
+
+	<description>https://bridges.torproject.org is also behind the GFW now.
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 31</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_31/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_31/</link>
+
+	<pubDate>Mon, 21 Jun 2010 06:59:50 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:50Z</dcterms:modified>
+
+	<description>do you mean blocked or available from within china?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 32</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_32/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_32/</link>
+
+	<pubDate>Thu, 24 Jun 2010 06:59:51 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:51Z</dcterms:modified>
+
+	<description>Pls my tor is no longer connecting on my MTN network here in nigeria. Whats going on.?
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 33</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_33/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_33/</link>
+
+	<pubDate>Fri, 25 Jun 2010 06:59:52 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:52Z</dcterms:modified>
+
+	<description>&lt;a href=&quot;https://www.torproject.org/faq#SupportMail&quot; title=&quot;https://www.torproject.org/faq#SupportMail&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/faq#SupportMail&lt;/a&gt;
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 34</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_34/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_34/</link>
+
+	<pubDate>Sat, 26 Jun 2010 06:59:53 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:53Z</dcterms:modified>
+
+	<description>https://bridges.torproject.org is blocked from within china
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 35</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_35/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_35/</link>
+
+	<pubDate>Sat, 26 Jun 2010 06:59:54 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:54Z</dcterms:modified>
+
+	<description>as Mtn finally block tor?cos it has not been connecting, please can someone please help with a better way to get connected to Tor servers please.....
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 36</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_36/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_36/</link>
+
+	<pubDate>Tue, 29 Jun 2010 06:59:55 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:55Z</dcterms:modified>
+
+	<description>I am from Nigeria and have been using tor for awhile now. But I just discovered that tor has not connected for a week now. I use MTN NIGERIA to connect to tor. Pls help out
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 37</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_37/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_37/</link>
+
+	<pubDate>Tue, 29 Jun 2010 06:59:56 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:56Z</dcterms:modified>
+
+	<description>&lt;p&gt;In Nigeria, we could not connect with tor anymore. This is message we get &#39;Establishing an encrypted directory connection&#39;.&lt;br /&gt;
+This is where the tor stays until u exist it by yourself. I use MTN Nigeria and so as others that are experiencing the same problem. Also,the relays are never loaded.&lt;br /&gt;
+Thanks in anticipation&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 38</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_38/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_38/</link>
+
+	<pubDate>Sat, 03 Jul 2010 06:59:57 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:57Z</dcterms:modified>
+
+	<description>It looks like this tor people here does&#39;nt reply.
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 39</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_39/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Bridge_by_default_for_Microsoft_Windows_clients/comment_39/</link>
+
+	<pubDate>Sat, 03 Jul 2010 06:59:58 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:58Z</dcterms:modified>
+
+	<description>Really?  &lt;a href=&quot;https://blog.torproject.org/blog/dear-nigerians-help-us-help-you&quot; title=&quot;https://blog.torproject.org/blog/dear-nigerians-help-us-help-you&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/dear-nigerians-help-us-help-you&lt;/a&gt;
+</description>
+
+
+</item>
+
+</channel>
+</rss>

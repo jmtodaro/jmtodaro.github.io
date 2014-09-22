@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged virus</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/virus/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: False Positives in 0.2.0.30:  RISING found Trojan.PSW.Win32.Undef.adp</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/False_Positives_in_0_2_0_30__RISING_found_Trojan_PSW_Win32_Undef_adp/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/False_Positives_in_0_2_0_30__RISING_found_Trojan_PSW_Win32_Undef_adp/</link>
+
+
+	<category>/tags/false_positives</category>
+
+	<category>/tags/privoxy</category>
+
+	<category>/tags/trojan</category>
+
+	<category>/tags/vidalia</category>
+
+	<category>/tags/virus</category>
+
+	<category>/tags/windows_bundles</category>
+
+
+	<pubDate>Tue, 05 Aug 2008 22:09:46 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:10:34Z</dcterms:modified>
+
+	<description>&lt;p&gt;I&#39;ve noticed a &lt;a href=&quot;https://blog.torproject.org/blog/june-2008-progress-report#comment-154&quot; rel=&quot;nofollow&quot;&gt;few comments&lt;/a&gt; about a Chinese anti-virus program, RISING, reporting that Vidalia.exe and Privoxy.exe are infected with Trojan.PSW.Win32.Undef.adp.    In both cases, I suspect that RISING is reporting false positives.  These executables as packaged and available on the Tor download page are not infected.&lt;/p&gt;
+
+&lt;p&gt;I&#39;ve looked at the MD5 and SHA-1 sums of these programs as included in the Vidalia bundle and they match what the source packages produce as executables.  The privoxy.exe included in the bundles is the exact same one as found at the &lt;a href=&quot;http://downloads.sourceforge.net/ijbswa/privoxy_setup_3_0_6.exe?modtime=1164015760&amp;amp;big_mirror=0&quot; rel=&quot;nofollow&quot;&gt;Sourceforge Privoxy Download Page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The Vidalia.exe is the same as the one included in the &lt;a href=&quot;http://www.vidalia-project.net/dist/vidalia-0.1.7.exe&quot; rel=&quot;nofollow&quot;&gt;Vidalia Download Page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Feel free to confirm this is true for you.  Better yet, let us know if these individual packages (Vidalia.exe from Vidalia and Privoxy.exe from Sourceforge) also show up as infected.&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/False_Positives_in_0_2_0_30__RISING_found_Trojan_PSW_Win32_Undef_adp/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

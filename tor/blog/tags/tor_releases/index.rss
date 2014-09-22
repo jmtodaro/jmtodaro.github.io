@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged tor_releases</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/tor_releases/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: May 2010 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/</link>
+
+
+	<category>/tags/advocacy</category>
+
+	<category>/tags/conferences</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/speeches</category>
+
+	<category>/tags/tor_releases</category>
+
+
+	<pubDate>Wed, 16 Jun 2010 12:55:48 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:08Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt; New releases &lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;On May 26, Tor Browser Bundle for Microsoft Windows is updated to include the newer Vidalia 0.2.9. This ﬁxes some issues with character set handling, and adds Vietnamese as a new language.&lt;/p&gt;
+
+&lt;p&gt;On May 31, we released Tor Browser Bundle for Linux 1.0.6. It contains the following updates:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add arch to tarball name so there&#39;s no collision&lt;/li&gt;
+&lt;li&gt;Add libpng for Arch Linux&lt;/li&gt;
+&lt;li&gt;Add HTTPS Everywhere extension&lt;/li&gt;
+&lt;li&gt;Update Qt to 4.6.2&lt;/li&gt;
+&lt;li&gt;Update Vidalia to 0.2.9&lt;/li&gt;
+&lt;li&gt;Update NoScript to 1.9.9.80&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;On June 1st, we released Tor Browser Bundle for Linux 1.0.7. It uses an older glibc for better compatibility with older linux distributions.&lt;/p&gt;
+
+&lt;p&gt;On May 20, we released Vidalia 0.2.9. Fixes include Qt 4.6.2 compatibility, new cert, and some new translations.  You can download it at &lt;a href=&quot;https://www.torproject.org/vidalia/&quot; title=&quot;https://www.torproject.org/vidalia/&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/vidalia/&lt;/a&gt;. Packages are slowly being updated to include this version of Vidalia.&lt;br /&gt;
+The full changelog is:  &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/may-2010-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: October 2009 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/October_2009_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/October_2009_Progress_Report/</link>
+
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/enhancements</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/tor_releases</category>
+
+	<category>/tags/vidalia_releases</category>
+
+
+	<pubDate>Thu, 12 Nov 2009 09:14:19 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:41:01Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New releases, new hires, new funding&lt;/strong&gt;&lt;br /&gt;
+Christian Fromme joins Tor to work on development and maintenance of the growing number of tools we’ve created over the past year. Christian is a great python hacker with a strong security mindset. He’s going to enhance and maintain the tools such as tor weather, get-tor, bridge database, tor control, tor flow, check.torproject.org, etc. Christian has been a volunteer developer for the past year helping to enhance get-tor, tor weather, and generally helping out with our python coding needs.&lt;/p&gt;
+
+&lt;p&gt;On October 10, we released Tor version 0.2.2.4-alpha. The release notes can be read at &lt;a href=&quot;https://blog.torproject.org/blog/tor-0224-alpha-released&quot; title=&quot;https://blog.torproject.org/blog/tor-0224-alpha-released&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-0224-alpha-released&lt;/a&gt; or below: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/october-2009-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/October_2009_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Tor Browser Bundle 1.2.5 and 1.2.6 released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/</link>
+
+
+	<category>/tags/tor_browser_bundle</category>
+
+	<category>/tags/tor_releases</category>
+
+
+	<pubDate>Thu, 06 Aug 2009 01:51:22 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:01Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor Browser Bundle 1.2.5 and 1.2.6 are released.&lt;/p&gt;
+
+&lt;p&gt;The changes for the respective releases are:&lt;/p&gt;
+
+&lt;p&gt;1.2.5: Released 2009-07-25&lt;br /&gt;
+  update Tor to 0.2.1.18&lt;/p&gt;
+
+&lt;p&gt;1.2.6: Released 2009-07-28&lt;br /&gt;
+  update Tor to 0.2.1.19&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged torbel</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/torbel/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>erinn: Tor 0.2.2.15-alpha released</title>
+	<dcterms:creator>erinn</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_15-alpha_released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_15-alpha_released/</link>
+
+
+	<category>/tags/gsoc2010</category>
+
+	<category>/tags/torbel</category>
+
+
+	<pubDate>Mon, 23 Aug 2010 03:44:28 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:06:54Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor 0.2.2.15-alpha fixes a big bug in hidden service availability, fixes a variety of other bugs that were preventing performance experiments from moving forward, fixes several bothersome memory leaks, and generally closes a lot of smaller bugs that have been filling up trac lately.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download&quot; title=&quot;https://www.torproject.org/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://gitweb.torproject.org/tor.git/blob_plain/eba3f37f17a2af4ff628dd5cbc653441e6dce6eb:/ChangeLog&quot; rel=&quot;nofollow&quot;&gt;Changes in version 0.2.2.15-alpha - 2010-08-18&lt;/a&gt;&lt;br /&gt;
+  o Major bugfixes:&lt;br /&gt;
+    - Stop assigning the HSDir flag to relays that disable their&lt;br /&gt;
+      DirPort (and thus will refuse to answer directory requests). This&lt;br /&gt;
+      fix should dramatically improve the reachability of hidden services:&lt;br /&gt;
+      hidden services and hidden service clients pick six HSDir relays&lt;br /&gt;
+      to store and retrieve the hidden service descriptor, and currently&lt;br /&gt;
+      about half of the HSDir relays will refuse to work. Bugfix on&lt;br /&gt;
+      0.2.0.10-alpha; fixes part of bug 1693. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02215-alpha-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_15-alpha_released/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

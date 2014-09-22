@@ -1,0 +1,441 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged translations</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/translations/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: November 2010 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2010_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2010_Progress_Report/</link>
+
+
+	<category>/tags/enhancements</category>
+
+	<category>/tags/fixes</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/translations</category>
+
+
+	<pubDate>Thu, 16 Dec 2010 16:16:17 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:11:39Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New Releases&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/november-2010-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;On November 16 we released the latest in the Tor -alpha series.  Tor 0.2.2.18-alpha fixes several crash bugs that have been nagging us lately, makes unpublished bridge relays able to detect their IP address, and fixes a wide variety of other bugs to get us much closer to a stable release. &lt;a href=&quot;https://blog.torproject.org/blog/tor-02218-alpha-available&quot; title=&quot;https://blog.torproject.org/blog/tor-02218-alpha-available&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-02218-alpha-available&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;On November 23, we released the latest in the Tor -stable series. Tor 0.2.1.27 makes relays work with OpenSSL 0.9.8p and 1.0.0.b --yet another OpenSSL security patch broke its compatibility with Tor. We also took this opportunity to fix several crash bugs, integrate a new directory authority, and update the bundled GeoIP database. &lt;a href=&quot;https://blog.torproject.org/blog/tor-02127-released&quot; title=&quot;https://blog.torproject.org/blog/tor-02127-released&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-02127-released&lt;/a&gt;&lt;/li&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/November_2010_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: October 2010 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/October_2010_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/October_2010_Progress_Report/</link>
+
+
+	<category>/tags/arm</category>
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/https_everywhere</category>
+
+	<category>/tags/metrics</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/tor_browser_bundle</category>
+
+	<category>/tags/translations</category>
+
+
+	<pubDate>Tue, 09 Nov 2010 14:24:09 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:11:05Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New Releases&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/october-2010-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;On October 29th, we released updated Tor Browser Bundles for OS X, Linux, and Windows.  This is an upgrade to Firefox 3.6.12 which fixes a critical bug and OS X users&#39; Torbutton will now show up. &lt;a href=&quot;https://blog.torproject.org/blog/new-tor-browser-bundles-released-take-two&quot; title=&quot;https://blog.torproject.org/blog/new-tor-browser-bundles-released-take-two&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/new-tor-browser-bundles-released-take-t...&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;On October 28th, we released new OSX Vidalia bundles which include Tor 0.2.2.17-alpha.  Vidalia 0.2.10 changed the way we deal with the geoip databases by dropping the remote geoip lookups. This caused a lot of headaches for OS X users because of the layout of the package, but it&#39;s fixed in this version. &lt;a href=&quot;https://blog.torproject.org/blog/mac-os-x-vidalia-bundle-02217-alpha-out&quot; title=&quot;https://blog.torproject.org/blog/mac-os-x-vidalia-bundle-02217-alpha-out&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/mac-os-x-vidalia-bundle-02217-alpha-out&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;On October 27th, we released a new Tor Check to fix links to documentation urls, and clarify what users should do when getting the success result. &lt;a href=&quot;https://check.torproject.org&quot; title=&quot;https://check.torproject.org&quot; rel=&quot;nofollow&quot;&gt;https://check.torproject.org&lt;/a&gt;.&lt;/li&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/October_2010_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: August 2010 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/</link>
+
+
+	<category>/tags/alpha_releases</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/scalability</category>
+
+	<category>/tags/translations</category>
+
+
+	<pubDate>Mon, 13 Sep 2010 15:23:27 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:07:09Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;Releases&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;On August 21st we released Tor Browser Bundle 1.0.10 for GNU/Linux. See &lt;a href=&quot;https://blog.torproject.org/blog/tor-browser-bundle-1010-gnulinux-released&quot; title=&quot;https://blog.torproject.org/blog/tor-browser-bundle-1010-gnulinux-released&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-browser-bundle-1010-gnulinux-releas...&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;On August 18, we released Tor 0.2.2.15-alpha.  It fixes a big bug in hidden service availability, fixes a variety of other bugs that were preventing performance experiments from moving forward, fixes several bothersome memory leaks, and generally closes a lot of smaller bugs that have been filling up trac lately. See &lt;a href=&quot;https://blog.torproject.org/blog/tor-02215-alpha-released&quot; title=&quot;https://blog.torproject.org/blog/tor-02215-alpha-released&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-02215-alpha-released&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Released two new versions of Orbot, Tor for Android.&lt;br /&gt;
+&lt;blockquote&gt;&lt;p&gt;
+Version 1.0.2&lt;br /&gt;
+- added &quot;check&quot; yes/no dialog prompt&lt;br /&gt;
+- debugged iptables/transprox settings on Android 1.6 and 2.2&lt;br /&gt;
+- added proxy settings help screen and fixed processSettings() NPE&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Version 1.0.1 &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/august-2010-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: March 2010 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/March_2010_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/March_2010_Progress_Report/</link>
+
+
+	<category>/tags/advocacy</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/proposals</category>
+
+	<category>/tags/releases</category>
+
+	<category>/tags/scalability</category>
+
+	<category>/tags/translations</category>
+
+
+	<pubDate>Sat, 17 Apr 2010 19:28:01 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:55:30Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New Releases&lt;/strong&gt;&lt;br /&gt;
+On March 7th, we released the latest in the -alpha series, Tor 0.2.2.10-alpha.  Tor 0.2.2.10-alpha fixes a regression introduced in 0.2.2.9-alpha that could prevent relays from guessing their IP address correctly. It also starts the groundwork for another client-side performance boost, since currently we&#39;re not making efficient use of relays that have both the Guard flag and the Exit flag.&lt;/p&gt;
+
+&lt;p&gt;  o Major bugfixes:&lt;br /&gt;
+    - Fix a regression from our patch for bug 1244 that caused relays&lt;br /&gt;
+      to guess their IP address incorrectly if they didn&#39;t set Address&lt;br /&gt;
+      in their torrc and/or their address fails to resolve. Bugfix on&lt;br /&gt;
+      0.2.2.9-alpha; fixes bug 1269.&lt;/p&gt;
+
+&lt;p&gt;  o Major features (performance):&lt;br /&gt;
+    - Directory authorities now compute consensus weightings that instruct&lt;br /&gt;
+      clients how to weight relays flagged as Guard, Exit, Guard+Exit,&lt;br /&gt;
+      and no flag. Clients that use these weightings will distribute &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/march-2010-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/March_2010_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: January 2010 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/January_2010_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/January_2010_Progress_Report/</link>
+
+
+	<category>/tags/advocacy</category>
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/enhancements</category>
+
+	<category>/tags/feature_removals</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/releases</category>
+
+	<category>/tags/translations</category>
+
+
+	<pubDate>Sat, 13 Feb 2010 10:00:04 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:50:26Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New releases, new hires, new funding&lt;/strong&gt;&lt;br /&gt;
+On January 19, 2010 we released the latest in the -stable series, Tor 0.2.1.22-stable.&lt;br /&gt;
+Tor 0.2.1.22 fixes a critical privacy problem in bridge directory authorities -- it would tell you its whole history of bridge descriptors if you make the right directory request. This stable update also rotates two of the seven v3 directory authority keys and locations. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/january-2010-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/January_2010_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: December 2009 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/December_2009_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/December_2009_Progress_Report/</link>
+
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/enhancements</category>
+
+	<category>/tags/metrics</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/releases</category>
+
+	<category>/tags/translations</category>
+
+
+	<pubDate>Sat, 13 Feb 2010 09:35:12 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:50:25Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New releases, new hires, new funding&lt;/strong&gt;&lt;br /&gt;
+Erinn Clark joins Tor to develop, enhance, and upgrade our package build system. Her initial goals are to configure, maintain, and automate builds of tor and vidalia for Windows, OS X, ubuntu, debian, centos, fedora, and opensuse systems. Secondary goals are to develop a builtbot system that includes as many disparate operating systems as possible, including Apple OS X and Microsoft&lt;br /&gt;
+Windows flavors. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/december-2009-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/December_2009_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: May 2009 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/</link>
+
+
+	<category>/tags/anonymity_advocacy</category>
+
+	<category>/tags/metrics</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/proposals</category>
+
+	<category>/tags/translations</category>
+
+
+	<pubDate>Wed, 10 Jun 2009 13:41:55 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:26:57Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New releases&lt;/strong&gt;&lt;br /&gt;
+On May 25, we released Tor 0.2.1.15-rc.&lt;br /&gt;
+On May 17, we released Tor VM 0.0.2.&lt;br /&gt;
+On May 25, we released Vidalia 0.1.13 containing &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/may-2009-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Remove an old warning on the relay settings page that running a bridge&lt;br /&gt;
+    relay requires Tor 0.2.0.8-alpha or newer. &lt;/li&gt;
+&lt;li&gt;Add a workaround for a bug that prevented Vidalia&#39;s tray icon from&lt;br /&gt;
+    getting added to the system notification area on Gnome when Vidalia was&lt;br /&gt;
+    run on system startup. Patch by Steve Tyree. (Ticket #247) &lt;/li&gt;
+&lt;li&gt;Fix a bug that prevented the control panel from displaying when&lt;br /&gt;
+    running on the Enlightenment window manager. Patch by Steve Tyree. &lt;/li&gt;
+&lt;li&gt;Rename the CMake variables used to store the location of Qt&#39;s lupdate&lt;br /&gt;
+    and lrelease executables. Recent versions of CMake decided to use the&lt;br /&gt;
+    same variable name, which was stomping on mine, resulting in the wrong&lt;br /&gt;
+    lupdate and lrelease executables being used. &lt;/li&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: January 2009 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/January_2009_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/January_2009_Progress_Report/</link>
+
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/releases</category>
+
+	<category>/tags/security_fixes</category>
+
+	<category>/tags/translations</category>
+
+
+	<pubDate>Sun, 22 Feb 2009 19:23:37 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:20:05Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New releases, new hires, new funding&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.1.10-alpha (released January 6) fixes two major bugs in bridge&lt;br /&gt;
+relays (one that would make the bridge relay not so useful if it had&lt;br /&gt;
+DirPort set to 0, and one that could let an attacker learn a little bit&lt;br /&gt;
+of information about the bridge&#39;s users), and a bug that would cause your&lt;br /&gt;
+Tor relay to ignore a circuit create request it can&#39;t decrypt (rather&lt;br /&gt;
+than reply with an error). It also fixes a wide variety of other bugs.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Jan-2009/msg00078.html&quot; title=&quot;http://archives.seul.org/or/talk/Jan-2009/msg00078.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Jan-2009/msg00078.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.1.11-alpha (released Jan 20) finishes fixing the &quot;if your Tor is&lt;br /&gt;
+off for a week it will take a long time to bootstrap again&quot; bug. It also&lt;br /&gt;
+fixes an important security-related bug reported by Ilja van Sprundel. You&lt;br /&gt;
+should upgrade. (We&#39;ll send out more details about the bug once people&lt;br /&gt;
+have had some time to upgrade.)&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Jan-2009/msg00171.html&quot; title=&quot;http://archives.seul.org/or/talk/Jan-2009/msg00171.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Jan-2009/msg00171.html&lt;/a&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/january-2009-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/January_2009_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>nickm: The MD5 certificate collision attack, and what it means for Tor</title>
+	<dcterms:creator>nickm</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/The_MD5_certificate_collision_attack_and_what_it_means_for_Tor/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/The_MD5_certificate_collision_attack_and_what_it_means_for_Tor/</link>
+
+
+	<category>/tags/alpha_release</category>
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/hidden_services</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/translations</category>
+
+
+	<pubDate>Tue, 30 Dec 2008 10:53:04 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:16:31Z</dcterms:modified>
+
+	<description>&lt;p&gt;Today, a team of security researchers and cryptographers gave a talk at the &lt;a href=&quot;http://events.ccc.de/congress/2008/&quot; rel=&quot;nofollow&quot;&gt;25th Chaos Communication Congress (25C3)&lt;/a&gt;, about a &lt;a href=&quot;http://www.win.tue.nl/hashclash/rogue-ca/&quot; rel=&quot;nofollow&quot;&gt;nifty attack against X.509 certificates generated using the MD5 digest algorithm&lt;/a&gt;.  We figured that people will ask us about how this attack affects Tor, so I&#39;m writing an answer in advance.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The short version:&lt;/strong&gt; This attack doesn&#39;t affect Tor.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The medium version:&lt;/strong&gt; This attack doesn&#39;t affect Tor, since Tor doesn&#39;t ever use MD5 certificates, and since Tor doesn&#39;t care what certificate authorities say.  On the other hand, this attack probably &lt;em&gt;does&lt;/em&gt; affect your browser.  Check your browser vendor for updates over the next few days and weeks, and make sure you install them. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/md5-certificate-collision-attack%2C-and-what-it-means-tor&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/The_MD5_certificate_collision_attack_and_what_it_means_for_Tor/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: October 2008 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/October_2008_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/October_2008_Progress_Report/</link>
+
+
+	<category>/tags/auto-updater</category>
+
+	<category>/tags/censorship_circumvention</category>
+
+	<category>/tags/china</category>
+
+	<category>/tags/crashes</category>
+
+	<category>/tags/farsi</category>
+
+	<category>/tags/torbutton</category>
+
+	<category>/tags/translations</category>
+
+	<category>/tags/vidalia</category>
+
+
+	<pubDate>Mon, 01 Dec 2008 18:43:12 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:15:19Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;Design&lt;/strong&gt;&lt;br /&gt;
+We continued enhancements to the Chinese and Russian Tor website translations. We also have a second Chinese translator for the website now, so hopefully we will get more prompt translations there. Our Farsi translation from this summer is slowly becoming obsolete; we should solve that at some point.&lt;/p&gt;
+
+&lt;p&gt;We added a new &quot;30 second summary&quot; web page for Tor:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/30seconds&quot; title=&quot;https://www.torproject.org/30seconds&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/30seconds&lt;/a&gt;&lt;br /&gt;
+and a new &quot;easy download&quot; page since the original is so complex:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/easy-download&quot; title=&quot;https://www.torproject.org/easy-download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/easy-download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In the upcoming Vidalia 0.2.0 development release:&lt;br /&gt;
+  - Support changing UI languages without having to restart Vidalia.&lt;br /&gt;
+  - Updated Czech, Polish, Romanian and Turkish translations.&lt;/p&gt;
+
+&lt;p&gt;In the upcoming Vidalia 0.1.10 stable release:&lt;br /&gt;
+  - Add a prettier dialog for prompting people for their control port password that also includes a checkbox for whether the user wants Vidalia to remember the entered password, a Help button, and a Reset button (Windows only).&lt;br /&gt;
+  - Fix a crash bug that occurred when the user clicks &#39;Clear&#39; in the message log toolbar followed by &#39;Save All&#39;.&lt;br /&gt;
+  - Uncheck the Torbutton options by default in the Windows bundle installer if Firefox is not installed.&lt;br /&gt;
+  - Add an Windows bundle installer page that warns the user that they should install Firefox, if it looks like they haven&#39;t already done so.&lt;/p&gt;
+
+&lt;p&gt;It looks like Australia is soon to be joining the ranks of countries with a nationwide filtering regime:&lt;br /&gt;
+&lt;a href=&quot;http://arstechnica.com/news.ars/post/20081016-net-filters-required-for-all-australians-no-opt-out.html&quot; title=&quot;http://arstechnica.com/news.ars/post/20081016-net-filters-required-for-all-australians-no-opt-out.html&quot; rel=&quot;nofollow&quot;&gt;http://arstechnica.com/news.ars/post/20081016-net-filters-required-for-a...&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Proposals&lt;/strong&gt;&lt;br /&gt;
+We finished the first iteration of our auto-updater spec:&lt;br /&gt;
+&lt;a href=&quot;https://svn.torproject.org/svn/updater/trunk/specs/thandy-spec.txt&quot; title=&quot;https://svn.torproject.org/svn/updater/trunk/specs/thandy-spec.txt&quot; rel=&quot;nofollow&quot;&gt;https://svn.torproject.org/svn/updater/trunk/specs/thandy-spec.txt&lt;/a&gt;&lt;br /&gt;
+We detail our current auto-updater progress below. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/october-2008-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/October_2008_Progress_Report/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

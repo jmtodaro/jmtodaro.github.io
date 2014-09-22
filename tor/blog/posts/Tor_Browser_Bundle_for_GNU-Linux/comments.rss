@@ -1,0 +1,773 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Tor Browser Bundle for GNU/Linux</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>mikeperry: Comment 1</title>
+	<dcterms:creator>mikeperry</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_1/</link>
+
+	<pubDate>Sat, 27 Mar 2010 06:54:18 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:18Z</dcterms:modified>
+
+	<description>&lt;p&gt;I want to point out that this is the first bundle we are shipping with NoScript and BetterPrivacy. We&#39;ve decided to attempt this as a trial in Linux TBB for a few reasons. After the remote font exploit of  Firefox 3.6 and the apparent ~2 month delay between exploit code and fix, we&#39;ve come to the conclusion that we need to do a bit more to protect our users against Firefox 0day being held by the underground and aboveground exploit markets. See:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://hackademix.net/2010/03/24/why-noscript-blocks-web-fonts/&quot; title=&quot;http://hackademix.net/2010/03/24/why-noscript-blocks-web-fonts/&quot; rel=&quot;nofollow&quot;&gt;http://hackademix.net/2010/03/24/why-noscript-blocks-web-fonts/&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://hackademix.net/2010/03/22/firefox-36s-0-day-and-you/&quot; title=&quot;http://hackademix.net/2010/03/22/firefox-36s-0-day-and-you/&quot; rel=&quot;nofollow&quot;&gt;http://hackademix.net/2010/03/22/firefox-36s-0-day-and-you/&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=1328&quot; title=&quot;https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=1328&quot; rel=&quot;nofollow&quot;&gt;https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=1328&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We also want to provide at least some way for people to view YouTube videos and other flash content without completely sacrificing their privacy and anonymity while viewing all websites. Our plan is to make it so that people who insist on viewing flash content can simply uncheck &quot;Disable plugins for Tor usage&quot;, and only be at risk when they actually decide to load a plugin (possibly GnashPlayer) by clicking on  its NoScript Placeholder. Basically, we would like to replace this long FAQ entry with a much simpler one that still has an appropriate warning: &lt;a href=&quot;https://www.torproject.org/torbutton/faq.html.en#noflash&quot; title=&quot;https://www.torproject.org/torbutton/faq.html.en#noflash&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/torbutton/faq.html.en#noflash&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In addition, we&#39;ve decided to try to deploy a list of popular sites that have insecure https functionality that can be secured by NoScript. Right now, we are attempting to secure *twitter.com *facebook.com blog.torproject.org &lt;a href=&quot;http://www.torproject.org&quot; title=&quot;www.torproject.org&quot; rel=&quot;nofollow&quot;&gt;www.torproject.org&lt;/a&gt; docs.google.com addons.mozilla.org &lt;a href=&quot;http://www.stumbleupon.com&quot; title=&quot;www.stumbleupon.com&quot; rel=&quot;nofollow&quot;&gt;www.stumbleupon.com&lt;/a&gt;. We are open to any suggestions for additions to this list, and what we might do about any problems that arise.&lt;/p&gt;
+
+&lt;p&gt;The Noscript config shipped with the bundle has the following additional general properties:&lt;/p&gt;
+
+&lt;p&gt;1. It disables the redirect to noscript.net on updates.&lt;br /&gt;
+2. It simplifies the context menu down to just enable/disable javascript&lt;br /&gt;
+3. It sets Javascript to be enabled by default.&lt;br /&gt;
+4. It replaces most common media types and plugins with placeholders&lt;/p&gt;
+
+&lt;p&gt;We&#39;re open to any suggestions or comments about this approach. I am also discussing usability issues with Giorgio to try to help make NoScript a bit easier to use in general.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 2</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_2/</link>
+
+	<pubDate>Sat, 27 Mar 2010 06:54:19 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:19Z</dcterms:modified>
+
+	<description>Where is the TorProject going?!!!!!!!!!!!!!!!!! At first it was the Google Summers of Code (Google is the &lt;strong&gt;#1 evil multinational company&lt;/strong&gt; i&#39;m aware of; long before Microsoft!!!). And now, NoScript inside a TOR Browser Bundle!!!!!!!!! The last time i said something about NoScript was here: http://forums.lanik.us/viewtopic.php?f=86&amp;amp;t=5809#p23619 !!!!!!!! ~bee!!!!!!!!!!!!!!!
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 3</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_3/</link>
+
+	<pubDate>Sat, 27 Mar 2010 06:54:20 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:20Z</dcterms:modified>
+
+	<description>I don&#39;t see how adding some extensions to a beta tor browser bundle makes them tied to google at all.  I&#39;m guessing tor people have analyzed noscript and better privacy to make sure they are secure enough and not snooping on users.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 4</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_4/</link>
+
+	<pubDate>Fri, 02 Apr 2010 06:54:21 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:21Z</dcterms:modified>
+
+	<description>...hard to follow your logic...too many holes..
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 5</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_5/</link>
+
+	<pubDate>Sat, 27 Mar 2010 06:54:22 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:22Z</dcterms:modified>
+
+	<description>Would also the RequestPolicy maybe be an idea to add to the bundle?
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 6</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_6/</link>
+
+	<pubDate>Sat, 27 Mar 2010 06:54:23 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:23Z</dcterms:modified>
+
+	<description>&lt;p&gt;Personally, I think request policy is the only extension a tor users needs, however mikeperry brings up valid points.&lt;/p&gt;
+
+&lt;p&gt;Typical users are baffled by request policy as they don&#39;t understand how the webpages they view are actually setup.  When 90% of the web stops working for them as they expect it, they&#39;ll just disable it and get no protection.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>mikeperry: Comment 7</title>
+	<dcterms:creator>mikeperry</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_7/</link>
+
+	<pubDate>Sat, 27 Mar 2010 06:54:24 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:24Z</dcterms:modified>
+
+	<description>&lt;p&gt;Yeah, in addition to usability, I also feel that Request Policy makes more sense when you have more trust in your network connection and/or perhaps just want to dodge some ads, tracking scripts, and web noise. Personally, I use Request Policy as more of an advisory role, so that I can become more aware of what different pages tend to be sourcing. I rely on NoScript and Adblock to filter out the noise and the malware.&lt;/p&gt;
+
+&lt;p&gt;For our bundles, I prefer NoScript because I believe NoScript is addressing the root problem here: it gives you the ability to disable/augment individual components of the browser prone to exploitation. A malicious Tor exit node can feed you malware from any domain, and websites can also serve you syndicated (read: malware spiked) ads, plugin content, and tracking scripts from their own domain origin.&lt;/p&gt;
+
+&lt;p&gt;As I said, I&#39;ve been discussing usability with Giorgio, and he claims that adding &quot;Novice&quot; and &quot;Intermediate&quot; modes to NoScript is on his TODO list. I am really hopeful about an &quot;Intermediate&quot; mode, where users can say that for example they want to allow scripts from &quot;Twitter.com&quot; and &quot;facebook.com&quot; and ban them everywhere else. These filters would then apply based on the domain in the url bar, not the domain of the sourced content. I think this would actually be usable by most people, as it fits more in line with their mental model of the web (and would also protect them in cases where for example facebook&#39;s tracking scripts appear everywhere due to advertising partnerships).&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 8</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_8/</link>
+
+	<pubDate>Sat, 27 Mar 2010 06:54:25 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:25Z</dcterms:modified>
+
+	<description>&lt;p&gt;Well; i want to compare this Tor Browser Bundle for GNU/Linux (the official belonging to the TOR Project), with my one (Factorbee)!!!!!!!!!!!!&lt;br /&gt;
+This TorBB of the torproject hasn&#39;t been well-made!!!! It actually sucks!!!!! Six months for this crap lol!!!!!!!!!! It&#39;s the same &quot;Tor Browser Bundle for Windows&quot; made for Linux, without anything of new, no improvements... it&#39;s just a (bad)copy!!!!!! yes, there is something of new: NoScript and BetterPrivacy!!!!!!! The first addon is almost garbage, and the last one is useless if you really want to have any privacy online!!!!!!!!!!!!! I made Factorbee with in my mind an absolute protection for who&#39;s using it!!!!!!!!!! I made a script to run FactorBee from EncFS (encrypted filesystem) or from a TmpFS (temporary filesystem in RAM/swap), supporting RAM disks and multiple firefox profiles, etc.... I made something of original!!!!!!! I built firefox without the support for plugins, it&#39;s disabled at compiling-time!!!!!! This is the reason why i don&#39;t need BetterPrivacy!!!!!!! Cookies are disabled, but you can enable them!!! Javascripts are disabled, but you can as well enable them with one click on the QuickJava addon, you don&#39;t need a bloatware like NoScript!!!!!!! I know that my Factorbee doesn&#39;t support neither JAVA nor Flash (nor anything that runs as a plug-in), but this is a feature!!!!!!!!!!!! Why does anyone cares of JAVA?!!!! Or Flash?!!!! Ok, you can use Flash to watch videos on Youtube, but you can just download them before and watch them later, you don&#39;t need Flash (it&#39;s a dangerous, anti-privacy, closed-source, proprietary technology, belonging to a multinational company... there is no reason to support it!!!!!!!!). But, if you need a fast connection, to read and upload texts anonymously; why would you need flash at all?!!!!!!!! With FactorBee you can also disable/enable the loading of images with one click: i&#39;m much more thinking about an application to be fast and working, not filled up with useless technologies!!!!!!! The official TBB doesn&#39;t support external shell-scripts, for example you can&#39;t download files without opening Firefox, i added cURL-based scripts (and cURL is embedded into my package) to allow people to download files with a more stable application rather than FF (cURL used from the script i made, also supports the resuming of failed downloads automatically!!!!!!!!).... Well, there is much more, but you can just look for it at the website of FactorBee: http://honeybeenet.altervista.org/factorbee/ (i cant rewrite everything here!!!!!!!!!!!). I&#39;m only thinking that if i took one month to make FactorBee, and the TorProject took six months to make an average/boring TBB, then i&#39;m much better!!!!!!!!!!!!!!!!!!!!!!! or perhaps the tor project is going downhill!!!!(i&#39;m hoping &lt;em&gt;no&lt;/em&gt; though!!!!!) ~bee!!!!!!!!!!!!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 9</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_9/</link>
+
+	<pubDate>Sun, 04 Apr 2010 06:54:26 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:26Z</dcterms:modified>
+
+	<description>Are you unable to use less than 100 exclamation marks per post?  Who would even spend the time to read this inane banter?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 10</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_10/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_10/</link>
+
+	<pubDate>Tue, 06 Apr 2010 06:54:27 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:27Z</dcterms:modified>
+
+	<description>Hi!!!!!!!!!!!!!! Well, if you don&#39;t want to look at the exclamation marks, just don&#39;t look at them!!!!!!!!!!!!!!!!!!!!! bye!!!!!!! ~bee!!!!!!!!!!!!!!
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 11</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_11/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_11/</link>
+
+	<pubDate>Sat, 27 Mar 2010 06:54:28 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:28Z</dcterms:modified>
+
+	<description>Six months and it&#39;s not even working!!!!!! If you close VIDALIA, FireFox is still running!!!!!!!!! I expected it be closed too!!!!!(take a look at the source code of Factorbee and copy from it...lol!!!!!!!!!!!!) ~bee!!!!!!!!!!!
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 12</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_12/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_12/</link>
+
+	<pubDate>Sat, 27 Mar 2010 06:54:29 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:29Z</dcterms:modified>
+
+	<description>I trust the tor project to do the research and the right thing over time.  Trusting some fucking nutball with an exclamation point problem is not going to happen, source available or not.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 13</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_13/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_13/</link>
+
+	<pubDate>Sat, 27 Mar 2010 06:54:30 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:30Z</dcterms:modified>
+
+	<description>&quot;source available or not&quot;. A dumb way to trash a whole post.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 14</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_14/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_14/</link>
+
+	<pubDate>Sat, 27 Mar 2010 06:54:31 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:31Z</dcterms:modified>
+
+	<description>So, let me wonder about this!!!!!!!! somebody who (i&#39;d to image) never did anything of good for the others (he&#39;s you, lol!!!) -- using all, but no one real and good reason to support his point of view -- likes more the TBB for GNU/Linux made by the TorProject instead of mine?!!!!!!!!!!!!!?!!!! Well, i don&#39;t care!!!!!!! Why should i care!?!!!!!!!! I don&#39;t care!!!!! With the reasons you provided, i just dont care!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! And, in the end, your &quot;source available or not&quot;remark is the final nonsense that makes me image you like &lt;strong&gt;«the ideal user for Windows»&lt;/strong&gt;!!!!!!!!!!!!!!!!!!!! ~bee!!!!!!!!!
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 15</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_15/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_15/</link>
+
+	<pubDate>Sat, 27 Mar 2010 06:54:32 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:32Z</dcterms:modified>
+
+	<description>The factorbee scripts are pretty interesting.  You should check them out.  Beware though, the source tarball unpacks directly into the current directory instead of a subdir.  Not ideal.
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 16</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_16/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_16/</link>
+
+	<pubDate>Sun, 28 Mar 2010 06:54:33 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:33Z</dcterms:modified>
+
+	<description>&lt;p&gt;bee, I respectfully suggest:&lt;/p&gt;
+
+&lt;p&gt;&quot;tar -jcf factorbee-source.tar.bz2 ./factorbee-source&quot;&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 17</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_17/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_17/</link>
+
+	<pubDate>Sun, 28 Mar 2010 06:54:34 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:34Z</dcterms:modified>
+
+	<description>Hi phobos!!!!!!!!!!!! Yeah!!!!!!!!!!!!!! that&#39;s a very good idea!!!!!!!! I think that i&#39;ve to rename the source folder to the current date (factorbee-source-20104321) and then compress it in the way you suggested!!!!! ~bee!!!!!!!!!!!
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 18</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_18/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_18/</link>
+
+	<pubDate>Mon, 29 Mar 2010 06:54:35 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:35Z</dcterms:modified>
+
+	<description>Done with today&#39;s release!!!!!! and thank you!!!!! ~bee!!!!!!
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 19</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_19/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_19/</link>
+
+	<pubDate>Sun, 28 Mar 2010 06:54:36 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:36Z</dcterms:modified>
+
+	<description>&lt;p&gt;Before this turns into any more of a flamewar, if bee has suggestions, we&#39;re happy to collaborate with him/her on making tbb better.  This antagonistic relationship is not helping anyone.  Our goal is with the browser bundle is to help non-technical users protect their privacy and anonymity online.  We try to do this by making a complete bundle that just works without any configuration.  This appears to be what factorbee is trying to do as well.  Fighting about it is just a waste of resources.&lt;/p&gt;
+
+&lt;p&gt;One thing we&#39;re considering is the inclusion of Gnash (&lt;a href=&quot;http://www.gnashdev.org/&quot; title=&quot;http://www.gnashdev.org/&quot; rel=&quot;nofollow&quot;&gt;http://www.gnashdev.org/&lt;/a&gt;) instead of flash.  Gnash has the added features of being able to not store flash cookies or wipe all flash cookies.  Gnash is a bit rough on Windows right now, so if we can find some funding to make gnash better, we&#39;ll do so.  Gnash could work just like flash, and enable people to safely do more flash-based activities on the &#39;net.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 20</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_20/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_20/</link>
+
+	<pubDate>Sun, 04 Apr 2010 06:54:37 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:37Z</dcterms:modified>
+
+	<description>You can avoid Flash on YouTube by using their HTML5 page.  Though, I&#39;m not quite sure all their vids work but it&#39;s a start.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 21</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_21/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_21/</link>
+
+	<pubDate>Sun, 28 Mar 2010 06:54:38 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:38Z</dcterms:modified>
+
+	<description>hi! I am chinese. Tor had been invalid in china. Although it can be connected, nothing can be browsed what we aren&#39;t allowed to know.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 22</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_22/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_22/</link>
+
+	<pubDate>Sun, 28 Mar 2010 06:54:39 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:39Z</dcterms:modified>
+
+	<description>&lt;p&gt;I would also suggest that the Perspectives firefox plugin be included in this pack:&lt;/p&gt;
+
+&lt;p&gt;http://www.cs.cmu.edu/~perspectives/firefox.html&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 23</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_23/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_23/</link>
+
+	<pubDate>Thu, 13 May 2010 06:54:40 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:40Z</dcterms:modified>
+
+	<description>Perspectives is a great addon, but not for Tor browsing, because it has DNS leaks.  Read the comment by -VladV- in that page.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 24</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_24/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_24/</link>
+
+	<pubDate>Wed, 31 Mar 2010 06:54:41 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:41Z</dcterms:modified>
+
+	<description>&lt;p&gt;Any tutorial on how to setup Tor on Kubuntu? It doesnt seem to work well.&lt;br /&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;Best Regards,&lt;br /&gt;
+Chris Johns&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 25</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_25/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_25/</link>
+
+	<pubDate>Wed, 31 Mar 2010 06:54:42 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:42Z</dcterms:modified>
+
+	<description>Follow these instructions, &lt;a href=&quot;https://www.torproject.org/docs/debian.html.en&quot; title=&quot;https://www.torproject.org/docs/debian.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/docs/debian.html.en&lt;/a&gt; and &lt;a href=&quot;https://www.torproject.org/docs/debian-vidalia.html.en&quot; title=&quot;https://www.torproject.org/docs/debian-vidalia.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/docs/debian-vidalia.html.en&lt;/a&gt; for the graphical interface.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 26</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_26/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_26/</link>
+
+	<pubDate>Fri, 02 Apr 2010 06:54:43 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:43Z</dcterms:modified>
+
+	<description>I never use Tor without noscript installed. Good choice in shipping it with the browser.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 27</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_27/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_27/</link>
+
+	<pubDate>Sat, 03 Apr 2010 06:54:44 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:44Z</dcterms:modified>
+
+	<description>&lt;p&gt;Nice work, seem work good, thanks for all your work &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/../../smileys/biggrin.png&quot; alt=&quot;:D&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;SwissTorExit&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 28</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_28/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_28/</link>
+
+	<pubDate>Sat, 03 Apr 2010 06:54:45 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:45Z</dcterms:modified>
+
+	<description>it work well on ubuntu,thank the developers.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 29</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_29/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_29/</link>
+
+	<pubDate>Sun, 04 Apr 2010 06:54:46 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:46Z</dcterms:modified>
+
+	<description>I got libpng error on Arch Linux...
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 30</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_30/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_30/</link>
+
+	<pubDate>Tue, 06 Apr 2010 06:54:47 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:47Z</dcterms:modified>
+
+	<description>Hi!!!!!!!!!!!!!!!! Yeah, i&#39;ve got your same error with factorbee when i first tested it!!!!!!! this is why since its first version i added the libpng14 package to &lt;strong&gt;factorbee&lt;/strong&gt;!!!!!!! I think that the main problem with ArchLinux is the lack of libpng12!!!!!!!!!!!!! So, you can either compile everything with the libpng14 (and ship it along with your TorBB!!! and this is what i&#39;m doing with factorbee!!!!!!!!!!) or install the libpng12 from AUR!!!!!!!!!!!!!!!!!!!!!!!!!!! follow this LINK: http://aur.archlinux.org/packages.php?ID=33795 !!!!!!!!!! &lt;em&gt;Or else&lt;/em&gt; just use factorbee!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ~bee!!!!!!!!!!!!!!!!!
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 31</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_31/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_31/</link>
+
+	<pubDate>Sun, 30 May 2010 06:54:48 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:48Z</dcterms:modified>
+
+	<description>&lt;p&gt;I&#39;m not saying you don&#39;t have valid points (and I certainly detest Flash) but you must realize that it is very difficult to take anyone who uses that many exclamation points seriously. (!!!!!!)&lt;/p&gt;
+
+&lt;p&gt;And just what is your objection to NoScript?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 32</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_32/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_32/</link>
+
+	<pubDate>Tue, 06 Apr 2010 06:54:49 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:49Z</dcterms:modified>
+
+	<description>&lt;p&gt;I would also very much like to see RefControl add-on included in *nix and Windows TBB packages.  It is a great tool using &quot;forge&quot; for root of all sites.  Mike Perry has had this feature on his wish list for TorButton for some time.  &lt;/p&gt;
+
+&lt;p&gt;RefControl https://addons.mozilla.org/en-US/firefox/addon/953&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 33</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_33/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_33/</link>
+
+	<pubDate>Mon, 26 Apr 2010 06:54:50 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:50Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hi,&lt;/p&gt;
+
+&lt;p&gt;When I use Tor-BB for Linux and then start my installed Firefox the second instance of non-Tor FF uses the profile of Tor-BB, i.e., all my bookmarks, etc from my default install of non-Tor Firefox are gone, my non-Tor FF opens to the Tor exit node verification page that is default homepage of Tor-BB ( https://check.torproject.org/ ).  This is not something I think is preferable, or &#39;safe&#39;.  The Windows Tor-BB does not behave like that, if I open a default non-Tor FF install on Windows after I start Windows Tor-BB the non-Tor FF uses it&#39;s own profile, not that of the running Tor-BB.  AFAIK, TorButton also is now able to separate the two profiles so there is not risk of mixing non-Tor FF and Tor-BB FF profiles.&lt;/p&gt;
+
+&lt;p&gt;Is it possible to build Linux Tor-BB so an installation of FF (not using Tor) can run at the same time, i.e., be started _after_ Tor-BB has been started while _not_ using Tor-BB profile?&lt;/p&gt;
+
+&lt;p&gt;The reason I ask is I like to listen to Pandora, or do other non-anonymous Internet work while I use Tor-BB, sometimes it takes minutes to load a page with Tor-BB so I like to use the idle time effectively, i.e., writing work emails, etc.&lt;/p&gt;
+
+&lt;p&gt;Thanks!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 34</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_34/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_34/</link>
+
+	<pubDate>Sat, 12 Jun 2010 06:54:51 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:51Z</dcterms:modified>
+
+	<description>I&#39;m having the same issue, this isn&#39;t a problem for the Windows version.  I&#39;m really excited about this &#39;nux version, but simultaneous instances are a dealbreaker.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 35</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_35/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_35/</link>
+
+	<pubDate>Sun, 02 May 2010 06:54:52 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:52Z</dcterms:modified>
+
+	<description>&lt;p&gt;This is a great solution and I am very impressed that I can now use  Tor Browser bundle on a new installation of Ubuntu. Before I had been using the less than satisfactory Windows bundle, but this linux version allows Tor access to the net and when I close my live-cd version of Unbuti, everything more truely vanishes, without trace, from my computer system.&lt;/p&gt;
+
+&lt;p&gt;I have tried live-cd&#39;s with Tor installed within an .iso, but these live-cd&#39;s require a high level of trust to use and they are so often produced in ways that lack trnsparency and oh so often they are poorly maintained.&lt;/p&gt;
+
+&lt;p&gt;I can now easily use the this bundle, with ad hoc installations of truecrypt as well and I am now much happier to use Ubuntu as a core OS, Ubuntu is well resourced and regular security updates are available and now it&#39;s last incarnation is easier to use.&lt;/p&gt;
+
+&lt;p&gt;Thanks for this, it is brilliant and I can now, with more confidence, recommend this linux bundle.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 36</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_36/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_36/</link>
+
+	<pubDate>Sun, 30 May 2010 06:54:53 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:53Z</dcterms:modified>
+
+	<description>&lt;p&gt;Do you actually install TBB from scratch each and every time you boot from the live CD? &lt;/p&gt;
+
+&lt;p&gt;Or are you using live with persistence?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 37</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_37/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_37/</link>
+
+	<pubDate>Sun, 02 May 2010 06:54:54 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:54Z</dcterms:modified>
+
+	<description>Please add scroogle and the https proxy search engine https://eu.startpage.com/?r=4339 the latter is advertised as the the &quot;worlds most private search engine&quot;
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 38</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_38/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_GNU-Linux/comment_38/</link>
+
+	<pubDate>Mon, 03 May 2010 06:54:55 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:55Z</dcterms:modified>
+
+	<description>&lt;p&gt;I have just given the new Ubuntu [1]] version a whirl and it does seem an excellent platform to use with this Tor-Linux bundle. Also Ubuntu allows more than one operation of Fire Fox to be working, so it is possible to simultaneously have one with Tor enabled and another without, though it seems worthwhile giving one of them a different theme/persona, so they don&#39;t get mixed up.... More Fire Fox addons can be easily added and I have found FireGPG [2] quite handy to encrypt files and messages for insertion into web based email services, though a local install  ofThunderbird and Enigmail [3] can also be used, but I find the extra effort to use FirePGP helps me lever the most out of Tor/Fire Fox.&lt;/p&gt;
+
+&lt;p&gt;Foot notes&lt;br /&gt;
+-----------&lt;/p&gt;
+
+&lt;p&gt;[1] http://www.ubuntu.com/&lt;br /&gt;
+[2] http://es.getfiregpg.org/s/home&lt;br /&gt;
+[3] http://enigmail.mozdev.org/download/index.php&lt;/p&gt;
+
+</description>
+
+
+</item>
+
+</channel>
+</rss>

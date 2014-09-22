@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged android_mobile_phone_linux</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/android_mobile_phone_linux/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>ioerror: Tor on Android</title>
+	<dcterms:creator>ioerror</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_on_Android/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_on_Android/</link>
+
+
+	<category>/tags/android_mobile_phone_linux</category>
+
+
+	<pubDate>Thu, 04 Mar 2010 07:18:26 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:51:26Z</dcterms:modified>
+
+	<description>&lt;p&gt;The Tor Project has been working very closely with &lt;a href=&quot;http://openideals.com/&quot;&gt;Nathan Freitas&lt;/a&gt; and &lt;a href=&quot;http://openideals.com/guardian/&quot;&gt;The Guardian Project&lt;/a&gt; to create an Android release. This is an early beta release and is not yet suitable for high security needs. The Android web browser is not protected by Torbutton and we have not yet developed an anonymous browser on the Android platform. Please be cautious with this  release, it&#39;s probably pretty fragile and it&#39;s certainly not ready for serious use.&lt;/p&gt;
+
+&lt;p&gt;We&#39;ve codenamed the Tor on Android project Orbot; Orbot is a single Android package that provides a new Tor controller, Privoxy as our trusty little HTTP proxy, libevent, and Tor itself. This Android package is using the C reference implementation of Tor. Orbot should be orders of magnitude safer than other Tor implementations on Android and it&#39;s our official release. Everything you&#39;ll need for using Tor is in the package.  &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/tags/android_mobile_phone_linux/../../smileys/smile.png&quot; alt=&quot;:-)&quot; /&gt;  &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-android&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_on_Android/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

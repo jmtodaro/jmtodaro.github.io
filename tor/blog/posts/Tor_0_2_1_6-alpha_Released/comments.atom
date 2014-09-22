@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Tor 0.2.1.6-alpha Released</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_6-alpha_Released/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_6-alpha_Released/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_6-alpha_Released/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:12:52Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_6-alpha_Released/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_6-alpha_Released/comment_1/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:12:49Z</updated>
+	<published>2008-10-16T11:12:49Z</published>
+
+	<content type="html" xml:lang="en">
+	If I downloaded tor button, will it prevent firefox from writing cache to my disk? If not, how do I disable it?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_6-alpha_Released/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_6-alpha_Released/comment_2/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:12:50Z</updated>
+	<published>2008-10-16T11:12:50Z</published>
+
+	<content type="html" xml:lang="en">
+	By default, yes it will.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_6-alpha_Released/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_6-alpha_Released/comment_3/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:12:51Z</updated>
+	<published>2009-02-08T12:12:51Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I put the following command in the config file but can&#39;t work..&lt;/p&gt;
+
+&lt;p&gt;ExitNodes {hk}, {us}, {jp}&lt;br /&gt;
+StrictExitNodes 1&lt;/p&gt;
+
+&lt;p&gt;anything wrong&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_6-alpha_Released/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_6-alpha_Released/comment_4/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:12:52Z</updated>
+	<published>2009-05-02T11:12:52Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;the tor is changing only between 10 different servers, most time all are in the same town. why ist that? should they not change between 1k or so?&lt;br /&gt;
+it&#39;s that, i&#39;m in germany and it only switches between german servers too. the providers are forced to log all traffic. what is the sense of using tor then? i&#39;m running the stable version and can not exclude countries.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+
+</feed>

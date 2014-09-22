@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Tor 0.2.2.17-alpha is out</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:10:03Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_1/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:42Z</updated>
+	<published>2010-10-04T12:09:42Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hi phobos!!!!!!!!!!!!!&lt;br /&gt;
+I&#39;ve a question!!!!!!!!!!!!!!!!!!!!! I don&#39;t understand this!!!!!!!! Tor &quot;&lt;em&gt;introduces a feature to make it harder for clients to use one-hop circuits (which can put the exit relays at higher risk&lt;/em&gt;&quot;, so, i would like to know!!! one-hop circuits put the exit relays at a higher risk &lt;em&gt;of what&lt;/em&gt;?!!!!!!!!!!!!! Because it doesn&#39;t make sense to me!!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;bye!!!!!!!!&lt;br /&gt;
+~bee!!!!!!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_2/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:43Z</updated>
+	<published>2010-10-05T12:09:43Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Why ? !!!! The need !!!! for all the exclamation marks !!!!!!!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/../../smileys/smile.png&quot; alt=&quot;:-)&quot; /&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_3/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:44Z</updated>
+	<published>2010-10-05T12:09:44Z</published>
+
+	<content type="html" xml:lang="en">
+	In this version did you fix the 30MB limit bug? If not where can i get older releases of Vidalia+privoxy? Thank you.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_4/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:45Z</updated>
+	<published>2010-10-08T12:09:45Z</published>
+
+	<content type="html" xml:lang="en">
+	As far as I know this bug is unrelated to tor. It is a limitation within Polipo, but you can use privoxy instead. It has no limits.                      
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_5/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:46Z</updated>
+	<published>2010-10-08T12:09:46Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Love you guys and appreciate Tor very much but I just need a quick start up guide to get it configured and running good enough for basic troll protection on forums -- I really don&#39;t need to wade through all those fascinating geeky tidbits on the wiki front page.&lt;/p&gt;
+
+&lt;p&gt;You could call it &quot;click here for the quick start up guide&quot;.  LOL  &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For example, the first time I downloaded Tor/vidalia/firefox, it worked perfectly right out of the box without my doing anything at all (checked my ip with those reverse look up sites)  and browsing the net was only a tiny bit slower than normal.  But then I got the bright idea to disable Tor, and haven&#39;t been able to get it running again even after uninstalling Tor/vidalia/firefox and reinstalling.&lt;/p&gt;
+
+&lt;p&gt;I don&#39;t know where to START, and reading the Wiki novel just to find a simple set of instructions seems redundant.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_6/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:47Z</updated>
+	<published>2010-10-08T12:09:47Z</published>
+
+	<content type="html" xml:lang="en">
+	this is why we push the tor browser bundle, it&#39;s preconfigured and for 99.99% of people works every time.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_7/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:48Z</updated>
+	<published>2010-10-08T12:09:48Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Oh gosh thanks for replying so quickly.  But I did download the Tor bundle!  lol  It worked perfectly right out of the box without my doing anything at all -- literally.  Which is why I&#39;m so confused why it doesn&#39;t work now.&lt;/p&gt;
+
+&lt;p&gt;All I did was click on that button in the bottom right screen to disable Tor temporarily, and when I tried to enable it again, it wouldn&#39;t work no matter what I did.  &lt;/p&gt;
+
+&lt;p&gt;The error message which appears in the firefox window is:&lt;/p&gt;
+
+&lt;p&gt;The proxy server is refusing connections&lt;br /&gt;
+Firefox is configured to use a proxy server that is refusing connections.&lt;br /&gt;
+*   Check the proxy settings to make sure that they are correct.&lt;br /&gt;
+*   Contact your network administrator to make sure the proxy server is working.&lt;/p&gt;
+
+&lt;p&gt;All I really need to know (I think) is what to type into the Tor preferences screen.  &lt;/p&gt;
+
+&lt;p&gt;Anyway, you guys are awesome, seriously.  Hate to waste anyone&#39;s time... but a quick start up guide.... please?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_8/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:49Z</updated>
+	<published>2010-10-08T12:09:49Z</published>
+
+	<content type="html" xml:lang="en">
+	Tor 0.2.2.17-alpha is much faster on my laptop than Tor 0.2.2.15-alpha. Thanks.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_9/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:50Z</updated>
+	<published>2010-10-09T12:09:50Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;in stable win bundle version 0.2.1.26-0.2.10.exe the command&lt;br /&gt;
+&quot;tor -?&quot; shows v0.2.2.15-alpha!&lt;/p&gt;
+
+&lt;p&gt;where is 0.2.1.26?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_10/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:51Z</updated>
+	<published>2010-10-10T12:09:51Z</published>
+
+	<content type="html" xml:lang="en">
+	Anyone else experiencing server (as middleman) crashes on Debian?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_11/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:52Z</updated>
+	<published>2010-10-10T12:09:52Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hello,&lt;/p&gt;
+
+&lt;p&gt;Just to let you know that I have just tried using the TOR Browser Bundle with Vista/Firefox 3.6.10 and surprisingly, (this time) it actually worked. However there was no mention that all plugins are disabled so that you cannot watch even a video. It would have saved me a few hours if you had mentioned it upfront. &lt;/p&gt;
+
+&lt;p&gt;Even worse than that is the fact that all anonymity is lost should you  ever (gasp) watch a video or use any plugin ! What a joke !&lt;br /&gt;
+A little flaw in the TOR system if you ask me because it renders it useless. I mean, you have gone to extensive lengths to successfully stay anonymous, and congratulations on that, but one single flash file and it is all rendered useless. &lt;/p&gt;
+
+&lt;p&gt;By the way, for people who cannot provide an anonymous system I would not try and be patronising with the :&lt;br /&gt;
+“Then read &quot;How to ask questions the smart way&quot;&lt;br /&gt;
+It just make you look even more silly. &lt;/p&gt;
+
+&lt;p&gt;Your “contact us” section is just like TOR. You run around in rings getting nowhere. &lt;/p&gt;
+
+&lt;p&gt;Ta&lt;br /&gt;
+Super &lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 12</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_12/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_12/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:53Z</updated>
+	<published>2010-10-16T12:09:53Z</published>
+
+	<content type="html" xml:lang="en">
+	The warning is on the download page in a different color box, with a red warning icon next to it.  Flash is a binary blob that the user cannot control.  It can have access to system resources and do just about whatever it wants, and send data to wherever it wants.  Tor is forced to block it to protect you.  Tor protects you just fine.  Unfortunately operating systems are designed to share your data with anything that asks, regardless of what the user wants it to share.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 13</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_13/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_13/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:54Z</updated>
+	<published>2010-10-24T12:09:54Z</published>
+
+	<content type="html" xml:lang="en">
+	You know what. You could design a system where Flash is relatively safe to use. And for the user it would be a tool that takes allot more work to utilize if it works (it might work for 75-85% of the users or partly for 95%). I&#39;m not going to pretend any non-free (as in freedom) system is safe though because you are right. You don&#39;t have the source code. It isn&#39;t. Although if you set it up just right... the flash plug-in wouldn&#39;t be able to get your external IP address and would be rendered quite harmless for all practical purposes. What it would be sending over Tor and revealing to any malicious party would be an internal IP address. Totally useless to identify you. It takes allot more work to get right though.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 14</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_14/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_14/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:55Z</updated>
+	<published>2010-10-10T12:09:55Z</published>
+
+	<content type="html" xml:lang="en">
+	Do fix 30MB limit bug as soon as possible! Thank&#39;s in advance
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 15</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_15/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_15/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:56Z</updated>
+	<published>2010-10-13T12:09:56Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Does anyone know...&lt;/p&gt;
+
+&lt;p&gt;When I compile on Windows under MinGW I get a Tor executable that is overt 6mb !!!&lt;br /&gt;
+Is there some optimisation flag I am missing ?&lt;br /&gt;
+The main developers manage to produce an executable that is only 2mb.&lt;/p&gt;
+
+&lt;p&gt;Scratching my head here...&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 16</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_16/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_16/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:57Z</updated>
+	<published>2010-10-16T12:09:57Z</published>
+
+	<content type="html" xml:lang="en">
+	We compile in msys on winxp.  what options are you including and have you tried to strip the exe?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 17</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_17/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_17/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:58Z</updated>
+	<published>2010-10-16T12:09:58Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hi Phobos, thanks for getting back on this one.&lt;br /&gt;
+I hope they are paying you for all this support !&lt;/p&gt;
+
+&lt;p&gt;I dont include any options per se on the build.&lt;br /&gt;
+I effectively issue a make against the code and out pops the EXE.&lt;/p&gt;
+
+&lt;p&gt;I dont know how to strip an EXE so I guess mine is fully clothed &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/../../smileys/smile4.png&quot; alt=&quot;;-)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;How do I strip it ? That sounds like a potential solution here since its new to me.&lt;/p&gt;
+
+&lt;p&gt;The flags I see in the makefile are:&lt;br /&gt;
+CFLAGS = -g -O2 -Wall -g -O2 -fno-strict-aliasing&lt;/p&gt;
+
+&lt;p&gt;Thats all i guess..&lt;/p&gt;
+
+&lt;p&gt;Thanks in advance !&lt;/p&gt;
+
+&lt;p&gt;Cav Edwards&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 18</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_18/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_18/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:59Z</updated>
+	<published>2010-10-17T12:09:59Z</published>
+
+	<content type="html" xml:lang="en">
+	in msys, &quot;strip tor.exe&quot;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 19</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_19/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_19/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:10:00Z</updated>
+	<published>2010-10-18T12:10:00Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Fantastic... thats done the trick !&lt;/p&gt;
+
+&lt;p&gt;Many thanks.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 20</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_20/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_20/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:10:01Z</updated>
+	<published>2010-10-13T12:10:01Z</published>
+
+	<content type="html" xml:lang="en">
+	OMG! even Tor 0.2.2.17-alpha  DOESN&#39;T SUPPORT downloading files large than 30MB! JESUS CHRIST you are not able fix this primitive bug?! What are you waiting for? Christmass?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 21</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_21/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_21/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:10:02Z</updated>
+	<published>2010-10-16T12:10:02Z</published>
+
+	<content type="html" xml:lang="en">
+	It&#39;s not a tor problem, it&#39;s a polipo issue.  And no, we aren&#39;t able to fix it easily because 99% of the time there is no bug to report.  If you can reliably recreate the issue, open a ticket, &lt;a href=&quot;https://trac.torproject.org/&quot; title=&quot;https://trac.torproject.org/&quot; rel=&quot;nofollow&quot;&gt;https://trac.torproject.org/&lt;/a&gt;.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 22</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_22/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comment_22/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:10:03Z</updated>
+	<published>2010-11-29T13:10:03Z</published>
+
+	<content type="html" xml:lang="en">
+	Why in Vidalia Bundle and in Tor Browser the tor.exe have different sizes?
+
+	</content>
+
+
+
+</entry>
+
+</feed>

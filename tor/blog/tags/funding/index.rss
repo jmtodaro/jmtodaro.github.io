@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged funding</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/funding/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>arma: Why Tor is slow and what we&#x27;re going to do about it</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/</link>
+
+
+	<category>/tags/development_roadmap</category>
+
+	<category>/tags/funding</category>
+
+	<category>/tags/performance</category>
+
+
+	<pubDate>Fri, 13 Mar 2009 05:33:01 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:20:59Z</dcterms:modified>
+
+	<description>&lt;p&gt;I&#39;ve just finished writing up an explanation of all the various reasons why the Tor network is slow, and what we can do about each. Part of it comes down to design flaws; some of it is that a handful of users are overloading the network; and there&#39;s also simply not enough capacity to go around.&lt;/p&gt;
+
+&lt;p&gt;Specifically, we&#39;ve identified six categories of problems to address, and laid out some steps to resolve each of them.&lt;/p&gt;
+
+&lt;p&gt;You can read the pdf here:&lt;br /&gt;
+&lt;a href=&quot;https://svn.torproject.org/svn/projects/roadmaps/2009-03-11-performance.pdf&quot; rel=&quot;nofollow&quot;&gt;https://svn.torproject.org/svn/projects/roadmaps/2009-03-11-performance.pdf&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Andrew has also put together a real live &lt;a href=&quot;https://www.torproject.org/press/2009-03-12-performance-roadmap-press-release&quot; rel=&quot;nofollow&quot;&gt;press release&lt;/a&gt; to go with it.&lt;/p&gt;
+
+&lt;p&gt;Now all that remains is to do everything. So if you want to help, or especially if you know any organizations that can help with funding, please help us make this happen! &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/why-tor-is-slow&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: November 2008 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2008_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2008_Progress_Report/</link>
+
+
+	<category>/tags/censorship_circumvention</category>
+
+	<category>/tags/development_roadmap</category>
+
+	<category>/tags/funding</category>
+
+	<category>/tags/press_release</category>
+
+
+	<pubDate>Wed, 24 Dec 2008 22:29:44 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:16:27Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;Bug Fixes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.1.7-alpha (released November 8) fixes a major security problem in Debian and Ubuntu packages (and maybe other packages) noticed by Theo de Raadt, fixes a smaller security flaw that might allow an attacker to access local services, adds better defense against DNS poisoning attacks on exit relays, further improves hidden service performance, and fixes a variety of other issues.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Nov-2008/msg00229.html&quot; title=&quot;http://archives.seul.org/or/talk/Nov-2008/msg00229.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Nov-2008/msg00229.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.0.32 (released November 20) fixes a major security problem in Debian and Ubuntu packages (and maybe other packages) noticed by Theo de Raadt, fixes a smaller security flaw that might allow an attacker to access local services, further improves hidden service performance, and fixes a variety of other issues.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/announce/Dec-2008/msg00000.html&quot; title=&quot;http://archives.seul.org/or/announce/Dec-2008/msg00000.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/announce/Dec-2008/msg00000.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Vidalia 0.1.10 (released November 2) fixes some presentation bugs and some bugs in the Windows installer. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/november-2008-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/November_2008_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Google funds an auto-update for Vidalia</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Google_funds_an_auto-update_for_Vidalia/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Google_funds_an_auto-update_for_Vidalia/</link>
+
+
+	<category>/tags/auto-update</category>
+
+	<category>/tags/funding</category>
+
+	<category>/tags/google</category>
+
+	<category>/tags/tor</category>
+
+	<category>/tags/tor_software</category>
+
+	<category>/tags/vidalia</category>
+
+
+	<pubDate>Fri, 06 Jun 2008 21:13:30 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:07:28Z</dcterms:modified>
+
+	<description>&lt;p&gt;Google is funding a project to create an auto-update feature in Vidalia.  This &lt;a href=&quot;https://www.torproject.org/projects/google&quot; rel=&quot;nofollow&quot;&gt;auto-update feature&lt;/a&gt; will provide a better user experience for Tor users.  The goal is to create a system where Vidalia can detect when a new release is available, fetch the package, verify authenticity, and assist the user in upgrading the Vidalia/Tor package.  The auto-update feature preserves the user&#39;s privacy and anonymity.  Over the next six months we&#39;ll develop the auto-update system for general release around November 15, 2008.  &lt;/p&gt;
+
+&lt;p&gt;We&#39;re excited to work with Google on this project and look forward to the collaboration.&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Google_funds_an_auto-update_for_Vidalia/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: The NLnet Foundation funds two projects</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/The_NLnet_Foundation_funds_two_projects/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/The_NLnet_Foundation_funds_two_projects/</link>
+
+
+	<category>/tags/directory_services</category>
+
+	<category>/tags/funding</category>
+
+	<category>/tags/hidden_services</category>
+
+	<category>/tags/low_bandwidth_clients</category>
+
+	<category>/tags/nlnet</category>
+
+	<category>/tags/tor_protocol</category>
+
+
+	<pubDate>Fri, 06 Jun 2008 21:04:10 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:07:24Z</dcterms:modified>
+
+	<description>&lt;p&gt;We&#39;re happy to announce the NLnet Foundation is funding two enhancements for the Tor software and network.  &lt;/p&gt;
+
+&lt;p&gt;The two projects are summarized below:&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.torproject.org/projects/lowbandwidth&quot; rel=&quot;nofollow&quot;&gt;Tor for low-bandwidth clients&lt;/a&gt;.
+&lt;p&gt;The Tor anonymity system is currently only usable by internet users who have high-bandwith connections. Upon the start of the Tor client, a large file with all Tor server descriptions is being downloaded. An evolution of the Tor protocol is aimed to reduce the initial download size. The new Tor protocol version shall change the way a client receives the information for its Tor circuit setup in a way, that the initial download can be performed over a slow modem line in less then three minutes.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.torproject.org/projects/hidserv&quot; rel=&quot;nofollow&quot;&gt;Speeding up Hidden Services&lt;/a&gt;.
+&lt;p&gt;The Tor anonymity system contains an important function that is called Tor Hidden Services, which allows users to set up anonymous information services, like websites, that can only be accessed through the Tor network and are protected against identification of the host that runs the services. Using these function, critical political and human rights information can be published in a way that protects the publisher and users of the service from repression and identification. The most critical limitation of this function is the time it takes until a Hidden Service is registered in the network and the latency of contact establishment when accessed by a user. The aim of this project is to develop the new protocol which will change the way Tor circuits are set up between the user and the Hidden Service as well as the way a Hidden Service is registered in the Tor network.&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/The_NLnet_Foundation_funds_two_projects/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

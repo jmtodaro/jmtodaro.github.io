@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged tor_on_satellite</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/tor_on_satellite/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/tor_on_satellite/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/tor_on_satellite/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:14:30Z</updated>
+<entry>
+	<title>Protecting your Internet traffic in volatile times</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Protecting_your_Internet_traffic_in_volatile_times/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Protecting_your_Internet_traffic_in_volatile_times/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/egypt" />
+
+	<category term="/tags/low_bandwidth_clients" />
+
+	<category term="/tags/tor_camouflage" />
+
+	<category term="/tags/tor_on_satellite" />
+
+	<category term="/tags/volatile_internet" />
+
+
+	<updated>2011-04-05T12:14:30Z</updated>
+	<published>2011-02-02T20:18:23Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;We&#39;re glad that the Internet Service Providers in Egypt are announcing their routes to the world and have &lt;a href=&quot;http://www.renesys.com/blog/2011/02/egypt-returns-to-the-internet.shtml&quot; rel=&quot;nofollow&quot;&gt;rejoined the Internet&lt;/a&gt;.  We are concerned because it is possible that traffic crossing the Egyptian border is being recorded and possibly saved for future use.  &lt;a href=&quot;https://www.torproject.org/download/download#warning&quot; rel=&quot;nofollow&quot;&gt;Correctly using Tor&lt;/a&gt; to and from Egyptian destinations will keep your traffic anonymous.&lt;/p&gt;
+
+&lt;p&gt;Tor separates who you are from where you are going on the Internet.  It&#39;s up to you, the user, to choose where you share your personal information. Currently, we do not try very hard to hide that you are using Tor.  In the past few years, we haven&#39;t needed to hide. Tor looks like an SSL connection on the wire. Your local ISP, if they are very clever, could map your current connections from your assigned IP address to the list of public Tor relays. This would only tell them you are using Tor, not where you are going on the Internet. We do offer &lt;a href=&quot;https://www.torproject.org/docs/bridges.html.en&quot; rel=&quot;nofollow&quot;&gt;bridge relays&lt;/a&gt;, which are semi-public relays published in a few selective ways. By using bridges, your ISP is unlikely to figure out you are using Tor. We need thousands more bridges, please &lt;a href=&quot;https://www.torproject.org/docs/tor-doc-relay&quot; rel=&quot;nofollow&quot;&gt;join the Tor network&lt;/a&gt; to help others.&lt;/p&gt;
+
+&lt;p&gt;Many years ago, we theorized this arms race could happen.  Recent events have turned theory into reality. We are working on improvements to make it much more difficult to detect Tor usage. These methods include &lt;a href=&quot;https://gitweb.torproject.org/tor.git/blob/HEAD:/doc/spec/proposals/176-revising-handshake.txt&quot; rel=&quot;nofollow&quot;&gt;normalization of our TLS usage&lt;/a&gt; and &lt;a href=&quot;https://gitweb.torproject.org/tor.git/blob/HEAD:/doc/spec/proposals/ideas/xxx-pluggable-transport.txt&quot; rel=&quot;nofollow&quot;&gt;tunneling&lt;/a&gt; Tor through other protocols, such as XMPP, HTTPS, and HTTP.&lt;/p&gt;
+
+&lt;p&gt;Thanks to some &lt;a href=&quot;https://secure.avaaz.org/en/egypt_blackout/&quot; rel=&quot;nofollow&quot;&gt;funding from Avaaz&lt;/a&gt;, we&#39;ve also begun experimenting with ways to make Tor perform better on satellite and mesh networks.  We have Tor working well on &lt;a href=&quot;https://guardianproject.info/apps/orbot/&quot; rel=&quot;nofollow&quot;&gt;mobile phone 3G and 4G connections&lt;/a&gt;. Tor over &lt;a href=&quot;https://secure.wikimedia.org/wikipedia/en/wiki/Very_small_aperture_terminal&quot; rel=&quot;nofollow&quot;&gt;VSAT&lt;/a&gt; and &lt;a href=&quot;https://secure.wikimedia.org/wikipedia/en/wiki/Broadband_Global_Area_Network&quot; rel=&quot;nofollow&quot;&gt;BGAN&lt;/a&gt; connections does work, however it needs more research into how to better handle the variable latencies and varying available bandwidth on such connections.  The improvements that result from this research will benefit those with little to no Internet access, whether due to political unrest, natural disasters, or remote locations, who nonetheless seek to keep their online activities safe.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Protecting_your_Internet_traffic_in_volatile_times/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Protecting_your_Internet_traffic_in_volatile_times/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

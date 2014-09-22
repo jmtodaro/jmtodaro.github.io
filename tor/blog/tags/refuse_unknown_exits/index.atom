@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged refuse_unknown_exits</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/refuse_unknown_exits/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/refuse_unknown_exits/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/refuse_unknown_exits/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:09:42Z</updated>
+<entry>
+	<title>Tor 0.2.2.17-alpha is out</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/alpha_release" />
+
+	<category term="/tags/bandwidth_fixes" />
+
+	<category term="/tags/best_tor_ever" />
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/refuse_unknown_exits" />
+
+
+	<updated>2011-04-05T12:09:42Z</updated>
+	<published>2010-10-04T17:21:08Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor 0.2.2.17-alpha introduces a feature to make it harder for clients to use one-hop circuits (which can put the exit relays at higher risk, plus unbalance the network); fixes a big bug in bandwidth accounting for relays that want to limit their monthly bandwidth use; fixes a big pile of bugs in how clients tolerate temporary network failure; and makes our adaptive circuit build timeout feature (which improves client performance if your network is fast while not breaking things if your network is slow) better handle bad networks.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download.html.en&quot; title=&quot;https://www.torproject.org/download.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download.html.en&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Packages will be appearing over the next few days.&lt;/p&gt;
+
+&lt;p&gt;The original announcement is &lt;a href=&quot;http://archives.seul.org/or/talk/Oct-2010/msg00001.html&quot; title=&quot;http://archives.seul.org/or/talk/Oct-2010/msg00001.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Oct-2010/msg00001.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote&gt;&lt;p&gt;
+Changes in version 0.2.2.17-alpha - 2010-09-30&lt;br /&gt;
+  o Major features:&lt;br /&gt;
+    - Exit relays now try harder to block exit attempts from unknown&lt;br /&gt;
+      relays, to make it harder for people to use them as one-hop proxies &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02217-alpha-out&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

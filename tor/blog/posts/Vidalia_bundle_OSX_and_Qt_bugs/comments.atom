@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Vidalia bundle, OSX and Qt bugs</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_bundle_OSX_and_Qt_bugs/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_bundle_OSX_and_Qt_bugs/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_bundle_OSX_and_Qt_bugs/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:05:48Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_bundle_OSX_and_Qt_bugs/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_bundle_OSX_and_Qt_bugs/comment_1/"/>
+
+	<author><name>peter (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:05:47Z</updated>
+	<published>2008-03-11T11:05:47Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;thanks for the file&lt;br /&gt;
+my vidalia was keeping crash...&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_bundle_OSX_and_Qt_bugs/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_bundle_OSX_and_Qt_bugs/comment_2/"/>
+
+	<author><name>Tom Sharpless (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:05:48Z</updated>
+	<published>2008-10-31T11:05:48Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;HI, I&#39;m using Qt 4.4 (open source) to build a portable OpenGL panorama viewer.  It works great on Win32 and Linux, but badly on OSX.  The symptoms strongly suggest that the QGLWidget c&#39;tor and d&#39;tor are not correctly initializing/destroying something in the graphics context that relates to cube mapped texturing.&lt;/p&gt;
+
+&lt;p&gt;I am almost mac-illiterate and don&#39;t own one, so I can&#39;t just try a thousand hacks until I stumble on a solution -- I need the advice of an expert.  Can you help?&lt;/p&gt;
+
+&lt;p&gt;Thanks -- Tom&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+
+</feed>

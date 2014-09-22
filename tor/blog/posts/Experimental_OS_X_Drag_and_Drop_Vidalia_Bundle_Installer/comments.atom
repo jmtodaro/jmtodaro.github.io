@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Experimental OS X Drag and Drop Vidalia Bundle Installer</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:17:36Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_1/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:17:16Z</updated>
+	<published>2009-01-13T12:17:16Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hi!&lt;/p&gt;
+
+&lt;p&gt;Thank for &quot;OS X&quot;-style distribution of V+T. As for me (Leopard 10.5.6) it works. When dragged and ran, Vidalia could not find tor, it works if change path in Vidalia specifically to /Applications/Vidalia.app/tor&lt;/p&gt;
+
+&lt;p&gt;Vidalia 2 svn has some glitches not allowing it to draw its window if clicked on its icon in Dock - in menubar I can manage Vidalia through menubar items, but there is now window of Vidalia itself ))&lt;/p&gt;
+
+&lt;p&gt;It would be nice if Vidalia will contain some run string for polipo and with options as proxy. =)&lt;/p&gt;
+
+&lt;p&gt;But it works! It is the most important I think...&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_2/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:17:17Z</updated>
+	<published>2009-01-14T12:17:17Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;There should be run strings for polipo in Vidalia, in the &quot;General&quot; pane of the Vidalia Settings, you should the ability to start Polipo, with an option to list the path to the polipo binary.  Under that is the ability to specify options, such as &quot;-c /Applications/Vidalia.app/config&quot;&lt;/p&gt;
+
+&lt;p&gt;And yes, there appears to be an issue where Vidalia doesn&#39;t respond to a single click on the menubar.  If you right click it twice, it should pop open.  We&#39;re still trying to figure out if this is really Qt or Vidalia.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_3/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:17:18Z</updated>
+	<published>2009-01-13T12:17:18Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;First I want to say I would love to have a drag and drop installer.&lt;/p&gt;
+
+&lt;p&gt;Now, I tested the &quot;Experimental OS X Drag and Drop Vidalia Bundle Installer&quot; and it did not work for me...at first. The path for starting tor on Vidalia.app launch was set to &quot;tor&quot;. Changing this path to &quot;/Applications/Vidalia.app/tor&quot; made the app work. Also I had to add the path &quot;/Applications/Vidalia.app/polipo&quot; to start proxy option.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_4/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:17:19Z</updated>
+	<published>2009-01-14T12:17:19Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;The entire point of the sample vidalia.conf was to avoid the issues with the path in Vidalia.  &lt;/p&gt;
+
+&lt;p&gt;Just for confirmation, you do have a vidalia.conf in /Applications/Vidalia.app/Contents/Resources/ right?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_5/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:17:20Z</updated>
+	<published>2009-01-15T12:17:20Z</published>
+
+	<content type="html" xml:lang="en">
+	yep. 256 bytes size
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_6/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:17:21Z</updated>
+	<published>2009-01-14T12:17:21Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Yes Vidalia conf does exist.&lt;/p&gt;
+
+&lt;p&gt;Here are some pics of the problems.&lt;/p&gt;
+
+&lt;p&gt;First run...&lt;br /&gt;
+&lt;a href=&quot;http://i41.tinypic.com/2h69k3t.png&quot; title=&quot;http://i41.tinypic.com/2h69k3t.png&quot; rel=&quot;nofollow&quot;&gt;http://i41.tinypic.com/2h69k3t.png&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Vidalia settings&lt;br /&gt;
+&lt;a href=&quot;http://i42.tinypic.com/641ceb.png&quot; title=&quot;http://i42.tinypic.com/641ceb.png&quot; rel=&quot;nofollow&quot;&gt;http://i42.tinypic.com/641ceb.png&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Vidalia conf in /Applications/Vidalia.app/Contents/Resources&lt;br /&gt;
+&lt;a href=&quot;http://i42.tinypic.com/jj2qac.png&quot; title=&quot;http://i42.tinypic.com/jj2qac.png&quot; rel=&quot;nofollow&quot;&gt;http://i42.tinypic.com/jj2qac.png&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This is exactly how everything looks on first install without modifying any settings.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_7/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:17:22Z</updated>
+	<published>2009-01-20T12:17:22Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Why Polipo instead of Privoxy? Any advantages of one over the other?&lt;/p&gt;
+
+&lt;p&gt;TIA&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_8/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:17:23Z</updated>
+	<published>2009-01-20T12:17:23Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I looked up Polipo and can see the advantage. I had been using an install that I pieced together or the latest versions of tor, privoxy, and squid(man). Uninstalled all of that. Then installed this Vidalia package. &lt;/p&gt;
+
+&lt;p&gt;Got it running fine but when I go to check.torproject.org it says I am not using Tor!&lt;/p&gt;
+
+&lt;p&gt;What do I need to do in my Network Settings? Http and Https as 127.0.0.1 or localhost and port 8118 or something else?&lt;/p&gt;
+
+&lt;p&gt;How are tor and Polipo chained? Which is first? Are the issues of DNS leaks avoided?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_9/"/>
+
+	<author><name>arma</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:17:24Z</updated>
+	<published>2009-01-20T12:17:24Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Depends where your polipo is listening.&lt;/p&gt;
+
+&lt;p&gt;I use polipo with its default port of 8123, so in my Torbutton preferences I&lt;br /&gt;
+selected &quot;Use custom proxy settings&quot; and put in localhost 8123 for http and&lt;br /&gt;
+https proxies, and left localhost 9050 for socks.&lt;/p&gt;
+
+&lt;p&gt;You&#39;re right that when we switch the packages from including privoxy to&lt;br /&gt;
+including polipo, we&#39;ll want to make sure that the Torbutton that&#39;s included&lt;br /&gt;
+knows what port it should tell Firefox to proxy to.&lt;/p&gt;
+
+&lt;p&gt;The easy answer is to configure the polipo we ship so that it listens on port&lt;br /&gt;
+8118. The only downside is that it will conflict if you have Privoxy installed too.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_10/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:17:25Z</updated>
+	<published>2009-01-20T12:17:25Z</published>
+
+	<content type="html" xml:lang="en">
+	polipo is set to 8118, just like privoxy used to be.  This lets torbutton for firefox work without modification.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_11/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:17:26Z</updated>
+	<published>2009-01-20T12:17:26Z</published>
+
+	<content type="html" xml:lang="en">
+	I suspect people having problems with the new vidalia config using the wrong directory is because you already have a vidalia.conf in ~/Library/Vidalia/.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 12</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_12/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_12/"/>
+
+	<author><name>Kaleo (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:17:27Z</updated>
+	<published>2009-01-21T12:17:27Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I had posted twice as Anonymous.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, at least the last few versions of Vidalia have been unstable on my PowerBook G4/10.5.6. I thrashed this package and installed the latest stable Tor and Polipo. Changed these settings in Polipo&#39;s config and the setup works:&lt;/p&gt;
+
+&lt;p&gt;socksParentProxy = localhost:9050&lt;br /&gt;
+diskCacheRoot=&quot;&quot;&lt;br /&gt;
+disableLocalInterface=true&lt;/p&gt;
+
+&lt;p&gt;censoredHeaders = from&lt;br /&gt;
+censorReferer = maybe&lt;/p&gt;
+
+&lt;p&gt;Question: Why disable the page caching? Would the setup work faster if caching was on with a limited cache size?&lt;/p&gt;
+
+&lt;p&gt;Anyone know why PolipoStatusBar has disappeared? Would be easier to set up with it.&lt;/p&gt;
+
+&lt;p&gt;Note: I downloaded Polipo from the Max OS X list of univ binaries on it&#39;s site. There was no Leopard version so I downloaded Tiger 1.0.3 and installed it. Had to move the installed files into a single folder. Otherwise good. [Just did not have the time to mess with compiling.]&lt;/p&gt;
+
+&lt;p&gt;Anyone else having trouble with Vidalia?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 13</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_13/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_13/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:17:28Z</updated>
+	<published>2009-01-22T12:17:28Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;From the post itself, this is &lt;strong&gt;experimental&lt;/strong&gt;.  I warned you it might not work, might crash, might sour your milk.  It assumed a clean install.  if you have a ~/.vidalia or ~/Library/Vidalia directory, it won&#39;t work after drag and drop.  you will have to change the paths.  &lt;/p&gt;
+
+&lt;p&gt;As for polipo, diskcache is disabled, otherwise it records every site you&#39;ve visited through polipo.  This is not good for anonymity.&lt;/p&gt;
+
+&lt;p&gt;Memory cache is enabled to improve performance.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 14</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_14/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_14/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:17:29Z</updated>
+	<published>2009-01-22T12:17:29Z</published>
+
+	<content type="html" xml:lang="en">
+	...do you have these vidalia crashing problems with the stable version of vidalia?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 15</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_15/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_15/"/>
+
+	<author><name>Kaleo (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:17:30Z</updated>
+	<published>2009-01-22T12:17:30Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I should have mentioned that I would love nothing better than to simply drag the Vidalia package and have it &quot;work out of the box.&quot; However, as some others had to I had to change the path, probably because I had used privoxy, etc before. Bigger headache is that Vidalia becomes unresponsive too often.&lt;/p&gt;
+
+&lt;p&gt;I heard from the developer of PolipoStatusBar that his server crashed and he has not found a new &quot;home&quot; for his app. Meanwhile, I came across Dolipo. It is a GUI wrapper for polipo. I installed polipo and am now using tor with Dolipo. &lt;/p&gt;
+
+&lt;p&gt;If you are having trouble with this Vidalia package, you may want to take a look at a Dolipo (menu bar based) and Tor setup. In the Dolipo preferences, you can select the Polipo config file and toward the bottom enter localhost:9050 for Socks Parent Proxy. Tweak other settings you like and you are on your way. Only issue is having to manually configure relaying, if you want to do that.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 16</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_16/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_16/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:17:31Z</updated>
+	<published>2009-01-22T12:17:31Z</published>
+
+	<content type="html" xml:lang="en">
+	As you can read in the post, I updated these &lt;strong&gt;experimental&lt;/strong&gt; packages with Tor 0.2.1.11-alpha and vidalia 0.2.0-r3467.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 17</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_17/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_17/"/>
+
+	<author><name>Dave J. (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:17:32Z</updated>
+	<published>2009-02-18T12:17:32Z</published>
+
+	<content type="html" xml:lang="en">
+	Can anyone tell me why Privoxy is missing from the new  Zero Install Bundle Tor version for Windows? I don&#39;t see the privoxy icon at the right left corner as I used to when I started the old Vidalia. Does this pose a privacy hazard, or is privoxy running in the background, just not visible anymore?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 18</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_18/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_18/"/>
+
+	<author><name>arma</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:17:33Z</updated>
+	<published>2009-02-19T12:17:33Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;The Tor Browser Bundle actually includes Polipo, not Privoxy. Polipo is a lighter-weight proxy that serves pretty much the same role as Privoxy. It just runs in the background, and Vidalia launches it when everything starts up.&lt;/p&gt;
+
+&lt;p&gt;(Privoxy is a little bit better than Polipo at removing dangerous web stuff, but Torbutton 1.2 does a fine job at that, so the fact that Privoxy can do some of it is moot.)&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 19</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_19/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_19/"/>
+
+	<author><name>Kaleo (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:17:34Z</updated>
+	<published>2009-06-22T11:17:34Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I had installed the &quot;advanced&quot; Tor only package and added polipo with dolipo. Worked out fine as I have described above. However, this weekend I decided to give Privoxy another go.&lt;/p&gt;
+
+&lt;p&gt;Much to my surprise, with Tor + Privoxy, Safari is much faster plus has more effective ad blocking.&lt;/p&gt;
+
+&lt;p&gt;???&lt;/p&gt;
+
+&lt;p&gt;PS Read online that if one is chaining Tor, Privoxy, Squid, the correct order is Squid &amp;gt; Privoxy &amp;gt; Tor but if chaining with Polipo instead, the correct order is Privoxy &amp;gt; Polipo &amp;gt; Tor. Why is that?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 20</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_20/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_20/"/>
+
+	<author><name>the8ball (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:17:35Z</updated>
+	<published>2009-11-02T12:17:35Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;My bundle didn&#39;t work out of the box, until I discovered that polipo was running its default configuration, rather than the one provided by the Vidalia bundle.&lt;/p&gt;
+
+&lt;p&gt;The solution was to open Vidalia&#39;s preferences, and under &quot;Proxy Application Arguments&quot; in the General tab to add the following:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt; -c /Applications/Vidalia.app/Contents/Resources/polipo.conf&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Then everything worked perfectly.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 21</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_21/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Experimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer/comment_21/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:17:36Z</updated>
+	<published>2010-02-20T12:17:36Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I like the drag and drop.  But I dragged the Firefox extension installer to my applications folder too, before I realized I just needed to run it from the intaller location.  It could be more clear that only the Vidalia app need be dragged.&lt;br /&gt;
+thanks for the great software.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+
+</feed>

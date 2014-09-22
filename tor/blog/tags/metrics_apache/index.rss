@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged metrics_apache</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/metrics_apache/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>karsten: VisiTor - or: a script to tell you how many of your users are probably Tor users</title>
+	<dcterms:creator>karsten</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/VisiTor_-_or_a_script_to_tell_you_how_many_of_your_users_are_probably_Tor_users/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/VisiTor_-_or_a_script_to_tell_you_how_many_of_your_users_are_probably_Tor_users/</link>
+
+
+	<category>/tags/metrics_apache</category>
+
+
+	<pubDate>Mon, 04 Oct 2010 02:10:54 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:09:39Z</dcterms:modified>
+
+	<description>&lt;p&gt;We have heard from web server operators who are wondering how many of&lt;br /&gt;
+their visitors are using Tor to do so.&lt;/p&gt;
+
+&lt;p&gt;We can now answer this question. We have an exit list archive back to&lt;br /&gt;
+February 2010 and a tool to compare an Apache HTTP server log to these&lt;br /&gt;
+lists. We can further guess how many of the requests come from Torbutton&lt;br /&gt;
+users by looking at the user-agent string.&lt;/p&gt;
+
+&lt;p&gt;There&#39;s a lot of sensitive data involved here, which is why we give out&lt;br /&gt;
+the archived exit lists and our tool so that web server operators can&lt;br /&gt;
+run the comparison themselves. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/visitor-or-script-tell-you-how-many-your-users-are-probably-tor-users&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/VisiTor_-_or_a_script_to_tell_you_how_many_of_your_users_are_probably_Tor_users/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

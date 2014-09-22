@@ -1,0 +1,2150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Vidalia 0.2.10 Released</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FVidalia_0_2_10_Released&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Vidalia 0.2.10 Released</a>
+
+</span>
+
+
+<div id="content">
+<p>The latest version of the graphical controller for tor, Vidalia, is now available.  The main change is the use of Tor's native geoip database to map relay IP addresses to country.  This removes the remote geoip resolution that occurred over Tor in previous versions of Vidalia.</p>
+
+<p>Vidalia can be found at <a href="https://www.torproject.org/vidalia/" title="https://www.torproject.org/vidalia/" rel="nofollow">https://www.torproject.org/vidalia/</a>.</p>
+
+<p>The full changelog is: <span class="read-more"><a href="http://blog.torproject.org/blog/vidalia-0210-released"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+<p><ul>
+<li>Drop remote GeoIP lookups. Instead, the default behavior now is to use the country-level GeoIP database that ships with Tor to map an IP address to a country code, and then map the country code to latitude and longitude with a separate database built into Vidalia.</li>
+<li>Add a -DUSE_GEOIP build option to enable building with MaxMind's GeoIP C library for using a local city-level or country-level database instead of Tor's database. See README.geoip for details on use.</li></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/bugfixes/" rel="tag">bugfixes</a>
+
+<a href="../../tags/geoip_fixes/" rel="tag">geoip fixes</a>
+
+<a href="../../tags/osx_fixes/" rel="tag">osx fixes</a>
+
+<a href="../../tags/vidalia/" rel="tag">vidalia</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-747017e6d916bd2e12e146e4ed00288c">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>Mmm.... vidalia 0.2.10</p>
+
+<p>I was running it here, but it was showing very few servers in the network map.<br />
+I was using the September release of the GeoIP database.</p>
+
+<p>I wonder if anyone else sees the same result ?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 28 Sep 2010 07:08:39 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d10ebbf78acb330bc11dbdbafda46ba3">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+Then something is wrong with your tor, not vidalia.  Does your successfully connect to the rest of the network?  You should see around 2000 servers on the left windows in Vidalia.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 29 Sep 2010 07:08:40 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3227e307bcd4ad74773c09afb8a27b44">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>hi phobos,</p>
+
+<p>I see the servers in the list on the left hand side, but i dont see them rendered onto the map view.</p>
+
+<p>Moving back to 0.2.9, they all get plotted on the map.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 29 Sep 2010 07:08:41 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ee5918e33ff5cea4bc5469abca9e69e1">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+That's odd.  If you're on linux, did you install tor-geoipdb?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 30 Sep 2010 07:08:42 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a92bf7230d14f1530426bbdb135ba090">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>Im on windows.Tor says its parsing the GeoIP db, but as I mentioned, the servers appear on the left hand side - but most of them that are in the USA don't appear in the map. </p>
+
+<p>In the map view there only appears to be a couple servers in the USA. Europe shows quite a few servers and there are other dotted about. Strange,..</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 30 Sep 2010 07:08:43 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-504ad48ac0486fd549034168c96b58d4">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>I think i have worked out what is happening with vidalia 0.2.10 and the map view.<br />
+The servers in the left hand pane are only showing the country that the server is in.</p>
+
+<p>Previously, with Vidalia 0.2.9, the CITY was detected.</p>
+
+<p>So, is it possible to integrate the CITY db into Tor, to get city detection back in place ?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 01 Oct 2010 07:08:44 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d95d1addeba61009e32be6faba296d20">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+Hi! I have a non related to the article question, if you don't mind (if you do, please tell me, who can I ask - without using forums, where you have to log in and don't bother reading). I'm using Ubuntu10.04 with tor (vidalia, torbutton). I've installed torsocks and I'm trying to make it work with claws mail client. I read that all you have to do, is to type in console "usewithtor claws-mail" and it should work, without by passing connection by claws. Then I got this error: "The symbol res_send() was not found in any shared library.". So what I found about that error, is that it's just a warrning and there should be nothing to worry about. If I tried this, is there any chance to find out, if TOR is acctualy working on Claws?  BTW if you use the commend "usewithtor" with telnet, do you have to type it every second commend, or once started, TOR will always be on with the programm? Take care!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 30 Sep 2010 07:08:45 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1e4b98d018f9a043ccea4e96a3ab1881">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+<p>is it a good idea to use Tor with an email client ?<br />
+Unless your email traffic (all of it) is encrypted, you will be sharing your email credentials with the exit node - which could be monitored.</p>
+
+<p>Not a good idea ?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 30 Sep 2010 07:08:46 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-67a3189c7c1c92ee5e75c0780d85d97b">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+Thank you, for your replay. The monitoring thing is not the issue here. I just can't reveal my location. So would it work? ...and how? While I"m a newbie to both tor and linux, I'm maintaining my question about telnet and "usewithtor" command. 
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 02 Oct 2010 07:08:47 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-86508527b68a02430ff681622d8287f7">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+<p>2.10 doesn't work properly for me. It doesn't remember relays between sessions, and takes forever to reload them, adding about one per second (with the Vidalia progress bar paused with a message "Authenticating against Tor"). Once the relays are eventually loaded, it works as expected. I am running Ubuntu 10.04. </p>
+
+<p>Just saw phobos'  comment: "That's odd. If you're on linux, did you install tor-geoipdb?" Maybe that has something to do with it.</p>
+
+<p>Where is tor-geopipd?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 30 Sep 2010 07:08:48 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d42c7b113062b8d181d17039436d22a8">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+<p>Vidalia is just displaying what Tor is doing.  If you don't have a full list of relays, then tor doesn't have a full list of relays.</p>
+
+<p>If you're on ubuntu, you should be using our repositories, <a href="https://www.torproject.org/docs/debian.html.en" title="https://www.torproject.org/docs/debian.html.en" rel="nofollow">https://www.torproject.org/docs/debian.html.en</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 07 Oct 2010 07:08:49 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-15f0a873d376058358afe3f96ed5266d">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+Ok, but why i can't just refresh relays list without refreshing my connection? It's annoying.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 01 Oct 2010 07:08:50 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d985a751d35438323356cbb688aa0f92">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+Hitting "refresh" at the tor map all displayed relays are purged and take minutes to rebuild one by one. Pre 0.2.10 the list was refresh instantly. Is this normal?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 01 Oct 2010 07:08:51 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-98c94aa8f45b4b9eb0d3e621d8198368">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+Same problem here...
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 01 Oct 2010 07:08:52 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2690ef605b8013d895d3aa1345970fa5">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+Because you told Vidalia to purge the relays and reload them through Tor.  Therefore, it's reloading the list of relays and doing a geoip resolution on each one.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 07 Oct 2010 07:08:53 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0eb3fe83c1977274d00e1c1df6a97ae2">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+<p>That was bugging me too, and I figured out what was causing it. See my comment below:</p>
+
+<p>https://blog.torproject.org/blog/vidalia-0210-released#comment-7991</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 09 Oct 2010 07:08:54 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1c29dda2a0d6d50d2dfc069b33b895d7">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+<p>How can i make Vidalia show me also cities of relays instead only countries? Can i add some configuration file to make it?<br />
+Thanks.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 01 Oct 2010 07:08:55 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7bed1d61109937bc0e5152edb4e385bb">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+<p>I have tried to download MaxMinds City DB in CSV format and then change the format for Tor. I then replaced the geoip file (on windows).</p>
+
+<p>I then restarted Tor, whereupon it hung on startup, I guess it was unable to parse the file.</p>
+
+<p>So, the problem remains.... in Vidalia 0.2.10 we have no god dammed way of getting Tor nodes rendered to Cities, rather than country.</p>
+
+<p>How god dammed annoying that by 'upgrading' Vidalia we have DOWNGRADED functionality.</p>
+
+<p>I hope the Vidalia team sort this god dammed problem out and post the bloody solution somewhere.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 05 Oct 2010 07:08:56 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c94f84e9e71c7ca23dc1c6849d9e9e16">
+
+<div class="comment-subject">
+
+Comment 19
+
+</div>
+
+<div class="inlinecontent">
+<p>Unclear on why you need city-level resolution.  Nothing in tor cares about cities, only countries.</p>
+
+<p>You can't just add the citylevel db, you need to recompile vidalia with a special switch to do so.  read the release notes, </p>
+
+<p>"Add a -DUSE_GEOIP build option to enable building with MaxMind's GeoIP C library for using a local city-level or country-level database instead of Tor's database. See README.geoip for details on use."</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 07 Oct 2010 07:08:57 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-39334e0c20887116b6234a26d187ca9d">
+
+<div class="comment-subject">
+
+Comment 20
+
+</div>
+
+<div class="inlinecontent">
+Some people prefer to close all circuits Tor creates with two or three nodes in a same city. I would prefer if Tor created circuits with nodes each in a different country (with possible exception of when linking your circuit to a hidden service circuit) but with increasing international cooperation even that may soon offer little protection.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 08 Oct 2010 07:08:58 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d94b757d63b2bd8f20f9776581953b20">
+
+<div class="comment-subject">
+
+Comment 21
+
+</div>
+
+<div class="inlinecontent">
+Assuming that only few users have the software, time and knowledge to compile the Tor Windows executable I suggest providing Tor executables for Windows that look at start up into the "DataDirectory" or "GeoIPFile" directory for the MaxMind GeoLite City database and use it if present.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 27 Oct 2010 07:08:59 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ace3143210565bcb4557fd04928592fa">
+
+<div class="comment-subject">
+
+Comment 22
+
+</div>
+
+<div class="inlinecontent">
+<p>From where can i download the lastest version of Vidalia with Privoxy?</p>
+
+<p>Tor+PoliSomething is not working for me too many bugs. I can't download files larger than 30MB and most of the time i have the timer error and tor won't connect.</p>
+
+<p>Do you have link for old releases?</p>
+
+<p>Thank you for helping.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 01 Oct 2010 07:09:00 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9b686446a151d0c091448b580b0791c6">
+
+<div class="comment-subject">
+
+Comment 23
+
+</div>
+
+<div class="inlinecontent">
+<p>30mb download ? Via Tor... ?</p>
+
+<p>I didnt think Tor was recommended for downloading with...</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 01 Oct 2010 07:09:01 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-456b301d921c9f74762b07e2fd1ca980">
+
+<div class="comment-subject">
+
+Comment 24
+
+</div>
+
+<div class="inlinecontent">
+Just install the latest version there was with Privoxy, and then the latest version there is but without Polipo
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 02 Oct 2010 07:09:02 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-13ce1fd62368cf17a73493ba230db5cc">
+
+<div class="comment-subject">
+
+Comment 25
+
+</div>
+
+<div class="inlinecontent">
+<p>There is no such thing anymore.  We ship polipo now.  You're welcome to uninstall polipo and install privoxy and configure it for Tor.</p>
+
+<p>See <a href="https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/TorFAQ#WhydoweneedPolipoorPrivoxywithTorWhichisbetter" title="https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/TorFAQ#WhydoweneedPolipoorPrivoxywithTorWhichisbetter" rel="nofollow">https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/TorFAQ#Whyd...</a> for more information.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 07 Oct 2010 07:09:03 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b09fe30f34dc9adc4a2e372cee9ee3b6">
+
+<div class="comment-subject">
+
+Comment 26
+
+</div>
+
+<div class="inlinecontent">
+Vidalia 0.2.10 requires Windows XP and up, but I still use W2K. Why did you stop supporting W2K? Don't you know that Windows XP is one of the most horrible spyware ever created?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 02 Oct 2010 07:09:04 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0b29f635b2378b095507d9b1ae02df80">
+
+<div class="comment-subject">
+
+Comment 27
+
+</div>
+
+<div class="inlinecontent">
+Hve you tried to run it on w2k ? What happens when you do ? What appears in the logs etc ?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 04 Oct 2010 07:09:05 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-350235e605b36bef1475dc07e0c4a5a6">
+
+<div class="comment-subject">
+
+Comment 28
+
+</div>
+
+<div class="inlinecontent">
+<p>Yes, I tried. It refuses to run, asking for ws2_32.dll and also complaining with the following error:</p>
+
+<p>``The procedure entry point RtlIpv4StringToAdressW could not be located in the dynamic library ntdll.dll.``</p>
+
+<p>Don't know what this means.</p>
+
+<p>Can you fix this?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 04 Oct 2010 07:09:06 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d3e98ea45adc0d43305693f85ddfaf41">
+
+<div class="comment-subject">
+
+Comment 29
+
+</div>
+
+<div class="inlinecontent">
+<p>This cannot be 'fixed' in Windows 2000.</p>
+
+<p>Basically Tor is using XP specific networking calls in the operating system, which are not available in Win2K, hence the report that the method, RtlIpv4StringToAdressW, cannot be found in ntdll.dll (kernel).</p>
+
+<p>ws2_32.dll is missing entirely from Windows 2000. This is an XP DLL that gives access to the registry.</p>
+
+<p>For these reasons Tor is not going to run on Windows 2000.</p>
+
+<p>The only way to make run is to download the code and rewrite the sections that use this XP functionality - thats not gonna be much fun.</p>
+
+<p>Sorry...</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 05 Oct 2010 07:09:07 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ceac779dcaf8747e7891e6f4ed1a6567">
+
+<div class="comment-subject">
+
+Comment 30
+
+</div>
+
+<div class="inlinecontent">
+<p>Oh well, it's good that I saved version 0.1.2.18 - at least it runs on Windows 2000.</p>
+
+<p>I have no intention on "upgrading" to Spyware XP.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 06 Oct 2010 07:09:08 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2b6beea6876f929a79c7af6105967b79">
+
+<div class="comment-subject">
+
+Comment 31
+
+</div>
+
+<div class="inlinecontent">
+I'd be surprised if tor 0.1.2 even works on the current tor network.  It's old, exploitable, and end of life 2 years ago.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 07 Oct 2010 07:09:09 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8042c7f01173c81c59273aa9a4603162">
+
+<div class="comment-subject">
+
+Comment 32
+
+</div>
+
+<div class="inlinecontent">
+Actually, tor runs fine I think it's vidalia that doesn't.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 07 Oct 2010 07:09:10 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-87352a29aea2251bac3ef3b2d55419e1">
+
+<div class="comment-subject">
+
+Comment 33
+
+</div>
+
+<div class="inlinecontent">
+<p>Actually the problem is with Vidalia, it does not support win2k anymore.</p>
+
+<p>Here's the explanation and fix for Vidalia devs.</p>
+
+<p>http://msdn.microsoft.com/en-us/library/ms737931(VS.85).aspx</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 16 Nov 2010 07:09:11 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e90eddda12551d774f58f82286298c0d">
+
+<div class="comment-subject">
+
+Comment 34
+
+</div>
+
+<div class="inlinecontent">
+<p>Correction....</p>
+
+<p>ws2_32.dll contains the Windows Socket 2.0 32-Bit DLL.</p>
+
+<p>If its missing in Windows 2000, then its again an XP only feature.</p>
+
+<p>It is a shame it wont run on Windows 2000, I liked that OS a lot.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 05 Oct 2010 07:09:12 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-39021a4df4a0dfde3f5f887d467857b3">
+
+<div class="comment-subject">
+
+Comment 35
+
+</div>
+
+<div class="inlinecontent">
+<p>Vidalia doesn't work in Win2k because of a winsock dll bug in Win2K.  </p>
+
+<p>The explanation for it here:</p>
+
+<p><a href="http://msdn.microsoft.com/en-us/library/ms737931" title="http://msdn.microsoft.com/en-us/library/ms737931" rel="nofollow">http://msdn.microsoft.com/en-us/library/ms737931</a></p>
+
+<p>If you don't want to recompile Vidalia yourself, this site offers a replacement<br />
+dll (with source) that appears to work:</p>
+
+<p><a href="http://codemagnet.blogspot.com/2007/10/winsock2-replacement.html" title="http://codemagnet.blogspot.com/2007/10/winsock2-replacement.html" rel="nofollow">http://codemagnet.blogspot.com/2007/10/winsock2-replacement.html</a><br />
+<a href="http://martin.brenner.de/files/winsock2_getaddrinfo.rar" title="http://martin.brenner.de/files/winsock2_getaddrinfo.rar" rel="nofollow">http://martin.brenner.de/files/winsock2_getaddrinfo.rar</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 07 Oct 2010 07:09:13 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4eba01b73bb61d6706cc12cdb46c5bbd">
+
+<div class="comment-subject">
+
+Comment 36
+
+</div>
+
+<div class="inlinecontent">
+<p>Can you let me know whose public key I need to verify signature?  And whether it makes a difference to get his key from a different server?  I think it was Matt's.  Either way, I downloaded his public key, and when I ran the verify command, the error message said I didn't have the public key.  I was able to properly verify the latest vidalia bundle, so I'm not sure why I couldn't verify this Vidalia msi file.</p>
+
+<p>Thanks.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 04 Oct 2010 07:09:14 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3970a3e6c16fe5fa091b139cffb0546d">
+
+<div class="comment-subject">
+
+Comment 37
+
+</div>
+
+<div class="inlinecontent">
+<a href="https://www.torproject.org/verifying-signatures.html.en" title="https://www.torproject.org/verifying-signatures.html.en" rel="nofollow">https://www.torproject.org/verifying-signatures.html.en</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 07 Oct 2010 07:09:15 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-474b217d254f44c5da78566680bcd3a5">
+
+<div class="comment-subject">
+
+Comment 38
+
+</div>
+
+<div class="inlinecontent">
+I am wondering why the signature on this installer couldn't be verified.  I used Matt's.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 04 Oct 2010 07:09:16 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-39ee1ef3f9297415fe0488c566fcdd0e">
+
+<div class="comment-subject">
+
+Comment 39
+
+</div>
+
+<div class="inlinecontent">
+<a href="https://www.torproject.org/verifying-signatures.html.en" title="https://www.torproject.org/verifying-signatures.html.en" rel="nofollow">https://www.torproject.org/verifying-signatures.html.en</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 07 Oct 2010 07:09:17 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-50df4fcd0ea14c402516ac46e878bc37">
+
+<div class="comment-subject">
+
+Comment 40
+
+</div>
+
+<div class="inlinecontent">
+Now the real question is how can one trust this tool when it's written so amateurishly with so many bugs and other problems.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 05 Oct 2010 07:09:18 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-dad99f68d48d0a20d63cd9999abf6557">
+
+<div class="comment-subject">
+
+Comment 41
+
+</div>
+
+<div class="inlinecontent">
+Write a better one then.  
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 05 Oct 2010 07:09:19 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-84241a35a2d26fd90cf106d19afe9894">
+
+<div class="comment-subject">
+
+Comment 42
+
+</div>
+
+<div class="inlinecontent">
+<p>Bit of a shame that we don't get to see accurate locations anymore-- it looks funny to see all US relays mapped to somewhere in Kansas. But I guess I can live with it.</p>
+
+<p>It's more annoying that Vidalia now uses 100% CPU for half a minute or so while it processes the list of relays. Not just at startup, either-- it does this every hour or half hour or so! Something in the implementation is very badly inefficient. (I assume it's a side effect of the geoip changes, perhaps?)</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 08 Oct 2010 07:09:20 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4d0e2d78fe2e4cbf688830dd104dc101">
+
+<div class="comment-subject">
+
+Comment 43
+
+</div>
+
+<div class="inlinecontent">
+<p>I find this annoying too.</p>
+
+<p>I really liked the city level resolution. It just gave a more comprehensive view of the network and revealed how much usage there in each country.</p>
+
+<p>Im hoping this comes back in future versions of Vidalia ???</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 09 Oct 2010 07:09:21 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d18f90d44f57323d6b051f3e0b613e8e">
+
+<div class="comment-subject">
+
+Comment 44
+
+</div>
+
+<div class="inlinecontent">
+It didn't go away. You just need to compile Vidalia yourself, following the directions in README.geoip (or find someone to do this for you). That enables vidalia to use a city-level database that you have to download yourself (it's ~30MB, which I assume is the reason that it's not included in the official vidalia build).
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 11 Oct 2010 07:09:22 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-44864b257d02cfa55e02fe70f6aa175d">
+
+<div class="comment-subject">
+
+Comment 45
+
+</div>
+
+<div class="inlinecontent">
+<p>[replying to myself]</p>
+
+<p>I tracked down the CPU usage problem-- it's due to line 324 here:</p>
+
+<p>https://trac.vidalia-project.net/changeset/4378/vidalia/trunk/src/vidali...</p>
+
+<p>The call to QCoreApplication::processEvents() results in the router list being updated about 2000 times (once for each router) while the list is being refreshed. This takes about 25 seconds on my machine at 100% CPU. When I delete line 324, the update only takes 2 seconds. Although this freezes the GUI during the update, that's much preferable to having the GUI do tons of unnecessary work. (The list gets refreshed automatically once per hour, and I *really* don't like my CPU fan going crazy for a minute every hour just because I like to leave Vidalia's network map window open.)</p>
+
+<p>So I was wrong about this having anything to do with the geoip changes. I vote that the call to QCoreApplication::processEvents() be removed in the next release. (I'm also using libgeoip now so that my map has city-level resolution. Thanks to the developers for making it relatively easy to do that.)</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 09 Oct 2010 07:09:23 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-003a564e2a2592621ef28acbb7fd1e83">
+
+<div class="comment-subject">
+
+Comment 46
+
+</div>
+
+<div class="inlinecontent">
+<p>[replying to myself again]</p>
+
+<p>"Web page addresses and e-mail addresses turn into links automatically." Hmm, looks like that's not actually the case. Even worse, long strings get truncated, making them completely useless. Well, here's that link again, split into two parts:</p>
+
+<p>https://trac.vidalia-project.net/changeset/4378/</p>
+
+<p>vidalia/trunk/src/vidalia/network/NetViewer.cpp</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 11 Oct 2010 07:09:24 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-aaf38a2e0f5146672c5dfcf02abaf639">
+
+<div class="comment-subject">
+
+Comment 47
+
+</div>
+
+<div class="inlinecontent">
+Why was that link truncated rather than automatically turning into a proper link?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 15 Oct 2010 07:09:25 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e13f1e5795b21450b7e54532440fd76b">
+
+<div class="comment-subject">
+
+Comment 48
+
+</div>
+
+<div class="inlinecontent">
+Vidalia does not appear in the Ubuntu Maverick (10.10) repository. It appears in Lucid (10.04) but not Maverick. Please correct this.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 15 Feb 2011 07:09:26 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d03278b2f61e63b3e5339d54eeba9879">
+
+<div class="comment-subject">
+
+Comment 49
+
+</div>
+
+<div class="inlinecontent">
+Seconded - I would like 0.2.10 but can only install 0.2.9 which of course does not resolve server country
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 18 Feb 2011 07:09:27 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4d2c2b2fc96c1009f42188d124eb874e">
+
+<div class="comment-subject">
+
+Comment 50
+
+</div>
+
+<div class="inlinecontent">
+Correct, use our repositories.  <a href="http://www.torproject.org/docs/debian.html.en" title="http://www.torproject.org/docs/debian.html.en" rel="nofollow">http://www.torproject.org/docs/debian.html.en</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 20 Feb 2011 07:09:28 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-846494d18278a8cb8a3a723ca9732b04">
+
+<div class="comment-subject">
+
+Comment 51
+
+</div>
+
+<div class="inlinecontent">
+<p>This doesn't work. As stated in my original post, Vidalia does not appear in the Maverick (10.10) repository. </p>
+
+<p>Will the binaries in the Lucid repository work on Maverick?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Feb 2011 07:09:29 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4613b332b9c1b5af2907db8c158c2b9b">
+
+<div class="comment-subject">
+
+Comment 52
+
+</div>
+
+<div class="inlinecontent">
+Correct, Vidalia 0.2.10 does not appear in the ubuntu repositories.  Use the torproject.org repositories to get Vidalia 0.2.10.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Feb 2011 07:09:30 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7be0fa942a6f52fc1bb01f2b90df8f1b">
+
+<div class="comment-subject">
+
+Comment 53
+
+</div>
+
+<div class="inlinecontent">
+I must not be making myself clear. Let's try it this way. Vidalia does not appear in the torproject.org repository for Maverick. Therefore, if I follow the instructions at https://www.torproject.org/docs/debian.html.en (as you suggest) for Maverick, I cannot get Vidalia 0.2.10. Is the problem that Vidalia 0.2.10 is not available for Maverick? If so, can the binaries for Lucid at http://deb.torproject.org/torproject.org/pool/main/v/vidalia/ be used on Maverick?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 25 Feb 2011 07:09:31 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c534980dd2716b9c0885e90076b043ec">
+
+<div class="comment-subject">
+
+Comment 54
+
+</div>
+
+<div class="inlinecontent">
+Yes, the lucid vidalia works in maverick.  I'll look into why we don't have a maverick vidalia yet.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 25 Feb 2011 07:09:32 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0402b8a8f3d3f80be6d6e51fbb63d280">
+
+<div class="comment-subject">
+
+Comment 55
+
+</div>
+
+<div class="inlinecontent">
+64 Bit Ubunti 10.10 here - followed instructions to add torproject to sources.list but can only install vidalia 0.2.9 - cannot install vidalia 0.2.10
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 18 Feb 2011 07:09:33 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0f2a57619eeb11d1c94e77a2d18594c2">
+
+<div class="comment-subject">
+
+Comment 56
+
+</div>
+
+<div class="inlinecontent">
+Please open a ticket on our bug tracker, at <a href="https://trac.torproject.org" title="https://trac.torproject.org" rel="nofollow">https://trac.torproject.org</a>.  The vidalia 0.2.10 binaries exist and work fine in ubuntu 10.10 64bit.  <a href="http://deb.torproject.org/torproject.org/pool/main/v/vidalia/" title="http://deb.torproject.org/torproject.org/pool/main/v/vidalia/" rel="nofollow">http://deb.torproject.org/torproject.org/pool/main/v/vidalia/</a> shows the packages.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 20 Feb 2011 07:09:34 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b53f695e2c6a9f4253d946c11c01611d">
+
+<div class="comment-subject">
+
+Comment 57
+
+</div>
+
+<div class="inlinecontent">
+<p>Thank you for the reply.<br />
+Despite adding the required lines in sources.list, I won't bother with a ticket as the issue very well could have been my end - specifically where in the .list file I added the extra references - anyway, d/l the amd64 .deb and installing this way worked fine - vidalia 0.2.10 is up and running  with country resolution.</p>
+
+<p>Thanks.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 22 Feb 2011 07:09:35 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-40ec163d8c33826019e2923e6c1b32c2">
+
+<div class="comment-subject">
+
+Comment 58
+
+</div>
+
+<div class="inlinecontent">
+<p>With  "  Stable Vidalia Bundle works with Windows 7, Vista, XP "<br />
+"  0.2.1.30-0.2.10.exe " I have the problem of CPU 100% usage.</p>
+
+<p>I downloded  " Unstable Vidalia Bundles works with Windows 7, Vista, XP "<br />
+  "  0.2.2.22-alpha-0.2.10.exe  "</p>
+
+<p>the cpu is low.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 06 Mar 2011 07:09:36 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FVidalia_0_2_10_Released&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 07:08:39 AM CDT</span>
+<!-- Created <span class="date">Tue 28 Sep 2010 10:31:45 AM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

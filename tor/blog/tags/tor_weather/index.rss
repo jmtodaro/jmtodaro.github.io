@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged tor_weather</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/tor_weather/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Tor 0.2.1.6-alpha Released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_6-alpha_Released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_6-alpha_Released/</link>
+
+
+	<category>/tags/bridges</category>
+
+	<category>/tags/incognito</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/releases</category>
+
+	<category>/tags/stable_release</category>
+
+	<category>/tags/tor_weather</category>
+
+	<category>/tags/translations</category>
+
+	<category>/tags/updates</category>
+
+
+	<pubDate>Tue, 14 Oct 2008 19:25:11 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:12:48Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor 0.2.1.6-alpha further improves performance and robustness of hidden&lt;br /&gt;
+services, starts work on supporting per-country relay selection, and&lt;br /&gt;
+fixes a variety of smaller issues.&lt;/p&gt;
+
+&lt;p&gt;The original announcement can be found at&lt;br /&gt;
+ &lt;a href=&quot;http://archives.seul.org/or/talk/Oct-2008/msg00093.html&quot; title=&quot;http://archives.seul.org/or/talk/Oct-2008/msg00093.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Oct-2008/msg00093.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.6-alpha - 2008-09-30 &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-0.2.1.6-alpha-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Major features:&lt;/li&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Implement proposal 121: make it possible to build hidden services&lt;br /&gt;
+      that only certain clients are allowed to connect to. This is&lt;br /&gt;
+      enforced at several points, so that unauthorized clients are unable&lt;br /&gt;
+      to send INTRODUCE cells to the service, or even (depending on the&lt;br /&gt;
+      type of authentication) to learn introduction points. This feature&lt;br /&gt;
+      raises the bar for certain kinds of active attacks against hidden&lt;br /&gt;
+      services. Code by Karsten Loesing.&lt;/li&gt;
+&lt;li&gt;Relays now store and serve v2 hidden service descriptors by default,&lt;br /&gt;
+      i.e., the new default value for HidServDirectoryV2 is 1. This is&lt;br /&gt;
+      the last step in proposal 114, which aims to make hidden service&lt;br /&gt;
+      lookups more reliable.&lt;/li&gt;
+&lt;li&gt;Start work to allow node restrictions to include country codes. The&lt;br /&gt;
+      syntax to exclude nodes in a country with country code XX is&lt;br /&gt;
+      &quot;ExcludeNodes {XX}&quot;. Patch from Robert Hogan. It still needs some&lt;br /&gt;
+      refinement to decide what config options should take priority if&lt;br /&gt;
+      you ask to both use a particular node and exclude it.&lt;/li&gt;
+&lt;li&gt;Allow ExitNodes list to include IP ranges and country codes, just&lt;br /&gt;
+      like the Exclude*Nodes lists. Patch from Robert Hogan.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;li&gt;Major bugfixes:&lt;br /&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_6-alpha_Released/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

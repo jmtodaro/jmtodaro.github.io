@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged release_candidate</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/release_candidate/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/release_candidate/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/release_candidate/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:30:43Z</updated>
+<entry>
+	<title>Tor Browser Bundle 1.2.3 and 1.2.4 Released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_3_and_1_2_4_Released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_3_and_1_2_4_Released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/enhancements" />
+
+	<category term="/tags/release_candidate" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+
+	<updated>2011-04-05T11:30:43Z</updated>
+	<published>2009-07-13T03:50:41Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor Browser Bundle 1.2.3 was released on July 8, 2009.  It contains the following changes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Update Vidalia to 0.1.14&lt;/li&gt;
+&lt;li&gt;Update Tor to 0.2.1.17-rc&lt;/li&gt;
+&lt;li&gt;Update Pidgin to 2.5.8&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;TBB 1.2.3 was replaced by 1.2.4 on July 11, 2009 to include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Include libeay32.dll from OpenSSL 0.9.8k to make QT happy&lt;/li&gt;
+&lt;li&gt;Update Vidalia to 0.1.15&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;TBB 1.2.4 is available at &lt;a href=&quot;https://torproject.org/torbrowser&quot; title=&quot;https://torproject.org/torbrowser&quot; rel=&quot;nofollow&quot;&gt;https://torproject.org/torbrowser&lt;/a&gt;.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_3_and_1_2_4_Released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_3_and_1_2_4_Released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor 0.2.1.17-rc released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/release_candidate" />
+
+	<category term="/tags/tor" />
+
+
+	<updated>2011-04-05T11:30:31Z</updated>
+	<published>2009-07-13T03:47:06Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor 0.2.1.17-rc marks the fourth -- and hopefully last -- release&lt;br /&gt;
+candidate for the 0.2.1.x series. It lays the groundwork for further&lt;br /&gt;
+client performance improvements, and also fixes a big bug with directory&lt;br /&gt;
+authorities that were causing them to assign Guard and Stable flags&lt;br /&gt;
+poorly.&lt;/p&gt;
+
+&lt;p&gt;The Windows bundles also finally include the geoip database that we&lt;br /&gt;
+thought we&#39;d been shipping since 0.2.0.x (oops), and the OS X bundles&lt;br /&gt;
+should actually install Torbutton rather than giving you a cryptic&lt;br /&gt;
+failure message (oops).&lt;/p&gt;
+
+&lt;p&gt;This is a release candidate! That means that we don&#39;t know of any&lt;br /&gt;
+remaining show-stopping bugs, and 0.2.1.18 will be the new stable if&lt;br /&gt;
+there are no problems. Please test it, and tell us about any problems&lt;br /&gt;
+that you find.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download&quot; title=&quot;https://www.torproject.org/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.17-rc - 2009-07-02&lt;br /&gt;
+&lt;strong&gt;Major features:&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02117rc-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Clients now use the bandwidth values in the consensus, rather than&lt;br /&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor 0.2.1.16-rc Release Candidate now available</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_16-rc_Release_Candidate_now_available/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_16-rc_Release_Candidate_now_available/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/hidden_service_fixes" />
+
+	<category term="/tags/release_candidate" />
+
+	<category term="/tags/security_fixes" />
+
+
+	<updated>2011-04-05T11:29:10Z</updated>
+	<published>2009-06-24T14:32:45Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor 0.2.1.16-rc speeds up performance for fast exit relays, and fixes&lt;br /&gt;
+a bunch of minor bugs.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download&quot; title=&quot;https://www.torproject.org/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.16-rc - 2009-06-20&lt;br /&gt;
+&lt;strong&gt;Security fixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fix an edge case where a malicious exit relay could convince a&lt;br /&gt;
+      controller that the client&#39;s DNS question resolves to an internal IP&lt;br /&gt;
+      address. Bug found and fixed by &quot;optimist&quot;; bugfix on 0.1.2.8-beta.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Major performance improvements (on 0.2.0.x):&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Disable and refactor some debugging checks that forced a linear scan&lt;br /&gt;
+      over the whole server-side DNS cache. These accounted for over 50%&lt;br /&gt;
+      of CPU time on a relatively busy exit node&#39;s gprof profile. Found&lt;br /&gt;
+      by Jacob.&lt;/li&gt;
+&lt;li&gt;Disable some debugging checks that appeared in exit node profile&lt;br /&gt;
+      data.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Minor features:&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02116rc-release-candidate-now-available&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Update to the &quot;June 3 2009&quot; ip-to-country file.&lt;/li&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_16-rc_Release_Candidate_now_available/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_16-rc_Release_Candidate_now_available/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor Browser Bundle 1.2.1 release candidate</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_1_release_candidate/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_1_release_candidate/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/release_candidate" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+
+	<updated>2011-04-05T11:27:15Z</updated>
+	<published>2009-06-18T03:53:08Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;In continuing to &lt;a href=&quot;https://blog.torproject.org/blog/testing-tor-browser-bundle-121dev&quot; rel=&quot;nofollow&quot;&gt;improve TBB&lt;/a&gt; for a vast array of users, here&#39;s the release candidate for Tor Browser Bundle 1.2.1.  &lt;/p&gt;
+
+&lt;p&gt;I appreciate your feedback, comments, and bugs filed so far about TBB 1.2.1-dev.&lt;/p&gt;
+
+&lt;p&gt;You can find here the updated &lt;a href=&quot;https://www.torproject.org/torbrowser/dist/tor-im-browser-1.2.1-1-dev_en-US.exe&quot; rel=&quot;nofollow&quot;&gt;TBB 1.2.1-1-dev&lt;/a&gt;, &lt;a href=&quot;https://www.torproject.org/torbrowser/dist/tor-im-browser-1.2.1-1-dev_en-US.exe.asc&quot; rel=&quot;nofollow&quot;&gt;sig&lt;/a&gt;, and &lt;a href=&quot;https://www.torproject.org/torbrowser/dist/tor-im-browser-1.2.1-1-dev_en-US.exe.sha1&quot; rel=&quot;nofollow&quot;&gt;sha1&lt;/a&gt; files.&lt;/p&gt;
+
+&lt;p&gt;The changes since the last test are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Update Pidgin to 2.5.6r2&lt;/li&gt;
+&lt;li&gt;Update Firefox to 3.0.11&lt;/li&gt;
+&lt;li&gt;Include OpenSSL 0.9.8k DLL and stop using the system ssl dll&lt;/li&gt;
+&lt;/ul&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_1_release_candidate/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_1_release_candidate/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor 0.2.1.15-rc released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/malloc_fixes" />
+
+	<category term="/tags/release_candidate" />
+
+
+	<updated>2011-04-05T11:26:08Z</updated>
+	<published>2009-06-01T01:04:49Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor 0.2.1.15-rc marks the second release candidate for the 0.2.1.x&lt;br /&gt;
+series. It fixes a major bug on fast exit relays, as well as a variety&lt;br /&gt;
+of more minor bugs.&lt;/p&gt;
+
+&lt;p&gt;This is a release candidate! That means that we don&#39;t know of any&lt;br /&gt;
+remaining show-stopping bugs, and this will become the new stable if&lt;br /&gt;
+there are no problems. Please test it, and tell us about any problems&lt;br /&gt;
+that you find. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02115rc-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor 0.2.1.14-rc released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/improvements" />
+
+	<category term="/tags/release_candidate" />
+
+
+	<updated>2011-04-05T11:22:28Z</updated>
+	<published>2009-04-13T22:25:39Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Changes in version 0.2.1.14-rc - 2009-04-12&lt;br /&gt;
+&lt;strong&gt;Major features:&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02114rc-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Clients replace entry guards that were chosen more than a few months ago. This change should significantly improve client performance, especially once more people upgrade, since relays that have been a guard for a long time are currently overloaded.&lt;/li&gt;
+&lt;/ul&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>April 2008 Progress Report</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2008_Progress_Report/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2008_Progress_Report/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/progress_report" />
+
+	<category term="/tags/release_candidate" />
+
+	<category term="/tags/torbrowser" />
+
+	<category term="/tags/torbutton" />
+
+	<category term="/tags/translation" />
+
+
+	<updated>2011-04-05T11:07:11Z</updated>
+	<published>2008-05-14T16:53:24Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor 0.2.0.24-rc (released Apr 22) adds dizum (run by Alex de Joode)&lt;br /&gt;
+as the new sixth v3 directory authority, makes relays with dynamic IP&lt;br /&gt;
+addresses and no DirPort notice more quickly when their IP address&lt;br /&gt;
+changes, fixes a few rare crashes and memory leaks, and fixes a few&lt;br /&gt;
+other miscellaneous bugs. Tor 0.2.0.25-rc (released Apr 23) makes Tor&lt;br /&gt;
+work again on OS X and certain BSDs.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/May-2008/msg00014.html&quot; title=&quot;http://archives.seul.org/or/talk/May-2008/msg00014.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/May-2008/msg00014.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Torbutton 1.1.18 (released Apr 17) fixes many usability and interoperability&lt;br /&gt;
+items, in an attempt to make the new Torbutton not so obnoxious in its&lt;br /&gt;
+zeal to protect the user. It also includes new translations for French,&lt;br /&gt;
+Russian, Farsi, Italian, and Spanish.&lt;/p&gt;
+
+&lt;p&gt;We did a complete overhaul of the &lt;a href=&quot;https://check.torproject.org/&quot; title=&quot;https://check.torproject.org/&quot; rel=&quot;nofollow&quot;&gt;https://check.torproject.org/&lt;/a&gt;&lt;br /&gt;
+page. Now it accepts a language choice,&lt;br /&gt;
+e.g. &lt;a href=&quot;https://check.torproject.org/?lang=fa-IR&quot; title=&quot;https://check.torproject.org/?lang=fa-IR&quot; rel=&quot;nofollow&quot;&gt;https://check.torproject.org/?lang=fa-IR&lt;/a&gt;&lt;br /&gt;
+Available languages are German, English, Spanish, Italian, Farsi,&lt;br /&gt;
+Japanese, Polish, Portugese, Russian, and Chinese. The Tor Browser&lt;br /&gt;
+Bundle automatically uses the appropriate language as its home page,&lt;br /&gt;
+based on which language of the Browser Bundle was downloaded.&lt;/p&gt;
+
+&lt;p&gt;Started on a documentation page to explain to users what bridges are,&lt;br /&gt;
+how they can decide whether they need one, and how to configure their&lt;br /&gt;
+Tor client to use them:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/bridges.html&quot; title=&quot;https://www.torproject.org/bridges.html&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/bridges.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We&#39;ve also started working on a design proposal for making it easier&lt;br /&gt;
+to set up a private or testing Tor network. With the advent of the v3&lt;br /&gt;
+directory protocol, it currently takes up to 30 minutes before a test&lt;br /&gt;
+network will produce a useful networkstatus consensus. Also, there are&lt;br /&gt;
+a dozen different config options that need to be set correctly for&lt;br /&gt;
+a Tor network running on a single IP address to not trigger various&lt;br /&gt;
+security defenses. This approach should let more people set up their&lt;br /&gt;
+own Tor networks, either for testing or because they can&#39;t reach the&lt;br /&gt;
+main Tor network. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/april-2008-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/April_2008_Progress_Report/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/April_2008_Progress_Report/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Security critical Tor-0.2.0.26-rc released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Security_critical_Tor-0_2_0_26-rc_released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Security_critical_Tor-0_2_0_26-rc_released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/debian" />
+
+	<category term="/tags/openssl" />
+
+	<category term="/tags/release_candidate" />
+
+	<category term="/tags/security_critical" />
+
+	<category term="/tags/tor" />
+
+
+	<updated>2011-04-05T11:07:00Z</updated>
+	<published>2008-05-13T16:38:48Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor-0.2.0.26-rc replaces several V3 directory authority keys affected by a recent &lt;a href=&quot;http://lists.debian.org/debian-security-announce/2008/msg00152.html&quot; rel=&quot;nofollow&quot;&gt;Debian OpenSSL bug&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;This is a security-critical release.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Everybody running any version in the 0.2.0.x series should upgrade, whether&lt;br /&gt;
+they are running Debian or not.  Also, all servers running any version of Tor&lt;br /&gt;
+whose keys were generated by Debian, Ubuntu, or any derived distribution may&lt;br /&gt;
+have to replace their identity keys.  See our &lt;a href=&quot;http://archives.seul.org/or/announce/May-2008/msg00000.html&quot; rel=&quot;nofollow&quot;&gt;security advisory&lt;/a&gt; for full details.  As always, you can find Tor 0.2.0.26-rc on the &lt;a href=&quot;https://www.torproject.org/download&quot; rel=&quot;nofollow&quot;&gt;downloads page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;Changes in version 0.2.0.26-rc - 2008-05-13&lt;br /&gt;
+Major security fixes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Use new V3 directory authority keys on the tor26, gabelmoo, and moria1 V3 directory authorities. The old keys were generated with a vulnerable version of Debian&#39;s OpenSSL package, and must be considered compromised. Other authorities&#39; keys were not generatedwith an affected version of OpenSSL.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;p&gt;Major bugfixes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;List authority signatures as &quot;unrecognized&quot; based on DirServer lines, not on cert cache. Bugfix on 0.2.0.x.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;p&gt;Minor features:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add a new V3AuthUseLegacyKey option to make it easier for authorities to change their identity keys if they have to.&lt;/li&gt;
+&lt;/ul&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Security_critical_Tor-0_2_0_26-rc_released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Security_critical_Tor-0_2_0_26-rc_released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>March 2008 Progress Report</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/March_2008_Progress_Report/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/March_2008_Progress_Report/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/progress_report" />
+
+	<category term="/tags/release_candidate" />
+
+	<category term="/tags/torbrowser" />
+
+	<category term="/tags/torbutton" />
+
+
+	<updated>2011-04-05T11:06:48Z</updated>
+	<published>2008-04-12T02:02:18Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor 0.2.0.23-rc (released Mar 24) is the fourth release candidate for the 0.2.0 series. It makes bootstrapping faster if the first directory mirror you contact is down. The bundles also include the new Vidalia 0.1.2 release.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Mar-2008/msg00204.html&quot; title=&quot;http://archives.seul.org/or/talk/Mar-2008/msg00204.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Mar-2008/msg00204.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.0.22-rc (released Mar 18) is the third release candidate for the 0.2.0 series. It enables encrypted directory connections by default for non-relays, fixes some broken TLS behavior we added in 0.2.0.20-rc, and resolves many other bugs. The bundles also include Vidalia 0.1.1 and Torbutton 1.1.17.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Mar-2008/msg00136.html&quot; title=&quot;http://archives.seul.org/or/talk/Mar-2008/msg00136.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Mar-2008/msg00136.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.0.21-rc (released Mar 2) is the second release candidate for the 0.2.0 series. It makes Tor work well with Vidalia again, fixes a rare assert bug, and fixes a pair of more minor bugs. The bundles also include Vidalia 0.1.0 and Torbutton 1.1.16.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Mar-2008/msg00025.html&quot; title=&quot;http://archives.seul.org/or/talk/Mar-2008/msg00025.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Mar-2008/msg00025.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Torbutton 1.1.16 (released Mar 3) and 1.1.17 (released Mar 15) fix many more potential privacy and identity leaks, mostly based on exploits found by Greg Fleischer, and try to start adding support for Firefox 3.&lt;br /&gt;
+&lt;a href=&quot;https://torbutton.torproject.org/dev/CHANGELOG&quot; title=&quot;https://torbutton.torproject.org/dev/CHANGELOG&quot; rel=&quot;nofollow&quot;&gt;https://torbutton.torproject.org/dev/CHANGELOG&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Vidalia 0.1.0 (released Mar 1), 0.1.1 (released Mar 17), and 0.1.2 (released Mar 24) changes the build process from make to cmake, starts doing encrypted geoip fetches rather than plaintext geoip fetches, checks if the user is running a dangerous or obsolete version of Tor and pops up a window warning them, waits to turn the Vidalia taskbar onion green until Tor reports that it has established a circuit, folds in the patches from Tor Browser Bundle to have Vidalia launch a browser and/or an http proxy, and fixes many miscellaneous bugs.&lt;br /&gt;
+&lt;a href=&quot;http://trac.vidalia-project.net/browser/vidalia/tags/vidalia-0.1.2/CHANGELOG&quot; title=&quot;http://trac.vidalia-project.net/browser/vidalia/tags/vidalia-0.1.2/CHANGELOG&quot; rel=&quot;nofollow&quot;&gt;http://trac.vidalia-project.net/browser/vidalia/tags/vidalia-0.1.2/CHANG...&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;From the Tor 0.2.0.23-rc ChangeLog: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/march-2008-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/March_2008_Progress_Report/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/March_2008_Progress_Report/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>February 2008 Progress Report</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/February_2008_Progress_Report/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/February_2008_Progress_Report/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/progress_report" />
+
+	<category term="/tags/release_candidate" />
+
+	<category term="/tags/tor" />
+
+	<category term="/tags/torbrowser" />
+
+	<category term="/tags/torbutton" />
+
+
+	<updated>2011-04-05T11:06:04Z</updated>
+	<published>2008-03-12T00:47:23Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor 0.2.0.20-rc (released Feb 24) is the first release candidate for the 0.2.0 series. It makes more progress towards normalizing Tor&#39;s TLS handshake, makes hidden services work better again, helps relays bootstrap if they don&#39;t know their IP address, adds optional support for linking in openbsd&#39;s allocator or tcmalloc, allows really fast relays to scale past 15000 sockets, and fixes a bunch of minor bugs reported by Veracode.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Feb-2008/msg00279.html&quot; title=&quot;http://archives.seul.org/or/talk/Feb-2008/msg00279.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Feb-2008/msg00279.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.0.19-alpha (released Feb 9) makes more progress towards normalizing Tor&#39;s TLS handshake, makes path selection for relays more secure and IP address guessing more robust, and generally fixes a lot of bugs in preparation for calling the 0.2.0 branch stable.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Feb-2008/msg00134.html&quot; title=&quot;http://archives.seul.org/or/talk/Feb-2008/msg00134.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Feb-2008/msg00134.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Torbutton 1.1.13 (released Feb 1), 1.1.14 (released Feb 24), and 1.1.15 (released Feb 26) fix many more potential privacy and identity leaks, mostly based on exploits found by Greg Fleischer. They also add support for automatic updates via the usual Firefox extension upgrade approach.&lt;br /&gt;
+&lt;a href=&quot;https://torbutton.torproject.org/dev/CHANGELOG&quot; title=&quot;https://torbutton.torproject.org/dev/CHANGELOG&quot; rel=&quot;nofollow&quot;&gt;https://torbutton.torproject.org/dev/CHANGELOG&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Work continued toward the upcoming Vidalia 0.1.0 release (which came out March 1): support for launching Firefox and Polipo as supporting applications; support for learning from Tor when the first circuit is ready so it can inform the user; and many other bugfixes including a few security fixes.&lt;br /&gt;
+&lt;a href=&quot;http://trac.vidalia-project.net/browser/vidalia/releases/vidalia-0.1.0/CHANGELOG&quot; title=&quot;http://trac.vidalia-project.net/browser/vidalia/releases/vidalia-0.1.0/CHANGELOG&quot; rel=&quot;nofollow&quot;&gt;http://trac.vidalia-project.net/browser/vidalia/releases/vidalia-0.1.0/C...&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The Tor 0.2.0.19-alpha release contained many security-related cleanups based on an anonymously submitted code review from a static analysis tool.  The Tor 0.2.0.20-rc release contained even more security-related cleanups, based on an external security analysis and audit by Veracode. Hopefully cleanups at this stage will reduce the number of times we need to push out an urgent new stable &quot;0.2.0&quot; release for security reasons. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/february-2008-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/February_2008_Progress_Report/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/February_2008_Progress_Report/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

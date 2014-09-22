@@ -1,0 +1,983 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tor 0.2.0.35-stable released</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_0_35-stable_released&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Tor 0.2.0.35-stable released</a>
+
+</span>
+
+
+<div id="content">
+<p>Tor 0.2.0.35 fixes a big bug that was causing Tor relays with dynamic<br />
+IP addresses to disappear from the network. It also fixes a rare crash<br />
+bug on fast exit relays.</p>
+
+<p><a href="https://www.torproject.org/easy-download" title="https://www.torproject.org/easy-download" rel="nofollow">https://www.torproject.org/easy-download</a></p>
+
+<p>Changes in version 0.2.0.35 - 2009-06-24<br />
+<strong>Security fix:</strong></p>
+
+<ul>
+<li>Avoid crashing in the presence of certain malformed descriptors.<br />
+      Found by lark, and by automated fuzzing.</li>
+<li>Fix an edge case where a malicious exit relay could convince a<br />
+      controller that the client's DNS question resolves to an internal IP<br />
+      address. Bug found and fixed by "optimist"; bugfix on 0.1.2.8-beta.</li>
+</ul>
+
+<p><strong>Major bugfixes:</strong></p>
+
+<p><ul>
+<li>Finally fix the bug where dynamic-IP relays disappear when their<br />
+      IP address changes: directory mirrors were mistakenly telling<br />
+      them their old address if they asked via begin_dir, so they<br />
+      never got an accurate answer about their new address, so they <span class="read-more"><a href="http://blog.torproject.org/blog/tor-02035stable-released"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/bug_fixes/" rel="tag">bug fixes</a>
+
+<a href="../../tags/hidden_service_fixes/" rel="tag">hidden service fixes</a>
+
+<a href="../../tags/stable_release/" rel="tag">stable release</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-b700ca1ae8641a3d06ce1d251748a69b">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>I currently have Tor 0.2.0.31 installed on OS X 10.4.11.</p>
+
+<p>When I run the installer for the latest release (0.2.0.35) the installer says there is already a newer version installed. If I continue with the install anyway, it fails. There is no error message but the new version does not run.</p>
+
+<p>After restoring the old version of Tor (0.2.0.31) from backup, everything is OK. Then I tried to uninstall the old version using the supplied script, but it fails, giving me:</p>
+
+<p>root@sebago&gt; ./uninstall_tor_bundle.sh<br />
+. tor process appears to already be stopped<br />
+. Killing currently running privoxy process, pid is 196<br />
+./uninstall_tor_bundle.sh: line 123: ./package_list.txt: No such file or directory<br />
+. Removing created user _tor<br />
+delete: Invalid Path<br />
+. Cleaning up<br />
+rm: fts_read: No such file or directory<br />
+. Finished</p>
+
+<p>Next, I restored again from backup and tried to manually uninstall following the documentation. However, some of the files and directories that are supposed to be deleted do not exist on my installation. Other files and directories that obviously belong to Tor are not listed in the documentation of what to delete.</p>
+
+<p>After deleting everything I could find that looks like it belongs to Tor/Vadalia/Privoxy/Torbutton I ran the installer for version 0.2.0.35 again and it says the install was successful, but after restarting and trying to start Vidalia, it doesn't run.</p>
+
+<p>Now I have 0.2.31 running again after restoring again from backup, but I am at a total loss as to how to properly uninstall or upgrade!!</p>
+
+<p>Please help!!!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 26 Jun 2009 06:29:19 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ccb87ec9fbe26b93ece399de7a87569c">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>I keep getting this message: "Your server has not managed to confirm that its DirPort is reachable. Please check your firewalls, ports, address, etc"</p>
+
+<p>I was hoping that, by getting the latest version of Vidalia/Tor, this would solve the problem; unfortunately, it hasn't. To be honest, everything else is working fine as far as connections/ports are concerned; however, with the Directory Port, I've tried every configuration with my wireless tp-link router, changing things on DNS, as well as going through different ports, but nothing seems to work. I'm at wit's end here, can anyone offer any help or guidance?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAlexios%20%28not%20verified%29&amp;do=goto">Alexios (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 28 Jun 2009 06:29:20 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-04c5147dd121b998af82ad16c5a4dc96">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>Yeah. That's a problem with 0.2.0.x. It's a cosmetic problem though -- nothing<br />
+is actually going wrong, I think.</p>
+
+<p>It's fixed in Tor 0.2.1.x.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Farma&amp;do=goto">arma</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 28 Jun 2009 06:29:21 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fb97faaebc6475686cff3d999a1ba73e">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<p>In the postflight script in the Tor.pkg there is a line that fails:</p>
+
+<p>su $USER /Applications/Firefox.app/Contents/MacOS/firefox-bin /Library/Torbutton/torbutton-$TORBUTTON_VERSION.xpi</p>
+
+<p>It worked again when it was changed as in the corresponding package in 0.2.0.34 (use firefox instead of the firefox-bin executable):</p>
+
+<p>su $USER /Applications/Firefox.app/Contents/MacOS/firefox /Library/Torbutton/torbutton-$TORBUTTON_VERSION.xpi</p>
+
+<p>The same results for firefox versions 3.0 and 3.5 for mac.</p>
+
+<p>Hope this helps</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 01 Jul 2009 06:29:22 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2fd867e468ac564b7f71e3b536171032">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+I get the same message.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 02 Jul 2009 06:29:23 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a7a0680bac94c51d4146f06ba57ce395">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>The installer say in log:<br />
+Installer[4953]: run postflight script for Tor<br />
+postflight[4997]: usage: chown [-fhv] [-R [-H | -L | -P]] owner[:group] file ...<br />
+postflight[4997]:        chown [-fhv] [-R [-H | -L | -P]] :group file ...<br />
+runner[4956]: postflight[4997]:<br />
+runner[4956]: postflight[4997]: /Applications/Firefox.app/Contents/MacOS/firefox-bin: /Applications/Firefox.app/Contents/MacOS/firefox-bin: cannot execute binary file<br />
+runner[4956]: postflight[4997]:<br />
+Installer[4953]: Install failed: (...) : run postflight script for Tor.</p>
+
+<p>Please correct this !</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 04 Jul 2009 06:29:24 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-41718c87db49a6b028b4c44e38f11716">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+have the same issue as above poster. any fix for this?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 06 Jul 2009 06:29:25 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-207d0d8512c3d6cab3e72a8dfcb3b286">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+<p>why the tor proxy nao aceited by my firefox?<br />
+what I'm doing wrong? or what is missing?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 10 Jul 2009 06:29:26 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-527b40a422d92680859dbcebe93f0414">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+<p>when is tor going to update the version of privoxy distributed with tor.<br />
+your still using 3.0.6 when the latest version is 3.0.13.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 10 Jul 2009 06:29:27 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6ba66c93bde785e1f55a32c9e6ce4437">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+<p>pretty sad, today try to install tor on my OSX 10.5.7, with no succes.<br />
+First 0.2.1.17-rc , Error in the Setup, but i try to run in anyway, using Firefox and Torbutton, error conectin to proxy. Use the documented uninstall procedure to test a downgrade to "Stable" 0.2.0.35. Same error on install and ( saying a newer version exist) so your script is LAME. pretty bad all i can say about my experience.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAndres%20%28not%20verified%29&amp;do=goto">Andres (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 11 Jul 2009 06:29:28 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e96435c45c29c4e34ce219c9f99d92a4">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+<p>Actually, this is a bug in the Apple installer.  The necessary packages installed fine, and would require a reboot, but because the Firefox plugin for Tor failed to install, Apple aborts the entire installation and calls it all bad.</p>
+
+<p>Dealing with the various issues with the Apple Installer is why we've been working on a drag and drop install routine for the Vidalia-Bundle for OSX.  We're also working on a Tor Browser Bundle for OSX to make using Tor even simpler.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 11 Jul 2009 06:29:29 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-799d5e2bded72c8cab959e58ca8f6dc6">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+you said you are working on a drag and drop which is great, but what can I use as a workaround right now
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 12 Jul 2009 06:29:30 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4a11df4a0ddb6b5142fe3f4ca13e36b5">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+<p>Your install worked fine.  Reboot and everything should work as expected.</p>
+
+<p>You may have to manually install Torbutton in firefox.  You can get it from the Mozilla Add-on site, or our site, <a href="https://torproject.org/torbutton" title="https://torproject.org/torbutton" rel="nofollow">https://torproject.org/torbutton</a>, or it's also located in /Library/Torbutton on your machine.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 12 Jul 2009 06:29:31 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4e61c71ea643456ab8ab9770a0f860df">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+<p>I had the install problem with Tor under OS X 10.5.7 as well.  Then I tried installing it again and it appeared to work.  But when I try using my Tor-enabled Firefox 3.5, it thinks I'm connecting to a bad proxy.  No Tor for me.</p>
+
+<p>This is bad, is there some earlier version I can use?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 12 Jul 2009 06:29:32 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f470d445b7e242988ebcc81380999772">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+reboot and everything will work fine.  Privoxy only starts on boot.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 12 Jul 2009 06:29:33 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-58208472bf42a8f625d61f29c22d8312">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+<p>i tried installing the vidalia/tor/privoxy/torbutton bundle, and when i did i was warned that there was already a newer version of it installed. there wasnt, so i ignored it and installed anyway. Now everything should be installed, but there is no vidalia app in my applications folder.</p>
+
+<p>wahappen?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fetc%20%28not%20verified%29&amp;do=goto">etc (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 22 Jul 2009 06:29:34 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-965c74f8b7436f5f87399cb3b91683e4">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+err this is on tiger btw
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fetc%20%28not%20verified%29&amp;do=goto">etc (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 22 Jul 2009 06:29:35 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4b8c02118c96df8d2d4041de5afb3629">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+I installed the tor browser and all that and it seems to work fine except for a major problem. All the main sites like yahoo and google are in Deutsch (German) and not in English. I can't seem to change it. Does anyone know how I can fix this? Please e-mail me if you know what's wrong. <a href="mailto:jakelogan911@gmail.com" rel="nofollow">jakelogan911@gmail.com</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Sep 2009 06:29:36 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3af19da4fd0f7c357b314b03ec7a9b85">
+
+<div class="comment-subject">
+
+Comment 19
+
+</div>
+
+<div class="inlinecontent">
+<p>When I run the installer, it says that firefox is not installed even though it is the default browser. Any tips for this?</p>
+
+<p>Thank you</p>
+
+<p>Kim</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 07 Oct 2009 06:29:37 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0a884ee394248795d7c3bef985bb3be0">
+
+<div class="comment-subject">
+
+Comment 20
+
+</div>
+
+<div class="inlinecontent">
+<p>I CAN'T SEEM TO UNINSTALL THE VIDALIA BUNDLE FROM MY PROGRAM FILES.  OBVIOUSLY, THE UNINSTALL DOESN'T WORK THAT IS LOCATED ON THE START MENU.  I'VE TRIED EVERYTHING.  HOW CAN I REMOVE THESE FILES? I HAVE VISTA</p>
+
+<p>VICTORIA.JORDASH@YAHOO.COM</p>
+
+<p>THANK YOU</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 15 Feb 2010 06:29:38 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3c77701cad35007fa13930045fd0482a">
+
+<div class="comment-subject">
+
+Comment 21
+
+</div>
+
+<div class="inlinecontent">
+Follow the directions at <a href="http://www.torproject.org/faq#HowUninstallTor" title="http://www.torproject.org/faq#HowUninstallTor" rel="nofollow">http://www.torproject.org/faq#HowUninstallTor</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 18 Feb 2010 06:29:39 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_0_35-stable_released&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:29:18 AM CDT</span>
+<!-- Created <span class="date">Thu 25 Jun 2009 07:34:49 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

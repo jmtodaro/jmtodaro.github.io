@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Tor 0.2.1.6-alpha Released</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_6-alpha_Released/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Anonymous (not verified): Comment 1</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_6-alpha_Released/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_6-alpha_Released/comment_1/</link>
+
+	<pubDate>Thu, 16 Oct 2008 06:12:49 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:12:49Z</dcterms:modified>
+
+	<description>If I downloaded tor button, will it prevent firefox from writing cache to my disk? If not, how do I disable it?
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 2</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_6-alpha_Released/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_6-alpha_Released/comment_2/</link>
+
+	<pubDate>Thu, 16 Oct 2008 06:12:50 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:12:50Z</dcterms:modified>
+
+	<description>By default, yes it will.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 3</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_6-alpha_Released/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_6-alpha_Released/comment_3/</link>
+
+	<pubDate>Sun, 08 Feb 2009 06:12:51 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:12:51Z</dcterms:modified>
+
+	<description>&lt;p&gt;I put the following command in the config file but can&#39;t work..&lt;/p&gt;
+
+&lt;p&gt;ExitNodes {hk}, {us}, {jp}&lt;br /&gt;
+StrictExitNodes 1&lt;/p&gt;
+
+&lt;p&gt;anything wrong&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 4</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_6-alpha_Released/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_6-alpha_Released/comment_4/</link>
+
+	<pubDate>Sat, 02 May 2009 06:12:52 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:12:52Z</dcterms:modified>
+
+	<description>&lt;p&gt;the tor is changing only between 10 different servers, most time all are in the same town. why ist that? should they not change between 1k or so?&lt;br /&gt;
+it&#39;s that, i&#39;m in germany and it only switches between german servers too. the providers are forced to log all traffic. what is the sense of using tor then? i&#39;m running the stable version and can not exclude countries.&lt;/p&gt;
+
+</description>
+
+
+</item>
+
+</channel>
+</rss>

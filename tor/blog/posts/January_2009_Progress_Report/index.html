@@ -1,0 +1,582 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>January 2009 Progress Report</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FJanuary_2009_Progress_Report&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">January 2009 Progress Report</a>
+
+</span>
+
+
+<div id="content">
+<p><strong>New releases, new hires, new funding</strong></p>
+
+<p>Tor 0.2.1.10-alpha (released January 6) fixes two major bugs in bridge<br />
+relays (one that would make the bridge relay not so useful if it had<br />
+DirPort set to 0, and one that could let an attacker learn a little bit<br />
+of information about the bridge's users), and a bug that would cause your<br />
+Tor relay to ignore a circuit create request it can't decrypt (rather<br />
+than reply with an error). It also fixes a wide variety of other bugs.<br />
+<a href="http://archives.seul.org/or/talk/Jan-2009/msg00078.html" title="http://archives.seul.org/or/talk/Jan-2009/msg00078.html" rel="nofollow">http://archives.seul.org/or/talk/Jan-2009/msg00078.html</a></p>
+
+<p>Tor 0.2.1.11-alpha (released Jan 20) finishes fixing the "if your Tor is<br />
+off for a week it will take a long time to bootstrap again" bug. It also<br />
+fixes an important security-related bug reported by Ilja van Sprundel. You<br />
+should upgrade. (We'll send out more details about the bug once people<br />
+have had some time to upgrade.)<br />
+<a href="http://archives.seul.org/or/talk/Jan-2009/msg00171.html" title="http://archives.seul.org/or/talk/Jan-2009/msg00171.html" rel="nofollow">http://archives.seul.org/or/talk/Jan-2009/msg00171.html</a> <span class="read-more"><a href="http://blog.torproject.org/blog/january-2009-progress-report"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/bug_fixes/" rel="tag">bug fixes</a>
+
+<a href="../../tags/progress_report/" rel="tag">progress report</a>
+
+<a href="../../tags/releases/" rel="tag">releases</a>
+
+<a href="../../tags/security_fixes/" rel="tag">security fixes</a>
+
+<a href="../../tags/translations/" rel="tag">translations</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-98eac6ba13fde2d170cce99be91c52bd">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>Nodoubt TOR is the best. But i would have liked it better if the TOR proxy rotations can be disabled. They change too frequently. Also it would have been better if we can select the end nodes of the proxy when connecting.</p>
+
+<p>Is there a way to do it??</p>
+
+<p>Let me know if there is way to tweak TOR because i didn't find it yet anywhere written.</p>
+
+<p>Thanks.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAn%20%28not%20verified%29&amp;do=goto">An (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 23 Feb 2009 06:20:05 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7a2eaa27400b0cb9f426436d2d5a3c40">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>Tor rocks so much, that it is tweaked by default.</p>
+
+<p>Why should someone give away software, which isn't configured/tweaked as good as possible?!</p>
+
+<p>BTW: It's Tor not TOR. See the logos..</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 25 Feb 2009 06:20:06 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b1bdad24682cc8e973262d7cf5af61da">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>TOR or Tor or T-O-R, search engines take it the same way.</p>
+
+<p>And anyway, In Tor i don't like that automatic tweak feature which changes the ip address randomly all the time. If i want to use a usa ip for some time, there is no way to have it fixed and working because the next moment it uses germany ip. And i get blocked again on the websites.</p>
+
+<p>This is the only reason why i have limited my use of Tor.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 26 Feb 2009 06:20:07 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0c52a1220a15ae96ed9f767d6b70a6c1">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<p>1) Use TrackHostExits, so that your IP doesn't change every so many minutes.  See more details at <a href="https://www.torproject.org/tor-manual.html.en" title="https://www.torproject.org/tor-manual.html.en" rel="nofollow">https://www.torproject.org/tor-manual.html.en</a></p>
+
+<p>2) # Use exit nodes in GB.<br />
+    ExitNodes {gb}</p>
+
+<p>    # Use exit nodes in countries that have won the World Cup<br />
+    # recently. Also use any exit node at MIT.<br />
+    ExitNodes {it}, {br}, {fr}, 18.0.0.0/8</p>
+
+<p>    # Don't use an exit node in any country that is sinking under<br />
+    # water.<br />
+    ExcludeExitNodes {mv}</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 27 Feb 2009 06:20:08 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-eae05f03a548f05f3b7990005c2b4b72">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>Dear Tor Project,<br />
+First let me sincerely thank you for your continuous and tireless efforts to provide us with security and freedom of information on the Internet. I just love Tor, especially Tor VM that works great!<br />
+I am an English teacher living in Iran. I have a BA in Farsi language and Literature from Yazd University. If you need any help with your Farsi translation, please do not hesitate to let me know. I would be glad to be of any assistance and play a small role in Tor success.<br />
+Kind regards<br />
+Mori</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FMori%20%28not%20verified%29&amp;do=goto">Mori (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 23 Feb 2009 06:20:09 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8f9cedee0178d8b84b354ab2d3867140">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+We'd love more Farsi translation.  You can read more about how to help at <a href="https://www.torproject.org/translation-overview.html.en" title="https://www.torproject.org/translation-overview.html.en" rel="nofollow">https://www.torproject.org/translation-overview.html.en</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 27 Feb 2009 06:20:10 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0e89dc51432206977e0e2235f95bcdb8">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p>Would it be non-trivial to have the MapAddress option behave like TrackHostExits?<br />
+That is, if an entry is like<br />
+MapAddress .rapidshare.com .rapidshare.com.exitpoint.exit<br />
+have it applied to rs1xx.rapidshare.com, rs223dt.rapidshare.com, rs28tl2.rapidshare.com... </p>
+
+<p>I already have such a line in my TORRC file; on start TOR doesn't complain, but apparently it doesn't have any effect. The alternative would be to add 5000-odd MapAddress lines specifying every possible hostname given Rapidshare's current naming convention, but I don't know how TOR would handle it; my connections drop (flaky company proxy) often enough already...</p>
+
+<p>I already have the TrackHostExits enabled for both rapidshare.com and .rapidshare.com, so when rapidshare.com redirects me to whatever.rapidshare.com TOR will reuse the existing circuit; however, if the connection drops and it takes longer than TrackHostExitsExpire to reestablish, TOR will open a new circuit with a different exit point (and Rapidshare will claim I've shared my account and lock it...  T_T  ).</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAleph0%20%28not%20verified%29&amp;do=goto">Aleph0 (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 25 Feb 2009 06:20:11 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d33acc541b438f7d3673103f0acbc786">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+this is a fine feature request for <a href="https://bugs.torproject.org/" title="https://bugs.torproject.org/" rel="nofollow">https://bugs.torproject.org/</a>.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 27 Feb 2009 06:20:12 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9e7685bcac0171a5438f32b426c7fe00">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+How to block the fuc.... rapidshare traffic? I'm a exit node.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 25 Jul 2009 06:20:13 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FJanuary_2009_Progress_Report&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:20:05 AM CDT</span>
+<!-- Created <span class="date">Sun 22 Feb 2009 07:23:37 PM CST</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

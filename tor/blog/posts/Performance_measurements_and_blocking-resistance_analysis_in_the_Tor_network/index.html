@@ -1,0 +1,792 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Performance measurements and blocking-resistance analysis in the Tor network</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FPerformance_measurements_and_blocking-resistance_analysis_in_the_Tor_network&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Performance measurements and blocking-resistance analysis in the Tor network</a>
+
+</span>
+
+
+<div id="content">
+<p>The Tor network has grown to more than one thousand relays and millions of casual users over the past few years. We are proud of our network's popularity, but with growth has come increasing <a href="https://blog.torproject.org/blog/why-tor-is-slow" rel="nofollow">performance problems</a> and attempts by some countries to block access to the Tor network. In order to address these problems, we need to learn more about the Tor network. In this post, I describe the current state of network measurements in Tor and some proposed additions to help us understand the network better. <span class="read-more"><a href="http://blog.torproject.org/blog/performance-measurements-and-blockingresistance-analysis-tor-network"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/censorship_circumvention/" rel="tag">censorship circumvention</a>
+
+<a href="../../tags/performance/" rel="tag">performance</a>
+
+<a href="../../tags/research/" rel="tag">research</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-4831060132829041c70c6a67d5a20071">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+It may just be my computer, but I'm in China and am at the moment unable to connect to the Tor network.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 21 May 2009 06:25:03 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-838c78020d82a9bfc4f40dc63e0f2dc7">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>It worked well up until today. I am now receiving a message in the message log which states: </p>
+
+<p>"May 22 18:21:09.015 [Warning] No specified exit routers seem to be running, and StrictExitNodes is set: can't choose an exit."</p>
+
+<p>Can anyone assist please?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 21 May 2009 06:25:04 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e7fb59da14c67aa2af01e2d162673a90">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>Check out<br />
+<a href="https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#ChooseEntryExit" title="https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#ChooseEntryExit" rel="nofollow">https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#ChooseEntryExi...</a></p>
+
+<p>Especially the part where we suggest that you not use ExitNodes and<br />
+StrictExitNodes. They're easy to screw up and leave yourself in a broken<br />
+state.</p>
+
+<p>So, "stop doing that" would be my suggestion. In the future we hope to<br />
+have a better interface for choosing your path (and/or exit) by country.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Farma&amp;do=goto">arma</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 21 May 2009 06:25:05 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-80dee3c9669af65f5d3e85057e27a49d">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<p>What are you doing to increase security when nodes are chosen in anti privacy country's like Germany that starting on 1/1-2009 started to log information about from and to IPs and even worse 1/1-2009 Swedish espionage organization(FRA) started collecting &amp; analysing a copy of all the data that passes the Swedish border !!!</p>
+
+<p>Do you plan to use 4 nodes in these circuits in the future with a maximum of 1 node in these country's or how do you withstand these intrusions of the personal integrity these country's started with ?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 22 May 2009 06:25:06 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e1502c2ee1fbe8970ae640cc3f9dc83a">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>For the record, 1/1/2009 was nearly 6 months ago.  We hope you're using secure protocols through Tor such that the risks are lessened.  Someone watching any node will only see you're using Tor, or what IP address you're visiting from an exit node.  If an entry node, they'll know your IP.  If an exit node, they'll know where you are going.  In either case, they can't put who and what together.</p>
+
+<p>A better question is what to do if your first and last node are in the same country, and I don't think we have an answer for that yet.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 22 May 2009 06:25:07 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9c9efea0464c3f28311b31c59dc104b2">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>"For the record, 1/1/2009 was nearly 6 months ago."<br />
+Yes i know that. I only mention this as i understand that Tor has still not made a good solution to solve this problem that needs fixing.<br />
+"We hope you're using secure protocols through Tor such that the risks are lessened."<br />
+Yes of course i am.</p>
+
+<p>"A better question is what to do if your first and last node are in the same country, and I don't think we have an answer for that yet."</p>
+
+<p>You do know that country's like Germany, USA, Sweden and so on are sending these data to the other country's even if it's against there own laws so stopping circuits with 3 nodes in the same country(does this work yet, it wasn't before) or even first &amp; last node as you mention is not enough as a measure against these data retention &amp; collecting they have started with.<br />
+Tor's circuits needs to have at least 1 entry or exitnode out of there reach to be a safe solution.</p>
+
+<p>If you would allow a maximum of 1 node from this group of country's who do this kind of things it would of cource improve security a lot for they who themselfs are not able to recofigure there torrc-file.<br />
+I understand that this could be a problem because a country like Germany has such a large portion of the Tor networks total bandwidth.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 23 May 2009 06:25:08 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-33f0850759b478fb8a4a3290f9f7705c">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p>Cannot connect here in Okinawa. Kinda irritating really.</p>
+
+<p>Potentially could be wifi router settings blocking specific ports, but is highly unlikely.</p>
+
+<p>Issue remains the same.</p>
+
+<p>[Notice] We're missing a certificate from authority with signing key [gibberish key removed]: launching request.<br />
+[Notice] We're missing a certificate from authority with signing key [gibberish key removed]: launching request.<br />
+[Notice] We're missing a certificate from authority with signing key [gibberish key removed]: launching request.<br />
+[Warning] 0 unknown, 3 missing key, 2 good, 0 bad, 0 no signature, 4 required</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 24 May 2009 06:25:09 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9fb544bea5d8f6172f2c58a7818a178b">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+My first thought from the "3 missing key" part is that you are using a very old Tor version. Which Tor version is this? And can you post the [gibberish key removed] parts, too? There's nothing secret in them, and maybe they help us resolve the problem.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fkarsten&amp;do=goto">karsten</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 25 May 2009 06:25:10 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bec972c6cb9c24fdbb9f4a848ea5513a">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+<p>Your program is actively being used to steal my internet band width to the point that we cannot operate our business.</p>
+
+<p>I now have a timeswitch on the modem so the internet only runs during working hours.</p>
+
+<p>I need you to provide me a program so I have control over the service that I am paying for.</p>
+
+<p>Just remember this if you are not doing something wrong then you dont need to hide what you are doing.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FStolen%20From%20%28not%20verified%29&amp;do=goto">Stolen From (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 11 Jul 2009 06:25:11 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6a5e9b5efc2cac72813d7e7dfeca98dd">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+<p>Here's the email I sent you earlier:</p>
+
+<p>Hello,</p>
+
+<p>Thanks for contacting us.  Did you install Tor?  If so, Tor has many<br />
+ways to control the amount of bandwidth consumed.  Many users donate<br />
+their unused bandwidth to help others who need their privacy and<br />
+anonymity online.</p>
+
+<p>&gt; &gt; I need you to provide me a program so I have control over the service<br />
+&gt; &gt; that I am paying for.</p>
+
+<p>We can't provide you a program to control your ISP.  If you can tell me<br />
+what you installed, assuming it's tor, I can help you from there.</p>
+
+<p>&gt; &gt; Just remember this if you are not doing something wrong then you<br />
+&gt; &gt; don't need to hide what you are doing.</p>
+
+<p>This is a false dichotomy.  There are many reasons to protect your<br />
+communications, or to provide some control over who collects information<br />
+about you on the Internet without your permission.<br />
+<a href="https://torproject.org/torusers" title="https://torproject.org/torusers" rel="nofollow">https://torproject.org/torusers</a> provides a few examples of users who<br />
+need their communications protected.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 12 Jul 2009 06:25:12 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c1f74db4eddfab8eaf78182639c230fa">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+<p>Hello,</p>
+
+<p>I just installed the new Tor bundle with Firefox, and when I select "View the Network" from the Vidalia Control Panel, none of the country flags appear in the Relay column to the left.</p>
+
+<p>I had the Tor bundle before the recent Vidalia update, and the flags always appeared normally. (I ended up removing that bundle, and replacing it with the brand new one.)</p>
+
+<p>Do you know -- is this a bug, or a temporary error in the network? I would rather not delete this new Vidalia bundle and start all over again, adding the add-ons, etc., if there is a simple fix for it.</p>
+
+<p>With thanks,</p>
+
+<p>ATP</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20Tor%20Person%20%28not%20verified%29&amp;do=goto">Anonymous Tor Person (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 12 Jul 2009 06:25:13 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8c1ea98b83f76e579a24181bfca3c223">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+Thank you, you answered the question I have been searching for which was whether or not to place keywords when blog commenting. <a href="http://www.hayda.net" title="mirc, cinsel sohbet, cinsellik, chat" rel="nofollow">mirc</a> . <a href="http://www.hayda.net" title="mirc, cinsel sohbet, cinsellik, chat" rel="nofollow">chat</a> . <a href="http://www.hayda.net/" title="http://www.hayda.net/" rel="nofollow">http://www.hayda.net/</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fhii%20%28not%20verified%29&amp;do=goto">hii (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 13 Nov 2009 06:25:14 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f37b9cbb458e29a21f4cf1c91d6f1e9a">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+<p>Everything worked fine, till yesterday. Now I cant connect and keep getting these messages:<br />
+Jan 26 12:36:19.710 [Notice] We're missing a certificate from authority with signing key 665711AF821C459DC59A8491FAD1B9D7A7800ECF: launching request.<br />
+Jan 26 12:36:19.711 [Notice] We're missing a certificate from authority with signing key 6584DF098CFC68ACBF5E551532C8A58674586820: launching request.<br />
+Jan 26 12:41:24.818 [Notice] We're missing a certificate from authority with signing key 665711AF821C459DC59A8491FAD1B9D7A7800ECF: launching request.<br />
+Jan 26 12:41:24.820 [Notice] We're missing a certificate from authority with signing key 6584DF098CFC68ACBF5E551532C8A58674586820: launching request.<br />
+Jan 26 12:41:25.081 [Warning] TLS error: unexpected close while renegotiating</p>
+
+<p>What do I do?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 26 Jan 2010 06:25:15 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a54f9f8fe9df75c1d3b0e966d74c1a5e">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+I am having the same issue, it just started happening today for pretty much no reason at all.  How can we fix this?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 26 Jan 2010 06:25:16 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d72be09120a36d973021775e2adfbf04">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+I have the same problem!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 01 Feb 2011 06:25:17 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FPerformance_measurements_and_blocking-resistance_analysis_in_the_Tor_network&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:25:02 AM CDT</span>
+<!-- Created <span class="date">Thu 21 May 2009 03:19:22 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

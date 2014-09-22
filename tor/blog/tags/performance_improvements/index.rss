@@ -1,0 +1,292 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged performance_improvements</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/performance_improvements/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>arma: Trip report, NSF data workshop</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Trip_report_NSF_data_workshop/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Trip_report_NSF_data_workshop/</link>
+
+
+	<category>/tags/alpha_releases</category>
+
+	<category>/tags/hidden_services</category>
+
+	<category>/tags/memory_leaks</category>
+
+	<category>/tags/performance_improvements</category>
+
+	<category>/tags/tor</category>
+
+
+	<pubDate>Mon, 30 Aug 2010 15:59:01 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:07:06Z</dcterms:modified>
+
+	<description>&lt;p&gt;On Friday (Aug 27), I attended the &quot;Workshop on Cyber Security Data for Experimentation&quot; organized by the National Science Foundation (NSF). The premise of the &lt;a href=&quot;http://www.gtisc.gatech.edu/nsf_workshop10_agenda.html&quot; rel=&quot;nofollow&quot;&gt;workshop&lt;/a&gt; was that many academics need real-world data sets to solve problems, whereas industry is the place with the real-world data sets and they don&#39;t have any real reason to share. By getting the academics and the industry people talking, with government funders nearby, they hoped to better understand the problems and maybe move things forward.&lt;/p&gt;
+
+&lt;p&gt;I was there (and on the first panel) because of Tor&#39;s work on &lt;a href=&quot;https://metrics.torproject.org/&quot; rel=&quot;nofollow&quot;&gt;gathering Tor network snapshots, performance data, and user statistics&lt;/a&gt;. Tor&#39;s approach represents one way out of the trap where researchers never quite get the data they want, or if they do it isn&#39;t open enough (which hinders whether anybody else can reproduce their results). &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/trip-report-nsf-data-workshop&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Trip_report_NSF_data_workshop/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: July 2010 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/July_2010_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/July_2010_Progress_Report/</link>
+
+
+	<category>/tags/alpha_releases</category>
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/development</category>
+
+	<category>/tags/enhancements</category>
+
+	<category>/tags/orbot</category>
+
+	<category>/tags/performance_improvements</category>
+
+	<category>/tags/portable_bundles</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/research</category>
+
+	<category>/tags/research_progress</category>
+
+	<category>/tags/research_reports</category>
+
+	<category>/tags/research_results</category>
+
+	<category>/tags/tor_browser_bundle</category>
+
+
+	<pubDate>Thu, 12 Aug 2010 09:25:08 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:06:28Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New releases&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/july-2010-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;On July 4th, we released Tor Browser Bundle 1.3.7 for Microsoft Windows. This is a security update for Firefox and Pidgin. The changes are: update to Firefox 3.5.10 and Pidgin Instant Messenger 2.7.1r2 to fix some security issues.&lt;/li&gt;
+&lt;li&gt;On July 6th, we released Tor Browser Bundle 1.0.8 for GNU/Linux distributions. This fixes a number of security issues with included software. The updates include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Update libpng to 1.4.3 (see CVE-2010-1205)&lt;/li&gt;
+&lt;li&gt;Update Firefox to 3.5.10&lt;/li&gt;
+&lt;li&gt;Update HTTPS Everywhere to 0.2.1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/li&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/July_2010_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Tor 0.2.2.14-alpha released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_14-alpha_released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_14-alpha_released/</link>
+
+
+	<category>/tags/alpha_release</category>
+
+	<category>/tags/directory_authority</category>
+
+	<category>/tags/geoip</category>
+
+	<category>/tags/performance_improvements</category>
+
+
+	<pubDate>Mon, 19 Jul 2010 04:30:14 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:05:13Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor 0.2.2.14-alpha greatly improves client-side handling of circuit build&lt;br /&gt;
+timeouts, which are used to estimate speed and improve performance. We&lt;br /&gt;
+also move to a much better GeoIP database, port Tor to Windows CE,&lt;br /&gt;
+introduce new compile flags that improve code security, add an eighth&lt;br /&gt;
+v3 directory authority, and address a lot of more minor issues.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download&quot; title=&quot;https://www.torproject.org/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Packages will be appearing over the next few days or weeks. (We&#39;ve decided&lt;br /&gt;
+to start announcing alpha versions when they&#39;re released, rather than&lt;br /&gt;
+waiting for all the packages first.)&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.2.14-alpha - 2010-07-12&lt;br /&gt;
+  o Major bugfixes:&lt;br /&gt;
+    - Tor directory authorities no longer crash when started with a&lt;br /&gt;
+      cached-microdesc-consensus file in their data directory. Bugfix&lt;br /&gt;
+      on 0.2.2.6-alpha; fixes bug 1532.&lt;br /&gt;
+    - Treat an unset $HOME like an empty $HOME rather than triggering an&lt;br /&gt;
+      assert. Bugfix on 0.0.8pre1; fixes bug 1522. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02214-alpha-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_14-alpha_released/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Tor 0.2.2.11-alpha and 0.2.2.12-alpha are out</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_11-alpha_and_0_2_2_12-alpha_are_out/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_11-alpha_and_0_2_2_12-alpha_are_out/</link>
+
+
+	<category>/tags/alpha_releases</category>
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/performance_improvements</category>
+
+
+	<pubDate>Fri, 23 Apr 2010 22:26:03 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:55:46Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor 0.2.2.12-alpha fixes a critical bug in how directory authorities&lt;br /&gt;
+handle and vote on descriptors. It was causing relays to drop out of&lt;br /&gt;
+the consensus.&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.2.11-alpha fixes yet another instance of broken OpenSSL libraries&lt;br /&gt;
+that was causing some relays to drop out of the consensus.&lt;/p&gt;
+
+&lt;p&gt;(Windows bundles will be available whenever Andrew gets around to making&lt;br /&gt;
+them; we&#39;re trying to stick to a policy of announcing alphas on time&lt;br /&gt;
+rather than waiting for every package.)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download.html.en&quot; title=&quot;https://www.torproject.org/download.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download.html.en&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Original announcement is at &lt;a href=&quot;http://archives.seul.org/or/talk/Apr-2010/msg00174.html&quot; title=&quot;http://archives.seul.org/or/talk/Apr-2010/msg00174.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Apr-2010/msg00174.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.2.12-alpha - 2010-04-20&lt;br /&gt;
+  o Major bugfixes:&lt;br /&gt;
+    - Many relays have been falling out of the consensus lately because&lt;br /&gt;
+      not enough authorities know about their descriptor for them to get&lt;br /&gt;
+      a majority of votes. When we deprecated the v2 directory protocol,&lt;br /&gt;
+      we got rid of the only way that v3 authorities can hear from each &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02211-alpha-and-02212-alpha-are-out&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_11-alpha_and_0_2_2_12-alpha_are_out/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: September 2009 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/September_2009_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/September_2009_Progress_Report/</link>
+
+
+	<category>/tags/advocacy</category>
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/censorship_circumvention</category>
+
+	<category>/tags/china</category>
+
+	<category>/tags/doj</category>
+
+	<category>/tags/fbi</category>
+
+	<category>/tags/iran</category>
+
+	<category>/tags/performance_improvements</category>
+
+	<category>/tags/senators</category>
+
+
+	<pubDate>Sat, 10 Oct 2009 07:16:46 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:38:38Z</dcterms:modified>
+
+	<description>&lt;p&gt;Here&#39;s what the Tor Project accomplished in September 2009.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;New Hires&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/september-2009-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Carolyn Anhalt is our new Translation and Community Manager. Carolyn has years of experience managing and growing content translation, as well as wrangling online communities and developing volunteer moderators and support roles from the community. She’s fluent or conversant in a number of languages, such as: Russian, French, English, German, Italian, and Welsh. Carolyn’s initial goals are to grow the translator community to keep everything Tor translated, work out better translation tools for translators, and to generally assist translators.&lt;/li&gt;
+&lt;li&gt;Karen Reilly joins us as our Development Director. Karen has years of experience in growing both community-based and foundation-based funding, as well as helping to fulfill the mission of organizations through outreach and community-building. Karen’s initial goals are to further develop community funding, work with our current donors, help create an annual report, and expand Tor’s outreach efforts.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/September_2009_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Tor 0.2.2.2-alpha released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_2-alpha_released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_2-alpha_released/</link>
+
+
+	<category>/tags/alpha_release</category>
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/performance_improvements</category>
+
+
+	<pubDate>Fri, 09 Oct 2009 22:49:19 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:38:32Z</dcterms:modified>
+
+	<description>&lt;p&gt;On September 21st, we released Tor version 0.2.2.2-alpha.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Major features:&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-0222alpha-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Tor now tracks how long it takes to build client-side circuits&lt;br /&gt;
+      over time, and adapts its timeout to local network performance.&lt;br /&gt;
+      Since a circuit that takes a long time to build will also provide&lt;br /&gt;
+      bad performance, we get significant latency improvements by&lt;br /&gt;
+      discarding the slowest 20% of circuits. Specifically, Tor creates&lt;br /&gt;
+      circuits more aggressively than usual until it has enough data&lt;br /&gt;
+      points for a good timeout estimate. Implements proposal 151.&lt;br /&gt;
+      We are especially looking for reports (good and bad) from users with&lt;br /&gt;
+      both EDGE and broadband connections that can move from broadband&lt;br /&gt;
+      to EDGE and find out if the build-time data in the .tor/state gets&lt;br /&gt;
+      reset without loss of Tor usability. You should also see a notice&lt;br /&gt;
+      log message telling you that Tor has reset its timeout.&lt;/li&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_2-alpha_released/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

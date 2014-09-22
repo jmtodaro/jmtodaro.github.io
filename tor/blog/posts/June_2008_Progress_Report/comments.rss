@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>June 2008 Progress Report</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Loyal Tor User (not verified): Comment 1</title>
+	<dcterms:creator>Loyal Tor User (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/comment_1/</link>
+
+	<pubDate>Sat, 26 Jul 2008 06:10:19 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:10:19Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hi,&lt;br /&gt;
+As you know Tor (including Vidalia, Privoxy) is a great package for the anonymous user. Working together these individual components are providing core services for anonymity. I would like to bring an attention sideways to the recognized area:&lt;/p&gt;
+
+&lt;p&gt;It is --- the newest version of i2p software. It may be worthwhile endeavor to bundle i2p with Tor as a complementary service. There are some areas where Tor is good at (anonymous web browsing). And maybe others areas which may be simpler to use the newer i2p network. &lt;/p&gt;
+
+&lt;p&gt;To help support the anonymity efforts i hope you will evaluate the i2p software for packaging because it will help strengthen i2p as an option for the users. It does not need to be a burden for the Tor maintainers either because i2p team is doing most of the hard work. Many user dont know about it but i2p very good now since version 0.6.  The headless* package very is easy to install. Almost no work needed - this forum thread describes installation proceedure:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://forum.i2p2.de/viewtopic.php?t=1625&amp;amp;sid=756d4ae34bc5162c1383b39f1a7b9d75&quot; rel=&quot;nofollow&quot;&gt;http://forum.i2p2.de/viewtopic.php?t=1625&amp;amp;sid=756d4ae34bc5162c1383b39f1a7b9d75&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Its 1 script to start i2p daemon and hooked into the &quot;Start Vidalia&quot; will add i2p onto the existing Tor startup. You may need a button in the control panel to let users select the i2p daemon ( for example &quot;Enable i2p&quot; option ). &lt;/p&gt;
+
+&lt;p&gt;You should know that the i2p does not interfere with Tor in any way.  For FoxyProxy. The setting is localhost:4444. And FoxyProxy whitelist pattern=*://*.i2p/* will catch the site ending with .i2p extension.&lt;/p&gt;
+
+&lt;p&gt;*i have tested the headless package which is recommended, version 0.62 or later. (POSIX)&lt;br /&gt;
+*** For software license - please speak to &lt;a href=&quot;http://www.i2p2.i2p/index.html&quot; rel=&quot;nofollow&quot;&gt;i2p development team&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 2</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/comment_2/</link>
+
+	<pubDate>Fri, 01 Aug 2008 06:10:20 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:10:20Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hi&lt;br /&gt;
+I&#39;ve installed tor on my ubuntu 8.04 AMD64 and it works for my fine but now a few days that tor is not works for my any more:( it says that :&lt;br /&gt;
+Aug 01 12:40:37.409 [notice] I learned some more directory information, but not enough to build a circuit.&lt;br /&gt;
+Aug 01 12:40:45.269 [notice] We now have enough directory information to build circuits.&lt;/p&gt;
+
+&lt;p&gt;and then nothing just scilence. It didn&#39;t work anymore. And i&#39;m in trouble fetching news in my country.&lt;/p&gt;
+
+&lt;p&gt;Can my contry state block tor itself?&lt;br /&gt;
+Please help me in by response in your blog or by mailing me or even by fixing any bug in your very helpfull project Tor.&lt;br /&gt;
+Thanks.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 3</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/comment_3/</link>
+
+	<pubDate>Sat, 02 Aug 2008 06:10:21 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:10:21Z</dcterms:modified>
+
+	<description>The RISING [version 20.55.51, updated on 2008-08-02] found out a Trojan.PSW.Win32.Undef.adp in the vidalia programme. The proxy.exe file had been deleted automatically by the RISING. Trojan.PSW.Win32.Undef.adp also found out in the stable version vidalia-bundle-0.2.0.30-0.1.6.exe and cannot be installed. Please give some advice for solving the problem.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 4</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/comment_4/</link>
+
+	<pubDate>Sat, 02 Aug 2008 06:10:22 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:10:22Z</dcterms:modified>
+
+	<description>The RISING [version 20.55.51, updated on 2008-08-02] found out a Trojan.PSW.Win32.Undef.adp in the vidalia programme. The proxy.exe file had been deleted automatically by the RISING. Trojan.PSW.Win32.Undef.adp also found out in the stable version vidalia-bundle-0.2.0.30-0.1.6.exe and cannot be installed. Please give some advice for solving the problem.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 5</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/comment_5/</link>
+
+	<pubDate>Sun, 03 Aug 2008 06:10:23 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:10:23Z</dcterms:modified>
+
+	<description>Maybe because the exe file is using the same binary structure/packer/crypter as most of the trojans.
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 6</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/comment_6/</link>
+
+	<pubDate>Tue, 05 Aug 2008 06:10:24 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:10:24Z</dcterms:modified>
+
+	<description>&lt;p&gt;We use the NullSoft installer (&lt;a href=&quot;https://www.torproject.org/svn/trunk/contrib/tor-mingw.nsi.in&quot; title=&quot;https://www.torproject.org/svn/trunk/contrib/tor-mingw.nsi.in&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/svn/trunk/contrib/tor-mingw.nsi.in&lt;/a&gt;) for building the Windows exe installer.  It uses &quot;SetCompressor /SOLID LZMA&quot; as the compressor to shrink the total package size down.&lt;/p&gt;
+
+&lt;p&gt;There is no proxy.exe file in the official Tor packages.&lt;/p&gt;
+
+</description>
+
+
+</item>
+
+</channel>
+</rss>

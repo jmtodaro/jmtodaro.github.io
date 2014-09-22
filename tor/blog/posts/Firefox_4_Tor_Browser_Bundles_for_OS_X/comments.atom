@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Firefox 4 Tor Browser Bundles for OS X</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>erinn</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:18:11Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_1/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:56Z</updated>
+	<published>2011-03-28T12:17:56Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hi, when I try to open the 32 bit program, it gives me this crash report:&lt;/p&gt;
+
+&lt;p&gt;Process:         Vidalia [2560]&lt;br /&gt;
+Path:            /Applications/TorBrowser_en-US.app/Contents/MacOS/Vidalia.app/Contents/MacOS/Vidalia&lt;br /&gt;
+Identifier:      net.vidalia-project.vidalia&lt;br /&gt;
+Version:         ??? (???)&lt;br /&gt;
+Code Type:       X86 (Native)&lt;br /&gt;
+Parent Process:  launchd [160]&lt;/p&gt;
+
+&lt;p&gt;Date/Time:       2011-03-28 21:42:25.931 +0800&lt;br /&gt;
+OS Version:      Mac OS X 10.6.6 (10J567)&lt;br /&gt;
+Report Version:  6&lt;/p&gt;
+
+&lt;p&gt;Interval Since Last Report:          110168 sec&lt;br /&gt;
+Crashes Since Last Report:           5&lt;br /&gt;
+Per-App Crashes Since Last Report:   5&lt;br /&gt;
+Anonymous UUID:                      11A2119F-F36B-4486-9328-DF91C4F2A758&lt;/p&gt;
+
+&lt;p&gt;Exception Type:  EXC_BREAKPOINT (SIGTRAP)&lt;br /&gt;
+Exception Codes: 0x0000000000000002, 0x0000000000000000&lt;br /&gt;
+Crashed Thread:  0&lt;/p&gt;
+
+&lt;p&gt;Dyld Error Message:&lt;br /&gt;
+  Library not loaded: /Users/erinn/src/tbb-master.git/build-scripts/build-alpha-i386/built/lib/libssl.1.0.0.dylib&lt;br /&gt;
+  Referenced from: /Applications/TorBrowser_en-US.app/Contents/MacOS/Vidalia.app/Contents/MacOS/Vidalia&lt;br /&gt;
+  Reason: image not found&lt;/p&gt;
+
+&lt;p&gt;Binary Images:&lt;br /&gt;
+0x8fe00000 - 0x8fe4162b  dyld 132.1 (???)  /usr/lib/dyld&lt;/p&gt;
+
+&lt;p&gt;Model: MacBookPro6,2, BootROM MBP61.0057.B0C, 2 processors, Intel Core i5, 2.4 GHz, 4 GB, SMC 1.58f16&lt;br /&gt;
+Graphics: NVIDIA GeForce GT 330M, NVIDIA GeForce GT 330M, PCIe, 256 MB&lt;br /&gt;
+Graphics: Intel HD Graphics, Intel HD Graphics, Built-In, 288 MB&lt;br /&gt;
+Memory Module: global_name&lt;br /&gt;
+AirPort: spairport_wireless_card_type_airport_extreme (0x14E4, 0x93), Broadcom BCM43xx 1.0 (5.10.131.36.1)&lt;br /&gt;
+Bluetooth: Version 2.3.8f7, 2 service, 12 devices, 1 incoming serial ports&lt;br /&gt;
+Network Service: AirPort, AirPort, en1&lt;br /&gt;
+Serial ATA Device: Hitachi HTS545032B9SA02, 298.09 GB&lt;br /&gt;
+Serial ATA Device: MATSHITADVD-R   UJ-898&lt;br /&gt;
+USB Device: Hub, 0x0424  (SMSC), 0x2514, 0xfd100000&lt;br /&gt;
+USB Device: USB Receiver, 0x046d  (Logitech Inc.), 0xc51b, 0xfd130000&lt;br /&gt;
+USB Device: Built-in iSight, 0x05ac  (Apple Inc.), 0x8507, 0xfd110000&lt;br /&gt;
+USB Device: IR Receiver, 0x05ac  (Apple Inc.), 0x8242, 0xfd120000&lt;br /&gt;
+USB Device: Hub, 0x0424  (SMSC), 0x2514, 0xfa100000&lt;br /&gt;
+USB Device: iPod, 0x05ac  (Apple Inc.), 0x1265, 0xfa140000&lt;br /&gt;
+USB Device: Internal Memory Card Reader, 0x05ac  (Apple Inc.), 0x8403, 0xfa130000&lt;br /&gt;
+USB Device: Apple Internal Keyboard / Trackpad, 0x05ac  (Apple Inc.), 0x0236, 0xfa120000&lt;br /&gt;
+USB Device: BRCM2070 Hub, 0x0a5c  (Broadcom Corp.), 0x4500, 0xfa110000&lt;br /&gt;
+USB Device: Bluetooth USB Host Controller, 0x05ac  (Apple Inc.), 0x8218, 0xfa113000&lt;/p&gt;
+
+&lt;p&gt;I&#39;m running Snow Leopard 10.6.6&lt;br /&gt;
+Any help is appreciated!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_2/"/>
+
+	<author><name>erinn</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:57Z</updated>
+	<published>2011-03-29T12:17:57Z</published>
+
+	<content type="html" xml:lang="en">
+	I&#39;ll have a fix out for this today.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_3/"/>
+
+	<author><name>erinn</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:58Z</updated>
+	<published>2011-03-29T12:17:58Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;ve uploaded new packages here:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/dist/torbrowser/osx/TorBrowser-2.2.23-2-alpha-osx-i386-en-US.zip&quot; title=&quot;https://www.torproject.org/dist/torbrowser/osx/TorBrowser-2.2.23-2-alpha-osx-i386-en-US.zip&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/dist/torbrowser/osx/TorBrowser-2.2.23-2-alpha...&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/dist/torbrowser/osx/TorBrowser-2.2.23-2-alpha-osx-i386-en-US.zip.asc&quot; title=&quot;https://www.torproject.org/dist/torbrowser/osx/TorBrowser-2.2.23-2-alpha-osx-i386-en-US.zip.asc&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/dist/torbrowser/osx/TorBrowser-2.2.23-2-alpha...&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I&#39;ll make a proper announcement soon.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_4/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:59Z</updated>
+	<published>2011-03-28T12:17:59Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;strong&gt;Hi Erinn,&lt;/strong&gt;&lt;br&gt;&lt;br /&gt;
+I do not see Polipo listed above, does that mean the new Firefox&#39;es (OS X and Windows) have the socks patch included from chrisd.mang (https://bugzilla.mozilla.org/show_bug.cgi?id=280661)?&lt;br&gt;&lt;br /&gt;
+Also, what do you think about adding the following add-ons and about:config edits to future bundles?&lt;br&gt;&lt;br /&gt;
+(add-ons)&lt;br&gt;&lt;br /&gt;
+1. &lt;em&gt;Google Analytics Opt-Out&lt;/em&gt;&lt;br /&gt;
+I tried the following code from Adblock Plus but it requires Grease Monkey to work well, and it seems out of date:&lt;br /&gt;
+http://forums.lanik.us/viewtopic.php?f=23&amp;amp;t=5222#p20744&lt;br /&gt;
+https://adblockplus.org/forum/viewtopic.php?p=27886#p27886&lt;br&gt;&lt;br /&gt;
+2. &lt;em&gt;Universal Behavioral Advertising Opt-Out&lt;/em&gt;&lt;br /&gt;
+Or simply set a do-not-track [DNT] header to TorButton?&lt;br&gt;&lt;br /&gt;
+3. &lt;em&gt;AdBlock Plus&lt;/em&gt;&lt;br /&gt;
+Using EasyPrivacy + EasyList subscriptions. Btw, that list combo already has a DNT header but I am unsure it&#39;s correct: &lt;code&gt;*$image,~image,donottrack&lt;/code&gt;&lt;br&gt;&lt;br /&gt;
+(about:config)&lt;br&gt;&lt;br /&gt;
+4. &lt;code&gt;config.trim_on_minimize&lt;/code&gt;&lt;br /&gt;
+To reduce Firefox RAM usage when it&#39;s minimized; many computers do not have luxury RAM. I have not noticed any loss in responsiveness when using this setting:&lt;br /&gt;
+http://kb.mozillazine.org/Config.trim_on_minimize&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_5/"/>
+
+	<author><name>erinn</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:18:00Z</updated>
+	<published>2011-03-29T12:18:00Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;The bundles don&#39;t have Chris&#39;s exact patch, but they have the improved one by Michael Novatny, yes.&lt;/p&gt;
+
+&lt;p&gt;As for the rest, would you mind filing a ticket on &lt;a href=&quot;https://trac.torproject.org&quot; title=&quot;https://trac.torproject.org&quot; rel=&quot;nofollow&quot;&gt;https://trac.torproject.org&lt;/a&gt; under Tor Bundles/Installation? Thanks!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_6/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:18:01Z</updated>
+	<published>2011-03-30T12:18:01Z</published>
+
+	<content type="html" xml:lang="en">
+	Let me suggest the Ghostery add-on, it takes care of all those ad/web trackers.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_7/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:18:02Z</updated>
+	<published>2011-04-01T12:18:02Z</published>
+
+	<content type="html" xml:lang="en">
+	While ghostery sounds decent, it seems no one has analyzed the codebase to see what it actually does or reports back to the ghostery servers.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_8/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:18:03Z</updated>
+	<published>2011-03-29T12:18:03Z</published>
+
+	<content type="html" xml:lang="en">
+	Why does the OS X version get NoScript and BetterPrivacy and the Windows version does not by default?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_9/"/>
+
+	<author><name>erinn</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:18:04Z</updated>
+	<published>2011-03-29T12:18:04Z</published>
+
+	<content type="html" xml:lang="en">
+	I put them in the Windows version -- which is very stable, and has many users -- and the users were &lt;strong&gt;very&lt;/strong&gt; unhappy, so I decided to remove them, pending further testing. I&#39;m going to put out Firefox4 TBBs for Windows soon and I&#39;ll add them to that.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_10/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:18:05Z</updated>
+	<published>2011-03-30T12:18:05Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;With the new version getting an error.&lt;/p&gt;
+
+&lt;p&gt;Tor stops working after sometime, have to restart Tor.&lt;/p&gt;
+
+&lt;p&gt;Mar 30 09:42:38.108 [Warning] Warning from libevent: kevent: Bad file descriptor&lt;br /&gt;
+Mar 30 09:42:38.109 [Error] libevent call with kqueue failed: Bad file descriptor [9]&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_11/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:18:06Z</updated>
+	<published>2011-03-30T12:18:06Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Attempted to install Vidalia Bundle on Mac OS X 10.4.11 on PowerPC (iBook G3). Mac OS X Tiger is the last version of Mac to run on a G3 processor. Neither the stable nor unstable bundle work: the Vidalia icon pops into the watchamacallit-bar-thing at the bottom of the screen for a moment before immediately vanishing.&lt;/p&gt;
+
+&lt;p&gt;To the previous Anonymous: You might try installing JonDoFox, removing the JonDoFox plugin and replacing it with the TorButton plugin, and adding BetterPrivacy if desired. JonDoFox comes with a nice set of security enhancements, although for Flash they recommend either blocking it with NoScript (preferred, and the default setup), or refusing cookies from the Flash settings and using a socksifer to prevent Flash from revealing your IP. (You could also do that for the Java.) JonDoFox actually does have good Tor support, and will even switch many of your headers to match Torbutton&#39;s when you switch to Tor, but unless you are actually planning on using their proxy, JonDo, it would probably be best to replace the JonDoFox plugin with the Torbutton plugin for optimal blending-in with other Tor users, plus Torbutton has some security enhancements JonDoFox may lack.&lt;br /&gt;
+http://anonymous-proxy-servers.net/en/jondofox.html&lt;br /&gt;
+http://anonymous-proxy-servers.net/en/help/flash-applets.html&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 12</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_12/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_12/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:18:07Z</updated>
+	<published>2011-04-01T12:18:07Z</published>
+
+	<content type="html" xml:lang="en">
+	These bundles do not support powerpc macs.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 13</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_13/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_13/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:18:08Z</updated>
+	<published>2011-03-30T12:18:08Z</published>
+
+	<content type="html" xml:lang="en">
+	Where is the PowerPC version?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 14</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_14/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_14/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:18:09Z</updated>
+	<published>2011-04-01T12:18:09Z</published>
+
+	<content type="html" xml:lang="en">
+	There isn&#39;t one.  These browser bundles do not support PowerPC macs.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 15</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_15/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_15/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:18:10Z</updated>
+	<published>2011-03-30T12:18:10Z</published>
+
+	<content type="html" xml:lang="en">
+	Where is the PowerPC version?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 16</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_16/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_16/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:18:11Z</updated>
+	<published>2011-03-31T12:18:11Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I ended up getting this report after trying the newer package. I also tried the original package and it crashed as well... I&#39;m running Mac OS X 10.5.8 &lt;/p&gt;
+
+&lt;p&gt;is there anything I can do?&lt;/p&gt;
+
+&lt;p&gt;Process:         Vidalia [13859]&lt;br /&gt;
+Path:   /Downloads/TorBrowser_en-US.app/Contents/MacOS/Vidalia.app/Contents/MacOS/Vidalia&lt;br /&gt;
+Identifier:      net.vidalia-project.vidalia&lt;br /&gt;
+Version:         ??? (???)&lt;br /&gt;
+Code Type:       X86 (Native)&lt;br /&gt;
+Parent Process:  launchd [1505]&lt;/p&gt;
+
+&lt;p&gt;Interval Since Last Report:          37 sec&lt;br /&gt;
+Crashes Since Last Report:           4&lt;br /&gt;
+Per-App Interval Since Last Report:  0 sec&lt;br /&gt;
+Per-App Crashes Since Last Report:   1&lt;/p&gt;
+
+&lt;p&gt;Date/Time:       2011-04-01 03:08:54.281 -0400&lt;br /&gt;
+OS Version:      Mac OS X 10.5.8 (9L30)&lt;br /&gt;
+Report Version:  6&lt;br /&gt;
+Anonymous UUID:  73DB4BA5-E98F-4BAB-B4AB-27552E0699B0&lt;/p&gt;
+
+&lt;p&gt;Exception Type:  EXC_BREAKPOINT (SIGTRAP)&lt;br /&gt;
+Exception Codes: 0x0000000000000002, 0x0000000000000000&lt;br /&gt;
+Crashed Thread:  0&lt;/p&gt;
+
+&lt;p&gt;Dyld Error Message:&lt;br /&gt;
+  unknown required load command 0x80000022&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+
+</feed>

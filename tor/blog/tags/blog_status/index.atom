@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged blog_status</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/blog_status/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/blog_status/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/blog_status/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T23:52:08Z</updated>
+<entry>
+	<title>todo</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/todo/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/todo/"/>
+
+	<author><name>jmt</name></author>
+
+
+
+
+
+
+	<category term="/tags/blog_status" />
+
+
+	<updated>2011-04-05T23:52:08Z</updated>
+	<published>2011-04-02T18:54:14Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;h2&gt;Blog Project Status&lt;/h2&gt;
+
+&lt;h3&gt;Phase I&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Base blog design/integration&lt;/li&gt;
+&lt;li&gt;Scrape posts&lt;/li&gt;
+&lt;li&gt;Scrape comments&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Phase II&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Design approval&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Subpage design adjustments (login page, etc)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Unconfirmed:&lt;/em&gt; Add page enhancements ( identi.ca, event calendar, etc.)&lt;/li&gt;
+&lt;li&gt;Update any hardlinks if needed. (i.e. author url)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Reminder to self&lt;/em&gt;: Remove or replace ga code &lt;em&gt;before&lt;/em&gt; final rebuild&lt;/li&gt;
+&lt;li&gt;Hand off files/ arrange setup of live blog&lt;/li&gt;
+&lt;/ul&gt;
+
+	</content>
+
+
+
+</entry>
+
+</feed>

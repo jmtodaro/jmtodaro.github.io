@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Vidalia Logo Design Contest</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_Logo_Design_Contest/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Anonymous (not verified): Comment 1</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_Logo_Design_Contest/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_Logo_Design_Contest/comment_1/</link>
+
+	<pubDate>Sat, 16 Aug 2008 06:10:41 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:10:41Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;a href=&quot;http://www.no-spec.com/&quot; rel=&quot;nofollow&quot;&gt;And spec work is a bad thing&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I hope whoever is behind running the contest considers reading that site and following the advice put forth.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 2</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_Logo_Design_Contest/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_Logo_Design_Contest/comment_2/</link>
+
+	<pubDate>Sun, 17 Aug 2008 06:10:42 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:10:42Z</dcterms:modified>
+
+	<description>&lt;p&gt;Off-topic suggestion:&lt;/p&gt;
+
+&lt;p&gt;Adding some of this somewhere in Tor&#39;s documentation or Wik could be helpful.&lt;/p&gt;
+
+&lt;p&gt;    *  Use Firefox Portable for Tor only sessions.&lt;br /&gt;
+    * Go through the preferences and disable anything that logs or leaks information. This includes, but is not limited to:&lt;br /&gt;
+          o In &quot;Content,&quot; disable java/javascript.&lt;br /&gt;
+          o In &quot;Privacy,&quot; remember nothing. Remember no history. Don&#39;t accept cookies, no exceptions. Always clear everything before closing.&lt;br /&gt;
+          o In &quot;Security,&quot; warn before installing addons. Remove all exceptions. Remember no passwords.&lt;br /&gt;
+          o In &quot;Advanced&quot; - Network, set the cache size to 0.&lt;br /&gt;
+          o In &quot;Advanced&quot; - Update, disable auto updating/checking for updates.&lt;br /&gt;
+    * Install the Torbutton extension - the one that overhauls browser security, not just change proxy settings. The latest version at this time is 1.2.0.&lt;br /&gt;
+          o Enable every check mark.&lt;br /&gt;
+          o Clear cookies on any browser shutdown (but cookies should be disabled!).&lt;br /&gt;
+          o Clear cookies on Tor toggle (&quot;&quot;).&lt;br /&gt;
+          o Whenever there&#39;s an option to choose between Tor and non-Tor, choose Tor.&lt;br /&gt;
+          o Block tor disk cache, but you&#39;ll want to allow memory cache to prevent redownloading of images.&lt;br /&gt;
+          o Make sure the proxy settings point to privoxy.&lt;br /&gt;
+    * Set network.http.sendRefererHeader to 0 in about:config. Also set false for network.http.sendSecureXSiteReferrer, or use Refcontrol.&lt;br /&gt;
+    * In the proxy settings make sure the proxy exceptions list is empty. It can be used as a way for sites to access localhost.&lt;br /&gt;
+    * One annoying thing about Firefox is the way it handles external applications. You want to disable them all because sites may call telnet for example, which can leak your IP address among other things. Look in about:config for network.protocol-handler.external. You&#39;ll want to set the default and all the subsettings to false. Then look for network.protocol-handler.warn-external. You want to set the default and all the subsettings to true. Is there an extension that does this?&lt;br /&gt;
+    * Firefox checks for extensions without the user&#39;s consent; a temporary solution is to set extensions.blocklist.enabled to false.&lt;br /&gt;
+    * There are probably other information leaks that could come about if you accidentally click a button. Search through about:config for URLs and blank them out. The types of links I&#39;ve seen are http, https, and rdp. Don&#39;t remove anything with chrome:// or resource:// though.&lt;br /&gt;
+    * Make sure the plugin directory is empty. Do this again every time you update Flash or Shockwave.&lt;br /&gt;
+    * Set the home page to about:blank &lt;/p&gt;
+
+&lt;p&gt;Because of the huge amount of lag associated with Tor, pipelining, i.e. sending http requests in batches, makes a lot of sense. Go to about:config and make the following changes: network.http.keep-alive.timeout:600 network.http.max-persistent-connections-per-proxy:16 network.http.pipelining:true network.http.pipelining.maxrequests:8 network.http.proxy.keep-alive:true network.http.proxy.pipelining:true&lt;/p&gt;
+
+&lt;p&gt;You should also disable prefetching. This is when the browser tries to predict what the user will click next. It is a waste of Tor bandwidth, and should be disabled by setting network.prefetch-next to false.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 3</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_Logo_Design_Contest/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_Logo_Design_Contest/comment_3/</link>
+
+	<pubDate>Fri, 18 Dec 2009 06:10:43 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:10:43Z</dcterms:modified>
+
+	<description>I still find Drupal templates sites are lagging behind the number of Joomla template sites. The more templates available free or otherwise will help the popularity of Drupal.
+</description>
+
+
+</item>
+
+</channel>
+</rss>

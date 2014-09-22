@@ -1,0 +1,953 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Apple broke OpenSSL which breaks Tor on OS X</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FApple_broke_OpenSSL_which_breaks_Tor_on_OS_X&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Apple broke OpenSSL which breaks Tor on OS X</a>
+
+</span>
+
+
+<div id="content">
+<p>Apple OS X Security Update 2010-001 removes OpenSSL renegotation, <a href="http://support.apple.com/kb/HT1222" title="http://support.apple.com/kb/HT1222" rel="nofollow">http://support.apple.com/kb/HT1222</a>.  We've filed a bug report with Apple on this issue.  Their standard response so far is <a href="http://support.apple.com/kb/HT4004" title="http://support.apple.com/kb/HT4004" rel="nofollow">http://support.apple.com/kb/HT4004</a>.</p>
+
+<p>In the meanwhile, we have bug #1225 open, <a href="https://bugs.torproject.org/flyspray/index.php?do=details&amp;id=1225" title="https://bugs.torproject.org/flyspray/index.php?do=details&amp;id=1225" rel="nofollow">https://bugs.torproject.org/flyspray/index.php?do=details&amp;id=1225</a>.  Add yourself to the Notifications if you want updates as they happen.  A fine explanation of why Tor is not affected by the TLS renegotiation bug can be found at <a href="https://bugs.torproject.org/flyspray/index.php?do=details&amp;id=1225&amp;area=comments#3804" title="https://bugs.torproject.org/flyspray/index.php?do=details&amp;id=1225&amp;area=comments#3804" rel="nofollow">https://bugs.torproject.org/flyspray/index.php?do=details&amp;id=1225&amp;area=c...</a></p>
+
+<p>Packages for testing are available at:<br />
+<a href="https://www.torproject.org/dist/testing/" title="https://www.torproject.org/dist/testing/" rel="nofollow">https://www.torproject.org/dist/testing/</a></p>
+
+<p><strong>READ THIS FINE PRINT</strong>: <span class="read-more"><a href="http://blog.torproject.org/blog/apple-broke-openssl-which-breaks-tor-os-x"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+<p><ol>
+<li> These will only work on OSX 10.5 and 10.6 (both i386 and powerpc).   Tor fails to compile when using the 10.4 libraries and static openssl.</li>
+<li> Tor-0.2.2.8-alpha-i386-Bundle.dmg is compiled to replace the tor<br /></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/apple_os_x/" rel="tag">apple os x</a>
+
+<a href="../../tags/new_packages/" rel="tag">new packages</a>
+
+<a href="../../tags/no_love_from_apple/" rel="tag">no love from apple</a>
+
+<a href="../../tags/openssl/" rel="tag">openssl</a>
+
+<a href="../../tags/static_compilation/" rel="tag">static compilation</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-cc3b5297b5f998baa0d84006577b36ec">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+Thanks phobos, the 0.2.2.8-alpha build works on my mac - posting from within China's GFW <img src="../../smileys/smile.png" alt=":)" />
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 27 Jan 2010 06:49:17 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-18cae8a0bc46df2824e128c4d07ca18a">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+The tor bundle puts binaries in the wrong location.  I believe in /Applications/Vidalia.app/Contents.  You have to move them to MacOS.  Once this is done, tor connects again.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 28 Jan 2010 06:49:18 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-116b0b2f2e4bf2a88db33b671d825cd4">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+The tor bundle puts binaries in the wrong location.  I believe in /Applications/Vidalia.app/Contents.  You have to move them to MacOS.  Once this is done, tor connects again.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 28 Jan 2010 06:49:19 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c8252487f7f9033cb9b00dbfad5ede1b">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+https://check.torproject.org/ tells me that i'm using tor. Thank you for your work
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 28 Jan 2010 06:49:20 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-92bdc3b193ff0629d3de6f5f8856bac3">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+Can I just say that I (we) really appreciate your (anyone's) dedication to this project and the efficiency with which this problem has been identified and (mostly) dealt with in a professional and officiated manner. Thank you.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 28 Jan 2010 06:49:21 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-66ee8695c9c3dc01c5ff9b33017fc953">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>Also posting from within China's de facto intranet.<br />
+I really had a fright and thought they had managed to block most of the bridges.<br />
+Thanks for the quick fix!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 28 Jan 2010 06:49:22 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b3fb1dfaa4c26c2d6a28062cdf7a6179">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+I would really appreciate if someone could please spell out how to fix this in language that can be understood by someone who lacks the computing skills which most of you seem to share. Which buttons do I press in what order please?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 29 Jan 2010 06:49:23 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0e79da2a018b6401e4b2a5636c75f1cd">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+<p>From what I understand, the latest Apple security update which you probably downloaded for your computer disabled something Tor needs to work called "OpenSSL". It was found that it could leak information so it was disabled by Apple as a "preventive security measure" until they fix the problem. </p>
+
+<p>If you're using Tor then you probably don't want a leak in the pipeline spilling your sensitive data right? Apple is trying to help keep things more secure. You'll just have to wait until Apple re-enables it - hopefully soon with the Security Update. </p>
+
+<p>I myself don't know how to undo it if you already installed the security update, but if you have Time Machine backup running, it may be possible to roll back on to a period before the system update and Tor may work once again. Otherwise, I can't say how to fix it. Another suggestion floating around was to use an older version of Tor/Vidalia if you can find one and install that. </p>
+
+<p>Hope this helps.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 29 Jan 2010 06:49:24 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-248b79a3037d2755a96c132fc7780cf2">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+<p>OpenSSL was not disabled, it was patched to disable TLS renegotiation temporarily while the protocol is repaired.<br />
+In terms of fixing Tor, you can either wait for a further OSX update or go to https://www.torproject.org/dist/osx/ and download Tor-X.X.X.X-alpha-i386-Bundle.dmg (I downloaded 0.2.2.9). Then open the image and run the installer. After that Vidalia should work.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 05 Mar 2010 06:49:25 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c3a1c9d650bc92f097594a4ebdb55892">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+The 0.2.2.8-alpha installer puts the updated files in /Applications/Vidalia.app (alongside the "Contents" folder), so it doesn't work. As another user reported, manually moving the four files into /Applications/Vidalia.app/Contents/MacOS/ fixes the problem. Note that there are more than four files in that directory, but this update is replacing only four of them.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 29 Jan 2010 06:49:26 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0edaed6295b7c18c784e942206068cf0">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+<p>&gt; https://www.torproject.org/dist/testing/</p>
+
+<p>Works as advertised on 10.5.8 PPC. Made no changes and did not move any files. Actually, it appears to be responding more quickly than before as well.</p>
+
+<p>Thanks much.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 30 Jan 2010 06:49:27 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-08977fd9ad6c5a879ca9c4d1fb16b6bd">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+<p>I'm running Tor on a Mac OSX 10.5.8 and had all the problems described after installing the Apple security update recently. I've just installed vidalia-bundle-0.2.2.8-alpha-0.2.7-i386.dmg and Tor is back up and running again.</p>
+
+<p>Great work, thanks a bundle.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 31 Jan 2010 06:49:28 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b707f66bf0e0f9cd164e670bc9e64f1a">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+<p>"plain language" instructions as to how it worked for me.  </p>
+
+<p>Delete your current Vidalia application and delete the TOR folder in library/application support</p>
+
+<p>Go to https://www.torproject.org/dist/testing/<br />
+download vidalia-bundle-0.2.2.8-alpha-0.2.7-i386 or PPC depending on your mac.  I simply installed this and TOR worked</p>
+
+<p>I don't think you need to install Tor-0.2.2.8-alpha-i386-Bundle (or PPC) but I could be wrong</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 31 Jan 2010 06:49:29 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-873157318376407cb7cab04b739a811b">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+should have mentioned that I am on 10.6.2, i386
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 31 Jan 2010 06:49:30 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3534930444f0e11970ef4ba6b26f7a88">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+<p>Is it just a coincidence, or is Tor now running more snappily than before?</p>
+
+<p>I followed the instructions given by another commentator to repair the glitch and after installing the 0.2.2.8 alpha bundle I've noticed that the sites I visit using Vidalia-Tor load faster than before, even while using familiar relays, I like the fact that out of a glitch I seem to have wound up with a more efficient Tor experience.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 07 Feb 2010 06:49:31 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-26b67e1f34895d316175e4c7f4db4f52">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+<p>Steve Jobs loves Mahmoud Amadinejahd..</p>
+
+<p>this update is bloking apple user to help tor user during this hot days .... not a month ago... today ...</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 11 Feb 2010 06:49:32 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8220a277364af3bae7e28dc570ee27a7">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+<p>I could not run tor on my osx 10.6.2...</p>
+
+<p>https://www.torproject.org/dist/testing/ download vidalia-bundle-0.2.2.8-alpha-0.2.7-i386  does not exist</p>
+
+<p>Tor-0.2.2.8-alpha-i386-Bundle.dmg does not install nothing</p>
+
+<p>vidalia 0.2.6 does not open network</p>
+
+<p>vidalia 0.2.7 crashes at startup</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 11 Feb 2010 06:49:33 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-056dad40fc697356176919e1d7e65f4a">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+Brilliant, thank you. I have been trying various recompiles of tor and openssl for about a week with no luck. This works!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 05 Mar 2010 06:49:34 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7ee0667b5f198ef077b9fd287b88745e">
+
+<div class="comment-subject">
+
+Comment 19
+
+</div>
+
+<div class="inlinecontent">
+<p>Dear All,<br />
+I'm new in Mac, I try install all differente dmg files of vidalia from torproject.com page, but all of them come back  saying  " the following disk image failure mounted (file not recognized":</p>
+
+<p>vidalia-bundle-0.2.1.25-0.2.7-i386.dmg<br />
+vidalia-bundle-0.2.1.25-0.2.7-ppc.dmg<br />
+and the other too....</p>
+
+<p> I have try both i386 and ppc, could not install at all, I'm using a  leopard 10.5.8  .... can anyone help out.</p>
+
+<p>thanks guys, that will help me go out of  China GFW....</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 17 Apr 2010 06:49:35 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ae2a7a5c7bf1c25f4e77586c97049191">
+
+<div class="comment-subject">
+
+Comment 20
+
+</div>
+
+<div class="inlinecontent">
+<p>Here's my problem:<br />
+DL'd latest Vidalia bundle (0.2.9)...no installer in the bundle. Only Vidalia, which you drag to your Applications folder. I dumped the old Vidalia, and looked for TOR in the Library&gt;Application Support folder, and it wasn't there. I checked the contents of the app, and all the files are in their proper folders. (So that when I show the contents, there is one folder (Content) with three folders (Frameworks, MacOS, and Resources) and one file (info.plist). There are no stray files, in other words.</p>
+
+<p>When I start up Vidalia, though, its icon gets a big red X and it tells me it can't start. Can someone please give a tutorial so we dweebs can fix it? </p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 10 Jun 2010 06:49:36 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b7c64d49b9d8a4fbd539c9b1b467c1f1">
+
+<div class="comment-subject">
+
+Comment 21
+
+</div>
+
+<div class="inlinecontent">
+Attempting to run Tor on Mac OS X 10.4.11 on PowerPC, specifically an iBook G3. This is the most recent version of Mac OS X that works on an iBook G3. Both stable and unstable bundles fail to start. Advice?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 29 Mar 2011 06:49:37 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FApple_broke_OpenSSL_which_breaks_Tor_on_OS_X&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:49:16 AM CDT</span>
+<!-- Created <span class="date">Wed 27 Jan 2010 12:14:35 PM CST</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged firefox_updates</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/firefox_updates/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/firefox_updates/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/firefox_updates/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:17:48Z</updated>
+<entry>
+	<title>Web Developers and Firefox Hackers: Help us with Firefox 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Web_Developers_and_Firefox_Hackers_Help_us_with_Firefox_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Web_Developers_and_Firefox_Hackers_Help_us_with_Firefox_4/"/>
+
+	<author><name>mikeperry</name></author>
+
+
+
+
+
+
+	<category term="/tags/firefox_updates" />
+
+	<category term="/tags/tbb" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+	<category term="/tags/torbrowser" />
+
+	<category term="/tags/updated_packages" />
+
+
+	<updated>2011-04-05T12:17:48Z</updated>
+	<published>2011-03-25T23:36:47Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;We need some web-savvy people to help us audit the &lt;a href=&quot;https://www.torproject.org/torbutton/&quot; rel=&quot;nofollow&quot;&gt;Torbutton alpha series&lt;/a&gt; for Firefox 4.  I&#39;ve performed a preliminary audit, and Torbutton 1.3.2-alpha should be safe from major issues, but a lot more testing is needed. In particular, we need people to test the &lt;a href=&quot;https://developer.mozilla.org/en/Firefox_4_for_developers&quot; rel=&quot;nofollow&quot;&gt;new Firefox 4 features&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://gitweb.torproject.org/torbutton.git/blob_plain/HEAD:/website/design/FF40_AUDIT&quot; rel=&quot;nofollow&quot;&gt;notes from my preliminary audit&lt;/a&gt; are available in the Torbutton git repository, but note that I have not tested everything that struck me as potentially troublesome, and there may be other things I missed too.&lt;/p&gt;
+
+&lt;p&gt;As a reminder, the types of things we are looking for are things that violate the &lt;a href=&quot;https://www.torproject.org/torbutton/en/design/#requirements&quot; rel=&quot;nofollow&quot;&gt;Torbutton Security Requirements&lt;/a&gt;, which may include new ways to bypass proxy settings, to fingerprint users, or to use novel identifiers to correlate Tor and Non-Tor activity.&lt;/p&gt;
+
+&lt;p&gt;In addition, we may have some funding to address &lt;a href=&quot;https://www.torproject.org/torbutton/en/design/#FirefoxBugs&quot; rel=&quot;nofollow&quot;&gt;outstanding Torbutton-related bugs&lt;/a&gt; in Firefox. If you know C++ and/or Firefox internals, we should be able to pay you for your time to address these issues and shepherd the relevant patches through Mozilla&#39;s review process.&lt;/p&gt;
+
+&lt;p&gt;If you find issues, or if you are interested in working on fixing these bugs, please contact us at tor-assistants at torproject dot org. Torbutton bugs that you find can be added to the growing pile at the &lt;a href=&quot;https://trac.torproject.org/projects/tor/report/14&quot; rel=&quot;nofollow&quot;&gt;Torbutton Bug Tracker&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The sooner we get these issues taken care of, the sooner we can confidently release a stable Torbutton for Firefox 4.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Web_Developers_and_Firefox_Hackers_Help_us_with_Firefox_4/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Web_Developers_and_Firefox_Hackers_Help_us_with_Firefox_4/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Trip report, UCSD</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Trip_report_UCSD/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Trip_report_UCSD/"/>
+
+	<author><name>arma</name></author>
+
+
+
+
+
+
+	<category term="/tags/alpha_releases" />
+
+	<category term="/tags/firefox_updates" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+	<category term="/tags/torbrowser" />
+
+
+	<updated>2011-04-05T12:06:55Z</updated>
+	<published>2010-08-28T06:11:08Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;On Sunday (8/22) through Wednesday (8/25), I visited the Tor research group at &lt;a href=&quot;http://www-cse.ucsd.edu/&quot; rel=&quot;nofollow&quot;&gt;UCSD&lt;/a&gt; as part of my ongoing plans to help academic research groups &lt;a href=&quot;https://www.torproject.org/research&quot; rel=&quot;nofollow&quot;&gt;better understand Tor and its research problems&lt;/a&gt;. Damon McCoy has a fellowship (postdoc) there for last year and this coming year, and he&#39;s brought Kevin Bauer in from UColorado from now until December. They have two systems profs with congestion control background (Stefan Savage and Geoff Voelker) interested in helping them work on Tor and performance.&lt;/p&gt;
+
+&lt;p&gt;Kevin is planning to spend the next year on Tor performance work, as the last chapter of his thesis. He&#39;s also applied to &lt;a href=&quot;https://blog.torproject.org/blog/tor-related-research-positions-university-waterloo&quot; rel=&quot;nofollow&quot;&gt;Ian Goldberg&#39;s postdoc position at Waterloo&lt;/a&gt;. He seems like a smart and dedicated guy; I&#39;d be excited if Ian picks him.&lt;/p&gt;
+
+&lt;p&gt;I spent most of my time walking Damon and Kevin through Tor&#39;s current congestion control levels -- explaining what Tor does, as well as what I think is actually resulting from each of these components. Kevin has lots of notes, and if all goes well that will seed the core of a &quot;Why else is Tor slow&quot; whitepaper over the coming months, as a sequel to &lt;a href=&quot;https://blog.torproject.org/blog/why-tor-is-slow&quot; rel=&quot;nofollow&quot;&gt;the original&lt;/a&gt;. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/trip-report-ucsd&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Trip_report_UCSD/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Trip_report_UCSD/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor Browser Bundle for Windows 1.3.7 Released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Windows_1_3_7_Released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Windows_1_3_7_Released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/firefox_updates" />
+
+	<category term="/tags/pidgin_updates" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+
+	<updated>2011-04-05T12:04:09Z</updated>
+	<published>2010-07-05T02:53:13Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;On July 4th, we released Tor Browser Bundle 1.3.7 for Microsoft Windows.  This is merely a security update release for Firefox and Pidgin.  You can download this at &lt;a href=&quot;https://torproject.org/torbrowser&quot; title=&quot;https://torproject.org/torbrowser&quot; rel=&quot;nofollow&quot;&gt;https://torproject.org/torbrowser&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The only changes are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;update to Firefox 3.5.10 to fix some security issues&lt;/li&gt;
+&lt;li&gt;update to Pidgin 2.7.1r2 to fix some security issues&lt;/li&gt;
+&lt;/ul&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Windows_1_3_7_Released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Windows_1_3_7_Released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor Browser Bundle 1.3.1 Released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/firefox_updates" />
+
+	<category term="/tags/pidgin_updates" />
+
+	<category term="/tags/security_critical" />
+
+	<category term="/tags/security_fixes" />
+
+
+	<updated>2011-04-05T11:48:40Z</updated>
+	<published>2010-01-23T12:53:13Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;The latest in the Tor Browser series, version 1.3.1 is released.  This includes updates to Firefox, Pidgin, and Tor.&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.1.22 rotates two of the seven v3 directory authority keys and&lt;br /&gt;
+locations, due to a security breach of some of the Torproject servers:&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Jan-2010/msg00161.html&quot; title=&quot;http://archives.seul.org/or/talk/Jan-2010/msg00161.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Jan-2010/msg00161.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It also fixes a privacy problem in bridge directory authorities -- it&lt;br /&gt;
+would tell you its whole history of bridge descriptors if you make the&lt;br /&gt;
+right directory request.&lt;/p&gt;
+
+&lt;p&gt;Everybody should upgrade:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/easy-download&quot; title=&quot;https://www.torproject.org/easy-download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/easy-download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The changelog is:&lt;/p&gt;
+
+&lt;p&gt;1.3.1: Released 2010-01-22&lt;br /&gt;
+  update Firefox to 3.5.7&lt;br /&gt;
+  update Pidgin to 2.6.5&lt;br /&gt;
+  update Tor to 0.2.1.22&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor Browser Bundle 1.3.0 Released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_0_Released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_0_Released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/firefox_updates" />
+
+	<category term="/tags/pidgin_updates" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+	<category term="/tags/torbutton" />
+
+
+	<updated>2011-04-05T11:46:12Z</updated>
+	<published>2010-01-04T02:25:20Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;On December 31, 2009, I released the latest in the Tor Browser Bundle series, 1.3.0.  The version bump from 1.2.10 to 1.3.0 is due to the change to Firefox 3.5.6 (from Firefox 3.0.15).  &lt;/p&gt;
+
+&lt;p&gt;You can get the latest TBB in 12 languages at &lt;a href=&quot;https://www.torproject.org/torbrowser/&quot; title=&quot;https://www.torproject.org/torbrowser/&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/torbrowser/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Torbutton 1.2.4 fixes a number of privacy and anonymity issues with the Firefox 3.5.x code base.&lt;/p&gt;
+
+&lt;p&gt;The official changelog is:&lt;/p&gt;
+
+&lt;p&gt;- upgrade Firefox to 3.5.6&lt;br /&gt;
+- update Pidgin to 2.6.4&lt;br /&gt;
+- update Torbutton to 1.2.4&lt;/p&gt;
+
+&lt;p&gt;Feel free to file bugs at&lt;br /&gt;
+&lt;a href=&quot;https://bugs.torproject.org/flyspray/index.php?tasks=all&amp;amp;project=4&quot; title=&quot;https://bugs.torproject.org/flyspray/index.php?tasks=all&amp;amp;project=4&quot; rel=&quot;nofollow&quot;&gt;https://bugs.torproject.org/flyspray/index.php?tasks=all&amp;amp;project=4&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The original announcement is at &lt;a href=&quot;http://archives.seul.org/or/talk/Jan-2010/msg00037.html&quot; title=&quot;http://archives.seul.org/or/talk/Jan-2010/msg00037.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Jan-2010/msg00037.html&lt;/a&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_0_Released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_0_Released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor Browser Bundle 1.2.7 Released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/firefox_updates" />
+
+	<category term="/tags/libevent_updates" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+
+	<updated>2011-04-05T11:32:49Z</updated>
+	<published>2009-08-06T15:12:42Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor Browser Bundle 1.2.7 is released.  It is updated primarily due to Firefox 3.0.13 with its ssl fixes.&lt;/p&gt;
+
+&lt;p&gt;The full changelist is:&lt;/p&gt;
+
+&lt;p&gt;1.2.7: Released 2009-08-04&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;update Firefox to 3.0.13&lt;/li&gt;
+&lt;li&gt;add Polish translation&lt;/li&gt;
+&lt;li&gt;update libevent to 1.4.12&lt;/li&gt;
+&lt;/ul&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor Browser Bundle 1.2.1 Released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_1_Released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_1_Released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/firefox_updates" />
+
+	<category term="/tags/pidgin_updates" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+
+	<updated>2011-04-05T11:28:20Z</updated>
+	<published>2009-06-21T12:44:26Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/torbrowser/&quot; rel=&quot;nofollow&quot;&gt;Tor Browser Bundle 1.2.1&lt;/a&gt; is released.  The major changes are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt; changes to Firefox to stop scanning for plugins such as Java, Windows Media, etc.  These were disabled by torbutton, but still showed up in Firefox.  More work will continue on this task&lt;/li&gt;
+&lt;li&gt; Include OpenSSL dll (ssleay32.dll) so we&#39;re not relying upon the system ssl dll.  This should fix Vidalia errors relating to ssl differences.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The official changelog is:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Better updates to Firefox to stop scanning for plugins on start&lt;/li&gt;
+&lt;li&gt;Update Pidgin to 2.5.6r2&lt;/li&gt;
+&lt;li&gt;Update Firefox to 3.0.11&lt;/li&gt;
+&lt;li&gt;Include OpenSSL 0.9.8k DLL and stop using the system ssl dll&lt;/li&gt;
+&lt;li&gt;Update Tor to 0.2.1.16-rc&lt;/li&gt;
+&lt;/ul&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_1_Released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_1_Released/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

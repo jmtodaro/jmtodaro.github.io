@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged circumvention</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/circumvention/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Measuring Tunisian Tor Usage</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tunisian_Tor_Usage/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tunisian_Tor_Usage/</link>
+
+
+	<category>/tags/circumvention</category>
+
+	<category>/tags/internet_censorship</category>
+
+	<category>/tags/metrics</category>
+
+	<category>/tags/tunisia</category>
+
+
+	<pubDate>Thu, 06 Jan 2011 20:28:34 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:11:44Z</dcterms:modified>
+
+	<description>&lt;p&gt;I&#39;ve been following the crackdown on Internet freedom in Tunisia over the past few weeks.  I run an unpublished &lt;a href=&quot;https://www.torproject.org/docs/bridges.html.en&quot;&gt;tor bridge&lt;/a&gt; for some Tunisian activists.  It&#39;s been used fairly well for the past 18 months, however it has not seen traffic for a week.  Tor usage from Tunisia has never been very high, but for those who need it, it&#39;s been a lifesaver; or so I&#39;ve been told.  An example of what&#39;s going on in the country: &lt;a href=&quot;http://jilliancyork.com/2011/01/06/tunisian-blogger-slim-amamou-arrested/&quot;&gt;Slim Amamou arrested&lt;/a&gt;, &lt;a href=&quot;http://globalvoicesonline.org/specialcoverage/tunisia-uprising-201011/&quot;&gt;Global Voices&#39; coverage of Tunisia&lt;/a&gt;, &lt;a href=&quot;http://advocacy.globalvoicesonline.org/categories/countries/tunisia/&quot;&gt;Global Voices Advocacy: Tunisia&lt;/a&gt;, and &lt;a href=&quot;http://english.aljazeera.net/indepth/features/2011/01/20111614145839362.html&quot;&gt;Tunisia&#39;s bitter cyberwar&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Out of interest, I wondered how Tor usage in Tunisia has fared over 2010. I wonder if Facebook, Twitter, and other social network services are seeing an increase of users logging into Tunisian social networks from Tor. &lt;/p&gt;
+
+&lt;p&gt;It appears we&#39;re having an impact in Tunisia.  More help is needed.&lt;/p&gt;
+
+&lt;p&gt;This is graph of Tor clients directly connecting to the rest of the network:&lt;br /&gt;
+&lt;img src=&quot;https://blog.torproject.org/files/direct-users-2010-12-31-tn-2010-01-01.png&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a graph of Tor clients connecting through bridges to the rest of the network:&lt;br /&gt;
+&lt;img src=&quot;https://blog.torproject.org/files/bridge-users-2010-12-31-tn-2010-01-01.png&quot;&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tunisian_Tor_Usage/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: In praise of multiple options for circumvention</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/In_praise_of_multiple_options_for_circumvention/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/In_praise_of_multiple_options_for_circumvention/</link>
+
+
+	<category>/tags/anonymity_advocacy</category>
+
+	<category>/tags/circumvention</category>
+
+	<category>/tags/education</category>
+
+
+	<pubDate>Mon, 16 Feb 2009 18:31:16 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:19:16Z</dcterms:modified>
+
+	<description>&lt;p&gt;I was asked the other day why we don&#39;t advocate for just Tor as the one tool to rule them all.  My glib answer is &quot;of course we do, however the larger the toolbox, the better off the world.&quot;  &lt;/p&gt;
+
+&lt;p&gt;Expanding on that notion, the various anonymity, privacy, and circumvention tools target different people and use cases.  Tor advocates for &lt;a href=&quot;https://blog.torproject.org/blog/circumvention-and-anonymity&quot; rel=&quot;nofollow&quot;&gt;Anonymity first, circumvention second&lt;/a&gt;.  It would be very naive of us to think that we can solve all use cases.  In fact, it would be silly of us to try to dictate the needs of any user.  The larger the ecosystem of privacy and anonymity tools, the more options for users, and the better off we are as a whole. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/praise-multiple-options-circumvention&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/In_praise_of_multiple_options_for_circumvention/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

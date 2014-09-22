@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged ssl_man-in-the-middle</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/ssl_man-in-the-middle/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/ssl_man-in-the-middle/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/ssl_man-in-the-middle/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:12:08Z</updated>
+<entry>
+	<title>Update on Internet censorship in Iran</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Update_on_Internet_censorship_in_Iran/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Update_on_Internet_censorship_in_Iran/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/great_potato_wall" />
+
+	<category term="/tags/internet_censorship" />
+
+	<category term="/tags/iran" />
+
+	<category term="/tags/ssl_man-in-the-middle" />
+
+
+	<updated>2011-04-05T12:12:08Z</updated>
+	<published>2011-01-21T07:11:28Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Here&#39;s a quick update on what we&#39;re seeing from Tor clients in Iran.  This is an update to &lt;a href=&quot;https://blog.torproject.org/blog/new-blocking-activity-iran&quot; title=&quot;https://blog.torproject.org/blog/new-blocking-activity-iran&quot;&gt;https://blog.torproject.org/blog/new-blocking-activity-iran&lt;/a&gt;.  It appears that one of the five Iranian ISPs is experimenting in blocking censorship circumvention tools; such as Tor, Freegate, Ultrasurf, and Hot Spot Shield.  There have been reports that this update to censorship technologies was coming soon, &lt;a href=&quot;https://www.azadcyber.info/articles/1560&quot; title=&quot;https://www.azadcyber.info/articles/1560&quot;&gt;https://www.azadcyber.info/articles/1560&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Previously, we had data suggesting that ssl-connections were being throttled or experiencing a forced reduced-throughput.  It seems this is no longer the case.  A simple IP address access list is used to stop access to the public Tor nodes, as well as many Tor bridges.   An example of this blocklist on the Iranian Tor users:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://blog.torproject.org/files/direct-users-2011-01-21-ir-2010-10-23.png&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://blog.torproject.org/files/bridge-users-2011-01-21-ir-2010-10-23.png&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;We are seeing success in users choosing to configure their Tor clients to use a &lt;a href=&quot;https://www.torproject.org/docs/proxychain&quot;&gt;socks or https proxy&lt;/a&gt; and then connecting to the public Tor network.  The trick here is that Iranian tor users now look to be coming from wherever the open proxy is located.  A few volunteers in Europe and SE Asia have setup &lt;a href=&quot;http://www.inet.no/dante/&quot;&gt;proxy servers&lt;/a&gt; restricted to Iranian IP space.&lt;/p&gt;
+
+&lt;p&gt;On a more technical level, here&#39;s what we were seeing last week for ssl manipulation, &lt;a href=&quot;https://blog.torproject.org/files/https-traffic-flow.txt&quot; title=&quot;https://blog.torproject.org/files/https-traffic-flow.txt&quot;&gt;https://blog.torproject.org/files/https-traffic-flow.txt&lt;/a&gt;.  What&#39;s interesting is the tor-server to client communication is with a TTL of 40.  The TLSv1 Encrypted Alert is from the tor-server, except the TTL is 39.  Unless the tor-server suddenly jumped one hop further from the client, something intercepted the connection and injected that packet on behalf of the tor-server.   &lt;/p&gt;
+
+&lt;p&gt;This week we&#39;re seeing straight IP blocking after the ssl handshake starts, &lt;a href=&quot;https://blog.torproject.org/files/ip-blocking.txt&quot; title=&quot;https://blog.torproject.org/files/ip-blocking.txt&quot;&gt;https://blog.torproject.org/files/ip-blocking.txt&lt;/a&gt;.  In both cases, this is to the same tor bridge from the same tor client as before.  &lt;/p&gt;
+
+&lt;p&gt;In a short few months, Iran has vastly improved the sophistication of their censorship technologies.  Right now, the best option is to use tor through open socks/https proxies.  A risk is the open proxies can see you are using tor, but cannot see the traffic passing through the open proxy, for everything is wrapped in layers of encryption by Tor.  However, it appears the Iranian Potato Wall can detect Tor or not in any case by analyzing the traffic on the wire.  We have reports this is true for other circumvention tools as well.&lt;/p&gt;
+
+&lt;p&gt;I thank the many people that have taken risks to share data with us.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Update_on_Internet_censorship_in_Iran/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Update_on_Internet_censorship_in_Iran/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

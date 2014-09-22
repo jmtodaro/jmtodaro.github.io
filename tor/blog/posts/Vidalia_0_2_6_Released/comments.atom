@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Vidalia 0.2.6 Released</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_6_Released/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_6_Released/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_6_Released/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:40:55Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_6_Released/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_6_Released/comment_1/"/>
+
+	<author><name>SwissTorExit (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:50Z</updated>
+	<published>2009-11-13T12:40:50Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;hello guys,&lt;/p&gt;
+
+&lt;p&gt;I use now for a time this version and i can only said that it work really great and can only recommend &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_6_Released/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Best regards&lt;/p&gt;
+
+&lt;p&gt;SwissTorExit&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_6_Released/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_6_Released/comment_2/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:51Z</updated>
+	<published>2009-11-15T12:40:51Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;TOR目前的BUG&lt;br /&gt;
+1:流量有一定的特征码，目录列表容易取得&lt;br /&gt;
+2：TCP高端口，容易识别&lt;br /&gt;
+3：访问目标网页容易解密&lt;br /&gt;
+4：下载的人再多，都是些光使用不上传的用户&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_6_Released/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_6_Released/comment_3/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:52Z</updated>
+	<published>2009-11-17T12:40:52Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor&#39;s traffic looks like ssl, nothing more.  All sorts of stuff runs on high ports, not just Tor.  do you perhaps mean that check.torproject.org is easy to fingerprint even inside ssl?&lt;/p&gt;
+
+&lt;p&gt;what are your solutions to these problems?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_6_Released/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_6_Released/comment_4/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:53Z</updated>
+	<published>2009-11-15T12:40:53Z</published>
+
+	<content type="html" xml:lang="en">
+	请建立只允许vip（付费用户）才能使用的加密节点、服务器，支持UDP，TOR整年都有人下，只有强制后台中继/出口，上传的人才会和下载的人一样多。不管的话，有100亿人用TOR都没用，反正TOR速度快了，用户明知TOR安装后就会自动中继也会继续安装的
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_6_Released/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_6_Released/comment_5/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:54Z</updated>
+	<published>2009-11-17T12:40:54Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;The problem with a paid service of SUPER HYPER MEGA SPEED TOR is that you&#39;d have to trust us with your information, not to divulge said info to law enforcement, and to secure the data against all possible attacks.  And we&#39;ll have to create a way to uniquely identify you to make sure your a valid, paid user.  &lt;/p&gt;
+
+&lt;p&gt;None of this is very anonymous.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_6_Released/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_6_Released/comment_6/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:55Z</updated>
+	<published>2009-12-18T12:40:55Z</published>
+
+	<content type="html" xml:lang="en">
+	I used an older version of Vidalia/Tor/Privoxy which worked great on my system.  I use Firefox as a browser.  Recently, I kept getting messages saying that my version of tor was no longer recommended.  I came to the tor website to get the newer version and downloaded it.  There was no way to install it.  I also didn&#39;t like torbutton and somehow it really screwed up my system.  My AOL browser was showing up with no images, just links and all kinds of stuff.  I&#39;m not really savvy (obviously) about all this and wonder why I can&#39;t just use my old Vidalia bundle and not have those annoying messages turn up.  Can I get help with this please?  I took the whole thing off my computer and now am not sure what to do.  Thanks.    Elena
+
+	</content>
+
+
+
+</entry>
+
+</feed>

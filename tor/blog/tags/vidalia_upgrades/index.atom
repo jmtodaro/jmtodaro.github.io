@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged vidalia_upgrades</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/vidalia_upgrades/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/vidalia_upgrades/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/vidalia_upgrades/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:58:14Z</updated>
+<entry>
+	<title>Tor Browser Bundle Updates</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_Updates/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_Updates/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+	<category term="/tags/vidalia_upgrades" />
+
+	<category term="/tags/zero_install_bundle" />
+
+
+	<updated>2011-04-05T11:58:14Z</updated>
+	<published>2010-06-01T19:11:31Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;On May 26, Tor Browser Bundle for Microsoft Windows is updated to include the newer Vidalia 0.2.9.  This fixes some issues with character set handling, and adds Vietnamese as a new language.&lt;/p&gt;
+
+&lt;p&gt;On May 31, we released Tor Browser Bundle for Linux 1.0.6.  It contains the following updates:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add arch to tarball name so there&#39;s no collision&lt;/li&gt;
+&lt;li&gt;Add libpng for Arch Linux&lt;/li&gt;
+&lt;li&gt;Add HTTPS Everywhere extension&lt;/li&gt;
+&lt;li&gt;Update Qt to 4.6.2&lt;/li&gt;
+&lt;li&gt;Update Vidalia to 0.2.9&lt;/li&gt;
+&lt;li&gt;Update NoScript to 1.9.9.80&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;On June 1st, we released Tor Browser Bundle for Linux 1.0.7.  It uses an older glibc for better compatibility with older linux distributions.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_Updates/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_Updates/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

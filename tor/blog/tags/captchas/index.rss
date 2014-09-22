@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged captchas</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/captchas/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>mikeperry: Torbutton Release 1.2.5, Google Captchas, and addons.mozilla.org</title>
+	<dcterms:creator>mikeperry</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/</link>
+
+
+	<category>/tags/captchas</category>
+
+	<category>/tags/data_retention</category>
+
+	<category>/tags/firefox</category>
+
+	<category>/tags/google</category>
+
+	<category>/tags/logging</category>
+
+	<category>/tags/mozilla</category>
+
+	<category>/tags/torbutton</category>
+
+
+	<pubDate>Sat, 10 Apr 2010 05:48:05 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:55:13Z</dcterms:modified>
+
+	<description>&lt;p&gt;Torbutton 1.2.5 has been released. You can download it from &lt;a href=&quot;https://www.torproject.org/torbutton/&quot;&gt;the torbutton homepage&lt;/a&gt;. It has also been submitted to &lt;a href=&quot;https://addons.mozilla.org/en-US/firefox/addon/2275/&quot;&gt;addons.mozilla.org&lt;/a&gt;, though it may take a while for Mozilla to review the addon.&lt;/p&gt;
+
+&lt;p&gt;In addition to the numerous bug fixes mentioned in the &lt;a href=&quot;https://gitweb.torproject.org//torbutton.git?a=blob;hb=HEAD;f=src/CHANGELOG&quot;&gt;changelog&lt;/a&gt;, one of the new features of this release is to provide the ability to automatically redirect to an alternate search engine when Google presents you with a captcha. The current options are &lt;a href=&quot;https://www.ixquick.com&quot;&gt;IxQuick&lt;/a&gt;, &lt;a href=&quot;http://www.bing.com&quot;&gt;Bing&lt;/a&gt;, &lt;a href=&quot;http://search.yahoo.com&quot;&gt;Yahoo&lt;/a&gt;, and &lt;a href=&quot;https://ssl.scroogle.org&quot;&gt;Scroogle&lt;/a&gt;. Since it supports SSL, and appears to have a &lt;a href=&quot;https://www.ixquick.com/eng/protect-privacy.html&quot;&gt;progressive stance on user privacy&lt;/a&gt;, IxQuick is the current default. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/torbutton-release-125-google-captchas-and-addonsmozillaorg&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

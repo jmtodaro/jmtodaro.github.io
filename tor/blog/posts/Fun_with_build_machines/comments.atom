@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Fun with build machines</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Fun_with_build_machines/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Fun_with_build_machines/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Fun_with_build_machines/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:10:32Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Fun_with_build_machines/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Fun_with_build_machines/comment_1/"/>
+
+	<author><name>sid77 (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:27Z</updated>
+	<published>2008-08-06T11:10:27Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;maybe trying to fit OS X inside VirtualBox is not worth the hassle, on the other hand if you&#39;ve a working OS X machine you can always build programs for the previous version of the operating system (in term of toolchain and basic libraries).&lt;br /&gt;
+10.3 can build programs up to 10.1 if you install the Xcode Legacy Tools (see the &quot;Developer Tools&quot; section under the &lt;a href=&quot;https://connect.apple.com/&quot; rel=&quot;nofollow&quot;&gt;ADC member site&lt;/a&gt; I&#39;m pretty confident that Tiger and Leopard will have something similar (at least you can always install Tiger Xcode 2.x in Leopard alongside its own 3.x)&lt;br /&gt;
+btw, also my powerbook disk died recently &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Fun_with_build_machines/../../smileys/ohwell.png&quot; alt=&quot;:-/&quot; /&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Fun_with_build_machines/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Fun_with_build_machines/comment_2/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:28Z</updated>
+	<published>2008-08-06T11:10:28Z</published>
+
+	<content type="html" xml:lang="en">
+	Well, we don&#39;t build the osx packages using xcode, but rather configure and makefiles.  Converting this system to xcode is not so easy; therefore this makes backporting challenging.  The other problem is I only have an older OS to use, not a newer.  So I can&#39;t forward compile the libs and such.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Fun_with_build_machines/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Fun_with_build_machines/comment_3/"/>
+
+	<author><name>sid77 (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:29Z</updated>
+	<published>2008-08-07T11:10:29Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;There&#39;s a little of misunderstood here :-p&lt;br /&gt;
+When I was talking about Xcode I was referring to the Xcode package itself rather then the single program.&lt;br /&gt;
+And installing the Xcode package brings you a whole toolchain (glibc, gcc and binutils) plus a gui program called Xcode (and, well, several others) &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Fun_with_build_machines/../../smileys/smile4.png&quot; alt=&quot;;-)&quot; /&gt;&lt;br /&gt;
+So, in the end, there&#39;s no porting involving: you install Xcode and legacy tools (or the two versions of the package) and you can build programs with the toolchain of your current system and with the toolchains of the previous ones.&lt;br /&gt;
+But yes, the problem regarding the version of the only working OS X is a stopper right now &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Fun_with_build_machines/../../smileys/sad.png&quot; alt=&quot;:(&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;good luck!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Fun_with_build_machines/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Fun_with_build_machines/comment_4/"/>
+
+	<author><name>Wearyman (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:30Z</updated>
+	<published>2008-08-07T11:10:30Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Not to sound snarky or rude, (God knows I certainly couldn&#39;t do the great Tor/Vidalia work you guys do) But, regardless of the virtualization issues you are having,  didn&#39;t you have a backup system in place?&lt;/p&gt;
+
+&lt;p&gt;I have a back up for all my systems at home and the most important things I have are digital photos of my kids and a pirate collection of all 6 Mythbusters seasons.  It seems remarkably foolish to be working on Tor source code and NOT have it (and your working environments) back up AT LEAST to a network-connected hard drive, if not a full tape system.&lt;/p&gt;
+
+&lt;p&gt;Of course, I have no clue about the financial situation you folks are in, so it may not be feasable to run a full tape backup.  But I would strongly recommend at least a big drive in a USB enclosure, or possibly uploading your data to a server somewhere between builds.&lt;/p&gt;
+
+&lt;p&gt;I will also freely admit that I could be completely mis-reading your post, and you did have everything backed-up, and your only issue is re-building your working environments for CentOS and OSx.  If that&#39;s the case, neeeeeveer miiiind!  &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Fun_with_build_machines/../../smileys/smile4.png&quot; alt=&quot;;)&quot; /&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Fun_with_build_machines/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Fun_with_build_machines/comment_5/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:31Z</updated>
+	<published>2008-08-17T11:10:31Z</published>
+
+	<content type="html" xml:lang="en">
+	Yes, everything is encrypted and backed up at least twice.  Getting replacement hardware that actually works is the issue.  I&#39;ve been through two hard drives that arrived DOA.  I await drive #3 to arrive, hopefully this one works!
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Fun_with_build_machines/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Fun_with_build_machines/comment_6/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:32Z</updated>
+	<published>2008-08-31T11:10:32Z</published>
+
+	<content type="html" xml:lang="en">
+	The mac mini is repaired and back online.  I&#39;ve uploaded 0.2.1.4-alpha packages.
+
+	</content>
+
+
+
+</entry>
+
+</feed>

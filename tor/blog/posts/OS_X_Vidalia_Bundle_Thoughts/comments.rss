@@ -1,0 +1,1281 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>OS X Vidalia Bundle Thoughts</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>jan (not verified): Comment 1</title>
+	<dcterms:creator>jan (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_1/</link>
+
+	<pubDate>Thu, 30 Oct 2008 06:13:15 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:13:15Z</dcterms:modified>
+
+	<description>&lt;p&gt;Many OSX apps get installed via a package. Just set your .dmg so that it contains a graphical hint to double-click and install.&lt;br /&gt;
+Drag-and-drop apps do a similar thing adding a graphic display to instruct the user to move the app to Application folder.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 2</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_2/</link>
+
+	<pubDate>Thu, 30 Oct 2008 06:13:16 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:13:16Z</dcterms:modified>
+
+	<description>i&#39;ve been using the vidalia bundle for a while on my mac, but it has privoxy installed (and starting up with the machine). if i install a new version of tor that uses polipo, what happens to my privoxy then?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 3</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_3/</link>
+
+	<pubDate>Thu, 30 Oct 2008 06:13:17 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:13:17Z</dcterms:modified>
+
+	<description>hopefully, your privoxy is replaced with polipo
+</description>
+
+
+</item>
+<item>
+
+	<title>Erik Swanson (not verified): Comment 4</title>
+	<dcterms:creator>Erik Swanson (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_4/</link>
+
+	<pubDate>Thu, 30 Oct 2008 06:13:18 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:13:18Z</dcterms:modified>
+
+	<description>&lt;p&gt;Installers, while not uncommon, should be used only as a last resort when there is absolutely no way to have things run sensibly from within fully independent bundles. (An example of something that legitimately warrants the use of an installer would be the massive amount of code/resources shared among the apps in Adobe&#39;s creative suite.)&lt;/p&gt;
+
+&lt;p&gt;For Tor, ignoring the browser bundle option, I think the best route to go would be to redesign Vidalia as a .prefpane and include tor and polipo inside the bundle.&lt;br /&gt;
+Preference panes are very user-friendly because double-clicking one opens it in System Preferences with the option of installing it on a per-user or system-wide basis. Uninstallation is also simple, as a user can remove a prefpane by control-clicking on it.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 5</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_5/</link>
+
+	<pubDate>Tue, 04 Nov 2008 06:13:19 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:19Z</dcterms:modified>
+
+	<description>&lt;p&gt;&quot;Much like the current Tor Browser Bundle (also, we should stop naming everything Tor), it would be self-contained and leave zero trace on the machine after closing.&quot; &lt;/p&gt;
+
+&lt;p&gt;I believe this would only work a) on OpenBSD or b) if you do not use swap or a pagefile.sys. &lt;/p&gt;
+
+&lt;p&gt;On OpenBSD, it can work because OpenBSD encrypts swap with highly volatile keys.  That is, once the application is done using swap, the key is deleted, effectively deleted traces of the application in swap.&lt;br /&gt;
+&lt;a href=&quot;http://www.openbsd.org/papers/swapencrypt.ps&quot; title=&quot;http://www.openbsd.org/papers/swapencrypt.ps&quot; rel=&quot;nofollow&quot;&gt;http://www.openbsd.org/papers/swapencrypt.ps&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://www.openbsd.org/papers/swapencrypt-slides.ps&quot; title=&quot;http://www.openbsd.org/papers/swapencrypt-slides.ps&quot; rel=&quot;nofollow&quot;&gt;http://www.openbsd.org/papers/swapencrypt-slides.ps&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In Linux, if you encrypt the swap partition (dm-crypt or loop-aes) with the random key option, it will at least choose a new random key each time the computer boots.  So, as long as you remember to reboot the computer after use, this should be good enough.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 6</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_6/</link>
+
+	<pubDate>Tue, 04 Nov 2008 06:13:20 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:20Z</dcterms:modified>
+
+	<description>All versions of OSX say they encrypt swap files, but do not do so completely.  strings your /var/vm/swapfile0 after opening Mail.app and notice all of the plaintext in there.  I&#39;ve opened a bug report for every version of OSX since 10.2 with this bug only to be ignored by Apple.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 7</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_7/</link>
+
+	<pubDate>Tue, 04 Nov 2008 06:13:21 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:21Z</dcterms:modified>
+
+	<description>And yes, &quot;secure vm&quot; is enabled in all cases.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 8</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_8/</link>
+
+	<pubDate>Sun, 09 Nov 2008 06:13:22 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:22Z</dcterms:modified>
+
+	<description>&lt;p&gt;Not all versions.  I have Mac OS X 10.2.8, and and I can&#39;t find any swap encryption or secure virtual memory feature in the Preferences.  (Incidentally, Tor doesn&#39;t work on Mac OS X 10.2.8 either.  Any chance of fixing that?  Well, at least JAP works, and I have another computer on which Tor does work.)&lt;/p&gt;
+
+&lt;p&gt;I believe the bug you mentioned can occur if you switch to using swap encryption after not using it.  Things that were in swap before it got encrypted stay unencrypted, unless you take additional measures like overwriting swap with 0s or, better yet, randomness, before encrypting it.  At least that&#39;s what I&#39;d guess based on what I&#39;ve read. &lt;/p&gt;
+
+&lt;p&gt;But I can&#39;t find any sort of technical description on the implementation.  They obviously don&#39;t bother deleting what&#39;s already there.  What about the keys?  Is there just one key you have to type in every time you boot?  (Unlikely, not user friendly, but that is the case for Windows users using Truecrypt to access a partition containing their pagefile.sys.)  If that were the case, the information would not be deleted, just unavailable to anyone who does not know the password when the computer is shut off.  Does it generate a random key at each boot, like Linux?  This is quite likely, but then the information is still available until the computer is shut down and the key deleted.  Or does it use highly volatile keys like OpenBSD?  That would be great, but considering they didn&#39;t even bother to automatically overwrite the swap file with random data when a user switches to encrypted swap, I doubt they thought it through that carefully.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 9</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_9/</link>
+
+	<pubDate>Mon, 10 Nov 2008 06:13:23 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:23Z</dcterms:modified>
+
+	<description>&lt;p&gt;The main reason tor no longer works in jaguar/10.2.8 is because we lack a copy of the OS and machine capable of running it.  Feel free to report bugs, even better if you&#39;ve tried to compile tor and vidalia and can report those bugs.&lt;/p&gt;
+
+&lt;p&gt;Tor is a non-profit and can accept donations.  (hint hint)&lt;/p&gt;
+
+&lt;p&gt;The build machine for panther is an old imac dv (g3 power and all).  Dual booting OSXes may be possible, too.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 10</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_10/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_10/</link>
+
+	<pubDate>Mon, 17 Nov 2008 06:13:24 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:24Z</dcterms:modified>
+
+	<description>&lt;p&gt;I downloaded the source for 0.2.0.31, the latest stable version at the moment.  ./configure worked fine, but make did not.  Here is the output from make:&lt;br /&gt;
+&lt;code&gt;&lt;br /&gt;
+make  all-recursive&lt;br /&gt;
+Making all in src&lt;br /&gt;
+Making all in common&lt;br /&gt;
+source=&#39;log.c&#39; object=&#39;log.o&#39; libtool=no \&lt;br /&gt;
+DEPDIR=.deps depmode=gcc /bin/sh ../../depcomp \&lt;br /&gt;
+gcc -DHAVE_CONFIG_H -I. -I../..   -I../common     -g -O2 -Wall -g -O2 -c log.c&lt;br /&gt;
+./compat.h:276: undefined type, found `socklen_t&#39;&lt;br /&gt;
+cpp-precomp: warning: errors during smart preprocessing, retrying in basic mode&lt;br /&gt;
+In file included from ./util.h:18,&lt;br /&gt;
+                 from log.c:26:&lt;br /&gt;
+./compat.h:276: parse error before &quot;socklen_t&quot;&lt;br /&gt;
+make[3]: *** [log.o] Error 1&lt;br /&gt;
+make[2]: *** [all-recursive] Error 1&lt;br /&gt;
+make[1]: *** [all-recursive] Error 1&lt;br /&gt;
+make: *** [all] Error 2&lt;br /&gt;
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;I have the same problem with Tor 0.2.1.7-alpha.&lt;br /&gt;
+&lt;code&gt;&lt;br /&gt;
+make  all-recursive&lt;br /&gt;
+Making all in src&lt;br /&gt;
+Making all in common&lt;br /&gt;
+source=&#39;address.c&#39; object=&#39;address.o&#39; libtool=no \&lt;br /&gt;
+DEPDIR=.deps depmode=gcc /bin/sh ../../depcomp \&lt;br /&gt;
+gcc -DHAVE_CONFIG_H -I. -I../..   -I../common     -g -O2 -Wall -g -O2 -c address.c&lt;br /&gt;
+compat.h:307: undefined type, found `socklen_t&#39;&lt;br /&gt;
+cpp-precomp: warning: errors during smart preprocessing, retrying in basic mode&lt;br /&gt;
+In file included from address.c:15:&lt;br /&gt;
+compat.h:307: parse error before &quot;socklen_t&quot;&lt;br /&gt;
+make[3]: *** [address.o] Error 1&lt;br /&gt;
+make[2]: *** [all-recursive] Error 1&lt;br /&gt;
+make[1]: *** [all-recursive] Error 1&lt;br /&gt;
+make: *** [all] Error 2&lt;br /&gt;
+&lt;/code&gt;&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 11</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_11/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_11/</link>
+
+	<pubDate>Tue, 18 Nov 2008 06:13:25 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:25Z</dcterms:modified>
+
+	<description>did you follow the directions for compiling on OSX?  &lt;a href=&quot;https://svn.torproject.org/svn/tor/trunk/doc/tor-osx-dmg-creation.txt&quot; title=&quot;https://svn.torproject.org/svn/tor/trunk/doc/tor-osx-dmg-creation.txt&quot; rel=&quot;nofollow&quot;&gt;https://svn.torproject.org/svn/tor/trunk/doc/tor-osx-dmg-creation.txt&lt;/a&gt;
+</description>
+
+
+</item>
+<item>
+
+	<title>nickm: Comment 12</title>
+	<dcterms:creator>nickm</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_12/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_12/</link>
+
+	<pubDate>Tue, 02 Dec 2008 06:13:26 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:26Z</dcterms:modified>
+
+	<description>Thanks; it looks like socklen_t was used before we defined a replacement for socklen_t for platforms that don&#39;t have one.  I&#39;ve checked fixes for 0.2.0.x and 0.2.1.x into the repository; does it build better for you now?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 13</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_13/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_13/</link>
+
+	<pubDate>Fri, 07 Nov 2008 06:13:27 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:27Z</dcterms:modified>
+
+	<description>osx torbrowser would be great!  I currently use it often on wxp but would love to use it within osx.
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 14</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_14/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_14/</link>
+
+	<pubDate>Mon, 10 Nov 2008 06:13:28 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:28Z</dcterms:modified>
+
+	<description>Yes, this is on the list to do.  There is much research to figure out what and where updates are written to reflect usage of TBB on OS X.  For what&#39;s committed to vidalia&#39;s svn, some minor tweaks to vidalia control code and you have an insecure TBB already.
+</description>
+
+
+</item>
+<item>
+
+	<title>Andreas (not verified): Comment 15</title>
+	<dcterms:creator>Andreas (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_15/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_15/</link>
+
+	<pubDate>Mon, 01 Dec 2008 06:13:29 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:29Z</dcterms:modified>
+
+	<description>&lt;p&gt;I tried to install the Torbutton and my Firefox 3 hanged. Is there any new version of torbutton planned or is a downgrade of Firefox neccessary?&lt;/p&gt;
+
+&lt;p&gt;Thanks a lot&lt;br /&gt;
+Andreas&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 16</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_16/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_16/</link>
+
+	<pubDate>Mon, 01 Dec 2008 06:13:30 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:30Z</dcterms:modified>
+
+	<description>Which torbutton version did you attempt to install? Torbutton 1.2.0-fx works with FF3 just fine.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 17</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_17/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_17/</link>
+
+	<pubDate>Tue, 13 Jan 2009 06:13:31 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:31Z</dcterms:modified>
+
+	<description>I thought Mike Perry said TorButton was not fully functional in FF3 yet.  I thought he said he would email or-talk when it was fully functional on FF3?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 18</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_18/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_18/</link>
+
+	<pubDate>Sat, 13 Dec 2008 06:13:32 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:32Z</dcterms:modified>
+
+	<description>Yes, please! I recently downloaded the Vidalia bundle and installed it from the .dmg.  The onion  icon happily changes color and all seems to be humming along beautifully.  Except... I don&#39;t know how to configure Firefox 3.0.4 so everybody plays nicely together. I considered replacing the whole shebang with the Tor Browser Bundle when I became aware it existed; alas, it&#39;s Windows. So, I&#39;m almost there when almost isn&#39;t good enough. I&#39;d happily buy a commercial version if it included a &quot;Tor for Idiots&quot; book. Meantime, any help would be appreciated.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 19</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_19/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_19/</link>
+
+	<pubDate>Sun, 14 Dec 2008 06:13:33 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:33Z</dcterms:modified>
+
+	<description>installation failure message at the last stage:post flight script. We need to install fairly quickly due to my wife being a journalist and I am a Psychologist. Please help. Dr. Baker
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 20</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_20/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_20/</link>
+
+	<pubDate>Sun, 14 Dec 2008 06:13:34 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:34Z</dcterms:modified>
+
+	<description>I bet it installed fine, and something unimportant failed to load.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 21</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_21/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_21/</link>
+
+	<pubDate>Wed, 24 Dec 2008 06:13:35 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:35Z</dcterms:modified>
+
+	<description>I&#39;ve had the same difficulty  (post flight script) installing the tor bundle with OS 10.5.5 and Firefox 3.0.5. Any update?
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 22</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_22/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_22/</link>
+
+	<pubDate>Sat, 27 Dec 2008 06:13:36 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:36Z</dcterms:modified>
+
+	<description>open a bug at bugs.torproject.org.  most likely, the installation completed fine but some sub-part of the postflight script failed.  apple only has the binary ALL GOOD or ALL BAD status, so if anything produces an error, it&#39;s ALL BAD according to apple.  In my testing, even with these ALL BAD reports, everything works fine.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 23</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_23/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_23/</link>
+
+	<pubDate>Fri, 09 Jan 2009 06:13:37 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:37Z</dcterms:modified>
+
+	<description>What about computers that require a password. If we could drag n&#39; drop vidalia right into the applications folder or on the desktop would we still have to enter the pass? It&#39;s really annoying with my school computers, the windows zero-install pack. looks good for this but my school uses macs. Any hope of that type of thing?
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 24</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_24/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_24/</link>
+
+	<pubDate>Fri, 09 Jan 2009 06:13:38 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:38Z</dcterms:modified>
+
+	<description>&lt;p&gt;We&#39;d like to do a Tor Browser Bundle for OS X.  It&#39;s in the 3-year roadmap, but it needs some research so as to not leave a trace it was used, analyze anonymity and security issues, and put together so it works on computers running 10.3 and newer the same way.&lt;/p&gt;
+
+&lt;p&gt;I&#39;m also working on a drag-and-drop vidalia installer.  I&#39;ll post an alpha test of the package soon.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 25</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_25/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_25/</link>
+
+	<pubDate>Thu, 05 Feb 2009 06:13:39 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:39Z</dcterms:modified>
+
+	<description>I am having problems downloading the file for OSX, could my IP block me from doing so?
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 26</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_26/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_26/</link>
+
+	<pubDate>Mon, 09 Feb 2009 06:13:40 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:40Z</dcterms:modified>
+
+	<description>Yes, but most likely not your IP, but rather a firewall or something in between you and our server.  &lt;a href=&quot;https://www.torproject.org/finding-tor&quot; title=&quot;https://www.torproject.org/finding-tor&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/finding-tor&lt;/a&gt;  may suggest alternatives.
+</description>
+
+
+</item>
+<item>
+
+	<title>Elektronik (not verified): Comment 27</title>
+	<dcterms:creator>Elektronik (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_27/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_27/</link>
+
+	<pubDate>Wed, 11 Feb 2009 06:13:41 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:41Z</dcterms:modified>
+
+	<description>I had the same problem and it was the firewall. The finding-tor Document was helpful in that case
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 28</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_28/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_28/</link>
+
+	<pubDate>Sat, 21 Feb 2009 06:13:42 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:42Z</dcterms:modified>
+
+	<description>I downloaded the OS x Vidalia bundle with no issues however once I had to configure it thats when I got stuck. It says  &quot;Vidalia was unable to start Tor. Check your settings to ensure the correct name and location of your Tor executable is specified.&quot; I&#39;m not sire what to enter in. Any pointers would be greatly appreciated.
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 29</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_29/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_29/</link>
+
+	<pubDate>Sun, 22 Feb 2009 06:13:43 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:43Z</dcterms:modified>
+
+	<description>&lt;p&gt;everything should have been pre-configured for you.  &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/docs/tor-doc-osx.html.en&quot; title=&quot;https://www.torproject.org/docs/tor-doc-osx.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/docs/tor-doc-osx.html.en&lt;/a&gt;&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 30</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_30/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_30/</link>
+
+	<pubDate>Sat, 07 Nov 2009 06:13:44 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:44Z</dcterms:modified>
+
+	<description>I need help installing tor on mac os x snow leopard i keep getting the message &quot;Vidalia was unable to start Tor. Check your settings to ensure the correct name and location of your Tor executable is specified&quot;  need ideas on what to do????
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 31</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_31/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_31/</link>
+
+	<pubDate>Sun, 22 Feb 2009 06:13:45 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:45Z</dcterms:modified>
+
+	<description>I downloaded the Vidalia bundle 0.2.0.34 mac universal and it installed fine. But isnt privoxy supposed to be included in the bundle? Anyway when i run the program and hit the &quot;use a new identity&quot;-button it still shows the same IP when i type seemyip.com in my firefox browser. What am i doing wrong? I dont see privoxy anywhere in the bundle and its not mentioned anywhere in the help function. Any help would be deeply appreciated.
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 32</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_32/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_32/</link>
+
+	<pubDate>Fri, 27 Feb 2009 06:13:46 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:13:46Z</dcterms:modified>
+
+	<description>&lt;p&gt;Privoxy installs as a system service.  You should be able to reach it via &lt;a href=&quot;http://localhost:8118/&quot; title=&quot;http://localhost:8118/&quot; rel=&quot;nofollow&quot;&gt;http://localhost:8118/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Did you configure firefox to use tor?  See &lt;a href=&quot;https://www.torproject.org/docs/tor-doc-osx.html.en&quot; title=&quot;https://www.torproject.org/docs/tor-doc-osx.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/docs/tor-doc-osx.html.en&lt;/a&gt; for more details.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Hannover (not verified): Comment 33</title>
+	<dcterms:creator>Hannover (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_33/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_33/</link>
+
+	<pubDate>Thu, 12 Mar 2009 06:13:47 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:13:47Z</dcterms:modified>
+
+	<description>i think i have the same problem like anonymous, and i cannot reach the system service via &lt;a href=&quot;http://localhost:8118/&quot; title=&quot;http://localhost:8118/&quot; rel=&quot;nofollow&quot;&gt;http://localhost:8118/&lt;/a&gt; Could it be a firewall problem?
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 34</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_34/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_34/</link>
+
+	<pubDate>Thu, 12 Mar 2009 06:13:48 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:13:48Z</dcterms:modified>
+
+	<description>is privoxy running?
+</description>
+
+
+</item>
+<item>
+
+	<title>NinjaCoder (not verified): Comment 35</title>
+	<dcterms:creator>NinjaCoder (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_35/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_35/</link>
+
+	<pubDate>Tue, 24 Mar 2009 06:13:49 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:13:49Z</dcterms:modified>
+
+	<description>&lt;p&gt;I&#39;m also having the same issues as a couple of the guys: nothing on localhost:8118.  When I run &quot;ps -elf&quot; from a terminal window I can see a privoxy process running.&lt;/p&gt;
+
+&lt;p&gt;I took a look at the post install log, and I see:&lt;/p&gt;
+
+&lt;p&gt;Privoxy was installed here: /Library/Privoxy&lt;br /&gt;
+Running the following AppleScript:&lt;br /&gt;
+tell application &quot;Finder&quot;&lt;br /&gt;
+set myURLFile to POSIX file &quot;/Library/Privoxy/ConfigPrivoxyURL.webloc&quot;&lt;br /&gt;
+set creator type of myURLFile to &quot;MACS&quot;&lt;br /&gt;
+set file type of myURLFile to &quot;ilht&quot;&lt;br /&gt;
+end tell&lt;br /&gt;
+Results (stack overflow error is expected on OSX 10.x):&lt;br /&gt;
+/tmp/fixurl:99:138: execution error: Finder got an error: Canít set creator type of file &quot;Macintosh HD:Library:Privoxy:ConfigPrivoxyURL.webloc&quot; to &quot;MACS&quot;.&lt;br /&gt;
+ (-10006)&lt;br /&gt;
+Done.&lt;/p&gt;
+
+&lt;p&gt;I am running 10.5.6, and I installed with the defaults from vidalia-bundle-0.2.0.34-0.1.10-universal.dmg&lt;/p&gt;
+
+&lt;p&gt;Firewall is turned off.&lt;/p&gt;
+
+&lt;p&gt;I&#39;ll try to reinstall.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>NinjaCoder (not verified): Comment 36</title>
+	<dcterms:creator>NinjaCoder (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_36/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_36/</link>
+
+	<pubDate>Tue, 24 Mar 2009 06:13:50 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:13:50Z</dcterms:modified>
+
+	<description>eh, I think I misunderstood.  I was expecting an admin webpage at localhost:8118.  Pointing my browser at that url as a proxy works.
+</description>
+
+
+</item>
+<item>
+
+	<title>Steuerberater (not verified): Comment 37</title>
+	<dcterms:creator>Steuerberater (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_37/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_37/</link>
+
+	<pubDate>Thu, 09 Apr 2009 06:13:51 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:13:51Z</dcterms:modified>
+
+	<description>I had the same problem with it. After a while I found out, that it was a firewall-problem. Thank you for you documentation.
+</description>
+
+
+</item>
+<item>
+
+	<title>Frank (not verified): Comment 38</title>
+	<dcterms:creator>Frank (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_38/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_38/</link>
+
+	<pubDate>Tue, 21 Apr 2009 06:13:52 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:13:52Z</dcterms:modified>
+
+	<description>Yes, a drag and drop install is nice to have. Sometimes I like the easy way, and it&#39;s great to have this on a OS X machine (in contrast to Windows).
+</description>
+
+
+</item>
+<item>
+
+	<title>OSX Tor user (not verified): Comment 39</title>
+	<dcterms:creator>OSX Tor user (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_39/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_39/</link>
+
+	<pubDate>Thu, 16 Jul 2009 06:13:53 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:13:53Z</dcterms:modified>
+
+	<description>I had no trouble installing Tor at all on my Mac
+</description>
+
+
+</item>
+<item>
+
+	<title>juli (not verified): Comment 40</title>
+	<dcterms:creator>juli (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_40/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_40/</link>
+
+	<pubDate>Fri, 17 Jul 2009 06:13:54 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:13:54Z</dcterms:modified>
+
+	<description>&lt;p&gt;I have downloaded Tor and Privoxy. Both signal they are working, but even after downloading the Torbutton onto Firefox, nothing shows up, unless the TorButton is the onion icon on the toolbar at the bottom. In addition, how does one go through Tor to surf the internet? I have repeatedly checked my IP address, and it is the same, i.e. my real one, so I am obviously not doing something right.&lt;/p&gt;
+
+&lt;p&gt;The help is not helpful. I have read it several times now, and nothing points to how you actually use Tor. It is just basically, download it and you are going through the relays, which is not true.&lt;/p&gt;
+
+&lt;p&gt;juli&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>juli (not verified): Comment 41</title>
+	<dcterms:creator>juli (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_41/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_41/</link>
+
+	<pubDate>Fri, 17 Jul 2009 06:13:55 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:13:55Z</dcterms:modified>
+
+	<description>&lt;p&gt;Ok, just went through all the FAQs on TorButton. Nothing is helping me. I checked the message blog, it is up and running, but I checked checktor and I am not on Tor. What is the preventing TorButton from appearing on Firefox? &lt;/p&gt;
+
+&lt;p&gt;juli&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>juli (not verified): Comment 42</title>
+	<dcterms:creator>juli (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_42/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_42/</link>
+
+	<pubDate>Fri, 17 Jul 2009 06:13:56 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:13:56Z</dcterms:modified>
+
+	<description>&lt;p&gt;Problem solved. No need to reply to that part, but please confirm though, what the TorButton looks like, is it the onion icon at the bottom toolbar?&lt;br /&gt;
+juli&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 43</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_43/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_43/</link>
+
+	<pubDate>Fri, 17 Jul 2009 06:13:57 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:13:57Z</dcterms:modified>
+
+	<description>Torbutton is a plugin for firefox. You need to install it into your firefox setup.  By default, it says &quot;Tor Enabled&quot; or &quot;Tor Disabled&quot;.
+</description>
+
+
+</item>
+<item>
+
+	<title>juli (not verified): Comment 44</title>
+	<dcterms:creator>juli (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_44/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_44/</link>
+
+	<pubDate>Sat, 18 Jul 2009 06:13:58 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:13:58Z</dcterms:modified>
+
+	<description>&lt;p&gt;I downloaded the Torbutton but I have nothing that says Tor Enabled or Tor Disabled. I find that only if I go to Tools and then to Add-ons on Firefox, where I find this as an extension, not a plugin. Is the Torbutton supposed to appear anywhere on Firefox as a &quot;button&quot;?&lt;/p&gt;
+
+&lt;p&gt;Also, I have gone through FAQ and all the other info, and put in &quot;toggle&quot; in the search box but cannot find the answer to the following problem. (I realise that you give preference in answering questions to relayers, but I just started using Tor.)&lt;/p&gt;
+
+&lt;p&gt;When I toggle off Tor and Privoxy it doesn&#39;t just turn them off, it locks up Firefox preventing my netsurfing at all. I get only 404s. I can now surf the net only if I enable Tor and Privoxy. What is the problem here?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>payam (not verified): Comment 45</title>
+	<dcterms:creator>payam (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_45/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_45/</link>
+
+	<pubDate>Sat, 18 Jul 2009 06:13:59 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:13:59Z</dcterms:modified>
+
+	<description>i was install vidalia-bundle-0.2.0.35-0.1.15 but it dose not work!!!! this error was in Message log &quot; Error from libevent: evsignal_init: socketpair: No error&quot; please help me
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 46</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_46/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_46/</link>
+
+	<pubDate>Sat, 18 Jul 2009 06:14:00 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:14:00Z</dcterms:modified>
+
+	<description>&lt;p&gt;what bundle did you install?  what OS?  &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/faq#SupportMail&quot; title=&quot;https://www.torproject.org/faq#SupportMail&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/faq#SupportMail&lt;/a&gt;&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>payam (not verified): Comment 47</title>
+	<dcterms:creator>payam (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_47/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_47/</link>
+
+	<pubDate>Sat, 18 Jul 2009 06:14:01 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:14:01Z</dcterms:modified>
+
+	<description>my os is WinXp Ver2002 SP3. I was install Bundle Ver.&quot;vidalia-bundle-0.2.0.35-0.1.15&quot; but it dose not work. I had an error in Message log, that is &quot;Error from libevent: evsignal_init: socketpair: No error&quot;. OLder bundle Ver. &quot;vidalia-bundle-0.1.2.19-0.0.16&quot; was work in my pc but I had some warning in message log same   &amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&quot;[Warning] Please upgrade! This version of Tor (0.1.2.19) is obsolete, according to 3/3 version-listing network statuses. Versions recommended by at least 1 authority are: 0.2.0.33, 0.2.0.34, 0.2.0.35, 0.2.1.11-alpha, 0.2.1.12-alpha, 0.2.1.13-alpha, 0.2.1.14-rc, 0.2.1.15-rc, 0.2.1.16-rc, 0.2.1.17-rc&quot;                                              please help me.
+</description>
+
+
+</item>
+<item>
+
+	<title>payam (not verified): Comment 48</title>
+	<dcterms:creator>payam (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_48/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_48/</link>
+
+	<pubDate>Sun, 19 Jul 2009 06:14:02 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:14:02Z</dcterms:modified>
+
+	<description>my Os.pc is WinXp Ver2002 SP3. I was install Bundle Ver.&quot;vidalia-bundle-0.2.0.35-0.1.15&quot; but it dose not work. I had an error in Message log, that is &quot;Error from libevent: evsignal_init: socketpair: No error&quot;. OLder bundle Ver. &quot;vidalia-bundle-0.1.2.19-0.0.16&quot; was work in my pc but I had some warning in message log same this message &amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&quot;[Warning] Please upgrade! This version of Tor (0.1.2.19) is obsolete, according to 3/3 version-listing network statuses. Versions recommended by at least 1 authority are: 0.2.0.33, 0.2.0.34, 0.2.0.35, 0.2.1.11-alpha, 0.2.1.12-alpha, 0.2.1.13-alpha, 0.2.1.14-rc, 0.2.1.15-rc, 0.2.1.16-rc, 0.2.1.17-rc&quot; Please help me.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 49</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_49/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_49/</link>
+
+	<pubDate>Mon, 23 Nov 2009 06:14:03 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:14:03Z</dcterms:modified>
+
+	<description>&lt;p&gt;I had previously had problems with Vidalia being unreliable. I decided to try the bundle again when the latest version of tor was released. Uninstalled every last trace of tor and privoxy that I had been using and then dragged the Vidalia bundle to Applications, changed the settings in Network prefs and all is well .....&lt;/p&gt;
+
+&lt;p&gt;with Safari.&lt;/p&gt;
+
+&lt;p&gt;However, with Firefox, even with torbutton installed via the script,  I keep getting an error when I click Test Settings. Says &quot;Internal Error.&quot; I am unable to reach any website with Tor Enabled.&lt;/p&gt;
+
+&lt;p&gt;This is with FF 3.5.5. Help!!!!!!!!!!!!!!!!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 50</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_50/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_50/</link>
+
+	<pubDate>Wed, 02 Dec 2009 06:14:04 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:14:04Z</dcterms:modified>
+
+	<description>Torbutton does not work out of the box or otherwise.  Tried it out with Firefox 3.0.15 and 3.5.5.  Tor and polipo connect up fine under VIdalia but I can find no possible way to make the Tor button work.  Turn it on  and you cannot connect to the internet.  Use the Test Settings button and you will always get &quot;Tor proxy test: Internal error.&quot;  Does no one have a solution for this?  I saw a bug opened for this issue but then mysteriously closed with no work, no work around, and no solution.  Is anyone in the world actually using this thing?
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 51</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_51/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_51/</link>
+
+	<pubDate>Wed, 02 Dec 2009 06:14:05 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:14:05Z</dcterms:modified>
+
+	<description>&lt;p&gt;Roughly a few million people use torbutton fine.  There&#39;s a bug where once you fail a test, you&#39;ll always fail a test.  &lt;/p&gt;
+
+&lt;p&gt;This most likely happened because you did a &quot;Test Settings&quot; test from&lt;br /&gt;
+the Torbutton proxy preferences menu while polipo was not working.&lt;br /&gt;
+This test most likely failed.&lt;/p&gt;
+
+&lt;p&gt;To clear this, simply run &quot;Test Settings&quot; again now that you&#39;ve got it&lt;br /&gt;
+working. This should reset the pref &quot;extensions.torbutton.test_failed&quot;&lt;br /&gt;
+back to false, and the warning should go away.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 52</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_52/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_52/</link>
+
+	<pubDate>Sun, 20 Dec 2009 06:14:06 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:14:06Z</dcterms:modified>
+
+	<description>I have exactly the same problem, vidalia is connecting to the tor-network properly, but as I try to start Torbutton it doesn&#39;t work. Is there really no solution for this problem?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 53</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_53/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_53/</link>
+
+	<pubDate>Sat, 05 Dec 2009 06:14:07 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:14:07Z</dcterms:modified>
+
+	<description>I see that Phobos made a comment, though irrelevant, gave me the idea of attempting to adjust the torbutton settings using about:config.  I reset the extensions.torbutton.test_failed to false with Vidalia and Polipo already running, reset Firefox, started the Torbutton and failed to connect and the boolean was reset to true.  I still see no solution but will attempt to redefine the torbutton configuration to make it work.  Anyone else have any suggestions?
+</description>
+
+
+</item>
+<item>
+
+	<title>Sjaak (not verified): Comment 54</title>
+	<dcterms:creator>Sjaak (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_54/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_54/</link>
+
+	<pubDate>Tue, 08 Dec 2009 06:14:08 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:14:08Z</dcterms:modified>
+
+	<description>apparently nobody
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 55</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_55/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_55/</link>
+
+	<pubDate>Mon, 14 Dec 2009 06:14:09 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:14:09Z</dcterms:modified>
+
+	<description>&lt;p&gt;Just tried it on a black macbook os x 10.4.11 and vidalia won&#39;t even launch&lt;/p&gt;
+
+&lt;p&gt;Clicking on the Vidalia icon in Applications does nothing - it makes a very brief attempt to launch but nothing ever happens e.g.: no icon appears in dock &lt;/p&gt;
+
+&lt;p&gt;tried running the .exec&#39;s using terminal - they launch but can&#39;t/don&#39;t communicate with  FF3.5.5 and torbutton 1.2.3&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 56</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_56/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_56/</link>
+
+	<pubDate>Tue, 15 Dec 2009 06:14:10 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:14:10Z</dcterms:modified>
+
+	<description>&lt;p&gt;Ya someone broke it for us.&lt;/p&gt;
+
+&lt;p&gt;Just happened to me too....launched vidalia and it told me it was now out of date, so I downloaded the new version, uninstalled all the old and followed the directions for installing the new one...&lt;/p&gt;
+
+&lt;p&gt;now its broke, says it needs version 7 of some lib but only 5 is found...&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 57</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_57/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_57/</link>
+
+	<pubDate>Thu, 07 Jan 2010 06:14:11 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:14:11Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor was working great but I made the mistake of upgrading to latest release. Now I am being prompted for a password. . In FAQs, it says error could be caused by:&lt;/p&gt;
+
+&lt;p&gt;&quot;You set Tor to run as a service. When Tor is set to run as a service, it starts up when the system boots up. If you configured Tor to start as a service through Vidalia, a random password was set and saved in Tor. When you reboot, Tor starts up and uses the random password it saved. You login and start up Vidalia. Vidalia attempts to talk to the already running Tor. Vidalia generates a random password, but it is different than the saved password in the Tor service. You need to reconfigure Tor to not be a service. See Tor as a service for more info.&quot;&lt;/p&gt;
+
+&lt;p&gt;the directions are useless as they are for windows only. help!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 58</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_58/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_58/</link>
+
+	<pubDate>Sun, 07 Feb 2010 06:14:12 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:14:12Z</dcterms:modified>
+
+	<description>&lt;p&gt;If anyone gets the Vidalia is unable to start tor becuase it can&#39;t find the executable on OSX change the tor executable path to:&lt;br /&gt;
+/Applications/Vidalia.app/Contents/MacOS/tor&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 59</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_59/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_59/</link>
+
+	<pubDate>Sun, 16 May 2010 06:14:13 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:14:13Z</dcterms:modified>
+
+	<description>thank you so much to the last person.  you seriously saved me.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 60</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_60/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_60/</link>
+
+	<pubDate>Sat, 22 May 2010 06:14:14 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:14:14Z</dcterms:modified>
+
+	<description>&lt;p&gt;&quot;/Applications/Vidalia.app/Contents/MacOS/tor&quot;&lt;/p&gt;
+
+&lt;p&gt;Thank you!!!&lt;/p&gt;
+
+&lt;p&gt;How on earth was I supposed to know that Vidalia.app contains tor executable? And if it&#39;s a part of Vidalia, why is there a setting for its path?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 61</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_61/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_61/</link>
+
+	<pubDate>Tue, 01 Jun 2010 06:14:15 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:14:15Z</dcterms:modified>
+
+	<description>&lt;p&gt;Finally! It was so simple yet so stupid to not have the correct path of the executable..&lt;/p&gt;
+
+&lt;p&gt;Thanks @ the solver.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 62</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_62/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comment_62/</link>
+
+	<pubDate>Wed, 16 Jun 2010 06:14:16 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:14:16Z</dcterms:modified>
+
+	<description>There is no Tor file in the MacOS directory, just Vidalia.
+</description>
+
+
+</item>
+
+</channel>
+</rss>

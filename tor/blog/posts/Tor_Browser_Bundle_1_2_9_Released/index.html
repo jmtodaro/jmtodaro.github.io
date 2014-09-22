@@ -1,0 +1,1632 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tor Browser Bundle 1.2.9 Released</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_Browser_Bundle_1_2_9_Released&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Tor Browser Bundle 1.2.9 Released</a>
+
+</span>
+
+
+<div id="content">
+<p>Tor Browser Bundle 1.2.9 is released today.  It updates Firefox and Pidgin Instant Messaging client to address the security issues in the older versions, and includes the latest and greatest Vidalia.</p>
+
+<p>TBB can be downloaded from <a href="https://www.torproject.org/torbrowser" title="https://www.torproject.org/torbrowser" rel="nofollow">https://www.torproject.org/torbrowser</a>.</p>
+
+<p>The details of the changes are:</p>
+
+<ul>
+<li>update Vidalia to 0.2.4</li>
+<li>update Qt to 4.5.2</li>
+<li>update Pidgin to 2.6.2</li>
+<li>update Firefox to 3.0.14</li>
+</ul>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/firefox_update/" rel="tag">firefox update</a>
+
+<a href="../../tags/pidgin_update/" rel="tag">pidgin update</a>
+
+<a href="../../tags/security_fixes/" rel="tag">security fixes</a>
+
+<a href="../../tags/tor_browser_bundle/" rel="tag">tor browser bundle</a>
+
+<a href="../../tags/vidalia_release/" rel="tag">vidalia release</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-0de383052990302156d301096ac433ff">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+Sorry for offtopic, but i am using Vidalia 0.2.3, and i found that there is a lot requests to non mapped IP 69.164.192.183:443 (callisto.vidalia-project.net). What is this?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 12 Sep 2009 06:35:24 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f7257018a67ead618df072ce8217db42">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+It's the server we use to update the geoip database on your client.  You anonymously connect over Tor to the server, get database updates to download, and then locate servers around the world.  If you disable this feature, you'll notice the network map has no country flags next to the relays.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 12 Sep 2009 06:35:25 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-85c3607b214c4924b4281850333cd911">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>Why do you force people to update this database, in previous versions it worked with a non "updated" database.</p>
+
+<p>My configuration is quite strict so newest version is not working as it should, have to use older ones until this new "feature" is fixed or clearly explained how to get it working !!!</p>
+
+<p>What IPs do i have to enable in torrc for this to work with latest bundle ? </p>
+
+<p>Do i have to enable this IP: 69.164.192.183:443(in TORRC, firewall or both?), do i have to do that only once, or every time i start vidalia or even every X hours ???</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 14 Sep 2009 06:35:26 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1f792e6f64533132a9a619448374295c">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<p>People like to see where the relays exist in the world.  The geoip lookups are completely anonymously over Tor.  You shouldn't have to allow anything in your firewall at all.</p>
+
+<p>Perhaps we should have a config option in vidalia to disable geoip lookups of relays.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 15 Sep 2009 06:35:27 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c4ca677b6adedbd3b128b967155566f6">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>My point is this:<br />
+Previous versions of vidalia bundle works and shows country flags on map, this version is not working, not shownig any country flags on map and are allowing circuits that is blocked by my torrc configuration, so once again </p>
+
+<p>" My configuration is quite strict so newest version is not working as it should, have to use older ones until this new "feature" is fixed or clearly explained how to get it working !!!</p>
+
+<p>What IPs do i have to enable in torrc for this to work with latest bundle ? "</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Sep 2009 06:35:28 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-00f497164b69378512b8a229b38a4f42">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+hmm.. why is there no Tor Browser 0.2.2.1-alpha Bundle? <img src="../../smileys/sad.png" alt=":(" />
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 12 Sep 2009 06:35:29 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7c47b83a6d885b7abcd319ca5580a050">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+Because it's already alpha enough?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 12 Sep 2009 06:35:30 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c85d8329ccadfa9eccb71606bd4e25bb">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+<p>The torbutton is incompatible with this release of Firefox, nor does it work with firefox 3.5.3.</p>
+
+<p>Question:<br />
+why not use firefox 3.5.3 on the TOR browser?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FYoav%20%28not%20verified%29&amp;do=goto">Yoav (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 13 Sep 2009 06:35:31 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f06875aec0c2e62858ebd460927145da">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+<p>We don't recommend using torbutton with Firefox 3.5.x at all.  While it may appear to work, Firefox 3.5 is a major rewrite of the codebase.  We're in the middle of a month of analyzing the firefox 3.5 codebase and adapting torbutton to work with it.</p>
+
+<p>Torbutton was designed for Firefox 3.0.x.  This is why we don't ship firefox 3.5.x in the Tor Browser Bundles, it's not safe to do so.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 13 Sep 2009 06:35:32 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4c78716a07b93d5606cadeca8599bb37">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+OK, thanks for the answer. Please note that the TOR button does not work with firefox 3.0.0.14 as well.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fyoav%20%28not%20verified%29&amp;do=goto">yoav (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 13 Sep 2009 06:35:33 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0d768ce419210fb91104c76e62780154">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+torbutton works fine with 3.0.14.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 15 Sep 2009 06:35:34 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-81302ab000a73c5fb70cb36c37af76f6">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+<p>Is the official statement still that you have to abandon the Firefox browser in the future when version 3.5.x is the only alternative/updated version because of the severe security issues that's impossible to solve with it<br />
+Or is it that you are to completely rewrite your own version of it.</p>
+
+<p>If so what alternative browser(s) that are considered safe if any to replace firefox with ?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Sep 2009 06:35:35 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9a6998c5fb01d6f9d22c69d58f6ee157">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+<p>This is as official as it gets, <a href="https://blog.torproject.org/blog/tor-browser-bundle-129-released#comment-2499" title="https://blog.torproject.org/blog/tor-browser-bundle-129-released#comment-2499" rel="nofollow">https://blog.torproject.org/blog/tor-browser-bundle-129-released#comment...</a></p>
+
+<p>It's a work in progress.  We realize that Firefox 3.0.x will be unsupported past January 2010.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 27 Sep 2009 06:35:36 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5755ffeb20809a12410cd5366267aaac">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+<p>&gt;The torbutton is incompatible with this release of Firefox,</p>
+
+<p>Hmmm.  The release of FF included with the copy of this bundle that I downloaded is 3.0.13 and it is working just fine.  Perhaps I misunderstood what you were trying to say?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 15 Sep 2009 06:35:37 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ad214f87b2086c1014f68ba22a56cc76">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+<p>what? On your dowloads page it say "Want Tor to really work?....We recommend you use Firefox with the Torbutton extension." and you link to mozilla's latest version of firefox (3.5.3) Now you say not to?<br />
+And torbutton also say it works fine to firefox 3.6a1pre. some very unclear ambiguity going on here and worrying stuff too.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 13 Sep 2009 06:35:38 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5e331d3756fb09dd9dd57a63f3ed7a59">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+<p>Re: "On your dowloads page it say "Want Tor to really work?....We recommend you use Firefox with the Torbutton extension." and you link to mozilla's latest version of firefox (3.5.3)"</p>
+
+<p>The url behind that link is "http://www.mozilla.org/firefox" which is obsolete (predates the restructuring of the Mozilla project and domains mozilla.org &amp; mozilla.com)  Mozilla.org itself redirects that page request to "http://www.mozilla.com/en-US/firefox/upgrade.html" which will always (absent more restructuring in the future) have the downloads for latest production version(s) of FF.  The link on the Tor page should be fixed or deactivated, but it isn't as if Tor were intentionally linking you to an inappropriate version of FF.</p>
+
+<p>Re: "torbutton also say it works fine to firefox 3.6a1pre" I am unable to find such a claim on the Tor download page.  Got link?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 15 Sep 2009 06:35:39 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ecb9cfed99bc49373b18213640cb8914">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+Yes, you are correct.  I'll update this to link to Firefox 3.0.x.  Sorry for the confusion.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 15 Sep 2009 06:35:40 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d23c9fbee88e191c498eaba1b2382896">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+<p>I never examined the Torbutton settings in the browser bundles until I saw allegations in this thread that it was not working.  Now that I have looked, I am a bit confused.  I recently read a statement dated 8/25/2009 by Andrew Lewman in a reply to a user question that "The Tor Browser Bundle, aka the portable bundle, doesn't include<br />
+Privoxy.  It includes Polipo instead."  (see: <a href="http://www.mail-archive.com/or-talk@freehaven.net/msg11474.html" title="http://www.mail-archive.com/or-talk@freehaven.net/msg11474.html" rel="nofollow">http://www.mail-archive.com/or-talk@freehaven.net/msg11474.html</a>).  However (I am using TBB 1.2.9), on the Proxy tab of the Torbutton add-in, both "use the recommended settings for my version of Firefox" *and* "Use Privoxy" are selected.  Mr. Lewman's statement and the settings are confusing, and seem to be contradictory.  Is the "Use Privoxy" nomenclature in Torbutton deprecated or otherwise misleading?  If not, please enlighten me as to what important concept I have missed here.  Thank you.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 15 Sep 2009 06:35:41 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ab225541d15af4b01243421298663e52">
+
+<div class="comment-subject">
+
+Comment 19
+
+</div>
+
+<div class="inlinecontent">
+"until I saw allegations in this thread that it was not working." - "it" being Torbutton, if that was unclear.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 15 Sep 2009 06:35:42 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2dcd916132aba47a61bf108dc7799b7f">
+
+<div class="comment-subject">
+
+Comment 20
+
+</div>
+
+<div class="inlinecontent">
+<p>It's a nomenclature bit.  The Tor Browser Bundle does not include Privoxy.  Torbutton could just as well state "Use Fluffy Bunnies" and point the browser at localhost:8118 correctly.</p>
+
+<p>You do raise a fine point that torbutton needs to be updated.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 15 Sep 2009 06:35:43 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f4071b7a97739ea2d37a77ad255420f8">
+
+<div class="comment-subject">
+
+Comment 21
+
+</div>
+
+<div class="inlinecontent">
+Thanks, I thought that might be the answer, but I thought it was worth asking.  With security and privacy tools, it really does seem to me that the only stupid questions are the ones that do not get asked <img src="../../smileys/smile.png" alt=":-)" />
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 16 Sep 2009 06:35:44 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7e1f3a9876cd7230605a1ecd5ac29c60">
+
+<div class="comment-subject">
+
+Comment 22
+
+</div>
+
+<div class="inlinecontent">
+Can't give email because connection now fails.  Wikileaks submit also failed.  Added this latest update after being new at this and at least succeeding at getting to my anon email.  Doesn't seem to work so well for me.  No one here to help.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fsortanew%20%28not%20verified%29&amp;do=goto">sortanew (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 16 Sep 2009 06:35:45 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7aed7970d3ec68738d16dc44efac7e4a">
+
+<div class="comment-subject">
+
+Comment 23
+
+</div>
+
+<div class="inlinecontent">
+What fails?  Tor?  Connections to hidden services?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 16 Sep 2009 06:35:46 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f81f4bde40424437a4e3ead9420e6d49">
+
+<div class="comment-subject">
+
+Comment 24
+
+</div>
+
+<div class="inlinecontent">
+Tor was up and running, but would not connect to urls, today it did connect to email url that failed the other day.  For one site that failed I was told I need a US exit node, but don't know how to do that.  No one here to tell me how.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 18 Sep 2009 06:35:47 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-85aad45a9f772c4549d2a704cf9eec3a">
+
+<div class="comment-subject">
+
+Comment 25
+
+</div>
+
+<div class="inlinecontent">
+<p>thanks for changing your link to firefox 3.0 that was bad.<br />
+You STILL link to the torbutton page which says "tor button fine to 3.6a1pre" link here which is obviously very confusing for people<br />
+<a href="https://addons.mozilla.org/en-US/firefox/addon/2275" title="https://addons.mozilla.org/en-US/firefox/addon/2275" rel="nofollow">https://addons.mozilla.org/en-US/firefox/addon/2275</a>.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 17 Sep 2009 06:35:48 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9d21db96d35edd624971589881837c1f">
+
+<div class="comment-subject">
+
+Comment 26
+
+</div>
+
+<div class="inlinecontent">
+It is compatible.  If people want to shoot themselves in the foot, they can go right ahead and do so.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 20 Sep 2009 06:35:49 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-68c8f28f65d9ae4650f4d3bf0828ecfe">
+
+<div class="comment-subject">
+
+Comment 27
+
+</div>
+
+<div class="inlinecontent">
+<p>Whether it's FF 3.5x or previous versions, when enabling Tor Button, it automatically resizes my browser window to various sizes, usually bigger than my screen itself. To make it worse, when I'm done using it and disable it, it doesn't revert back to it's original dimensions. I'd prefer my browser size be left completely alone, and let me resize it myself if/when needed. Why does it do this? is there a logic behind it that I'm unaware of?</p>
+
+<p>Second question, I just read about it not being compatible with 3.5.x. What's unsafe? does it leak your real IP address? When I've checked so far at ipchicken.com, it always seems to show an IP that isn't mine?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 22 Sep 2009 06:35:50 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bfd9ae16b46020a3fb1c41130abfec7e">
+
+<div class="comment-subject">
+
+Comment 28
+
+</div>
+
+<div class="inlinecontent">
+Is is possible to update the Tor Browser Bundle (including Pidgin) without uninstalling and then installing the new version?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Sep 2009 06:35:51 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d9933f29258caf9165a833252687fc71">
+
+<div class="comment-subject">
+
+Comment 29
+
+</div>
+
+<div class="inlinecontent">
+is there anyway to use adobe while tor is enabled ?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Sep 2009 06:35:52 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-48ab3d625c6d0ff2de6366d1987ba78a">
+
+<div class="comment-subject">
+
+Comment 30
+
+</div>
+
+<div class="inlinecontent">
+Using Flash with Tor isn't safe, you will lose some anonymity.  There are options to enable this, but you might as well not use Tor then, <a href="https://www.torproject.org/torbutton/faq.html.en#noflash" title="https://www.torproject.org/torbutton/faq.html.en#noflash" rel="nofollow">https://www.torproject.org/torbutton/faq.html.en#noflash</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 27 Sep 2009 06:35:53 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f55c4e52f58f851110ce6bf39f90fc6c">
+
+<div class="comment-subject">
+
+Comment 31
+
+</div>
+
+<div class="inlinecontent">
+<p>So... for some odd reason my Tor stopped working midway through loading a page today. It can now no longer connect. I'm using the 0.1.15 Vidalia, 0.2.0.35 Tor, 4.3.5 QT, Tor button was a seperate tack on.</p>
+
+<p>I know its an old version, but it took me 4 days last week to look for a working mirror for the browser bundle - since most sites link to the Tor Project. however, I'm running a MAC, and unfortunately Torproject.org is blocked by China. *sighs*</p>
+
+<p>What are my options?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FRepressed%20Canadian%20%28not%20verified%29&amp;do=goto">Repressed Canadian (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Sep 2009 06:35:54 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-50495d239ccb6f1bf534d5845da6217f">
+
+<div class="comment-subject">
+
+Comment 32
+
+</div>
+
+<div class="inlinecontent">
+<p><a href="https://blog.torproject.org/blog/tor-partially-blocked-china" title="https://blog.torproject.org/blog/tor-partially-blocked-china" rel="nofollow">https://blog.torproject.org/blog/tor-partially-blocked-china</a></p>
+
+<p>Get a bridge, you also may want to update to the latest -stable as bridges will work better and Tor is faster overall.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 27 Sep 2009 06:35:55 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-98820204a2b2638e5b879f731d8d33f3">
+
+<div class="comment-subject">
+
+Comment 33
+
+</div>
+
+<div class="inlinecontent">
+<p>I have the same problem as the previous poster.  As of 09-24-2009 at around 5PM, I can not connect to any TOR relays.  None at all - I'm not sure what happened.  After the problem, I started looking on the net (Unfortunately I can not connect to torproject.org) and found that I may be using incompatible versions.  FF = 3.5.3 and Vidalia-bundle-0.2.0.35-0.1.15.  But it worked great until yesterday!</p>
+
+<p>Can anyone give me any advice on how to connect again, and mirror sites to download the needed versions (or even e-mail me the versions that I need).</p>
+
+<p>Any help would be greatly appreciated, especially if it were clear enough for a 5 year old to understand!  The only SOCKS I know about smell bad!  I don't really need to be anonymous because of anything I'm doing on-line, I just want to get access to blocked websites like facebook.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAmerican%20in%20China%20%28not%20verified%29&amp;do=goto">American in China (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Sep 2009 06:35:56 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e1022ef960a9287daf56f1d9d9a52307">
+
+<div class="comment-subject">
+
+Comment 34
+
+</div>
+
+<div class="inlinecontent">
+<p>Every popular breach in the GFW has been filled. Popular free and paid vpn and even tor's bridges are all but blocked in Beijing. Just a week before the 60th anniversary of China, the timing leaves no doubt that they want to have complete and utter control over the internet before the celebrations. Previous anniversaries and important national events are usually the occasion to tighten security measures, both on the street and online, but to date I think this is the first time that tor completely stopped working here in Beijing.<br />
+This is not likely to change after oct. 8, so unless the TOR team can come up with a workaround, we people living in China will have to embrace censorship and enjoy harmonious web browsing with Chinese characteristics (or resort to those annoying web proxies).</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FHarmonized%20Frenchman%20in%20the%20%26%23039%3BJing%20%28not%20verified%29&amp;do=goto">Harmonized Frenchman in the &#039;Jing (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Sep 2009 06:35:57 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a638a8a9728e5ba8750cdcef084e5f16">
+
+<div class="comment-subject">
+
+Comment 35
+
+</div>
+
+<div class="inlinecontent">
+<p>We have confirmed reports that Tor is working for some people in China, and that bridges continue to work for the most part.</p>
+
+<p><a href="https://blog.torproject.org/blog/tor-partially-blocked-china" title="https://blog.torproject.org/blog/tor-partially-blocked-china" rel="nofollow">https://blog.torproject.org/blog/tor-partially-blocked-china</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 27 Sep 2009 06:35:58 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3dbd752a18dc223a82f181b12ee21133">
+
+<div class="comment-subject">
+
+Comment 36
+
+</div>
+
+<div class="inlinecontent">
+<p>Every popular breach in the GFW has been filled. Popular free and paid vpn and even tor's bridges are all but blocked in Beijing. Just a week before the 60th anniversary of China, the timing leaves no doubt that they want to have complete and utter control over the internet before the celebrations. Previous anniversaries and important national events are usually the occasion to tighten security measures, both on the street and online, but to date I think this is the first time that tor completely stopped working here in Beijing.<br />
+This is not likely to change after oct. 8, so unless the TOR team can come up with a workaround, we people living in China will have to embrace censorship and enjoy harmonious web browsing with Chinese characteristics (or resort to those annoying web proxies).</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FHarmonized%20Frenchman%20in%20the%20%26%23039%3BJing%20%28not%20verified%29&amp;do=goto">Harmonized Frenchman in the &#039;Jing (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Sep 2009 06:35:59 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f2ae999db2947d9a1b2a6cb4c2bee552">
+
+<div class="comment-subject">
+
+Comment 37
+
+</div>
+
+<div class="inlinecontent">
+Can someone please post a new bridge here for me to use?  Tor isn't replying for my request for a bridge - plus I can't get to the published list of bridges on Tor's page.  If a couple people reply with new bridges, I think I'd be in good shape.  E-mail might be better to keep them confidential - <a href="mailto:dave7822@aol.com" rel="nofollow">dave7822@aol.com</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FDead%20in%20the%20Water%20%28not%20verified%29&amp;do=goto">Dead in the Water (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Sep 2009 06:36:00 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d03ce232475d8a00a722264d29c143c9">
+
+<div class="comment-subject">
+
+Comment 38
+
+</div>
+
+<div class="inlinecontent">
+to find public bridge addresses is to send mail to <a href="mailto:bridges@torproject.org" rel="nofollow">bridges@torproject.org</a> with the line get bridges by itself in the body of the mail.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FHoo%20%28not%20verified%29&amp;do=goto">Hoo (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 27 Sep 2009 06:36:01 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-afb12c1d434f120b6ee93fe7b0cd6be7">
+
+<div class="comment-subject">
+
+Comment 39
+
+</div>
+
+<div class="inlinecontent">
+Can I replace the Firefox in the bundle with a portable Firefox 3.5.3?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fgopu%20mathew%20%28not%20verified%29&amp;do=goto">gopu mathew (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 28 Sep 2009 06:36:02 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-68ca26712ef61b158320adb204ebf3a1">
+
+<div class="comment-subject">
+
+Comment 40
+
+</div>
+
+<div class="inlinecontent">
+I followed the instructions on the site and I'm not having any luck. Can someone please help me?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FLilly%20%28not%20verified%29&amp;do=goto">Lilly (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 06 Nov 2009 06:36:03 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6f9f94061941fb34d1b6d6b03371ab05">
+
+<div class="comment-subject">
+
+Comment 41
+
+</div>
+
+<div class="inlinecontent">
+Nov 08 12:03:39.958 [Notice] No current certificate known for authority ides; launching request.Please fix this thing. Any updates for TBB?. if so when will be the other version is going 2 be released?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FPETER%20%28not%20verified%29&amp;do=goto">PETER (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 08 Nov 2009 06:36:04 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b7b3b1f4b6c5380dd9576b46c4ac0710">
+
+<div class="comment-subject">
+
+Comment 42
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi, I installed TOR last week and upon running it, it told me there is a newer version available. I downloaded it and attempted to uninstall the older version so as to install the newer version be the uninstall didn't complete the process and as such I couldn't install the new version as it keeps giving error messages.</p>
+
+<p>Can I get an uninstaller to enable me complete the process or can I repair the damaged one?</p>
+
+<p>Felix.  </p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 03 Sep 2010 06:36:05 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e1dd424bcd9b709397d19ee4efe88518">
+
+<div class="comment-subject">
+
+Comment 43
+
+</div>
+
+<div class="inlinecontent">
+I have the same problem, was told to upgrade, couldn't uninstall the previous version, installed new version, now nothing works :((((.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 29 Jan 2011 06:36:06 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_Browser_Bundle_1_2_9_Released&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:35:23 AM CDT</span>
+<!-- Created <span class="date">Fri 11 Sep 2009 08:55:03 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

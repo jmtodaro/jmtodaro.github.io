@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged end_of_life</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/end_of_life/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: End of Life for Tor 0.2.0.x branch</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/End_of_Life_for_Tor_0_2_0_x_branch/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/End_of_Life_for_Tor_0_2_0_x_branch/</link>
+
+
+	<category>/tags/end_of_life</category>
+
+	<category>/tags/old-stable</category>
+
+	<category>/tags/tor_0_2_0</category>
+
+
+	<pubDate>Tue, 30 Mar 2010 20:17:51 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:55:03Z</dcterms:modified>
+
+	<description>&lt;p&gt;We have declared end-of-life for Tor 0.2.0.x. Those Tor versions have&lt;br /&gt;
+several known flaws, and nobody should be using them. You should upgrade.&lt;/p&gt;
+
+&lt;p&gt;Specifically, the big flaw in Tor &amp;lt;= 0.2.0.35 is that its list of&lt;br /&gt;
+directory authorities is out of date, so you&#39;ll find it hard to learn&lt;br /&gt;
+about the network. We&#39;re signing the network status consensus with the&lt;br /&gt;
+old signatures for now, but we&#39;re going to stop doing that in a few weeks,&lt;br /&gt;
+which means your Tor 0.2.0.x will fail to find the current network.&lt;/p&gt;
+
+&lt;p&gt;The only exception is people using Debian Lenny -- our nice Debian&lt;br /&gt;
+packager is trying to keep that package maintained for you.&lt;/p&gt;
+
+&lt;p&gt;As a bonus, if you move to a newer Tor you&#39;ll get significant performance&lt;br /&gt;
+boosts as a client, and you&#39;ll improve the performance for others as&lt;br /&gt;
+a relay.&lt;/p&gt;
+
+&lt;p&gt;The original message is archived at &lt;a href=&quot;http://archives.seul.org/or/announce/Mar-2010/msg00001.html&quot; title=&quot;http://archives.seul.org/or/announce/Mar-2010/msg00001.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/announce/Mar-2010/msg00001.html&lt;/a&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/End_of_Life_for_Tor_0_2_0_x_branch/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

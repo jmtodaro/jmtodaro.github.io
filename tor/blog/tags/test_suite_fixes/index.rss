@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged test_suite_fixes</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/test_suite_fixes/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Tor 0.2.1.26-stable released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_26-stable_released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_26-stable_released/</link>
+
+
+	<category>/tags/connection_overload</category>
+
+	<category>/tags/stable_release</category>
+
+	<category>/tags/test_suite_fixes</category>
+
+	<category>/tags/v3_directories</category>
+
+
+	<pubDate>Wed, 09 Jun 2010 22:18:21 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:00:00Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor 0.2.1.26 addresses the recent connection and memory overload problems we&#39;ve been seeing on relays, especially relays with their DirPort open. If your relay has been crashing, or you turned it off because it used too many resources, give this release a try.&lt;/p&gt;
+
+&lt;p&gt;This release also fixes yet another instance of broken OpenSSL libraries that was causing some relays to drop out of the consensus.&lt;/p&gt;
+
+&lt;p&gt;Available for download at &lt;a href=&quot;https://www.torproject.org/easy-download&quot; title=&quot;https://www.torproject.org/easy-download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/easy-download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.26&lt;br /&gt;
+&lt;strong&gt;Major bugfixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Teach relays to defend themselves from connection overload. Relays&lt;br /&gt;
+      now close idle circuits early if it looks like they were intended&lt;br /&gt;
+      for directory fetches. Relays are also more aggressive about closing&lt;br /&gt;
+      TLS connections that have no circuits on them. Such circuits are&lt;br /&gt;
+      unlikely to be re-used, and tens of thousands of them were piling&lt;br /&gt;
+      up at the fast relays, causing the relays to run out of sockets &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02126-stable-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_26-stable_released/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

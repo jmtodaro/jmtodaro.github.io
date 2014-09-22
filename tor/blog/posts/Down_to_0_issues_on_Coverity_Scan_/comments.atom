@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Down to 0 issues on Coverity Scan.</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>nickm</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:17:02Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_1/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:16:55Z</updated>
+	<published>2009-01-11T12:16:55Z</published>
+
+	<content type="html" xml:lang="en">
+	AM I blind? I can&#39;t find Tor on that website.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_2/"/>
+
+	<author><name>nickm</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:16:56Z</updated>
+	<published>2009-01-11T12:16:56Z</published>
+
+	<content type="html" xml:lang="en">
+	I asked them the same question back in December.  It turns out they hadn&#39;t updated the official list (or most of the website) in a while.  I wish they would, but I am glad that they are better at adding projects than updating their website.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_3/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:16:57Z</updated>
+	<published>2009-01-12T12:16:57Z</published>
+
+	<content type="html" xml:lang="en">
+	I&#39;m confused about something: The Tor network reveals the IP addresses of all its relay nodes (look at the &quot;View the Network&quot; button in your Vidalia control panel). Doesn&#39;t this reveal all the nodes running Tor, and therefore any Tor client and their IP address? It would seem to me that any person or organization with the ability to track down each IP address in the Tor network would still be able to find the user that they are looking for. Am misunderstanding something?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_4/"/>
+
+	<author><name>nickm</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:16:58Z</updated>
+	<published>2009-01-12T12:16:58Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Clients aren&#39;t nodes.  Nodes are volunteer-operated relays.  Clients do not relay traffic by default.&lt;/p&gt;
+
+&lt;p&gt;There are about 1200 nodes, give or take.  That&#39;s the list you see in Vidalia.[*]  There are hundreds of thousands of clients.  That list, you don&#39;t see.&lt;/p&gt;
+
+&lt;p&gt;[*] There are also nodes you don&#39;t see.  Read up on &quot;bridges&quot; to learn more about these.  The idea is to give people the option to run nodes that aren&#39;t advertised publicly in order to help people in censored countries.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_5/"/>
+
+	<author><name>arma</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:16:59Z</updated>
+	<published>2009-01-13T12:16:59Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;a href=&quot;http://scan.coverity.com/&quot; title=&quot;http://scan.coverity.com/&quot; rel=&quot;nofollow&quot;&gt;http://scan.coverity.com/&lt;/a&gt; points to &quot;rung 0&quot;, &quot;rung 1&quot;, &quot;rung 2&quot;. We have made it&lt;br /&gt;
+to the end of rung 0. Now they&#39;ve upgraded us to their newer scanning algorithm.&lt;/p&gt;
+
+&lt;p&gt;So, I suppose that means you should expect two more of these blogs posts,&lt;br /&gt;
+sometime in the future! &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_6/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:17:00Z</updated>
+	<published>2009-01-14T12:17:00Z</published>
+
+	<content type="html" xml:lang="en">
+	I wasn&#39;t aware Coverity was an mmorpg. &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/../../smileys/smile4.png&quot; alt=&quot;;)&quot; /&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_7/"/>
+
+	<author><name>AnonymousCoward (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:17:01Z</updated>
+	<published>2009-01-15T12:17:01Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;lol &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/../../smileys/smile4.png&quot; alt=&quot;;)&quot; /&gt;&lt;br /&gt;
+gz anyway, well done, keep up the good work !&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_8/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:17:02Z</updated>
+	<published>2009-02-04T12:17:02Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Changes in version 0.2.0.33 - 2009-01-21&lt;br /&gt;
+  o Security fixes:&lt;br /&gt;
+    - Fix a heap-corruption bug that may be remotely triggerable on&lt;br /&gt;
+      some platforms. Reported by Ilja van Sprundel.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+
+</feed>

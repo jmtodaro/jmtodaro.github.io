@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged usability_enhancements</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/usability_enhancements/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/usability_enhancements/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/usability_enhancements/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:39:48Z</updated>
+<entry>
+	<title>Vidalia 0.2.5 Released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/usability_enhancements" />
+
+	<category term="/tags/vidalia_release" />
+
+
+	<updated>2011-04-05T11:39:48Z</updated>
+	<published>2009-10-17T12:21:56Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;On October 14th we released Vidalia 0.2.5.  Changes are:&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Add support in the Network settings page for configuring the&lt;br /&gt;
+    Socks4Proxy and Socks5Proxy* options that were added in&lt;br /&gt;
+    Tor 0.2.2.1-alpha. Patch from Christopher Davis.&lt;/li&gt;
+&lt;li&gt;Add a &quot;Automatically distribute my bridge address&quot; checkbox (enabled&lt;br /&gt;
+    by default) to the bridge relay settings options. (Ticket #524)&lt;/li&gt;
+&lt;li&gt;Add ports 7000 and 7001 to the list of ports excluded by the IRC&lt;br /&gt;
+    category in the exit policy configuration tab. (Ticket #517)&lt;/li&gt;
+&lt;li&gt;Add a context menu for highlighted event items in the &quot;Basic&quot; message&lt;br /&gt;
+    log view that allows the user to copy the selected item text to the&lt;br /&gt;
+    clipboard.&lt;/li&gt;
+&lt;li&gt;Maybe fix a time conversion bug that could result in Vidalia&lt;br /&gt;
+    displaying the wrong uptime for a relay in the network map.&lt;/li&gt;
+&lt;li&gt;Stop trying to enforce proper quoting and escaping of arguments to be&lt;br /&gt;
+    given to the proxy executable (e.g., Polipo). Now the user is on their &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/vidalia-025-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Testing Tor Browser Bundle 1.2.7-dev</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/openssl_fixes" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+	<category term="/tags/usability_enhancements" />
+
+	<category term="/tags/vidalia_releases" />
+
+
+	<updated>2011-04-05T11:33:32Z</updated>
+	<published>2009-08-16T03:33:34Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;ve updated the Tor Browser Bundle with torbutton 1.2.2, the &lt;a href=&quot;http://localhost//blog.torproject.org/blog/vidalia-022-released&quot; rel=&quot;nofollow&quot;&gt;new Vidalia 0.2.2&lt;/a&gt;, and openssl 0.9.8k compiled with Microsoft Visual C to handle ssl compatibility issues with various versions of Windows.&lt;/p&gt;
+
+&lt;p&gt;If this works, it will be the new Tor Browser Bundle 1.2.8.  Please test away.&lt;/p&gt;
+
+&lt;p&gt;The full list of changes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;update Torbutton to 1.2.2&lt;/li&gt;
+&lt;li&gt;update Vidalia to 0.2.2&lt;/li&gt;
+&lt;li&gt;compile OpenSSL 0.9.8k with Visual C to make dlls&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There is an issue for some people using a clean Windows XP, Vista, 7 which would either require we ship the Visual C redistributable package, or compile OpenSSL ourselves with Visual C.   The symptoms were the &quot;find bridges now&quot; button didn&#39;t appear in Vidalia 0.2.x, and the relays would never get flags.  A few people posted comments to this blog about lacking flags and geoip information with TBB. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/testing-tor-browser-bundle-127dev&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Vidalia 0.2.2 Released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_2_Released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_2_Released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/openssl_fixes" />
+
+	<category term="/tags/usability_enhancements" />
+
+	<category term="/tags/vidalia_releases" />
+
+
+	<updated>2011-04-05T11:33:22Z</updated>
+	<published>2009-08-15T14:01:14Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Vidalia 0.2.2 is released.  It addresses an issue with openssl which causes the geoip lookups to fail on various versions of Windows.  It also switches from the Nullsoft Installer to the Microsoft System Installer for better compatibility with Microsoft Windows.&lt;/p&gt;
+
+&lt;p&gt;There are now separate Apple OS X builds, one for PowerPC architectures and one for i386 architectures.  No more Universal binary bloat to download.&lt;/p&gt;
+
+&lt;p&gt;The changes are: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/vidalia-022-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;When the user clicks &quot;Browse&quot; in the Advanced settings page to locate&lt;br /&gt;
+    a new torrc, set the initial directory shown in the file dialog to the&lt;br /&gt;
+    current location of the user&#39;s torrc. (Ticket #505)&lt;/li&gt;
+&lt;li&gt;Use &#39;ditto&#39; to strip the architectures we don&#39;t want from the Qt&lt;br /&gt;
+    frameworks installed into the app bundle with the dist-osx,&lt;br /&gt;
+    dist-osx-bundle and dist-osx-split-bundle build targets.&lt;/li&gt;
+&lt;li&gt;Fix a bug in the CMakeLists.txt files for ts2po and po2ts that caused&lt;br /&gt;
+    build errors on Panther for those two tools.&lt;/li&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_2_Released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_2_Released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Vidalia 0.2.1 released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_1_released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_1_released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/usability_enhancements" />
+
+	<category term="/tags/vidalia_release" />
+
+
+	<updated>2011-04-05T11:33:21Z</updated>
+	<published>2009-08-12T03:48:59Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Vidalia 0.2.1 is now available.  This is a test release of the 0.2.x branch, which we hope to soon make the mainline version; replacing the 0.1.x branch.&lt;/p&gt;
+
+&lt;p&gt;Vidalia can be downloaded at &lt;a href=&quot;https://www.torproject.org/vidalia/&quot; title=&quot;https://www.torproject.org/vidalia/&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/vidalia/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Changelog: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/vidalia-021-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Add a &quot;Find Bridges Now&quot; button that will attempt to automatically&lt;br /&gt;
+    download a set of bridge addresses and add them to the list of bridges&lt;br /&gt;
+    in the Network settings page.&lt;/li&gt;
+&lt;li&gt;Add support for building with Google&#39;s Breakpad crash reporting&lt;br /&gt;
+    library (currently disabled by default).&lt;/li&gt;
+&lt;li&gt;Show or hide the &quot;Who has used my bridge recently?&quot; link along with&lt;br /&gt;
+    the other bridge-related widgets when the user toggles the relay mode&lt;br /&gt;
+    in the Network settings page. (Ticket #480)&lt;/li&gt;
+&lt;li&gt;Tolerate bridge addresses that do not specify a port number, since Tor&lt;br /&gt;
+    now defaults to using port 443 in such cases.&lt;/li&gt;
+&lt;li&gt;Add support for viewing the map as a full screen widget when built&lt;br /&gt;
+    with KDE Marble support.&lt;/li&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_1_released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_1_released/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

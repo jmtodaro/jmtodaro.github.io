@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>On the Recent Growth of the Tor Network</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>karsten</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:29:00Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_1/"/>
+
+	<author><name>Krs (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:28Z</updated>
+	<published>2009-06-23T11:28:28Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;im on it!&lt;br /&gt;
+would be nice if you could link in a guide or similar for us beginners in running a relay =)&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_2/"/>
+
+	<author><name>karsten</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:29Z</updated>
+	<published>2009-06-23T11:28:29Z</published>
+
+	<content type="html" xml:lang="en">
+	Good idea! Added.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_3/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:30Z</updated>
+	<published>2009-07-01T11:28:30Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Filtering bridge?&lt;br /&gt;
+I have set up a tor bridge with the aim of helping people in iran. I have posted my bridge addr to anonygreen.wordpress.com. But now I am seeing clients from funny places (Europe, Africa) coming in, but not yet from Iran. Q: Is it possible to configure a tor bridge so that only request from a specific set of IP-ranges (country=Iran, in this case) are being processed? Please understand that this is what I would like to run only at this time. I am tempted to use iptables to achieve this goal.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_4/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:31Z</updated>
+	<published>2009-09-18T11:28:31Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hi,&lt;br /&gt;
+Problem with bridges is that it has to be obtained from https:\\bridges.torproject&lt;br /&gt;
+This link has long been filtered in Iran. Another problem with asking for new bridges it that the nice people on Tor project only accept gmail addresses which is also filtered. In fact as I am typing this here, I can not access port 443 which makes the Tor not working at the moment.&lt;/p&gt;
+
+&lt;p&gt;a) I can not get Tor started because my ISP in Iran hase blocked all secured ports as from 12 hours ago. &lt;/p&gt;
+
+&lt;p&gt;b) I can not bypass ISP blockage using bridge IP because I can bot access gmail to get a working bridge!&lt;/p&gt;
+
+&lt;p&gt;Its like chicken &amp;amp; egg.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_5/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:32Z</updated>
+	<published>2009-07-03T11:28:32Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;There is a nice a simple guide on how to run a Tor bridge on the Sesawe site:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.sesawe.net/Setting-up-a-Tor-Bridge.html&quot; title=&quot;https://www.sesawe.net/Setting-up-a-Tor-Bridge.html&quot; rel=&quot;nofollow&quot;&gt;https://www.sesawe.net/Setting-up-a-Tor-Bridge.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Interestingly enough, this guide is also available in Persian:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.sesawe.net/article129,129.html&quot; title=&quot;https://www.sesawe.net/article129,129.html&quot; rel=&quot;nofollow&quot;&gt;https://www.sesawe.net/article129,129.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Z&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_6/"/>
+
+	<author><name>SwisstorExit (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:33Z</updated>
+	<published>2009-06-23T11:28:33Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hello,&lt;/p&gt;
+
+&lt;p&gt;i am very glad to see so much peoples take care and try to help the Tor network...&lt;/p&gt;
+
+&lt;p&gt;When all will help like this i am sure the futur version will be think to can be more speed...&lt;/p&gt;
+
+&lt;p&gt;but for that it need for sure to have enough relay to can do that &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;i encourage to everyone to use a realy when are possible or a bridge...&lt;/p&gt;
+
+&lt;p&gt;my best and thanks to all devlopper for there great work&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_7/"/>
+
+	<author><name>keb (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:34Z</updated>
+	<published>2009-06-23T11:28:34Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;would be nice to see long term graphs too,&lt;br /&gt;
+to put this into perspective&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_8/"/>
+
+	<author><name>karsten</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:35Z</updated>
+	<published>2009-06-23T11:28:35Z</published>
+
+	<content type="html" xml:lang="en">
+	There are long-term graphs in the linked PDFs. See Figure 1 in the PDF behind &quot;number of relays&quot; and Figure 1 in the &quot;number of bridges&quot; PDF.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_9/"/>
+
+	<author><name>Ian (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:36Z</updated>
+	<published>2009-06-23T11:28:36Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Ever since I posted info about Tor on my blog after the election I have seen traffic from Iran on Google Analytics and Statisfy from all over Iran. This tells me that the word of Tor is getting out to people who need it and that it&#39;s not just people in Tehran but all over Iran who are looking for help staying anonymous and safe.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://iansbrain.com/2009/06/15/tor-and-the-iranian-election/&quot; title=&quot;http://iansbrain.com/2009/06/15/tor-and-the-iranian-election/&quot; rel=&quot;nofollow&quot;&gt;http://iansbrain.com/2009/06/15/tor-and-the-iranian-election/&lt;/a&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_10/"/>
+
+	<author><name>eas (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:37Z</updated>
+	<published>2009-06-23T11:28:37Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;m one of those new relays &amp;amp; exit nodes.  I joined in order to try and help with communications in and out of Iran.&lt;/p&gt;
+
+&lt;p&gt;I&#39;m having to reevaluate that choice because my router is starting to choke on the sheer number of connections being held open.  I checked the faq and googled around to see if TOR let me set a limit and find the apparent position of the TORproject is that I should upgrade my firmware or get a different router if that doesn&#39;t work.&lt;/p&gt;
+
+&lt;p&gt;I understand this position, but I hope that it is understood that it is one that likely limits the total number of TOR nodes and their longevity.  It is not the sort of thing that will keep most people from running a node in the first place, but it is exactly the sort of thing that will make them quit.&lt;/p&gt;
+
+&lt;p&gt;I am running a recent 3rd party firmware on my Linksys WRT54G router.  I could set up a linux or freebsd box as a more robust router at some point, but I&#39;m guessing that scraping together that hardware getting it running and reconfiguring my network is going to take 5-10x as much time as it took me to port forward through my router and install tor on an existing box. Other people aren&#39;t even going to consider doing that much work. &lt;/p&gt;
+
+&lt;p&gt;In closing, thanks so much for the good work so far.  Please consider things, like an open connection limit, that will make it easier for less committed or less knowledgeable users to help grow the TOR network with their existing equipment.  &lt;/p&gt;
+
+&lt;p&gt;We are already seeing the impact of the Iranian regime&#39;s curtailing of communications.  Its making it harder to coordinate large protests and this movement is only really a couple weeks old, it could take a year, or more, for the old regime to fall.  The 1979 revolution actually played out over 12 months, and by most comparisions, that was pretty quick as revolutions go.  The charts above are great, but it seems that it&#39;ll be really important to see even more growth, and sustain the levels for the long haul.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_11/"/>
+
+	<author><name>karsten</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:38Z</updated>
+	<published>2009-06-23T11:28:38Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Limiting the number of connections isn&#39;t really possible because of Tor&#39;s design. Clients can freely select their routes through the network, so that your node might end up with as many connections as there are other relays in the network. Plus, as an exit node you obviously have connections to as many servers as clients are using you as their exit.&lt;/p&gt;
+
+&lt;p&gt;You might consider limiting the contributed bandwidth rate by setting the BandwidthRate option in your torrc file. As a result, your node will also have fewer open connections.&lt;/p&gt;
+
+&lt;p&gt;Thanks for running an exit node!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 12</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_12/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_12/"/>
+
+	<author><name>arma</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:39Z</updated>
+	<published>2009-06-24T11:28:39Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Right, Karsten had some good suggestions for not needing so many connections.&lt;/p&gt;
+
+&lt;p&gt;If those don&#39;t work, a more thorough option is to switch to running a bridge relay -- you&#39;re only known by a few users at a time, so your linksys router should be able to handle it just fine:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/bridges#RunningABridge&quot; title=&quot;https://www.torproject.org/bridges#RunningABridge&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/bridges#RunningABridge&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/docs/tor-doc-relay&quot; title=&quot;https://www.torproject.org/docs/tor-doc-relay&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/docs/tor-doc-relay&lt;/a&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 13</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_13/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_13/"/>
+
+	<author><name>Ian (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:40Z</updated>
+	<published>2009-06-23T11:28:40Z</published>
+
+	<content type="html" xml:lang="en">
+	After I started pimping Tor bridges for Iran on my blog on the 15th I have had over 154 people send me bridges for people to use. If bridges jumped from 255 to 432 that means I helped get all but 23 of the bridges setup. &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt; Glad I could help.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 14</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_14/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_14/"/>
+
+	<author><name>arma</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:41Z</updated>
+	<published>2009-06-23T11:28:41Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Ian: great news. &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Karsten: at some point we should look through the bridge relay stats and see how much churn there is. I&#39;m guessing that the 400-some bridges we have running right now do not indicate that only 400-some people set up bridges. Rather they indicate that only 400-some of them have their bridge still up and reachable right now. How many tried total?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 15</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_15/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_15/"/>
+
+	<author><name>Nick Levay (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:42Z</updated>
+	<published>2009-06-23T11:28:42Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;At the &lt;a&gt;Center for American Progress&lt;/a&gt; we have wanted to do something to support the Iranian cause since the protests started.  An hour ago, we brought up a relay on our secondary DS3 offering 45Mbit of bandwidth solely dedicated to relaying traffic from the Tor Network.&lt;/p&gt;
+
+&lt;p&gt;I&#39;m guessing it takes awhile for the Tor network to pick up on the fact a huge idle pipe is sitting there.  I look forward to seeing what the usage is like tomorrow.&lt;/p&gt;
+
+&lt;p&gt;At some point we&#39;ll need to pull back some of that bandwidth for ourselves, but not in the near future.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 16</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_16/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_16/"/>
+
+	<author><name>Phil M (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:43Z</updated>
+	<published>2009-06-23T11:28:43Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Wow!  That&#39;s generous, Nick.  I hope you&#39;ll report back here with your findings.&lt;/p&gt;
+
+&lt;p&gt;I mentioned this on an IRC channel where at least a couple Tor developers hang out lately, and &lt;a href=&quot;https://www.torproject.org/people.html.en&quot; rel=&quot;nofollow&quot;&gt;Nick Mathewson&lt;/a&gt; (Tor chief architect and director) suggested that someone ask CAP to &lt;a href=&quot;https://www.torproject.org/contact.html.en&quot; rel=&quot;nofollow&quot;&gt;get in touch with them&lt;/a&gt; for &quot;very-fast-track tech support on any questions [you] have&quot;.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 17</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_17/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_17/"/>
+
+	<author><name>Wayne (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:44Z</updated>
+	<published>2009-06-23T11:28:44Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I just thought it would be nice if you ran a relay/exit only download.&lt;/p&gt;
+
+&lt;p&gt;Currently when you download a bundle you have to go through some set up and the lay might be turned off by what each option does. Then after that you have do go into setup to start the relay.&lt;/p&gt;
+
+&lt;p&gt;I was wondering if you could make a download that was simple.&lt;br /&gt;
+You click it and it starts right up as a relay/exit.&lt;/p&gt;
+
+&lt;p&gt;This would enable people to easily start up a relay and not install unnecessary software like torbutton or provixy which the vast majority of people will never use.. and might not want installed on their computer. &lt;/p&gt;
+
+&lt;p&gt;Its hard to describe how to do all the steps and reasons  in 140 characters.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 18</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_18/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_18/"/>
+
+	<author><name>Ian (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:45Z</updated>
+	<published>2009-06-23T11:28:45Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;i&#39;ve been using short links in my tweets telling people to setup Tor and sending them to the instructions i posted on my site.&lt;/p&gt;
+
+&lt;p&gt;This url:&lt;br /&gt;
+&lt;a href=&quot;http://cli.gs/1YZ0gB&quot; title=&quot;http://cli.gs/1YZ0gB&quot; rel=&quot;nofollow&quot;&gt;http://cli.gs/1YZ0gB&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;redirects to my site:&lt;br /&gt;
+&lt;a href=&quot;http://iansbrain.com/2009/06/15/tor-and-the-iranian-election/&quot; title=&quot;http://iansbrain.com/2009/06/15/tor-and-the-iranian-election/&quot; rel=&quot;nofollow&quot;&gt;http://iansbrain.com/2009/06/15/tor-and-the-iranian-election/&lt;/a&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 19</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_19/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_19/"/>
+
+	<author><name>BoneDrone (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:46Z</updated>
+	<published>2009-06-23T11:28:46Z</published>
+
+	<content type="html" xml:lang="en">
+	I recently started a TOR relay with Vidalia.  Under sharing I have &quot;Help censored...&quot; checked, with relay port 443 and directory port 9030.  My bandwidth limits are set to 20KBp/s.  Yet over the past few days, I&#39;ve never seen a connection from Iran in my Tor network map.  Am I supposed to submit my bridge address and if so, where?  Am I configured correctly and if not, what do I fix?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 20</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_20/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_20/"/>
+
+	<author><name>karsten</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:47Z</updated>
+	<published>2009-06-24T11:28:47Z</published>
+
+	<content type="html" xml:lang="en">
+	Sounds like you did everything right. (Also check your message log for warnings, but from what you write it sounds that everything is fine.) Your bridge descriptor is uploaded by default to one of the directory authorities that distributes your address to clients as needed. No further action required on your side. It may be that your bridge needs to be around some time to attract more clients. In general, bridges do not see as many users as relays do. But for those users it&#39;s even more important that people are running bridges!
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 21</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_21/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_21/"/>
+
+	<author><name>JackNapier (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:48Z</updated>
+	<published>2009-06-24T11:28:48Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Anyone making bridges should email them to baklava at piratbyran.org &lt;/p&gt;
+
+&lt;p&gt;He&#39;s from the Pirate Bay and is the primary person to contact regarding bridges. I set up Tor last night and saw my first connection today uploading about 30 MB.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 22</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_22/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_22/"/>
+
+	<author><name>hemara (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:49Z</updated>
+	<published>2009-07-01T11:28:49Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;No offense meant JackNapier, but can someone verify that this is a genuine address of somebody sending bridge info to Iranians, and not somebody in Iranian Gov phishing for bridge addresses to block?&lt;br /&gt;
+If bridges addresses get into the wrong hands they are blocked and useless.&lt;br /&gt;
+You can always send bridge info to Ian - details here:&lt;br /&gt;
+&lt;a href=&quot;http://iansbrain.com/2009/06/15/tor-and-the-iranian-election/&quot; title=&quot;http://iansbrain.com/2009/06/15/tor-and-the-iranian-election/&quot; rel=&quot;nofollow&quot;&gt;http://iansbrain.com/2009/06/15/tor-and-the-iranian-election/&lt;/a&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 23</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_23/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_23/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:50Z</updated>
+	<published>2009-06-25T11:28:50Z</published>
+
+	<content type="html" xml:lang="en">
+	The original topic premise of a need to keep the added bandwidth on-line is certainly plausible and conventional reasoning.  However, given the history of the internet (and computing, generally), I am not certain that it is 100% valid.  That history is of demand inexorably expanded to fill whatever bandwidth is available.  The hypothetical scenario goes like this:  Suppose that all of the additional resources that came on-line specifically in the cause of free communications for the Iranian dissidents stay on-line after that crisis subsides.  Over the next several months, client-only users who had minimized their use of TOR in the past because of throughput and latency issues, gradually ramp up their use as they find it faster.  The added bandwidth is now entirely consumed by &quot;ordinary&quot;, &quot;background&quot; networking.  Later, another political crisis triggers government censorship of the net, and that much more additional bandwidth will need to be found.  Is the potential supply available to TOR so inexhaustible as to be certain if its availability at need?  If there was a clear choice to be made between keeping the extra capacity on-line in the above scenario, and having it taken back off-line to be held in reliable reserve against another crisis, I am not sure that the second alternative might not be preferable.  Admittedly, the dichotomy I presented between &quot;ordinary&quot; and &quot;crisis&quot; use is somewhat artificial, and it is also unlikely that the actual alternatives and consequences are so clear cut.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 24</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_24/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_24/"/>
+
+	<author><name>VanillaMozilla (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:51Z</updated>
+	<published>2009-06-26T11:28:51Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I was going to install a relay on Ubuntu Jaunty, but that is on hold now.&lt;/p&gt;
+
+&lt;p&gt;Installation on Linux is not the easiest thing.  The instructions here:  &lt;a href=&quot;https://wiki.torproject.org/noreply/TheOnionRouter/TorOnDebian&quot; title=&quot;https://wiki.torproject.org/noreply/TheOnionRouter/TorOnDebian&quot; rel=&quot;nofollow&quot;&gt;https://wiki.torproject.org/noreply/TheOnionRouter/TorOnDebian&lt;/a&gt; say not to use the Ubuntu repositories, but the prescribed procedure left me with an error message about missing packages/files.&lt;/p&gt;
+
+&lt;p&gt;I&#39;m up to my ears with fixing things.  Why not just make it easy and update the Ubuntu repository?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 25</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_25/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_25/"/>
+
+	<author><name>Mike (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:52Z</updated>
+	<published>2009-07-16T11:28:52Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;ve been having the same trouble.  OTOH, I am a Linux newbie.&lt;br /&gt;
+This is an example of what I&#39;ve been seeing&lt;/p&gt;
+
+&lt;p&gt;x@tor:~$ apt-get update&lt;br /&gt;
+E: Could not open lock file /var/lib/apt/lists/lock - open (13 Permission denied)&lt;br /&gt;
+E: Unable to lock the list directory&lt;br /&gt;
+x@tor:~$ &lt;/p&gt;
+
+&lt;p&gt;x@tor:~$ apt-get install tor tor-geoipdb&lt;br /&gt;
+E: Could not open lock file /var/lib/dpkg/lock - open (13 Permission denied)&lt;br /&gt;
+E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?&lt;br /&gt;
+x@tor:~$ &lt;/p&gt;
+
+&lt;p&gt;Maybe the issue is I&#39;m not &quot;root&quot; when doing this.  But, I have no idea how to set myself as &quot;root&quot; or even if that is the problem.&lt;/p&gt;
+
+&lt;p&gt;I have a good amount of experience with Windows.  But, I&#39;ve chosen to install TOR on a separate Ubuntu box for several reasons.&lt;/p&gt;
+
+&lt;p&gt;If anyone has a solution, I&#39;d love to hear it.&lt;/p&gt;
+
+&lt;p&gt;Regards,&lt;br /&gt;
+Mike&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 26</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_26/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_26/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:53Z</updated>
+	<published>2009-07-17T11:28:53Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;1) You should use an OS with which you&#39;re comfortable.&lt;/p&gt;
+
+&lt;p&gt;2) yes you need to be root, this has nothing to do with Tor.  apt-get install requires root privileges.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 27</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_27/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_27/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:54Z</updated>
+	<published>2009-07-18T11:28:54Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;When you use Ubuntu, you need to use an Ubuntu guide, not Debian.&lt;br /&gt;
+You needed to use sudo before each of your commands for them so succeed, so:&lt;br /&gt;
+sudo apt-get update&lt;br /&gt;
+sudo apt-get install tor tor-geoipdb&lt;/p&gt;
+
+&lt;p&gt;I strongly advise you to NOT use repositories not intended for the specific Ubuntu version you use. Do not blindly put Debian repositories or you could render your system unusable.&lt;/p&gt;
+
+&lt;p&gt;ATM if you use Ubuntu 9.04 the repo is:&lt;br /&gt;
+deb &lt;a href=&quot;http://mirror.noreply.org/pub/tor&quot; title=&quot;http://mirror.noreply.org/pub/tor&quot; rel=&quot;nofollow&quot;&gt;http://mirror.noreply.org/pub/tor&lt;/a&gt; jaunty main&lt;/p&gt;
+
+&lt;p&gt;Here the word jaunty is critical. For more questions, ask in ubuntuforums, or at least search for Ubuntu specific guides next time.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 28</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_28/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_28/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:55Z</updated>
+	<published>2009-06-28T11:28:55Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;If you can, go setup more relays and/or bridges and keep them running even when the conflicts in the world do not hit the headlines.&lt;/p&gt;
+
+&lt;p&gt;This sounds to me like the official go ahead to start talking up Tor on all the Social nets, etc.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 29</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_29/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_29/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:56Z</updated>
+	<published>2009-06-29T11:28:56Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I have setup my pc as relay using the vidalia gui. But it seems like i have not relayed any messages so far and i am not even listed in the relay list :(. &lt;/p&gt;
+
+&lt;p&gt;I feel useless now &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/../../smileys/sad.png&quot; alt=&quot;:(&quot; /&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 30</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_30/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_30/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:57Z</updated>
+	<published>2009-06-29T11:28:57Z</published>
+
+	<content type="html" xml:lang="en">
+	There&#39;re the time delay for the relay list cache. so u r useful indeed.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 31</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_31/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_31/"/>
+
+	<author><name>Bomm2 (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:58Z</updated>
+	<published>2009-07-04T11:28:58Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Vidalia 0.1.13 bundle with Tor 0.2.0.35 on MS Server 2003 as exit node on a 2Mbps/512Kbps ADSL:&lt;/p&gt;
+
+&lt;p&gt;Despite custom setting bandwidth limits to 25/30 KB/s, which I would be happy to donate for a couple of months, Tor still hogs all the 45-55KB/s maximum upload speed for long periods of time, rendering the Internet connection almost useless for other purposes.&lt;/p&gt;
+
+&lt;p&gt;If I am to recommend running a Tor relay to other average Joes, the default bandwidth limits must be set - and effectively capped - at realistic values. The most efficient solution would be adopting the Vuze (former Azureus) auto-speed mechanism, but a default 25 avg and 40 absolute max for a 512Kbps ADSL should work.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 32</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_32/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_32/"/>
+
+	<author><name>Anonymous Coward (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:28:59Z</updated>
+	<published>2009-07-04T11:28:59Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;m running Tor 0.2.1.16-rc under Windows XP Home SP3. It was running successfully as a relay for about 48 hours.&lt;/p&gt;
+
+&lt;p&gt;I just reconfigured it to run as a bridge using &quot;Help censored users reach the Tor network.&quot; It has been running for about 30 minutes. It starts without error but there&#39;s very little traffic. I see two connections using &quot;Netstat -an&quot; and when inspecting the Tor process&#39; TCP/IP connections using Process Explorer.&lt;/p&gt;
+
+&lt;p&gt;I have not shared my &quot;network key&quot; with anyone. Will the Tor network distribute this automatically or do I have to manually distribute it?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 33</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_33/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comment_33/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:29:00Z</updated>
+	<published>2009-09-28T11:29:00Z</published>
+
+	<content type="html" xml:lang="en">
+	hi, i&#39;m just have an idea that might be help. i think if tor-net be a social-net and all relay be just bridge and can connect with people who is in social-net(of course it can be expand but in first step) then tor-net can be force all people to be relay because in social-net they should save their property in internet. in this way no one could filter this net.
+
+	</content>
+
+
+
+</entry>
+
+</feed>

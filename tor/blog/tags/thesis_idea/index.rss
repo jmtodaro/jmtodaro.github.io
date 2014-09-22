@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged thesis_idea</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/thesis_idea/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>arma: Research problem: measuring the safety of the Tor network</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/</link>
+
+
+	<category>/tags/research</category>
+
+	<category>/tags/research_progress</category>
+
+	<category>/tags/thesis_idea</category>
+
+
+	<pubDate>Sat, 05 Feb 2011 23:18:00 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:14:33Z</dcterms:modified>
+
+	<description>&lt;p&gt;We need a better understanding of how much anonymity the Tor network provides against a partial network adversary who observes and/or operates some of the network. Specifically, we want to understand the chances that this class of adversary can observe a user&#39;s traffic coming into the network and also the corresponding traffic exiting the network.&lt;/p&gt;
+
+&lt;p&gt;Most of our graphs historically have looked at the total number of relays over time. But this simple scalar doesn&#39;t take into account relay capacity, exit policies, geographic or network location, etc.&lt;/p&gt;
+
+&lt;p&gt;One concrete problem from this bad metric is that when many new relays show up (e.g. due to a &lt;a href=&quot;https://blog.torproject.org/files/relays-diff-2011-01-28.png&quot;&gt;political event&lt;/a&gt;), we really don&#39;t have any insight about how the diversity of the new relays compares to the rest of the network. The simplistic metric also gets misused in academic research papers to produce misleading results like &quot;I can sign up 2% of the Tor relays and capture 50% of the paths,&quot; when what they mean is &quot;I can provide half the capacity in the Tor network and capture half the paths.&quot;&lt;/p&gt;
+
+&lt;p&gt;There are four parts to this research problem. First, we need a broad array of metrics that reflect various instances of our partial network adversary. Second, we need to understand for each metric how stable it is (sensitivity analysis) and what changes in the Tor network would efficiently improve (or harm) it. Third, we should make the calculations as realistic as possible based on actual Tor client behavior. Last, we need a better infrastructure for comparing the safety impact from alternate design scenarios, for example different path selection or route balancing algorithms.&lt;/p&gt;
+
+&lt;p&gt;We&#39;d love to &lt;a href=&quot;https://www.torproject.org/research&quot;&gt;work with you&lt;/a&gt; to help answer these questions. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/research-problem-measuring-safety-tor-network&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/#comments</comments>
+
+</item>
+<item>
+
+	<title>arma: Research problem: adaptive throttling of Tor clients by entry guards</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/</link>
+
+
+	<category>/tags/bandwidth_throttling</category>
+
+	<category>/tags/research</category>
+
+	<category>/tags/research_progress</category>
+
+	<category>/tags/thesis_idea</category>
+
+	<category>/tags/torperf</category>
+
+
+	<pubDate>Sun, 19 Sep 2010 17:02:14 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:01Z</dcterms:modified>
+
+	<description>&lt;p&gt;Looking for a paper topic (or a thesis topic)? Here&#39;s a Tor research area that needs more attention. The short version is: if we prevent the really loud users from using too much of the Tor network, how much can it help?&lt;/p&gt;
+
+&lt;p&gt;We&#39;ve instrumented Tor&#39;s entry relays so they can rate-limit connections from users, and we&#39;ve instrumented the directory authorities so they can change the rate-limiting parameters globally across the network. Which parameter values improve performance for the Tor network as a whole? How should relays adapt their rate-limiting parameters based on their capacity and based on the network load they see, and what rate-limiting algorithms will work best?&lt;/p&gt;
+
+&lt;p&gt;We&#39;d love to &lt;a href=&quot;https://www.torproject.org/research&quot;&gt;work with you&lt;/a&gt; to help answer these questions. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/research-problem-adaptive-throttling-tor-clients-entry-guards&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

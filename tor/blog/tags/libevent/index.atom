@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged libevent</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/libevent/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/libevent/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/libevent/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:35:22Z</updated>
+<entry>
+	<title>Polipo Portability Enhancements Summary</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Polipo_Portability_Enhancements_Summary/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Polipo_Portability_Enhancements_Summary/"/>
+
+	<author><name>chrisd</name></author>
+
+
+
+
+
+
+	<category term="/tags/gsoc_2009" />
+
+	<category term="/tags/libevent" />
+
+	<category term="/tags/polipo" />
+
+
+	<updated>2011-04-05T11:35:22Z</updated>
+	<published>2009-09-11T23:25:21Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Over the summer for GSoC 2009, I worked on Polipo, Tor&#39;s favored Web proxy for bridging the gap between HTTP and SOCKS protocols. The proxy also provides an efficient memory cache to help speed up browsing. I had an opportunity to learn about Polipo and Libevent, and I had a chance to attend &lt;a href=&quot;http://petsymposium.org/2009/&quot; rel=&quot;nofollow&quot;&gt;PETS&lt;/a&gt;, a privacy conference, and meet some of the Tor folks in person. &lt;a href=&quot;http://www.pps.jussieu.fr/~jch/software/polipo/&quot; rel=&quot;nofollow&quot;&gt;Polipo&lt;/a&gt; is authored by Juliusz Chroboczek. &lt;a href=&quot;http://www.monkey.org/~provos/libevent/&quot; rel=&quot;nofollow&quot;&gt;Libevent&lt;/a&gt; is developed by Nick Mathewson and Niels Provos. Nick Mathewson also happens to work for the Tor Project and was my GSoC mentor over the summer. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/polipo-portability-enhancements-summary&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Polipo_Portability_Enhancements_Summary/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Polipo_Portability_Enhancements_Summary/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Testing Tor Browser Bundle 1.2.0-dev</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/geoip" />
+
+	<category term="/tags/libevent" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+
+	<updated>2011-04-05T11:25:19Z</updated>
+	<published>2009-05-23T02:50:06Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;This is an open call for testing of the soon to be released Tor Browser Bundle 1.2.0.  &lt;/p&gt;
+
+&lt;p&gt;The major changes in this version are that you can now run multiple instances of Firefox.  This means each Firefox browser is independent of the others.  They won&#39;t leak urls, scripts, etc between instances.  &lt;/p&gt;
+
+&lt;p&gt;It also includes Tor&#39;s geoip database.  This will enable people to set ExitNodes by country code.  You still have to manually edit the torrc file.  We&#39;d love it if someone wrote a way to do this into Vidalia (such as right click on a country in the network map and choose &quot;exit here&quot;). &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/testing-tor-browser-bundle-120-dev&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt; Switch to launching Firefox directly from Vidalia to allow multiple instances of Firefox&lt;/li&gt;
+&lt;li&gt;Update Firefox to 3.0.10&lt;/li&gt;
+&lt;li&gt;Update to Qt 4.5.1&lt;/li&gt;
+&lt;li&gt;Update Firefox prefs.js to stop scanning for plugins&lt;/li&gt;
+&lt;li&gt;Update libevent to 1.4.11&lt;/li&gt;
+&lt;li&gt;Include the Tor geoip database&lt;/li&gt;
+&lt;/ul&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Some notes on progress with IOCP and Libevent</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Some_notes_on_progress_with_IOCP_and_Libevent/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Some_notes_on_progress_with_IOCP_and_Libevent/"/>
+
+	<author><name>nickm</name></author>
+
+
+
+
+
+
+	<category term="/tags/developerment" />
+
+	<category term="/tags/hacking" />
+
+	<category term="/tags/iocp" />
+
+	<category term="/tags/libevent" />
+
+
+	<updated>2011-04-05T11:20:15Z</updated>
+	<published>2009-03-01T22:37:33Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hi!  I recently wrote up a status report for the progress we&#39;re making on hacking Libevent, and I thought I&#39;d post it here too.&lt;/p&gt;
+
+&lt;p&gt;BACKGROUND&lt;/p&gt;
+
+&lt;p&gt;Tor currently uses Libevent for its high-performance networking calls.  Libevent is a software library originally written by Niels Provos (then of UMichigan, now of Google), and now co-developed by Niels Provos and the Tor Project&#39;s Nick Mathewson.  Its purpose is to provide consistent fast interfaces to various operating systems&#39; mutually incompatible fast networking facilities.  Libevent gives applications two basic interfaces to these networking layers: a low-level interface where the application is notified when an operation (like a network read or write) is ready to begin, and a higher-level interface where Libevent itself manages network operations and the application is notified when the network operations are completed. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/some-notes-progress-iocp-and-libevent&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Some_notes_on_progress_with_IOCP_and_Libevent/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Some_notes_on_progress_with_IOCP_and_Libevent/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

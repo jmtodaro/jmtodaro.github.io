@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Roger&#x27;s HAR2009 talk on Tor performance</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Rogers_HAR2009_talk_on_Tor_performance/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Rogers_HAR2009_talk_on_Tor_performance/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>arma</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Rogers_HAR2009_talk_on_Tor_performance/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:33:47Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Rogers_HAR2009_talk_on_Tor_performance/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Rogers_HAR2009_talk_on_Tor_performance/comment_1/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:42Z</updated>
+	<published>2009-08-19T11:33:42Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;There&#39;s a torrent of this up at &lt;a href=&quot;http://www.johntowery.com/har2009_Why_Tor_is_slow.mp4.torrent&quot; title=&quot;http://www.johntowery.com/har2009_Why_Tor_is_slow.mp4.torrent&quot; rel=&quot;nofollow&quot;&gt;http://www.johntowery.com/har2009_Why_Tor_is_slow.mp4.torrent&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It uses the hidden tracker and should work for both Tor and non-tor users.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Rogers_HAR2009_talk_on_Tor_performance/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Rogers_HAR2009_talk_on_Tor_performance/comment_2/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:43Z</updated>
+	<published>2009-08-19T11:33:43Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;a href=&quot;https://blog.torproject.org/blog/why-tor-is-slow&quot; title=&quot;https://blog.torproject.org/blog/why-tor-is-slow&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/why-tor-is-slow&lt;/a&gt; appears to be a broken link.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Rogers_HAR2009_talk_on_Tor_performance/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Rogers_HAR2009_talk_on_Tor_performance/comment_3/"/>
+
+	<author><name>arma</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:44Z</updated>
+	<published>2009-08-19T11:33:44Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Gah. You&#39;re right, I broke it when updating it to include a link to this post.&lt;/p&gt;
+
+&lt;p&gt;Fixed now. Thanks!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Rogers_HAR2009_talk_on_Tor_performance/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Rogers_HAR2009_talk_on_Tor_performance/comment_4/"/>
+
+	<author><name>thebard (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:45Z</updated>
+	<published>2009-08-19T11:33:45Z</published>
+
+	<content type="html" xml:lang="en">
+	When you talk, in the paper, about increasing support and such for people hosting relays, I think it would be of great benefit if you provided feedback on how well their relays are performing, with advice on how to improve them in cases of &quot;misbehaving&quot; relays. There are a lot of people out there supporting TOR who are practically computer noobs, and so won&#39;t know if their relay is set up correctly or not.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Rogers_HAR2009_talk_on_Tor_performance/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Rogers_HAR2009_talk_on_Tor_performance/comment_5/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:46Z</updated>
+	<published>2009-08-21T11:33:46Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;These are good points.  Most &quot;misbehaving&quot; relays have turned out to be misconfiguration; sometimes in obvious ways.&lt;/p&gt;
+
+&lt;p&gt;We&#39;re creating a relay operator-only mailing list to provide a relay operator to relay operator support channel.  Many relay ops ask us questions directly vs on our other mailing lists because they are publicly archived, and can have a low signal to noise ratio.&lt;/p&gt;
+
+&lt;p&gt;Another tool we&#39;re working on is called Tor Weather.  It&#39;s a tool designed to email the contact when the relay goes down for a period of time, or if you&#39;re determined to be a bad exit through user feedback or automated scanning.&lt;/p&gt;
+
+&lt;p&gt;These two steps should help many of the new relays.  Another option is to email a new relay operator and offer a few links about how to find support and address common questions.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Rogers_HAR2009_talk_on_Tor_performance/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Rogers_HAR2009_talk_on_Tor_performance/comment_6/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:47Z</updated>
+	<published>2010-05-16T11:33:47Z</published>
+
+	<content type="html" xml:lang="en">
+	The torrent for the video does not work. The video doesn&#39;t work either when you download it by itself. I have quicktime updated to the most recent version. It says something about an error in the video file. When you play it in the most recent version of Divx, there is video, but no sound.
+
+	</content>
+
+
+
+</entry>
+
+</feed>

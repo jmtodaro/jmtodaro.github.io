@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged ssl_errors</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/ssl_errors/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Life without a CA</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/</link>
+
+
+	<category>/tags/certificate_authority</category>
+
+	<category>/tags/certificate_fingerprints</category>
+
+	<category>/tags/distributed_trust</category>
+
+	<category>/tags/firefox</category>
+
+	<category>/tags/ssl_errors</category>
+
+
+	<pubDate>Fri, 26 Mar 2010 14:43:01 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:53:48Z</dcterms:modified>
+
+	<description>&lt;p&gt;At &lt;a href=&quot;http://libreplanet.org/&quot;&gt;Libreplanet 2010&lt;/a&gt;, I was in a discussion with the &lt;a href=&quot;https://web.monkeysphere.info/&quot;&gt;MonkeySphere&lt;/a&gt; and &lt;a href=&quot;https://www.eff.org/&quot;&gt;EFF&lt;/a&gt; folks about how to encourage every website to offer ssl by default.  The general idea is to stop local traffic snooping and provide more security by default. During the discussion, it came up that I disable all of the &lt;a href=&quot;http://en.wikipedia.org/wiki/Certificate_authority&quot;&gt;Certificate Authorities&lt;/a&gt; in my systems and selectively trust the ssl certificates from individual websites.  I&#39;ve been doing this for years.  Apparently my admission was a shocking statement to many.  The group asked me to document my Firefox setup and what life is like without any trusted CAs.  Seth from the EFF has a &lt;a href=&quot;https://www.eff.org/deeplinks/2010/03/researchers-reveal-likelihood-governments-fake-ssl&quot;&gt;quick post&lt;/a&gt; about possible concerns over  the CAs in your browser. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/life-without-ca&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

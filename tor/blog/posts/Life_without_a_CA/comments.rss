@@ -1,0 +1,575 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Life without a CA</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Anonymous: Comment 1</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_1/</link>
+
+	<pubDate>Fri, 26 Mar 2010 06:53:48 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:53:48Z</dcterms:modified>
+
+	<description>You are my hero.  Keep up the good fight.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 2</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_2/</link>
+
+	<pubDate>Sat, 27 Mar 2010 06:53:49 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:53:49Z</dcterms:modified>
+
+	<description>&lt;p&gt;Getting rid of CAs is a terribly bad idea. CAs are there for a bunch of good reasons.&lt;/p&gt;
+
+&lt;p&gt;But let me ask this at first:&lt;br /&gt;
+How do you think you (non CA user) will detect DNS cache poisoning, BGP hijacking, Domain name hijacking? - You won&#39;t. Sometimes depending on how well the SSL certs are secured. Every single one you use.&lt;/p&gt;
+
+&lt;p&gt;I think most people are aware that deploying SSL isn&#39;t easy.  http://blog.torproject.org/blog/life-without-ca - works (no s, see). So it&#39;s done wrong here, too.&lt;br /&gt;
+- Because there&#39;s a form - and I&#39;m using it right now. You get a bunch of session hijacking issues therefore. Why do you allow non-https content if you care for SSL security?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 3</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_3/</link>
+
+	<pubDate>Sat, 27 Mar 2010 06:53:50 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:53:50Z</dcterms:modified>
+
+	<description>&lt;p&gt;Obviously, we&#39;re of differing opinions on CAs.  CAs do little to zero checking when giving out SSL certs.  I&#39;ve personally bought SSL certs for apple.com, microsoft.com, and other domains where I had zero way to prove I owned the domain.  When I tried to buy an EV cert for torproject.org, the entire check consisted of sending an email to an address I provided.  Maybe we should be throwing out the CAs that are bad at their verification.  If I buy an EV cert, I expect to have to prove I am authorized to represent the company, prove the company exists (and no, faxing an authorization on company letterhead doesn&#39;t count because it&#39;s so easily faked), and then have the CA do some actual work to make sure this is the right request. The other issue is it only takes 1 CA in your browser to be weak, and you lose.  It&#39;s a race to the bottom for sloppy standards compliance and price.  If one CA makes it too difficult to buy certs, just go to the cheapest, crappiest CA that is in most browsers and get your cert.&lt;/p&gt;
+
+&lt;p&gt;There&#39;s actually a subtle distinction here.  SSL is great at encryption between me and the destination site.  I don&#39;t like using SSL for authentication through a supposed trusted 3rd party CA.  This is why I like the more peer-to-peer web of trust model.  The people at Princeton and the Freedom to Tinker blog have done a fine job explaining the issues, &lt;a href=&quot;https://freedom-to-tinker.com/blog/sjs/web-security-trust-models&quot; title=&quot;https://freedom-to-tinker.com/blog/sjs/web-security-trust-models&quot; rel=&quot;nofollow&quot;&gt;https://freedom-to-tinker.com/blog/sjs/web-security-trust-models&lt;/a&gt; and &lt;a href=&quot;https://www.freedom-to-tinker.com/blog/felten/web-certification-fail-bad-assumptions-lead-bad-technology&quot; title=&quot;https://www.freedom-to-tinker.com/blog/felten/web-certification-fail-bad-assumptions-lead-bad-technology&quot; rel=&quot;nofollow&quot;&gt;https://www.freedom-to-tinker.com/blog/felten/web-certification-fail-bad...&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I think you missed the point where I check certs through a few different methods from different parts of the world to see if I arrive at the same answer.  Yes, a global adversary could alter bankofamerica.com and screw me, however, everyone else is equally screwed in that scenario.  Calling up the bank and asking for their fingerprint and serial number is the second verification step.&lt;/p&gt;
+
+&lt;p&gt;The reason we as tor allow http and do not automatically redirect to https is that some companies and countries block ssl websites by default.  I&#39;ve seen this in action at a few banks around the world.  They feel they need to surveil their employees to meet audit requirements.  If we automatically redirected to the ssl site, many people would be sad.  Some countries in the Middle East block ssl versions of sites, but not the non-SSL version.  Simply forcing SSL everywhere is fraught with complexities.  However, enabling SSL for users to choose is a fine option.  You&#39;ll notice my links were to the ssl version of a site if it existed.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 4</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_4/</link>
+
+	<pubDate>Sat, 27 Mar 2010 06:53:51 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:53:51Z</dcterms:modified>
+
+	<description>So... bank employees are prevented from doing secure banking?  That&#39;s horrendously, amusingly ironic.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 5</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_5/</link>
+
+	<pubDate>Sat, 27 Mar 2010 06:53:52 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:53:52Z</dcterms:modified>
+
+	<description>As a bank information security employee, the reason we have to do this is to record the content of all traffic in and out to help the Loss Prevention departments.  If the traffic is non-ssl, we can record everything easily.  For some departments, we allow ssl through the firewalls, but have installed our own CA that mitm all their traffic.  We also whitelist the internet with a bluecoat systems device so people, say in the wire transfer room, can only access like 50 pre-approved sites relevant to their jobs.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 6</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_6/</link>
+
+	<pubDate>Sat, 27 Mar 2010 06:53:53 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:53:53Z</dcterms:modified>
+
+	<description>&lt;p&gt;Yay, I am not alone. Doing the same since about half a year &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;&lt;br /&gt;
+Still can not use online banking cause nobody at my bank can tell me their fingerprint :P&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 7</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_7/</link>
+
+	<pubDate>Sat, 27 Mar 2010 06:53:54 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:53:54Z</dcterms:modified>
+
+	<description>For a moment I wondered when I wrote this, I&#39;ve been doing the same for quite some time. And I must admit: these bank service desks, I wonder who decides to hire them or if they get any education ...
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 8</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_8/</link>
+
+	<pubDate>Sat, 27 Mar 2010 06:53:55 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:53:55Z</dcterms:modified>
+
+	<description>&lt;p&gt;I guess I should also state that my practices essentially turn me into a CA, where I have to do the verification.  I know this and am fine with doing the extra work when needed.  Your desires may vary.  &lt;/p&gt;
+
+&lt;p&gt;If I just want encryption, then I don&#39;t do too much verification.  If I&#39;m shopping at some sketchy ecommerce site, then I&#39;ll rely upon my credit card liability limits or the anonymously pre-paid credit card to protect me.  I can afford $50 if it turns out the sketchy site loses all my info.  This risk is true for sites I trust as well.  I have zero control over my info at this point.  The info I provide for the purchase is frequently bought, sold, lost, or stolen by the destination.  An ssl cert, no matter how good it is, isn&#39;t going to stop that.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 9</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_9/</link>
+
+	<pubDate>Tue, 06 Apr 2010 06:53:56 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:53:56Z</dcterms:modified>
+
+	<description>What anonymous, prepaid credit card do you use that works with online purchases?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 10</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_10/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_10/</link>
+
+	<pubDate>Sat, 27 Mar 2010 06:53:57 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:53:57Z</dcterms:modified>
+
+	<description>Well, yeeah!!!!! For example, i pushed Certificate Patrol into FactorBee ( http://honeybeenet.altervista.org/factorbee/ ) long time ago!!!!!!! Looking at the fingerprints of SSL certs is very important to avoid &quot;fake&quot;/replaced certificates!!!!!!!!!!!! It wasn&#39;t a news to me, i read one article about that almost one/two years ago!!!!!!!!!!! It sounds strange to me that the EFF has discovered this only recently(three days ago!!!!!!!!!!!!lol!!!!!!!!!!)!!!!! It is also the reason why i think that FactorBee is superior to the official Tor Browser Bundle for GNU/Linux!!!!!!! I made it in a very accurate way!!!!!!! ~bee!!!!!!!
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 11</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_11/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_11/</link>
+
+	<pubDate>Sat, 27 Mar 2010 06:53:58 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:53:58Z</dcterms:modified>
+
+	<description>&lt;p&gt;I&#39;ve often wondered why people buy certificates from CAs -- do they pay because they trust the CA, or do they trust the CA because they&#39;ve paid?
+&lt;/p&gt;
+
+&lt;p&gt;As you mention in a previous comment, SSL is great for encrypting a connection, but the existing hierarchical method for verifying authenticity is next to useless. Might as well authenticate the certificates myself.
+&lt;/p&gt;
+
+&lt;p&gt;So by authenticating the certificates myself I might be securely connecting to an impostor, but at least I can be sure I&#39;m connecting to the same impostor every time!
+&lt;/p&gt;
+
+&lt;p&gt;--Bob.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 12</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_12/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_12/</link>
+
+	<pubDate>Wed, 07 Apr 2010 06:53:59 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:53:59Z</dcterms:modified>
+
+	<description>I think the main reason to purchase certificates from a CA today is to provide convenience for the users of their site.  Most people would have no idea what to do when they see a warning that the website&#39;s certificate is not trusted, and would result in significant loss of traffic for the site.  It seems that the CA&#39;s generally don&#39;t care to verify the purchaser of the cert is who they claim to be, so trust seems to be a secondary concern to usability and the &lt;i&gt;appearance&lt;/i&gt; of security in many cases.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 13</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_13/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_13/</link>
+
+	<pubDate>Sat, 27 Mar 2010 06:54:00 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:00Z</dcterms:modified>
+
+	<description>Phobos seems to confuse trust with authentication at times, a common mistake.  I can authenticate the Russian Mafia is running a website, but not trust them.  I can authenticate a police officer is in fact, a valid police officer; but I don&#39;t have to trust her.  I can encrypt a connection to foo.bar, trust that it is foo.bar (because I run the service) but not actually trust the service (perhaps because it is non-free software and I cannot see the source code to know what it really does).  
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 14</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_14/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_14/</link>
+
+	<pubDate>Mon, 29 Mar 2010 06:54:01 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:01Z</dcterms:modified>
+
+	<description>What&#39;s your point? As I understand the post, it is about the possibility of a corrupt CA taking bribes to authenticate the Russian Mafia site by presenting it to you disguised as a site you trust. If you claim that cannot happen, or that it can happen, but is not a problem, give your reasoning.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 15</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_15/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_15/</link>
+
+	<pubDate>Sat, 27 Mar 2010 06:54:02 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:02Z</dcterms:modified>
+
+	<description>How can I delete Firefox CA in Windows? Delete option doesn&#39;t work, they are still there, and if I delete cert8.db Firefox recreates the file.
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 16</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_16/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_16/</link>
+
+	<pubDate>Sun, 28 Mar 2010 06:54:03 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:03Z</dcterms:modified>
+
+	<description>&lt;p&gt;In C:\Program Files\Mozilla Firefox, or wherever you have it installed, rename nssckbi.dll to something else; say nssckbi.dll.saved.&lt;/p&gt;
+
+&lt;p&gt;Restart firefox and you are done.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 17</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_17/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_17/</link>
+
+	<pubDate>Tue, 13 Apr 2010 06:54:04 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:04Z</dcterms:modified>
+
+	<description>I still see the cert auth. after the restart.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 18</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_18/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_18/</link>
+
+	<pubDate>Mon, 29 Mar 2010 06:54:05 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:05Z</dcterms:modified>
+
+	<description>&lt;p&gt;&quot;Would I notice if a Packet Forensics device was used? Unless someone screwed up, I doubt it&quot;&lt;/p&gt;
+
+&lt;p&gt;Your not using any CA&#39;s so... you would notice it, or am I missing something?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 19</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_19/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_19/</link>
+
+	<pubDate>Tue, 30 Mar 2010 06:54:06 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:06Z</dcterms:modified>
+
+	<description>The packet forensics device fakes a valid ssl cert, not a CA.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 20</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_20/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_20/</link>
+
+	<pubDate>Wed, 07 Apr 2010 06:54:07 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:07Z</dcterms:modified>
+
+	<description>I believe the fingerprint would change if a Packet Forensics device begins modifying the traffic.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 21</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_21/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_21/</link>
+
+	<pubDate>Mon, 29 Mar 2010 06:54:08 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:08Z</dcterms:modified>
+
+	<description>&lt;p&gt;You might be interested in Perspectives: http://www.cs.cmu.edu/~perspectives/&lt;br /&gt;
+Its not distributed enough for me to trust it very much yet, but it has potential.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 22</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_22/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_22/</link>
+
+	<pubDate>Tue, 30 Mar 2010 06:54:09 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:09Z</dcterms:modified>
+
+	<description>Financial Crypto is doing a series of posts on this very topic, https://financialcryptography.com/mt/archives/001232.html  and https://financialcryptography.com/mt/archives/001233.html
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 23</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_23/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_23/</link>
+
+	<pubDate>Fri, 02 Apr 2010 06:54:10 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:10Z</dcterms:modified>
+
+	<description>&lt;p&gt;If you found a fake SSL that would validate with a browser&#39;s stock CAs, why don&#39;t you publish it?  SSL certificates are non-reputable, so this would be significant news and would give credibility to your cause.&lt;/p&gt;
+
+&lt;p&gt;Of course if you&#39;ve only found non-validating SSL certificates while utilizing Tor exit nodes, that&#39;s not particularly surprising.  &lt;/p&gt;
+
+&lt;p&gt;&amp;gt;&amp;gt;Cookies should be enabled in your browser for CAPTCHA validation.&lt;br /&gt;
+bah!  How can someone who seems as paranoid as I am require cookies?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 24</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_24/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_24/</link>
+
+	<pubDate>Wed, 07 Apr 2010 06:54:11 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:11Z</dcterms:modified>
+
+	<description>&lt;p&gt;I recently wrote about storing a hash of your certificate in your DNSSEC protected DNS zone file as an alternative to using CA&#39;s:&lt;/p&gt;
+
+&lt;p&gt;https://secure.grepular.com/DNSSEC_Will_Kill_Commercial_CAs&lt;/p&gt;
+
+&lt;p&gt;Just wondering what your opinion of doing it this way would be?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 25</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_25/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_25/</link>
+
+	<pubDate>Wed, 07 Apr 2010 06:54:12 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:12Z</dcterms:modified>
+
+	<description>Could you give us a story about the times you&#39;ve seen SSL MITMs attempted?  Would be enlightening to know what the dangers out there are.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 26</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_26/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_26/</link>
+
+	<pubDate>Fri, 07 May 2010 06:54:13 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:13Z</dcterms:modified>
+
+	<description>&lt;p&gt;I have to say that this is being terribly overly paranoid on this subject, to be blunt about it.&lt;/p&gt;
+
+&lt;p&gt;CA&#39;s are there for good reasons, and it is stupid to delete them unless they are known to have been compromised in some manner.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 27</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_27/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_27/</link>
+
+	<pubDate>Fri, 07 May 2010 06:54:14 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:14Z</dcterms:modified>
+
+	<description>&lt;p&gt;Perhaps.  You be the judge.  A well-done compromise will not alert the users, &lt;a href=&quot;http://www.wired.com/threatlevel/2010/03/packet-forensics/&quot; title=&quot;http://www.wired.com/threatlevel/2010/03/packet-forensics/&quot; rel=&quot;nofollow&quot;&gt;http://www.wired.com/threatlevel/2010/03/packet-forensics/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://lair.fifthhorseman.net/~dkg/tls-centralization/&quot; title=&quot;http://lair.fifthhorseman.net/~dkg/tls-centralization/&quot; rel=&quot;nofollow&quot;&gt;http://lair.fifthhorseman.net/~dkg/tls-centralization/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.internetnews.com/ec-news/article.php/2232421&quot; title=&quot;http://www.internetnews.com/ec-news/article.php/2232421&quot; rel=&quot;nofollow&quot;&gt;http://www.internetnews.com/ec-news/article.php/2232421&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.zdnetasia.com/easy-to-get-web-certs-undermine-online-trust-62062987.htm&quot; title=&quot;http://www.zdnetasia.com/easy-to-get-web-certs-undermine-online-trust-62062987.htm&quot; rel=&quot;nofollow&quot;&gt;http://www.zdnetasia.com/easy-to-get-web-certs-undermine-online-trust-62...&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://codefromthe70s.org/sslblacklist.aspx&quot; title=&quot;http://codefromthe70s.org/sslblacklist.aspx&quot; rel=&quot;nofollow&quot;&gt;http://codefromthe70s.org/sslblacklist.aspx&lt;/a&gt;&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 28</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_28/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comment_28/</link>
+
+	<pubDate>Fri, 04 Jun 2010 06:54:15 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:54:15Z</dcterms:modified>
+
+	<description>thanks!removing  all of the CAs from bruisers, now BOOKing airasia/cebu pacific  online tickets gets very smoothly,no fail anymore
+</description>
+
+
+</item>
+
+</channel>
+</rss>

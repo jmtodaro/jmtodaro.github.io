@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Tor 0.2.2.16-alpha released</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:08:37Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_1/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:28Z</updated>
+	<published>2010-09-22T12:08:28Z</published>
+
+	<content type="html" xml:lang="en">
+	How does megaupload evade tor?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_2/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:29Z</updated>
+	<published>2010-10-02T12:08:29Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;When sobebody write the qemu net /tor driver.&lt;br /&gt;
+Or VirtualBox net driver only for tor.&lt;/p&gt;
+
+&lt;p&gt;Flash, javascript, pidgin  whole system anonymity.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_3/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:30Z</updated>
+	<published>2010-09-23T12:08:30Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;There seems to be an error on the downloadpage:&lt;/p&gt;
+
+&lt;p&gt;Windows Stable linked to https://www.torproject.org/dist/vidalia-bundles/vidalia-bundle-0.2.1.26-... contains  -&amp;gt; 0.2.2.15-alpha&lt;/p&gt;
+
+&lt;p&gt;and the unstable linked to https://www.torproject.org/dist/vidalia-bundles/vidalia-bundle-0.2.2.15-... is -&amp;gt; error 404&lt;/p&gt;
+
+&lt;p&gt;kthxbai&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_4/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:31Z</updated>
+	<published>2010-09-23T12:08:31Z</published>
+
+	<content type="html" xml:lang="en">
+	You are correct.  Thank you for the notice.  It is fixed.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_5/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:32Z</updated>
+	<published>2010-09-23T12:08:32Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I managed to get Tor 0.2.2.16-alpha to build on Windows.&lt;/p&gt;
+
+&lt;p&gt;Im using:&lt;br /&gt;
+  OpenSSL (openssl-0.9.8o)&lt;br /&gt;
+  Zlib (libevent-1.4.14b-stable)&lt;/p&gt;
+
+&lt;p&gt;I had to revert changes in eventdns.c to that of 0.2.2.15-alpha.&lt;/p&gt;
+
+&lt;p&gt;Also when building the OpenSSL library I had to use this config statement:&lt;br /&gt;
+   ./config -no-idea -no-rc5 -no-mdc2 -no-hw&lt;/p&gt;
+
+&lt;p&gt;The -no-hw switch turns off the hardware support, since -no-engines does not currently work in this version.&lt;/p&gt;
+
+&lt;p&gt;Also, with Vidalia 0.2.10, in the Network Map there does appear to be as many &#39;red dots&#39; representing servers in the global map.&lt;/p&gt;
+
+&lt;p&gt;Other than this its been running fine here, and on a beta testers machine, for several days.&lt;/p&gt;
+
+&lt;p&gt;I hope this helps...&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_6/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:33Z</updated>
+	<published>2010-09-25T12:08:33Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Does anyone know what can be done to avoid some sites from blocking Tor ?&lt;/p&gt;
+
+&lt;p&gt;GodLikeProductions is one site that comes to mind that allows anonymous posters - but blocks Tor somehow...&lt;/p&gt;
+
+&lt;p&gt;Is there anything that can be done in the options for polipo or Tor that can help get around this ?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_7/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:34Z</updated>
+	<published>2010-09-26T12:08:34Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I am trying to create a Youtube account. It doesn&#39;t let me, saying that:&lt;/p&gt;
+
+&lt;p&gt;&quot;Sorry for the interruption. We have been receiving a large volume of requests from your network. To continue with your YouTube experience, please enter the verification code below.&quot;&lt;/p&gt;
+
+&lt;p&gt;It then prompts me infinite number of times to enter Captcha code. I enter everything correctly but keeps asking for more and more Captcha codes.&lt;/p&gt;
+
+&lt;p&gt;WTF???&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_8/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:35Z</updated>
+	<published>2010-09-27T12:08:35Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;You may need to make sure you have cookies enabled and javascript is allowed to run.&lt;/p&gt;
+
+&lt;p&gt;I actually relax the security options in the Tor button just enough to allow me to watch youtube videos.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_9/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:36Z</updated>
+	<published>2010-10-17T12:08:36Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Dear Tor developers,&lt;/p&gt;
+
+&lt;p&gt;I couldn&#39;t use the latest 0.2.1.26 on my old Windows 2000 PC. It said similar messages: &quot;some system calls can&#39;t be found on KERNEL.DLL.&quot;. Fortunately, I have a copy of vidalia-bundle-0.2.0.34-0.1.10 downloaded from your website. The 0.2.0.34 works on Windows 2000 and this is why I can read your dear site. Thanks&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_10/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:37Z</updated>
+	<published>2010-10-17T12:08:37Z</published>
+
+	<content type="html" xml:lang="en">
+	I think you&#39;re confusing the two issues.  Tor itself works fine in Win200.  Vidalia, the graphical controller, does not.  See &lt;a href=&quot;https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/TorFAQ#VidaliadoesntworkinWindows2000&quot; title=&quot;https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/TorFAQ#VidaliadoesntworkinWindows2000&quot; rel=&quot;nofollow&quot;&gt;https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/TorFAQ#Vida...&lt;/a&gt; for details.
+
+	</content>
+
+
+
+</entry>
+
+</feed>

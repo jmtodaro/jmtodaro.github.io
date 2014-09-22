@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged directory</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/directory/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>arma: Overhead from directory info: past, present, future</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Overhead_from_directory_info_past_present_future/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Overhead_from_directory_info_past_present_future/</link>
+
+
+	<category>/tags/directory</category>
+
+	<category>/tags/performance</category>
+
+	<category>/tags/research</category>
+
+
+	<pubDate>Mon, 16 Feb 2009 01:05:16 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:19:15Z</dcterms:modified>
+
+	<description>&lt;p&gt;A growing number of people want to use Tor in low-bandwidth contexts (e.g. modems or shared Internet cafes in the Middle East) and mobile contexts (start up a Tor client, use it for a short time, and then stop it again). Currently Tor is nearly unusable in these situations, because it spends too many bytes fetching directory info. This post summarizes the steps we&#39;ve taken so far to reduce directory overhead, and explains the steps that are coming next.&lt;/p&gt;
+
+&lt;p&gt;First, what do I mean by &quot;directory info&quot;? Part of the Tor design is the _discovery_ component: how clients learn about the available Tor relays, along with their keys, locations, exit policies, and so on. Tor&#39;s solution so far uses a few trusted directory authorities that sign and distribute official lists of the relays that make up the Tor network. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/overhead-directory-info%3A-past%2C-present%2C-future&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Overhead_from_directory_info_past_present_future/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

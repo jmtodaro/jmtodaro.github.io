@@ -1,0 +1,1530 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Tor Browser Bundle 1.2.5 and 1.2.6 released</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>SEAREMAN (not verified): Comment 1</title>
+	<dcterms:creator>SEAREMAN (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_1/</link>
+
+	<pubDate>Thu, 06 Aug 2009 06:32:01 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:01Z</dcterms:modified>
+
+	<description>&lt;p&gt;I&#39;m having trouble conncecting to the tor network on my win xp laptop.  I can connect fine on my vista pc... Here is the message log, thanks.&lt;/p&gt;
+
+&lt;p&gt;Aug 05 01:21:02.750 [Notice] Tor v0.2.1.19. This is experimental software. Do not rely on it for strong anonymity. (Running on Windows XP Service Pack 2 [workstation] {terminal services, single user})&lt;br /&gt;
+Aug 05 01:21:02.859 [Notice] Initialized libevent version 1.4.11-stable using method win32. Good.&lt;br /&gt;
+Aug 05 01:21:02.859 [Notice] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+Aug 05 01:21:02.859 [Notice] Opening Control listener on 127.0.0.1:9051&lt;br /&gt;
+Aug 05 01:21:02.859 [Notice] Parsing GEOIP file.&lt;br /&gt;
+Aug 05 01:21:04.156 [Notice] Bootstrapped 20%: Asking for networkstatus consensus.&lt;br /&gt;
+Aug 05 01:21:04.234 [Notice] Bootstrapped 25%: Loading networkstatus consensus.&lt;br /&gt;
+Aug 05 01:21:05.265 [Warning] Our clock is 23 hours, 38 minutes behind the time published in the consensus network status document (2009-08-06 07:00:00 GMT).  Tor needs an accurate clock to work correctly. Please check your time and date settings!&lt;br /&gt;
+Aug 05 01:21:05.265 [Notice] I learned some more directory information, but not enough to build a circuit: We have no recent network-status consensus.&lt;br /&gt;
+Aug 05 01:23:22.093 [Notice] Application request when we&#39;re believed to be offline. Optimistically trying directory fetches again.&lt;br /&gt;
+Aug 05 01:25:22.468 [Notice] Tried for 120 seconds to get a connection to [scrubbed]:80. Giving up. (waiting for circuit)&lt;br /&gt;
+Aug 05 01:25:22.546 [Notice] Application request when we&#39;re believed to be offline. Optimistically trying directory fetches again.&lt;br /&gt;
+Aug 05 01:25:48.156 [Notice] Application request when we&#39;re believed to be offline. Optimistically trying directory fetches again.&lt;br /&gt;
+Aug 05 01:27:22.562 [Notice] Tried for 120 seconds to get a connection to [scrubbed]:80. Giving up. (waiting for circuit)&lt;br /&gt;
+Aug 05 01:27:22.562 [Notice] Tried for 120 seconds to get a connection to [scrubbed]:80. Giving up. (waiting for circuit)&lt;br /&gt;
+Aug 05 01:27:22.593 [Notice] Application request when we&#39;re believed to be offline. Optimistically trying directory fetches again.&lt;br /&gt;
+Aug 05 01:27:48.578 [Notice] Tried for 120 seconds to get a connection to [scrubbed]:443. Giving up. (waiting for circuit)&lt;br /&gt;
+Aug 05 01:28:56.453 [Notice] Tor v0.2.1.19. This is experimental software. Do not rely on it for strong anonymity. (Running on Windows XP Service Pack 2 [workstation] {terminal services, single user})&lt;br /&gt;
+Aug 05 01:28:56.562 [Notice] Initialized libevent version 1.4.11-stable using method win32. Good.&lt;br /&gt;
+Aug 05 01:28:56.562 [Notice] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+Aug 05 01:28:56.562 [Notice] Opening Control listener on 127.0.0.1:9051&lt;br /&gt;
+Aug 05 01:28:56.562 [Notice] Parsing GEOIP file.&lt;br /&gt;
+Aug 05 01:28:58.656 [Notice] Bootstrapped 15%: Establishing an encrypted directory connection.&lt;br /&gt;
+Aug 05 01:28:59.093 [Notice] Bootstrapped 20%: Asking for networkstatus consensus.&lt;br /&gt;
+Aug 05 01:28:59.281 [Notice] Bootstrapped 25%: Loading networkstatus consensus.&lt;br /&gt;
+Aug 05 02:30:00.906 [Warning] Our clock is 23 hours, 30 minutes behind the time published in the consensus network status document (2009-08-06 08:00:00 GMT).  Tor needs an accurate clock to work correctly. Please check your time and date settings!&lt;br /&gt;
+Aug 05 02:30:00.906 [Notice] I learned some more directory information, but not enough to build a circuit: We have no recent network-status consensus.&lt;br /&gt;
+Aug 05 04:29:57.640 [Warning] Our clock is 23 hours, 30 minutes behind the time published in the consensus network status document (2009-08-06 10:00:00 GMT).  Tor needs an accurate clock to work correctly. Please check your time and date settings!&lt;br /&gt;
+Aug 05 04:29:57.640 [Notice] I learned some more directory information, but not enough to build a circuit: We have no recent network-status consensus.&lt;br /&gt;
+Aug 05 05:30:00.359 [Warning] Our clock is 23 hours, 30 minutes behind the time published in the consensus network status document (2009-08-06 11:00:00 GMT).  Tor needs an accurate clock to work correctly. Please check your time and date settings!&lt;br /&gt;
+Aug 05 05:30:00.359 [Notice] I learned some more directory information, but not enough to build a circuit: We have no recent network-status consensus.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 2</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_2/</link>
+
+	<pubDate>Fri, 07 Aug 2009 06:32:02 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:02Z</dcterms:modified>
+
+	<description>&lt;p&gt;Well, this is probably your biggest problem:&lt;/p&gt;
+
+&lt;p&gt;&quot;Our clock is 23 hours, 30 minutes behind the time published in the consensus network status document (2009-08-06 11:00:00 GMT). Tor needs an accurate clock to work correctly. Please check your time and date settings!&quot;&lt;/p&gt;
+
+&lt;p&gt;you should fix your clock first.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>jason (not verified): Comment 3</title>
+	<dcterms:creator>jason (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_3/</link>
+
+	<pubDate>Thu, 03 Sep 2009 06:32:03 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:03Z</dcterms:modified>
+
+	<description>&lt;p&gt;My tor used to work fine until 3 days back but now I am getting these these msges in log file and am not getting any relays.&lt;/p&gt;
+
+&lt;p&gt;Sep 04 01:43:29.360 [Notice] Tor v0.2.1.19. This is experimental software. Do not rely on it for strong anonymity. (Running on Windows XP Service Pack 3 [workstation] {personal} {terminal services, single user})&lt;br /&gt;
+Sep 04 01:43:29.360 [Notice] Initialized libevent version 1.4.11-stable using method win32. Good.&lt;br /&gt;
+Sep 04 01:43:29.360 [Notice] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+Sep 04 01:43:29.460 [Notice] Opening Control listener on 127.0.0.1:9051&lt;br /&gt;
+Sep 04 01:43:29.460 [Notice] Parsing GEOIP file.&lt;br /&gt;
+Sep 04 01:43:32.474 [Debug] conn_read_callback(): socket 1660 wants to read.&lt;br /&gt;
+Sep 04 01:43:32.474 [Debug] conn_read_callback(): socket 1660 wants to read.&lt;br /&gt;
+Sep 04 01:43:32.474 [Debug] conn_read_callback(): socket 1660 wants to read.&lt;br /&gt;
+Sep 04 01:43:43.430 [Info] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 04 01:43:54.446 [Info] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 04 01:44:02.477 [Info] circuit_expire_building(): Abandoning circ 0 (state 2:connecting to server, purpose 5)&lt;br /&gt;
+Sep 04 01:44:02.477 [Info] exit circ (length 1, exit 4A0CCD2DDC7995083D73F5D667100C8A5831F16D): $4A0CCD2DDC7995083D73F5D667100C8A5831F16D(closed)&lt;br /&gt;
+Sep 04 01:44:02.477 [Info] connection_ap_fail_onehop(): Closing one-hop stream to &#39;$4A0CCD2DDC7995083D73F5D667100C8A5831F16D/82.94.251.206&#39; because the OR conn just failed.&lt;br /&gt;
+Sep 04 01:44:02.477 [Info] connection_ap_fail_onehop(): Closing one-hop stream to &#39;$4A0CCD2DDC7995083D73F5D667100C8A5831F16D/82.94.251.206&#39; because the OR conn just failed.&lt;br /&gt;
+Sep 04 01:44:02.477 [Debug] circuit_increment_failure_count(): n_circuit_failures now 1.&lt;br /&gt;
+Sep 04 01:44:02.477 [Debug] conn_close_if_marked(): Cleaning up connection (fd -1).&lt;br /&gt;
+Sep 04 01:44:02.477 [Debug] connection_remove(): removing socket -1 (type Socks), n_conns now 8&lt;br /&gt;
+Sep 04 01:44:02.477 [Info] _connection_free(): Freeing linked Socks connection [waiting for circuit] with 99 bytes on inbuf, 0 on outbuf.&lt;br /&gt;
+Sep 04 01:44:02.477 [Debug] conn_close_if_marked(): Cleaning up connection (fd -1).&lt;br /&gt;
+Sep 04 01:44:02.477 [Debug] connection_remove(): removing socket -1 (type Socks), n_conns now 7&lt;br /&gt;
+Sep 04 01:44:02.477 [Info] _connection_free(): Freeing linked Socks connection [waiting for circuit] with 99 bytes on inbuf, 0 on outbuf.&lt;br /&gt;
+Sep 04 01:44:02.477 [Debug] conn_read_callback(): socket -1 wants to read.&lt;br /&gt;
+Sep 04 01:44:02.477 [Info] connection_dir_client_reached_eof(): &#39;fetch&#39; response not all here, but we&#39;re at eof. Closing.&lt;br /&gt;
+Sep 04 01:44:02.477 [Debug] conn_close_if_marked(): Cleaning up connection (fd -1).&lt;br /&gt;
+Sep 04 01:44:02.477 [Info] connection_dir_request_failed(): Giving up on directory server at &#39;82.94.251.206&#39;; retrying&lt;br /&gt;
+Sep 04 01:44:02.477 [Debug] connection_remove(): removing socket -1 (type Directory), n_conns now 6&lt;br /&gt;
+Sep 04 01:44:02.477 [Info] _connection_free(): Freeing linked Directory connection [client reading] with 0 bytes on inbuf, 0 on outbuf.&lt;br /&gt;
+Sep 04 01:44:02.477 [Debug] conn_read_callback(): socket -1 wants to read.&lt;br /&gt;
+Sep 04 01:44:02.487 [Info] connection_dir_client_reached_eof(): &#39;fetch&#39; response not all here, but we&#39;re at eof. Closing.&lt;br /&gt;
+Sep 04 01:44:02.487 [Debug] conn_close_if_marked(): Cleaning up connection (fd -1).&lt;br /&gt;
+Sep 04 01:44:02.487 [Info] connection_dir_request_failed(): Giving up on directory server at &#39;82.94.251.206&#39;; retrying&lt;br /&gt;
+Sep 04 01:44:02.487 [Debug] connection_remove(): removing socket -1 (type Directory), n_conns now 5&lt;br /&gt;
+Sep 04 01:44:02.487 [Info] _connection_free(): Freeing linked Directory connection [client reading] with 0 bytes on inbuf, 0 on outbuf.&lt;br /&gt;
+Sep 04 01:44:05.471 [Info] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 04 01:44:16.487 [Info] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 04 01:44:27.533 [Info] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 04 01:44:33.542 [Info] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 04 01:44:38.549 [Info] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 4</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_4/</link>
+
+	<pubDate>Fri, 04 Sep 2009 06:32:04 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:04Z</dcterms:modified>
+
+	<description>&lt;p&gt;The info level log, and notice level logs tell you all you need to know:&lt;/p&gt;
+
+&lt;p&gt;&quot;no running bridges known&quot;&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Mohsen (not verified): Comment 5</title>
+	<dcterms:creator>Mohsen (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_5/</link>
+
+	<pubDate>Sun, 20 Sep 2009 06:32:05 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:05Z</dcterms:modified>
+
+	<description>&lt;p&gt;hi&lt;br /&gt;
+i am from iran, and i use tor for passing filtering,&lt;br /&gt;
+from the uprising of people on friday(18 sep) at&lt;br /&gt;
+first government stop https protocol and tor obviously has stoped,&lt;br /&gt;
+and now gmail, yahoo and many https services has been back but tor is not working&lt;br /&gt;
+please help me slove this problem&lt;br /&gt;
+the vidalia has been stoped at &quot;establishing an encrypted directory connection&quot;&lt;br /&gt;
+status message&lt;/p&gt;
+
+&lt;p&gt;here is my log&lt;br /&gt;
+Sep 20 19:56:14.937 [Notice] Tor v0.2.1.19. This is experimental software. Do not rely on it for strong anonymity. (Running on Windows &quot;Longhorn&quot; Service Pack 2 [workstation] {terminal services, single user})&lt;br /&gt;
+Sep 20 19:56:14.937 [Notice] Initialized libevent version 1.4.11-stable using method win32. Good.&lt;br /&gt;
+Sep 20 19:56:14.938 [Notice] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+Sep 20 19:56:14.938 [Notice] Opening Control listener on 127.0.0.1:9051&lt;br /&gt;
+Sep 20 19:56:15.045 [Notice] Parsing GEOIP file.&lt;br /&gt;
+Sep 20 19:56:18.012 [Notice] Bootstrapped 10%: Finishing handshake with directory server.&lt;br /&gt;
+Sep 20 19:56:47.990 [Notice] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+Sep 20 19:56:47.990 [Notice] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+Sep 20 19:56:47.990 [Notice] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+Sep 20 19:56:47.990 [Notice] No current certificate known for authority ides; launching request.&lt;br /&gt;
+Sep 20 19:56:47.991 [Notice] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+Sep 20 19:56:47.991 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+Sep 20 19:58:19.065 [Notice] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+Sep 20 19:58:19.065 [Notice] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+Sep 20 19:58:19.065 [Notice] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+Sep 20 19:58:19.066 [Notice] No current certificate known for authority ides; launching request.&lt;br /&gt;
+Sep 20 19:58:19.066 [Notice] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+Sep 20 19:58:19.067 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+Sep 20 20:04:25.521 [Notice] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+Sep 20 20:04:25.521 [Notice] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+Sep 20 20:04:25.521 [Notice] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+Sep 20 20:04:25.522 [Notice] No current certificate known for authority ides; launching request.&lt;br /&gt;
+Sep 20 20:04:25.522 [Notice] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+Sep 20 20:04:25.522 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+Sep 20 20:15:36.221 [Notice] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+Sep 20 20:15:36.221 [Notice] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+Sep 20 20:15:36.222 [Notice] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+Sep 20 20:15:36.222 [Notice] No current certificate known for authority ides; launching request.&lt;br /&gt;
+Sep 20 20:15:36.222 [Notice] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+Sep 20 20:15:36.222 [Notice] No current certificate known for authority dannenberg; launching request.&lt;/p&gt;
+
+&lt;p&gt;thanks for your time&lt;br /&gt;
+Mohsen&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Jairo Bernal (not verified): Comment 6</title>
+	<dcterms:creator>Jairo Bernal (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_6/</link>
+
+	<pubDate>Mon, 21 Sep 2009 06:32:06 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:06Z</dcterms:modified>
+
+	<description>&lt;p&gt;Sep 21 20:35:10.988 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:35:21.134 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:35:32.296 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:35:43.457 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:35:54.618 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:35:55.633 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:36:05.779 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:36:16.941 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:36:27.087 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:36:38.249 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:36:49.410 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:36:56.513 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:37:00.571 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:37:11.733 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:37:22.894 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:37:33.040 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:37:44.202 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:37:55.363 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:37:57.392 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:38:06.524 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:38:17.686 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:38:28.847 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:38:40.008 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:38:51.169 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:38:58.272 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:39:02.331 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:39:13.492 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:39:24.653 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:39:35.815 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:39:46.976 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:39:57.123 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:39:59.152 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:40:08.284 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:40:19.445 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:40:30.606 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:40:41.768 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:40:52.929 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:41:00.032 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:41:03.076 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:41:14.237 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:41:25.398 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:41:36.560 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:41:47.721 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:41:58.882 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:42:01.926 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:42:09.029 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:42:20.190 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:42:31.351 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:42:42.513 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:42:53.674 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:43:02.806 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:43:04.835 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:43:15.997 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:43:26.143 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:43:37.304 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:43:48.466 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:43:59.627 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:44:03.686 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:44:10.788 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:44:21.950 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:44:32.096 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:44:43.273 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:44:54.434 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:45:04.581 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:45:05.596 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:45:16.757 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:45:27.918 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:45:38.065 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:45:49.226 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:46:00.388 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:46:05.461 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:46:11.549 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:46:22.710 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:46:33.871 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:46:44.018 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:46:55.179 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:47:06.341 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:47:06.341 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:47:17.502 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:47:28.663 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:47:39.825 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:47:50.986 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:48:01.132 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:48:07.220 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;br /&gt;
+Sep 21 20:48:12.309 [Información] should_delay_dir_fetches(): delaying dir fetches (no running bridges known)&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>poisonous_angel (not verified): Comment 7</title>
+	<dcterms:creator>poisonous_angel (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_7/</link>
+
+	<pubDate>Thu, 24 Sep 2009 06:32:07 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:07Z</dcterms:modified>
+
+	<description>&lt;p&gt;hi, please help me.. i can&#39;t connect to Tor Network.. the ff. are the error messages i get..&lt;/p&gt;
+
+&lt;p&gt;Sep 25 06:19:30.390 [Notice] Closing old Control listener on 127.0.0.1:9051&lt;br /&gt;
+Sep 25 06:19:36.656 [Notice] Tor v0.2.1.19. This is experimental software. Do not rely on it for strong anonymity. (Running on Windows XP Service Pack 2 [workstation] {terminal services, single user})&lt;br /&gt;
+Sep 25 06:19:36.656 [Notice] Initialized libevent version 1.4.11-stable using method win32. Good.&lt;br /&gt;
+Sep 25 06:19:36.656 [Notice] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+Sep 25 06:19:36.718 [Notice] Opening Control listener on 127.0.0.1:1080&lt;br /&gt;
+Sep 25 06:19:37.093 [Notice] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+Sep 25 06:19:37.093 [Notice] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+Sep 25 06:19:37.093 [Notice] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+Sep 25 06:19:37.093 [Notice] No current certificate known for authority ides; launching request.&lt;br /&gt;
+Sep 25 06:19:37.093 [Notice] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+Sep 25 06:19:37.093 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+Sep 25 06:19:37.093 [Notice] Bootstrapped 5%: Connecting to directory server.&lt;br /&gt;
+Sep 25 06:19:37.093 [Notice] I learned some more directory information, but not enough to build a circuit: We have no network-status consensus.&lt;br /&gt;
+Sep 25 06:19:57.984 [Warning] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 1; recommendation warn)&lt;br /&gt;
+Sep 25 06:19:57.984 [Warning] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 2; recommendation warn)&lt;br /&gt;
+Sep 25 06:19:57.984 [Notice] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+Sep 25 06:19:57.984 [Notice] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+Sep 25 06:19:57.984 [Notice] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+Sep 25 06:19:57.984 [Notice] No current certificate known for authority ides; launching request.&lt;br /&gt;
+Sep 25 06:19:57.984 [Notice] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+Sep 25 06:19:58.000 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+Sep 25 06:21:05.562 [Notice] Tor v0.2.1.19. This is experimental software. Do not rely on it for strong anonymity. (Running on Windows XP Service Pack 2 [workstation] {terminal services, single user})&lt;br /&gt;
+Sep 25 06:21:05.562 [Notice] Initialized libevent version 1.4.11-stable using method win32. Good.&lt;br /&gt;
+Sep 25 06:21:05.578 [Notice] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+Sep 25 06:21:05.578 [Notice] Opening Control listener on 127.0.0.1:9051&lt;br /&gt;
+Sep 25 06:21:26.968 [Warning] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 1; recommendation warn)&lt;br /&gt;
+Sep 25 06:21:26.984 [Warning] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 2; recommendation warn)&lt;br /&gt;
+Sep 25 06:21:27.000 [Notice] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+Sep 25 06:21:27.000 [Notice] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+Sep 25 06:21:27.000 [Notice] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+Sep 25 06:21:27.000 [Notice] No current certificate known for authority ides; launching request.&lt;br /&gt;
+Sep 25 06:21:27.000 [Notice] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+Sep 25 06:21:27.000 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+Sep 25 06:21:47.984 [Warning] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 3; recommendation warn)&lt;br /&gt;
+Sep 25 06:21:48.000 [Warning] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 4; recommendation warn)&lt;br /&gt;
+Sep 25 06:23:08.000 [Notice] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+Sep 25 06:23:08.015 [Notice] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+Sep 25 06:23:08.031 [Notice] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+Sep 25 06:23:08.031 [Notice] No current certificate known for authority ides; launching request.&lt;br /&gt;
+Sep 25 06:23:08.031 [Notice] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+Sep 25 06:23:08.031 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+Sep 25 06:23:28.984 [Warning] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 5; recommendation warn)&lt;br /&gt;
+Sep 25 06:29:14.000 [Notice] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+Sep 25 06:29:14.015 [Notice] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+Sep 25 06:29:14.015 [Notice] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+Sep 25 06:29:14.015 [Notice] No current certificate known for authority ides; launching request.&lt;br /&gt;
+Sep 25 06:29:14.015 [Notice] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+Sep 25 06:29:14.015 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+Sep 25 06:29:34.921 [Warning] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 6; recommendation warn)&lt;br /&gt;
+Sep 25 06:29:35.015 [Warning] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 7; recommendation warn)&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>fzl (not verified): Comment 8</title>
+	<dcterms:creator>fzl (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_8/</link>
+
+	<pubDate>Thu, 24 Sep 2009 06:32:08 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:08Z</dcterms:modified>
+
+	<description>&lt;p&gt;九月 25 09:27:04.187 [注意] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+九月 25 09:27:04.187 [注意] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+九月 25 09:27:04.187 [注意] No current certificate known for authority ides; launching request.&lt;br /&gt;
+九月 25 09:27:04.187 [注意] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+九月 25 09:27:04.187 [注意] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+九月 25 09:27:25.031 [警告] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 5; recommendation warn)&lt;br /&gt;
+九月 25 09:27:25.031 [警告] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 6; recommendation warn)&lt;br /&gt;
+九月 25 09:29:52.468 [注意] Tor v0.2.1.19. This is experimental software. Do not rely on it for strong anonymity. (Running on Windows XP Service Pack 3 [workstation] {terminal services, single user})&lt;br /&gt;
+九月 25 09:29:52.468 [注意] Initialized libevent version 1.4.11-stable using method win32. Good.&lt;br /&gt;
+九月 25 09:29:52.468 [注意] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+九月 25 09:29:52.468 [注意] Opening Control listener on 127.0.0.1:9051&lt;br /&gt;
+九月 25 09:29:52.468 [注意] Parsing GEOIP file.&lt;br /&gt;
+九月 25 09:30:15.312 [警告] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 1; recommendation warn)&lt;br /&gt;
+九月 25 09:30:15.312 [注意] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+九月 25 09:30:15.312 [注意] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+九月 25 09:30:15.312 [注意] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+九月 25 09:30:15.312 [注意] No current certificate known for authority ides; launching request.&lt;br /&gt;
+九月 25 09:30:15.312 [注意] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+九月 25 09:30:15.312 [注意] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+九月 25 09:30:15.421 [警告] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 2; recommendation warn)&lt;br /&gt;
+九月 25 09:30:36.437 [警告] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 3; recommendation warn)&lt;br /&gt;
+九月 25 09:30:36.640 [警告] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 4; recommendation warn)&lt;br /&gt;
+九月 25 09:31:56.453 [注意] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+九月 25 09:31:56.453 [注意] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+九月 25 09:31:56.453 [注意] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+九月 25 09:31:56.453 [注意] No current certificate known for authority ides; launching request.&lt;br /&gt;
+九月 25 09:31:56.453 [注意] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+九月 25 09:31:56.453 [注意] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+九月 25 09:32:17.328 [警告] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 5; recommendation warn)&lt;br /&gt;
+九月 25 09:38:02.453 [注意] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+九月 25 09:38:02.453 [注意] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+九月 25 09:38:02.453 [注意] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+九月 25 09:38:02.453 [注意] No current certificate known for authority ides; launching request.&lt;br /&gt;
+九月 25 09:38:02.453 [注意] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+九月 25 09:38:02.453 [注意] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+九月 25 09:38:23.453 [警告] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 6; recommendation warn)&lt;br /&gt;
+九月 25 09:49:13.453 [注意] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+九月 25 09:49:13.453 [注意] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+九月 25 09:49:13.453 [注意] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+九月 25 09:49:13.453 [注意] No current certificate known for authority ides; launching request.&lt;br /&gt;
+九月 25 09:49:13.453 [注意] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+九月 25 09:49:13.453 [注意] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+九月 25 09:49:34.375 [警告] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 7; recommendation warn)&lt;br /&gt;
+九月 25 09:49:34.375 [警告] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 8; recommendation warn)&lt;br /&gt;
+九月 25 09:52:47.515 [注意] Application request when we&#39;re believed to be offline. Optimistically trying directory fetches again.&lt;br /&gt;
+九月 25 09:53:08.578 [警告] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 9; recommendation warn)&lt;br /&gt;
+九月 25 09:53:29.593 [警告] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 10; recommendation warn)&lt;br /&gt;
+九月 25 09:54:47.453 [注意] Tried for 120 seconds to get a connection to [scrubbed]:443. Giving up. (waiting for circuit)&lt;br /&gt;
+九月 25 09:55:07.453 [注意] Tried for 120 seconds to get a connection to [scrubbed]:80. Giving up. (waiting for circuit)&lt;br /&gt;
+九月 25 09:55:40.312 [警告] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 11; recommendation warn)&lt;br /&gt;
+How to solve problems&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Kike (not verified): Comment 9</title>
+	<dcterms:creator>Kike (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_9/</link>
+
+	<pubDate>Fri, 25 Sep 2009 06:32:09 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:09Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hi all people....&lt;br /&gt;
+I have the same problem.. &quot;No current certificate known for authority xxxxxx launching request&quot;.&lt;br /&gt;
+And I dont know what to do... &lt;/p&gt;
+
+&lt;p&gt;Anybody who knows HELP UUUUUUUS!!&lt;/p&gt;
+
+&lt;p&gt;Thank you a lot!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Hoo (not verified): Comment 10</title>
+	<dcterms:creator>Hoo (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_10/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_10/</link>
+
+	<pubDate>Fri, 25 Sep 2009 06:32:10 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:10Z</dcterms:modified>
+
+	<description>&lt;p&gt;Now it is very hard to connect to Tor Network in China.&lt;br /&gt;
+Once i can connect, i hope to be a Tor Bridge Relay, to help other people can connect to Tor.&lt;/p&gt;
+
+&lt;p&gt;I have set Vidalia/Sharing to &#39;Help censored user reach the Tor network&#39;.&lt;br /&gt;
+But my log tell me, i don&#39;t config the firewall well.&lt;br /&gt;
+I wonder i have added those ports on my WinXP SP3 Firewall Exceptions already,&lt;br /&gt;
+but the problem is continue.&lt;br /&gt;
+i am sure that there is no other firewall software in my computer.&lt;/p&gt;
+
+&lt;p&gt;Does china block me from become a Tor Relay?&lt;br /&gt;
+Here is the Log (I modifed my IP )&lt;br /&gt;
+------------------&lt;br /&gt;
+Sept 25 15:27:15.953 [Notice] We&#39;re missing a certificate from authority with signing key B7A209B31ACDD633258D0F07715482BD04F88F4F: launching request.&lt;br /&gt;
+Sept 25 15:44:58.218 [Warning] Your server (221.175.XXX.XXX:443) has not managed to confirm that its ORPort is reachable. Please check your firewalls, ports, address, /etc/hosts file, etc.&lt;br /&gt;
+Sept 25 15:44:58.218 [Warning] Your server (221.175.XXX.XXX:9030) has not managed to confirm that its DirPort is reachable. Please check your firewalls, ports, address, /etc/hosts file, etc.&lt;br /&gt;
+.&lt;br /&gt;
+.&lt;br /&gt;
+.&lt;br /&gt;
+Sept 25 19:04:58.171 [Warning] Your server (221.175.XXX.XXX:443) has not managed to confirm that its ORPort is reachable. Please check your firewalls, ports, address, /etc/hosts file, etc.&lt;br /&gt;
+Sept 25 19:04:58.171 [Warning] Your server (221.175.XXX.XXX:9030) has not managed to confirm that its DirPort is reachable. Please check your firewalls, ports, address, /etc/hosts file, etc.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Hoo (not verified): Comment 11</title>
+	<dcterms:creator>Hoo (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_11/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_11/</link>
+
+	<pubDate>Fri, 25 Sep 2009 06:32:11 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:11Z</dcterms:modified>
+
+	<description>&lt;p&gt;Opps, i just realize that&lt;br /&gt;
+Tor bundle browser version which i am using is out-date.&lt;br /&gt;
+because google link me to&lt;br /&gt;
+&lt;a href=&quot;http://www.torproject.org/download.html.en&quot; title=&quot;http://www.torproject.org/download.html.en&quot; rel=&quot;nofollow&quot;&gt;http://www.torproject.org/download.html.en&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;but latest version is at&lt;br /&gt;
+&lt;a href=&quot;http://www.torproject.org/easy-download.html.en&quot; title=&quot;http://www.torproject.org/easy-download.html.en&quot; rel=&quot;nofollow&quot;&gt;http://www.torproject.org/easy-download.html.en&lt;/a&gt;&lt;br /&gt;
+i will try to download new version and see if the problem has been solved.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Hoo (not verified): Comment 12</title>
+	<dcterms:creator>Hoo (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_12/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_12/</link>
+
+	<pubDate>Fri, 25 Sep 2009 06:32:12 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:12Z</dcterms:modified>
+
+	<description>&lt;p&gt;it seem both is newest version,&lt;br /&gt;
+the number is just tell it is stable or un-stable version.&lt;/p&gt;
+
+&lt;p&gt;Today i still can connect to Tor.&lt;br /&gt;
+but Becoming Tor Relay problem still continue.&lt;/p&gt;
+
+&lt;p&gt;Does anyone know how to self-check as i wish (not to wait for 20 min)?&lt;br /&gt;
+so i can test immediately if i re-config my firewall well.&lt;br /&gt;
+or any idea how to track the problem?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>littlepenny (not verified): Comment 13</title>
+	<dcterms:creator>littlepenny (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_13/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_13/</link>
+
+	<pubDate>Sat, 26 Sep 2009 06:32:13 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:13Z</dcterms:modified>
+
+	<description>&lt;p&gt;i can&#39;t connect to Tor Network.here are the error messsages:&lt;br /&gt;
+九月 27 13:10:31.977 [注意] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+九月 27 13:10:52.997 [注意] While fetching directory info, no running dirservers known. Will try again later. (purpose 5)&lt;br /&gt;
+九月 27 13:12:13.383 [注意] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+九月 27 13:12:13.383 [注意] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+九月 27 13:12:13.383 [注意] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+九月 27 13:12:13.383 [注意] No current certificate known for authority ides; launching request.&lt;br /&gt;
+九月 27 13:12:13.383 [注意] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+九月 27 13:12:13.383 [注意] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+九月 27 13:12:43.536 [注意] Your DNS provider gave an answer for &quot;s3nkqw4vs.invalid&quot;, which is not supposed to exist.  Apparently they are hijacking DNS failures. Trying to correct for this.  We&#39;ve noticed 1 possibly bad address so far.&lt;br /&gt;
+九月 27 13:12:44.728 [注意] Your DNS provider has given &quot;59.37.71.87&quot; as an answer for 6 different invalid addresses. Apparently they are hijacking DNS failures. I&#39;ll try to correct for this by treating future occurrences of &quot;59.37.71.87&quot; as &#39;not found&#39;.&lt;br /&gt;
+九月 27 13:18:19.940 [注意] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+九月 27 13:18:19.940 [注意] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+九月 27 13:18:19.940 [注意] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+九月 27 13:18:19.940 [注意] No current certificate known for authority ides; launching request.&lt;br /&gt;
+九月 27 13:18:19.940 [注意] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+九月 27 13:18:19.940 [注意] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+九月 27 13:18:45.987 [注意] Interrupt: will shut down in 30 seconds. Interrupt again to exit now.&lt;br /&gt;
+九月 27 13:18:50.023 [注意] Tor v0.2.1.19. This is experimental software. Do not rely on it for strong anonymity. (Running on Windows XP Service Pack 3 [workstation] {terminal services, single user})&lt;br /&gt;
+九月 27 13:18:50.023 [注意] Your ContactInfo config option is not set. Please consider setting it, so we can contact you if your server is misconfigured or something else goes wrong.&lt;br /&gt;
+九月 27 13:18:50.023 [注意] Initialized libevent version 1.4.11-stable using method win32. Good.&lt;br /&gt;
+九月 27 13:18:50.023 [注意] Opening OR listener on 0.0.0.0:9001&lt;br /&gt;
+九月 27 13:18:50.023 [注意] Opening Directory listener on 0.0.0.0:9030&lt;br /&gt;
+九月 27 13:18:50.023 [注意] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+九月 27 13:18:50.023 [注意] Opening Control listener on 127.0.0.1:9051&lt;br /&gt;
+九月 27 13:19:15.119 [注意] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+九月 27 13:19:15.149 [注意] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+九月 27 13:19:15.149 [注意] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+九月 27 13:19:15.149 [注意] No current certificate known for authority ides; launching request.&lt;br /&gt;
+九月 27 13:19:15.149 [注意] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+九月 27 13:19:15.149 [注意] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+九月 27 13:19:57.079 [注意] While fetching directory info, no running dirservers known. Will try again later. (purpose 5)&lt;br /&gt;
+九月 27 13:20:22.436 [注意] Your DNS provider gave an answer for &quot;zm2q.invalid&quot;, which is not supposed to exist.  Apparently they are hijacking DNS failures. Trying to correct for this.  We&#39;ve noticed 1 possibly bad address so far.&lt;br /&gt;
+九月 27 13:20:56.405 [注意] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+九月 27 13:20:56.405 [注意] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+九月 27 13:20:56.405 [注意] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+九月 27 13:20:56.405 [注意] No current certificate known for authority ides; launching request.&lt;br /&gt;
+九月 27 13:20:56.405 [注意] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+九月 27 13:20:56.405 [注意] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+九月 27 13:27:02.952 [注意] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+九月 27 13:27:02.952 [注意] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+九月 27 13:27:02.952 [注意] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+九月 27 13:27:02.952 [注意] No current certificate known for authority ides; launching request.&lt;br /&gt;
+九月 27 13:27:02.952 [注意] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+九月 27 13:27:02.962 [注意] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+九月 27 13:38:13.987 [注意] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+九月 27 13:38:13.987 [注意] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+九月 27 13:38:13.987 [注意] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+九月 27 13:38:13.987 [注意] No current certificate known for authority ides; launching request.&lt;br /&gt;
+九月 27 13:38:13.987 [注意] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+九月 27 13:38:13.997 [注意] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+how to solve the problem?&lt;br /&gt;
+thanks!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>LeO (not verified): Comment 14</title>
+	<dcterms:creator>LeO (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_14/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_14/</link>
+
+	<pubDate>Wed, 30 Sep 2009 06:32:14 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:14Z</dcterms:modified>
+
+	<description>&lt;p&gt;I don´t speak english. how fix that? &lt;/p&gt;
+
+&lt;p&gt;sep 29 22:08:17.718 [Advertencia] Received directory with skewed time (server &#39;216.224.124.114:9090&#39;): It seems that our clock is behind by 23 hours, 59 minutes, or that theirs is ahead. Tor requires an accurate clock to work: please check your time, timezone, and date settings.&lt;/p&gt;
+
+&lt;p&gt;sep 29 22:08:24.250 [Advertencia] Our clock is 23 hours, 51 minutes behind the time published in the consensus network status document (2009-10-01 01:00:00 GMT).  Tor needs an accurate clock to work correctly. Please check your time and date settings!&lt;/p&gt;
+
+&lt;p&gt;PLEASE I NEED HELP!!!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 15</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_15/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_15/</link>
+
+	<pubDate>Fri, 02 Oct 2009 06:32:15 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:15Z</dcterms:modified>
+
+	<description>&lt;p&gt;中国的朋友们，这是天朝发威了，防火墙大发威了。&lt;br /&gt;
+期待强人升级，早日突破封锁。&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>WL (not verified): Comment 16</title>
+	<dcterms:creator>WL (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_16/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_16/</link>
+
+	<pubDate>Mon, 19 Oct 2009 06:32:16 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:16Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hihi. I have some problems running Tor.. There&#39;s a problem bootstrapping. any ideas how to get round this? Many thanks in advance!!&lt;/p&gt;
+
+&lt;p&gt;Oct 20 10:10:41.881 [Notice] Tor v0.2.1.19. This is experimental software. Do not rely on it for strong anonymity. (Running on Windows XP Service Pack 3 [workstation] {terminal services, single user})&lt;br /&gt;
+Oct 20 10:10:41.881 [Notice] Initialized libevent version 1.4.12-stable using method win32. Good.&lt;br /&gt;
+Oct 20 10:10:41.897 [Notice] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+Oct 20 10:10:41.897 [Notice] Opening Control listener on 127.0.0.1:9051&lt;br /&gt;
+Oct 20 10:11:06.298 [Warning] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 1; recommendation warn)&lt;br /&gt;
+Oct 20 10:11:06.519 [Warning] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 2; recommendation warn)&lt;br /&gt;
+Oct 20 10:11:06.519 [Notice] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+Oct 20 10:11:06.519 [Notice] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+Oct 20 10:11:06.519 [Notice] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+Oct 20 10:11:06.519 [Notice] No current certificate known for authority ides; launching request.&lt;br /&gt;
+Oct 20 10:11:06.519 [Notice] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+Oct 20 10:11:06.519 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+Oct 20 10:11:27.486 [Warning] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 3; recommendation warn)&lt;br /&gt;
+Oct 20 10:11:27.817 [Warning] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 4; recommendation warn)&lt;br /&gt;
+Oct 20 10:12:47.779 [Notice] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+Oct 20 10:12:47.779 [Notice] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+Oct 20 10:12:47.779 [Notice] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+Oct 20 10:12:47.779 [Notice] No current certificate known for authority ides; launching request.&lt;br /&gt;
+Oct 20 10:12:47.779 [Notice] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+Oct 20 10:12:47.779 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+Oct 20 10:13:08.966 [Warning] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 5; recommendation warn)&lt;br /&gt;
+Oct 20 10:18:53.673 [Notice] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+Oct 20 10:18:53.673 [Notice] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+Oct 20 10:18:53.673 [Notice] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+Oct 20 10:18:53.673 [Notice] No current certificate known for authority ides; launching request.&lt;br /&gt;
+Oct 20 10:18:53.673 [Notice] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+Oct 20 10:18:53.673 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+Oct 20 10:19:14.846 [Warning] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 6; recommendation warn)&lt;br /&gt;
+Oct 20 10:19:14.846 [Warning] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 7; recommendation warn)&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 17</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_17/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_17/</link>
+
+	<pubDate>Tue, 20 Oct 2009 06:32:17 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:17Z</dcterms:modified>
+
+	<description>&lt;a href=&quot;http://www.cqun.com/2009/10/tor-connecting-to-relay-directory.html&quot; title=&quot;http://www.cqun.com/2009/10/tor-connecting-to-relay-directory.html&quot; rel=&quot;nofollow&quot;&gt;http://www.cqun.com/2009/10/tor-connecting-to-relay-directory.html&lt;/a&gt;
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 18</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_18/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_18/</link>
+
+	<pubDate>Wed, 11 Nov 2009 06:32:18 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:32:18Z</dcterms:modified>
+
+	<description>&lt;p&gt;My tor was working perfectly, but now the company stopped direct connect and we connects to Proxy server. I setup the proxy parameters but still not working any help&lt;/p&gt;
+
+&lt;p&gt;Nov 12 08:14:48.310 [Warning] Problem bootstrapping. Stuck at 80%: Connecting to the Tor network. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 8; recommendation warn)&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 19</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_19/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_19/</link>
+
+	<pubDate>Fri, 20 Nov 2009 06:32:19 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:32:19Z</dcterms:modified>
+
+	<description>one week ago,i still can connect to the tor network,but now,i can&#39;t.OH,great China, great CCP
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 20</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_20/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_20/</link>
+
+	<pubDate>Sun, 22 Nov 2009 06:32:20 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:32:20Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hello,&lt;/p&gt;
+
+&lt;p&gt;I have this problem.&lt;/p&gt;
+
+&lt;p&gt;Tor button does not appear on my browser.Everything is installed.&lt;/p&gt;
+
+&lt;p&gt;Could you please help me?&lt;/p&gt;
+
+&lt;p&gt;Thank you.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 21</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_21/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_21/</link>
+
+	<pubDate>Fri, 27 Nov 2009 06:32:21 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:32:21Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hi&lt;br /&gt;
+I&#39;m in Oman which blocks sites like Skype, Tor, etc.  I&#39;ve tried inserting several bridges, but Vidalia never connects.  The status stops about 1/3 way through with the message &quot;establishing an encrypted directory connection failed (done)&quot;&lt;br /&gt;
+The log shows:&lt;br /&gt;
+Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE;&quot;&lt;br /&gt;
+I&#39;m using PortableTor - Portable Vidalia Bundle - Version 0.2.1.19, but have tried several other versions as well, with the same result.&lt;br /&gt;
+Thanks for any help you can give.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 22</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_22/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_22/</link>
+
+	<pubDate>Fri, 27 Nov 2009 06:32:22 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:32:22Z</dcterms:modified>
+
+	<description>&lt;p&gt;It all means that your Internet service provider has blocked it..........&lt;br /&gt;
+ we are still working on it to over come&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 23</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_23/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_23/</link>
+
+	<pubDate>Sun, 03 Jan 2010 06:32:23 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:32:23Z</dcterms:modified>
+
+	<description>&lt;p&gt;If Comcast is your ISP, and you are receiving the &quot;Apparently they are hijacking DNS failures&quot; error, you can follow the directions linked below to turn off &quot;hijacking.&quot;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://dns-opt-out.comcast.net/help-index.php&quot; title=&quot;http://dns-opt-out.comcast.net/help-index.php&quot; rel=&quot;nofollow&quot;&gt;http://dns-opt-out.comcast.net/help-index.php&lt;/a&gt;&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 24</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_24/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_24/</link>
+
+	<pubDate>Fri, 22 Jan 2010 06:32:24 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:32:24Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hi I have Tor running on mac osx 10.5.8 &amp;amp; been running fine for a long time now, just today I started to get no connection to the TOR network here is my error messages from the message log:&lt;br /&gt;
+Jan 22 12:58:58.881 [Notice] Tor v0.2.1.22. This is experimental software. Do not rely on it for strong anonymity. (Running on Darwin i386)&lt;br /&gt;
+Jan 22 12:58:58.882 [Notice] Initialized libevent version 1.4.13-stable using method kqueue. Good.&lt;br /&gt;
+Jan 22 12:58:58.882 [Notice] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+Jan 22 12:58:58.883 [Notice] Opening Control listener on 127.0.0.1:9051&lt;br /&gt;
+Jan 22 12:58:59.915 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Jan 22 12:58:59.916 [Notice] We&#39;re missing a certificate from authority with signing key B7A209B31ACDD633258D0F07715482BD04F88F4F: launching request.&lt;br /&gt;
+Jan 22 12:58:59.916 [Notice] We&#39;re missing a certificate from authority with signing key 665711AF821C459DC59A8491FAD1B9D7A7800ECF: launching request.&lt;br /&gt;
+Jan 22 12:58:59.916 [Notice] We&#39;re missing a certificate from authority with signing key 6584DF098CFC68ACBF5E551532C8A58674586820: launching request.&lt;br /&gt;
+Jan 22 12:59:00.512 [Warning] TLS error: unexpected close while renegotiating&lt;/p&gt;
+
+&lt;p&gt;Any Help please??&lt;/p&gt;
+
+&lt;p&gt;thanks&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 25</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_25/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_25/</link>
+
+	<pubDate>Sun, 24 Jan 2010 06:32:25 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:32:25Z</dcterms:modified>
+
+	<description>Same thing happened with me too, I was wondering if it might have anything to do with the Security Update that was downloaded from Apple the day before?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 26</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_26/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_26/</link>
+
+	<pubDate>Sun, 24 Jan 2010 06:32:26 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:32:26Z</dcterms:modified>
+
+	<description>&lt;p&gt;Same here. Worked fine until I loaded the Apple security update and threafter it produced the error message &#39;vidalia establishing an encrypted directory connection (done) failed&#39;&lt;/p&gt;
+
+&lt;p&gt;Any suggestions?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 27</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_27/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_27/</link>
+
+	<pubDate>Sun, 24 Jan 2010 06:32:27 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:32:27Z</dcterms:modified>
+
+	<description>I am having the exact same problem. Running Tor on Mac OS 10.6.2.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 28</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_28/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_28/</link>
+
+	<pubDate>Mon, 25 Jan 2010 06:32:28 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:32:28Z</dcterms:modified>
+
+	<description>Exact same problem here on Mac OS 10.6.2.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 29</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_29/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_29/</link>
+
+	<pubDate>Sun, 24 Jan 2010 06:32:29 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:32:29Z</dcterms:modified>
+
+	<description>&lt;p&gt;I also am having issues with tor after loading the apple security update. &lt;/p&gt;
+
+&lt;p&gt;Here is the contents of my Message Log:&lt;br /&gt;
+Jan 24 23:54:03.817 [Notice] Tor v0.2.1.22. This is experimental software. Do not rely on it for strong anonymity. (Running on Darwin i386)&lt;br /&gt;
+Jan 24 23:54:03.818 [Notice] Initialized libevent version 1.4.13-stable using method kqueue. Good.&lt;br /&gt;
+Jan 24 23:54:03.818 [Notice] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+Jan 24 23:54:03.819 [Notice] Opening Control listener on 127.0.0.1:9051&lt;br /&gt;
+Jan 24 23:54:05.336 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Jan 24 23:54:05.337 [Notice] We&#39;re missing a certificate from authority with signing key B7A209B31ACDD633258D0F07715482BD04F88F4F: launching request.&lt;br /&gt;
+Jan 24 23:54:05.337 [Notice] We&#39;re missing a certificate from authority with signing key 665711AF821C459DC59A8491FAD1B9D7A7800ECF: launching request.&lt;br /&gt;
+Jan 24 23:54:05.337 [Notice] We&#39;re missing a certificate from authority with signing key 6584DF098CFC68ACBF5E551532C8A58674586820: launching request.&lt;br /&gt;
+Jan 24 23:54:06.336 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Jan 24 23:54:38.836 [Notice] Renaming old configuration file to &quot;/Users/none/Library/Vidalia/torrc.orig.1&quot;&lt;br /&gt;
+Jan 24 23:55:06.016 [Notice] We&#39;re missing a certificate from authority with signing key B7A209B31ACDD633258D0F07715482BD04F88F4F: launching request.&lt;br /&gt;
+Jan 24 23:55:06.017 [Notice] We&#39;re missing a certificate from authority with signing key 665711AF821C459DC59A8491FAD1B9D7A7800ECF: launching request.&lt;br /&gt;
+Jan 24 23:55:06.017 [Notice] We&#39;re missing a certificate from authority with signing key 6584DF098CFC68ACBF5E551532C8A58674586820: launching request.&lt;br /&gt;
+Jan 24 23:55:06.193 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Jan 24 23:58:02.944 [Notice] We&#39;re missing a certificate from authority with signing key B7A209B31ACDD633258D0F07715482BD04F88F4F: launching request.&lt;br /&gt;
+Jan 24 23:58:02.945 [Notice] We&#39;re missing a certificate from authority with signing key 665711AF821C459DC59A8491FAD1B9D7A7800ECF: launching request.&lt;br /&gt;
+Jan 24 23:58:02.946 [Notice] We&#39;re missing a certificate from authority with signing key 6584DF098CFC68ACBF5E551532C8A58674586820: launching request.&lt;br /&gt;
+Jan 24 23:58:03.024 [Notice] Bootstrapped 10%: Finishing handshake with directory server.&lt;br /&gt;
+Jan 24 23:58:03.240 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Jan 24 23:59:34.955 [Notice] We&#39;re missing a certificate from authority with signing key B7A209B31ACDD633258D0F07715482BD04F88F4F: launching request.&lt;br /&gt;
+Jan 24 23:59:34.956 [Notice] We&#39;re missing a certificate from authority with signing key 665711AF821C459DC59A8491FAD1B9D7A7800ECF: launching request.&lt;br /&gt;
+Jan 24 23:59:34.956 [Notice] We&#39;re missing a certificate from authority with signing key 6584DF098CFC68ACBF5E551532C8A58674586820: launching request.&lt;br /&gt;
+Jan 24 23:59:35.454 [Warning] TLS error: unexpected close while renegotiating&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 30</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_30/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_30/</link>
+
+	<pubDate>Tue, 26 Jan 2010 06:32:30 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:32:30Z</dcterms:modified>
+
+	<description>having the same problem
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 31</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_31/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_31/</link>
+
+	<pubDate>Mon, 25 Jan 2010 06:32:31 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:32:31Z</dcterms:modified>
+
+	<description>Having the same problem after latest Mac OSX security update.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 32</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_32/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_32/</link>
+
+	<pubDate>Mon, 25 Jan 2010 06:32:32 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:32:32Z</dcterms:modified>
+
+	<description>me too
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 33</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_33/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_33/</link>
+
+	<pubDate>Tue, 26 Jan 2010 06:32:33 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:32:33Z</dcterms:modified>
+
+	<description>I&#39;m also having a problem after loading the security update.  Any ideas?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 34</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_34/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_34/</link>
+
+	<pubDate>Tue, 26 Jan 2010 06:32:34 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:32:34Z</dcterms:modified>
+
+	<description>I too am having the same problem with Mac OS X version 10.6.2. Does anyone know of a way to manually correct it?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 35</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_35/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_35/</link>
+
+	<pubDate>Wed, 27 Jan 2010 06:32:35 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:32:35Z</dcterms:modified>
+
+	<description>The problem on Mac OS X Snow Leopard 10.6.2 is from a bundled security update affecting the Mac implementation of OpenSSH, the program that is used to create secure connections to peers on the Tor network.  The only known work-around involves installing the correct libraries from MacPorts and compiling Tor to use those rather than the default mac ones. Then one would have to point the Vidalia configuration to the newly compiled Tor.  Several people have reported that this works, but it is certainly more technically demanding.  The details can be found here: https://blog.torproject.org/blog/new-stable-released-tor-02121  Look about 3/4&#39;s of the way down the page.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 36</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_36/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_36/</link>
+
+	<pubDate>Wed, 27 Jan 2010 06:32:36 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:32:36Z</dcterms:modified>
+
+	<description>The problem on Mac OS X Snow Leopard 10.6.2 is from a bundled security update affecting the Mac implementation of OpenSSH, the program that is used to create secure connections to peers on the Tor network.  The only known work-around involves installing the correct libraries from MacPorts and compiling Tor to use those rather than the default mac ones. Then one would have to point the Vidalia configuration to the newly compiled Tor.  Several people have reported that this works, but it is certainly more technically demanding.  The details can be found here: https://blog.torproject.org/blog/new-stable-released-tor-02121  Look about 3/4&#39;s of the way down the page.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 37</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_37/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_37/</link>
+
+	<pubDate>Tue, 02 Feb 2010 06:32:37 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:32:37Z</dcterms:modified>
+
+	<description>Thank you, I will try this and I will report if it works.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 38</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_38/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_38/</link>
+
+	<pubDate>Thu, 28 Jan 2010 06:32:38 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:32:38Z</dcterms:modified>
+
+	<description>&lt;p&gt;I am using Vidalia version 0.2.6. I have set the proxy and bridge (because my ISP blocks connections to the TOR network). Unfortunately, I am getting the following status:&lt;br /&gt;
+&quot;Connection to a relay directory failed (no route to host)&quot;...&lt;br /&gt;
+............................................................................................................................&lt;br /&gt;
+Furthermore, the message log shows the following:&lt;br /&gt;
+............................................................................................................................&lt;br /&gt;
+Jan 28 11:43:18.207 [Notice] Tor v0.2.1.21. This is experimental software. Do not rely on it for strong anonymity. (Running on Windows &quot;Longhorn&quot; Service Pack 2 [workstation] {personal} {terminal services, single user})&lt;br /&gt;
+Jan 28 11:43:18.208 [Notice] Initialized libevent version 1.4.12-stable using method win32. Good.&lt;br /&gt;
+Jan 28 11:43:18.208 [Notice] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+Jan 28 11:43:18.208 [Notice] Opening Control listener on 127.0.0.1:9051&lt;br /&gt;
+Jan 28 11:43:18.208 [Notice] Parsing GEOIP file.&lt;br /&gt;
+Jan 28 11:43:41.919 [Warning] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 1; recommendation warn)&lt;br /&gt;
+Jan 28 11:43:41.942 [Warning] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 2; recommendation warn)&lt;br /&gt;
+Jan 28 11:43:41.944 [Warning] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 3; recommendation warn)&lt;br /&gt;
+............................................................................................................................&lt;br /&gt;
+Can anybody help me please to run Vidalia as a client?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 39</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_39/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_39/</link>
+
+	<pubDate>Thu, 25 Feb 2010 06:32:39 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:32:39Z</dcterms:modified>
+
+	<description>&lt;p&gt;Any one can help, i&#39;ve just installed vidalia and status shows Establishing an encrypted directory connection for 20mins&lt;/p&gt;
+
+&lt;p&gt;Feb 25 00:50:57.747 [Notice] Tor v0.2.1.22. This is experimental software. Do not rely on it for strong anonymity. (Running on Darwin i386)&lt;br /&gt;
+Feb 25 00:50:57.747 [Notice] Initialized libevent version 1.4.13-stable using method kqueue. Good.&lt;br /&gt;
+Feb 25 00:50:57.748 [Notice] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+Feb 25 00:50:57.748 [Notice] Opening Control listener on 127.0.0.1:9051&lt;br /&gt;
+Feb 25 00:51:03.158 [Notice] Bootstrapped 10%: Finishing handshake with directory server.&lt;br /&gt;
+Feb 25 00:51:04.549 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Feb 25 00:51:04.551 [Notice] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+Feb 25 00:51:04.551 [Notice] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+Feb 25 00:51:04.552 [Notice] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+Feb 25 00:51:04.552 [Notice] No current certificate known for authority ides; launching request.&lt;br /&gt;
+Feb 25 00:51:04.552 [Notice] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+Feb 25 00:51:04.553 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+Feb 25 00:51:04.553 [Notice] No current certificate known for authority urras; launching request.&lt;br /&gt;
+Feb 25 00:51:05.702 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Feb 25 00:53:04.839 [Notice] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+Feb 25 00:53:04.840 [Notice] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+Feb 25 00:53:04.840 [Notice] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+Feb 25 00:53:04.841 [Notice] No current certificate known for authority ides; launching request.&lt;br /&gt;
+Feb 25 00:53:04.841 [Notice] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+Feb 25 00:53:04.842 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+Feb 25 00:53:04.842 [Notice] No current certificate known for authority urras; launching request.&lt;br /&gt;
+Feb 25 00:53:07.576 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Feb 25 00:58:09.896 [Notice] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+Feb 25 00:58:09.898 [Notice] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+Feb 25 00:58:09.899 [Notice] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+Feb 25 00:58:09.899 [Notice] No current certificate known for authority ides; launching request.&lt;br /&gt;
+Feb 25 00:58:09.900 [Notice] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+Feb 25 00:58:09.900 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+Feb 25 00:58:09.901 [Notice] No current certificate known for authority urras; launching request.&lt;br /&gt;
+Feb 25 00:58:13.006 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Feb 25 00:59:17.395 [Warning] TLS error: unexpected close while renegotiating&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 40</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_40/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_40/</link>
+
+	<pubDate>Wed, 28 Apr 2010 06:32:40 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:40Z</dcterms:modified>
+
+	<description>&lt;p&gt;I used tor for just one day on my pc and it stopped working. This is the message log. please help:&lt;/p&gt;
+
+&lt;p&gt;Apr 28 15:20:56.359 [Notice] Tor v0.2.1.25. This is experimental software. Do not rely on it for strong anonymity. (Running on Windows XP Service Pack 2 [workstation] {terminal services, single user})&lt;br /&gt;
+Apr 28 15:20:56.468 [Notice] Initialized libevent version 1.4.12-stable using method win32. Good.&lt;br /&gt;
+Apr 28 15:20:56.468 [Notice] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+Apr 28 15:20:56.468 [Notice] Opening Control listener on 127.0.0.1:9051&lt;br /&gt;
+Apr 28 15:20:56.578 [Notice] Parsing GEOIP file.&lt;br /&gt;
+Apr 28 15:22:01.062 [Notice] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+Apr 28 15:22:01.062 [Notice] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+Apr 28 15:22:01.062 [Notice] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+Apr 28 15:22:01.062 [Notice] No current certificate known for authority ides; launching request.&lt;br /&gt;
+Apr 28 15:22:01.062 [Notice] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+Apr 28 15:22:01.062 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+Apr 28 15:22:01.062 [Notice] No current certificate known for authority urras; launching request.&lt;br /&gt;
+Apr 28 15:27:06.343 [Notice] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+Apr 28 15:27:06.343 [Notice] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+Apr 28 15:27:06.343 [Notice] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+Apr 28 15:27:06.343 [Notice] No current certificate known for authority ides; launching request.&lt;br /&gt;
+Apr 28 15:27:06.343 [Notice] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+Apr 28 15:27:06.343 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+Apr 28 15:27:06.343 [Notice] No current certificate known for authority urras; launching request.&lt;/p&gt;
+
+&lt;p&gt;my email address is hargoon2002@yahoo.com&lt;br /&gt;
+thanks in anticipation.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 41</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_41/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_41/</link>
+
+	<pubDate>Fri, 30 Apr 2010 06:32:41 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:41Z</dcterms:modified>
+
+	<description>&lt;p&gt;here i also just cant connect to tor,which just shows like this:&lt;br /&gt;
+ [Notice] No current certificate known for authority xxxxx; launching request.&lt;br /&gt;
+what&#39;s wrong?&lt;br /&gt;
+and the tragedy is before i update to the latest version, i once make it to get linked.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 42</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_42/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_42/</link>
+
+	<pubDate>Sat, 08 May 2010 06:32:42 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:42Z</dcterms:modified>
+
+	<description>&lt;p&gt;五月 08 19:22:34.468 [Notice] Tor v0.2.1.25. This is experimental software. Do not rely on it for strong anonymity. (Running on Windows XP Service Pack 2 [workstation] {terminal services, single user})&lt;br /&gt;
+五月 08 19:22:34.468 [Notice] Initialized libevent version 1.4.12-stable using method win32. Good.&lt;br /&gt;
+五月 08 19:22:34.468 [Notice] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+五月 08 19:22:34.468 [Notice] Opening Control listener on 127.0.0.1:9051&lt;br /&gt;
+五月 08 19:22:34.468 [Notice] Parsing GEOIP file.&lt;br /&gt;
+五月 08 19:22:35.625 [Notice] Bootstrapped 10%: Finishing handshake with directory server.&lt;br /&gt;
+五月 08 19:22:39.593 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (DONE; DONE; count 3; recommendation warn)&lt;br /&gt;
+五月 08 19:22:44.437 [Notice] Tor v0.2.1.25. This is experimental software. Do not rely on it for strong anonymity. (Running on Windows XP Service Pack 2 [workstation] {terminal services, single user})&lt;br /&gt;
+五月 08 19:22:44.437 [Notice] Initialized libevent version 1.4.12-stable using method win32. Good.&lt;br /&gt;
+五月 08 19:22:44.437 [Notice] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+五月 08 19:22:44.437 [Notice] Opening Control listener on 127.0.0.1:9051&lt;br /&gt;
+五月 08 19:22:44.437 [Notice] Parsing GEOIP file.&lt;br /&gt;
+五月 08 19:22:45.421 [Notice] Bootstrapped 10%: Finishing handshake with directory server.&lt;br /&gt;
+五月 08 19:23:05.890 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (Socket is not connected [WSAENOTCONN ]; NOROUTE; count 3; recommendation warn)&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 43</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_43/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_43/</link>
+
+	<pubDate>Mon, 17 May 2010 06:32:43 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:43Z</dcterms:modified>
+
+	<description>hi i just downloaded tor browser for windows.but it keeps saying no route to tor network.host not found.pls help me email:kingsdezmund@yahoo.com
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 44</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_44/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_44/</link>
+
+	<pubDate>Fri, 21 May 2010 06:32:44 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:44Z</dcterms:modified>
+
+	<description>&lt;p&gt;Even using bridges can&#39;t connect to tor still.....&lt;/p&gt;
+
+&lt;p&gt;五月 22 13:43:48.902 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (DONE; DONE; count 2; recommendation warn)&lt;br /&gt;
+五月 22 13:43:51.746 [Notice] Tor v0.2.2.10-alpha (git-81b84c0b017267b4). This is experimental software. Do not rely on it for strong anonymity. (Running on Windows XP Service Pack 3 [workstation])&lt;br /&gt;
+五月 22 13:43:51.746 [Notice] Initialized libevent version 1.4.13-stable using method win32. Good.&lt;br /&gt;
+五月 22 13:43:51.746 [Notice] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+五月 22 13:43:51.746 [Notice] Opening Control listener on 127.0.0.1:9051&lt;br /&gt;
+五月 22 13:43:51.855 [Notice] Parsing GEOIP file.&lt;br /&gt;
+五月 22 13:43:54.481 [Notice] Bootstrapped 10%: Finishing handshake with directory server.&lt;br /&gt;
+五月 22 13:43:54.684 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (DONE; DONE; count 2; recommendation warn)&lt;br /&gt;
+五月 22 13:43:57.809 [Notice] Tor v0.2.2.10-alpha (git-81b84c0b017267b4). This is experimental software. Do not rely on it for strong anonymity. (Running on Windows XP Service Pack 3 [workstation])&lt;br /&gt;
+五月 22 13:43:57.809 [Notice] Initialized libevent version 1.4.13-stable using method win32. Good.&lt;br /&gt;
+五月 22 13:43:57.809 [Notice] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+五月 22 13:43:57.809 [Notice] Opening Control listener on 127.0.0.1:9051&lt;br /&gt;
+五月 22 13:43:57.919 [Notice] Parsing GEOIP file.&lt;br /&gt;
+五月 22 13:44:00.560 [Notice] Bootstrapped 10%: Finishing handshake with directory server.&lt;br /&gt;
+五月 22 13:44:00.763 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (DONE; DONE; count 2; recommendation warn)&lt;br /&gt;
+五月 22 13:44:02.341 [Notice] Tor v0.2.2.10-alpha (git-81b84c0b017267b4). This is experimental software. Do not rely on it for strong anonymity. (Running on Windows XP Service Pack 3 [workstation])&lt;br /&gt;
+五月 22 13:44:02.341 [Notice] Initialized libevent version 1.4.13-stable using method win32. Good.&lt;br /&gt;
+五月 22 13:44:02.341 [Notice] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+五月 22 13:44:02.451 [Notice] Opening Control listener on 127.0.0.1:9051&lt;br /&gt;
+五月 22 13:44:02.451 [Notice] Parsing GEOIP file.&lt;br /&gt;
+五月 22 13:44:05.060 [Notice] Bootstrapped 10%: Finishing handshake with directory server.&lt;br /&gt;
+五月 22 13:44:05.232 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (DONE; DONE; count 2; recommendation warn)&lt;br /&gt;
+五月 22 13:44:07.655 [Notice] Tor v0.2.2.10-alpha (git-81b84c0b017267b4). This is experimental software. Do not rely on it for strong anonymity. (Running on Windows XP Service Pack 3 [workstation])&lt;br /&gt;
+五月 22 13:44:07.655 [Notice] Initialized libevent version 1.4.13-stable using method win32. Good.&lt;br /&gt;
+五月 22 13:44:07.655 [Notice] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+五月 22 13:44:07.655 [Notice] Opening Control listener on 127.0.0.1:9051&lt;br /&gt;
+五月 22 13:44:07.764 [Notice] Parsing GEOIP file.&lt;br /&gt;
+五月 22 13:44:10.436 [Notice] Bootstrapped 10%: Finishing handshake with directory server.&lt;br /&gt;
+五月 22 13:44:10.624 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (DONE; DONE; count 2; recommendation warn)&lt;br /&gt;
+五月 22 13:45:41.858 [Notice] Tor v0.2.2.10-alpha (git-81b84c0b017267b4). This is experimental software. Do not rely on it for strong anonymity. (Running on Windows XP Service Pack 3 [workstation])&lt;br /&gt;
+五月 22 13:45:41.967 [Notice] Initialized libevent version 1.4.13-stable using method win32. Good.&lt;br /&gt;
+五月 22 13:45:41.967 [Notice] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+五月 22 13:45:41.967 [Notice] Opening Control listener on 127.0.0.1:9051&lt;br /&gt;
+五月 22 13:45:41.967 [Notice] Parsing GEOIP file.&lt;br /&gt;
+五月 22 13:45:44.624 [Notice] Bootstrapped 10%: Finishing handshake with directory server.&lt;br /&gt;
+五月 22 13:45:44.843 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (DONE; DONE; count 2; recommendation warn)&lt;br /&gt;
+五月 22 13:50:54.940 [Notice] Tor v0.2.2.10-alpha (git-81b84c0b017267b4). This is experimental software. Do not rely on it for strong anonymity. (Running on Windows XP Service Pack 3 [workstation])&lt;br /&gt;
+五月 22 13:50:54.940 [Notice] Initialized libevent version 1.4.13-stable using method win32. Good.&lt;br /&gt;
+五月 22 13:50:54.940 [Notice] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+五月 22 13:50:54.940 [Notice] Opening Control listener on 127.0.0.1:9051&lt;br /&gt;
+五月 22 13:50:54.940 [Notice] Parsing GEOIP file.&lt;br /&gt;
+五月 22 13:50:57.581 [Notice] Bootstrapped 10%: Finishing handshake with directory server.&lt;br /&gt;
+五月 22 13:50:57.769 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (DONE; DONE; count 2; recommendation warn)&lt;br /&gt;
+五月 22 13:51:00.332 [Notice] Tor v0.2.2.10-alpha (git-81b84c0b017267b4). This is experimental software. Do not rely on it for strong anonymity. (Running on Windows XP Service Pack 3 [workstation])&lt;br /&gt;
+五月 22 13:51:00.332 [Notice] Initialized libevent version 1.4.13-stable using method win32. Good.&lt;br /&gt;
+五月 22 13:51:00.332 [Notice] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+五月 22 13:51:00.332 [Notice] Opening Control listener on 127.0.0.1:9051&lt;br /&gt;
+五月 22 13:51:00.332 [Notice] Parsing GEOIP file.&lt;br /&gt;
+五月 22 13:51:03.145 [Notice] Bootstrapped 10%: Finishing handshake with directory server.&lt;br /&gt;
+五月 22 13:51:03.332 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (DONE; DONE; count 2; recommendation warn)&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 45</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_45/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_45/</link>
+
+	<pubDate>Mon, 31 May 2010 06:32:45 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:45Z</dcterms:modified>
+
+	<description>&lt;p&gt;Pretty pitiful that NOT A SINGLE SUGGESTION has been made for this critical problem in over 4 months. although it is clear that the sparkies over at the GFW have made some changes that wipe any references to the TOR network including the certificate references and, of course, ports and IP Address. I can add new bridges every ten minutes and none get recognized, in fact, the error log sees them as been &quot;dangerous&quot; and rejects the connection but NOW it just can&#39;t find any bridge routes, period. &lt;/p&gt;
+
+&lt;p&gt;Even though this is a bad situation gone catastrophic, you would think that someone on the TOR side of the fence would have something to say about it, even if its just a &quot;like to help but can&#39;t... &quot; but not a single response from any one on the TOR team? WTF is that all about?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 46</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_46/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_46/</link>
+
+	<pubDate>Tue, 01 Jun 2010 06:32:46 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:46Z</dcterms:modified>
+
+	<description>&lt;p&gt;There are tons of responses by us.  Our research from within China shows the GFW is blocking ip:port combinations of the public relays and the bridges available by our bridge website.  There are comments littered throughout this blog about tor bridges and china.&lt;/p&gt;
+
+&lt;p&gt;We&#39;re experimenting with other means of access inside china, see &lt;a href=&quot;http://metrics.torproject.org/bridge-users-graphs.html#china&quot; title=&quot;http://metrics.torproject.org/bridge-users-graphs.html#china&quot; rel=&quot;nofollow&quot;&gt;http://metrics.torproject.org/bridge-users-graphs.html#china&lt;/a&gt; for the results so far.  A few thousand people continue to connect without issue.&lt;/p&gt;
+
+&lt;p&gt;It&#39;s unclear what you mean by &quot;error log sees them as dangerous&quot;, that&#39;s not something in our code.&lt;/p&gt;
+
+&lt;p&gt;It&#39;s unclear what you mean by &quot;GFW have made some changes that wipe any references to the TOR network including the certificate references&quot;.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 47</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_47/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_5_and_1_2_6_released/comment_47/</link>
+
+	<pubDate>Sat, 19 Jun 2010 06:32:47 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:47Z</dcterms:modified>
+
+	<description>&lt;p&gt;phobos,&lt;br /&gt;
+   lots of people under the GFW are pitifully ungreatful bastards, i think it&#39;s a bit about the environment here. i haven&#39;t been on my facebook account for something like 6 months now, i hope one day i can see it again.&lt;/p&gt;
+
+&lt;p&gt;for those who have their freedom limited by choices they make or by accident of birth.&lt;/p&gt;
+
+&lt;p&gt;continue to push, continue to fight, take what is yours, take what is right. &lt;/p&gt;
+
+</description>
+
+
+</item>
+
+</channel>
+</rss>

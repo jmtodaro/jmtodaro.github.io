@@ -1,0 +1,1659 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>New Stable Version 0.2.1.24 released</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FNew_Stable_Version_0_2_1_24_released&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">New Stable Version 0.2.1.24 released</a>
+
+</span>
+
+
+<div id="content">
+<p>Tor 0.2.1.23 fixes a huge client-side performance bug, makes Tor work again on the latest OS X, and updates the location of a directory authority.</p>
+
+<p>Tor 0.2.1.24 makes Tor work again on the latest OS X -- this time for sure!</p>
+
+<p>The Windows and OS X bundles also come with a newer version of Polipo that fixes some stability and security problems.</p>
+
+<p>People using Tor as a client should upgrade:<br />
+<a href="https://www.torproject.org/easy-download" title="https://www.torproject.org/easy-download" rel="nofollow">https://www.torproject.org/easy-download</a></p>
+
+<p>Changes in version 0.2.1.23 - 2010-02-13<br />
+<strong>Major bugfixes (performance):</strong> <span class="read-more"><a href="http://blog.torproject.org/blog/new-stable-version-02124-released"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+<p><ul>
+<li>We were selecting our guards uniformly at random, and then weighting which of our guards we'd use uniformly at random. This imbalance meant that Tor clients were severely limited on throughput (and probably latency too) by the first hop in their circuit. Now we select guards weighted by currently advertised bandwidth. We also automatically discard guards picked using the old algorithm. Fixes bug 1217; bugfix on 0.2.1.3-alpha. Found by Mike Perry.</li></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/apple_osx_love/" rel="tag">apple osx love</a>
+
+<a href="../../tags/bug_fixes/" rel="tag">bug fixes</a>
+
+<a href="../../tags/enhancements/" rel="tag">enhancements</a>
+
+<a href="../../tags/performance_enhancements/" rel="tag">performance enhancements</a>
+
+<a href="../../tags/stable_release/" rel="tag">stable release</a>
+
+<a href="../../tags/tor_update/" rel="tag">tor update</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-7b9dbf3c077022ce82ad2e0c1390147f">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>Anyone besides me having trouble installing it? I keep getting an error msg saying that I don't have permission to access some of the items.</p>
+
+<p>How do I uninstall the old one so that I can install the new one?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 03 Mar 2010 06:50:52 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-de6a3e5037a3761db2b97852cf481abb">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<a href="http://www.torproject.org/faq#HowUninstallTor" title="http://www.torproject.org/faq#HowUninstallTor" rel="nofollow">http://www.torproject.org/faq#HowUninstallTor</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 04 Mar 2010 06:50:53 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d4b58600562770e677d9afe472e7e08f">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+When's this going to make its way into the Debian/Ubuntu repositories? What's the usual lag time between a release, and a new package being added to the repos?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 03 Mar 2010 06:50:54 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8c87d811c8de347b86f074b26b796d21">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<p>You want to use our deb.torproject.org repo.  Ubuntu is literally 18-36 months behind releases.</p>
+
+<p>Debian is generally within a few weeks.  Or, keep up to date with <a href="http://www.torproject.org/docs/debian.html.en" title="http://www.torproject.org/docs/debian.html.en" rel="nofollow">http://www.torproject.org/docs/debian.html.en</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 04 Mar 2010 06:50:55 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-efe1964257549e7e1f43c29affb6e626">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi,<br />
+First thanks for the effort in helping others access internet freely.</p>
+
+<p>I tried the new version 0.2.1.24 both stable and alpha. Sadly it only works once every after reboot, and even that it stop in the middle of bootstrapping process around 60-70%. After that I experienced the same error/warning messages as before:</p>
+
+<p>     Mar 04 15:00:06.556 [Notice] Opening Socks listener on 127.0.0.1:9050<br />
+     Mar 04 15:00:06.556 [Warning] Could not bind to 127.0.0.1:9050: Address already in use. Is Tor already running?<br />
+     Mar 04 15:00:06.556 [Warning] Failed to parse/validate config: Failed to bind one of the listener ports.<br />
+     Mar 04 15:00:06.557 [Error] Reading config failed--see warnings above.</p>
+
+<p>I am using Macbook OS X 10.6.2 with the Security Update 2010-001 ver 1.0.<br />
+Do you have any insight or idea of what might be the cause? </p>
+
+<p>Thanks</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 03 Mar 2010 06:50:56 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0642583ad65496ea82664149dee6cffb">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>you already have tor running, it tells you right here:<br />
+"[Warning] Could not bind to 127.0.0.1:9050: Address already in use. Is Tor already running?"</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 04 Mar 2010 06:50:57 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-17211d1365ad352e8cdb77bab73308a0">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p>You are right.<br />
+It is really weird, I just assumed because the it said "Tor is not running" on the control panel/icon it is not running; while it is running.</p>
+
+<p>Thanks</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 04 Mar 2010 06:50:58 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-183918ce5bb3dd665d9d1210ef7f2412">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+<p>I'm having the same problem. But I can't seem to get Tor to stop running ... assuming that is the problem. </p>
+
+<p>I uninstalled Tor; reinstalled it; I restarted my mac and the first app I started was Vidalia and still got this: ****</p>
+
+<p>Mar 05 18:51:42.863 [Notice] Tor v0.2.2.9-alpha (git-2e159967c9871477). This is experimental software. Do not rely on it for strong anonymity. (Running on Darwin i386)<br />
+Mar 05 18:51:42.866 [Notice] Initialized libevent version 1.4.13-stable using method kqueue. Good.<br />
+Mar 05 18:51:42.868 [Notice] Opening Socks listener on 127.0.0.1:9050<br />
+Mar 05 18:51:42.869 [Warning] Could not bind to 127.0.0.1:9050: Address already in use. Is Tor already running?<br />
+Mar 05 18:51:42.869 [Warning] Failed to parse/validate config: Failed to bind one of the listener ports.<br />
+Mar 05 18:51:42.870 [Error] Reading config failed--see warnings above. *****</p>
+
+<p>If Tor is already running, how do I get it to stop so that I can reconnect using it?</p>
+
+<p>LoboSolo</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 05 Mar 2010 06:50:59 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d6fd8f97bf66773f5e1e7c1dafcd6df9">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+Don't where to post this - the certificate for blog.torproject.org expired yesterday - give or take a few time zones.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 05 Mar 2010 06:51:00 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9dc7cc67c840b3b6bc7ed90975f199ed">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+Thanks for installing a new certificate.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 06 Mar 2010 06:51:01 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-646654d2413473fb97878d7d9fc1132b">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+<p>Had to wipe my hard drive today and do a reinstall of OS X (10.4.11) Tiger, and when I installed the new Tor bundle with Firefox 3.6, Tor fails.  When I test the settings, I get this error:<br />
+<p><br />
+Tor proxy test: Local HTTP Proxy is unreachable. Is Polipo running properly?<br />
+<p><br />
+Am I missing something?  There was no old versions, everything was completely wiped.<br />
+<p><br />
+My logs say:<br />
+<p><br />
+Exception:  EXC_BAD_ACCESS (0x0001) <br><br />
+Codes:      KERN_PROTECTION_FAILURE (0x0002) at 0x00000000<br />
+<p><br />
+Thread 0 Crashed: <br><br />
+0   libSystem.B.dylib   0x9010c456 _malloc_initialize + 36 <br><br />
+1   libSystem.B.dylib   0x9000737c calloc + 29 <br><br />
+2   polipo              0x00006373 0x1000 + 21363 <br><br />
+3   polipo              0x0000e1d0 0x1000 + 53712 <br><br />
+4   polipo              0x00001a36 0x1000 + 2614<br />
+<p><br />
+Thread 0 crashed with X86 Thread State (32-bit): <br><br />
+  eax: 0x00000000  ebx: 0x9010c443  ecx: 0x90000b18  edx: 0x00000008 <br><br />
+  edi: 0x00000000  esi: 0x00000000  ebp: 0xbffffc28  esp: 0xbffffb90 <br><br />
+   ss: 0x0000001f  efl: 0x00010286  eip: 0x9010c456   cs: 0x00000017 <br><br />
+   ds: 0x0000001f   es: 0x0000001f   fs: 0x00000000   gs: 0x00000037 <br><br />
+<p><br />
+Binary Images Description: <br><br />
+    0x1000 -    0x2ffff polipo  /polipo <br><br />
+0x8fe00000 - 0x8fe4afff dyld 46.16  /usr/lib/dyld <br><br />
+0x90000000 - 0x90171fff libSystem.B.dylib   /usr/lib/libSystem.B.dylib <br><br />
+0x901c1000 - 0x901c3fff libmathCommon.A.dylib   /usr/lib/system/libmathCommon.A.dylib <br><br />
+0x90bd2000 - 0x90bd9fff libgcc_s.1.dylib    /usr/lib/libgcc_s.1.dylib</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 06 Mar 2010 06:51:02 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-cdc0b99536674fa000f371d59fdecede">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+further note, it looks like polipo is crashing when i start vidalia.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 06 Mar 2010 06:51:03 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-cf2dd589e90dc756d78a6d4aeb655fb6">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+i am having an identical problem with polipo crashing, and therefore unable to connect to local proxy. please post any fixes if you find them.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 22 Mar 2010 06:51:04 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a9901fac91c7a03a14aa191e64009b18">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+<p>HI ,mates, i am having the same problem , when i install the vidalia-bundle-0.2.1.25-0.2.7 it work perfect in my Windows Vista Home and Firefox 3.5.6 but when i restart the windows system them Polipo is not started and i get this target:</p>
+
+<p>"Tor proxy test: Local HTTP Proxy is unreachable. Is Polipo running properly?"</p>
+
+<p>and</p>
+
+<p>" DNS: couldn't open /etc/resolv.conf: No such file or directory<br />
+Disabling disk cache: No such file or directory<br />
+Disabling local tree: No such file or directory<br />
+Established listening socket on port 8123. "</p>
+
+<p>and i can not to connect Firefox with Polipo.</p>
+
+<p>How to can i fix it ?</p>
+
+<p>Thank you very much and sorry for my basic english.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 25 Mar 2010 06:51:05 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4357eefddd2026c6c88fce1f94920111">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+<p>I have the same problem. I installed vidalia-bundle-0.2.1.25-0.2.7 and it was working perfecty into my Windows Vista HOme and Firefox 3.5.6 but when i restarted my laptop them Polipo do not executed and i get this target when try to connect firefox with Tor and Polipo:</p>
+
+<p>Tor proxy test: Local HTTP Proxy is unreachable. Is Polipo running properly?</p>
+
+<p>and when i try to execute polipo.exe i get this target:</p>
+
+<p>DNS: couldn't open /etc/resolv.conf: No such file or directory<br />
+Disabling disk cache: No such file or directory<br />
+Disabling local tree: No such file or directory<br />
+Established listening socket on port 8123.</p>
+
+<p>How can i fix this problem??</p>
+
+<p>Thank you and sorry for my basic english.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 25 Mar 2010 06:51:06 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a0fd8fe9d73d19c497e2a0ed3e8915ff">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+i am inquiring whether using bandwidth-based selection will lead evil exit node to get higher probability by rising it bandwidth?  
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 09 Mar 2010 06:51:07 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0dcb2eb3fa7bfb68c71daac37a63a0ac">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+In fact,the Tor doesn't work recently,even i use the bridges.i'm a Chinese programer,i think the GFW find a way to block the bridges.maybe they can get the bridges as i did,and forbiden the address.i'm so sad
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 09 Mar 2010 06:51:08 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b5ecad35fa6e6df79eb56b76d43a9775">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+Where is the comments section for Tor v0.2.2.9-alpha?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 10 Mar 2010 06:51:09 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a96e83c9ee9c3e7e29bdc617af7da259">
+
+<div class="comment-subject">
+
+Comment 19
+
+</div>
+
+<div class="inlinecontent">
+<p>gentle men i need help in the last version 1.3.3</p>
+
+<p>In the beginning it works well</p>
+
+<p>Then the Firefox browser works but the pidgin stopped working !!!</p>
+
+<p>Even it doesn't appear any more.</p>
+
+<p>this is the  message that appear to me each time i start the tor 1.3.3</p>
+
+<p>(( vidalia was unable to start the configured IM client ))</p>
+
+<p>I removed it and re install it again and still the same problem .</p>
+
+<p>would you please help me <img src="../../smileys/sad.png" alt=":(" /></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 10 Mar 2010 06:51:10 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-787a5e0b503487173fd1581a0c5858e1">
+
+<div class="comment-subject">
+
+Comment 20
+
+</div>
+
+<div class="inlinecontent">
+<p> Version1.3.3 = &lt;== is the name of downloaded package. what i mean is i downloaded the last Version 0.2.1.24</p>
+
+<p>just to make my message clear .</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 10 Mar 2010 06:51:11 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a97c41255a1d83bbeb072e3850e6dd3a">
+
+<div class="comment-subject">
+
+Comment 21
+
+</div>
+
+<div class="inlinecontent">
+<p>FYI: I couldn't get Vidallia to work at first on OS 10.6.2 I noticed in the Console that it had trouble figuring out whether to use the QT Framework inside the bundle or the one in /Library/Frameworks then it would crash with a bad access error.</p>
+
+<p>I removed it from the Vidalia bundle and it then worked. Thought you should know</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 11 Mar 2010 06:51:12 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-58825f5a7898d38f8a75a2782677e0a9">
+
+<div class="comment-subject">
+
+Comment 22
+
+</div>
+
+<div class="inlinecontent">
+<p>OK my friend.</p>
+
+<p>would you please write the exact name of the file that i should  remove.</p>
+
+<p>just for reminding the problem is the pidgin doesn't work before and this is the message that appear each time i started the program </p>
+
+<p>(( vidalia was unable to start the configured IM client )) </p>
+
+<p><img src="../../smileys/sad.png" alt=":(" /> this is strange . it was working perfectly !! i didn't miss use with the inner files ever.</p>
+
+<p>just the start icon. what cause of all this <img src="../../smileys/sad.png" alt=":(" /> ??</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 11 Mar 2010 06:51:13 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6447f3628939fae8cbfaa8ea96928e3c">
+
+<div class="comment-subject">
+
+Comment 23
+
+</div>
+
+<div class="inlinecontent">
+I am a chinese netizen,my tor doesn't work ,i can't get new valid bridges,help me
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 11 Mar 2010 06:51:14 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-16879fb850b4de9b6cdde627bb0854dd">
+
+<div class="comment-subject">
+
+Comment 24
+
+</div>
+
+<div class="inlinecontent">
+Yes, I run a bridge and noticed the block.  My message to bridge operators is to reconfigure ip and/or port to beat it, and users need to learn the new connection details.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 11 Mar 2010 06:51:15 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4771d042fa79c57c55766b779aabab8f">
+
+<div class="comment-subject">
+
+Comment 25
+
+</div>
+
+<div class="inlinecontent">
+OK my friend. would you please write the exact name of the file that i should remove. just for reminding the problem is the pidgin doesn't work before and this is the message that appear each time i started the program (( vidalia was unable to start the configured IM client )) <img src="../../smileys/sad.png" alt=":(" /> this is strange . it was working perfectly !! i didn't miss use with the inner files ever. just the start icon. what cause of all this <img src="../../smileys/sad.png" alt=":(" /> ??
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 13 Mar 2010 06:51:16 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-79ca4b4b53b375afdde3fcb2892f0929">
+
+<div class="comment-subject">
+
+Comment 26
+
+</div>
+
+<div class="inlinecontent">
+<p>I have had various sorts of problems with tor on several different computers with several different Linux OSes with several different versions of kernel and several different browsers.</p>
+
+<p>Currently, I have tor working on only one setup here:</p>
+
+<p>  OS:  Linux Mint 7 Gloria - X64 Edition<br />
+  Kernel: 2.6.28-11-generic #42 Ubuntu SMP<br />
+  Browser: Firefox 3.0.10<br />
+  TORbutton: 1.2.3<br />
+  Hardware: AMD64 X2 5600+ CPU</p>
+
+<p>The system that I am trying to get TOR working on is a Toshiba laptop which has this setup:</p>
+
+<p>  OS: Kubuntu 9.10 Karmic Koala<br />
+  Kernel:  2.6.31-14-generic #48 Ubuntu SMP<br />
+  Browser: Firefox 3.5.7<br />
+  TORbutton: 1.2.3</p>
+
+<p>I have also tried unsuccessfully to install TOR and get it working on other desktop H/W and S/W.  For now, I have given up trying to install and configure TOR, since the result fails in a variety of ways.  I am out of time, due to pressing schedule issues with my work.</p>
+
+<p>Can someone recommend any distro which has TOR ALREADY installed and configured to work with an installed and configured browser?</p>
+
+<p>Thanx so much</p>
+
+<p>Angelo</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 23 Mar 2010 06:51:17 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5ba313ddc894417fd4015b2a9ad3e5a7">
+
+<div class="comment-subject">
+
+Comment 27
+
+</div>
+
+<div class="inlinecontent">
+AutoUpdate。AutoUpdate。AutoUpdate。AutoUpdate。AutoUpdate。AutoUpdate。AutoUpdate。AutoUpdate。AutoUpdate
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 27 Mar 2010 06:51:18 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e15da75bc51855f053c2d3711a6aac4e">
+
+<div class="comment-subject">
+
+Comment 28
+
+</div>
+
+<div class="inlinecontent">
+Have installed TOR along with the Firefox add-on Torbutton.  It says I'm connected and the Vidalia onion turns green, etc.  I'm operating a IMac OS 10.5.  Though when I go to do the Tor Check it says I'm not connected and when I go to identify my IP, it comes up as my actual IP.  What have I missed in terms of my configuration?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 29 Mar 2010 06:51:19 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6d85f4cabbcc9ad77186d66ec5f2dc6e">
+
+<div class="comment-subject">
+
+Comment 29
+
+</div>
+
+<div class="inlinecontent">
+<p>Each time i start tor 2.1.14  on mandrake 2009 (RPM install)  i get a 100% CPU load even if i put ulimit -n 4096 or put ulimit -n 8096  before message:  [warn] Failing because we have 1012 connections already. Please raise your ulimit -n.</p>
+
+<p>how can i avoid that 100% CPU LOAD ?</p>
+
+<p>TOP:<br />
+Mem:   1009752k total,   968212k used,    41540k free,   129364k buffers<br />
+Swap:  3470000k total,       88k used,  3469912k free,   386064k cached<br />
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND<br />
+27724 toruser   20   0 85332  71m  13m R  100  7.3 231:52.07 tor<br />
+ 3823 mysql     20   0  109m  14m 3752 S    0  1.5   0:35.01 </p>
+
+<p>[root@25adsl tor]# netstat -antp | grep -c 9001<br />
+1040<br />
+[root@25adsl tor]# ulimit -n 4096</p>
+
+<p>service tor start<br />
+[root@25adsl tor]#  tail -f /var/log/tor/notices.log<br />
+Apr 21 12:33:32.392 [notice] Self-testing indicates your ORPort is reachable from the outside. Excellent. Publishing server descriptor.<br />
+Apr 21 12:34:56.989 [notice] Performing bandwidth self-test...done.<br />
+Apr 21 14:32:51.877 [warn] Cannot seed RNG -- no entropy source found.<br />
+Apr 21 15:32:52.967 [warn] Cannot seed RNG -- no entropy source found.<br />
+Apr 21 16:32:53.091 [warn] Cannot seed RNG -- no entropy source found.<br />
+Apr 21 17:32:54.259 [warn] Cannot seed RNG -- no entropy source found.<br />
+service tor stop<br />
+Apr 21 17:41:58.653 [notice] Catching signal TERM, exiting cleanly.</p>
+
+<p>do you see something wrong in my configuration file ?</p>
+
+<p>my uncomented /etc/tro/torrc lines are:</p>
+
+<p>SocksPort 9050 # what port to open for local application connections<br />
+SocksListenAddress 127.0.0.1 # accept connections only from localhost<br />
+SocksListenAddress 192.168.1.1:9100 # listen on this IP:port also<br />
+SocksPolicy accept 192.168.1.1/16<br />
+/tor/notices.log<br />
+Log notice file /var/log/tor/notices.log.<br />
+#RunAsDaemon 1<br />
+DataDirectory /var/lib/tor<br />
+RelayBandwidthRate 300 KBytes  # Throttle traffic to 100KB/s (800Kbps)<br />
+RelayBandwidthBurst 600 KBytes # But allow bursts up to 200KB/s (1600Kbps)<br />
+ContactInfo falcon@wanadoo.fr  <br />
+ExitPolicy reject *:* # no exits allowed<br />
+ExitPolicy reject *:*</p>
+
+<p>THANK for answer !</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 22 Apr 2010 06:51:20 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-445998604afc59a3b462b4a32e171965">
+
+<div class="comment-subject">
+
+Comment 30
+
+</div>
+
+<div class="inlinecontent">
+<p>i got very often on mandriva 2009 with tor 2.1.13 (mandriva rpm install) a 100% CPU load (on 1 of my 4 cpu) and the message rise your ulimit </p>
+
+<p>so i decide to try to install TOR 2.1.25 (tar.gz first time i did that kind of install it seems to succed) et rise my ulimit but i get get again :<br />
+-[warn] Failing because we have 991 connections already. !!<br />
+-100% CPU load !!!</p>
+
+<p>see below:</p>
+
+<p>history<br />
+ 1053  tar -xzvf tor-0.2.1.25.tar.gz<br />
+ 1054  ls<br />
+ 1055  cd tor-0.2.1.25/<br />
+ 1056  ./configure &amp;&amp; make &amp;&amp; src/or/tor<br />
+ 1057  updatedb<br />
+ 1058  locate 0.2.1.25<br />
+ 1059  locate 0.2.1.25 | grep bin<br />
+ 1060  locate tor | grep bin<br />
+ 1061  cd /usr/bin/tor/<br />
+ 1062  /usr/bin/tor --version<br />
+ 1063  ls /etc/tor<br />
+ 1064  ls -l /etc/tor/torrc*<br />
+ 1065  service tor start<br />
+ 1066  ulimit -n 8096<br />
+ 1067  tail -50 /var/log/tor/notices.log</p>
+
+<p>[root@25adsl tor-0.2.1.25]#  tail -50 /var/log/tor/notices.log<br />
+Apr 22 17:32:53.778 [notice] Tor 0.2.1.25 opening new log file.<br />
+Apr 22 17:32:53.798 [notice] Parsing GEOIP file.<br />
+Apr 22 17:32:54.026 [notice] OpenSSL OpenSSL 0.9.8h 28 May 2008 [90808f] looks like it's older than 0.9.8l, but some vendors have b<br />
+ackported 0.9.8l's renegotiation code to earlier versions.  I'll set SSL3_FLAGS just to be safe.<br />
+Apr 22 17:32:54.111 [notice] Your Tor server's identity key fingerprint is 'Falcontor 02E2CF2C2AD9B09629D05791B7D739160D75C68F'<br />
+Apr 22 17:32:56.945 [notice] I learned some more directory information, but not enough to build a circuit: We have no recent networ<br />
+k-status consensus.<br />
+Apr 22 17:32:57.904 [notice] Bootstrapped 45%: Asking for relay descriptors.<br />
+Apr 22 17:32:57.904 [notice] I learned some more directory information, but not enough to build a circuit: We have only 0/1428 usab<br />
+le descriptors.<br />
+Apr 22 17:32:58.557 [notice] Bootstrapped 57%: Loading relay descriptors.<br />
+Apr 22 17:32:58.557 [notice] I learned some more directory information, but not enough to build a circuit: We have only 94/1426 usa<br />
+ble descriptors.<br />
+Apr 22 17:32:58.697 [notice] Bootstrapped 65%: Loading relay descriptors.<br />
+Apr 22 17:32:58.697 [notice] I learned some more directory information, but not enough to build a circuit: We have only 190/1426 us<br />
+able descriptors.<br />
+Apr 22 17:32:58.796 [notice] Bootstrapped 73%: Loading relay descriptors.<br />
+Apr 22 17:32:58.796 [notice] I learned some more directory information, but not enough to build a circuit: We have only 286/1426 us<br />
+able descriptors.<br />
+Apr 22 17:32:58.992 [notice] We now have enough directory information to build circuits.<br />
+Apr 22 17:32:58.992 [notice] Bootstrapped 80%: Connecting to the Tor network.<br />
+Apr 22 17:32:59.047 [notice] Bootstrapped 85%: Finishing handshake with first hop.<br />
+Apr 22 17:32:59.357 [notice] Bootstrapped 90%: Establishing a Tor circuit.<br />
+Apr 22 17:33:02.079 [notice] Tor has successfully opened a circuit. Looks like client functionality is working.<br />
+Apr 22 17:33:02.079 [notice] Bootstrapped 100%: Done.<br />
+Apr 22 17:33:02.079 [notice] Now checking whether ORPort 82.216.X.X:9001 and DirPort 82.216.X.X:9030 are reachable... (this m<br />
+ay take up to 20 minutes -- look for log messages indicating success)<br />
+Apr 22 17:33:11.126 [notice] Self-testing indicates your ORPort is reachable from the outside. Excellent. Publishing server descrip<br />
+tor.<br />
+Apr 22 17:33:17.553 [notice] Performing bandwidth self-test...done.<br />
+Apr 22 17:35:12.866 [notice] Self-testing indicates your DirPort is reachable from the outside. Excellent.</p>
+
+<p>Apr 22 18:39:17.887 [warn] Failing because we have 991 connections already. </p>
+
+<p>Please raise your ulimit -n.<br />
+[root@25adsl tor-0.2.1.25]# ulimit -n 8096<br />
+[root@25adsl tor-0.2.1.25]#<br />
+[root@25adsl tor-0.2.1.25]# netstat -antp | grep -c 9001<br />
+1188</p>
+
+<p>Tasks: 136 total,   6 running, 130 sleeping,   0 stopped,   0 zombie<br />
+Cpu(s): 10.1%us, 15.1%sy, 74.6%ni,  0.0%id,  0.0%wa,  0.2%hi,  0.1%si,  0.0%st<br />
+Mem:   1009752k total,   902524k used,   107228k free,   206916k buffers<br />
+Swap:  3470000k total,       88k used,  3469912k free,   300104k cached</p>
+
+<p>again 100% CPU load:</p>
+
+<p>PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND<br />
+18444 toruser   20   0 96064  73m  12m R  100  7.5  13:50.73 tor   &lt;--WRONG CPU LOAD<br />
+18539 kg        39  19 64544  44m 1300 R   99  4.5  74:08.12 AK_V8_linux32_s<br />
+19514 kg        39  19 64540  44m 1300 R   79  4.5  35:27.51 AK_V8_linux32_s<br />
+19611 kg        39  19 64536  44m 1300 R   67  4.5  24:17.13 AK_V8_linux32_s<br />
+18346 kg        39  19 64516  44m 1300 R   54  4.5  80:39.71 AK_V8_linux32_s<br />
+18592 kg        20   0 26644  11m 7876 S    1  1.2   0:29.77 gkrellm<br />
+ 4779 kg        20   0 22820  19m 2764 S    0  2.0   6:29.32 boinc</p>
+
+<p>[root@25adsl tor-0.2.1.25]# service tor reload<br />
+Rechargement de torÂ :                                          [ÃCHEC ]<br />
+[root@25adsl tor-0.2.1.25]# service tor status<br />
+tor est mort, mais le sous-systÃ¨me reste verrouillÃ©<br />
+[root@25adsl tor-0.2.1.25]# service tor stop<br />
+ArrÃªt de torÂ :                                                [  OK  ]<br />
+[root@25adsl tor-0.2.1.25]# service tor start<br />
+Lancement de torÂ : Apr 22 18:57:13.615 [notice] Tor v0.2.1.25. This is experimental software. Do not rely on it for strong anonymity. (Running on Linux i686)<br />
+Apr 22 18:57:13.616 [notice] Initialized libevent version 1.4.7-stable using method epoll. Good.<br />
+Apr 22 18:57:13.616 [notice] Opening OR listener on 0.0.0.0:9001<br />
+Apr 22 18:57:13.616 [notice] Opening Directory listener on 0.0.0.0:9030<br />
+Apr 22 18:57:13.616 [notice] Opening Socks listener on 127.0.0.1:9050<br />
+Apr 22 18:57:13.617 [notice] Opening Socks listener on 192.168.1.1:9100<br />
+                                                                [  OK  ]</p>
+
+<p>[root@25adsl tor-0.2.1.25]# netstat -antp | grep -c 9001<br />
+249<br />
+[root@25adsl tor-0.2.1.25]#</p>
+
+<p>Tasks: 136 total,   6 running, 130 sleeping,   0 stopped,   0 zombie<br />
+Cpu(s):  1.1%us,  1.8%sy, 96.9%ni,  0.1%id,  0.0%wa,  0.0%hi,  0.1%si,  0.0%st<br />
+Mem:   1009752k total,   865648k used,   144104k free,   207548k buffers<br />
+Swap:  3470000k total,       88k used,  3469912k free,   297120k cached</p>
+
+<p>  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND<br />
+19514 kg        39  19 64540  44m 1300 R  101  4.5  40:38.18 AK_V8_linux32_s<br />
+18346 kg        39  19 64516  44m 1300 R   99  4.5  85:57.63 AK_V8_linux32_s<br />
+19611 kg        39  19 64536  44m 1300 R   99  4.5  29:03.09 AK_V8_linux32_s<br />
+18539 kg        39  19 64544  44m 1300 R   89  4.5  80:06.54 AK_V8_linux32_s<br />
+19969 toruser   20   0 57500  42m  13m S   12  4.3   0:11.84 tor</p>
+
+<p>[root@25adsl tor-0.2.1.25]# netstat -antp | grep -c 9001<br />
+3701<br />
+[root@25adsl tor-0.2.1.25]# ulimit -n 16096</p>
+
+<p>PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND<br />
+18346 kg        39  19 64516  44m 1300 R  101  4.5 118:15.71 AK_V8_linux32_s<br />
+19611 kg        39  19 64536  44m 1300 R  101  4.5  60:22.69 AK_V8_linux32_s<br />
+19514 kg        39  19 64540  44m 1300 R   99  4.5  72:48.35 AK_V8_linux32_s<br />
+18539 kg        39  19 64544  44m 1300 R   91  4.5 110:48.68 AK_V8_linux32_s<br />
+19969 toruser   20   0  222m 192m  13m R    6 19.5   2:38.35 tor</p>
+
+<p>as my previous attempts even if i rise "ulimit -n 16000" i got a 100% CPU load !!<br />
+my bandwith is<br />
+50Mbit/S down<br />
+5Mbits/s  up</p>
+
+<p>my uncomented line in torrc configuration file are:<br />
+(i don't kwon why is still version 2.1.14 instead of 2.1.25)</p>
+
+<p>[root@25adsl ~]# cat /etc/tor/torrc<br />
+## Last updated 12 April 2009 for Tor 0.2.1.14-rc<br />
+SocksPort 9050 # what port to open for local application connections<br />
+SocksListenAddress 127.0.0.1 # accept connections only from localhost<br />
+SocksListenAddress 192.168.1.1:9100 # listen on this IP:port also<br />
+SocksPolicy accept 192.168.1.1/16<br />
+Log notice file /var/log/tor/notices.log<br />
+#RunAsDaemon 1<br />
+DataDirectory /var/lib/tor<br />
+ORPort 9001<br />
+Nickname xxxxxxxxxx<br />
+RelayBandwidthRate 300 KBytes  # Throttle traffic to 100KB/s (800Kbps)<br />
+RelayBandwidthBurst 600 KBytes # But allow bursts up to 200KB/s (1600Kbps)<br />
+ContactInfo power.falcon@wanadoo.fr<br />
+
+DirPort 9030 # what port to advertise for directory connections<br />
+ExitPolicy reject *:* # no exits allowed<br />
+ExitPolicy reject *:*</p>
+
+<p>CAN YOU PLEASE HELP ME !!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 22 Apr 2010 06:51:21 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d66efa7f1bda3e6f22d2a5fd41fa6d14">
+
+<div class="comment-subject">
+
+Comment 31
+
+</div>
+
+<div class="inlinecontent">
+<p>it seem that i succed to avoid:<br />
+-[warn] Failing because we have 4098 connections already. Please raise your ulimit -n.<br />
+-followed by anoying 100% CPU load</p>
+
+<p>by using following crontab:<br />
+crontab -l<br />
+14 * * * * ulimit -n 16000<br />
+29 * * * * ulimit -n 16000<br />
+44 * * * * ulimit -n 16000<br />
+59 * * * * ulimit -n 16000</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 22 Apr 2010 06:51:22 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d4375eaabda2846c1fbeaa05e44ad808">
+
+<div class="comment-subject">
+
+Comment 32
+
+</div>
+
+<div class="inlinecontent">
+<p>OS Version:     10.4.11 (Build 8S2167)<br />
+Report Version: 4</p>
+
+<p>Command: polipo<br />
+Path:    /Applications/Vidalia.app/Contents/MacOS/polipo<br />
+Parent:  Vidalia [5714]</p>
+
+<p>Version: 0.2.9 (0.2.9)</p>
+
+<p>PID:    5716<br />
+Thread: 0</p>
+
+<p>Exception:  EXC_BAD_ACCESS (0x0001)<br />
+Codes:      KERN_PROTECTION_FAILURE (0x0002) at 0x00000000</p>
+
+<p>Thread 0 Crashed:<br />
+0   libSystem.B.dylib   0x9010c456 _malloc_initialize + 36<br />
+1   libSystem.B.dylib   0x9000737c calloc + 29<br />
+2   polipo              0x00006373 0x1000 + 21363<br />
+3   polipo              0x0000e1d0 0x1000 + 53712<br />
+4   polipo              0x00001a36 0x1000 + 2614</p>
+
+<p>Thread 0 crashed with X86 Thread State (32-bit):<br />
+  eax: 0x00000000  ebx: 0x9010c443  ecx: 0x90000b18  edx: 0x00000008<br />
+  edi: 0x00000000  esi: 0x00000000  ebp: 0xbffffc08  esp: 0xbffffb70<br />
+   ss: 0x0000001f  efl: 0x00010282  eip: 0x9010c456   cs: 0x00000017<br />
+   ds: 0x0000001f   es: 0x0000001f   fs: 0x00000000   gs: 0x00000037</p>
+
+<p>Binary Images Description:<br />
+    0x1000 -    0x2ffff polipo  /Applications/Vidalia.app/Contents/MacOS/polipo<br />
+0x8fe00000 - 0x8fe4afff dyld 46.16  /usr/lib/dyld<br />
+0x90000000 - 0x90171fff libSystem.B.dylib   /usr/lib/libSystem.B.dylib<br />
+0x901c1000 - 0x901c3fff libmathCommon.A.dylib   /usr/lib/system/libmathCommon.A.dylib<br />
+0x90bd2000 - 0x90bd9fff libgcc_s.1.dylib    /usr/lib/libgcc_s.1.dylib</p>
+
+<p>I'm a newb, and what is this?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 18 Jun 2010 06:51:23 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-833fc12ae25ef99d6cfe433909b5b8f9">
+
+<div class="comment-subject">
+
+Comment 33
+
+</div>
+
+<div class="inlinecontent">
+This is a fine bug report, <a href="https://trac.torproject.org/projects/tor/ticket/1572" title="https://trac.torproject.org/projects/tor/ticket/1572" rel="nofollow">https://trac.torproject.org/projects/tor/ticket/1572</a>.  Now created for you.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 19 Jun 2010 06:51:24 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FNew_Stable_Version_0_2_1_24_released&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:50:51 AM CDT</span>
+<!-- Created <span class="date">Wed 03 Mar 2010 02:14:34 PM CST</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

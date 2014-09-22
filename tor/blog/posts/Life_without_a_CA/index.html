@@ -1,0 +1,1155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Life without a CA</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FLife_without_a_CA&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Life without a CA</a>
+
+</span>
+
+
+<div id="content">
+<p>At <a href="http://libreplanet.org/">Libreplanet 2010</a>, I was in a discussion with the <a href="https://web.monkeysphere.info/">MonkeySphere</a> and <a href="https://www.eff.org/">EFF</a> folks about how to encourage every website to offer ssl by default.  The general idea is to stop local traffic snooping and provide more security by default. During the discussion, it came up that I disable all of the <a href="http://en.wikipedia.org/wiki/Certificate_authority">Certificate Authorities</a> in my systems and selectively trust the ssl certificates from individual websites.  I've been doing this for years.  Apparently my admission was a shocking statement to many.  The group asked me to document my Firefox setup and what life is like without any trusted CAs.  Seth from the EFF has a <a href="https://www.eff.org/deeplinks/2010/03/researchers-reveal-likelihood-governments-fake-ssl">quick post</a> about possible concerns over  the CAs in your browser. <span class="read-more"><a href="http://blog.torproject.org/blog/life-without-ca"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/certificate_authority/" rel="tag">certificate authority</a>
+
+<a href="../../tags/certificate_fingerprints/" rel="tag">certificate fingerprints</a>
+
+<a href="../../tags/distributed_trust/" rel="tag">distributed trust</a>
+
+<a href="../../tags/firefox/" rel="tag">firefox</a>
+
+<a href="../../tags/ssl_errors/" rel="tag">ssl errors</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-dcfa3eeaa0598a394a4140cf3da429e5">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+You are my hero.  Keep up the good fight.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 26 Mar 2010 06:53:48 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0cd532bd05da6bb381389c8e99d8109d">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>Getting rid of CAs is a terribly bad idea. CAs are there for a bunch of good reasons.</p>
+
+<p>But let me ask this at first:<br />
+How do you think you (non CA user) will detect DNS cache poisoning, BGP hijacking, Domain name hijacking? - You won't. Sometimes depending on how well the SSL certs are secured. Every single one you use.</p>
+
+<p>I think most people are aware that deploying SSL isn't easy.  http://blog.torproject.org/blog/life-without-ca - works (no s, see). So it's done wrong here, too.<br />
+- Because there's a form - and I'm using it right now. You get a bunch of session hijacking issues therefore. Why do you allow non-https content if you care for SSL security?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 27 Mar 2010 06:53:49 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d1bc30632ccde5e83133e47a038d669c">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>Obviously, we're of differing opinions on CAs.  CAs do little to zero checking when giving out SSL certs.  I've personally bought SSL certs for apple.com, microsoft.com, and other domains where I had zero way to prove I owned the domain.  When I tried to buy an EV cert for torproject.org, the entire check consisted of sending an email to an address I provided.  Maybe we should be throwing out the CAs that are bad at their verification.  If I buy an EV cert, I expect to have to prove I am authorized to represent the company, prove the company exists (and no, faxing an authorization on company letterhead doesn't count because it's so easily faked), and then have the CA do some actual work to make sure this is the right request. The other issue is it only takes 1 CA in your browser to be weak, and you lose.  It's a race to the bottom for sloppy standards compliance and price.  If one CA makes it too difficult to buy certs, just go to the cheapest, crappiest CA that is in most browsers and get your cert.</p>
+
+<p>There's actually a subtle distinction here.  SSL is great at encryption between me and the destination site.  I don't like using SSL for authentication through a supposed trusted 3rd party CA.  This is why I like the more peer-to-peer web of trust model.  The people at Princeton and the Freedom to Tinker blog have done a fine job explaining the issues, <a href="https://freedom-to-tinker.com/blog/sjs/web-security-trust-models" title="https://freedom-to-tinker.com/blog/sjs/web-security-trust-models" rel="nofollow">https://freedom-to-tinker.com/blog/sjs/web-security-trust-models</a> and <a href="https://www.freedom-to-tinker.com/blog/felten/web-certification-fail-bad-assumptions-lead-bad-technology" title="https://www.freedom-to-tinker.com/blog/felten/web-certification-fail-bad-assumptions-lead-bad-technology" rel="nofollow">https://www.freedom-to-tinker.com/blog/felten/web-certification-fail-bad...</a>.</p>
+
+<p>I think you missed the point where I check certs through a few different methods from different parts of the world to see if I arrive at the same answer.  Yes, a global adversary could alter bankofamerica.com and screw me, however, everyone else is equally screwed in that scenario.  Calling up the bank and asking for their fingerprint and serial number is the second verification step.</p>
+
+<p>The reason we as tor allow http and do not automatically redirect to https is that some companies and countries block ssl websites by default.  I've seen this in action at a few banks around the world.  They feel they need to surveil their employees to meet audit requirements.  If we automatically redirected to the ssl site, many people would be sad.  Some countries in the Middle East block ssl versions of sites, but not the non-SSL version.  Simply forcing SSL everywhere is fraught with complexities.  However, enabling SSL for users to choose is a fine option.  You'll notice my links were to the ssl version of a site if it existed.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 27 Mar 2010 06:53:50 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f097bb34090721cd043581656fa81b30">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+So... bank employees are prevented from doing secure banking?  That's horrendously, amusingly ironic.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 27 Mar 2010 06:53:51 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5c15fa98f6401965721c81252083ce5a">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+As a bank information security employee, the reason we have to do this is to record the content of all traffic in and out to help the Loss Prevention departments.  If the traffic is non-ssl, we can record everything easily.  For some departments, we allow ssl through the firewalls, but have installed our own CA that mitm all their traffic.  We also whitelist the internet with a bluecoat systems device so people, say in the wire transfer room, can only access like 50 pre-approved sites relevant to their jobs.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 27 Mar 2010 06:53:52 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f5caf651a3f2aa792ce401a9d7b551c0">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>Yay, I am not alone. Doing the same since about half a year <img src="../../smileys/smile.png" alt=":)" /><br />
+Still can not use online banking cause nobody at my bank can tell me their fingerprint :P</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 27 Mar 2010 06:53:53 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-af0f9e4b8f66d82d7998bf8bd36d111e">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+For a moment I wondered when I wrote this, I've been doing the same for quite some time. And I must admit: these bank service desks, I wonder who decides to hire them or if they get any education ...
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 27 Mar 2010 06:53:54 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-dd78579e5f39a2bae1fdddc1b36535da">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+<p>I guess I should also state that my practices essentially turn me into a CA, where I have to do the verification.  I know this and am fine with doing the extra work when needed.  Your desires may vary.  </p>
+
+<p>If I just want encryption, then I don't do too much verification.  If I'm shopping at some sketchy ecommerce site, then I'll rely upon my credit card liability limits or the anonymously pre-paid credit card to protect me.  I can afford $50 if it turns out the sketchy site loses all my info.  This risk is true for sites I trust as well.  I have zero control over my info at this point.  The info I provide for the purchase is frequently bought, sold, lost, or stolen by the destination.  An ssl cert, no matter how good it is, isn't going to stop that.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 27 Mar 2010 06:53:55 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-baf397b1ec6ea0e244224926b864b54e">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+What anonymous, prepaid credit card do you use that works with online purchases?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 06 Apr 2010 06:53:56 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b6326b0842a5c6b91e9082e0372abeb4">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+Well, yeeah!!!!! For example, i pushed Certificate Patrol into FactorBee ( http://honeybeenet.altervista.org/factorbee/ ) long time ago!!!!!!! Looking at the fingerprints of SSL certs is very important to avoid "fake"/replaced certificates!!!!!!!!!!!! It wasn't a news to me, i read one article about that almost one/two years ago!!!!!!!!!!! It sounds strange to me that the EFF has discovered this only recently(three days ago!!!!!!!!!!!!lol!!!!!!!!!!)!!!!! It is also the reason why i think that FactorBee is superior to the official Tor Browser Bundle for GNU/Linux!!!!!!! I made it in a very accurate way!!!!!!! ~bee!!!!!!!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 27 Mar 2010 06:53:57 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fa0e255cca6e0d58bb4fa315e66e5f8d">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+<p>I've often wondered why people buy certificates from CAs -- do they pay because they trust the CA, or do they trust the CA because they've paid?
+</p>
+
+<p>As you mention in a previous comment, SSL is great for encrypting a connection, but the existing hierarchical method for verifying authenticity is next to useless. Might as well authenticate the certificates myself.
+</p>
+
+<p>So by authenticating the certificates myself I might be securely connecting to an impostor, but at least I can be sure I'm connecting to the same impostor every time!
+</p>
+
+<p>--Bob.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 27 Mar 2010 06:53:58 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7c89b7348cde73adb77c454282aa7fad">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+I think the main reason to purchase certificates from a CA today is to provide convenience for the users of their site.  Most people would have no idea what to do when they see a warning that the website's certificate is not trusted, and would result in significant loss of traffic for the site.  It seems that the CA's generally don't care to verify the purchaser of the cert is who they claim to be, so trust seems to be a secondary concern to usability and the <i>appearance</i> of security in many cases.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 07 Apr 2010 06:53:59 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7ef5b968b61ef47d88014304ad68df04">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+Phobos seems to confuse trust with authentication at times, a common mistake.  I can authenticate the Russian Mafia is running a website, but not trust them.  I can authenticate a police officer is in fact, a valid police officer; but I don't have to trust her.  I can encrypt a connection to foo.bar, trust that it is foo.bar (because I run the service) but not actually trust the service (perhaps because it is non-free software and I cannot see the source code to know what it really does).  
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 27 Mar 2010 06:54:00 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7b9884097a6e75aaa6fc93f9b481b913">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+What's your point? As I understand the post, it is about the possibility of a corrupt CA taking bribes to authenticate the Russian Mafia site by presenting it to you disguised as a site you trust. If you claim that cannot happen, or that it can happen, but is not a problem, give your reasoning.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 29 Mar 2010 06:54:01 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b8fe07b74248a6bd7b40452d024fc455">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+How can I delete Firefox CA in Windows? Delete option doesn't work, they are still there, and if I delete cert8.db Firefox recreates the file.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 27 Mar 2010 06:54:02 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c2e5937dd26c36a44cbbe35fc287d81e">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+<p>In C:\Program Files\Mozilla Firefox, or wherever you have it installed, rename nssckbi.dll to something else; say nssckbi.dll.saved.</p>
+
+<p>Restart firefox and you are done.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 28 Mar 2010 06:54:03 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-26b200d53fc9396d00e7088880c6c442">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+I still see the cert auth. after the restart.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 13 Apr 2010 06:54:04 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9f29a828fe8c35c9fcb979769c4cdb39">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+<p>"Would I notice if a Packet Forensics device was used? Unless someone screwed up, I doubt it"</p>
+
+<p>Your not using any CA's so... you would notice it, or am I missing something?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 29 Mar 2010 06:54:05 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1da87927a9e96820c6ff66f2b91cf98d">
+
+<div class="comment-subject">
+
+Comment 19
+
+</div>
+
+<div class="inlinecontent">
+The packet forensics device fakes a valid ssl cert, not a CA.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 30 Mar 2010 06:54:06 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7ebebdc59debd74d26587bb07a14da38">
+
+<div class="comment-subject">
+
+Comment 20
+
+</div>
+
+<div class="inlinecontent">
+I believe the fingerprint would change if a Packet Forensics device begins modifying the traffic.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 07 Apr 2010 06:54:07 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a32f95958ecea255fc1945799a4f7460">
+
+<div class="comment-subject">
+
+Comment 21
+
+</div>
+
+<div class="inlinecontent">
+<p>You might be interested in Perspectives: http://www.cs.cmu.edu/~perspectives/<br />
+Its not distributed enough for me to trust it very much yet, but it has potential.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 29 Mar 2010 06:54:08 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fcf536a7fdf12e4bc29a5428110c72e5">
+
+<div class="comment-subject">
+
+Comment 22
+
+</div>
+
+<div class="inlinecontent">
+Financial Crypto is doing a series of posts on this very topic, https://financialcryptography.com/mt/archives/001232.html  and https://financialcryptography.com/mt/archives/001233.html
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 30 Mar 2010 06:54:09 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ef3146eb8760daff943a2295d34268eb">
+
+<div class="comment-subject">
+
+Comment 23
+
+</div>
+
+<div class="inlinecontent">
+<p>If you found a fake SSL that would validate with a browser's stock CAs, why don't you publish it?  SSL certificates are non-reputable, so this would be significant news and would give credibility to your cause.</p>
+
+<p>Of course if you've only found non-validating SSL certificates while utilizing Tor exit nodes, that's not particularly surprising.  </p>
+
+<p>&gt;&gt;Cookies should be enabled in your browser for CAPTCHA validation.<br />
+bah!  How can someone who seems as paranoid as I am require cookies?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 02 Apr 2010 06:54:10 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-229e61bb54e795fd28531c04000f7c9b">
+
+<div class="comment-subject">
+
+Comment 24
+
+</div>
+
+<div class="inlinecontent">
+<p>I recently wrote about storing a hash of your certificate in your DNSSEC protected DNS zone file as an alternative to using CA's:</p>
+
+<p>https://secure.grepular.com/DNSSEC_Will_Kill_Commercial_CAs</p>
+
+<p>Just wondering what your opinion of doing it this way would be?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 07 Apr 2010 06:54:11 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d458b9ebac04aaaf68d6b4672ff58752">
+
+<div class="comment-subject">
+
+Comment 25
+
+</div>
+
+<div class="inlinecontent">
+Could you give us a story about the times you've seen SSL MITMs attempted?  Would be enlightening to know what the dangers out there are.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 07 Apr 2010 06:54:12 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c2ee73b4b764f086ab218094b78fded3">
+
+<div class="comment-subject">
+
+Comment 26
+
+</div>
+
+<div class="inlinecontent">
+<p>I have to say that this is being terribly overly paranoid on this subject, to be blunt about it.</p>
+
+<p>CA's are there for good reasons, and it is stupid to delete them unless they are known to have been compromised in some manner.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 07 May 2010 06:54:13 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0012da444bfa3d5d1d5f649c3eb595d2">
+
+<div class="comment-subject">
+
+Comment 27
+
+</div>
+
+<div class="inlinecontent">
+<p>Perhaps.  You be the judge.  A well-done compromise will not alert the users, <a href="http://www.wired.com/threatlevel/2010/03/packet-forensics/" title="http://www.wired.com/threatlevel/2010/03/packet-forensics/" rel="nofollow">http://www.wired.com/threatlevel/2010/03/packet-forensics/</a></p>
+
+<p><a href="http://lair.fifthhorseman.net/~dkg/tls-centralization/" title="http://lair.fifthhorseman.net/~dkg/tls-centralization/" rel="nofollow">http://lair.fifthhorseman.net/~dkg/tls-centralization/</a></p>
+
+<p><a href="http://www.internetnews.com/ec-news/article.php/2232421" title="http://www.internetnews.com/ec-news/article.php/2232421" rel="nofollow">http://www.internetnews.com/ec-news/article.php/2232421</a></p>
+
+<p><a href="http://www.zdnetasia.com/easy-to-get-web-certs-undermine-online-trust-62062987.htm" title="http://www.zdnetasia.com/easy-to-get-web-certs-undermine-online-trust-62062987.htm" rel="nofollow">http://www.zdnetasia.com/easy-to-get-web-certs-undermine-online-trust-62...</a></p>
+
+<p><a href="http://codefromthe70s.org/sslblacklist.aspx" title="http://codefromthe70s.org/sslblacklist.aspx" rel="nofollow">http://codefromthe70s.org/sslblacklist.aspx</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 07 May 2010 06:54:14 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-440a804a4651b1a0db9712e7e8dced27">
+
+<div class="comment-subject">
+
+Comment 28
+
+</div>
+
+<div class="inlinecontent">
+thanks!removing  all of the CAs from bruisers, now BOOKing airasia/cebu pacific  online tickets gets very smoothly,no fail anymore
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 04 Jun 2010 06:54:15 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FLife_without_a_CA&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:53:48 AM CDT</span>
+<!-- Created <span class="date">Fri 26 Mar 2010 02:43:01 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

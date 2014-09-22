@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged vidalia_releases</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/vidalia_releases/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/vidalia_releases/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/vidalia_releases/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:41:01Z</updated>
+<entry>
+	<title>October 2009 Progress Report</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/October_2009_Progress_Report/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/October_2009_Progress_Report/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/enhancements" />
+
+	<category term="/tags/progress_report" />
+
+	<category term="/tags/tor_releases" />
+
+	<category term="/tags/vidalia_releases" />
+
+
+	<updated>2011-04-05T11:41:01Z</updated>
+	<published>2009-11-12T15:14:19Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;strong&gt;New releases, new hires, new funding&lt;/strong&gt;&lt;br /&gt;
+Christian Fromme joins Tor to work on development and maintenance of the growing number of tools we’ve created over the past year. Christian is a great python hacker with a strong security mindset. He’s going to enhance and maintain the tools such as tor weather, get-tor, bridge database, tor control, tor flow, check.torproject.org, etc. Christian has been a volunteer developer for the past year helping to enhance get-tor, tor weather, and generally helping out with our python coding needs.&lt;/p&gt;
+
+&lt;p&gt;On October 10, we released Tor version 0.2.2.4-alpha. The release notes can be read at &lt;a href=&quot;https://blog.torproject.org/blog/tor-0224-alpha-released&quot; title=&quot;https://blog.torproject.org/blog/tor-0224-alpha-released&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-0224-alpha-released&lt;/a&gt; or below: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/october-2009-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/October_2009_Progress_Report/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/October_2009_Progress_Report/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>KAIST freshmen working on bridge distribution strategies</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/KAIST_freshmen_working_on_bridge_distribution_strategies/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/KAIST_freshmen_working_on_bridge_distribution_strategies/"/>
+
+	<author><name>arma</name></author>
+
+
+
+
+
+
+	<category term="/tags/drag_and_drop_OS_X_install" />
+
+	<category term="/tags/msi_installer" />
+
+	<category term="/tags/polipo" />
+
+	<category term="/tags/updated_packages" />
+
+	<category term="/tags/vidalia_releases" />
+
+
+	<updated>2011-04-05T11:35:11Z</updated>
+	<published>2009-09-09T00:15:58Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Thanks to a friend who&#39;s a professor at &lt;a href=&quot;http://www.kaist.edu/edu.html&quot; rel=&quot;nofollow&quot;&gt;KAIST&lt;/a&gt; in Korea, several teams of students there are working for their &quot;freshman design class&quot; on designing new bridge (aka bridge relay) distribution strategies. Here&#39;s some early brainstorming on what the actual problems are and what needs doing. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/bridge-distribution-strategies&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/KAIST_freshmen_working_on_bridge_distribution_strategies/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/KAIST_freshmen_working_on_bridge_distribution_strategies/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Testing Tor Browser Bundle 1.2.7-dev</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/openssl_fixes" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+	<category term="/tags/usability_enhancements" />
+
+	<category term="/tags/vidalia_releases" />
+
+
+	<updated>2011-04-05T11:33:32Z</updated>
+	<published>2009-08-16T03:33:34Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;ve updated the Tor Browser Bundle with torbutton 1.2.2, the &lt;a href=&quot;http://localhost//blog.torproject.org/blog/vidalia-022-released&quot; rel=&quot;nofollow&quot;&gt;new Vidalia 0.2.2&lt;/a&gt;, and openssl 0.9.8k compiled with Microsoft Visual C to handle ssl compatibility issues with various versions of Windows.&lt;/p&gt;
+
+&lt;p&gt;If this works, it will be the new Tor Browser Bundle 1.2.8.  Please test away.&lt;/p&gt;
+
+&lt;p&gt;The full list of changes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;update Torbutton to 1.2.2&lt;/li&gt;
+&lt;li&gt;update Vidalia to 0.2.2&lt;/li&gt;
+&lt;li&gt;compile OpenSSL 0.9.8k with Visual C to make dlls&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There is an issue for some people using a clean Windows XP, Vista, 7 which would either require we ship the Visual C redistributable package, or compile OpenSSL ourselves with Visual C.   The symptoms were the &quot;find bridges now&quot; button didn&#39;t appear in Vidalia 0.2.x, and the relays would never get flags.  A few people posted comments to this blog about lacking flags and geoip information with TBB. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/testing-tor-browser-bundle-127dev&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Vidalia 0.2.2 Released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_2_Released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_2_Released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/openssl_fixes" />
+
+	<category term="/tags/usability_enhancements" />
+
+	<category term="/tags/vidalia_releases" />
+
+
+	<updated>2011-04-05T11:33:22Z</updated>
+	<published>2009-08-15T14:01:14Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Vidalia 0.2.2 is released.  It addresses an issue with openssl which causes the geoip lookups to fail on various versions of Windows.  It also switches from the Nullsoft Installer to the Microsoft System Installer for better compatibility with Microsoft Windows.&lt;/p&gt;
+
+&lt;p&gt;There are now separate Apple OS X builds, one for PowerPC architectures and one for i386 architectures.  No more Universal binary bloat to download.&lt;/p&gt;
+
+&lt;p&gt;The changes are: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/vidalia-022-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;When the user clicks &quot;Browse&quot; in the Advanced settings page to locate&lt;br /&gt;
+    a new torrc, set the initial directory shown in the file dialog to the&lt;br /&gt;
+    current location of the user&#39;s torrc. (Ticket #505)&lt;/li&gt;
+&lt;li&gt;Use &#39;ditto&#39; to strip the architectures we don&#39;t want from the Qt&lt;br /&gt;
+    frameworks installed into the app bundle with the dist-osx,&lt;br /&gt;
+    dist-osx-bundle and dist-osx-split-bundle build targets.&lt;/li&gt;
+&lt;li&gt;Fix a bug in the CMakeLists.txt files for ts2po and po2ts that caused&lt;br /&gt;
+    build errors on Panther for those two tools.&lt;/li&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_2_Released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_2_Released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Vidalia 0.1.15 Released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_1_15_Released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_1_15_Released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bugfixes" />
+
+	<category term="/tags/vidalia_releases" />
+
+
+	<updated>2011-04-05T11:30:19Z</updated>
+	<published>2009-07-13T01:32:54Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Vidalia 0.1.15 is released.  It contains fixes for:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Bump the minimum required Qt version to 4.3.0.&lt;/li&gt;
+&lt;li&gt;Remove USE_QSSLSOCKET as a build option. If your Qt doesn&#39;t support !OpenSSL, then you don&#39;t get GeoIP lookups.&lt;/li&gt;
+&lt;li&gt; Fix the TorPostFlight portion of the OS X bundle installer so it doesn&#39;t fail when installing Torbutton.&lt;/li&gt;
+&lt;li&gt;Include libeay32.dll in the Windows installers. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It can be obtained at &lt;a href=&quot;https://www.torproject.org/vidalia/&quot; title=&quot;https://www.torproject.org/vidalia/&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/vidalia/&lt;/a&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_1_15_Released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_1_15_Released/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

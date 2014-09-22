@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>January 2010 Progress Report</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/January_2010_Progress_Report/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/January_2010_Progress_Report/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/January_2010_Progress_Report/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:50:33Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/January_2010_Progress_Report/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/January_2010_Progress_Report/comment_1/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:27Z</updated>
+	<published>2010-02-13T12:50:27Z</published>
+
+	<content type="html" xml:lang="en">
+	I have vista 64 .. my download doesnt seem to be working ,,Is this the problem
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/January_2010_Progress_Report/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/January_2010_Progress_Report/comment_2/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:28Z</updated>
+	<published>2010-02-15T12:50:28Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;IDEA: Make all relays Bridges, set all clients also to be bridges unless user selects otherwise: &lt;/p&gt;
+
+&lt;p&gt;Why not make the majority of Tor relays and clients bridges by default. In fact, make bridges the only type of relay. Only a small number of addresses of high-bandwidth nodes would be shipped with Tor, and they would have the main function of bootstrapping new nodes into the network, if the user does not want to obtain bridge addresses using e-mail or other methods. Next, every new unique, persistent node downloads a small number of bridge relay addresses from some kind of distributed table, so no one user or authority knows all relays. &lt;/p&gt;
+
+&lt;p&gt;This cant improve scalability and performance if done intelligently, and would certainly improve security for everyone. &lt;/p&gt;
+
+&lt;p&gt;What do the developers think?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/January_2010_Progress_Report/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/January_2010_Progress_Report/comment_3/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:29Z</updated>
+	<published>2010-02-17T12:50:29Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I have never been able to get Tor or Vidalia to work on my os x mac with Firefox.  And believe me, I have tried, like a dozen times.  And I have read every forum and help area I could track down.  Fresh installs of Tor and Firefox.  And I&#39;m not a dummy.  I am intelligent and computer literate.  But Tor is ridiculous.  I have to say that if this program is ever going to move into mainstream use it will have to work correctly when installed, without a computer science degree required.  Otherwise folks will just give up after banging their fists on the table enough times.  It&#39;s a shame too since it seems like such a good idea.  I just don&#39;t understand why you can&#39;t make it work like other software:  click on it, it works.  It needs to be de-geekified.  Maybe you could bring someone on to the team who understands user-friendliness. I really wanted this to work.&lt;/p&gt;
+
+&lt;p&gt;If somebody who works on this project answers these comments I would be glad to post my os, hardware and browser settings and info.&lt;/p&gt;
+
+&lt;p&gt;newstuff&lt;br /&gt;
+at&lt;br /&gt;
+earthlink&lt;br /&gt;
+net or com&lt;/p&gt;
+
+&lt;p&gt;Chris&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/January_2010_Progress_Report/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/January_2010_Progress_Report/comment_4/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:30Z</updated>
+	<published>2010-02-18T12:50:30Z</published>
+
+	<content type="html" xml:lang="en">
+	You should send an email to tor-assistants with the issues.  Tor is simply drag and drop and work 99% of the time.  The issue is when the vendor breaks their OS, we had to work around it, which isn&#39;t pretty or easy to do.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/January_2010_Progress_Report/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/January_2010_Progress_Report/comment_5/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:31Z</updated>
+	<published>2010-02-19T12:50:31Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;The &quot;selecting our guards uniformly at random&quot; at this and older&lt;br /&gt;
+tor-versions is.... a little bit strange(EntryGuards in state-files are not&lt;br /&gt;
+Entryguards in &#39;cached-consensus&#39;-file) and slow.&lt;br /&gt;
+But the new one -0.2.1.23- is to stiff and calculable(?).&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/January_2010_Progress_Report/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/January_2010_Progress_Report/comment_6/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:32Z</updated>
+	<published>2010-02-21T12:50:32Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hi,&lt;br /&gt;
+maybe off-topic:&lt;br /&gt;
+I have 0.2.1.23.&lt;br /&gt;
+Up to now i use &#39;StrictNodes&#39; in torcc.&lt;br /&gt;
+Now &#39;StrictNodes&#39; seems to be &quot;StrictEntryNodes/StrictExitNodes&quot;.&lt;br /&gt;
+Right?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/January_2010_Progress_Report/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/January_2010_Progress_Report/comment_7/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:33Z</updated>
+	<published>2010-02-25T12:50:33Z</published>
+
+	<content type="html" xml:lang="en">
+	I am missing the bandwidth display in Vidalia to be able to display the data from my server installation of tor, not only the local one.
+
+	</content>
+
+
+
+</entry>
+
+</feed>

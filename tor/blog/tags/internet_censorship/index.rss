@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged internet_censorship</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/internet_censorship/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Reading links, 21 March 2011 edition</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Reading_links_21_March_2011_edition/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Reading_links_21_March_2011_edition/</link>
+
+
+	<category>/tags/china</category>
+
+	<category>/tags/edrigram</category>
+
+	<category>/tags/gmail</category>
+
+	<category>/tags/interesting_links</category>
+
+	<category>/tags/interesting_reading</category>
+
+	<category>/tags/internet_censorship</category>
+
+	<category>/tags/mandated_content_blocking</category>
+
+	<category>/tags/reading_links</category>
+
+	<category>/tags/vpns</category>
+
+
+	<pubDate>Mon, 21 Mar 2011 21:45:03 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:15:47Z</dcterms:modified>
+
+	<description>&lt;ul&gt;
+&lt;li&gt;The ramped up censorship of the Internet by China continues while the world is distracted by the Middle East and Japan.  &lt;a href=&quot;http://advocacy.globalvoicesonline.org/2011/03/20/china-pptp-and-l2tp-vpn-protocols-blocked/&quot; title=&quot;http://advocacy.globalvoicesonline.org/2011/03/20/china-pptp-and-l2tp-vpn-protocols-blocked/&quot; rel=&quot;nofollow&quot;&gt;http://advocacy.globalvoicesonline.org/2011/03/20/china-pptp-and-l2tp-vp...&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;GMail blockage in China, or not.  &lt;a href=&quot;http://techcrunch.com/2011/03/21/google-and-china-at-it-again-with-government-gmail-block/&quot; title=&quot;http://techcrunch.com/2011/03/21/google-and-china-at-it-again-with-government-gmail-block/&quot; rel=&quot;nofollow&quot;&gt;http://techcrunch.com/2011/03/21/google-and-china-at-it-again-with-gover...&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;On Mandated Content Blocking in the Domain Name System, &lt;a href=&quot;http://www.circleid.com/posts/20110318_on_mandated_content_blocking_in_the_domain_name_system/&quot; title=&quot;http://www.circleid.com/posts/20110318_on_mandated_content_blocking_in_the_domain_name_system/&quot; rel=&quot;nofollow&quot;&gt;http://www.circleid.com/posts/20110318_on_mandated_content_blocking_in_t...&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The always excellent EDRi-gram is out for March 2011, &lt;a href=&quot;http://www.edri.org/edrigram/number9.5&quot; title=&quot;http://www.edri.org/edrigram/number9.5&quot; rel=&quot;nofollow&quot;&gt;http://www.edri.org/edrigram/number9.5&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Reading_links_21_March_2011_edition/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Update on Internet censorship in Iran</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Update_on_Internet_censorship_in_Iran/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Update_on_Internet_censorship_in_Iran/</link>
+
+
+	<category>/tags/great_potato_wall</category>
+
+	<category>/tags/internet_censorship</category>
+
+	<category>/tags/iran</category>
+
+	<category>/tags/ssl_man-in-the-middle</category>
+
+
+	<pubDate>Fri, 21 Jan 2011 01:11:28 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:12:08Z</dcterms:modified>
+
+	<description>&lt;p&gt;Here&#39;s a quick update on what we&#39;re seeing from Tor clients in Iran.  This is an update to &lt;a href=&quot;https://blog.torproject.org/blog/new-blocking-activity-iran&quot; title=&quot;https://blog.torproject.org/blog/new-blocking-activity-iran&quot;&gt;https://blog.torproject.org/blog/new-blocking-activity-iran&lt;/a&gt;.  It appears that one of the five Iranian ISPs is experimenting in blocking censorship circumvention tools; such as Tor, Freegate, Ultrasurf, and Hot Spot Shield.  There have been reports that this update to censorship technologies was coming soon, &lt;a href=&quot;https://www.azadcyber.info/articles/1560&quot; title=&quot;https://www.azadcyber.info/articles/1560&quot;&gt;https://www.azadcyber.info/articles/1560&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Previously, we had data suggesting that ssl-connections were being throttled or experiencing a forced reduced-throughput.  It seems this is no longer the case.  A simple IP address access list is used to stop access to the public Tor nodes, as well as many Tor bridges.   An example of this blocklist on the Iranian Tor users:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://blog.torproject.org/files/direct-users-2011-01-21-ir-2010-10-23.png&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://blog.torproject.org/files/bridge-users-2011-01-21-ir-2010-10-23.png&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;We are seeing success in users choosing to configure their Tor clients to use a &lt;a href=&quot;https://www.torproject.org/docs/proxychain&quot;&gt;socks or https proxy&lt;/a&gt; and then connecting to the public Tor network.  The trick here is that Iranian tor users now look to be coming from wherever the open proxy is located.  A few volunteers in Europe and SE Asia have setup &lt;a href=&quot;http://www.inet.no/dante/&quot;&gt;proxy servers&lt;/a&gt; restricted to Iranian IP space.&lt;/p&gt;
+
+&lt;p&gt;On a more technical level, here&#39;s what we were seeing last week for ssl manipulation, &lt;a href=&quot;https://blog.torproject.org/files/https-traffic-flow.txt&quot; title=&quot;https://blog.torproject.org/files/https-traffic-flow.txt&quot;&gt;https://blog.torproject.org/files/https-traffic-flow.txt&lt;/a&gt;.  What&#39;s interesting is the tor-server to client communication is with a TTL of 40.  The TLSv1 Encrypted Alert is from the tor-server, except the TTL is 39.  Unless the tor-server suddenly jumped one hop further from the client, something intercepted the connection and injected that packet on behalf of the tor-server.   &lt;/p&gt;
+
+&lt;p&gt;This week we&#39;re seeing straight IP blocking after the ssl handshake starts, &lt;a href=&quot;https://blog.torproject.org/files/ip-blocking.txt&quot; title=&quot;https://blog.torproject.org/files/ip-blocking.txt&quot;&gt;https://blog.torproject.org/files/ip-blocking.txt&lt;/a&gt;.  In both cases, this is to the same tor bridge from the same tor client as before.  &lt;/p&gt;
+
+&lt;p&gt;In a short few months, Iran has vastly improved the sophistication of their censorship technologies.  Right now, the best option is to use tor through open socks/https proxies.  A risk is the open proxies can see you are using tor, but cannot see the traffic passing through the open proxy, for everything is wrapped in layers of encryption by Tor.  However, it appears the Iranian Potato Wall can detect Tor or not in any case by analyzing the traffic on the wire.  We have reports this is true for other circumvention tools as well.&lt;/p&gt;
+
+&lt;p&gt;I thank the many people that have taken risks to share data with us.&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Update_on_Internet_censorship_in_Iran/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Update on Tor usage in Tunisia</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Update_on_Tor_usage_in_Tunisia/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Update_on_Tor_usage_in_Tunisia/</link>
+
+
+	<category>/tags/cautious_optimism</category>
+
+	<category>/tags/internet_censorship</category>
+
+	<category>/tags/tunisia</category>
+
+	<category>/tags/users</category>
+
+
+	<pubDate>Thu, 13 Jan 2011 20:54:20 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:12:02Z</dcterms:modified>
+
+	<description>&lt;p&gt;It has been reported that the Tunisian President has &lt;a href=&quot;http://english.aljazeera.net/news/africa/2011/01/2011113192110570350.html&quot;&gt;stopped the Internet censorship&lt;/a&gt; in the country. We have confirmation from a few Tunisians that Tor works from within the country, without requiring bridges.  And that Youtube and some other sites are no longer censored.  There is cautious optimism that this is real, however many continue to use Tor to protect their Internet traffic as a safeguard.&lt;/p&gt;
+
+&lt;p&gt;Two graphs show the current state of Tor usage in Tunisia:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://blog.torproject.org/files/bridge-users-2011-01-14-tn-2010-10-16.png&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://blog.torproject.org/files/direct-users-2011-01-14-tn-2010-10-16.png&quot;&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Update_on_Tor_usage_in_Tunisia/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: New Blocking Activity from Iran</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Blocking_Activity_from_Iran/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Blocking_Activity_from_Iran/</link>
+
+
+	<category>/tags/censorship</category>
+
+	<category>/tags/deep_packet_inspection</category>
+
+	<category>/tags/great_persian_firewall</category>
+
+	<category>/tags/internet_censorship</category>
+
+	<category>/tags/iran</category>
+
+
+	<pubDate>Sun, 09 Jan 2011 21:58:30 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:11:48Z</dcterms:modified>
+
+	<description>&lt;p&gt;Over the past 48 hours it seems the Great Persian Firewall is updating to attempt to block a number of circumvention tools, including Tor. Iranians and their diaspora have been reporting to us that Tor, Hot Spot Shield, UltraSurf, and Freegate are all experiencing connectivity problems from inside Iran to the outside world.&lt;/p&gt;
+
+&lt;p&gt;Our research indicates that ssl-based communications are being throttled to 2 kilobit per second rates or simply blocked altogether.  This is inclusive of basic ssh, ssl, vpns, and other proxy technologies.  We&#39;re continuing to work on what&#39;s really happening and likely means to counter. The short answer is to &lt;a href=&quot;https://www.torproject.org/docs/bridges.html.en&quot;&gt;use bridges&lt;/a&gt; that are not on port 443.  &lt;/p&gt;
+
+&lt;p&gt;Some graphs to show the results on Tor from our &lt;a href=&quot;https://metrics.torproject.org&quot;&gt;Tor metrics portal&lt;/a&gt;.  &lt;/p&gt;
+
+&lt;p&gt;Bridge users from Iran:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://blog.torproject.org/files/bridge-users-2011-01-10-ir-2010-10-12.png&quot;&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/new-blocking-activity-iran&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/New_Blocking_Activity_from_Iran/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Measuring Tunisian Tor Usage</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tunisian_Tor_Usage/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tunisian_Tor_Usage/</link>
+
+
+	<category>/tags/circumvention</category>
+
+	<category>/tags/internet_censorship</category>
+
+	<category>/tags/metrics</category>
+
+	<category>/tags/tunisia</category>
+
+
+	<pubDate>Thu, 06 Jan 2011 20:28:34 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:11:44Z</dcterms:modified>
+
+	<description>&lt;p&gt;I&#39;ve been following the crackdown on Internet freedom in Tunisia over the past few weeks.  I run an unpublished &lt;a href=&quot;https://www.torproject.org/docs/bridges.html.en&quot;&gt;tor bridge&lt;/a&gt; for some Tunisian activists.  It&#39;s been used fairly well for the past 18 months, however it has not seen traffic for a week.  Tor usage from Tunisia has never been very high, but for those who need it, it&#39;s been a lifesaver; or so I&#39;ve been told.  An example of what&#39;s going on in the country: &lt;a href=&quot;http://jilliancyork.com/2011/01/06/tunisian-blogger-slim-amamou-arrested/&quot;&gt;Slim Amamou arrested&lt;/a&gt;, &lt;a href=&quot;http://globalvoicesonline.org/specialcoverage/tunisia-uprising-201011/&quot;&gt;Global Voices&#39; coverage of Tunisia&lt;/a&gt;, &lt;a href=&quot;http://advocacy.globalvoicesonline.org/categories/countries/tunisia/&quot;&gt;Global Voices Advocacy: Tunisia&lt;/a&gt;, and &lt;a href=&quot;http://english.aljazeera.net/indepth/features/2011/01/20111614145839362.html&quot;&gt;Tunisia&#39;s bitter cyberwar&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Out of interest, I wondered how Tor usage in Tunisia has fared over 2010. I wonder if Facebook, Twitter, and other social network services are seeing an increase of users logging into Tunisian social networks from Tor. &lt;/p&gt;
+
+&lt;p&gt;It appears we&#39;re having an impact in Tunisia.  More help is needed.&lt;/p&gt;
+
+&lt;p&gt;This is graph of Tor clients directly connecting to the rest of the network:&lt;br /&gt;
+&lt;img src=&quot;https://blog.torproject.org/files/direct-users-2010-12-31-tn-2010-01-01.png&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a graph of Tor clients connecting through bridges to the rest of the network:&lt;br /&gt;
+&lt;img src=&quot;https://blog.torproject.org/files/bridge-users-2010-12-31-tn-2010-01-01.png&quot;&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tunisian_Tor_Usage/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Updates on Internet Censorship in Poland</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Updates_on_Internet_Censorship_in_Poland/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Updates_on_Internet_Censorship_in_Poland/</link>
+
+
+	<category>/tags/internet_censorship</category>
+
+	<category>/tags/poland</category>
+
+
+	<pubDate>Fri, 22 Jan 2010 10:01:01 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:48:11Z</dcterms:modified>
+
+	<description>&lt;p&gt;Recently, the proposal to create a Registry of Banned Websites and Services was approved.  More details can be found at&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://globalvoicesonline.org/2010/01/21/poland-government-approves-proposal-to-create-registry-of-banned-websites-and-services/&quot; title=&quot;http://globalvoicesonline.org/2010/01/21/poland-government-approves-proposal-to-create-registry-of-banned-websites-and-services/&quot; rel=&quot;nofollow&quot;&gt;http://globalvoicesonline.org/2010/01/21/poland-government-approves-prop...&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;and a letter to the President at:  &lt;a href=&quot;http://polishlinux.org/poland/polish-internet-users-against-the-censorship-of-the-net/&quot; title=&quot;http://polishlinux.org/poland/polish-internet-users-against-the-censorship-of-the-net/&quot; rel=&quot;nofollow&quot;&gt;http://polishlinux.org/poland/polish-internet-users-against-the-censorsh...&lt;/a&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Updates_on_Internet_Censorship_in_Poland/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Poland, Internet Censorship, and Tor</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Poland_Internet_Censorship_and_Tor/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Poland_Internet_Censorship_and_Tor/</link>
+
+
+	<category>/tags/anonymity</category>
+
+	<category>/tags/global_voices</category>
+
+	<category>/tags/internet_censorship</category>
+
+	<category>/tags/internet_freedom</category>
+
+	<category>/tags/law_enforcement</category>
+
+	<category>/tags/poland</category>
+
+	<category>/tags/privacy</category>
+
+
+	<pubDate>Mon, 11 Jan 2010 19:45:47 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:47:18Z</dcterms:modified>
+
+	<description>&lt;p&gt;Over the past month I&#39;ve been working with a few people from Poland.  We are discussing how we can improve the impression of Tor in country.  It seems a few people want to make all anonymity and privacy tools illegal; and tor is a well-known scapegoat.  Thanks to the efforts of Paweł Wilk for writing a few sane articles about online privacy and Tor in particular.  &lt;/p&gt;
+
+&lt;p&gt;Sywlia Presley of Global Voices writes up a great overview of the situation at &lt;a href=&quot;http://globalvoicesonline.org/2010/01/10/poland-discussions-of-tor-and-internet-filtering/&quot; title=&quot;http://globalvoicesonline.org/2010/01/10/poland-discussions-of-tor-and-internet-filtering/&quot; rel=&quot;nofollow&quot;&gt;http://globalvoicesonline.org/2010/01/10/poland-discussions-of-tor-and-i...&lt;/a&gt;. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/poland-internet-censorship-and-tor&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Poland_Internet_Censorship_and_Tor/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

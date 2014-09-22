@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Investigating http proxy performance with Tor</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:34:05Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_1/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:50Z</updated>
+	<published>2009-08-19T11:33:50Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&quot;Out of 23 get requests for the Torproject.org/index.html.en, 17 are for the country flags. Perhaps we should load these last at the bottom of the page, or do something else to speed up the torproject page load.&quot;&lt;/p&gt;
+
+&lt;p&gt;That would be very easy to optimise. Use a single image with all the flags in it, then use an image map to set the links on it.&lt;br /&gt;
+Alternatively CSS sprites could be used (single file and links/flags displayed using an offset).&lt;br /&gt;
+The image map is a nicer solution in my opinion.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_2/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:51Z</updated>
+	<published>2009-08-20T11:33:51Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Firefox is buggy with socks proxy directly.&lt;br /&gt;
+It has has a hard-coded 10 second timeout, and it blocks when waiting, so if you have one tab waiting to connect to socks, you cant use the other tabs.&lt;/p&gt;
+
+&lt;p&gt;Polipo sucks please stop using it, watch what its doing with a packet sniffer.&lt;br /&gt;
+Completely non-standard stuff there that breaks alot of sites, converting GET requests into HEAD etc which show blank pages!&lt;br /&gt;
+Its annoying to be on a forum and click refresh only to get a blank page over and over, because polipo is sending HEAD requests to the server instead of GET which of course results in blank page as there is no response body to a HEAD request.&lt;br /&gt;
+WTH is polipo thinking modifying a request, its supposed to be pass-through only.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_3/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:52Z</updated>
+	<published>2009-08-21T11:33:52Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Have you reported this GET to HEAD request transformation to the polipo list as a bug?&lt;/p&gt;
+
+&lt;p&gt;If you know of an open source, freely licensed caching proxy that works on windows, linuxes, unixes, and macs, then point it out.  I&#39;ll look into it.&lt;/p&gt;
+
+&lt;p&gt;And yes, Firefox is buggy with SOCKS.  In fact, there&#39;s a 3-year old bug about the hard-coded timer waiting for someone at Mozilla to address it.  At one point, we even offered to pay someone at Mozilla to fix it.   The bug being, &lt;a href=&quot;https://bugzilla.mozilla.org/show_bug.cgi?id=280661&quot; title=&quot;https://bugzilla.mozilla.org/show_bug.cgi?id=280661&quot; rel=&quot;nofollow&quot;&gt;https://bugzilla.mozilla.org/show_bug.cgi?id=280661&lt;/a&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_4/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:53Z</updated>
+	<published>2009-08-22T11:33:53Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Nope I didn&#39;t report it.&lt;br /&gt;
+I was under the impression that Polipo was not in active development.&lt;br /&gt;
+Is that not true?&lt;/p&gt;
+
+&lt;p&gt;Is there any point in caching?&lt;br /&gt;
+I can see the advantage if multiple PC&#39;s share the same cache, but browsers already have their own caching anyway.&lt;/p&gt;
+
+&lt;p&gt;I prefer to make connections via SSL anyway, and proxy&#39;s cant cache those.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_5/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:54Z</updated>
+	<published>2009-08-21T11:33:54Z</published>
+
+	<content type="html" xml:lang="en">
+	I thought the main reason to use Privoxy was not to leak DNS by using Socks 4a. Is Socks 5 no longer leaking DNS?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_6/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:55Z</updated>
+	<published>2009-08-22T11:33:55Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Yes socks 5 still leaks DNS.&lt;br /&gt;
+Socks 4a is the only socks that supports connecting to a host name, socks 4/5 only support IP, so you have to resolve the DNS to IP which leaks.&lt;/p&gt;
+
+&lt;p&gt;Most apps don&#39;t support socks 4a, but HTTP proxy is very common.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_7/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:56Z</updated>
+	<published>2009-08-23T11:33:56Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;False. Socks 5 works fine.&lt;br /&gt;
+Easy way to test: Have the vidalia Tor Network page open, and then load a page in Firefox. The connection will appear in the Tor Network page, and you can see it named the same way it&#39;s passed to Tor. If the browser passes an IP, you&#39;ll see it there, but if it passes the hostname, you&#39;ll also see it there. I always see hostnames there (except for when I&#39;m purposely connecting to a specific IP).&lt;/p&gt;
+
+&lt;p&gt;BTW The CAPTCHA here sucks, it&#39;s taken me a lot tries. You should use something like reCAPTCHA, works nicely for me on my site.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_8/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:57Z</updated>
+	<published>2009-08-24T11:33:57Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;firefox and socks5 with torbutton enabled works correctly.  Not all socks5 compatible applications will do name resolution via the socks proxy.&lt;/p&gt;
+
+&lt;p&gt;Using recaptcha means trusting a 3rd party to serve up the captcha, and not log requests for the captcha.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_9/"/>
+
+	<author><name>Soulmech (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:58Z</updated>
+	<published>2009-08-24T11:33:58Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;If Polipo works better than the other two, why change that? Just work with it, optimize it if you can, leave it at that. Unless there is some really good reason to switch, it&#39;s probably best to leave it alone.&lt;/p&gt;
+
+&lt;p&gt;I use the Tor Browser Bundle, and it&#39;s always been pretty good for me. I&#39;ve never had serious issues or lag with it.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_10/"/>
+
+	<author><name>MathFox (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:59Z</updated>
+	<published>2009-08-25T11:33:59Z</published>
+
+	<content type="html" xml:lang="en">
+	What will be the effect of removing a filtering proxy on the privacy of the user with respect to tracking cookies and locally stored data by flash objects?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_11/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:34:00Z</updated>
+	<published>2009-08-25T11:34:00Z</published>
+
+	<content type="html" xml:lang="en">
+	If the user is using torbutton defaults, then the cookies and such are wiped on toggle or restart of the browser.  Torbutton disables plugins, like flash, so one shouldn&#39;t have flash cookies from browsing with Tor.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 12</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_12/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_12/"/>
+
+	<author><name>SwissTorExit (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:34:01Z</updated>
+	<published>2009-08-25T11:34:01Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;i have tested firefox.3.5.2 with socks5 and work perfectly if we use only the browser but if we try to use java or a few application, sometime the DNS can be leaked.&lt;/p&gt;
+
+&lt;p&gt;with privoxy, so far only flash leak DNS and bypass proxy, with last java and config it to not save data on system and use privoxy, it don&#39;t seem leaks DNS anymore. Flash stay very dangerous and bypass anyway the proxy.&lt;/p&gt;
+
+&lt;p&gt;well my conculsion are:&lt;/p&gt;
+
+&lt;p&gt;For me are possible yet to use java if the new nocript are installed with cs lite( cookie prevention) , so if someone need java for a specific site , it can be used safty.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 13</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_13/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_13/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:34:02Z</updated>
+	<published>2009-08-27T11:34:02Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Polipo is good but not stable, It has annoying issues when uploading big files.&lt;br /&gt;
+and its development is inactive. but indeed its a promising candidate. Some people used to chain up squid and privoxy to speed up browsing. If there is a mini squid which is easy to setup i would dump polipo.&lt;/p&gt;
+
+&lt;p&gt;but yeah, polipo has another advantage. If polipo is integrated into Tor Bundle(I never use this pack so I dont know). You can create a wizard to help set up a hidden service using polipo as a mini http server&lt;/p&gt;
+
+&lt;p&gt;Off topic:&lt;br /&gt;
+Will there be torIM plugin for Pidgin? I guess chatting through hidden service would be safer than chatting though 3rd party servers.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 14</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_14/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_14/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:34:03Z</updated>
+	<published>2009-11-03T12:34:03Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Privoxy was used to shild against possible attacks which could compromise anonymity.&lt;/p&gt;
+
+&lt;p&gt;It seems that users aren&#39;t protected any more.&lt;/p&gt;
+
+&lt;p&gt;There is no hint that polipo can do the same; There has even been some discussion, that current Firefox 3.5 isn&#39;t as &quot;solid&quot; against such threats as FF 3.0 was (which will be discontinued). I think that investigating &quot;performance&quot; is not enough. Tor was not meant to enhance &quot;performance&quot; but anonymity.&lt;/p&gt;
+
+&lt;p&gt;Privoxy, or any other (even tor build-in) shielding solution shold be part of the software package.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 15</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_15/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_15/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:34:04Z</updated>
+	<published>2009-12-06T12:34:04Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;There is always other reverse proxies like&lt;br /&gt;
+&lt;a href=&quot;http://www.delegate.org/delegate/&quot; title=&quot;http://www.delegate.org/delegate/&quot; rel=&quot;nofollow&quot;&gt;http://www.delegate.org/delegate/&lt;/a&gt; (windows/linux)&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 16</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_16/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Investigating_http_proxy_performance_with_Tor/comment_16/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:34:05Z</updated>
+	<published>2010-02-06T12:34:05Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Since Polipo was substituted for Privoxy, tor has become much less useful. &lt;/p&gt;
+
+&lt;p&gt;BUG: timing out martian query&lt;/p&gt;
+
+&lt;p&gt;Configured to measure directory request statistics, but no GeoIP database found!&lt;br /&gt;
+Configured to measure entry node statistics, but no GeoIP database found!&lt;br /&gt;
+Bridge status changed.  Forgetting GeoIP stats.&lt;br /&gt;
+%s\geoip&lt;br /&gt;
+Unable to parse state in &quot;%s&quot;. Moving it aside to &quot;%s&quot;.  This could be a bug in Tor; please tell the developers.&lt;br /&gt;
+Uh oh.  We couldn&#39;t even validate our own default state. This is a bug in Tor.&lt;br /&gt;
+Initialized state&lt;br /&gt;
+Unparseable bandwidth history state: %s&lt;br /&gt;
+Unable to parse state in &quot;%s&quot;; too many saved bad state files to move aside. Discarding the old state file.&lt;br /&gt;
+Bridges cannot be configured to measure additional GeoIP statistics as entry guards.&lt;br /&gt;
+Unable to read state file &quot;%s&quot;&lt;br /&gt;
+Error in accounting options&lt;br /&gt;
+Error loading rendezvous service keys&lt;br /&gt;
+Error creating cookie authentication file.&lt;br /&gt;
+Error parsing already-validated policy options.&lt;br /&gt;
+Previously validated hidden services line could not be added!&lt;br /&gt;
+Weirdly, I couldn&#39;t even move the state aside. The OS gave an error of %s&lt;br /&gt;
+Error initializing keys; exiting&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+
+</feed>

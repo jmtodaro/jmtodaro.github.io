@@ -1,0 +1,469 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged enhancements</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/enhancements/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Tor 0.2.2.20-alpha is out (security patches)</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_20-alpha_is_out_-security_patches-/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_20-alpha_is_out_-security_patches-/</link>
+
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/enhancements</category>
+
+	<category>/tags/security_advisory</category>
+
+
+	<pubDate>Mon, 20 Dec 2010 10:10:39 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:11:41Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor 0.2.2.20-alpha does some code cleanup to reduce the risk of remotely&lt;br /&gt;
+exploitable bugs. Thanks to Willem Pinckaers for notifying us of the&lt;br /&gt;
+issue. The Common Vulnerabilities and Exposures project has assigned&lt;br /&gt;
+CVE-2010-1676 to this issue.&lt;/p&gt;
+
+&lt;p&gt;We also fix a variety of other significant bugs, change the IP address&lt;br /&gt;
+for one of our directory authorities, and update the minimum version&lt;br /&gt;
+that Tor relays must run to join the network.&lt;/p&gt;
+
+&lt;p&gt;All Tor users should upgrade.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download/download&quot; title=&quot;https://www.torproject.org/download/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download/download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.2.20-alpha - 2010-12-17&lt;br /&gt;
+&lt;strong&gt;Major bugfixes:&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02220-alpha-out-security-patches&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Fix a remotely exploitable bug that could be used to crash instances&lt;br /&gt;
+      of Tor remotely by overflowing on the heap. Remote-code execution&lt;br /&gt;
+      hasn&#39;t been confirmed, but can&#39;t be ruled out. Everyone should&lt;br /&gt;
+      upgrade. Bugfix on the 0.1.1 series and later.&lt;/li&gt;
+&lt;li&gt;Fix a bug that could break accounting on 64-bit systems with large&lt;br /&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_20-alpha_is_out_-security_patches-/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Tor 0.2.1.28 is released (security patches)</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_28_is_released_-security_patches-/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_28_is_released_-security_patches-/</link>
+
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/enhancements</category>
+
+	<category>/tags/security_advisory</category>
+
+
+	<pubDate>Mon, 20 Dec 2010 10:05:03 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:11:40Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor 0.2.1.28 does some code cleanup to reduce the risk of remotely&lt;br /&gt;
+exploitable bugs. Thanks to Willem Pinckaers for notifying us of the&lt;br /&gt;
+issue. The Common Vulnerabilities and Exposures project has assigned&lt;br /&gt;
+CVE-2010-1676 to this issue.&lt;/p&gt;
+
+&lt;p&gt;We also took this opportunity to change the IP address for one of our&lt;br /&gt;
+directory authorities, and to update the geoip database we ship.&lt;/p&gt;
+
+&lt;p&gt;All Tor users should upgrade.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download/download&quot; title=&quot;https://www.torproject.org/download/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download/download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.28 - 2010-12-17&lt;br /&gt;
+&lt;strong&gt;Major bugfixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fix a remotely exploitable bug that could be used to crash instances of Tor remotely by overflowing on the heap. Remote-code execution hasn&#39;t been confirmed, but can&#39;t be ruled out. Everyone should  upgrade. Bugfix on the 0.1.1 series and later.
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Directory authority changes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Change IP address and ports for gabelmoo (v3 directory authority).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Minor features:&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02128-released-security-patches&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_28_is_released_-security_patches-/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: November 2010 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2010_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2010_Progress_Report/</link>
+
+
+	<category>/tags/enhancements</category>
+
+	<category>/tags/fixes</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/translations</category>
+
+
+	<pubDate>Thu, 16 Dec 2010 16:16:17 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:11:39Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New Releases&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/november-2010-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;On November 16 we released the latest in the Tor -alpha series.  Tor 0.2.2.18-alpha fixes several crash bugs that have been nagging us lately, makes unpublished bridge relays able to detect their IP address, and fixes a wide variety of other bugs to get us much closer to a stable release. &lt;a href=&quot;https://blog.torproject.org/blog/tor-02218-alpha-available&quot; title=&quot;https://blog.torproject.org/blog/tor-02218-alpha-available&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-02218-alpha-available&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;On November 23, we released the latest in the Tor -stable series. Tor 0.2.1.27 makes relays work with OpenSSL 0.9.8p and 1.0.0.b --yet another OpenSSL security patch broke its compatibility with Tor. We also took this opportunity to fix several crash bugs, integrate a new directory authority, and update the bundled GeoIP database. &lt;a href=&quot;https://blog.torproject.org/blog/tor-02127-released&quot; title=&quot;https://blog.torproject.org/blog/tor-02127-released&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-02127-released&lt;/a&gt;&lt;/li&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/November_2010_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Tor 0.2.2.16-alpha released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/</link>
+
+
+	<category>/tags/alpha_release</category>
+
+	<category>/tags/enhancements</category>
+
+
+	<pubDate>Tue, 21 Sep 2010 19:08:41 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:27Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor 0.2.2.16-alpha fixes a variety of old stream fairness bugs (most&lt;br /&gt;
+evident at exit relays), and also continues to resolve all the little&lt;br /&gt;
+bugs that have been filling up the bug tracker lately.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download.html.en&quot; title=&quot;https://www.torproject.org/download.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download.html.en&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Packages will be appearing over the next few days or weeks (except&lt;br /&gt;
+on Windows, which apparently doesn&#39;t build -- stay tuned for an&lt;br /&gt;
+0.2.2.17-alpha in that case).&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.2.16-alpha - 2010-09-17&lt;br /&gt;
+  o Major bugfixes (stream-level fairness):&lt;br /&gt;
+    - When receiving a circuit-level SENDME for a blocked circuit, try&lt;br /&gt;
+      to package cells fairly from all the streams that had previously&lt;br /&gt;
+      been blocked on that circuit. Previously, we had started with the&lt;br /&gt;
+      oldest stream, and allowed each stream to potentially exhaust&lt;br /&gt;
+      the circuit&#39;s package window. This gave older streams on any&lt;br /&gt;
+      given circuit priority over newer ones. Fixes bug 1937. Detected &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02216-alpha-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: July 2010 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/July_2010_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/July_2010_Progress_Report/</link>
+
+
+	<category>/tags/alpha_releases</category>
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/development</category>
+
+	<category>/tags/enhancements</category>
+
+	<category>/tags/orbot</category>
+
+	<category>/tags/performance_improvements</category>
+
+	<category>/tags/portable_bundles</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/research</category>
+
+	<category>/tags/research_progress</category>
+
+	<category>/tags/research_reports</category>
+
+	<category>/tags/research_results</category>
+
+	<category>/tags/tor_browser_bundle</category>
+
+
+	<pubDate>Thu, 12 Aug 2010 09:25:08 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:06:28Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New releases&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/july-2010-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;On July 4th, we released Tor Browser Bundle 1.3.7 for Microsoft Windows. This is a security update for Firefox and Pidgin. The changes are: update to Firefox 3.5.10 and Pidgin Instant Messenger 2.7.1r2 to fix some security issues.&lt;/li&gt;
+&lt;li&gt;On July 6th, we released Tor Browser Bundle 1.0.8 for GNU/Linux distributions. This fixes a number of security issues with included software. The updates include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Update libpng to 1.4.3 (see CVE-2010-1205)&lt;/li&gt;
+&lt;li&gt;Update Firefox to 3.5.10&lt;/li&gt;
+&lt;li&gt;Update HTTPS Everywhere to 0.2.1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/li&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/July_2010_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: April 2010 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/</link>
+
+
+	<category>/tags/alpha_releases</category>
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/enhancements</category>
+
+	<category>/tags/metrics</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/tor_browser_bundle</category>
+
+
+	<pubDate>Mon, 10 May 2010 15:22:32 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:31Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New releases&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;On April 24, we released Tor 0.2.2.13-alpha. This version addresses the recent connection and memory overload problems we’ve been seeing on relays, especially relays with their DirPort open. If your relay has been crashing, or you turned it off because it used too many resources, give this release a try.&lt;/p&gt;
+
+&lt;p&gt;o Major bugfixes:&lt;br /&gt;
+    - Teach relays to defend themselves from connection overload. Relays&lt;br /&gt;
+      now close idle circuits early if it looks like they were intended&lt;br /&gt;
+      for directory fetches. Relays are also more aggressive about closing&lt;br /&gt;
+      TLS connections that have no circuits on them. Such circuits are&lt;br /&gt;
+      unlikely to be re-used, and tens of thousands of them were piling&lt;br /&gt;
+      up at the fast relays, causing the relays to run out of sockets&lt;br /&gt;
+      and memory. Bugfix on 0.2.0.22-rc (where clients started tunneling&lt;br /&gt;
+      their directory fetches over TLS).&lt;/p&gt;
+
+&lt;p&gt;  o Minor features: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/april-2010-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: New Stable Version 0.2.1.24 released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Stable_Version_0_2_1_24_released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Stable_Version_0_2_1_24_released/</link>
+
+
+	<category>/tags/apple_osx_love</category>
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/enhancements</category>
+
+	<category>/tags/performance_enhancements</category>
+
+	<category>/tags/stable_release</category>
+
+	<category>/tags/tor_update</category>
+
+
+	<pubDate>Wed, 03 Mar 2010 14:14:34 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:50:51Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor 0.2.1.23 fixes a huge client-side performance bug, makes Tor work again on the latest OS X, and updates the location of a directory authority.&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.1.24 makes Tor work again on the latest OS X -- this time for sure!&lt;/p&gt;
+
+&lt;p&gt;The Windows and OS X bundles also come with a newer version of Polipo that fixes some stability and security problems.&lt;/p&gt;
+
+&lt;p&gt;People using Tor as a client should upgrade:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/easy-download&quot; title=&quot;https://www.torproject.org/easy-download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/easy-download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.23 - 2010-02-13&lt;br /&gt;
+&lt;strong&gt;Major bugfixes (performance):&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/new-stable-version-02124-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;We were selecting our guards uniformly at random, and then weighting which of our guards we&#39;d use uniformly at random. This imbalance meant that Tor clients were severely limited on throughput (and probably latency too) by the first hop in their circuit. Now we select guards weighted by currently advertised bandwidth. We also automatically discard guards picked using the old algorithm. Fixes bug 1217; bugfix on 0.2.1.3-alpha. Found by Mike Perry.&lt;/li&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/New_Stable_Version_0_2_1_24_released/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: January 2010 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/January_2010_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/January_2010_Progress_Report/</link>
+
+
+	<category>/tags/advocacy</category>
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/enhancements</category>
+
+	<category>/tags/feature_removals</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/releases</category>
+
+	<category>/tags/translations</category>
+
+
+	<pubDate>Sat, 13 Feb 2010 10:00:04 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:50:26Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New releases, new hires, new funding&lt;/strong&gt;&lt;br /&gt;
+On January 19, 2010 we released the latest in the -stable series, Tor 0.2.1.22-stable.&lt;br /&gt;
+Tor 0.2.1.22 fixes a critical privacy problem in bridge directory authorities -- it would tell you its whole history of bridge descriptors if you make the right directory request. This stable update also rotates two of the seven v3 directory authority keys and locations. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/january-2010-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/January_2010_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: December 2009 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/December_2009_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/December_2009_Progress_Report/</link>
+
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/enhancements</category>
+
+	<category>/tags/metrics</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/releases</category>
+
+	<category>/tags/translations</category>
+
+
+	<pubDate>Sat, 13 Feb 2010 09:35:12 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:50:25Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New releases, new hires, new funding&lt;/strong&gt;&lt;br /&gt;
+Erinn Clark joins Tor to develop, enhance, and upgrade our package build system. Her initial goals are to configure, maintain, and automate builds of tor and vidalia for Windows, OS X, ubuntu, debian, centos, fedora, and opensuse systems. Secondary goals are to develop a builtbot system that includes as many disparate operating systems as possible, including Apple OS X and Microsoft&lt;br /&gt;
+Windows flavors. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/december-2009-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/December_2009_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Tor 0.2.2.6-alpha released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/</link>
+
+
+	<category>/tags/alpha_release</category>
+
+	<category>/tags/android</category>
+
+	<category>/tags/enhancements</category>
+
+	<category>/tags/new_features</category>
+
+	<category>/tags/openssl</category>
+
+
+	<pubDate>Wed, 02 Dec 2009 23:29:12 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:43:33Z</dcterms:modified>
+
+	<description>&lt;p&gt;On November 19, we released the latest in the Tor alpha series, version 0.2.2.6-alpha. This release lays the groundwork for many upcoming features:&lt;br /&gt;
+support for the new lower-footprint &quot;microdescriptor&quot; directory design,&lt;br /&gt;
+future-proofing our consensus format against new hash functions or&lt;br /&gt;
+other changes, and an Android port. It also makes Tor compatible with&lt;br /&gt;
+the upcoming OpenSSL 0.9.8l release, and fixes a variety of bugs.&lt;/p&gt;
+
+&lt;p&gt;It can be downloaded at &lt;a href=&quot;https://www.torproject.org/download.html.en&quot; title=&quot;https://www.torproject.org/download.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download.html.en&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Major features:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Directory authorities can now create, vote on, and serve multiple&lt;br /&gt;
+      parallel formats of directory data as part of their voting process.&lt;br /&gt;
+      Partially implements Proposal 162: &quot;Publish the consensus in&lt;br /&gt;
+      multiple flavors&quot;.&lt;/p&gt;
+&lt;li&gt;Directory authorities can now agree on and publish small summaries&lt;br /&gt;
+      of router information that clients can use in place of regular&lt;br /&gt;
+      server descriptors. This transition will eventually allow clients &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-0226-alpha-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

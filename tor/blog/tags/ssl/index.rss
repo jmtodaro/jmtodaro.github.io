@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged ssl</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/ssl/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Tor 0.2.1.9-alpha released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_9-alpha_released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_9-alpha_released/</link>
+
+
+	<category>/tags/attack</category>
+
+	<category>/tags/md5</category>
+
+	<category>/tags/security</category>
+
+	<category>/tags/ssl</category>
+
+	<category>/tags/tls</category>
+
+	<category>/tags/x509</category>
+
+
+	<pubDate>Sun, 04 Jan 2009 20:55:25 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:16:39Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor 0.2.1.9-alpha fixes many more bugs, some of them security-related.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download.html.en&quot; title=&quot;https://www.torproject.org/download.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download.html.en&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.9-alpha - 2008-12-25&lt;br /&gt;
+ &lt;strong&gt;New directory authorities:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;gabelmoo (the authority run by Karsten Loesing) now has a new&lt;br /&gt;
+      IP address.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Security fixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Never use a connection with a mismatched address to extend a&lt;br /&gt;
+      circuit, unless that connection is canonical. A canonical&lt;br /&gt;
+      connection is one whose address is authenticated by the router&#39;s&lt;br /&gt;
+      identity key, either in a NETINFO cell or in a router descriptor.&lt;/li&gt;
+&lt;li&gt;Avoid a possible memory corruption bug when receiving hidden service&lt;br /&gt;
+      descriptors. Bugfix on 0.2.1.6-alpha.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Major bugfixes:&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-0.2.1.9-alpha-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_9-alpha_released/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

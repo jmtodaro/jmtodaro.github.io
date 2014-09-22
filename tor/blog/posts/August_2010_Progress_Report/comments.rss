@@ -1,0 +1,254 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>August 2010 Progress Report</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Anonymous: Comment 1</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/comment_1/</link>
+
+	<pubDate>Mon, 13 Sep 2010 07:07:10 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:07:10Z</dcterms:modified>
+
+	<description>&lt;p&gt;Can you guys make a Tor Browser Bundle without Firefox? It would make LiveCD usage so much better in that closing the browser does not close Tor. I made this LiveCD (test it using VirtualBox) using Midori and XChat &amp;amp; different config directories so that one shortcut will use the default network, and the other will use Tor.&lt;/p&gt;
+
+&lt;p&gt;42.7MB http://www.mediafire.com/file/3uxbsu795ud3rbk/slitaz-tor-0.1.iso&lt;/p&gt;
+
+&lt;p&gt;Screenshot: http://imgur.com/pAbNf.png&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 2</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/comment_2/</link>
+
+	<pubDate>Tue, 14 Sep 2010 07:07:11 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:07:11Z</dcterms:modified>
+
+	<description>You can always make your own torbrowser bundle.  The instructions for doing so are at &lt;a href=&quot;https://svn.torproject.org/svn/torbrowser/trunk/build-scripts/DEPLOYMENT&quot; title=&quot;https://svn.torproject.org/svn/torbrowser/trunk/build-scripts/DEPLOYMENT&quot; rel=&quot;nofollow&quot;&gt;https://svn.torproject.org/svn/torbrowser/trunk/build-scripts/DEPLOYMENT&lt;/a&gt;
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 3</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/comment_3/</link>
+
+	<pubDate>Tue, 14 Sep 2010 07:07:12 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:07:12Z</dcterms:modified>
+
+	<description>&lt;p&gt;I downloaded vidalia-0.2.9.tar.gz. I&#39;m not a coder but removing more than 50 instances of the words &quot;browser&quot; and &quot;firefox&quot; from the source code seems like a bad idea.&lt;/p&gt;
+
+&lt;p&gt;However: I might be able to just remove the dialog error box that appears when the browser isn&#39;t found. &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 4</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/comment_4/</link>
+
+	<pubDate>Wed, 15 Sep 2010 07:07:13 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:07:13Z</dcterms:modified>
+
+	<description>So, you just want to run vidalia/tor from a usb drive?
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 5</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/comment_5/</link>
+
+	<pubDate>Wed, 15 Sep 2010 07:07:14 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:07:14Z</dcterms:modified>
+
+	<description>Perhaps what you really want is TAILS, not some cobbled together livecd with tor added into it.  See &lt;a href=&quot;http://amnesia.boum.org/about/&quot; title=&quot;http://amnesia.boum.org/about/&quot; rel=&quot;nofollow&quot;&gt;http://amnesia.boum.org/about/&lt;/a&gt;
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 6</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/comment_6/</link>
+
+	<pubDate>Tue, 14 Sep 2010 07:07:15 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:07:15Z</dcterms:modified>
+
+	<description>Yeah, I agree. The fact that closing Firefox also closes Tor is annoying especially for relay operators.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 7</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/comment_7/</link>
+
+	<pubDate>Tue, 14 Sep 2010 07:07:16 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:07:16Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;i&gt;&quot;Libevent ... support for buffer-based (rather than socket-based) network abstractions...&quot;&lt;/i&gt;&lt;/p&gt;
+
+&lt;p&gt;I don&#39;t really understand what Libevent is, is it to be plumbed into a Tor package at some point in the future?  I keep running into the &quot;ENOBUFS - Out of memory&quot; &quot;WSAENOBUFS&quot; &quot;Error 10050&quot; problem here which is getting a bit tiring.  I gather this change should help cure that if I read it right?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 8</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/comment_8/</link>
+
+	<pubDate>Wed, 15 Sep 2010 07:07:17 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:07:17Z</dcterms:modified>
+
+	<description>Yes, this is exactly what Libevent 2.0 is fixing, see &lt;a href=&quot;https://trac.torproject.org/projects/tor/ticket/98&quot; title=&quot;https://trac.torproject.org/projects/tor/ticket/98&quot; rel=&quot;nofollow&quot;&gt;https://trac.torproject.org/projects/tor/ticket/98&lt;/a&gt; for the sordid story of busy tor relays on windows.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 9</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/comment_9/</link>
+
+	<pubDate>Mon, 20 Sep 2010 07:07:18 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:07:18Z</dcterms:modified>
+
+	<description>&lt;p&gt;Very good, so does 0.2.2.15-alpha contain the new Libevent method then, as I still encounter the same problem with it;&lt;/p&gt;
+
+&lt;p&gt;Sep 20 07:40:11.890 [warn] write() failed: WSAENOBUFS. Not enough ram?&lt;/p&gt;
+
+&lt;p&gt;I wouldn&#39;t have thought RAM was an issue here, unless it&#39;s some obscure system buffer tucked away somewhere defined (and limited) by Windows (probably).&lt;/p&gt;
+
+&lt;p&gt;These were the stats during the failed state;&lt;/p&gt;
+
+&lt;p&gt;Ram Total 2,096,620 KB&lt;br /&gt;
+Available 1,380,376 KB&lt;br /&gt;
+System Cache 248,356 KB&lt;br /&gt;
+Kernel Memory Total 315,592 KB&lt;br /&gt;
+Kernel Memory Paged 55,496 KB&lt;br /&gt;
+Kernel Memory Nonpaged 260,088 KB&lt;br /&gt;
+Tor.exe Mem Usage 39,856 KB&lt;br /&gt;
+Tor.exe VM Size 24,692 KB&lt;/p&gt;
+
+&lt;p&gt;In tests prior a netstat hasn&#39;t revealed anything either; no masses of ports left open in a limbo state or anything, only what one would expect to see.  So far I haven&#39;t been able to figure out just what to query where on the system to monitor whatever it is that&#39;s running out.&lt;/p&gt;
+
+&lt;p&gt;Whatever is going on it seems pretty clear that the Tor process isn&#39;t releasing some resource it&#39;s consuming, something I can&#39;t say I&#39;ve experienced with other (similarly heavy) applications I&#39;ve used in the past (which causes me to ask what it is that Tor does differently).&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 10</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/comment_10/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/comment_10/</link>
+
+	<pubDate>Mon, 20 Sep 2010 07:07:19 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:07:19Z</dcterms:modified>
+
+	<description>&lt;p&gt;We have not built packages for windows which include libevent 2.0 yet.  Libevent 2.0 is in release candidate.  We&#39;re going to wait until libevent 2.0 is stable and start building the -alpha packages with it.&lt;/p&gt;
+
+&lt;p&gt;Bug 98 has the details of the problem, &lt;a href=&quot;https://trac.torproject.org/projects/tor/ticket/98&quot; title=&quot;https://trac.torproject.org/projects/tor/ticket/98&quot; rel=&quot;nofollow&quot;&gt;https://trac.torproject.org/projects/tor/ticket/98&lt;/a&gt;.  The core problem is the way Windows handles sockets, which is not the proper way to do heavy network i/o on Windows.  See &lt;a href=&quot;http://msdn.microsoft.com/en-us/library/ms819739&quot; title=&quot;http://msdn.microsoft.com/en-us/library/ms819739&quot; rel=&quot;nofollow&quot;&gt;http://msdn.microsoft.com/en-us/library/ms819739&lt;/a&gt;.  &lt;/p&gt;
+
+&lt;p&gt;The real answer is buffer events, and this code is in libevent 2.0.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 11</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/comment_11/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/comment_11/</link>
+
+	<pubDate>Tue, 14 Sep 2010 07:07:20 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:07:20Z</dcterms:modified>
+
+	<description>&lt;p&gt;I was able to make TorBrowser standalone, to a degree. Just search for &quot;unable to start&quot; in /vidalia-0.2.9/src/vidalia/MainWindow.cpp and remove the 4 lines so that &quot;MainWindow::onBrowserFailed(QString errmsg)&quot; looks like this:&lt;/p&gt;
+
+&lt;p&gt;{&lt;br /&gt;
+  Q_UNUSED(errmsg);&lt;br /&gt;
+}&lt;/p&gt;
+
+&lt;p&gt;and compile Vidalia from there. After that, you can simply replace the executable in ./App/.&lt;/p&gt;
+
+&lt;p&gt;A link to version 1.0.10 without Firefox &amp;amp; the modified Vidalia for those that can&#39;t compile: http://www.mediafire.com/file/zsx4mst75vdkj32/Torbundle-linux-i386-1.0.1...&lt;/p&gt;
+
+</description>
+
+
+</item>
+
+</channel>
+</rss>

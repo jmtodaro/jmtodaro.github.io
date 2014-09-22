@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged kde_marble</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/kde_marble/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Technology Preview:  Marble and Vidalia-0.2.0</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/</link>
+
+
+	<category>/tags/Qt_updates</category>
+
+	<category>/tags/drag_and_drop_OS_X_install</category>
+
+	<category>/tags/experimental</category>
+
+	<category>/tags/kde_marble</category>
+
+	<category>/tags/msi_installer</category>
+
+	<category>/tags/technology_preview</category>
+
+	<category>/tags/vidalia</category>
+
+
+	<pubDate>Sat, 28 Mar 2009 20:21:39 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:21:41Z</dcterms:modified>
+
+	<description>&lt;p&gt;One of the most requested upgrades to &lt;a href=&quot;https://www.torproject.org/vidalia/&quot; rel=&quot;nofollow&quot;&gt;Vidalia&lt;/a&gt; is a better map of the world.  We looked into a few different technologies and decided on &lt;a href=&quot;http://edu.kde.org/marble/&quot; rel=&quot;nofollow&quot;&gt;KDE&#39;s Marble&lt;/a&gt; interface.  Marble enables an accurate mapping of nodes according to their geolocation, allows for future enhancements such as &quot;click a country to start or end your Tor circuit&quot;, and plugins for extra data views.  This also gives us the ability to use Qt&#39;s Webkit browser to display custom information about nodes, circuits, or anything else in a pop-up window.  An anonymous funder covered the costs involved in developing this feature.  We thank them for their support. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/technology-preview-marble-and-vidalia020&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

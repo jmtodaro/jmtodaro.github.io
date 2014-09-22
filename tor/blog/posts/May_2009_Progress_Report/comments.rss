@@ -1,0 +1,267 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>May 2009 Progress Report</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Anonymous (not verified): Comment 1</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/comment_1/</link>
+
+	<pubDate>Sat, 13 Jun 2009 06:26:58 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:26:58Z</dcterms:modified>
+
+	<description>&lt;p&gt;i use tor for my emails. as you all know this is done by configuring thunderbird to forward its connections through tor/privoxy running on the local host. recently it came to my attention that all the tor nodes i have tried have enabled as the exit policy&lt;br /&gt;
+reject: *.465&lt;br /&gt;
+which is the port through which one can connect to smtp.gmail.com. thus, in my case i can download my emails through tor, but cannot send them.&lt;/p&gt;
+
+&lt;p&gt;i am probably being silly, but is there some rational explanation for this change?&lt;br /&gt;
+e.g., some e-mail providers began to reject traffic from tor servers?&lt;br /&gt;
+some arm twisting?&lt;br /&gt;
+it seems to me that sending email through tor is so slow that no sane spammer would use it for distribution, but than what do i know.&lt;/p&gt;
+
+&lt;p&gt;thanks,&lt;br /&gt;
+anonymous&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 2</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/comment_2/</link>
+
+	<pubDate>Tue, 16 Jun 2009 06:26:59 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:26:59Z</dcterms:modified>
+
+	<description>If you&#39;re trying to select nodes, that&#39;s probably a losing plan.  Better to let the Tor software figure out which nodes allow exit on that port.
+</description>
+
+
+</item>
+<item>
+
+	<title>David (not verified): Comment 3</title>
+	<dcterms:creator>David (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/comment_3/</link>
+
+	<pubDate>Mon, 15 Jun 2009 06:27:00 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:27:00Z</dcterms:modified>
+
+	<description>&lt;p&gt;I used Tor for a long time, could be possible that TOR reduce my DSL Speed ?&lt;br /&gt;
+Or what was the Problem ?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 4</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/comment_4/</link>
+
+	<pubDate>Tue, 16 Jun 2009 06:27:01 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:27:01Z</dcterms:modified>
+
+	<description>Unless your DSL modem can&#39;t handle the number of tcp connections, there&#39;s no way Tor would change your DSL speed as set by your provider.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 5</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/comment_5/</link>
+
+	<pubDate>Thu, 18 Jun 2009 06:27:02 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:27:02Z</dcterms:modified>
+
+	<description>&lt;p&gt;You are right, for some time now, every new releases has made Tor slower and slower for you if you had it setup properly from the start.&lt;/p&gt;
+
+&lt;p&gt;The only way to get a decent speed now would be to use an old outdated, possibly insecure version of Tor that would not be as restricted as the up to date versions now are,&lt;br /&gt;
+But even then you won&#39;t get the speeds you got 6 or 12 months ago since Tornodes running newer versions also are responsible for speed restrictions applied to your client.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 6</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/comment_6/</link>
+
+	<pubDate>Tue, 16 Jun 2009 06:27:03 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:27:03Z</dcterms:modified>
+
+	<description>&lt;p&gt;I had the same crashes that is being described here: &lt;a href=&quot;https://trac.vidalia-project.net/ticket/395&quot; title=&quot;https://trac.vidalia-project.net/ticket/395&quot; rel=&quot;nofollow&quot;&gt;https://trac.vidalia-project.net/ticket/395&lt;/a&gt;&lt;br /&gt;
+so I tried the suggested fix provided by edmanm and renamed ssleay32.dll before starting tor browser bundle, and everything seems to work ok. My question is, does this pose any risk to my privacy, and are there any better solutions?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 7</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/comment_7/</link>
+
+	<pubDate>Tue, 16 Jun 2009 06:27:04 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:27:04Z</dcterms:modified>
+
+	<description>Which version of TBB has this error?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 8</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/comment_8/</link>
+
+	<pubDate>Tue, 16 Jun 2009 06:27:05 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:27:05Z</dcterms:modified>
+
+	<description>Both 1.2.0 and 1.2.1-dev.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 9</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/comment_9/</link>
+
+	<pubDate>Wed, 17 Jun 2009 06:27:06 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:27:06Z</dcterms:modified>
+
+	<description>I have the same problem with vidalia (TBB version 1.2.0) that is being described above. I&#39;m using a public computer and I can&#39;t rename or replace ssleay32.dll (don&#39;t have access to it), so those fixes doesn&#39;t work for me. Is there another solution? There should be, considering this is what TBB is made for and there seem to be other ppl with this problem...
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 10</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/comment_10/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/comment_10/</link>
+
+	<pubDate>Fri, 19 Jun 2009 06:27:07 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:27:07Z</dcterms:modified>
+
+	<description>these should be fixed in the 1.2.1-rc posted last night.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 11</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/comment_11/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/comment_11/</link>
+
+	<pubDate>Mon, 29 Jun 2009 06:27:08 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:27:08Z</dcterms:modified>
+
+	<description>That&#39;s awesome, thanks a lot! Finally vidalia is working.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 12</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/comment_12/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/comment_12/</link>
+
+	<pubDate>Thu, 18 Jun 2009 06:27:09 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:27:09Z</dcterms:modified>
+
+	<description>&lt;p&gt;&quot;On May 17, we released Tor VM 0.0.2.&quot;&lt;/p&gt;
+
+&lt;p&gt;Interresting, were can it be downloaded ?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 13</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/comment_13/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/comment_13/</link>
+
+	<pubDate>Fri, 19 Jun 2009 06:27:10 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:27:10Z</dcterms:modified>
+
+	<description>&lt;a href=&quot;https://torproject.org/torvm/&quot; title=&quot;https://torproject.org/torvm/&quot; rel=&quot;nofollow&quot;&gt;https://torproject.org/torvm/&lt;/a&gt;
+</description>
+
+
+</item>
+
+</channel>
+</rss>

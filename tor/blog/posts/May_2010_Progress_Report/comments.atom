@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>May 2010 Progress Report</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:01:17Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/comment_1/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:01:08Z</updated>
+	<published>2010-06-18T12:01:08Z</published>
+
+	<content type="html" xml:lang="en">
+	You can no longer connect to filesurf.ru unless you get rid of all entryNodes and exitNodes entries.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/comment_2/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:01:09Z</updated>
+	<published>2010-06-20T12:01:09Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;On OSX, with Vidalia 0.2.2.13-alpha&lt;/p&gt;
+
+&lt;p&gt;  ExitNodes {uk},{us},{se}&lt;br /&gt;
+  StrictNodes 1&lt;/p&gt;
+
+&lt;p&gt;works only, if I copy&lt;/p&gt;
+
+&lt;p&gt;  /Applications/Vidalia.app/Contents/Resources/geoip&lt;/p&gt;
+
+&lt;p&gt;to&lt;/p&gt;
+
+&lt;p&gt;  /Applications/Vidalia.app/share/tor/geoip&lt;/p&gt;
+
+&lt;p&gt;Hope this helps. &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/../../smileys/smile4.png&quot; alt=&quot;;-)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Cheers,&lt;br /&gt;
+SylverRat&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/comment_3/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:01:10Z</updated>
+	<published>2010-06-24T12:01:10Z</published>
+
+	<content type="html" xml:lang="en">
+	Is here any way how can i could open only relay what i want? For example i want relay from USA, can i get it now? Thx
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/comment_4/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:01:11Z</updated>
+	<published>2010-06-24T12:01:11Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;a href=&quot;https://www.torproject.org/faq#ChooseEntryExit&quot; title=&quot;https://www.torproject.org/faq#ChooseEntryExit&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/faq#ChooseEntryExit&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/comment_5/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:01:12Z</updated>
+	<published>2010-06-26T12:01:12Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;The point is that the GeoIP file is in the wrong place. The above user&#39;s suggestion works, or you can add this to torrc:&lt;/p&gt;
+
+&lt;p&gt;GeoIPFile /Applications/Vidalia.app/Contents/Resources/geoip&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/comment_6/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:01:13Z</updated>
+	<published>2010-06-26T12:01:13Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;The point is that the GeoIP file is in the wrong place. The above user&#39;s suggestion works, or you can add this to torrc:&lt;/p&gt;
+
+&lt;p&gt;GeoIPFile /Applications/Vidalia.app/Contents/Resources/geoip&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/comment_7/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:01:14Z</updated>
+	<published>2010-06-24T12:01:14Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;vidalia-bundle-0.2.1.26-0.2.9.exe&lt;/p&gt;
+
+&lt;p&gt;Can not be installed on Windows 2000 Professional, a popup window always says&lt;br /&gt;
+not found a function entry in WS2_32.dll&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/comment_8/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:01:15Z</updated>
+	<published>2010-06-25T12:01:15Z</published>
+
+	<content type="html" xml:lang="en">
+	You are correct.  We don&#39;t support Windows 2000 due to lack of proper support for a growing number of dlls and subsystems.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/comment_9/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:01:16Z</updated>
+	<published>2010-06-27T12:01:16Z</published>
+
+	<content type="html" xml:lang="en">
+	the version of firefox that is included in the windows tor bundle is out of date and has some security vulnerabilities, is it possible to update the portable firefox to the latest version somehow?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/comment_10/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:01:17Z</updated>
+	<published>2010-06-28T12:01:17Z</published>
+
+	<content type="html" xml:lang="en">
+	A new release is forthcoming.
+
+	</content>
+
+
+
+</entry>
+
+</feed>

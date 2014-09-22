@@ -1,0 +1,491 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tor 0.2.1.16-rc Release Candidate now available</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_1_16-rc_Release_Candidate_now_available&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Tor 0.2.1.16-rc Release Candidate now available</a>
+
+</span>
+
+
+<div id="content">
+<p>Tor 0.2.1.16-rc speeds up performance for fast exit relays, and fixes<br />
+a bunch of minor bugs.</p>
+
+<p><a href="https://www.torproject.org/download" title="https://www.torproject.org/download" rel="nofollow">https://www.torproject.org/download</a></p>
+
+<p>Changes in version 0.2.1.16-rc - 2009-06-20<br />
+<strong>Security fixes:</strong></p>
+
+<ul>
+<li>Fix an edge case where a malicious exit relay could convince a<br />
+      controller that the client's DNS question resolves to an internal IP<br />
+      address. Bug found and fixed by "optimist"; bugfix on 0.1.2.8-beta.</li>
+</ul>
+
+<p><strong>Major performance improvements (on 0.2.0.x):</strong></p>
+
+<ul>
+<li>Disable and refactor some debugging checks that forced a linear scan<br />
+      over the whole server-side DNS cache. These accounted for over 50%<br />
+      of CPU time on a relatively busy exit node's gprof profile. Found<br />
+      by Jacob.</li>
+<li>Disable some debugging checks that appeared in exit node profile<br />
+      data.</li>
+</ul>
+
+<p><strong>Minor features:</strong> <span class="read-more"><a href="http://blog.torproject.org/blog/tor-02116rc-release-candidate-now-available"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+<p><ul>
+<li>Update to the "June 3 2009" ip-to-country file.</li></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/bug_fixes/" rel="tag">bug fixes</a>
+
+<a href="../../tags/hidden_service_fixes/" rel="tag">hidden service fixes</a>
+
+<a href="../../tags/release_candidate/" rel="tag">release candidate</a>
+
+<a href="../../tags/security_fixes/" rel="tag">security fixes</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-fc287757cfc1d615d2206ac28c90cdb7">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+thanx my friend 4 ur great effort. Tor rocks! Keep on going guys.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FPETER%20%28not%20verified%29&amp;do=goto">PETER (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 24 Jun 2009 06:29:11 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-dd1b2f6c7f648cd7dba260f7bebcef56">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>All that is necessary to build a powerful TOR network with an order of magnitude speed increase is the following:</p>
+
+<p>1) Make install of TOR much simpler.  Look at the latest ergonomic studies.</p>
+
+<p>2) Prioritize TOR users who are also relays.  The biggest complaint about TOR is the speed.  (lack of)  If you guaranteed users a certain speed priority in USING TOR if they registered as a Relay, then you would give TOR users the "financial incentive" to become TOR relays.</p>
+
+<p>That's all you need to do.  Sit back and trust in the power of social networking and self interest to do the rest.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 25 Jun 2009 06:29:12 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2a41e88422dbf5046babae2390aae9c5">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>Quite so. The only little problem is the huge anonymity problems that are introduced by the idea.</p>
+
+<p>See my in-depth analysis here:<br />
+<a href="https://blog.torproject.org/blog/two-incentive-designs-tor" title="https://blog.torproject.org/blog/two-incentive-designs-tor" rel="nofollow">https://blog.torproject.org/blog/two-incentive-designs-tor</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Farma&amp;do=goto">arma</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 26 Jun 2009 06:29:13 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2c49fc149be1d5244dc2598544ae0ffb">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<a href="http://213.251.185.41/tor-upgrade.png" rel="nofollow">Here's the speedup</a> when moving from .15-rc to .16-rc (at 0200).
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FBlake%20%28not%20verified%29&amp;do=goto">Blake (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 28 Jun 2009 06:29:14 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1c0e6f6d8fccb654b56905d9f6488d9f">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>Is there a place where one can submitt bugs?<br />
+Have not found one, so I discribe it here:</p>
+
+<p>I got an error every time I want to shut down Windows Vista (with SP2).<br />
+The Error is:<br />
+"Vidalia Kontroll-Panel"<br />
+"Die Anweisung in 0x0045048f verweist auf Speicher 0x00000018. Der Vargang read konnte nicht im Speicher durchgefuehrt werden."<br />
+Have to click on OK to shut down Vista.</p>
+
+<p>Got the error with:<br />
+- Tor 0.2.0.33 Vidalia 0.1.10<br />
+- Tor 0.2.0.35 Vidalia 0.1.14<br />
+- Tor 0.2.1.16 Vidalia 0.1.14</p>
+
+<p>Any solution?</p>
+
+<p>Regards - Frank</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 03 Jul 2009 06:29:15 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4114399dc040643394f0a2277abcaf29">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>There is a place to report Vidalia bugs. See the "Support" section<br />
+on the Vidalia web page: <a href="https://www.torproject.org/vidalia/#Support" title="https://www.torproject.org/vidalia/#Support" rel="nofollow">https://www.torproject.org/vidalia/#Support</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Farma&amp;do=goto">arma</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 05 Jul 2009 06:29:16 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_1_16-rc_Release_Candidate_now_available&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:29:10 AM CDT</span>
+<!-- Created <span class="date">Wed 24 Jun 2009 09:32:45 AM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

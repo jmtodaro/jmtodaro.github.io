@@ -1,0 +1,410 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged anonymity_advocacy</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/anonymity_advocacy/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Hackfest Thanks</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Hackfest_Thanks/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Hackfest_Thanks/</link>
+
+
+	<category>/tags/anonymity_advocacy</category>
+
+	<category>/tags/february_2011</category>
+
+	<category>/tags/hackfest</category>
+
+	<category>/tags/mit</category>
+
+	<category>/tags/pizza</category>
+
+
+	<pubDate>Sun, 20 Feb 2011 22:29:07 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:15:22Z</dcterms:modified>
+
+	<description>&lt;p&gt;Thank you to all who showed up for &lt;a href=&quot;https://blog.torproject.org/blog/tor-open-hackfest-february-19-2011&quot; rel=&quot;nofollow&quot;&gt;the hackfest&lt;/a&gt; at MIT on Saturday the 19th.  Roughly 50 people attended the event at some point throughout the day.  People traveled from the local area, Maine, New York, Connecticut, and one person rearranged their flights from California to hack with us.  The free pizza, drinks, and donuts were provided to all thanks to some generous attendees.&lt;/p&gt;
+
+&lt;p&gt;And a final thank you to the &lt;a href=&quot;http://civic.mit.edu/&quot; rel=&quot;nofollow&quot;&gt;Center for Future Civic Media&lt;/a&gt; who once again offered the facilities and support for our hackfest.&lt;/p&gt;
+
+&lt;p&gt;Now that you&#39;ve met us, are interested in helping the world, and want to learn more, here are some ideas on getting involved: &lt;a href=&quot;http://www.torproject.org/getinvolved/volunteer&quot; title=&quot;http://www.torproject.org/getinvolved/volunteer&quot; rel=&quot;nofollow&quot;&gt;http://www.torproject.org/getinvolved/volunteer&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Thanks!&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Hackfest_Thanks/#comments</comments>
+
+</item>
+<item>
+
+	<title>mikeperry: Tips for Running an Exit Node with Minimal Harassment</title>
+	<dcterms:creator>mikeperry</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/</link>
+
+
+	<category>/tags/anonymity_advocacy</category>
+
+	<category>/tags/distributed_trust</category>
+
+	<category>/tags/education</category>
+
+	<category>/tags/performance</category>
+
+
+	<pubDate>Wed, 30 Jun 2010 19:08:08 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:03:19Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;b&gt;Updated 06/30/2010&lt;/b&gt;: Mention Reduced Exit Policy, ISP Shopping Tips, and Abuse Response Templates&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Updated 08/30/2010&lt;/b&gt;: Update exit policy with svn, git, hg, Kerberos, remote admin panels, IRC, others&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Updated 01/12/2011&lt;/b&gt;: Suggest creation of LLC for large exit nodes, provide links to ARIN forms and process.&lt;br /&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;I have noticed that a lot of new exit nodes have recently appeared on the network. This is great news, since exit nodes are typically on the scarce side. Exits usually occupy 30-33% of network by capacity, but are currently at a whopping 38.5% (156 MBytes/sec out of 404 total).&lt;/p&gt;
+
+&lt;p&gt;However, I want to make sure that these nodes stay up and don&#39;t end up being shut down due to easily preventable abuse complaints. I&#39;ve run a number of exit nodes on a few different ISPs and not only have I lived to tell about it, I&#39;ve have not had one shut down yet. Moreover, I&#39;ve only received about 4 abuse complaints in as many years of running exit nodes. This is in stark contrast to other node operators following a &lt;a href=&quot;https://blog.torproject.org/blog/five-years-exit-node-operator&quot;&gt;more reactive strategy&lt;/a&gt;. I&#39;m convinced this is largely because I observe the following pro-active guidelines. This guide is primarily US centric. Operators in other countries may have slightly different best practices (such as registering with RIPE and not ARIN). &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tips-running-exit-node-minimal-harassment&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: August 2009 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/August_2009_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/August_2009_Progress_Report/</link>
+
+
+	<category>/tags/anonymity_advocacy</category>
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/releases</category>
+
+
+	<pubDate>Mon, 21 Sep 2009 09:19:26 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:36:41Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New releases&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;On August 4, we released Tor Browser Bundle 1.2.7. It is updated primarily due to Firefox 3.0.13 with its ssl fixes.&lt;/p&gt;
+
+&lt;p&gt;The full changelist is:&lt;br /&gt;
+1.2.7: Released 2009-08-04&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;update Firefox to 3.0.13 &lt;/li&gt;
+&lt;li&gt;add Polish translation &lt;/li&gt;
+&lt;li&gt;update libevent to 1.4.12 &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;On August 19, we released Tor Browser Bundle 1.2.8.  The big changes are the inclusion of statically linked openssl dlls to resolve a few geoip lookup and functionality issues with Vidalia, and the upgrade to the new Vidalia 0.2.2. &lt;/p&gt;
+
+&lt;p&gt;The full list of updates and fixes: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/august-2009-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;update Torbutton to 1.2.2 &lt;/li&gt;
+&lt;li&gt;update Vidalia to 0.2.2 &lt;/li&gt;
+&lt;li&gt;compile OpenSSL 0.9.8k with Visual C to make dlls &lt;/li&gt;
+&lt;li&gt;update Pidgin to 2.6.1 &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/August_2009_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Anonymity by Design versus by Policy</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Anonymity_by_Design_versus_by_Policy/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Anonymity_by_Design_versus_by_Policy/</link>
+
+
+	<category>/tags/anonymity_advocacy</category>
+
+	<category>/tags/blogging</category>
+
+	<category>/tags/commenting</category>
+
+	<category>/tags/courts</category>
+
+	<category>/tags/free_speech</category>
+
+	<category>/tags/news_stories</category>
+
+	<category>/tags/online_anonymity</category>
+
+
+	<pubDate>Wed, 16 Sep 2009 22:44:30 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:36:11Z</dcterms:modified>
+
+	<description>&lt;p&gt;There have been some recent stories in the news about various &lt;a href=&quot;http://www.citmedialaw.org/blog/2009/skanky-blogging-anonymity-and-whats-right&quot; rel=&quot;nofollow&quot;&gt;&quot;anonymous&quot; bloggers&lt;/a&gt; and &lt;a href=&quot;http://www.citmedialaw.org/blog/2009/splitting-digital-baby-california-court-creates-new-procedure-uncovering-anonymous-comment&quot; rel=&quot;nofollow&quot;&gt;commenters&lt;/a&gt; being unmasked by court order.   A business promises not to give up your identity unless forced to do so via court order.  This is anonymity by policy.  If a business doesn&#39;t have your identity, then there is nothing to divulge.  This is anonymity by design. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/anonymity-design-versus-policy&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Anonymity_by_Design_versus_by_Policy/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: July 2009 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/</link>
+
+
+	<category>/tags/anonymity_advocacy</category>
+
+	<category>/tags/anonymity_fixes</category>
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/security_fixes</category>
+
+	<category>/tags/stable_releases</category>
+
+	<category>/tags/tor_browser_bundle</category>
+
+
+	<pubDate>Mon, 10 Aug 2009 03:07:57 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:33:09Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New releases&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;On July 8th, we released &lt;a href=&quot;https://blog.torproject.org/blog/vidalia-0115-released&quot; rel=&quot;nofollow&quot;&gt;Vidalia 0.1.15.&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;On July 8th, we updated the Tor 0.2.0.35-stable bundles with the new Vidalia to fix an ssl issue and the Firefox Torbutton extension installation for OS X users.&lt;/p&gt;
+
+&lt;p&gt;On July 8th, we released &lt;a href=&quot;https://blog.torproject.org/blog/tor-02117rc-released&quot; rel=&quot;nofollow&quot;&gt;Tor 0.2.1.17-rc&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.torproject.org/blog/tor-browser-bundle-123-and-124-released&quot; rel=&quot;nofollow&quot;&gt;Tor Browser Bundle 1.2.3&lt;/a&gt; was released on July 8, 2009.&lt;br /&gt;
+&lt;a href=&quot;https://blog.torproject.org/blog/tor-browser-bundle-123-and-124-released&quot; rel=&quot;nofollow&quot;&gt;TBB 1.2.3&lt;/a&gt; was replaced by 1.2.4 on July 11, 2009&lt;br /&gt;
+&lt;a href=&quot;https://blog.torproject.org/blog/tor-browser-bundle-125-and-126-released&quot; rel=&quot;nofollow&quot;&gt;TBB 1.2.5&lt;/a&gt; was released on July 25th.  It solely included an update to Tor 0.2.1.18 . &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/july-2009-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: June 2009 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/June_2009_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/June_2009_Progress_Report/</link>
+
+
+	<category>/tags/anonymity_advocacy</category>
+
+	<category>/tags/bugfixes</category>
+
+	<category>/tags/censorship_circumvention</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/releases</category>
+
+
+	<pubDate>Sat, 11 Jul 2009 21:06:32 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:30:13Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New releases&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;On June 20th we released Tor 0.2.1.16-rc.&lt;br /&gt;
+On June 21st, we released Tor Browser Bundle 1.2.1.&lt;br /&gt;
+On June 23rd, we released Tor Browser Bundle 1.2.2.&lt;br /&gt;
+On June 24th, we released Tor 0.2.0.35-stable.  We expect that this release is the last of the 0.2.0.x -stable series, soon to be replaced with the 0.2.1.x series.&lt;br /&gt;
+On June 30th, we released Vidalia 0.1.14.  &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Censorship circumvention&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Packaged rpms for Red Flag Linux version 6.  Red Flag Linux is reported to be the new operating system for all Internet cafe&#39;s in China.  So far, no one has seen this conversion actually happen, but now we&#39;re ready if it does.&lt;/p&gt;
+
+&lt;p&gt;Our email autoresponder, gettor , received a number of patches to deal with dkim issues, including finding a dkim bug that prevented yahoo email users from fetching Tor. This bug has been fixed. Additionally, we&#39;ve whitelisted some domains where we &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/june-2009-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/June_2009_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: May 2009 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/</link>
+
+
+	<category>/tags/anonymity_advocacy</category>
+
+	<category>/tags/metrics</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/proposals</category>
+
+	<category>/tags/translations</category>
+
+
+	<pubDate>Wed, 10 Jun 2009 13:41:55 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:26:57Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New releases&lt;/strong&gt;&lt;br /&gt;
+On May 25, we released Tor 0.2.1.15-rc.&lt;br /&gt;
+On May 17, we released Tor VM 0.0.2.&lt;br /&gt;
+On May 25, we released Vidalia 0.1.13 containing &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/may-2009-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Remove an old warning on the relay settings page that running a bridge&lt;br /&gt;
+    relay requires Tor 0.2.0.8-alpha or newer. &lt;/li&gt;
+&lt;li&gt;Add a workaround for a bug that prevented Vidalia&#39;s tray icon from&lt;br /&gt;
+    getting added to the system notification area on Gnome when Vidalia was&lt;br /&gt;
+    run on system startup. Patch by Steve Tyree. (Ticket #247) &lt;/li&gt;
+&lt;li&gt;Fix a bug that prevented the control panel from displaying when&lt;br /&gt;
+    running on the Enlightenment window manager. Patch by Steve Tyree. &lt;/li&gt;
+&lt;li&gt;Rename the CMake variables used to store the location of Qt&#39;s lupdate&lt;br /&gt;
+    and lrelease executables. Recent versions of CMake decided to use the&lt;br /&gt;
+    same variable name, which was stomping on mine, resulting in the wrong&lt;br /&gt;
+    lupdate and lrelease executables being used. &lt;/li&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/May_2009_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Updated guide to blogging anonymously</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Updated_guide_to_blogging_anonymously/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Updated_guide_to_blogging_anonymously/</link>
+
+
+	<category>/tags/anonymity_advocacy</category>
+
+	<category>/tags/anonymous_publishing</category>
+
+	<category>/tags/global_voices</category>
+
+
+	<pubDate>Thu, 12 Mar 2009 19:58:05 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:20:50Z</dcterms:modified>
+
+	<description>&lt;p&gt;We worked with Sami from Global Voices to update their &lt;a href=&quot;http://advocacy.globalvoicesonline.org/projects/guide/&quot; rel=&quot;nofollow&quot;&gt;guide to blogging anonymously&lt;/a&gt;.  The big changes are more screenshots, easier instructions, and suggested use of the Tor Browser Bundle by default; as it&#39;s generaly plug and play.&lt;/p&gt;
+
+&lt;p&gt;The Citizen Media Law Project also has a good &lt;a href=&quot;http://www.citmedialaw.org/legal-guide/how-maintain-your-anonymity-online&quot; rel=&quot;nofollow&quot;&gt;guide to anonymity online&lt;/a&gt;.  Be sure to check out the &lt;a href=&quot;http://www.citmedialaw.org/legal-guide/potential-legal-challenges-anonymity&quot; rel=&quot;nofollow&quot;&gt;legal challenges to anonymity online&lt;/a&gt; and &lt;a href=&quot;http://www.citmedialaw.org/legal-guide/legal-protections-anonymous-speech&quot; rel=&quot;nofollow&quot;&gt;legal protections to anonymous speech&lt;/a&gt; as well.&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Updated_guide_to_blogging_anonymously/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: February 2009 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/February_2009_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/February_2009_Progress_Report/</link>
+
+
+	<category>/tags/anonymity_advocacy</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/translation</category>
+
+
+	<pubDate>Tue, 10 Mar 2009 10:24:22 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:20:43Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New releases, new hires, new funding&lt;/strong&gt;&lt;br /&gt;
+On February 8, we released versions 0.2.0.34-stable and 0.2.1.12-alpha.  &lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.0.34 features several more security-related fixes. You should upgrade, especially if you run an exit relay (remote crash) or a directory authority (remote infinite loop), or you&#39;re on an older (pre-XP) or not-recently-patched Windows (remote exploit).&lt;/p&gt;
+
+&lt;p&gt;This release marks end-of-life for Tor 0.1.2.x. Those Tor versions have many known flaws, and nobody should be using them. You should upgrade. If you&#39;re using a Linux or BSD and its packages are obsolete, stop using those packages and upgrade anyway.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Enhancements&lt;/strong&gt;&lt;br /&gt;
+In Tor 0.2.1.12-alpha, if we&#39;re using bridges and our network goes away, be more willing to forgive our bridges and try again when we get an application  request. Bugfix on 0.2.0.x. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/february-2009-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/February_2009_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Black t-shirts by user request</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Black_t-shirts_by_user_request/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Black_t-shirts_by_user_request/</link>
+
+
+	<category>/tags/anonymity_advocacy</category>
+
+	<category>/tags/black_t-shirts</category>
+
+	<category>/tags/user_request</category>
+
+
+	<pubDate>Tue, 17 Feb 2009 13:36:01 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:19:20Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;p&gt;Our fine green t-shirts have been a hit over the past few years.  By the sheer number of requests we&#39;ve received for another color, it appears not everyone is comfortable wearing the &lt;a href=&quot;https://www.torproject.org/tshirt/green-tor-tshirt.png&quot;&gt;conversation starting green&lt;/a&gt;.  We now have black t-shirts.  Just like the green shirts, these are Fruit of the Loom &quot;tagless&quot; 100% cotton t-shirts.  They have the Tor logo and domain name on the front, nothing on the back.&lt;/p&gt;
+
+&lt;p&gt;The conditions for receiving them are still the same: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/black-t-shirts-user-request&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Black_t-shirts_by_user_request/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

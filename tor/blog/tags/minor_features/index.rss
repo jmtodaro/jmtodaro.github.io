@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged minor_features</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/minor_features/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Tor 0.2.1.27 is released.</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_27_is_released_/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_27_is_released_/</link>
+
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/directory_authorities</category>
+
+	<category>/tags/minor_features</category>
+
+	<category>/tags/openssl_fixes</category>
+
+	<category>/tags/stable_release</category>
+
+
+	<pubDate>Fri, 26 Nov 2010 07:45:31 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:11:23Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor 0.2.1.27 makes relays work with OpenSSL 0.9.8p and 1.0.0.b --yet another OpenSSL security patch broke its compatibility with Tor. We also took this opportunity to fix several crash bugs, integrate a new directory authority, and update the bundled GeoIP database.&lt;/p&gt;
+
+&lt;p&gt;If you operate a relay, please upgrade.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download/download&quot; title=&quot;https://www.torproject.org/download/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download/download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The original release announcement is at&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/announce/Nov-2010/msg00000.html&quot; title=&quot;http://archives.seul.org/or/announce/Nov-2010/msg00000.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/announce/Nov-2010/msg00000.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.27 - 2010-11-23&lt;br /&gt;
+&lt;strong&gt;Major bugfixes:&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02127-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Resolve an incompatibility with OpenSSL 0.9.8p and OpenSSL 1.0.0b: No longer set the tlsext_host_name extension on server SSL objects; but continue to set it on client SSL objects. Our goal in setting&lt;br /&gt;
+it was to imitate a browser, not a vhosting server. Fixes bug 2204; bugfix on 0.2.1.1-alpha.&lt;/li&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_27_is_released_/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

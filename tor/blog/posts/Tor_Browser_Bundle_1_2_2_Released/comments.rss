@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Tor Browser Bundle 1.2.2 Released</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Anonymous (not verified): Comment 1</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_1/</link>
+
+	<pubDate>Thu, 25 Jun 2009 06:29:02 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:02Z</dcterms:modified>
+
+	<description>&lt;p&gt;Guys,&lt;/p&gt;
+
+&lt;p&gt;Given what happened in Iran:&lt;br /&gt;
+- Twitter used to organize resistance&lt;br /&gt;
+- Twitter users tracked down and arrested&lt;/p&gt;
+
+&lt;p&gt;Thinking a Tor enabled Twitter client would be a good tool for folks living in oppressive states, particularly if it could run off an encrypted (TrueCrypt) thumb drive.&lt;/p&gt;
+
+&lt;p&gt;Looks like this I guess:&lt;/p&gt;
+
+&lt;p&gt;Tor/Twitter Client &amp;lt;-&amp;gt; Tor network &amp;lt;-&amp;gt; Twitter Server&lt;/p&gt;
+
+&lt;p&gt;Perhaps it already exists ...&lt;/p&gt;
+
+&lt;p&gt;-g&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Thistle (not verified): Comment 2</title>
+	<dcterms:creator>Thistle (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_2/</link>
+
+	<pubDate>Fri, 26 Jun 2009 06:29:03 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:03Z</dcterms:modified>
+
+	<description>&lt;p&gt;Shortly after I attempted to run the Tor bundle, my system blue-screened and crashed.&lt;br /&gt;
+My McCaffey antivirus program found a Trojan in the temp/SKYNETxxxxx and quarantined it.  No damage done, but please check your downloads for embedded viruses.  I would really like to help the Iran protest by running a TOR bridge, but if it takes out my computer, I won&#39;t even be able to tweet to support them.&lt;/p&gt;
+
+&lt;p&gt;Thistle&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 3</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_3/</link>
+
+	<pubDate>Wed, 01 Jul 2009 06:29:04 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:04Z</dcterms:modified>
+
+	<description>Firefox 3.5 now support HTML5 (audio, video, offline resources, drag and drop, etc). Can these feature affect anonymity? How torbutton manages them?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 4</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_4/</link>
+
+	<pubDate>Wed, 01 Jul 2009 06:29:05 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:05Z</dcterms:modified>
+
+	<description>&lt;p&gt;Potential problems with Firefox 3.5:&lt;/p&gt;
+
+&lt;p&gt;1) geolocation&lt;br /&gt;
+2) XMLHttpRequest isn&#39;t subject to same origin policy anymore&lt;br /&gt;
+3)drag and drop feature for file, image, document, etc.&lt;br /&gt;
+4)offline resources&lt;br /&gt;
+5)DNS prefetching&lt;br /&gt;
+6)Firefox Worker&lt;br /&gt;
+7)audo, video, and others multimedia html 5 tag&lt;br /&gt;
+8)custom protocol handlers&lt;br /&gt;
+9)possible new CSS attack vectors, such as font-face, media queries.&lt;br /&gt;
+Is there something else?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>swisstorexit (not verified): Comment 5</title>
+	<dcterms:creator>swisstorexit (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_5/</link>
+
+	<pubDate>Thu, 02 Jul 2009 06:29:06 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:06Z</dcterms:modified>
+
+	<description>&lt;p&gt;hello,&lt;/p&gt;
+
+&lt;p&gt;I will say to wait before install 3.5 while actualy it&#39;s tested about privacy and resistance...&lt;/p&gt;
+
+&lt;p&gt;I don&#39;t know about torbutton and 3.5 but at end of this week i can give a more presice answer.&lt;/p&gt;
+
+&lt;p&gt;my best&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 6</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_6/</link>
+
+	<pubDate>Sat, 04 Jul 2009 06:29:07 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:07Z</dcterms:modified>
+
+	<description>&lt;p&gt;Any news?&lt;br /&gt;
+I don&#39;t think Firefox 3.5 is safe for anonymous browsing.&lt;/p&gt;
+
+&lt;p&gt;Is possible for Tor developers to make a new safest browser based on Firefox or Chromium source code?&lt;br /&gt;
+I&#39;ve read about the next release of xerobank browser. It will be embedded in a OpenWRT self-contained virtualized environment, with OpenVPN connection.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 7</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_7/</link>
+
+	<pubDate>Sat, 20 Nov 2010 06:29:08 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:29:08Z</dcterms:modified>
+
+	<description>&lt;p&gt;Is there a mobile version of Tor? Unfortunately, due to an insane and vindictive ex...and who by the way is an extremely brilliant computer engineer, has hacked his way back into my life and made it a living nightmare! He has successfully demobilized 1 desktop, 2 laptops, and my Blackberry so at the moment the only internet access I have is on this crappy little phone that is soon going to be taking a trip to the toilet if I dont have a nervous breakdown first! Not only has he made it impossible for me to work...he downloaded $5000 worth of music and made it look like I did it! Now my service has been cut off because I refuse to pay the bill!&lt;/p&gt;
+
+&lt;p&gt;Can anyone help me?&lt;/p&gt;
+
+&lt;p&gt;Shelby&lt;/p&gt;
+
+</description>
+
+
+</item>
+
+</channel>
+</rss>

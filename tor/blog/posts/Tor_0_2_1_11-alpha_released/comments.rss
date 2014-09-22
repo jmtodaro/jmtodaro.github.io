@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Tor 0.2.1.11-alpha released</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_11-alpha_released/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Randy McCallahan (not verified): Comment 1</title>
+	<dcterms:creator>Randy McCallahan (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_11-alpha_released/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_11-alpha_released/comment_1/</link>
+
+	<pubDate>Fri, 23 Jan 2009 06:17:58 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:17:58Z</dcterms:modified>
+
+	<description>&lt;p&gt;@TOR developers&lt;/p&gt;
+
+&lt;p&gt;Please wait for publishing of security-related bug information until BSD users are able to upgrade their system. Keep in mind that the BSD ports collection sometimes will be updated with a delay. This means that the time a tor server operator decides to update his system has to be added to the delayed time the new tor version is really available in the BSD ports collection tree.&lt;/p&gt;
+
+&lt;p&gt;Tnx&lt;br /&gt;
+RMcC&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 2</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_11-alpha_released/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_11-alpha_released/comment_2/</link>
+
+	<pubDate>Sun, 25 Jan 2009 06:17:59 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:17:59Z</dcterms:modified>
+
+	<description>Yes, we&#39;re waiting to disclose the details in order to give users and node operators time to upgrade.
+</description>
+
+
+</item>
+<item>
+
+	<title>arma: Comment 3</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_11-alpha_released/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_11-alpha_released/comment_3/</link>
+
+	<pubDate>Sat, 31 Jan 2009 06:18:00 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:18:00Z</dcterms:modified>
+
+	<description>&lt;p&gt;Can you give us some hint about when you think BSD users will be in better shape? We&#39;re currently planning to wait a few weeks, but we weren&#39;t planning to wait a few months. Is that too short?&lt;/p&gt;
+
+&lt;p&gt;(I need to go bug the Ubuntu people to stop shipping Tor 0.1.2.x and move&lt;br /&gt;
+to 0.2.0.x, so that&#39;s another stumbling block that&#39;s holdiing us up.)&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>PETER (not verified): Comment 4</title>
+	<dcterms:creator>PETER (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_11-alpha_released/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_11-alpha_released/comment_4/</link>
+
+	<pubDate>Sat, 24 Jan 2009 06:18:01 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:18:01Z</dcterms:modified>
+
+	<description>Warning message in TBB Controler used oboselete addr-mappings/GETINFO Key; use-address-mappings/instead. Please fix it.
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 5</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_11-alpha_released/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_11-alpha_released/comment_5/</link>
+
+	<pubDate>Sun, 25 Jan 2009 06:18:02 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:18:02Z</dcterms:modified>
+
+	<description>This is a problem with Vidalia.  It will be fixed in the next release of Vidalia.
+</description>
+
+
+</item>
+<item>
+
+	<title>PETER (not verified): Comment 6</title>
+	<dcterms:creator>PETER (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_11-alpha_released/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_11-alpha_released/comment_6/</link>
+
+	<pubDate>Sun, 25 Jan 2009 06:18:03 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:18:03Z</dcterms:modified>
+
+	<description>Thanx 4 ur reply phobos!
+</description>
+
+
+</item>
+<item>
+
+	<title>PETER (not verified): Comment 7</title>
+	<dcterms:creator>PETER (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_11-alpha_released/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_11-alpha_released/comment_7/</link>
+
+	<pubDate>Mon, 26 Jan 2009 06:18:04 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:18:04Z</dcterms:modified>
+
+	<description>when will be the next release?After releasing it willl be posted here. Please answer.
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 8</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_11-alpha_released/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_11-alpha_released/comment_8/</link>
+
+	<pubDate>Mon, 26 Jan 2009 06:18:05 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:18:05Z</dcterms:modified>
+
+	<description>Vidalia is still very much under active development. I don&#39;t know the release schedule at this time.  For now, just ignore that message.
+</description>
+
+
+</item>
+<item>
+
+	<title>PETER (not verified): Comment 9</title>
+	<dcterms:creator>PETER (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_11-alpha_released/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_11-alpha_released/comment_9/</link>
+
+	<pubDate>Mon, 26 Jan 2009 06:18:06 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:18:06Z</dcterms:modified>
+
+	<description>k phobos thanx  4  answering my questions. Looking forward 2  c more.
+</description>
+
+
+</item>
+<item>
+
+	<title>Randy McCallahan (not verified): Comment 10</title>
+	<dcterms:creator>Randy McCallahan (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_11-alpha_released/comment_10/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_11-alpha_released/comment_10/</link>
+
+	<pubDate>Sun, 01 Feb 2009 06:18:07 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:18:07Z</dcterms:modified>
+
+	<description>&lt;p&gt;Since 29. January the FreeBSD ports of Tor are up to date.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.freshports.org/security/tor-devel/&quot; title=&quot;http://www.freshports.org/security/tor-devel/&quot; rel=&quot;nofollow&quot;&gt;http://www.freshports.org/security/tor-devel/&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://www.freshports.org/security/tor&quot; title=&quot;http://www.freshports.org/security/tor&quot; rel=&quot;nofollow&quot;&gt;http://www.freshports.org/security/tor&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Now it&#39;s up to the tor operator to update his system.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>arma: Comment 11</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_11-alpha_released/comment_11/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_11-alpha_released/comment_11/</link>
+
+	<pubDate>Tue, 10 Feb 2009 06:18:08 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:18:08Z</dcterms:modified>
+
+	<description>&lt;p&gt;Great to hear.&lt;/p&gt;
+
+&lt;p&gt;But just to keep things exciting, we put out a new stable and development&lt;br /&gt;
+release today (0.2.0.34 / 0.2.1.12-alpha), with more security fixes. &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_11-alpha_released/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hopefully these new fixes will last us for a while yet.&lt;/p&gt;
+
+</description>
+
+
+</item>
+
+</channel>
+</rss>

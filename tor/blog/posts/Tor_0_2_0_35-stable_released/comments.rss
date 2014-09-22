@@ -1,0 +1,468 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Tor 0.2.0.35-stable released</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Anonymous (not verified): Comment 1</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_1/</link>
+
+	<pubDate>Fri, 26 Jun 2009 06:29:19 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:19Z</dcterms:modified>
+
+	<description>&lt;p&gt;I currently have Tor 0.2.0.31 installed on OS X 10.4.11.&lt;/p&gt;
+
+&lt;p&gt;When I run the installer for the latest release (0.2.0.35) the installer says there is already a newer version installed. If I continue with the install anyway, it fails. There is no error message but the new version does not run.&lt;/p&gt;
+
+&lt;p&gt;After restoring the old version of Tor (0.2.0.31) from backup, everything is OK. Then I tried to uninstall the old version using the supplied script, but it fails, giving me:&lt;/p&gt;
+
+&lt;p&gt;root@sebago&amp;gt; ./uninstall_tor_bundle.sh&lt;br /&gt;
+. tor process appears to already be stopped&lt;br /&gt;
+. Killing currently running privoxy process, pid is 196&lt;br /&gt;
+./uninstall_tor_bundle.sh: line 123: ./package_list.txt: No such file or directory&lt;br /&gt;
+. Removing created user _tor&lt;br /&gt;
+delete: Invalid Path&lt;br /&gt;
+. Cleaning up&lt;br /&gt;
+rm: fts_read: No such file or directory&lt;br /&gt;
+. Finished&lt;/p&gt;
+
+&lt;p&gt;Next, I restored again from backup and tried to manually uninstall following the documentation. However, some of the files and directories that are supposed to be deleted do not exist on my installation. Other files and directories that obviously belong to Tor are not listed in the documentation of what to delete.&lt;/p&gt;
+
+&lt;p&gt;After deleting everything I could find that looks like it belongs to Tor/Vadalia/Privoxy/Torbutton I ran the installer for version 0.2.0.35 again and it says the install was successful, but after restarting and trying to start Vidalia, it doesn&#39;t run.&lt;/p&gt;
+
+&lt;p&gt;Now I have 0.2.31 running again after restoring again from backup, but I am at a total loss as to how to properly uninstall or upgrade!!&lt;/p&gt;
+
+&lt;p&gt;Please help!!!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Alexios (not verified): Comment 2</title>
+	<dcterms:creator>Alexios (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_2/</link>
+
+	<pubDate>Sun, 28 Jun 2009 06:29:20 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:20Z</dcterms:modified>
+
+	<description>&lt;p&gt;I keep getting this message: &quot;Your server has not managed to confirm that its DirPort is reachable. Please check your firewalls, ports, address, etc&quot;&lt;/p&gt;
+
+&lt;p&gt;I was hoping that, by getting the latest version of Vidalia/Tor, this would solve the problem; unfortunately, it hasn&#39;t. To be honest, everything else is working fine as far as connections/ports are concerned; however, with the Directory Port, I&#39;ve tried every configuration with my wireless tp-link router, changing things on DNS, as well as going through different ports, but nothing seems to work. I&#39;m at wit&#39;s end here, can anyone offer any help or guidance?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>arma: Comment 3</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_3/</link>
+
+	<pubDate>Sun, 28 Jun 2009 06:29:21 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:21Z</dcterms:modified>
+
+	<description>&lt;p&gt;Yeah. That&#39;s a problem with 0.2.0.x. It&#39;s a cosmetic problem though -- nothing&lt;br /&gt;
+is actually going wrong, I think.&lt;/p&gt;
+
+&lt;p&gt;It&#39;s fixed in Tor 0.2.1.x.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 4</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_4/</link>
+
+	<pubDate>Wed, 01 Jul 2009 06:29:22 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:22Z</dcterms:modified>
+
+	<description>&lt;p&gt;In the postflight script in the Tor.pkg there is a line that fails:&lt;/p&gt;
+
+&lt;p&gt;su $USER /Applications/Firefox.app/Contents/MacOS/firefox-bin /Library/Torbutton/torbutton-$TORBUTTON_VERSION.xpi&lt;/p&gt;
+
+&lt;p&gt;It worked again when it was changed as in the corresponding package in 0.2.0.34 (use firefox instead of the firefox-bin executable):&lt;/p&gt;
+
+&lt;p&gt;su $USER /Applications/Firefox.app/Contents/MacOS/firefox /Library/Torbutton/torbutton-$TORBUTTON_VERSION.xpi&lt;/p&gt;
+
+&lt;p&gt;The same results for firefox versions 3.0 and 3.5 for mac.&lt;/p&gt;
+
+&lt;p&gt;Hope this helps&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 5</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_5/</link>
+
+	<pubDate>Thu, 02 Jul 2009 06:29:23 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:23Z</dcterms:modified>
+
+	<description>I get the same message.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 6</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_6/</link>
+
+	<pubDate>Sat, 04 Jul 2009 06:29:24 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:24Z</dcterms:modified>
+
+	<description>&lt;p&gt;The installer say in log:&lt;br /&gt;
+Installer[4953]: run postflight script for Tor&lt;br /&gt;
+postflight[4997]: usage: chown [-fhv] [-R [-H | -L | -P]] owner[:group] file ...&lt;br /&gt;
+postflight[4997]:        chown [-fhv] [-R [-H | -L | -P]] :group file ...&lt;br /&gt;
+runner[4956]: postflight[4997]:&lt;br /&gt;
+runner[4956]: postflight[4997]: /Applications/Firefox.app/Contents/MacOS/firefox-bin: /Applications/Firefox.app/Contents/MacOS/firefox-bin: cannot execute binary file&lt;br /&gt;
+runner[4956]: postflight[4997]:&lt;br /&gt;
+Installer[4953]: Install failed: (...) : run postflight script for Tor.&lt;/p&gt;
+
+&lt;p&gt;Please correct this !&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 7</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_7/</link>
+
+	<pubDate>Mon, 06 Jul 2009 06:29:25 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:25Z</dcterms:modified>
+
+	<description>have the same issue as above poster. any fix for this?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 8</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_8/</link>
+
+	<pubDate>Fri, 10 Jul 2009 06:29:26 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:26Z</dcterms:modified>
+
+	<description>&lt;p&gt;why the tor proxy nao aceited by my firefox?&lt;br /&gt;
+what I&#39;m doing wrong? or what is missing?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 9</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_9/</link>
+
+	<pubDate>Fri, 10 Jul 2009 06:29:27 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:27Z</dcterms:modified>
+
+	<description>&lt;p&gt;when is tor going to update the version of privoxy distributed with tor.&lt;br /&gt;
+your still using 3.0.6 when the latest version is 3.0.13.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Andres (not verified): Comment 10</title>
+	<dcterms:creator>Andres (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_10/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_10/</link>
+
+	<pubDate>Sat, 11 Jul 2009 06:29:28 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:28Z</dcterms:modified>
+
+	<description>&lt;p&gt;pretty sad, today try to install tor on my OSX 10.5.7, with no succes.&lt;br /&gt;
+First 0.2.1.17-rc , Error in the Setup, but i try to run in anyway, using Firefox and Torbutton, error conectin to proxy. Use the documented uninstall procedure to test a downgrade to &quot;Stable&quot; 0.2.0.35. Same error on install and ( saying a newer version exist) so your script is LAME. pretty bad all i can say about my experience.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 11</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_11/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_11/</link>
+
+	<pubDate>Sat, 11 Jul 2009 06:29:29 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:29Z</dcterms:modified>
+
+	<description>&lt;p&gt;Actually, this is a bug in the Apple installer.  The necessary packages installed fine, and would require a reboot, but because the Firefox plugin for Tor failed to install, Apple aborts the entire installation and calls it all bad.&lt;/p&gt;
+
+&lt;p&gt;Dealing with the various issues with the Apple Installer is why we&#39;ve been working on a drag and drop install routine for the Vidalia-Bundle for OSX.  We&#39;re also working on a Tor Browser Bundle for OSX to make using Tor even simpler.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 12</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_12/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_12/</link>
+
+	<pubDate>Sun, 12 Jul 2009 06:29:30 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:30Z</dcterms:modified>
+
+	<description>you said you are working on a drag and drop which is great, but what can I use as a workaround right now
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 13</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_13/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_13/</link>
+
+	<pubDate>Sun, 12 Jul 2009 06:29:31 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:31Z</dcterms:modified>
+
+	<description>&lt;p&gt;Your install worked fine.  Reboot and everything should work as expected.&lt;/p&gt;
+
+&lt;p&gt;You may have to manually install Torbutton in firefox.  You can get it from the Mozilla Add-on site, or our site, &lt;a href=&quot;https://torproject.org/torbutton&quot; title=&quot;https://torproject.org/torbutton&quot; rel=&quot;nofollow&quot;&gt;https://torproject.org/torbutton&lt;/a&gt;, or it&#39;s also located in /Library/Torbutton on your machine.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 14</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_14/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_14/</link>
+
+	<pubDate>Sun, 12 Jul 2009 06:29:32 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:32Z</dcterms:modified>
+
+	<description>&lt;p&gt;I had the install problem with Tor under OS X 10.5.7 as well.  Then I tried installing it again and it appeared to work.  But when I try using my Tor-enabled Firefox 3.5, it thinks I&#39;m connecting to a bad proxy.  No Tor for me.&lt;/p&gt;
+
+&lt;p&gt;This is bad, is there some earlier version I can use?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 15</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_15/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_15/</link>
+
+	<pubDate>Sun, 12 Jul 2009 06:29:33 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:33Z</dcterms:modified>
+
+	<description>reboot and everything will work fine.  Privoxy only starts on boot.
+</description>
+
+
+</item>
+<item>
+
+	<title>etc (not verified): Comment 16</title>
+	<dcterms:creator>etc (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_16/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_16/</link>
+
+	<pubDate>Wed, 22 Jul 2009 06:29:34 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:34Z</dcterms:modified>
+
+	<description>&lt;p&gt;i tried installing the vidalia/tor/privoxy/torbutton bundle, and when i did i was warned that there was already a newer version of it installed. there wasnt, so i ignored it and installed anyway. Now everything should be installed, but there is no vidalia app in my applications folder.&lt;/p&gt;
+
+&lt;p&gt;wahappen?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>etc (not verified): Comment 17</title>
+	<dcterms:creator>etc (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_17/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_17/</link>
+
+	<pubDate>Wed, 22 Jul 2009 06:29:35 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:35Z</dcterms:modified>
+
+	<description>err this is on tiger btw
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 18</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_18/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_18/</link>
+
+	<pubDate>Thu, 24 Sep 2009 06:29:36 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:36Z</dcterms:modified>
+
+	<description>I installed the tor browser and all that and it seems to work fine except for a major problem. All the main sites like yahoo and google are in Deutsch (German) and not in English. I can&#39;t seem to change it. Does anyone know how I can fix this? Please e-mail me if you know what&#39;s wrong. &lt;a href=&quot;mailto:jakelogan911@gmail.com&quot; rel=&quot;nofollow&quot;&gt;jakelogan911@gmail.com&lt;/a&gt;
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 19</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_19/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_19/</link>
+
+	<pubDate>Wed, 07 Oct 2009 06:29:37 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:37Z</dcterms:modified>
+
+	<description>&lt;p&gt;When I run the installer, it says that firefox is not installed even though it is the default browser. Any tips for this?&lt;/p&gt;
+
+&lt;p&gt;Thank you&lt;/p&gt;
+
+&lt;p&gt;Kim&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 20</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_20/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_20/</link>
+
+	<pubDate>Mon, 15 Feb 2010 06:29:38 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:29:38Z</dcterms:modified>
+
+	<description>&lt;p&gt;I CAN&#39;T SEEM TO UNINSTALL THE VIDALIA BUNDLE FROM MY PROGRAM FILES.  OBVIOUSLY, THE UNINSTALL DOESN&#39;T WORK THAT IS LOCATED ON THE START MENU.  I&#39;VE TRIED EVERYTHING.  HOW CAN I REMOVE THESE FILES? I HAVE VISTA&lt;/p&gt;
+
+&lt;p&gt;VICTORIA.JORDASH@YAHOO.COM&lt;/p&gt;
+
+&lt;p&gt;THANK YOU&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 21</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_21/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comment_21/</link>
+
+	<pubDate>Thu, 18 Feb 2010 06:29:39 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:29:39Z</dcterms:modified>
+
+	<description>Follow the directions at &lt;a href=&quot;http://www.torproject.org/faq#HowUninstallTor&quot; title=&quot;http://www.torproject.org/faq#HowUninstallTor&quot; rel=&quot;nofollow&quot;&gt;http://www.torproject.org/faq#HowUninstallTor&lt;/a&gt;
+</description>
+
+
+</item>
+
+</channel>
+</rss>

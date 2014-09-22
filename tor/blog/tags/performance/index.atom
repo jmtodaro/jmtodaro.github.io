@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged performance</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/performance/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/performance/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/performance/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:03:19Z</updated>
+<entry>
+	<title>Tips for Running an Exit Node with Minimal Harassment</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/"/>
+
+	<author><name>mikeperry</name></author>
+
+
+
+
+
+
+	<category term="/tags/anonymity_advocacy" />
+
+	<category term="/tags/distributed_trust" />
+
+	<category term="/tags/education" />
+
+	<category term="/tags/performance" />
+
+
+	<updated>2011-04-05T12:03:19Z</updated>
+	<published>2010-07-01T00:08:08Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;b&gt;Updated 06/30/2010&lt;/b&gt;: Mention Reduced Exit Policy, ISP Shopping Tips, and Abuse Response Templates&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Updated 08/30/2010&lt;/b&gt;: Update exit policy with svn, git, hg, Kerberos, remote admin panels, IRC, others&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Updated 01/12/2011&lt;/b&gt;: Suggest creation of LLC for large exit nodes, provide links to ARIN forms and process.&lt;br /&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;I have noticed that a lot of new exit nodes have recently appeared on the network. This is great news, since exit nodes are typically on the scarce side. Exits usually occupy 30-33% of network by capacity, but are currently at a whopping 38.5% (156 MBytes/sec out of 404 total).&lt;/p&gt;
+
+&lt;p&gt;However, I want to make sure that these nodes stay up and don&#39;t end up being shut down due to easily preventable abuse complaints. I&#39;ve run a number of exit nodes on a few different ISPs and not only have I lived to tell about it, I&#39;ve have not had one shut down yet. Moreover, I&#39;ve only received about 4 abuse complaints in as many years of running exit nodes. This is in stark contrast to other node operators following a &lt;a href=&quot;https://blog.torproject.org/blog/five-years-exit-node-operator&quot;&gt;more reactive strategy&lt;/a&gt;. I&#39;m convinced this is largely because I observe the following pro-active guidelines. This guide is primarily US centric. Operators in other countries may have slightly different best practices (such as registering with RIPE and not ARIN). &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tips-running-exit-node-minimal-harassment&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>November 2009 Progress Report</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/advocacy" />
+
+	<category term="/tags/censorship_circumvention" />
+
+	<category term="/tags/performance" />
+
+	<category term="/tags/progress_report" />
+
+	<category term="/tags/torjava" />
+
+	<category term="/tags/translation" />
+
+
+	<updated>2011-04-05T11:44:40Z</updated>
+	<published>2009-12-15T04:33:37Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;strong&gt;New releases, new hires, new funding&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Bruce Leidl joins to work on developing Tor in Java. Bruce will write a fully functional Tor in Java in order to provide a solid foundation for other java-based projects; such as Tor on mobile platforms like Maemo and Android.&lt;/p&gt;
+
+&lt;p&gt;On November 2nd we released Vidalia 0.2.6. &lt;a href=&quot;https://blog.torproject.org/blog/vidalia-026-released&quot; title=&quot;https://blog.torproject.org/blog/vidalia-026-released&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/vidalia-026-released&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;On November 20th, we released Tor Browser Bundle 1.2.10. &lt;a href=&quot;https://blog.torproject.org/blog/tor-browser-bundle-1210-released&quot; title=&quot;https://blog.torproject.org/blog/tor-browser-bundle-1210-released&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-browser-bundle-1210-released&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;On November 19th, we released Tor 0.2.2.6-alpha. &lt;a href=&quot;https://blog.torproject.org/blog/tor-0226-alpha-released&quot; title=&quot;https://blog.torproject.org/blog/tor-0226-alpha-released&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-0226-alpha-released&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Design, develop, and implement enhancements that make&lt;br /&gt;
+Tor a better tool for users in censored countries.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Roger met with his class at KAIST working on bridge deployment strategies. A few teams developed some creative strategies. Roger is continuing to work with the leading teams to further refine their ideas before publishing. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/november-2009-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Polipo changes maintainer</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Polipo_changes_maintainer/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Polipo_changes_maintainer/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/Google_Summer_of_Code" />
+
+	<category term="/tags/maintainer" />
+
+	<category term="/tags/new_features" />
+
+	<category term="/tags/performance" />
+
+	<category term="/tags/polipo" />
+
+	<category term="/tags/volunteer" />
+
+
+	<updated>2011-04-05T11:44:16Z</updated>
+	<published>2009-12-11T21:02:36Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Congratulations to Chrisd for assuming maintainership of the Polipo codebase from Juliusz.  The full announcement is available at &lt;a href=&quot;http://sourceforge.net/mailarchive/forum.php?thread_name=87d42l7fka.fsf%40trurl.pps.jussieu.fr&amp;amp;forum_name=polipo-users&quot; rel=&quot;nofollow&quot;&gt;the mailing list archives&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Why Chris?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Chrisd was a 2009 Google Summer of Code for Tor/EFF.  His project was &lt;a href=&quot;https://blog.torproject.org/blog/polipo-portability-enhancements-summary&quot; rel=&quot;nofollow&quot;&gt;Polipo Portability Enhancements&lt;/a&gt;.  Chris has proven himself to be a very competent coder and able to design and implement features as needed.  He even wrote a SOCKS layer fix for Firefox bugs, &lt;a href=&quot;https://bugzilla.mozilla.org/show_bug.cgi?id=280661&quot; title=&quot;https://bugzilla.mozilla.org/show_bug.cgi?id=280661&quot; rel=&quot;nofollow&quot;&gt;https://bugzilla.mozilla.org/show_bug.cgi?id=280661&lt;/a&gt;.  &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;What does this mean to Tor?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;It means we have a fantastic new coder maintaining the polipo codebase.  Bugfixes, features, and more frequent releases should help improve polipo beyond where it is today.  &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Is Tor going to control Polipo?&lt;/em&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/polipo-changes-maintainer&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Polipo_changes_maintainer/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Polipo_changes_maintainer/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor Browser Bundle 1.2.8 released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_8_released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_8_released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/caching" />
+
+	<category term="/tags/faster_firefox" />
+
+	<category term="/tags/faster_tor" />
+
+	<category term="/tags/open_research" />
+
+	<category term="/tags/performance" />
+
+	<category term="/tags/polipo" />
+
+	<category term="/tags/privoxy" />
+
+	<category term="/tags/socks5" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+	<category term="/tags/vidalia_bundle" />
+
+
+	<updated>2011-04-05T11:34:07Z</updated>
+	<published>2009-08-20T03:43:12Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor Browser Bundle 1.2.8 is released.  The big changes are the inclusion of statically linked openssl dlls to resolve a few geoip lookup and functionality issues with Vidalia, and the upgrade to the &lt;a href=&quot;http://localhost//blog.torproject.org/blog/vidalia-022-released&quot; rel=&quot;nofollow&quot;&gt;new Vidalia 0.2.2&lt;/a&gt;.  &lt;/p&gt;
+
+&lt;p&gt;Available at &lt;a href=&quot;https://torproject.org/torbrowser&quot; title=&quot;https://torproject.org/torbrowser&quot; rel=&quot;nofollow&quot;&gt;https://torproject.org/torbrowser&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The full list of updates and fixes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;update Torbutton to 1.2.2&lt;/li&gt;
+&lt;li&gt;update Vidalia to 0.2.2&lt;/li&gt;
+&lt;li&gt;compile OpenSSL 0.9.8k with Visual C to make dlls&lt;/li&gt;
+&lt;li&gt;update Pidgin to 2.6.1&lt;/li&gt;
+&lt;/ul&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_8_released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_8_released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Roger&#x27;s HAR2009 talk on Tor performance</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Rogers_HAR2009_talk_on_Tor_performance/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Rogers_HAR2009_talk_on_Tor_performance/"/>
+
+	<author><name>arma</name></author>
+
+
+
+
+
+
+	<category term="/tags/performance" />
+
+	<category term="/tags/talks" />
+
+	<category term="/tags/videos" />
+
+
+	<updated>2011-04-05T11:33:42Z</updated>
+	<published>2009-08-19T20:30:38Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Jake, Mike, Karsten, Sebastian, and I attended &lt;a href=&quot;https://har2009.org/&quot; rel=&quot;nofollow&quot;&gt;Hacking at Random&lt;/a&gt; last week in The Netherlands. I did a &lt;a href=&quot;https://har2009.org/program/events/33.en.html&quot; rel=&quot;nofollow&quot;&gt;talk&lt;/a&gt; on Tor performance challenges &amp;mdash; basically walking through the key pieces of the &lt;a href=&quot;https://blog.torproject.org/blog/why-tor-is-slow&quot; rel=&quot;nofollow&quot;&gt;&quot;Why Tor is Slow&quot;&lt;/a&gt; document that we wrote in March.&lt;/p&gt;
+
+&lt;p&gt;As usual with European hacking cons, they produced a really well-done video just days after my talk. So if you want to get the highlights on what we&#39;re doing to speed up Tor and what roadblocks remain, &lt;a href=&quot;http://freehaven.net/~arma/har2009_Why_Tor_is_slow.mp4&quot; rel=&quot;nofollow&quot;&gt;take a look at the video&lt;/a&gt; and also the &lt;a href=&quot;http://freehaven.net/~arma/slides-har2009.pdf&quot; rel=&quot;nofollow&quot;&gt;slides that come with it&lt;/a&gt;.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Rogers_HAR2009_talk_on_Tor_performance/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Rogers_HAR2009_talk_on_Tor_performance/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>On the Recent Growth of the Tor Network</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/"/>
+
+	<author><name>karsten</name></author>
+
+
+
+
+
+
+	<category term="/tags/bridges" />
+
+	<category term="/tags/metrics" />
+
+	<category term="/tags/performance" />
+
+
+	<updated>2011-04-05T11:28:27Z</updated>
+	<published>2009-06-23T01:07:03Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;In the past few days the Tor network is seeing a lot of new users &lt;a href=&quot;https://blog.torproject.org/blog/measuring-tor-and-iran&quot;&gt;coming from Iran&lt;/a&gt;. At the same time we have heard from many people who want to support the Tor network by setting up more relays and &lt;a href=&quot;https://www.torproject.org/bridges&quot;&gt;bridges&lt;/a&gt;. Now we wanted to know, are these just promises, or did the network really grow? Here are the results: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/recent-growth-tor-network&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/On_the_Recent_Growth_of_the_Tor_Network/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>TorFlow Node Capacity, Integrity and Reliability Measurements at HotPETS</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/TorFlow_Node_Capacity_Integrity_and_Reliability_Measurements_at_HotPETS/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/TorFlow_Node_Capacity_Integrity_and_Reliability_Measurements_at_HotPETS/"/>
+
+	<author><name>mikeperry</name></author>
+
+
+
+
+
+
+	<category term="/tags/performance" />
+
+	<category term="/tags/research" />
+
+
+	<updated>2011-04-05T11:28:17Z</updated>
+	<published>2009-06-21T09:32:49Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;a href=&quot;https://blog.torproject.org/blog/measuring-tor-network-public-directory-information&quot; rel=&quot;nofollow&quot;&gt;Like Karsten&lt;/a&gt;, I too am presenting at &lt;a href=&quot;http://petsymposium.org/2009/hotpets.php&quot; rel=&quot;nofollow&quot;&gt;HotPETS&lt;/a&gt; in Seattle in August. My presentation will cover my work with my &lt;a href=&quot;https://svn.torproject.org/svn/torflow/trunk/&quot; rel=&quot;nofollow&quot;&gt;TorFlow suite&lt;/a&gt; - a python library and utility set to assist measuring and adjusting performance on the Tor network, and to scan the network for malfunctioning and misbehaving exits. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/torflow-node-capacity-integrity-and-reliability-measurements-hotpets&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/TorFlow_Node_Capacity_Integrity_and_Reliability_Measurements_at_HotPETS/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/TorFlow_Node_Capacity_Integrity_and_Reliability_Measurements_at_HotPETS/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Measuring the Tor Network from Public Directory Information</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Measuring_the_Tor_Network_from_Public_Directory_Information/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Measuring_the_Tor_Network_from_Public_Directory_Information/"/>
+
+	<author><name>karsten</name></author>
+
+
+
+
+
+
+	<category term="/tags/censorship_circumvention" />
+
+	<category term="/tags/performance" />
+
+	<category term="/tags/research" />
+
+
+	<updated>2011-04-05T11:27:12Z</updated>
+	<published>2009-06-16T18:25:31Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;On this year&#39;s &lt;a href=&quot;http://petsymposium.org/2009/hotpets.php&quot; rel=&quot;nofollow&quot;&gt;HotPETs workshop&lt;/a&gt; (August 5-7 in Seattle, WA, USA) I&#39;m going to present some results on &lt;a href=&quot;http://freehaven.net/~karsten/metrics/measuring-tor-public-dir-info-final.pdf&quot; rel=&quot;nofollow&quot;&gt;Measuring the Tor Network from Public Directory Information&lt;/a&gt;. The main idea is to observe trends in the Tor network without having to measure any data other than &lt;a href=&quot;https://git.torproject.org/checkout/tor/master/doc/spec/dir-spec.txt&quot; rel=&quot;nofollow&quot;&gt;public directory information&lt;/a&gt;. These data are there anyway as they are required for clients to make good path selection decisions and build circuits. The results of this paper reveal problems in the current Tor network that need to be addressed, e.g., by &lt;a href=&quot;https://git.torproject.org/checkout/metrics/master/report/dirarch/flagrequirements-2009-04-11.pdf&quot; rel=&quot;nofollow&quot;&gt;lowering requirements for assigning certain flags&lt;/a&gt;, facilitating the upgrade process, improving support for dynamic IP addresses, possibly calculating bandwidth capacity more reliably, and clarifying legal issues for running relays in view of data retention laws. The next step in understanding the problems of the Tor network requires an &lt;a href=&quot;https://blog.torproject.org/blog/performance-measurements-and-blockingresistance-analysis-tor-network&quot; rel=&quot;nofollow&quot;&gt;extension of network measurements&lt;/a&gt; to improve &lt;a href=&quot;https://blog.torproject.org/blog/why-tor-is-slow&quot; rel=&quot;nofollow&quot;&gt;performance&lt;/a&gt; and blocking-resistance of Tor.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Measuring_the_Tor_Network_from_Public_Directory_Information/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Measuring_the_Tor_Network_from_Public_Directory_Information/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Performance measurements and blocking-resistance analysis in the Tor network</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/"/>
+
+	<author><name>karsten</name></author>
+
+
+
+
+
+
+	<category term="/tags/censorship_circumvention" />
+
+	<category term="/tags/performance" />
+
+	<category term="/tags/research" />
+
+
+	<updated>2011-04-05T11:25:02Z</updated>
+	<published>2009-05-21T20:19:22Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;The Tor network has grown to more than one thousand relays and millions of casual users over the past few years. We are proud of our network&#39;s popularity, but with growth has come increasing &lt;a href=&quot;https://blog.torproject.org/blog/why-tor-is-slow&quot; rel=&quot;nofollow&quot;&gt;performance problems&lt;/a&gt; and attempts by some countries to block access to the Tor network. In order to address these problems, we need to learn more about the Tor network. In this post, I describe the current state of network measurements in Tor and some proposed additions to help us understand the network better. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/performance-measurements-and-blockingresistance-analysis-tor-network&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Why Tor is slow and what we&#x27;re going to do about it</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/"/>
+
+	<author><name>arma</name></author>
+
+
+
+
+
+
+	<category term="/tags/development_roadmap" />
+
+	<category term="/tags/funding" />
+
+	<category term="/tags/performance" />
+
+
+	<updated>2011-04-05T11:20:59Z</updated>
+	<published>2009-03-13T10:33:01Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;ve just finished writing up an explanation of all the various reasons why the Tor network is slow, and what we can do about each. Part of it comes down to design flaws; some of it is that a handful of users are overloading the network; and there&#39;s also simply not enough capacity to go around.&lt;/p&gt;
+
+&lt;p&gt;Specifically, we&#39;ve identified six categories of problems to address, and laid out some steps to resolve each of them.&lt;/p&gt;
+
+&lt;p&gt;You can read the pdf here:&lt;br /&gt;
+&lt;a href=&quot;https://svn.torproject.org/svn/projects/roadmaps/2009-03-11-performance.pdf&quot; rel=&quot;nofollow&quot;&gt;https://svn.torproject.org/svn/projects/roadmaps/2009-03-11-performance.pdf&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Andrew has also put together a real live &lt;a href=&quot;https://www.torproject.org/press/2009-03-12-performance-roadmap-press-release&quot; rel=&quot;nofollow&quot;&gt;press release&lt;/a&gt; to go with it.&lt;/p&gt;
+
+&lt;p&gt;Now all that remains is to do everything. So if you want to help, or especially if you know any organizations that can help with funding, please help us make this happen! &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/why-tor-is-slow&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

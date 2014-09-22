@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Vidalia Logo Design Contest</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_Logo_Design_Contest/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_Logo_Design_Contest/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>Anonymous</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_Logo_Design_Contest/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:10:43Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_Logo_Design_Contest/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_Logo_Design_Contest/comment_1/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:41Z</updated>
+	<published>2008-08-16T11:10:41Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;a href=&quot;http://www.no-spec.com/&quot; rel=&quot;nofollow&quot;&gt;And spec work is a bad thing&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I hope whoever is behind running the contest considers reading that site and following the advice put forth.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_Logo_Design_Contest/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_Logo_Design_Contest/comment_2/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:42Z</updated>
+	<published>2008-08-17T11:10:42Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Off-topic suggestion:&lt;/p&gt;
+
+&lt;p&gt;Adding some of this somewhere in Tor&#39;s documentation or Wik could be helpful.&lt;/p&gt;
+
+&lt;p&gt;    *  Use Firefox Portable for Tor only sessions.&lt;br /&gt;
+    * Go through the preferences and disable anything that logs or leaks information. This includes, but is not limited to:&lt;br /&gt;
+          o In &quot;Content,&quot; disable java/javascript.&lt;br /&gt;
+          o In &quot;Privacy,&quot; remember nothing. Remember no history. Don&#39;t accept cookies, no exceptions. Always clear everything before closing.&lt;br /&gt;
+          o In &quot;Security,&quot; warn before installing addons. Remove all exceptions. Remember no passwords.&lt;br /&gt;
+          o In &quot;Advanced&quot; - Network, set the cache size to 0.&lt;br /&gt;
+          o In &quot;Advanced&quot; - Update, disable auto updating/checking for updates.&lt;br /&gt;
+    * Install the Torbutton extension - the one that overhauls browser security, not just change proxy settings. The latest version at this time is 1.2.0.&lt;br /&gt;
+          o Enable every check mark.&lt;br /&gt;
+          o Clear cookies on any browser shutdown (but cookies should be disabled!).&lt;br /&gt;
+          o Clear cookies on Tor toggle (&quot;&quot;).&lt;br /&gt;
+          o Whenever there&#39;s an option to choose between Tor and non-Tor, choose Tor.&lt;br /&gt;
+          o Block tor disk cache, but you&#39;ll want to allow memory cache to prevent redownloading of images.&lt;br /&gt;
+          o Make sure the proxy settings point to privoxy.&lt;br /&gt;
+    * Set network.http.sendRefererHeader to 0 in about:config. Also set false for network.http.sendSecureXSiteReferrer, or use Refcontrol.&lt;br /&gt;
+    * In the proxy settings make sure the proxy exceptions list is empty. It can be used as a way for sites to access localhost.&lt;br /&gt;
+    * One annoying thing about Firefox is the way it handles external applications. You want to disable them all because sites may call telnet for example, which can leak your IP address among other things. Look in about:config for network.protocol-handler.external. You&#39;ll want to set the default and all the subsettings to false. Then look for network.protocol-handler.warn-external. You want to set the default and all the subsettings to true. Is there an extension that does this?&lt;br /&gt;
+    * Firefox checks for extensions without the user&#39;s consent; a temporary solution is to set extensions.blocklist.enabled to false.&lt;br /&gt;
+    * There are probably other information leaks that could come about if you accidentally click a button. Search through about:config for URLs and blank them out. The types of links I&#39;ve seen are http, https, and rdp. Don&#39;t remove anything with chrome:// or resource:// though.&lt;br /&gt;
+    * Make sure the plugin directory is empty. Do this again every time you update Flash or Shockwave.&lt;br /&gt;
+    * Set the home page to about:blank &lt;/p&gt;
+
+&lt;p&gt;Because of the huge amount of lag associated with Tor, pipelining, i.e. sending http requests in batches, makes a lot of sense. Go to about:config and make the following changes: network.http.keep-alive.timeout:600 network.http.max-persistent-connections-per-proxy:16 network.http.pipelining:true network.http.pipelining.maxrequests:8 network.http.proxy.keep-alive:true network.http.proxy.pipelining:true&lt;/p&gt;
+
+&lt;p&gt;You should also disable prefetching. This is when the browser tries to predict what the user will click next. It is a waste of Tor bandwidth, and should be disabled by setting network.prefetch-next to false.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_Logo_Design_Contest/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_Logo_Design_Contest/comment_3/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:10:43Z</updated>
+	<published>2009-12-18T12:10:43Z</published>
+
+	<content type="html" xml:lang="en">
+	I still find Drupal templates sites are lagging behind the number of Joomla template sites. The more templates available free or otherwise will help the popularity of Drupal.
+
+	</content>
+
+
+
+</entry>
+
+</feed>

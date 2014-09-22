@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged qt</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/qt/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Vidalia bundle, OSX and Qt bugs</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_bundle_OSX_and_Qt_bugs/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_bundle_OSX_and_Qt_bugs/</link>
+
+
+	<category>/tags/bugs</category>
+
+	<category>/tags/crashes</category>
+
+	<category>/tags/osx</category>
+
+	<category>/tags/qt</category>
+
+	<category>/tags/vidalia</category>
+
+	<category>/tags/vidalia_bundle</category>
+
+
+	<pubDate>Sun, 20 Jan 2008 12:50:53 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:05:46Z</dcterms:modified>
+
+	<description>&lt;p&gt;It appears Qt-4.3.3 has &lt;a href=&quot;http://trolltech.com/developer/task-tracker/index_html?method=entry&amp;amp;id=155700&quot; rel=&quot;nofollow&quot;&gt;a bug&lt;/a&gt; that is causing Vidalia to crash when the list of Tor nodes refreshes and is sorted.  The current 0.1.2.19-stable and 0.2.0.17-alpha bundles for OSX are built against Qt-4.3.3.  &lt;/p&gt;
+
+&lt;p&gt;I&#39;ve downgraded the build hosts to Qt-4.3.2.  The rebuilt OSX vidalia-bundle packages for both 0.1.2.19-stable and 0.2.0.17-alpha are available as:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.torproject.org/dist/vidalia-bundles/vidalia-bundle-0.1.2.19-0.0.16a-tiger.dmg&quot; rel=&quot;nofollow&quot;&gt;Bundle with 0.1.2.19-stable and Vidalia 16a&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.torproject.org/dist/vidalia-bundles/vidalia-bundle-0.2.0.17-alpha-0.0.16a-tiger.dmg&quot; rel=&quot;nofollow&quot;&gt;Bundle with 0.2.0.17-alpha and Vidalia 16a&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These bundles contain Vidalia compiled with Qt-4.3.2.  This makes Vidalia happy again.&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Vidalia_bundle_OSX_and_Qt_bugs/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

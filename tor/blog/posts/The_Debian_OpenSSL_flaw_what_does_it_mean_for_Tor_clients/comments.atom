@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>The Debian OpenSSL flaw: what does it mean for Tor clients?</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/The_Debian_OpenSSL_flaw_what_does_it_mean_for_Tor_clients/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/The_Debian_OpenSSL_flaw_what_does_it_mean_for_Tor_clients/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>arma</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/The_Debian_OpenSSL_flaw_what_does_it_mean_for_Tor_clients/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:07:09Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/The_Debian_OpenSSL_flaw_what_does_it_mean_for_Tor_clients/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/The_Debian_OpenSSL_flaw_what_does_it_mean_for_Tor_clients/comment_1/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:07:04Z</updated>
+	<published>2008-05-16T11:07:04Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&quot;What can three v3 authorities do? If they could forge a new v3&lt;br /&gt;
+networkstatus consensus, they could trick users into using their own&lt;br /&gt;
+fabricated Tor network, which would totally ruin their anonymity. Worse,&lt;br /&gt;
+they could do this in a way that would be very hard to detect, by just&lt;br /&gt;
+giving out their forged consensus to a few target users and giving out&lt;br /&gt;
+the &quot;real&quot; consensus the rest of the time. But fortunately, Tor clients&lt;br /&gt;
+require a majority of signatures before they&#39;ll believe the consensus --&lt;br /&gt;
+and that&#39;s four of six. (Whew, that was close!)&quot;&lt;/p&gt;
+
+&lt;p&gt;So if te attacker had control of one of the other v3 authorities ALSO this attack would definitely work.. not really *Whew* then is it, more of a - &quot;we&#39;ve been scuppered&quot;.&lt;/p&gt;
+
+&lt;p&gt;This attack was done and was successful.&lt;/p&gt;
+
+&lt;p&gt;Let **nobody** tell you different.&lt;/p&gt;
+
+&lt;p&gt;Also the true IP address of **all* &quot;hidden services&quot; is being identified (by USA .edu ops), after less than 24hrs up time for a brand new &quot;hidden service&quot; (non-debian), when only 1 access (single page request) of the hidden service from the tor network in that time.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/The_Debian_OpenSSL_flaw_what_does_it_mean_for_Tor_clients/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/The_Debian_OpenSSL_flaw_what_does_it_mean_for_Tor_clients/comment_2/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:07:05Z</updated>
+	<published>2008-05-19T11:07:05Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&quot;So if te attacker had control of one of the other v3 authorities ALSO this attack would definitely work.. not really *Whew* then is it, more of a - &quot;we&#39;ve been scuppered&quot;.&quot;&lt;/p&gt;
+
+&lt;p&gt;Could you expand upon how this is possible with just one?  One of seven does not a consensus make.&lt;/p&gt;
+
+&lt;p&gt;&quot;This attack was done and was successful.&quot;&lt;/p&gt;
+
+&lt;p&gt;Proof of this?&lt;/p&gt;
+
+&lt;p&gt;&quot;Also the true IP address of **all* &quot;hidden services&quot; is being identified (by USA .edu ops), after less than 24hrs up time for a brand new &quot;hidden service&quot; (non-debian), when only 1 access (single page request) of the hidden service from the tor network in that time&quot;&lt;/p&gt;
+
+&lt;p&gt;Feel free to provide some proof of this actually working.  I&#39;m happy to setup a hidden service and have it identified by IP address as a test.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/The_Debian_OpenSSL_flaw_what_does_it_mean_for_Tor_clients/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/The_Debian_OpenSSL_flaw_what_does_it_mean_for_Tor_clients/comment_3/"/>
+
+	<author><name>Nick Mathewson (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:07:06Z</updated>
+	<published>2008-05-20T11:07:06Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&amp;gt; One of seven does not a consensus make.&lt;/p&gt;
+
+&lt;p&gt;They&#39;re probably saying that if an attacker had broken into one of the unaffected machines and stolen its keys, and if that attacker had also known about the Debian OpenSSL vulnerability, they&#39;d be able forge a consensus.  That much is possible.&lt;/p&gt;
+
+&lt;p&gt;&amp;gt;&amp;gt; This attack was done and was successful.&lt;br /&gt;
+&amp;gt; Proof of this?&lt;/p&gt;
+
+&lt;p&gt;Agreed.  Frankly, it doesn&#39;t seem very likely that somebody would report an actual authority compromise by saying &quot;An authority has been compromised but I won&#39;t tell you when, how, how I know about it, or how you can confirm that I&#39;m telling you the truth.&quot;  If somebody knew about a compromise and they wanted to help Tor, they would report it so it could be fixed.  If they knew about a compromise and wanted to attack Tor users, they would keep it secret so they could exploit it.  This looks like random FUD to me too.&lt;/p&gt;
+
+&lt;p&gt;As for this hidden-service-identifying attack, could you maybe provide some kind of a link to what you&#39;re talking about?  When we speak anonymously, it&#39;s very important to provide evidence for contentious claims, since we can&#39;t very well expect people to accept them based on our reputation.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/The_Debian_OpenSSL_flaw_what_does_it_mean_for_Tor_clients/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/The_Debian_OpenSSL_flaw_what_does_it_mean_for_Tor_clients/comment_4/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:07:07Z</updated>
+	<published>2008-05-20T11:07:07Z</published>
+
+	<content type="html" xml:lang="en">
+	Even better would be to have published research on the topic.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/The_Debian_OpenSSL_flaw_what_does_it_mean_for_Tor_clients/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/The_Debian_OpenSSL_flaw_what_does_it_mean_for_Tor_clients/comment_5/"/>
+
+	<author><name>unknown (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:07:08Z</updated>
+	<published>2008-05-16T11:07:08Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I send this question in the or-talk list before read here with care.&lt;/p&gt;
+
+&lt;p&gt;Could you answer in or-talk?&lt;/p&gt;
+
+&lt;p&gt;-----BEGIN PGP SIGNED MESSAGE-----&lt;br /&gt;
+Hash: SHA1&lt;/p&gt;
+
+&lt;p&gt;// Backward decryption of Tor traffic after Debian OpenSSL bug disclosure&lt;/p&gt;
+
+&lt;p&gt;Let some passive adversary haves a records of traffic between users Debian&lt;br /&gt;
+GNU/Linux tor-client and servers of Tor-network (a lot of Debian&#39;s too).&lt;br /&gt;
+The records dated 2006-may 2008.&lt;/p&gt;
+
+&lt;p&gt;Now Debian OpenSSL PRNG bug disclosed. All ~250000 &quot;pseudorandom&quot; values known.&lt;/p&gt;
+
+&lt;p&gt;Is it possible to adversary use this data to backward partially decryption of&lt;br /&gt;
+recorded and stored users traffic?&lt;/p&gt;
+
+&lt;p&gt;- From predicted states of broken PRNG he can compute Diffie-Hellman params,&lt;br /&gt;
+reconstructs ephemerial keys and extract session AES keys between nodes in circuit&lt;br /&gt;
+if two of circuit has broken PRNG&#39;s.&lt;/p&gt;
+
+&lt;p&gt;Is it real? Or openSSL PRNG used in tor for generating auth. keys only and not&lt;br /&gt;
+for session keys material in the case of tor?&lt;br /&gt;
+-----BEGIN PGP SIGNATURE-----&lt;/p&gt;
+
+&lt;p&gt;iD8DBQFILcYLRkm9ZEvRLEARApaoAKCHz8Pk4H8jLI4xgzbCnK1EgRzH1gCffINB&lt;br /&gt;
+tto9W39Qr3hb4cq978zBC0s=&lt;br /&gt;
+=vUFM&lt;br /&gt;
+-----END PGP SIGNATURE-----&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/The_Debian_OpenSSL_flaw_what_does_it_mean_for_Tor_clients/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/The_Debian_OpenSSL_flaw_what_does_it_mean_for_Tor_clients/comment_6/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:07:09Z</updated>
+	<published>2009-03-20T11:07:09Z</published>
+
+	<content type="html" xml:lang="en">
+	Maybe the directory authorities should switch to OpenBSD or FreeBSD. They both do code audits, which should help prevent this sort of thing from happening. OpenBSD&#39;s code audits are more thorough than FreeBSD&#39;s code audits.
+
+	</content>
+
+
+
+</entry>
+
+</feed>

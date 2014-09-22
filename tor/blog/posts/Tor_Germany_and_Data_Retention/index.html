@@ -1,0 +1,823 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tor, Germany, and Data Retention</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_Germany_and_Data_Retention&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Tor, Germany, and Data Retention</a>
+
+</span>
+
+
+<div id="content">
+<p>With the "enforcement" phase of Germany's data retention law coming<br />
+into effect on January 1 2009, it's time to start considering design<br />
+modifications for Tor to make us more resistant. There are many different<br />
+pieces to consider, including</p>
+
+<ul>
+<li>How should we change path selection so Tor clients are less at risk<br />
+from German ISPs that decide to log?</p>
+<li>What exactly will German ISPs log, and who is supposed to have access<br />
+to it?</p>
+<li>What suggestions should we give to German Tor relay operators, and<br />
+German privacy advocates in general, about how they should fight this<br />
+law without putting themselves too much at risk?
+</ul>
+
+<p>I propose some technical changes to Tor in this or-dev post:<br />
+<a href="http://archives.seul.org/or/dev/Oct-2008/msg00001.html" title="http://archives.seul.org/or/dev/Oct-2008/msg00001.html" rel="nofollow">http://archives.seul.org/or/dev/Oct-2008/msg00001.html</a></p>
+
+<p>Stay tuned for the policy suggestions -- perhaps we'll cover those at 25C3!</p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/alpha/" rel="tag">alpha</a>
+
+<a href="../../tags/bug_fixes/" rel="tag">bug fixes</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-62dd6e2a33d087ea2ba67f6b839cccaf">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>I'm certain that you have not missed that this data retention is not only a problem in Germany, but in all of the European Union, already or soon-to-be.</p>
+
+<p>We in Denmark have had data retention laws in effect since September 15th, 2007 (<a href="http://en.wikipedia.org/wiki/Telecommunications_data_retention#Data_retention_in_Denmark" title="http://en.wikipedia.org/wiki/Telecommunications_data_retention#Data_retention_in_Denmark" rel="nofollow">http://en.wikipedia.org/wiki/Telecommunications_data_retention#Data_rete...</a>) . And it is very far-reaching. Luckily, the privacy and anonymity-aspects of this have recently been discussed openly, but I am sure there are many people who still have to fully comprehend the consequences of the direction we are heading.</p>
+
+<p>I am aware that Denmark has very few Tor operators, compared to Germany, but none the less, it is a problem for the network as well, I suspect. No?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FMarkus%20Petersen%20%28not%20verified%29&amp;do=goto">Markus Petersen (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 17 Oct 2008 06:12:55 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4e4e763db604c8775b7459842c9d9449">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+These are important questions since often when I log on thru Tor I find myself on a German server.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FWisedUp%20%28not%20verified%29&amp;do=goto">WisedUp (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 17 Oct 2008 06:12:56 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ab75c25100e8e618e944c7f17cf7520b">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+Not that I know what I'm talking about but; would it be reasonable to have TOR send out dummy connections with dummy data? That may create speed issues however it can be made as an option people can enable or disable.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 18 Oct 2008 06:12:57 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-86687c6a8a424ad28f3640abd1523c33">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+is  this data retetention programme will affect  the clients outside europe lie asia &amp; middle east countries.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 19 Oct 2008 06:12:58 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bab7dec942ef2fc516aad2bb6887de61">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>That work for a long time in Russia (since 1995), and it's called SORM <img src="../../smileys/sad.png" alt=":(" /><br />
+And most peoples just don't care.<br />
+<a href="http://en.wikipedia.org/wiki/SORM" title="http://en.wikipedia.org/wiki/SORM" rel="nofollow">http://en.wikipedia.org/wiki/SORM</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 23 Oct 2008 06:12:59 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-69883dbc2faaeee79a8d8341febcd770">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+How do I know if exit nodes are faking SSL certificates, espescially on IRC networks?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 25 Oct 2008 06:13:00 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ab7df01d6e522b674815575e4a1f8d53">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+You could ask the irc network to confirm the ssl cert fingerprint.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 29 Oct 2008 06:13:01 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-eb744b73622f1a6c5d9bcc7175482cac">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+China is watching all the traffic all the time, that really sucks!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 26 Oct 2008 06:13:02 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-cf50a80bed8b5010b467c5642b6db768">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+<p>SORM(correctly speaking for Internet it will be SORM-2,SORM-1 is for phones) in Russia. Well, it's (basically) required to get ISP's license which is necessary for their operations, it's not 'total monitoring' system(i.e. it doesn't record ALL data for future use, it allow to monitor specific  in real-time)</p>
+
+<p>and hardware involved will cost too much for almost any tor node to install. So this leaves position of Tor in Russia rather..interesting.(Especially if exit node funcionality is enabled).</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FVikarti%20Anatra%20%28not%20verified%29&amp;do=goto">Vikarti Anatra (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 30 Oct 2008 06:13:03 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-85fc12d2fcf0156fcfc3e9c838e2d752">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+Sweden will soon start to log all traffic that goes in and out of the country.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 05 Nov 2008 06:13:04 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0ce04f6b7aaeaaa83ad73a885b80b6ed">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+Need tor browser bundle updates . previous tor browser bundle 14 is saying no authority certificate. please update it
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FPETER%20%28not%20verified%29&amp;do=goto">PETER (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 07 Nov 2008 06:13:05 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-86e9386636f080f317424769407521e5">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+The problem was one of the directory authorities expired.  It's fixed now.  the browser bundle works fine.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 07 Nov 2008 06:13:06 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-85191de041546844d4d4cc2b343546b5">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+thanx anon !
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FPETER%20%28not%20verified%29&amp;do=goto">PETER (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 08 Nov 2008 06:13:07 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5ccdd8a97e6ab36697573d40b8ce0b67">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+Firefox is too slow when tor button is activated. Any ideas for improvement?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 11 Nov 2008 06:13:08 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-682e3a7892fb2429062b6b528e37c3db">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+<a href="https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#WhySlow" title="https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#WhySlow" rel="nofollow">https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#WhySlow</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 18 Nov 2008 06:13:09 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5d5cd503e258c892477d2021a9bf8ad4">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+Firefox is too slow when tor button is activated. Any ideas for improvement? Thanks in advance.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 12 Nov 2008 06:13:10 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e08be246bc8bdeb7029e95f8580cc9a4">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+<p><a href="https://www.jondos.de/en/uieforum?c=showthread&amp;ThreadID=2265" title="https://www.jondos.de/en/uieforum?c=showthread&amp;ThreadID=2265" rel="nofollow">https://www.jondos.de/en/uieforum?c=showthread&amp;ThreadID=2265</a></p>
+
+<blockquote><p>"We are planning common legal actions with the <a href="http://www.privacyfoundation.de/" rel="nofollow">German Privacy Foundation</a> who run both Tor and JonDonym servers.</p>
+<p>...</p>
+<p>"The EU data retention law is not a problem. Only the german law, which goes far beyound. We already have a <a href="https://www.jondos.de/de/node/1392" rel="nofollow">big german statement here</a>. In short: we are already sueing against the law at the german Constitutional Court, we are talking to the german "Bundesnetzagentur" which is the executive for this law, and we will do some more legal actions for before the end of this year."  - JonDos team </p></blockquote>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 16 Nov 2008 06:13:11 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-799c9597f8e40ed3844be8e3926a59bf">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+what is german privacy foundation and why do i keep getting routed to the site when i try to access an onion site
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 30 Apr 2010 06:13:12 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_Germany_and_Data_Retention&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:12:55 AM CDT</span>
+<!-- Created <span class="date">Thu 16 Oct 2008 10:09:57 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

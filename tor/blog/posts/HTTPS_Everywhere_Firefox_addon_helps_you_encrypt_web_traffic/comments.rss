@@ -1,0 +1,685 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>HTTPS Everywhere Firefox addon helps you encrypt web traffic</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Anonymous: Comment 1</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_1/</link>
+
+	<pubDate>Thu, 17 Jun 2010 07:01:20 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:20Z</dcterms:modified>
+
+	<description>&lt;p&gt;HTTPS everywhere is a great start.&lt;br /&gt;
+I&#39;m using it in my normal browser and the tor browser.&lt;/p&gt;
+
+&lt;p&gt;The biggest problem I have with it is having to edit files and restart the browser to modify the list.&lt;br /&gt;
+An interface to easy add or remove sites and have it apply instantly without a browser restart would be very useful.&lt;br /&gt;
+Would that be a possibility in a future release?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 2</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_2/</link>
+
+	<pubDate>Fri, 18 Jun 2010 07:01:21 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:21Z</dcterms:modified>
+
+	<description>This sounds useful.  I&#39;ve been using NoScript here to rewrite a whole host of domains to https for a good while now, those that support it that is.  It&#39;d be real handy if the HTTPS Everywhere list of supported sites could grow automatically during add-on updates though, as I find a lot of the time it&#39;s difficult to know exactly which sites support SSL without either first reading about it, or experimentation here and there to see how a particular site reacts when trying it (aside from the fact that regular expressions hurt my brain).
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 3</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_3/</link>
+
+	<pubDate>Fri, 18 Jun 2010 07:01:22 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:22Z</dcterms:modified>
+
+	<description>TOR can no longer connect to filesurf.ru unless you get rid of all the entryNodes and exitNodes.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 4</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_4/</link>
+
+	<pubDate>Sat, 19 Jun 2010 07:01:23 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:23Z</dcterms:modified>
+
+	<description>&lt;p&gt;I&#39;m having problems with this.  Search result hyperlinks from a site like Google that are covered by this plugin are not clickable in the browser.  I have to middle-click to open them in a new tab and then hit enter in the address bar to retrieve the page (which the plugin will then happily rewrite to https).&lt;/p&gt;
+
+&lt;p&gt;The plugin itself seems like something that should probably have a proper online facility for user submissions to contribute (email is a bit basic), and could do with a much easier way to add and edit custom profiles.  Navigating to the profile directory is an arse, as is creating XML files, along with figuring regular expressions.  A GUI to simplify things could go a long way to help here.&lt;/p&gt;
+
+&lt;p&gt;The various profiles viewed through plugin &#39;options&#39; could do with ordering and arranging better.  If the profiles there were ever to expand much it&#39;d be difficult to find anything.  The &quot;you can learn how to write your own rulesets &quot; link doesn&#39;t work for me either.&lt;/p&gt;
+
+&lt;p&gt;/2p&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 5</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_5/</link>
+
+	<pubDate>Mon, 21 Jun 2010 07:01:24 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:24Z</dcterms:modified>
+
+	<description>&lt;p&gt;&quot;&lt;i&gt;I&#39;m having problems with this. Search result hyperlinks from a site like Google that are covered by this plugin are not clickable in the browser. I have to middle-click to open them in a new tab and then hit enter in the address bar to retrieve the page (which the plugin will then happily rewrite to https).&lt;/i&gt;&quot;&lt;/p&gt;
+
+&lt;p&gt;The issue is the combination of HTTPS-Everywhere and the RequestPolicy plugin.  RequestPolicy interprets a Google search result click as Google itself wanting access to the destination site, which shouldn&#39;t be the case as the hyperlink is a straight-through plain link to destination that shouldn&#39;t involve the Google domain requiring access to it.  So I guess either RequestPolicy or HTTPS-Everywhere are at fault here as they&#39;re obviously not playing well together.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 6</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_6/</link>
+
+	<pubDate>Wed, 14 Jul 2010 07:01:25 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:25Z</dcterms:modified>
+
+	<description>&lt;p&gt;It&#39;s good to see that, after a couple of new release versions, nobody bothered to fix this issue between these two plugins.&lt;/p&gt;
+
+&lt;p&gt;HTTPS-Everywhere = Uninstalled.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 7</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_7/</link>
+
+	<pubDate>Sat, 19 Jun 2010 07:01:26 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:26Z</dcterms:modified>
+
+	<description>Are there any plans in the works to produce a version of this extension for Chromium-based browsers (e.g., Google Chrome and SRWare Iron)?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 8</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_8/</link>
+
+	<pubDate>Sun, 20 Jun 2010 07:01:27 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:27Z</dcterms:modified>
+
+	<description>&lt;p&gt;For TOR to be successful I think it needs a change of direction. It needs to be able to operate the way squid works, like a proxy server - platform independant.&lt;/p&gt;
+
+&lt;p&gt;The Australian Government is proposing to mandate that all Australian ISPs are required to keep a complete log of their client&#39;s browsing history whether the clients like it or not.&lt;/p&gt;
+
+&lt;p&gt;The logs would be less than useful if they contained only TOR entry points..:-)&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 9</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_9/</link>
+
+	<pubDate>Mon, 21 Jun 2010 07:01:28 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:28Z</dcterms:modified>
+
+	<description>Tor already is a platform independent proxy server.  &lt;a href=&quot;https://torproject.org/overview&quot; title=&quot;https://torproject.org/overview&quot; rel=&quot;nofollow&quot;&gt;https://torproject.org/overview&lt;/a&gt;
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 10</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_10/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_10/</link>
+
+	<pubDate>Mon, 21 Jun 2010 07:01:29 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:29Z</dcterms:modified>
+
+	<description>HTTPS Everywhere is a god send, I have been using other addons but this is exactly what I have wanted from you guys. Amazing! 
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 11</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_11/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_11/</link>
+
+	<pubDate>Mon, 21 Jun 2010 07:01:30 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:30Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hi!!!!!!!!!!!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;I&#39;m very smart!!!!!! Even if you think the opposite!!!! I found a vulnerability nobody of you noticed before!!! hahah!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;Yeah!!!!!!!! I found a way to track what users are doing!!! It works against all tor bundles (for windows, linux and even against my factorbee!!! with or without polipo and torbutton!!!!) I wrote a demo too!!!!!!!!!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;http://honeybeenet.altervista.org/fun/tracker/ (open it with tor!!!)&lt;/p&gt;
+
+&lt;p&gt;Great catch, this one!!!!&lt;/p&gt;
+
+&lt;p&gt;bye!!!!!!!!!!!!!&lt;br /&gt;
+~bee!!!!!!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 12</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_12/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_12/</link>
+
+	<pubDate>Mon, 21 Jun 2010 07:01:31 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:31Z</dcterms:modified>
+
+	<description>&lt;p&gt;Yup, you did find it.  Thanks for the bug report as well, &lt;a href=&quot;https://trac.torproject.org/projects/tor/ticket/1579&quot; title=&quot;https://trac.torproject.org/projects/tor/ticket/1579&quot; rel=&quot;nofollow&quot;&gt;https://trac.torproject.org/projects/tor/ticket/1579&lt;/a&gt;.  It would be more helpful in the future if you mentioned the details and suggested fixes.&lt;/p&gt;
+
+&lt;p&gt;As for the exploit, it is 3 years old, &lt;a href=&quot;http://kuza55.blogspot.com/2007/05/tracking-users-with-cache-data.html&quot; title=&quot;http://kuza55.blogspot.com/2007/05/tracking-users-with-cache-data.html&quot; rel=&quot;nofollow&quot;&gt;http://kuza55.blogspot.com/2007/05/tracking-users-with-cache-data.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Apparently we all missed it.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 13</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_13/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_13/</link>
+
+	<pubDate>Mon, 21 Jun 2010 07:01:32 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:32Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hi phobos!!!!!!!!!! You&#39;re very welcome!!!!!&lt;/p&gt;
+
+&lt;p&gt;So, this is the description and how it&#39;s supposed to work: you need to have a website and you&#39;ve to insert the same 1x1 pixel image in all the pages of your website!! it hasn&#39;t to be a real image, but actually a php page generating one pixel image!! so, when a user is browsing your website, it&#39;s possible to count him only once!!!!! You may use one new etag also in every page with articles of your website to count the readings per article!!! Yea, no cookies and no javascrips are needed!!! but the counting and tracking will be accurate!! Well, in this way, Tor users are anonymous (fake IP) but they aren&#39;t hiding themselves in the crowd!!!! The hidden image can track all the IPs you&#39;re using, so it can follow you easily!!! In this way, it&#39;s possible to understand that if a tor exit node has loaded one page and a second later the same IP loads the hidden tracking image, it could be you!!!! this repeats for all pages with all the IPs you&#39;re associated with, as then you&#39;re sending the same ETag number every time to the tracking pixel!!! Well, this can be extended, for example one poisoned exit node can add one &quot;ETag&quot; header for you!! it can be done for the background picture of a particular website!!!! Yea, a bad exit node can do it against you!! So, even if you change tor nodes, you won&#39;t change the Etag ID!!!!!!!!! This thing could be extended further!!! But i don&#39;t want to give too many suggestions to Google!!!!!!!!!!&lt;br /&gt;
+Just try to push one tracking pixel in all the pages you watch, and the tracking pixel itself will work in the same way as it would if you weren&#39;t using Tor, because the tracking COOKIE is storable into the Etag!!!&lt;br /&gt;
+Yet i don&#39;t know if this can be used or being helpful for some kinds of attacks!!!! like the timing attacks!!!! maybe!! who knows!!&lt;br /&gt;
+I think that this flaw can be solved patching Firefox, Polipo or Torbutton!!! But it would be better to have TorButton to do the job, because you need this protection even if you&#39;re using Firefox without Polipo!!!! As the Official Tor Bundle isn&#39;t using a custom build of Firefox and thus it cannot be patched, the only chance left is TorButton!!!!!! Hopefully, Mike will be able to do it right!!! but i don&#39;t want to help him in any way, he doesn&#39;t appreciate my helps, and i don&#39;t like him either!!!!!&lt;/p&gt;
+
+&lt;p&gt;I don&#39;t know what the other one here is saying about egos!!! I&#39;m just happy!!!! i found the flaw!!!!!!!!!!!!!!! yeah!!! it would be strange if i weren&#39;t happy!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;bye!!!!!!!!&lt;br /&gt;
+~bee!!!!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>mikeperry: Comment 14</title>
+	<dcterms:creator>mikeperry</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_14/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_14/</link>
+
+	<pubDate>Mon, 21 Jun 2010 07:01:33 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:33Z</dcterms:modified>
+
+	<description>&lt;p&gt;Bee:&lt;/p&gt;
+
+&lt;p&gt;If you had bothered to properly explain yourself from the beginning, someone probably would have told you that Torbutton has addressed this issue for the past 3 years. However, despite our numerous requests for you to properly explain your ideas (even with exclamation points, if you must), you refuse to do so.&lt;/p&gt;
+
+&lt;p&gt;That people on #tor-dev on IRC had to reverse engineer your &quot;exploit&quot; is case-in-point. &lt;/p&gt;
+
+&lt;p&gt;At best this issue is a dup of &lt;a href=&quot;https://trac.torproject.org/projects/tor/ticket/523&quot;&gt;Bug 523&lt;/a&gt; on our tracker, where I state in the comments that it might be nice to provide a timer for clearing browser data, instead of requiring the user to toggle Torbutton.&lt;/p&gt;
+
+&lt;p&gt;Please see &lt;a href=&quot;https://trac.torproject.org/projects/tor/ticket/1579#comment:6&quot;&gt;my comment on your bug&lt;/a&gt; for more information.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 15</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_15/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_15/</link>
+
+	<pubDate>Mon, 21 Jun 2010 07:01:34 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:34Z</dcterms:modified>
+
+	<description>....amazed your ego can fit in these comments....
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 16</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_16/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_16/</link>
+
+	<pubDate>Wed, 23 Jun 2010 07:01:35 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:35Z</dcterms:modified>
+
+	<description>Hello! Can i use two browsers with tor so each will show different IP&#39;s?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 17</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_17/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_17/</link>
+
+	<pubDate>Fri, 25 Jun 2010 07:01:36 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:36Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hi!!!!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;Yeah!!!!!!!!!! yeah is yes you can!!! and you can do it easily with factorbee!!!!!&lt;br /&gt;
+http://honeybeenet.altervista.org/factorbee/?id=111040&lt;/p&gt;
+
+&lt;p&gt;bye!!!!!!!!&lt;br /&gt;
+~bee!!!!!!!!!!!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 18</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_18/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_18/</link>
+
+	<pubDate>Thu, 24 Jun 2010 07:01:37 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:37Z</dcterms:modified>
+
+	<description>Intriguing. Two questions. Is there any reason why there should not exist publicly available lists of vetted rule-sets, as there are  publicly available address lists for other FF privacy extensions (e.g. AdBlock:EasyList)? Is there any reason that such a list of sites/pages for which the http/https identity has been verified could not be the basis for a conditional evaluation in the extension logic about whether the http (pre)fetch needs to occur (understanding that there would probably need to be a &quot;freshness date&quot; and possibly other controls)? And if the previous poster intended to indicate a preference for some kind of obfuscation that the http (pre)fetch originates from the same source as the https page load, I second the motion. Thanks to the Tor team for all the effort invested in this excellent resource. 
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 19</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_19/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_19/</link>
+
+	<pubDate>Fri, 25 Jun 2010 07:01:38 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:38Z</dcterms:modified>
+
+	<description>&lt;p&gt;TOR Really amazing and great project!&lt;br /&gt;
+Keep up this great job!&lt;br /&gt;
+Respect&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 20</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_20/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_20/</link>
+
+	<pubDate>Mon, 28 Jun 2010 07:01:39 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:39Z</dcterms:modified>
+
+	<description>Please two weeks ago we were unable to connect tor application with one of our network which is MTN in our country (Nigeria), please what next can we do...
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 21</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_21/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_21/</link>
+
+	<pubDate>Sat, 26 Jun 2010 07:01:40 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:40Z</dcterms:modified>
+
+	<description>&lt;p&gt;Google just started redirecting https search requests to http last night.&lt;br /&gt;
+If you have this plugin, it redirects in a loop and you cannot use google at all &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/../../smileys/sad.png&quot; alt=&quot;:(&quot; /&gt;&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 22</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_22/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_22/</link>
+
+	<pubDate>Sun, 27 Jun 2010 07:01:41 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:41Z</dcterms:modified>
+
+	<description>&lt;p&gt;What is this anonymous guy in his post above screaming about factorbee?&lt;br /&gt;
+Should I be worried?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 23</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_23/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_23/</link>
+
+	<pubDate>Sun, 27 Jun 2010 07:01:42 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:42Z</dcterms:modified>
+
+	<description>&lt;p&gt;the online security scanner reports that the version of firefox installed in the Tor bundle is insecure, when will there be an update?&lt;/p&gt;
+
+&lt;p&gt;heres the report from secunia.com&lt;br /&gt;
+------------------&lt;br /&gt;
+Installed on Your System in:&lt;br /&gt;
+C:\program files\Tor Browser\Tor Browser\FirefoxPortable\App\Firefox\tbb-firefox.exe&lt;br /&gt;
+    Mozilla Firefox 3.5.x   Mozilla Firefox 3.5.x   3.5.9   Mozilla Firefox 3.5.x&lt;/p&gt;
+
+&lt;p&gt;This installation of Mozilla Firefox 3.5.x is insecure and potentially exposes your system to security threats!&lt;/p&gt;
+
+&lt;p&gt;The detected version installed on your system is 3.5.9, however, the latest patched version released by the vendor, fixing one or more vulnerabilities, is 3.5.10.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 24</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_24/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_24/</link>
+
+	<pubDate>Mon, 28 Jun 2010 07:01:43 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:43Z</dcterms:modified>
+
+	<description>Please two weeks ago we were unable to connect tor application with one of our network in our country, please what next can we do...
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 25</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_25/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_25/</link>
+
+	<pubDate>Mon, 28 Jun 2010 07:01:44 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:44Z</dcterms:modified>
+
+	<description>Please two weeks ago we were unable to connect tor application with one of our network in our country, please what next can we do...
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 26</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_26/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_26/</link>
+
+	<pubDate>Mon, 28 Jun 2010 07:01:45 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:45Z</dcterms:modified>
+
+	<description>The Tor is no more working in Nigeria, Pls help us out!!!!!
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 27</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_27/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_27/</link>
+
+	<pubDate>Mon, 28 Jun 2010 07:01:46 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:46Z</dcterms:modified>
+
+	<description>&lt;p&gt;Gents pls can u pls help me out&lt;br /&gt;
+my tor no more connects is it that my internet service provider has blocked it or u are carrying out server repairs&lt;/p&gt;
+
+&lt;p&gt;am writing from nigeria and i use MTN network to connect but npw it no more connects infact when u go to the tor band usage u can see any signal&lt;br /&gt;
+\we use the default setting of 10.199.212.2:8080 to connect pls can u help&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 28</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_28/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_28/</link>
+
+	<pubDate>Mon, 28 Jun 2010 07:01:47 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:47Z</dcterms:modified>
+
+	<description>&lt;p&gt;Gentlemen&lt;br /&gt;
+I thought i should write in to commend u all on the work u are doing the masses informed,&lt;br /&gt;
+am writing from nigeria and i just came across torr for about 2months now and it has been the best and fastest internet software link i have ever seen, i say kudos. silver or gold have i none but i really give u my sincere moral and spiritual support.&lt;/p&gt;
+
+&lt;p&gt;For about i week now tor has not been working in nigeria,basically we use it with MTN network provider whose internet cost is on the high side despite  millions of Dollars they make from millons of subcribers in the world largest black race.&lt;/p&gt;
+
+&lt;p&gt;I dont really know where torr is reparing their server of u have been cut off bye MTN.&lt;br /&gt;
+I heard they invited some expertriates to cut  the people off from the internet and it worked and after some time tor came back again.but now tor has not been connecting&lt;br /&gt;
+so pls whats iswrong.&lt;/p&gt;
+
+&lt;p&gt;we connect to tor using this MTN default setting 10.199.212.2:8080&lt;br /&gt;
+my fire wall lets me connect ports,8080&lt;br /&gt;
+and then we use bridges&lt;/p&gt;
+
+&lt;p&gt;but now its not working and we have gone back to freedom which is slow and also cuts hourly,&lt;br /&gt;
+wel we have used freegate,ultrasuf and they have all been blocked&lt;/p&gt;
+
+&lt;p&gt;so gentlemen  pls do something about that,wen we connect the tor there is no movement in the bandwith and when u go to bridges it does  not open it just shows new and later closes&lt;/p&gt;
+
+&lt;p&gt;I look forward to hearing and as wel as you solving the problem from you&lt;/p&gt;
+
+&lt;p&gt;sincerely yours&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 29</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_29/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_29/</link>
+
+	<pubDate>Wed, 30 Jun 2010 07:01:48 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:48Z</dcterms:modified>
+
+	<description>i miss tor in niger baba ni tor ademola from ibadan 
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 30</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_30/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_30/</link>
+
+	<pubDate>Sun, 18 Jul 2010 07:01:49 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:49Z</dcterms:modified>
+
+	<description>I would be glad if d tor project could give us in nigeria a http/https proxy to connect to than d default proxy bcos d proxy keeps sending back errors like invalid url and more. For reply vinnie415@gmail.com my box thanks
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 31</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_31/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/comment_31/</link>
+
+	<pubDate>Mon, 02 Aug 2010 07:01:50 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:50Z</dcterms:modified>
+
+	<description>&lt;p&gt;If you really want to search anonymously you should use Scroogle!&lt;/p&gt;
+
+&lt;p&gt;https://ssl.scroogle.org/&lt;/p&gt;
+
+</description>
+
+
+</item>
+
+</channel>
+</rss>

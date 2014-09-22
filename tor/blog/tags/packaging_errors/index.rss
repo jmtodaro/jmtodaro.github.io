@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged packaging_errors</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/packaging_errors/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Updates on Tor 0.2.0.32 for OS X Users</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Updates_on_Tor_0_2_0_32_for_OS_X_Users/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Updates_on_Tor_0_2_0_32_for_OS_X_Users/</link>
+
+
+	<category>/tags/apple_os_x</category>
+
+	<category>/tags/packaging_errors</category>
+
+	<category>/tags/stable_release</category>
+
+
+	<pubDate>Thu, 04 Dec 2008 20:48:00 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:15:34Z</dcterms:modified>
+
+	<description>&lt;p&gt;As detailed here, &lt;a href=&quot;http://archives.seul.org/or/talk/Dec-2008/msg00044.html&quot; title=&quot;http://archives.seul.org/or/talk/Dec-2008/msg00044.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Dec-2008/msg00044.html&lt;/a&gt;, there are some packaging fixes for OS X users in this 0.2.0.32 stable release.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;For OS X users, there is a packaging bugfix in 0.2.0.32 labelled as&lt;br /&gt;
+0.2.0.32a in the available packages.  It turns out for years we&#39;ve been&lt;br /&gt;
+shipping a Info.plist with an incorrect key.  The issue was discovered&lt;br /&gt;
+and reported as bug 876,&lt;br /&gt;
+&lt;a href=&quot;https://bugs.torproject.org/flyspray/index.php?id=876&amp;amp;do=details&quot; title=&quot;https://bugs.torproject.org/flyspray/index.php?id=876&amp;amp;do=details&quot; rel=&quot;nofollow&quot;&gt;https://bugs.torproject.org/flyspray/index.php?id=876&amp;amp;do=details&lt;/a&gt;.   &lt;/p&gt;
+&lt;p&gt;The commit to fix the problem in the 0_2_0 branch is r17472:&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/cvs/Dec-2008/msg00037.html&quot; title=&quot;http://archives.seul.org/or/cvs/Dec-2008/msg00037.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/cvs/Dec-2008/msg00037.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The commit to fix the problem in the Vidalia 0.1 branch is r3361:&lt;br /&gt;
+&lt;a href=&quot;http://trac.vidalia-project.net/browser/vidalia/branches/vidalia-0.1/pkg/osx?order=date&amp;amp;desc=1&quot; title=&quot;http://trac.vidalia-project.net/browser/vidalia/branches/vidalia-0.1/pkg/osx?order=date&amp;amp;desc=1&quot; rel=&quot;nofollow&quot;&gt;http://trac.vidalia-project.net/browser/vidalia/branches/vidalia-0.1/pkg...&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The bug is that the OS X Installer will prompt &quot;The chosen volume&lt;br /&gt;
+contains software which is newer then [sic] the software you are&lt;br /&gt;
+installing.&quot;&lt;/p&gt;
+&lt;p&gt;The problem is that the Installer looks in the file&lt;br /&gt;
+/Library/Receipts/Vidalia.pkg/Contents/Info.plist for&lt;br /&gt;
+CFBundleShortVersionString.  We mistakenly called it&lt;br /&gt;
+CFBundleSortVersionString, which Apple inserts &quot;1&quot; as the value.  The&lt;br /&gt;
+upgrade to Vidalia from 0.1.9 to 0.1.10 apparently triggered the issue.  &lt;/p&gt;
+&lt;p&gt;The fix is to put the correct value in place for the future.  The&lt;br /&gt;
+simplest way to do this is to have the users click &quot;Continue&quot; when&lt;br /&gt;
+prompted.  We could have spent a lot of time trying to fix it for the&lt;br /&gt;
+user to hide the issue, but well, that is fraught with problems and&lt;br /&gt;
+complexities.  A simple click of &quot;Continue&quot; is far simpler and less&lt;br /&gt;
+error prone.   &lt;/p&gt;
+&lt;p&gt;The difference between the released 0.2.0.32 Tor code is the inclusion&lt;br /&gt;
+of r17472.  It&#39;s not really 0.2.0.32a per se, but since we lack package&lt;br /&gt;
+versions, I had to distinguish it in some way. &lt;/p&gt;&lt;/blockquote&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Updates_on_Tor_0_2_0_32_for_OS_X_Users/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

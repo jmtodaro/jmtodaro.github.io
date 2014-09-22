@@ -1,0 +1,2160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Tor 0.2.1.14-rc released</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:23:39Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_1/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:28Z</updated>
+	<published>2009-04-15T11:22:28Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Can anybody be clear enough to say where to make changes so that I can have a spefic country ip only as exit node?&lt;/p&gt;
+
+&lt;p&gt;All you guys do is point to a page where nothing makes any sense. Tell me in a simple language which file to edit in the Tor Directory or how to execute commands which will help me get what i want. I am no computer geek so please if you consider my request.&lt;/p&gt;
+
+&lt;p&gt;I am using Vidilia 0.1.10, Tor 0.2.0.34 (r18423), QT 4.4.3&lt;/p&gt;
+
+&lt;p&gt;Thank you.&lt;/p&gt;
+
+&lt;p&gt;Best Regards.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_2/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:29Z</updated>
+	<published>2009-04-15T11:22:29Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;With Tor 0.2.0.34, you cannot do this.  It&#39;s not supported in that version of Tor.  It&#39;s in Tor 0.2.1.x-alpha series.  Right now, it involves editing your torrc configuration file.  We&#39;re hoping someone can make progress and/or send us patches on being able to click the Vidalia map and turn this into &quot;exit from this country&quot; for the new circuits.&lt;/p&gt;
+
+&lt;p&gt;Bonus points if they do it on Marble-ized Vidalia.&lt;/p&gt;
+
+&lt;p&gt;If you happen to be using linux, TorK can do this &quot;exit by country&quot; already.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_3/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:30Z</updated>
+	<published>2009-04-16T11:22:30Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Ok I downloaded Tor 0.2.1.14- rc and edited the torrc with this:&lt;/p&gt;
+
+&lt;p&gt;#Use Exit Nodes in DE&lt;br /&gt;
+ExitNodes {de}&lt;br /&gt;
+StrictExitNodes 1&lt;/p&gt;
+
+&lt;p&gt;And when I launch the program, the message log says:&lt;/p&gt;
+
+&lt;p&gt;Apr 16 13:59:27.093 [Warning] No specified exit routers seem to be running, and StrictExitNodes is set: can&#39;t choose an exit.&lt;br /&gt;
+Apr 16 13:59:27.093 [Warning] failed to choose an exit server&lt;/p&gt;
+
+&lt;p&gt;Without the StrictExitNodes it doesn&#39;t give &quot;de&quot; exit ip.&lt;/p&gt;
+
+&lt;p&gt;Any solution you know for this?&lt;/p&gt;
+
+&lt;p&gt;Thank you.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_4/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:31Z</updated>
+	<published>2009-04-24T11:22:31Z</published>
+
+	<content type="html" xml:lang="en">
+	Exit selection is a combination of country and port in your configuration.  Perhaps no exit nodes in Germany allow an exit to the ports you desire.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_5/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:32Z</updated>
+	<published>2009-04-29T11:22:32Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;anyways since this didn&#39;t work for me, I spent $99 buying unlimited ip license from Cloakfish which actually uses tor technology but is more efficient regarding geo-ip. I could pick up the end nodes with there program and it served my purpose.&lt;/p&gt;
+
+&lt;p&gt;So if Tor fixes this thing I would love to donate.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_6/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:33Z</updated>
+	<published>2009-04-24T11:22:33Z</published>
+
+	<content type="html" xml:lang="en">
+	Maybe your Tor is not properly integrated with a geoip service to tell your Tor which nodes are German.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_7/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:34Z</updated>
+	<published>2009-05-22T11:22:34Z</published>
+
+	<content type="html" xml:lang="en">
+	And might you be kind enough to tell us how we all shell do to &quot;properly integrate&quot; tor with a &quot;geoip service&quot; then, so that TOR is working as it should do.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_8/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:35Z</updated>
+	<published>2009-04-26T11:22:35Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;The only way that seems to work is if you check for nodes in Germany &amp;amp; pick some nodes &amp;amp; use there fingerprint or nicknames, here is the fastest one now, example:&lt;/p&gt;
+
+&lt;p&gt;ExitNodes routor, weltbank, Piratenschatzi, FoeBuD3, gpfTOR4&lt;br /&gt;
+StrictExitNodes 1&lt;/p&gt;
+
+&lt;p&gt;I wouldn&#39;t recommend using weltbank thou, behaved strange in the past...&lt;/p&gt;
+
+&lt;p&gt;The ExitNodes {de} or ExcludeNodes {de} is still not working, maby admin can tell us all why this command after several versions still doesn&#39;t work.&lt;br /&gt;
+&amp;amp; why do you force people to use such an unsecure thing as javascript &amp;amp; cookies to make comments.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_9/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:36Z</updated>
+	<published>2009-04-26T11:22:36Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I think the cookies are required for the CAPTCHA, so they can know which person was assigned which CAPTCHA.&lt;/p&gt;
+
+&lt;p&gt;I have JavaScript disabled and haven&#39;t needed to enable it to comment here.&lt;/p&gt;
+
+&lt;p&gt;I have needed to load images, though. I have images disabled. Also, a lot of links are invisible unless you highlight the text or load the background image.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_10/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:37Z</updated>
+	<published>2009-05-02T11:22:37Z</published>
+
+	<content type="html" xml:lang="en">
+	I seem to be able to work on the blog without cookies and javascript just fine.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_11/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:38Z</updated>
+	<published>2009-05-22T11:22:38Z</published>
+
+	<content type="html" xml:lang="en">
+	Well javascript is not needed but you have to turn on cookies for it to work, for a privacyrelated site i think you should not force people to use cookies either.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 12</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_12/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_12/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:39Z</updated>
+	<published>2009-05-18T11:22:39Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Trying:&lt;br /&gt;
+ExitNodes berwick,NoMoBushWars,innerspace,extrapolator,bloxortsipt22,rhnetfsck,q867401q,WesCSTor,wchtfd&lt;br /&gt;
+StrictExitNodes 1&lt;/p&gt;
+
+&lt;p&gt;For nodes in Atlanta, Georgia and Connecticut, USA does not work either, using&lt;br /&gt;
+Tor 0.2.1.14-rc (r19307)&lt;/p&gt;
+
+&lt;p&gt;The entire ExitNodes function does not seem to be working...&lt;/p&gt;
+
+&lt;p&gt;Where do I go to get fingerprint codes to try that?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 13</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_13/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_13/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:40Z</updated>
+	<published>2009-05-22T11:22:40Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Your right, ExitNodes function does not work until they fix the geoip data issue. Now it only works some times not always as it should.&lt;/p&gt;
+
+&lt;p&gt;If you go to this page:&lt;br /&gt;
+&lt;a href=&quot;https://torstatus.blutmagie.de/&quot; title=&quot;https://torstatus.blutmagie.de/&quot; rel=&quot;nofollow&quot;&gt;https://torstatus.blutmagie.de/&lt;/a&gt;&lt;br /&gt;
+then you have to there you have to check one node at a time to get the fingerprints, you then take the info, for example&lt;br /&gt;
+7BC0 E733 55F8 917F F69B F32D C1F5 6BB5 9F9E 67A5&lt;br /&gt;
+and remove every space in between and add a $ before the number, like this&lt;br /&gt;
+$7BC0E73355F8917FF69BF32DC1F56BB59F9E67A5&lt;br /&gt;
+that is what you use in ExitNodes, they really made it easy to choose witch country&#39;s to use and not to use, don&#39;t you think.....&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 14</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_14/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_14/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:41Z</updated>
+	<published>2009-04-24T11:22:41Z</published>
+
+	<content type="html" xml:lang="en">
+	With the newest versions of Firefox and TOR, Firefox and the computer stop responding for a few seconds frequently. During these interruptions you can type text or scroll but nothing will happen on your screen for a few seconds and then all typed text will appear quickly and if you scrolled, it would scroll. I tested hardly to find out that the reason was TOR and had to uninstall it.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 15</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_15/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_15/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:42Z</updated>
+	<published>2009-04-24T11:22:42Z</published>
+
+	<content type="html" xml:lang="en">
+	how odd.  I can see this happening on a 486 or pentium II maybe, but not any system produced in the last decade or so.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 16</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_16/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_16/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:43Z</updated>
+	<published>2009-04-24T11:22:43Z</published>
+
+	<content type="html" xml:lang="en">
+	It&#39;s network related, if I turn off Internet, no problem. It&#39;s 2.4 GHz.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 17</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_17/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_17/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:44Z</updated>
+	<published>2009-05-08T11:22:44Z</published>
+
+	<content type="html" xml:lang="en">
+	The problem can be turned off if you just disable the Torbutton in Firefox. When you need it, you can enable it and use it.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 18</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_18/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_18/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:45Z</updated>
+	<published>2009-04-26T11:22:45Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Thank you for a great program, just a question:&lt;/p&gt;
+
+&lt;p&gt;Tor / Vidalia needs a file with the name geoip in the Tor configuration directive for some of the functions to work properly.&lt;br /&gt;
+No version of Tor / Vidalia i have tried(including the latest) creates such a file, why?&lt;/p&gt;
+
+&lt;p&gt;Is it really meant that i have to manually type in all the geoIP information for all the 4 294 967 296 IP adresses by hand, in that case it would take me quite some time.......&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 19</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_19/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_19/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:46Z</updated>
+	<published>2009-05-18T11:22:46Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Any info about why Tor/Vidalia does not create this file(in windows version).&lt;br /&gt;
+Without it the functions of excluding nodes by country would of course not work.&lt;/p&gt;
+
+&lt;p&gt;Don´t you wan´t people to be able to exclude nodes by country???&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 20</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_20/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_20/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:47Z</updated>
+	<published>2009-04-27T11:22:47Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Old version nodes still running&lt;br /&gt;
+On February 8th, Tor 0.2.0.34 was released,&lt;br /&gt;
+you then said:&lt;/p&gt;
+
+&lt;p&gt;&quot;This release marks end-of-life for Tor 0.1.2.x.&quot;&lt;/p&gt;
+
+&lt;p&gt;If this is true why do you still allow old version nodes to run ?&lt;/p&gt;
+
+&lt;p&gt;Version 0.1.2.19 that is known to have been used by nodes that used it to spy on traffic it is still used by 6% of all nodes. It was released 2008-01-17, that&#39;s over a year ago.&lt;br /&gt;
+Even earlier versions are run by 7% of the nodes. When are you gonna stop the possibility to run a node on these old(&amp;amp; potentially dangerous) versions(theres really no good explanation why fast nodes like Kryten or TSL with 4800KB bandwidth still is running an old 0.1.2.19 version, unless it&#39;s modified).&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 21</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_21/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_21/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:48Z</updated>
+	<published>2009-05-02T11:22:48Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;End of life means we&#39;re not supporting the code any more.   There will be no more updates or fixes applied to this version.  &lt;/p&gt;
+
+&lt;p&gt;As you know, we don&#39;t control the nodes.  If volunteer operators want to run older versions with known exploitable code that puts their operating system at risk, that&#39;s their choice.&lt;/p&gt;
+
+&lt;p&gt;Most people simply run what&#39;s in their distribution repositories, and in many cases, that&#39;s 0.1.2.x.  &lt;/p&gt;
+
+&lt;p&gt;Tor clients don&#39;t trust any relay, so the risk is more on the relay OS side than it is for tor clients.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 22</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_22/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_22/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:49Z</updated>
+	<published>2009-05-18T11:22:49Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Thanks for answering.&lt;/p&gt;
+
+&lt;p&gt;&quot;As you know, we don&#39;t control the nodes. If volunteer operators want to run older versions with known exploitable code that puts their operating system at risk, that&#39;s their choice.&quot;&lt;/p&gt;
+
+&lt;p&gt;Wouldn&#39;t it be very easy,  just to add in the code to only allow nodes to run the latest 2 stable/unstable releases or versions released the last 6 month or something similar ?&lt;/p&gt;
+
+&lt;p&gt;Old relay nodes of course also puts Tor clients that use them at risk !&lt;/p&gt;
+
+&lt;p&gt;At least do this for fast nodes, i would understand that a chines node with 5KB/s bandwidth could have problems to find and download the latest updates but not an US or DE node with bandwidth of 1000+ KB/s&lt;/p&gt;
+
+&lt;p&gt;&quot;End of life means we&#39;re not supporting the code any more. There will be no more updates or fixes applied to this version.&quot;&lt;/p&gt;
+
+&lt;p&gt;As versions 0.2.0.33, 0.2.0.32, 0.2.0.31 &amp;amp; 0.2.0.30 was released earlier wouldn&#39;t the release of version 0.2.0.30 on the 15  july 2008 have been the one that meant the &quot;end of life&quot; for the 0.1.2.x versions, if that was what you meant by that comment?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 23</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_23/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_23/"/>
+
+	<author><name>PETER (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:50Z</updated>
+	<published>2009-05-02T11:22:50Z</published>
+
+	<content type="html" xml:lang="en">
+	so any new version is going 2 come or planning  to make?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 24</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_24/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_24/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:51Z</updated>
+	<published>2009-05-07T11:22:51Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;About the command CircuitBuildTimeout, before version 0.2.1.(9?) in the torrc one has been able to change this to lower values than 30, thats no longer the case, I think this is bad for one&#39;s privacy and bad for the overall speed of Tor, example:&lt;/p&gt;
+
+&lt;p&gt;If 2 of the 3 nodes in the circuit build fast (less than 2 sec) and the 3rd takes up to 28 sec then it&#39;s obviously either&lt;br /&gt;
+1 overloaded, and it would be better if some people(that change this value in torrc) waited less than 30 sec to try to build another circuit)or&lt;br /&gt;
+2 even worse it&#39;s doing some bad thing like an timing attacks(and you would absolutely not use it then.).&lt;/p&gt;
+
+&lt;p&gt;It would of course not be good for ones privacy to use values like 2, 3 or similar but one should definitely be able to use values like 10-29, the choice should really be up to people them selfs, not be forced upon them to use these high values.&lt;/p&gt;
+
+&lt;p&gt;Why do you make changes to Tor that purposely decreases peoples speed ?&lt;br /&gt;
+Are you going to implement this bad thing in the stable version too ?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 25</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_25/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_25/"/>
+
+	<author><name>arma</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:52Z</updated>
+	<published>2009-05-09T11:22:52Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;You&#39;re right that in the older versions you could configure it to prefer the&lt;br /&gt;
+circuits that completed faster. Letting users set it too low is a bug: if&lt;br /&gt;
+everybody did that, the relays would get overwhelmed with circuit creation&lt;br /&gt;
+requests, making everything slower, and leading all the Tor clients to&lt;br /&gt;
+unwittingly launch DoS attacks on the network. We can&#39;t allow that.&lt;/p&gt;
+
+&lt;p&gt;The right answer is to have every Tor client automatically track how long it&lt;br /&gt;
+takes to build circuits, and then discard circuits that take more than a&lt;br /&gt;
+standard dev above the mean. For more details, check out Section 5.2 of the&lt;br /&gt;
+performance.pdf document I posted about here:&lt;br /&gt;
+&lt;a href=&quot;https://blog.torproject.org/blog/why-tor-is-slow&quot; title=&quot;https://blog.torproject.org/blog/why-tor-is-slow&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/why-tor-is-slow&lt;/a&gt;&lt;br /&gt;
+and also proposal 151:&lt;br /&gt;
+&lt;a href=&quot;https://git.torproject.org/checkout/tor/master/doc/spec/proposals/151-path-selection-improvements.txt&quot; title=&quot;https://git.torproject.org/checkout/tor/master/doc/spec/proposals/151-path-selection-improvements.txt&quot; rel=&quot;nofollow&quot;&gt;https://git.torproject.org/checkout/tor/master/doc/spec/proposals/151-pa...&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We hope to have this dynamic-timeout-calculation feature in the Tor 0.2.2.x&lt;br /&gt;
+series. In the mean time, let&#39;s all try not to make the Tor network fall over.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 26</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_26/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_26/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:53Z</updated>
+	<published>2009-05-18T11:22:53Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Thank you for your answer.&lt;/p&gt;
+
+&lt;p&gt;According to Figure 5 in the performance.pdf around 85-90% of the circuits are created within 7 seconds, and around 70% within 5 seconds, so could you please allow people to choose values of 5-10 seconds for CircuitBuildTimeout in coming Tor versions.&lt;/p&gt;
+
+&lt;p&gt;Otherwise you would create an unnecessary security risk for people that either would have to accept higher risk for timing attacks and similar or be forced to use an old insecure version of Tor, both a bad thing of course.&lt;/p&gt;
+
+&lt;p&gt;This should be allowed at least until you fix this new approach in the coming 0.2.2.x or later versions.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 27</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_27/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_27/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:54Z</updated>
+	<published>2009-05-19T11:22:54Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Regarding the ExitNodes feature:&lt;br /&gt;
+&quot;ExitNodes node,node,...&lt;br /&gt;
+    A list of identity fingerprints or nicknames of preferred nodes to use for the last hop in the circuit. These are treated only as preferences unless StrictExitNodes (see below) is also set. &lt;/p&gt;
+
+&lt;p&gt;StrictExitNodes 0|1&lt;br /&gt;
+    If 1, Tor will never use any nodes besides those listed in &quot;ExitNodes&quot; for the last hop of a circuit.&quot; &lt;/p&gt;
+
+&lt;p&gt;Do I understand correctly that ExitNodes DO NOT WORK with either:&lt;br /&gt;
+1. Country codes like {de} or {us}  OR&lt;br /&gt;
+2. comma-separated nicknames like: berwick,NoMoBushWars,innerspace...&lt;br /&gt;
+???&lt;/p&gt;
+
+&lt;p&gt;Can anyone confirm this? Does anyone have experience with the ExitNodes feature actually working anywhere?&lt;/p&gt;
+
+&lt;p&gt;Thanks!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 28</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_28/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_28/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:55Z</updated>
+	<published>2009-05-20T11:22:55Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I just tested it, it works fine.  Are the nodes you&#39;re trying to force as exits actually online and allow access to where you think it does?&lt;/p&gt;
+
+&lt;p&gt;Country codes work fine, I just confirmed germany, poland, and china.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 29</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_29/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_29/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:56Z</updated>
+	<published>2009-05-21T11:22:56Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;O.K. I just tried this:&lt;/p&gt;
+
+&lt;p&gt;In the torrc file located at:&lt;br /&gt;
+C:\Documents and Settings\Username\Menú Inicio\Programas\Tor\torrc&lt;/p&gt;
+
+&lt;p&gt;I am adding these commands to the file, just before &quot;#ExitPolicy accept:&quot;&lt;/p&gt;
+
+&lt;p&gt;ExitNodes {us}&lt;br /&gt;
+StrictExitNodes 1&lt;/p&gt;
+
+&lt;p&gt;Save changes. Reboot my Windows XPSP2&lt;/p&gt;
+
+&lt;p&gt;Bring up Tor, connect.&lt;/p&gt;
+
+&lt;p&gt;Go to &lt;a href=&quot;http://internetfrog.com&quot; title=&quot;http://internetfrog.com&quot; rel=&quot;nofollow&quot;&gt;http://internetfrog.com&lt;/a&gt;   &lt;/p&gt;
+
+&lt;p&gt;It tells me that:&lt;br /&gt;
+The Location of Your IP Address, 213.112.108.203, is:&lt;/p&gt;
+
+&lt;p&gt;-, - - SWEDEN&lt;/p&gt;
+
+&lt;p&gt;What am I doing wrong?&lt;/p&gt;
+
+&lt;p&gt;Thanks!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 30</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_30/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_30/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:57Z</updated>
+	<published>2009-05-22T11:22:57Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;You are not doing anything wrong, it&#39;s TOR that has, shall we call it a bug in the way it works when choosing/avoiding nodes according to country,&lt;br /&gt;
+As far as i understand it, you have to have a file in your tor-map with the name geoip. Tor/Vidalia is not creating this file for you(at least not in windows), you have to create it yourself, if you have created this file and it does not already have data for the IP that vidalia/tor wants to use as exit(,entry or middle) it will use the IP without checking first if it matches the condition you have set up.&lt;br /&gt;
+Please change this now so that Tor NEVER use an IP that you don&#39;t have info about in geoip file, if you use any countrycode commands in any of these torrc commands: ExcludeNodes,ExcludeExitNodes,EntryNodes,ExitNodes.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 31</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_31/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_31/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:58Z</updated>
+	<published>2009-05-22T11:22:58Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor Browser Bundles do not come with the geoip file, yet.  So exitnodes by country won&#39;t work.&lt;/p&gt;
+
+&lt;p&gt;It appears the geoip file for the Vidalia Bundle for 0.2.1.14-rc wasn&#39;t included in the package.&lt;/p&gt;
+
+&lt;p&gt;And yes, in order to choose by country, you have to have the geoip file working.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 32</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_32/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_32/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:59Z</updated>
+	<published>2009-05-23T11:22:59Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Thank you for your answer.&lt;/p&gt;
+
+&lt;p&gt;What i want to know is:&lt;br /&gt;
+Were do i get this(complete) GeoIP file in a format supported by Tor/Vidalia ???&lt;br /&gt;
+So that my Vidalia/Tor always respect my configuration in torrc.&lt;/p&gt;
+
+&lt;p&gt;Why is the GeoIP file not included ?&lt;/p&gt;
+
+&lt;p&gt;If the file is not included, why don&#39;t you ask the user during installation process if they want to download the complete file or if later a user has any GeoIP-dependent command in his/hers torrc-file why don&#39;t Tor/Vidalia then ask/download the complete file if user wants that.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 33</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_33/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_33/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:00Z</updated>
+	<published>2009-05-23T11:23:00Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;The lack of geoip file in the vidalia-bundle for 0.2.1.14-rc is a bug.  Normally, the geoip file is in the vidalia-bundle packages.&lt;/p&gt;
+
+&lt;p&gt;You can download the geoip file from &lt;a href=&quot;http://git.torproject.org/checkout/tor/master/src/config/geoip&quot; title=&quot;http://git.torproject.org/checkout/tor/master/src/config/geoip&quot; rel=&quot;nofollow&quot;&gt;http://git.torproject.org/checkout/tor/master/src/config/geoip&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;You want to put it in your Data Directory, which is&lt;br /&gt;
+&quot;C:\Documents and Settings\{username}\Application Data\Tor&quot; by default.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 34</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_34/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_34/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:01Z</updated>
+	<published>2009-05-23T11:23:01Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Thank you very much for the GeoIP file, now i feel a litte bit more secure as a Chines concerned about the Tibetan people.&lt;/p&gt;
+
+&lt;p&gt;Hopefully i can now avoid the Chines governments Tor nodes in the future.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 35</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_35/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_35/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:02Z</updated>
+	<published>2009-05-23T11:23:02Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;On the ReleaseNotes for version 0.2.0.30 - 2008-07-15 its stated that - Tor now includes an IP-to-country GeoIP file. I find that hard to believe as version 0.2.0.30 even is smaller than the previous one.&lt;/p&gt;
+
+&lt;p&gt;&quot;It appears the geoip file for the Vidalia Bundle for 0.2.1.14-rc wasn&#39;t included in the package.&quot;&lt;/p&gt;
+
+&lt;p&gt;Ever since the release of version 0.2.1.6-alpha - 2008-09-30, the first one supporting per-country relay selection, no versions(0.2.1.6A - 0.2.1.14RC) of VidaliaBundle have included this geoIP file how could you then say that they support this function, when it&#39;s not working without the missing geoIP file !!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 36</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_36/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_36/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:03Z</updated>
+	<published>2009-05-22T11:23:03Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;With StrictExitNodes 1 set then....&lt;/p&gt;
+
+&lt;p&gt;2 is the alternative that works most of the times, sometimes it mysteriously disregards from the condition you have setup thou.&lt;/p&gt;
+
+&lt;p&gt;1 is not working if you don&#39;t have made an geoip file or an older tor version(0.2.1.14 is the one that&#39;s working best so far), but even with an geoip file it&#39;s not going to work with nodes that are new of have dynamic IPs since you don&#39;t have any data before, then tor disregards from your setup and uses a node that might be against what you have setup.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 37</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_37/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_37/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:04Z</updated>
+	<published>2009-05-22T11:23:04Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Thanks for the &quot;country filtering&quot; on exit nodes. (Assuming it works fine on Linux as I have no problem to update/import geoip file)&lt;/p&gt;
+
+&lt;p&gt;Do you plan to add the same feature for exit policy for those who are so kind to accept to be an exit nodes.&lt;/p&gt;
+
+&lt;p&gt;As more and more countries are voting laws to filter the internet, the lack of such a feature could dicourage people to run an exit node, and at the end of the line TOR will be useless due to network congestion on too few exit nodes.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 38</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_38/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_38/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:05Z</updated>
+	<published>2009-05-22T11:23:05Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;You already have the ability to filter where you want your exitnode to connect if you for example wants to block the Country: AMERICAN SAMOA you simply block there 4,096 IP adresses by adding:&lt;br /&gt;
+reject 202.70.112.0/20:*&lt;br /&gt;
+Not to complicated ?&lt;br /&gt;
+Also those countrys are kind enough to do the job for you by providing  false DNS information for the adresses they claim do something bad.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 39</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_39/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_39/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:06Z</updated>
+	<published>2009-05-23T11:23:06Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Sorry, but looking at the geoip file, it does seem so simple to block a country.&lt;br /&gt;
+I transformed the GeoIP to XML and sorted nodes to random country.&lt;br /&gt;
+For one signle country, I easily end up with more than 10K ranges to reject.&lt;br /&gt;
+Might be simpler for U.S. because of IANA IP dispatching, but U.S. is not the only country in the world &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/../../smileys/smile4.png&quot; alt=&quot;;-)&quot; /&gt;&lt;br /&gt;
+So if I try to inject 10K block/accept ranges to TOR... I doubt it would be very glad !.. I might even reach internal limits and disrupt the network publishing so many exit block ranges.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 40</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_40/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_40/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:07Z</updated>
+	<published>2009-05-23T11:23:07Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Blocking a small(internetwize) country is easy maby 1-10 lines needed, medium country&#39;s 10-100 lines &amp;amp; the large ones needs 100s or even 1000+ lines like the USA, Germany, UK and so on, basically they don&#39;t want you as a private person to block a whole (large) country. It would of course be very easy for someone like a NSA field agent and so on to have a precompiled blocklists if they would need to use the TOR network.&lt;/p&gt;
+
+&lt;p&gt;Using blocklists of 10000+ lines do work(unless you have a computer from prehistoric time), just try and see for yourself.....&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 41</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_41/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_41/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:08Z</updated>
+	<published>2009-05-24T11:23:08Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Ok then.&lt;/p&gt;
+
+&lt;p&gt;I&#39;ll improve my XSL transform so that it gives me an output I can just paste to /etc/torrc in order to block/accept countries.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 42</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_42/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_42/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:09Z</updated>
+	<published>2009-05-23T11:23:09Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Read the docs for 0.2.1.x-alpha/rc branch, ExcludeNodes and ExitNodes support country codes.&lt;/p&gt;
+
+&lt;p&gt;If you want to &quot;ExcludeNodes {us},{de},{gb}&quot;, by all means, have at it.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 43</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_43/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_43/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:10Z</updated>
+	<published>2009-05-23T11:23:10Z</published>
+
+	<content type="html" xml:lang="en">
+	I see, you mean for exit policies.  Feel free to open a feature request at &lt;a href=&quot;https://bugs.torproject.org/&quot; title=&quot;https://bugs.torproject.org/&quot; rel=&quot;nofollow&quot;&gt;https://bugs.torproject.org/&lt;/a&gt;  thanks!
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 44</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_44/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_44/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:11Z</updated>
+	<published>2009-05-24T11:23:11Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Yes I mean &quot;exit policy&quot; for those who accept to donate bandwith AND be and exit node.&lt;/p&gt;
+
+&lt;p&gt;Fact is that filtering exit policy against ports is not reliable.&lt;/p&gt;
+
+&lt;p&gt;One could parameter it&#39;s P2P software to run on port 443 or even 80. So if you accept to run an exit node and allow these ports, you could as well end up appearing as participating in illegal P2P which is bound to prosecution in more and more countries.&lt;/p&gt;
+
+&lt;p&gt;So I&#39;ll be more confident to run an exit node if I can ban those countries.&lt;/p&gt;
+
+&lt;p&gt;Other possible improvement would be to be able to filter against protocol, eg HTTP for example, as Wireshark can do. That would be more reliable.&lt;br /&gt;
+Of course one can use HTTP Tunneling, but then he will need another HTTP server, outside TOR, to &quot;unpack&quot; what was tunneled and go to the real target.&lt;/p&gt;
+
+&lt;p&gt;And thanks for the link, I&#39;ll fil some &quot;feature requests&quot;.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 45</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_45/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_45/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:12Z</updated>
+	<published>2009-05-26T11:23:12Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I don&#39;t think you can solve that entirely by filtering some country&#39;s like RO,BG or whatevet you had in mind.&lt;/p&gt;
+
+&lt;p&gt;If you have a long list of countrys you would like to ban you would have to get iplists from several reliable sorces, merge them together &amp;amp; end up with 100-1000s IP blocks&lt;br /&gt;
+or you would have to overban IPs by using whole x.x.x.x/8 blocks to get the list down, maby you should go for only being entry+middlenode until your country gets an resonable policy against Tor nodes.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 46</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_46/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_46/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:13Z</updated>
+	<published>2009-05-27T11:23:13Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;So I tried (assuming geoip bundle with TOR is the &quot;reliable&quot; source) blocking FR + unallocated gives me 19K lines of&lt;br /&gt;
+ExitPolicy reject so.me.ip.addr&lt;/p&gt;
+
+&lt;p&gt;Side effects are :&lt;br /&gt;
+- starting TOR or Vidalia take 100% CPU for around 1min&lt;br /&gt;
+- In /var/log/tor/log I get messages :&lt;/p&gt;
+
+&lt;p&gt;  [warn] router_dump_router_to_string(): Bug: descriptor policy_write_item ran out of room!&lt;br /&gt;
+  [warn] router_rebuild_descriptor(): Bug: Couldn&#39;t generate router descriptor.&lt;/p&gt;
+
+&lt;p&gt;So definitely no, trying to feed so many rejects in TOR doesn&#39;t properly work !&lt;/p&gt;
+
+&lt;p&gt;And by the way... if you though listing exactly US IP gives a small result, you are very wrong... I get 27K lines of rejects !&lt;/p&gt;
+
+&lt;p&gt;So you&#39;re right, as long as such a behaviour is not implemented as it is for ExitNodes, I&#39;ll go down running as only entry+middlenode.&lt;/p&gt;
+
+&lt;p&gt;... and I have more accurate data to post to the bug list now !&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 47</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_47/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_47/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:14Z</updated>
+	<published>2009-05-27T11:23:14Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;US is the country with most IP ranges of cource.&lt;/p&gt;
+
+&lt;p&gt;Tor&#39;s GeoIP is not a reliable source, but it&#39;s better than nothing...&lt;/p&gt;
+
+&lt;p&gt;The GeoIP is by nature not 100% reliable data, you have for example a number of very fast nodes on Tor network that has fake country for there IP.&lt;/p&gt;
+
+&lt;p&gt;The data for your CountryIP can easily be faked if you have static IP&lt;/p&gt;
+
+&lt;p&gt;Go for country IP instead, source for both where ISP is located + where internet access is located.&lt;/p&gt;
+
+&lt;p&gt;one source gives for FR:&lt;br /&gt;
+# Total Networks: 1,848  = you should have about 1.8k lines for FR&lt;br /&gt;
+# Total Subnets:  68,933,568 = and about 68.9M IPs for FR&lt;/p&gt;
+
+&lt;p&gt;You could decrease the list by overblocking IP series with many separate blocks on insead of using all those one&#39;s.&lt;br /&gt;
+For France you could for example block 193.0.0.0/8, 194.0.0.0/8, 195.0.0.0/8... instead of&lt;br /&gt;
+193.0.128.0/18,193.0.192.0/19,193.0.245.0/24,193.16.156.0/24,&lt;br /&gt;
+193.16.159.0/24........&lt;/p&gt;
+
+&lt;p&gt;&quot; [warn] router_dump_router_to_string(): Bug: descriptor policy_write_item ran out of room!&lt;br /&gt;
+[warn] router_rebuild_descriptor(): Bug: Couldn&#39;t generate router descriptor.&lt;br /&gt;
+So definitely no, trying to feed so many rejects in TOR doesn&#39;t properly work !&quot;&lt;/p&gt;
+
+&lt;p&gt;Do you only have small amount of memory on your computer ?&lt;br /&gt;
+How many blocklines is it accepting and how much memory do you have installed ?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 48</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_48/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_48/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:15Z</updated>
+	<published>2009-05-28T11:23:15Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&amp;gt;&amp;gt; one source gives for FR:&lt;br /&gt;
+&amp;gt;&amp;gt; # Total Networks: 1,848 = you should have about 1.8k lines for FR&lt;/p&gt;
+
+&lt;p&gt;Your approximation is correct. In the GeoIP file I have, it leads to 1970 lines for France.&lt;/p&gt;
+
+&lt;p&gt;&amp;gt;&amp;gt; Do you only have small amount of memory on your computer ?&lt;br /&gt;
+&amp;gt; &amp;gt;How many blocklines is it accepting and how much memory&lt;br /&gt;
+&amp;gt;&amp;gt; do you have installed ?&lt;/p&gt;
+
+&lt;p&gt;Not at all. I have 4GB and only 800MB used from my Ubuntu running full of services (Apache, MySQL, OpenVPN,....)&lt;/p&gt;
+
+&lt;p&gt;ps -aux | grep tor&lt;/p&gt;
+
+&lt;p&gt;Gives me a strange 98,8% memory used for TOR process.&lt;br /&gt;
+Could there be a parameter so that it allocates more memory at TOR startup ?&lt;/p&gt;
+
+&lt;p&gt;I did also have a warning about rising file handlers (ulimit) to 32K (don&#39;t have the exact text I did a rm /var/log/tor because logs where growing too big to be readable !)&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 49</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_49/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_49/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:16Z</updated>
+	<published>2009-05-28T11:23:16Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Feature request done.&lt;br /&gt;
+Here :&lt;br /&gt;
+&lt;a href=&quot;https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=993&quot; title=&quot;https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=993&quot; rel=&quot;nofollow&quot;&gt;https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=993&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;(Previous post, obvioulsy, blocking FR address is around 19,7K blocks and not 1970 as I wrote!)&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 50</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_50/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_50/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:17Z</updated>
+	<published>2009-05-29T11:23:17Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor obviously handles these exitpolicys worse than the internal policy&#39;s in clients torrc on your OS, it&#39;s strange, probably they don&#39;t want people to use that kind of large exitpolicyfilters.&lt;/p&gt;
+
+&lt;p&gt;The blocking of all the small unallocated IPranges would probably be the problem, are they giving you 17800 ranges&lt;br /&gt;
+and the actually now allocated to FR according to the geoIP you use 1900 ranges.&lt;br /&gt;
+or is the geoIP file wrongly giving you 19700!! ranges for France.&lt;/p&gt;
+
+&lt;p&gt;Anyway solution skip the blocking of small unallocated IPranges&lt;br /&gt;
+use an Country to IP list for determining what to associate with FR, block these IPs, you should get around 1850 IPranges.&lt;br /&gt;
+if Tor can&#39;t handle these either simplify the blocking policy by overblocking.&lt;br /&gt;
+France have for example ~440 IP ranges on the 193.x.x.x range , blocking the whole 193.0.0.0/8 would decrease your list to ~1410 IPranges.&lt;br /&gt;
+France have for example ~500 IP ranges on the 194.x.x.x range , blocking the whole 194.0.0.0/8 would decrease your list to ~910 IPranges&lt;br /&gt;
+France have for example ~140 IP ranges on the 195.x.x.x range , blocking the whole 194.0.0.0/8 would decrease your list to ~770 IPranges&lt;br /&gt;
+France have for example ~80 IP ranges on the 91.x.x.x range , blocking the whole  91.0.0.0/8 would decrease your list to ~690 IPranges&lt;br /&gt;
+France have for example ~80 IP ranges on the 217.x.x.x range , blocking the whole  217.0.0.0/8 would decrease your list to ~610 IPranges&lt;br /&gt;
+Keep doing this until you have a number your Tor client accepts.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 51</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_51/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_51/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:18Z</updated>
+	<published>2009-05-29T11:23:18Z</published>
+
+	<content type="html" xml:lang="en">
+	I saw you where using the &quot;stable&quot; version 0.2.0.34 have you considered trying the Alpha/ReleaseCandidate version series maby the 0.2.1.15RC handles these things better?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 52</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_52/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_52/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:19Z</updated>
+	<published>2009-05-29T11:23:19Z</published>
+
+	<content type="html" xml:lang="en">
+	I saw you where using the &quot;stable&quot; version 0.2.0.34 have you considered trying the Alpha/ReleaseCandidate version series maby the 0.2.1.15RC handles these things better?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 53</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_53/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_53/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:20Z</updated>
+	<published>2009-06-03T11:23:20Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I haven&#39;t try yet doing the same with 0.2.1.15RC&lt;/p&gt;
+
+&lt;p&gt;At the moment I just took it from the launchpad TOR-Team repository.&lt;/p&gt;
+
+&lt;p&gt;I think I might get a try... if weather is bad during my next holidays... to understand the code, and do-it-myself, blocking by country.&lt;/p&gt;
+
+&lt;p&gt;But of course, supposing I get to something, it cannot be commited to trunk development like that as protocol has to be changed to say &quot;Hi, I am an exit node that blocks {PL}, {HU}, and accept {CA}&quot;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 54</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_54/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_54/"/>
+
+	<author><name>santiago (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:21Z</updated>
+	<published>2009-09-15T11:23:21Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I am using&lt;/p&gt;
+
+&lt;p&gt;StrictEntryNodes 1&lt;br /&gt;
+EntryNodes thenode&lt;br /&gt;
+StrictExitNodes 1&lt;br /&gt;
+ExitNodes thenode &lt;/p&gt;
+
+&lt;p&gt;Can I set up for example the relay ?&lt;/p&gt;
+
+&lt;p&gt;StrictRelayNodes 1&lt;br /&gt;
+RelayNodes thenode ?&lt;/p&gt;
+
+&lt;p&gt;Thanks&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 55</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_55/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_55/"/>
+
+	<author><name>nargile cafeler (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:22Z</updated>
+	<published>2009-11-03T12:23:22Z</published>
+
+	<content type="html" xml:lang="en">
+	Thank you ..
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 56</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_56/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_56/"/>
+
+	<author><name>Bedava oyunlar (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:23Z</updated>
+	<published>2009-11-04T12:23:23Z</published>
+
+	<content type="html" xml:lang="en">
+	thank you for sharing admin  very nice article.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 57</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_57/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_57/"/>
+
+	<author><name>kızlar (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:24Z</updated>
+	<published>2009-11-04T12:23:24Z</published>
+
+	<content type="html" xml:lang="en">
+	good article so much thanks.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 58</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_58/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_58/"/>
+
+	<author><name>ali (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:25Z</updated>
+	<published>2009-11-13T12:23:25Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;li&gt;&lt;a href=&quot;http://www.ajansilgin.com/&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;ILGIN Ajans haber&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ikimizinyeri.com/&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;Siir Guzel Soz Hikaye Ask Mektuplari&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.oyunvaktim.com/&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;Oyun oyna Flash Oyunlar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.yedemin.com/&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;Yedemin ilan Deposu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.tatillove.com/&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;Tatil Gezi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.tatilyorelerimiz.com/&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;Tatil Gezi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.canli-spor.com/&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;Canli Spor&lt;/a&gt;&lt;/li&gt;&lt;/p&gt;
+
+&lt;p&gt;da&lt;/p&gt;
+
+&lt;p&gt;&lt;li&gt;&lt;a href=&quot;http://www.sportakvimi.com/&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;Spor Haberleri&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ajansulusal.com/&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;Ulusal Haber&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ajanshaberler.com/&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;Ajansnlar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ilgintv.com/anasayfa&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;ILGIN HABER&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.kaplica.gen.tr/anasayfa&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;Kaplıca Termal Sağlık Şifa Rehberi&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.fanatiktr.com/anasayfa&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;Fanatik Spor Haberleri&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.taraftartr.com/anasayfa&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;Taraftar Spor Haberleri&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.filmdizitr.com/anasayfa&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;Film Dizi Belgesel Albüm Yaşilçam Filmleri&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.altyazitr.com/anasayfa&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;Türkçe Altyazı Altyazı Çevirileri&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.dunyasinemasi.com/anasayfa&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;Sinema Vizyon Filmler&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.seyretal.com/anasayfa&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;Film Seyret izle Dizi Seyret izle Online&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.dizifilmclup.com/&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;Dizi Film izle seyret&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.vizyoncinema.com/&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;Vizyon Sinema Film izle seyret&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.fragmantv.org/&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;Fragman izle seyret&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.imleme.com/&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;Sosyal imleme&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.habercolumn.com/&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;Haber Column&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.orguelisi.com.com/&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;Örgü Elişi Dantel Oya Örnekleri Modelleri&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.diyetegzersiz.com/&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;Diyet Egzersiz Zayıflama Sağlık Güzellik&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.resimboya.com/&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;Resim Boya&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.vizyonsinema.com/&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;Vizyon Sinema Vizyondaki Filmler&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.vizyonsinemaizle.com/&quot; target=&quot;blank&quot; rel=&quot;nofollow&quot;&gt;Vizyon Filmleri İzle Seyret&lt;/a&gt;&lt;/li&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 59</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_59/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_59/"/>
+
+	<author><name>mirc sohbet (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:26Z</updated>
+	<published>2009-11-13T12:23:26Z</published>
+
+	<content type="html" xml:lang="en">
+	Thank you, you answered the question I have been searching for which was whether or not to place keywords when blog commenting. &lt;a href=&quot;http://www.hayda.net&quot; title=&quot;mirc, cinsel sohbet, cinsellik, chat&quot; rel=&quot;nofollow&quot;&gt;mirc&lt;/a&gt; . &lt;a href=&quot;http://www.hayda.net&quot; title=&quot;mirc, cinsel sohbet, cinsellik, chat&quot; rel=&quot;nofollow&quot;&gt;chat&lt;/a&gt; . &lt;a href=&quot;http://www.hayda.net/&quot; title=&quot;http://www.hayda.net/&quot; rel=&quot;nofollow&quot;&gt;http://www.hayda.net/&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 60</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_60/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_60/"/>
+
+	<author><name>e (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:27Z</updated>
+	<published>2009-11-14T12:23:27Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;a href=&quot;http://secrety0ur.wordpress.com/&quot; title=&quot;http://secrety0ur.wordpress.com/&quot; rel=&quot;nofollow&quot;&gt;http://secrety0ur.wordpress.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;hack&lt;br /&gt;
+exploits&lt;br /&gt;
+hacker&lt;br /&gt;
+hacked&lt;br /&gt;
+acconts&lt;br /&gt;
+emper0rship&lt;br /&gt;
+web&lt;br /&gt;
+page&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 61</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_61/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_61/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:28Z</updated>
+	<published>2009-12-12T12:23:28Z</published>
+
+	<content type="html" xml:lang="en">
+	Thank you, you answered the question I have been searching for which was whether or not to place keywords when blog commenting &lt;a href=&quot;http://www.united-net.com&quot; title=&quot;http://www.united-net.com&quot; rel=&quot;nofollow&quot;&gt;http://www.united-net.com&lt;/a&gt; Domain, Hosting, Reseller
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 62</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_62/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_62/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:29Z</updated>
+	<published>2010-01-09T12:23:29Z</published>
+
+	<content type="html" xml:lang="en">
+	adasd
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 63</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_63/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_63/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:30Z</updated>
+	<published>2010-01-19T12:23:30Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Thank you very nice post.very good thanks&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;dizi izleme sektörünün yeni lideri olmak için yola çıkmıştır bu sitemizde ise dizi izlenir ve dizi seyret vardır. en iyi dizileri son bölümleri online izleyebilirsiniz.ve online dizi izleyebilirsinizkurtlar vadisi pusu izleyebilirsiniz.aşkı memnu izleyebilirsiniz.ezel izleyebilirsiniz.tüm bölümleri izleyebilirsiniz.son bölüm izleyebilirsiniz.online dizi izleyebilirsiniz.canlı dizi izleyebilirsiniz.full dizi izleyebilirsiniz.aşk ve ceza izleyebilirsiniz.geniş aile izleyebilirsiniz.bölüm izleyebilirsiniz.dizisi izleyebilirsiniz.&lt;br /&gt;
+oyun  oynayabilirsiniz.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 64</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_64/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_64/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:31Z</updated>
+	<published>2010-01-20T12:23:31Z</published>
+
+	<content type="html" xml:lang="en">
+	What a nice post &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 65</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_65/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_65/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:33Z</updated>
+	<published>2010-02-01T12:23:33Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Directory authorities should never send a 503 &quot;busy&quot; response to requests for votes or keys. Bugfix on 0.2.0.8-alpha; exposed by bug 959.&lt;/p&gt;
+
+&lt;p&gt;http://www.bagkurssk.com&lt;br /&gt;
+http://www.emeklisandigi.gen.tr&lt;br /&gt;
+http://www.maiajans.com&lt;br /&gt;
+http://www.ganoexcelturkiyebiz.biz&lt;br /&gt;
+http://www.canlimacizle.gen.tr&lt;br /&gt;
+http://www.kolayblogtr.com&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 67</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_67/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_67/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:34Z</updated>
+	<published>2010-03-23T11:23:34Z</published>
+
+	<content type="html" xml:lang="en">
+	Thank you for a great program, just a question:
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 66</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_66/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_66/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:34Z</updated>
+	<published>2010-02-14T12:23:34Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Thank you, you answered the question I have been searching for which was whether or not to place keywords when blog commenting&lt;/p&gt;
+
+&lt;p&gt;http://www.ligtvtr.net&lt;br /&gt;
+http://www.bagkurssk.com&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 68</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_68/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_68/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:36Z</updated>
+	<published>2010-03-23T11:23:35Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Ok then.&lt;/p&gt;
+
+&lt;p&gt;I&#39;ll improve my XSL transform so that it gives me an output I can just paste to /etc/torrc in order to block/accept countries.&lt;br /&gt;
+http://ebru34.com/&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 69</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_69/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_69/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:37Z</updated>
+	<published>2010-03-30T11:23:37Z</published>
+
+	<content type="html" xml:lang="en">
+	thanks
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 70</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_70/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_70/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:38Z</updated>
+	<published>2010-07-17T11:23:38Z</published>
+
+	<content type="html" xml:lang="en">
+	thakns
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 71</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_71/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_14-rc_released/comment_71/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:39Z</updated>
+	<published>2011-01-20T12:23:39Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I would appreciate your help in solving this problem.  TOR running perfectly before, now I am getting these error messages:&lt;br /&gt;
+     No specified exit routers seem to be running, and StrictExitNodes is set: can&#39;t choose an exit.&lt;br /&gt;
+    failed to choose an exit server&lt;/p&gt;
+
+&lt;p&gt;Vidalia: 0.2.7&lt;br /&gt;
+Tor: 0.2.1.25&lt;br /&gt;
+Qt: 4.6.2&lt;br /&gt;
+Firefox 3.6.13&lt;/p&gt;
+
+&lt;p&gt;Thanks for any assistance you may provide.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+
+</feed>

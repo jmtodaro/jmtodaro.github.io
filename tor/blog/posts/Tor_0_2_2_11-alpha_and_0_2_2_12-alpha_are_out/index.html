@@ -1,0 +1,760 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tor 0.2.2.11-alpha and 0.2.2.12-alpha are out</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_2_11-alpha_and_0_2_2_12-alpha_are_out&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Tor 0.2.2.11-alpha and 0.2.2.12-alpha are out</a>
+
+</span>
+
+
+<div id="content">
+<p>Tor 0.2.2.12-alpha fixes a critical bug in how directory authorities<br />
+handle and vote on descriptors. It was causing relays to drop out of<br />
+the consensus.</p>
+
+<p>Tor 0.2.2.11-alpha fixes yet another instance of broken OpenSSL libraries<br />
+that was causing some relays to drop out of the consensus.</p>
+
+<p>(Windows bundles will be available whenever Andrew gets around to making<br />
+them; we're trying to stick to a policy of announcing alphas on time<br />
+rather than waiting for every package.)</p>
+
+<p><a href="https://www.torproject.org/download.html.en" title="https://www.torproject.org/download.html.en" rel="nofollow">https://www.torproject.org/download.html.en</a></p>
+
+<p>Original announcement is at <a href="http://archives.seul.org/or/talk/Apr-2010/msg00174.html" title="http://archives.seul.org/or/talk/Apr-2010/msg00174.html" rel="nofollow">http://archives.seul.org/or/talk/Apr-2010/msg00174.html</a></p>
+
+<p>Changes in version 0.2.2.12-alpha - 2010-04-20<br />
+  o Major bugfixes:<br />
+    - Many relays have been falling out of the consensus lately because<br />
+      not enough authorities know about their descriptor for them to get<br />
+      a majority of votes. When we deprecated the v2 directory protocol,<br />
+      we got rid of the only way that v3 authorities can hear from each <span class="read-more"><a href="http://blog.torproject.org/blog/tor-02211-alpha-and-02212-alpha-are-out"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/alpha_releases/" rel="tag">alpha releases</a>
+
+<a href="../../tags/bug_fixes/" rel="tag">bug fixes</a>
+
+<a href="../../tags/performance_improvements/" rel="tag">performance improvements</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-955e0a33433e696dc0fb9368b290617d">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi!!!!!!!!!!!!!</p>
+
+<p>What's the purpose of alpha releases?!!!!!!! Usually, they're experimental releases, much more unstable than betas!!!! is a Tor alpha enough good to be used and included into Tor Bundles?!!!!!!! I knew that when you're dealing with privacy applications you shouldn't use "new" stuffs, because they aren't enough tested!!! It isn't a good idea to use unstable software in tor-bundles!!!!!!!!!! but if you're willing to include the Tor alphas into your TorBB, and this is what you are doing, then i've suppose them to be stable!!!! is it?!!!!!!!</p>
+
+<p>Hah!!! Did you noticed that also VIDALIA has been updated!!!!!!!!!!? v0.2.8 is available to download here https://www.torproject.org/vidalia/ !!!!!!!!!!! though there isn't any super news!!!</p>
+
+<p>bye!!!!!!!!!!!!!<br />
+~bee!!!!!!!!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 24 Apr 2010 06:55:46 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b43076a7d4f2d84ed3dbe59b052f4efd">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>The difference between alpha and stable is here, <a href="https://www.torproject.org/download#packagediff" title="https://www.torproject.org/download#packagediff" rel="nofollow">https://www.torproject.org/download#packagediff</a></p>
+
+<p>The entire linux tbb is alpha right now, so it gets the alpha version of tor.</p>
+
+<p>Yes, we released a new version of vidalia, but since it doesn't build in osx 10.5+ nor windows, there's little point to telling the world to upgrade.  Vidalia 0.2.9 should be out soon with the things that broke in 0.2.8, namely universal plug and play.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 25 Apr 2010 06:55:47 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-46c3ca0fa41a9f13c3012a510f5316be">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>Phobos,</p>
+
+<p>Pretty please (with a cherry on top) _stop_ bee from posting.  Nothing it writes is useful enough to allow it's spamming and it's unfounded attacks upon Tor-BB and Tor in general.  If it has so many problems with Tor and Tor-BB then why must it post here and why must it spam it's  project here?  </p>
+
+<p>Not only that but the thing called bee can not accept constructive criticisms, one poster wrote about bee's "project" and how it is flawed in it's downloads scripts ( see 10th post here: https://blog.torproject.org/blog/torbutton-release-125-google-captchas-a...  ) yet all bee did was attack the poster who was offering constructive criticism.  Bee could not accept it is wrong and needed to learn a thing or two about security.  For the sake of Tor users who may not be aware of bee's antics and insanity, please stop allowing it to post.</p>
+
+<p>Have you not noticed that everywhere the thing called bee posts it merely attempts to cause trouble and 'dust ups'?  At the Firefox blogs it is banned, every post it has made here, save a couple in Mike's current TorButton blog entry are filled with venom and "why bee is smarter than everyone else".</p>
+
+<p>Please for the sake of  stop the thing called bee from posting!</p>
+
+<p>Thank you.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 01 May 2010 06:55:48 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3f31d0c61a085aed0f4ddf49b6b73e68">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<p>The signal to noise ratio of bee's posts is very low.  However, there are some gems and flashes of insight amongst the noise.  The writing style is highly annoying, but a quick regex in mutt removes the nonsense.  </p>
+
+<p>I would think less of phobos and tor if they censored posts on content, at least those that aren't full of spam.  It seems since the blog moved to moderated comments, the amount of spam has fallen to zero.</p>
+
+<p>If only there was an rss feed for comments.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 01 May 2010 06:55:49 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-de6d3aa090aee7ece84df3a742d981ae">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>As someone else said in this thread, bee's posts have a low signal to noise ratio, but there are good parts in there.</p>
+
+<p>We generally don't care what everyone else is doing.  We're not trying to maintain a position at the center of the herd.  We're trying to build an anonymity network, this includes allowing all to post and comment. </p>
+
+<p>Smart users can make their own decisions as to bee's statements.</p>
+
+<p>I only filter out obvious spam (link farms, bayesian word clusters that make no sense in any language, and product advertisements).  As soon as we start exercising editorial control we run into various legal liability and other issues we've been warned not to cross.  I'd rather spend the money we receive on making tor better, not fighting lawsuits.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 02 May 2010 06:55:50 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b8265be5855f0f74f99b85c158f6f792">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>I think that you're very confused and utterly jealous!!!!!!!!!!!!! although i like your trolling!!!!!!!!! it's amusing!!!!!!!!!!!!! yeah!! it's sad, but amusing!!!!!!!! i'm unusual to reply to posts like your one, but you've to know that i ain't blocked from the <em>Firefox Addons</em> blog, there isn't any filter and i could post new messages at any time!!!!! But after getting a few of my messages deleted, i've dropped out of it!!! i've almost quit to read their blog too!!!!!!!!!! I never liked AMOs because they're sold out to Google (AMO is Googlezilla!!!!!!!!!). They want to keep it hidden even if everybody knows that Google is the source of almost all donations given to Mozilla (they're called "donations", but they're actually "bribes"!!! now, guess why Google is the default search engine of firefox!!!!!!!!), and they'll delete your posts if you dare to point out the way AMO behaves (they have centralized everything!!! they're very totalitarian and very well oriented towards abuses; as they're already doing some!!!!!!!). </p>
+
+<p>You think that i dislike the Tor Project, yet i made a <strong><em>Tor</em> Browser Bundle for Linux</strong>!!!!!!!!!!!!!!!!! Yeah, my Tor Browser Bundle for Linux is <strong>FactorBee</strong>!!!!!!!!!! Misconceptions?!!!!!  I made it, and it's normal if i'm promoting it sometimes!!!!!!!!! Who else has to do it?!!!!!!!!!!!!!!!! and, yeah, it's indeed better than the official Tor Browser Bundle for Linux made by the TorProject!!!!!!! Did you said something about constructive criticisms?!!!!!!!! I'll be very happy to learn something from you!!! I would like to listen your wise suggestions and to copy the ideas you used to realized <em>your</em> Tor Browser Bundle, but i guess that i'll have to wait for the day you'll make one!!!!!!!!!!!!!!!!!!!!!!! You always say that my posts are useless; ok, to save your precious time, i'll avoid to talk about the null usefulness of the posts sent by you!!!!!!!!!!! lol!!!!!!!!!! ~bee!!!!!!!!!!!!!!!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 03 May 2010 06:55:51 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-92c05fa0e5cb0724e9293d7fbb0c834c">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p><b>OK, I'll bite, but look out, you may not like where I bite:</b></p>
+
+<p>AMO _did_ ban you because it's obvious you can't write like a rational person, the reason you can't post there anymore is they mark ANY post with excessive exclamation points as spam, that's because of _you_ and _you_ alone!  So you just pick and choose your "truth" huh?<br />
+<br><br />
+You did not make a Tor-BB for Linux, you made simply made a portable version of Firefox and Tor, etc; big whoop.  My gripe is that you to claim Tor-BB is insecure and your bundle is SOOO much better, yea right, sure.  Less informed people might actually believe you and that's dangerous.<br />
+<br><br />
+<b>Let me cite you above:</b><br />
+"...and, yeah, it's indeed better than the official Tor Browser Bundle for Linux made by the TorProject".  That is spamming buddy boy, either that or help Tor and stop bashing it with broad and unsubstantiated claims [rolls eyes], the only other option is to clearly state why you think Tor-BB is not as good as yours.<br />
+<br><br />
+<b>Here is another instance of your fear mongering about Tor-BB:</b><br />
+"The official Tor Browser Bundle, is very much more UNSAFE than factorbee!!!!"<br />
+<br><br />
+<b>And here is yet another example of your ranting:</b><br />
+"Well; i want to compare this Tor Browser Bundle for GNU/Linux (the official belonging to the TOR Project), with my one (Factorbee)!!!!!!!!!!!!<br />
+This TorBB of the torproject hasn't been well-made!!!! It actually sucks!!!!! Six months for this crap lol!!!!!!!!!!"<br />
+<br><br />
+While I have you here, let me ask you:  why do you feel the need to write like you do?  You make yourself look like an idiot and someone who yearns for attention; I should probably not feed the troll but I can't help it.<br />
+<br><br />
+FWIW, I have made my own version of portable Firefox (rightly and legally labeled Iceweasel), Tor, Polipo and Vidalia for Linux (Ubuntu) like a year ago, I did it for myself and talked about it on IRC with Steven when he was first making TorBB for windows.  I for one did not feel like I needed to be a braggart and one who wanted to bash Tor folks; besides, I knew they would make a better package than I could for _other_ users besides myself.<br />
+<br><br />
+Also FWIW, considering you called me out, I was the one to first proposed TorButton with Mike Perry on IRC a long time ago.  I first tried to make it after talking about the idea on IRC but I did not (and still do not) have the skill; thank goodness MIke too up the effort.<br />
+<br></p>
+
+<ul><i>You did nothing special, you act like you turned water into wine...jeeze.</ul>
+
+<p></i><br />
+<br><br />
+<b>You want an example of where you can learn?  Let me quote another person who already tried to school you but you threw a tantrum like all kids do:</b><br />
+-----------------------------------------<br />
+"bee's posting style aside, bee doesn't understand security nor firefox. bee is simply adding in various plugins/extensions and calling it good.</p>
+
+<p>case in point, look at download.sh from the source bundle:</p>
+
+<p># https://www.torproject.org/vidalia/<br />
+wget "https://www.torproject.org/vidalia/dist/vidalia-0.2.7.tar.gz"<br />
+let counter++</p>
+
+<p>The script doesn't download the pgp signature, nor check it. This is true for every download link in that file. And then to make the user feel better:</p>
+
+<p>md5sum * &gt; ../sources.md5sum<br />
+sha1sum * &gt; ../sources.sha1sum</p>
+
+<p>Rather than bother checking the md5 or sha1 hashes from the source website, just create them all AFTER the download and compare against that. If you have a corrupt/malicious download, you have no way to know that using bee's method.</p>
+
+<p>Also, "wget" is called from the environment PATH variable, not specifically hardcoded to a path. While easier to code, anything can be called wget and download.sh will run it.</p>
+
+<p>Also, all of the scripts use "/tmp/factorbee", which as a known path, is exploitable. mkstemp would be preferable.</p>
+
+<p>The tor config file has this rampant problem too,</p>
+
+<p>DataDirectory /tmp/factorbee/app/tor-cache<br />
+GeoIPFile /tmp/factorbee/app/tor/share/tor/geoip"<br />
+----------------------------------------<br />
+<br><br />
+<b>You are darn lucky Phobos, et al., still allow you to post, I for one would have put an end to it a long time ago.  If you really wanted to be helpful you would do as Phobos first asked you to do:</b><br />
+"Before this turns into any more of a flamewar, if bee has suggestions, we're happy to collaborate with him/her on making tbb better. This antagonistic relationship is not helping anyone. Our goal is with the browser bundle is to help non-technical users protect their privacy and anonymity online. We try to do this by making a complete bundle that just works without any configuration. This appears to be what factorbee is trying to do as well. Fighting about it is just a waste of resources."<br />
+<br><br />
+OK, schools out, now go home, or stay and learn to post like the rest of us and stop bashing Tor-BB.  You can write all you want about Factorbee, but stop making unsubstantiated claims that Factorbee is much better and more secure and more 'safe' than Tor-BB.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 03 May 2010 06:55:52 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-217bcba991ed236273c53b0cfae07b61">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi!!!!!!!!!!!<br />
+It seems to me like you're going to freak out!!!!!!!!!!!!!!!!! Btw, ok, you claim you did a Tor Browser Bundle, but you kept it for you, and now you're jealous because i made my one for everyone!!!!!!!!!!(and it has got a lot of success too!!!!!!!) I won't answer again to the whole post you pasted up here, because i already did it!!!!!!!! The suggestions and the flaws you claim are nonsense!!!!! lol!!!!!!!!!! At the AMO blog i ain't blocked, but they're of course usual to remove all the messages they dislike!!!!!!!!!!!! it may be possible that if i'll post again they'll remove my posts!!!!!! Factorbee is better than the official TorBB!!!! For example there isn't "firefox portable" but a real custom built of firefox!!!! i built it, deactivating at compiling-time a lot of things (like the whole plug-in support, just to name one!!), it works without polipo (firefox is patched with chrisd's patch to avoid SOCKETS timeouts), i even changed the Firefox (nodoka) icon to another one to recognize it better in the tasks bar!!!lol!!!!!! but also because unlike in the official torbb firefox doesn't crash when you start a download lol!!!!!!!!!!!!!!!!!!!!! and so on....!!!!!!!! I could write the list of all features related to the scripts of factorbee, very useful to improve the safeness of the whole bundle, but to keep this short, i'll only say that the official TorBB isn't yet made with the original idea to support external scripts!!!!!!!!!!! i already said this though!!!!!!!!!!! it's very too long to write all the reasons why factorbee is better!!!!!!!!!! you could understand them by reading the pages about factorbee at the HONEY BEE NET!!!!!!! and, yeah, finally, it's more secure &amp; safe &amp; stable than the official TorBB!!!!!!!!! I made it in a very accurate way, and with love!!!!!!!!!!!!!!!!! I didn't said that the official TorBB is to trash altogether, but compared to factorbee, it's far behind and indeed it sucks!!!!!!!!!! bye!!!!!!!!!! ~bee!!!!!!!!!!!!!!!!!!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 04 May 2010 06:55:53 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d7fed1af806d9f674a01f445f148cf9f">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+How exactly does the aggressive approach to prevent clients from making 1 hop streams work? Does it mean exits can verify the route a give packet has taken through the network? More information on this would be nice.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 24 Apr 2010 06:55:54 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a1c3fbb9630237e084f7717897c23798">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+0.2.2.13-alpha source now available on download page
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 25 Apr 2010 06:55:55 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-38dce053cff2571e8652effc0c31a74c">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+Yes.  However, until packages are available for a few operating systems, we don't announce too quickly.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 25 Apr 2010 06:55:56 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9a490224cff1ba4260e34c8799ddca37">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+No tor packages available for ubuntu 10.04 LTS (lucid)?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 30 Apr 2010 06:55:57 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-585de4afa94ddee75fbaccd67e2222b4">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+Not yet.  I hear the karmic packages work fine for now.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 01 May 2010 06:55:58 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_2_11-alpha_and_0_2_2_12-alpha_are_out&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:55:46 AM CDT</span>
+<!-- Created <span class="date">Fri 23 Apr 2010 10:26:03 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged socks5</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/socks5/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Tor Browser Bundle 1.2.8 released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_8_released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_8_released/</link>
+
+
+	<category>/tags/caching</category>
+
+	<category>/tags/faster_firefox</category>
+
+	<category>/tags/faster_tor</category>
+
+	<category>/tags/open_research</category>
+
+	<category>/tags/performance</category>
+
+	<category>/tags/polipo</category>
+
+	<category>/tags/privoxy</category>
+
+	<category>/tags/socks5</category>
+
+	<category>/tags/tor_browser_bundle</category>
+
+	<category>/tags/vidalia_bundle</category>
+
+
+	<pubDate>Wed, 19 Aug 2009 22:43:12 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:34:07Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor Browser Bundle 1.2.8 is released.  The big changes are the inclusion of statically linked openssl dlls to resolve a few geoip lookup and functionality issues with Vidalia, and the upgrade to the &lt;a href=&quot;http://localhost//blog.torproject.org/blog/vidalia-022-released&quot; rel=&quot;nofollow&quot;&gt;new Vidalia 0.2.2&lt;/a&gt;.  &lt;/p&gt;
+
+&lt;p&gt;Available at &lt;a href=&quot;https://torproject.org/torbrowser&quot; title=&quot;https://torproject.org/torbrowser&quot; rel=&quot;nofollow&quot;&gt;https://torproject.org/torbrowser&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The full list of updates and fixes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;update Torbutton to 1.2.2&lt;/li&gt;
+&lt;li&gt;update Vidalia to 0.2.2&lt;/li&gt;
+&lt;li&gt;compile OpenSSL 0.9.8k with Visual C to make dlls&lt;/li&gt;
+&lt;li&gt;update Pidgin to 2.6.1&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_8_released/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

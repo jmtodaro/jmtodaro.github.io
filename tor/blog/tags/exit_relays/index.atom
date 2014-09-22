@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged exit_relays</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/exit_relays/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/exit_relays/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/exit_relays/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:58:47Z</updated>
+<entry>
+	<title>Plaintext over Tor is still plaintext</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/exit_relays" />
+
+	<category term="/tags/plaintext_communications" />
+
+	<category term="/tags/tor" />
+
+	<category term="/tags/wikileaks" />
+
+
+	<updated>2011-04-05T11:58:47Z</updated>
+	<published>2010-06-02T02:36:41Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Recently, a few articles have been published regarding Tor, &lt;a href=&quot;http://wikileaks.org/&quot; rel=&quot;nofollow&quot;&gt;Wikileaks&lt;/a&gt;, and snooping data coming out of the Tor network.  I write to remind our users, and people in search of privacy enhancing technology, that good software is just one part of the solution. Education is just as important. This is why there is a &lt;a href=&quot;http://localhost//www.torproject.org/download/download.html.en#warning&quot; rel=&quot;nofollow&quot;&gt;warning on the Tor download page&lt;/a&gt; about what Tor does and does not do.  We also have a &lt;a href=&quot;https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/TorFAQ#CanexitnodeseavesdroponcommunicationsIsntthatbad&quot; rel=&quot;nofollow&quot;&gt;FAQ entry about this topic&lt;/a&gt;.  Any plaintext communication over the Internet is open to intercept.  This is true if the transport mechanism is email, http, tor, or carrier pigeons.  Tor does not magically encrypt the Internet from end to end.  Tor does wrap your traffic in encrypted layers as it transports it through the Tor network. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/plaintext-over-tor-still-plaintext&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Start of a Tor Legal Support Directory</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Start_of_a_Tor_Legal_Support_Directory/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Start_of_a_Tor_Legal_Support_Directory/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/australia" />
+
+	<category term="/tags/austria" />
+
+	<category term="/tags/exit_relays" />
+
+	<category term="/tags/finland" />
+
+	<category term="/tags/germany" />
+
+	<category term="/tags/legal_support" />
+
+	<category term="/tags/netherlands" />
+
+	<category term="/tags/switzerland" />
+
+	<category term="/tags/tor_legal_support_directory" />
+
+	<category term="/tags/tor_relay_operators" />
+
+	<category term="/tags/usa" />
+
+
+	<updated>2011-04-05T11:47:23Z</updated>
+	<published>2010-01-12T03:50:24Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Over the past few months, a number of exit relay operators have contacted us asking for help with some legal issues encountered while running their relay.  While we can&#39;t provide legal advice in all jurisdictions, we can frequently find you a next hop in the legal chain to get you the advice or representation you need.  Sometimes this advice is free/pro-bono, other times it is not.  It&#39;s up to the legal organization to decide if they can take your case or refer you to someone else.&lt;/p&gt;
+
+&lt;p&gt;Rather than keep a secret list of people willing to help, we&#39;re building a public list for operators to contact directly, in their own country.  A big thanks to Fred and Gwen at the EFF for helping to start this list and for making introductions. And, of course, a big thanks to the organizations for agreeing to be listed and for offering support to Tor relay operators.&lt;/p&gt;
+
+&lt;p&gt;If you&#39;d like to add your name to this list, please let me know.&lt;/p&gt;
+
+&lt;p&gt;The current list of legal support organizations by country is: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/start-tor-legal-support-directory&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Start_of_a_Tor_Legal_Support_Directory/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Start_of_a_Tor_Legal_Support_Directory/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>New Stable released, Tor 0.2.1.21</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/New_Stable_released_Tor_0_2_1_21/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/New_Stable_released_Tor_0_2_1_21/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/exit_relays" />
+
+	<category term="/tags/openssl_fixes" />
+
+	<category term="/tags/stable_release" />
+
+
+	<updated>2011-04-05T11:45:14Z</updated>
+	<published>2009-12-30T14:21:46Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor 0.2.1.21 fixes an incompatibility with the most recent OpenSSL&lt;br /&gt;
+library. If you use Tor on Linux / Unix and you&#39;re getting SSL&lt;br /&gt;
+renegotiation errors, upgrading should help. We also recommend an&lt;br /&gt;
+upgrade if you&#39;re an exit relay.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/easy-download&quot; title=&quot;https://www.torproject.org/easy-download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/easy-download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.21 - 2009-12-21&lt;br /&gt;
+&lt;strong&gt;Major bugfixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt; Work around a security feature in OpenSSL 0.9.8l that prevents our&lt;br /&gt;
+      handshake from working unless we explicitly tell OpenSSL that we&lt;br /&gt;
+      are using SSL renegotiation safely. We are, of course, but OpenSSL&lt;br /&gt;
+      0.9.8l won&#39;t work unless we say we are.&lt;/li&gt;
+&lt;li&gt; Avoid crashing if the client is trying to upload many bytes and the&lt;br /&gt;
+      circuit gets torn down at the same time, or if the flip side&lt;br /&gt;
+      happens on the exit relay. Bugfix on 0.2.0.1-alpha; fixes bug 1150.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Minor bugfixes:&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/new-stable-released-tor-02121&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt; Do not refuse to learn about authority certs and v2 networkstatus&lt;br /&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/New_Stable_released_Tor_0_2_1_21/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/New_Stable_released_Tor_0_2_1_21/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged plugin_scanning</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/plugin_scanning/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Testing Tor Browser Bundle 1.2.1-dev</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_1-dev/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_1-dev/</link>
+
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/plugin_scanning</category>
+
+	<category>/tags/testing</category>
+
+	<category>/tags/tor_browser_bundle</category>
+
+
+	<pubDate>Sun, 31 May 2009 11:51:53 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:26:07Z</dcterms:modified>
+
+	<description>&lt;p&gt;This is a testing release of Tor IM Browser Bundle 1.2.1-dev.  The only fix in this release so far is an updated prefs.js to fix plugin scanning.  The InvalidPrefs.js file no longer appears either.  I&#39;m working on the other suggestions from &lt;a href=&quot;http://blog.torproject.org/blog/testing-tor-browser-bundle-120dev#comment-1386&quot; rel=&quot;nofollow&quot;&gt;this comment&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can &lt;a href=&quot;https://svn.torproject.org/cgi-bin/viewvc.cgi/torbrowser/trunk/build-scripts/config/prefs.js?view=log&quot; rel=&quot;nofollow&quot;&gt;view the diffs&lt;/a&gt; to see the changes.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://www.torproject.org/torbrowser/dist/tor-im-browser-1.2.1-dev_en-US.exe&quot; rel=&quot;nofollow&quot;&gt;bundle&lt;/a&gt; and associated &lt;a href=&quot;https://www.torproject.org/torbrowser/dist/tor-im-browser-1.2.1-dev_en-US.exe.asc&quot; rel=&quot;nofollow&quot;&gt;signature&lt;/a&gt; and &lt;a href=&quot;https://www.torproject.org/torbrowser/dist/tor-im-browser-1.2.1-dev_en-US.exe.sha1&quot; rel=&quot;nofollow&quot;&gt;sha1&lt;/a&gt; files are available too.&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_1-dev/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

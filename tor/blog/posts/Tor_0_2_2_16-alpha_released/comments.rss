@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Tor 0.2.2.16-alpha released</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Anonymous: Comment 1</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_1/</link>
+
+	<pubDate>Wed, 22 Sep 2010 07:08:28 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:28Z</dcterms:modified>
+
+	<description>How does megaupload evade tor?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 2</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_2/</link>
+
+	<pubDate>Sat, 02 Oct 2010 07:08:29 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:29Z</dcterms:modified>
+
+	<description>&lt;p&gt;When sobebody write the qemu net /tor driver.&lt;br /&gt;
+Or VirtualBox net driver only for tor.&lt;/p&gt;
+
+&lt;p&gt;Flash, javascript, pidgin  whole system anonymity.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 3</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_3/</link>
+
+	<pubDate>Thu, 23 Sep 2010 07:08:30 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:30Z</dcterms:modified>
+
+	<description>&lt;p&gt;There seems to be an error on the downloadpage:&lt;/p&gt;
+
+&lt;p&gt;Windows Stable linked to https://www.torproject.org/dist/vidalia-bundles/vidalia-bundle-0.2.1.26-... contains  -&amp;gt; 0.2.2.15-alpha&lt;/p&gt;
+
+&lt;p&gt;and the unstable linked to https://www.torproject.org/dist/vidalia-bundles/vidalia-bundle-0.2.2.15-... is -&amp;gt; error 404&lt;/p&gt;
+
+&lt;p&gt;kthxbai&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 4</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_4/</link>
+
+	<pubDate>Thu, 23 Sep 2010 07:08:31 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:31Z</dcterms:modified>
+
+	<description>You are correct.  Thank you for the notice.  It is fixed.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 5</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_5/</link>
+
+	<pubDate>Thu, 23 Sep 2010 07:08:32 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:32Z</dcterms:modified>
+
+	<description>&lt;p&gt;I managed to get Tor 0.2.2.16-alpha to build on Windows.&lt;/p&gt;
+
+&lt;p&gt;Im using:&lt;br /&gt;
+  OpenSSL (openssl-0.9.8o)&lt;br /&gt;
+  Zlib (libevent-1.4.14b-stable)&lt;/p&gt;
+
+&lt;p&gt;I had to revert changes in eventdns.c to that of 0.2.2.15-alpha.&lt;/p&gt;
+
+&lt;p&gt;Also when building the OpenSSL library I had to use this config statement:&lt;br /&gt;
+   ./config -no-idea -no-rc5 -no-mdc2 -no-hw&lt;/p&gt;
+
+&lt;p&gt;The -no-hw switch turns off the hardware support, since -no-engines does not currently work in this version.&lt;/p&gt;
+
+&lt;p&gt;Also, with Vidalia 0.2.10, in the Network Map there does appear to be as many &#39;red dots&#39; representing servers in the global map.&lt;/p&gt;
+
+&lt;p&gt;Other than this its been running fine here, and on a beta testers machine, for several days.&lt;/p&gt;
+
+&lt;p&gt;I hope this helps...&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 6</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_6/</link>
+
+	<pubDate>Sat, 25 Sep 2010 07:08:33 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:33Z</dcterms:modified>
+
+	<description>&lt;p&gt;Does anyone know what can be done to avoid some sites from blocking Tor ?&lt;/p&gt;
+
+&lt;p&gt;GodLikeProductions is one site that comes to mind that allows anonymous posters - but blocks Tor somehow...&lt;/p&gt;
+
+&lt;p&gt;Is there anything that can be done in the options for polipo or Tor that can help get around this ?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 7</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_7/</link>
+
+	<pubDate>Sun, 26 Sep 2010 07:08:34 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:34Z</dcterms:modified>
+
+	<description>&lt;p&gt;I am trying to create a Youtube account. It doesn&#39;t let me, saying that:&lt;/p&gt;
+
+&lt;p&gt;&quot;Sorry for the interruption. We have been receiving a large volume of requests from your network. To continue with your YouTube experience, please enter the verification code below.&quot;&lt;/p&gt;
+
+&lt;p&gt;It then prompts me infinite number of times to enter Captcha code. I enter everything correctly but keeps asking for more and more Captcha codes.&lt;/p&gt;
+
+&lt;p&gt;WTF???&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 8</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_8/</link>
+
+	<pubDate>Mon, 27 Sep 2010 07:08:35 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:35Z</dcterms:modified>
+
+	<description>&lt;p&gt;You may need to make sure you have cookies enabled and javascript is allowed to run.&lt;/p&gt;
+
+&lt;p&gt;I actually relax the security options in the Tor button just enough to allow me to watch youtube videos.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 9</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_9/</link>
+
+	<pubDate>Sun, 17 Oct 2010 07:08:36 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:36Z</dcterms:modified>
+
+	<description>&lt;p&gt;Dear Tor developers,&lt;/p&gt;
+
+&lt;p&gt;I couldn&#39;t use the latest 0.2.1.26 on my old Windows 2000 PC. It said similar messages: &quot;some system calls can&#39;t be found on KERNEL.DLL.&quot;. Fortunately, I have a copy of vidalia-bundle-0.2.0.34-0.1.10 downloaded from your website. The 0.2.0.34 works on Windows 2000 and this is why I can read your dear site. Thanks&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 10</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_10/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_16-alpha_released/comment_10/</link>
+
+	<pubDate>Sun, 17 Oct 2010 07:08:37 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:37Z</dcterms:modified>
+
+	<description>I think you&#39;re confusing the two issues.  Tor itself works fine in Win200.  Vidalia, the graphical controller, does not.  See &lt;a href=&quot;https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/TorFAQ#VidaliadoesntworkinWindows2000&quot; title=&quot;https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/TorFAQ#VidaliadoesntworkinWindows2000&quot; rel=&quot;nofollow&quot;&gt;https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/TorFAQ#Vida...&lt;/a&gt; for details.
+</description>
+
+
+</item>
+
+</channel>
+</rss>

@@ -1,0 +1,341 @@
+<TMPL_IF HTML5><!DOCTYPE html>
+<html>
+<TMPL_ELSE><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+</TMPL_IF>
+<head>
+<TMPL_IF DYNAMIC>
+<TMPL_IF FORCEBASEURL><base href="<TMPL_VAR FORCEBASEURL>" /><TMPL_ELSE>
+<TMPL_IF BASEURL><base href="<TMPL_VAR BASEURL>" /></TMPL_IF>
+</TMPL_IF>
+</TMPL_IF>
+<TMPL_IF HTML5><meta charset="utf-8" /><TMPL_ELSE><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></TMPL_IF>
+<title><TMPL_VAR TITLE></title>
+<TMPL_IF FAVICON>
+<link rel="icon" href="<TMPL_VAR BASEURL><TMPL_VAR FAVICON>" type="image/x-icon" />
+</TMPL_IF>
+<link rel="stylesheet" href="<TMPL_VAR BASEURL>style.css" type="text/css" />
+<TMPL_IF LOCAL_CSS>
+<link rel="stylesheet" href="<TMPL_VAR BASEURL><TMPL_VAR LOCAL_CSS>" type="text/css" />
+<TMPL_ELSE>
+<link rel="stylesheet" href="<TMPL_VAR BASEURL>local.css" type="text/css" />
+</TMPL_IF>
+<TMPL_IF EDITURL>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="<TMPL_VAR EDITURL>" />
+</TMPL_IF>
+<TMPL_IF FEEDLINKS><TMPL_VAR FEEDLINKS></TMPL_IF>
+<TMPL_IF RELVCS><TMPL_VAR RELVCS></TMPL_IF>
+<TMPL_IF META><TMPL_VAR META></TMPL_IF>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<TMPL_IF HTML5><article class="page"><TMPL_ELSE><div class="page"></TMPL_IF>
+<div id="wrap">
+<TMPL_IF HTML5><section class="pageheader"><TMPL_ELSE><div class="pageheader"></TMPL_IF>
+<TMPL_IF HTML5><header id="header"><TMPL_ELSE><div id="header"></TMPL_IF>
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+<TMPL_IF SEARCHFORM>
+<TMPL_VAR SEARCHFORM>
+</TMPL_IF>
+<TMPL_IF HTML5></header><TMPL_ELSE></div></TMPL_IF>
+
+<TMPL_IF OTHERLANGUAGES>
+<TMPL_IF HTML5><nav id="otherlanguages"><TMPL_ELSE><div id="otherlanguages"></TMPL_IF>
+<ul>
+<TMPL_LOOP OTHERLANGUAGES>
+<li>
+<a href="<TMPL_VAR URL>"><TMPL_VAR LANGUAGE></a>
+<TMPL_IF MASTER>
+(master)
+<TMPL_ELSE>
+&nbsp;(<TMPL_VAR PERCENT>%)
+</TMPL_IF>
+</li>
+</TMPL_LOOP>
+</ul>
+<TMPL_IF HTML5></nav><TMPL_ELSE></div></TMPL_IF>
+</TMPL_IF>
+<TMPL_IF HTML5></section><TMPL_ELSE></div></TMPL_IF>
+
+<div id="pagebody">
+<TMPL_IF SIDEBAR>
+<TMPL_IF HTML5><aside class="sidebar"><TMPL_ELSE><div class="sidebar"></TMPL_IF>
+<TMPL_VAR SIDEBAR>
+
+<form action="<TMPL_VAR BASEURL>" method="get">
+<div id="blogform">
+<input type="hidden" name="do" value="blog" />
+<input type="hidden" name="from" value="posts" />
+<input type="hidden" name="subpage" value="1" />
+<TMPL_VAR POSTFORMTEXT>
+<input name="title" size="20" />
+<input type="submit" value="Edit" />
+</div>
+</form>
+
+<TMPL_IF HAVE_ACTIONS>
+<TMPL_IF HTML5><nav class="actions"><TMPL_ELSE><div class="actions"></TMPL_IF>
+<ul>
+<TMPL_IF EDITURL>
+<li><a href="<TMPL_VAR EDITURL>" rel="nofollow">Edit</a></li>
+</TMPL_IF>
+<TMPL_IF RECENTCHANGESURL>
+<li><a href="<TMPL_VAR RECENTCHANGESURL>">RecentChanges</a></li>
+</TMPL_IF>
+<TMPL_IF HISTORYURL>
+<li><a href="<TMPL_VAR HISTORYURL>">History</a></li>
+</TMPL_IF>
+<TMPL_IF GETSOURCEURL>
+<li><a href="<TMPL_VAR GETSOURCEURL>">Source</a></li>
+</TMPL_IF>
+<TMPL_IF PREFSURL>
+<li><a href="<TMPL_VAR PREFSURL>">Preferences</a></li>
+</TMPL_IF>
+<TMPL_IF ACTIONS>
+<TMPL_LOOP ACTIONS>
+<li><TMPL_VAR ACTION></li>
+</TMPL_LOOP>
+</TMPL_IF>
+<TMPL_IF COMMENTSLINK>
+<li><TMPL_VAR COMMENTSLINK></li>
+<TMPL_ELSE>
+<TMPL_IF DISCUSSIONLINK>
+<li><TMPL_VAR DISCUSSIONLINK></li>
+</TMPL_IF>
+</TMPL_IF>
+</ul>
+<TMPL_IF HTML5></nav><TMPL_ELSE></div></TMPL_IF>
+</TMPL_IF>
+
+<TMPL_IF HTML5></aside><TMPL_ELSE></div></TMPL_IF>
+</TMPL_IF>
+
+<span class="parentlinks">
+<TMPL_LOOP PARENTLINKS>
+<a href="<TMPL_VAR URL>"><TMPL_VAR PAGE></a>/ 
+</TMPL_LOOP>
+</span>
+<span class="title">
+<a href="<TMPL_VAR ROOTURL>"><TMPL_VAR TITLE></a>
+<TMPL_IF ISTRANSLATION>
+&nbsp;(<TMPL_VAR PERCENTTRANSLATED>%)
+</TMPL_IF>
+</span>
+
+
+<TMPL_IF HTML5><section id="content"><TMPL_ELSE><div id="content"></TMPL_IF>
+<TMPL_VAR CONTENT>
+
+
+
+
+<TMPL_IF TAGS>
+<TMPL_IF HTML5><nav class="tags"><TMPL_ELSE><div class="tags"></TMPL_IF>
+Tags:
+<TMPL_LOOP TAGS>
+<TMPL_VAR LINK>
+</TMPL_LOOP>
+<TMPL_IF HTML5></nav><TMPL_ELSE></div></TMPL_IF>
+</TMPL_IF>
+
+<TMPL_UNLESS DYNAMIC>
+<TMPL_IF COMMENTS>
+<TMPL_IF HTML5><section id="comments"><TMPL_ELSE><div id="comments"></TMPL_IF>
+<TMPL_VAR COMMENTS>
+<TMPL_IF ADDCOMMENTURL>
+<div class="addcomment">
+<a href="<TMPL_VAR ADDCOMMENTURL>">Add a comment</a>
+</div>
+<TMPL_ELSE>
+<div class="addcomment">Comments on this page are closed.</div>
+</TMPL_IF>
+<TMPL_IF HTML5></section><TMPL_ELSE></div></TMPL_IF>
+</TMPL_IF>
+</TMPL_UNLESS>
+
+
+<TMPL_IF HTML5></section><TMPL_ELSE></div></TMPL_IF>
+
+</div>
+
+<TMPL_IF HTML5><footer id="footer" class="pagefooter"><TMPL_ELSE><div id="footer" class="pagefooter"></TMPL_IF>
+<TMPL_UNLESS DYNAMIC>
+<TMPL_IF HTML5><nav id="pageinfo"><TMPL_ELSE><div id="pageinfo"></TMPL_IF>
+
+<TMPL_IF BACKLINKS>
+<TMPL_IF HTML5><nav id="backlinks"><TMPL_ELSE><div id="backlinks"></TMPL_IF>
+Links:
+<TMPL_LOOP BACKLINKS>
+<a href="<TMPL_VAR URL>"><TMPL_VAR PAGE></a>
+</TMPL_LOOP>
+<TMPL_IF MORE_BACKLINKS>
+<span class="popup">...
+<span class="balloon">
+<TMPL_LOOP MORE_BACKLINKS>
+<a href="<TMPL_VAR URL>"><TMPL_VAR PAGE></a>
+</TMPL_LOOP>
+</span>
+</span>
+</TMPL_IF>
+<TMPL_IF HTML5></nav><TMPL_ELSE></div></TMPL_IF>
+</TMPL_IF>
+
+<TMPL_IF COPYRIGHT>
+<div class="pagecopyright">
+<a name="pagecopyright"></a>
+<TMPL_VAR COPYRIGHT>
+</div>
+</TMPL_IF>
+
+<TMPL_IF LICENSE>
+<div class="pagelicense">
+<a name="pagelicense"></a>
+License: <TMPL_VAR LICENSE>
+</div>
+</TMPL_IF>
+
+<TMPL_IF HTML5></nav><TMPL_ELSE></div></TMPL_IF>
+<TMPL_IF EXTRAFOOTER><TMPL_VAR EXTRAFOOTER></TMPL_IF>
+</TMPL_UNLESS>
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <TMPL_VAR MTIME>
+<!-- Created <TMPL_VAR CTIME> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from <TMPL_VAR WIKINAME> -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+<TMPL_IF HTML5></footer><TMPL_ELSE></div></TMPL_IF>
+
+<TMPL_IF HTML5></article><TMPL_ELSE></div></TMPL_IF>
+
+</body>
+</html>

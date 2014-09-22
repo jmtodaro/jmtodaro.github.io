@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged translation</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/translation/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/translation/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/translation/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:10:06Z</updated>
+<entry>
+	<title>September 2010 Progress Report</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/September_2010_Progress_Report/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/September_2010_Progress_Report/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/new_hires" />
+
+	<category term="/tags/progress_report" />
+
+	<category term="/tags/releases" />
+
+	<category term="/tags/translation" />
+
+
+	<updated>2011-04-05T12:10:06Z</updated>
+	<published>2010-10-11T15:19:43Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;strong&gt;New Hires&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Tom Heydt-Benjamin is contracted full-time to work on NSF-related research through December 2010.&lt;/li&gt;
+&lt;li&gt;Erinn Clark is contracted full-time to work on improving packaging, secure updater, tor browser bundles, and continuous integration systems through December 2010.  Previously, Erinn was part-time.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;New Releases&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/september-2010-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Tor Browser Bundle for Mac OS X is now available for the i386 architecture in 11 languages.  This is an alpha release to let the community test functionality. Read more at &lt;a href=&quot;https://blog.torproject.org/blog/tor-browser-bundle-mac-os-x&quot; title=&quot;https://blog.torproject.org/blog/tor-browser-bundle-mac-os-x&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-browser-bundle-mac-os-x&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Orbot, Tor for Android, was released into the Android Market.  Android users can now officially download and install Orbot on their devices. &lt;a href=&quot;https://guardianproject.info/apps/orbot/&quot; title=&quot;https://guardianproject.info/apps/orbot/&quot; rel=&quot;nofollow&quot;&gt;https://guardianproject.info/apps/orbot/&lt;/a&gt;&lt;/li&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/September_2010_Progress_Report/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/September_2010_Progress_Report/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>November 2009 Progress Report</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/advocacy" />
+
+	<category term="/tags/censorship_circumvention" />
+
+	<category term="/tags/performance" />
+
+	<category term="/tags/progress_report" />
+
+	<category term="/tags/torjava" />
+
+	<category term="/tags/translation" />
+
+
+	<updated>2011-04-05T11:44:40Z</updated>
+	<published>2009-12-15T04:33:37Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;strong&gt;New releases, new hires, new funding&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Bruce Leidl joins to work on developing Tor in Java. Bruce will write a fully functional Tor in Java in order to provide a solid foundation for other java-based projects; such as Tor on mobile platforms like Maemo and Android.&lt;/p&gt;
+
+&lt;p&gt;On November 2nd we released Vidalia 0.2.6. &lt;a href=&quot;https://blog.torproject.org/blog/vidalia-026-released&quot; title=&quot;https://blog.torproject.org/blog/vidalia-026-released&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/vidalia-026-released&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;On November 20th, we released Tor Browser Bundle 1.2.10. &lt;a href=&quot;https://blog.torproject.org/blog/tor-browser-bundle-1210-released&quot; title=&quot;https://blog.torproject.org/blog/tor-browser-bundle-1210-released&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-browser-bundle-1210-released&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;On November 19th, we released Tor 0.2.2.6-alpha. &lt;a href=&quot;https://blog.torproject.org/blog/tor-0226-alpha-released&quot; title=&quot;https://blog.torproject.org/blog/tor-0226-alpha-released&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-0226-alpha-released&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Design, develop, and implement enhancements that make&lt;br /&gt;
+Tor a better tool for users in censored countries.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Roger met with his class at KAIST working on bridge deployment strategies. A few teams developed some creative strategies. Roger is continuing to work with the leading teams to further refine their ideas before publishing. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/november-2009-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Website translation support for translation.torproject.org</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Website_translation_support_for_translation_torproject_org/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Website_translation_support_for_translation_torproject_org/"/>
+
+	<author><name>Runa</name></author>
+
+
+
+
+
+
+	<category term="/tags/gsoc" />
+
+	<category term="/tags/translation" />
+
+	<category term="/tags/website" />
+
+
+	<updated>2011-04-05T11:36:39Z</updated>
+	<published>2009-09-20T16:45:56Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;This summer I was working on a set of scripts that would make it possible to translate the &lt;a href=&quot;https://www.torproject.org/&quot; rel=&quot;nofollow&quot;&gt;Tor Project website&lt;/a&gt; via &lt;a href=&quot;http://translate.sourceforge.net/wiki/pootle&quot; rel=&quot;nofollow&quot;&gt;Pootle&lt;/a&gt; on &lt;a href=&quot;http://translation.torproject.org&quot; rel=&quot;nofollow&quot;&gt;translation.torproject.org&lt;/a&gt;. The website is based on a set of .wml files, but Pootle only takes files in the .pot and po format. The goal was to find a solution that would make it easy to not only translate from .wml to .po and back, but enable us to convert and keep the already translated documents. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/website-translation-support-translationtorprojectorg&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Website_translation_support_for_translation_torproject_org/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Website_translation_support_for_translation_torproject_org/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>February 2009 Progress Report</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/February_2009_Progress_Report/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/February_2009_Progress_Report/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/anonymity_advocacy" />
+
+	<category term="/tags/progress_report" />
+
+	<category term="/tags/translation" />
+
+
+	<updated>2011-04-05T11:20:43Z</updated>
+	<published>2009-03-10T15:24:22Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;strong&gt;New releases, new hires, new funding&lt;/strong&gt;&lt;br /&gt;
+On February 8, we released versions 0.2.0.34-stable and 0.2.1.12-alpha.  &lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.0.34 features several more security-related fixes. You should upgrade, especially if you run an exit relay (remote crash) or a directory authority (remote infinite loop), or you&#39;re on an older (pre-XP) or not-recently-patched Windows (remote exploit).&lt;/p&gt;
+
+&lt;p&gt;This release marks end-of-life for Tor 0.1.2.x. Those Tor versions have many known flaws, and nobody should be using them. You should upgrade. If you&#39;re using a Linux or BSD and its packages are obsolete, stop using those packages and upgrade anyway.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Enhancements&lt;/strong&gt;&lt;br /&gt;
+In Tor 0.2.1.12-alpha, if we&#39;re using bridges and our network goes away, be more willing to forgive our bridges and try again when we get an application  request. Bugfix on 0.2.0.x. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/february-2009-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/February_2009_Progress_Report/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/February_2009_Progress_Report/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>July 2008 Progress Report</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/July_2008_Progress_Report/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/July_2008_Progress_Report/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bridges" />
+
+	<category term="/tags/progress_report" />
+
+	<category term="/tags/proposals" />
+
+	<category term="/tags/research" />
+
+	<category term="/tags/tor" />
+
+	<category term="/tags/torbrowser" />
+
+	<category term="/tags/torbutton" />
+
+	<category term="/tags/translation" />
+
+	<category term="/tags/vidalia" />
+
+
+	<updated>2011-04-05T11:10:45Z</updated>
+	<published>2008-08-18T03:11:31Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;strong&gt;Releases:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Torbutton 1.2.0rc5 (released July 6) provides improved addon compatibility, better preservation of Firefox preferences that we touch, fixing issues with Tor toggle breaking for some option combos, and an improved &#39;Restore Defaults&#39; button. This version also features Firefox 3 cookie jar support, and support for storing cookie jars in memory.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Jul-2008/msg00026.html&quot; title=&quot;http://archives.seul.org/or/talk/Jul-2008/msg00026.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Jul-2008/msg00026.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Vidalia 0.1.6 (released July 8) fixes a bug introduced in 0.1.3 that could cause excessive CPU usage or crashing on some platforms; continues to prepare Vidalia&#39;s strings for easier translation; adds a Romanian GUI and installer translation; and updated the Farsi, Finnish, French, German, and Swedish translations.&lt;br /&gt;
+&lt;a href=&quot;http://trac.vidalia-project.net/browser/vidalia/tags/vidalia-0.1.6/CHANGELOG&quot; title=&quot;http://trac.vidalia-project.net/browser/vidalia/tags/vidalia-0.1.6/CHANGELOG&quot; rel=&quot;nofollow&quot;&gt;http://trac.vidalia-project.net/browser/vidalia/tags/vidalia-0.1.6/CHANG...&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.0.29-rc (released July 8) fixes two big bugs with using bridges, fixes more hidden-service performance bugs, and fixes a bunch of smaller bugs.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Jul-2008/msg00038.html&quot; title=&quot;http://archives.seul.org/or/talk/Jul-2008/msg00038.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Jul-2008/msg00038.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Torbutton 1.2.0rc6 (released July 12) features fixes for a nasty history loss bug, an exception during Tor toggle, javascript being disabled in some tabs, better pref handling, and more.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Jul-2008/msg00049.html&quot; title=&quot;http://archives.seul.org/or/talk/Jul-2008/msg00049.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Jul-2008/msg00049.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.0.30 (released July 15) is the first stable release of the 0.2.0.x branch. The previous stable branch (0.1.2.x) went stable in April of 2007. We are still waiting for Torbutton and Vidalia to stabilize before announcing the Windows and OS X packages on the or-announce announcements&lt;br /&gt;
+list. We expect to do that in August.&lt;/p&gt;
+
+&lt;p&gt;Tor Browser Bundle 1.1.1 (released July 20) updates Vidalia to release 0.1.6, updates Pidgin Portable to 2.4.3, updates Pidgin OTR plugin to 3.2, updates Tor to 0.2.1.2-alpha, updates Torbutton to 1.2.0rc6, and sets TZ=UTC environment variable in RelativeLink (needed by Torbutton).&lt;br /&gt;
+&lt;a href=&quot;https://svn.torproject.org/svn/torbrowser/trunk/README&quot; title=&quot;https://svn.torproject.org/svn/torbrowser/trunk/README&quot; rel=&quot;nofollow&quot;&gt;https://svn.torproject.org/svn/torbrowser/trunk/README&lt;/a&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/july-2008-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/July_2008_Progress_Report/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/July_2008_Progress_Report/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Jacob and Matt join the Tor Project</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Jacob_and_Matt_join_the_Tor_Project/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Jacob_and_Matt_join_the_Tor_Project/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/auto-update" />
+
+	<category term="/tags/exitlist" />
+
+	<category term="/tags/tor" />
+
+	<category term="/tags/tor_check" />
+
+	<category term="/tags/translation" />
+
+	<category term="/tags/upnp" />
+
+	<category term="/tags/vidalia" />
+
+	<category term="/tags/vidalia_bundle" />
+
+
+	<updated>2011-04-05T11:07:18Z</updated>
+	<published>2008-05-29T20:36:47Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Jacob Appelbaum joins us to help out with:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;developing a translation portal.  This should help us find translators&lt;br /&gt;
+and make their updates easier.&lt;/li&gt;
+&lt;li&gt;coordinating the Tor translation team and getting parts that need&lt;br /&gt;
+translating, translated.&lt;/li&gt;
+&lt;li&gt;helping to better document Tor for non-technical users.&lt;/li&gt;
+&lt;li&gt;writing an auto-responder to use Google&#39;s gmail to deliver Tor to&lt;br /&gt;
+users who request it&lt;/li&gt;
+&lt;li&gt;helping to get auto-updating for Tor and Vidalia working seamlessly&lt;/li&gt;
+&lt;li&gt;maintaining the code that runs the tor exitlist&lt;/li&gt;
+&lt;li&gt;generally advocating Tor&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Matt Edman joins the Tor Project.  Matt joins to help us enhance Tor&#39;s&lt;br /&gt;
+interactions with Vidalia.  Specifically, he&#39;s working on:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;integrating upnp libraries into vidalia to make it easier to setup servers&lt;/li&gt;
+&lt;li&gt;displaying Tor&#39;s startup status more visually in Vidalia to help users&lt;br /&gt;
+understand what&#39;s going on as Tor starts&lt;/li&gt;
+&lt;li&gt;assist with making translating Vidalia&#39;s interface and help files&lt;br /&gt;
+easier for translators&lt;/li&gt;
+&lt;li&gt;helping to flesh out proposals in queue on or-dev&lt;/li&gt;
+&lt;li&gt;helping to get auto-updating or Tor and Vidalia working seamlessly&lt;/li&gt;
+&lt;li&gt;tackling the &quot;matt&quot; section of the &lt;a href=&quot;http://www.torproject.org/svn/trunk/doc/TODO&quot; rel=&quot;nofollow&quot;&gt;TODO file.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Welcome Jacob and Matt!&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Jacob_and_Matt_join_the_Tor_Project/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Jacob_and_Matt_join_the_Tor_Project/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>April 2008 Progress Report</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2008_Progress_Report/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2008_Progress_Report/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/progress_report" />
+
+	<category term="/tags/release_candidate" />
+
+	<category term="/tags/torbrowser" />
+
+	<category term="/tags/torbutton" />
+
+	<category term="/tags/translation" />
+
+
+	<updated>2011-04-05T11:07:11Z</updated>
+	<published>2008-05-14T16:53:24Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor 0.2.0.24-rc (released Apr 22) adds dizum (run by Alex de Joode)&lt;br /&gt;
+as the new sixth v3 directory authority, makes relays with dynamic IP&lt;br /&gt;
+addresses and no DirPort notice more quickly when their IP address&lt;br /&gt;
+changes, fixes a few rare crashes and memory leaks, and fixes a few&lt;br /&gt;
+other miscellaneous bugs. Tor 0.2.0.25-rc (released Apr 23) makes Tor&lt;br /&gt;
+work again on OS X and certain BSDs.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/May-2008/msg00014.html&quot; title=&quot;http://archives.seul.org/or/talk/May-2008/msg00014.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/May-2008/msg00014.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Torbutton 1.1.18 (released Apr 17) fixes many usability and interoperability&lt;br /&gt;
+items, in an attempt to make the new Torbutton not so obnoxious in its&lt;br /&gt;
+zeal to protect the user. It also includes new translations for French,&lt;br /&gt;
+Russian, Farsi, Italian, and Spanish.&lt;/p&gt;
+
+&lt;p&gt;We did a complete overhaul of the &lt;a href=&quot;https://check.torproject.org/&quot; title=&quot;https://check.torproject.org/&quot; rel=&quot;nofollow&quot;&gt;https://check.torproject.org/&lt;/a&gt;&lt;br /&gt;
+page. Now it accepts a language choice,&lt;br /&gt;
+e.g. &lt;a href=&quot;https://check.torproject.org/?lang=fa-IR&quot; title=&quot;https://check.torproject.org/?lang=fa-IR&quot; rel=&quot;nofollow&quot;&gt;https://check.torproject.org/?lang=fa-IR&lt;/a&gt;&lt;br /&gt;
+Available languages are German, English, Spanish, Italian, Farsi,&lt;br /&gt;
+Japanese, Polish, Portugese, Russian, and Chinese. The Tor Browser&lt;br /&gt;
+Bundle automatically uses the appropriate language as its home page,&lt;br /&gt;
+based on which language of the Browser Bundle was downloaded.&lt;/p&gt;
+
+&lt;p&gt;Started on a documentation page to explain to users what bridges are,&lt;br /&gt;
+how they can decide whether they need one, and how to configure their&lt;br /&gt;
+Tor client to use them:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/bridges.html&quot; title=&quot;https://www.torproject.org/bridges.html&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/bridges.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We&#39;ve also started working on a design proposal for making it easier&lt;br /&gt;
+to set up a private or testing Tor network. With the advent of the v3&lt;br /&gt;
+directory protocol, it currently takes up to 30 minutes before a test&lt;br /&gt;
+network will produce a useful networkstatus consensus. Also, there are&lt;br /&gt;
+a dozen different config options that need to be set correctly for&lt;br /&gt;
+a Tor network running on a single IP address to not trigger various&lt;br /&gt;
+security defenses. This approach should let more people set up their&lt;br /&gt;
+own Tor networks, either for testing or because they can&#39;t reach the&lt;br /&gt;
+main Tor network. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/april-2008-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/April_2008_Progress_Report/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/April_2008_Progress_Report/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

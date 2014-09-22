@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged openssl</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/openssl/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/openssl/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/openssl/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:11:24Z</updated>
+<entry>
+	<title>Tor 0.2.2.19-alpha is out</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_19-alpha_is_out/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_19-alpha_is_out/"/>
+
+	<author><name>erinn</name></author>
+
+
+
+
+
+
+	<category term="/tags/alpha_release" />
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/openssl" />
+
+	<category term="/tags/openssl_fixes" />
+
+	<category term="/tags/tor" />
+
+
+	<updated>2011-04-05T12:11:24Z</updated>
+	<published>2010-11-26T15:14:45Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Yet another OpenSSL security patch broke its compatibility with Tor:&lt;br /&gt;
+Tor 0.2.2.19-alpha makes relays work with OpenSSL 0.9.8p and 1.0.0.b.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download/download&quot; title=&quot;https://www.torproject.org/download/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download/download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The original announcement is at &lt;a href=&quot;http://archives.seul.org/or/talk/Nov-2010/msg00172.html&quot; title=&quot;http://archives.seul.org/or/talk/Nov-2010/msg00172.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Nov-2010/msg00172.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.2.19-alpha - 2010-11-21&lt;br /&gt;
+&lt;strong&gt;Major bugfixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt; Resolve an incompatibility with openssl 0.9.8p and openssl 1.0.0b:&lt;br /&gt;
+      No longer set the tlsext_host_name extension on server SSL objects;&lt;br /&gt;
+      but continue to set it on client SSL objects. Our goal in setting&lt;br /&gt;
+      it was to imitate a browser, not a vhosting server. Fixes bug 2204;&lt;br /&gt;
+      bugfix on 0.2.1.1-alpha.&lt;/li&gt;&lt;/p&gt;
+
+&lt;p&gt;  &lt;strong&gt; Minor bugfixes:&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02219-alpha-out&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;li&gt; Try harder not to exceed the maximum length of 50 KB when writing&lt;br /&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_19-alpha_is_out/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_19-alpha_is_out/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>New OpenSSL vulnerability; Tor not affected</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/New_OpenSSL_vulnerability_Tor_not_affected/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/New_OpenSSL_vulnerability_Tor_not_affected/"/>
+
+	<author><name>nickm</name></author>
+
+
+
+
+
+
+	<category term="/tags/analysis" />
+
+	<category term="/tags/bugs" />
+
+	<category term="/tags/openssl" />
+
+	<category term="/tags/security" />
+
+
+	<updated>2011-04-05T12:11:06Z</updated>
+	<published>2010-11-16T15:12:00Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;There&#39;s a new buffer overflow vulnerability in versions of OpenSSL from 0.9.8f through 0.9.8o, and 1.0.0 through 1.0.0a.  You can read &lt;a href=&quot;http://openssl.org/news/secadv_20101116.txt&quot;&gt;the security advisory&lt;/a&gt; for the whole story.&lt;/p&gt;
+
+&lt;p&gt;So far as we can tell from our current analysis, Tor is &lt;b&gt;not&lt;/b&gt; affected.  Here&#39;s why:&lt;/p&gt;
+
+&lt;p&gt;The advisory says:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Any OpenSSL based TLS server is vulnerable if it is multi-threaded and uses OpenSSL&#39;s internal caching mechanism. Servers that are multi-process and/or disable internal session caching are NOT affected.
+&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Tor qualifies for &lt;b&gt;both&lt;/b&gt; of the safe cases: Tor &lt;em&gt;does&lt;/em&gt; disable OpenSSL&#39;s internal session caching.  This happens in the file src/common/tortls.c, when we call &lt;tt&gt;SSL_CTX_set_session_cache_mode(result-&amp;gt;ctx,SSL_SESS_CACHE_OFF)&lt;/tt&gt;. Tor has done this since since version 0.0.2pre6 back in 2003. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/new-openssl-vulnerability-tor-not-affected&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/New_OpenSSL_vulnerability_Tor_not_affected/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/New_OpenSSL_vulnerability_Tor_not_affected/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Apple workaround for openssl issues on OS X 10.5 and 10.6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/10_3" />
+
+	<category term="/tags/10_4" />
+
+	<category term="/tags/10_5" />
+
+	<category term="/tags/10_6" />
+
+	<category term="/tags/confused_users" />
+
+	<category term="/tags/openssl" />
+
+	<category term="/tags/osx" />
+
+	<category term="/tags/packaging_mess" />
+
+	<category term="/tags/tls_renegotiation" />
+
+
+	<updated>2011-04-05T11:49:49Z</updated>
+	<published>2010-02-01T03:10:14Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Apple responded to my bug report about a broken openssl.  I&#39;ve since built test packages for OS X 10.5 and 10.6 users.  Their response is:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;
+Thank you for your report of this issue with Tor.&lt;/p&gt;
+&lt;p&gt;The issue you&#39;re seeing is because the current versions of the development tools were created before the OpenSSL security fix, and so do not include the &quot;SSL3_FLAGS_ALLOW_UNSAFE_LEGACY_RENEGOTIATION&quot; definition in the OpenSSL headers.&lt;/p&gt;
+&lt;p&gt;You can work around this issue by supplying the definition to Tor directly, for example by compiling Tor using&lt;/p&gt;
+&lt;p&gt;CPPFLAGS=&#39;-DSSL3_FLAGS_ALLOW_UNSAFE_LEGACY_RENEGOTIATION=0x0010&#39; ./configure &amp;amp;&amp;amp; make&lt;/p&gt;
+&lt;p&gt;This will work on both Leopard and Snow Leopard.
+&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;If you have an Intel (i386) Mac, use the normal i386 packages for Tor 0.2.2.8-alpha release at &lt;a href=&quot;https://www.torproject.org/download&quot; title=&quot;https://www.torproject.org/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you have a PowerPC (ppc) Mac AND are running OS X 10.5 or 10.6, use these packages: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/apple-workaround-openssl-issues-os-x-105-and-106&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Apple broke OpenSSL which breaks Tor on OS X</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_broke_OpenSSL_which_breaks_Tor_on_OS_X/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_broke_OpenSSL_which_breaks_Tor_on_OS_X/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/apple_os_x" />
+
+	<category term="/tags/new_packages" />
+
+	<category term="/tags/no_love_from_apple" />
+
+	<category term="/tags/openssl" />
+
+	<category term="/tags/static_compilation" />
+
+
+	<updated>2011-04-05T11:49:16Z</updated>
+	<published>2010-01-27T18:14:35Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Apple OS X Security Update 2010-001 removes OpenSSL renegotation, &lt;a href=&quot;http://support.apple.com/kb/HT1222&quot; title=&quot;http://support.apple.com/kb/HT1222&quot; rel=&quot;nofollow&quot;&gt;http://support.apple.com/kb/HT1222&lt;/a&gt;.  We&#39;ve filed a bug report with Apple on this issue.  Their standard response so far is &lt;a href=&quot;http://support.apple.com/kb/HT4004&quot; title=&quot;http://support.apple.com/kb/HT4004&quot; rel=&quot;nofollow&quot;&gt;http://support.apple.com/kb/HT4004&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In the meanwhile, we have bug #1225 open, &lt;a href=&quot;https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=1225&quot; title=&quot;https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=1225&quot; rel=&quot;nofollow&quot;&gt;https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=1225&lt;/a&gt;.  Add yourself to the Notifications if you want updates as they happen.  A fine explanation of why Tor is not affected by the TLS renegotiation bug can be found at &lt;a href=&quot;https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=1225&amp;amp;area=comments#3804&quot; title=&quot;https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=1225&amp;amp;area=comments#3804&quot; rel=&quot;nofollow&quot;&gt;https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=1225&amp;amp;area=c...&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Packages for testing are available at:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/dist/testing/&quot; title=&quot;https://www.torproject.org/dist/testing/&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/dist/testing/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;READ THIS FINE PRINT&lt;/strong&gt;: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/apple-broke-openssl-which-breaks-tor-os-x&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ol&gt;
+&lt;li&gt; These will only work on OSX 10.5 and 10.6 (both i386 and powerpc).   Tor fails to compile when using the 10.4 libraries and static openssl.&lt;/li&gt;
+&lt;li&gt; Tor-0.2.2.8-alpha-i386-Bundle.dmg is compiled to replace the tor&lt;br /&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Apple_broke_OpenSSL_which_breaks_Tor_on_OS_X/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Apple_broke_OpenSSL_which_breaks_Tor_on_OS_X/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor 0.2.2.6-alpha released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/alpha_release" />
+
+	<category term="/tags/android" />
+
+	<category term="/tags/enhancements" />
+
+	<category term="/tags/new_features" />
+
+	<category term="/tags/openssl" />
+
+
+	<updated>2011-04-05T11:43:33Z</updated>
+	<published>2009-12-03T05:29:12Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;On November 19, we released the latest in the Tor alpha series, version 0.2.2.6-alpha. This release lays the groundwork for many upcoming features:&lt;br /&gt;
+support for the new lower-footprint &quot;microdescriptor&quot; directory design,&lt;br /&gt;
+future-proofing our consensus format against new hash functions or&lt;br /&gt;
+other changes, and an Android port. It also makes Tor compatible with&lt;br /&gt;
+the upcoming OpenSSL 0.9.8l release, and fixes a variety of bugs.&lt;/p&gt;
+
+&lt;p&gt;It can be downloaded at &lt;a href=&quot;https://www.torproject.org/download.html.en&quot; title=&quot;https://www.torproject.org/download.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download.html.en&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Major features:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Directory authorities can now create, vote on, and serve multiple&lt;br /&gt;
+      parallel formats of directory data as part of their voting process.&lt;br /&gt;
+      Partially implements Proposal 162: &quot;Publish the consensus in&lt;br /&gt;
+      multiple flavors&quot;.&lt;/p&gt;
+&lt;li&gt;Directory authorities can now agree on and publish small summaries&lt;br /&gt;
+      of router information that clients can use in place of regular&lt;br /&gt;
+      server descriptors. This transition will eventually allow clients &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-0226-alpha-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>June 2008 Progress Report</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bridges" />
+
+	<category term="/tags/openssl" />
+
+	<category term="/tags/progress_report" />
+
+	<category term="/tags/tor" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+	<category term="/tags/translations" />
+
+	<category term="/tags/vidalia" />
+
+
+	<updated>2011-04-05T11:10:19Z</updated>
+	<published>2008-07-23T03:25:34Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Torbutton 1.2.0rc1 (released June 1), the first release candidate for the next stable series of the security-enhanced Torbutton Firefox extension, features functional support for Firefox 3. However, this support has not been extensively tested. In particular, timezone masking does not work at all. The workaround is to manually set the environment variable &#39;TZ&#39; to &#39;UTC&#39; before starting Firefox. This works on both Linux and Windows:&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Jun-2008/msg00044.html&quot; title=&quot;http://archives.seul.org/or/talk/Jun-2008/msg00044.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Jun-2008/msg00044.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.0.27-rc (released June 3) adds a few features we left out of the earlier release candidates. In particular, we now include an IP-to-country GeoIP database, so controllers can easily look up what country a given relay is in, and so bridge relays can give us some sanitized summaries about which countries are making use of bridges. (See proposal 126-geoip-fetching.txt for details.)&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Jun-2008/msg00055.html&quot; title=&quot;http://archives.seul.org/or/talk/Jun-2008/msg00055.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Jun-2008/msg00055.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Torbutton 1.2.0rc2 (released June 8) features a fix for an annoying bug on MacOS, and adds much clamored for options to start Firefox in a specific Tor state:&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Jun-2008/msg00103.html&quot; title=&quot;http://archives.seul.org/or/talk/Jun-2008/msg00103.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Jun-2008/msg00103.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.0.28-rc (released June 13) fixes an anonymity-related bug, fixes a hidden-service performance bug, and fixes a bunch of smaller bugs.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Jun-2008/msg00165.html&quot; title=&quot;http://archives.seul.org/or/talk/Jun-2008/msg00165.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Jun-2008/msg00165.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.1.1-alpha (released June 13) fixes a lot of memory fragmentation problems that were making the Tor process bloat especially on Linux; makes our TLS handshake blend in better; sends &quot;bootstrap phase&quot; status events to the controller, so it can keep the user informed of progress (and problems) fetching directory information and establishing circuits; and adds a variety of smaller features. &lt;a href=&quot;http://archives.seul.org/or/talk/Jun-2008/msg00185.html&quot; title=&quot;http://archives.seul.org/or/talk/Jun-2008/msg00185.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Jun-2008/msg00185.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Vidalia 0.1.4 (released June 13) adds a bootstrap progress bar, UPnP support, a new set of freely licensed GUI icons, and fixes a few bugs. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/june-2008-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/June_2008_Progress_Report/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>The Debian OpenSSL flaw: what does it mean for Tor clients?</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/The_Debian_OpenSSL_flaw_what_does_it_mean_for_Tor_clients/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/The_Debian_OpenSSL_flaw_what_does_it_mean_for_Tor_clients/"/>
+
+	<author><name>arma</name></author>
+
+
+
+
+
+
+	<category term="/tags/openssl" />
+
+	<category term="/tags/security_advisory" />
+
+
+	<updated>2011-04-05T11:07:04Z</updated>
+	<published>2008-05-14T01:22:24Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;There have been a lot of questions today about just what &lt;a href=&quot;http://lists.debian.org/debian-security-announce/2008/msg00152.html&quot; rel=&quot;nofollow&quot;&gt;the&lt;br /&gt;
+recent Debian OpenSSL&lt;/a&gt; flaw means for Tor clients. Here&#39;s an attempt to&lt;br /&gt;
+explain it in a bit more detail. (Go read &lt;a href=&quot;http://archives.seul.org/or/announce/May-2008/msg00000.html&quot; rel=&quot;nofollow&quot;&gt;the Tor security advisory&lt;/a&gt; before&lt;br /&gt;
+reading this post.)&lt;/p&gt;
+
+&lt;p&gt;First, let&#39;s look at the security/anonymity implications for users who&lt;br /&gt;
+aren&#39;t running on Debian, Ubuntu, or similar. These implications all&lt;br /&gt;
+stem from the fact that some of the Tor relays and v3 directory authorities&lt;br /&gt;
+have weak keys, so the Tor network isn&#39;t able to provide as much anonymity&lt;br /&gt;
+as we would like.&lt;/p&gt;
+
+&lt;p&gt;The biggest issue is that perhaps 300 Tor relays were running with&lt;br /&gt;
+weak keys and weak crypto, out of the roughly 1500-2000 total running&lt;br /&gt;
+relays. What can an attacker do from this? If you happen to pick three&lt;br /&gt;
+weak relays in a row for your circuit, then somebody watching your local&lt;br /&gt;
+network connection (or watching the first relay you pick) could break all&lt;br /&gt;
+the layers of Tor encryption and read the traffic as if they were watching&lt;br /&gt;
+it at the exit relay. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/debian-openssl-flaw%3A-what-does-it-mean-tor-clients%3F&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/The_Debian_OpenSSL_flaw_what_does_it_mean_for_Tor_clients/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/The_Debian_OpenSSL_flaw_what_does_it_mean_for_Tor_clients/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Security critical Tor-0.2.0.26-rc released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Security_critical_Tor-0_2_0_26-rc_released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Security_critical_Tor-0_2_0_26-rc_released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/debian" />
+
+	<category term="/tags/openssl" />
+
+	<category term="/tags/release_candidate" />
+
+	<category term="/tags/security_critical" />
+
+	<category term="/tags/tor" />
+
+
+	<updated>2011-04-05T11:07:00Z</updated>
+	<published>2008-05-13T16:38:48Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor-0.2.0.26-rc replaces several V3 directory authority keys affected by a recent &lt;a href=&quot;http://lists.debian.org/debian-security-announce/2008/msg00152.html&quot; rel=&quot;nofollow&quot;&gt;Debian OpenSSL bug&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;This is a security-critical release.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Everybody running any version in the 0.2.0.x series should upgrade, whether&lt;br /&gt;
+they are running Debian or not.  Also, all servers running any version of Tor&lt;br /&gt;
+whose keys were generated by Debian, Ubuntu, or any derived distribution may&lt;br /&gt;
+have to replace their identity keys.  See our &lt;a href=&quot;http://archives.seul.org/or/announce/May-2008/msg00000.html&quot; rel=&quot;nofollow&quot;&gt;security advisory&lt;/a&gt; for full details.  As always, you can find Tor 0.2.0.26-rc on the &lt;a href=&quot;https://www.torproject.org/download&quot; rel=&quot;nofollow&quot;&gt;downloads page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;Changes in version 0.2.0.26-rc - 2008-05-13&lt;br /&gt;
+Major security fixes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Use new V3 directory authority keys on the tor26, gabelmoo, and moria1 V3 directory authorities. The old keys were generated with a vulnerable version of Debian&#39;s OpenSSL package, and must be considered compromised. Other authorities&#39; keys were not generatedwith an affected version of OpenSSL.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;p&gt;Major bugfixes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;List authority signatures as &quot;unrecognized&quot; based on DirServer lines, not on cert cache. Bugfix on 0.2.0.x.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;p&gt;Minor features:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add a new V3AuthUseLegacyKey option to make it easier for authorities to change their identity keys if they have to.&lt;/li&gt;
+&lt;/ul&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Security_critical_Tor-0_2_0_26-rc_released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Security_critical_Tor-0_2_0_26-rc_released/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

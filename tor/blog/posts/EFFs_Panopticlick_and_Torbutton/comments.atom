@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>EFF&#x27;s Panopticlick and Torbutton</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/EFFs_Panopticlick_and_Torbutton/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/EFFs_Panopticlick_and_Torbutton/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>mikeperry</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/EFFs_Panopticlick_and_Torbutton/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:49:47Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/EFFs_Panopticlick_and_Torbutton/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/EFFs_Panopticlick_and_Torbutton/comment_1/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:39Z</updated>
+	<published>2010-01-31T12:49:39Z</published>
+
+	<content type="html" xml:lang="en">
+	I noticed that Torbutton sets the window size to be equal to the screen size, but this is very unusual. Wouldn&#39;t it be better to set the screen size to be a standard screen size, as close to the window size as possible?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/EFFs_Panopticlick_and_Torbutton/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/EFFs_Panopticlick_and_Torbutton/comment_2/"/>
+
+	<author><name>mikeperry</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:40Z</updated>
+	<published>2010-02-07T12:49:40Z</published>
+
+	<content type="html" xml:lang="en">
+	This is likely to leak information in the form of the amount of overhead you need. Different platforms and devices will have different needs for decoration overhead in terms of this differential. Better to behave as if this overhead is always 0. My feeling was that webapps really only need to know the total size available to the render window, and should behave as if this is the maximal size available for them to work with anyways. I&#39;ve always hated websites that try to increase the window size to utilize more of your available desktop, which seems to be the only use case for this information that I can think of. They should be working with the space you have given them.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/EFFs_Panopticlick_and_Torbutton/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/EFFs_Panopticlick_and_Torbutton/comment_3/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:41Z</updated>
+	<published>2010-02-01T12:49:41Z</published>
+
+	<content type="html" xml:lang="en">
+	I wonder whether it would be possible to plug holes opened up by plugins, eg font enumeration via flash? 
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/EFFs_Panopticlick_and_Torbutton/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/EFFs_Panopticlick_and_Torbutton/comment_4/"/>
+
+	<author><name>mikeperry</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:42Z</updated>
+	<published>2010-02-07T12:49:42Z</published>
+
+	<content type="html" xml:lang="en">
+	Yes it is possible, but not really feasible because you have to operate with these plugins on a binary level, not on a javascript or even programmable API level. I have written prototype code to instrument flash on Windows to prevent it from making its own socket calls for example. It is even possible to do this relatively cross-platform - ie to abstract the hooking procedures for different binary formats. However, making this stable and not run afoul of antivirus software on various platforms is a daunting task, not to mention working with plugins that operate partially out of process, like adobe&#39;s acroread, for example.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/EFFs_Panopticlick_and_Torbutton/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/EFFs_Panopticlick_and_Torbutton/comment_5/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:43Z</updated>
+	<published>2010-02-01T12:49:43Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;WinXp Pro and Firefox 3.6&lt;/p&gt;
+
+&lt;p&gt;Downloaded the latest inst. bundle of Tor for windows:&lt;br /&gt;
+http://www.torproject.org/easy-download.html.en&lt;/p&gt;
+
+&lt;p&gt;Polipo.exe causing difficulties to get to internet though Tor and Vidalia seem to work ok and connecting properly.&lt;br /&gt;
+I unchecked in Torbutton Polipo and found everything seemed to work OK.&lt;br /&gt;
+Wondering if do not use Polipo at all, is there any disadvantage?&lt;br /&gt;
+How can I get Polipo working. &lt;/p&gt;
+
+&lt;p&gt;In earlier version of Tor there was Privoxy and it was giving no problems.&lt;/p&gt;
+
+&lt;p&gt;Sorry if this is not a correct site, but I could not find anything else.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/EFFs_Panopticlick_and_Torbutton/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/EFFs_Panopticlick_and_Torbutton/comment_6/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:44Z</updated>
+	<published>2010-03-05T12:49:44Z</published>
+
+	<content type="html" xml:lang="en">
+	IIRC Firefox used to have a DNS leaking problem and an additional proxy took care of that. Polipo is chosen instead of Privoxy for speed, also I think later versions of Privoxy had also some leaking problems.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/EFFs_Panopticlick_and_Torbutton/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/EFFs_Panopticlick_and_Torbutton/comment_7/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:45Z</updated>
+	<published>2010-02-02T12:49:45Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Panopticlick didn&#39;t include the CSS site history thing because Peter felt that visited URL history changes too frequently (e.g. when users visit new sites, or when old visited sites expire from their history) to be a reliable and stable identifier.  This is different from other browser properties which don&#39;t change under normal day-to-day browsing behavior but only when the user makes a configuration change to their computer.&lt;/p&gt;
+
+&lt;p&gt;However, another researcher has been looking into how reliably site history can be used with fuzzy matching techniques so there should be some preliminary experiments and data about this soon.  There is obviously some kind of trade-off between the false positive rate and the false negative rate in recognizing users from their fingerprints based on what data sources you integrate into the fingerprint and how you match them.  Using visited site history would probably decrease false positives at the cost of increasing false negatives, but it will be interesting to see data that shows whether it might be worth it.&lt;/p&gt;
+
+&lt;p&gt;The Panopticlick site also explains that Panopticlick is not aiming to catalogue every metric that might be used for device or browser fingerprinting, but just to gather some hard data on the distribution of some specific browser features to make their tracking potential more concrete.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/EFFs_Panopticlick_and_Torbutton/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/EFFs_Panopticlick_and_Torbutton/comment_8/"/>
+
+	<author><name>mikeperry</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:46Z</updated>
+	<published>2010-02-07T12:49:46Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Yes - interesting. I suppose the EFF was right in that they have plenty of bits to work with as it is..&lt;/p&gt;
+
+&lt;p&gt;I&#39;ve always suspected that the best way to do this is to make a bit vector space and to classify users by their nearest neighbour in the space, but I suppose it is a difficult problem when to create a new user entry vs classifying them as being close to an existing user.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/EFFs_Panopticlick_and_Torbutton/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/EFFs_Panopticlick_and_Torbutton/comment_9/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:47Z</updated>
+	<published>2010-02-06T12:49:47Z</published>
+
+	<content type="html" xml:lang="en">
+	Between this and Ccleaner (Piriform) (keeping everthing clean/empty) im not concerned bout the media part lol
+
+	</content>
+
+
+
+</entry>
+
+</feed>

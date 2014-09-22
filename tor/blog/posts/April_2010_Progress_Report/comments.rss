@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>April 2010 Progress Report</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Anonymous: Comment 1</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_1/</link>
+
+	<pubDate>Wed, 12 May 2010 06:57:31 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:31Z</dcterms:modified>
+
+	<description>&lt;p&gt;And apparently users in China have gone back to limbo given tor has been having trouble finding sources to connect even while using bridges.&lt;br /&gt;
+Any light on that?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 2</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_2/</link>
+
+	<pubDate>Wed, 12 May 2010 06:57:32 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:32Z</dcterms:modified>
+
+	<description>&lt;p&gt;Not actually related to this entry, but I have to say...&lt;br /&gt;
+Recently, Tor is becoming very unstable in China. The circuit seems to be established sometimes, but no data can be transfered over it. (i.e. HTTP GET request is very likely result a TIMEOUT)&lt;br /&gt;
+Not sure what&#39;s happening there...Need you help.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 3</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_3/</link>
+
+	<pubDate>Sun, 16 May 2010 06:57:33 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:33Z</dcterms:modified>
+
+	<description>I think the GFW might be traffic shaping the connections personally, though I can&#39;t be sure about that.  The reason I say this is the bridges I run (that haven&#39;t been blocked) have been seeing very little throughput by the users which seems strange.
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 4</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_4/</link>
+
+	<pubDate>Thu, 13 May 2010 06:57:34 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:34Z</dcterms:modified>
+
+	<description>Please see &lt;a href=&quot;https://blog.torproject.org/blog/china-blocking-tor-round-two#comment-5639&quot; title=&quot;https://blog.torproject.org/blog/china-blocking-tor-round-two#comment-5639&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/china-blocking-tor-round-two#comment-56...&lt;/a&gt;.  We are aware.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 5</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_5/</link>
+
+	<pubDate>Sat, 15 May 2010 06:57:35 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:35Z</dcterms:modified>
+
+	<description>Looking at your metrics graphs,  I&#39;d say you need a new bridge distribution strategy for China. The number of users has fallen off a cliff and is now close to zero most of the time. The GFW is winning this contest.
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 6</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_6/</link>
+
+	<pubDate>Sat, 15 May 2010 06:57:36 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:36Z</dcterms:modified>
+
+	<description>We agree.  We&#39;re trying a new one right now, it just has a slow ramp-up period by design.  We&#39;re measuring the time duration from publishing bridges until they are blocked by the GFW.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 7</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_7/</link>
+
+	<pubDate>Sun, 16 May 2010 06:57:37 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:37Z</dcterms:modified>
+
+	<description>&lt;p&gt;just wondering if there are plans to include auto-update for Tor/Vidalia?&lt;br /&gt;
+I have the combo running on an unattented machine to provide a relay but I worry that if it gets out-of-date it&#39;s not going to be as secure/useful.&lt;br /&gt;
+Having a daily poll-update cycle that&#39;s seamless (though on Windows UC may be an issue) or at least downloads the update and flags in the UI that it&#39;s available would be very cool&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 8</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_8/</link>
+
+	<pubDate>Sun, 16 May 2010 06:57:38 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:38Z</dcterms:modified>
+
+	<description>Yes there is the code and framework for doing this already built.  We&#39;re planning a deployment of the infrastructure this summer.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 9</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_9/</link>
+
+	<pubDate>Wed, 19 May 2010 06:57:39 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:39Z</dcterms:modified>
+
+	<description>Please kindly help me, my tor is not logging my yahoo messenger in, kindly send me an email to micheal4onlyu@yahoo.com i am using mtn nigeria please help me...
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 10</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_10/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_10/</link>
+
+	<pubDate>Sun, 23 May 2010 06:57:40 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:40Z</dcterms:modified>
+
+	<description>please i need a new bridge for tor you can message me at ..... roseben2008@gmail.com thanks. and i want you to give me the latest tor which is faster ok.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 11</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_11/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_11/</link>
+
+	<pubDate>Tue, 25 May 2010 06:57:41 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:57:41Z</dcterms:modified>
+
+	<description>&lt;p&gt;Has the problem been resolved that was raised in Feb 2009 by a chinaman teacher/educator was it called something like  &quot;black hat&quot; not sure&lt;br /&gt;
+thanks&lt;br /&gt;
+tim&lt;/p&gt;
+
+</description>
+
+
+</item>
+
+</channel>
+</rss>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Tor Browser Bundle 1.0.10 for GNU/Linux released</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_0_10_for_GNU-Linux_released/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_0_10_for_GNU-Linux_released/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>erinn</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_0_10_for_GNU-Linux_released/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:06:52Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_0_10_for_GNU-Linux_released/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_0_10_for_GNU-Linux_released/comment_1/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:06:47Z</updated>
+	<published>2010-08-23T12:06:47Z</published>
+
+	<content type="html" xml:lang="en">
+	What about the Windows package?  Is there no update for Windows users to Firefox 3.6.8?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_0_10_for_GNU-Linux_released/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_0_10_for_GNU-Linux_released/comment_2/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:06:48Z</updated>
+	<published>2010-08-23T12:06:48Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Not yet.  We&#39;re using the linux torbrowser bundle as a beta for updates to the windows bundle.  If the linux package works with respect to firefox and plugins, we&#39;ll update the windows bundle to the same set of software.  &lt;/p&gt;
+
+&lt;p&gt;We also ship the -alpha branch of tor with the linux tbb, which is why it gets more frequent updates.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_0_10_for_GNU-Linux_released/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_0_10_for_GNU-Linux_released/comment_3/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:06:49Z</updated>
+	<published>2010-08-23T12:06:49Z</published>
+
+	<content type="html" xml:lang="en">
+	Can you make it clear whether this Bundle is an Alpha bundle, or it is fully stable without any problems? You indicate it has an unpated Tor to 0.2.2.15-alpha, does alpha mean Beta for testing only?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_0_10_for_GNU-Linux_released/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_0_10_for_GNU-Linux_released/comment_4/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:06:50Z</updated>
+	<published>2010-09-03T12:06:50Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Thank you for the package so far works as best as it can. &lt;/p&gt;
+
+&lt;p&gt;At times it drops out to showing only a google start page from another country, where the IP might be showing from, and it does not allow browsing to elsewhere. That has only happened once out of two uses.&lt;/p&gt;
+
+&lt;p&gt;The package was not easy to locate on the download page compared to locating the standard packages. I located the download page using google. The page that links to the Linux bundle is the same as the Windows bundle and only the Windows logo is shown and the words &#39;Tor Browser Bundle for Windows&#39;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_0_10_for_GNU-Linux_released/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_0_10_for_GNU-Linux_released/comment_5/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:06:51Z</updated>
+	<published>2010-09-10T12:06:51Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Would you like bug reports? The following is something I observed. Linux Tor bundle works, apart from a notice when starting on PCLinuxOS 2010.07 openbox (live CD) and Mandriva 2010.0. It returns an error when started from Kubuntu 10.04(live CD) that uses kde 3.5.11.&lt;/p&gt;
+
+&lt;p&gt;The following is shown&lt;br /&gt;
+------------&lt;br /&gt;
+No protocol specified&lt;br /&gt;
+vidalia: cannot connect to X server :0.0&lt;br /&gt;
+------------&lt;/p&gt;
+
+&lt;p&gt;The following is the X -version&lt;br /&gt;
+--------------------------&lt;br /&gt;
+X.Org X Server 1.7.6&lt;br /&gt;
+Release Date: 2010-03-17&lt;br /&gt;
+X Protocol Version 11, Revision 0&lt;br /&gt;
+Build Operating System: Linux 2.6.24-25-server i686 Ubuntu&lt;br /&gt;
+Current Operating System: Linux ubuntu 2.6.32-22-generic #33-Ubuntu SMP Wed Apr 28 13:27:30 UTC 2010 i686&lt;br /&gt;
+Kernel command line: BOOT_IMAGE=/casper/vmlinuz file=/cdrom/preseed/kubuntu.seed boot=casper initrd=/casper/initrd.lz quiet splash --&lt;br /&gt;
+Build Date: 23 April 2010  05:11:50PM&lt;br /&gt;
+xorg-server 2:1.7.6-2ubuntu7 (Bryce Harrington )&lt;br /&gt;
+Current version of pixman: 0.16.4&lt;br /&gt;
+        Before reporting problems, check http://wiki.x.org&lt;br /&gt;
+        to make sure that you have the latest version.&lt;/p&gt;
+
+&lt;p&gt;--------------------------------&lt;/p&gt;
+
+&lt;p&gt;Is there a fix that maybe I could perform to get this working?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_0_10_for_GNU-Linux_released/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_0_10_for_GNU-Linux_released/comment_6/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:06:52Z</updated>
+	<published>2010-09-11T12:06:52Z</published>
+
+	<content type="html" xml:lang="en">
+	It would be great if you could log this in the bug tracking system, &lt;a href=&quot;https://trac.torproject.org/&quot; title=&quot;https://trac.torproject.org/&quot; rel=&quot;nofollow&quot;&gt;https://trac.torproject.org/&lt;/a&gt;.  Thanks!
+
+	</content>
+
+
+
+</entry>
+
+</feed>

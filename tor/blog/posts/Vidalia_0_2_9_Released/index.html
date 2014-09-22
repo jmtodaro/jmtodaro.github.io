@@ -1,0 +1,814 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Vidalia 0.2.9 Released</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FVidalia_0_2_9_Released&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Vidalia 0.2.9 Released</a>
+
+</span>
+
+
+<div id="content">
+<p>On May 20, we released Vidalia 0.2.9.  Fixes include Qt 4.6.2 compatibility, new cert, and some new translations.</p>
+
+<p>You can download it at <a href="https://www.torproject.org/vidalia/" title="https://www.torproject.org/vidalia/" rel="nofollow">https://www.torproject.org/vidalia/</a>.  Packages are slowly being updated to include this version of Vidalia.  </p>
+
+<p>The full changelog is: <span class="read-more"><a href="http://blog.torproject.org/blog/vidalia-029-released"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+<p><ul>
+<li>Remove the GoDaddy CA certificate bundle since we changed the    certificate used to authenticate connections to geoips.vidalia-project.net for downloading GeoIP information from a commercial GoDaddy certificate to a free CACert certificate.</li>
+<li>Define -D_WIN32_WINNT=0x0501 on Windows builds so that MiniUPnPc will build with the latest versions of MinGW.</li>
+<li>Modify miniupnpc.c from MiniUPnPc's source so that it will build on    Mac OS X 10.4.</li>
+<li>Work around Qt's new behavior for the QT_WA macro so that Vidalia will<br />
+    work correctly again on Windows with Qt &gt;= 4.6.</li></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/bug_fixes/" rel="tag">bug fixes</a>
+
+<a href="../../tags/stable_release/" rel="tag">stable release</a>
+
+<a href="../../tags/vidalia_release/" rel="tag">vidalia release</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-0cfcaa0c15a03d7fd4bf58f6d7398313">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+Awesome! I would love to see a new TBB with updated Vidalia and Tor!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 26 May 2010 06:57:56 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9705622d0bc3b62d2786f58636869a7c">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>It seems that all tor links from China have been cut off by "Great Firewall"! I tried frequently in the past weeks with newly retrieved bridges, and no luck at all. It's possible that the GFW could be able to tell TOR traffic by some kind of protocol signatures. Is there any possible way to fight it? </p>
+
+<p>Thanks!<br />
+Waterson</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 29 May 2010 06:57:57 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9790fcca08d748abad5407a782b942a4">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+Our research shows they are blocking IP address:port combinations, nothing more fancy than that.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 29 May 2010 06:57:58 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e2fdc92d1511fc4df11f3b204bebe191">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+Yes,just a "blocking IP address:port"with an extending "black list",and nothing more.We can still use Tor in the mainland China,only the connection becomes a more slow progress. And most bridges cease to be effective.  
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 29 May 2010 06:57:59 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d029556b32523e8a4c3bb671184f4b8a">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>Sorry for posting my question here, but i could find the answer anywhere else.</p>
+
+<p>Is it possible to run multiple instances of Tor (client) on one machine ?</p>
+
+<p>At program start Tor opens a socks listener on port 9050 so when i try to run another instance Tor fails to connect. I don't know how to overcome this.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 31 May 2010 06:58:00 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7bc5fd5633b2d4aafd3984163ded1374">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+You need to have multiple torrc files, each with unique ports, data directories, and log files configured.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 01 Jun 2010 06:58:01 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a1f791f5f97241f1cafeda2d53fa5ae3">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p>polipo not working, Mac 10.4.11 <img src="../../smileys/sad.png" alt=":(" /><br />
+even with older version .<br />
+So torbutton is useless, so, what can I do ???<br />
+on mac firewall, I have allowed ports for 8118 and 9050.<br />
+Vidalia say it is connected to TOR !!! SO how can I use it ?<br />
+Thanks a lot,</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 31 May 2010 06:58:02 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d87d5566522310bd7a10da1d69fd2616">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+What happens when you restart vidalia?  Vidalia should start polipo.  You don't need to allow any ports on the mac firewall, as you aren't accepting traffic from outside.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 01 Jun 2010 06:58:03 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-80ccccb1c230555d88e305a9d43481bf">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi,<br />
+I am a different user from OP, a bit of NuB here, but generally highly fluent in o.s. tech.<br />
+I am likewise seeing problems as OP mentioned.  I am on OSX 10.5.8.  I do not run a firewall.<br />
+Firefox and Camino both state seeing a problem with the proxy when enabled.<br />
+My Firefox has the Torbutton installed from the official app pkg for Mac–Intel.<br />
+For Camino I have Vidalia.app launched from same app pkg, and inserted user_pref lines into its js files.<br />
+btw Over at the wget mail-list, we have found that OSX 10.5 and 10.4 have older openssl provided by Apple (let’s not get into why they won’t upgrade it).  Indeed the log for vidalia+tor mentions the back-level on my machine:<br />
+&gt; […]<br />
+&gt; Jun 15 07:28:07.549 [Notice] OpenSSL OpenSSL 0.9.7l 28 Sep 2006 [9070cf] looks like it's older than 0.9.8l, but some vendors have backported 0.9.8l's renegotiation code to earlier versions, and some have backported the code from 0.9.8m or 0.9.8n.  I'll set both SSL3_FLAGS and SSL_OP just to be safe.<br />
+&gt; […]<br />
+Also the local web-browsers can’t access port 9051 (control panel).  I specifically set “none” and un-check the random password setting.  I verified by looking at the various conf files et al.  But the browser ends up displaying a plain–text message saying Authentification Required.<br />
+&gt; […]<br />
+&gt; Jun 15 07:28:07.168 [Warning] ControlPort is open, but no authentication method has been configured.  This means that any program on your computer can reconfigure your Tor.  That's bad!  You should upgrade your Tor controller as soon as possible.<br />
+&gt; […]<br />
+I think I am going to need to compile from src tarball, as I have some of the requisite pkgs (OpenSSL–1.0.0a on the wget problem for ex), and I do have enough X11/glib/gtk+ to run Pan news-reader (plain *ix type apps).  But I do hate dealing with Qt etc on a OSX platform.  <img src="../../smileys/smile4.png" alt=";)" /><br />
+Anyway, would these problems be candidates to file into the tor bug system?<br />
+Thank you.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 15 Jun 2010 06:58:04 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f4e42bcf3698363b65c63b861595a848">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+<p>You've misconfigured your tor.  Tor works around the OS X openssl nonsense and uses it correctly.  You don't need to upgrade openssl to use tor.</p>
+
+<p>Web browsers and other applications want to use 127.0.0.1:9050.  9051 is the control port to allow other control applications to configure your Tor, like vidalia.  You definitely want to have a password or cookie authentication enabled, otherwise malicious websites can reconfigure your tor for you.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 15 Jun 2010 06:58:05 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e7b2f89f7528704905cd6ff50075b816">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+<p>Seems Tor is unusable now in China with or without bridges...any suggestion?<br />
+Best regards, Yan</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 31 May 2010 06:58:06 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-cbe80a85759349fef5d6c5fc2ab43293">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+Yes, this appears to be true.  China GFW is blocking all of the public relays by IP:Port combination.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 01 Jun 2010 06:58:07 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1ffbf422d3352dd0baa7cf27115ee4c2">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+So...what should we do to enable Tor in China?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 02 Jun 2010 06:58:08 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-efd7ada757b9871a8f8b19723fbbdaa6">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+find bridges that are not from <a href="https://bridges.torproject.org" title="https://bridges.torproject.org" rel="nofollow">https://bridges.torproject.org</a>.  We suspect China has crawled that website and found all of the bridges.  email, instant messaging, social networking methods of finding bridges are still working.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 09 Jun 2010 06:58:09 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bfdd9e96ad4cac46ad9f1aa67064fdd4">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+<p>Yes, what can we do to enable Tor in China?</p>
+
+<p>It seems like they are blocking the directory servers as well</p>
+
+<p>Always crashing at Bootstrapped 10%, cannot connect to directory server.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 05 Jun 2010 06:58:10 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-033aa293d71843354d399777860ee53a">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+pls how can tor work in Nigeria
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 08 Jun 2010 06:58:11 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3217e044b2111b39c36a94b379afb2ff">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+From what we've heard from others in Nigeria, it works fine.  Open a ticket, trac.torproject.org with your issue.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 09 Jun 2010 06:58:12 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FVidalia_0_2_9_Released&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:57:55 AM CDT</span>
+<!-- Created <span class="date">Wed 26 May 2010 10:05:19 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

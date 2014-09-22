@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Trip report, UCSD</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Trip_report_UCSD/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Anonymous: Comment 1</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Trip_report_UCSD/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Trip_report_UCSD/comment_1/</link>
+
+	<pubDate>Fri, 27 Aug 2010 07:06:56 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:06:56Z</dcterms:modified>
+
+	<description>Glad to see things are coming along well! Keep up the good work.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 2</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Trip_report_UCSD/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Trip_report_UCSD/comment_2/</link>
+
+	<pubDate>Sat, 28 Aug 2010 07:06:57 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:06:57Z</dcterms:modified>
+
+	<description>&lt;p&gt;tor is slow?  Your own graphs say tor is faster than it has ever been.  See http://metrics.torproject.org/torperf-graphs.html. &lt;/p&gt;
+
+&lt;p&gt;You just want tor to be faster to enable timing attacks that much easier.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>arma: Comment 3</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Trip_report_UCSD/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Trip_report_UCSD/comment_3/</link>
+
+	<pubDate>Mon, 30 Aug 2010 07:06:58 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:06:58Z</dcterms:modified>
+
+	<description>&lt;p&gt;The Tor network is faster currently than it has been in a long time, yes. I think that&#39;s due in large part to load -- we&#39;re missing the 100k+ users from China that we had not long ago. In any case, there are still some design flaws in Tor (or rather, some features we haven&#39;t understood or put in yet) that we need to better understand for when the load returns.&lt;/p&gt;
+
+&lt;p&gt;Your conspiracy theory about timing attacks makes no sense. I would encourage you to write a research paper showing that timing attacks become significantly easier as latency goes down. Until I see one of those, and it convinces me that timing attacks are actually hard at *any* reasonable latency, I think it&#39;s safest to continue to assume that end-to-end correlation attacks work great against Tor no matter the latency.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 4</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Trip_report_UCSD/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Trip_report_UCSD/comment_4/</link>
+
+	<pubDate>Sun, 29 Aug 2010 07:06:59 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:06:59Z</dcterms:modified>
+
+	<description>I expect to join the mail list, but since congestion is an up-topic, let me ask this: Is it better to turn Tor off when you will be using direct web connections for a while?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 5</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Trip_report_UCSD/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Trip_report_UCSD/comment_5/</link>
+
+	<pubDate>Mon, 30 Aug 2010 07:07:00 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:07:00Z</dcterms:modified>
+
+	<description>In my 08/29/10 comment above, I should have more specifically asked whether it is better (for the Tor network)  to stop Tor by way of the Vidalia Control Panel, having already disabled Tor with Torbutton, for a not-very-brief direct connection session.
+</description>
+
+
+</item>
+<item>
+
+	<title>arma: Comment 6</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Trip_report_UCSD/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Trip_report_UCSD/comment_6/</link>
+
+	<pubDate>Mon, 30 Aug 2010 07:07:01 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:07:01Z</dcterms:modified>
+
+	<description>&lt;p&gt;It shouldn&#39;t matter much.&lt;/p&gt;
+
+&lt;p&gt;Tor stops fetching most directory information, and stops building circuits preemptively, if you don&#39;t use it for an hour. Specifically, it still fetches the network consensus snapshot (to know what the relays are) every 2-4 hours, but it stops fetching the server descriptors. The consensus is 200K give or take, whereas the server descriptors are a couple of megabytes over the course of each day.&lt;/p&gt;
+
+&lt;p&gt;We&#39;ve talked every so often of having Tor stop fetching *any* directory information if you don&#39;t use it for a day or something. This strategy would be especially important if Tor ends up in a default package set for some version of Ubuntu. We haven&#39;t done it yet though.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 7</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Trip_report_UCSD/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Trip_report_UCSD/comment_7/</link>
+
+	<pubDate>Tue, 31 Aug 2010 07:07:02 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:07:02Z</dcterms:modified>
+
+	<description>I have a great idea why not check the bandwidth available and if the connection has more than 3mbps available, is on a lan and with an external ip in a jurisdiction that is not problematic than have it automatically become a non-exit node relay. Maybe cap the default throughput to 20kps but slowly increase it based on the available bandwidth. That&#39;ll keep most people from noticing and greatly reduce Tor user bandwidth issues. The purpose here is not to be malicious or deceptive- it is rather to get the participation of non-technical users. Than make it into a feature of the next version of Ubuntu or Firefox :). It could even be a simple box that says &quot;Firefox now features Tor built-in: defending against threats to personal freedoms and privacy. Select yes to donate 10% of your bandwidth to the project. When you need to speak anonymously use the green button in the lower right and your communications can&#39;t be traced back to you.&quot; the first time you start the browser. The issue then would be of exit nodes. It would also greatly increase the difficulty of determining if a user who was sophisticated or not or using Tor at all with all the traffic and default settings. The Tor button would be off by default in the browser and only the relay would be on to prevent users from accidentally leaking passwords on http:// sites through Tor unknowingly. If a user pressed the button it would warn them that the feature turned the connection anonymous, but made it possible for others to eavesdrop on the communications and any passwords entered into non-encrypted (https://) sites would be visible to malicious parties.  
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 8</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Trip_report_UCSD/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Trip_report_UCSD/comment_8/</link>
+
+	<pubDate>Thu, 02 Sep 2010 07:07:03 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:07:03Z</dcterms:modified>
+
+	<description>We&#39;re already working on your idea.  See &lt;a href=&quot;http://archives.seul.org/or/dev/Mar-2010/msg00028.html&quot; title=&quot;http://archives.seul.org/or/dev/Mar-2010/msg00028.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/dev/Mar-2010/msg00028.html&lt;/a&gt; for the first thoughts on a formal proposal.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 9</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Trip_report_UCSD/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Trip_report_UCSD/comment_9/</link>
+
+	<pubDate>Sat, 04 Sep 2010 07:07:04 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:07:04Z</dcterms:modified>
+
+	<description>&lt;p&gt;If you have an IPSec based protocol, does that mean Tor clients will be able to have an IPSec tunnel from the exit node to a server that supports IPSec, like you can have a HTTPS tunnel now?&lt;/p&gt;
+
+&lt;p&gt;I don&#39;t think it would work now, because IPSec operates at a lower level than Tor does. Is that correct?&lt;/p&gt;
+
+</description>
+
+
+</item>
+
+</channel>
+</rss>

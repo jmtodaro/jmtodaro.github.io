@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged windows</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/windows/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/windows/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/windows/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:18:17Z</updated>
+<entry>
+	<title>Firefox 4 Tor Browser Bundles for GNU/Linux</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_GNU-Linux/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_GNU-Linux/"/>
+
+	<author><name>erinn</name></author>
+
+
+
+
+
+
+	<category term="/tags/windows" />
+
+
+	<updated>2011-04-05T12:18:17Z</updated>
+	<published>2011-04-01T16:40:40Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;We now have Firefox 4 bundles available for GNU/Linux. If you encounter any problems with these, please &lt;a href=&quot;https://trac.torproject.org/projects/tor&quot; rel=&quot;nofollow&quot;&gt;let us know&lt;/a&gt;. (Windows users, you&#39;re next.)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.torproject.org/dist/torbrowser/linux/tor-browser-gnu-linux-x86_64-2.2.23-1-alpha-en-US.tar.gz&quot; rel=&quot;nofollow&quot;&gt;64-bit GNU/Linux Tor Browser Bundle with Firefox 4&lt;/a&gt; (&lt;a href=&quot;https://www.torproject.org/dist/torbrowser/linux/tor-browser-gnu-linux-x86_64-2.2.23-1-alpha-en-US.tar.gz.asc&quot; rel=&quot;nofollow&quot;&gt;sig&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.torproject.org/dist/torbrowser/linux/tor-browser-gnu-linux-i686-2.2.23-1-alpha-en-US.tar.gz&quot; rel=&quot;nofollow&quot;&gt;32-bit GNU/Linux Tor Browser Bundle with Firefox 4&lt;/a&gt; (&lt;a href=&quot;https://www.torproject.org/dist/torbrowser/linux/tor-browser-gnu-linux-i686-2.2.23-1-alpha-en-US.tar.gz.asc&quot; rel=&quot;nofollow&quot;&gt;sig&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Tor Browser Bundle (2.2.23-1) alpha; suite=linux&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Create new bundles for Firefox 4, both i386 and x86_64&lt;/li&gt;
+&lt;li&gt;Update Tor to 0.2.2.23-alpha&lt;/li&gt;
+&lt;li&gt;Update Torbutton to 1.3.2-alpha&lt;/li&gt;
+&lt;li&gt;Update OpenSSL to 1.0.0d&lt;/li&gt;
+&lt;li&gt;Update HTTPS-Everywhere to 0.9.9.development.4&lt;/li&gt;
+&lt;li&gt;Update NoScript to 2.0.9.9&lt;/li&gt;
+&lt;li&gt;Update BetterPrivacy to 1.49&lt;/li&gt;
+&lt;/ul&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_GNU-Linux/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_GNU-Linux/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

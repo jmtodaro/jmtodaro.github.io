@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged scalability</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/scalability/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/scalability/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/scalability/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:12:01Z</updated>
+<entry>
+	<title>December 2010 Progress Report</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/December_2010_Progress_Report/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/December_2010_Progress_Report/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/new_packages" />
+
+	<category term="/tags/new_releases" />
+
+	<category term="/tags/progress_report" />
+
+	<category term="/tags/scalability" />
+
+
+	<updated>2011-04-05T12:12:01Z</updated>
+	<published>2011-01-11T17:14:17Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;strong&gt; New Releases &lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/december-2010-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;
+On December 14, we released updated Tor Browser Bundles for Windows, OSX, and&lt;br /&gt;
+Linux, &lt;a href=&quot;https://blog.torproject.org/blog/new-tor-browser-bundle-packages-0&quot; title=&quot;https://blog.torproject.org/blog/new-tor-browser-bundle-packages-0&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/new-tor-browser-bundle-packages-0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;On December 17th, we released an updated -stable version of Tor, 0.2.1.28.&lt;br /&gt;
+Tor 0.2.1.28 does some code cleanup to reduce the risk of remotely exploitable&lt;br /&gt;
+bugs. Thanks to Willem Pinckaers for notifying us of the issue. The Common&lt;br /&gt;
+Vulnerabilities and Exposures project has assigned CVE-2010-1676 to this issue.&lt;br /&gt;
+We also took this opportunity to change the IP address for one of our directory&lt;br /&gt;
+authorities, and to update the geoip database we ship.&lt;br /&gt;
+&lt;a href=&quot;https://blog.torproject.org/blog/tor-02128-released-security-patches&quot; title=&quot;https://blog.torproject.org/blog/tor-02128-released-security-patches&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-02128-released-security-patches&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;On December 17th, we released an updated -alpha version of Tor,&lt;br /&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/December_2010_Progress_Report/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/December_2010_Progress_Report/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>August 2010 Progress Report</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/alpha_releases" />
+
+	<category term="/tags/progress_report" />
+
+	<category term="/tags/scalability" />
+
+	<category term="/tags/translations" />
+
+
+	<updated>2011-04-05T12:07:09Z</updated>
+	<published>2010-09-13T20:23:27Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;strong&gt;Releases&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;On August 21st we released Tor Browser Bundle 1.0.10 for GNU/Linux. See &lt;a href=&quot;https://blog.torproject.org/blog/tor-browser-bundle-1010-gnulinux-released&quot; title=&quot;https://blog.torproject.org/blog/tor-browser-bundle-1010-gnulinux-released&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-browser-bundle-1010-gnulinux-releas...&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;On August 18, we released Tor 0.2.2.15-alpha.  It fixes a big bug in hidden service availability, fixes a variety of other bugs that were preventing performance experiments from moving forward, fixes several bothersome memory leaks, and generally closes a lot of smaller bugs that have been filling up trac lately. See &lt;a href=&quot;https://blog.torproject.org/blog/tor-02215-alpha-released&quot; title=&quot;https://blog.torproject.org/blog/tor-02215-alpha-released&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-02215-alpha-released&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Released two new versions of Orbot, Tor for Android.&lt;br /&gt;
+&lt;blockquote&gt;&lt;p&gt;
+Version 1.0.2&lt;br /&gt;
+- added &quot;check&quot; yes/no dialog prompt&lt;br /&gt;
+- debugged iptables/transprox settings on Android 1.6 and 2.2&lt;br /&gt;
+- added proxy settings help screen and fixed processSettings() NPE&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Version 1.0.1 &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/august-2010-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/August_2010_Progress_Report/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>March 2010 Progress Report</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/March_2010_Progress_Report/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/March_2010_Progress_Report/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/advocacy" />
+
+	<category term="/tags/progress_report" />
+
+	<category term="/tags/proposals" />
+
+	<category term="/tags/releases" />
+
+	<category term="/tags/scalability" />
+
+	<category term="/tags/translations" />
+
+
+	<updated>2011-04-05T11:55:30Z</updated>
+	<published>2010-04-18T00:28:01Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;strong&gt;New Releases&lt;/strong&gt;&lt;br /&gt;
+On March 7th, we released the latest in the -alpha series, Tor 0.2.2.10-alpha.  Tor 0.2.2.10-alpha fixes a regression introduced in 0.2.2.9-alpha that could prevent relays from guessing their IP address correctly. It also starts the groundwork for another client-side performance boost, since currently we&#39;re not making efficient use of relays that have both the Guard flag and the Exit flag.&lt;/p&gt;
+
+&lt;p&gt;  o Major bugfixes:&lt;br /&gt;
+    - Fix a regression from our patch for bug 1244 that caused relays&lt;br /&gt;
+      to guess their IP address incorrectly if they didn&#39;t set Address&lt;br /&gt;
+      in their torrc and/or their address fails to resolve. Bugfix on&lt;br /&gt;
+      0.2.2.9-alpha; fixes bug 1269.&lt;/p&gt;
+
+&lt;p&gt;  o Major features (performance):&lt;br /&gt;
+    - Directory authorities now compute consensus weightings that instruct&lt;br /&gt;
+      clients how to weight relays flagged as Guard, Exit, Guard+Exit,&lt;br /&gt;
+      and no flag. Clients that use these weightings will distribute &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/march-2010-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/March_2010_Progress_Report/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/March_2010_Progress_Report/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

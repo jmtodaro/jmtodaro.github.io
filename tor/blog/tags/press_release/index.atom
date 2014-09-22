@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged press_release</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/press_release/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/press_release/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/press_release/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:16:27Z</updated>
+<entry>
+	<title>November 2008 Progress Report</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/November_2008_Progress_Report/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/November_2008_Progress_Report/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/censorship_circumvention" />
+
+	<category term="/tags/development_roadmap" />
+
+	<category term="/tags/funding" />
+
+	<category term="/tags/press_release" />
+
+
+	<updated>2011-04-05T11:16:27Z</updated>
+	<published>2008-12-25T04:29:44Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;strong&gt;Bug Fixes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.1.7-alpha (released November 8) fixes a major security problem in Debian and Ubuntu packages (and maybe other packages) noticed by Theo de Raadt, fixes a smaller security flaw that might allow an attacker to access local services, adds better defense against DNS poisoning attacks on exit relays, further improves hidden service performance, and fixes a variety of other issues.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Nov-2008/msg00229.html&quot; title=&quot;http://archives.seul.org/or/talk/Nov-2008/msg00229.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Nov-2008/msg00229.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.0.32 (released November 20) fixes a major security problem in Debian and Ubuntu packages (and maybe other packages) noticed by Theo de Raadt, fixes a smaller security flaw that might allow an attacker to access local services, further improves hidden service performance, and fixes a variety of other issues.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/announce/Dec-2008/msg00000.html&quot; title=&quot;http://archives.seul.org/or/announce/Dec-2008/msg00000.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/announce/Dec-2008/msg00000.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Vidalia 0.1.10 (released November 2) fixes some presentation bugs and some bugs in the Windows installer. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/november-2008-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/November_2008_Progress_Report/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/November_2008_Progress_Report/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

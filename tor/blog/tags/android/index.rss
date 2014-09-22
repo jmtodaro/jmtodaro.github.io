@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged android</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/android/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Tor 0.2.2.6-alpha released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/</link>
+
+
+	<category>/tags/alpha_release</category>
+
+	<category>/tags/android</category>
+
+	<category>/tags/enhancements</category>
+
+	<category>/tags/new_features</category>
+
+	<category>/tags/openssl</category>
+
+
+	<pubDate>Wed, 02 Dec 2009 23:29:12 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:43:33Z</dcterms:modified>
+
+	<description>&lt;p&gt;On November 19, we released the latest in the Tor alpha series, version 0.2.2.6-alpha. This release lays the groundwork for many upcoming features:&lt;br /&gt;
+support for the new lower-footprint &quot;microdescriptor&quot; directory design,&lt;br /&gt;
+future-proofing our consensus format against new hash functions or&lt;br /&gt;
+other changes, and an Android port. It also makes Tor compatible with&lt;br /&gt;
+the upcoming OpenSSL 0.9.8l release, and fixes a variety of bugs.&lt;/p&gt;
+
+&lt;p&gt;It can be downloaded at &lt;a href=&quot;https://www.torproject.org/download.html.en&quot; title=&quot;https://www.torproject.org/download.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download.html.en&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Major features:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Directory authorities can now create, vote on, and serve multiple&lt;br /&gt;
+      parallel formats of directory data as part of their voting process.&lt;br /&gt;
+      Partially implements Proposal 162: &quot;Publish the consensus in&lt;br /&gt;
+      multiple flavors&quot;.&lt;/p&gt;
+&lt;li&gt;Directory authorities can now agree on and publish small summaries&lt;br /&gt;
+      of router information that clients can use in place of regular&lt;br /&gt;
+      server descriptors. This transition will eventually allow clients &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-0226-alpha-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_6-alpha_released/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

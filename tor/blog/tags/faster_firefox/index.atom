@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged faster_firefox</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/faster_firefox/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/faster_firefox/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/faster_firefox/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:34:07Z</updated>
+<entry>
+	<title>Tor Browser Bundle 1.2.8 released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_8_released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_8_released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/caching" />
+
+	<category term="/tags/faster_firefox" />
+
+	<category term="/tags/faster_tor" />
+
+	<category term="/tags/open_research" />
+
+	<category term="/tags/performance" />
+
+	<category term="/tags/polipo" />
+
+	<category term="/tags/privoxy" />
+
+	<category term="/tags/socks5" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+	<category term="/tags/vidalia_bundle" />
+
+
+	<updated>2011-04-05T11:34:07Z</updated>
+	<published>2009-08-20T03:43:12Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor Browser Bundle 1.2.8 is released.  The big changes are the inclusion of statically linked openssl dlls to resolve a few geoip lookup and functionality issues with Vidalia, and the upgrade to the &lt;a href=&quot;http://localhost//blog.torproject.org/blog/vidalia-022-released&quot; rel=&quot;nofollow&quot;&gt;new Vidalia 0.2.2&lt;/a&gt;.  &lt;/p&gt;
+
+&lt;p&gt;Available at &lt;a href=&quot;https://torproject.org/torbrowser&quot; title=&quot;https://torproject.org/torbrowser&quot; rel=&quot;nofollow&quot;&gt;https://torproject.org/torbrowser&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The full list of updates and fixes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;update Torbutton to 1.2.2&lt;/li&gt;
+&lt;li&gt;update Vidalia to 0.2.2&lt;/li&gt;
+&lt;li&gt;compile OpenSSL 0.9.8k with Visual C to make dlls&lt;/li&gt;
+&lt;li&gt;update Pidgin to 2.6.1&lt;/li&gt;
+&lt;/ul&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_8_released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_8_released/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

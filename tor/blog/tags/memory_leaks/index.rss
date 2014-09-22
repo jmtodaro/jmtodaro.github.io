@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged memory_leaks</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/memory_leaks/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>arma: Trip report, NSF data workshop</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Trip_report_NSF_data_workshop/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Trip_report_NSF_data_workshop/</link>
+
+
+	<category>/tags/alpha_releases</category>
+
+	<category>/tags/hidden_services</category>
+
+	<category>/tags/memory_leaks</category>
+
+	<category>/tags/performance_improvements</category>
+
+	<category>/tags/tor</category>
+
+
+	<pubDate>Mon, 30 Aug 2010 15:59:01 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:07:06Z</dcterms:modified>
+
+	<description>&lt;p&gt;On Friday (Aug 27), I attended the &quot;Workshop on Cyber Security Data for Experimentation&quot; organized by the National Science Foundation (NSF). The premise of the &lt;a href=&quot;http://www.gtisc.gatech.edu/nsf_workshop10_agenda.html&quot; rel=&quot;nofollow&quot;&gt;workshop&lt;/a&gt; was that many academics need real-world data sets to solve problems, whereas industry is the place with the real-world data sets and they don&#39;t have any real reason to share. By getting the academics and the industry people talking, with government funders nearby, they hoped to better understand the problems and maybe move things forward.&lt;/p&gt;
+
+&lt;p&gt;I was there (and on the first panel) because of Tor&#39;s work on &lt;a href=&quot;https://metrics.torproject.org/&quot; rel=&quot;nofollow&quot;&gt;gathering Tor network snapshots, performance data, and user statistics&lt;/a&gt;. Tor&#39;s approach represents one way out of the trap where researchers never quite get the data they want, or if they do it isn&#39;t open enough (which hinders whether anybody else can reproduce their results). &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/trip-report-nsf-data-workshop&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Trip_report_NSF_data_workshop/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Tor 0.2.2.4-alpha released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_4-alpha_released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_4-alpha_released/</link>
+
+
+	<category>/tags/IP_Address_changes</category>
+
+	<category>/tags/alpha_release</category>
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/circuit_building_fixes</category>
+
+	<category>/tags/code_refactoring</category>
+
+	<category>/tags/memory_leaks</category>
+
+	<category>/tags/tinytest_framework</category>
+
+
+	<pubDate>Mon, 12 Oct 2009 09:56:02 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:38:59Z</dcterms:modified>
+
+	<description>&lt;p&gt;On October 10, we released Tor version 0.2.2.4-alpha. &lt;/p&gt;
+
+&lt;p&gt;This release can be found at &lt;a href=&quot;https://www.torproject.org/download/&quot; title=&quot;https://www.torproject.org/download/&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It contains the following:&lt;br /&gt;
+&lt;strong&gt;Major bugfixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fix several more asserts in the circuit_build_times code, for&lt;br /&gt;
+      example one that causes Tor to fail to start once we have&lt;br /&gt;
+      accumulated 5000 build times in the state file. Bugfixes on&lt;br /&gt;
+      0.2.2.2-alpha; fixes bug 1108.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;New directory authorities:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Move moria1 and Tonga to alternate IP addresses.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Minor features:&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-0224-alpha-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Log SSL state transitions at debug level during handshake, and&lt;br /&gt;
+      include SSL states in error messages. This may help debug future&lt;br /&gt;
+      SSL handshake issues.
+&lt;/li&gt;
+&lt;li&gt;Add a new &quot;Handshake&quot; log domain for activities that happen&lt;br /&gt;
+      during the TLS handshake.&lt;/li&gt;
+&lt;li&gt;Revert to the &quot;June 3 2009&quot; ip-to-country file. The September one&lt;br /&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_4-alpha_released/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

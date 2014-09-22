@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged thandy</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/thandy/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/thandy/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/thandy/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:35:18Z</updated>
+<entry>
+	<title>BitTorrent support for Thandy</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/BitTorrent_support_for_Thandy/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/BitTorrent_support_for_Thandy/"/>
+
+	<author><name>Sebastian</name></author>
+
+
+
+
+
+
+	<category term="/tags/BitTorrent" />
+
+	<category term="/tags/Google_Summer_of_Code" />
+
+	<category term="/tags/google" />
+
+	<category term="/tags/gsoc" />
+
+	<category term="/tags/thandy" />
+
+
+	<updated>2011-04-05T11:35:18Z</updated>
+	<published>2009-09-10T19:16:03Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;As a returning &lt;a href=&quot;http://socghop.appspot.com/org/home/google/gsoc2009/eff&quot; rel=&quot;nofollow&quot;&gt;Google Summer of Code&lt;/a&gt; student for the second year in a row, I was thrilled to hear that I had been accepted again.&lt;/p&gt;
+
+&lt;p&gt;My task was to add &lt;a href=&quot;http://www.bittorrent.com/&quot; rel=&quot;nofollow&quot;&gt;BitTorrent&lt;/a&gt; support to &lt;a href=&quot;https://git.torproject.org/checkout/thandy/master/&quot; rel=&quot;nofollow&quot;&gt;Thandy&lt;/a&gt;, the secure automated updater &lt;a href=&quot;http://google-opensource.blogspot.com/2009/03/thandy-secure-update-for-tor.html&quot; rel=&quot;nofollow&quot;&gt;developed&lt;/a&gt; by the Tor project, along with setting up and testing the necessary infrastructure. The goal is to better mitigate load spikes following the release of new software versions and allowing volunteers to easily help users to fetch Tor. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/bittorrent-support-thandy&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/BitTorrent_support_for_Thandy/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/BitTorrent_support_for_Thandy/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

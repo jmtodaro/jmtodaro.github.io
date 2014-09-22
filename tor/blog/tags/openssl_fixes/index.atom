@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged openssl_fixes</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/openssl_fixes/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/openssl_fixes/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/openssl_fixes/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:11:24Z</updated>
+<entry>
+	<title>Tor 0.2.2.19-alpha is out</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_19-alpha_is_out/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_19-alpha_is_out/"/>
+
+	<author><name>erinn</name></author>
+
+
+
+
+
+
+	<category term="/tags/alpha_release" />
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/openssl" />
+
+	<category term="/tags/openssl_fixes" />
+
+	<category term="/tags/tor" />
+
+
+	<updated>2011-04-05T12:11:24Z</updated>
+	<published>2010-11-26T15:14:45Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Yet another OpenSSL security patch broke its compatibility with Tor:&lt;br /&gt;
+Tor 0.2.2.19-alpha makes relays work with OpenSSL 0.9.8p and 1.0.0.b.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download/download&quot; title=&quot;https://www.torproject.org/download/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download/download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The original announcement is at &lt;a href=&quot;http://archives.seul.org/or/talk/Nov-2010/msg00172.html&quot; title=&quot;http://archives.seul.org/or/talk/Nov-2010/msg00172.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Nov-2010/msg00172.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.2.19-alpha - 2010-11-21&lt;br /&gt;
+&lt;strong&gt;Major bugfixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt; Resolve an incompatibility with openssl 0.9.8p and openssl 1.0.0b:&lt;br /&gt;
+      No longer set the tlsext_host_name extension on server SSL objects;&lt;br /&gt;
+      but continue to set it on client SSL objects. Our goal in setting&lt;br /&gt;
+      it was to imitate a browser, not a vhosting server. Fixes bug 2204;&lt;br /&gt;
+      bugfix on 0.2.1.1-alpha.&lt;/li&gt;&lt;/p&gt;
+
+&lt;p&gt;  &lt;strong&gt; Minor bugfixes:&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02219-alpha-out&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;li&gt; Try harder not to exceed the maximum length of 50 KB when writing&lt;br /&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_19-alpha_is_out/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_19-alpha_is_out/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor 0.2.1.27 is released.</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_27_is_released_/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_27_is_released_/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/directory_authorities" />
+
+	<category term="/tags/minor_features" />
+
+	<category term="/tags/openssl_fixes" />
+
+	<category term="/tags/stable_release" />
+
+
+	<updated>2011-04-05T12:11:23Z</updated>
+	<published>2010-11-26T13:45:31Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor 0.2.1.27 makes relays work with OpenSSL 0.9.8p and 1.0.0.b --yet another OpenSSL security patch broke its compatibility with Tor. We also took this opportunity to fix several crash bugs, integrate a new directory authority, and update the bundled GeoIP database.&lt;/p&gt;
+
+&lt;p&gt;If you operate a relay, please upgrade.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download/download&quot; title=&quot;https://www.torproject.org/download/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download/download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The original release announcement is at&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/announce/Nov-2010/msg00000.html&quot; title=&quot;http://archives.seul.org/or/announce/Nov-2010/msg00000.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/announce/Nov-2010/msg00000.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.27 - 2010-11-23&lt;br /&gt;
+&lt;strong&gt;Major bugfixes:&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02127-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Resolve an incompatibility with OpenSSL 0.9.8p and OpenSSL 1.0.0b: No longer set the tlsext_host_name extension on server SSL objects; but continue to set it on client SSL objects. Our goal in setting&lt;br /&gt;
+it was to imitate a browser, not a vhosting server. Fixes bug 2204; bugfix on 0.2.1.1-alpha.&lt;/li&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_27_is_released_/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_27_is_released_/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>New Stable released, Tor 0.2.1.21</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/New_Stable_released_Tor_0_2_1_21/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/New_Stable_released_Tor_0_2_1_21/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/exit_relays" />
+
+	<category term="/tags/openssl_fixes" />
+
+	<category term="/tags/stable_release" />
+
+
+	<updated>2011-04-05T11:45:14Z</updated>
+	<published>2009-12-30T14:21:46Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor 0.2.1.21 fixes an incompatibility with the most recent OpenSSL&lt;br /&gt;
+library. If you use Tor on Linux / Unix and you&#39;re getting SSL&lt;br /&gt;
+renegotiation errors, upgrading should help. We also recommend an&lt;br /&gt;
+upgrade if you&#39;re an exit relay.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/easy-download&quot; title=&quot;https://www.torproject.org/easy-download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/easy-download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.21 - 2009-12-21&lt;br /&gt;
+&lt;strong&gt;Major bugfixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt; Work around a security feature in OpenSSL 0.9.8l that prevents our&lt;br /&gt;
+      handshake from working unless we explicitly tell OpenSSL that we&lt;br /&gt;
+      are using SSL renegotiation safely. We are, of course, but OpenSSL&lt;br /&gt;
+      0.9.8l won&#39;t work unless we say we are.&lt;/li&gt;
+&lt;li&gt; Avoid crashing if the client is trying to upload many bytes and the&lt;br /&gt;
+      circuit gets torn down at the same time, or if the flip side&lt;br /&gt;
+      happens on the exit relay. Bugfix on 0.2.0.1-alpha; fixes bug 1150.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Minor bugfixes:&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/new-stable-released-tor-02121&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt; Do not refuse to learn about authority certs and v2 networkstatus&lt;br /&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/New_Stable_released_Tor_0_2_1_21/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/New_Stable_released_Tor_0_2_1_21/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor Browser Bundle 1.2.10 Released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_10_Released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_10_Released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bridges" />
+
+	<category term="/tags/libevent_updates" />
+
+	<category term="/tags/openssl_fixes" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+	<category term="/tags/vidalia_updates" />
+
+
+	<updated>2011-04-05T11:42:40Z</updated>
+	<published>2009-11-21T04:43:26Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;On November 20, we released an updated Tor Browser Bundle, version 1.2.10, which includes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt; updated Vidalia to 0.2.6&lt;/li&gt;
+&lt;li&gt; updated Pidgin to 2.6.3&lt;/li&gt;
+&lt;li&gt; updated Tor to 0.2.1.20&lt;/li&gt;
+&lt;li&gt; updated Firefox to 3.0.15&lt;/li&gt;
+&lt;li&gt; updated OpenSSL to 0.9.8l&lt;/li&gt;
+&lt;li&gt; updated libevent to 1.4.13&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can download the updated version at &lt;a href=&quot;https://www.torproject.org/torbrowser/&quot; title=&quot;https://www.torproject.org/torbrowser/&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/torbrowser/&lt;/a&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_10_Released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_10_Released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor 0.2.2.1-alpha released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_1-alpha_released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_1-alpha_released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/openssl_fixes" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+	<category term="/tags/vidalia_release" />
+
+
+	<updated>2011-04-05T11:34:54Z</updated>
+	<published>2009-09-02T19:32:58Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor 0.2.2.1-alpha disables &quot;.exit&quot; address notation by default, allows&lt;br /&gt;
+Tor clients to bootstrap on networks where only port 80 is reachable,&lt;br /&gt;
+makes it more straightforward to support hardware crypto accelerators,&lt;br /&gt;
+and starts the groundwork for gathering stats safely at relays.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download&quot; title=&quot;https://www.torproject.org/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We&#39;ve been improving our packages and bundles:&lt;br /&gt;
+&lt;strong&gt;Packaging changes:&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-0221alpha-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Upgrade Vidalia from 0.1.15 to 0.2.3 in the Windows and OS X&lt;br /&gt;
+      installer bundles. See&lt;br /&gt;
+      &lt;a href=&quot;https://trac.vidalia-project.net/browser/vidalia/tags/vidalia-0.2.3/CHANGELOG&quot; title=&quot;https://trac.vidalia-project.net/browser/vidalia/tags/vidalia-0.2.3/CHANGELOG&quot; rel=&quot;nofollow&quot;&gt;https://trac.vidalia-project.net/browser/vidalia/tags/vidalia-0.2.3/CHAN...&lt;/a&gt;&lt;br /&gt;
+      for details of what&#39;s new in Vidalia 0.2.3.&lt;/li&gt;
+&lt;li&gt;Windows Vidalia Bundle: update Privoxy from 3.0.6 to 3.0.14-beta.&lt;/li&gt;
+&lt;li&gt;OS X Vidalia Bundle: move to Polipo 1.0.4 with Tor specific&lt;br /&gt;
+      configuration file, rather than the old Privoxy.&lt;/li&gt;
+&lt;li&gt;OS X Vidalia Bundle: Vidalia, Tor, and Polipo are compiled as&lt;br /&gt;
+      x86-only for better compatibility with OS X 10.6, aka Snow Leopard.&lt;/li&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_1-alpha_released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_1-alpha_released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Testing Tor Browser Bundle 1.2.7-dev</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/openssl_fixes" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+	<category term="/tags/usability_enhancements" />
+
+	<category term="/tags/vidalia_releases" />
+
+
+	<updated>2011-04-05T11:33:32Z</updated>
+	<published>2009-08-16T03:33:34Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;ve updated the Tor Browser Bundle with torbutton 1.2.2, the &lt;a href=&quot;http://localhost//blog.torproject.org/blog/vidalia-022-released&quot; rel=&quot;nofollow&quot;&gt;new Vidalia 0.2.2&lt;/a&gt;, and openssl 0.9.8k compiled with Microsoft Visual C to handle ssl compatibility issues with various versions of Windows.&lt;/p&gt;
+
+&lt;p&gt;If this works, it will be the new Tor Browser Bundle 1.2.8.  Please test away.&lt;/p&gt;
+
+&lt;p&gt;The full list of changes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;update Torbutton to 1.2.2&lt;/li&gt;
+&lt;li&gt;update Vidalia to 0.2.2&lt;/li&gt;
+&lt;li&gt;compile OpenSSL 0.9.8k with Visual C to make dlls&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There is an issue for some people using a clean Windows XP, Vista, 7 which would either require we ship the Visual C redistributable package, or compile OpenSSL ourselves with Visual C.   The symptoms were the &quot;find bridges now&quot; button didn&#39;t appear in Vidalia 0.2.x, and the relays would never get flags.  A few people posted comments to this blog about lacking flags and geoip information with TBB. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/testing-tor-browser-bundle-127dev&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Vidalia 0.2.2 Released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_2_Released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_2_Released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/openssl_fixes" />
+
+	<category term="/tags/usability_enhancements" />
+
+	<category term="/tags/vidalia_releases" />
+
+
+	<updated>2011-04-05T11:33:22Z</updated>
+	<published>2009-08-15T14:01:14Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Vidalia 0.2.2 is released.  It addresses an issue with openssl which causes the geoip lookups to fail on various versions of Windows.  It also switches from the Nullsoft Installer to the Microsoft System Installer for better compatibility with Microsoft Windows.&lt;/p&gt;
+
+&lt;p&gt;There are now separate Apple OS X builds, one for PowerPC architectures and one for i386 architectures.  No more Universal binary bloat to download.&lt;/p&gt;
+
+&lt;p&gt;The changes are: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/vidalia-022-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;When the user clicks &quot;Browse&quot; in the Advanced settings page to locate&lt;br /&gt;
+    a new torrc, set the initial directory shown in the file dialog to the&lt;br /&gt;
+    current location of the user&#39;s torrc. (Ticket #505)&lt;/li&gt;
+&lt;li&gt;Use &#39;ditto&#39; to strip the architectures we don&#39;t want from the Qt&lt;br /&gt;
+    frameworks installed into the app bundle with the dist-osx,&lt;br /&gt;
+    dist-osx-bundle and dist-osx-split-bundle build targets.&lt;/li&gt;
+&lt;li&gt;Fix a bug in the CMakeLists.txt files for ts2po and po2ts that caused&lt;br /&gt;
+    build errors on Panther for those two tools.&lt;/li&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_2_Released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_2_Released/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

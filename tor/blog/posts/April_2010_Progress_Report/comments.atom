@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>April 2010 Progress Report</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:57:41Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_1/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:57:31Z</updated>
+	<published>2010-05-12T11:57:31Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;And apparently users in China have gone back to limbo given tor has been having trouble finding sources to connect even while using bridges.&lt;br /&gt;
+Any light on that?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_2/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:57:32Z</updated>
+	<published>2010-05-12T11:57:32Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Not actually related to this entry, but I have to say...&lt;br /&gt;
+Recently, Tor is becoming very unstable in China. The circuit seems to be established sometimes, but no data can be transfered over it. (i.e. HTTP GET request is very likely result a TIMEOUT)&lt;br /&gt;
+Not sure what&#39;s happening there...Need you help.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_3/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:57:33Z</updated>
+	<published>2010-05-16T11:57:33Z</published>
+
+	<content type="html" xml:lang="en">
+	I think the GFW might be traffic shaping the connections personally, though I can&#39;t be sure about that.  The reason I say this is the bridges I run (that haven&#39;t been blocked) have been seeing very little throughput by the users which seems strange.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_4/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:57:34Z</updated>
+	<published>2010-05-13T11:57:34Z</published>
+
+	<content type="html" xml:lang="en">
+	Please see &lt;a href=&quot;https://blog.torproject.org/blog/china-blocking-tor-round-two#comment-5639&quot; title=&quot;https://blog.torproject.org/blog/china-blocking-tor-round-two#comment-5639&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/china-blocking-tor-round-two#comment-56...&lt;/a&gt;.  We are aware.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_5/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:57:35Z</updated>
+	<published>2010-05-15T11:57:35Z</published>
+
+	<content type="html" xml:lang="en">
+	Looking at your metrics graphs,  I&#39;d say you need a new bridge distribution strategy for China. The number of users has fallen off a cliff and is now close to zero most of the time. The GFW is winning this contest.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_6/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:57:36Z</updated>
+	<published>2010-05-15T11:57:36Z</published>
+
+	<content type="html" xml:lang="en">
+	We agree.  We&#39;re trying a new one right now, it just has a slow ramp-up period by design.  We&#39;re measuring the time duration from publishing bridges until they are blocked by the GFW.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_7/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:57:37Z</updated>
+	<published>2010-05-16T11:57:37Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;just wondering if there are plans to include auto-update for Tor/Vidalia?&lt;br /&gt;
+I have the combo running on an unattented machine to provide a relay but I worry that if it gets out-of-date it&#39;s not going to be as secure/useful.&lt;br /&gt;
+Having a daily poll-update cycle that&#39;s seamless (though on Windows UC may be an issue) or at least downloads the update and flags in the UI that it&#39;s available would be very cool&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_8/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:57:38Z</updated>
+	<published>2010-05-16T11:57:38Z</published>
+
+	<content type="html" xml:lang="en">
+	Yes there is the code and framework for doing this already built.  We&#39;re planning a deployment of the infrastructure this summer.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_9/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:57:39Z</updated>
+	<published>2010-05-19T11:57:39Z</published>
+
+	<content type="html" xml:lang="en">
+	Please kindly help me, my tor is not logging my yahoo messenger in, kindly send me an email to micheal4onlyu@yahoo.com i am using mtn nigeria please help me...
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_10/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:57:40Z</updated>
+	<published>2010-05-23T11:57:40Z</published>
+
+	<content type="html" xml:lang="en">
+	please i need a new bridge for tor you can message me at ..... roseben2008@gmail.com thanks. and i want you to give me the latest tor which is faster ok.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2010_Progress_Report/comment_11/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:57:41Z</updated>
+	<published>2010-05-25T11:57:41Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Has the problem been resolved that was raised in Feb 2009 by a chinaman teacher/educator was it called something like  &quot;black hat&quot; not sure&lt;br /&gt;
+thanks&lt;br /&gt;
+tim&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+
+</feed>

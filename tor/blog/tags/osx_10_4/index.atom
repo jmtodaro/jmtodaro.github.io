@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged osx_10_4</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/osx_10_4/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/osx_10_4/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/osx_10_4/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:10:26Z</updated>
+<entry>
+	<title>Fun with build machines</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Fun_with_build_machines/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Fun_with_build_machines/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/centos4" />
+
+	<category term="/tags/osx_10_4" />
+
+	<category term="/tags/osx_tiger" />
+
+	<category term="/tags/packages" />
+
+
+	<updated>2011-04-05T11:10:26Z</updated>
+	<published>2008-08-06T02:50:21Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Perhaps you&#39;ve noticed that the packages for CentOS 4 and OSX Tiger/10.4 haven&#39;t been updated lately. Welcome to dead hard drives.&lt;/p&gt;
+
+&lt;p&gt;For a long while, I used &lt;a href=&quot;http://www.vmware.com/products/server/&quot; rel=&quot;nofollow&quot;&gt;VMware Server&lt;/a&gt; for guest OSes to build the various rpm and windows packages.  This mostly worked well.  And then both drives in the physical server I used to host the vmware instance failed.  A two-drive RAID 1 array doesn&#39;t like it when both drives fail.  I replaced the drives, re-installed Debian, and attempted to install vmware server again.  The vmware kernel module refused to load.  I tried the old tricks to get it to work, nothing.  I finally looked at some script/patch that I found via Google, and got the module to load.  Then my license key didn&#39;t work anymore.  &lt;/p&gt;
+
+&lt;p&gt;In frustration, I gave up and installed &lt;a href=&quot;http://www.virtualbox.org/&quot; rel=&quot;nofollow&quot;&gt;VirtualBox&lt;/a&gt;.  CentOS 4 defaults to using an SMP kernel on install, which Virtualbox (aka qemu) doesn&#39;t like at all.  CentOS 4 installs just fine, it just won&#39;t boot after install.  I haven&#39;t had time to further fix the problem.  For the time being, there&#39;s no CentOS 4 (Redhat 4 rpms) for Tor.  &lt;/p&gt;
+
+&lt;p&gt;As for OSX, well, there was no raid array of any kind, just a single drive in a mac mini.  It died in a fit of 0xE0030005 (Undefined) errors and now won&#39;t boot at all.  A new drive is on the way.  I expect to have OSX Tiger/10.4 packages in a week or so.  The good news is that the &lt;a href=&quot;http://www.everymac.com/systems/apple/imac/stats/imac_se_dv_400.html&quot; rel=&quot;nofollow&quot;&gt;Panther Mac&lt;/a&gt; continues to work just fine.  &lt;/p&gt;
+
+&lt;p&gt;Perhaps it&#39;s time to start using Amazon&#39;s EC2 or something similar instead of messing with all this hardware and virtualization software.  Or maybe I should work on hacking OSX 10.4 and 10.5 into virtualbox.&lt;/p&gt;
+
+&lt;p&gt;** Update 2008-08-06:  new drive was DOA.  And it appears the logic board on the mac mini is fried.  Ugh.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Fun_with_build_machines/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Fun_with_build_machines/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

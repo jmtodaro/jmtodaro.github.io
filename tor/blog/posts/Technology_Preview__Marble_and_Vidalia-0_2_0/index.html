@@ -1,0 +1,716 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Technology Preview:  Marble and Vidalia-0.2.0</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTechnology_Preview__Marble_and_Vidalia-0_2_0&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Technology Preview:  Marble and Vidalia-0.2.0</a>
+
+</span>
+
+
+<div id="content">
+<p>One of the most requested upgrades to <a href="https://www.torproject.org/vidalia/" rel="nofollow">Vidalia</a> is a better map of the world.  We looked into a few different technologies and decided on <a href="http://edu.kde.org/marble/" rel="nofollow">KDE's Marble</a> interface.  Marble enables an accurate mapping of nodes according to their geolocation, allows for future enhancements such as "click a country to start or end your Tor circuit", and plugins for extra data views.  This also gives us the ability to use Qt's Webkit browser to display custom information about nodes, circuits, or anything else in a pop-up window.  An anonymous funder covered the costs involved in developing this feature.  We thank them for their support. <span class="read-more"><a href="http://blog.torproject.org/blog/technology-preview-marble-and-vidalia020"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/Qt_updates/" rel="tag">Qt updates</a>
+
+<a href="../../tags/drag_and_drop_OS_X_install/" rel="tag">drag and drop OS X install</a>
+
+<a href="../../tags/experimental/" rel="tag">experimental</a>
+
+<a href="../../tags/kde_marble/" rel="tag">kde marble</a>
+
+<a href="../../tags/msi_installer/" rel="tag">msi installer</a>
+
+<a href="../../tags/technology_preview/" rel="tag">technology preview</a>
+
+<a href="../../tags/vidalia/" rel="tag">vidalia</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-a222314a0c1d57875fe1e2702cb92b7c">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi,<br />
+the new map looks pretty nice! I already packaged the marble-vidalia version and the new vidalia-alpha for Archlinux. The packages can be found here:</p>
+
+<p>marble-vidalia: <a href="http://aur.archlinux.org/packages.php?ID=25092" title="http://aur.archlinux.org/packages.php?ID=25092" rel="nofollow">http://aur.archlinux.org/packages.php?ID=25092</a><br />
+vidalia-alpha: <a href="http://aur.archlinux.org/packages.php?ID=25093" title="http://aur.archlinux.org/packages.php?ID=25093" rel="nofollow">http://aur.archlinux.org/packages.php?ID=25093</a></p>
+
+<p>But at the moment this version is more or less unuseable because it creates a high cpu-usage. If you take a look at the map and play a bit with it I get about 20% cpu-usage on a Core Duo @1.6 GHz.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FRorschach%20%28not%20verified%29&amp;do=goto">Rorschach (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 29 Mar 2009 06:21:42 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-09cc556f7eda7b3a576adc7b5a048be9">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>I see high cpu usage in Xorg/X11 sometimes.  Any other OS seems to handle it just fine.  </p>
+
+<p>Does the usage spike to 20% or constantly stay at that level?</p>
+
+<p>I notice the cpu usage generally while many circuits are building.  Once circuits are built, it seems pretty quick to move around.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 29 Mar 2009 06:21:43 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d4438df2c6935bf74608dd5638768bb5">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>I checked the behavior now on an Intel Atom N270 @ 1.6 Ghz with two Cores and there it is even worse.</p>
+
+<p>Starting the map causes 80% CPU-usage by the vidalia process for about 1-2 minutes. After that CPU-usage goes completly down.</p>
+
+<p>But as soon as I start to scroll the map or zoom the cpu-usage goes up to 20-30% again.</p>
+
+<p>So if you use the map it is pretty high, if you don't use it it's as usual.</p>
+
+<p>Maybe this is normal for marble under X to consume so much? But it would be cool if the old map could still be further a part of vidalia, so one can choose as compile-time option if he has the rescources to run the marble map or the other one, as it is right now. Also if marble becames vidalias default map it would be cool if one could use --disable-marble to use the older one.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FRorschach%20%28not%20verified%29&amp;do=goto">Rorschach (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 30 Mar 2009 06:21:44 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-062e57d70ba576ee1d2fba8bd86bc53d">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<p>if you're compiling vidalia, you have to set -DUSE_MARBLE=1 to get the marble map, otherwise you get the default 2-D map.</p>
+
+<p>We're well aware that not everyone can handle 3-D graphics with live circuits drawn on them right now.  The largest issue appears to be marble and X.  Marble and OSX and win32 is rather quick, even on older hardware.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 30 Mar 2009 06:21:45 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e7530932fa372d55c766f3c08195fa6a">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>&gt; if you're compiling vidalia, you have to set -DUSE_MARBLE=1 to get the marble &gt; map, otherwise you get the default 2-D map.</p>
+
+<p>I know , I compiled and used it already <img src="../../smileys/smile4.png" alt=";)" /> I just wanted to tell you my expereniece with it and that I think also if this feature becames part of vidalia stable, that there should still be the possibility to  switch it off...</p>
+
+<p>But interesting that Marble, a KDE project, runs smoother on MacOS and MS'OS. Maybe some problem with graphiccards and 3D acceleration, so that X does it in software and thus consuming so much cpu?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FRorschach%20%28not%20verified%29&amp;do=goto">Rorschach (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 30 Mar 2009 06:21:46 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3308015bfce244fbe68213dcd16a09a0">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi,</p>
+
+<p>The problem is that the native graphics system (X11, XRender) is unfortunately very slow on some graphics cards. That's why Qt provides mechanisms to bypass the X-Server using the so called "raster" graphics system. </p>
+
+<p>With recent Marble versions (Marble&gt;= 0.8) you can choose  a different graphics system via the settings dialog (Settings-&gt;Configure Marble-&gt;View-&gt;Graphics System: Raster).</p>
+
+<p>This will make Marble on Linux/X11 as fast as on Windows and Mac OS X.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 15 Aug 2010 06:21:47 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b2815be26b24c1938fe10d212526e0cd">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+I can't get .1.2 or .2 to work on OSX. Crashes on start. Bummer. I'll try to submit bug report later.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 29 Mar 2009 06:21:48 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-54b87771a7400e87a722cbb7d459e5dc">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+<p>Actually there error message is quite small so I'm going to post it here and maybe someone will spot it. Also doing this as I may forget to post a bug report.</p>
+
+<p>Exception Type:  EXC_BREAKPOINT (SIGTRAP)<br />
+Exception Codes: 0x0000000000000002, 0x0000000000000000<br />
+Crashed Thread:  0</p>
+
+<p>Dyld Error Message:<br />
+  Library not loaded: QtGui.framework/Versions/4/QtGui<br />
+  Referenced from: /Volumes/vidalia-0.1.12-universal/Vidalia.app/Contents/MacOS/Vidalia<br />
+  Reason: image not found</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 29 Mar 2009 06:21:49 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-437a532121f14f87d71a836ab03bf708">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+This is OS X 10.5.x?  And yes, please submit a bug. Thanks!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 29 Mar 2009 06:21:50 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-dc05cd4c448be836dc681d81355a2c3a">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+Wait, how do I compile Vidalia from source (e.g. for Linux / BSD) with marble support? I don't see a plain .tar.gz with marble in it.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 29 Mar 2009 06:21:51 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ec8a0de12ffe7094a5da620813ee9a9d">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+<p>The marble that comes with your distro will probably work fine, but if you want the exact same version we used, it's in Vidalia's SVN.  <a href="http://trac.vidalia-project.net/wiki/GettingTheCode" title="http://trac.vidalia-project.net/wiki/GettingTheCode" rel="nofollow">http://trac.vidalia-project.net/wiki/GettingTheCode</a> or <a href="https://svn.vidalia-project.net/svn/marble/trunk/" title="https://svn.vidalia-project.net/svn/marble/trunk/" rel="nofollow">https://svn.vidalia-project.net/svn/marble/trunk/</a> specifically.</p>
+
+<p>In the vidalia directory, read README.marble for instructions.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 29 Mar 2009 06:21:52 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ac91911705c76bcdfe17939a2639e538">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+<p>Hello,</p>
+
+<p>i have test some possibility and read all page about this version but are impossible to intsall it...</p>
+
+<p>i have a version vidalia 0.2.0 make for jaunty from launchpad and work fine  but are not compiled with marble.</p>
+
+<p>marble are on my system and work the only problem are with the source are not possible for me to build a compatible version for ubuntu jaunty 9.04 64 bits ... (intel)</p>
+
+<p>i will really happy when someone can help me with that <img src="../../smileys/smile4.png" alt=";)" /></p>
+
+<p>thanks in advance</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fswisstorexit.dyndns.org%20%28not%20verified%29&amp;do=goto">swisstorexit.dyndns.org (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 02 Jun 2009 06:21:53 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d13dc1d3583fccec9669923f5bb8ed92">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+<p>hello, </p>
+
+<p>i write this post to say with the last source from vidalia 0.2.1 i can build it without error and with marble.</p>
+
+<p>That's really a great design and option are useful <img src="../../smileys/smile.png" alt=":)" /></p>
+
+<p>thanks for all</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fswisstorexit%20%28not%20verified%29&amp;do=goto">swisstorexit (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 05 Jul 2009 06:21:54 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTechnology_Preview__Marble_and_Vidalia-0_2_0&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:21:41 AM CDT</span>
+<!-- Created <span class="date">Sat 28 Mar 2009 08:21:39 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

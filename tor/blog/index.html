@@ -1,0 +1,1475 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>The Tor Blog</title>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<link rel="stylesheet" href="local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=index&amp;do=edit" />
+
+<link rel="alternate" type="application/rss+xml" title="The Tor Blog (RSS)" href="index.rss" /><link rel="alternate" type="application/atom+xml" title="The Tor Blog (Atom)" href="index.atom" />
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+<div class="sidebar">
+<div id="block-search-0" class="block block-search">  
+<div class="blockinner">
+<div class="content">
+<form action="/blog" accept-charset="UTF-8" method="post" id="search-block-form">
+
+<div><div class="container-inline"><div class="form-item" id="edit-search-block-form-keys-wrapper">
+<input type="text" maxlength="128" name="search_block_form_keys" id="edit-search-block-form-keys" size="12" value="" title="Enter the terms you wish to search for." class="form-text" />
+<input type="submit" name="op" id="edit-submit" value="Search" class="form-submit" />
+<input type="hidden" name="form_id" id="edit-search-block-form" value="search_block_form" />
+</div>
+</div>
+</div></form>
+</div>    
+</div>
+</div>
+
+<div class="img-shadow">
+<div class="infoblock">
+
+<div><div class="calendar"><table class="month-calendar">
+    <tr>
+    <th class="month-calendar-arrow"><a href="./archives/2011/03/" title="March">&larr;</a></th>
+    <th class="month-calendar-head" colspan="5"><a href="./archives/2011/04/" title="April">Apr 2011</a></th>
+    <th class="month-calendar-arrow"><a href="./archives/2011/05/" title="May">&rarr;</a></th>
+    </tr>
+    <tr>
+        <th class="month-calendar-day-head Sunday" title="Sunday">S</th>
+        <th class="month-calendar-day-head Monday" title="Monday">M</th>
+        <th class="month-calendar-day-head Tuesday" title="Tuesday">T</th>
+        <th class="month-calendar-day-head Wednesday" title="Wednesday">W</th>
+        <th class="month-calendar-day-head Thursday" title="Thursday">T</th>
+        <th class="month-calendar-day-head Friday" title="Friday">F</th>
+        <th class="month-calendar-day-head Saturday" title="Saturday">S</th>
+    </tr>
+    <tr>
+        <td class="month-calendar-day-noday Sunday">&nbsp;</td>
+        <td class="month-calendar-day-noday Monday">&nbsp;</td>
+        <td class="month-calendar-day-noday Tuesday">&nbsp;</td>
+        <td class="month-calendar-day-noday Wednesday">&nbsp;</td>
+        <td class="month-calendar-day-noday Thursday">&nbsp;</td>
+        <td class="month-calendar-day-link Friday"><a href="./tags/ten_things/" title="ten things">1</a></td>
+        <td class="month-calendar-day-link Saturday"><a href="./css/blog.css" title="blog.css">2</a></td>
+    </tr>
+    <tr>
+        <td class="month-calendar-day-nolink Sunday">3</td>
+        <td class="month-calendar-day-link Monday"><a href="./posts/Arm_Release_1_4_2/" title="Arm Release 1 4 2">4</a></td>
+        <td class="month-calendar-day-link Tuesday"><a href="./archives/2007/05/" title="05">5</a></td>
+        <td class="month-calendar-day-this-day Wednesday"><a href="./images/tor-logo.png" title="tor-logo.png">6</a></td>
+        <td class="month-calendar-day-future Thursday">7</td>
+        <td class="month-calendar-day-nolink Friday">8</td>
+        <td class="month-calendar-day-nolink Saturday">9</td>
+    </tr>
+    <tr>
+        <td class="month-calendar-day-nolink Sunday">10</td>
+        <td class="month-calendar-day-nolink Monday">11</td>
+        <td class="month-calendar-day-nolink Tuesday">12</td>
+        <td class="month-calendar-day-nolink Wednesday">13</td>
+        <td class="month-calendar-day-nolink Thursday">14</td>
+        <td class="month-calendar-day-nolink Friday">15</td>
+        <td class="month-calendar-day-nolink Saturday">16</td>
+    </tr>
+    <tr>
+        <td class="month-calendar-day-nolink Sunday">17</td>
+        <td class="month-calendar-day-nolink Monday">18</td>
+        <td class="month-calendar-day-nolink Tuesday">19</td>
+        <td class="month-calendar-day-nolink Wednesday">20</td>
+        <td class="month-calendar-day-nolink Thursday">21</td>
+        <td class="month-calendar-day-nolink Friday">22</td>
+        <td class="month-calendar-day-nolink Saturday">23</td>
+    </tr>
+    <tr>
+        <td class="month-calendar-day-nolink Sunday">24</td>
+        <td class="month-calendar-day-nolink Monday">25</td>
+        <td class="month-calendar-day-nolink Tuesday">26</td>
+        <td class="month-calendar-day-nolink Wednesday">27</td>
+        <td class="month-calendar-day-nolink Thursday">28</td>
+        <td class="month-calendar-day-nolink Friday">29</td>
+        <td class="month-calendar-day-nolink Saturday">30</td>
+    </tr>
+</table>
+</div></div>
+
+</div></div>
+
+<div class="img-shadow">
+<div id="block-block-2" class="block block-block">  
+<div class="blockinner">
+<h2> Tor in a minute </h2>
+<div class="fauxhead"></div>
+<div class="content">
+<ul>
+<li>Who is the <a href="https://www.torproject.org/press/presskit/2009-General-Background-on-Tor-Project-Inc.pdf" rel="nofollow">Tor Project, Inc.</a>?</li>
+<li>Why <a href="https://www.torproject.org/press/presskit/2009-General-Online-Anonymity-with-Tor.pdf" rel="nofollow">Online Privacy and Anonymity</a>?</li>
+<li>Why <a href="https://blog.torproject.org/blog/circumvention-and-anonymity" rel="nofollow">anonymity matters for circumvention</a>.</li>
+<li>How is Tor <a href="https://www.torproject.org/faq.html.en#Torisdifferent" rel="nofollow">different than other proxy solutions</a>?</li>
+</ul>
+</div>    
+</div>
+</div>
+</div>
+
+<div class="img-shadow">
+<div id="block-blog-0" class="block block-blog">  
+  <div class="blockinner">
+    <h2> Tag Cloud </h2>
+<div class="fauxhead"></div>
+    <div class="content">
+<div class="pagecloud">
+<span class="normalPC"><a href="./tags/alpha_release/">alpha release</a></span>
+<span class="smallestPC"><a href="./tags/alpha_releases/">alpha releases</a></span>
+<span class="smallPC"><a href="./tags/anonymity_advocacy/">anonymity advocacy</a></span>
+<span class="smallPC"><a href="./tags/bridges/">bridges</a></span>
+<span class="biggestPC"><a href="./tags/bug_fixes/">bug fixes</a></span>
+<span class="smallPC"><a href="./tags/censorship_circumvention/">censorship circumvention</a></span>
+<span class="smallPC"><a href="./tags/enhancements/">enhancements</a></span>
+<span class="smallestPC"><a href="./tags/gsoc/">gsoc</a></span>
+<span class="smallestPC"><a href="./tags/metrics/">metrics</a></span>
+<span class="smallPC"><a href="./tags/performance/">performance</a></span>
+<span class="bigPC"><a href="./tags/progress_report/">progress report</a></span>
+<span class="smallestPC"><a href="./tags/release_candidate/">release candidate</a></span>
+<span class="smallestPC"><a href="./tags/releases/">releases</a></span>
+<span class="smallPC"><a href="./tags/research/">research</a></span>
+<span class="smallPC"><a href="./tags/security_fixes/">security fixes</a></span>
+<span class="smallPC"><a href="./tags/stable_release/">stable release</a></span>
+<span class="smallestPC"><a href="./tags/tbb/">tbb</a></span>
+<span class="normalPC"><a href="./tags/tor/">tor</a></span>
+<span class="bigPC"><a href="./tags/tor_browser_bundle/">tor browser bundle</a></span>
+<span class="smallPC"><a href="./tags/torbrowser/">torbrowser</a></span>
+<span class="smallPC"><a href="./tags/torbutton/">torbutton</a></span>
+<span class="smallPC"><a href="./tags/translations/">translations</a></span>
+<span class="smallPC"><a href="./tags/updated_packages/">updated packages</a></span>
+<span class="smallPC"><a href="./tags/vidalia/">vidalia</a></span>
+<span class="smallestPC"><a href="./tags/vidalia_bundle/">vidalia bundle</a></span>
+</div>
+
+   </div>
+  </div>
+</div>
+</div>
+
+<p><a href="./comments/">Recent Comments</a></p>
+
+<p><a href="./tags/">Tags</a></p>
+
+<p><a href="./archives/">Archives</a></p>
+
+
+<form action="" method="get">
+<div id="blogform">
+<input type="hidden" name="do" value="blog" />
+<input type="hidden" name="from" value="posts" />
+<input type="hidden" name="subpage" value="1" />
+
+<input name="title" size="20" />
+<input type="submit" value="Edit" />
+</div>
+</form>
+
+
+<div class="actions">
+<ul>
+
+<li><a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=index&amp;do=edit" rel="nofollow">Edit</a></li>
+
+
+<li><a href="./recentchanges/">RecentChanges</a></li>
+
+
+
+
+<li><a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?do=prefs">Preferences</a></li>
+
+
+
+
+
+</ul>
+</div>
+
+
+</div>
+
+
+<span class="parentlinks">
+
+</span>
+<span class="title">
+<a href="">The Tor Blog</a>
+
+</span>
+
+
+<div id="content">
+<div class="blogfeed">
+
+<a class="feedbutton" type="application/rss+xml" href="index.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="index.atom">Atom</a>
+
+</div>
+<div class="inlinepage">
+
+<div class="inlineheader">
+<span class="header">
+
+<a href="./posts/Arm_Release_1_4_2/">Arm Release 1.4.2</a>
+
+</span>
+</div>
+
+
+<span class="pagedate">
+Posted <span class="date">Mon 04 Apr 2011 11:14:48 AM CDT</span> 
+
+<span class="author"> by 
+
+<a href="/blogs/atagar">atagar</a>
+
+</span>
+<a class="editlink" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FArm_Release_1_4_2&amp;do=edit" rel="nofollow">Edit</a>
+
+</span>
+
+
+
+<span class="tags">
+Tags:
+
+<a href="./tags/arm/" rel="tag">arm</a>
+
+</span>
+
+
+
+
+<div class="inlinecontent">
+<p>Hi, the next release of arm is now available. This one was focused on a full rewrite of the connection panel, improving its maintainability, performance, and (best of all) features. When rendered, the panel's baseline cpu usage is less than half of its previous incarnation, along with providing far more information...</p>
+
+<p><a href="http://www.atagar.com/transfer/tmp/armScreenshot-1.4.2.png" title="http://www.atagar.com/transfer/tmp/armScreenshot-1.4.2.png" rel="nofollow">http://www.atagar.com/transfer/tmp/armScreenshot-1.4.2.png</a></p>
+
+<p>- Full paths for your currently active Tor circuits<br />
+- Identification of the applications attached to your socks, hidden service, and control ports<br />
+- Identifying exit connections and the common uses for ports they're attached to<br />
+- Much better accuracy in identifying client and directory connections<br />
+- Expanded path information when there's space available (thanks to Fabian Keil)</p>
+
+<p>... and many, many more enhancements and fixes. For the full list see:<br />
+<a href="http://www.atagar.com/arm/releaseNotes.php#1.4.2" title="http://www.atagar.com/arm/releaseNotes.php#1.4.2" rel="nofollow">http://www.atagar.com/arm/releaseNotes.php#1.4.2</a></p>
+
+<p>Also, thanks to pyllyukko arm is now on slackbuilds.org so there's simple install options available for:<br />
+Debian, Ubuntu, Gentoo, Arch Linux, and Slackware</p>
+
+<p>As always, screenshots and downloads are available from the project's homepage:<br />
+<a href="http://www.atagar.com/arm/" title="http://www.atagar.com/arm/" rel="nofollow">http://www.atagar.com/arm/</a></p>
+
+<p>Cheers! -Damian</p>
+
+</div>
+
+<div class="inlinefooter">
+
+
+
+
+
+
+
+
+<div class="actions">
+<ul>
+
+<li><a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FArm_Release_1_4_2&amp;do=comment">Comment</a></li>
+
+
+</ul>
+</div>
+
+
+</div>
+
+</div>
+<div class="inlinepage">
+
+<div class="inlineheader">
+<span class="header">
+
+<a href="./posts/Trip_report_Taipei/">Trip report: Taipei</a>
+
+</span>
+</div>
+
+
+<span class="pagedate">
+Posted <span class="date">Sat 02 Apr 2011 03:00:01 AM CDT</span> 
+
+<span class="author"> by 
+
+<a href="/blogs/arma">arma</a>
+
+</span>
+<a class="editlink" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTrip_report_Taipei&amp;do=edit" rel="nofollow">Edit</a>
+
+</span>
+
+
+
+<span class="tags">
+Tags:
+
+<a href="./tags/tbb/" rel="tag">tbb</a>
+
+<a href="./tags/tor_browser_bundle/" rel="tag">tor browser bundle</a>
+
+<a href="./tags/torbrowser/" rel="tag">torbrowser</a>
+
+<a href="./tags/updated_packages/" rel="tag">updated packages</a>
+
+</span>
+
+
+
+
+<div class="inlinecontent">
+<p>I visited Taipei for several days at the end of March to do some Tor talks and generally spread the Tor gospel to another near-China country. I ended up doing five Tor talks in three days.</p>
+
+<p>The motivation was to find technical people in Taiwan and teach them more about the problems that Tor is facing, so they can be aware of these issues as they do their own part to make the world a safer place. I visited Hong Kong a few years ago, and did a talk at Hong Kong University as well as some meetings with human rights people. Many people I met said "if you want policy people, go to Hong Kong; if you want technical people, go to Taiwan." So I did.</p>
+
+<p>The first talk was at the <a href="http://osdc.tw/" rel="nofollow">Open Source Developers Conference</a> (OSDC 2011). I had a 75 minute keynote slot, and there were perhaps 200 people in the audience &mdash; mostly industry people with an interest in free software. Some of the participants, like <a href="http://mmnet.iis.sinica.edu.tw/~syhu/" rel="nofollow">Shun-Yun Hu</a>, were quite technical and would make great local Tor advocates. I also got a chance to teach other speakers like <a href="http://ingy.net/" rel="nofollow">Ingy</a> and <a href="http://fsck.com/" rel="nofollow">Jesse Vincent</a> about what needs doing in Tor-land.</p>
+
+<p>The second talk was to a group of 30 or 40 graduate students and professors at <a href="http://www.ntu.edu.tw/engv4/" rel="nofollow">Táidà</a>, the main Taiwanese university. They understood the security angles better than the OSDC audience, but what surprised me most was how few of them were aware of the recent political events in the Middle East. One of the most valuable aspects of Tor from an academic perspective is how it is a role model for security research influencing broader society.</p>
+
+<p>The third talk was to a group of human rights activists and nonprofit organizers. I've left out names to protect the innocent; let me know if you need an introduction and I'd be happy to connect you. There were some very interesting lawyers, as well as more technical activists who work hard to make sure that Taiwan remains a free society.</p>
+
+<p>The fourth talk was at the Institute of Information Science at <a href="http://www.iis.sinica.edu.tw/" rel="nofollow">Academia Sinica</a>, the main Taiwanese research institution. I met with <a href="http://www.cryptojedi.org/users/peter/" rel="nofollow">Peter Shwabe</a>, a crypto post-doc who works with <a href="http://cr.yp.to/djb.html" rel="nofollow">djb</a>. I also did an interview for the <a href="http://www.iis.sinica.edu.tw/page/research/OpenSourceSoftwareFoundry.html" rel="nofollow">Open Source Software Foundry</a> &mdash; Taiwan's government-sponsored free software advocacy and education organization. You won't find one of those in the United States!</p>
+
+<p>My last talk was to the <a href="http://www.tossug.org/" rel="nofollow">Taipei Open Source Software User Group</a> (TOSSUG), a group of 10 or 20 quite smart technical folks. They were by far my best audience in terms of understanding the technical side and also knowing why Tor is relevant to their society. Hopefully we'll get some volunteer developers and/or <a href="https://www.torproject.org/about/gsoc" rel="nofollow">Google Summer of Code</a> students.</p>
+
+<p>Here are the <a href="http://freehaven.net/~arma/slides-osdc11.pdf" rel="nofollow">slides I used</a>, though the actual content changed from talk to talk. Overall, it was a worthwhile trip: I got to learn more about Taiwan's perspective on China and its censorship (which will help me in future talks and in planning Tor's future), people in Taiwan got to learn more about Tor, and I helped bootstrap a "human rights and Tor" community there. I've been invited back for two larger security conferences (in July and August), but alas they probably won't fit into my schedule, since I need to balance my time between advocacy, trainings, and actually getting development work done.</p>
+
+<p>If you are in Taiwan and want some introductions, or you're somewhere else and want a Tor person to come do some trainings or talks, let me know!</p>
+
+</div>
+
+<div class="inlinefooter">
+
+
+
+
+
+
+
+
+<div class="actions">
+<ul>
+
+<li><a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTrip_report_Taipei&amp;do=comment">Comment</a></li>
+
+
+</ul>
+</div>
+
+
+</div>
+
+</div>
+<div class="inlinepage">
+
+<div class="inlineheader">
+<span class="header">
+
+<a href="./posts/Firefox_4_Tor_Browser_Bundles_for_GNU-Linux/">Firefox 4 Tor Browser Bundles for GNU/Linux</a>
+
+</span>
+</div>
+
+
+<span class="pagedate">
+Posted <span class="date">Fri 01 Apr 2011 11:40:40 AM CDT</span> 
+
+<span class="author"> by 
+
+<a href="/blogs/erinn">erinn</a>
+
+</span>
+<a class="editlink" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FFirefox_4_Tor_Browser_Bundles_for_GNU-Linux&amp;do=edit" rel="nofollow">Edit</a>
+
+</span>
+
+
+
+<span class="tags">
+Tags:
+
+<a href="./tags/windows/" rel="tag">windows</a>
+
+</span>
+
+
+
+
+<div class="inlinecontent">
+<p>We now have Firefox 4 bundles available for GNU/Linux. If you encounter any problems with these, please <a href="https://trac.torproject.org/projects/tor" rel="nofollow">let us know</a>. (Windows users, you're next.)</p>
+
+<ul>
+<li><a href="https://www.torproject.org/dist/torbrowser/linux/tor-browser-gnu-linux-x86_64-2.2.23-1-alpha-en-US.tar.gz" rel="nofollow">64-bit GNU/Linux Tor Browser Bundle with Firefox 4</a> (<a href="https://www.torproject.org/dist/torbrowser/linux/tor-browser-gnu-linux-x86_64-2.2.23-1-alpha-en-US.tar.gz.asc" rel="nofollow">sig</a>)</li>
+<li><a href="https://www.torproject.org/dist/torbrowser/linux/tor-browser-gnu-linux-i686-2.2.23-1-alpha-en-US.tar.gz" rel="nofollow">32-bit GNU/Linux Tor Browser Bundle with Firefox 4</a> (<a href="https://www.torproject.org/dist/torbrowser/linux/tor-browser-gnu-linux-i686-2.2.23-1-alpha-en-US.tar.gz.asc" rel="nofollow">sig</a>)</li>
+</ul>
+
+<p><strong>Tor Browser Bundle (2.2.23-1) alpha; suite=linux</strong></p>
+
+<ul>
+<li>Create new bundles for Firefox 4, both i386 and x86_64</li>
+<li>Update Tor to 0.2.2.23-alpha</li>
+<li>Update Torbutton to 1.3.2-alpha</li>
+<li>Update OpenSSL to 1.0.0d</li>
+<li>Update HTTPS-Everywhere to 0.9.9.development.4</li>
+<li>Update NoScript to 2.0.9.9</li>
+<li>Update BetterPrivacy to 1.49</li>
+</ul>
+
+</div>
+
+<div class="inlinefooter">
+
+
+
+
+
+
+
+
+<div class="actions">
+<ul>
+
+<li><a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FFirefox_4_Tor_Browser_Bundles_for_GNU-Linux&amp;do=comment">Comment</a></li>
+
+
+</ul>
+</div>
+
+
+</div>
+
+</div>
+<div class="inlinepage">
+
+<div class="inlineheader">
+<span class="header">
+
+<a href="./posts/Windows_Bridge-by-Default_Bundle/">Windows Bridge-by-Default Bundle</a>
+
+</span>
+</div>
+
+
+<span class="pagedate">
+Posted <span class="date">Thu 31 Mar 2011 08:17:16 PM CDT</span> 
+
+<span class="author"> by 
+
+<a href="/blogs/erinn">erinn</a>
+
+</span>
+<a class="editlink" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FWindows_Bridge-by-Default_Bundle&amp;do=edit" rel="nofollow">Edit</a>
+
+</span>
+
+
+
+<span class="tags">
+Tags:
+
+<a href="./tags/apple_osx_love/" rel="tag">apple osx love</a>
+
+<a href="./tags/bug_fixes/" rel="tag">bug fixes</a>
+
+<a href="./tags/tbb/" rel="tag">tbb</a>
+
+<a href="./tags/tor_browser_bundle/" rel="tag">tor browser bundle</a>
+
+<a href="./tags/torbrowser/" rel="tag">torbrowser</a>
+
+<a href="./tags/updated_packages/" rel="tag">updated packages</a>
+
+</span>
+
+
+
+
+<div class="inlinecontent">
+<p>Last year we had <a href="http://blog.torproject.org/blog/technology-preview-bridge-default-microsoft-windows-clients" rel="nofollow">bridge by default</a> bundles as a technology preview but we're going to bring them back on a consistent basis. We have an updated <a href="https://www.torproject.org/dist/vidalia-bundles/vidalia-bridge-bundle-0.2.2.23-alpha-0.2.10.exe" rel="nofollow">bridge by default Vidalia bundle</a> (<a href="https://www.torproject.org/dist/vidalia-bundles/vidalia-bridge-bundle-0.2.2.23-alpha-0.2.10.exe.asc" rel="nofollow">sig</a>) for Windows available with <a href="http://blog.torproject.org/blog/tor-02223-alpha-out" rel="nofollow">Tor 0.2.2.23-alpha</a>. We will soon have OS X bridge by default bundles as well -- you can follow along <a href="https://trac.torproject.org/projects/tor/ticket/2821" rel="nofollow">here</a> if you're interested in the technical details. </p>
+
+<p>We're very interested in getting feedback about how many new bridges these bundles create, so please comment here or on our <a href="https://trac.torproject.org/projects/tor" rel="nofollow">bug tracking system</a> and let us know.</p>
+
+</div>
+
+<div class="inlinefooter">
+
+
+
+
+
+
+
+
+<div class="actions">
+<ul>
+
+<li><a href="./posts/Windows_Bridge-by-Default_Bundle/#comments">3 comments</a></li>
+
+
+</ul>
+</div>
+
+
+</div>
+
+</div>
+<div class="inlinepage">
+
+<div class="inlineheader">
+<span class="header">
+
+<a href="./posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/">Firefox 4 Tor Browser Bundles for OS X</a>
+
+</span>
+</div>
+
+
+<span class="pagedate">
+Posted <span class="date">Sun 27 Mar 2011 06:07:00 PM CDT</span> 
+
+<span class="author"> by 
+
+<a href="/blogs/erinn">erinn</a>
+
+</span>
+<a class="editlink" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FFirefox_4_Tor_Browser_Bundles_for_OS_X&amp;do=edit" rel="nofollow">Edit</a>
+
+</span>
+
+
+
+<span class="tags">
+Tags:
+
+<a href="./tags/firefox/" rel="tag">firefox</a>
+
+<a href="./tags/tor/" rel="tag">tor</a>
+
+<a href="./tags/torbutton/" rel="tag">torbutton</a>
+
+</span>
+
+
+
+
+<div class="inlinecontent">
+<p><strong>UPDATE:</strong> there were some issues with the first set of bundles which have been fixed. I've updated the links below. The changelog is <a href="https://gitweb.torproject.org/erinn/torbrowser.git/commitdiff/f9a70aadab4d4a950d55df0f373bb4804ef9e012?hp=48cb945f7f180baad7f536405d4a0cf3ddfa3714" rel="nofollow">here</a>. </p>
+
+<p>We have new Firefox 4 Tor Browser Bundles available for OS X. (Worry not, users of other operating systems, your turn is coming in the next few days!) They come in 64- and 32-bit versions, and one important fix for 10.6 64-bit users is that Firefox no longer crashes on initial startup. These are alpha, but they are going to be a permanent addition to the Tor Browser Bundle family and will be maintained from now on. You can download them here: </p>
+
+<ul>
+<li><a href="https://www.torproject.org/dist/torbrowser/osx/TorBrowser-2.2.23-2-alpha-osx-x86_64-en-US.zip" rel="nofollow">64-bit OS X Tor Browser Bundle with Firefox 4</a> (<a href="https://www.torproject.org/dist/torbrowser/osx/TorBrowser-2.2.23-12alpha-osx-x86_64-en-US.zip.asc" rel="nofollow">sig</a>) </li>
+<li><a href="https://www.torproject.org/dist/torbrowser/osx/TorBrowser-2.2.23-2-alpha-osx-i386-en-US.zip" rel="nofollow">32-bit OS X Tor Browser Bundle with Firefox 4</a> (<a href="https://www.torproject.org/dist/torbrowser/osx/TorBrowser-2.2.23-2-alpha-osx-i386-en-US.zip.asc" rel="nofollow">sig</a>)</li>
+</ul>
+
+<p>These have thus far only been tested on Snow Leopard, but the 32-bit bundle ought to work on Leopard. If it doesn't please let me know! And as usual, please <a href="https://trac.torproject.org/projects/tor" rel="nofollow">file any bugs</a> you discover.</p>
+
+<p><strong>Tor Browser Bundle (2.2.23-1) alpha; suite=osx</strong></p>
+
+<p><ul>
+<li>Create new bundles for Firefox 4, both i386 and x86_64 (closes: <a href="https://trac.torproject.org/projects/tor/ticket/2140" rel="nofollow">#2140</a>)</li>
+<li>Update Tor to 0.2.2.23-alpha</li>
+<li>Update Torbutton to 1.3.2-alpha</li>
+<li>Update OpenSSL to 1.0.0d</li>
+<li>Update HTTPS-Everywhere to 0.9.9.development.4</li>
+<li>Update NoScript to 2.0.9.9</li>
+<li>Update BetterPrivacy to 1.49</li></p>
+
+</div>
+
+<div class="inlinefooter">
+
+
+
+
+
+
+
+
+<div class="actions">
+<ul>
+
+<li><a href="./posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/#comments">16 comments</a></li>
+
+
+</ul>
+</div>
+
+
+</div>
+
+</div>
+<div class="inlinepage">
+
+<div class="inlineheader">
+<span class="header">
+
+<a href="./posts/Web_Developers_and_Firefox_Hackers_Help_us_with_Firefox_4/">Web Developers and Firefox Hackers: Help us with Firefox 4</a>
+
+</span>
+</div>
+
+
+<span class="pagedate">
+Posted <span class="date">Fri 25 Mar 2011 06:36:47 PM CDT</span> 
+
+<span class="author"> by 
+
+<a href="/blogs/mikeperry">mikeperry</a>
+
+</span>
+<a class="editlink" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FWeb_Developers_and_Firefox_Hackers_Help_us_with_Firefox_4&amp;do=edit" rel="nofollow">Edit</a>
+
+</span>
+
+
+
+<span class="tags">
+Tags:
+
+<a href="./tags/firefox_updates/" rel="tag">firefox updates</a>
+
+<a href="./tags/tbb/" rel="tag">tbb</a>
+
+<a href="./tags/tor_browser_bundle/" rel="tag">tor browser bundle</a>
+
+<a href="./tags/torbrowser/" rel="tag">torbrowser</a>
+
+<a href="./tags/updated_packages/" rel="tag">updated packages</a>
+
+</span>
+
+
+
+
+<div class="inlinecontent">
+<p>We need some web-savvy people to help us audit the <a href="https://www.torproject.org/torbutton/" rel="nofollow">Torbutton alpha series</a> for Firefox 4.  I've performed a preliminary audit, and Torbutton 1.3.2-alpha should be safe from major issues, but a lot more testing is needed. In particular, we need people to test the <a href="https://developer.mozilla.org/en/Firefox_4_for_developers" rel="nofollow">new Firefox 4 features</a>.</p>
+
+<p>The <a href="https://gitweb.torproject.org/torbutton.git/blob_plain/HEAD:/website/design/FF40_AUDIT" rel="nofollow">notes from my preliminary audit</a> are available in the Torbutton git repository, but note that I have not tested everything that struck me as potentially troublesome, and there may be other things I missed too.</p>
+
+<p>As a reminder, the types of things we are looking for are things that violate the <a href="https://www.torproject.org/torbutton/en/design/#requirements" rel="nofollow">Torbutton Security Requirements</a>, which may include new ways to bypass proxy settings, to fingerprint users, or to use novel identifiers to correlate Tor and Non-Tor activity.</p>
+
+<p>In addition, we may have some funding to address <a href="https://www.torproject.org/torbutton/en/design/#FirefoxBugs" rel="nofollow">outstanding Torbutton-related bugs</a> in Firefox. If you know C++ and/or Firefox internals, we should be able to pay you for your time to address these issues and shepherd the relevant patches through Mozilla's review process.</p>
+
+<p>If you find issues, or if you are interested in working on fixing these bugs, please contact us at tor-assistants at torproject dot org. Torbutton bugs that you find can be added to the growing pile at the <a href="https://trac.torproject.org/projects/tor/report/14" rel="nofollow">Torbutton Bug Tracker</a>.</p>
+
+<p>The sooner we get these issues taken care of, the sooner we can confidently release a stable Torbutton for Firefox 4.</p>
+
+</div>
+
+<div class="inlinefooter">
+
+
+
+
+
+
+
+
+<div class="actions">
+<ul>
+
+<li><a href="./posts/Web_Developers_and_Firefox_Hackers_Help_us_with_Firefox_4/#comments">6 comments</a></li>
+
+
+</ul>
+</div>
+
+
+</div>
+
+</div>
+<div class="inlinepage">
+
+<div class="inlineheader">
+<span class="header">
+
+<a href="./posts/New_Tor_Browser_Bundles/">New Tor Browser Bundles</a>
+
+</span>
+</div>
+
+
+<span class="pagedate">
+Posted <span class="date">Thu 24 Mar 2011 06:07:41 AM CDT</span> 
+
+<span class="author"> by 
+
+<a href="/blogs/erinn">erinn</a>
+
+</span>
+<a class="editlink" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FNew_Tor_Browser_Bundles&amp;do=edit" rel="nofollow">Edit</a>
+
+</span>
+
+
+
+<span class="tags">
+Tags:
+
+<a href="./tags/award/" rel="tag">award</a>
+
+<a href="./tags/free_society/" rel="tag">free society</a>
+
+<a href="./tags/free_software/" rel="tag">free software</a>
+
+<a href="./tags/free_software_foundation/" rel="tag">free software foundation</a>
+
+<a href="./tags/social_benefit/" rel="tag">social benefit</a>
+
+</span>
+
+
+
+
+<div class="inlinecontent">
+<p>All of the Tor Browser Bundles have been updated with Firefox 3.6.16 and the alpha bundles for Mac OS X and Linux have also been updated to use Libevent 2, as well as a number of extension updates. The changelogs are below.</p>
+
+<p><a href="https://torproject.org/download/download" title="https://torproject.org/download/download" rel="nofollow">https://torproject.org/download/download</a></p>
+
+<p><strong>Windows bundles</strong><br />
+<strong>1.3.21: Released 2011-03-23</strong></p>
+
+<ul>
+<li>Update Firefox to 3.6.16</li>
+<li>Update HTTPS-Everywhere to 0.9.9.development.4</li>
+</li>
+</ul>
+
+<p><strong>Linux bundles</strong><br />
+<strong>1.1.6: Released 2011-03-23</strong></p>
+
+<ul>
+<li>Update Firefox to 3.6.16</li>
+<li>Update Libevent to 2.0.10-stable</li>
+<li>Update NoScript to 2.0.9.9</li>
+<li>Update HTTPS-Everywhere to 0.9.9.development.4</li>
+<li>Update BetterPrivacy to 1.49</li>
+</ul>
+
+<p><strong>OS X bundle</strong><br />
+<strong>1.0.14: Released 2011-03-23</strong></p>
+
+<ul>
+<li>Update Firefox to 3.6.16</li>
+<li>Update Libevent to 2.0.10-stable</li>
+<li>Update NoScript to 2.0.9.9</li>
+<li>Update HTTPS-Everywhere to 0.9.9.development.4</li>
+<li>Update BetterPrivacy to 1.49</li>
+</ul>
+
+</div>
+
+<div class="inlinefooter">
+
+
+
+
+
+
+
+
+<div class="actions">
+<ul>
+
+<li><a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FNew_Tor_Browser_Bundles&amp;do=comment">Comment</a></li>
+
+
+</ul>
+</div>
+
+
+</div>
+
+</div>
+<div class="inlinepage">
+
+<div class="inlineheader">
+<span class="header">
+
+<a href="./posts/The_Tor_Project_receives_FSF_Award/">The Tor Project receives FSF Award</a>
+
+</span>
+</div>
+
+
+<span class="pagedate">
+Posted <span class="date">Wed 23 Mar 2011 06:28:11 AM CDT</span> 
+
+<span class="author"> by 
+
+<a href="/blogs/phobos">phobos</a>
+
+</span>
+<a class="editlink" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FThe_Tor_Project_receives_FSF_Award&amp;do=edit" rel="nofollow">Edit</a>
+
+</span>
+
+
+
+
+
+
+<div class="inlinecontent">
+<p>We have received the 2010 FSF/GNU Project Award for Project of Social Benefit, <a href="http://www.fsf.org/news/2010-free-software-awards-announced" title="http://www.fsf.org/news/2010-free-software-awards-announced" rel="nofollow">http://www.fsf.org/news/2010-free-software-awards-announced</a>.  Thank you to the FSF and the membership who voted for us to win this award.  From the FSF announcement, </p>
+
+<p>"The Award for Projects of Social Benefit recognizes a project that intentionally and significantly benefits society through collaboration to accomplish an important social task.</p>
+
+<p>This year, the award went to the Tor Project. Using free software, Tor has enabled roughly 36 million people around the world to experience freedom of access and expression on the Internet while keeping them in control of their privacy and anonymity. Its network has proved pivotal in dissident movements in both Iran and more recently Egypt."</p>
+
+</div>
+
+<div class="inlinefooter">
+
+
+
+
+
+
+
+
+<div class="actions">
+<ul>
+
+<li><a href="./posts/The_Tor_Project_receives_FSF_Award/#comments">10 comments</a></li>
+
+
+</ul>
+</div>
+
+
+</div>
+
+</div>
+<div class="inlinepage">
+
+<div class="inlineheader">
+<span class="header">
+
+<a href="./posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/">Detecting Certificate Authority compromises and web browser collusion</a>
+
+</span>
+</div>
+
+
+<span class="pagedate">
+Posted <span class="date">Tue 22 Mar 2011 07:16:10 PM CDT</span> 
+
+<span class="author"> by 
+
+<a href="/blogs/ioerror">ioerror</a>
+
+</span>
+<a class="editlink" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FDetecting_Certificate_Authority_compromises_and_web_browser_collusion&amp;do=edit" rel="nofollow">Edit</a>
+
+</span>
+
+
+
+<span class="tags">
+Tags:
+
+<a href="./tags/ssl_tls_ca_tor_certificates_torbrowser/" rel="tag">ssl tls ca tor certificates torbrowser</a>
+
+</span>
+
+
+
+
+<div class="inlinecontent">
+<p><small><i>Thanks to Ian Gallagher, Seth Schoen, Jesse Burns, Chris Palmer, and other anonymous birds for their invaluable feedback on this writeup.</i></small></p>
+
+<p>The Tor Project has long understood that the <a href="https://secure.wikimedia.org/wikipedia/en/wiki/Certificate_authority">certification authority</a> (CA) model of trust on the internet is susceptible to various methods of compromise. Without strong anonymity, the ability to perform targeted attacks with the blessing of a CA key is serious. In the past, I’ve worked on <a href="http://www.win.tue.nl/hashclash/rogue-ca/">attacks relating to SSL/TLS trust models</a> and for quite some time, I’ve hunted for evidence of non-academic CA compromise in the wild.</p>
+
+<p>I’ve also looked for special kinds of cooperation between CAs and browsers. Proof of collusion will give us facts. It will also give us a real understanding of the faith placed in the strength of the underlying systems.</p>
+
+<p>Does certificate revocation really work? <a href="http://www.imperialviolet.org/2011/03/18/revocation.html"><b>No, it does not</b></a>. How much faith does a vendor actually put into revocation, when verifiable evidence of malice is detected or known? Not much, and that’s the subject of this writing.</p>
+
+<p>Last week, a smoking gun came into sight: A Certification Authority appeared to be compromised in some capacity, and the attacker issued themselves valid HTTPS certificates for high-value web sites. With these certificates, the attacker could impersonate the identities of the victim web sites or other related systems, probably undetectably for the majority of users on the internet.</p>
+
+<p>I watch the Chromium and Mozilla Firefox projects carefully, because they are so important to the internet infrastructure. On the evening of 16 March, I noticed a very interesting code change to Chromium: <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/base/x509_certificate.cc?view=markup&amp;pathrev=78478">revision 78478, Thu Mar 17 00:48:21 2011 UTC</a>.</p>
+
+<p>In this revision, the developers added X509Certificate::IsBlacklisted, which returns true if a HTTPS certificate has one of these particular serial numbers:</p>
+
+<ul>
+<li>047ecbe9fca55f7bd09eae36e10cae1e
+<li>d8f35f4eb7872b2dab0692e315382fb0
+<li>b0b7133ed096f9b56fae91c874bd3ac0
+<li>9239d5348f40d1695a745470e1f23f43
+<li>d7558fdaf5f1105bb213282b707729a3
+<li>f5c86af36162f13a64f54f6dc9587c06
+</ul>
+
+<p>A comment marks the first as "Not a real certificate. For testing only." but we don’t know if this means the other certificates are or are not also for testing.</p>
+
+<p>With just these serial numbers, we are not able to learn much about the certificates that Chromium now blocks. To get more information, I started the <a href="https://github.com/ioerror/crlwatch">crlwatch</a> project. Nearly every certificate contains a reference to a <a href="https://secure.wikimedia.org/wikipedia/en/wiki/Revocation_list">Certificate Revocation List</a> (CRL). A CRL is a list of certificates that the CA has revoked for whatever reason. In theory, this means that an attacker is unable to tamper with the certificate to prevent revocation as the browser will check the CRL it finds in a certificate. In practice the attacker simply needs to tamper with the network - this is something they’re already able to do if they are performing a SSL/TLS Machine-In-The-Middle attack. Even if an attacker has a certificate, they generally are unable to modify the certificate without breaking the digital signature issued by the CA. That CA signature is what gives the certificate value to an attacker and tampering takes the attacker back to square zero. So while investigating these serials, we clearly lack the CRL distribution point in the Chrome source. However, the project that I announced on March 17th, crlwatch, was specifically written to assist in finding who issued, and potentially revoked the serial numbers in question. By matching the serial numbers found in the source for Chrome with the serial numbers of revoked certificates, we’re able to link specific serials to specific CA issuers. The more serial numbers we match in revocation lists, the higher our probability of having found the CA that issued the certificates.</p>
+
+<p>About twelve hours (Thursday, March 17, 2011 | 13:00) after the above patch was pushed into source control - Google announced <a href="http://googlechromereleases.blogspot.com/2011/03/stable-and-beta-channel-updates_17.html">an important Chrome Update that involved HTTPS certificate issues</a>.</p>
+
+<p>This also is mostly uninteresting until we notice that this is not isolated to Google. Mozilla pushed out two patches of interest:</p>
+
+<ul>
+<li><a href="http://hg.mozilla.org/mozilla-central/rev/f6215eef2276">rev-f6215eef2276</a>
+<li><a href="http://hg.mozilla.org/mozilla-central/rev/55f344578932">rev-55f344578932</a>
+</ul>
+
+<p>The <a href="http://hg.mozilla.org/mozilla-central/rev/f6215eef2276">complete changeset</a> is semi-informative. Mozilla references a private bug in that fix that Mozilla will hopefully disclose. Similar to Chromium, the Mozilla patches create a list of certificate serial numbers that will be treated as invalid. However, the serial numbers from the Mozilla patches are different:</p>
+
+<ul>
+<li>009239d5348f40d1695a745470e1f23f43
+<li>00d8f35f4eb7872b2dab0692e315382fb0
+<li>72032105c50c08573d8ea5304efee8b0
+<li>00b0b7133ed096f9b56fae91c874bd3ac0
+<li>00e9028b9578e415dc1a710a2b88154447
+<li>00d7558fdaf5f1105bb213282b707729a3
+<li>047ecbe9fca55f7bd09eae36e10cae1e
+<li>00f5c86af36162f13a64f54f6dc9587c06
+<li>392a434f0e07df1f8aa305de34e0c229
+<li>3e75ced46b693021218830ae86a82a71
+</ul>
+
+<p>Thus, both Mozilla and Google shipped similar patches to their code at roughly the same time. The two browsers now have partially overlapping certificate blocklists. Here is the union of the two lists:</p>
+
+<ul>
+<li>009239d5348f40d1695a745470e1f23f43
+<li>00b0b7133ed096f9b56fae91c874bd3ac0
+<li>00d7558fdaf5f1105bb213282b707729a3
+<li>00d8f35f4eb7872b2dab0692e315382fb0
+<li>00e9028b9578e415dc1a710a2b88154447
+<li>00f5c86af36162f13a64f54f6dc9587c06
+<li>047ecbe9fca55f7bd09eae36e10cae1e
+<li>392a434f0e07df1f8aa305de34e0c229
+<li>3e75ced46b693021218830ae86a82a71
+<li>72032105c50c08573d8ea5304efee8b0
+<li>9239d5348f40d1695a745470e1f23f43
+<li>b0b7133ed096f9b56fae91c874bd3ac0
+<li>d7558fdaf5f1105bb213282b707729a3
+<li>d8f35f4eb7872b2dab0692e315382fb0
+<li>f5c86af36162f13a64f54f6dc9587c06
+</ul>
+
+<p>Why do the browsers have these blocklists, and why don’t they have the same blocklists?</p>
+
+<p>This returns me to the reason for creating crlwatch last week - I wanted to find the someones who knowingly revoked the above listed special certificates. Anyone looking from the same starting point as I did, obviously lacks the leaf certificates in question and as a result, I had to look in a rather round about manner. Thanks to the <a href="https://www.eff.org/observatory">EFF’s SSL Observatory</a>, I was able to populate the base list for crlwatch. Armed with a nearly canonical list of all CRLs, I fetched them over <a href="https://www.torproject.org/">Tor</a> and parsed the CRL data into human readable text. The goal was to search for the above serial numbers and to find something linkable.</p>
+
+<p>This is the result from searching the crlwatch data:</p>
+
+<p><code><br />
+Looking for 009239d5348f40d1695a745470e1f23f43 in parsed CRLs...<br />
+Looking for 00b0b7133ed096f9b56fae91c874bd3ac0 in parsed CRLs...<br />
+Looking for 00d7558fdaf5f1105bb213282b707729a3 in parsed CRLs...<br />
+Looking for 00d8f35f4eb7872b2dab0692e315382fb0 in parsed CRLs...<br />
+Looking for 00e9028b9578e415dc1a710a2b88154447 in parsed CRLs...<br />
+Looking for 00f5c86af36162f13a64f54f6dc9587c06 in parsed CRLs...<br />
+Looking for 047ecbe9fca55f7bd09eae36e10cae1e in parsed CRLs...<br />
+Match! Serial Number: 047ECBE9FCA55F7BD09EAE36E10CAE1E<br />
+Match! Serial Number: 047ECBE9FCA55F7BD09EAE36E10CAE1E<br />
+Match! Serial Number: 047ECBE9FCA55F7BD09EAE36E10CAE1E<br />
+Looking for 392a434f0e07df1f8aa305de34e0c229 in parsed CRLs...<br />
+Match! Serial Number: 392A434F0E07DF1F8AA305DE34E0C229<br />
+Match! Serial Number: 392A434F0E07DF1F8AA305DE34E0C229<br />
+Match! Serial Number: 392A434F0E07DF1F8AA305DE34E0C229<br />
+Looking for 3e75ced46b693021218830ae86a82a71 in parsed CRLs...<br />
+Match! Serial Number: 3E75CED46B693021218830AE86A82A71<br />
+Match! Serial Number: 3E75CED46B693021218830AE86A82A71<br />
+Match! Serial Number: 3E75CED46B693021218830AE86A82A71<br />
+Looking for 72032105c50c08573d8ea5304efee8b0 in parsed CRLs...<br />
+Looking for 9239d5348f40d1695a745470e1f23f43 in parsed CRLs...<br />
+Match! Serial Number: 9239D5348F40D1695A745470E1F23F43<br />
+Match! Serial Number: 9239D5348F40D1695A745470E1F23F43<br />
+Match! Serial Number: 9239D5348F40D1695A745470E1F23F43<br />
+Looking for b0b7133ed096f9b56fae91c874bd3ac0 in parsed CRLs...<br />
+Match! Serial Number: B0B7133ED096F9B56FAE91C874BD3AC0<br />
+Match! Serial Number: B0B7133ED096F9B56FAE91C874BD3AC0<br />
+Match! Serial Number: B0B7133ED096F9B56FAE91C874BD3AC0<br />
+Looking for d7558fdaf5f1105bb213282b707729a3 in parsed CRLs...<br />
+Match! Serial Number: D7558FDAF5F1105BB213282B707729A3<br />
+Match! Serial Number: D7558FDAF5F1105BB213282B707729A3<br />
+Match! Serial Number: D7558FDAF5F1105BB213282B707729A3<br />
+Looking for d8f35f4eb7872b2dab0692e315382fb0 in parsed CRLs...<br />
+Match! Serial Number: D8F35F4EB7872B2DAB0692E315382FB0<br />
+Match! Serial Number: D8F35F4EB7872B2DAB0692E315382FB0<br />
+Match! Serial Number: D8F35F4EB7872B2DAB0692E315382FB0<br />
+Looking for f5c86af36162f13a64f54f6dc9587c06 in parsed CRLs...<br />
+Match! Serial Number: F5C86AF36162F13A64F54F6DC9587C06<br />
+Match! Serial Number: F5C86AF36162F13A64F54F6DC9587C06<br />
+Match! Serial Number: F5C86AF36162F13A64F54F6DC9587C06<br />
+</code></p>
+
+<p>Huzzah! It appears that we've found a few matches!</p>
+
+<p>Here are the three matching files in human readable format:</p>
+
+<ul>
+<li><a href="https://github.com/ioerror/crlwatch/blob/master/crl-parsed/2208d196b567691ff77bee6ed97ac6aea7825aa0.crl2txt">7825aa0.crl2txt</a>
+<li><a href="https://github.com/ioerror/crlwatch/blob/master/crl-parsed/2454652aa76e0dcf0c7531a2ed9dbeda5c0f5dd5.crl2txt">c0f5dd5.crl2txt</a>
+<li><a href="https://github.com/ioerror/crlwatch/blob/master/crl-parsed/5a65d440090271759080e6d0eaae0b6ccae2ff50.crl2txt">ae2ff50.crl2txt</a>
+</ul>
+
+<p>Matching entries in the list look like this:</p>
+
+<p><code><br />
+    Serial Number: 392A434F0E07DF1F8AA305DE34E0C229<br />
+        Revocation Date: Mar 15 20:15:38 2011 GMT<br />
+</code></p>
+
+<p>An interesting note is that this date is a bit earlier than the above patches. The CA knew to revoke it on March 15th and the above patches were worked into software a few days later. If the attacker was targeting specific users, the damage to those users may have already been inflicted.</p>
+
+<p>All three of the CRLs in question belong to <a href="http://www.usertrust.com/about.html">the same CA</a>:</p>
+
+<p><code><br />
+issuer=/C=US/ST=UT/L=Salt Lake City/O=The USERTRUST<br />
+Network/OU=http://www.usertrust.com/CN=UTN-USERFirst-Hardware<br />
+</code></p>
+
+<p>This appears to be a reseller or something similar for the <a href="http://www.comodo.com/">Comodo CA company</a> when the trust chain for USERTRUST is inspected:</p>
+
+<p><code><br />
+CN = COMODO High Assurance Secure Server CA<br />
+</code></p>
+
+<p>We appear to have no initial matches for the following Mozilla specific serials from the data that I gathered during the initial crlwatch data population run:</p>
+
+<ul>
+<li>009239d5348f40d1695a745470e1f23f43
+<li>00b0b7133ed096f9b56fae91c874bd3ac0
+<li>00d7558fdaf5f1105bb213282b707729a3
+<li>00d8f35f4eb7872b2dab0692e315382fb0
+<li>00e9028b9578e415dc1a710a2b88154447
+<li>00f5c86af36162f13a64f54f6dc9587c06
+</ul>
+
+<p>Those serial numbers appear to not match, right? Nope. Mozilla appears<br />
+to deal with certificate serial numbers in a slightly different manner - Chrome does the same internally but Mozilla exposes a weird quirk of certificate encoding directly in the source. The human readable data does not contain this quirk. Thus if you remove the prefix of ‘00’ from those serial numbers and search for the sixteen byte values, we find what we'd expect:</p>
+
+<p><code><br />
+Looking for 9239d5348f40d1695a745470e1f23f43 in parsed CRLs...<br />
+Match! Serial Number: 9239D5348F40D1695A745470E1F23F43<br />
+Match! Serial Number: 9239D5348F40D1695A745470E1F23F43<br />
+Match! Serial Number: 9239D5348F40D1695A745470E1F23F43<br />
+Looking for b0b7133ed096f9b56fae91c874bd3ac0 in parsed CRLs...<br />
+Match! Serial Number: B0B7133ED096F9B56FAE91C874BD3AC0<br />
+Match! Serial Number: B0B7133ED096F9B56FAE91C874BD3AC0<br />
+Match! Serial Number: B0B7133ED096F9B56FAE91C874BD3AC0<br />
+Looking for d7558fdaf5f1105bb213282b707729a3 in parsed CRLs...<br />
+Match! Serial Number: D7558FDAF5F1105BB213282B707729A3<br />
+Match! Serial Number: D7558FDAF5F1105BB213282B707729A3<br />
+Match! Serial Number: D7558FDAF5F1105BB213282B707729A3<br />
+Looking for d8f35f4eb7872b2dab0692e315382fb0 in parsed CRLs...<br />
+Match! Serial Number: D8F35F4EB7872B2DAB0692E315382FB0<br />
+Match! Serial Number: D8F35F4EB7872B2DAB0692E315382FB0<br />
+Match! Serial Number: D8F35F4EB7872B2DAB0692E315382FB0<br />
+Looking for e9028b9578e415dc1a710a2b88154447 in parsed CRLs...<br />
+Match! Serial Number: E9028B9578E415DC1A710A2B88154447<br />
+Match! Serial Number: E9028B9578E415DC1A710A2B88154447<br />
+Match! Serial Number: E9028B9578E415DC1A710A2B88154447<br />
+Looking for f5c86af36162f13a64f54f6dc9587c06 in parsed CRLs...<br />
+Match! Serial Number: F5C86AF36162F13A64F54F6DC9587C06<br />
+Match! Serial Number: F5C86AF36162F13A64F54F6DC9587C06<br />
+Match! Serial Number: F5C86AF36162F13A64F54F6DC9587C06<br />
+</code></p>
+
+<p>Here's sample from one of those CRLs:</p>
+
+<p><code><br />
+    Serial Number: D7558FDAF5F1105BB213282B707729A3<br />
+        Revocation Date: Mar 15 20:15:26 2011 GMT<br />
+</code></p>
+
+<p>Ironically, after all of this work, the Mozilla <a href="http://hg.mozilla.org/mozilla-central/rev/f6215eef2276#l1.57">patch also leaks the CA name</a> and confirmed my suspicions without question.</p>
+
+<p>In the end, when the lists are merged, we find eleven certificates with two certificates probably acting as testing certificates for the two vendors involved:</p>
+
+<ul>
+<li>077a59bcd53459601ca6907267a6dd1c
+<li>047ecbe9fca55f7bd09eae36e10cae1e
+<li>392a434f0e07df1f8aa305de34e0c229
+<li>3e75ced46b693021218830ae86a82a71
+<li>72032105c50c08573d8ea5304efee8b0
+<li>9239d5348f40d1695a745470e1f23f43
+<li>b0b7133ed096f9b56fae91c874bd3ac0
+<li>d7558fdaf5f1105bb213282b707729a3
+<li>d8f35f4eb7872b2dab0692e315382fb0
+<li>e9028b9578e415dc1a710a2b88154447
+<li>f5c86af36162f13a64f54f6dc9587c06
+</ul>
+
+<p>This is evidence of a rather serious event and one that cannot be ignored. If I had to make a bet, I'd wager that an attacker was able to issue high value certificates, probably by compromising USERTRUST in some manner, this was discovered sometime before the revocation date, each certificate was revoked, the vendors notified, the patches were written, and binary builds kicked off - end users are probably still updating and thus many people are vulnerable to the failure that is the CRL and OCSP method for revocation. Even after users update, I'm guessing they may be unequally protected.  Mozilla and other browsers should force OCSP verification by default as part of their next release and remove CAs that are unable to handle this requirement. Users of Mozilla Firefox that are concerned about this issue should enable security.OCSP.require in the about:config dialog. The surveillance concerns of enabling OCSP are serious - a CA learns what sites you’re visiting. However, they are nullified by the fact that OCSP checking is enabled by default on Firefox at least; it simply doesn’t provide any security gains for the end user because when it fails, it fails open!</p>
+
+<p>I contacted both Google and Mozilla (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=643056">bug #643056</a>) for comment after discovering the above data. Mozilla expressed some concern about disclosure and I offered to embargo this document until Tuesday March 22nd, the launch day for Firefox 4. They agreed and I kept this under my hat. After discussions between Comodo and Microsoft, passed on to me by Mozilla, the embargo was to be extended until Wednesday, March 23rd. This extension was ostensibly to ensure that Microsoft would be able to ship their Internet Explorer mitigation pack. After further discussion, Mozilla <a href="https://blog.mozilla.com/security/2011/03/22/firefox-blocking-fraudulent-certificates/">pushed their blog post about the issue</a> and I now consider the embargo lifted. Google has already shipped a fix to users. Install the latest Firefox to get a patch, if you haven't already. A Tor Browser update is in the works and will be available soon.</p>
+
+<p>Mozilla offered some additional information and disclosed that <a href="https://addons.mozilla.org/">addons.mozilla.org</a> was one of the certificates acquired by the attacker. In total, nine certificates were acquired. Seven were uniquely named. Two of the certificates were re-issued for a previously issued host name. One certificate was issued for "global trustee" rather than a valid host name. With testing certificates in the list, we have a good accounting of the certificates found in the source code of each browser. Google clarified their discrepancy with the list, acknowledged the duplicate serial mistake and issued subsequent patches. Saving for test hosts, the lists are now identical.</p>
+
+<p>If I had to guess at sites, I'd speculate that Facebook, Skype, Google, Microsoft, Mozilla, and others are worthy of targeting. Comodo should disclose this information and clear up this speculation with very clear information about who was targeted.</p>
+
+<p>Both vendors expressed that the CA in question had done something quite remarkable by disclosing this compromise. The incentives may not be in the favor of the CA for disclosure. Many CAs may fall to similar attacks and simply refuse to disclose. Hopefully crlwatch will provide us with meaningful data regarding revocation events. The EFF and The Tor Project are <a href="https://trac.torproject.org/projects/tor/wiki/HTTPSEverywhere/SSLObservatorySubmission">working on solutions for detecting anomalies in certificates</a> found in the wild. Still, some CAs may simply be unaware of compromises or unwilling to revoke for fear of detection.</p>
+
+<p>Are all other browsers deploying similar countermeasures? Thanks to the free software nature of Firefox and Chrome, we have an answer for at least two projects. I wish that we could say the same for the rest of the browser world. One may assume that the CA in question did their best to contact all impacted vendors and targets.</p>
+
+<p>Comodo has not yet revealed the extent of the compromise to the public - were their signing keys in a hardware security module? How many certificates in total were ever issued by this specific signing key? Wouldn't it be best to remove the specific signing keys from all trust roots to be extra careful given the stakes? Who exactly did they deem important enough for disclosure? The Tor Project, which ships the Tor Browser Bundle was not notified. Clearly some groups are being left out of the loop and this is where even a single attack really causes the entire CA trust model to fall apart.</p>
+
+<p>Comodo should release the full certificates to the internet as well as all of the details relating to the attack. Mozilla and other browsers should open their bug reports, explain their process and lay out a path forward where we won't have to repeat this entire process again.</p>
+
+<p>There is some suspicion that this action was taken by a state level adversary and there are some specific states that have been named. I’ll leave further speculation about which nation states may be involved to others. The mere fact that the web’s system of trust relies on an all or nothing property should be enough of a cause for alarm. It’s obvious that this has been and will continue to be exploited.</p>
+
+<p>The impact on other cryptographic systems, such as S/MIME signatures and other cryptographic systems secured by CAs is entirely un-discussed. Quite seriously, when a CA is compromised, it will impact a great deal more than the web; users of email systems (SMTP, IMAP, POP,etc), Jabber servers, and any other SSL/TLS enabled systems are all at risk. Blocking specific serial numbers or relying on flawed, <a href="http://www.imperialviolet.org/2011/03/18/revocation.html">provably broken methods of revocation</a> will simply not cut it anymore. When the actual protection mechanisms are not enforced, there is little hope of end users being protected.</p>
+
+<p>This should serve as a wake up call to the internet. We need to research, build, and share new methods for ensuring trust, identity, authenticity, and confidentiality on the internet. Proposals such as <a href="http://www.ietf.org/id/draft-ietf-dane-protocol-06.txt">DANE</a>, <a href="http://tools.ietf.org/html/draft-hallambaker-donotissue-03">CAA</a>, <a href="http://tools.ietf.org/html/draft-hoffman-server-has-tls-04">HASTLS</a>, and <a href="http://web.monkeysphere.info/">Monkeysphere</a> are steps in the right direction but they face an uphill battle from entrenched economic interests. </p>
+
+<p>Certification Authorities may continue to provide a piece of the puzzle but it’s high time we ensure that they’re not the alpha and the omega, anymore.</p>
+
+<p><b><a name="Update">Update</a>:</b><br />
+Comodo has issued <a href="http://www.comodo.com/Comodo-Fraud-Incident-2011-03-23.html">a statement confirming everything</a> that I've said and more. They believe that this was a targeted attack by a state level actor and they have named Iran as the country they suspect. Mozilla has now opened the bug reports about the issue to the public. Microsoft has now <a href="http://www.microsoft.com/technet/security/advisory/2524375.mspx">disclosed their report</a> as well.</p>
+
+<p>In the details of their statement we have a confirmation that they have the ability to monitor and thus surveille people who wish to know if certificates are valid.</p>
+
+<p>Comodo also clearly demonstrate a mis-understanding - they believe that checks for revocation are proof positive that certificates are being used. They need to <b><a href="http://www.imperialviolet.org/2011/03/18/revocation.html">read and understand why this is not true</a></b>.</p>
+
+<p>The browsers have dropped the ball and they have chosen to fail open in nearly every single case; an attacker who is able to MITM SSL/TLS will also MITM the OCSP/CRL requests. Moxie's <a href="http://www.thoughtcrime.org/software/sslstrip/">sslstrip</a> demonstrated that an attacker would do this automatically and his software has done this for OCSP in public since 2009. Mozilla did not fix this issue at the time and they have once again punted on the issue. An even <a href="http://www.imperialviolet.org/2011/03/18/revocation.html">lower tech attack is possible and it's why revocation does not work</a>: <b>By returning a HTTP 500 error, the browser will the continue on as if revocation checks showed the certificate to be perfectly fine</b>.</p>
+
+<p>The browsers chose a user privacy invasive stance without the user protecting security properties. They did this because they claim that CAs are unable to provide working OCSP/CRL systems for request handling. This is a fair claim if true but it must not stand any longer. If the CA cannot provide even a basic level of revocation, it's clearly <b>irresponsible</b> to ship that CA root in a browser. <b>Browsers should give insecure CA keys an Internet Death Sentence</b> rather than expose the users of the browsers to known problems.</p>
+
+<p>It's probably the case that Mozilla and other browsers should write a secure, caching OCSP server for use when a CA has a failure. It should probably be run by a neutral third party such as the EFF with a strong user privacy stance. This would only serve as a temporary fix and until Browsers get their act together, users are doomed anyway.</p>
+
+<p>OCSP stapling does not fix this issue. The browsers treat revocation errors as soft errors and a MITM is deadly for revocation. The browsers believe they have to treat them as soft errors because the CAs are failing to do their job properly and are almost entirely unaccountable. The browsers are failing users by refusing to hold CAs to account. If OCSP and CRL failures mean the internet doesn't work, we need to create alternatives and not simply sweep these issues under the rug for later analysis. <b>Browsers should hard fail on certificate revocation errors.</b></p>
+
+<p>Comodo has further failed by:</p>
+
+<ul>
+<li>Failing to produce further information about those certificates
+<li>Selective disclosure to "<i>principal browsers and domain owners</i>"
+<li>Failing to disclose what sub-CA/intermediate root actually did the signing
+<li>Believing that the attacker must control DNS for these attacks to succeed
+<li>Waiting <b>eight days</b> to disclose evidence of a specific targeted attack
+</ul>
+
+<p>I believe that the browsers, such as Mozilla, are doing the best that they can in some ways but the lack of immediate full disclosure is a major failure.</p>
+
+</div>
+
+<div class="inlinefooter">
+
+
+
+
+
+
+
+
+<div class="actions">
+<ul>
+
+<li><a href="./posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/#comments">102 comments</a></li>
+
+
+</ul>
+</div>
+
+
+</div>
+
+</div>
+<div class="inlinepage">
+
+<div class="inlineheader">
+<span class="header">
+
+<a href="./posts/Reading_links_21_March_2011_edition/">Reading links, 21 March 2011 edition</a>
+
+</span>
+</div>
+
+
+<span class="pagedate">
+Posted <span class="date">Mon 21 Mar 2011 09:45:03 PM CDT</span> 
+
+<span class="author"> by 
+
+<a href="/blogs/phobos">phobos</a>
+
+</span>
+<a class="editlink" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FReading_links_21_March_2011_edition&amp;do=edit" rel="nofollow">Edit</a>
+
+</span>
+
+
+
+<span class="tags">
+Tags:
+
+<a href="./tags/china/" rel="tag">china</a>
+
+<a href="./tags/edrigram/" rel="tag">edrigram</a>
+
+<a href="./tags/gmail/" rel="tag">gmail</a>
+
+<a href="./tags/interesting_links/" rel="tag">interesting links</a>
+
+<a href="./tags/interesting_reading/" rel="tag">interesting reading</a>
+
+<a href="./tags/internet_censorship/" rel="tag">internet censorship</a>
+
+<a href="./tags/mandated_content_blocking/" rel="tag">mandated content blocking</a>
+
+<a href="./tags/reading_links/" rel="tag">reading links</a>
+
+<a href="./tags/vpns/" rel="tag">vpns</a>
+
+</span>
+
+
+
+
+<div class="inlinecontent">
+<ul>
+<li>The ramped up censorship of the Internet by China continues while the world is distracted by the Middle East and Japan.  <a href="http://advocacy.globalvoicesonline.org/2011/03/20/china-pptp-and-l2tp-vpn-protocols-blocked/" title="http://advocacy.globalvoicesonline.org/2011/03/20/china-pptp-and-l2tp-vpn-protocols-blocked/" rel="nofollow">http://advocacy.globalvoicesonline.org/2011/03/20/china-pptp-and-l2tp-vp...</a></li>
+<li>GMail blockage in China, or not.  <a href="http://techcrunch.com/2011/03/21/google-and-china-at-it-again-with-government-gmail-block/" title="http://techcrunch.com/2011/03/21/google-and-china-at-it-again-with-government-gmail-block/" rel="nofollow">http://techcrunch.com/2011/03/21/google-and-china-at-it-again-with-gover...</a></li>
+<li>On Mandated Content Blocking in the Domain Name System, <a href="http://www.circleid.com/posts/20110318_on_mandated_content_blocking_in_the_domain_name_system/" title="http://www.circleid.com/posts/20110318_on_mandated_content_blocking_in_the_domain_name_system/" rel="nofollow">http://www.circleid.com/posts/20110318_on_mandated_content_blocking_in_t...</a></li>
+<li>The always excellent EDRi-gram is out for March 2011, <a href="http://www.edri.org/edrigram/number9.5" title="http://www.edri.org/edrigram/number9.5" rel="nofollow">http://www.edri.org/edrigram/number9.5</a></li>
+</ul>
+
+</div>
+
+<div class="inlinefooter">
+
+
+
+
+
+
+
+
+<div class="actions">
+<ul>
+
+<li><a href="./posts/Reading_links_21_March_2011_edition/#comments">1 comment</a></li>
+
+
+</ul>
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+<div id="backlinks">
+Links:
+
+<a href="./comments/">comments</a>
+
+<a href="./posts/">posts</a>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Wed 30 Mar 2011 01:22:04 PM CDT</span>
+<!-- Created <span class="date">Mon 14 Feb 2011 12:23:05 AM CST</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

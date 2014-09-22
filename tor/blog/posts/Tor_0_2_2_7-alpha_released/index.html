@@ -1,0 +1,673 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tor 0.2.2.7-alpha released</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_2_7-alpha_released&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Tor 0.2.2.7-alpha released</a>
+
+</span>
+
+
+<div id="content">
+<p>alpha fixes a huge client-side performance bug, as well<br />
+as laying the groundwork for further relay-side performance fixes. It<br />
+also starts cleaning up client behavior with respect to the EntryNodes,<br />
+ExitNodes, and StrictNodes config options.</p>
+
+<p>This release also rotates two directory authority keys, due to a security<br />
+breach of some of the Torproject servers:<br />
+<a href="http://archives.seul.org/or/talk/Jan-2010/msg00161.html" title="http://archives.seul.org/or/talk/Jan-2010/msg00161.html" rel="nofollow">http://archives.seul.org/or/talk/Jan-2010/msg00161.html</a></p>
+
+<p>Everybody should upgrade:<br />
+<a href="https://www.torproject.org/download.html.en" title="https://www.torproject.org/download.html.en" rel="nofollow">https://www.torproject.org/download.html.en</a></p>
+
+<p>Changes in version 0.2.2.7-alpha - 2010-01-19<br />
+  o Directory authority changes:<br />
+    - Rotate keys (both v3 identity and relay identity) for moria1<br />
+      and gabelmoo.</p>
+
+<p>  o Major features (performance):<br />
+    - We were selecting our guards uniformly at random, and then weighting<br />
+      which of our guards we'd use uniformly at random. This imbalance<br />
+      meant that Tor clients were severely limited on throughput (and<br />
+      probably latency too) by the first hop in their circuit. Now we <span class="read-more"><a href="http://blog.torproject.org/blog/tor-0227-alpha-released"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/bug_fixes/" rel="tag">bug fixes</a>
+
+<a href="../../tags/deprecated_features/" rel="tag">deprecated features</a>
+
+<a href="../../tags/feature_enhancements/" rel="tag">feature enhancements</a>
+
+<a href="../../tags/performance_enhancements/" rel="tag">performance enhancements</a>
+
+<a href="../../tags/security_critical/" rel="tag">security critical</a>
+
+<a href="../../tags/security_fixes/" rel="tag">security fixes</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-5297706ce82a70fe9623e67eadbb16d9">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>On my OS X Machine (Intel, 10.5.8), the latest alpha (vidalia-bundle-0.2.2.7) fails to start Tor. As far as I can tell, the problem seems very similar to the SSL-related stuff that was supposed to be worked around in this release. The "advanced" log has a bunch of lines saying "[Warning] TLS error: unexpected close while renegotiating (SSL_ST_OK)" and the status bar in the GUI gets stuck about a third of the way across. I left it for an hour and it never got further than this.</p>
+
+<p>I thought maybe this had to do with Apple's default OpenSSL, which is very outdated (0.9.71) even on Leopard, so I build 0.9.8l from source and installed that -- no improvement. However, looking at the comments above, it looks like the Vidalia bundle includes OpenSSL 0.9.8l as it is, so perhaps this problem has some other root cause.</p>
+
+<p>Cheers,</p>
+
+<p>-CF</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 23 Jan 2010 06:48:26 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f01d4bf84d8e86f27bf327813749b6f0">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+I'm getting this problem too (also on 10.5.8).
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 24 Jan 2010 06:48:27 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4a7d3cd56ee22f4b23ff48b9fe9a4d91">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+Same here with my Intel Mac running 10.6.2. I also get this behavior with my PowerPC Mac running 10.5.8 after applying the latest security update 2010-001.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 24 Jan 2010 06:48:28 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4a9081cfac49e44e9a7c94884aff6553">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<p>FWIW, I'm having the same experience with OSX 10.6.2, also on Intel.<br />
+-BD</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 24 Jan 2010 06:48:29 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-561619bbef032ecb514fda80664915d5">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+Latest Apple security update contained OpenSSL 0.9.8l with renegotiation disabled, and no way for apps to enable it, tor will remain broken until major changes are made either at apple or in the tor code.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 24 Jan 2010 06:48:30 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e79ac4165f3ae1afb07f06e6e8ac7b5e">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>I have updated the document detailing an Eclipse based IDE for developing Tor on Windows to reflect building Tor 0.2.2.7 under automake v2.6.x.<br />
+<br><br />
+There is a specific section on how to update automake from the vanilla MinGWv5.16 install with MSYSv1.0.0.11 and MSysDTKv1.0.1. I'll upload the document if its likely to be of any use... ?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 25 Jan 2010 06:48:31 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bd3038f6c49186986410731eb8dc557c">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p>Jan 25 16:48:05.155 [notice] Tor v0.2.2.7-alpha (git-ad274609b7fec437). This is experimental software. Do not rely on it for strong anonymity. (Running on Linux i686)<br />
+Jan 25 16:51:39.179 [notice] Bootstrapped 5%: Connecting to directory server.<br />
+Jan 27 02:51:23.735 [notice] Bootstrapped 100%: Done.</p>
+
+<p>Well .... just upgraded .... actually two days ago from version 0.2.0.3 if i recall.<br />
+Apparently this version doesnt really sit well with my connection.</p>
+
+<p>It takes for ever to get anything done.<br />
+I guess i should never turn my pc off ... cause it will take for ever to reconnect ! </p>
+
+<p>Any akes on that ? </p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 26 Jan 2010 06:48:32 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fe3f4a565de0c0f787f666634a60822c">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+<p>For MAC 10.6 users:</p>
+
+<p>https://www.torproject.org/dist/testing/<br />
+vidalia-bundle-0.2.2.8-alpha-0.2.7-i386.dmg</p>
+
+<p>Many thanks to developers.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 28 Jan 2010 06:48:33 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a7a47f5cd139fdc0dc4ceb5aad92da2a">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+Thank you so much!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 28 Jan 2010 06:48:34 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-44d4015062478e83e0b8153f5c9731df">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+Dear Tor developers, I can play youtube video (flash?) on Google Chrome 4.0.249.78 (36714) with Tor 0.2.2.6-alpha (git-1ee580407ccb9130). I couldn't play youtube video on firefox with Tor , and I got the answer why it can't here - because of some security limitation. Thanks.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 02 Feb 2010 06:48:35 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d6e95431aa66ae44c4184616963c3893">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+<p>If you are using the Tor button for Firefox - you need to relax the security settings in the plugin</p>
+
+<p>Go to Tor Button.... Preferences | Security Settings.<br />
+Deselect the setting 'Disable plugins during Tor usage (crucial)'</p>
+
+<p>BE WARNED: If you do this you will reduce your anonymity online. The setting is marked crucial for good reason !</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 12 Feb 2010 06:48:36 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b607c7ff8673e13119b199b7767dbceb">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+My hidden service is not reachable anymore after update to 0.2.2.7-alpha. What's up with that?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 19 Feb 2010 06:48:37 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_2_7-alpha_released&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:48:25 AM CDT</span>
+<!-- Created <span class="date">Sat 23 Jan 2010 06:48:28 AM CST</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Torbutton Release 1.2.5, Google Captchas, and addons.mozilla.org</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>mikeperry</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:55:28Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_1/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:55:13Z</updated>
+	<published>2010-04-10T11:55:13Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Very good!!!!!!!!!!!!!! I&#39;m going to add it to the next release of &lt;strong&gt;factorbee!!!&lt;/strong&gt; (yeah, maybe it&#39;s going to be the one of today!!!!!!). I hope nothing of important has changed in the preferences of TorButton, but i&#39;ll change this preference &lt;em&gt;extensions.torbutton.update_torbutton_via_tor&lt;/em&gt;!!!!! ... i&#39;ll patch it to set it to `false&#39; in my TOR Browser Bundle!!!!!!!!!!!!! I think that all updating systems should be disabled by default, in a TorBB!!!!!!!!! but everything else seems OK!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Yeah, this is super!!!!!!!!!! &lt;strong&gt;I very like TorButton!!!!!!&lt;/strong&gt;----&lt;br /&gt;
+I also made one Firefox addon: it&#39;s &lt;strong&gt;BeeFREE&lt;/strong&gt;!!!!!!!!!!!!!!!!!, I&#39;m including it in factorbee too!!!! but i&#39;m sure you already knew of it, &lt;em&gt;as you copied all the updates ideas from it&lt;/em&gt;!!!!!!!!! and i&#39;m happy you copied them!!!!!!!!!!!!!! I very dislike AMO (addons.mozilla.org)!!!!!!!!!! I withdrew BeeFree from AMO, because of their totalitarian, invasive centralization!!!!!!!!!!! and yeah!!! f*** to their statistics!!!!!!!!!!! This is the article i wrote to explain why i added one autonomous updating system to beefree, and why all addons developers have to do the same: &lt;strong&gt;http://honeybeenet.altervista.org/beefree/?id=105300&lt;/strong&gt; !!!!!!!!!!!!! They also censored some of my posts i sent to their blog in this thread http://tinyurl.com/ydsjdmn !!!!! My suggestion is to &lt;strong&gt;avoid to use AMO!! AMO = Googlezilla&lt;/strong&gt;!!!!!!!!!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;~bee!!!!!!!!!!!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_2/"/>
+
+	<author><name>mikeperry</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:55:14Z</updated>
+	<published>2010-04-10T11:55:14Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;If you disable updates of addons in Firefox with extensions.update.enabled, Torbutton won&#39;t update via Tor or not. I am still using the Firefox update system. I just wrote an nsIProtocolProxyFilter to set the proxy on Torbutton updates to Tor. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/torbutton/design/#id2937206&quot; title=&quot;https://www.torproject.org/torbutton/design/#id2937206&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/torbutton/design/#id2937206&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Also, I had no idea BeeFree did this. I didn&#39;t even know BeeFree existed. Seems like a hard-coded version of AdBlock Plus?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_3/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:55:15Z</updated>
+	<published>2010-04-10T11:55:15Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Cancel almost everything of what i said about &quot;update_torbutton_via_tor&quot;, because i understood what it does only now, after looking at the source code of &lt;strong&gt;TorButton!!!!!!!&lt;/strong&gt; yeah, you&#39;re right, if the updates are disabled that option isn&#39;t used!!!!!!!! though I disabled it in the release of factorbee i published today!!!!! Well, nobody will notice any difference!!!!&lt;/p&gt;
+
+&lt;p&gt;As for BeeFree, you&#39;re almost right!!!!!! It&#39;s like an hard-coded version of AdBlock Plus, but &lt;strong&gt;beefree&lt;/strong&gt; doesn&#39;t work to remove banners and similar things, but it&#39;s useful to remove &lt;strong&gt;TRACKING LINKS!!!!!!&lt;/strong&gt; It&#39;s the only addon in the world doing that!!!!!!!!!! it&#39;s very unique!!!!! and it&#39;s the second of the current three projects at the HONEY BEE NET!!!!!! Actually, beefree is three/four addons into one!!!!! It gives you a very honey homepage, so that you don&#39;t need to connect yourself with a server every-time you start firefox!!!(it&#39;s the page factorbee uses as homepage too!!!!this feature is disabled by default!!) It gives you protection with hard-coded filters against tracking links, and against all javascript tracking links on all websites!!! And, last but not least, beefree can also edit the HTTP headers to remove those information you don&#39;t want to leak!!!! For example, it has a very smart way to remove the HTTP referrers!!! HTTP referrers get automatically removed every time you move from a domain to another!!! In this way it doesn&#39;t break anything!!!!! and different websites won&#39;t know where you were surfing before!!!!!! but within the same domain the referrer is sent to avoid to break something!!!!&lt;/p&gt;
+
+&lt;p&gt;If you &lt;strong&gt;install beefree&lt;/strong&gt;, and you try to go on Google, Dogpile or YouTUBE, you&#39;ll see what it does!!!!! For example, YouTUBE has plenty of javascript-based tracking links (read my article &lt;strong&gt;http://honeybeenet.phpbb3now.com/viewtopic.php?f=14&amp;amp;t=227&lt;/strong&gt; !!!!!!!!) and if you want to watch the videos (i&#39;m talking about a normal usage of Firefox, even without using TOR), you need to keep javascripts enabled!!!!!!! I think that even NoSCRIPT cannot protect you against tracking links in javascript, but beefree does!!!!!!!!! So, i always suggest to use BeeFree and AdBlock Plus together, because they&#39;re two very needed addons!!!!!!!!!!!!!! This is the website for &lt;strong&gt;BeeFree: http://honeybeenet.altervista.org/beefree/&lt;/strong&gt; !!!!! There is everything you may want to know about it!!!! Plenty of webpages to read!!!!!!! The list of hard-coded filters is here: http://honeybeenet.altervista.org/beefree/?id=109000 !!!! Filters are hard-coded, because beefree does a lot of string manipulations, and those stuffs aren&#39;t possible to do with regexps alone!!!!!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;~bee!!!!!!!!!!!!!!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_4/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:55:16Z</updated>
+	<published>2010-04-10T11:55:16Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&quot;Always tell a website our window size is rounded even if it&#39;s not&quot;&lt;/p&gt;
+
+&lt;p&gt;What is the purpose of this setting?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_5/"/>
+
+	<author><name>mikeperry</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:55:17Z</updated>
+	<published>2010-04-10T11:55:17Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;To provide further protection against mechanisms like panopticlick. If you disable the window resizing code because it either causes problems or you find it annoying, there&#39;s no reason why this means we should stop protecting you altogether.&lt;/p&gt;
+
+&lt;p&gt;See &lt;a href=&quot;http://panopticlick.eff.org/&quot; title=&quot;http://panopticlick.eff.org/&quot; rel=&quot;nofollow&quot;&gt;http://panopticlick.eff.org/&lt;/a&gt; and &lt;a href=&quot;https://blog.torproject.org/blog/effs-panopticlick-and-torbutton&quot; title=&quot;https://blog.torproject.org/blog/effs-panopticlick-and-torbutton&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/effs-panopticlick-and-torbutton&lt;/a&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_6/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:55:18Z</updated>
+	<published>2010-04-10T11:55:18Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Please stop allowing that thing called &quot;bee&quot; from posting on the Tor blog.  I am so tired of her/his posting style and insane use of exclimation points.  How old can it be?  Maybe 15 years old?  (there is no way it is an adult who has skill in creating anonymity and security software)  Not to mention all he is doing (seemingly) is trying to spam the Tor blog for his own bundle...and insanity.&lt;/p&gt;
+
+&lt;p&gt;Please stop letting his posts through.&lt;/p&gt;
+
+&lt;p&gt;Thank you.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_7/"/>
+
+	<author><name>mikeperry</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:55:19Z</updated>
+	<published>2010-04-10T11:55:19Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I too find bee&#39;s posts hard to read. I wish he wouldn&#39;t obfuscate his ideas behind such awful writing. It looks like he might have had a good idea or two in that most recent comment, but it&#39;s really hard to parse all of it. It might be nice if it was possible to collaborate with him. &lt;/p&gt;
+
+&lt;p&gt;I can understand the bee obsession (maybe), but there&#39;s a big difference between the breeze of humor and the winds of insanity.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_8/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:55:20Z</updated>
+	<published>2010-04-10T11:55:20Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Re: stopping the madness of the thing called &quot;bee&quot;:&lt;/p&gt;
+
+&lt;p&gt;Can Tor project limit the amount of exclimation points allowed?  Maybe mark as spam like the AMO blog had to due with bee? &lt;/p&gt;
+
+&lt;p&gt;Please stop bee.  Thanks.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_9/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:55:21Z</updated>
+	<published>2010-04-13T11:55:21Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Bee-haters calm down, please! &lt;/p&gt;
+
+&lt;p&gt;While his posting style may be slightly irritating, some of his remarks and the pointers to his work are relevant IMHO.&lt;/p&gt;
+
+&lt;p&gt;Peace.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_10/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:55:22Z</updated>
+	<published>2010-04-18T11:55:22Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;bee&#39;s posting style aside, bee doesn&#39;t understand security nor firefox.  bee is simply adding in various plugins/extensions and calling it good.  &lt;/p&gt;
+
+&lt;p&gt;case in point, look at download.sh from the source bundle:&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;# https://www.torproject.org/vidalia/&lt;br /&gt;
+wget &quot;https://www.torproject.org/vidalia/dist/vidalia-0.2.7.tar.gz&quot;&lt;br /&gt;
+let counter++&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;The script doesn&#39;t download the pgp signature, nor check it.  This is true for every download link in that file.  And then to make the user feel better:&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;md5sum * &amp;gt; ../sources.md5sum&lt;br /&gt;
+sha1sum * &amp;gt; ../sources.sha1sum&lt;br /&gt;
+&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;Rather than bother checking the md5 or sha1 hashes from the source website, just create them all AFTER the download and compare against that.  If you have a corrupt/malicious download, you have no way to know that using bee&#39;s method.&lt;/p&gt;
+
+&lt;p&gt;Also, &quot;wget&quot; is called from the environment PATH variable, not specifically hardcoded to a path.  While easier to code, anything can be called wget and download.sh will run it.  &lt;/p&gt;
+
+&lt;p&gt;Also, all of the scripts use &quot;/tmp/factorbee&quot;, which as a known path, is exploitable.  mkstemp would be preferable.  &lt;/p&gt;
+
+&lt;p&gt;The tor config file has this rampant problem too,&lt;br /&gt;
+&lt;cite&gt;&lt;br /&gt;
+DataDirectory /tmp/factorbee/app/tor-cache&lt;br /&gt;
+GeoIPFile /tmp/factorbee/app/tor/share/tor/geoip&lt;br /&gt;
+&lt;/cite&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_11/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:55:23Z</updated>
+	<published>2010-04-20T11:55:23Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;HI!!!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;&amp;gt; &lt;i&gt;bee doesn&#39;t understand security nor firefox.&lt;/i&gt;&lt;br /&gt;
+And definitely, you don&#39;t understand honey bees!!!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;&amp;gt; &lt;i&gt;The script doesn&#39;t download the pgp signature, nor check it. This is true for every download link in that file&lt;/i&gt;&lt;br /&gt;
+You should check them manually, if you mind to!!!&lt;br /&gt;
+I made the download.sh file for your convenience!!! You aren&#39;t forced to use it!!!!&lt;br /&gt;
+You&#39;re of course free to download all the files in the way you like more, or even to take them from somewhere else (CDs)!!!!!!&lt;br /&gt;
+That script is mostly useful to let you see which source packages you need to build factorbee!!!!!!!(and where you need to save the tarballs!)&lt;/p&gt;
+
+&lt;p&gt;&amp;gt; &lt;i&gt;&quot;wget&quot; is called from the environment PATH variable, not specifically hardcoded to a path&lt;/i&gt;&lt;br /&gt;
+If your computer is infected with a rootkit, even having a full PATH won&#39;t help!!!!!&lt;br /&gt;
+I presume the computer where you&#39;ll build, and also use, factorbee to be already &quot;safe&quot;!!!!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;What if you&#39;re using a poisoned version of the GNU C Compiler (GCC)?!!! The build scripts of factorbee have no ways to know that!!!!!!&lt;br /&gt;
+It&#39;s the same for the PATHs!!!! It&#39;s not a fault of factorbee if your environment PATH variable points to nowhere, or to a folder with a false wget!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;Good luck in using an unsafe computer infected with virii, rootkits, hardware keyloggers etc!!!! Factorbee isn&#39;t made to protect you against those kinds of stuffs!!!!!!&lt;/p&gt;
+
+&lt;p&gt;&amp;gt; &lt;i&gt;all of the scripts use &quot;/tmp/factorbee&quot;, which as a known path, is exploitable&lt;/i&gt;&lt;br /&gt;
+It&#39;s not a bug, but a well-known limitation!!!!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;&amp;gt; &lt;i&gt;mkstemp would be preferable. &lt;/i&gt;&lt;br /&gt;
+&amp;gt; &lt;i&gt;The tor config file has this rampant problem too,&lt;/i&gt;&lt;br /&gt;
+&amp;gt; &lt;i&gt;DataDirectory /tmp/factorbee/app/tor-cache&lt;/i&gt;&lt;br /&gt;
+That&#39;s an encrypted directory, if you&#39;ve got EncFS installed, or it gets mounted into the RAM memory if you run factorbee as root!! (and then factorbee will drop the root privileges!!!) Factorbee will refuse to start if the &quot;/tmp/factorbee&quot; directory isn&#39;t enough safe!!!!!!&lt;br /&gt;
+Having a fixed path (/tmp/factorbee) gives disadvantages but also plenty of advantages!!!!!&lt;br /&gt;
+The disadvantages mostly exist if your computer is infected with some trojans, but then even after `mktemp&#39; also one remote &quot;ls /tmp&quot; could print where factorbee is located!!!!!! A forensic analysis of your disk won&#39;t give a lot of information about what was stored into /tmp/factorbee (the folder gets renamed before getting deleted), because that&#39;s only a mountpoint!!!!! The files are (usually) either encrypted or saved into the memory (RAM, with the swap files disabled!!!!!!) and firefox profiles could be stored into a ram disk (files in the ram disk get also wiped!!)&lt;br /&gt;
+If you run factorbee, with both: encfs and the root privileges, all the files (like the &quot;tor-cache&quot;) are encrypted and the encrypted files are stored into the volatile memory!!!!!!!!!!!!!!!!!! I don&#39;t think that it&#39;ll be so easy for anybody to recover the files!!!!!!!!!!!!!!!!&lt;br /&gt;
+There isn&#39;t any &quot;rampant problem&quot;, except for your absolute misconceptions in understanding how factorbee works!!!!!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;THERE IS NOT COMPARISON!!!!!&lt;br /&gt;
+&lt;strong&gt;The official Tor Browser Bundle, is very much more UNSAFE than factorbee!!!!&lt;/strong&gt;&lt;br /&gt;
+It stores everything (yeah, including the &quot;DataDirectory&quot; &quot;tor-cache&quot;, firefox profiles, everything!!!) in plain-text on your disk!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;Well, ok, whatever!!! &lt;strong&gt;THANK YOU&lt;/strong&gt; for getting interested in factorbee!!!!!!!!!!!!! &lt;/p&gt;
+
+&lt;p&gt;bye!!!!!!!!!!&lt;br /&gt;
+~bee!!!!!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 12</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_12/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_12/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:55:24Z</updated>
+	<published>2010-04-20T11:55:24Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I dunno why, but I kept this for last, and then i forgot to reply to the &lt;strong&gt;most funny part of his post!!!!!!!!!!!!&lt;/strong&gt;&lt;br /&gt;
+Ah yeah, i&#39;m also presuming a gender for you!!!!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;&amp;gt; &lt;i&gt;then to make the user feel better:&lt;/i&gt;&lt;br /&gt;
+&amp;gt; &lt;i&gt;md5sum * &amp;gt; ../sources.md5sum&lt;/i&gt;&lt;br /&gt;
+&amp;gt; &lt;i&gt;sha1sum * &amp;gt; ../sources.sha1sum&lt;/i&gt;&lt;br /&gt;
+&amp;gt; &lt;i&gt;Rather than bother checking the md5 or sha1 hashes from the source website, just create them all AFTER the download and compare against that&lt;/i&gt;&lt;/p&gt;
+
+&lt;p&gt;That&#39;s of course untrue!!!!! &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;But that&#39;s very funny too!!!! So, you believe that the &lt;em&gt;download.sh&lt;/em&gt; script generates the MD5/SHA1 hash values of all downloaded files, and then it checks if those hash values are OK against the same files it used to generate the hash values!!!!!!!!!!! lol!!!!!!!!!!!!!!!!!!!!!!!!!!!!! &lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You should really read the &quot;README&quot; file, you&#39;ve got along with the source package!!!!!!! it&#39;s written there, that it&#39;s your duty to check the downloaded files &lt;strong&gt;fingerprints!!!!!!!!!&lt;/strong&gt; (they&#39;re not even the same thing of the checksums...)!!!&lt;/p&gt;
+
+&lt;p&gt;These two files, sources.md5sum and sources.sha1sum, are generated using the downloaded files, but after that, they are not checked against anything!!!!!!!!!!!!!!!!!!!!!!! it&#39;s well written in the files you didn&#39;t read!!!!!!!!!&lt;br /&gt;
+Those two files, are useful because they&#39;re saved inside the auto-generated source-tarball of factorbee!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!&lt;br /&gt;
+For example, you could share the source and binary tarballs of factorbee, and when your friends will get the source and binary tarballs, and both are &quot;ok&quot; (i.e.: they aren&#39;t hijacked/poisoned/fakes -- you could sing your own tarballs with your own GPG key) then the &lt;em&gt;sources.md5sum and sources.sha1sum&lt;/em&gt; files, will inform ur friends about what files were used to build the binaries!!!!! You could also add the original source files into the &quot;source tarball of factorbee&quot;, but then the size of that file will increase from 1MB to 220MB!!! (the size of the QT package alone is ~120MB!!!!) So, keeping only the hash values of all files, has the same results and reduces the size of the source-tarball of factorbee!!!!!! because it&#39;s still possible to know which sources were used to build the binaries, without including the real tarballs...!!!!!!!!!!!! this is why those two files are generated and included into the source-tarball!!!!!!!!!!! they aren&#39;t made as a way to check whenever the downloads went ok!!!!!!!!&lt;br /&gt;
+Please, at least read the &lt;em&gt;README&lt;/em&gt;!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!&lt;br /&gt;
+Sometimes i&#39;ve to think that I&#39;m surrounded by .........!!&lt;br /&gt;
+http://www.youtube.com/watch?v=ymzh7YAlZng ...hahahah im kidding, but GOTCHA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;bye!!!!!!!!!!!!&lt;br /&gt;
+~bee!!!!!!!!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 13</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_13/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_13/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:55:25Z</updated>
+	<published>2010-04-13T11:55:25Z</published>
+
+	<content type="html" xml:lang="en">
+	Sorry about offtopic, but WTF is going on with Tor network??? Someone is heavvy DoSSing public nodes. I tested by seting my own pc ar public realy. After some time, huge traffic frow from, nigeria, egypt and so on. This crap started yesterday, when some 40% of relays just dissapered. &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/../../smileys/sad.png&quot; alt=&quot;:(&quot; /&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 14</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_14/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_14/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:55:26Z</updated>
+	<published>2010-04-18T11:55:26Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;a href=&quot;http://metrics.torproject.org/graphs.html#relays&quot; title=&quot;http://metrics.torproject.org/graphs.html#relays&quot; rel=&quot;nofollow&quot;&gt;http://metrics.torproject.org/graphs.html#relays&lt;/a&gt;  that doesn&#39;t show a 40% drop.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 15</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_15/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_15/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:55:27Z</updated>
+	<published>2010-04-20T11:55:27Z</published>
+
+	<content type="html" xml:lang="en">
+	It does show a big drop though, so apparently something is/was happening.  I suspect those graphs are also heavily averaged, so gather you&#39;re not going to notice any larger short-term spikes.  I experienced first hand the effects of this on Tor performance as a client at the time, and your own Time-to-complete graphs back both those things up given the sharp increase in delay.  Things are running better again now, but there was a point where Tor became almost unusable here around the start of this event.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 16</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_16/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comment_16/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:55:28Z</updated>
+	<published>2010-04-14T11:55:28Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&amp;gt;tested by seting my own pc ar public realy. After some time, huge traffic frow from, nigeria, egypt and so on.&lt;/p&gt;
+
+&lt;p&gt;Being you a relay server, it&#39;s quite normal for your machine to receive/resend a lot of traffic from all over the world, and in particular from repressive or intolerant countries : serving as a relay to help users from those countries is the reason why you would run a Tor relay after all  :=)&lt;/p&gt;
+
+&lt;p&gt;Of course w/o seing your machine&#39;s detailed traffic stats nobody can affirm there isn&#39;t something wrong with it, but a priori if you have no other problems than are seing a lot of connections/traffic going thru your Tor&#39;s machine, then I would say it&#39;s working as designed... and yes I believe every tor user should be configured as a relay when and wherever possible. &lt;/p&gt;
+
+&lt;p&gt;Thank you for helping freedom of communication at home and abroad!&lt;/p&gt;
+
+&lt;p&gt;--&lt;br /&gt;
+Noino&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+
+</feed>

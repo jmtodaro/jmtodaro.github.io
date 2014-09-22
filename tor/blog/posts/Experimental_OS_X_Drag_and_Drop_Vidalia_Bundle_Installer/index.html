@@ -1,0 +1,994 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Experimental OS X Drag and Drop Vidalia Bundle Installer</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FExperimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Experimental OS X Drag and Drop Vidalia Bundle Installer</a>
+
+</span>
+
+
+<div id="content">
+<p>I asked for community feedback in <a href="https://blog.torproject.org/blog/os-x-vidalia-bundle-thoughts" rel="nofollow">this post</a> about drag and drop installation of the Vidalia bundle for Apple's OS X.  In working with the Vidalia team, we now have a drag and drop installer.  This is <strong>experimental</strong>.  It's designed for a clean install.  It won't migrate your settings, nor will it configure anything for you.  Upon installing, your milk may sour and your salt may run off with your pepper.  Now that the disclaimers are over, here's what it contains and does do for you. <span class="read-more"><a href="http://blog.torproject.org/blog/experimental-os-x-drag-and-drop-vidalia-bundle-installer"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+<p><p>It includes Universal binaries for:</p>
+
+<ul>
+<li>Vidalia version 0.2.0-svn r3425</li>
+<li>Polipo 1.0.4 configured to use Tor as a socksproxy</li>
+<li>Tor 0.2.1.10-alpha compiled with prefix and bindir set to /Applications/Vidalia.app</li>
+</ul>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/alpha_release/" rel="tag">alpha release</a>
+
+<a href="../../tags/apple_os_x/" rel="tag">apple os x</a>
+
+<a href="../../tags/experimental/" rel="tag">experimental</a>
+
+<a href="../../tags/polipo/" rel="tag">polipo</a>
+
+<a href="../../tags/vidalia_bundle/" rel="tag">vidalia bundle</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-fdbeaafbb5e03ee7b26bb6285ff224ba">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi!</p>
+
+<p>Thank for "OS X"-style distribution of V+T. As for me (Leopard 10.5.6) it works. When dragged and ran, Vidalia could not find tor, it works if change path in Vidalia specifically to /Applications/Vidalia.app/tor</p>
+
+<p>Vidalia 2 svn has some glitches not allowing it to draw its window if clicked on its icon in Dock - in menubar I can manage Vidalia through menubar items, but there is now window of Vidalia itself ))</p>
+
+<p>It would be nice if Vidalia will contain some run string for polipo and with options as proxy. =)</p>
+
+<p>But it works! It is the most important I think...</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 13 Jan 2009 06:17:16 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2fa651648a413bb64031a553b6a60f01">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>There should be run strings for polipo in Vidalia, in the "General" pane of the Vidalia Settings, you should the ability to start Polipo, with an option to list the path to the polipo binary.  Under that is the ability to specify options, such as "-c /Applications/Vidalia.app/config"</p>
+
+<p>And yes, there appears to be an issue where Vidalia doesn't respond to a single click on the menubar.  If you right click it twice, it should pop open.  We're still trying to figure out if this is really Qt or Vidalia.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 14 Jan 2009 06:17:17 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-059d320d2d25d0d475200fe025c8f899">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>First I want to say I would love to have a drag and drop installer.</p>
+
+<p>Now, I tested the "Experimental OS X Drag and Drop Vidalia Bundle Installer" and it did not work for me...at first. The path for starting tor on Vidalia.app launch was set to "tor". Changing this path to "/Applications/Vidalia.app/tor" made the app work. Also I had to add the path "/Applications/Vidalia.app/polipo" to start proxy option.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 13 Jan 2009 06:17:18 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-53c74837162871f3498efe0ac7a8ff44">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<p>The entire point of the sample vidalia.conf was to avoid the issues with the path in Vidalia.  </p>
+
+<p>Just for confirmation, you do have a vidalia.conf in /Applications/Vidalia.app/Contents/Resources/ right?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 14 Jan 2009 06:17:19 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a9e3df1f4217be7d61384687c0b4a87c">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+yep. 256 bytes size
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 15 Jan 2009 06:17:20 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-922f67a5fda28b109266c6b81dadbd84">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>Yes Vidalia conf does exist.</p>
+
+<p>Here are some pics of the problems.</p>
+
+<p>First run...<br />
+<a href="http://i41.tinypic.com/2h69k3t.png" title="http://i41.tinypic.com/2h69k3t.png" rel="nofollow">http://i41.tinypic.com/2h69k3t.png</a></p>
+
+<p>Vidalia settings<br />
+<a href="http://i42.tinypic.com/641ceb.png" title="http://i42.tinypic.com/641ceb.png" rel="nofollow">http://i42.tinypic.com/641ceb.png</a></p>
+
+<p>Vidalia conf in /Applications/Vidalia.app/Contents/Resources<br />
+<a href="http://i42.tinypic.com/jj2qac.png" title="http://i42.tinypic.com/jj2qac.png" rel="nofollow">http://i42.tinypic.com/jj2qac.png</a></p>
+
+<p>This is exactly how everything looks on first install without modifying any settings.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 14 Jan 2009 06:17:21 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2a7e3b8900e73e883fe9e98d4ff9994a">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p>Why Polipo instead of Privoxy? Any advantages of one over the other?</p>
+
+<p>TIA</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 20 Jan 2009 06:17:22 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fecd0f016dce547b8eb180cf34f768fc">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+<p>I looked up Polipo and can see the advantage. I had been using an install that I pieced together or the latest versions of tor, privoxy, and squid(man). Uninstalled all of that. Then installed this Vidalia package. </p>
+
+<p>Got it running fine but when I go to check.torproject.org it says I am not using Tor!</p>
+
+<p>What do I need to do in my Network Settings? Http and Https as 127.0.0.1 or localhost and port 8118 or something else?</p>
+
+<p>How are tor and Polipo chained? Which is first? Are the issues of DNS leaks avoided?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 20 Jan 2009 06:17:23 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1ba6a66b2755cfd3de75f7b9d9db8a77">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+<p>Depends where your polipo is listening.</p>
+
+<p>I use polipo with its default port of 8123, so in my Torbutton preferences I<br />
+selected "Use custom proxy settings" and put in localhost 8123 for http and<br />
+https proxies, and left localhost 9050 for socks.</p>
+
+<p>You're right that when we switch the packages from including privoxy to<br />
+including polipo, we'll want to make sure that the Torbutton that's included<br />
+knows what port it should tell Firefox to proxy to.</p>
+
+<p>The easy answer is to configure the polipo we ship so that it listens on port<br />
+8118. The only downside is that it will conflict if you have Privoxy installed too.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Farma&amp;do=goto">arma</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 20 Jan 2009 06:17:24 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-89d29273a03a2eb02ab79717d9258189">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+polipo is set to 8118, just like privoxy used to be.  This lets torbutton for firefox work without modification.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 20 Jan 2009 06:17:25 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-68478c17801daac2b96619c8febc6db8">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+I suspect people having problems with the new vidalia config using the wrong directory is because you already have a vidalia.conf in ~/Library/Vidalia/.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 20 Jan 2009 06:17:26 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ac25a160d2043aa2c20638c6b55c13e8">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+<p>I had posted twice as Anonymous.</p>
+
+<p>Unfortunately, at least the last few versions of Vidalia have been unstable on my PowerBook G4/10.5.6. I thrashed this package and installed the latest stable Tor and Polipo. Changed these settings in Polipo's config and the setup works:</p>
+
+<p>socksParentProxy = localhost:9050<br />
+diskCacheRoot=""<br />
+disableLocalInterface=true</p>
+
+<p>censoredHeaders = from<br />
+censorReferer = maybe</p>
+
+<p>Question: Why disable the page caching? Would the setup work faster if caching was on with a limited cache size?</p>
+
+<p>Anyone know why PolipoStatusBar has disappeared? Would be easier to set up with it.</p>
+
+<p>Note: I downloaded Polipo from the Max OS X list of univ binaries on it's site. There was no Leopard version so I downloaded Tiger 1.0.3 and installed it. Had to move the installed files into a single folder. Otherwise good. [Just did not have the time to mess with compiling.]</p>
+
+<p>Anyone else having trouble with Vidalia?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FKaleo%20%28not%20verified%29&amp;do=goto">Kaleo (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 21 Jan 2009 06:17:27 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-df8c1e1f459d11a0956ee668505977c8">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+<p>From the post itself, this is <strong>experimental</strong>.  I warned you it might not work, might crash, might sour your milk.  It assumed a clean install.  if you have a ~/.vidalia or ~/Library/Vidalia directory, it won't work after drag and drop.  you will have to change the paths.  </p>
+
+<p>As for polipo, diskcache is disabled, otherwise it records every site you've visited through polipo.  This is not good for anonymity.</p>
+
+<p>Memory cache is enabled to improve performance.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 22 Jan 2009 06:17:28 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2916a25177b03e3c4435dbc7eca31d4d">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+...do you have these vidalia crashing problems with the stable version of vidalia?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 22 Jan 2009 06:17:29 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e0612d31e54ea0d2c306ff88114dce8c">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+<p>I should have mentioned that I would love nothing better than to simply drag the Vidalia package and have it "work out of the box." However, as some others had to I had to change the path, probably because I had used privoxy, etc before. Bigger headache is that Vidalia becomes unresponsive too often.</p>
+
+<p>I heard from the developer of PolipoStatusBar that his server crashed and he has not found a new "home" for his app. Meanwhile, I came across Dolipo. It is a GUI wrapper for polipo. I installed polipo and am now using tor with Dolipo. </p>
+
+<p>If you are having trouble with this Vidalia package, you may want to take a look at a Dolipo (menu bar based) and Tor setup. In the Dolipo preferences, you can select the Polipo config file and toward the bottom enter localhost:9050 for Socks Parent Proxy. Tweak other settings you like and you are on your way. Only issue is having to manually configure relaying, if you want to do that.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FKaleo%20%28not%20verified%29&amp;do=goto">Kaleo (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 22 Jan 2009 06:17:30 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1002fd6a6bbfc3437d0fde78cfe92602">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+As you can read in the post, I updated these <strong>experimental</strong> packages with Tor 0.2.1.11-alpha and vidalia 0.2.0-r3467.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 22 Jan 2009 06:17:31 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ff92b9c4ab805d2dbe41f5accb7f6ed4">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+Can anyone tell me why Privoxy is missing from the new  Zero Install Bundle Tor version for Windows? I don't see the privoxy icon at the right left corner as I used to when I started the old Vidalia. Does this pose a privacy hazard, or is privoxy running in the background, just not visible anymore?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FDave%20J.%20%28not%20verified%29&amp;do=goto">Dave J. (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 18 Feb 2009 06:17:32 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-06f8fd7e2214189102ff9b4292e8877d">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+<p>The Tor Browser Bundle actually includes Polipo, not Privoxy. Polipo is a lighter-weight proxy that serves pretty much the same role as Privoxy. It just runs in the background, and Vidalia launches it when everything starts up.</p>
+
+<p>(Privoxy is a little bit better than Polipo at removing dangerous web stuff, but Torbutton 1.2 does a fine job at that, so the fact that Privoxy can do some of it is moot.)</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Farma&amp;do=goto">arma</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 19 Feb 2009 06:17:33 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-34b4d8917d643e9f548459cf3d459664">
+
+<div class="comment-subject">
+
+Comment 19
+
+</div>
+
+<div class="inlinecontent">
+<p>I had installed the "advanced" Tor only package and added polipo with dolipo. Worked out fine as I have described above. However, this weekend I decided to give Privoxy another go.</p>
+
+<p>Much to my surprise, with Tor + Privoxy, Safari is much faster plus has more effective ad blocking.</p>
+
+<p>???</p>
+
+<p>PS Read online that if one is chaining Tor, Privoxy, Squid, the correct order is Squid &gt; Privoxy &gt; Tor but if chaining with Polipo instead, the correct order is Privoxy &gt; Polipo &gt; Tor. Why is that?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FKaleo%20%28not%20verified%29&amp;do=goto">Kaleo (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 22 Jun 2009 06:17:34 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8b36338457b302ad80683ffc09e9506d">
+
+<div class="comment-subject">
+
+Comment 20
+
+</div>
+
+<div class="inlinecontent">
+<p>My bundle didn't work out of the box, until I discovered that polipo was running its default configuration, rather than the one provided by the Vidalia bundle.</p>
+
+<p>The solution was to open Vidalia's preferences, and under "Proxy Application Arguments" in the General tab to add the following:</p>
+
+<p><code> -c /Applications/Vidalia.app/Contents/Resources/polipo.conf</code></p>
+
+<p>Then everything worked perfectly.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fthe8ball%20%28not%20verified%29&amp;do=goto">the8ball (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 02 Nov 2009 06:17:35 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-dd3b540f3c40c61ca5f7ee72749d372e">
+
+<div class="comment-subject">
+
+Comment 21
+
+</div>
+
+<div class="inlinecontent">
+<p>I like the drag and drop.  But I dragged the Firefox extension installer to my applications folder too, before I realized I just needed to run it from the intaller location.  It could be more clear that only the Vidalia app need be dragged.<br />
+thanks for the great software.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 20 Feb 2010 06:17:36 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FExperimental_OS_X_Drag_and_Drop_Vidalia_Bundle_Installer&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:17:15 AM CDT</span>
+<!-- Created <span class="date">Tue 13 Jan 2009 10:26:22 AM CST</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

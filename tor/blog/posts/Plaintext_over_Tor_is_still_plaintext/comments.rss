@@ -1,0 +1,692 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Plaintext over Tor is still plaintext</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Anonymous: Comment 1</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_1/</link>
+
+	<pubDate>Wed, 02 Jun 2010 06:58:48 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:58:48Z</dcterms:modified>
+
+	<description>Anyone who is transmitting private information in plain text via Tor or a open public WiFi is just asking for it. Am I wrong for assuming this as common sense between us electronics people?
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 2</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_2/</link>
+
+	<pubDate>Wed, 02 Jun 2010 06:58:49 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:58:49Z</dcterms:modified>
+
+	<description>This is also true for any Internet connection.  Your ISP, local network provider, any hop in the path, etc can all intercept plaintext communications.  Users need to learn to better assess risks and act accordingly.  Encryption is cheap and easy, just not ubiquitous yet.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 3</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_3/</link>
+
+	<pubDate>Wed, 02 Jun 2010 06:58:50 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:58:50Z</dcterms:modified>
+
+	<description>&lt;p&gt;&quot;Anyone who is transmitting private information in plain text via Tor or a open public WiFi is just asking for it&quot;&lt;/p&gt;
+
+&lt;p&gt;You dont even know what you&#39;re talking about, eh? NOONE can read your data while is still is INSIDE the TOR-Network - ONLY the Exit-Node is able to read everything ... so if your exit-Node is trusted AND you dont leak data elsewhere you&#39;re pretty much unimpeachable. But thats the main problem : many people have big security-holes in their systems which even TOR is unable to close / bypass.&lt;br /&gt;
+So all in all your statement is incorrect - only the latter people (with open public WiFis) are asking for it, TOR-users most certainly not&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 4</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_4/</link>
+
+	<pubDate>Wed, 02 Jun 2010 06:58:51 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:58:51Z</dcterms:modified>
+
+	<description>I made the assumption that yes, they were talking about exiting the Tor network on to the open Internet.  Plaintext in Tor is encrypted.  If you&#39;re going to a hidden service, your plaintext is safe as it&#39;s wrapped in layers of encryption in transit.  If you&#39;re exiting the Tor network to an open IPv4/IPv6 Internet site, then you&#39;re on your own with plaintext.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 5</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_5/</link>
+
+	<pubDate>Wed, 02 Jun 2010 06:58:52 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:58:52Z</dcterms:modified>
+
+	<description>&lt;p&gt;&quot;ONLY the Exit-Node is able to read everything ... so if your exit-Node is trusted AND you dont leak data elsewhere you&#39;re pretty much unimpeachable.&quot;&lt;/p&gt;
+
+&lt;p&gt;Ooh, almost there. The path between the exit node and the destination is unencrypted. There are still as many places to tap the line as there are hops.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 6</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_6/</link>
+
+	<pubDate>Wed, 02 Jun 2010 06:58:53 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:58:53Z</dcterms:modified>
+
+	<description>&lt;p&gt;In the age of supercomputing (I presume), does encryption even offer acceptable security for when an encrypted file is presumably to be run through a supercomputer trying to break the encryption?&lt;/p&gt;
+
+&lt;p&gt;Just a general question, I have no knowledge about that stuff, but I cannot help being sceptical.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 7</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_7/</link>
+
+	<pubDate>Wed, 02 Jun 2010 06:58:54 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:58:54Z</dcterms:modified>
+
+	<description>No one tries to break the encryption anymore.  Attackers focus on software flaws, the user, or other side-channel attacks.  Instead of trying to decrypt a hard drive, just infect the machine with a keylogger and get the passphrase.  There are also lots of snake oil solutions out there which promote their secret, proprietary encryption algorithms.  These are generally the first to fall to brute force decryption.   However, brute force decryption is time consuming and expensive.  Side-channel attacks are cheaper and easier.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 8</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_8/</link>
+
+	<pubDate>Mon, 20 Sep 2010 06:58:55 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:58:55Z</dcterms:modified>
+
+	<description>NSA collects and analyses nearly all traffic on the internet all over the world today and breaks most encryption used today on the internet. Whether that is because of there superior processing power, encryption flaws or a combination of those and other factors they probably won&#39;t tell any outsiders about.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 9</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_9/</link>
+
+	<pubDate>Wed, 02 Jun 2010 06:58:56 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:58:56Z</dcterms:modified>
+
+	<description>In some sense, no one is trying to break specific instances of encryption.  People are trying to break RSA encryption by being able to factory Primary Numbers out of very large numbers faster.  Once that has been accomplished all modern encryption will be worthless.  Presumably if someone besides a math academic cracks this they won&#39;t tell the world though.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 10</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_10/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_10/</link>
+
+	<pubDate>Wed, 02 Jun 2010 06:58:57 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:58:57Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hi!!!!!!!!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;&amp;gt; &lt;em&gt;being able to factory Primary Numbers&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I know that people are also trying to find a way to factorize semiprimes (they&#39;re the product of two primes!!!!!) because they&#39;re used in the RSA encryption!!!! the RSA encryption isn&#39;t widely recommend anymore, because there is something of better available!!!!!!!!! it&#39;s also vulnerable to the Chinese remainder theorem, but i don&#39;t very know what&#39;s the real consequence of that (well, maybe, it&#39;s that you need big keys to have a good security!!!!!!!!!!!!)&lt;/p&gt;
+
+&lt;p&gt;I think that the RSA system is to avoid whenever it&#39;s possible!!!!!!!!! ElGamal, based on the very simple key exchange of diffie hellman is better!!! And there are also elliptic curve algorithms!!!! Yeah, everything is better than RSA!!!!!!!!!!!! but it don&#39;t think that the RSA is weak, atm!!!!!!!!! it&#39;s ok, but there is something of better!!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;It would be nice, if TOR could replace the RSA!!!!!! Better safe, than sorry!!!!!!!!!!!!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;Ha!!! With all this thinking about factors, guess what im thinking about?!!!!!!! it&#39;s my &lt;strong&gt;factor bee!!!!&lt;/strong&gt;  hahah!!!!!!!!! this is honey!!!&lt;/p&gt;
+
+&lt;p&gt;bye!!!!!!!!!&lt;br /&gt;
+~bee!!!!!!!!!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 11</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_11/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_11/</link>
+
+	<pubDate>Mon, 14 Jun 2010 06:58:58 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:58:58Z</dcterms:modified>
+
+	<description>Factorial-factorial-and-so-on? 1!. 2!. You use too many exclamation points.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 12</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_12/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_12/</link>
+
+	<pubDate>Wed, 02 Jun 2010 06:58:59 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:58:59Z</dcterms:modified>
+
+	<description>&lt;p&gt;In the age of supercomputing breaking large keys would take longer than it will take the sun to burn out.  As another responder said, social engineering and mistakes are how people attack encrypted data now.  Freezing RAM that has the key decrypted inside it is a major attack vector.  Hardware and software keyloggers work well in different scenarios.&lt;/p&gt;
+
+&lt;p&gt;If someone works out how to factor that other prime it&#39;s not the end of modern encryption, just public/private.  Symmetric keys should still work fine as I understand.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 13</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_13/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_13/</link>
+
+	<pubDate>Thu, 03 Jun 2010 06:59:00 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:00Z</dcterms:modified>
+
+	<description>&lt;p&gt;&quot;In the age of supercomputing&quot;&lt;br /&gt;
+What&#39;s that? Super computers nearly exist for as long as computers exist.&lt;/p&gt;
+
+&lt;p&gt;&quot;breaking large keys would take longer than it will take the sun to burn out.&quot;&lt;br /&gt;
+Wrong, but it takes very long even for big clusters - if you are using common sense and have chosen a secure password.&lt;/p&gt;
+
+&lt;p&gt;&quot;Freezing RAM that has the key decrypted inside it is a major attack vector.&quot;&lt;br /&gt;
+Depending on the situation, meaning it has to be frozen _very_ fast. If you are able to shut down your computer and if you are using something, like Liberté Linux you should be pretty secure.&lt;/p&gt;
+
+&lt;p&gt;&quot;Hardware and software keyloggers work well in different scenarios.&quot;&lt;br /&gt;
+Again, using a Live System, like Liberté Linux adds security. Against hardware keyloggers you can defend yourself using a secured case for your computer and a check, your hardware hasn&#39;t been modified. Maybe these ultra-flat rubber keyboards add an other layer of security or maybe a touch screen (be sure to clean it!).&lt;/p&gt;
+
+&lt;p&gt;&quot;If someone works out how to factor that other prime it&#39;s not the end of modern encryption, just public/private.&quot;&lt;br /&gt;
+Let&#39;s hope this never happens and make sure a lot of people research this, so it will be more likely we know about that, when it happens.&lt;/p&gt;
+
+&lt;p&gt;&quot;Symmetric keys should still work fine as I understand.&quot;&lt;br /&gt;
+Yeah, but they aren&#39;t always usable. If you want to be secure about cryptography, you should use OTPs, but they are even harder to use, but _very_ simple to implement.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 14</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_14/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_14/</link>
+
+	<pubDate>Thu, 03 Jun 2010 06:59:01 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:01Z</dcterms:modified>
+
+	<description>&lt;p&gt;I was replying to the above, who used the term &quot;supercomputing&quot;.  The context made it fairly clear he wasn&#39;t speaking about a Cray, he&#39;s speaking about the fact that my cell phone is more powerful than the full sized computer I built in university.  So, the sentence should be more clear given that context.&lt;/p&gt;
+
+&lt;p&gt;Brute forcing a 4096 bit key would likely take far longer on today&#39;s equipment than it will take the sun to burn out.  This is not actually an exaggeration (the sun should starting burning out in around 5 billion years - though this planet will fry in a mere 500 million).&lt;/p&gt;
+
+&lt;p&gt;You don&#39;t need to be very fast to freeze RAM, all you need is physical access while the computer is on.  If you use whole disk encryption on your boot disk you likely have at least that key in memory the whole time your OS is booted.  RAM freezing has been pulled off with very inexpensive, off the shelf equipment even by college students.  Seriously, expect average law enforcement to have a kit for this very soon as well as updated procedures to not power down machines that they find.  Sure, if you&#39;re in front of your computer when they kick your door down you can hit your power button.  This is not how most folks use computers (they leave them on all the time, sometimes even overnight) and most folks only maintain one computer, not multiples for different tasks.&lt;/p&gt;
+
+&lt;p&gt;Yes, Live OS CDs can help with keyloggers, so can inspecting your machine.  However, it&#39;s the very rare person who is this disciplined and uses their computer in such a fashion, only.  Most folks want to watch lolcat videos and check facebook too, this is where all that security falls down.&lt;/p&gt;
+
+&lt;p&gt;Hoping that no one figures out how to factor the 2nd prime is not worth anyone&#39;s energy, the research is compelling (and should be done, as you said), but the method either exists or doesn&#39;t, we don&#39;t really invent math, just discover it.  Regardless, we&#39;ll just move to something else and do the best we can if it does happen.&lt;/p&gt;
+
+&lt;p&gt;Symmetric keys work 100% of the time, it&#39;s their transmission that is a pain in the rump.  OTPs are symmetric keys, in fact.  Even your SSL session uses a temporary symmetric key that you share via public/private key exchange.  Like I said, we&#39;ll cross that bridge when we get to it.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 15</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_15/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_15/</link>
+
+	<pubDate>Wed, 02 Jun 2010 06:59:02 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:02Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hi!!!!!!!!!! &lt;/p&gt;
+
+&lt;p&gt;TOR works very well but only for what it&#39;s made for!!!!! Tor is also able to give end to end encryption, but only if it&#39;s used to connect with hidden services, within the tor-network!!!! &lt;/p&gt;
+
+&lt;p&gt;«Any plaintext communication over the Internet is open to intercept(&lt;em&gt;tor TCP streams are encrypted and are part of the internet too!!! but they aren&#39;t open to intercept!!&lt;/em&gt;). This is true if the transport mechanism is email, http, &lt;strong&gt;tor&lt;/strong&gt;(&lt;em&gt;wth??!!!!!!!!!&lt;/em&gt;), or carrier pigeons»&lt;/p&gt;
+
+&lt;p&gt;Even this article at the tor blog is wrong!!!!!!!!!!!! lololol!!!!!!!!!!!!!!!!!!!!!!!!!!!! All tor-to-tor traffic is encrypted!!! and not just towards hidden services!!! The only problem exists when you&#39;re going from one tor node to one non-tor node!!!(the public Net!!).&lt;br /&gt;
+If the endpoint of your connection is one hidden service, all &lt;strong&gt;plaintext&lt;/strong&gt; communication going through &lt;strong&gt;Tor&lt;/strong&gt; are very safe, because they&#39;re already encrypted!!!!! It doesn&#39;t even matter if it&#39;s a plain text SMTP, FTP or HTTP bit-stream!!!! It&#39;s okay to keep something in plaintext, as long as you&#39;re sending it to one hidden service!!!!!&lt;/p&gt;
+
+&lt;p&gt;Ah, yeah this is off topic, but I cannot read (and i don&#39;t want to read) that ryansholin website, because i&#39;m sure everything written there has been written by a dumbass, as he&#39;s using bb and it&#39;s blocking people from accessing his blog!!!!!!!!!!!!!!!!!! not smart!!!!!!! i wrote one article about that &lt;strong&gt;very useless application&lt;/strong&gt; only useful to &lt;strong&gt;break&lt;/strong&gt; the HTTP &lt;strong&gt;standard&lt;/strong&gt; at http://honeybeenet.altervista.org/beefree/?id=111101 !!!!!!!!!! everybody read it and uninstall that useless application polluting the WWW!!!!!!!!!!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;bye!!!!!!!!! ~bee!!!!!!!!!!!!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 16</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_16/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_16/</link>
+
+	<pubDate>Wed, 02 Jun 2010 06:59:03 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:03Z</dcterms:modified>
+
+	<description>&lt;p&gt;Bee,&lt;/p&gt;
+
+&lt;p&gt;We&#39;re talking about people exiting the tor network on to the open internet.  We at Tor are well aware of the encryption, even the layers of encryption, tor wraps around the user data as it travels through the tor circuits.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 17</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_17/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_17/</link>
+
+	<pubDate>Wed, 02 Jun 2010 06:59:04 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:04Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hi phobos!!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;Yeah, you&#39;re right!!!!!!!! im sorry!!!!!!!! I&#39;m sure you and you at TOR know how TOR works!!! ~~ you made it!!!!!!!!!! lol!!!!!!!!!!!!&lt;br /&gt;
+But this article; it seems to me a bit confusing!!! and «&lt;em&gt;confusion is contagious&lt;/em&gt;»!!!!!!! yeah!!&lt;/p&gt;
+
+&lt;p&gt;bye!!!!!!!!!!!&lt;br /&gt;
+~bee!!!!!!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 18</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_18/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_18/</link>
+
+	<pubDate>Thu, 30 Sep 2010 06:59:05 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:05Z</dcterms:modified>
+
+	<description>&lt;p&gt;You are a retard &quot;bee&quot;. You should be blocked.&lt;/p&gt;
+
+&lt;p&gt;You use far too many exclamation signs, and you don&#39;t understand even the basics.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 19</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_19/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_19/</link>
+
+	<pubDate>Wed, 02 Jun 2010 06:59:06 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:06Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;WikiLeaks no longer use Tor&lt;/strong&gt;, as far as the public are concerned.&lt;/p&gt;
+
+&lt;p&gt;Over six months ago, when the WikiLeaks.org project shut down for lack of money, they used to offer a  single &lt;strong&gt;Tor Hidden Service&lt;/strong&gt; method of visiting their website and submitting &quot;leaked&quot; documents.&lt;/p&gt;
+
+&lt;p&gt;http://wikileaks.org/wiki/WikiLeaks:Tor&lt;/p&gt;
+
+&lt;p&gt;http://gaddbiwdftapglkq.onion&lt;/p&gt;
+
+&lt;p&gt;However since the supposed re-launch last month,and during the &quot;time sensitive leaks only&quot; publishing phase this year, they &lt;strong&gt;no longer bother&lt;/strong&gt; to offer any Tor Hidden Services to the public.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;WikiLeaks no longer even offer an SSL or TLS session encrypted web downloads&lt;/strong&gt; for the &quot;leaked&quot; documents either.&lt;/p&gt;
+
+&lt;p&gt;e.g.&lt;/p&gt;
+
+&lt;p&gt;http://wikileaks.org/wiki/U.S._Intelligence_planned_to_destroy_WikiLeaks...&lt;/p&gt;
+
+&lt;p&gt;only offers unencrypted &lt;/p&gt;
+
+&lt;p&gt;File | Torrent  | Magnet&lt;/p&gt;
+
+&lt;p&gt;They do still, grudgingly, use their &lt;strong&gt;cloneable obsolete MD5 signed RapidSSL Digital Certificate&lt;/strong&gt; as their allegedly &quot;secure&quot; document upload method.&lt;/p&gt;
+
+&lt;p&gt;https://secure.wikileaks.org/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;WikiLeaks let their only authenticated public PGP public encryption key expire&lt;/strong&gt; back in November 2007&lt;/p&gt;
+
+&lt;p&gt;http://pgp.zdv.uni-mainz.de:11371/pks/lookup?op=get&amp;amp;search=0xC3717235172...&lt;/p&gt;
+
+&lt;p&gt;Many of us are sympathetic to WikiLeaks.org stated aims of better investigative journalism and government and megacorps transparency etc., but they are becoming a textbook example of how &lt;strong&gt;not&lt;/strong&gt; to run a &quot;protect the whistleblowers&quot; website in practice.&lt;/p&gt;
+
+&lt;p&gt;Would you trust WikiLeaks.org  with your life or career prospects, or those of your family and friends ?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 20</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_20/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_20/</link>
+
+	<pubDate>Wed, 02 Jun 2010 06:59:07 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:07Z</dcterms:modified>
+
+	<description>Perhaps you should take this up with Wikileaks, rather than on our blog.  You may have noticed we aren&#39;t wikileaks.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 21</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_21/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_21/</link>
+
+	<pubDate>Wed, 02 Jun 2010 06:59:08 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:08Z</dcterms:modified>
+
+	<description>&lt;p&gt;Yet you speak on their behalf, without documenting your sources:&lt;/p&gt;
+
+&lt;p&gt;&amp;gt; We hear from the Wikileaks folks [...]&lt;/p&gt;
+
+&lt;p&gt;Do you mean to say that the Tor Project only wishes to act as Wikileaks&#39; megaphone, rather than as a genuine interlocutor?&lt;/p&gt;
+
+&lt;p&gt;I wasn&#39;t aware this blog was about spreading Wikileaks&#39; propaganda.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 22</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_22/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_22/</link>
+
+	<pubDate>Wed, 02 Jun 2010 06:59:09 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:09Z</dcterms:modified>
+
+	<description>&lt;p&gt;Perhaps you missed the two links in that sentence, referencing their comments.&lt;/p&gt;
+
+&lt;p&gt;Fwiw, I&#39;ll bring these points up with Wikileaks next time I see them.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 23</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_23/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_23/</link>
+
+	<pubDate>Wed, 02 Jun 2010 06:59:10 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:10Z</dcterms:modified>
+
+	<description>&lt;p&gt;&quot;You may have noticed that we aren&#39;t wikileaks&quot;&lt;/p&gt;
+
+&lt;p&gt;However the mainstream media is mentioning the Tor project in the same breath as WikiLeaks.org &lt;/p&gt;
+
+&lt;p&gt;WikiLeaks.org may or may not use standard or modified Tor software internally, in secret, but they certainly no longer use it on their public facing website, even though they still claim to do so.&lt;/p&gt;
+
+&lt;p&gt;&quot;Perhaps you should take this up with Wikileaks, rather than our blog&quot;&lt;/p&gt;
+
+&lt;p&gt;They have blocked new public comments on their &quot;wiki&quot; as well.&lt;/p&gt;
+
+&lt;p&gt;If you do have personal contacts with the WIkiLeaks people, then please ask them to either re-instate their public Tor Hidden Service or to stop falsely trading on the reputation of Tor, for their own &quot;maximum political impact&quot; purposes,  because it is damaging the perception of the &quot;Tor brand&quot;.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 24</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_24/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_24/</link>
+
+	<pubDate>Wed, 02 Jun 2010 06:59:11 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:11Z</dcterms:modified>
+
+	<description>There is something wrong with my tor. Doesn&#39;t download encrypted pages. Do  you know why?
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 25</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_25/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_25/</link>
+
+	<pubDate>Wed, 02 Jun 2010 06:59:12 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:12Z</dcterms:modified>
+
+	<description>Please email tor-assistants or open a ticket at trac.torproject.org.  Thanks.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 26</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_26/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_26/</link>
+
+	<pubDate>Wed, 02 Jun 2010 06:59:13 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:13Z</dcterms:modified>
+
+	<description>Could you write the email address ? I didn&#39;t find it. 
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 27</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_27/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_27/</link>
+
+	<pubDate>Thu, 03 Jun 2010 06:59:14 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:14Z</dcterms:modified>
+
+	<description>Tor is the best network to use you guys keep it up....God bless all staffs of TOR
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 28</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_28/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_28/</link>
+
+	<pubDate>Fri, 04 Jun 2010 06:59:15 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:15Z</dcterms:modified>
+
+	<description>&lt;p&gt;People,&lt;/p&gt;
+
+&lt;p&gt;Why is this so difficult to understand?  ENCRYPT YOUR TRAFFIC ON THE INTERNET OR SUFFER THE CONSEQUENCES.&lt;/p&gt;
+
+&lt;p&gt;I used CAPS LOCK for extra power.  My tiger has got fu.&lt;/p&gt;
+
+&lt;p&gt;Learn the difference between encryption and authentication.  Ssl certs blur these two concepts.  A lock icon in your browser does not make you safe.  Phobos is head of the curve by not trusting the certificate authority cartel, see https://blog.torproject.org/blog/life-without-ca.  Notice this blog is ENCRYPTED as well.  &lt;/p&gt;
+
+&lt;p&gt;You are forewarned.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 29</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_29/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_29/</link>
+
+	<pubDate>Sun, 27 Mar 2011 06:59:16 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:16Z</dcterms:modified>
+
+	<description>All the information transmitted from and to this blog is public, so I don&#39;t really understand why it is encrypted.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 30</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_30/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comment_30/</link>
+
+	<pubDate>Mon, 21 Mar 2011 06:59:17 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:59:17Z</dcterms:modified>
+
+	<description>When running a Tor Exit Node, my RealPlayer Downloader which runs in the background (similar to NetVideo Hunter Firefox plugin) captures FLV files of Arab porn sometimes. This definitely opens up the possibility of Tor nodes being run by hostile people.  
+</description>
+
+
+</item>
+
+</channel>
+</rss>

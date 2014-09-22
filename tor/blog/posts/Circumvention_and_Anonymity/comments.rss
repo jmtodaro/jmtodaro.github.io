@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Circumvention and Anonymity</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Circumvention_and_Anonymity/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>arma: Comment 1</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Circumvention_and_Anonymity/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Circumvention_and_Anonymity/comment_1/</link>
+
+	<pubDate>Tue, 13 Jan 2009 06:17:05 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:17:05Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;a href=&quot;http://blogs.law.harvard.edu/hroberts/2009/01/09/popular-chinese-filtering-circumvention-tools-dynaweb-freegate-gpass-and-firephoenix-sell-user-data/&quot; title=&quot;http://blogs.law.harvard.edu/hroberts/2009/01/09/popular-chinese-filtering-circumvention-tools-dynaweb-freegate-gpass-and-firephoenix-sell-user-data/&quot; rel=&quot;nofollow&quot;&gt;http://blogs.law.harvard.edu/hroberts/2009/01/09/popular-chinese-filteri...&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&quot;Three of the circumvention tools — DynaWeb FreeGate, GPass, and FirePhoenix — used most widely to get around China’s Great Firewall are tracking and selling the individual web browsing histories of their users.&quot;&lt;/p&gt;
+
+&lt;p&gt;Even if they&#39;re not selling, and only tracking, that still seems to be a problematic&lt;br /&gt;
+design. It would be great to have some details on exactly what they track, where&lt;br /&gt;
+they track it, how they make sure to keep it safe, etc.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 2</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Circumvention_and_Anonymity/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Circumvention_and_Anonymity/comment_2/</link>
+
+	<pubDate>Tue, 13 Jan 2009 06:17:06 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:17:06Z</dcterms:modified>
+
+	<description>Why do we not need to trust you? If you want to use tor (not theoretically with an own net, but in a way that enables me NOW to surf anonymous), i have to trust the keys of your directory server. If you give your keys out, somebody can fake the server and publish only malicious tor-nodes. if done properly nobody will suspect.
+</description>
+
+
+</item>
+<item>
+
+	<title>arma: Comment 3</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Circumvention_and_Anonymity/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Circumvention_and_Anonymity/comment_3/</link>
+
+	<pubDate>Wed, 14 Jan 2009 06:17:07 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:17:07Z</dcterms:modified>
+
+	<description>&lt;p&gt;That&#39;s why the directory design is distributed. There are currently&lt;br /&gt;
+six directory authorities, and a majority of them (four) need to agree&lt;br /&gt;
+about what nodes are in the network before your Tor client believes&lt;br /&gt;
+it. Specifically, the six are run by me (moria1), a cypherpunk in&lt;br /&gt;
+Amsterdam (dizum), the German CCC (dannenberg), our Debian packager&lt;br /&gt;
+who lives in Austria (tor26), a Tor developer in Germany (gabelmoo), and a&lt;br /&gt;
+Tor developer in San Francisco (ides).   &lt;/p&gt;
+
+&lt;p&gt;You do have to trust this group as a whole not to work together to try&lt;br /&gt;
+to trick you, but I think that&#39;s a better situation than having a central&lt;br /&gt;
+place that could trick you but promises not to.&lt;/p&gt;
+
+&lt;p&gt;Another big aspect of trust that we feel is important is transparency. We&lt;br /&gt;
+try to tell you all the details of how Tor works, and be up-front about&lt;br /&gt;
+pros and cons. You can read more about the v3 directory protocol here:&lt;br /&gt;
+&lt;a href=&quot;https://svn.torproject.org/svn/tor/trunk/doc/spec/dir-spec.txt&quot; title=&quot;https://svn.torproject.org/svn/tor/trunk/doc/spec/dir-spec.txt&quot; rel=&quot;nofollow&quot;&gt;https://svn.torproject.org/svn/tor/trunk/doc/spec/dir-spec.txt&lt;/a&gt;&lt;br /&gt;
+and a more general explanation of Tor&#39;s various layers of keys here:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/faq#KeyManagement&quot; title=&quot;https://www.torproject.org/faq#KeyManagement&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/faq#KeyManagement&lt;/a&gt;&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 4</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Circumvention_and_Anonymity/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Circumvention_and_Anonymity/comment_4/</link>
+
+	<pubDate>Wed, 14 Jan 2009 06:17:08 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:17:08Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hi,&lt;/p&gt;
+
+&lt;p&gt;every time I go to &lt;a href=&quot;https://mail.google.com&quot; title=&quot;https://mail.google.com&quot; rel=&quot;nofollow&quot;&gt;https://mail.google.com&lt;/a&gt; via TOR, Firefox warns me that the connection is not fully encrypted and contains unencrypted info.&lt;br /&gt;
+Tried several exit nodes.&lt;/p&gt;
+
+&lt;p&gt;What&#39;s up with that?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 5</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Circumvention_and_Anonymity/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Circumvention_and_Anonymity/comment_5/</link>
+
+	<pubDate>Wed, 14 Jan 2009 06:17:09 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:17:09Z</dcterms:modified>
+
+	<description>&lt;p&gt;there&#39;s an option in gmail to force all connections over ssl.  if you haven&#39;t enabled this option, perhaps that&#39;s why.  Another option is to start the Tamper Data plugin and see what is going plaintext to gmail.  &lt;/p&gt;
+
+&lt;p&gt;I know with the option in gmail set to all ssl, firefox doesn&#39;t warn about mixed content.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Gifts to Pakistan (not verified): Comment 6</title>
+	<dcterms:creator>Gifts to Pakistan (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Circumvention_and_Anonymity/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Circumvention_and_Anonymity/comment_6/</link>
+
+	<pubDate>Wed, 25 Nov 2009 06:17:10 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:17:10Z</dcterms:modified>
+
+	<description>Really nice blog, very informative.Looking forward to more stuff
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 7</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Circumvention_and_Anonymity/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Circumvention_and_Anonymity/comment_7/</link>
+
+	<pubDate>Fri, 26 Feb 2010 06:17:11 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:17:11Z</dcterms:modified>
+
+	<description>Nice blog entry.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 8</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Circumvention_and_Anonymity/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Circumvention_and_Anonymity/comment_8/</link>
+
+	<pubDate>Thu, 07 Oct 2010 06:17:12 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:17:12Z</dcterms:modified>
+
+	<description>If I download a file such as a pdf using tor will my ip address be exposed?  Maybe a dumb question I just want to be sure.
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 9</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Circumvention_and_Anonymity/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Circumvention_and_Anonymity/comment_9/</link>
+
+	<pubDate>Fri, 08 Oct 2010 06:17:13 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:17:13Z</dcterms:modified>
+
+	<description>if you are configured correctly, no.  opening the pdf may be a risk because of javascript in the pdfs run by the adobe reader.
+</description>
+
+
+</item>
+
+</channel>
+</rss>

@@ -1,0 +1,558 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>September 2008 Progress Report</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FSeptember_2008_Progress_Report&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">September 2008 Progress Report</a>
+
+</span>
+
+
+<div id="content">
+<p><strong>Releases</strong><br />
+Vidalia 0.1.9 (released September 2) fixes a big pile of bugs and inconveniences in the earlier releases. This new release marks the first "stable" release of Vidalia, in that we have now branched into a stable (0.1.x) branch and a development (0.2.x) branch.<br />
+<a href="http://trac.vidalia-project.net/browser/vidalia/tags/vidalia-0.1.9/CHANGELOG" title="http://trac.vidalia-project.net/browser/vidalia/tags/vidalia-0.1.9/CHANGELOG" rel="nofollow">http://trac.vidalia-project.net/browser/vidalia/tags/vidalia-0.1.9/CHANG...</a></p>
+
+<p>Tor 0.2.0.31 (released September 3) addresses two potential anonymity issues, starts to fix a big bug we're seeing where in rare cases traffic from one Tor stream gets mixed into another stream, and fixes a variety of smaller issues.<br />
+<a href="http://archives.seul.org/or/announce/Sep-2008/msg00000.html" title="http://archives.seul.org/or/announce/Sep-2008/msg00000.html" rel="nofollow">http://archives.seul.org/or/announce/Sep-2008/msg00000.html</a></p>
+
+<p>Tor 0.2.1.6-alpha (released September 30) further improves performance and robustness of hidden services, starts work on supporting per-country relay selection, and fixes a variety of smaller issues.<br />
+<a href="http://archives.seul.org/or/talk/Oct-2008/msg00093.html" title="http://archives.seul.org/or/talk/Oct-2008/msg00093.html" rel="nofollow">http://archives.seul.org/or/talk/Oct-2008/msg00093.html</a></p>
+
+<p><strong>Circumvention Enhancements</strong><br />
+From the Vidalia 0.1.9 ChangeLog:<br />
+"Correct the location of the simplified Chinese help files so they will actually load again."</p>
+
+<p>From the Tor 0.2.1.6-alpha ChangeLog:<br />
+"Start work to allow node restrictions to include country codes. The syntax to exclude nodes in a country with country code XX is "ExcludeNodes {XX}". Patch from Robert Hogan. It still needs some refinement to decide what config options should take priority if you ask to both use a particular node and exclude it."<br />
+This feature should allow users in China to specify that they don't want to enter (and/or exit) in China, which in theory could provide stronger security for them.</p>
+
+<p>From the Tor 0.2.1.6-alpha ChangeLog:<br />
+"Allow ports 465 and 587 in the default exit policy again. We had rejected them in 0.1.0.15, because back in 2005 they were commonly misconfigured and ended up as spam targets. We hear they are better locked down these days." <span class="read-more"><a href="http://blog.torproject.org/blog/september-2008-progress-report"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-7e1717145a80a935bb75f7a90b4a8380">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>I've come across TOR before and liked the idea - I understand the basic principle and see how the basic concept works as a security measure.  I didn't do much at the time but now I'm looking for a safe way to surf and use the Internet.</p>
+
+<p>However, having read your pages, I can't make sense of what it's all about and there seem to be an awful lot of settings that mean nothing to me.</p>
+
+<p>Can you explain to me, in relatively simple terms what joining TOR means, what sort of security it will afford me, am I expecting more in terms of security than it is really capable of providing and, if it is the security measure that I'm looking for, how do I go about getting it onto my computer (MAC Leopard) so that it works and I can surf and use the internet without the nosey buggers seeing what I am up to.</p>
+
+<p>I'd appreciate your thoughts.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 25 Nov 2008 06:12:38 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ca587ee0a3405c81fe66043ce9c9feda">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+There is no "joining" per se.  It's a free software program that anyone can use.  You can read more about Tor at <a href="https://www.torproject.org/30seconds.html.en" title="https://www.torproject.org/30seconds.html.en" rel="nofollow">https://www.torproject.org/30seconds.html.en</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 01 Dec 2008 06:12:39 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-db0b056359ea11bc3d0dfcb744cee78d">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+Is the Tor Project working on a Portable Tor for USB keys?  I have seen one on the net that packages Tor, Privoxy and Vidalia with the website having some links back to The Tor Project but I do not know if it is coming from a reliable source.  I began to do an install and it did not do what the instructions said it should.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnon%20Y.%20Mous%20%28not%20verified%29&amp;do=goto">Anon Y. Mous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 11 Jan 2009 06:12:40 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-22c2af88985ed511a49ea96ce2d8b106">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+We have something similar at <a href="https://www.torproject.org/torbrowser/" title="https://www.torproject.org/torbrowser/" rel="nofollow">https://www.torproject.org/torbrowser/</a>.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 12 Jan 2009 06:12:41 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2553959c373f2638b47371d6196e8a3e">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>Thanks for pointing me to the Tor bundle.</p>
+
+<p>Two challenges:  1.  It is in Alpha;  2.  I already have Portable FF3.05.  I read the install instructions and it does not appear to include a custom install option so that I can choose which components to install (ie everything but FF).  If not, is there any reason why I cannot install the standalone versions of Tor and the other complementary apps on my key?</p>
+
+<p>I have a lot of time invested in building my FF with add-ons and extensions and don't want to reverse everything.  Unfortunately I don't have the time at the moment to be involved in testing or I would install the alpha bundle.</p>
+
+<p>Also, I am using the PortableApps.com platform.  Are there any plans for the TorProject to build a portable version for this platform or is that what the Tor Bundle is intended for?  I will be asking the same question on the PA forum:-)</p>
+
+<p>Thanks.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnon%20Y.%20Mous%20%28not%20verified%29&amp;do=goto">Anon Y. Mous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 12 Jan 2009 06:12:42 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c123d0c1e3a9ab70d245cf7885dfe016">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+ya any updates for the tor browser bundle on tat link or still the same version 2.01.8.Please tell me
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 12 Jan 2009 06:12:43 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bd48782b0095548eb3bc942d9b37448a">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p>OK, slap me.  For whatever reason I had not searched the PA forums.  There is lots of discussion about portable TOR although there is still not an official PA build.  So I'd still settle for installing the standalone build from here if feasable.<br />
+Thanks...and I'll try to do my homework next time;-)</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnon%20Y.%20Mous%20%28not%20verified%29&amp;do=goto">Anon Y. Mous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 12 Jan 2009 06:12:44 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-cb4904f374f73b9ae63bad1abeec425d">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+<p>ERROR on a SUSE 11 Desktop</p>
+
+<p>Package /root/Desktop/tor-0.2.0.34-tor.0.suse.i386.rpm could not be installed.</p>
+
+<p>Details:<br />
+Subprocess failed. Error: RPM failed: error: Failed dependencies:<br />
+    libevent-1.4.so.2 is needed by tor-0.2.0.34-tor.0.suse.i586<br />
+regards</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 04 Jun 2009 06:12:45 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-75a263ed0ef9571bf683f93707073efb">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+<p>The actual error there is that libevent-1.4 isn't installed, not that there isn't an i586 rpm.  i386 rpms work fine in i586 systems.  </p>
+
+<p>You should install libevent-1.4.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 04 Jun 2009 06:12:46 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FSeptember_2008_Progress_Report&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:12:37 AM CDT</span>
+<!-- Created <span class="date">Tue 14 Oct 2008 07:07:12 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

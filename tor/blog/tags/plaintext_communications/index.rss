@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged plaintext_communications</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/plaintext_communications/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>mikeperry: HTTPS Everywhere Firefox addon helps you encrypt web traffic</title>
+	<dcterms:creator>mikeperry</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/</link>
+
+
+	<category>/tags/plaintext_communications</category>
+
+	<category>/tags/privacy</category>
+
+	<category>/tags/tor</category>
+
+
+	<pubDate>Thu, 17 Jun 2010 19:55:30 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:19Z</dcterms:modified>
+
+	<description>&lt;p&gt;Today the EFF and the Tor Project are launching a public beta of a new Firefox extension called &lt;a href=&quot;https://eff.org/https-everywhere/&quot; rel=&quot;nofollow&quot;&gt;HTTPS Everywhere&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This Firefox extension was inspired by the launch of Google&#39;s encrypted search option. We wanted a way to ensure that every search our browsers sent was encrypted, including the search box and URL bar features. At the same time, we were also able to encrypt most or all of the browser&#39;s communications with other popular sites that support SSL, but don&#39;t provide it by default.&lt;/p&gt;
+
+&lt;p&gt;Our approach is based on the &lt;a href=&quot;http://hackademix.net/2009/09/23/strict-transport-security-in-noscript/&quot; rel=&quot;nofollow&quot;&gt;NoScript STS&lt;/a&gt; implementation, but is more expressive in the manner in which &lt;a href=&quot;https://www.eff.org/https-everywhere/rulesets&quot; rel=&quot;nofollow&quot;&gt;HTTPS-enforcing rules are written&lt;/a&gt;. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/https-everywhere-firefox-addon-helps-you-encrypt-web-traffic&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/HTTPS_Everywhere_Firefox_addon_helps_you_encrypt_web_traffic/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Plaintext over Tor is still plaintext</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/</link>
+
+
+	<category>/tags/exit_relays</category>
+
+	<category>/tags/plaintext_communications</category>
+
+	<category>/tags/tor</category>
+
+	<category>/tags/wikileaks</category>
+
+
+	<pubDate>Tue, 01 Jun 2010 21:36:41 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:58:47Z</dcterms:modified>
+
+	<description>&lt;p&gt;Recently, a few articles have been published regarding Tor, &lt;a href=&quot;http://wikileaks.org/&quot; rel=&quot;nofollow&quot;&gt;Wikileaks&lt;/a&gt;, and snooping data coming out of the Tor network.  I write to remind our users, and people in search of privacy enhancing technology, that good software is just one part of the solution. Education is just as important. This is why there is a &lt;a href=&quot;http://localhost//www.torproject.org/download/download.html.en#warning&quot; rel=&quot;nofollow&quot;&gt;warning on the Tor download page&lt;/a&gt; about what Tor does and does not do.  We also have a &lt;a href=&quot;https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/TorFAQ#CanexitnodeseavesdroponcommunicationsIsntthatbad&quot; rel=&quot;nofollow&quot;&gt;FAQ entry about this topic&lt;/a&gt;.  Any plaintext communication over the Internet is open to intercept.  This is true if the transport mechanism is email, http, tor, or carrier pigeons.  Tor does not magically encrypt the Internet from end to end.  Tor does wrap your traffic in encrypted layers as it transports it through the Tor network. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/plaintext-over-tor-still-plaintext&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

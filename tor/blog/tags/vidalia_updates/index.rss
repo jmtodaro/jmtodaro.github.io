@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged vidalia_updates</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/vidalia_updates/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Tor Browser Bundle 1.2.10 Released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_10_Released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_10_Released/</link>
+
+
+	<category>/tags/bridges</category>
+
+	<category>/tags/libevent_updates</category>
+
+	<category>/tags/openssl_fixes</category>
+
+	<category>/tags/tor_browser_bundle</category>
+
+	<category>/tags/vidalia_updates</category>
+
+
+	<pubDate>Fri, 20 Nov 2009 22:43:26 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:42:40Z</dcterms:modified>
+
+	<description>&lt;p&gt;On November 20, we released an updated Tor Browser Bundle, version 1.2.10, which includes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt; updated Vidalia to 0.2.6&lt;/li&gt;
+&lt;li&gt; updated Pidgin to 2.6.3&lt;/li&gt;
+&lt;li&gt; updated Tor to 0.2.1.20&lt;/li&gt;
+&lt;li&gt; updated Firefox to 3.0.15&lt;/li&gt;
+&lt;li&gt; updated OpenSSL to 0.9.8l&lt;/li&gt;
+&lt;li&gt; updated libevent to 1.4.13&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can download the updated version at &lt;a href=&quot;https://www.torproject.org/torbrowser/&quot; title=&quot;https://www.torproject.org/torbrowser/&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/torbrowser/&lt;/a&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_10_Released/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Tor 0.2.1.20 Released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_20_Released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_20_Released/</link>
+
+
+	<category>/tags/bugfixes</category>
+
+	<category>/tags/bundle_upgrades</category>
+
+	<category>/tags/performance_enhancements</category>
+
+	<category>/tags/vidalia_updates</category>
+
+
+	<pubDate>Thu, 12 Nov 2009 19:35:58 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:41:04Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor 0.2.1.20 fixes a crash bug when you&#39;re accessing many hidden services&lt;br /&gt;
+at once, prepares for more performance improvements, and fixes a bunch&lt;br /&gt;
+of smaller bugs.&lt;/p&gt;
+
+&lt;p&gt;The Windows and OS X bundles also include a more recent Vidalia, and&lt;br /&gt;
+switch from Privoxy to Polipo.&lt;/p&gt;
+
+&lt;p&gt;The OS X installers are now drag and drop. It&#39;s best to un-install&lt;br /&gt;
+Tor/Vidalia and then install this new bundle, rather than upgrade. If&lt;br /&gt;
+you want to upgrade, you&#39;ll need to update the paths for Tor and Polipo&lt;br /&gt;
+in the Vidalia Settings window.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/easy-download&quot; title=&quot;https://www.torproject.org/easy-download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/easy-download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.20 - 2009-10-15&lt;br /&gt;
+  o Major bugfixes:&lt;/p&gt;
+
+&lt;p&gt;    - Send circuit or stream sendme cells when our window has decreased&lt;br /&gt;
+      by 100 cells, not when it has decreased by 101 cells. Bug uncovered&lt;br /&gt;
+      by Karsten when testing the &quot;reduce circuit window&quot; performance&lt;br /&gt;
+      patch. Bugfix on the 54th commit on Tor -- from July 2002,&lt;br /&gt;
+      before the release of Tor 0.0.0. This is the new winner of the &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02120-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_20_Released/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

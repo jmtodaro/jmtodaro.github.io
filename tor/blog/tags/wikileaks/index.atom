@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged wikileaks</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/wikileaks/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/wikileaks/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/wikileaks/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:58:47Z</updated>
+<entry>
+	<title>Plaintext over Tor is still plaintext</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/exit_relays" />
+
+	<category term="/tags/plaintext_communications" />
+
+	<category term="/tags/tor" />
+
+	<category term="/tags/wikileaks" />
+
+
+	<updated>2011-04-05T11:58:47Z</updated>
+	<published>2010-06-02T02:36:41Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Recently, a few articles have been published regarding Tor, &lt;a href=&quot;http://wikileaks.org/&quot; rel=&quot;nofollow&quot;&gt;Wikileaks&lt;/a&gt;, and snooping data coming out of the Tor network.  I write to remind our users, and people in search of privacy enhancing technology, that good software is just one part of the solution. Education is just as important. This is why there is a &lt;a href=&quot;http://localhost//www.torproject.org/download/download.html.en#warning&quot; rel=&quot;nofollow&quot;&gt;warning on the Tor download page&lt;/a&gt; about what Tor does and does not do.  We also have a &lt;a href=&quot;https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/TorFAQ#CanexitnodeseavesdroponcommunicationsIsntthatbad&quot; rel=&quot;nofollow&quot;&gt;FAQ entry about this topic&lt;/a&gt;.  Any plaintext communication over the Internet is open to intercept.  This is true if the transport mechanism is email, http, tor, or carrier pigeons.  Tor does not magically encrypt the Internet from end to end.  Tor does wrap your traffic in encrypted layers as it transports it through the Tor network. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/plaintext-over-tor-still-plaintext&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Plaintext_over_Tor_is_still_plaintext/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

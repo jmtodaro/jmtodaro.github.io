@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged security_fixes</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/security_fixes/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/security_fixes/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/security_fixes/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:12:07Z</updated>
+<entry>
+	<title>Tor 0.2.2.21-alpha is out (security patches)</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_21-alpha_is_out_-security_patches-/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_21-alpha_is_out_-security_patches-/"/>
+
+	<author><name>erinn</name></author>
+
+
+
+
+
+
+	<category term="/tags/alpha_release" />
+
+	<category term="/tags/security_fixes" />
+
+	<category term="/tags/tbb" />
+
+	<category term="/tags/tor" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+	<category term="/tags/updated_packages" />
+
+
+	<updated>2011-04-05T12:12:07Z</updated>
+	<published>2011-01-19T04:25:48Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Note to &lt;strong&gt;64-bit Linux Tor Browser Bundle&lt;/strong&gt; users: The previous bundles contained Tor 0.2.2.20-alpha. Please upgrade to &lt;a href=&quot;https://www.torproject.org/dist/torbrowser/linux/tor-browser-gnu-linux-i686-1.1.3-dev-en-US.tar.gz&quot; rel=&quot;nofollow&quot;&gt;1.1.3-1&lt;/a&gt; (&lt;a href=&quot;https://www.torproject.org/dist/torbrowser/linux/tor-browser-gnu-linux-i686-1.1.3-dev-en-US.tar.gz.asc&quot; rel=&quot;nofollow&quot;&gt;sig&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.2.21-alpha includes all the patches from Tor 0.2.1.29, which&lt;br /&gt;
+continues our recent code security audit work. The main fix resolves&lt;br /&gt;
+a remote heap overflow vulnerability that can allow remote code&lt;br /&gt;
+execution (CVE-2011-0427). Other fixes address a variety of assert&lt;br /&gt;
+and crash bugs, most of which we think are hard to exploit remotely.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;All Tor users should upgrade.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download/download&quot; title=&quot;https://www.torproject.org/download/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download/download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.2.21-alpha - 2011-01-15&lt;br /&gt;
+&lt;strong&gt;Major bugfixes (security), also included in 0.2.1.29:&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02221-alpha-out-security-patches&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_21-alpha_is_out_-security_patches-/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_21-alpha_is_out_-security_patches-/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Lots of new Tor packages</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Lots_of_new_Tor_packages/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Lots_of_new_Tor_packages/"/>
+
+	<author><name>erinn</name></author>
+
+
+
+
+
+
+	<category term="/tags/alpha_releases" />
+
+	<category term="/tags/apple_osx_love" />
+
+	<category term="/tags/ppc" />
+
+	<category term="/tags/security_fixes" />
+
+	<category term="/tags/security_updates" />
+
+	<category term="/tags/stable_releases" />
+
+	<category term="/tags/tbb" />
+
+	<category term="/tags/tor" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+	<category term="/tags/torbrowser" />
+
+	<category term="/tags/updated_packages" />
+
+
+	<updated>2011-04-05T12:12:05Z</updated>
+	<published>2011-01-17T17:36:38Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;A new Tor stable (&lt;a href=&quot;https://www.torproject.org/dist/tor-0.2.1.29.tar.gz&quot; rel=&quot;nofollow&quot;&gt;0.2.1.29&lt;/a&gt;) (&lt;a href=&quot;https://www.torproject.org/dist/tor-0.2.1.29.tar.gz.asc&quot; rel=&quot;nofollow&quot;&gt;sig&lt;/a&gt;) and Tor alpha (&lt;a href=&quot;https://www.torproject.org/dist/tor-0.2.2.21-alpha.tar.gz&quot; rel=&quot;nofollow&quot;&gt;0.2.2.21-alpha&lt;/a&gt;) (&lt;a href=&quot;https://www.torproject.org/dist/tor-0.2.2.21-alpha.tar.gz.asc&quot; rel=&quot;nofollow&quot;&gt;sig&lt;/a&gt;) have been released and all users are strongly encouraged to upgrade.&lt;/p&gt;
+
+&lt;p&gt;The following packages have been released:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Windows expert packages (stable &amp;amp; alpha)&lt;/li&gt;
+&lt;li&gt;Vidalia bundles (stable &amp;amp; alpha for Windows, and OS X ppc &amp;amp; x86)&lt;/li&gt;
+&lt;li&gt;Tor Browser Bundles for Windows, Linux, and OS X (see below for other updates)&lt;/li&gt;
+&lt;li&gt;RPM packages (stable &amp;amp; alpha)&lt;/li&gt;
+&lt;li&gt;Debian and Ubuntu packages (stable &amp;amp; alpha)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can download all of these from &lt;a href=&quot;https://www.torproject.org/download&quot; rel=&quot;nofollow&quot;&gt;our download page&lt;/a&gt; or package repositories.&lt;/p&gt;
+
+&lt;p&gt;If you encounter any problems, please file a bug on our &lt;a href=&quot;https://trac.torproject.org/&quot; rel=&quot;nofollow&quot;&gt;bug tracker&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tor Browser Bundles&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Windows Bundles&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;1.3.17: Released 2011-01-16&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Update Tor to 0.2.1.29&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Linux Bundles&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;1.1.3:  Released 2011-01-16&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Update Tor to 0.2.2.21-alpha&lt;/li&gt;
+&lt;li&gt;Update NoScript to 2.0.9.3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;OS X Bundles&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;1.0.10: Released 2011-01-16&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Update Tor to 0.2.2.21-alpha&lt;/li&gt;
+&lt;li&gt;Update NoScript to 2.0.9.3&lt;/li&gt;
+&lt;/ul&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Lots_of_new_Tor_packages/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Lots_of_new_Tor_packages/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor 0.2.1.29 is released (security patches)</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_29_is_released_-security_patches-/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_29_is_released_-security_patches-/"/>
+
+	<author><name>erinn</name></author>
+
+
+
+
+
+
+	<category term="/tags/security_fixes" />
+
+	<category term="/tags/stable_releases" />
+
+	<category term="/tags/tor" />
+
+
+	<updated>2011-04-05T12:12:04Z</updated>
+	<published>2011-01-17T16:21:36Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor 0.2.1.29 continues our recent code security audit work. The main&lt;br /&gt;
+fix resolves a remote heap overflow vulnerability that can allow remote&lt;br /&gt;
+code execution. Other fixes address a variety of assert and crash bugs,&lt;br /&gt;
+most of which we think are hard to exploit remotely.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;All Tor users should upgrade.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download/download&quot; title=&quot;https://www.torproject.org/download/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download/download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.29 - 2011-01-15&lt;br /&gt;
+&lt;strong&gt;Major bugfixes (security):&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02129-released-security-patches&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt; Fix a heap overflow bug where an adversary could cause heap&lt;br /&gt;
+      corruption. This bug probably allows remote code execution&lt;br /&gt;
+      attacks. Reported by &quot;debuger&quot;. Fixes CVE-2011-0427. Bugfix on&lt;br /&gt;
+      0.1.2.10-rc.&lt;/li&gt;
+&lt;li&gt;Prevent a denial-of-service attack by disallowing any&lt;br /&gt;
+      zlib-compressed data whose compression factor is implausibly&lt;br /&gt;
+      high. Fixes part of bug 2324; reported by &quot;doorss&quot;.&lt;/li&gt;
+&lt;li&gt;Zero out a few more keys in memory before freeing them. Fixes&lt;br /&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_29_is_released_-security_patches-/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_29_is_released_-security_patches-/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>New Tor Browser Bundle packages</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundle_packages/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundle_packages/"/>
+
+	<author><name>erinn</name></author>
+
+
+
+
+
+
+	<category term="/tags/security_fixes" />
+
+	<category term="/tags/security_updates" />
+
+	<category term="/tags/tbb" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+	<category term="/tags/torbrowser" />
+
+	<category term="/tags/updated_packages" />
+
+
+	<updated>2011-04-05T12:11:50Z</updated>
+	<published>2011-01-10T18:14:02Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;The Tor Browser Bundles have all been updated with some important security fixes and it is advised that all users upgrade. Geolocation has been disabled and some prefs added as a workaround for  &lt;a href=&quot;https://trac.torproject.org/projects/tor/ticket/2338&quot; rel=&quot;nofollow&quot;&gt;bug 2338&lt;/a&gt;. A full list of changes is in &lt;a href=&quot;https://gitweb.torproject.org/torbrowser.git/blobdiff/bdf8d711b08935bbd37979270dc30347d1cb2c44..2c895ec8f004427744579f466a73a8ebb576c8ec:/build-scripts/config/prefs.js&quot; rel=&quot;nofollow&quot;&gt;the diff&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Linux bundles&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.1.2:  Released 2011-01-09&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Update Firefox preferences to be more secure and disable geolocation to address #2338&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;OS X bundle&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;1.0.9: Released 2011-01-09&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Update Firefox preferences to be more secure and disable geolocation to address #2338&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Windows bundles&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;1.3.16: Released 2011-01-09&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/new-tor-browser-bundle-packages-1&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundle_packages/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundle_packages/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor Browser Bundle 1.3.1 Released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/firefox_updates" />
+
+	<category term="/tags/pidgin_updates" />
+
+	<category term="/tags/security_critical" />
+
+	<category term="/tags/security_fixes" />
+
+
+	<updated>2011-04-05T11:48:40Z</updated>
+	<published>2010-01-23T12:53:13Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;The latest in the Tor Browser series, version 1.3.1 is released.  This includes updates to Firefox, Pidgin, and Tor.&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.1.22 rotates two of the seven v3 directory authority keys and&lt;br /&gt;
+locations, due to a security breach of some of the Torproject servers:&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Jan-2010/msg00161.html&quot; title=&quot;http://archives.seul.org/or/talk/Jan-2010/msg00161.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Jan-2010/msg00161.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It also fixes a privacy problem in bridge directory authorities -- it&lt;br /&gt;
+would tell you its whole history of bridge descriptors if you make the&lt;br /&gt;
+right directory request.&lt;/p&gt;
+
+&lt;p&gt;Everybody should upgrade:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/easy-download&quot; title=&quot;https://www.torproject.org/easy-download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/easy-download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The changelog is:&lt;/p&gt;
+
+&lt;p&gt;1.3.1: Released 2010-01-22&lt;br /&gt;
+  update Firefox to 3.5.7&lt;br /&gt;
+  update Pidgin to 2.6.5&lt;br /&gt;
+  update Tor to 0.2.1.22&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor 0.2.2.7-alpha released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/deprecated_features" />
+
+	<category term="/tags/feature_enhancements" />
+
+	<category term="/tags/performance_enhancements" />
+
+	<category term="/tags/security_critical" />
+
+	<category term="/tags/security_fixes" />
+
+
+	<updated>2011-04-05T11:48:25Z</updated>
+	<published>2010-01-23T12:48:28Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;alpha fixes a huge client-side performance bug, as well&lt;br /&gt;
+as laying the groundwork for further relay-side performance fixes. It&lt;br /&gt;
+also starts cleaning up client behavior with respect to the EntryNodes,&lt;br /&gt;
+ExitNodes, and StrictNodes config options.&lt;/p&gt;
+
+&lt;p&gt;This release also rotates two directory authority keys, due to a security&lt;br /&gt;
+breach of some of the Torproject servers:&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Jan-2010/msg00161.html&quot; title=&quot;http://archives.seul.org/or/talk/Jan-2010/msg00161.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Jan-2010/msg00161.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Everybody should upgrade:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/download.html.en&quot; title=&quot;https://www.torproject.org/download.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download.html.en&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.2.7-alpha - 2010-01-19&lt;br /&gt;
+  o Directory authority changes:&lt;br /&gt;
+    - Rotate keys (both v3 identity and relay identity) for moria1&lt;br /&gt;
+      and gabelmoo.&lt;/p&gt;
+
+&lt;p&gt;  o Major features (performance):&lt;br /&gt;
+    - We were selecting our guards uniformly at random, and then weighting&lt;br /&gt;
+      which of our guards we&#39;d use uniformly at random. This imbalance&lt;br /&gt;
+      meant that Tor clients were severely limited on throughput (and&lt;br /&gt;
+      probably latency too) by the first hop in their circuit. Now we &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-0227-alpha-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor 0.2.1.22 Released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/performance_enhancements" />
+
+	<category term="/tags/security_critical" />
+
+	<category term="/tags/security_fixes" />
+
+	<category term="/tags/stable_release" />
+
+
+	<updated>2011-04-05T11:48:15Z</updated>
+	<published>2010-01-23T12:46:20Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor 0.2.1.22 rotates two of the seven v3 directory authority keys and&lt;br /&gt;
+locations, due to a security breach of some of the Torproject servers:&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Jan-2010/msg00161.html&quot; title=&quot;http://archives.seul.org/or/talk/Jan-2010/msg00161.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Jan-2010/msg00161.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It also fixes a privacy problem in bridge directory authorities -- it&lt;br /&gt;
+would tell you its whole history of bridge descriptors if you make the&lt;br /&gt;
+right directory request.&lt;/p&gt;
+
+&lt;p&gt;Everybody should upgrade:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/easy-download&quot; title=&quot;https://www.torproject.org/easy-download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/easy-download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.22 - 2010-01-19&lt;br /&gt;
+  o Directory authority changes:&lt;br /&gt;
+    - Rotate keys (both v3 identity and relay identity) for moria1&lt;br /&gt;
+      and gabelmoo.&lt;/p&gt;
+
+&lt;p&gt;  o Major bugfixes:&lt;br /&gt;
+    - Stop bridge directory authorities from answering dbg-stability.txt&lt;br /&gt;
+      directory queries, which would let people fetch a list of all&lt;br /&gt;
+      bridge identities they track. Bugfix on 0.2.1.6-alpha.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor Browser Bundle 1.2.9 Released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/firefox_update" />
+
+	<category term="/tags/pidgin_update" />
+
+	<category term="/tags/security_fixes" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+	<category term="/tags/vidalia_release" />
+
+
+	<updated>2011-04-05T11:35:23Z</updated>
+	<published>2009-09-12T01:55:03Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor Browser Bundle 1.2.9 is released today.  It updates Firefox and Pidgin Instant Messaging client to address the security issues in the older versions, and includes the latest and greatest Vidalia.&lt;/p&gt;
+
+&lt;p&gt;TBB can be downloaded from &lt;a href=&quot;https://www.torproject.org/torbrowser&quot; title=&quot;https://www.torproject.org/torbrowser&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/torbrowser&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The details of the changes are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;update Vidalia to 0.2.4&lt;/li&gt;
+&lt;li&gt;update Qt to 4.5.2&lt;/li&gt;
+&lt;li&gt;update Pidgin to 2.6.2&lt;/li&gt;
+&lt;li&gt;update Firefox to 3.0.14&lt;/li&gt;
+&lt;/ul&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Major changes to OS X Vidalia Bundle with 0.2.2.1-alpha</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Major_changes_to_OS_X_Vidalia_Bundle_with_0_2_2_1-alpha/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Major_changes_to_OS_X_Vidalia_Bundle_with_0_2_2_1-alpha/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/alpha_release" />
+
+	<category term="/tags/anonymity_fixes" />
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/improvements" />
+
+	<category term="/tags/os_x" />
+
+	<category term="/tags/packages" />
+
+	<category term="/tags/safe_statistic_collection" />
+
+	<category term="/tags/security_fixes" />
+
+	<category term="/tags/vidalia_bundle" />
+
+
+	<updated>2011-04-05T11:34:55Z</updated>
+	<published>2009-09-03T01:15:42Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;As highlighted in the &lt;a href=&quot;http://blog.torproject.org/blog/tor-0221alpha-released&quot; rel=&quot;nofollow&quot;&gt;0.2.2.1-alpha release notes&lt;/a&gt;, the Vidalia Bundle for OS X includes some major changes.  Many of these are for ease of use and user experience improvements.  The release of OS X 10.6 (Snow Leopard) gave me a fine excuse to release the improvements.&lt;/p&gt;
+
+&lt;p&gt;It&#39;s best to &lt;a href=&quot;https://www.torproject.org/docs/tor-doc-osx.html.en#uninstall&quot; rel=&quot;nofollow&quot;&gt;un-install Tor/Vidalia&lt;/a&gt; and then install this new bundle; rather than upgrade.  If you want to upgrade, you&#39;ll need to update the paths for Tor and Polipo in the Vidalia Settings window. &lt;/p&gt;
+
+&lt;p&gt;There has been a lot of testing since this &lt;a href=&quot;http://blog.torproject.org/blog/experimental-os-x-drag-and-drop-vidalia-bundle-installer&quot; rel=&quot;nofollow&quot;&gt;test release&lt;/a&gt; of the drag and drop installer for OS X in January.  The main goal was to make installation far easier, less error prone, and keep all of the bundle in a single directory for easier configuration and un-installation. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/major-changes-os-x-vidalia-bundle-0221alpha&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Major_changes_to_OS_X_Vidalia_Bundle_with_0_2_2_1-alpha/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Major_changes_to_OS_X_Vidalia_Bundle_with_0_2_2_1-alpha/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>July 2009 Progress Report</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/anonymity_advocacy" />
+
+	<category term="/tags/anonymity_fixes" />
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/progress_report" />
+
+	<category term="/tags/security_fixes" />
+
+	<category term="/tags/stable_releases" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+
+	<updated>2011-04-05T11:33:09Z</updated>
+	<published>2009-08-10T08:07:57Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;strong&gt;New releases&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;On July 8th, we released &lt;a href=&quot;https://blog.torproject.org/blog/vidalia-0115-released&quot; rel=&quot;nofollow&quot;&gt;Vidalia 0.1.15.&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;On July 8th, we updated the Tor 0.2.0.35-stable bundles with the new Vidalia to fix an ssl issue and the Firefox Torbutton extension installation for OS X users.&lt;/p&gt;
+
+&lt;p&gt;On July 8th, we released &lt;a href=&quot;https://blog.torproject.org/blog/tor-02117rc-released&quot; rel=&quot;nofollow&quot;&gt;Tor 0.2.1.17-rc&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.torproject.org/blog/tor-browser-bundle-123-and-124-released&quot; rel=&quot;nofollow&quot;&gt;Tor Browser Bundle 1.2.3&lt;/a&gt; was released on July 8, 2009.&lt;br /&gt;
+&lt;a href=&quot;https://blog.torproject.org/blog/tor-browser-bundle-123-and-124-released&quot; rel=&quot;nofollow&quot;&gt;TBB 1.2.3&lt;/a&gt; was replaced by 1.2.4 on July 11, 2009&lt;br /&gt;
+&lt;a href=&quot;https://blog.torproject.org/blog/tor-browser-bundle-125-and-126-released&quot; rel=&quot;nofollow&quot;&gt;TBB 1.2.5&lt;/a&gt; was released on July 25th.  It solely included an update to Tor 0.2.1.18 . &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/july-2009-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

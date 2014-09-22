@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged safe_statistic_collection</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/safe_statistic_collection/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Major changes to OS X Vidalia Bundle with 0.2.2.1-alpha</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Major_changes_to_OS_X_Vidalia_Bundle_with_0_2_2_1-alpha/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Major_changes_to_OS_X_Vidalia_Bundle_with_0_2_2_1-alpha/</link>
+
+
+	<category>/tags/alpha_release</category>
+
+	<category>/tags/anonymity_fixes</category>
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/improvements</category>
+
+	<category>/tags/os_x</category>
+
+	<category>/tags/packages</category>
+
+	<category>/tags/safe_statistic_collection</category>
+
+	<category>/tags/security_fixes</category>
+
+	<category>/tags/vidalia_bundle</category>
+
+
+	<pubDate>Wed, 02 Sep 2009 20:15:42 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:34:55Z</dcterms:modified>
+
+	<description>&lt;p&gt;As highlighted in the &lt;a href=&quot;http://blog.torproject.org/blog/tor-0221alpha-released&quot; rel=&quot;nofollow&quot;&gt;0.2.2.1-alpha release notes&lt;/a&gt;, the Vidalia Bundle for OS X includes some major changes.  Many of these are for ease of use and user experience improvements.  The release of OS X 10.6 (Snow Leopard) gave me a fine excuse to release the improvements.&lt;/p&gt;
+
+&lt;p&gt;It&#39;s best to &lt;a href=&quot;https://www.torproject.org/docs/tor-doc-osx.html.en#uninstall&quot; rel=&quot;nofollow&quot;&gt;un-install Tor/Vidalia&lt;/a&gt; and then install this new bundle; rather than upgrade.  If you want to upgrade, you&#39;ll need to update the paths for Tor and Polipo in the Vidalia Settings window. &lt;/p&gt;
+
+&lt;p&gt;There has been a lot of testing since this &lt;a href=&quot;http://blog.torproject.org/blog/experimental-os-x-drag-and-drop-vidalia-bundle-installer&quot; rel=&quot;nofollow&quot;&gt;test release&lt;/a&gt; of the drag and drop installer for OS X in January.  The main goal was to make installation far easier, less error prone, and keep all of the bundle in a single directory for easier configuration and un-installation. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/major-changes-os-x-vidalia-bundle-0221alpha&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Major_changes_to_OS_X_Vidalia_Bundle_with_0_2_2_1-alpha/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

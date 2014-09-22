@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged directory_requests</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/directory_requests/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Picturing Tor censorship in China</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Picturing_Tor_censorship_in_China/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Picturing_Tor_censorship_in_China/</link>
+
+
+	<category>/tags/bridges</category>
+
+	<category>/tags/censorship</category>
+
+	<category>/tags/censorship_circumvention</category>
+
+	<category>/tags/china</category>
+
+	<category>/tags/directory_requests</category>
+
+	<category>/tags/graphs</category>
+
+	<category>/tags/great_firewall_of_china</category>
+
+
+	<pubDate>Tue, 13 Oct 2009 21:56:10 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:39:06Z</dcterms:modified>
+
+	<description>&lt;p&gt;As &lt;a href=&quot;https://blog.torproject.org/blog/tor-partially-blocked-china&quot;&gt;reported&lt;/a&gt;, Tor was partially blocked by China on September 25th or so in anticipation of the CCP October 1, 2009 60th anniversary.  &lt;/p&gt;
+
+&lt;p&gt;Here&#39;s what one directory mirror recorded for September, &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://blog.torproject.org/files/2009-10-12-china-dirreq-trusted.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And here&#39;s the growth of &lt;a href=&quot;https://www.torproject.org/bridges&quot;&gt;bridge&lt;/a&gt; users in response.  Alas, like our graphs of &lt;a href=&quot;https://blog.torproject.org/blog/measuring-tor-and-iran-part-two&quot;&gt;bridge use in Iran in June 2009&lt;/a&gt;, we only have relative counts for bridge use, not absolute counts. But with a 70x increase in a week, we are talking about 10000+ bridge users:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://blog.torproject.org/files/2009-10-12-china-bridge-usage.png&quot; /&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Picturing_Tor_censorship_in_China/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

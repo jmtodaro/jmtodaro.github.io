@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged geoip</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/geoip/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>erinn: Mac OS X Vidalia Bundle with 0.2.2.17-alpha out</title>
+	<dcterms:creator>erinn</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Mac_OS_X_Vidalia_Bundle_with_0_2_2_17-alpha_out/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Mac_OS_X_Vidalia_Bundle_with_0_2_2_17-alpha_out/</link>
+
+
+	<category>/tags/geoip</category>
+
+	<category>/tags/geoip_fixes</category>
+
+	<category>/tags/osx</category>
+
+	<category>/tags/osx_fixes</category>
+
+	<category>/tags/vidalia</category>
+
+	<category>/tags/vidalia_bundle</category>
+
+	<category>/tags/vidalia_network_map</category>
+
+
+	<pubDate>Thu, 28 Oct 2010 03:12:37 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:10:27Z</dcterms:modified>
+
+	<description>&lt;p&gt;Vidalia 0.2.10 changed the way we deal with the &lt;a href=&quot;https://blog.torproject.org/blog/vidalia-0210-released&quot; rel=&quot;nofollow&quot;&gt;geoip databases by dropping the remote geoip lookups&lt;/a&gt;. This caused a lot of headaches for OS X users because of the layout of the package, but it&#39;s fixed in this version. You can download the new version &lt;a href=&quot;https://www.torproject.org/dist/vidalia-bundles/&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Please let us know if you have further problems by &lt;a href=&quot;https://trac.torproject.org/projects/tor&quot; rel=&quot;nofollow&quot;&gt;reporting a bug&lt;/a&gt;.&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Mac_OS_X_Vidalia_Bundle_with_0_2_2_17-alpha_out/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Shutting down the Vidalia GeoIP mapping server</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Shutting_down_the_Vidalia_GeoIP_mapping_server/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Shutting_down_the_Vidalia_GeoIP_mapping_server/</link>
+
+
+	<category>/tags/city_mapping</category>
+
+	<category>/tags/geoip</category>
+
+	<category>/tags/vidalia</category>
+
+	<category>/tags/vidalia_network_map</category>
+
+	<category>/tags/volunteer_run</category>
+
+
+	<pubDate>Thu, 30 Sep 2010 19:32:52 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:09:38Z</dcterms:modified>
+
+	<description>&lt;p&gt;Vidalia is the graphical controller for the Tor software.  It provides an easy to use interface to control some basic functionality of the Tor software and to give you graphical feedback as to what your Tor software is doing as you use it.  &lt;/p&gt;
+
+&lt;p&gt;The Vidalia Project is shutting down the server that gives you the city-level location for tor relays in the Network Map. If you are running a version of Vidalia that is earlier than 0.2.10, you will lose your country flags and relays appearing in the Network Map.  This is a display issue and does not affect the functionality of the Tor software itself.  The main change in Vidalia 0.2.10 was to rely on the Tor software&#39;s local country-level GeoIP database that ships with the Tor software. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/shutting-down-vidalia-geoip-mapping-server&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Shutting_down_the_Vidalia_GeoIP_mapping_server/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Tor 0.2.2.14-alpha released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_14-alpha_released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_14-alpha_released/</link>
+
+
+	<category>/tags/alpha_release</category>
+
+	<category>/tags/directory_authority</category>
+
+	<category>/tags/geoip</category>
+
+	<category>/tags/performance_improvements</category>
+
+
+	<pubDate>Mon, 19 Jul 2010 04:30:14 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:05:13Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor 0.2.2.14-alpha greatly improves client-side handling of circuit build&lt;br /&gt;
+timeouts, which are used to estimate speed and improve performance. We&lt;br /&gt;
+also move to a much better GeoIP database, port Tor to Windows CE,&lt;br /&gt;
+introduce new compile flags that improve code security, add an eighth&lt;br /&gt;
+v3 directory authority, and address a lot of more minor issues.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download&quot; title=&quot;https://www.torproject.org/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Packages will be appearing over the next few days or weeks. (We&#39;ve decided&lt;br /&gt;
+to start announcing alpha versions when they&#39;re released, rather than&lt;br /&gt;
+waiting for all the packages first.)&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.2.14-alpha - 2010-07-12&lt;br /&gt;
+  o Major bugfixes:&lt;br /&gt;
+    - Tor directory authorities no longer crash when started with a&lt;br /&gt;
+      cached-microdesc-consensus file in their data directory. Bugfix&lt;br /&gt;
+      on 0.2.2.6-alpha; fixes bug 1532.&lt;br /&gt;
+    - Treat an unset $HOME like an empty $HOME rather than triggering an&lt;br /&gt;
+      assert. Bugfix on 0.0.8pre1; fixes bug 1522. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02214-alpha-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_14-alpha_released/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Testing Tor Browser Bundle 1.2.0-dev</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/</link>
+
+
+	<category>/tags/geoip</category>
+
+	<category>/tags/libevent</category>
+
+	<category>/tags/tor_browser_bundle</category>
+
+
+	<pubDate>Fri, 22 May 2009 21:50:06 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:25:19Z</dcterms:modified>
+
+	<description>&lt;p&gt;This is an open call for testing of the soon to be released Tor Browser Bundle 1.2.0.  &lt;/p&gt;
+
+&lt;p&gt;The major changes in this version are that you can now run multiple instances of Firefox.  This means each Firefox browser is independent of the others.  They won&#39;t leak urls, scripts, etc between instances.  &lt;/p&gt;
+
+&lt;p&gt;It also includes Tor&#39;s geoip database.  This will enable people to set ExitNodes by country code.  You still have to manually edit the torrc file.  We&#39;d love it if someone wrote a way to do this into Vidalia (such as right click on a country in the network map and choose &quot;exit here&quot;). &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/testing-tor-browser-bundle-120-dev&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt; Switch to launching Firefox directly from Vidalia to allow multiple instances of Firefox&lt;/li&gt;
+&lt;li&gt;Update Firefox to 3.0.10&lt;/li&gt;
+&lt;li&gt;Update to Qt 4.5.1&lt;/li&gt;
+&lt;li&gt;Update Firefox prefs.js to stop scanning for plugins&lt;/li&gt;
+&lt;li&gt;Update libevent to 1.4.11&lt;/li&gt;
+&lt;li&gt;Include the Tor geoip database&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

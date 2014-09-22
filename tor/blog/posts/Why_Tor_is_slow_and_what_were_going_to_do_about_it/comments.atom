@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Why Tor is slow and what we&#x27;re going to do about it</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>arma</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:21:37Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_1/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:00Z</updated>
+	<published>2009-03-13T11:21:00Z</published>
+
+	<content type="html" xml:lang="en">
+	Nice report in PDF, thanks &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_2/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:01Z</updated>
+	<published>2009-03-13T11:21:01Z</published>
+
+	<content type="html" xml:lang="en">
+	Very complete. Thanks for publishing this for everybody.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_3/"/>
+
+	<author><name>slush (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:02Z</updated>
+	<published>2009-03-13T11:21:02Z</published>
+
+	<content type="html" xml:lang="en">
+	Build teams of Tor operators is very nice idea. As a contributor in BOINC project I know, that competition is big motivation for running own node and also finding next members to my team. I expect that it can do huge work with a little effort in case of Tor project.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_4/"/>
+
+	<author><name>slush (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:03Z</updated>
+	<published>2009-03-13T11:21:03Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Just one note to &quot;Reachable clients become relays automatically&quot;. Do this pure automatically is bad idea - and you wrote good reasons by self. But you can something by little change of Vidalia GUI. Currently, settings of relay is just one of tab in Vidalia.&lt;/p&gt;
+
+&lt;p&gt;Showing message box (Run Tor relay/exit? Relay/Exit/No,thanks) with short and clever arguments, why is running tor relay good for user will make a lot of effort and without upsetting users, who cannot run relay for serious reason.&lt;/p&gt;
+
+&lt;p&gt;There is plenty of good reasons to run relay/exit. One of them is to mix my non-tor communication with other traffic, so Im a little bit anonymous (traffic of my IP is not fully linkable to myself) even I don&#39;t use Tor at the moment.&lt;/p&gt;
+
+&lt;p&gt;I think many people dont run Tor relay because they a) dont know why b) dont know, that it is really so simple :).&lt;/p&gt;
+
+&lt;p&gt;Sorry for my English.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_5/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:04Z</updated>
+	<published>2009-03-17T11:21:04Z</published>
+
+	<content type="html" xml:lang="en">
+	Yes, asking the user if they want to be a relay is a good thing to do.  We could ask if they want to be a bridge or a full relay and let the user decide.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_6/"/>
+
+	<author><name>wlarip (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:05Z</updated>
+	<published>2009-03-13T11:21:05Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Greetings:&lt;/p&gt;
+
+&lt;p&gt;I gather when running as a relay server, there is a publicly exposed listener.&lt;br /&gt;
+Is it vulnerable to a buffer exploit?&lt;br /&gt;
+if so, what kind of protective firewalling does it need in order for the server&lt;br /&gt;
+machine to host it safely?&lt;/p&gt;
+
+&lt;p&gt;Thanks,&lt;/p&gt;
+
+&lt;p&gt;wlarip&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_7/"/>
+
+	<author><name>arma</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:06Z</updated>
+	<published>2009-03-13T11:21:06Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Not that we know of. But we do periodically find bugs that might allow things like that. That&#39;s why you should always keep up with the latest Tor versions. (Everybody should be on the or-announce list at &lt;a href=&quot;http://archives.seul.org/or/announce/&quot; title=&quot;http://archives.seul.org/or/announce/&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/announce/&lt;/a&gt; .)&lt;/p&gt;
+
+&lt;p&gt;Firewalling (i.e. blocking incoming connections) isn&#39;t going to do anything. What you want is to make sure that it isn&#39;t running with privileges (how to do that depends on your OS, but most default ways to set up Tor are fine). If you want to be extra careful, you can run it in a chroot or jail or the like.&lt;/p&gt;
+
+&lt;p&gt;Some links to look at include&lt;br /&gt;
+&lt;a href=&quot;https://wiki.torproject.org/noreply/TheOnionRouter/OperationalSecurity&quot; title=&quot;https://wiki.torproject.org/noreply/TheOnionRouter/OperationalSecurity&quot; rel=&quot;nofollow&quot;&gt;https://wiki.torproject.org/noreply/TheOnionRouter/OperationalSecurity&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://wiki.torproject.org/noreply/TheOnionRouter/TorInChroot&quot; title=&quot;https://wiki.torproject.org/noreply/TheOnionRouter/TorInChroot&quot; rel=&quot;nofollow&quot;&gt;https://wiki.torproject.org/noreply/TheOnionRouter/TorInChroot&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://wiki.torproject.org/noreply/TheOnionRouter/OpenbsdChrootedTor&quot; title=&quot;https://wiki.torproject.org/noreply/TheOnionRouter/OpenbsdChrootedTor&quot; rel=&quot;nofollow&quot;&gt;https://wiki.torproject.org/noreply/TheOnionRouter/OpenbsdChrootedTor&lt;/a&gt;&lt;br /&gt;
+depending on your OS.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_8/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:07Z</updated>
+	<published>2009-03-15T11:21:07Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;SOME people would feel that this is nazism. I disagree.&lt;br /&gt;
+I have stated my position.&lt;br /&gt;
+Thank you for TOR.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_9/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:08Z</updated>
+	<published>2009-03-16T11:21:08Z</published>
+
+	<content type="html" xml:lang="en">
+	Block torrent traffic and Tor will not be slow.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_10/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:09Z</updated>
+	<published>2009-03-18T11:21:09Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Bittorrent can run on a wide variety of ports, which would make it difficult for exit nodes to block, since exit nodes generally rely on port-based blocking.&lt;/p&gt;
+
+&lt;p&gt;All that can be done, so far as I know, is to better educate people about why they should not use Tor with bittorrent, and what they should do instead.&lt;/p&gt;
+
+&lt;p&gt;To that end:&lt;br /&gt;
+* Tor was not designed to run with bittorrent. By using bittorent over Tor, you are hurting the Tor network.&lt;br /&gt;
+* Your downloads will be very slow.&lt;br /&gt;
+* Bittorrent clients were not designed to be secure with Tor, and may leak information about you.&lt;br /&gt;
+* If you are using Tor for censorship evasion, not anonymity, you may have better luck using a client like Azureus / Vuze which supports encryption.&lt;br /&gt;
+* If you are using Tor for anonymity, but still for legal purposes, i2p was better designed for this sort of thing and there are several custom clients trusted to work with i2p. I2PSnark comes bundled with i2p, and a few others are available. Unfortunately, you can only use i2p to access i2p torrents. You can help i2p by uploading legally distributable torrents to their trackers.&lt;br /&gt;
+* If you are using Tor for illegal purposes, we cannot help besides to suggest that you stop doing so.&lt;/p&gt;
+
+&lt;p&gt;P.S. These CAPTCHAs are difficult even for a human to read!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_11/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:10Z</updated>
+	<published>2009-03-18T11:21:10Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;There&#39;s a rumour that the Anti-Counterfeiting Trade Agreement might illegalise anonymising programs like Tor and JonDo.&lt;/p&gt;
+
+&lt;p&gt;I can live with a slow Tor, but I&#39;d be devastated if I lost it all together.&lt;/p&gt;
+
+&lt;p&gt;Does the Tor Project have any plans to campaign against ACTA, either in conjunction with other anonymity projects or by itself?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 12</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_12/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_12/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:11Z</updated>
+	<published>2009-03-21T11:21:11Z</published>
+
+	<content type="html" xml:lang="en">
+	There&#39;s so little known about it from actual documents it&#39;s difficult to properly form a legal opinion.  We&#39;re paying attention to it and offering assistance to other orgs as they try to get more information on it.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 13</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_13/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_13/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:12Z</updated>
+	<published>2009-03-21T11:21:12Z</published>
+
+	<content type="html" xml:lang="en">
+	I hear the European Parliament wants the European Commission to publish.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 14</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_14/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_14/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:13Z</updated>
+	<published>2009-04-01T11:21:13Z</published>
+
+	<content type="html" xml:lang="en">
+	occam&#39;s razor..  Anyone consider Gibson Research Corporation (&lt;a href=&quot;http://www.grc.com&quot; title=&quot;www.grc.com&quot; rel=&quot;nofollow&quot;&gt;www.grc.com&lt;/a&gt;)
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 15</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_15/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_15/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:14Z</updated>
+	<published>2009-04-02T11:21:14Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;A lot of home users, including myself, shut our computers down each night to save electricity and save our computers from overheating or getting burned out too quickly. If I ran Windows, I would also run into software stability problems if I left it up for long, but it my case that isn&#39;t the problem.&lt;/p&gt;
+
+&lt;p&gt;I would like to contribute to the Tor network, but given that a node has to be up for many days before it starts being well used, I feel like it isn&#39;t really worth it.&lt;/p&gt;
+
+&lt;p&gt;Apparently i2p is able to handle such a situation. On the first run, an i2p router has to be left up for a number of hours to become &quot;well-integrated&quot;, meaning a lot of other i2p clients know about the i2p router and the i2p router knows about a lot of other i2p routers. However, once the i2p router is well-integrated, the other i2p clients will keep it in their database for 24 hours after it goes offline, so as long as you don&#39;t leave it offline for more than 24 hours, it will take only a few hours for it to be fully utilised on future runs. Thus, home users who only run i2p routers for some number of hours each day are still able to contribute significantly to the i2p network.&lt;/p&gt;
+
+&lt;p&gt;Would it be possible to implement something like this in Tor? I know there are problems with the directory being too large. Maybe the directory could be broken into bite-sized chunks upon request from slower clients.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 16</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_16/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_16/"/>
+
+	<author><name>segadiablesse (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:15Z</updated>
+	<published>2009-04-03T11:21:15Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;For the project ! Bravissimo...&lt;br /&gt;
+But some features could be fixed. For example, it&#39;s impossible to use One Swarm in Firefox when TOR is running. It&#39;s a serious problem to be really anonymous in France (context of security called HADOPI) while sharing files in a friend to friend network.&lt;br /&gt;
+I&#39;m sure a developper or TOR Project could fix this ! &lt;/p&gt;
+
+&lt;p&gt;Thx a lot for the last stable version for DEBIAN.&lt;br /&gt;
+Don&#39;t forget you can visit my homepage for detail about HADOPI in France.&lt;br /&gt;
+Have a nice day.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 17</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_17/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_17/"/>
+
+	<author><name>Ian (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:16Z</updated>
+	<published>2009-04-03T11:21:16Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I understand the project, but, i would like to now if it&#39;s a configuration&#39;s problem, or the network, but i can spend 3 or more minutes to open a google web page..&lt;/p&gt;
+
+&lt;p&gt;Is there a solution?&lt;/p&gt;
+
+&lt;p&gt;Thanks.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 18</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_18/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_18/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:17Z</updated>
+	<published>2009-04-03T11:21:17Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;If you don&#39;t, there could be incompatibility problems between you and the rest of the network.&lt;/p&gt;
+
+&lt;p&gt;If you do, then it is probably a network problem. There&#39;s a great deal of chance in building Tor circuits: some are faster than others. You could reduce the amount of chance, but that would also decrease anonymity.&lt;/p&gt;
+
+&lt;p&gt;The best case scenario, if improvements to Tor&#39;s speed are successful, is that such things will happen less often, but will still happen.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 19</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_19/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_19/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:18Z</updated>
+	<published>2009-04-03T11:21:18Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I think it can be a network problem...&lt;br /&gt;
+The fact is we use networks all over the world.&lt;/p&gt;
+
+&lt;p&gt;I would like to know if it&#39;s possible to connect to users only in specific countries?&lt;/p&gt;
+
+&lt;p&gt;I mean, i live in Europe, and i would like to know if i can connect only in Europe, rather than going to us or brazil users, which are far away, and reduce my latence?&lt;/p&gt;
+
+&lt;p&gt;Thanks (:&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 20</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_20/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_20/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:19Z</updated>
+	<published>2009-04-03T11:21:19Z</published>
+
+	<content type="html" xml:lang="en">
+	And i have the latest version of TOR, using tor for my MAC , and TOR plug-in for firefox.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 21</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_21/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_21/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:20Z</updated>
+	<published>2009-04-03T11:21:20Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;If you manually edit your torrc, there are EntryNodes and ExitNodes options that you can use to specify which nodes you want to use for your Entry and Exit nodes. *If* Tor is integrated with GeoIP, you can specify by country which nodes you do and do not want to use. You would have to list country codes for all European countries. I don&#39;t know how you can control the middle node. I don&#39;t remember if this is implemented in the stable version yet or only in the alpha.&lt;/p&gt;
+
+&lt;p&gt;I think the feature was mainly intended for people who do not trust the privacy laws of a particular country. For example, if a country implements a data retention law that you think is too severe, you tell Tor not to use nodes and nodes in that country as entry or exit nodes.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 22</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_22/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_22/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:21Z</updated>
+	<published>2009-04-04T11:21:21Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hum,&lt;/p&gt;
+
+&lt;p&gt;Ok,&lt;br /&gt;
+But i&#39;m sorry, I really don&#39;t know where i can configure the entry nodes, and exit nodes...&lt;/p&gt;
+
+&lt;p&gt;as you can see :&lt;/p&gt;
+
+&lt;p&gt;# This file was generated by Tor; if you edit it, comments will not be preserved&lt;br /&gt;
+# The old torrc file was renamed to torrc.orig.1 or similar, and Tor will ignore it&lt;/p&gt;
+
+&lt;p&gt;# If set, Tor will accept connections from the same machine (localhost only)&lt;br /&gt;
+# on this port, and allow those connections to control the Tor process using&lt;br /&gt;
+# the Tor Control Protocol (described incontrol-spec.txt).&lt;br /&gt;
+ControlPort 9001&lt;br /&gt;
+# Serve directory information from this port, and act as a directory cache.&lt;br /&gt;
+DirPort 9030&lt;br /&gt;
+# Address/port ranges for which to accept or reject outgoing connections on&lt;br /&gt;
+# behalf of Tor users.&lt;br /&gt;
+ExitPolicy accept *:80,reject *:*&lt;br /&gt;
+HashedControlPassword XXXXXXXXXXXXXXXXXX&lt;br /&gt;
+# Where to send logging messages.  Format is minSeverity[-maxSeverity]&lt;br /&gt;
+# (stderr|stdout|syslog|file FILENAME).&lt;br /&gt;
+Log notice stdout&lt;br /&gt;
+# Set the server nickname.&lt;br /&gt;
+Nickname Ed53d&lt;br /&gt;
+# Advertise this port to listen for connections from Tor clients and servers.&lt;br /&gt;
+ORPort 9001&lt;br /&gt;
+RelayBandwidthBurst 131072&lt;br /&gt;
+RelayBandwidthRate 65536&lt;/p&gt;
+
+&lt;p&gt;^^&lt;/p&gt;
+
+&lt;p&gt;Any idea?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 23</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_23/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_23/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:22Z</updated>
+	<published>2009-04-04T11:21:22Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Instead of $fingerprint you can also specify a 2 letter ISO3166 country code in curly braces (for example {de}),&lt;/p&gt;
+
+&lt;p&gt;so....&lt;/p&gt;
+
+&lt;p&gt;# A list of preferred nodes to use for the last hop in the circuit, if possible.&lt;br /&gt;
+excludenodes {us},{br},{jp},{ca},{au},{cn}&lt;br /&gt;
+# A list of preferred nodes to use for the first hop in the circuit, if possible.&lt;br /&gt;
+entrynodes {fr},{gb},{en},{de},{es}&lt;/p&gt;
+
+&lt;p&gt;But I have un error... It says me the syntax is wrong...&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 24</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_24/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_24/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:23Z</updated>
+	<published>2009-04-24T11:21:23Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;This was a thorough, well-thought out and much needed analysis.  I enjoyed reading the sections discussing the tradeoffs between latency and throughput.  &lt;/p&gt;
+
+&lt;p&gt;Since file-sharing is not going away but has clear implications for the performance of the network, it seems pretty straightforward that the network needs to be optimized for lower latency and for the web-browsing type use.  Those individuals using the system for file-sharing can still make use of it but will learn to expect slower speeds.&lt;/p&gt;
+
+&lt;p&gt;If broadband speeds continue to improve and/or fiber-optic networks to the home become more mainstream around the world, this should help with the throughput issues I would think.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 25</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_25/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_25/"/>
+
+	<author><name>TommytheCat (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:24Z</updated>
+	<published>2009-05-18T11:21:24Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;It would be nice to have an overwiew about the rights , the Do&#39;s and the Don&#39;ts an TOR-Relayer must do, to keep him/her safe too against the local goverment.&lt;br /&gt;
+Maybe a policy and some documents will help, This will also encourage people to do more voluntary work by hosting an qon tor relay server.&lt;br /&gt;
+best wishes&lt;br /&gt;
+Tommy,&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 26</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_26/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_26/"/>
+
+	<author><name>Traduceri legalizate    (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:25Z</updated>
+	<published>2009-07-27T11:21:25Z</published>
+
+	<content type="html" xml:lang="en">
+	I should hire you guys to send my monthly reports...You&#39;re very organized and attentive to details. Now let&#39;s just pray you&#39;ll get the necessary funds and help to get things done.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 27</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_27/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_27/"/>
+
+	<author><name>Donna Liens (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:26Z</updated>
+	<published>2009-08-08T11:21:26Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I think its ok for what we get for free service like yours, i believe also your team will working on it with the best effort. Shared with thousand people around the world for better safer surfing needs lot resources. Thanks for your GREAT job! I will use TOR always.&lt;/p&gt;
+
+&lt;p&gt;Regards,&lt;br /&gt;
+Donna&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 28</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_28/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_28/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:27Z</updated>
+	<published>2009-08-14T11:21:27Z</published>
+
+	<content type="html" xml:lang="en">
+	HI AM NEW TO THE TOR CAN ANYONE HELP ME ON HOW TO CONFIGURE TOR ESPECIALLY IN NIGERIA.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 29</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_29/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_29/"/>
+
+	<author><name>Dan G.  (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:28Z</updated>
+	<published>2009-09-18T11:21:28Z</published>
+
+	<content type="html" xml:lang="en">
+	Well the solutions in the PDF looks promising to speed up TOR great stuff guys.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 30</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_30/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_30/"/>
+
+	<author><name>jr (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:29Z</updated>
+	<published>2009-09-25T11:21:29Z</published>
+
+	<content type="html" xml:lang="en">
+	Implementing a function that prevents the occupation or usage of tor and bittorrent programs would be an easy and effective first step. Limiting the use of tor to critical uses would be another(websites, ssl, e-mail). Implementing a more robust system and separating critical needs over non-critical needs and then forcing tor to give a higher priority to those functions.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 31</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_31/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_31/"/>
+
+	<author><name>Sleek (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:30Z</updated>
+	<published>2009-10-29T11:21:30Z</published>
+
+	<content type="html" xml:lang="en">
+	Please do you know how I could configure bittorrent to work with tor? thanks in advance
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 32</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_32/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_32/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:31Z</updated>
+	<published>2009-11-07T12:21:31Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;You should NOT ever use Tor for torrents.&lt;br /&gt;
+See here: &lt;a href=&quot;https://blog.torproject.org/blog/why-tor-is-slow#comment-831&quot; title=&quot;https://blog.torproject.org/blog/why-tor-is-slow#comment-831&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/why-tor-is-slow#comment-831&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;A small quote from there:&lt;br /&gt;
+* Tor was not designed to run with bittorrent. By using bittorent over Tor, you are hurting the Tor network.&lt;br /&gt;
+* Your downloads will be very slow. (I can confirm, VERY SLOW. And also Tor nodes can ban you so you can&#39;t use Tor either for torrents or for other purposes, e.g. browsing)&lt;br /&gt;
+* Bittorrent clients were not designed to be secure with Tor, and may leak information about you.&lt;br /&gt;
+* If you are using Tor for censorship evasion, not anonymity, you may have better luck using a client like Azureus / Vuze which supports encryption.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 33</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_33/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_33/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:32Z</updated>
+	<published>2009-11-07T12:21:32Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;If you want to use anonymous filesharing, I suggest to use:&lt;br /&gt;
+1) &lt;a href=&quot;http://en.wikipedia.org/wiki/I2P#BitTorrent&quot; title=&quot;http://en.wikipedia.org/wiki/I2P#BitTorrent&quot; rel=&quot;nofollow&quot;&gt;http://en.wikipedia.org/wiki/I2P#BitTorrent&lt;/a&gt; - connect to I2P network and start sharing there using I2PSnark&lt;br /&gt;
+2) Forget about any special networks, either Tor or i2p or any else, - and just use programs that can obfuscate or encrypt your peering connections: &lt;a href=&quot;http://www.emule-project.net&quot; title=&quot;http://www.emule-project.net&quot; rel=&quot;nofollow&quot;&gt;http://www.emule-project.net&lt;/a&gt; for eDonkey2000 network (I recommend) or Azureus / Vuze for torrents.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 34</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_34/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_34/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:33Z</updated>
+	<published>2010-02-21T12:21:33Z</published>
+
+	<content type="html" xml:lang="en">
+	It&#39;s a pity that tor is slowing down the surfing process. But you need to pay for every good thing. You can&#39;t take only pluses, and do not take any of the minuses of a technology http://ampaportalnou.org/
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 35</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_35/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_35/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:34Z</updated>
+	<published>2010-03-25T11:21:34Z</published>
+
+	<content type="html" xml:lang="en">
+	is there a way to pick and choose which relay you want to use?  using the vidalia network map?  i&#39;ve went through the tor faqs and played with the program for a while, but i havent been able to answer that question.  i keep getting routed through an overseas relay, and would like to use one near me.  thanks.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 36</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_36/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_36/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:35Z</updated>
+	<published>2010-04-24T11:21:35Z</published>
+
+	<content type="html" xml:lang="en">
+	Tor seriously sucks. On average it take ten minutes for me to load one single web page. Then god forbid I want to post something I have to wait another ten minutes. Programs like Jap are okay, but also really slow at times. Ghost Surf is great but you have to pay for it. 
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 37</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_37/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_37/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:36Z</updated>
+	<published>2010-07-02T11:21:36Z</published>
+
+	<content type="html" xml:lang="en">
+	hi i am new using of tor, can you please help me? can tor compatible to use of yahoo messenger (YM)? thanks a lot.. 
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 38</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_38/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/comment_38/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:21:37Z</updated>
+	<published>2010-07-02T11:21:37Z</published>
+
+	<content type="html" xml:lang="en">
+	there appears to be no way to setup YM with tor.
+
+	</content>
+
+
+
+</entry>
+
+</feed>

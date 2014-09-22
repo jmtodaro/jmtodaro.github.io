@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged directory</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/directory/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/directory/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/directory/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:19:15Z</updated>
+<entry>
+	<title>Overhead from directory info: past, present, future</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Overhead_from_directory_info_past_present_future/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Overhead_from_directory_info_past_present_future/"/>
+
+	<author><name>arma</name></author>
+
+
+
+
+
+
+	<category term="/tags/directory" />
+
+	<category term="/tags/performance" />
+
+	<category term="/tags/research" />
+
+
+	<updated>2011-04-05T11:19:15Z</updated>
+	<published>2009-02-16T07:05:16Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;A growing number of people want to use Tor in low-bandwidth contexts (e.g. modems or shared Internet cafes in the Middle East) and mobile contexts (start up a Tor client, use it for a short time, and then stop it again). Currently Tor is nearly unusable in these situations, because it spends too many bytes fetching directory info. This post summarizes the steps we&#39;ve taken so far to reduce directory overhead, and explains the steps that are coming next.&lt;/p&gt;
+
+&lt;p&gt;First, what do I mean by &quot;directory info&quot;? Part of the Tor design is the _discovery_ component: how clients learn about the available Tor relays, along with their keys, locations, exit policies, and so on. Tor&#39;s solution so far uses a few trusted directory authorities that sign and distribute official lists of the relays that make up the Tor network. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/overhead-directory-info%3A-past%2C-present%2C-future&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Overhead_from_directory_info_past_present_future/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Overhead_from_directory_info_past_present_future/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

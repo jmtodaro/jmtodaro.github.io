@@ -1,0 +1,558 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Vidalia 0.2.2 Released</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FVidalia_0_2_2_Released&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Vidalia 0.2.2 Released</a>
+
+</span>
+
+
+<div id="content">
+<p>Vidalia 0.2.2 is released.  It addresses an issue with openssl which causes the geoip lookups to fail on various versions of Windows.  It also switches from the Nullsoft Installer to the Microsoft System Installer for better compatibility with Microsoft Windows.</p>
+
+<p>There are now separate Apple OS X builds, one for PowerPC architectures and one for i386 architectures.  No more Universal binary bloat to download.</p>
+
+<p>The changes are: <span class="read-more"><a href="http://blog.torproject.org/blog/vidalia-022-released"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+<p><ul>
+<li>When the user clicks "Browse" in the Advanced settings page to locate<br />
+    a new torrc, set the initial directory shown in the file dialog to the<br />
+    current location of the user's torrc. (Ticket #505)</li>
+<li>Use 'ditto' to strip the architectures we don't want from the Qt<br />
+    frameworks installed into the app bundle with the dist-osx,<br />
+    dist-osx-bundle and dist-osx-split-bundle build targets.</li>
+<li>Fix a bug in the CMakeLists.txt files for ts2po and po2ts that caused<br />
+    build errors on Panther for those two tools.</li></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/bug_fixes/" rel="tag">bug fixes</a>
+
+<a href="../../tags/openssl_fixes/" rel="tag">openssl fixes</a>
+
+<a href="../../tags/usability_enhancements/" rel="tag">usability enhancements</a>
+
+<a href="../../tags/vidalia_releases/" rel="tag">vidalia releases</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-24482fadbf2ce7cf8d7f70cb290866bd">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+I believe there is an spelling error, unless our beloved software have changed name.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 15 Aug 2009 06:33:22 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-183b2d97c77bfbfec2ae14d3a8a87282">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+thanks!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 15 Aug 2009 06:33:23 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-203e28c9d9da3fb1d83d7a676e047613">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>Mostly welcome, wish you all the best on your endeavours.<br />
+Kind Regards</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 16 Aug 2009 06:33:24 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-76b01aae960fdbd67e2d900f42be6caa">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+I'm glad to hear that all right now
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FGrooming%20spaniel%20%28not%20verified%29&amp;do=goto">Grooming spaniel (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 14 Nov 2009 06:33:25 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-55c9214a09af75cbaadf1fc677423eac">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>I'm glad to hear that all right now</p>
+
+<p>Dan, author of <a href="http://grooming-spaniel.blogspot.com/" rel="nofollow">Grooming Spaniel</a> and <a href="http://wood-burning-fireplace.blogspot.com/" rel="nofollow">Wood burning fireplace</a>.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FDan%20%28not%20verified%29&amp;do=goto">Dan (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 14 Nov 2009 06:33:26 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4bf4673b13abfe8f0753b03df620e041">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+Vidalia needs to be updated as a Universal Binary.  It's running on PPC, and all Macs are Intel these days
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 01 Sep 2009 06:33:27 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d20eac2253f4287980de5c99d14e0233">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+Vidalia is a universal binary.  Future versions will be either x86 or PPC, no more universal binaries.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 01 Sep 2009 06:33:28 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a3ab77d0437388a84683d7bb9f09c5ee">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+And see, <a href="https://blog.torproject.org/blog/major-changes-os-x-vidalia-bundle-0221alpha" title="https://blog.torproject.org/blog/major-changes-os-x-vidalia-bundle-0221alpha" rel="nofollow">https://blog.torproject.org/blog/major-changes-os-x-vidalia-bundle-0221a...</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 02 Sep 2009 06:33:29 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1d4528028ee702bd1bf17d1eda53e7ee">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+<p><a href="http://www.sohbetland.net" target="_blank" title="sohbet, Chat" rel="nofollow">sohbet</a><br />
+<a href="http://www.sohbetland.net" target="_blank" title="sohbet, Chat" rel="nofollow">chatsohbet</a><br />
+<a href="http://www.sohbetland.net" target="_blank" title="sohbet, Chat" rel="nofollow">sohbetchat</a><br />
+<a href="http://www.sohbetland.net/sohbet" target="_blank" title="sohbet, Chat" rel="nofollow">sohbet</a><br />
+<a href="http://resim.sohbetland.net" target="_blank" title="resim, en g&uuml;zel resimler" rel="nofollow">Resim</a><br />
+<a href="http://resim.sohbetland.net" target="_blank" title="resim, en g&uuml;zel resimler" rel="nofollow">Emo Resimleri</a><br />
+<a href="http://www.resimvadi.com" target="_blank" title="resim, en g&uuml;zel resimler" rel="nofollow">Resim</a><br />
+<a href="http://www.netlak.com" target="_blank" title="netlak, sohbet, chat, muhabbet" rel="nofollow">sohbetchat</a><br />
+<a href="http://www.radyoara.com" target="_blank" title="radyo, yerel radyo, radyo dinle, radyolar" rel="nofollow">radyo dinle</a><br />
+<a href="http://www.radyoland.com" target="_blank" title="radyo, yerel radyo, radyo dinle, radyolar" rel="nofollow">radyo dinle</a><br />
+<a href="http://www.sohbetland.net" target="_blank" title="sohbet, Chat" rel="nofollow">sohbet chat</a><br />
+<a href="http://www.sohbetland.net" target="_blank" title="sohbet, Chat" rel="nofollow">chat sohbet</a><br />
+<a href="http://www.sohbetland.net" target="_blank" title="sohbet, Chat" rel="nofollow">chat</a><br />
+<a href="http://www.sohbetland.net" target="_blank" title="sohbet, Chat, muhabbet, k&#x131;zlarla sohbet" rel="nofollow">kızlarla sohbet</a><br />
+<a href="http://www.sohbetland.net" target="_blank" title="sohbet, Chat, bayanlarla sohbet" rel="nofollow">bayanlarla sohbet</a><br />
+<a href="http://www.sohbetland.net" target="_blank" title="sohbet, Chat, bedava chat" rel="nofollow">bedava chat</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fsohbet%20%28not%20verified%29&amp;do=goto">sohbet (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 13 Nov 2009 06:33:30 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FVidalia_0_2_2_Released&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:33:22 AM CDT</span>
+<!-- Created <span class="date">Sat 15 Aug 2009 09:01:14 AM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

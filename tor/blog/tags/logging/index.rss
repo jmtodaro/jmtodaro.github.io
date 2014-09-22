@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged logging</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/logging/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>mikeperry: Torbutton Release 1.2.5, Google Captchas, and addons.mozilla.org</title>
+	<dcterms:creator>mikeperry</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/</link>
+
+
+	<category>/tags/captchas</category>
+
+	<category>/tags/data_retention</category>
+
+	<category>/tags/firefox</category>
+
+	<category>/tags/google</category>
+
+	<category>/tags/logging</category>
+
+	<category>/tags/mozilla</category>
+
+	<category>/tags/torbutton</category>
+
+
+	<pubDate>Sat, 10 Apr 2010 05:48:05 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:55:13Z</dcterms:modified>
+
+	<description>&lt;p&gt;Torbutton 1.2.5 has been released. You can download it from &lt;a href=&quot;https://www.torproject.org/torbutton/&quot;&gt;the torbutton homepage&lt;/a&gt;. It has also been submitted to &lt;a href=&quot;https://addons.mozilla.org/en-US/firefox/addon/2275/&quot;&gt;addons.mozilla.org&lt;/a&gt;, though it may take a while for Mozilla to review the addon.&lt;/p&gt;
+
+&lt;p&gt;In addition to the numerous bug fixes mentioned in the &lt;a href=&quot;https://gitweb.torproject.org//torbutton.git?a=blob;hb=HEAD;f=src/CHANGELOG&quot;&gt;changelog&lt;/a&gt;, one of the new features of this release is to provide the ability to automatically redirect to an alternate search engine when Google presents you with a captcha. The current options are &lt;a href=&quot;https://www.ixquick.com&quot;&gt;IxQuick&lt;/a&gt;, &lt;a href=&quot;http://www.bing.com&quot;&gt;Bing&lt;/a&gt;, &lt;a href=&quot;http://search.yahoo.com&quot;&gt;Yahoo&lt;/a&gt;, and &lt;a href=&quot;https://ssl.scroogle.org&quot;&gt;Scroogle&lt;/a&gt;. Since it supports SSL, and appears to have a &lt;a href=&quot;https://www.ixquick.com/eng/protect-privacy.html&quot;&gt;progressive stance on user privacy&lt;/a&gt;, IxQuick is the current default. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/torbutton-release-125-google-captchas-and-addonsmozillaorg&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: The carnival of data retention expands</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/The_carnival_of_data_retention_expands/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/The_carnival_of_data_retention_expands/</link>
+
+
+	<category>/tags/UK</category>
+
+	<category>/tags/black_boxes</category>
+
+	<category>/tags/data_retention</category>
+
+	<category>/tags/logging</category>
+
+
+	<pubDate>Fri, 07 Nov 2008 17:13:27 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:14:20Z</dcterms:modified>
+
+	<description>&lt;p&gt;We&#39;ve &lt;a href=&quot;https://blog.torproject.org/blog/tor,-germany,-and-data-retention&quot; rel=&quot;nofollow&quot;&gt;already asked&lt;/a&gt; about how to handle the forthcoming data retention directive in Germany.  &lt;/p&gt;
+
+&lt;p&gt;A few more governments are either heading down that path, or already there:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://www.telegraph.co.uk/news/uknews/3384743/Internet-black-boxes-to-record-every-email-and-website-visit.html&quot; rel=&quot;nofollow&quot;&gt;Internet black boxes to record every email and website visit&lt;/a&gt; at The Telegraph UK.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Telecommunications_data_retention#Data_retention_in_Denmark&quot; rel=&quot;nofollow&quot;&gt;Data Retention in Denmark&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/SORM#SORM-2&quot; rel=&quot;nofollow&quot;&gt;SORM-2 in Russia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.regeringen.se/sb/d/8670/a/78367&quot; rel=&quot;nofollow&quot;&gt;Sweden wants to record all cross-border communications&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I suspect we&#39;ll see proposals for this in the USA soon enough.&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/The_carnival_of_data_retention_expands/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

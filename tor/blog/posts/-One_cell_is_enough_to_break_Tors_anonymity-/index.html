@@ -1,0 +1,993 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>&#x22;&#x22;One</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2F-One_cell_is_enough_to_break_Tors_anonymity-&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">&#x22;&#x22;One</a>
+
+</span>
+
+
+<div id="content">
+<p>Tomorrow there's a talk at Black Hat DC by Xinwen Fu on an active attack that can allow traffic confirmation in Tor. He calls it a "<a href="http://www.cs.uml.edu/~xinwenfu/paper/ICC08_Fu.pdf" rel="nofollow">replay attack</a>", whereas we called it a "tagging attack" in the original Tor paper, but let's look at how it actually works.</p>
+
+<p>First, remember the basics of how Tor provides anonymity. Tor clients <a href="https://www.torproject.org/images/htw2.png" rel="nofollow">route their traffic</a> over several (<a href="https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#VariablePathLength" rel="nofollow">usually three</a>) relays, with the goal that no single relay gets to learn both where the user is (call her Alice) and what site she's reaching (call it Bob).</p>
+
+<p>The Tor design <a href="https://www.torproject.org/svn/trunk/doc/design-paper/tor-design.html#subsec:threat-model" rel="nofollow">doesn't try to protect</a> against an attacker who can see or measure both traffic going into the Tor network and also traffic coming out of the Tor network. That's because if you can see both flows, some <a href="http://freehaven.net/anonbib/#danezis:pet2004" rel="nofollow">simple statistics</a> let you decide whether they match up. <span class="read-more"><a href="http://blog.torproject.org/blog/one-cell-enough"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/attacks/" rel="tag">attacks</a>
+
+<a href="../../tags/research/" rel="tag">research</a>
+
+<a href="../../tags/tagging/" rel="tag">tagging</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-36f94a6e1bcd51731ce2d7db97ce44cb">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>are saying fu just wants attention by using a 12 year old attack he hoped no one at the conference would know about?</p>
+
+<p>and that tor is secure for some narrowly defined use case?</p>
+
+<p>i am seeing that attacking tor no matter how trivial is a great way to generate press for yourself.  fu and marlinspike are winning the attention economy.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 19 Feb 2009 06:19:42 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b62ae44fcdf87c611577211827549cd1">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+for what it's worth, here is a previous take\paper from Fu on the subject: <a href="http://www.cs.uml.edu/~xinwenfu/paper/ICC08_Fu.pdf" title="http://www.cs.uml.edu/~xinwenfu/paper/ICC08_Fu.pdf" rel="nofollow">http://www.cs.uml.edu/~xinwenfu/paper/ICC08_Fu.pdf</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 19 Feb 2009 06:19:43 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5cb103406db03d774fa00d74b6db05ce">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p><a href="http://www.theregister.co.uk/2009/02/19/ssl_busting_demo/" title="http://www.theregister.co.uk/2009/02/19/ssl_busting_demo/" rel="nofollow">http://www.theregister.co.uk/2009/02/19/ssl_busting_demo/</a></p>
+
+<p>[Marlinspike] ran SSLstrip on a server hosting a Tor anonymous browsing network. During a 24-hour period, he harvested 254 passwords from users visiting sites including Yahoo, Gmail, Ticketmaster, PayPal, and LinkedIn. The users were fooled even though SSLstrip wasn't using the proxy feature that tricks them into believing they were at a secure site. Sadly, the Tor users entered passwords even though the addresses in their address bars didn't display the crucial "https." (Marlinspike said he later disposed of all personally identifiable information).</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 19 Feb 2009 06:19:44 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3d7b2c70823bf8f91d5a6c8b8fad1051">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+the internet is not secure, it never was.  marlinspike chose tor because he did not want to leave his parent's basement.  i could take sslstrip to any store that uses wifi and grab all of their data too.  starbucks, mcdonalds, etc are all fine places to do this attack too.  just because some pimply faced youth failed to think big doesn't mean tor is insecure.  tor is secure, perhaps not as anonymous as it once was, but from this panera store, tor is working fine.  damn kids and your hyperbole
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 19 Feb 2009 06:19:45 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5fbb51b2b08f10a28dcbc216b338883d">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>Really interesting. Thanks for sharing this.<br />
+p.s. fix your theme <img src="../../smileys/smile.png" alt=":)" /> i use IE8beta1 and your theme is not compatibly to my IE. In firefox3.06 is ok.<br />
+--<br />
+Mark G. <a href="http://cailis.biz/" rel="nofollow">cailis</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 07 May 2009 06:19:46 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5701b6b711b3289752baf75f9d2885a0">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p><a href="http://www.theregister.co.uk/2009/02/19/ssl_busting_demo/" title="http://www.theregister.co.uk/2009/02/19/ssl_busting_demo/" rel="nofollow">http://www.theregister.co.uk/2009/02/19/ssl_busting_demo/</a></p>
+
+<p>SSLstrip works on public Wi-Fi networks, onion-routing systems, and anywhere else a man-in-the-middle attack is practical. It converts pages that normally would be protected by the secure sockets layer protocol into their unencrypted versions. It does this while continuing to fool both the website and the user into believing the security measure is still in place.</p>
+
+<p>The presentation by a conference attendee who goes by the name Moxie Marlinspike is the latest demonstration of weaknesses in SSL</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 19 Feb 2009 06:19:47 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-46eedadd5eaf50e4bb9edf160802fecf">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p><a href="http://www.informationweek.com/news/security/vulnerabilities/showArticle.jhtml?articleID=214501930&amp;subSection=News" title="http://www.informationweek.com/news/security/vulnerabilities/showArticle.jhtml?articleID=214501930&amp;subSection=News" rel="nofollow">http://www.informationweek.com/news/security/vulnerabilities/showArticle...</a></p>
+
+<p>Black Hat: Security Pro Shows How To Bypass SSL </p>
+
+<p><a href="http://www.thoughtcrime.org/" rel="nofollow">Moxie Marlinspike</a> captured 117 e-mail accounts, 16 credit card numbers, seven PayPal logins, and some 300 other miscellaneous secure login sessions in only 24 hours. </p>
+
+<p>Marlinspike explained that he obtained such data by placing proxy software he'd written, called "sslstrip," on a node of a Tor network, to conduct what's known as a man-in-the-middle attack.</p>
+
+<p>The proxy software intercepts HTTPS traffic, generates and signs security certificates, and mediates data passing between the client and server, capturing everything in the process. And though there are ways to detect the attack, like recognizing that a Web URL begins with HTTP rather than HTTPS, none of the test victims noticed.</p>
+
+<p>The attack can also be augmented with the addition of a lock icon, which would suggest to most users that the session is secure, even if it's not.</p>
+
+<p>Such tendencies allow Marlinspike to bypass SSL entirely. "Lots of times the security of HTTPS comes down to the security of HTTP, and HTTP is not secure," he explains in his <a href="https://www.blackhat.com/presentations/bh-dc-09/Marlinspike/BlackHat-DC-09-Marlinspike-Defeating-SSL.pdf" rel="nofollow">presentation slides</a>.</p>
+
+<p>Marlinspike plans to release sslstrip later this week.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 19 Feb 2009 06:19:48 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9d52b1715ecbb160f987a3ee98a662d7">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+<p>With regard to vulnerabilities - they are everywhere. People have to be careful about what they are doing - or they can expect trouble.  The moral from this kind of stories is that we need some guidance on how to use Tor and what problems we can expect. Something like  "Best Practises Guide" ?</p>
+
+<p>Finally, I'd like to express my gratitude to the maintainers of the Tor project. Keep up the good work.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FTorrrr%20%28not%20verified%29&amp;do=goto">Torrrr (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 24 Feb 2009 06:19:49 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c72bfffb9c6bfda847d8826597f59bc4">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+A "best practices for using Tor" guide has been on our todo list for ever, it's even on the volunteer page.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 27 Feb 2009 06:19:50 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c5c1f0d5a8aff8dc39edb1a040bf73dd">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+<p>Given, Tor is a subset of the internet points, Tor is easy to statistically manipulate begin &amp; endpoint attacks, and there is a known number of jumps, Could Tor be statistically manipulate in middle relay attacks by controlling a statistically significant number of relays to determine begin &amp; endpoints? Statistically controlling enough Tor relays is the same as controlling all Tor relays, which is the same as controlling the begin and end points.</p>
+
+<p>Many solutions are possible as one is trying to obscure a real identity for themselves. In the process of doing such, they have created one. Would it be better to get Tor into default settings on routers - OEM and third party (dd-wrt).</p>
+
+<p>Other Possible Solutions<br />
+ Package requests with fictitious requests. (Which is the real one?)<br />
+ Pass data back that was not requested with data that was. (Which is real one?)<br />
+ Combine two and cache requests for later retrieval of data. End user client will know which data is theirs, but multiple people will have requested such data on the network at similar times, making it appear more viral than individual. - Issue - others see random real and fictional requests on network and bandwidth increases.<br />
+ Integrate Tor into Router Firmware to increase number of Tor relays. (think this will help a bit in the numbers game. may allow for code injection and other vulnerabilities).</p>
+
+<p>For anonymous server applications, look at what can and can not be done. You can not break a code that does not exist and you can not hide what is in the open. Illusion, obscurity, overload, misdirection are all good ways of handling anonymity. Randomly combining them makes it easy for for only the initiator to know what truly was requested.</p>
+
+<p>Tor, RAID/Torrents, encryption and cypher keys similar to Bible Codes etc</p>
+
+<p>Interesting stuff.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 25 Feb 2009 06:19:51 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-36064a4761b477ffdf9605d808b9d0a1">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+You should write up a paper and have it peer reviewed.  I think you'll find the current state of research in the areas you've mentioned is further advanced and more complex than your simple overview.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 27 Feb 2009 06:19:52 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5f9390d7fdc86d23a53be966f3a0603c">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+<p>I guess many tor nodes are controlled, too many for privacy. You have to do something about it. Inject fake packets or cover traffic, otherwise its broken.<br />
+Never mind the net load, we need it in the future, believe me.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 26 Feb 2009 06:19:53 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-453b422c523f651537f19d2472755451">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+<p>Your client doesn't trust the nodes already.  See, <a href="https://blog.torproject.org/blog/circumvention-and-anonymity" title="https://blog.torproject.org/blog/circumvention-and-anonymity" rel="nofollow">https://blog.torproject.org/blog/circumvention-and-anonymity</a>, for more details.</p>
+
+<p>As for cover traffic, <a href="https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#YouShouldPad" title="https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#YouShouldPad" rel="nofollow">https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#YouShouldPad</a></p>
+
+<p>Systems that introduce cover traffic are generally easy to separate the signal from the noise through statistical analysis.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 27 Feb 2009 06:19:54 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-99ba2679135d0fbff7f7633342c8e86e">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+<p>While reading about block-level encryption for hard drives, I came across the term "replay attack", although I don't really understand it. I think it means that they repeat the same data more than once.</p>
+
+<p>I remember reading that Tor uses the CBC block cipher mode, all versions of which are vulnerable to that type of attack.</p>
+
+<p>Apparently, the most secure block cipher modes I've read about, CMC and EME, are not vulnerable to replay-block attacks but are vulnerable to replay-sector attacks. However, since that involved symmetric encryption on a hard disk, I am not sure how well it applies to network encryption.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 18 Mar 2009 06:19:55 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-405286588819567b65924c57ea3695cd">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+A fancy name and a payload consisting of stuff that is so old everyone has already forgotten it...
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FSpecial_Anonymous_someone%20%28not%20verified%29&amp;do=goto">Special_Anonymous_someone (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 19 Mar 2009 06:19:56 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-07d3471414c9cec71756f868a33bfd24">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+<p>Good post and good to know the idea from the designer of Tor on a Tor-related paper.</p>
+
+<p>I hope there'll be more similar posts discussing new papers in this field. Thanks.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 21 Mar 2009 06:19:57 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6546baf7e8f9d80f481e0af42492863c">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+<p>I only use Tor to foil busybody ISPs or government agencies from snooping and logging my surfing habits. </p>
+
+<p>I wouldn't dream of typing identification information (bank accounts, logins, credit card details or even my name) into any forms while using TOR, because of the possibility of compromised exit nodes.</p>
+
+<p>Even using a paid VPN anonymizer, I wouldn't trust them enough to send such information through their servers.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 25 Apr 2009 06:19:58 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b084545c1b83b1c4bb08ff9a57b8f47f">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+I'm writing some copy for a paid proxy Server and I downloaded and used Tor every day for about a week. UNTIL....my Adwords a/c was hacked and they ran up €400 in clicks before Google and I noticed it - a new account set up with a daily spend of €2000. I suspect they probably got in through my gmail a/c which is obviously linked to the Adwords a/c.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FMalcolm%20Lambe%20%28not%20verified%29&amp;do=goto">Malcolm Lambe (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 05 May 2009 06:19:59 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e7d395d1112810ecccf90314e79391ac">
+
+<div class="comment-subject">
+
+Comment 19
+
+</div>
+
+<div class="inlinecontent">
+<p>Yes, Tor is secure.  Google records the last few IP addresses which accessed your account.  It's a stretch to say, "I had Tor installed" and blame it for your Google account hack.  Did you always login via https?  Was your password guessed?</p>
+
+<p>Lots of things could have happened and this could be a coincidence.  It's unfortunate that your first experience with Tor coincided with your Google problems.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 09 May 2009 06:20:00 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-182774e67388ed2eebf63f00d24a97a0">
+
+<div class="comment-subject">
+
+Comment 20
+
+</div>
+
+<div class="inlinecontent">
+I can bearly get my 14.4 Zoom modem to connect to compuserve....so all this is a bit techi for me....what I wanna know is will my mother fidn out I am downloading porn?  I would hate to go make to wacking off to the underwear section of the old sears catalog.....
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 30 Jul 2010 06:20:01 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2a139cf92fd7e8ec50a9d1b03e5e80f5">
+
+<div class="comment-subject">
+
+Comment 21
+
+</div>
+
+<div class="inlinecontent">
+<p>It was a very nice idea! Just wanna say thank you for the information you have shared. Just continue writing this kind of post. I will be your loyal reader. Thanks again.<br />
+jeux pour gagner des cadeaux<br />
+7</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 31 Jul 2010 06:20:02 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f7aabc0bf4c7d9cbc1307d507b01a366">
+
+<div class="comment-subject">
+
+Comment 22
+
+</div>
+
+<div class="inlinecontent">
+<p>Combine two and cache requests for later retrieval of data. End user client will know which data is theirs, but multiple people will have requested such data on the network at similar times, making it appear more viral than individual. - Issue - others see random real and fictional requests on network and bandwidth increases.<br />
+cheap hotels</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 05 Oct 2010 06:20:03 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2F-One_cell_is_enough_to_break_Tors_anonymity-&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:19:41 AM CDT</span>
+<!-- Created <span class="date">Thu 19 Feb 2009 12:51:21 AM CST</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

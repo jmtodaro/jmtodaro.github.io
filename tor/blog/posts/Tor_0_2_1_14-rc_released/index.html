@@ -1,0 +1,2820 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tor 0.2.1.14-rc released</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_1_14-rc_released&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Tor 0.2.1.14-rc released</a>
+
+</span>
+
+
+<div id="content">
+<p>Changes in version 0.2.1.14-rc - 2009-04-12<br />
+<strong>Major features:</strong> <span class="read-more"><a href="http://blog.torproject.org/blog/tor-02114rc-released"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+<ul>
+<li>Clients replace entry guards that were chosen more than a few months ago. This change should significantly improve client performance, especially once more people upgrade, since relays that have been a guard for a long time are currently overloaded.</li>
+</ul>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/bug_fixes/" rel="tag">bug fixes</a>
+
+<a href="../../tags/improvements/" rel="tag">improvements</a>
+
+<a href="../../tags/release_candidate/" rel="tag">release candidate</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-417e2866c190e6beebe03e61902b0dd5">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>Can anybody be clear enough to say where to make changes so that I can have a spefic country ip only as exit node?</p>
+
+<p>All you guys do is point to a page where nothing makes any sense. Tell me in a simple language which file to edit in the Tor Directory or how to execute commands which will help me get what i want. I am no computer geek so please if you consider my request.</p>
+
+<p>I am using Vidilia 0.1.10, Tor 0.2.0.34 (r18423), QT 4.4.3</p>
+
+<p>Thank you.</p>
+
+<p>Best Regards.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 15 Apr 2009 06:22:28 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-cf0f10bd752eba556b2058a98138ee23">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>With Tor 0.2.0.34, you cannot do this.  It's not supported in that version of Tor.  It's in Tor 0.2.1.x-alpha series.  Right now, it involves editing your torrc configuration file.  We're hoping someone can make progress and/or send us patches on being able to click the Vidalia map and turn this into "exit from this country" for the new circuits.</p>
+
+<p>Bonus points if they do it on Marble-ized Vidalia.</p>
+
+<p>If you happen to be using linux, TorK can do this "exit by country" already.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 15 Apr 2009 06:22:29 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-53263bd91c8fb46a0ed4400c94b951a3">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>Ok I downloaded Tor 0.2.1.14- rc and edited the torrc with this:</p>
+
+<p>#Use Exit Nodes in DE<br />
+ExitNodes {de}<br />
+StrictExitNodes 1</p>
+
+<p>And when I launch the program, the message log says:</p>
+
+<p>Apr 16 13:59:27.093 [Warning] No specified exit routers seem to be running, and StrictExitNodes is set: can't choose an exit.<br />
+Apr 16 13:59:27.093 [Warning] failed to choose an exit server</p>
+
+<p>Without the StrictExitNodes it doesn't give "de" exit ip.</p>
+
+<p>Any solution you know for this?</p>
+
+<p>Thank you.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 16 Apr 2009 06:22:30 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-182edc5360ddae027516730f330c4acb">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+Exit selection is a combination of country and port in your configuration.  Perhaps no exit nodes in Germany allow an exit to the ports you desire.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 24 Apr 2009 06:22:31 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a11930d6cb1bbc51c70d157c66aabf40">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>anyways since this didn't work for me, I spent $99 buying unlimited ip license from Cloakfish which actually uses tor technology but is more efficient regarding geo-ip. I could pick up the end nodes with there program and it served my purpose.</p>
+
+<p>So if Tor fixes this thing I would love to donate.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 29 Apr 2009 06:22:32 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c091bf30307b2362b778a9b236522c8f">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+Maybe your Tor is not properly integrated with a geoip service to tell your Tor which nodes are German.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 24 Apr 2009 06:22:33 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5f961359cdf7c56bd7df53cbe9d7f8e6">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+And might you be kind enough to tell us how we all shell do to "properly integrate" tor with a "geoip service" then, so that TOR is working as it should do.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 22 May 2009 06:22:34 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-26e602960f047aa6ef8cb8d86c400a0d">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+<p>The only way that seems to work is if you check for nodes in Germany &amp; pick some nodes &amp; use there fingerprint or nicknames, here is the fastest one now, example:</p>
+
+<p>ExitNodes routor, weltbank, Piratenschatzi, FoeBuD3, gpfTOR4<br />
+StrictExitNodes 1</p>
+
+<p>I wouldn't recommend using weltbank thou, behaved strange in the past...</p>
+
+<p>The ExitNodes {de} or ExcludeNodes {de} is still not working, maby admin can tell us all why this command after several versions still doesn't work.<br />
+&amp; why do you force people to use such an unsecure thing as javascript &amp; cookies to make comments.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 26 Apr 2009 06:22:35 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7d6062b61456cb86ad46375d47bfe0e6">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+<p>I think the cookies are required for the CAPTCHA, so they can know which person was assigned which CAPTCHA.</p>
+
+<p>I have JavaScript disabled and haven't needed to enable it to comment here.</p>
+
+<p>I have needed to load images, though. I have images disabled. Also, a lot of links are invisible unless you highlight the text or load the background image.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 26 Apr 2009 06:22:36 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1b3e48290e5d88156461e2e6f8401cde">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+I seem to be able to work on the blog without cookies and javascript just fine.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 02 May 2009 06:22:37 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-11c17c6c80747d24b851d7a8e0f22379">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+Well javascript is not needed but you have to turn on cookies for it to work, for a privacyrelated site i think you should not force people to use cookies either.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 22 May 2009 06:22:38 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5dff45377fd583957bd88dad823b99c7">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+<p>Trying:<br />
+ExitNodes berwick,NoMoBushWars,innerspace,extrapolator,bloxortsipt22,rhnetfsck,q867401q,WesCSTor,wchtfd<br />
+StrictExitNodes 1</p>
+
+<p>For nodes in Atlanta, Georgia and Connecticut, USA does not work either, using<br />
+Tor 0.2.1.14-rc (r19307)</p>
+
+<p>The entire ExitNodes function does not seem to be working...</p>
+
+<p>Where do I go to get fingerprint codes to try that?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 18 May 2009 06:22:39 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f218c73f03868e7dede89b851804ffad">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+<p>Your right, ExitNodes function does not work until they fix the geoip data issue. Now it only works some times not always as it should.</p>
+
+<p>If you go to this page:<br />
+<a href="https://torstatus.blutmagie.de/" title="https://torstatus.blutmagie.de/" rel="nofollow">https://torstatus.blutmagie.de/</a><br />
+then you have to there you have to check one node at a time to get the fingerprints, you then take the info, for example<br />
+7BC0 E733 55F8 917F F69B F32D C1F5 6BB5 9F9E 67A5<br />
+and remove every space in between and add a $ before the number, like this<br />
+$7BC0E73355F8917FF69BF32DC1F56BB59F9E67A5<br />
+that is what you use in ExitNodes, they really made it easy to choose witch country's to use and not to use, don't you think.....</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 22 May 2009 06:22:40 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3b5249cf99972e583472510c64184306">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+With the newest versions of Firefox and TOR, Firefox and the computer stop responding for a few seconds frequently. During these interruptions you can type text or scroll but nothing will happen on your screen for a few seconds and then all typed text will appear quickly and if you scrolled, it would scroll. I tested hardly to find out that the reason was TOR and had to uninstall it.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 24 Apr 2009 06:22:41 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-08f7bc43867bf499869296c3816b0d13">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+how odd.  I can see this happening on a 486 or pentium II maybe, but not any system produced in the last decade or so.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 24 Apr 2009 06:22:42 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a40ecb59708eb6323a4ac0d58655f516">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+It's network related, if I turn off Internet, no problem. It's 2.4 GHz.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 24 Apr 2009 06:22:43 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0db2f066250c603f4a22b384c44a1ab7">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+The problem can be turned off if you just disable the Torbutton in Firefox. When you need it, you can enable it and use it.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 08 May 2009 06:22:44 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8591334e95de0fd181252fee90326722">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+<p>Thank you for a great program, just a question:</p>
+
+<p>Tor / Vidalia needs a file with the name geoip in the Tor configuration directive for some of the functions to work properly.<br />
+No version of Tor / Vidalia i have tried(including the latest) creates such a file, why?</p>
+
+<p>Is it really meant that i have to manually type in all the geoIP information for all the 4 294 967 296 IP adresses by hand, in that case it would take me quite some time.......</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 26 Apr 2009 06:22:45 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-40172e488f1a9facbd1a4e2c82256fd2">
+
+<div class="comment-subject">
+
+Comment 19
+
+</div>
+
+<div class="inlinecontent">
+<p>Any info about why Tor/Vidalia does not create this file(in windows version).<br />
+Without it the functions of excluding nodes by country would of course not work.</p>
+
+<p>Don´t you wan´t people to be able to exclude nodes by country???</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 18 May 2009 06:22:46 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-871785cfc1f0a7fec24cc1c4ac7ef89a">
+
+<div class="comment-subject">
+
+Comment 20
+
+</div>
+
+<div class="inlinecontent">
+<p>Old version nodes still running<br />
+On February 8th, Tor 0.2.0.34 was released,<br />
+you then said:</p>
+
+<p>"This release marks end-of-life for Tor 0.1.2.x."</p>
+
+<p>If this is true why do you still allow old version nodes to run ?</p>
+
+<p>Version 0.1.2.19 that is known to have been used by nodes that used it to spy on traffic it is still used by 6% of all nodes. It was released 2008-01-17, that's over a year ago.<br />
+Even earlier versions are run by 7% of the nodes. When are you gonna stop the possibility to run a node on these old(&amp; potentially dangerous) versions(theres really no good explanation why fast nodes like Kryten or TSL with 4800KB bandwidth still is running an old 0.1.2.19 version, unless it's modified).</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 27 Apr 2009 06:22:47 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c67b21f2a3dee7a6c4cf64bf108b8645">
+
+<div class="comment-subject">
+
+Comment 21
+
+</div>
+
+<div class="inlinecontent">
+<p>End of life means we're not supporting the code any more.   There will be no more updates or fixes applied to this version.  </p>
+
+<p>As you know, we don't control the nodes.  If volunteer operators want to run older versions with known exploitable code that puts their operating system at risk, that's their choice.</p>
+
+<p>Most people simply run what's in their distribution repositories, and in many cases, that's 0.1.2.x.  </p>
+
+<p>Tor clients don't trust any relay, so the risk is more on the relay OS side than it is for tor clients.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 02 May 2009 06:22:48 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-63d15779b64ca78592b5f7e4abb1094f">
+
+<div class="comment-subject">
+
+Comment 22
+
+</div>
+
+<div class="inlinecontent">
+<p>Thanks for answering.</p>
+
+<p>"As you know, we don't control the nodes. If volunteer operators want to run older versions with known exploitable code that puts their operating system at risk, that's their choice."</p>
+
+<p>Wouldn't it be very easy,  just to add in the code to only allow nodes to run the latest 2 stable/unstable releases or versions released the last 6 month or something similar ?</p>
+
+<p>Old relay nodes of course also puts Tor clients that use them at risk !</p>
+
+<p>At least do this for fast nodes, i would understand that a chines node with 5KB/s bandwidth could have problems to find and download the latest updates but not an US or DE node with bandwidth of 1000+ KB/s</p>
+
+<p>"End of life means we're not supporting the code any more. There will be no more updates or fixes applied to this version."</p>
+
+<p>As versions 0.2.0.33, 0.2.0.32, 0.2.0.31 &amp; 0.2.0.30 was released earlier wouldn't the release of version 0.2.0.30 on the 15  july 2008 have been the one that meant the "end of life" for the 0.1.2.x versions, if that was what you meant by that comment?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 18 May 2009 06:22:49 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c7d5f7c90c497fa439f0f7e23b8c1d87">
+
+<div class="comment-subject">
+
+Comment 23
+
+</div>
+
+<div class="inlinecontent">
+so any new version is going 2 come or planning  to make?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FPETER%20%28not%20verified%29&amp;do=goto">PETER (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 02 May 2009 06:22:50 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-385fe3a216fb3d1fed69d95451d13ddf">
+
+<div class="comment-subject">
+
+Comment 24
+
+</div>
+
+<div class="inlinecontent">
+<p>About the command CircuitBuildTimeout, before version 0.2.1.(9?) in the torrc one has been able to change this to lower values than 30, thats no longer the case, I think this is bad for one's privacy and bad for the overall speed of Tor, example:</p>
+
+<p>If 2 of the 3 nodes in the circuit build fast (less than 2 sec) and the 3rd takes up to 28 sec then it's obviously either<br />
+1 overloaded, and it would be better if some people(that change this value in torrc) waited less than 30 sec to try to build another circuit)or<br />
+2 even worse it's doing some bad thing like an timing attacks(and you would absolutely not use it then.).</p>
+
+<p>It would of course not be good for ones privacy to use values like 2, 3 or similar but one should definitely be able to use values like 10-29, the choice should really be up to people them selfs, not be forced upon them to use these high values.</p>
+
+<p>Why do you make changes to Tor that purposely decreases peoples speed ?<br />
+Are you going to implement this bad thing in the stable version too ?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 07 May 2009 06:22:51 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-939966b9c243a9504041845e4465269b">
+
+<div class="comment-subject">
+
+Comment 25
+
+</div>
+
+<div class="inlinecontent">
+<p>You're right that in the older versions you could configure it to prefer the<br />
+circuits that completed faster. Letting users set it too low is a bug: if<br />
+everybody did that, the relays would get overwhelmed with circuit creation<br />
+requests, making everything slower, and leading all the Tor clients to<br />
+unwittingly launch DoS attacks on the network. We can't allow that.</p>
+
+<p>The right answer is to have every Tor client automatically track how long it<br />
+takes to build circuits, and then discard circuits that take more than a<br />
+standard dev above the mean. For more details, check out Section 5.2 of the<br />
+performance.pdf document I posted about here:<br />
+<a href="https://blog.torproject.org/blog/why-tor-is-slow" title="https://blog.torproject.org/blog/why-tor-is-slow" rel="nofollow">https://blog.torproject.org/blog/why-tor-is-slow</a><br />
+and also proposal 151:<br />
+<a href="https://git.torproject.org/checkout/tor/master/doc/spec/proposals/151-path-selection-improvements.txt" title="https://git.torproject.org/checkout/tor/master/doc/spec/proposals/151-path-selection-improvements.txt" rel="nofollow">https://git.torproject.org/checkout/tor/master/doc/spec/proposals/151-pa...</a></p>
+
+<p>We hope to have this dynamic-timeout-calculation feature in the Tor 0.2.2.x<br />
+series. In the mean time, let's all try not to make the Tor network fall over.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Farma&amp;do=goto">arma</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 09 May 2009 06:22:52 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d7527188fe2d12942c97708b8a91d4ca">
+
+<div class="comment-subject">
+
+Comment 26
+
+</div>
+
+<div class="inlinecontent">
+<p>Thank you for your answer.</p>
+
+<p>According to Figure 5 in the performance.pdf around 85-90% of the circuits are created within 7 seconds, and around 70% within 5 seconds, so could you please allow people to choose values of 5-10 seconds for CircuitBuildTimeout in coming Tor versions.</p>
+
+<p>Otherwise you would create an unnecessary security risk for people that either would have to accept higher risk for timing attacks and similar or be forced to use an old insecure version of Tor, both a bad thing of course.</p>
+
+<p>This should be allowed at least until you fix this new approach in the coming 0.2.2.x or later versions.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 18 May 2009 06:22:53 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-415bb1a8609f37c4a205d2c16abab81f">
+
+<div class="comment-subject">
+
+Comment 27
+
+</div>
+
+<div class="inlinecontent">
+<p>Regarding the ExitNodes feature:<br />
+"ExitNodes node,node,...<br />
+    A list of identity fingerprints or nicknames of preferred nodes to use for the last hop in the circuit. These are treated only as preferences unless StrictExitNodes (see below) is also set. </p>
+
+<p>StrictExitNodes 0|1<br />
+    If 1, Tor will never use any nodes besides those listed in "ExitNodes" for the last hop of a circuit." </p>
+
+<p>Do I understand correctly that ExitNodes DO NOT WORK with either:<br />
+1. Country codes like {de} or {us}  OR<br />
+2. comma-separated nicknames like: berwick,NoMoBushWars,innerspace...<br />
+???</p>
+
+<p>Can anyone confirm this? Does anyone have experience with the ExitNodes feature actually working anywhere?</p>
+
+<p>Thanks!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 19 May 2009 06:22:54 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4d789e918f9558aa1d0b4ac31a8fe435">
+
+<div class="comment-subject">
+
+Comment 28
+
+</div>
+
+<div class="inlinecontent">
+<p>I just tested it, it works fine.  Are the nodes you're trying to force as exits actually online and allow access to where you think it does?</p>
+
+<p>Country codes work fine, I just confirmed germany, poland, and china.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 20 May 2009 06:22:55 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ea8c38845760bd0c35e47f0dbfd43c1b">
+
+<div class="comment-subject">
+
+Comment 29
+
+</div>
+
+<div class="inlinecontent">
+<p>O.K. I just tried this:</p>
+
+<p>In the torrc file located at:<br />
+C:\Documents and Settings\Username\Menú Inicio\Programas\Tor\torrc</p>
+
+<p>I am adding these commands to the file, just before "#ExitPolicy accept:"</p>
+
+<p>ExitNodes {us}<br />
+StrictExitNodes 1</p>
+
+<p>Save changes. Reboot my Windows XPSP2</p>
+
+<p>Bring up Tor, connect.</p>
+
+<p>Go to <a href="http://internetfrog.com" title="http://internetfrog.com" rel="nofollow">http://internetfrog.com</a>   </p>
+
+<p>It tells me that:<br />
+The Location of Your IP Address, 213.112.108.203, is:</p>
+
+<p>-, - - SWEDEN</p>
+
+<p>What am I doing wrong?</p>
+
+<p>Thanks!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 21 May 2009 06:22:56 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-02c808359e3d70f5f96d1b6c54aa672d">
+
+<div class="comment-subject">
+
+Comment 30
+
+</div>
+
+<div class="inlinecontent">
+<p>You are not doing anything wrong, it's TOR that has, shall we call it a bug in the way it works when choosing/avoiding nodes according to country,<br />
+As far as i understand it, you have to have a file in your tor-map with the name geoip. Tor/Vidalia is not creating this file for you(at least not in windows), you have to create it yourself, if you have created this file and it does not already have data for the IP that vidalia/tor wants to use as exit(,entry or middle) it will use the IP without checking first if it matches the condition you have set up.<br />
+Please change this now so that Tor NEVER use an IP that you don't have info about in geoip file, if you use any countrycode commands in any of these torrc commands: ExcludeNodes,ExcludeExitNodes,EntryNodes,ExitNodes.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 22 May 2009 06:22:57 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f082a7cab1ce179108dac9b98cda29c7">
+
+<div class="comment-subject">
+
+Comment 31
+
+</div>
+
+<div class="inlinecontent">
+<p>Tor Browser Bundles do not come with the geoip file, yet.  So exitnodes by country won't work.</p>
+
+<p>It appears the geoip file for the Vidalia Bundle for 0.2.1.14-rc wasn't included in the package.</p>
+
+<p>And yes, in order to choose by country, you have to have the geoip file working.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 22 May 2009 06:22:58 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8024dc04e2ce7f07ffe0fae2dd1324a5">
+
+<div class="comment-subject">
+
+Comment 32
+
+</div>
+
+<div class="inlinecontent">
+<p>Thank you for your answer.</p>
+
+<p>What i want to know is:<br />
+Were do i get this(complete) GeoIP file in a format supported by Tor/Vidalia ???<br />
+So that my Vidalia/Tor always respect my configuration in torrc.</p>
+
+<p>Why is the GeoIP file not included ?</p>
+
+<p>If the file is not included, why don't you ask the user during installation process if they want to download the complete file or if later a user has any GeoIP-dependent command in his/hers torrc-file why don't Tor/Vidalia then ask/download the complete file if user wants that.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 23 May 2009 06:22:59 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ab50f1d0931f6b030dad280f3f42b667">
+
+<div class="comment-subject">
+
+Comment 33
+
+</div>
+
+<div class="inlinecontent">
+<p>The lack of geoip file in the vidalia-bundle for 0.2.1.14-rc is a bug.  Normally, the geoip file is in the vidalia-bundle packages.</p>
+
+<p>You can download the geoip file from <a href="http://git.torproject.org/checkout/tor/master/src/config/geoip" title="http://git.torproject.org/checkout/tor/master/src/config/geoip" rel="nofollow">http://git.torproject.org/checkout/tor/master/src/config/geoip</a> </p>
+
+<p>You want to put it in your Data Directory, which is<br />
+"C:\Documents and Settings\{username}\Application Data\Tor" by default.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 23 May 2009 06:23:00 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f606937aa595e969d67c6318d02ca209">
+
+<div class="comment-subject">
+
+Comment 34
+
+</div>
+
+<div class="inlinecontent">
+<p>Thank you very much for the GeoIP file, now i feel a litte bit more secure as a Chines concerned about the Tibetan people.</p>
+
+<p>Hopefully i can now avoid the Chines governments Tor nodes in the future.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 23 May 2009 06:23:01 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1e6e57ffc7e88b1c1c3710f66a9530bf">
+
+<div class="comment-subject">
+
+Comment 35
+
+</div>
+
+<div class="inlinecontent">
+<p>On the ReleaseNotes for version 0.2.0.30 - 2008-07-15 its stated that - Tor now includes an IP-to-country GeoIP file. I find that hard to believe as version 0.2.0.30 even is smaller than the previous one.</p>
+
+<p>"It appears the geoip file for the Vidalia Bundle for 0.2.1.14-rc wasn't included in the package."</p>
+
+<p>Ever since the release of version 0.2.1.6-alpha - 2008-09-30, the first one supporting per-country relay selection, no versions(0.2.1.6A - 0.2.1.14RC) of VidaliaBundle have included this geoIP file how could you then say that they support this function, when it's not working without the missing geoIP file !!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 23 May 2009 06:23:02 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-24ef90d8d64b14a44b4203f02b2e839d">
+
+<div class="comment-subject">
+
+Comment 36
+
+</div>
+
+<div class="inlinecontent">
+<p>With StrictExitNodes 1 set then....</p>
+
+<p>2 is the alternative that works most of the times, sometimes it mysteriously disregards from the condition you have setup thou.</p>
+
+<p>1 is not working if you don't have made an geoip file or an older tor version(0.2.1.14 is the one that's working best so far), but even with an geoip file it's not going to work with nodes that are new of have dynamic IPs since you don't have any data before, then tor disregards from your setup and uses a node that might be against what you have setup.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 22 May 2009 06:23:03 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-01cca55fa2484a60d2e0e195f9a8bcea">
+
+<div class="comment-subject">
+
+Comment 37
+
+</div>
+
+<div class="inlinecontent">
+<p>Thanks for the "country filtering" on exit nodes. (Assuming it works fine on Linux as I have no problem to update/import geoip file)</p>
+
+<p>Do you plan to add the same feature for exit policy for those who are so kind to accept to be an exit nodes.</p>
+
+<p>As more and more countries are voting laws to filter the internet, the lack of such a feature could dicourage people to run an exit node, and at the end of the line TOR will be useless due to network congestion on too few exit nodes.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 22 May 2009 06:23:04 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3f3a955a336d563a660c75a9eb4da570">
+
+<div class="comment-subject">
+
+Comment 38
+
+</div>
+
+<div class="inlinecontent">
+<p>You already have the ability to filter where you want your exitnode to connect if you for example wants to block the Country: AMERICAN SAMOA you simply block there 4,096 IP adresses by adding:<br />
+reject 202.70.112.0/20:*<br />
+Not to complicated ?<br />
+Also those countrys are kind enough to do the job for you by providing  false DNS information for the adresses they claim do something bad.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 22 May 2009 06:23:05 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-78e26d4ef427c8d597d56d8416a4c8b8">
+
+<div class="comment-subject">
+
+Comment 39
+
+</div>
+
+<div class="inlinecontent">
+<p>Sorry, but looking at the geoip file, it does seem so simple to block a country.<br />
+I transformed the GeoIP to XML and sorted nodes to random country.<br />
+For one signle country, I easily end up with more than 10K ranges to reject.<br />
+Might be simpler for U.S. because of IANA IP dispatching, but U.S. is not the only country in the world <img src="../../smileys/smile4.png" alt=";-)" /><br />
+So if I try to inject 10K block/accept ranges to TOR... I doubt it would be very glad !.. I might even reach internal limits and disrupt the network publishing so many exit block ranges.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 23 May 2009 06:23:06 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5f85041d534013b9e01ccf06547ee19e">
+
+<div class="comment-subject">
+
+Comment 40
+
+</div>
+
+<div class="inlinecontent">
+<p>Blocking a small(internetwize) country is easy maby 1-10 lines needed, medium country's 10-100 lines &amp; the large ones needs 100s or even 1000+ lines like the USA, Germany, UK and so on, basically they don't want you as a private person to block a whole (large) country. It would of course be very easy for someone like a NSA field agent and so on to have a precompiled blocklists if they would need to use the TOR network.</p>
+
+<p>Using blocklists of 10000+ lines do work(unless you have a computer from prehistoric time), just try and see for yourself.....</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 23 May 2009 06:23:07 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8f26bd665152e8619ee065b56ba97015">
+
+<div class="comment-subject">
+
+Comment 41
+
+</div>
+
+<div class="inlinecontent">
+<p>Ok then.</p>
+
+<p>I'll improve my XSL transform so that it gives me an output I can just paste to /etc/torrc in order to block/accept countries.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 24 May 2009 06:23:08 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5e8d6eb49a0acfa0e7c04cba3a3740cf">
+
+<div class="comment-subject">
+
+Comment 42
+
+</div>
+
+<div class="inlinecontent">
+<p>Read the docs for 0.2.1.x-alpha/rc branch, ExcludeNodes and ExitNodes support country codes.</p>
+
+<p>If you want to "ExcludeNodes {us},{de},{gb}", by all means, have at it.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 23 May 2009 06:23:09 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d6ab12fb36328153b37e1b5776c5adb1">
+
+<div class="comment-subject">
+
+Comment 43
+
+</div>
+
+<div class="inlinecontent">
+I see, you mean for exit policies.  Feel free to open a feature request at <a href="https://bugs.torproject.org/" title="https://bugs.torproject.org/" rel="nofollow">https://bugs.torproject.org/</a>  thanks!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 23 May 2009 06:23:10 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1bc10c7123d0587c3b0ea28a8a3ab88f">
+
+<div class="comment-subject">
+
+Comment 44
+
+</div>
+
+<div class="inlinecontent">
+<p>Yes I mean "exit policy" for those who accept to donate bandwith AND be and exit node.</p>
+
+<p>Fact is that filtering exit policy against ports is not reliable.</p>
+
+<p>One could parameter it's P2P software to run on port 443 or even 80. So if you accept to run an exit node and allow these ports, you could as well end up appearing as participating in illegal P2P which is bound to prosecution in more and more countries.</p>
+
+<p>So I'll be more confident to run an exit node if I can ban those countries.</p>
+
+<p>Other possible improvement would be to be able to filter against protocol, eg HTTP for example, as Wireshark can do. That would be more reliable.<br />
+Of course one can use HTTP Tunneling, but then he will need another HTTP server, outside TOR, to "unpack" what was tunneled and go to the real target.</p>
+
+<p>And thanks for the link, I'll fil some "feature requests".</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 24 May 2009 06:23:11 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-eacbf7e6cef8c90f2226565eaa8dda38">
+
+<div class="comment-subject">
+
+Comment 45
+
+</div>
+
+<div class="inlinecontent">
+<p>I don't think you can solve that entirely by filtering some country's like RO,BG or whatevet you had in mind.</p>
+
+<p>If you have a long list of countrys you would like to ban you would have to get iplists from several reliable sorces, merge them together &amp; end up with 100-1000s IP blocks<br />
+or you would have to overban IPs by using whole x.x.x.x/8 blocks to get the list down, maby you should go for only being entry+middlenode until your country gets an resonable policy against Tor nodes.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 26 May 2009 06:23:12 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a041d4dc1d5f456ff4ac389b435ec06e">
+
+<div class="comment-subject">
+
+Comment 46
+
+</div>
+
+<div class="inlinecontent">
+<p>So I tried (assuming geoip bundle with TOR is the "reliable" source) blocking FR + unallocated gives me 19K lines of<br />
+ExitPolicy reject so.me.ip.addr</p>
+
+<p>Side effects are :<br />
+- starting TOR or Vidalia take 100% CPU for around 1min<br />
+- In /var/log/tor/log I get messages :</p>
+
+<p>  [warn] router_dump_router_to_string(): Bug: descriptor policy_write_item ran out of room!<br />
+  [warn] router_rebuild_descriptor(): Bug: Couldn't generate router descriptor.</p>
+
+<p>So definitely no, trying to feed so many rejects in TOR doesn't properly work !</p>
+
+<p>And by the way... if you though listing exactly US IP gives a small result, you are very wrong... I get 27K lines of rejects !</p>
+
+<p>So you're right, as long as such a behaviour is not implemented as it is for ExitNodes, I'll go down running as only entry+middlenode.</p>
+
+<p>... and I have more accurate data to post to the bug list now !</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 27 May 2009 06:23:13 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2b28ceaf57b386ad2825b3dd08a58d5c">
+
+<div class="comment-subject">
+
+Comment 47
+
+</div>
+
+<div class="inlinecontent">
+<p>US is the country with most IP ranges of cource.</p>
+
+<p>Tor's GeoIP is not a reliable source, but it's better than nothing...</p>
+
+<p>The GeoIP is by nature not 100% reliable data, you have for example a number of very fast nodes on Tor network that has fake country for there IP.</p>
+
+<p>The data for your CountryIP can easily be faked if you have static IP</p>
+
+<p>Go for country IP instead, source for both where ISP is located + where internet access is located.</p>
+
+<p>one source gives for FR:<br />
+# Total Networks: 1,848  = you should have about 1.8k lines for FR<br />
+# Total Subnets:  68,933,568 = and about 68.9M IPs for FR</p>
+
+<p>You could decrease the list by overblocking IP series with many separate blocks on insead of using all those one's.<br />
+For France you could for example block 193.0.0.0/8, 194.0.0.0/8, 195.0.0.0/8... instead of<br />
+193.0.128.0/18,193.0.192.0/19,193.0.245.0/24,193.16.156.0/24,<br />
+193.16.159.0/24........</p>
+
+<p>" [warn] router_dump_router_to_string(): Bug: descriptor policy_write_item ran out of room!<br />
+[warn] router_rebuild_descriptor(): Bug: Couldn't generate router descriptor.<br />
+So definitely no, trying to feed so many rejects in TOR doesn't properly work !"</p>
+
+<p>Do you only have small amount of memory on your computer ?<br />
+How many blocklines is it accepting and how much memory do you have installed ?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 27 May 2009 06:23:14 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f7de35319791e9c74681563a025e9221">
+
+<div class="comment-subject">
+
+Comment 48
+
+</div>
+
+<div class="inlinecontent">
+<p>&gt;&gt; one source gives for FR:<br />
+&gt;&gt; # Total Networks: 1,848 = you should have about 1.8k lines for FR</p>
+
+<p>Your approximation is correct. In the GeoIP file I have, it leads to 1970 lines for France.</p>
+
+<p>&gt;&gt; Do you only have small amount of memory on your computer ?<br />
+&gt; &gt;How many blocklines is it accepting and how much memory<br />
+&gt;&gt; do you have installed ?</p>
+
+<p>Not at all. I have 4GB and only 800MB used from my Ubuntu running full of services (Apache, MySQL, OpenVPN,....)</p>
+
+<p>ps -aux | grep tor</p>
+
+<p>Gives me a strange 98,8% memory used for TOR process.<br />
+Could there be a parameter so that it allocates more memory at TOR startup ?</p>
+
+<p>I did also have a warning about rising file handlers (ulimit) to 32K (don't have the exact text I did a rm /var/log/tor because logs where growing too big to be readable !)</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 28 May 2009 06:23:15 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5f69c2c7de075c5992ae292e1028c29b">
+
+<div class="comment-subject">
+
+Comment 49
+
+</div>
+
+<div class="inlinecontent">
+<p>Feature request done.<br />
+Here :<br />
+<a href="https://bugs.torproject.org/flyspray/index.php?do=details&amp;id=993" title="https://bugs.torproject.org/flyspray/index.php?do=details&amp;id=993" rel="nofollow">https://bugs.torproject.org/flyspray/index.php?do=details&amp;id=993</a></p>
+
+<p>(Previous post, obvioulsy, blocking FR address is around 19,7K blocks and not 1970 as I wrote!)</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 28 May 2009 06:23:16 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5b5d7ac8660f4144e4e99cd209ce9650">
+
+<div class="comment-subject">
+
+Comment 50
+
+</div>
+
+<div class="inlinecontent">
+<p>Tor obviously handles these exitpolicys worse than the internal policy's in clients torrc on your OS, it's strange, probably they don't want people to use that kind of large exitpolicyfilters.</p>
+
+<p>The blocking of all the small unallocated IPranges would probably be the problem, are they giving you 17800 ranges<br />
+and the actually now allocated to FR according to the geoIP you use 1900 ranges.<br />
+or is the geoIP file wrongly giving you 19700!! ranges for France.</p>
+
+<p>Anyway solution skip the blocking of small unallocated IPranges<br />
+use an Country to IP list for determining what to associate with FR, block these IPs, you should get around 1850 IPranges.<br />
+if Tor can't handle these either simplify the blocking policy by overblocking.<br />
+France have for example ~440 IP ranges on the 193.x.x.x range , blocking the whole 193.0.0.0/8 would decrease your list to ~1410 IPranges.<br />
+France have for example ~500 IP ranges on the 194.x.x.x range , blocking the whole 194.0.0.0/8 would decrease your list to ~910 IPranges<br />
+France have for example ~140 IP ranges on the 195.x.x.x range , blocking the whole 194.0.0.0/8 would decrease your list to ~770 IPranges<br />
+France have for example ~80 IP ranges on the 91.x.x.x range , blocking the whole  91.0.0.0/8 would decrease your list to ~690 IPranges<br />
+France have for example ~80 IP ranges on the 217.x.x.x range , blocking the whole  217.0.0.0/8 would decrease your list to ~610 IPranges<br />
+Keep doing this until you have a number your Tor client accepts.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 29 May 2009 06:23:17 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f99a06e928183431c964a087c58dc03e">
+
+<div class="comment-subject">
+
+Comment 51
+
+</div>
+
+<div class="inlinecontent">
+I saw you where using the "stable" version 0.2.0.34 have you considered trying the Alpha/ReleaseCandidate version series maby the 0.2.1.15RC handles these things better?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 29 May 2009 06:23:18 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-615acf2f5256b110aa057ae1e350459f">
+
+<div class="comment-subject">
+
+Comment 52
+
+</div>
+
+<div class="inlinecontent">
+I saw you where using the "stable" version 0.2.0.34 have you considered trying the Alpha/ReleaseCandidate version series maby the 0.2.1.15RC handles these things better?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 29 May 2009 06:23:19 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5326bbb0ade9c26858c88e9825c284d6">
+
+<div class="comment-subject">
+
+Comment 53
+
+</div>
+
+<div class="inlinecontent">
+<p>I haven't try yet doing the same with 0.2.1.15RC</p>
+
+<p>At the moment I just took it from the launchpad TOR-Team repository.</p>
+
+<p>I think I might get a try... if weather is bad during my next holidays... to understand the code, and do-it-myself, blocking by country.</p>
+
+<p>But of course, supposing I get to something, it cannot be commited to trunk development like that as protocol has to be changed to say "Hi, I am an exit node that blocks {PL}, {HU}, and accept {CA}"</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 03 Jun 2009 06:23:20 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2171645ac7edfd09b5a874e71d0fcd69">
+
+<div class="comment-subject">
+
+Comment 54
+
+</div>
+
+<div class="inlinecontent">
+<p>I am using</p>
+
+<p>StrictEntryNodes 1<br />
+EntryNodes thenode<br />
+StrictExitNodes 1<br />
+ExitNodes thenode </p>
+
+<p>Can I set up for example the relay ?</p>
+
+<p>StrictRelayNodes 1<br />
+RelayNodes thenode ?</p>
+
+<p>Thanks</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fsantiago%20%28not%20verified%29&amp;do=goto">santiago (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 15 Sep 2009 06:23:21 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f730c3de5b45a473ecfe39f3c1204705">
+
+<div class="comment-subject">
+
+Comment 55
+
+</div>
+
+<div class="inlinecontent">
+Thank you ..
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fnargile%20cafeler%20%28not%20verified%29&amp;do=goto">nargile cafeler (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 03 Nov 2009 06:23:22 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6b78ea17194030e04d85366ce7f67d8e">
+
+<div class="comment-subject">
+
+Comment 56
+
+</div>
+
+<div class="inlinecontent">
+thank you for sharing admin  very nice article.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FBedava%20oyunlar%20%28not%20verified%29&amp;do=goto">Bedava oyunlar (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 04 Nov 2009 06:23:23 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-cda85b23d9a1224b0d2851e0105674cf">
+
+<div class="comment-subject">
+
+Comment 57
+
+</div>
+
+<div class="inlinecontent">
+good article so much thanks.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fk%C4%B1zlar%20%28not%20verified%29&amp;do=goto">kızlar (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 04 Nov 2009 06:23:24 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ce7273a35041c8919a665774451e145d">
+
+<div class="comment-subject">
+
+Comment 58
+
+</div>
+
+<div class="inlinecontent">
+<p><li><a href="http://www.ajansilgin.com/" target="blank" rel="nofollow">ILGIN Ajans haber</a></li>
+<li><a href="http://www.ikimizinyeri.com/" target="blank" rel="nofollow">Siir Guzel Soz Hikaye Ask Mektuplari</a></li>
+<li><a href="http://www.oyunvaktim.com/" target="blank" rel="nofollow">Oyun oyna Flash Oyunlar</a></li>
+<li><a href="http://www.yedemin.com/" target="blank" rel="nofollow">Yedemin ilan Deposu</a></li>
+<li><a href="http://www.tatillove.com/" target="blank" rel="nofollow">Tatil Gezi</a></li>
+<li><a href="http://www.tatilyorelerimiz.com/" target="blank" rel="nofollow">Tatil Gezi</a></li>
+<li><a href="http://www.canli-spor.com/" target="blank" rel="nofollow">Canli Spor</a></li></p>
+
+<p>da</p>
+
+<p><li><a href="http://www.sportakvimi.com/" target="blank" rel="nofollow">Spor Haberleri</a></li>
+<li><a href="http://www.ajansulusal.com/" target="blank" rel="nofollow">Ulusal Haber</a></li>
+<li><a href="http://www.ajanshaberler.com/" target="blank" rel="nofollow">Ajansnlar</a></li>
+<li><a href="http://www.ilgintv.com/anasayfa" target="blank" rel="nofollow">ILGIN HABER</a></li>
+</ul>
+<li><a href="http://www.kaplica.gen.tr/anasayfa" target="blank" rel="nofollow">Kaplıca Termal Sağlık Şifa Rehberi</a></li>
+</ul>
+<li><a href="http://www.fanatiktr.com/anasayfa" target="blank" rel="nofollow">Fanatik Spor Haberleri</a></li>
+</ul>
+<li><a href="http://www.taraftartr.com/anasayfa" target="blank" rel="nofollow">Taraftar Spor Haberleri</a></li>
+</ul>
+<li><a href="http://www.filmdizitr.com/anasayfa" target="blank" rel="nofollow">Film Dizi Belgesel Albüm Yaşilçam Filmleri</a></li>
+</ul>
+<li><a href="http://www.altyazitr.com/anasayfa" target="blank" rel="nofollow">Türkçe Altyazı Altyazı Çevirileri</a></li>
+</ul>
+<li><a href="http://www.dunyasinemasi.com/anasayfa" target="blank" rel="nofollow">Sinema Vizyon Filmler</a></li>
+</ul>
+<li><a href="http://www.seyretal.com/anasayfa" target="blank" rel="nofollow">Film Seyret izle Dizi Seyret izle Online</a></li>
+</ul>
+<li><a href="http://www.dizifilmclup.com/" target="blank" rel="nofollow">Dizi Film izle seyret</a></li>
+<li><a href="http://www.vizyoncinema.com/" target="blank" rel="nofollow">Vizyon Sinema Film izle seyret</a></li>
+<li><a href="http://www.fragmantv.org/" target="blank" rel="nofollow">Fragman izle seyret</a></li>
+<li><a href="http://www.imleme.com/" target="blank" rel="nofollow">Sosyal imleme</a></li>
+<li><a href="http://www.habercolumn.com/" target="blank" rel="nofollow">Haber Column</a></li>
+<li><a href="http://www.orguelisi.com.com/" target="blank" rel="nofollow">Örgü Elişi Dantel Oya Örnekleri Modelleri</a></li>
+<li><a href="http://www.diyetegzersiz.com/" target="blank" rel="nofollow">Diyet Egzersiz Zayıflama Sağlık Güzellik</a></li>
+<li><a href="http://www.resimboya.com/" target="blank" rel="nofollow">Resim Boya</a></li>
+<li><a href="http://www.vizyonsinema.com/" target="blank" rel="nofollow">Vizyon Sinema Vizyondaki Filmler</a></li>
+<li><a href="http://www.vizyonsinemaizle.com/" target="blank" rel="nofollow">Vizyon Filmleri İzle Seyret</a></li></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fali%20%28not%20verified%29&amp;do=goto">ali (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 13 Nov 2009 06:23:25 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b31392c70ef62c2a1a489276b612aa48">
+
+<div class="comment-subject">
+
+Comment 59
+
+</div>
+
+<div class="inlinecontent">
+Thank you, you answered the question I have been searching for which was whether or not to place keywords when blog commenting. <a href="http://www.hayda.net" title="mirc, cinsel sohbet, cinsellik, chat" rel="nofollow">mirc</a> . <a href="http://www.hayda.net" title="mirc, cinsel sohbet, cinsellik, chat" rel="nofollow">chat</a> . <a href="http://www.hayda.net/" title="http://www.hayda.net/" rel="nofollow">http://www.hayda.net/</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fmirc%20sohbet%20%28not%20verified%29&amp;do=goto">mirc sohbet (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 13 Nov 2009 06:23:26 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4de4c78512872d58ccd0b45def26f27f">
+
+<div class="comment-subject">
+
+Comment 60
+
+</div>
+
+<div class="inlinecontent">
+<p><a href="http://secrety0ur.wordpress.com/" title="http://secrety0ur.wordpress.com/" rel="nofollow">http://secrety0ur.wordpress.com/</a></p>
+
+<p>hack<br />
+exploits<br />
+hacker<br />
+hacked<br />
+acconts<br />
+emper0rship<br />
+web<br />
+page</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fe%20%28not%20verified%29&amp;do=goto">e (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 14 Nov 2009 06:23:27 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1adeb439b39cf6ed45b980f006f95e5c">
+
+<div class="comment-subject">
+
+Comment 61
+
+</div>
+
+<div class="inlinecontent">
+Thank you, you answered the question I have been searching for which was whether or not to place keywords when blog commenting <a href="http://www.united-net.com" title="http://www.united-net.com" rel="nofollow">http://www.united-net.com</a> Domain, Hosting, Reseller
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 12 Dec 2009 06:23:28 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5debc68a7c10234dee1968a652d8a429">
+
+<div class="comment-subject">
+
+Comment 62
+
+</div>
+
+<div class="inlinecontent">
+adasd
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 09 Jan 2010 06:23:29 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c84423b8290fc1a2532a699820390dac">
+
+<div class="comment-subject">
+
+Comment 63
+
+</div>
+
+<div class="inlinecontent">
+<p>Thank you very nice post.very good thanks</p>
+
+<p><p>dizi izleme sektörünün yeni lideri olmak için yola çıkmıştır bu sitemizde ise dizi izlenir ve dizi seyret vardır. en iyi dizileri son bölümleri online izleyebilirsiniz.ve online dizi izleyebilirsinizkurtlar vadisi pusu izleyebilirsiniz.aşkı memnu izleyebilirsiniz.ezel izleyebilirsiniz.tüm bölümleri izleyebilirsiniz.son bölüm izleyebilirsiniz.online dizi izleyebilirsiniz.canlı dizi izleyebilirsiniz.full dizi izleyebilirsiniz.aşk ve ceza izleyebilirsiniz.geniş aile izleyebilirsiniz.bölüm izleyebilirsiniz.dizisi izleyebilirsiniz.<br />
+oyun  oynayabilirsiniz.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 19 Jan 2010 06:23:30 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-55c6590a8e483e8a42563e050a2da082">
+
+<div class="comment-subject">
+
+Comment 64
+
+</div>
+
+<div class="inlinecontent">
+What a nice post <img src="../../smileys/smile.png" alt=":)" />
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 20 Jan 2010 06:23:31 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-974d2188699eeed697f568da0c5ec632">
+
+<div class="comment-subject">
+
+Comment 65
+
+</div>
+
+<div class="inlinecontent">
+<p>Directory authorities should never send a 503 "busy" response to requests for votes or keys. Bugfix on 0.2.0.8-alpha; exposed by bug 959.</p>
+
+<p>http://www.bagkurssk.com<br />
+http://www.emeklisandigi.gen.tr<br />
+http://www.maiajans.com<br />
+http://www.ganoexcelturkiyebiz.biz<br />
+http://www.canlimacizle.gen.tr<br />
+http://www.kolayblogtr.com</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 01 Feb 2010 06:23:33 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f046561e1dcd3fbb78e665d3c4f3ecd5">
+
+<div class="comment-subject">
+
+Comment 67
+
+</div>
+
+<div class="inlinecontent">
+Thank you for a great program, just a question:
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 23 Mar 2010 06:23:34 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-991d2306091f4de3a1c8b9a7aae07c93">
+
+<div class="comment-subject">
+
+Comment 66
+
+</div>
+
+<div class="inlinecontent">
+<p>Thank you, you answered the question I have been searching for which was whether or not to place keywords when blog commenting</p>
+
+<p>http://www.ligtvtr.net<br />
+http://www.bagkurssk.com</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 14 Feb 2010 06:23:34 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1805a8811ed4977386293b67776eb410">
+
+<div class="comment-subject">
+
+Comment 68
+
+</div>
+
+<div class="inlinecontent">
+<p>Ok then.</p>
+
+<p>I'll improve my XSL transform so that it gives me an output I can just paste to /etc/torrc in order to block/accept countries.<br />
+http://ebru34.com/</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 23 Mar 2010 06:23:35 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b08b293c92c9a53816a3946bdb6d3a7f">
+
+<div class="comment-subject">
+
+Comment 69
+
+</div>
+
+<div class="inlinecontent">
+thanks
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 30 Mar 2010 06:23:37 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1bf85de631aadfa3784c002a6aa322ad">
+
+<div class="comment-subject">
+
+Comment 70
+
+</div>
+
+<div class="inlinecontent">
+thakns
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 17 Jul 2010 06:23:38 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d3d79114813153032c92c601e0a0db98">
+
+<div class="comment-subject">
+
+Comment 71
+
+</div>
+
+<div class="inlinecontent">
+<p>I would appreciate your help in solving this problem.  TOR running perfectly before, now I am getting these error messages:<br />
+     No specified exit routers seem to be running, and StrictExitNodes is set: can't choose an exit.<br />
+    failed to choose an exit server</p>
+
+<p>Vidalia: 0.2.7<br />
+Tor: 0.2.1.25<br />
+Qt: 4.6.2<br />
+Firefox 3.6.13</p>
+
+<p>Thanks for any assistance you may provide.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 20 Jan 2011 06:23:39 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_1_14-rc_released&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:22:28 AM CDT</span>
+<!-- Created <span class="date">Mon 13 Apr 2009 05:25:39 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

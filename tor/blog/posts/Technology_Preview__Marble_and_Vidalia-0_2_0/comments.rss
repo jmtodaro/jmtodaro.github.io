@@ -1,0 +1,312 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Technology Preview:  Marble and Vidalia-0.2.0</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Rorschach (not verified): Comment 1</title>
+	<dcterms:creator>Rorschach (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/comment_1/</link>
+
+	<pubDate>Sun, 29 Mar 2009 06:21:42 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:21:42Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hi,&lt;br /&gt;
+the new map looks pretty nice! I already packaged the marble-vidalia version and the new vidalia-alpha for Archlinux. The packages can be found here:&lt;/p&gt;
+
+&lt;p&gt;marble-vidalia: &lt;a href=&quot;http://aur.archlinux.org/packages.php?ID=25092&quot; title=&quot;http://aur.archlinux.org/packages.php?ID=25092&quot; rel=&quot;nofollow&quot;&gt;http://aur.archlinux.org/packages.php?ID=25092&lt;/a&gt;&lt;br /&gt;
+vidalia-alpha: &lt;a href=&quot;http://aur.archlinux.org/packages.php?ID=25093&quot; title=&quot;http://aur.archlinux.org/packages.php?ID=25093&quot; rel=&quot;nofollow&quot;&gt;http://aur.archlinux.org/packages.php?ID=25093&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;But at the moment this version is more or less unuseable because it creates a high cpu-usage. If you take a look at the map and play a bit with it I get about 20% cpu-usage on a Core Duo @1.6 GHz.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 2</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/comment_2/</link>
+
+	<pubDate>Sun, 29 Mar 2009 06:21:43 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:21:43Z</dcterms:modified>
+
+	<description>&lt;p&gt;I see high cpu usage in Xorg/X11 sometimes.  Any other OS seems to handle it just fine.  &lt;/p&gt;
+
+&lt;p&gt;Does the usage spike to 20% or constantly stay at that level?&lt;/p&gt;
+
+&lt;p&gt;I notice the cpu usage generally while many circuits are building.  Once circuits are built, it seems pretty quick to move around.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Rorschach (not verified): Comment 3</title>
+	<dcterms:creator>Rorschach (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/comment_3/</link>
+
+	<pubDate>Mon, 30 Mar 2009 06:21:44 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:21:44Z</dcterms:modified>
+
+	<description>&lt;p&gt;I checked the behavior now on an Intel Atom N270 @ 1.6 Ghz with two Cores and there it is even worse.&lt;/p&gt;
+
+&lt;p&gt;Starting the map causes 80% CPU-usage by the vidalia process for about 1-2 minutes. After that CPU-usage goes completly down.&lt;/p&gt;
+
+&lt;p&gt;But as soon as I start to scroll the map or zoom the cpu-usage goes up to 20-30% again.&lt;/p&gt;
+
+&lt;p&gt;So if you use the map it is pretty high, if you don&#39;t use it it&#39;s as usual.&lt;/p&gt;
+
+&lt;p&gt;Maybe this is normal for marble under X to consume so much? But it would be cool if the old map could still be further a part of vidalia, so one can choose as compile-time option if he has the rescources to run the marble map or the other one, as it is right now. Also if marble becames vidalias default map it would be cool if one could use --disable-marble to use the older one.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 4</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/comment_4/</link>
+
+	<pubDate>Mon, 30 Mar 2009 06:21:45 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:21:45Z</dcterms:modified>
+
+	<description>&lt;p&gt;if you&#39;re compiling vidalia, you have to set -DUSE_MARBLE=1 to get the marble map, otherwise you get the default 2-D map.&lt;/p&gt;
+
+&lt;p&gt;We&#39;re well aware that not everyone can handle 3-D graphics with live circuits drawn on them right now.  The largest issue appears to be marble and X.  Marble and OSX and win32 is rather quick, even on older hardware.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Rorschach (not verified): Comment 5</title>
+	<dcterms:creator>Rorschach (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/comment_5/</link>
+
+	<pubDate>Mon, 30 Mar 2009 06:21:46 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:21:46Z</dcterms:modified>
+
+	<description>&lt;p&gt;&amp;gt; if you&#39;re compiling vidalia, you have to set -DUSE_MARBLE=1 to get the marble &amp;gt; map, otherwise you get the default 2-D map.&lt;/p&gt;
+
+&lt;p&gt;I know , I compiled and used it already &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/../../smileys/smile4.png&quot; alt=&quot;;)&quot; /&gt; I just wanted to tell you my expereniece with it and that I think also if this feature becames part of vidalia stable, that there should still be the possibility to  switch it off...&lt;/p&gt;
+
+&lt;p&gt;But interesting that Marble, a KDE project, runs smoother on MacOS and MS&#39;OS. Maybe some problem with graphiccards and 3D acceleration, so that X does it in software and thus consuming so much cpu?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 6</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/comment_6/</link>
+
+	<pubDate>Sun, 15 Aug 2010 06:21:47 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:21:47Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hi,&lt;/p&gt;
+
+&lt;p&gt;The problem is that the native graphics system (X11, XRender) is unfortunately very slow on some graphics cards. That&#39;s why Qt provides mechanisms to bypass the X-Server using the so called &quot;raster&quot; graphics system. &lt;/p&gt;
+
+&lt;p&gt;With recent Marble versions (Marble&amp;gt;= 0.8) you can choose  a different graphics system via the settings dialog (Settings-&amp;gt;Configure Marble-&amp;gt;View-&amp;gt;Graphics System: Raster).&lt;/p&gt;
+
+&lt;p&gt;This will make Marble on Linux/X11 as fast as on Windows and Mac OS X.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 7</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/comment_7/</link>
+
+	<pubDate>Sun, 29 Mar 2009 06:21:48 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:21:48Z</dcterms:modified>
+
+	<description>I can&#39;t get .1.2 or .2 to work on OSX. Crashes on start. Bummer. I&#39;ll try to submit bug report later.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 8</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/comment_8/</link>
+
+	<pubDate>Sun, 29 Mar 2009 06:21:49 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:21:49Z</dcterms:modified>
+
+	<description>&lt;p&gt;Actually there error message is quite small so I&#39;m going to post it here and maybe someone will spot it. Also doing this as I may forget to post a bug report.&lt;/p&gt;
+
+&lt;p&gt;Exception Type:  EXC_BREAKPOINT (SIGTRAP)&lt;br /&gt;
+Exception Codes: 0x0000000000000002, 0x0000000000000000&lt;br /&gt;
+Crashed Thread:  0&lt;/p&gt;
+
+&lt;p&gt;Dyld Error Message:&lt;br /&gt;
+  Library not loaded: QtGui.framework/Versions/4/QtGui&lt;br /&gt;
+  Referenced from: /Volumes/vidalia-0.1.12-universal/Vidalia.app/Contents/MacOS/Vidalia&lt;br /&gt;
+  Reason: image not found&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 9</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/comment_9/</link>
+
+	<pubDate>Sun, 29 Mar 2009 06:21:50 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:21:50Z</dcterms:modified>
+
+	<description>This is OS X 10.5.x?  And yes, please submit a bug. Thanks!
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 10</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/comment_10/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/comment_10/</link>
+
+	<pubDate>Sun, 29 Mar 2009 06:21:51 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:21:51Z</dcterms:modified>
+
+	<description>Wait, how do I compile Vidalia from source (e.g. for Linux / BSD) with marble support? I don&#39;t see a plain .tar.gz with marble in it.
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 11</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/comment_11/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/comment_11/</link>
+
+	<pubDate>Sun, 29 Mar 2009 06:21:52 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:21:52Z</dcterms:modified>
+
+	<description>&lt;p&gt;The marble that comes with your distro will probably work fine, but if you want the exact same version we used, it&#39;s in Vidalia&#39;s SVN.  &lt;a href=&quot;http://trac.vidalia-project.net/wiki/GettingTheCode&quot; title=&quot;http://trac.vidalia-project.net/wiki/GettingTheCode&quot; rel=&quot;nofollow&quot;&gt;http://trac.vidalia-project.net/wiki/GettingTheCode&lt;/a&gt; or &lt;a href=&quot;https://svn.vidalia-project.net/svn/marble/trunk/&quot; title=&quot;https://svn.vidalia-project.net/svn/marble/trunk/&quot; rel=&quot;nofollow&quot;&gt;https://svn.vidalia-project.net/svn/marble/trunk/&lt;/a&gt; specifically.&lt;/p&gt;
+
+&lt;p&gt;In the vidalia directory, read README.marble for instructions.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>swisstorexit.dyndns.org (not verified): Comment 12</title>
+	<dcterms:creator>swisstorexit.dyndns.org (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/comment_12/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/comment_12/</link>
+
+	<pubDate>Tue, 02 Jun 2009 06:21:53 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:21:53Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hello,&lt;/p&gt;
+
+&lt;p&gt;i have test some possibility and read all page about this version but are impossible to intsall it...&lt;/p&gt;
+
+&lt;p&gt;i have a version vidalia 0.2.0 make for jaunty from launchpad and work fine  but are not compiled with marble.&lt;/p&gt;
+
+&lt;p&gt;marble are on my system and work the only problem are with the source are not possible for me to build a compatible version for ubuntu jaunty 9.04 64 bits ... (intel)&lt;/p&gt;
+
+&lt;p&gt;i will really happy when someone can help me with that &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/../../smileys/smile4.png&quot; alt=&quot;;)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;thanks in advance&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>swisstorexit (not verified): Comment 13</title>
+	<dcterms:creator>swisstorexit (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/comment_13/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/comment_13/</link>
+
+	<pubDate>Sun, 05 Jul 2009 06:21:54 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:21:54Z</dcterms:modified>
+
+	<description>&lt;p&gt;hello, &lt;/p&gt;
+
+&lt;p&gt;i write this post to say with the last source from vidalia 0.2.1 i can build it without error and with marble.&lt;/p&gt;
+
+&lt;p&gt;That&#39;s really a great design and option are useful &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Technology_Preview__Marble_and_Vidalia-0_2_0/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;thanks for all&lt;/p&gt;
+
+</description>
+
+
+</item>
+
+</channel>
+</rss>

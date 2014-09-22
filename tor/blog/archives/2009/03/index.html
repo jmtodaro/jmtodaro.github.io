@@ -1,0 +1,971 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>03</title>
+
+<link rel="stylesheet" href="../../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=archives%2F2009%2F03&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+<div class="sidebar">
+<div><div class="calendar"><table class="month-calendar">
+    <tr>
+    <th class="month-calendar-arrow"><a href="../02/" title="February">&larr;</a></th>
+    <th class="month-calendar-head" colspan="5"><span class="selflink">Mar 2009</span></th>
+    <th class="month-calendar-arrow"><a href="../04/" title="April">&rarr;</a></th>
+    </tr>
+    <tr>
+        <th class="month-calendar-day-head Sunday" title="Sunday">S</th>
+        <th class="month-calendar-day-head Monday" title="Monday">M</th>
+        <th class="month-calendar-day-head Tuesday" title="Tuesday">T</th>
+        <th class="month-calendar-day-head Wednesday" title="Wednesday">W</th>
+        <th class="month-calendar-day-head Thursday" title="Thursday">T</th>
+        <th class="month-calendar-day-head Friday" title="Friday">F</th>
+        <th class="month-calendar-day-head Saturday" title="Saturday">S</th>
+    </tr>
+    <tr>
+        <td class="month-calendar-day-link Sunday"><a href="../../../posts/Some_notes_on_progress_with_IOCP_and_Libevent/" title="Some notes on progress with IOCP and Libevent">1</a></td>
+        <td class="month-calendar-day-nolink Monday">2</td>
+        <td class="month-calendar-day-nolink Tuesday">3</td>
+        <td class="month-calendar-day-nolink Wednesday">4</td>
+        <td class="month-calendar-day-link Thursday"><a href="../../../posts/Berkman_2007_Circumvention_Landscape_and_Progress/" title="Berkman 2007 Circumvention Landscape and Progress">5</a></td>
+        <td class="month-calendar-day-nolink Friday">6</td>
+        <td class="month-calendar-day-nolink Saturday">7</td>
+    </tr>
+    <tr>
+        <td class="month-calendar-day-nolink Sunday">8</td>
+        <td class="month-calendar-day-link Monday"><a href="../../../posts/Google_Summer_of_Code_2008_review/" title="Google Summer of Code 2008 review">9</a></td>
+        <td class="month-calendar-day-link Tuesday"><a href="../../../posts/February_2009_Progress_Report/" title="February 2009 Progress Report">10</a></td>
+        <td class="month-calendar-day-nolink Wednesday">11</td>
+        <td class="month-calendar-day-link Thursday"><a href="../../../posts/Updated_guide_to_blogging_anonymously/" title="Updated guide to blogging anonymously">12</a></td>
+        <td class="month-calendar-day-link Friday"><a href="../../../posts/Tor_0_2_1_13-alpha_released/" title="Tor 0 2 1 13-alpha released">13</a></td>
+        <td class="month-calendar-day-nolink Saturday">14</td>
+    </tr>
+    <tr>
+        <td class="month-calendar-day-nolink Sunday">15</td>
+        <td class="month-calendar-day-nolink Monday">16</td>
+        <td class="month-calendar-day-nolink Tuesday">17</td>
+        <td class="month-calendar-day-nolink Wednesday">18</td>
+        <td class="month-calendar-day-nolink Thursday">19</td>
+        <td class="month-calendar-day-link Friday"><a href="../../../posts/EFF_and_Tor_in_Google_Summer_of_Code_2009/" title="EFF and Tor in Google Summer of Code 2009">20</a></td>
+        <td class="month-calendar-day-nolink Saturday">21</td>
+    </tr>
+    <tr>
+        <td class="month-calendar-day-nolink Sunday">22</td>
+        <td class="month-calendar-day-nolink Monday">23</td>
+        <td class="month-calendar-day-nolink Tuesday">24</td>
+        <td class="month-calendar-day-nolink Wednesday">25</td>
+        <td class="month-calendar-day-nolink Thursday">26</td>
+        <td class="month-calendar-day-nolink Friday">27</td>
+        <td class="month-calendar-day-link Saturday"><a href="../../../posts/Technology_Preview__Marble_and_Vidalia-0_2_0/" title="Technology Preview  Marble and Vidalia-0 2 0">28</a></td>
+    </tr>
+    <tr>
+        <td class="month-calendar-day-nolink Sunday">29</td>
+        <td class="month-calendar-day-nolink Monday">30</td>
+        <td class="month-calendar-day-link Tuesday"><a href="../../../posts/Tor_Browser_Bundle_1_1_11_Released/" title="Tor Browser Bundle 1 1 11 Released">31</a></td>
+        <td class="month-calendar-day-noday Wednesday">&nbsp;</td>
+        <td class="month-calendar-day-noday Thursday">&nbsp;</td>
+        <td class="month-calendar-day-noday Friday">&nbsp;</td>
+        <td class="month-calendar-day-noday Saturday">&nbsp;</td>
+    </tr>
+</table>
+</div></div>
+
+
+<form action="../../../" method="get">
+<div id="blogform">
+<input type="hidden" name="do" value="blog" />
+<input type="hidden" name="from" value="posts" />
+<input type="hidden" name="subpage" value="1" />
+
+<input name="title" size="20" />
+<input type="submit" value="Edit" />
+</div>
+</form>
+
+
+<div class="actions">
+<ul>
+
+<li><a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=archives%2F2009%2F03&amp;do=edit" rel="nofollow">Edit</a></li>
+
+
+<li><a href="../../../recentchanges/">RecentChanges</a></li>
+
+
+
+
+<li><a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?do=prefs">Preferences</a></li>
+
+
+
+
+
+</ul>
+</div>
+
+
+</div>
+
+
+<span class="parentlinks">
+
+<a href="../../../">The Tor Blog</a>/ 
+
+<a href="../../">archives</a>/ 
+
+<a href="../">2009</a>/ 
+
+</span>
+<span class="title">
+<a href="">03</a>
+
+</span>
+
+
+<div id="content">
+<div class="inlinepage">
+
+<div class="inlineheader">
+<span class="header">
+
+<a href="../../../posts/Some_notes_on_progress_with_IOCP_and_Libevent/">Some notes on progress with IOCP and Libevent</a>
+
+</span>
+</div>
+
+
+<span class="pagedate">
+Posted <span class="date">Sun 01 Mar 2009 04:37:33 PM CST</span> 
+
+<span class="author"> by 
+
+<a href="/blogs/nickm">nickm</a>
+
+</span>
+<a class="editlink" href="" rel="nofollow">Edit</a>
+
+</span>
+
+
+
+<span class="tags">
+Tags:
+
+<a href="../../../tags/developerment/" rel="tag">developerment</a>
+
+<a href="../../../tags/hacking/" rel="tag">hacking</a>
+
+<a href="../../../tags/iocp/" rel="tag">iocp</a>
+
+<a href="../../../tags/libevent/" rel="tag">libevent</a>
+
+</span>
+
+
+
+
+<div class="inlinecontent">
+<p>Hi!  I recently wrote up a status report for the progress we're making on hacking Libevent, and I thought I'd post it here too.</p>
+
+<p>BACKGROUND</p>
+
+<p>Tor currently uses Libevent for its high-performance networking calls.  Libevent is a software library originally written by Niels Provos (then of UMichigan, now of Google), and now co-developed by Niels Provos and the Tor Project's Nick Mathewson.  Its purpose is to provide consistent fast interfaces to various operating systems' mutually incompatible fast networking facilities.  Libevent gives applications two basic interfaces to these networking layers: a low-level interface where the application is notified when an operation (like a network read or write) is ready to begin, and a higher-level interface where Libevent itself manages network operations and the application is notified when the network operations are completed. <span class="read-more"><a href="http://blog.torproject.org/blog/some-notes-progress-iocp-and-libevent"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+</div>
+
+<div class="inlinefooter">
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+<div class="inlinepage">
+
+<div class="inlineheader">
+<span class="header">
+
+<a href="../../../posts/Berkman_2007_Circumvention_Landscape_and_Progress/">Berkman 2007 Circumvention Landscape and Progress</a>
+
+</span>
+</div>
+
+
+<span class="pagedate">
+Posted <span class="date">Thu 05 Mar 2009 12:18:51 AM CST</span> 
+
+<span class="author"> by 
+
+<a href="/blogs/phobos">phobos</a>
+
+</span>
+<a class="editlink" href="" rel="nofollow">Edit</a>
+
+</span>
+
+
+
+<span class="tags">
+Tags:
+
+<a href="../../../tags/Berkman_Center_for_Internet_and_Society/" rel="tag">Berkman Center for Internet and Society</a>
+
+<a href="../../../tags/research_report/" rel="tag">research report</a>
+
+<a href="../../../tags/tool_comparison/" rel="tag">tool comparison</a>
+
+</span>
+
+
+
+
+<div class="inlinecontent">
+<p>The Berkman Center has released their report on the <a href="http://cyber.law.harvard.edu/publications/2009/2007_Circumvention_Landscape_Report" rel="nofollow">landscape of circumvention technologies</a> as it was in 2007.  Tor was included in this test and comes out as a secure tool with some improvements needed.  Technology Review also picked up this report and <a href="http://www.technologyreview.com/web/22252/page1/" rel="nofollow">wrote an article</a> on the results.</p>
+
+<p>Since the original publication of the report, we've responded to and improved a number of identified weaknesses. The main focus has been on usability of the software. Tor is easier to understand, configure, and install. We've worked on finding translators for the various parts of the suite of tools that comprise Tor. We developed and enhanced a Firefox plugin called Torbutton. The current Torbutton mitigates all known browser-based anonymity attacks. Torbutton is included in our bundles and is automatically installed into the user's Firefox browser configuration. Torbutton can be found at <a href="https://torproject.org/torbutton/" title="https://torproject.org/torbutton/" rel="nofollow">https://torproject.org/torbutton/</a> or <a href="https://addons.mozilla.org/en-US/firefox/addon/2275" title="https://addons.mozilla.org/en-US/firefox/addon/2275" rel="nofollow">https://addons.mozilla.org/en-US/firefox/addon/2275</a>. <span class="read-more"><a href="http://blog.torproject.org/blog/berkman-2007-circumvention-landscape-and-progress"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+</div>
+
+<div class="inlinefooter">
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+<div class="inlinepage">
+
+<div class="inlineheader">
+<span class="header">
+
+<a href="../../../posts/Google_Summer_of_Code_2008_review/">Google Summer of Code 2008 review</a>
+
+</span>
+</div>
+
+
+<span class="pagedate">
+Posted <span class="date">Mon 09 Mar 2009 06:48:11 AM CDT</span> 
+
+<span class="author"> by 
+
+<a href="/blogs/sebastian">Sebastian</a>
+
+</span>
+<a class="editlink" href="" rel="nofollow">Edit</a>
+
+</span>
+
+
+
+<span class="tags">
+Tags:
+
+<a href="../../../tags/Google_Summer_of_Code/" rel="tag">Google Summer of Code</a>
+
+<a href="../../../tags/gsoc/" rel="tag">gsoc</a>
+
+<a href="../../../tags/gsoc_2008/" rel="tag">gsoc 2008</a>
+
+</span>
+
+
+
+
+<div class="inlinecontent">
+<p>As we started preparing to apply for the Google Summer of Code 2009, we realized that we haven't reported how last year's Summer of Code went for us.</p>
+
+<p>Tor's 2008 Google Summer of Code was a victim of Tor's increasing growth! We've got a lot more people involved now, and we have a lot more projects we want to tackle. But that also means we need to work harder at coordinating everything, and that's not as smooth as we'd hoped.</p>
+
+<p>Tor had the luxury to receive seven slots for students. GSoC 2008 overall, was a success; as the students and projects contributed a lot to the Tor project. Also, here I am, a former GSoC student writing a blog post for the project.</p>
+
+<p>Below is an overview over the GSoC 2008 projects and a summary of their results. <span class="read-more"><a href="http://blog.torproject.org/blog/google-summer-code-2008-review"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+</div>
+
+<div class="inlinefooter">
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+<div class="inlinepage">
+
+<div class="inlineheader">
+<span class="header">
+
+<a href="../../../posts/February_2009_Progress_Report/">February 2009 Progress Report</a>
+
+</span>
+</div>
+
+
+<span class="pagedate">
+Posted <span class="date">Tue 10 Mar 2009 10:24:22 AM CDT</span> 
+
+<span class="author"> by 
+
+<a href="/blogs/phobos">phobos</a>
+
+</span>
+<a class="editlink" href="" rel="nofollow">Edit</a>
+
+</span>
+
+
+
+<span class="tags">
+Tags:
+
+<a href="../../../tags/anonymity_advocacy/" rel="tag">anonymity advocacy</a>
+
+<a href="../../../tags/progress_report/" rel="tag">progress report</a>
+
+<a href="../../../tags/translation/" rel="tag">translation</a>
+
+</span>
+
+
+
+
+<div class="inlinecontent">
+<p><strong>New releases, new hires, new funding</strong><br />
+On February 8, we released versions 0.2.0.34-stable and 0.2.1.12-alpha.  </p>
+
+<p>Tor 0.2.0.34 features several more security-related fixes. You should upgrade, especially if you run an exit relay (remote crash) or a directory authority (remote infinite loop), or you're on an older (pre-XP) or not-recently-patched Windows (remote exploit).</p>
+
+<p>This release marks end-of-life for Tor 0.1.2.x. Those Tor versions have many known flaws, and nobody should be using them. You should upgrade. If you're using a Linux or BSD and its packages are obsolete, stop using those packages and upgrade anyway.</p>
+
+<p><strong>Enhancements</strong><br />
+In Tor 0.2.1.12-alpha, if we're using bridges and our network goes away, be more willing to forgive our bridges and try again when we get an application  request. Bugfix on 0.2.0.x. <span class="read-more"><a href="http://blog.torproject.org/blog/february-2009-progress-report"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+</div>
+
+<div class="inlinefooter">
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+<div class="inlinepage">
+
+<div class="inlineheader">
+<span class="header">
+
+<a href="../../../posts/Updated_guide_to_blogging_anonymously/">Updated guide to blogging anonymously</a>
+
+</span>
+</div>
+
+
+<span class="pagedate">
+Posted <span class="date">Thu 12 Mar 2009 07:58:05 PM CDT</span> 
+
+<span class="author"> by 
+
+<a href="/blogs/phobos">phobos</a>
+
+</span>
+<a class="editlink" href="" rel="nofollow">Edit</a>
+
+</span>
+
+
+
+<span class="tags">
+Tags:
+
+<a href="../../../tags/anonymity_advocacy/" rel="tag">anonymity advocacy</a>
+
+<a href="../../../tags/anonymous_publishing/" rel="tag">anonymous publishing</a>
+
+<a href="../../../tags/global_voices/" rel="tag">global voices</a>
+
+</span>
+
+
+
+
+<div class="inlinecontent">
+<p>We worked with Sami from Global Voices to update their <a href="http://advocacy.globalvoicesonline.org/projects/guide/" rel="nofollow">guide to blogging anonymously</a>.  The big changes are more screenshots, easier instructions, and suggested use of the Tor Browser Bundle by default; as it's generaly plug and play.</p>
+
+<p>The Citizen Media Law Project also has a good <a href="http://www.citmedialaw.org/legal-guide/how-maintain-your-anonymity-online" rel="nofollow">guide to anonymity online</a>.  Be sure to check out the <a href="http://www.citmedialaw.org/legal-guide/potential-legal-challenges-anonymity" rel="nofollow">legal challenges to anonymity online</a> and <a href="http://www.citmedialaw.org/legal-guide/legal-protections-anonymous-speech" rel="nofollow">legal protections to anonymous speech</a> as well.</p>
+
+</div>
+
+<div class="inlinefooter">
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+<div class="inlinepage">
+
+<div class="inlineheader">
+<span class="header">
+
+<a href="../../../posts/Tor_0_2_1_13-alpha_released/">Tor 0.2.1.13-alpha released</a>
+
+</span>
+</div>
+
+
+<span class="pagedate">
+Posted <span class="date">Fri 13 Mar 2009 12:32:59 AM CDT</span> 
+
+<span class="author"> by 
+
+<a href="/blogs/phobos">phobos</a>
+
+</span>
+<a class="editlink" href="" rel="nofollow">Edit</a>
+
+</span>
+
+
+
+<span class="tags">
+Tags:
+
+<a href="../../../tags/alpha_release/" rel="tag">alpha release</a>
+
+<a href="../../../tags/bug_fixes/" rel="tag">bug fixes</a>
+
+<a href="../../../tags/security_fixes/" rel="tag">security fixes</a>
+
+</span>
+
+
+
+
+<div class="inlinecontent">
+<p>Tor 0.2.1.13-alpha includes another big pile of minor bugfixes and<br />
+cleanups. We're finally getting close to a release candidate.</p>
+
+<p><a href="https://www.torproject.org/download" title="https://www.torproject.org/download" rel="nofollow">https://www.torproject.org/download</a></p>
+
+<p>Changes in version 0.2.1.13-alpha - 2009-03-09<br />
+<strong>Major bugfixes:</strong></p>
+
+<ul>
+<li>Correctly update the list of which countries we exclude as<br />
+      exits, when the GeoIP file is loaded or reloaded. Diagnosed by<br />
+      lark. Bugfix on 0.2.1.6-alpha.</li>
+</ul>
+
+<p><strong>Minor bugfixes (on 0.2.0.x and earlier):</strong></p>
+
+<p><ul>
+<li>Automatically detect MacOSX versions earlier than 10.4.0, and<br />
+      disable kqueue from inside Tor when running with these versions.<br />
+      We previously did this from the startup script, but that was no<br />
+      help to people who didn't use the startup script. Resolves bug 863.</li>
+<li>When we had picked an exit node for a connection, but marked it as<br />
+      "optional", and it turned out we had no onion key for the exit, <span class="read-more"><a href="http://blog.torproject.org/blog/tor-02113alpha-released"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p></p>
+
+</div>
+
+<div class="inlinefooter">
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+<div class="inlinepage">
+
+<div class="inlineheader">
+<span class="header">
+
+<a href="../../../posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/">Why Tor is slow and what we&#x27;re going to do about it</a>
+
+</span>
+</div>
+
+
+<span class="pagedate">
+Posted <span class="date">Fri 13 Mar 2009 05:33:01 AM CDT</span> 
+
+<span class="author"> by 
+
+<a href="/blogs/arma">arma</a>
+
+</span>
+<a class="editlink" href="" rel="nofollow">Edit</a>
+
+</span>
+
+
+
+<span class="tags">
+Tags:
+
+<a href="../../../tags/development_roadmap/" rel="tag">development roadmap</a>
+
+<a href="../../../tags/funding/" rel="tag">funding</a>
+
+<a href="../../../tags/performance/" rel="tag">performance</a>
+
+</span>
+
+
+
+
+<div class="inlinecontent">
+<p>I've just finished writing up an explanation of all the various reasons why the Tor network is slow, and what we can do about each. Part of it comes down to design flaws; some of it is that a handful of users are overloading the network; and there's also simply not enough capacity to go around.</p>
+
+<p>Specifically, we've identified six categories of problems to address, and laid out some steps to resolve each of them.</p>
+
+<p>You can read the pdf here:<br />
+<a href="https://svn.torproject.org/svn/projects/roadmaps/2009-03-11-performance.pdf" rel="nofollow">https://svn.torproject.org/svn/projects/roadmaps/2009-03-11-performance.pdf</a></p>
+
+<p>Andrew has also put together a real live <a href="https://www.torproject.org/press/2009-03-12-performance-roadmap-press-release" rel="nofollow">press release</a> to go with it.</p>
+
+<p>Now all that remains is to do everything. So if you want to help, or especially if you know any organizations that can help with funding, please help us make this happen! <span class="read-more"><a href="http://blog.torproject.org/blog/why-tor-is-slow"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+</div>
+
+<div class="inlinefooter">
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+<div class="inlinepage">
+
+<div class="inlineheader">
+<span class="header">
+
+<a href="../../../posts/EFF_and_Tor_in_Google_Summer_of_Code_2009/">EFF and Tor in Google Summer of Code 2009</a>
+
+</span>
+</div>
+
+
+<span class="pagedate">
+Posted <span class="date">Fri 20 Mar 2009 09:30:25 PM CDT</span> 
+
+<span class="author"> by 
+
+<a href="/blogs/karsten">karsten</a>
+
+</span>
+<a class="editlink" href="" rel="nofollow">Edit</a>
+
+</span>
+
+
+
+<span class="tags">
+Tags:
+
+<a href="../../../tags/Google_Summer_of_Code/" rel="tag">Google Summer of Code</a>
+
+<a href="../../../tags/gsoc/" rel="tag">gsoc</a>
+
+<a href="../../../tags/gsoc_2009/" rel="tag">gsoc 2009</a>
+
+</span>
+
+
+
+
+<div class="inlinecontent">
+<p>Great news! We have been accepted as a mentoring organization for <a href="http://socghop.appspot.com/program/home/google/gsoc2009" rel="nofollow">Google Summer of Code 2009</a> together with <a href="https://www.eff.org/" rel="nofollow">The Electronic Frontier Foundation</a>. Yay!</p>
+
+<p>This will be our third Google Summer of Code after 2007 and <a href="https://blog.torproject.org/blog/tor-project-google-summer-code-2008%21" rel="nofollow">2008</a>. In our <a href="http://code.google.com/soc/2007/eff/about.html" rel="nofollow">first year</a> we had four students working on making relays work better (and not crash) on Windows, on a library and tool to try alternative path selection algorithms, on a fuzzing library to look for parsing problems, and on scalability and privacy for hidden services. In our <a href="http://code.google.com/soc/2008/eff/about.html" rel="nofollow">second year</a> we had seven students. One of our successful students of the 2008 program wrote a nice <a href="https://blog.torproject.org/blog/google-summer-code-2008-review" rel="nofollow">blog post</a> reviewing how GSoC went for him, for the other students, and for the project in general. <span class="read-more"><a href="http://blog.torproject.org/blog/eff-and-tor-google-summer-code-2009"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+</div>
+
+<div class="inlinefooter">
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+<div class="inlinepage">
+
+<div class="inlineheader">
+<span class="header">
+
+<a href="../../../posts/Technology_Preview__Marble_and_Vidalia-0_2_0/">Technology Preview:  Marble and Vidalia-0.2.0</a>
+
+</span>
+</div>
+
+
+<span class="pagedate">
+Posted <span class="date">Sat 28 Mar 2009 08:21:39 PM CDT</span> 
+
+<span class="author"> by 
+
+<a href="/blogs/phobos">phobos</a>
+
+</span>
+<a class="editlink" href="" rel="nofollow">Edit</a>
+
+</span>
+
+
+
+<span class="tags">
+Tags:
+
+<a href="../../../tags/Qt_updates/" rel="tag">Qt updates</a>
+
+<a href="../../../tags/drag_and_drop_OS_X_install/" rel="tag">drag and drop OS X install</a>
+
+<a href="../../../tags/experimental/" rel="tag">experimental</a>
+
+<a href="../../../tags/kde_marble/" rel="tag">kde marble</a>
+
+<a href="../../../tags/msi_installer/" rel="tag">msi installer</a>
+
+<a href="../../../tags/technology_preview/" rel="tag">technology preview</a>
+
+<a href="../../../tags/vidalia/" rel="tag">vidalia</a>
+
+</span>
+
+
+
+
+<div class="inlinecontent">
+<p>One of the most requested upgrades to <a href="https://www.torproject.org/vidalia/" rel="nofollow">Vidalia</a> is a better map of the world.  We looked into a few different technologies and decided on <a href="http://edu.kde.org/marble/" rel="nofollow">KDE's Marble</a> interface.  Marble enables an accurate mapping of nodes according to their geolocation, allows for future enhancements such as "click a country to start or end your Tor circuit", and plugins for extra data views.  This also gives us the ability to use Qt's Webkit browser to display custom information about nodes, circuits, or anything else in a pop-up window.  An anonymous funder covered the costs involved in developing this feature.  We thank them for their support. <span class="read-more"><a href="http://blog.torproject.org/blog/technology-preview-marble-and-vidalia020"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+</div>
+
+<div class="inlinefooter">
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+<div class="inlinepage">
+
+<div class="inlineheader">
+<span class="header">
+
+<a href="../../../posts/Tor_Browser_Bundle_1_1_11_Released/">Tor Browser Bundle 1.1.11 Released</a>
+
+</span>
+</div>
+
+
+<span class="pagedate">
+Posted <span class="date">Tue 31 Mar 2009 02:19:52 PM CDT</span> 
+
+<span class="author"> by 
+
+<a href="/blogs/phobos">phobos</a>
+
+</span>
+<a class="editlink" href="" rel="nofollow">Edit</a>
+
+</span>
+
+
+
+<span class="tags">
+Tags:
+
+<a href="../../../tags/alpha_release/" rel="tag">alpha release</a>
+
+<a href="../../../tags/portable_tor/" rel="tag">portable tor</a>
+
+<a href="../../../tags/tor_browser_bundle/" rel="tag">tor browser bundle</a>
+
+<a href="../../../tags/torbutton/" rel="tag">torbutton</a>
+
+<a href="../../../tags/vidalia/" rel="tag">vidalia</a>
+
+</span>
+
+
+
+
+<div class="inlinecontent">
+<p>An updated Tor Browser Bundle is released to address the Firefox 3.0.7 security issues.  It includes:</p>
+
+<ul>
+<li>Update Firefox to 3.0.8</li>
+<li>Add Italian language bundles</li>
+<li>Update Torbutton to 1.2.1</li>
+<li>Update Vidalia to 0.1.12</li>
+</ul>
+
+<p>This updated TBB can be downloaded from <a href="https://www.torproject.org/easy-download" title="https://www.torproject.org/easy-download" rel="nofollow">https://www.torproject.org/easy-download</a> as the "zero install bundle".</p>
+
+</div>
+
+<div class="inlinefooter">
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 05:04:27 PM CDT</span>
+<!-- Created <span class="date">Tue 05 Apr 2011 05:04:27 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged distributed_trust</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/distributed_trust/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/distributed_trust/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/distributed_trust/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:03:19Z</updated>
+<entry>
+	<title>Tips for Running an Exit Node with Minimal Harassment</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/"/>
+
+	<author><name>mikeperry</name></author>
+
+
+
+
+
+
+	<category term="/tags/anonymity_advocacy" />
+
+	<category term="/tags/distributed_trust" />
+
+	<category term="/tags/education" />
+
+	<category term="/tags/performance" />
+
+
+	<updated>2011-04-05T12:03:19Z</updated>
+	<published>2010-07-01T00:08:08Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;b&gt;Updated 06/30/2010&lt;/b&gt;: Mention Reduced Exit Policy, ISP Shopping Tips, and Abuse Response Templates&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Updated 08/30/2010&lt;/b&gt;: Update exit policy with svn, git, hg, Kerberos, remote admin panels, IRC, others&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Updated 01/12/2011&lt;/b&gt;: Suggest creation of LLC for large exit nodes, provide links to ARIN forms and process.&lt;br /&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;I have noticed that a lot of new exit nodes have recently appeared on the network. This is great news, since exit nodes are typically on the scarce side. Exits usually occupy 30-33% of network by capacity, but are currently at a whopping 38.5% (156 MBytes/sec out of 404 total).&lt;/p&gt;
+
+&lt;p&gt;However, I want to make sure that these nodes stay up and don&#39;t end up being shut down due to easily preventable abuse complaints. I&#39;ve run a number of exit nodes on a few different ISPs and not only have I lived to tell about it, I&#39;ve have not had one shut down yet. Moreover, I&#39;ve only received about 4 abuse complaints in as many years of running exit nodes. This is in stark contrast to other node operators following a &lt;a href=&quot;https://blog.torproject.org/blog/five-years-exit-node-operator&quot;&gt;more reactive strategy&lt;/a&gt;. I&#39;m convinced this is largely because I observe the following pro-active guidelines. This guide is primarily US centric. Operators in other countries may have slightly different best practices (such as registering with RIPE and not ARIN). &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tips-running-exit-node-minimal-harassment&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Life without a CA</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/certificate_authority" />
+
+	<category term="/tags/certificate_fingerprints" />
+
+	<category term="/tags/distributed_trust" />
+
+	<category term="/tags/firefox" />
+
+	<category term="/tags/ssl_errors" />
+
+
+	<updated>2011-04-05T11:53:48Z</updated>
+	<published>2010-03-26T19:43:01Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;At &lt;a href=&quot;http://libreplanet.org/&quot;&gt;Libreplanet 2010&lt;/a&gt;, I was in a discussion with the &lt;a href=&quot;https://web.monkeysphere.info/&quot;&gt;MonkeySphere&lt;/a&gt; and &lt;a href=&quot;https://www.eff.org/&quot;&gt;EFF&lt;/a&gt; folks about how to encourage every website to offer ssl by default.  The general idea is to stop local traffic snooping and provide more security by default. During the discussion, it came up that I disable all of the &lt;a href=&quot;http://en.wikipedia.org/wiki/Certificate_authority&quot;&gt;Certificate Authorities&lt;/a&gt; in my systems and selectively trust the ssl certificates from individual websites.  I&#39;ve been doing this for years.  Apparently my admission was a shocking statement to many.  The group asked me to document my Firefox setup and what life is like without any trusted CAs.  Seth from the EFF has a &lt;a href=&quot;https://www.eff.org/deeplinks/2010/03/researchers-reveal-likelihood-governments-fake-ssl&quot;&gt;quick post&lt;/a&gt; about possible concerns over  the CAs in your browser. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/life-without-ca&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Life_without_a_CA/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Circumvention and Anonymity</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Circumvention_and_Anonymity/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Circumvention_and_Anonymity/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/censorship_circumvention" />
+
+	<category term="/tags/distributed_trust" />
+
+	<category term="/tags/open_architecture" />
+
+	<category term="/tags/open_philosophy" />
+
+
+	<updated>2011-04-05T11:17:05Z</updated>
+	<published>2009-01-12T18:08:54Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;We&#39;ve always argued that safe circumvention requires anonymity, even from the circumvention service itself.  There are many people wanting to record your Internet traffic and browsing patterns; from governments to commercial advertising networks.  There are many ways to defeat the threat of traffic analysis; from simple proxy providers, virtual private networks, and distributed peer to peer solutions.   Only some of these offer anonymity along with circumvention. Tor&#39;s open design and anonymity properties provide protections for the user from those watching the traffic and from us as an organization.&lt;/p&gt;
+
+&lt;p&gt;Our architecture and design don&#39;t force the user to assume trust in us.  Our code is &lt;a href=&quot;https://gitweb.torproject.org/tor.git/&quot; rel=&quot;nofollow&quot;&gt;accessible&lt;/a&gt; and &lt;a href=&quot;https://gitweb.torproject.org/tor.git/blob/HEAD:/LICENSE&quot; rel=&quot;nofollow&quot;&gt;licensed under an open license&lt;/a&gt;.  Our &lt;a href=&quot;https://gitweb.torproject.org/torspec.git&quot; rel=&quot;nofollow&quot;&gt;specifications&lt;/a&gt; are clearly detailed and published. Our &lt;a href=&quot;https://www.torproject.org/download/download&quot; rel=&quot;nofollow&quot;&gt;packages&lt;/a&gt; follow a defined build process so the user can create the same binaries we do. Independent researchers can and do test the properties Tor provides [and help us to improve].  Moreover, The Tor software runs on a distributed network, where a single operator cannot capture or be forced to capture all users&#39; traffic information, even under legal or coercive threat.&lt;/p&gt;
+
+&lt;p&gt;All of these should allow the user to trust The Tor Project as a &lt;a href=&quot;https://www.torproject.org/about/corepeople&quot; rel=&quot;nofollow&quot;&gt;not-for-profit company&lt;/a&gt; and to trust that Tor isn&#39;t surreptitiously watching the very information you&#39;re trying to protect and isn&#39;t gathering information we could be forced to disclose.&lt;/p&gt;
+
+&lt;p&gt;We&#39;re always willing to work with other organizations who understand that anonymity provides stronger circumvention protections than the alternatives.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Circumvention_and_Anonymity/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Circumvention_and_Anonymity/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

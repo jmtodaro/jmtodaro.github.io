@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged onion_addresses</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/onion_addresses/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/onion_addresses/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/onion_addresses/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:16:04Z</updated>
+<entry>
+	<title>SHA-1 files by popular request</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/SHA-1_files_by_popular_request/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/SHA-1_files_by_popular_request/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/hidden_services" />
+
+	<category term="/tags/onion_addresses" />
+
+	<category term="/tags/tor2web" />
+
+
+	<updated>2011-04-05T11:16:04Z</updated>
+	<published>2008-12-19T05:07:47Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;We&#39;ve received requests for .sha1 files in addition to .asc for our packages.  Starting with 0.2.1.8-alpha, there are now .sha1 files in the &lt;a href=&quot;https://www.torproject.org/dist/&quot; rel=&quot;nofollow&quot;&gt;appropriate dist directories&lt;/a&gt;.  Displaying them on the download web page is still a bit tricky.  The current layout leaves the page even more cluttered with .sha1 links all over it.  &lt;/p&gt;
+
+&lt;p&gt;When you download a 0.2.1.8-alpha or later package, simply replace &quot;.asc&quot; with &quot;.sha1&quot; to get the hash file.&lt;/p&gt;
+
+&lt;p&gt;You&#39;ll then need to either &quot;openssl sha1 {package}&quot; or &quot;sha1sum {package}&quot; to see if the hash you downloaded matches the package you downloaded.  Note:  replace {package} with the name of the file you downloaded.&lt;/p&gt;
+
+&lt;p&gt;Enjoy.  &lt;/p&gt;
+
+&lt;p&gt;If you don&#39;t know what any of this means, &lt;a href=&quot;http://en.wikipedia.org/wiki/File_verification&quot; rel=&quot;nofollow&quot;&gt;start here&lt;/a&gt;.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/SHA-1_files_by_popular_request/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/SHA-1_files_by_popular_request/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

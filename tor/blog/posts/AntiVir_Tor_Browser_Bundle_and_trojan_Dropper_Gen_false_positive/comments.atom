@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>AntiVir, Tor Browser Bundle, and trojan Dropper.Gen false positive</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/AntiVir_Tor_Browser_Bundle_and_trojan_Dropper_Gen_false_positive/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/AntiVir_Tor_Browser_Bundle_and_trojan_Dropper_Gen_false_positive/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/AntiVir_Tor_Browser_Bundle_and_trojan_Dropper_Gen_false_positive/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:22:20Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/AntiVir_Tor_Browser_Bundle_and_trojan_Dropper_Gen_false_positive/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/AntiVir_Tor_Browser_Bundle_and_trojan_Dropper_Gen_false_positive/comment_1/"/>
+
+	<author><name>Cd-MaN (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:16Z</updated>
+	<published>2009-04-08T11:22:16Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;An easier way to test for FPs is by using services like VirusTotal. I just uploaded the executable, and indeed, as the scan log shows ( &lt;a href=&quot;http://www.virustotal.com/analisis/27caf4312ace0cf8036bc6d0cbf05f64&quot; title=&quot;http://www.virustotal.com/analisis/27caf4312ace0cf8036bc6d0cbf05f64&quot; rel=&quot;nofollow&quot;&gt;http://www.virustotal.com/analisis/27caf4312ace0cf8036bc6d0cbf05f64&lt;/a&gt; ), Avira detects the file (in addition to the gateway version of McAfee).&lt;/p&gt;
+
+&lt;p&gt;I also reported it directly to Avira trough their web interface ( &lt;a href=&quot;http://analysis.avira.com/samples/index.php&quot; title=&quot;http://analysis.avira.com/samples/index.php&quot; rel=&quot;nofollow&quot;&gt;http://analysis.avira.com/samples/index.php&lt;/a&gt; ) and it said that: &quot;The file &#39;Start Tor Browser.exe&#39; has been determined to be &#39;FALSE POSITIVE&#39;. In particular this means that this file is not malicious but a false alarm. Detection is removed from our virus definition file (VDF) with the version: 7.1.3.25. &quot;, so hopefully this will be resolved.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/AntiVir_Tor_Browser_Bundle_and_trojan_Dropper_Gen_false_positive/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/AntiVir_Tor_Browser_Bundle_and_trojan_Dropper_Gen_false_positive/comment_2/"/>
+
+	<author><name>PETER (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:17Z</updated>
+	<published>2009-04-09T11:22:17Z</published>
+
+	<content type="html" xml:lang="en">
+	hey phobos there is aproblem with the tor-project  starting page in TBB. It is not showing this message &quot;Congratuations  you are using tor, your ip address is so on..... wat is the probem? Plesse fix this.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/AntiVir_Tor_Browser_Bundle_and_trojan_Dropper_Gen_false_positive/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/AntiVir_Tor_Browser_Bundle_and_trojan_Dropper_Gen_false_positive/comment_3/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:18Z</updated>
+	<published>2009-04-13T11:22:18Z</published>
+
+	<content type="html" xml:lang="en">
+	The reason check.torproject.org stopped working was due to the fiber cut in California affecting the datacenter:  &lt;a href=&quot;http://www.unitedlayer.com/show.html?id=37&quot; title=&quot;http://www.unitedlayer.com/show.html?id=37&quot; rel=&quot;nofollow&quot;&gt;http://www.unitedlayer.com/show.html?id=37&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/AntiVir_Tor_Browser_Bundle_and_trojan_Dropper_Gen_false_positive/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/AntiVir_Tor_Browser_Bundle_and_trojan_Dropper_Gen_false_positive/comment_4/"/>
+
+	<author><name>Mike (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:19Z</updated>
+	<published>2009-10-24T11:22:19Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I have downloaded the Vidalia software as I need to show myself in different geographic locations than where I am.  (Family member doing some cyber stalking of me and I want to lead them a merry dance and as I travel for business all sorts of locations are totally believable and drives them nuts.... Although why it irritates them I have no idea, but it is such a hot button and they are such an ass I want to do this).&lt;/p&gt;
+
+&lt;p&gt;My Google research indicated this software could do this and I downloaded it.   BUT....&lt;/p&gt;
+
+&lt;p&gt;I am not a techie and I cannot seem to even find if I have a Proxy, (I have a home laptop on a wireless network connected to ISP via a DSL service, that is all I know) and couldn&#39;t work out if I actually have the software working or how do I use it??  Yes I have the green onion, but....  The help file, er didn&#39;t really help me.  Sorry Vidalia guys!  I know how do I manage to walk and breathe at the same time.... &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/AntiVir_Tor_Browser_Bundle_and_trojan_Dropper_Gen_false_positive/../../smileys/smile.png&quot; alt=&quot;:-)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Can someone give me a real non technical idiots guide?  Push this button, then the screen will look like this, now push that button etc etc.&lt;/p&gt;
+
+&lt;p&gt;Greatly appreciate any help.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/AntiVir_Tor_Browser_Bundle_and_trojan_Dropper_Gen_false_positive/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/AntiVir_Tor_Browser_Bundle_and_trojan_Dropper_Gen_false_positive/comment_5/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:22:20Z</updated>
+	<published>2009-11-19T12:22:20Z</published>
+
+	<content type="html" xml:lang="en">
+	I installed Tor on my Macbook Pro and initially had no problems running it. When I upgraded to Leopard I deleted and shredded Firefox and Vidalia, then reinstalled them. The Vidalia bundle works fine in that it connects to the Tor Network but when I open Firefox I cannot toggle the Torbutton to turn it on. When I click on it, it will not switch from Disabled to Enabled. It&#39;s as if it&#39;s frozen. I checked my Tor settings and proxy settings in Firefox and everything seems to be setup right. What could be causing this and how can I change it?
+
+	</content>
+
+
+
+</entry>
+
+</feed>

@@ -1,0 +1,248 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Our three-year development roadmap is published</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Moritz Bartl (not verified): Comment 1</title>
+	<dcterms:creator>Moritz Bartl (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/comment_1/</link>
+
+	<pubDate>Fri, 19 Dec 2008 06:16:14 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:16:14Z</dcterms:modified>
+
+	<description>Very good and compact information that was previously scattered in various places. Thank you! I definitely recommend this to anyone interested in onion networking.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 2</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/comment_2/</link>
+
+	<pubDate>Mon, 22 Dec 2008 06:16:15 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:16:15Z</dcterms:modified>
+
+	<description>i heard that you use unencrypted request of the Tor Node Directory, might some evil ISP shut me down because I used Tor and they know it?
+</description>
+
+
+</item>
+<item>
+
+	<title>arma: Comment 3</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/comment_3/</link>
+
+	<pubDate>Mon, 22 Dec 2008 06:16:16 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:16:16Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor (as of 0.2.0.x, which is the current stable version) uses encryption when&lt;br /&gt;
+doing directory lookups. In Tor 0.1.2.x and earlier, the lookups were in fact&lt;br /&gt;
+unencrypted (though they were still signed, so you couldn&#39;t be tricked into&lt;br /&gt;
+believing something you shouldn&#39;t believe).&lt;/p&gt;
+
+&lt;p&gt;That said, even an encrypted directory lookup will probably connect to an IP&lt;br /&gt;
+address that your ISP can watch for: either the six Tor directory authorities,&lt;br /&gt;
+or to some relay that&#39;s listed in the network status list.&lt;/p&gt;
+
+&lt;p&gt;If you want to stop that possibility, then you&#39;ll want to use a &quot;bridge relay&quot; to&lt;br /&gt;
+connect to the Tor network:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/bridges&quot; title=&quot;https://www.torproject.org/bridges&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/bridges&lt;/a&gt;&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 4</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/comment_4/</link>
+
+	<pubDate>Tue, 23 Dec 2008 06:16:17 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:16:17Z</dcterms:modified>
+
+	<description>&lt;p&gt;Just got Tor to play with and while I was randomly surfing usung the Firefox browser I got a &quot;pop-up&quot; ad. from thoses spammers &quot;Adult Friend Finder&quot; offering me contacts in my town. Surely if this site knew where I lived then Tor must be compromised. Someone please explain.&lt;/p&gt;
+
+&lt;p&gt;Thanks, Mike&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 5</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/comment_5/</link>
+
+	<pubDate>Wed, 24 Dec 2008 06:16:18 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:16:18Z</dcterms:modified>
+
+	<description>visit &lt;a href=&quot;http://decloak.net&quot; title=&quot;http://decloak.net&quot; rel=&quot;nofollow&quot;&gt;http://decloak.net&lt;/a&gt; and see what if finds.  Something isn&#39;t setup correctly.  Or, your exit node was in your town.
+</description>
+
+
+</item>
+<item>
+
+	<title>WeAreAnonymous (not verified): Comment 6</title>
+	<dcterms:creator>WeAreAnonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/comment_6/</link>
+
+	<pubDate>Sun, 28 Dec 2008 06:16:19 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:16:19Z</dcterms:modified>
+
+	<description>Mike yea, javascript and flash and pretty much any client side executable content is a big nono unless you are absolutely sure you can trust it, its code running on your machine and can completely bypass tor, well outside of some certain paranoid configurations
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 7</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/comment_7/</link>
+
+	<pubDate>Tue, 23 Dec 2008 06:16:20 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:16:20Z</dcterms:modified>
+
+	<description>&lt;p&gt;Mike: are you using TorButton?  If not, there are many ways you could be identified based on browser cookies, persisted Flash applet data, etc.&lt;/p&gt;
+
+&lt;p&gt;For example, you visit site.com without Tor and unique identifier is written to your hard drive with Flash.  Then you run Tor and visit the same site from an exit node.  You are still sending the same unique identifier due to insecure use of Flash.  There are many more examples like this; you must use Tor properly to protect yourself!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 8</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/comment_8/</link>
+
+	<pubDate>Tue, 23 Dec 2008 06:16:21 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:16:21Z</dcterms:modified>
+
+	<description>YES I did you Tor button and it was enabled and I disabled all plug-ins in Firefox. Maybe an old cookie not properly deleted?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 9</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/comment_9/</link>
+
+	<pubDate>Thu, 25 Dec 2008 06:16:22 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:16:22Z</dcterms:modified>
+
+	<description>geoip.vidalia-project.net.  dosnt seem to be connecting, does it affect the way TOR operates and can it be used to control which nodes you can connect to?
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 10</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/comment_10/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/comment_10/</link>
+
+	<pubDate>Sat, 27 Dec 2008 06:16:23 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:16:23Z</dcterms:modified>
+
+	<description>no, it doesn&#39;t affect which nodes you can connect to.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 11</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/comment_11/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/comment_11/</link>
+
+	<pubDate>Thu, 01 Jan 2009 06:16:24 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:16:24Z</dcterms:modified>
+
+	<description>&lt;p&gt;You should supply a tor distribution for embedded appliances if you want to increase the number of nodes. I don´t want to run a server constantly on my desktop for security, practical and power reasons.&lt;/p&gt;
+
+&lt;p&gt;For an example of this look at how m0n0wall supplies finished ready-to-run compact flash images for the PC Engines embedded PC.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 12</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/comment_12/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/comment_12/</link>
+
+	<pubDate>Fri, 02 Jan 2009 06:16:25 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:16:25Z</dcterms:modified>
+
+	<description>we&#39;d love to do this, could you start the process?
+</description>
+
+
+</item>
+
+</channel>
+</rss>

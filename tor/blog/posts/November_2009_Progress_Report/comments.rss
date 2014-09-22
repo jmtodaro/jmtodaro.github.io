@@ -1,0 +1,540 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>November 2009 Progress Report</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Anonymous: Comment 1</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_1/</link>
+
+	<pubDate>Tue, 15 Dec 2009 06:44:41 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:44:41Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor, Thank you very much indeed!&lt;br /&gt;
+I hate chinese great firewall!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 2</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_2/</link>
+
+	<pubDate>Tue, 15 Dec 2009 06:44:42 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:44:42Z</dcterms:modified>
+
+	<description>&lt;p&gt;A quick question about twitter and youtube:&lt;/p&gt;
+
+&lt;p&gt;Hey,&lt;/p&gt;
+
+&lt;p&gt;Thank you for your great work. I&#39;m also suffering from the GFW in China, and Tor is really an excellent tool for me.&lt;/p&gt;
+
+&lt;p&gt;But, recently I found that twitter and youtube are not accessible with Tor, while other blocked web sites are still available. Could you please help me to find out the reason of such problem?&lt;/p&gt;
+
+&lt;p&gt;Thank you vert much.&lt;/p&gt;
+
+&lt;p&gt;Regards, Yan&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 3</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_3/</link>
+
+	<pubDate>Wed, 16 Dec 2009 06:44:43 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:44:43Z</dcterms:modified>
+
+	<description>&lt;p&gt;i guess some China User (or other censored country)&lt;br /&gt;
+try to set himself as Tor Relay&lt;br /&gt;
+because they believe this can help Tor Network better.&lt;/p&gt;
+
+&lt;p&gt;the methods is using Vidalia&lt;br /&gt;
+1) the user turnon &#39;my ISP block Tor&#39; checkbox and put bridge IP&lt;br /&gt;
+2) use bridge IP to connect to Tor successful&lt;br /&gt;
+3) the user turnoff &#39;my ISP block Tor&#39; checkbox&lt;br /&gt;
+4) set Tor &#39;Run as Tor Relay&#39;&lt;/p&gt;
+
+&lt;p&gt;but what this behavior actually make to Tor network is&lt;br /&gt;
+make Tor Network see this china&#39;s node is Tor Exit and use it.&lt;/p&gt;
+
+&lt;p&gt;unfortunately, such of this Exit is dead end!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 4</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_4/</link>
+
+	<pubDate>Thu, 17 Dec 2009 06:44:44 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:44:44Z</dcterms:modified>
+
+	<description>it will not work. and in this way, the second hand data going through their up stream bridge got bloated by encryption. so it&#39;s not going to help this network. and others connecting to those relays going through GFW got unnecessarily high latency. He must have taken tor as a P2P program.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 5</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_5/</link>
+
+	<pubDate>Fri, 18 Dec 2009 06:44:45 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:44:45Z</dcterms:modified>
+
+	<description>&lt;p&gt;i am in china, i can&#39;t browse facebook or any censor site for 3 days now.&lt;br /&gt;
+but i can browse normal website via Tor (which mean GFW can&#39;t block Tor yet)&lt;/p&gt;
+
+&lt;p&gt;so this assumption is very high potential.&lt;/p&gt;
+
+&lt;p&gt;what should Tor do to solve such Dead End Exit Relay problem??&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 6</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_6/</link>
+
+	<pubDate>Thu, 17 Dec 2009 06:44:46 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:44:46Z</dcterms:modified>
+
+	<description>&lt;p&gt;another assumption is GFW now known Tor packet pattern already&lt;br /&gt;
+they allow Tor connect packet but block Tor data packet.&lt;/p&gt;
+
+&lt;p&gt;Although Tor can connect to Tor network&lt;br /&gt;
+but can&#39;t send/receive data anymore&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 7</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_7/</link>
+
+	<pubDate>Mon, 21 Dec 2009 06:44:47 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:44:47Z</dcterms:modified>
+
+	<description>&lt;p&gt;As Tor OpenSource on Oct.&lt;br /&gt;
+i think china government already get Tor source code&lt;br /&gt;
+and everything is easier for them than ever!&lt;/p&gt;
+
+&lt;p&gt;they can create Tor Bridge Relay Emulator to retrieve many of Bridge IP then block it&lt;br /&gt;
+or give GFW learn how to decrypt Tor packet and block it.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 8</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_8/</link>
+
+	<pubDate>Tue, 22 Dec 2009 06:44:48 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:44:48Z</dcterms:modified>
+
+	<description>Tor has been open source for nearly nine years.  Tor continues to work around the world.  An adversary doesn&#39;t need to create a bridge relay emulator, they can just setup a bridge relay and record the IP addresses that connect to it.  Tor supports using any open proxy as a first hop to get to the public Tor Network.  You don&#39;t have to use a bridge to bypass a block.
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 9</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_9/</link>
+
+	<pubDate>Tue, 22 Dec 2009 06:44:49 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:44:49Z</dcterms:modified>
+
+	<description>Our testing shows China continues to do a simple IP address and TCP Port combination block.  It&#39;s the simplest way to do it.  The GFW is well tuned for these types of blocks, so why invent more sophisticated ways and spend resources unnecessarily?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 10</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_10/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_10/</link>
+
+	<pubDate>Wed, 23 Dec 2009 06:44:50 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:44:50Z</dcterms:modified>
+
+	<description>&lt;p&gt;Thank you for your reply.&lt;/p&gt;
+
+&lt;p&gt;My situation is Vidalia have green icon and said &#39;Connnected to the Tor Network&#39;&lt;br /&gt;
+but i can&#39;t browse facebook/youtube website for a week now.&lt;br /&gt;
+FireFox always said &#39;connection timed out&#39;&lt;br /&gt;
+However, i still can browse normal website with Tor.&lt;br /&gt;
+so strange!?!&lt;br /&gt;
+--------&lt;br /&gt;
+oh, as i try to use Tor to download Freegate from author&#39;s website today.&lt;br /&gt;
+It is ok with fine speed!!!&lt;/p&gt;
+
+&lt;p&gt;it seem current Tor problem effect only on Social Network website&lt;br /&gt;
+facebook/hi5/twitter youtube etc. but not on freegate&#39;s website&lt;/p&gt;
+
+&lt;p&gt;so i think this problem may not concerned with GFW.&lt;br /&gt;
+as political perspective, Freegate should be the 1st enemy of GFW.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 11</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_11/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_11/</link>
+
+	<pubDate>Sat, 19 Dec 2009 06:44:51 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:44:51Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hello,&lt;/p&gt;
+
+&lt;p&gt;Is it possible to update &#39;&#39;tor-win32-mingw-creation.txt&quot; (&lt;a href=&quot;https://git.torproject.org/checkout/tor/master/doc/tor-win32-mingw-creation.txt&quot; title=&quot;https://git.torproject.org/checkout/tor/master/doc/tor-win32-mingw-creation.txt&quot; rel=&quot;nofollow&quot;&gt;https://git.torproject.org/checkout/tor/master/doc/tor-win32-mingw-creat...&lt;/a&gt;) to MinGW-5.1.6 and OpenSSL 0.9.8l and make it work?&lt;/p&gt;
+
+&lt;p&gt;Thanks.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 12</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_12/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_12/</link>
+
+	<pubDate>Tue, 22 Dec 2009 06:44:52 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:44:52Z</dcterms:modified>
+
+	<description>&lt;p&gt;We&#39;re slowly working away from mingw altogether.  The two largest issues with mingw are that they don&#39;t sign their packages and if you build a binary from source on the same system twice, you get different binary hashes.  &lt;/p&gt;
+
+&lt;p&gt;We&#39;re moving towards Microsoft System Installer, and therefore Visual C.  Mingw was always a stopgap for us on Windows.  As we get people with more development experience in Windows system coding, using Visual C and the MSI is native to Windows, everything else is a bit foreign.&lt;/p&gt;
+
+&lt;p&gt;We&#39;ve generally tried to use the native system package management system on each operating system.  For Apple, this is dmg.  Redhat/CentOS/Fedora, this is rpm.  Debian and Ubuntu, this is debs.  &lt;/p&gt;
+
+&lt;p&gt;We&#39;d like to get a network installer working for all OSes, so all you have to do is to download a tiny bit of code, select the packages you want (tor, polipo, privoxy, vidalia, torbutton, etc) and let it just work.  This network installer should also work over Tor using our secure updater framework.&lt;/p&gt;
+
+&lt;p&gt;This is a long way of saying, we&#39;re rather not update the mingw directions in favor of going with native tools on Windows operating systems.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 13</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_13/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_13/</link>
+
+	<pubDate>Tue, 22 Dec 2009 06:44:53 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:44:53Z</dcterms:modified>
+
+	<description>&lt;p&gt;I&#39;ve used Tor&#39;s bridge feature several times and noticed some nodes like &quot;moria&quot; appearing with a duplicate called &quot;bridge&quot; with a different IP. Was this an attack? Are bridges safe to use? Normally I add 12 or more to the torrc file.&lt;/p&gt;
+
+&lt;p&gt;Another problem with bridges: sometimes there&#39;s a jam in transmission, a bottleneck, with one bridge going down and packets piling up and a slowdown occurs, why does this happen and take so many minutes to resolve?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 14</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_14/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_14/</link>
+
+	<pubDate>Wed, 23 Dec 2009 06:44:54 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:44:54Z</dcterms:modified>
+
+	<description>any future auto-update feature should be opt-in only, we have a right to be paranoid. &quot;It&#39;s open source!&quot; does not apply to binaries which most people install.
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 15</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_15/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_15/</link>
+
+	<pubDate>Wed, 23 Dec 2009 06:44:55 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:44:55Z</dcterms:modified>
+
+	<description>&lt;p&gt;Of course it&#39;s opt-in.  The user should receive a prompt with &quot;new version of (tor|vidalia|polipo|privoxy|torvm) available and let the user choose ignore, download, download and install, autoupdate&quot;. &lt;/p&gt;
+
+&lt;p&gt;We don&#39;t intend to force updates on anyone.  If you&#39;re sufficiently paranoid, compile your own after reading all the diffs between versions and don&#39;t use any auto-updater at all.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 16</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_16/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_16/</link>
+
+	<pubDate>Tue, 05 Jan 2010 06:44:56 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:44:56Z</dcterms:modified>
+
+	<description>&lt;p&gt;&quot;&quot;&quot;We&#39;re moving towards Microsoft System Installer, and therefore Visual C. Mingw was always a stopgap for us on Windows. As we get people with more development experience in Windows system coding, using Visual C and the MSI is native to Windows, everything else is a bit foreign.&quot;&quot;&quot;&lt;/p&gt;
+
+&lt;p&gt;I use MinGW on Windows. Its cumbersome compiling with this system, but if you use Eclipse for C and C++ you can create &#39;External Programs&#39; that can effectively invoke the make commands for you, with any options required. This method reduces compiling to a few clicks in the environment, with no interaction with shells (and their associated commands) required.&lt;/p&gt;
+
+&lt;p&gt;At present, everything I use to get the job done is OpenSource. It takes one click to launch the dev environment and then one more to compile Tor, which means I can rapidly build a new version for testing.&lt;/p&gt;
+
+&lt;p&gt;I&#39;m worried that if a move to Visual C is made, I will be required to use proprietary tools to compile Tor. &lt;/p&gt;
+
+&lt;p&gt;Will I have to go out and buy Visual C just to compile Tor ?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 17</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_17/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_17/</link>
+
+	<pubDate>Wed, 06 Jan 2010 06:44:57 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:44:57Z</dcterms:modified>
+
+	<description>&lt;p&gt;Frankly, we don&#39;t like this situation either.  If MinGW signed their packages and releases, we&#39;d feel much more comfortable continuing to use it.  However, it will still be alien to the Windows world.  MSI lets you upgrade individual components, which works well for the planned secure update infrastructure.&lt;/p&gt;
+
+&lt;p&gt;Another option is cygwin, but including the cygwin.dll with the bundles may raise interesting licensing issues.  Until someone can do more research into it, we&#39;ve been advised to not use cygwin.&lt;/p&gt;
+
+&lt;p&gt;You could publish instructions in replicating your build environment.  I&#39;m sure others would appreciate a &quot;click to build tor&quot; configuration.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 18</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_18/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_18/</link>
+
+	<pubDate>Thu, 07 Jan 2010 06:44:58 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:44:58Z</dcterms:modified>
+
+	<description>&lt;p&gt;Thanks you so much for a quick reply.&lt;/p&gt;
+
+&lt;p&gt;I am happy to publish details of the dev environment, but not sure where I should publish them ?&lt;/p&gt;
+
+&lt;p&gt;If you can give me a place to do so and a format that you&#39;d like, i&#39;ll invest the time and try and bring this to the community.&lt;/p&gt;
+
+&lt;p&gt;If a move to Visual C is made, then my dev environment becomes obsolete I think.&lt;/p&gt;
+
+&lt;p&gt;Great idea though !!!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 19</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_19/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_19/</link>
+
+	<pubDate>Thu, 07 Jan 2010 06:44:59 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:44:59Z</dcterms:modified>
+
+	<description>You could dump them in a comment here.  Subscribe to and send an email to or-dev, email me at tor-assistants and I&#39;ll publish them somewhere in a document.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 20</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_20/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_20/</link>
+
+	<pubDate>Fri, 08 Jan 2010 06:45:00 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:45:00Z</dcterms:modified>
+
+	<description>thanks again... im on the case...
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 21</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_21/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_21/</link>
+
+	<pubDate>Mon, 11 Jan 2010 06:45:01 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:45:01Z</dcterms:modified>
+
+	<description>&lt;p&gt;The document is now complete and available here for general download.&lt;/p&gt;
+
+&lt;p&gt;http://docs.google.com/leaf?id=0B6YAzYus3pVYZWQ0MzVhOWItNjgwYi00NWYxLTk0...&lt;/p&gt;
+
+&lt;p&gt;Please post in here if there are any questions, or criticisms.&lt;/p&gt;
+
+&lt;p&gt;Regards.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 22</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_22/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_22/</link>
+
+	<pubDate>Thu, 21 Jan 2010 06:45:02 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:45:02Z</dcterms:modified>
+
+	<description>&lt;p&gt;I have updated the document to reflect building Tor 0.2.2.7 under automake v2.6.x.&lt;/p&gt;
+
+&lt;p&gt;There is a specific section on how to update automake from the vanilla MinGWv5.16 install with MSYSv1.0.0.11 and MSysDTKv1.0.1.&lt;/p&gt;
+
+&lt;p&gt;I&#39;ll upload the document if its likely to be of any use... ?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 23</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_23/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2009_Progress_Report/comment_23/</link>
+
+	<pubDate>Thu, 06 May 2010 06:45:03 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:45:03Z</dcterms:modified>
+
+	<description>I strictly recommend not to hold back until you earn big sum of cash to buy goods! You can get the loans or just secured loan and feel fine 
+</description>
+
+
+</item>
+
+</channel>
+</rss>

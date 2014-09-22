@@ -1,0 +1,1551 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Why Tor is slow and what we&#x27;re going to do about it</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FWhy_Tor_is_slow_and_what_were_going_to_do_about_it&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Why Tor is slow and what we&#x27;re going to do about it</a>
+
+</span>
+
+
+<div id="content">
+<p>I've just finished writing up an explanation of all the various reasons why the Tor network is slow, and what we can do about each. Part of it comes down to design flaws; some of it is that a handful of users are overloading the network; and there's also simply not enough capacity to go around.</p>
+
+<p>Specifically, we've identified six categories of problems to address, and laid out some steps to resolve each of them.</p>
+
+<p>You can read the pdf here:<br />
+<a href="https://svn.torproject.org/svn/projects/roadmaps/2009-03-11-performance.pdf" rel="nofollow">https://svn.torproject.org/svn/projects/roadmaps/2009-03-11-performance.pdf</a></p>
+
+<p>Andrew has also put together a real live <a href="https://www.torproject.org/press/2009-03-12-performance-roadmap-press-release" rel="nofollow">press release</a> to go with it.</p>
+
+<p>Now all that remains is to do everything. So if you want to help, or especially if you know any organizations that can help with funding, please help us make this happen! <span class="read-more"><a href="http://blog.torproject.org/blog/why-tor-is-slow"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/development_roadmap/" rel="tag">development roadmap</a>
+
+<a href="../../tags/funding/" rel="tag">funding</a>
+
+<a href="../../tags/performance/" rel="tag">performance</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-b92956dead8a692ae14b095768216926">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+Nice report in PDF, thanks <img src="../../smileys/smile.png" alt=":)" />
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 13 Mar 2009 06:21:00 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-abb9e110a7c8d2e9486b9697ce827ffb">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+Very complete. Thanks for publishing this for everybody.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 13 Mar 2009 06:21:01 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-40d0c099d8843993f47e7acf964c0850">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+Build teams of Tor operators is very nice idea. As a contributor in BOINC project I know, that competition is big motivation for running own node and also finding next members to my team. I expect that it can do huge work with a little effort in case of Tor project.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fslush%20%28not%20verified%29&amp;do=goto">slush (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 13 Mar 2009 06:21:02 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-dbbea1feb8fda5ff79477e5dc73512d5">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<p>Just one note to "Reachable clients become relays automatically". Do this pure automatically is bad idea - and you wrote good reasons by self. But you can something by little change of Vidalia GUI. Currently, settings of relay is just one of tab in Vidalia.</p>
+
+<p>Showing message box (Run Tor relay/exit? Relay/Exit/No,thanks) with short and clever arguments, why is running tor relay good for user will make a lot of effort and without upsetting users, who cannot run relay for serious reason.</p>
+
+<p>There is plenty of good reasons to run relay/exit. One of them is to mix my non-tor communication with other traffic, so Im a little bit anonymous (traffic of my IP is not fully linkable to myself) even I don't use Tor at the moment.</p>
+
+<p>I think many people dont run Tor relay because they a) dont know why b) dont know, that it is really so simple :).</p>
+
+<p>Sorry for my English.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fslush%20%28not%20verified%29&amp;do=goto">slush (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 13 Mar 2009 06:21:03 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2ec04f60cadb686779d6192e1abe1ca7">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+Yes, asking the user if they want to be a relay is a good thing to do.  We could ask if they want to be a bridge or a full relay and let the user decide.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 17 Mar 2009 06:21:04 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-069caa68afc76ea426dcddca73049b5f">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>Greetings:</p>
+
+<p>I gather when running as a relay server, there is a publicly exposed listener.<br />
+Is it vulnerable to a buffer exploit?<br />
+if so, what kind of protective firewalling does it need in order for the server<br />
+machine to host it safely?</p>
+
+<p>Thanks,</p>
+
+<p>wlarip</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fwlarip%20%28not%20verified%29&amp;do=goto">wlarip (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 13 Mar 2009 06:21:05 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-63dd585ad202c968f8c6eac6d9b25703">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p>Not that we know of. But we do periodically find bugs that might allow things like that. That's why you should always keep up with the latest Tor versions. (Everybody should be on the or-announce list at <a href="http://archives.seul.org/or/announce/" title="http://archives.seul.org/or/announce/" rel="nofollow">http://archives.seul.org/or/announce/</a> .)</p>
+
+<p>Firewalling (i.e. blocking incoming connections) isn't going to do anything. What you want is to make sure that it isn't running with privileges (how to do that depends on your OS, but most default ways to set up Tor are fine). If you want to be extra careful, you can run it in a chroot or jail or the like.</p>
+
+<p>Some links to look at include<br />
+<a href="https://wiki.torproject.org/noreply/TheOnionRouter/OperationalSecurity" title="https://wiki.torproject.org/noreply/TheOnionRouter/OperationalSecurity" rel="nofollow">https://wiki.torproject.org/noreply/TheOnionRouter/OperationalSecurity</a><br />
+<a href="https://wiki.torproject.org/noreply/TheOnionRouter/TorInChroot" title="https://wiki.torproject.org/noreply/TheOnionRouter/TorInChroot" rel="nofollow">https://wiki.torproject.org/noreply/TheOnionRouter/TorInChroot</a><br />
+<a href="https://wiki.torproject.org/noreply/TheOnionRouter/OpenbsdChrootedTor" title="https://wiki.torproject.org/noreply/TheOnionRouter/OpenbsdChrootedTor" rel="nofollow">https://wiki.torproject.org/noreply/TheOnionRouter/OpenbsdChrootedTor</a><br />
+depending on your OS.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Farma&amp;do=goto">arma</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 13 Mar 2009 06:21:06 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f16c8bbe3212323178806a91f8fd72ad">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+<p>SOME people would feel that this is nazism. I disagree.<br />
+I have stated my position.<br />
+Thank you for TOR.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 15 Mar 2009 06:21:07 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8c1196f939132a9daf5773a6a20783db">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+Block torrent traffic and Tor will not be slow.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 16 Mar 2009 06:21:08 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7e7274f8228044fff3f7f4ed8ed9c785">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+<p>Bittorrent can run on a wide variety of ports, which would make it difficult for exit nodes to block, since exit nodes generally rely on port-based blocking.</p>
+
+<p>All that can be done, so far as I know, is to better educate people about why they should not use Tor with bittorrent, and what they should do instead.</p>
+
+<p>To that end:<br />
+* Tor was not designed to run with bittorrent. By using bittorent over Tor, you are hurting the Tor network.<br />
+* Your downloads will be very slow.<br />
+* Bittorrent clients were not designed to be secure with Tor, and may leak information about you.<br />
+* If you are using Tor for censorship evasion, not anonymity, you may have better luck using a client like Azureus / Vuze which supports encryption.<br />
+* If you are using Tor for anonymity, but still for legal purposes, i2p was better designed for this sort of thing and there are several custom clients trusted to work with i2p. I2PSnark comes bundled with i2p, and a few others are available. Unfortunately, you can only use i2p to access i2p torrents. You can help i2p by uploading legally distributable torrents to their trackers.<br />
+* If you are using Tor for illegal purposes, we cannot help besides to suggest that you stop doing so.</p>
+
+<p>P.S. These CAPTCHAs are difficult even for a human to read!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 18 Mar 2009 06:21:09 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-83af1ee04e7992213d47c40c317238a9">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+<p>There's a rumour that the Anti-Counterfeiting Trade Agreement might illegalise anonymising programs like Tor and JonDo.</p>
+
+<p>I can live with a slow Tor, but I'd be devastated if I lost it all together.</p>
+
+<p>Does the Tor Project have any plans to campaign against ACTA, either in conjunction with other anonymity projects or by itself?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 18 Mar 2009 06:21:10 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3de8cb1303cde22939c51a049303eee0">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+There's so little known about it from actual documents it's difficult to properly form a legal opinion.  We're paying attention to it and offering assistance to other orgs as they try to get more information on it.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 21 Mar 2009 06:21:11 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a63839674ff1b1c81f355809e6fea65b">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+I hear the European Parliament wants the European Commission to publish.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 21 Mar 2009 06:21:12 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5127dad51bb30d377b70d44a785124d4">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+occam's razor..  Anyone consider Gibson Research Corporation (<a href="http://www.grc.com" title="www.grc.com" rel="nofollow">www.grc.com</a>)
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 01 Apr 2009 06:21:13 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9099181e1b6fe245fd1db7022d6fc110">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+<p>A lot of home users, including myself, shut our computers down each night to save electricity and save our computers from overheating or getting burned out too quickly. If I ran Windows, I would also run into software stability problems if I left it up for long, but it my case that isn't the problem.</p>
+
+<p>I would like to contribute to the Tor network, but given that a node has to be up for many days before it starts being well used, I feel like it isn't really worth it.</p>
+
+<p>Apparently i2p is able to handle such a situation. On the first run, an i2p router has to be left up for a number of hours to become "well-integrated", meaning a lot of other i2p clients know about the i2p router and the i2p router knows about a lot of other i2p routers. However, once the i2p router is well-integrated, the other i2p clients will keep it in their database for 24 hours after it goes offline, so as long as you don't leave it offline for more than 24 hours, it will take only a few hours for it to be fully utilised on future runs. Thus, home users who only run i2p routers for some number of hours each day are still able to contribute significantly to the i2p network.</p>
+
+<p>Would it be possible to implement something like this in Tor? I know there are problems with the directory being too large. Maybe the directory could be broken into bite-sized chunks upon request from slower clients.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 02 Apr 2009 06:21:14 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f7f8288a0dacc84965a376675a873c26">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+<p>For the project ! Bravissimo...<br />
+But some features could be fixed. For example, it's impossible to use One Swarm in Firefox when TOR is running. It's a serious problem to be really anonymous in France (context of security called HADOPI) while sharing files in a friend to friend network.<br />
+I'm sure a developper or TOR Project could fix this ! </p>
+
+<p>Thx a lot for the last stable version for DEBIAN.<br />
+Don't forget you can visit my homepage for detail about HADOPI in France.<br />
+Have a nice day.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fsegadiablesse%20%28not%20verified%29&amp;do=goto">segadiablesse (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 03 Apr 2009 06:21:15 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0f97c48c26d1c4a19431693a32d38ffc">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+<p>I understand the project, but, i would like to now if it's a configuration's problem, or the network, but i can spend 3 or more minutes to open a google web page..</p>
+
+<p>Is there a solution?</p>
+
+<p>Thanks.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FIan%20%28not%20verified%29&amp;do=goto">Ian (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 03 Apr 2009 06:21:16 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9c304777d2af3c3e14de1d24012d8fd3">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+<p>If you don't, there could be incompatibility problems between you and the rest of the network.</p>
+
+<p>If you do, then it is probably a network problem. There's a great deal of chance in building Tor circuits: some are faster than others. You could reduce the amount of chance, but that would also decrease anonymity.</p>
+
+<p>The best case scenario, if improvements to Tor's speed are successful, is that such things will happen less often, but will still happen.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 03 Apr 2009 06:21:17 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bccb9738f0bb441124c30fe721c5b474">
+
+<div class="comment-subject">
+
+Comment 19
+
+</div>
+
+<div class="inlinecontent">
+<p>I think it can be a network problem...<br />
+The fact is we use networks all over the world.</p>
+
+<p>I would like to know if it's possible to connect to users only in specific countries?</p>
+
+<p>I mean, i live in Europe, and i would like to know if i can connect only in Europe, rather than going to us or brazil users, which are far away, and reduce my latence?</p>
+
+<p>Thanks (:</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 03 Apr 2009 06:21:18 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8189458fdd0ae9b551a78c88cfe3929f">
+
+<div class="comment-subject">
+
+Comment 20
+
+</div>
+
+<div class="inlinecontent">
+And i have the latest version of TOR, using tor for my MAC , and TOR plug-in for firefox.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 03 Apr 2009 06:21:19 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fa4219f68dfdd8f8c4fd0de497af3099">
+
+<div class="comment-subject">
+
+Comment 21
+
+</div>
+
+<div class="inlinecontent">
+<p>If you manually edit your torrc, there are EntryNodes and ExitNodes options that you can use to specify which nodes you want to use for your Entry and Exit nodes. *If* Tor is integrated with GeoIP, you can specify by country which nodes you do and do not want to use. You would have to list country codes for all European countries. I don't know how you can control the middle node. I don't remember if this is implemented in the stable version yet or only in the alpha.</p>
+
+<p>I think the feature was mainly intended for people who do not trust the privacy laws of a particular country. For example, if a country implements a data retention law that you think is too severe, you tell Tor not to use nodes and nodes in that country as entry or exit nodes.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 03 Apr 2009 06:21:20 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-704333f9d182fea0cc0a33845908478c">
+
+<div class="comment-subject">
+
+Comment 22
+
+</div>
+
+<div class="inlinecontent">
+<p>Hum,</p>
+
+<p>Ok,<br />
+But i'm sorry, I really don't know where i can configure the entry nodes, and exit nodes...</p>
+
+<p>as you can see :</p>
+
+<p># This file was generated by Tor; if you edit it, comments will not be preserved<br />
+# The old torrc file was renamed to torrc.orig.1 or similar, and Tor will ignore it</p>
+
+<p># If set, Tor will accept connections from the same machine (localhost only)<br />
+# on this port, and allow those connections to control the Tor process using<br />
+# the Tor Control Protocol (described incontrol-spec.txt).<br />
+ControlPort 9001<br />
+# Serve directory information from this port, and act as a directory cache.<br />
+DirPort 9030<br />
+# Address/port ranges for which to accept or reject outgoing connections on<br />
+# behalf of Tor users.<br />
+ExitPolicy accept *:80,reject *:*<br />
+HashedControlPassword XXXXXXXXXXXXXXXXXX<br />
+# Where to send logging messages.  Format is minSeverity[-maxSeverity]<br />
+# (stderr|stdout|syslog|file FILENAME).<br />
+Log notice stdout<br />
+# Set the server nickname.<br />
+Nickname Ed53d<br />
+# Advertise this port to listen for connections from Tor clients and servers.<br />
+ORPort 9001<br />
+RelayBandwidthBurst 131072<br />
+RelayBandwidthRate 65536</p>
+
+<p>^^</p>
+
+<p>Any idea?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 04 Apr 2009 06:21:21 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c1cc11768f862216bbe2c72dc421a238">
+
+<div class="comment-subject">
+
+Comment 23
+
+</div>
+
+<div class="inlinecontent">
+<p>Instead of $fingerprint you can also specify a 2 letter ISO3166 country code in curly braces (for example {de}),</p>
+
+<p>so....</p>
+
+<p># A list of preferred nodes to use for the last hop in the circuit, if possible.<br />
+excludenodes {us},{br},{jp},{ca},{au},{cn}<br />
+# A list of preferred nodes to use for the first hop in the circuit, if possible.<br />
+entrynodes {fr},{gb},{en},{de},{es}</p>
+
+<p>But I have un error... It says me the syntax is wrong...</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 04 Apr 2009 06:21:22 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c8037231081caa1bb8be43b20bbf14f7">
+
+<div class="comment-subject">
+
+Comment 24
+
+</div>
+
+<div class="inlinecontent">
+<p>This was a thorough, well-thought out and much needed analysis.  I enjoyed reading the sections discussing the tradeoffs between latency and throughput.  </p>
+
+<p>Since file-sharing is not going away but has clear implications for the performance of the network, it seems pretty straightforward that the network needs to be optimized for lower latency and for the web-browsing type use.  Those individuals using the system for file-sharing can still make use of it but will learn to expect slower speeds.</p>
+
+<p>If broadband speeds continue to improve and/or fiber-optic networks to the home become more mainstream around the world, this should help with the throughput issues I would think.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 24 Apr 2009 06:21:23 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7ca03b6d5db054c8b09bcbd0cc69dff4">
+
+<div class="comment-subject">
+
+Comment 25
+
+</div>
+
+<div class="inlinecontent">
+<p>It would be nice to have an overwiew about the rights , the Do's and the Don'ts an TOR-Relayer must do, to keep him/her safe too against the local goverment.<br />
+Maybe a policy and some documents will help, This will also encourage people to do more voluntary work by hosting an qon tor relay server.<br />
+best wishes<br />
+Tommy,</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FTommytheCat%20%28not%20verified%29&amp;do=goto">TommytheCat (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 18 May 2009 06:21:24 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7ea571d36ca25ca5a1f3c1087fdb3796">
+
+<div class="comment-subject">
+
+Comment 26
+
+</div>
+
+<div class="inlinecontent">
+I should hire you guys to send my monthly reports...You're very organized and attentive to details. Now let's just pray you'll get the necessary funds and help to get things done.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FTraduceri%20legalizate%C2%A0%20%C2%A0%20%28not%20verified%29&amp;do=goto">Traduceri legalizate    (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 27 Jul 2009 06:21:25 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5437bcaf981e68066a17f04df602918d">
+
+<div class="comment-subject">
+
+Comment 27
+
+</div>
+
+<div class="inlinecontent">
+<p>I think its ok for what we get for free service like yours, i believe also your team will working on it with the best effort. Shared with thousand people around the world for better safer surfing needs lot resources. Thanks for your GREAT job! I will use TOR always.</p>
+
+<p>Regards,<br />
+Donna</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FDonna%20Liens%20%28not%20verified%29&amp;do=goto">Donna Liens (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 08 Aug 2009 06:21:26 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9a7ddb0e3f266e978d011e4b2c48e569">
+
+<div class="comment-subject">
+
+Comment 28
+
+</div>
+
+<div class="inlinecontent">
+HI AM NEW TO THE TOR CAN ANYONE HELP ME ON HOW TO CONFIGURE TOR ESPECIALLY IN NIGERIA.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 14 Aug 2009 06:21:27 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0532e05450e51bab6984a1b5a46866de">
+
+<div class="comment-subject">
+
+Comment 29
+
+</div>
+
+<div class="inlinecontent">
+Well the solutions in the PDF looks promising to speed up TOR great stuff guys.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FDan%20G.%20%20%28not%20verified%29&amp;do=goto">Dan G.  (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 18 Sep 2009 06:21:28 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f85b6b8449ad758aa1d2a8eb2d147a4a">
+
+<div class="comment-subject">
+
+Comment 30
+
+</div>
+
+<div class="inlinecontent">
+Implementing a function that prevents the occupation or usage of tor and bittorrent programs would be an easy and effective first step. Limiting the use of tor to critical uses would be another(websites, ssl, e-mail). Implementing a more robust system and separating critical needs over non-critical needs and then forcing tor to give a higher priority to those functions.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fjr%20%28not%20verified%29&amp;do=goto">jr (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 25 Sep 2009 06:21:29 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b4f8ba2b7700a0366f974b2b254c3e19">
+
+<div class="comment-subject">
+
+Comment 31
+
+</div>
+
+<div class="inlinecontent">
+Please do you know how I could configure bittorrent to work with tor? thanks in advance
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FSleek%20%28not%20verified%29&amp;do=goto">Sleek (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 29 Oct 2009 06:21:30 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-325f71eb7378c803d39fad1958e2005a">
+
+<div class="comment-subject">
+
+Comment 32
+
+</div>
+
+<div class="inlinecontent">
+<p>You should NOT ever use Tor for torrents.<br />
+See here: <a href="https://blog.torproject.org/blog/why-tor-is-slow#comment-831" title="https://blog.torproject.org/blog/why-tor-is-slow#comment-831" rel="nofollow">https://blog.torproject.org/blog/why-tor-is-slow#comment-831</a></p>
+
+<p>A small quote from there:<br />
+* Tor was not designed to run with bittorrent. By using bittorent over Tor, you are hurting the Tor network.<br />
+* Your downloads will be very slow. (I can confirm, VERY SLOW. And also Tor nodes can ban you so you can't use Tor either for torrents or for other purposes, e.g. browsing)<br />
+* Bittorrent clients were not designed to be secure with Tor, and may leak information about you.<br />
+* If you are using Tor for censorship evasion, not anonymity, you may have better luck using a client like Azureus / Vuze which supports encryption.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 07 Nov 2009 06:21:31 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-58750c3513d0cb9f4b54fb2aad94e0dc">
+
+<div class="comment-subject">
+
+Comment 33
+
+</div>
+
+<div class="inlinecontent">
+<p>If you want to use anonymous filesharing, I suggest to use:<br />
+1) <a href="http://en.wikipedia.org/wiki/I2P#BitTorrent" title="http://en.wikipedia.org/wiki/I2P#BitTorrent" rel="nofollow">http://en.wikipedia.org/wiki/I2P#BitTorrent</a> - connect to I2P network and start sharing there using I2PSnark<br />
+2) Forget about any special networks, either Tor or i2p or any else, - and just use programs that can obfuscate or encrypt your peering connections: <a href="http://www.emule-project.net" title="http://www.emule-project.net" rel="nofollow">http://www.emule-project.net</a> for eDonkey2000 network (I recommend) or Azureus / Vuze for torrents.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 07 Nov 2009 06:21:32 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8afe63b7a4d2edea70b77b3663fcb0bf">
+
+<div class="comment-subject">
+
+Comment 34
+
+</div>
+
+<div class="inlinecontent">
+It's a pity that tor is slowing down the surfing process. But you need to pay for every good thing. You can't take only pluses, and do not take any of the minuses of a technology http://ampaportalnou.org/
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 21 Feb 2010 06:21:33 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b6beece864ac03ee32c3398e119e56d1">
+
+<div class="comment-subject">
+
+Comment 35
+
+</div>
+
+<div class="inlinecontent">
+is there a way to pick and choose which relay you want to use?  using the vidalia network map?  i've went through the tor faqs and played with the program for a while, but i havent been able to answer that question.  i keep getting routed through an overseas relay, and would like to use one near me.  thanks.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 25 Mar 2010 06:21:34 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-064b42205c7186fa2abd7fa7bc1ccb1f">
+
+<div class="comment-subject">
+
+Comment 36
+
+</div>
+
+<div class="inlinecontent">
+Tor seriously sucks. On average it take ten minutes for me to load one single web page. Then god forbid I want to post something I have to wait another ten minutes. Programs like Jap are okay, but also really slow at times. Ghost Surf is great but you have to pay for it. 
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 24 Apr 2010 06:21:35 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-22de8332490619dd0a0f083ca7e8e8ba">
+
+<div class="comment-subject">
+
+Comment 37
+
+</div>
+
+<div class="inlinecontent">
+hi i am new using of tor, can you please help me? can tor compatible to use of yahoo messenger (YM)? thanks a lot.. 
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 02 Jul 2010 06:21:36 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-649ddd44492842fb12fdad60519a84c5">
+
+<div class="comment-subject">
+
+Comment 38
+
+</div>
+
+<div class="inlinecontent">
+there appears to be no way to setup YM with tor.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 02 Jul 2010 06:21:37 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FWhy_Tor_is_slow_and_what_were_going_to_do_about_it&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:20:59 AM CDT</span>
+<!-- Created <span class="date">Fri 13 Mar 2009 05:33:01 AM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

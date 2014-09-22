@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged qt</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/qt/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/qt/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/qt/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:05:46Z</updated>
+<entry>
+	<title>Vidalia bundle, OSX and Qt bugs</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_bundle_OSX_and_Qt_bugs/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_bundle_OSX_and_Qt_bugs/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bugs" />
+
+	<category term="/tags/crashes" />
+
+	<category term="/tags/osx" />
+
+	<category term="/tags/qt" />
+
+	<category term="/tags/vidalia" />
+
+	<category term="/tags/vidalia_bundle" />
+
+
+	<updated>2011-04-05T11:05:46Z</updated>
+	<published>2008-01-20T18:50:53Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;It appears Qt-4.3.3 has &lt;a href=&quot;http://trolltech.com/developer/task-tracker/index_html?method=entry&amp;amp;id=155700&quot; rel=&quot;nofollow&quot;&gt;a bug&lt;/a&gt; that is causing Vidalia to crash when the list of Tor nodes refreshes and is sorted.  The current 0.1.2.19-stable and 0.2.0.17-alpha bundles for OSX are built against Qt-4.3.3.  &lt;/p&gt;
+
+&lt;p&gt;I&#39;ve downgraded the build hosts to Qt-4.3.2.  The rebuilt OSX vidalia-bundle packages for both 0.1.2.19-stable and 0.2.0.17-alpha are available as:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.torproject.org/dist/vidalia-bundles/vidalia-bundle-0.1.2.19-0.0.16a-tiger.dmg&quot; rel=&quot;nofollow&quot;&gt;Bundle with 0.1.2.19-stable and Vidalia 16a&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.torproject.org/dist/vidalia-bundles/vidalia-bundle-0.2.0.17-alpha-0.0.16a-tiger.dmg&quot; rel=&quot;nofollow&quot;&gt;Bundle with 0.2.0.17-alpha and Vidalia 16a&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These bundles contain Vidalia compiled with Qt-4.3.2.  This makes Vidalia happy again.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_bundle_OSX_and_Qt_bugs/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_bundle_OSX_and_Qt_bugs/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

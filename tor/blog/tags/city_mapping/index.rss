@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged city_mapping</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/city_mapping/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Shutting down the Vidalia GeoIP mapping server</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Shutting_down_the_Vidalia_GeoIP_mapping_server/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Shutting_down_the_Vidalia_GeoIP_mapping_server/</link>
+
+
+	<category>/tags/city_mapping</category>
+
+	<category>/tags/geoip</category>
+
+	<category>/tags/vidalia</category>
+
+	<category>/tags/vidalia_network_map</category>
+
+	<category>/tags/volunteer_run</category>
+
+
+	<pubDate>Thu, 30 Sep 2010 19:32:52 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:09:38Z</dcterms:modified>
+
+	<description>&lt;p&gt;Vidalia is the graphical controller for the Tor software.  It provides an easy to use interface to control some basic functionality of the Tor software and to give you graphical feedback as to what your Tor software is doing as you use it.  &lt;/p&gt;
+
+&lt;p&gt;The Vidalia Project is shutting down the server that gives you the city-level location for tor relays in the Network Map. If you are running a version of Vidalia that is earlier than 0.2.10, you will lose your country flags and relays appearing in the Network Map.  This is a display issue and does not affect the functionality of the Tor software itself.  The main change in Vidalia 0.2.10 was to rely on the Tor software&#39;s local country-level GeoIP database that ships with the Tor software. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/shutting-down-vidalia-geoip-mapping-server&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Shutting_down_the_Vidalia_GeoIP_mapping_server/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

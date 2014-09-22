@@ -1,0 +1,839 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Quick thoughts on tor2web</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FQuick_thoughts_on_tor2web&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Quick thoughts on tor2web</a>
+
+</span>
+
+
+<div id="content">
+<p>Aaron and Virgil's <a href="http://tor2web.com" rel="nofollow">tor2web</a> site has been picked up by <a href="http://blog.wired.com/27bstroke6/2008/12/tor-anonymized.html" rel="nofollow">Wired's 27bstroke6 blog</a> and <a href="http://arstechnica.com/news.ars/post/20081215-tor2web-brings-anonymous-tor-sites-to-the-regular-web.html" rel="nofollow">Ars Technica</a>.</p>
+
+<p>First off, I think it's a neat implementation of allowing non-Tor users access to the realm of .onion, aka hidden services.  While I think using the <a href="https://www.torproject.org/torbrowser/" rel="nofollow">Tor Browser Bundle</a> is incredibly easy, not everyone agrees with me.  Neither Tor nor tor2web host any of the hidden service content.  We don't know who does, nor who runs the hidden service.  This brings me to my next thought. <span class="read-more"><a href="http://blog.torproject.org/blog/quick-thoughts-tor2web"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-7be02d57c6f84f917d4c10af28159f1c">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>Setting up a hidden service microblogging site would be pretty easy. Just grab a copy of laconica (<a href="http://laconi.ca" title="http://laconi.ca" rel="nofollow">http://laconi.ca</a>) and set it up. It can even federate with other members of the openmicroblogging network, like identi.ca - which would be very cool. Perhaps the Tor Project itself could consider getting such an effort started.</p>
+
+<p>For non-"hidden" sites (such as well known ones with an establish "conventional" web presence) would it be beneficial if they offered a hidden service presence (.onion) as well? For example, would it be beneficial if any way if <a href="http://identi.ca" title="http://identi.ca" rel="nofollow">http://identi.ca</a> offered a .onion address as well, that went to the exact same site?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FCraig%20%28not%20verified%29&amp;do=goto">Craig (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 15 Dec 2008 06:15:45 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0907ff8a5e4a31d8589a07affa83f4ed">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+Thats a nice idea. But you have to register at the laconica-site with a valid email-address or change all the code about the validation and email-notification-services.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Foniku%20%28not%20verified%29&amp;do=goto">oniku (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 03 Aug 2009 06:15:46 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-07e07a1ff9b703dfec4623d9a2902839">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>People should start offering mail via tor <img src="../../smileys/smile.png" alt=":)" /><br />
+I think it would be very good if big services started offering access via tor. An example would be Freenode's tor hidden service.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 13 Aug 2009 06:15:47 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-563169c367aad1f8b5c816bbe76d43c3">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+There are a few hidden services that offer mail inside .onion-space already.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 15 Aug 2009 06:15:48 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ab10926aac898cd7955c9cb1120cc490">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>I used Tor with addon in firefox to download from rapidshare very fast.<br />
+Thanks Tor first, </p>
+
+<p>But I want to change the IP after a period of time (E.x: 10 minutes), how can I ?</p>
+
+<p>(I must Stop Tor and Start Tor again by hand, i hate that work)</p>
+
+<p>Plz email to me: <a href="mailto:k3lvinmitnick@gmail.com" rel="nofollow">k3lvinmitnick@gmail.com</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 16 Dec 2008 06:15:49 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f26e5a754a1f0914ee487375fee6be01">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>phobos wrote, “I wonder if Google, Yahoo, and others will crawl tor2web and start indexing the content.”</p>
+
+<p>That one can be answered.  Try the search ‘site:tor2web.com’ in Google.  The answer is yes.  What’s more, Google appears to be correlating .onion pages with the regular web.  If you look at Google’s cached content for some of the .onion pages it has accessed through tor2web, the URL in the header is that for the regular (non-Tor) web page.  I suppose it’s more efficient to point to what Google considers to be the canonical URL wherever possible.</p>
+
+<p><a href="http://74.125.77.132/search?q=cache:FHbFHIav7usJ:gaddbiwdftapglkq.tor2web.com/" title="http://74.125.77.132/search?q=cache:FHbFHIav7usJ:gaddbiwdftapglkq.tor2web.com/" rel="nofollow">http://74.125.77.132/search?q=cache:FHbFHIav7usJ:gaddbiwdftapglkq.tor2we...</a><br />
+<a href="http://74.125.77.132/search?q=cache:RbZxo1POzoAJ:rjgcfnw4sd2jaqfu.tor2web.com/" title="http://74.125.77.132/search?q=cache:RbZxo1POzoAJ:rjgcfnw4sd2jaqfu.tor2web.com/" rel="nofollow">http://74.125.77.132/search?q=cache:RbZxo1POzoAJ:rjgcfnw4sd2jaqfu.tor2we...</a><br />
+<a href="http://74.125.77.132/search?q=cache:rKMFPXORTAAJ:5pnauannuco7bsma.tor2web.com/movies.htm" title="http://74.125.77.132/search?q=cache:rKMFPXORTAAJ:5pnauannuco7bsma.tor2web.com/movies.htm" rel="nofollow">http://74.125.77.132/search?q=cache:rKMFPXORTAAJ:5pnauannuco7bsma.tor2we...</a></p>
+
+<p>It works in the other direction too.  Searching for ‘rjgcfnw4sd2jaqfu.tor2web.com’ currently gives one result – the URL for the underlying website.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAD%20%28not%20verified%29&amp;do=goto">AD (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 16 Dec 2008 06:15:50 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ddc84af25e9c55d1896e56f180ec2ebf">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p>As a hidden service provider, you need to protect yourself, too. What would it help if Twitter offered a hidden service interface? The service is well-known, public, can easily be forced to give away user credentials and remove "improper content". If you're using the Tor client, you can already use existing platforms anonymously.</p>
+
+<p>More importantly, we need to adapt (or write new) blogging software and file dumps that completely abandon IP logging, and stop publishers and users from linking external content.</p>
+
+<p><a href="http://moblog.wiredwings.com/archives/20081218/Proposal-for-Tor-Hidden-Services.html" title="http://moblog.wiredwings.com/archives/20081218/Proposal-for-Tor-Hidden-Services.html" rel="nofollow">http://moblog.wiredwings.com/archives/20081218/Proposal-for-Tor-Hidden-S...</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FMoritz%20Bartl%20%28not%20verified%29&amp;do=goto">Moritz Bartl (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 18 Dec 2008 06:15:51 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7717323a5af79aed7a76c6c5193c53cb">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+I think phobos' idea was that hidden services can't be found and since they work inside tor, they defeat censorship or filtering.  This also means that an exit relay can't watch what you do and build up a pattern over time.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 18 Dec 2008 06:15:52 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2409e3d8a2503817d69749f5e03eaadb">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+<p><a href="http://tor2web.com/tortodo" title="http://tor2web.com/tortodo" rel="nofollow">http://tor2web.com/tortodo</a></p>
+
+<p>"Right now the only way to access hidden services is by using the Tor client, which routes all Internet traffic through the Tor network and so slows down normal Internet usage. It would be nice if one could run the Tor client in a mode where it only handled *.onion requests (i.e. requests to hidden services). That way users could transparently access hidden services without any degradation in normal Internet service."</p>
+
+<p>Just modify the Privoxy configuration file.</p>
+
+<p>Change the line that says:<br />
+forward-socks4a / 127.0.0.1:9050 . </p>
+
+<p>To:<br />
+forward-socks4a .onion 127.0.0.1:9050 . </p>
+
+<p>Of course, you should only do this if you are only using Tor to access hidden services, but not to protect your anonymity.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 20 Mar 2009 06:15:53 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-56b9ab80269031db066472a4a238646b">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+Privoxy seems to be removed from the newer versions for vidalia bundle. How do you do this with the newest version of TOR?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FKeK%20%28not%20verified%29&amp;do=goto">KeK (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 03 Dec 2009 06:15:54 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c20bc0d1adee3b997b6f0be59a3f176a">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+You can install privoxy yourself, or use the polipo we've included and configured for you.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 04 Dec 2009 06:15:55 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-31146094d45753c8c96c7750893d7431">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+A tried to install the bundle for Mac OSX and there was an installation failrue. The alert said it could not run a postflight script for Tor. Any thoughts?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FJL%20%28not%20verified%29&amp;do=goto">JL (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 20 Mar 2009 06:15:56 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8917be3ade8ddcf94a07d5c3628a6a84">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+I bet the postflight script ran, but couldn't start up Firefox automatically to install Torbutton.  That's typically the case.  Tor is probably installed and working fine.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 21 Mar 2009 06:15:57 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5cea193f516e2ec9f57a098ab92c93cd">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+<p>"Right now the only way to access hidden services is by using the Tor client, which routes all Internet traffic through the Tor network and so slows down normal Internet usage.film izle It would be nice if one could run the Tor client in a mode where it only handled *.onion requests (i.e. requests to hidden services). That way users could transparently access hidden services without any degradation in normal Internet service."</p>
+
+<p>Just modify the Privoxy configuration file.</p>
+
+<p>Change the line that says:<br />
+forward-socks4a / 127.0.0.1:9050 .<br />
+film izle<br />
+To:<br />
+forward-socks4a .onion 127.0.0.1:9050 .</p>
+
+<p>Of course, you should only do this if you are only using Tor to access hidden services, but not to protect your anonymity.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 24 Feb 2010 06:15:58 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e3622bc17f640a253ec84ff6484b2f3d">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+I do not believe to2web has any real future. It is so slow taking up to an hour to connect. If this is the way forward, let's all go back to DOS, at least this was faster.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 27 Apr 2010 06:15:59 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-69d85f3bdef3edd4cf6db044ff68af5d">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+<p>Using the Tor Bundle is not that easy. Some people have difficulties using a normal browser, so they couldn't install and use the Tor Bundle. Plus, they would use it badly (ie: visiting a .onion website and then log into their webmail account, revealing their password to an exit node, it's hard to explain to a novice that Tor can both protect you and harm you).</p>
+
+<p>So tor2web is great, and I'm impressed by its speed. I set up a hidden service to test the speed and it was almost as fast as a normal website. I can't imagine Tor without tor2web.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 26 Jul 2010 06:16:00 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ccfbb89cf531cc4016f4477e2308acbc">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+<p>tor2web sends a X-Forwarded-For header field to the hidden service. This field contains your IP address. This is ridiculous. Just try to run an hidden service to see by yourself, if you don't believe me.</p>
+
+<p>I know that tor2web aims at protecting publishers rather than readers, but still, there's no point in revealing the user's IP address to the hidden service. We don't use Tor to give our IP to the sites we visit.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 27 Jul 2010 06:16:01 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-36174af0856f6388bbea03a2cd968e51">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+Update to my previous comment: tor2web's admin fixed the x-forwarded-for issue after I emailed him. It was unintentional. The problem has probably been there since the beginning of tor2web (see http://l6nvqsqivhrunqvs.tor2web.com/?do=topic&amp;id=7116 ).
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 27 Jul 2010 06:16:02 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FQuick_thoughts_on_tor2web&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:15:45 AM CDT</span>
+<!-- Created <span class="date">Mon 15 Dec 2008 10:20:51 PM CST</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

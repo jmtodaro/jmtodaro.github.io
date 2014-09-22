@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged malloc_fixes</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/malloc_fixes/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Tor 0.2.1.15-rc released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/</link>
+
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/malloc_fixes</category>
+
+	<category>/tags/release_candidate</category>
+
+
+	<pubDate>Sun, 31 May 2009 20:04:49 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:26:08Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor 0.2.1.15-rc marks the second release candidate for the 0.2.1.x&lt;br /&gt;
+series. It fixes a major bug on fast exit relays, as well as a variety&lt;br /&gt;
+of more minor bugs.&lt;/p&gt;
+
+&lt;p&gt;This is a release candidate! That means that we don&#39;t know of any&lt;br /&gt;
+remaining show-stopping bugs, and this will become the new stable if&lt;br /&gt;
+there are no problems. Please test it, and tell us about any problems&lt;br /&gt;
+that you find. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02115rc-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_15-rc_released/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

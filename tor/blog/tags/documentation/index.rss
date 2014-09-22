@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged documentation</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/documentation/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Installing and using Tor</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Installing_and_using_Tor/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Installing_and_using_Tor/</link>
+
+
+	<category>/tags/bridges</category>
+
+	<category>/tags/documentation</category>
+
+	<category>/tags/freedom_house</category>
+
+	<category>/tags/installing_and_using_tor</category>
+
+	<category>/tags/instructions</category>
+
+	<category>/tags/internet_freedom</category>
+
+	<category>/tags/tinyvid</category>
+
+	<category>/tags/tor</category>
+
+	<category>/tags/tor_browser_bundle</category>
+
+	<category>/tags/videos</category>
+
+	<category>/tags/youtube</category>
+
+
+	<pubDate>Thu, 19 Nov 2009 20:31:30 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:42:27Z</dcterms:modified>
+
+	<description>&lt;p&gt;Thanks to Rob at &lt;a href=&quot;http://www.freedomhouse.org&quot; rel=&quot;nofollow&quot;&gt;Freedom House&lt;/a&gt; for putting together some videos about how to get, install, and use Tor, Tor Browser Bundle, and Bridges.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Installing and Using Tor, &lt;a href=&quot;http://tinyvid.tv/show/3lejztnthk2tm&quot; title=&quot;http://tinyvid.tv/show/3lejztnthk2tm&quot; rel=&quot;nofollow&quot;&gt;http://tinyvid.tv/show/3lejztnthk2tm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Installing and Using the Tor Browser Bundle, &lt;a href=&quot;http://tinyvid.tv/show/b0e2hzylie8r&quot; title=&quot;http://tinyvid.tv/show/b0e2hzylie8r&quot; rel=&quot;nofollow&quot;&gt;http://tinyvid.tv/show/b0e2hzylie8r&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Installing and Using Bridges with Tor, &lt;a href=&quot;http://tinyvid.tv/show/3uiwckrlqynqv&quot; title=&quot;http://tinyvid.tv/show/3uiwckrlqynqv&quot; rel=&quot;nofollow&quot;&gt;http://tinyvid.tv/show/3uiwckrlqynqv&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Freedom House has put together other videos on various tools to use to stay secure online at, &lt;a href=&quot;http://www.youtube.com/freedom4internet&quot; title=&quot;http://www.youtube.com/freedom4internet&quot; rel=&quot;nofollow&quot;&gt;http://www.youtube.com/freedom4internet&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Check them out and leave constructive feedback.  I&#39;m sure Rob will appreciate help with translating these videos as well.&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Installing_and_using_Tor/#comments</comments>
+
+</item>
+<item>
+
+	<title>nickm: Down to 0 issues on Coverity Scan.</title>
+	<dcterms:creator>nickm</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/</link>
+
+
+	<category>/tags/alpha_release</category>
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/code_refactoring</category>
+
+	<category>/tags/documentation</category>
+
+
+	<pubDate>Sun, 11 Jan 2009 13:23:53 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:16:54Z</dcterms:modified>
+
+	<description>&lt;p&gt;As of 7 January, we&#39;re down to 0 issues on Coverity Scan.  This is great news!&lt;/p&gt;
+
+&lt;p&gt;In case you haven&#39;t heard of them, Coverity makes top-of-the-line static analysis tools (programs that analyse other programs looking for possible bugs).  They&#39;re a big serious company, with a serious &quot;enterprise&quot; pricing structure.  But, fortunately to us, they have &lt;a href=&quot;http://scan.coverity.com/&quot; rel=&quot;nofollow&quot;&gt;a program&lt;/a&gt; to provide the use of these tools, free of charge, to selected open source projects.  They&#39;ve been scanning development snapshots of Tor for bugs since last September.&lt;/p&gt;
+
+&lt;p&gt;In September, they found 171 issues in our code.  Many of these were just sloppiness in our unit tests&#39; error handing, but a good fraction were real bugs in our main codebase, a couple of which could have resulted in crashes under unusual circumstances that probably would have been hard to debug.  By December, we were down to 15 issues.  Now we&#39;re at 0, at long last. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/down-0-issues-coverity-scan.&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

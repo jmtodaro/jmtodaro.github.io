@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged bandwidth_fixes</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/bandwidth_fixes/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Tor 0.2.2.17-alpha is out</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/</link>
+
+
+	<category>/tags/alpha_release</category>
+
+	<category>/tags/bandwidth_fixes</category>
+
+	<category>/tags/best_tor_ever</category>
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/refuse_unknown_exits</category>
+
+
+	<pubDate>Mon, 04 Oct 2010 12:21:08 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:09:42Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor 0.2.2.17-alpha introduces a feature to make it harder for clients to use one-hop circuits (which can put the exit relays at higher risk, plus unbalance the network); fixes a big bug in bandwidth accounting for relays that want to limit their monthly bandwidth use; fixes a big pile of bugs in how clients tolerate temporary network failure; and makes our adaptive circuit build timeout feature (which improves client performance if your network is fast while not breaking things if your network is slow) better handle bad networks.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download.html.en&quot; title=&quot;https://www.torproject.org/download.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download.html.en&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Packages will be appearing over the next few days.&lt;/p&gt;
+
+&lt;p&gt;The original announcement is &lt;a href=&quot;http://archives.seul.org/or/talk/Oct-2010/msg00001.html&quot; title=&quot;http://archives.seul.org/or/talk/Oct-2010/msg00001.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Oct-2010/msg00001.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote&gt;&lt;p&gt;
+Changes in version 0.2.2.17-alpha - 2010-09-30&lt;br /&gt;
+  o Major features:&lt;br /&gt;
+    - Exit relays now try harder to block exit attempts from unknown&lt;br /&gt;
+      relays, to make it harder for people to use them as one-hop proxies &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02217-alpha-out&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_17-alpha_is_out/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

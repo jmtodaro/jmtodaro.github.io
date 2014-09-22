@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged research_progress</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/research_progress/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/research_progress/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/research_progress/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:14:33Z</updated>
+<entry>
+	<title>Research problem: measuring the safety of the Tor network</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/"/>
+
+	<author><name>arma</name></author>
+
+
+
+
+
+
+	<category term="/tags/research" />
+
+	<category term="/tags/research_progress" />
+
+	<category term="/tags/thesis_idea" />
+
+
+	<updated>2011-04-05T12:14:33Z</updated>
+	<published>2011-02-06T05:18:00Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;We need a better understanding of how much anonymity the Tor network provides against a partial network adversary who observes and/or operates some of the network. Specifically, we want to understand the chances that this class of adversary can observe a user&#39;s traffic coming into the network and also the corresponding traffic exiting the network.&lt;/p&gt;
+
+&lt;p&gt;Most of our graphs historically have looked at the total number of relays over time. But this simple scalar doesn&#39;t take into account relay capacity, exit policies, geographic or network location, etc.&lt;/p&gt;
+
+&lt;p&gt;One concrete problem from this bad metric is that when many new relays show up (e.g. due to a &lt;a href=&quot;https://blog.torproject.org/files/relays-diff-2011-01-28.png&quot;&gt;political event&lt;/a&gt;), we really don&#39;t have any insight about how the diversity of the new relays compares to the rest of the network. The simplistic metric also gets misused in academic research papers to produce misleading results like &quot;I can sign up 2% of the Tor relays and capture 50% of the paths,&quot; when what they mean is &quot;I can provide half the capacity in the Tor network and capture half the paths.&quot;&lt;/p&gt;
+
+&lt;p&gt;There are four parts to this research problem. First, we need a broad array of metrics that reflect various instances of our partial network adversary. Second, we need to understand for each metric how stable it is (sensitivity analysis) and what changes in the Tor network would efficiently improve (or harm) it. Third, we should make the calculations as realistic as possible based on actual Tor client behavior. Last, we need a better infrastructure for comparing the safety impact from alternate design scenarios, for example different path selection or route balancing algorithms.&lt;/p&gt;
+
+&lt;p&gt;We&#39;d love to &lt;a href=&quot;https://www.torproject.org/research&quot;&gt;work with you&lt;/a&gt; to help answer these questions. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/research-problem-measuring-safety-tor-network&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Research_problem_measuring_the_safety_of_the_Tor_network/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Research problem: adaptive throttling of Tor clients by entry guards</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/"/>
+
+	<author><name>arma</name></author>
+
+
+
+
+
+
+	<category term="/tags/bandwidth_throttling" />
+
+	<category term="/tags/research" />
+
+	<category term="/tags/research_progress" />
+
+	<category term="/tags/thesis_idea" />
+
+	<category term="/tags/torperf" />
+
+
+	<updated>2011-04-05T12:08:01Z</updated>
+	<published>2010-09-19T22:02:14Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Looking for a paper topic (or a thesis topic)? Here&#39;s a Tor research area that needs more attention. The short version is: if we prevent the really loud users from using too much of the Tor network, how much can it help?&lt;/p&gt;
+
+&lt;p&gt;We&#39;ve instrumented Tor&#39;s entry relays so they can rate-limit connections from users, and we&#39;ve instrumented the directory authorities so they can change the rate-limiting parameters globally across the network. Which parameter values improve performance for the Tor network as a whole? How should relays adapt their rate-limiting parameters based on their capacity and based on the network load they see, and what rate-limiting algorithms will work best?&lt;/p&gt;
+
+&lt;p&gt;We&#39;d love to &lt;a href=&quot;https://www.torproject.org/research&quot;&gt;work with you&lt;/a&gt; to help answer these questions. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/research-problem-adaptive-throttling-tor-clients-entry-guards&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>July 2010 Progress Report</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/July_2010_Progress_Report/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/July_2010_Progress_Report/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/alpha_releases" />
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/development" />
+
+	<category term="/tags/enhancements" />
+
+	<category term="/tags/orbot" />
+
+	<category term="/tags/performance_improvements" />
+
+	<category term="/tags/portable_bundles" />
+
+	<category term="/tags/progress_report" />
+
+	<category term="/tags/research" />
+
+	<category term="/tags/research_progress" />
+
+	<category term="/tags/research_reports" />
+
+	<category term="/tags/research_results" />
+
+	<category term="/tags/tor_browser_bundle" />
+
+
+	<updated>2011-04-05T12:06:28Z</updated>
+	<published>2010-08-12T14:25:08Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;strong&gt;New releases&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/july-2010-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;On July 4th, we released Tor Browser Bundle 1.3.7 for Microsoft Windows. This is a security update for Firefox and Pidgin. The changes are: update to Firefox 3.5.10 and Pidgin Instant Messenger 2.7.1r2 to fix some security issues.&lt;/li&gt;
+&lt;li&gt;On July 6th, we released Tor Browser Bundle 1.0.8 for GNU/Linux distributions. This fixes a number of security issues with included software. The updates include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Update libpng to 1.4.3 (see CVE-2010-1205)&lt;/li&gt;
+&lt;li&gt;Update Firefox to 3.5.10&lt;/li&gt;
+&lt;li&gt;Update HTTPS Everywhere to 0.2.1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/li&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/July_2010_Progress_Report/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/July_2010_Progress_Report/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

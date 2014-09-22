@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Tor 0.2.0.34-stable released</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_34-stable_released/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Anonymous - maby not (not verified): Comment 1</title>
+	<dcterms:creator>Anonymous - maby not (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_34-stable_released/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_34-stable_released/comment_1/</link>
+
+	<pubDate>Sun, 26 Apr 2009 06:18:57 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:18:57Z</dcterms:modified>
+
+	<description>&lt;p&gt;&quot;This release marks end-of-life for Tor 0.1.2.x.&quot;&lt;/p&gt;
+
+&lt;p&gt;If this is true why do you still allow nodes to run old versions?&lt;br /&gt;
+version 0.2.1.19 that is known to have been used by nodes that spyed on traffic is still used by 6% of all nodes, even earlier versions are run by 7% of the nodes, when are you gonna stop the possibility to run a node on these old versions(theres really no good explanation why nodes like Kryten or TSL with 4800KB bandwidth still is running an old 0.1.2.19 version).&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 2</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_34-stable_released/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_34-stable_released/comment_2/</link>
+
+	<pubDate>Sun, 26 Apr 2009 06:18:58 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:18:58Z</dcterms:modified>
+
+	<description>typo, should be 0.1.2.19 and not 0.2.1.19.
+</description>
+
+
+</item>
+
+</channel>
+</rss>

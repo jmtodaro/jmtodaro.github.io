@@ -1,0 +1,2210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Measuring Tor and Iran</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FMeasuring_Tor_and_Iran&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Measuring Tor and Iran</a>
+
+</span>
+
+
+<div id="content">
+<p>I've been fielding some calls from the press about Tor and Iran.  Someone quoted me as saying "double the clients from Iran over the past few days".  We wondered, what are the real numbers?  What does our network see from Iran?  Is port 443 or https:// really blocked?  Here's what we've discovered in the past day of working with the <a href="https://blog.torproject.org/blog/performance-measurements-and-blockingresistance-analysis-tor-network">new metrics</a> we've developed to be safe to collect without compromising anyone's anonymity. <span class="read-more"><a href="http://blog.torproject.org/blog/measuring-tor-and-iran"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/directory_services/" rel="tag">directory services</a>
+
+<a href="../../tags/iran/" rel="tag">iran</a>
+
+<a href="../../tags/tor/" rel="tag">tor</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-a91820e808b2442c06ec3e1bc228a887">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+I love that skyrocketing line from the 17th to today <img src="../../smileys/smile.png" alt=":)" /> Good stuff. Any pretty pictures of the increase in relays (assuming there has been one)?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Frandomhuman%20%28not%20verified%29&amp;do=goto">randomhuman (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 19 Jun 2009 06:27:18 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f8f1a679883f30ee9ae4a5e5f4307c16">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+What if we have our relay set up on port 9001??  Should we switch to port 443?  Is 9001 useful??
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 19 Jun 2009 06:27:19 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6defdb4e28f649051bb1e2ecd20e3297">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>It's really too early to guess what ports are having problems, at least<br />
+based on the data we're seeing so far.</p>
+
+<p>I might suggest that a safe answer for now is "anything but port 443".</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Farma&amp;do=goto">arma</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 19 Jun 2009 06:27:20 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fe121657416a97d1a1f4cbdeecc0fab8">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<p>Well nice to see the comparison , There is a good rise in the recent times. But it still needs a lot to  improve.</p>
+
+<p><a href="http://www.churchplaza.com/" rel="nofollow"> church chairs </a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fmitrsh%20%28not%20verified%29&amp;do=goto">mitrsh (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 14 Nov 2009 06:27:21 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b193f650f12607f3367152062e0473c0">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+On which ground port 443 is unsafe? 
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 19 Jan 2010 06:27:22 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-506d84b543260fb285a2f275e09e3bc0">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+I think Moussavi is not going to call for a march tomorow...He is part of the regime ...he is no different to Ahmadi Nejad...The young in Iran now need directions...Please help them MSKR
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fwhatever%20%28not%20verified%29&amp;do=goto">whatever (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 19 Jun 2009 06:27:23 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3a0ccb277c5c6deeaccb845448472bd7">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+If you are interested in helping, consider joining the National Iranian Resistance - we will be street fighting the Basiji soon if Allah allows it
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 20 Jun 2009 06:27:24 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-30e7eb55499f6e45758a1a1142f63846">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+I'd love too but I'm in a different country.I wish you luck
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 08 Aug 2009 06:27:25 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ff5021889c3c434a719e48b6e41ee976">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+I'd love too but I'm in a different country.I wish you luck
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 08 Aug 2009 06:27:26 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-686919176e90b3ab6fe660f9b763c044">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+<p>I guess it's blocked in iran.one day i saw the servers my tor will be connected are giving the error"no current certificate known for " in the valida message log.and today when i checked it all of them were not accessible.know the only program is being used here is "freegate"but that's shareware and only works for 1 month.So do something to solve the problem because we cannot use tor in iran now.that would be a big help for freedom in iran.<br />
+I should say all the sites and communication tools are blocked as:yahoo email and gmail , yahoo messenger,facebook,twetter  and friendfeed .youtube also.<br />
+they are closing the doors to kill without a noise.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Ftor%20user%20in%20iran.%20%28not%20verified%29&amp;do=goto">tor user in iran. (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 20 Jun 2009 06:27:27 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-28ceb8591715b40923dc57a7f235f5cb">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+<p>I've heard from several people that Tor is still working fine in Iran.</p>
+
+<p>But if it does get blocked one day, that's why we developed "bridges":<br />
+<a href="https://www.torproject.org/bridges" title="https://www.torproject.org/bridges" rel="nofollow">https://www.torproject.org/bridges</a><br />
+<a href="https://bridges.torproject.org/" title="https://bridges.torproject.org/" rel="nofollow">https://bridges.torproject.org/</a></p>
+
+<p>Bridges function like proxies into the Tor network. One of the main advantages of bridges compared to proxies though is that you still get Tor's anonymity: even the operator of the bridge can't figure out what you're doing.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Farma&amp;do=goto">arma</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 21 Jun 2009 06:27:28 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-193dd40257ba8a89d52f4a59410bac16">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+<p>Its pretty dum for an ISP to block all tor nodes but left tor's front page open.<br />
+so what's the point of putting such a list on a forbidden page?<br />
+if the ISP is so interested in the bridges they wouldn't border refreshing the list page all day long, will they? :- )</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fno%20tor%20%20%28not%20verified%29&amp;do=goto">no tor  (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 08 Aug 2009 06:27:29 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-da68a882223a5cc18629e4001f9f6896">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+Yes, make sure to read about bridges.  The Tor Project even offers an auto-reply service through which you can email them from a gmail account, and get a list of bridges you can use immediately.  The documentation on this site is your friend!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 21 Jun 2009 06:27:30 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-365bdbf57bb489a6506b77e8d84e3c33">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+<p>Hello,</p>
+
+<p>I have change my port Ort to 80 and 445 for the Dir and hope will help the peoples blocked with 445 in Ort.</p>
+
+<p>i hope all will fine <img src="../../smileys/smile.png" alt=":)" /></p>
+
+<p>my best</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fswisstorexit%20%28not%20verified%29&amp;do=goto">swisstorexit (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 22 Jun 2009 06:27:31 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1359f114bea43c33e9aa10ebe9d81768">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+<p>So do something to solve the problem because we cannot use tor in iran now.that would be a big help for freedom in iran.<br />
+<a href="http://www.cheapturkey.org.uk" rel="nofollow"> Turkey Holidays 2010 </a>||<a href="http://www.holidaystodubai.co.uk" rel="nofollow"> Dubai Holidays </a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fmary%20%28not%20verified%29&amp;do=goto">mary (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 18 Nov 2009 06:27:32 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d08af93e724420ac6e5288db7b0ab5f3">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+<p>Greets -</p>
+
+<p> (Someone there use Amar or Aram as IRC nick? FF crashed; killed my historycheers @bentrem.)</p>
+
+<p>This data is 5 days old now ... can you update?</p>
+
+<p>cheers<br />
+--bentrem</p>
+
+<p>p.s. my link is to the resources page I cobbled together<br />
+p.s.2 <a href="http://asert.arbornetworks.com/2009/06/a-deeper-look-at-the-iranian-firewall/" title="http://asert.arbornetworks.com/2009/06/a-deeper-look-at-the-iranian-firewall/" rel="nofollow">http://asert.arbornetworks.com/2009/06/a-deeper-look-at-the-iranian-fire...</a> "A Deeper Look at The Iranian Firewall" | "Iranian Traffic Engineering" &gt; <a href="http://asert.arbornetworks.com/2009/06/iranian-traffic-engineering/" title="http://asert.arbornetworks.com/2009/06/iranian-traffic-engineering/" rel="nofollow">http://asert.arbornetworks.com/2009/06/iranian-traffic-engineering/</a> &lt; (ArborNetworks)</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FBen%20Tremblay%20%28not%20verified%29&amp;do=goto">Ben Tremblay (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 22 Jun 2009 06:27:33 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7dc26cfff78eae95455450b9b0f42b84">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+<p>"This data is 5 days old now ... can you update?"</p>
+
+<p>I don't have any graphing tools nearby, but here are the next data points for that top graph above, one per day:</p>
+
+<p>624</p>
+
+<p>760</p>
+
+<p>968</p>
+
+<p>1048</p>
+
+<p>So there was a dip, but now it's up even higher.</p>
+
+<p>[Edit: the next two numbers are 1416 and 1280.]</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Farma&amp;do=goto">arma</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 22 Jun 2009 06:27:34 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6bad87ef1d070358bdf8deb427b80b2c">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+The graph is now updated with current information.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 24 Jun 2009 06:27:35 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a319f319ff2e05edb4aee582a60fad4f">
+
+<div class="comment-subject">
+
+Comment 19
+
+</div>
+
+<div class="inlinecontent">
+see also: <a href="http://www.catb.org/esr/nedanet/" rel="nofollow">NedaNet</a>, "a network of hackers formed to support the democratic revolution in Iran. [NedaNet's] mission is to help the Iranian people by setting up networks of proxy severs, anonymizers, and any other appropriate technologies that can enable them to communicate and organize -- a network beyond the censorship or control of the Iranian regime."
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FPhil%20M%20%28not%20verified%29&amp;do=goto">Phil M (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 22 Jun 2009 06:27:36 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-57c257cab290258b6cf21c9a32d7342c">
+
+<div class="comment-subject">
+
+Comment 20
+
+</div>
+
+<div class="inlinecontent">
+<p>buddy .. here is my problem..</p>
+
+<p>i am working in a company we have Firewall and proxy.. i used Tor on them and it work with no problem ,, but the thing is i have to log in company domain to access everything and that will get my in big problem .. is there way to configure tor to log in without using the domain user name and password.. and just log on the pc as local machine user.</p>
+
+<p>thanks</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FwhoCare%20%28not%20verified%29&amp;do=goto">whoCare (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 22 Jun 2009 06:27:37 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c45b8bb5e7e719fb00c523669eb74ba8">
+
+<div class="comment-subject">
+
+Comment 21
+
+</div>
+
+<div class="inlinecontent">
+<p>the question that NEEDS answers ASAP is will ANY software such as Tor stop the DPI (Deep Packet Inspection) interception  or at least protect the core packet data from being seen and decoded ?,</p>
+
+<p> i dont think so, as it's hardware layer7 kit that can see and realtime process every single bit of data flow coming and going, and more so can infact inject anything they please into the streams dataflows without you realising their doing it to you....</p>
+
+<p><a href="https://nodpi.org/" title="https://nodpi.org/" rel="nofollow">https://nodpi.org/</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 23 Jun 2009 06:27:38 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7a4cb78251f57f08d772936b152a5321">
+
+<div class="comment-subject">
+
+Comment 22
+
+</div>
+
+<div class="inlinecontent">
+Unless the DPI can crack SSL/TLS on the fly, Tor shouldn't be affected. The TLS authentication built into Tor will ensure the client is talking to a real node.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 24 Jun 2009 06:27:39 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-42f64444d181451433392a03fbf1614e">
+
+<div class="comment-subject">
+
+Comment 23
+
+</div>
+
+<div class="inlinecontent">
+DPI can crack SSL
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 13 Feb 2011 06:27:40 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-132e350f125b9f05569f6baa11d8901e">
+
+<div class="comment-subject">
+
+Comment 24
+
+</div>
+
+<div class="inlinecontent">
+<p>I think that's not true.</p>
+
+<p>DPI approaches can recognize that a given flow is using SSL, but that's different from learning the session key for the SSL flow.</p>
+
+<p>There are plenty of products out there that mitm SSL connections, but they do it by exploiting the certificate authority infrastructure, that is, the PKI. See e.g.<br />
+<a href="http://files.cloudprivacy.net/ssl-mitm.pdf" title="http://files.cloudprivacy.net/ssl-mitm.pdf" rel="nofollow">http://files.cloudprivacy.net/ssl-mitm.pdf</a></p>
+
+<p>But the underlying SSL algorithm is still considered safe.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Farma&amp;do=goto">arma</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 15 Feb 2011 06:27:41 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7dcddb69cb82b38d8d95c81b692f1aa1">
+
+<div class="comment-subject">
+
+Comment 25
+
+</div>
+
+<div class="inlinecontent">
+<p>connecting from inside <img src="../../smileys/smile4.png" alt=";-)" /></p>
+
+<p>port 443 is not totally blocked , but it seems that 443 bandwidth is badly shaped to some minimum amount.</p>
+
+<p>I personally can't connect to tor network , and I think it times out,while trying to connect.</p>
+
+<p>Same phenomena happens when I try login to some SSL enabled services like yahoo mail.Need to wait for a long time to login page appear.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 24 Jun 2009 06:27:42 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-eaf9f75b869619515b45561537e717ef">
+
+<div class="comment-subject">
+
+Comment 26
+
+</div>
+
+<div class="inlinecontent">
+Is DPI possible if we are NOT running our bridge/relay on 443, considering that 443 may be blocked?  Similarly, is encryption in general compromised if the bridge/relay is not via 443?  Thank for your help.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 24 Jun 2009 06:27:43 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-91445b3ba398fe165449861181d6fabf">
+
+<div class="comment-subject">
+
+Comment 27
+
+</div>
+
+<div class="inlinecontent">
+internal tor traffic is still encrypted regardless of port.  Even 80.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 24 Jun 2009 06:27:44 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c163d313784b60486b690a9d4d85c77c">
+
+<div class="comment-subject">
+
+Comment 28
+
+</div>
+
+<div class="inlinecontent">
+<p>Couldn't you have kept this under wraps for a little more time?<br />
+In this case I think you should have kept the actual numbers hidden, until perhaps, hopefully, the situation in Iran improves. No need to call attention and showing the Iranian gov., the actual numbers. Let them guess, or speculate.<br />
+As to all those helping out by providing relays, bridges,etc.. keep up the good work. I'm sure it's appreciated.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 26 Jun 2009 06:27:45 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f93d6e88eb045b8487d7bffb58707aef">
+
+<div class="comment-subject">
+
+Comment 29
+
+</div>
+
+<div class="inlinecontent">
+I agree with you, we needn't call the attention from Iranian gov.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 27 Jun 2009 06:27:46 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fd23eb1612c4a5288636a9e8eda658c3">
+
+<div class="comment-subject">
+
+Comment 30
+
+</div>
+
+<div class="inlinecontent">
+<p>Seriously,  I don't doubt your intentions, but I agree with the people who've suggested this informattion would've better gone unpublished (at least for now). Really just throwing my comment in to ask you to at least avoid providing updates on the situation.</p>
+
+<p>I'm as interested as anyone to know the figures, but the feedback it provides to the Iranian government, is wholly counterproductive. Even more so, if you update the figures.</p>
+
+<p>Anyway, said my bit.</p>
+
+<p>Other than that, thanks for all the stuff you do.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 30 Jun 2009 06:27:47 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bdf36288b3e12b28c9821b92fbfd5037">
+
+<div class="comment-subject">
+
+Comment 31
+
+</div>
+
+<div class="inlinecontent">
+<p>I live in canad and I have just installed Tor on my apple,is there a way to help specificaly iranian clients use my relay-bridge services as opposed to being only a part of the global network.<br />
+looking forward to hear from u soon<br />
+thanks for your support</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fpersi%20%28not%20verified%29&amp;do=goto">persi (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 16 Jul 2009 06:27:48 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a119d6ae55f0f2b56507f0975d0a3b96">
+
+<div class="comment-subject">
+
+Comment 32
+
+</div>
+
+<div class="inlinecontent">
+<p><a href="http://iansbrain.com/" title="http://iansbrain.com/" rel="nofollow">http://iansbrain.com/</a><br />
+read carefully (article about Tor) and you will find</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 25 Jul 2009 06:27:49 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ccf7243ed9a6a2bce166688b3069db9e">
+
+<div class="comment-subject">
+
+Comment 33
+
+</div>
+
+<div class="inlinecontent">
+75.118.29.110:443 6F0DF98DE5718652D039D50214646A864B0374C2
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 08 Aug 2009 06:27:50 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e69aec7d72e6d7a3040f181f90d1f3fa">
+
+<div class="comment-subject">
+
+Comment 34
+
+</div>
+
+<div class="inlinecontent">
+Hmm, all of you seem to be pretty sure that you are "helping the people" in Iran. But have you ever considered that those clients connecting also could be foreign (CIA, Mossad, etc.) agent provocateurs that were send to Iran in order to instill unrest? Because one thing is clear: THEY want to get Iran. This way or another. And THEY will get it sooner or later. All the things we hear recently are part of that operation. Why does no one wonder why we read so much about Iran lately, but never or rather seldom about the countless other places in the world, which undoubtly have issues as well? What makes Iran so special?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 09 Sep 2009 06:27:51 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f506d34edbbb23c8f8386ba75165ea50">
+
+<div class="comment-subject">
+
+Comment 35
+
+</div>
+
+<div class="inlinecontent">
+<p>We're sure we're helping the people of Iran because we've heard from them directly.  Yes, it's also possible that "iranian activists" are also CIA, Mossad, or Alien Life Forms from Alpha Centauri.   We'll never know for sure.</p>
+
+<p>We hear about Iran so much lately because the mainstream media caught on to the story.  We also hear from people in other countries as well, such as:  Burma, Sri Lanka, Saudi Arabia, Lebanon, USA, France, Germany, UK, South Africa, Ghana, Kenya, Tunisia, Morocco,  Portugal, Italy, Australia, China, Moldova, South Korea, etc.  The list goes on.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 11 Sep 2009 06:27:52 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-554760fcb5f0d9402fd331d1441e5ac6">
+
+<div class="comment-subject">
+
+Comment 36
+
+</div>
+
+<div class="inlinecontent">
+<p>there is many possibility my friend but, when you block the real people from reaching news and communicating with each other your are doing something wicked. its our right to choose who to be a government of iran.<br />
+soon or late we will win <img src="../../smileys/smile.png" alt=":)" /></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 01 Oct 2009 06:27:53 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f87ff4667e6d88e1e6d048e08c54ead7">
+
+<div class="comment-subject">
+
+Comment 37
+
+</div>
+
+<div class="inlinecontent">
+<p>Just some randomly picked incidents:<br />
+<a href="http://en.wikipedia.org/wiki/Gladio" title="http://en.wikipedia.org/wiki/Gladio" rel="nofollow">http://en.wikipedia.org/wiki/Gladio</a><br />
+<a href="http://en.wikipedia.org/wiki/Nayirah" title="http://en.wikipedia.org/wiki/Nayirah" rel="nofollow">http://en.wikipedia.org/wiki/Nayirah</a><br />
+<a href="http://en.wikipedia.org/wiki/Operation_Condor" title="http://en.wikipedia.org/wiki/Operation_Condor" rel="nofollow">http://en.wikipedia.org/wiki/Operation_Condor</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 09 Sep 2009 06:27:54 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-331a0383fac3146bdf92f3ba71695c36">
+
+<div class="comment-subject">
+
+Comment 38
+
+</div>
+
+<div class="inlinecontent">
+i can't connect with tor please help
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 22 Sep 2009 06:27:55 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4a5c7d1a8d1256c5e57c96558d22cffc">
+
+<div class="comment-subject">
+
+Comment 39
+
+</div>
+
+<div class="inlinecontent">
+we cant connect from Iran and bridge not work please help
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Sep 2009 06:27:56 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b9e777c6dc4763ca292f1c8b5f169210">
+
+<div class="comment-subject">
+
+Comment 40
+
+</div>
+
+<div class="inlinecontent">
+I this problem too, after Sep.19 when port 443 was blocked in iran I cannot connet to the network despite numerous bridges I've used. I can provide you with debug level log if you care.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 27 Sep 2009 06:27:57 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7505c3d0971ec3bb7765a92b24285689">
+
+<div class="comment-subject">
+
+Comment 41
+
+</div>
+
+<div class="inlinecontent">
+Tor is not working for me too since the same time. It seems after the killings, tortures, rapes they have gotten more serious to block the flow of information. Bridges doesn't work. For now I am using a proxy: Settings -&gt; Network -&gt; I use a proxy to access the Internet. However it is slower than before. You can also find other ways. But anyway please help.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 27 Sep 2009 06:27:58 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0fc400db53d28b5e06062c1470b913a6">
+
+<div class="comment-subject">
+
+Comment 42
+
+</div>
+
+<div class="inlinecontent">
+Of course be careful about proxy you are using. It seems you lose anonymity at that proxy.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 27 Sep 2009 06:27:59 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6a7cb9b8eb97e38af9f661d9553e6557">
+
+<div class="comment-subject">
+
+Comment 43
+
+</div>
+
+<div class="inlinecontent">
+The guy above is talking nonsense. CIA and Mosad can find other ways because of their sophistication if not Tor. But we Iranians need Tor just to speak things which is ordinary in most other countries. Without Tor we might get caught. We love our country, we just want more space to speak. That guy is a government agent or supporter. The recent events in Iran were by Iranians for a little more freedom. Of course CIA bastards may use anything but we don't shut up because you think CIA want this or that. The IRI has suppressed us for years by the same excuse. Whenever we want a right, they accuse us helping foreigners or even being their agents. It is one of their big weapons: "You are helping USA, so shut up and do what we want and respect what we respect, otherwise ...." Guess what: prison or deprivation from going to university and alike.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 27 Sep 2009 06:28:00 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6cdbed88c311aaf0b6a9c84ff1376404">
+
+<div class="comment-subject">
+
+Comment 44
+
+</div>
+
+<div class="inlinecontent">
+<p>Why Tor Project stopped on the step of "establishing an encrypted directory connection"?</p>
+
+<p>I live in Iran. Feom 19 September 2009 to Today 29 September, I tried Tor and it stopped in the step of "establishing an encrypted directory connection" , Please tell me how can I fix this?<br />
+ These errors are also related to the "establishing an encrypted directory connection" problem: "no route to host" "No current certificate known for authority ..."</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FArman%20%28not%20verified%29&amp;do=goto">Arman (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 29 Sep 2009 06:28:01 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e68d27a637b1480a4dd0bee4b08636af">
+
+<div class="comment-subject">
+
+Comment 45
+
+</div>
+
+<div class="inlinecontent">
+<p>The recent events in Iran were by Iranians for a little more freedom. Of course CIA bastards may use anything but we don't shut up because you think CIA want this or that. The IRI has suppressed us for years by the same excuse. Whenever we want a right, they accuse us helping foreigners or even being their agents. It is one of their big weapons: "You are helping USA, so shut up and do what we want and respect what we respect, otherwise ...." Guess what: prison or deprivation from going to university and alike.</p>
+
+<p>John,</p>
+
+<p>watch alice in wonderland online</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 17 Jan 2010 06:28:02 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3450fb3d8859d0211b57f0df295f0d9c">
+
+<div class="comment-subject">
+
+Comment 46
+
+</div>
+
+<div class="inlinecontent">
+Yes, it is working today in Iran!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 30 Sep 2009 06:28:03 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2d5fdba019bea6c90407534a17e24261">
+
+<div class="comment-subject">
+
+Comment 47
+
+</div>
+
+<div class="inlinecontent">
+The high quality of your smashing information about this good topic could be compared with the online essay from writing service only. Hence, you go in a right direction. Thank you for the contribution! 
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 28 Jan 2010 06:28:04 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8a916bc6f2df47d1a9fdd4b91e9a0eff">
+
+<div class="comment-subject">
+
+Comment 48
+
+</div>
+
+<div class="inlinecontent">
+It is not very nice. It is a pity that on the one hand it is declared that there is a freedom of press but the other hand we see such situations. Well, Iran is a very interesting country. It seems to me that we have stereotypes about Iranians. I've seen one documentary which proves it. Found it at the rapidshare SE http://rapidpedia.com . 
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 05 Feb 2010 06:28:05 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e43420a0e1975f34e0c9f31c6e2658ce">
+
+<div class="comment-subject">
+
+Comment 49
+
+</div>
+
+<div class="inlinecontent">
+<p>italy:<br />
+starting at 01:00 if 10 February 2010<br />
+tor is non accessible in Italy</p>
+
+<p>i'm experiencing problem in connection<br />
+here's the last log:</p>
+
+<p>Feb 10 04:20:54.944 [notice] Tor 0.2.1.22 opening log file.<br />
+Feb 10 04:20:54.944 [notice] Parsing GEOIP file.<br />
+Feb 10 04:20:55.341 [notice] No current certificate known for authority moria1; launching request.<br />
+Feb 10 04:20:55.341 [notice] No current certificate known for authority tor26; launching request.<br />
+Feb 10 04:20:55.341 [notice] No current certificate known for authority dizum; launching request.<br />
+Feb 10 04:20:55.341 [notice] No current certificate known for authority ides; launching request.<br />
+Feb 10 04:20:55.341 [notice] No current certificate known for authority gabelmoo; launching request.<br />
+Feb 10 04:20:55.341 [notice] No current certificate known for authority dannenberg; launching request.<br />
+Feb 10 04:20:55.341 [notice] No current certificate known for authority urras; launching request.<br />
+Feb 10 04:20:55.341 [notice] Bootstrapped 5%: Connecting to directory server.<br />
+Feb 10 04:20:55.341 [notice] I learned some more directory information, but not enough to build a circuit: We have no network-status consensus.<br />
+Feb 10 04:20:55.396 [notice] Bootstrapped 10%: Finishing handshake with directory server.<br />
+Feb 10 04:21:25.456 [notice] No current certificate known for authority moria1; launching request.<br />
+Feb 10 04:21:25.456 [notice] No current certificate known for authority tor26; launching request.<br />
+Feb 10 04:21:25.456 [notice] No current certificate known for authority dizum; launching request.<br />
+Feb 10 04:21:25.456 [notice] No current certificate known for authority ides; launching request.<br />
+Feb 10 04:21:25.456 [notice] No current certificate known for authority gabelmoo; launching request.<br />
+Feb 10 04:21:25.456 [notice] No current certificate known for authority dannenberg; launching request.<br />
+Feb 10 04:21:25.456 [notice] No current certificate known for authority urras; launching request.<br />
+Feb 10 04:22:57.783 [notice] No current certificate known for authority moria1; launching request.<br />
+Feb 10 04:22:57.783 [notice] No current certificate known for authority tor26; launching request.<br />
+Feb 10 04:22:57.783 [notice] No current certificate known for authority dizum; launching request.<br />
+Feb 10 04:22:57.783 [notice] No current certificate known for authority ides; launching request.<br />
+Feb 10 04:22:57.783 [notice] No current certificate known for authority gabelmoo; launching request.<br />
+Feb 10 04:22:57.784 [notice] No current certificate known for authority dannenberg; launching request.<br />
+Feb 10 04:22:57.784 [notice] No current certificate known for authority urras; launching request.<br />
+Feb 10 04:29:03.003 [notice] No current certificate known for authority moria1; launching request.<br />
+Feb 10 04:29:03.003 [notice] No current certificate known for authority tor26; launching request.<br />
+Feb 10 04:29:03.003 [notice] No current certificate known for authority dizum; launching request.<br />
+Feb 10 04:29:03.003 [notice] No current certificate known for authority ides; launching request.<br />
+Feb 10 04:29:03.003 [notice] No current certificate known for authority gabelmoo; launching request.<br />
+Feb 10 04:29:03.003 [notice] No current certificate known for authority dannenberg; launching request.<br />
+Feb 10 04:29:03.003 [notice] No current certificate known for authority urras; launching request.<br />
+Feb 10 04:40:14.202 [notice] No current certificate known for authority moria1; launching request.<br />
+Feb 10 04:40:14.203 [notice] No current certificate known for authority tor26; launching request.<br />
+Feb 10 04:40:14.203 [notice] No current certificate known for authority dizum; launching request.<br />
+Feb 10 04:40:14.203 [notice] No current certificate known for authority ides; launching request.<br />
+Feb 10 04:40:14.203 [notice] No current certificate known for authority gabelmoo; launching request.<br />
+Feb 10 04:40:14.203 [notice] No current certificate known for authority dannenberg; launching request.<br />
+Feb 10 04:40:14.203 [notice] No current certificate known for authority urras; launching request.</p>
+
+<p>I used tor for years but now it's impossible<br />
+to post i'm temporaly using I2P<br />
+[edit]<br />
+i TRIED (5AM, Italian time) posting via I2P, but captcha didn't show up<br />
+now (3PM Italian time), tor is back and i can post<br />
+what happend?<br />
+[/edit]</p>
+
+<p>could someone help?</p>
+
+<p>where was the problem? how can avoid it to happen again?<br />
+is there a way to circumvent such a block?<br />
+The client "Finished handshake with directory server", but after that it do nothing more</p>
+
+<p>any clue?</p>
+
+<p>p.s. your captcha sucks ( LOL !!) it's so difficult to post here</p>
+
+<p>thanks</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 10 Feb 2010 06:28:06 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bb7a7bb46c518514fb0a6052910ace49">
+
+<div class="comment-subject">
+
+Comment 50
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi<br />
+Tor doesn't work in Iran at this time I add bridge but it doesn't work again<br />
+please HELP</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 11 Feb 2010 06:28:07 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8cf48c5c98465f0549dd569484775828">
+
+<div class="comment-subject">
+
+Comment 51
+
+</div>
+
+<div class="inlinecontent">
+Before am using tor without  bridges but on june 19 2010 it stoped and i tried it with bridge but it coud'nt work is not even moving at all. Please i need help am from  nigeria and we are using mtn network to connect and there ip: 10.199.212.2 port:8080. Please i need bridges.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 26 Jun 2010 06:28:08 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4647e7fa6ec3398d14e0051fd31ff3e4">
+
+<div class="comment-subject">
+
+Comment 52
+
+</div>
+
+<div class="inlinecontent">
+69.169.160.185:1337
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 12 Aug 2010 06:28:09 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-89c7c4adb8200dea63a37157e7c27ceb">
+
+<div class="comment-subject">
+
+Comment 53
+
+</div>
+
+<div class="inlinecontent">
+<p>A few questions and potential answers:</p>
+
+<p>Bad Guys == Anyone blocking or monitoring a persons access to knowledge</p>
+
+<p>Q: What is to stop operatives working for the bad guys from running tor proxies from 3rd party locations?  Granted, they would only be able to sample a portion of the traffic, but traffic that they did sample could lead to identification of users.  It doesn't seem like it would be that hard to match up the encrypted client side requests with the un-encrypted outgoing requests.</p>
+
+<p>PA: The only solution I can think of here is centralized control of the proxy network provided by a press/media sponsorship model as opposed to the bandwidth volunteer model.  It's to easy for bad guys to infiltrate the volunteer network.  It would also be easier to swap in and out new proxies as they are blocked.  runtime selection of alternative proxy networks would be a nice feature. </p>
+
+<p>Q: I have noticed lists like: http://proxy.org/tor.shtml that appears to be a list of tor proxies.    What's to stop the bad guys from blocking the entire proxy database?  My understanding is that countries like Iran have the national ISP market under their thumb.</p>
+
+<p>PA: There needs to be a way to deal out proxies to clients without the ability to easily reveal the entire network to anyone.  Perhaps even semi-static assignments similar to DHCP.  Of course, there is also the problem of 'blocking the dealer' similar to the P2P security issues with trackers.  Ultimately, to really make this fool proof, there would need to be a way to communicate proxy dealers offline (verbally / off-network) in a concealable way. </p>
+
+<p>Q: How can we address bad guys blocking port 443.</p>
+
+<p>PA: Proxies should be able to hide behind other services such as 25,80,110.  Also nice would be a 'spoof greeting' feature that would simulate a 'normal' service for that port before a magic code was sent.  Of course, the magic code would need to be changeable (possibly dynamically by a proxy dealer).   </p>
+
+<p>Q: What about DPI which can provide encryption protocol info to the bad guys (if not the payload).  </p>
+
+<p>PA: plug-in packet obfuscation,  possibly agreed upon between proxy and dealer and embedded in a magic code given by the dealer to the client then provided back to the proxy in the request header.  This could be implemented by means of a tiny secure VM that ran small byte-code obfuscator programs shared between proxy and dealer and referenced by the magic code.   Even though the bad guys could run the VM de-obfuscator, it would be challenging to implement at OSI levels 1-4 given current technology.  </p>
+
+<p>The ultimate idea would be to keep the Bad Guys busy chasing their tails and break them through over investment in competence.  As they attempt to keep up with the changing methodologies they become victims of their own system of control, meanwhile they have less time to do their normal bad guy stuff.  Basically, the circumvention tool itself becomes an agent provocateur. </p>
+
+<p>--dbennett@bensoft.com</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 18 Sep 2010 06:28:10 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-859225eaa1b1ce6bba56628379db3459">
+
+<div class="comment-subject">
+
+Comment 54
+
+</div>
+
+<div class="inlinecontent">
+<p>This would be a fine email to the or-talk mail list, but unfortunately you wrote it on our blog.  </p>
+
+<p>At a minimum, you should read our FAQ, where most of these questions are already answered.  See <a href="https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/TorFAQ" title="https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/TorFAQ" rel="nofollow">https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/TorFAQ</a></p>
+
+<p>You may also want to read through the active project list, <a href="https://trac.torproject.org/projects/tor/wiki/projects" title="https://trac.torproject.org/projects/tor/wiki/projects" rel="nofollow">https://trac.torproject.org/projects/tor/wiki/projects</a>, some of your PA's are already under way with a more advanced design than one can put into a FAQ style paragraph.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 19 Sep 2010 06:28:11 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1cf31fcb9b98bd1b3063beaa5329be2f">
+
+<div class="comment-subject">
+
+Comment 55
+
+</div>
+
+<div class="inlinecontent">
+Agreed, sorry for the laziness,  I posted this on or-talk.  If you feel it's better not to have this here, please feel free to delete this post.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 20 Sep 2010 06:28:12 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7028475e1a2cd9585f9a7734560cf61a">
+
+<div class="comment-subject">
+
+Comment 56
+
+</div>
+
+<div class="inlinecontent">
+thank you.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 20 Sep 2010 06:28:13 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fa3d6e7fe267ac951e8b48ad6ae3e9f1">
+
+<div class="comment-subject">
+
+Comment 57
+
+</div>
+
+<div class="inlinecontent">
+<a href="http://archives.seul.org/or/talk/Sep-2010/msg00101.html" title="http://archives.seul.org/or/talk/Sep-2010/msg00101.html" rel="nofollow">http://archives.seul.org/or/talk/Sep-2010/msg00101.html</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Farma&amp;do=goto">arma</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 20 Sep 2010 06:28:14 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-76b067bb3a14cd41f08ad4dc4e3087bb">
+
+<div class="comment-subject">
+
+Comment 58
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi<br />
+At the time of this writing Tor is unaccessible here in iran and all of its ports are<br />
+blocked .<br />
+I was thinking can Tor ( privoxy ) use a well known port like 21 for FTP instead of<br />
+other ports like 8080 ? This is possible if Tor is not giving FTP service to users ,<br />
+that way they can't block port 21 , because FTP service will be blocked for all users .<br />
+However it's not a big deal for iranian regime to block FTP in the whole country .<br />
+Iranian users better know what i'm talking about . lol</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 29 Jan 2011 06:28:15 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FMeasuring_Tor_and_Iran&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:27:17 AM CDT</span>
+<!-- Created <span class="date">Fri 19 Jun 2009 03:35:08 AM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

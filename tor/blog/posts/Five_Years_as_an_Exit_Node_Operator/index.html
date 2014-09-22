@@ -1,0 +1,1092 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Five Years as an Exit Node Operator</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FFive_Years_as_an_Exit_Node_Operator&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Five Years as an Exit Node Operator</a>
+
+</span>
+
+
+<div id="content">
+<p>The official version of <a href="https://www.torproject.org/faq-abuse.html.en#TypicalAbuses" rel="nofollow">"What to expect"</a> when running a Tor exit relay is fairly brief.  This post will be verbose.  </p>
+
+<p>I've been running a node since 2003.  I first started off running a node in Xen on a server at a colocation datacenter with an un-metered line.  The dual Xeon kept up with the demands fairly well.  I ran it with the default exit policy with open irc ports.  Things went smoothly for many months until my ISP called.  The Abuse Department said my IP was reported in a mass irc bot attack against <a href="http://www.dal.net/" rel="nofollow">DalNet</a>.  I spent some time on the phone  explaining Tor, explaining how it's an anonymizing proxy, and how it's used for good in the world.  I highlighted that of the megabits of bandwidth it provided 7x24 for many months, this was the first issue.  They asked that I block irc ports, and all would be well.  I modified the exit policy to block irc ports.  </p>
+
+<p>Many more months passed without issue.  Apparently, given the lax bandwidth controls, many other customers ran Tor exit nodes as well.  The ISP updated their Terms of Service, and notified all of us that running any proxy was now in violation of the ToS.  This meant I was at risk of disconnection.  I switched to a non-exit configuration.  I ran this way for months. I knew full well I was violating the ToS.  If I was disconnected, it was my fault. Then the ISP was bought; and the new owners demanded I shut off my Tor node or be disconnected.  It was fun while it lasted.</p>
+
+<p>Welcome to 2005.  New ISP, same nickname, different server, same non-exit Tor configuration.  Tor loved the dual opteron cpus.  The difference in cpu load was dramatic.  The load before was 40-50% cpu for "NumCPU 2" on the dual Xeons.  On the dual Opterons, the load was 5-10%.  Same non-exit config.  Same version of Tor.  Different hardware, newer version of the OS (Redhat 4 as opposed to CentOS 3). <span class="read-more"><a href="http://blog.torproject.org/blog/five-years-exit-node-operator"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/exit_node/" rel="tag">exit node</a>
+
+<a href="../../tags/exit_relay/" rel="tag">exit relay</a>
+
+<a href="../../tags/hugging_dmca_notices/" rel="tag">hugging dmca notices</a>
+
+<a href="../../tags/operator_experiences/" rel="tag">operator experiences</a>
+
+<a href="../../tags/tor_is_benign/" rel="tag">tor is benign</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-69c76f4833aae52dbc5620ce9661bc6c">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+Greetz! Thx for story <img src="../../smileys/smile.png" alt=":)" />
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 10 Nov 2008 06:14:27 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f4aa2c02d777b7b01ecf7d149118afa8">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+I ran an exit node for a few months at kind-of cheapo ISP in Germany. The first notice from the ISP came after approx. 2 weeks. Some "nice" guy used Tor for credit card fraud. Dealing with the ISP was no problem, the police was another story (after a 2-page email explaining everything in detail they acknowledged that we don't have any logs). Although everything ended well, it is not that much of an pleasant event, when the police calls in the middle of the night. Since then I run only a middle node because I just can't afford to deal with the police every few days (I am still a student and in serious trouble when something like this happens).
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 11 Nov 2008 06:14:28 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9e43434d33d99d6a0d9f14030225af28">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>I truly have no idea what you're talking about. But I'm really glad you do and glad that you know how to do these things to my benefit.</p>
+
+<p>Do you know if integration with FF3 is now seamless and leak-proof?</p>
+
+<p>HD.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fhairyderriere%20%28not%20verified%29&amp;do=goto">hairyderriere (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 12 Nov 2008 06:14:29 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-76f02b6871b5e1782eca54bfd750e87d">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<p>I was with an ISP, I access the net through a corporate PCMCIA card. Since its a 'corportate' net card the ISP has seen fit to block more of the net than China probably does. I laugh when I see the negative reports on TV about censorship in China. Its alive and well in the UK, wrapped up in legal bollox by many ISP's, citing anything from Terrorism to Nothing as the reason for the fascism.</p>
+
+<p>Anyhow, they decided to let some of the sites that dont work through since I began running Tor. Hooray for them. I wont stop using it though.</p>
+
+<p>I get a buzz outta the fascists sweating and wondering if their pack of cards is still in tact. This is the only reason for censorship of any advanced (read fascist in todays money) state.</p>
+
+<p>The laptop this card is plugged into sits in many environments over time and those environments are used to make Tor a relay where I can get away with it.</p>
+
+<p>So - to cut a long story short, Tor can actually encourage ISP;s not to be so fascist in the first place (since I think this story could be unique, I will say...) on very rare occasions.</p>
+
+<p>;o)</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 12 Nov 2008 06:14:30 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a3c2118691c698b8661cd46378763267">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>We believe torbutton works as expected in FireFox3.</p>
+
+<p>I'm not sure anything can be 100% leak proof.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 13 Nov 2008 06:14:31 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9b2893a2183c72de6d6c72917a7b4869">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>What does this warning message means:</p>
+
+<p>rend_client_send_introduction(): Bug: Internal error: could not find intro key.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 13 Nov 2008 06:14:32 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0c50e1872f81557709f7300fcfa2a58f">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+It's a bug.  You could report the relevant details at <a href="https://bugs.torproject.org/" title="https://bugs.torproject.org/" rel="nofollow">https://bugs.torproject.org/</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 14 Nov 2008 06:14:33 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5d112eb56bf6295bcd078496f88093e8">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+<p>Thx for Tor!!!<br />
+My non-exit has been tacked up at 512kb in a USA datacenter for the last quarter with ZERO issues. Will open IMAPS and SSH on New Years.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 14 Nov 2008 06:14:34 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c9db23c72b183bc8977b08204c81373d">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+I think it would be interesting to see the frequency of DMCA complaints plotted out on a graph. Maybe if you (or another operator that reads this) had more, you could show increases of complaints during summer blockbuster seasons, or other correlations if they exist... anyway, thanks for the post and your contributions.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fnukeit%20%28not%20verified%29&amp;do=goto">nukeit (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 15 Nov 2008 06:14:35 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7cc4b34de256633c0839ad20c9f87554">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+<a href="http://www.chillingeffects.org/notice.cgi" title="http://www.chillingeffects.org/notice.cgi" rel="nofollow">http://www.chillingeffects.org/notice.cgi</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 15 Nov 2008 06:14:36 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-35cbc575b6ad5bdafc7cddb7ab4e404f">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+<p>No complaints, except for Wikipedia, but then I didn't publish my e-mail address.  However, funnily enough, my ISP didn't say a word either.  Maybe I just didn't relay that much. </p>
+
+<p>Tor kept crashing my network connection, though.  Maybe I'll try again with a newer version.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 16 Nov 2008 06:14:37 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ea2b0c2d6ae0a7f27a1e6fdd473c2e0b">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+<a href="https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#CablemodemCrashes" title="https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#CablemodemCrashes" rel="nofollow">https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#CablemodemCras...</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 18 Nov 2008 06:14:38 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1b7296d6c498b8c29c1ffb20833cf981">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+<p>I picked up two main points from this, which I hope are correct:</p>
+
+<p>1. Running a tor non-exit node received no complaints, but you had to watch your bandwidth.</p>
+
+<p>2. Running a tor exit node generated complaints, but as long as you explained yourself and accomodated the ISP, all was well.</p>
+
+<p>Is that about it?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 26 Nov 2008 06:14:39 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3e9defe6a3891c6ae09eef6a7cb4b7b8">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+Yes.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 01 Dec 2008 06:14:40 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8029f6f078463b8cdb3ddc9c360d2164">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+Can i ask u one question? is this TBB or Tor will work in Windows 7 Beta ?Please tell me .
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FPETER%20%28not%20verified%29&amp;do=goto">PETER (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 14 Jan 2009 06:14:41 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3f32491c45255f3da366856d8b50aab7">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+Other than the fact that Windows 7 is still beta,  people have told us TBB works in it.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 14 Jan 2009 06:14:42 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0dce153f8486ee71247354adc1e636c9">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+<p>I am trying to run a node on a Toshiba Portege M400 running Gentoo Linux amd64. I'm running the latest vanilla kernel 2.6.25-rc8 and jdk-1.6.0.05.<br />
+When I try to run your client it is unable to load libavetanaBT.so.<br />
+"Could not load own library /tmp/abt74884/libavetanaBT.so."<br />
+It then tries to find the library in my path, but obviously fails because it isn't there...<br />
+I don't know why it is unable to load the library as it is where it is looking... and the permissions seem to be sane. Is the library compatible with amd64? I have tried to compile avetanaBT separately but it does not compile on 64bit systems.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAffordable%20seo%20%28not%20verified%29&amp;do=goto">Affordable seo (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 19 Sep 2009 06:14:43 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-cac4215cff58621ec8ab768f0caf7404">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+rend_client_send_introduction(): Bug: Internal error: could not find intro key. the same errr i am getting what does it means.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fhotmail%20email%20%28not%20verified%29&amp;do=goto">hotmail email (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 28 Oct 2009 06:14:44 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5e270f848cc8d44b547fe54eeca30f64">
+
+<div class="comment-subject">
+
+Comment 19
+
+</div>
+
+<div class="inlinecontent">
+I gave up running an exit node. I guess I spook easily! A year or so agomy ISP forwarded me a DMCA notice from Universal or something, after running as an exit node for a few weeks. I told them i was running a tor exit node. They said, that's fine, but you still have to follow the TOS which make me responsible for the use of my server, hence I am liable to my ISP. I like my ISP a lot so turned off being an exit node. Too much potential hassle.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 15 Dec 2009 06:14:45 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ce0e18ae732945a2df6b5d144220e622">
+
+<div class="comment-subject">
+
+Comment 20
+
+</div>
+
+<div class="inlinecontent">
+What's so fun being an Exit Node operator? Can you hack shit and stuff over the node?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 15 Dec 2009 06:14:46 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-79976569e20db855c86c7c157f33a55d">
+
+<div class="comment-subject">
+
+Comment 21
+
+</div>
+
+<div class="inlinecontent">
+must have transferred petabytes of normal Tor traffic. Hopefully, I've helped users in restrictive environments see the unfiltered Internet. Or helped people keep their privacy and anonymity intact while online. philadelphia home security systems
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 02 Jun 2010 06:14:47 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6c65b54fc94000afac190da1faa9e471">
+
+<div class="comment-subject">
+
+Comment 22
+
+</div>
+
+<div class="inlinecontent">
+<p>It just isn't right that google etal knows who you are all the time, and what you are doing, etc.</p>
+
+<p>My first day using Tor, and I thank you all a bunch.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 23 Jul 2010 06:14:48 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9d7ab1f6cbf80f7c2bf7593f11411774">
+
+<div class="comment-subject">
+
+Comment 23
+
+</div>
+
+<div class="inlinecontent">
+<p>i don't think that would be called overloading, anyways just overload the + and - operators as normal and then call on add_node() and del_node() in those functions.</p>
+
+<p>guide to home security</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 29 Jul 2010 06:14:49 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2ef834059c46bd02665a2e67ced3ad63">
+
+<div class="comment-subject">
+
+Comment 24
+
+</div>
+
+<div class="inlinecontent">
+Thank you, brave warrior of democracy's infowars! You are a true patriot.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 03 Sep 2010 06:14:50 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-77601bf0f62bb456a2fb8b797c45fe46">
+
+<div class="comment-subject">
+
+Comment 25
+
+</div>
+
+<div class="inlinecontent">
+<p>It just isn't right that google etal knows who you are all the time, and what you are doing, etc.</p>
+
+<p>My first day using Tor, and I thank you all a bunch.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 28 Sep 2010 06:14:51 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d862b04df6930e36b9b93bf10f9157e3">
+
+<div class="comment-subject">
+
+Comment 26
+
+</div>
+
+<div class="inlinecontent">
+<p>Fascinating story...thanks for sharing!  You need to make the movie version with SWAT teams, black helicopters, and FEDs storming your house.</p>
+
+<p>Thanks for your service!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 09 Dec 2010 06:14:52 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FFive_Years_as_an_Exit_Node_Operator&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:14:26 AM CDT</span>
+<!-- Created <span class="date">Mon 10 Nov 2008 11:50:57 PM CST</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

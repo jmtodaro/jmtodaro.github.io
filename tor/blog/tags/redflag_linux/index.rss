@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged redflag_linux</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/redflag_linux/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Testing Red Flag Linux rpms</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Testing_Red_Flag_Linux_rpms/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Testing_Red_Flag_Linux_rpms/</link>
+
+
+	<category>/tags/redflag_linux</category>
+
+	<category>/tags/rpm</category>
+
+	<category>/tags/testing</category>
+
+
+	<pubDate>Mon, 08 Jun 2009 10:10:16 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:26:55Z</dcterms:modified>
+
+	<description>&lt;p&gt;A company in China has produced its own distribution of linux, called &lt;a href=&quot;http://www.redflag-linux.com/&quot; rel=&quot;nofollow&quot;&gt;Red Flag Linux&lt;/a&gt;.  Various reports are that Internet cafes are &lt;a href=&quot;http://www.rfa.org/english/news/china/microsoft%20to%20linux-12022008144416.html&quot; rel=&quot;nofollow&quot;&gt;being forced to install it&lt;/a&gt;.  We have no confirmed reports of this actually occurring.  However, a few users have asked for rpms anyway.&lt;/p&gt;
+
+&lt;p&gt;If you happen to run this Red Flag distribution, we have some test rpms based on tor 0.2.1.15-rc for you.  &lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://www.torproject.org/dist/rpm-redflag/tor-0.2.1.15.rc-tor.0.redflag6_0.i386.rpm&quot; rel=&quot;nofollow&quot;&gt;binary itself&lt;/a&gt; along with &lt;a href=&quot;https://www.torproject.org/dist/rpm-redflag/tor-0.2.1.15.rc-tor.0.redflag6_0.i386.rpm.asc&quot; rel=&quot;nofollow&quot;&gt;signature&lt;/a&gt; and &lt;a href=&quot;https://www.torproject.org/dist/rpm-redflag/tor-0.2.1.15.rc-tor.0.redflag6_0.i386.rpm.sha1&quot; rel=&quot;nofollow&quot;&gt;sha-1 hash&lt;/a&gt;. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/testing-red-flag-linux-rpms&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Testing_Red_Flag_Linux_rpms/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

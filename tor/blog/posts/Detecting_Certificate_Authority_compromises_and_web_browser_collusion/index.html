@@ -1,0 +1,3899 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Detecting Certificate Authority compromises and web browser collusion</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FDetecting_Certificate_Authority_compromises_and_web_browser_collusion&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Detecting Certificate Authority compromises and web browser collusion</a>
+
+</span>
+
+
+<div id="content">
+<p><small><i>Thanks to Ian Gallagher, Seth Schoen, Jesse Burns, Chris Palmer, and other anonymous birds for their invaluable feedback on this writeup.</i></small></p>
+
+<p>The Tor Project has long understood that the <a href="https://secure.wikimedia.org/wikipedia/en/wiki/Certificate_authority">certification authority</a> (CA) model of trust on the internet is susceptible to various methods of compromise. Without strong anonymity, the ability to perform targeted attacks with the blessing of a CA key is serious. In the past, I’ve worked on <a href="http://www.win.tue.nl/hashclash/rogue-ca/">attacks relating to SSL/TLS trust models</a> and for quite some time, I’ve hunted for evidence of non-academic CA compromise in the wild.</p>
+
+<p>I’ve also looked for special kinds of cooperation between CAs and browsers. Proof of collusion will give us facts. It will also give us a real understanding of the faith placed in the strength of the underlying systems.</p>
+
+<p>Does certificate revocation really work? <a href="http://www.imperialviolet.org/2011/03/18/revocation.html"><b>No, it does not</b></a>. How much faith does a vendor actually put into revocation, when verifiable evidence of malice is detected or known? Not much, and that’s the subject of this writing.</p>
+
+<p>Last week, a smoking gun came into sight: A Certification Authority appeared to be compromised in some capacity, and the attacker issued themselves valid HTTPS certificates for high-value web sites. With these certificates, the attacker could impersonate the identities of the victim web sites or other related systems, probably undetectably for the majority of users on the internet.</p>
+
+<p>I watch the Chromium and Mozilla Firefox projects carefully, because they are so important to the internet infrastructure. On the evening of 16 March, I noticed a very interesting code change to Chromium: <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/base/x509_certificate.cc?view=markup&amp;pathrev=78478">revision 78478, Thu Mar 17 00:48:21 2011 UTC</a>.</p>
+
+<p>In this revision, the developers added X509Certificate::IsBlacklisted, which returns true if a HTTPS certificate has one of these particular serial numbers:</p>
+
+<ul>
+<li>047ecbe9fca55f7bd09eae36e10cae1e
+<li>d8f35f4eb7872b2dab0692e315382fb0
+<li>b0b7133ed096f9b56fae91c874bd3ac0
+<li>9239d5348f40d1695a745470e1f23f43
+<li>d7558fdaf5f1105bb213282b707729a3
+<li>f5c86af36162f13a64f54f6dc9587c06
+</ul>
+
+<p>A comment marks the first as "Not a real certificate. For testing only." but we don’t know if this means the other certificates are or are not also for testing.</p>
+
+<p>With just these serial numbers, we are not able to learn much about the certificates that Chromium now blocks. To get more information, I started the <a href="https://github.com/ioerror/crlwatch">crlwatch</a> project. Nearly every certificate contains a reference to a <a href="https://secure.wikimedia.org/wikipedia/en/wiki/Revocation_list">Certificate Revocation List</a> (CRL). A CRL is a list of certificates that the CA has revoked for whatever reason. In theory, this means that an attacker is unable to tamper with the certificate to prevent revocation as the browser will check the CRL it finds in a certificate. In practice the attacker simply needs to tamper with the network - this is something they’re already able to do if they are performing a SSL/TLS Machine-In-The-Middle attack. Even if an attacker has a certificate, they generally are unable to modify the certificate without breaking the digital signature issued by the CA. That CA signature is what gives the certificate value to an attacker and tampering takes the attacker back to square zero. So while investigating these serials, we clearly lack the CRL distribution point in the Chrome source. However, the project that I announced on March 17th, crlwatch, was specifically written to assist in finding who issued, and potentially revoked the serial numbers in question. By matching the serial numbers found in the source for Chrome with the serial numbers of revoked certificates, we’re able to link specific serials to specific CA issuers. The more serial numbers we match in revocation lists, the higher our probability of having found the CA that issued the certificates.</p>
+
+<p>About twelve hours (Thursday, March 17, 2011 | 13:00) after the above patch was pushed into source control - Google announced <a href="http://googlechromereleases.blogspot.com/2011/03/stable-and-beta-channel-updates_17.html">an important Chrome Update that involved HTTPS certificate issues</a>.</p>
+
+<p>This also is mostly uninteresting until we notice that this is not isolated to Google. Mozilla pushed out two patches of interest:</p>
+
+<ul>
+<li><a href="http://hg.mozilla.org/mozilla-central/rev/f6215eef2276">rev-f6215eef2276</a>
+<li><a href="http://hg.mozilla.org/mozilla-central/rev/55f344578932">rev-55f344578932</a>
+</ul>
+
+<p>The <a href="http://hg.mozilla.org/mozilla-central/rev/f6215eef2276">complete changeset</a> is semi-informative. Mozilla references a private bug in that fix that Mozilla will hopefully disclose. Similar to Chromium, the Mozilla patches create a list of certificate serial numbers that will be treated as invalid. However, the serial numbers from the Mozilla patches are different:</p>
+
+<ul>
+<li>009239d5348f40d1695a745470e1f23f43
+<li>00d8f35f4eb7872b2dab0692e315382fb0
+<li>72032105c50c08573d8ea5304efee8b0
+<li>00b0b7133ed096f9b56fae91c874bd3ac0
+<li>00e9028b9578e415dc1a710a2b88154447
+<li>00d7558fdaf5f1105bb213282b707729a3
+<li>047ecbe9fca55f7bd09eae36e10cae1e
+<li>00f5c86af36162f13a64f54f6dc9587c06
+<li>392a434f0e07df1f8aa305de34e0c229
+<li>3e75ced46b693021218830ae86a82a71
+</ul>
+
+<p>Thus, both Mozilla and Google shipped similar patches to their code at roughly the same time. The two browsers now have partially overlapping certificate blocklists. Here is the union of the two lists:</p>
+
+<ul>
+<li>009239d5348f40d1695a745470e1f23f43
+<li>00b0b7133ed096f9b56fae91c874bd3ac0
+<li>00d7558fdaf5f1105bb213282b707729a3
+<li>00d8f35f4eb7872b2dab0692e315382fb0
+<li>00e9028b9578e415dc1a710a2b88154447
+<li>00f5c86af36162f13a64f54f6dc9587c06
+<li>047ecbe9fca55f7bd09eae36e10cae1e
+<li>392a434f0e07df1f8aa305de34e0c229
+<li>3e75ced46b693021218830ae86a82a71
+<li>72032105c50c08573d8ea5304efee8b0
+<li>9239d5348f40d1695a745470e1f23f43
+<li>b0b7133ed096f9b56fae91c874bd3ac0
+<li>d7558fdaf5f1105bb213282b707729a3
+<li>d8f35f4eb7872b2dab0692e315382fb0
+<li>f5c86af36162f13a64f54f6dc9587c06
+</ul>
+
+<p>Why do the browsers have these blocklists, and why don’t they have the same blocklists?</p>
+
+<p>This returns me to the reason for creating crlwatch last week - I wanted to find the someones who knowingly revoked the above listed special certificates. Anyone looking from the same starting point as I did, obviously lacks the leaf certificates in question and as a result, I had to look in a rather round about manner. Thanks to the <a href="https://www.eff.org/observatory">EFF’s SSL Observatory</a>, I was able to populate the base list for crlwatch. Armed with a nearly canonical list of all CRLs, I fetched them over <a href="https://www.torproject.org/">Tor</a> and parsed the CRL data into human readable text. The goal was to search for the above serial numbers and to find something linkable.</p>
+
+<p>This is the result from searching the crlwatch data:</p>
+
+<p><code><br />
+Looking for 009239d5348f40d1695a745470e1f23f43 in parsed CRLs...<br />
+Looking for 00b0b7133ed096f9b56fae91c874bd3ac0 in parsed CRLs...<br />
+Looking for 00d7558fdaf5f1105bb213282b707729a3 in parsed CRLs...<br />
+Looking for 00d8f35f4eb7872b2dab0692e315382fb0 in parsed CRLs...<br />
+Looking for 00e9028b9578e415dc1a710a2b88154447 in parsed CRLs...<br />
+Looking for 00f5c86af36162f13a64f54f6dc9587c06 in parsed CRLs...<br />
+Looking for 047ecbe9fca55f7bd09eae36e10cae1e in parsed CRLs...<br />
+Match! Serial Number: 047ECBE9FCA55F7BD09EAE36E10CAE1E<br />
+Match! Serial Number: 047ECBE9FCA55F7BD09EAE36E10CAE1E<br />
+Match! Serial Number: 047ECBE9FCA55F7BD09EAE36E10CAE1E<br />
+Looking for 392a434f0e07df1f8aa305de34e0c229 in parsed CRLs...<br />
+Match! Serial Number: 392A434F0E07DF1F8AA305DE34E0C229<br />
+Match! Serial Number: 392A434F0E07DF1F8AA305DE34E0C229<br />
+Match! Serial Number: 392A434F0E07DF1F8AA305DE34E0C229<br />
+Looking for 3e75ced46b693021218830ae86a82a71 in parsed CRLs...<br />
+Match! Serial Number: 3E75CED46B693021218830AE86A82A71<br />
+Match! Serial Number: 3E75CED46B693021218830AE86A82A71<br />
+Match! Serial Number: 3E75CED46B693021218830AE86A82A71<br />
+Looking for 72032105c50c08573d8ea5304efee8b0 in parsed CRLs...<br />
+Looking for 9239d5348f40d1695a745470e1f23f43 in parsed CRLs...<br />
+Match! Serial Number: 9239D5348F40D1695A745470E1F23F43<br />
+Match! Serial Number: 9239D5348F40D1695A745470E1F23F43<br />
+Match! Serial Number: 9239D5348F40D1695A745470E1F23F43<br />
+Looking for b0b7133ed096f9b56fae91c874bd3ac0 in parsed CRLs...<br />
+Match! Serial Number: B0B7133ED096F9B56FAE91C874BD3AC0<br />
+Match! Serial Number: B0B7133ED096F9B56FAE91C874BD3AC0<br />
+Match! Serial Number: B0B7133ED096F9B56FAE91C874BD3AC0<br />
+Looking for d7558fdaf5f1105bb213282b707729a3 in parsed CRLs...<br />
+Match! Serial Number: D7558FDAF5F1105BB213282B707729A3<br />
+Match! Serial Number: D7558FDAF5F1105BB213282B707729A3<br />
+Match! Serial Number: D7558FDAF5F1105BB213282B707729A3<br />
+Looking for d8f35f4eb7872b2dab0692e315382fb0 in parsed CRLs...<br />
+Match! Serial Number: D8F35F4EB7872B2DAB0692E315382FB0<br />
+Match! Serial Number: D8F35F4EB7872B2DAB0692E315382FB0<br />
+Match! Serial Number: D8F35F4EB7872B2DAB0692E315382FB0<br />
+Looking for f5c86af36162f13a64f54f6dc9587c06 in parsed CRLs...<br />
+Match! Serial Number: F5C86AF36162F13A64F54F6DC9587C06<br />
+Match! Serial Number: F5C86AF36162F13A64F54F6DC9587C06<br />
+Match! Serial Number: F5C86AF36162F13A64F54F6DC9587C06<br />
+</code></p>
+
+<p>Huzzah! It appears that we've found a few matches!</p>
+
+<p>Here are the three matching files in human readable format:</p>
+
+<ul>
+<li><a href="https://github.com/ioerror/crlwatch/blob/master/crl-parsed/2208d196b567691ff77bee6ed97ac6aea7825aa0.crl2txt">7825aa0.crl2txt</a>
+<li><a href="https://github.com/ioerror/crlwatch/blob/master/crl-parsed/2454652aa76e0dcf0c7531a2ed9dbeda5c0f5dd5.crl2txt">c0f5dd5.crl2txt</a>
+<li><a href="https://github.com/ioerror/crlwatch/blob/master/crl-parsed/5a65d440090271759080e6d0eaae0b6ccae2ff50.crl2txt">ae2ff50.crl2txt</a>
+</ul>
+
+<p>Matching entries in the list look like this:</p>
+
+<p><code><br />
+    Serial Number: 392A434F0E07DF1F8AA305DE34E0C229<br />
+        Revocation Date: Mar 15 20:15:38 2011 GMT<br />
+</code></p>
+
+<p>An interesting note is that this date is a bit earlier than the above patches. The CA knew to revoke it on March 15th and the above patches were worked into software a few days later. If the attacker was targeting specific users, the damage to those users may have already been inflicted.</p>
+
+<p>All three of the CRLs in question belong to <a href="http://www.usertrust.com/about.html">the same CA</a>:</p>
+
+<p><code><br />
+issuer=/C=US/ST=UT/L=Salt Lake City/O=The USERTRUST<br />
+Network/OU=http://www.usertrust.com/CN=UTN-USERFirst-Hardware<br />
+</code></p>
+
+<p>This appears to be a reseller or something similar for the <a href="http://www.comodo.com/">Comodo CA company</a> when the trust chain for USERTRUST is inspected:</p>
+
+<p><code><br />
+CN = COMODO High Assurance Secure Server CA<br />
+</code></p>
+
+<p>We appear to have no initial matches for the following Mozilla specific serials from the data that I gathered during the initial crlwatch data population run:</p>
+
+<ul>
+<li>009239d5348f40d1695a745470e1f23f43
+<li>00b0b7133ed096f9b56fae91c874bd3ac0
+<li>00d7558fdaf5f1105bb213282b707729a3
+<li>00d8f35f4eb7872b2dab0692e315382fb0
+<li>00e9028b9578e415dc1a710a2b88154447
+<li>00f5c86af36162f13a64f54f6dc9587c06
+</ul>
+
+<p>Those serial numbers appear to not match, right? Nope. Mozilla appears<br />
+to deal with certificate serial numbers in a slightly different manner - Chrome does the same internally but Mozilla exposes a weird quirk of certificate encoding directly in the source. The human readable data does not contain this quirk. Thus if you remove the prefix of ‘00’ from those serial numbers and search for the sixteen byte values, we find what we'd expect:</p>
+
+<p><code><br />
+Looking for 9239d5348f40d1695a745470e1f23f43 in parsed CRLs...<br />
+Match! Serial Number: 9239D5348F40D1695A745470E1F23F43<br />
+Match! Serial Number: 9239D5348F40D1695A745470E1F23F43<br />
+Match! Serial Number: 9239D5348F40D1695A745470E1F23F43<br />
+Looking for b0b7133ed096f9b56fae91c874bd3ac0 in parsed CRLs...<br />
+Match! Serial Number: B0B7133ED096F9B56FAE91C874BD3AC0<br />
+Match! Serial Number: B0B7133ED096F9B56FAE91C874BD3AC0<br />
+Match! Serial Number: B0B7133ED096F9B56FAE91C874BD3AC0<br />
+Looking for d7558fdaf5f1105bb213282b707729a3 in parsed CRLs...<br />
+Match! Serial Number: D7558FDAF5F1105BB213282B707729A3<br />
+Match! Serial Number: D7558FDAF5F1105BB213282B707729A3<br />
+Match! Serial Number: D7558FDAF5F1105BB213282B707729A3<br />
+Looking for d8f35f4eb7872b2dab0692e315382fb0 in parsed CRLs...<br />
+Match! Serial Number: D8F35F4EB7872B2DAB0692E315382FB0<br />
+Match! Serial Number: D8F35F4EB7872B2DAB0692E315382FB0<br />
+Match! Serial Number: D8F35F4EB7872B2DAB0692E315382FB0<br />
+Looking for e9028b9578e415dc1a710a2b88154447 in parsed CRLs...<br />
+Match! Serial Number: E9028B9578E415DC1A710A2B88154447<br />
+Match! Serial Number: E9028B9578E415DC1A710A2B88154447<br />
+Match! Serial Number: E9028B9578E415DC1A710A2B88154447<br />
+Looking for f5c86af36162f13a64f54f6dc9587c06 in parsed CRLs...<br />
+Match! Serial Number: F5C86AF36162F13A64F54F6DC9587C06<br />
+Match! Serial Number: F5C86AF36162F13A64F54F6DC9587C06<br />
+Match! Serial Number: F5C86AF36162F13A64F54F6DC9587C06<br />
+</code></p>
+
+<p>Here's sample from one of those CRLs:</p>
+
+<p><code><br />
+    Serial Number: D7558FDAF5F1105BB213282B707729A3<br />
+        Revocation Date: Mar 15 20:15:26 2011 GMT<br />
+</code></p>
+
+<p>Ironically, after all of this work, the Mozilla <a href="http://hg.mozilla.org/mozilla-central/rev/f6215eef2276#l1.57">patch also leaks the CA name</a> and confirmed my suspicions without question.</p>
+
+<p>In the end, when the lists are merged, we find eleven certificates with two certificates probably acting as testing certificates for the two vendors involved:</p>
+
+<ul>
+<li>077a59bcd53459601ca6907267a6dd1c
+<li>047ecbe9fca55f7bd09eae36e10cae1e
+<li>392a434f0e07df1f8aa305de34e0c229
+<li>3e75ced46b693021218830ae86a82a71
+<li>72032105c50c08573d8ea5304efee8b0
+<li>9239d5348f40d1695a745470e1f23f43
+<li>b0b7133ed096f9b56fae91c874bd3ac0
+<li>d7558fdaf5f1105bb213282b707729a3
+<li>d8f35f4eb7872b2dab0692e315382fb0
+<li>e9028b9578e415dc1a710a2b88154447
+<li>f5c86af36162f13a64f54f6dc9587c06
+</ul>
+
+<p>This is evidence of a rather serious event and one that cannot be ignored. If I had to make a bet, I'd wager that an attacker was able to issue high value certificates, probably by compromising USERTRUST in some manner, this was discovered sometime before the revocation date, each certificate was revoked, the vendors notified, the patches were written, and binary builds kicked off - end users are probably still updating and thus many people are vulnerable to the failure that is the CRL and OCSP method for revocation. Even after users update, I'm guessing they may be unequally protected.  Mozilla and other browsers should force OCSP verification by default as part of their next release and remove CAs that are unable to handle this requirement. Users of Mozilla Firefox that are concerned about this issue should enable security.OCSP.require in the about:config dialog. The surveillance concerns of enabling OCSP are serious - a CA learns what sites you’re visiting. However, they are nullified by the fact that OCSP checking is enabled by default on Firefox at least; it simply doesn’t provide any security gains for the end user because when it fails, it fails open!</p>
+
+<p>I contacted both Google and Mozilla (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=643056">bug #643056</a>) for comment after discovering the above data. Mozilla expressed some concern about disclosure and I offered to embargo this document until Tuesday March 22nd, the launch day for Firefox 4. They agreed and I kept this under my hat. After discussions between Comodo and Microsoft, passed on to me by Mozilla, the embargo was to be extended until Wednesday, March 23rd. This extension was ostensibly to ensure that Microsoft would be able to ship their Internet Explorer mitigation pack. After further discussion, Mozilla <a href="https://blog.mozilla.com/security/2011/03/22/firefox-blocking-fraudulent-certificates/">pushed their blog post about the issue</a> and I now consider the embargo lifted. Google has already shipped a fix to users. Install the latest Firefox to get a patch, if you haven't already. A Tor Browser update is in the works and will be available soon.</p>
+
+<p>Mozilla offered some additional information and disclosed that <a href="https://addons.mozilla.org/">addons.mozilla.org</a> was one of the certificates acquired by the attacker. In total, nine certificates were acquired. Seven were uniquely named. Two of the certificates were re-issued for a previously issued host name. One certificate was issued for "global trustee" rather than a valid host name. With testing certificates in the list, we have a good accounting of the certificates found in the source code of each browser. Google clarified their discrepancy with the list, acknowledged the duplicate serial mistake and issued subsequent patches. Saving for test hosts, the lists are now identical.</p>
+
+<p>If I had to guess at sites, I'd speculate that Facebook, Skype, Google, Microsoft, Mozilla, and others are worthy of targeting. Comodo should disclose this information and clear up this speculation with very clear information about who was targeted.</p>
+
+<p>Both vendors expressed that the CA in question had done something quite remarkable by disclosing this compromise. The incentives may not be in the favor of the CA for disclosure. Many CAs may fall to similar attacks and simply refuse to disclose. Hopefully crlwatch will provide us with meaningful data regarding revocation events. The EFF and The Tor Project are <a href="https://trac.torproject.org/projects/tor/wiki/HTTPSEverywhere/SSLObservatorySubmission">working on solutions for detecting anomalies in certificates</a> found in the wild. Still, some CAs may simply be unaware of compromises or unwilling to revoke for fear of detection.</p>
+
+<p>Are all other browsers deploying similar countermeasures? Thanks to the free software nature of Firefox and Chrome, we have an answer for at least two projects. I wish that we could say the same for the rest of the browser world. One may assume that the CA in question did their best to contact all impacted vendors and targets.</p>
+
+<p>Comodo has not yet revealed the extent of the compromise to the public - were their signing keys in a hardware security module? How many certificates in total were ever issued by this specific signing key? Wouldn't it be best to remove the specific signing keys from all trust roots to be extra careful given the stakes? Who exactly did they deem important enough for disclosure? The Tor Project, which ships the Tor Browser Bundle was not notified. Clearly some groups are being left out of the loop and this is where even a single attack really causes the entire CA trust model to fall apart.</p>
+
+<p>Comodo should release the full certificates to the internet as well as all of the details relating to the attack. Mozilla and other browsers should open their bug reports, explain their process and lay out a path forward where we won't have to repeat this entire process again.</p>
+
+<p>There is some suspicion that this action was taken by a state level adversary and there are some specific states that have been named. I’ll leave further speculation about which nation states may be involved to others. The mere fact that the web’s system of trust relies on an all or nothing property should be enough of a cause for alarm. It’s obvious that this has been and will continue to be exploited.</p>
+
+<p>The impact on other cryptographic systems, such as S/MIME signatures and other cryptographic systems secured by CAs is entirely un-discussed. Quite seriously, when a CA is compromised, it will impact a great deal more than the web; users of email systems (SMTP, IMAP, POP,etc), Jabber servers, and any other SSL/TLS enabled systems are all at risk. Blocking specific serial numbers or relying on flawed, <a href="http://www.imperialviolet.org/2011/03/18/revocation.html">provably broken methods of revocation</a> will simply not cut it anymore. When the actual protection mechanisms are not enforced, there is little hope of end users being protected.</p>
+
+<p>This should serve as a wake up call to the internet. We need to research, build, and share new methods for ensuring trust, identity, authenticity, and confidentiality on the internet. Proposals such as <a href="http://www.ietf.org/id/draft-ietf-dane-protocol-06.txt">DANE</a>, <a href="http://tools.ietf.org/html/draft-hallambaker-donotissue-03">CAA</a>, <a href="http://tools.ietf.org/html/draft-hoffman-server-has-tls-04">HASTLS</a>, and <a href="http://web.monkeysphere.info/">Monkeysphere</a> are steps in the right direction but they face an uphill battle from entrenched economic interests. </p>
+
+<p>Certification Authorities may continue to provide a piece of the puzzle but it’s high time we ensure that they’re not the alpha and the omega, anymore.</p>
+
+<p><b><a name="Update">Update</a>:</b><br />
+Comodo has issued <a href="http://www.comodo.com/Comodo-Fraud-Incident-2011-03-23.html">a statement confirming everything</a> that I've said and more. They believe that this was a targeted attack by a state level actor and they have named Iran as the country they suspect. Mozilla has now opened the bug reports about the issue to the public. Microsoft has now <a href="http://www.microsoft.com/technet/security/advisory/2524375.mspx">disclosed their report</a> as well.</p>
+
+<p>In the details of their statement we have a confirmation that they have the ability to monitor and thus surveille people who wish to know if certificates are valid.</p>
+
+<p>Comodo also clearly demonstrate a mis-understanding - they believe that checks for revocation are proof positive that certificates are being used. They need to <b><a href="http://www.imperialviolet.org/2011/03/18/revocation.html">read and understand why this is not true</a></b>.</p>
+
+<p>The browsers have dropped the ball and they have chosen to fail open in nearly every single case; an attacker who is able to MITM SSL/TLS will also MITM the OCSP/CRL requests. Moxie's <a href="http://www.thoughtcrime.org/software/sslstrip/">sslstrip</a> demonstrated that an attacker would do this automatically and his software has done this for OCSP in public since 2009. Mozilla did not fix this issue at the time and they have once again punted on the issue. An even <a href="http://www.imperialviolet.org/2011/03/18/revocation.html">lower tech attack is possible and it's why revocation does not work</a>: <b>By returning a HTTP 500 error, the browser will the continue on as if revocation checks showed the certificate to be perfectly fine</b>.</p>
+
+<p>The browsers chose a user privacy invasive stance without the user protecting security properties. They did this because they claim that CAs are unable to provide working OCSP/CRL systems for request handling. This is a fair claim if true but it must not stand any longer. If the CA cannot provide even a basic level of revocation, it's clearly <b>irresponsible</b> to ship that CA root in a browser. <b>Browsers should give insecure CA keys an Internet Death Sentence</b> rather than expose the users of the browsers to known problems.</p>
+
+<p>It's probably the case that Mozilla and other browsers should write a secure, caching OCSP server for use when a CA has a failure. It should probably be run by a neutral third party such as the EFF with a strong user privacy stance. This would only serve as a temporary fix and until Browsers get their act together, users are doomed anyway.</p>
+
+<p>OCSP stapling does not fix this issue. The browsers treat revocation errors as soft errors and a MITM is deadly for revocation. The browsers believe they have to treat them as soft errors because the CAs are failing to do their job properly and are almost entirely unaccountable. The browsers are failing users by refusing to hold CAs to account. If OCSP and CRL failures mean the internet doesn't work, we need to create alternatives and not simply sweep these issues under the rug for later analysis. <b>Browsers should hard fail on certificate revocation errors.</b></p>
+
+<p>Comodo has further failed by:</p>
+
+<ul>
+<li>Failing to produce further information about those certificates
+<li>Selective disclosure to "<i>principal browsers and domain owners</i>"
+<li>Failing to disclose what sub-CA/intermediate root actually did the signing
+<li>Believing that the attacker must control DNS for these attacks to succeed
+<li>Waiting <b>eight days</b> to disclose evidence of a specific targeted attack
+</ul>
+
+<p>I believe that the browsers, such as Mozilla, are doing the best that they can in some ways but the lack of immediate full disclosure is a major failure.</p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/ssl_tls_ca_tor_certificates_torbrowser/" rel="tag">ssl tls ca tor certificates torbrowser</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-1e55100f98e0d9d67e2ed8f71d6e1aa5">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>First!</p>
+
+<p>but seriously. very interesting read Jacob!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 22 Mar 2011 07:15:51 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b2dfb3a4014c4521256e0622d1bd9063">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+Thank you.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:15:52 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e393128ce10f8bdba1c5b433d9f59eef">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>Comodo has announced acquisition of DNS.com, the managed domain name system services provider, and the launch of Comodo Authoritative DNS Service one day before loose the certificate.</p>
+
+<p>http://home.nestor.minsk.by/computers/news/2011/03/1406.html</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Mar 2011 07:15:53 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7eae7c0b3c4013258a1b79fc27016a33">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+The verification process for buying a certificate is a joke with most cert vendors. All they care about is the email address registered with the domain registrar. Hijack the domain and you can order yourself all the certs you want for the domain. Next, ISVs and so-called software consultants are constantly implementing code in orgs where certificates are explicitly trusted. Most commercial software developers treat certs as a liability. PKI is totally bankrupt as a trust service.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 22 Mar 2011 07:15:54 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-813e3f2113eff917eddd33c4715f6653">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+Why do you think it's even important to validate the email address. An SSL cert is (or at least was) used for the sole purpose of making a site secure. It was never intended to assert the site owners identity, or their trustworthiness. The latter has only come to market with the launch of extended validation services.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:15:55 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-474fd3986c34775e784501360e271735">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>This is not really true. Back in the "good old days" in 1994, EV-type stuff was the NORM. I got an SSL cert for Netscape Server from Verisign and it took about 2 weeks to get all the verifications in order. The truth is that CAs got greedy and loosened their processes. More than half of the sites out there get their certs issued in a matter of seconds...you can set up a reseller account and get certs issued on your clients' behalf with essentially NO verification. </p>
+
+<p>The system relies on honesty, and someone was dishonest. I would imagine there was no exploitation here other than someone trying to get a cert for a high-value domain and succeeding. It was like brute force through multiple vendors.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:15:56 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-56fd5665c0d9a08a9c3026b9b468e1c4">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+Encryption is useless without authentication: what is the point of keeping things secret so only your peer can read it if you don't know who the peer is?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:15:57 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bd4c77fa576df641be9b72e663046498">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+I think a lot of people would take issue with your statement that TLS is not meant to assert identity. This is why WebAppSec folk argue that a login page should be on an TLS supported page as opposed to only POSTing to an TLS supported page.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:15:58 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-310b3c835620ac4763580c0b04645bac">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+TLS is for making a connection to a site secure, yes. That means you have to know you're talking to the site, and not some system in between. That in turn implies that you have to know that the cert belongs to the site, which implies validation. Drop that, and https is no better than http.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:15:59 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5b877896850ef737ee5b0aa61281df88">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+CAs have used the "we must verify who you are" argument for justifying the cost. The crypto is free, process is the only possible justification. Apparently there was only voluntary enforcement, no regulation. We had a race to the bottom and it's too late to go back.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:00 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a9c2e9f8bc70ac464d108e683f884aa9">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+You'd do well to research a little more before you post. CA's not only have to validate your request for a certificate - which, in my experience, is strict to the point of nitpickery, at least among the major CA's - but they also have to host a server farm to process OCSP and CRL requests, process requests to revoke certificates, and have to adhere to a large bundle of rules and regulations. In the US I believe they use FIPS, in Europe it's Directive 99/93/EC which has been worked out into ETSI TS 101 456 and ETSI TS 102 042.  These specify requirements of constant internal audits and annual external audits bij ISO-certified independent bodies. Also, CA's must keep records for years in case of a legal dispute where the information is required as evidence. All this isn't free and go a good way to explaining the prices of certificates.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 29 Mar 2011 07:16:01 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b69bc50c9b1547c64ca150d49f769d42">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+This, in  combination  with the recent compromise of some of RSA's more important systems and one other event I'm not at liberty to disclose has my subconscious working overtime, is it a pattern, or just a coincidence ..
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 22 Mar 2011 07:16:02 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f2f74f20afab5efaf1f0d527cecfe84a">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+please make ready tor application with Firefox 4 .
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 22 Mar 2011 07:16:03 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-22282caacdac39fe50f962266ab0a7fe">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+<p>Comodo was also the company that previous had problems with resellers not checking domains at all - see Mozilla bug 470897.  They also allow certificates for domains that don't exist, such as Mozilla bug 526560, and certificates that name companies that don't exist, bug 599856.</p>
+
+<p>Mozilla, at least, refuses to enact any sort of punishment because they think users will blame Firefox when the SSL sites using those certificates stop working.  Essentially, they believe they cannot do anything that might possibly actually fix the problem of... well, the CA being crap.</p>
+
+<p>At least these particular changes managed to land just in time for Firefox 4; it is the last commit on the relevant branch.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:04 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9b5d7dc747a123bf2cfaa4748f4648c4">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+<p>That wasn’t the sort of security problem that should have been kept secret until patches were shipped — it was clear from the beginning that:</p>
+
+<ul>
+<li>bad guys were already able to exploit the bogus certificates,</li>
+<li>disclosing the existence of the bogus certificates would not have allowed more people to perform the attack they enabled, and</li>
+<li>waiting to disclose the existence of the bogus certs only aided the ‘cyber-terrorists’ who had obtained them, by allowing the certs to be used for a longer period of time.</li>
+</ul>
+
+<p>On their blog, I asked Mozilla why they agreed to keep this event secret: https://blog.mozilla.com/security/2011/03/22/firefox-blocking-fraudulent-certificates/#comment-109640</p>
+
+<p>But I should ask you a few questions about <em>your</em> conduct in this matter as well:</p>
+
+<ol>
+<li>You wrote above: “Mozilla expressed some concern about disclosure and I offered to embargo this document until Tuesday March 22nd, the launch day for Firefox 4.”  What concerns did they express, and why did those concerns convince you to aid in an attack by concealing the existence of these fraudulent certificates?</li>
+<li>Did you inform anyone else affiliated with The Tor Project, Inc. before offering to ‘embargo this document’, or was that decision yours alone?</li>
+<li>Do you believe that Mozilla would have included Comodo's root certificates as ‘trusted’ CAs in the final release of Firefox 4 if you had disclosed your discovery immediately, rather than delaying your disclosure?</li>
+</ol>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:05 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9d9cb3916dccbf9f66a569fd35772cc8">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+Exactly! Why the embargo ?? This isn't something that should be a traditional responsible disclosure issue. Jake you of all people I assume would've understood this.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:06 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-73c7d26ffa12c9fe1cfa5c74627076f7">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+I'm sorry that I agreed to the embargo at all at this point.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fioerror&amp;do=goto">ioerror</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:07 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-66fceaec86430495cbb8ee5a2edfacbf">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+<p>To reply your your questions:</p>
+
+<p>1) They expressed concerns about being able to ship a fix to Firefox - that is a brand new Firefox binary with hardcoded serials in their blocklist.<br />
+1a) We need Firefox to release before we can update the Tor Browser Bundle because our current build process on Windows does not include building Firefox from source. We probably need to change that but it is not my call.</p>
+
+<p>2) I agreed to the embargo on my own - I informed people internally that I was looking for this when I started out and I informed Tor internally when I discovered it, I also again informed Tor when I agreed to the embargo.<br />
+2a) I let helix (the main Tor build engineer) know that Firefox would be releasing on Tuesday. Specifically, I explained why and what needs to happen for Tor users to be safe. See point 1a on why this is a PITA for Tor's hard working build engineer.<br />
+2b) I started advocating requiring (it's already enabled) OCSP checking from the moment that I realized it would provide a mitigation - I didn't embargo myself for mitigations, only some of the specific details.</p>
+
+<p>3) Mozilla will not give the Comodo CA in question an Internet Death Sentence. We do not know the extent of the compromise and Mozilla did not put off their launch for this extremely serious issue. I think that at the very least, this was a difficult choice for Mozilla. I believe that it was a mistake to not mark the direct signing cert of the certificates in question as untrusted. The rest of the root should have a closer inspection after release, of course. None of that was done for the same reason that OCSP checking isn't required - Mozilla makes these calls and decided they know best.</p>
+
+<p>I obviously disagree with these security choices because they rob the user of their autonomy; users need information to protect their activities on the internet.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fioerror&amp;do=goto">ioerror</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:08 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0494c1f11876cc81ac069dc4e49e5bc6">
+
+<div class="comment-subject">
+
+Comment 19
+
+</div>
+
+<div class="inlinecontent">
+I thank you for your work in this area, and also for your warning/recommendation about enabling forced OCSP checking. It's good to know, when there are so many that are trying to tear down, that some are trying to get the protection out there.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:09 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e39e75672a3eec02c4094e6ed83855e5">
+
+<div class="comment-subject">
+
+Comment 20
+
+</div>
+
+<div class="inlinecontent">
+It's funny how when I enabled OSCP in Firefox I couldn't access the EFF link you posted anymore...
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:10 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-494b49897d7c56e5448e862af1e985b3">
+
+<div class="comment-subject">
+
+Comment 21
+
+</div>
+
+<div class="inlinecontent">
+<p>Worse, EFF uses wildcard certificate.</p>
+
+<p>CN = *.eff.org<br />
+OU = Comodo PremiumSSL Wildcard<br />
+O = Electronic Frontier Foundation<br />
+Object Identifier (2 5 4 9) = 454 Shotwell St<br />
+L = San Francisco<br />
+ST = California<br />
+Object Identifier (2 5 4 17) = 94110<br />
+C = US</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:11 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a17556b347f4cc025af505c3a248c364">
+
+<div class="comment-subject">
+
+Comment 22
+
+</div>
+
+<div class="inlinecontent">
+<p>"Last week, a smoking gun came into sight: A Certification Authority appeared to be compromised in some capacity, and the attacker issued themselves valid HTTPS certificates for high-value web sites. With these certificates, the attacker could impersonate the identities of the victim web sites or other related systems, probably undetectably for the majority of users on the internet."</p>
+
+<p>Did they attacker gain access to the additional information required for 'extended validation'? An SSL Cert is only used to secure a site - not to say anything about the site owner. That is unless, they have been issued and EVC.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:12 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3724e8123cf6f357521b0fe132a5eae5">
+
+<div class="comment-subject">
+
+Comment 23
+
+</div>
+
+<div class="inlinecontent">
+SSL has always been for both confidentiality and verifying the identity of a server.  Why do you think certificates have a subject DN field if they are only for encryption and decryption?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:13 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-007338a438d5bca9e6074118fb4d7584">
+
+<div class="comment-subject">
+
+Comment 24
+
+</div>
+
+<div class="inlinecontent">
+<p>This is obviously a conspiracy between the illuminati, browser vendors, and ioerror.  We should add it to https://secure.wikimedia.org/wikipedia/en/wiki/List_of_conspiracy_theori...</p>
+
+<p>All software is written by the new world order.  The Internet was developed by the US Dept of Defense to build a perfect tracking system.  Google, Microsoft, Oracle, Verisign, RSA, Symantec are all members of the same collusion set with the NSA, and other world governments.  </p>
+
+<p>Disconnect now, or be subject to their whims and wrath.  </p>
+
+<p>I've said too much for the black helicopters approach.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:14 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bee773f562d948584529dcdac5c00ab6">
+
+<div class="comment-subject">
+
+Comment 25
+
+</div>
+
+<div class="inlinecontent">
+<p>I'm guessing you're british or north american. Your government lies to your face continuously and launches wars in your name. Kills, assassinates, bombs civilians, tortures people or sends them away to secret holes to be tortured by their lackeys. </p>
+
+<p>How about them conspiracies?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Mar 2011 07:16:15 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f8f09816a1a442429059674ca27b5945">
+
+<div class="comment-subject">
+
+Comment 26
+
+</div>
+
+<div class="inlinecontent">
+<p>1. He's joking<br />
+2. Which government do you think the NSA is in, exactly?</p>
+
+<p>ioerror, this is a superb analysis, thanks.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Mar 2011 07:16:16 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-aceb9de8841d58dde865e07499f829bb">
+
+<div class="comment-subject">
+
+Comment 27
+
+</div>
+
+<div class="inlinecontent">
+this paper looks interesting in the light of this event: files.cloudprivacy.net/ssl-mitm.pdf
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:17 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-45530afdb2e70dfed811ec56008fb9ac">
+
+<div class="comment-subject">
+
+Comment 28
+
+</div>
+
+<div class="inlinecontent">
+<p>There is already an implicit trust system built in that may be used in the meantime: DNS. This is what the RFC 4398 CERT resource record could help achieve.</p>
+
+<p>IANA is already a trusted 3rd party. IANA runs IP, AS, and DNS address allocation. If you want to connect to TORPROJECT.ORG, 86.59.30.36, or AS1 for that matter, look no further than an implicit trust chain emanating from ARIN. The question is, is ARIN more trustworthy than a random CA that Mozilla has mated with? I believe so, and I think many others believe so as well. Let the users decide.</p>
+
+<p>But alas, no implementation of RFC 4398, c. 2006, exists to date... We have all sorts of crazy iPhone apps, but no CERT RR implementation. The RFC likely needs expansive interpretation or outright modification for use in tandem with TLS and other widely used protocols. I hope some programmers that are well versed with browser plugins, libc/libresolv/windns/dnsapi/etc., and protocol considerations will get involved.</p>
+
+<p>Just get something working, it has to be better than this. Otherwise, good article.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:18 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-90f0f3bce69e9da7cd3e8ba3fd810320">
+
+<div class="comment-subject">
+
+Comment 29
+
+</div>
+
+<div class="inlinecontent">
+DNS-Records without DNSSEC are no replacement for even the weakest CA infrastructure. *Every* possible exploitation scenario that involves a fraudulent certificate in an HTTPS connection -- i.e. every scenario which storing certificates in the DNS would supposedly fix -- give the attacker direct (if the user was lured to the wrong site by some sort of DNS manipulation) or indirect (if the attacker is on the same network as the user or on the path from user to original site) control over the DNS and therefore the CERT records.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:19 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3461b75edef7eae66257de662ca16942">
+
+<div class="comment-subject">
+
+Comment 30
+
+</div>
+
+<div class="inlinecontent">
+<p>DNSSEC is part of DNS as of RFC 4035, c. March 2005, which predates and is accounted for in RFC 4398 CERT resource records. In addition, use of IPSec could possibly bring confidentiality to recursive queries and authentication to stub queries.</p>
+
+<p>In other words, these concerns are largely moot.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:20 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6e97219ccd2fafe8f18ae6e01f7f7880">
+
+<div class="comment-subject">
+
+Comment 31
+
+</div>
+
+<div class="inlinecontent">
+<p>No one uses DNSSEC or IPSec or IPv6.</p>
+
+<p>None of them are perfect either, so that they are /designed/ to mitigate things does not mean that they actually do.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:21 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f6257e1205929cfafbca930a8ca92e7e">
+
+<div class="comment-subject">
+
+Comment 32
+
+</div>
+
+<div class="inlinecontent">
+<p>We Must Fix HTTPS: http://web.monkeysphere.info/news/We-Must-Fix-HTTPS/</p>
+
+<p>An interesting set of slides on https model.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:22 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-cb1f6e48204b5626dafb90d52ae0885c">
+
+<div class="comment-subject">
+
+Comment 33
+
+</div>
+
+<div class="inlinecontent">
+<p>When Certstar got caught issuing a certificate for mozilla.com without doing valid checks (http://it.slashdot.org/article.pl?sid=08/12/23/0046258) people started calling out Comodo because Certstar was a Comodo reseller and Comodo shouldn’t have let that happen. That resulted in Comodo suspending that reseller’s ability to issue certifications because they were not fulfilling their proper contractual obligations to Comodo… During that process people were looking closely at Comodo trust paths, and Comodo was being nice and answering questions in forums to try and clear their name. During this questioning AddTrust came up. If you follow the thread around it reveals that AddTrust AB no longer exists as a company, but Comodo bought the certificates from them, and the rights to continue to use their root CA which bear the AddTrust name.</p>
+
+<p>The history is illustrative, basically the AddTrust company was acquired by ScandTrust (out of Malmö, Sweden), which was a Swedish CA, and then Comodo purchased the AddTrust root from ScandTrust. Then Comodo also purchased UserTrust, which had four roots and those also became part of Comodo when UserTrust became a “Comodo Group Company”.</p>
+
+<p>In both of the above cases the key material was removed from its original sites of operation (in Sweden and Salt Lake City, respectively) and trafserred into Comodo's data centres and backup centres.</p>
+
+<p>This is interesting because defunct companies, that had been sold, transferred their key material around to different parties. I think that this is the wrong way to do this, and that the right way to do this is to revoke the certificates and the CA, but thats an expensive operation. So, I think what they do with these certs is that they actually recognize the lower value of such a CA, and what they do is is sell these certs at a cheaper cost, because they haven't been under the control of Comodo from the beginning. </p>
+
+<p>They call these “Usertrust” CAs and they offer 3rd party vendors, such as Gandi to issue these certs, which are way cheaper than Comodo’s in-house generated ones.</p>
+
+<p>micah</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:23 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-cc15cbe3268c17ef0586a7c19b0cc3e4">
+
+<div class="comment-subject">
+
+Comment 34
+
+</div>
+
+<div class="inlinecontent">
+What about phobos' https://blog.torproject.org/blog/life-without-ca  surely phobos and those like him would notice the cert changed?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:24 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-469cd5045b69254a8b202852efcd2f13">
+
+<div class="comment-subject">
+
+Comment 35
+
+</div>
+
+<div class="inlinecontent">
+<p>Can we at least start scoping SSL certs by internet domain to limit the damage?  Let a root CA sign for any domain, but create a COM CA that can only sign for *.com, and let it sell a google.com CA to google that can only sign for *.google.com and so on...<br />
+Or is this too detrimental to the business model to ever happen?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:25 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1610ffc436614405913e92d2e3d6bbf9">
+
+<div class="comment-subject">
+
+Comment 36
+
+</div>
+
+<div class="inlinecontent">
+Too many questions unanswered - what about domains that don't want to maintain their own CA? Who operates the *.com?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:26 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7889bc43fef243788c910794d989decf">
+
+<div class="comment-subject">
+
+Comment 37
+
+</div>
+
+<div class="inlinecontent">
+Why the embargo ? Seems like this isn't a case for responsible disclosure because this isn't a traditional vulnerability. 
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:27 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ed688a2c7eaaef89583d9871076014a3">
+
+<div class="comment-subject">
+
+Comment 38
+
+</div>
+
+<div class="inlinecontent">
+<p>Yes we could do with a better system based on gpg or something but they're struggling to get dns security right.</p>
+
+<p>Untill it is right and used by all then all a website owner can do in this regard is look after his key, data once received and mail systems. It's a joke the EV and CA costs for a <strong>false sense of security</strong> which is making it take longer for a general consensus to want to find a new system. I'm glad you can get the certs accepted by browsers for free. I'd use self signed if browsers didn't say the worlds gonna end when you do. I think microsoft probably contemplated shutting your computer down the way IE reacts.</p>
+
+<p>Black helicopters were mentioned, the openbsd list had a discussion recently part of which was that the government can get CAs to cooperate and can MITM the network legally. Assuming they're systems don't have gaping holes, (quite probable running cisco and M$ rubbish at great expense) and they're employees are trustworthy (hmmm), then if you can still be MITM then you likely have far greater problems than SSL.</p>
+
+<p>CAs are dead<br />
+Long live, hmmm</p>
+
+<p>bastion hosts</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:28 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fe5532c3c8f68d462ff012429ad5eb96">
+
+<div class="comment-subject">
+
+Comment 39
+
+</div>
+
+<div class="inlinecontent">
+Shouldn't the browsers be able to spot this behavior fairly easily by taking "signatures" of the certs that they are presented with and comparing certs that are supposedly for the same host names? I know this is would be detecting the problem after the fact but it seems fairly reasonable, no?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:29 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9ae1f1bbe8f3ce9ba37b24c28fc05387">
+
+<div class="comment-subject">
+
+Comment 40
+
+</div>
+
+<div class="inlinecontent">
+Microsoft's response: http://www.microsoft.com/technet/security/advisory/2524375.mspx
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:30 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8b2082bdf1bf149e91327b4a1d6e1787">
+
+<div class="comment-subject">
+
+Comment 41
+
+</div>
+
+<div class="inlinecontent">
+<p>A source at Microsoft says the following certs were obtained.<br />
+• login.live.com<br />
+• mail.google.com<br />
+• www.google.com<br />
+• login.yahoo.com (3 certificates)<br />
+• login.skype.com<br />
+• addons.mozilla.org<br />
+• "Global Trustee"</p>
+
+<p>I'm not sure what the "Global Trustee" means.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:31 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e3de75a0e58f5f29d78db551d9bbf47b">
+
+<div class="comment-subject">
+
+Comment 42
+
+</div>
+
+<div class="inlinecontent">
+<p>http://www.comodo.com/Comodo-Fraud-Incident-2011-03-23.html</p>
+
+<p>IP Address: 212.95.136.18<br />
+City: Tehran<br />
+State or Region: Tehran<br />
+Country: Iran, Islamic Republic of</p>
+
+<p>1. Steal certs<br />
+2. Redirect DNS inside Iran to fake sites<br />
+3. Block OCSP / access to CRL<br />
+4. Capture logins<br />
+5. Snoop on gmail, hotmail, yahoo email boxes<br />
+6. Round up activists<br />
+7. Torture<br />
+8. Repeat</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:32 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ee8819da1f26755002fdd666d001e509">
+
+<div class="comment-subject">
+
+Comment 43
+
+</div>
+
+<div class="inlinecontent">
+<p>9. ???<br />
+10. PROFIT!!!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Mar 2011 07:16:33 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0885d1be15aa19b32821fbae8dba0111">
+
+<div class="comment-subject">
+
+Comment 44
+
+</div>
+
+<div class="inlinecontent">
+<p>++++++++++++++++++++++++++<br />
+we need a international action toward Iran government</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Mar 2011 07:16:34 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f9d7648250f124a293e385d81065c0b4">
+
+<div class="comment-subject">
+
+Comment 45
+
+</div>
+
+<div class="inlinecontent">
+<p>1. It's not necessarily Iran. China has been interfering with GMail lately, for example.<br />
+2. Fixing the PKI is cheaper than “international action”</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 26 Mar 2011 07:16:35 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-26683c47ec6ff67d25e561830b5a18ec">
+
+<div class="comment-subject">
+
+Comment 46
+
+</div>
+
+<div class="inlinecontent">
+Update: Comodo has published an incident report: http://www.comodo.com/Comodo-Fraud-Incident-2011-03-23.html
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:36 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d573466e86957436bed8d8921140dae5">
+
+<div class="comment-subject">
+
+Comment 47
+
+</div>
+
+<div class="inlinecontent">
+Does anyone know what's Safari's status is with blacklisting revoked certificates?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:37 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-73850e8605c9dd6ef69888de822317fe">
+
+<div class="comment-subject">
+
+Comment 48
+
+</div>
+
+<div class="inlinecontent">
+so we don't trust this douche-b (comodo) to release information about a huge security breach in a timely fashion but we /do/ trust him to name the "state actor" behind the attacks?? what a shocker that they named iran, the USSA's enemy du jour. i dont believe that bullshit for a second, now if u had said USSA's 51st satellite apartheid state, THEN i'd believe you. who was behind STUXNET? who is more inclined to pull off this bullshit and blame it on others (by way of deception....) stop being so fucking stupid.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:38 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9bbdf33230988a0e44b8d067d1b7c2ec">
+
+<div class="comment-subject">
+
+Comment 49
+
+</div>
+
+<div class="inlinecontent">
+I share your concern about Comodo's practices but at this point, I don't think they have much to gain by fudging or hiding info. Their reputation is seriously at stake and if they mess up, they will be history very soon.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:39 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-50bd924e7cc350e7c98c352fd4aacc37">
+
+<div class="comment-subject">
+
+Comment 50
+
+</div>
+
+<div class="inlinecontent">
+Send them another Christmas present for their efforts.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:40 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5aac1b79801c7b4bdd7c60d91dbef803">
+
+<div class="comment-subject">
+
+Comment 51
+
+</div>
+
+<div class="inlinecontent">
+<p>Microsoft update regarding this issue here,</p>
+
+<p>http://www.microsoft.com/technet/security/advisory/2524375.mspx</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:41 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-78b8d731b621734e93e93603c7dcd78c">
+
+<div class="comment-subject">
+
+Comment 52
+
+</div>
+
+<div class="inlinecontent">
+Does the SSL Observatory have any legit certs with global trustee in the cn or san fields?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:42 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c41c164d338103811794fb0e9556dfd5">
+
+<div class="comment-subject">
+
+Comment 53
+
+</div>
+
+<div class="inlinecontent">
+I asked Seth from the EFF and he reported that he did not find anything with that string in the Observatory data.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fioerror&amp;do=goto">ioerror</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Mar 2011 07:16:43 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-71d2321b63ec47da4b0890926dcbcc1a">
+
+<div class="comment-subject">
+
+Comment 54
+
+</div>
+
+<div class="inlinecontent">
+http://blogs.comodo.com/it-security/data-security/the-recent-ca-compromi...
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:44 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-aeeda960223af8aa01828d74bbf3c368">
+
+<div class="comment-subject">
+
+Comment 55
+
+</div>
+
+<div class="inlinecontent">
+They're still missing a few serious points.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fioerror&amp;do=goto">ioerror</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:45 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-29359a6e015167f86ca443a74813cb2f">
+
+<div class="comment-subject">
+
+Comment 56
+
+</div>
+
+<div class="inlinecontent">
+<p>I may be completely wrong here, but couldn't an attacker beat revocation by serving a man-in-the-middle victim an old version of the CRL, downloaded before the cert was revoked.<br />
+The CRL files are all stored on http servers, not https.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:46 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ed66aacce3e0fa099a8e4044938f712f">
+
+<div class="comment-subject">
+
+Comment 57
+
+</div>
+
+<div class="inlinecontent">
+The HTTP 500 trick does that without any crypto trickery.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fioerror&amp;do=goto">ioerror</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:47 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7989d09cf312eb651f365d048bb5fbbb">
+
+<div class="comment-subject">
+
+Comment 58
+
+</div>
+
+<div class="inlinecontent">
+<p>There are some relevant comments in a paper of mine that will appear at next week's Security Protocols Workshop and that was put online by the workshop organisers today. The direct URL is</p>
+
+<p>  http://spw.stca.herts.ac.uk/2.pdf</p>
+
+<p>Ross Anderson<br />
+www.ross-anderson.com</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:48 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6fb21f51acd5d4f0e319f8cd3c2a648a">
+
+<div class="comment-subject">
+
+Comment 59
+
+</div>
+
+<div class="inlinecontent">
+<p>Oh, that wacky Comodo / Usertrust / UTN CA.</p>
+
+<p>For debian and ubuntu users, here is a quick way to quit trusting this CA. I posted it back in 2008, when they issued a certificate they shouldn't have (see slashdot link above).</p>
+
+<p><code>sudo sed -ri '/comodo|utn|addtrust/Is/^!*/!/' /etc/ca-certificates.conf; sudo update-ca-certificates</code></p>
+
+<p>For firefox users on linux, run this with firefox closed:<br />
+<code>locate -er '/cert8\.db$' |sed 's;[^/]*$;;' |while read db; do echo $db; certutil -d "$db" -L |egrep -i 'comodo|utn|usertrust|addtrust' |sed -re 's; +[a-zA-Z]*,.*;;' |while read cn; do echo "- $cn"; certutil -d "$db" -M -t cw,cw,cw -n "$cn"; certutil -d "$db" -D -n "$cn"; done; done<br />
+</code></p>
+
+<p>For firefox users, using a gui:<br />
+http://benjamin.smedbergs.us/blog/2008-12-24/how-to-disable-the-comodo-r...</p>
+
+<p>Somewhere there is a UserTrust cert that signs itself:<br />
+http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=589023</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:49 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d34d68fe7c8fb6f8b55d3f9cf0897fe1">
+
+<div class="comment-subject">
+
+Comment 60
+
+</div>
+
+<div class="inlinecontent">
+<p>I've marked all my CAs as invalid and use the perspectives firefox extension:</p>
+
+<p>http://www.networknotary.org/firefox.html</p>
+
+<p>Not perfect, but if I am seeing a cert that doesn't correspond to the notaries, it will inform me.  (it doesn't override firefiox xpi signatures, so installs will simply fail).</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:50 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-519ab5ad8c9b40fd6cb274b204ab85a6">
+
+<div class="comment-subject">
+
+Comment 61
+
+</div>
+
+<div class="inlinecontent">
+<p>Wonderful, wonderful. Unearthing this is clearly a sackload of work, for which kudos. Also notice how it is necessary and not something a random user would do. Since it IS necessary, it means safely using the thing is just about impossible except for experts.</p>
+
+<p>This, by the way, is a glaring error, omission, and oversight in security thinking. It keeps on cropping up any time crypto is introduced, and is closely related to the problems detailed in _Why Johnny Can't Encrypt_. Even Appelbaum thinks about this technically. The biggest concern is not that, it's that without deep technical understanding of the system it can be used neither safely nor securely. How's that for userfriendlyness? --bounce</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:51 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-434424d621dce369553321e4aff8a6e0">
+
+<div class="comment-subject">
+
+Comment 62
+
+</div>
+
+<div class="inlinecontent">
+<p>Went to upgrade FF, upgrade failed. Downloaded 4 and installed.  Immediately got OCSP errors going to Facebook. Turned on WS and started sniffing packets. Fatal error, bad certificates! Checked against list. Nope different numbers. Did about:config and made sure OCSP was turned on. </p>
+
+<p>It fails if it does not get a response. Good.</p>
+
+<p>Checked  the IP where I was getting errors. Skype. Other errors, Facebook. </p>
+
+<p>Read the Freedom To Tinker post, aha. Read this post, aha. Nice.</p>
+
+<p>Noticed that both CA use c=US in their name but do not support the listing of their X.509v3 certs in a  c=US X.500 directory when it is just simpler to hard code them into browsers and make the process opaque to users. </p>
+
+<p>The error becomes obvious, if one could easily lookup the right certificates one would not trust the rogue ones. Following the path in browsers has led me down strange alleyways smothered with snake oil, non-working addresses, and some developer who rolled up a demo and it ends up being on a financial site that I am supposed to be able to use to check a balance. Why, because no one is really paying attention, they just want to turn on the crypto, and who cares if it is valid.</p>
+
+<p>But tell that to a browser. Any software with LDAP could fetch that certificate and make a comparison if the CAs supported the name space they have been exploiting. RFC4398...please give me a break. This is a systemic problem that is killing privacy for convenience. </p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:52 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c3a8a762af772c6e25ae645b1cdbef21">
+
+<div class="comment-subject">
+
+Comment 63
+
+</div>
+
+<div class="inlinecontent">
+<p>"Comodo also clearly demonstrate a mis-understanding - they believe that checks for revocation are proof positive that certificates are being used"</p>
+
+<p>I might be being dense - but isn't this statement backwards.  Shouldn't this be: they believe that NO checks for revocation are proof positive that the certificates are NOT being used.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Mar 2011 07:16:53 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-04733838797b79d55e1c57120372348d">
+
+<div class="comment-subject">
+
+Comment 64
+
+</div>
+
+<div class="inlinecontent">
+<p>Report of incident on 15-MAR-2011<br />
+An RA suffered an attack that resulted in a breach of one user account of that specific RA.<br />
+This RA account was then used fraudulently to issue 9 certificates (across 7 different domains).</p>
+
+<p>http://www.comodo.com/Comodo-Fraud-Incident-2011-03-23.html</p>
+
+<p>This only means that someone had got hold of a RA username and password. Comodo uses 2Tiers for their reselling. This has nothing to do with any CA certificate or breach of the PKI infrastrukture. The Certificate was revoked, as normal procedure in such circumstances. However, customes are protected by the Comodo insurance if they suffered any loss because of this, based on the type of certificate that was issued.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Mar 2011 07:16:54 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-971590ad05abf492cc88d02d7d7bd448">
+
+<div class="comment-subject">
+
+Comment 65
+
+</div>
+
+<div class="inlinecontent">
+If it was an attack by Iranian authorities, like they suggest, the loss will be that they are hanged slowly in the Evin prison. That's not covered by the insurance, I'm pretty sure.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 25 Mar 2011 07:16:55 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d42f56f33bd9712ea806ce8b8c23a75b">
+
+<div class="comment-subject">
+
+Comment 66
+
+</div>
+
+<div class="inlinecontent">
+<p>I propose a very different approach, that does not use public key encryption at all:<br />
+http://home.tiscali.nl/jhvdburg/intro-lkmap.pdf</p>
+
+<p>Jan-Hein van der Burg.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Mar 2011 07:16:56 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-26f22ff207498ebb4244132f5988834c">
+
+<div class="comment-subject">
+
+Comment 67
+
+</div>
+
+<div class="inlinecontent">
+<p>Infidels! One day great nation of Iran will have the funds to purchase their own CA like your NSA.</p>
+
+<p>Hey, you still getting molested at the airport Jacob?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Mar 2011 07:16:57 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-05ed3d6d5b1a22fc8c705755f3109b39">
+
+<div class="comment-subject">
+
+Comment 68
+
+</div>
+
+<div class="inlinecontent">
+<p>In a perfect world<br />
+people who invest their time in detecting and reporting security holes which affect the entire world,<br />
+people who helped reporters from Egypt and Libya to bypass censorship<br />
+should deserve a medal.</p>
+
+<p>In this brave new world they only get harassed in US airports.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Mar 2011 07:16:58 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8780bae20a812d0013fd2f463085e6fa">
+
+<div class="comment-subject">
+
+Comment 69
+
+</div>
+
+<div class="inlinecontent">
+<p>Jake, in your update you have harsh words for Comodo. This is surely justified.</p>
+
+<p>Yet your own company, Tor, is hardly a sterling example of protecting its users.</p>
+
+<p>The Torbutton extension for Firefox is one of the most frequently downloaded extensions on that site, 4,687,639 downloads to date and 182,056 daily users on March 23rd. Torbutton bundles Tor, Polipo, and Vidalia.</p>
+
+<p>It advertises itself as "currently the only addon that will safely manage your Tor browsing to prevent IP address leakage, cookie leakage, and general privacy attacks", thus giving the user a reasonable expectation of privacy.</p>
+
+<p>Yet it was last updated April 19, 2010 -- nearly a year ago!</p>
+
+<p>Since then there have been many bugfixes to Tor, including fixes to serious security-relevant issues. When will these bugfixes find their way into Torbutton?</p>
+
+<p>By not updating Torbutton, you are putting millions of users of the extension at risk. Some of them may be dissidents in brutal dictatorships and the consequences to them of being found out are dire.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Mar 2011 07:16:59 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-af293da33652b4620f27444de4ef98e2">
+
+<div class="comment-subject">
+
+Comment 70
+
+</div>
+
+<div class="inlinecontent">
+I think you're mistaken and I've pointed Mike at your comment. He'll address them shortly.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fioerror&amp;do=goto">ioerror</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Mar 2011 07:17:00 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9e52041661d6a01d825b3416a4fdf52a">
+
+<div class="comment-subject">
+
+Comment 71
+
+</div>
+
+<div class="inlinecontent">
+<p>You seem to misunderstand what Torbutton does. It only handles the Firefox side of things and has nothing to do with Tor core.</p>
+
+<p>Aside from Firefox 4 compatibility and a couple addon conflicts, not much new in the way of security updates for Torbutton has been needed. If you want Firefox 4 support and fixes for some minor issues, use the alpha series at:<br />
+https://www.torproject.org/torbutton/</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Mar 2011 07:17:01 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-547776613b0d33046125157a8104ca53">
+
+<div class="comment-subject">
+
+Comment 72
+
+</div>
+
+<div class="inlinecontent">
+The 'global trustee' cert sounds to me like it could be a signing certificate rather than simply a normal normal site certificate. If so then the attacker could sign further certs of their own. Even worse is that OCSP is generally only applied to the leaf of trust, meaning that even if OCSP worked properly it wouldn't help should this be true.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Mar 2011 07:17:02 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b02ddd3627cef69c299733e928f3000b">
+
+<div class="comment-subject">
+
+Comment 73
+
+</div>
+
+<div class="inlinecontent">
+Lots of talk about Mozilla, IE, and Chrome but what about Opera and Safari?  Are they posting patches?  Do they automatically check CRLs?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Mar 2011 07:17:03 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-26fddb7157709501466d248a32fb4f4a">
+
+<div class="comment-subject">
+
+Comment 74
+
+</div>
+
+<div class="inlinecontent">
+<p>Great post.</p>
+
+<p>1.  I have a question here, you mention how browsers soft fail on a OCSP/CRL attempts. Now, assuming they are coded to hard fail. Even  then an adversary can MITM the OCSP request and defeat this  process right ? In this case, the browsers will be helpless sitting birds, unless the OCSP contact made by browser to CA has some measures in place to avoid a MITM.</p>
+
+<p>2. Opera seems to be maintaining a separate server of their own with certificates etc. Need to dig this deeper, but it seems to evade the whole CA down thing (assuming Opera will try to ensure that those servers are up)</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Mar 2011 07:17:04 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9431197344cd0efe1e29ee6e8234ce4b">
+
+<div class="comment-subject">
+
+Comment 75
+
+</div>
+
+<div class="inlinecontent">
+I wonder why if the lead byte of cert serial is &gt; 0x7F they pre-pend that 0x00?  Anyone gone through source to see why that is?  Not an issue, just curious.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Mar 2011 07:17:05 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d6a918e5ff225ab5126df8f6948986dc">
+
+<div class="comment-subject">
+
+Comment 76
+
+</div>
+
+<div class="inlinecontent">
+It's a certificate encoding issue - Chrome does the same thing internally.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fioerror&amp;do=goto">ioerror</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Mar 2011 07:17:06 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-584460a18c806b29b1837a1a8554a8d6">
+
+<div class="comment-subject">
+
+Comment 77
+
+</div>
+
+<div class="inlinecontent">
+Great information.Thanks.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Mar 2011 07:17:07 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a5d32c07a92643ca2917ddd7eeed3758">
+
+<div class="comment-subject">
+
+Comment 78
+
+</div>
+
+<div class="inlinecontent">
+Chinese gov action would be possible
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Mar 2011 07:17:08 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-da97a668542b432fc28b2d6984957793">
+
+<div class="comment-subject">
+
+Comment 79
+
+</div>
+
+<div class="inlinecontent">
+fuck all
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Mar 2011 07:17:09 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d314cb5b1ebead042b6bf3617da4697f">
+
+<div class="comment-subject">
+
+Comment 80
+
+</div>
+
+<div class="inlinecontent">
+hello all, i say f4ck all
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Mar 2011 07:17:10 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5d6ecb6767724fd9cdcac909fb47c8cb">
+
+<div class="comment-subject">
+
+Comment 81
+
+</div>
+
+<div class="inlinecontent">
+Thanks all
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Mar 2011 07:17:11 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-66cf024107f32dbf694ecd1fb1fbbf30">
+
+<div class="comment-subject">
+
+Comment 82
+
+</div>
+
+<div class="inlinecontent">
+<p>What makes you guys think that solving for the CA's private key from the public key is all that hard.  Have you looked into how much (or how little) computation power is need these days to do this?  It certainly is within the capability of large corporations and even small countries.</p>
+
+<p>The whole https security thing is bogus anyway unless the domain name server system can be secured.   Most companies are better off using their own (self created) certificates and changing them frequently (like weekly or daily).  The browser preapproved CA list just encourages forgery.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 24 Mar 2011 07:17:12 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-08ff358631225048e33c4d2983be6232">
+
+<div class="comment-subject">
+
+Comment 83
+
+</div>
+
+<div class="inlinecontent">
+It depends on the private key in question - do you know of any keys smaller than 1024bits in major browsers?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fioerror&amp;do=goto">ioerror</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 25 Mar 2011 07:17:13 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e72ca0175dcea86c4d0b04369ce69bb8">
+
+<div class="comment-subject">
+
+Comment 84
+
+</div>
+
+<div class="inlinecontent">
+There is no proof that finding the private key from the public key is a 'hard' or 'large' problem in the mathematical algorithmic sense - only that most people don't know how to do it efficiently.   In any event it is certainly no 'bigger' than the factoring problem (factoring the product of two large primes) in which there has been alot of progress algoritmically.  Practically, in light of modern processors, say clusters of GPUs, backsolving private keys is almost personally affordable.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 25 Mar 2011 07:17:14 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e14208d317be506d3c5f3061c77c2c7c">
+
+<div class="comment-subject">
+
+Comment 85
+
+</div>
+
+<div class="inlinecontent">
+<p>Comodo has not been hacked, but the user credentials of a sovereign account at UserTrust were leaked. The scandal is not the hack, but that these accounts even exist and are allowed to generate certificates at will.</p>
+
+<p>An unknown entity just tried to gain the same level of arbitrary access to the CA system, that western states already have.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 25 Mar 2011 07:17:15 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-967af15fde979a9479565e58a6d9bc79">
+
+<div class="comment-subject">
+
+Comment 86
+
+</div>
+
+<div class="inlinecontent">
+Amazing research, fascinating article. Thank you for your work on this issue and on Tor in general.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 25 Mar 2011 07:17:16 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0ddc7fed799e365e533dc93b5f8fa329">
+
+<div class="comment-subject">
+
+Comment 87
+
+</div>
+
+<div class="inlinecontent">
+I have some contacts with human rights activists working in Iran. What kind of precautions do they need to take in light of the possibility that the attack originated from the state?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 25 Mar 2011 07:17:17 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e35c0d3f6cbbbdd963ecca5580a3ded8">
+
+<div class="comment-subject">
+
+Comment 88
+
+</div>
+
+<div class="inlinecontent">
+They should be using Tor with bridges or without to avoid targeted HTTPS MITM attacks. It's very hard to target every gmail user if you're not trying to connect to gmail.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fioerror&amp;do=goto">ioerror</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 25 Mar 2011 07:17:18 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4259693f669b79ee03ff9071433e283b">
+
+<div class="comment-subject">
+
+Comment 89
+
+</div>
+
+<div class="inlinecontent">
+I notice more and more certificates are getting added and updated all the time.  Is there a better and more secure and safe way than certificates or can more safeguards be applied to help keep certificates safe.  If Iran did indeed have dealings in this then we must in carefully analyze the information and discover how to better safeguard and protect certificates to prevent man in the middle attacks from happening.  Furthermore, what other safeguards besides obvious ones like passwords, biometrics, secure limited access, need to know data, etc. can be used to safeguard information.  I know certain things could just be done the old fashioned way by pen and paper and safeguarded in a vault and/or an older computer that has access restricted to only a few individuals with supplies carefully protected and fully scanned to entrance to vault.  We still need more and better ideas and soon.  Thank you.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 25 Mar 2011 07:17:19 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-025cc1dc4ba8ce0c2cf4b41c46cc8f44">
+
+<div class="comment-subject">
+
+Comment 90
+
+</div>
+
+<div class="inlinecontent">
+I notice more and more certificates are getting added and updated all the time.  Is there a better and more secure and safe way than certificates or can more safeguards be applied to help keep certificates safe.  If Iran did indeed have dealings in this then we must in carefully analyze the information and discover how to better safeguard and protect certificates to prevent man in the middle attacks from happening.  Furthermore, what other safeguards besides obvious ones like passwords, biometrics, secure limited access, need to know data, etc. can be used to safeguard information.  I know certain things could just be done the old fashioned way by pen and paper and safeguarded in a vault and/or an older computer that has access restricted to only a few individuals with supplies carefully protected and fully scanned to entrance to vault.  We still need more and better ideas and soon.  Thank you.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 25 Mar 2011 07:17:20 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-905ab5b57c8bfbf02fd81f5a5c5840af">
+
+<div class="comment-subject">
+
+Comment 91
+
+</div>
+
+<div class="inlinecontent">
+So how come security.OCSP.require is set to false in the latest Tor Browser Bundle if you yourself have repeatedly and strongly recommended setting it to true.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 25 Mar 2011 07:17:21 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-dea2732a052725dda4c7902d1309aff3">
+
+<div class="comment-subject">
+
+Comment 92
+
+</div>
+
+<div class="inlinecontent">
+<p>I don't produce the TBB. I've argued internally that we should enable this flag and this build fixes the immediate compromise problems at hand.</p>
+
+<p>Anyone who hasn't upgraded should enable that flag by hand, of course.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fioerror&amp;do=goto">ioerror</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 25 Mar 2011 07:17:22 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b0caf2730eeea78b88864f9e6841cdd5">
+
+<div class="comment-subject">
+
+Comment 93
+
+</div>
+
+<div class="inlinecontent">
+How about disabling entirely so as not to notify third parties that the site in question is being accessed?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 25 Mar 2011 07:17:23 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f6092f7afca651da9bd28d6afa24665e">
+
+<div class="comment-subject">
+
+Comment 94
+
+</div>
+
+<div class="inlinecontent">
+Personally, I think that we should run an anonymous OCSP or CRL caching proxy on a hidden service. I don't have time to write one but it does seem like a reasonable compromise for hard failure modes and privacy concerns.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fioerror&amp;do=goto">ioerror</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 26 Mar 2011 07:17:24 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8954128464fa2fe949b4f7b32f2cc05c">
+
+<div class="comment-subject">
+
+Comment 95
+
+</div>
+
+<div class="inlinecontent">
+<p>Don't trust CAs that you do not actually know. Who is Comodo ? I don't know anyone there, hence I don't trust them. Same goes for all the others, I just live without any CAs on my "trusted browser".</p>
+
+<p>I trust my friends CAs, I trust my bank and other services certificates because I manually verify them. For the non important stuff, I take the risk of reading an altered blog post (or use my "non trusted browser").</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 25 Mar 2011 07:17:25 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e66c8cd954afbb826c519f101f5aa518">
+
+<div class="comment-subject">
+
+Comment 96
+
+</div>
+
+<div class="inlinecontent">
+<p>It appears that the Microsoft update doesn’t just contain the certificate serial numbers, but the whole certificates.  They include in the subject:</p>
+
+<p>OU = Hosted by GTI Group Corporation</p>
+
+<p>I’d guess that makes the registration authority GlobalTrust Inc (a division of GTI Group Corporation).  They’re in Italy, which matches some news reports.  Their websites have also done a disappearing act.</p>
+
+<p>I wonder if this goes some way to explaining the strange "global trustee" certificate.  I apologise if this is already common knowledge, but I’ve not seen it mentioned anywhere yet.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 27 Mar 2011 07:17:26 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-982c66dee73432bacf3dccce8f428a82">
+
+<div class="comment-subject">
+
+Comment 97
+
+</div>
+
+<div class="inlinecontent">
+The extent of the problem is surely a matter of whether the signing key was obtained or not. If the attackers obtained that, then revoking the certs issued on the CA's computer are almost immaterial as the attacker can continue issuing certs on their own computer. Gah, this is such a mess.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 27 Mar 2011 07:17:27 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f07ce07d9417f37ef4f1a6c3c0d761c0">
+
+<div class="comment-subject">
+
+Comment 98
+
+</div>
+
+<div class="inlinecontent">
+<p>Google's ones :<br />
+047ecbe9fca55f7bd09eae36e10cae1e<br />
+d8f35f4eb7872b2dab0692e315382fb0<br />
+b0b7133ed096f9b56fae91c874bd3ac0<br />
+9239d5348f40d1695a745470e1f23f43<br />
+d7558fdaf5f1105bb213282b707729a3<br />
+f5c86af36162f13a64f54f6dc9587c06</p>
+
+<p>Mozilla's ones :<br />
+009239d5348f40d1695a745470e1f23f43<br />
+00d8f35f4eb7872b2dab0692e315382fb0<br />
+72032105c50c08573d8ea5304efee8b0<br />
+00b0b7133ed096f9b56fae91c874bd3ac0<br />
+00e9028b9578e415dc1a710a2b88154447<br />
+00d7558fdaf5f1105bb213282b707729a3<br />
+047ecbe9fca55f7bd09eae36e10cae1e<br />
+00f5c86af36162f13a64f54f6dc9587c06<br />
+392a434f0e07df1f8aa305de34e0c229<br />
+3e75ced46b693021218830ae86a82a71</p>
+
+<p>G9239... == M009239 ...<br />
+Gf5c8 == M00f5c8<br />
+Gd755 == M00d755<br />
+Gb0b7 == M00b0b7<br />
+Gd8f3 = M00d8f3<br />
+G047ecb == M047ecb</p>
+
+<p>Every hash in the Google list are found in the Mozilla list : just a matter of visual representation.<br />
+db</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 29 Mar 2011 07:17:28 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bed42d95f6269f67a3a9ac48efec0c03">
+
+<div class="comment-subject">
+
+Comment 99
+
+</div>
+
+<div class="inlinecontent">
+<p>Certificate information of 72032105C50C08573D8EA5304EFEE8B0 is the followings.</p>
+
+<p>---------------------------------------------</p>
+
+<p>Subject:<br />
+    CN=kuix.de,OU=Comodo Trial SSL,OU=TEST USE ONLY - NO WARRANTY ATTACHED,OU=For Testing Purposes Only,O=Kai Engert,STREET=Test Street,L=Test City,ST=Test State,postalCode=12345,C=DE<br />
+Issuer:<br />
+    CN=UTN-USERFirst-Hardware,OU=http://www.usertrust.com,O=The USERTRUST Network,L=Salt Lake City,ST=UT,C=US<br />
+Serial Number:<br />
+    72:03:21:05:c5:0c:08:57:3d:8e:a5:30:4e:fe:e8:b0<br />
+Issuer DER Base64:<br />
+MIGXMQswCQYDVQQGEwJVUzELMAkGA1UECBMCVVQxFzAVBgNVBAcTDlNhbHQgTGFr<br />
+ZSBDaXR5MR4wHAYDVQQKExVUaGUgVVNFUlRSVVNUIE5ldHdvcmsxITAfBgNVBAsT<br />
+GGh0dHA6Ly93d3cudXNlcnRydXN0LmNvbTEfMB0GA1UEAxMWVVROLVVTRVJGaXJz<br />
+dC1IYXJkd2FyZQ==<br />
+Serial DER Base64:<br />
+cgMhBcUMCFc9jqUwTv7osA==<br />
+Serial DER as C source:<br />
+{ 16, "\x72\x03\x21\x05\xc5\x0c\x08\x57\x3d\x8e\xa5\x30\x4e\xfe\xe8\xb0" }<br />
+Fingerprint (MD5):<br />
+    F7:5F:98:BC:D8:64:0C:16:E5:AE:EE:AA:00:F6:1F:07<br />
+Fingerprint (SHA1):<br />
+    82:61:4B:EC:97:48:15:DE:CC:9A:CC:6E:84:21:71:79:B2:64:20:40</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 29 Mar 2011 07:17:29 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-808199a6460423547aa616f585411c5b">
+
+<div class="comment-subject">
+
+Comment 100
+
+</div>
+
+<div class="inlinecontent">
+<p>Revocation date of 9 certificates are the followings.<br />
+----------------------------------------------------</p>
+
+<p>http://crl.comodoca.com/UTN-USERFirst-Hardware.crl</p>
+
+<p>    Serial Number: 047ECBE9FCA55F7BD09EAE36E10CAE1E<br />
+        Revocation Date: Mar 15 19:04:03 2011 GMT<br />
+    Serial Number: F5C86AF36162F13A64F54F6DC9587C06<br />
+        Revocation Date: Mar 15 19:04:24 2011 GMT<br />
+    Serial Number: E9028B9578E415DC1A710A2B88154447<br />
+        Revocation Date: Mar 15 19:05:26 2011 GMT<br />
+    Serial Number: 9239D5348F40D1695A745470E1F23F43<br />
+        Revocation Date: Mar 15 20:15:20 2011 GMT<br />
+    Serial Number: D7558FDAF5F1105BB213282B707729A3<br />
+        Revocation Date: Mar 15 20:15:26 2011 GMT<br />
+    Serial Number: 392A434F0E07DF1F8AA305DE34E0C229<br />
+        Revocation Date: Mar 15 20:15:38 2011 GMT<br />
+    Serial Number: 3E75CED46B693021218830AE86A82A71<br />
+        Revocation Date: Mar 15 20:15:47 2011 GMT<br />
+    Serial Number: B0B7133ED096F9B56FAE91C874BD3AC0<br />
+        Revocation Date: Mar 15 20:16:03 2011 GMT<br />
+    Serial Number: D8F35F4EB7872B2DAB0692E315382FB0<br />
+        Revocation Date: Mar 15 20:19:04 2011 GMT</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 29 Mar 2011 07:17:30 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f0eda9ff77ad5ea319473725d8e7bfdc">
+
+<div class="comment-subject">
+
+Comment 101
+
+</div>
+
+<div class="inlinecontent">
+Shouldn't people update their Namoroka (modified Firefox shipped with TOR) to detect these certs?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 30 Mar 2011 07:17:31 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-dbaadfc9bf0f2013758f324869560177">
+
+<div class="comment-subject">
+
+Comment 102
+
+</div>
+
+<div class="inlinecontent">
+I don't understand sth. Why has the industry chosen to 'ignore' returned errors on the crl queries? Are there a lot of false positives? And is it i.a. a calculated risk they are willing to take? 
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 01 Apr 2011 07:17:32 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FDetecting_Certificate_Authority_compromises_and_web_browser_collusion&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 07:15:50 AM CDT</span>
+<!-- Created <span class="date">Tue 22 Mar 2011 07:16:10 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged development_roadmap</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/development_roadmap/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>arma: Why Tor is slow and what we&#x27;re going to do about it</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/</link>
+
+
+	<category>/tags/development_roadmap</category>
+
+	<category>/tags/funding</category>
+
+	<category>/tags/performance</category>
+
+
+	<pubDate>Fri, 13 Mar 2009 05:33:01 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:20:59Z</dcterms:modified>
+
+	<description>&lt;p&gt;I&#39;ve just finished writing up an explanation of all the various reasons why the Tor network is slow, and what we can do about each. Part of it comes down to design flaws; some of it is that a handful of users are overloading the network; and there&#39;s also simply not enough capacity to go around.&lt;/p&gt;
+
+&lt;p&gt;Specifically, we&#39;ve identified six categories of problems to address, and laid out some steps to resolve each of them.&lt;/p&gt;
+
+&lt;p&gt;You can read the pdf here:&lt;br /&gt;
+&lt;a href=&quot;https://svn.torproject.org/svn/projects/roadmaps/2009-03-11-performance.pdf&quot; rel=&quot;nofollow&quot;&gt;https://svn.torproject.org/svn/projects/roadmaps/2009-03-11-performance.pdf&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Andrew has also put together a real live &lt;a href=&quot;https://www.torproject.org/press/2009-03-12-performance-roadmap-press-release&quot; rel=&quot;nofollow&quot;&gt;press release&lt;/a&gt; to go with it.&lt;/p&gt;
+
+&lt;p&gt;Now all that remains is to do everything. So if you want to help, or especially if you know any organizations that can help with funding, please help us make this happen! &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/why-tor-is-slow&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Why_Tor_is_slow_and_what_were_going_to_do_about_it/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: November 2008 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2008_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2008_Progress_Report/</link>
+
+
+	<category>/tags/censorship_circumvention</category>
+
+	<category>/tags/development_roadmap</category>
+
+	<category>/tags/funding</category>
+
+	<category>/tags/press_release</category>
+
+
+	<pubDate>Wed, 24 Dec 2008 22:29:44 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:16:27Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;Bug Fixes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.1.7-alpha (released November 8) fixes a major security problem in Debian and Ubuntu packages (and maybe other packages) noticed by Theo de Raadt, fixes a smaller security flaw that might allow an attacker to access local services, adds better defense against DNS poisoning attacks on exit relays, further improves hidden service performance, and fixes a variety of other issues.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Nov-2008/msg00229.html&quot; title=&quot;http://archives.seul.org/or/talk/Nov-2008/msg00229.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Nov-2008/msg00229.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.0.32 (released November 20) fixes a major security problem in Debian and Ubuntu packages (and maybe other packages) noticed by Theo de Raadt, fixes a smaller security flaw that might allow an attacker to access local services, further improves hidden service performance, and fixes a variety of other issues.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/announce/Dec-2008/msg00000.html&quot; title=&quot;http://archives.seul.org/or/announce/Dec-2008/msg00000.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/announce/Dec-2008/msg00000.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Vidalia 0.1.10 (released November 2) fixes some presentation bugs and some bugs in the Windows installer. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/november-2008-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/November_2008_Progress_Report/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

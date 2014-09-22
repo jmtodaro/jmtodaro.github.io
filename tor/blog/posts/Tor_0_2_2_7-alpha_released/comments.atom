@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Tor 0.2.2.7-alpha released</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:48:37Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/comment_1/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:26Z</updated>
+	<published>2010-01-23T12:48:26Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;On my OS X Machine (Intel, 10.5.8), the latest alpha (vidalia-bundle-0.2.2.7) fails to start Tor. As far as I can tell, the problem seems very similar to the SSL-related stuff that was supposed to be worked around in this release. The &quot;advanced&quot; log has a bunch of lines saying &quot;[Warning] TLS error: unexpected close while renegotiating (SSL_ST_OK)&quot; and the status bar in the GUI gets stuck about a third of the way across. I left it for an hour and it never got further than this.&lt;/p&gt;
+
+&lt;p&gt;I thought maybe this had to do with Apple&#39;s default OpenSSL, which is very outdated (0.9.71) even on Leopard, so I build 0.9.8l from source and installed that -- no improvement. However, looking at the comments above, it looks like the Vidalia bundle includes OpenSSL 0.9.8l as it is, so perhaps this problem has some other root cause.&lt;/p&gt;
+
+&lt;p&gt;Cheers,&lt;/p&gt;
+
+&lt;p&gt;-CF&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/comment_2/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:27Z</updated>
+	<published>2010-01-24T12:48:27Z</published>
+
+	<content type="html" xml:lang="en">
+	I&#39;m getting this problem too (also on 10.5.8).
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/comment_3/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:28Z</updated>
+	<published>2010-01-24T12:48:28Z</published>
+
+	<content type="html" xml:lang="en">
+	Same here with my Intel Mac running 10.6.2. I also get this behavior with my PowerPC Mac running 10.5.8 after applying the latest security update 2010-001.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/comment_4/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:29Z</updated>
+	<published>2010-01-24T12:48:29Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;FWIW, I&#39;m having the same experience with OSX 10.6.2, also on Intel.&lt;br /&gt;
+-BD&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/comment_5/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:30Z</updated>
+	<published>2010-01-24T12:48:30Z</published>
+
+	<content type="html" xml:lang="en">
+	Latest Apple security update contained OpenSSL 0.9.8l with renegotiation disabled, and no way for apps to enable it, tor will remain broken until major changes are made either at apple or in the tor code.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/comment_6/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:31Z</updated>
+	<published>2010-01-25T12:48:31Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I have updated the document detailing an Eclipse based IDE for developing Tor on Windows to reflect building Tor 0.2.2.7 under automake v2.6.x.&lt;br /&gt;
+&lt;br&gt;&lt;br /&gt;
+There is a specific section on how to update automake from the vanilla MinGWv5.16 install with MSYSv1.0.0.11 and MSysDTKv1.0.1. I&#39;ll upload the document if its likely to be of any use... ?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/comment_7/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:32Z</updated>
+	<published>2010-01-26T12:48:32Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Jan 25 16:48:05.155 [notice] Tor v0.2.2.7-alpha (git-ad274609b7fec437). This is experimental software. Do not rely on it for strong anonymity. (Running on Linux i686)&lt;br /&gt;
+Jan 25 16:51:39.179 [notice] Bootstrapped 5%: Connecting to directory server.&lt;br /&gt;
+Jan 27 02:51:23.735 [notice] Bootstrapped 100%: Done.&lt;/p&gt;
+
+&lt;p&gt;Well .... just upgraded .... actually two days ago from version 0.2.0.3 if i recall.&lt;br /&gt;
+Apparently this version doesnt really sit well with my connection.&lt;/p&gt;
+
+&lt;p&gt;It takes for ever to get anything done.&lt;br /&gt;
+I guess i should never turn my pc off ... cause it will take for ever to reconnect ! &lt;/p&gt;
+
+&lt;p&gt;Any akes on that ? &lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/comment_8/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:33Z</updated>
+	<published>2010-01-28T12:48:33Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;For MAC 10.6 users:&lt;/p&gt;
+
+&lt;p&gt;https://www.torproject.org/dist/testing/&lt;br /&gt;
+vidalia-bundle-0.2.2.8-alpha-0.2.7-i386.dmg&lt;/p&gt;
+
+&lt;p&gt;Many thanks to developers.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/comment_9/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:34Z</updated>
+	<published>2010-01-28T12:48:34Z</published>
+
+	<content type="html" xml:lang="en">
+	Thank you so much!
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/comment_10/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:35Z</updated>
+	<published>2010-02-02T12:48:35Z</published>
+
+	<content type="html" xml:lang="en">
+	Dear Tor developers, I can play youtube video (flash?) on Google Chrome 4.0.249.78 (36714) with Tor 0.2.2.6-alpha (git-1ee580407ccb9130). I couldn&#39;t play youtube video on firefox with Tor , and I got the answer why it can&#39;t here - because of some security limitation. Thanks.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/comment_11/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:36Z</updated>
+	<published>2010-02-12T12:48:36Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;If you are using the Tor button for Firefox - you need to relax the security settings in the plugin&lt;/p&gt;
+
+&lt;p&gt;Go to Tor Button.... Preferences | Security Settings.&lt;br /&gt;
+Deselect the setting &#39;Disable plugins during Tor usage (crucial)&#39;&lt;/p&gt;
+
+&lt;p&gt;BE WARNED: If you do this you will reduce your anonymity online. The setting is marked crucial for good reason !&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 12</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/comment_12/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_7-alpha_released/comment_12/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:37Z</updated>
+	<published>2010-02-19T12:48:37Z</published>
+
+	<content type="html" xml:lang="en">
+	My hidden service is not reachable anymore after update to 0.2.2.7-alpha. What&#39;s up with that?
+
+	</content>
+
+
+
+</entry>
+
+</feed>

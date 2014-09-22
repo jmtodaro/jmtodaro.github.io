@@ -1,0 +1,1544 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Torproject.org Blocked by GFW in China: Sooner or Later?</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>Anonymous</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:09:04Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_1/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:09Z</updated>
+	<published>2008-06-23T11:08:09Z</published>
+
+	<content type="html" xml:lang="en">
+	Yes. The &lt;a href=&quot;http://www.torproject.org/&quot; title=&quot;http://www.torproject.org/&quot; rel=&quot;nofollow&quot;&gt;http://www.torproject.org/&lt;/a&gt; homepage is not accessible for me here in shanghia. But this blog is still alive to me.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_2/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:10Z</updated>
+	<published>2008-06-26T11:08:10Z</published>
+
+	<content type="html" xml:lang="en">
+	Yes, ISP had been cut down the access to TorProject.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_3/"/>
+
+	<author><name>Roger Dingledine (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:11Z</updated>
+	<published>2008-06-30T11:08:11Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;It looks like they are catching the string &quot;.torproject.org&quot;, and sending RSTs&lt;br /&gt;
+to both sides when they see it. So any page that includes that string will be&lt;br /&gt;
+hard to read from China.&lt;/p&gt;
+
+&lt;p&gt;Note that if you use https connections, that string won&#39;t pass over the GFW.&lt;br /&gt;
+So those connections should continue working fine.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_4/"/>
+
+	<author><name>hanru (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:12Z</updated>
+	<published>2008-07-07T11:08:12Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Yes.&lt;/p&gt;
+
+&lt;p&gt;Besides, the IP address of the main Tor website is blocked, and this IP blocking precedes keyword blocking. So, if I visit &lt;a href=&quot;http://www.torproject.org&quot; title=&quot;www.torproject.org&quot; rel=&quot;nofollow&quot;&gt;www.torproject.org&lt;/a&gt;, wiki.torproject.org or any other website on this IP address, no matter via HTTP or HTTPS, I don&#39;t get RSTs, but always time-out.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_5/"/>
+
+	<author><name>link (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:13Z</updated>
+	<published>2008-07-13T11:08:13Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor sites are still VERY accessible through the mirrors.&lt;/p&gt;
+
+&lt;p&gt;If anyone needs one or the software hit me up at my email address and I will download the version of the software you need and send it to you.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_6/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:14Z</updated>
+	<published>2008-07-13T11:08:14Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;a href=&quot;mailto:silveryahoo@gmail.com&quot; rel=&quot;nofollow&quot;&gt;silveryahoo@gmail.com&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_7/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:15Z</updated>
+	<published>2008-07-14T11:08:15Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;a href=&quot;https://www.torproject.org/finding-tor.html&quot; title=&quot;https://www.torproject.org/finding-tor.html&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/finding-tor.html&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_8/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:16Z</updated>
+	<published>2009-01-26T12:08:16Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;a href=&quot;mailto:maxoverload91@yahoo.com&quot; rel=&quot;nofollow&quot;&gt;maxoverload91@yahoo.com&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_9/"/>
+
+	<author><name>Joakim (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:17Z</updated>
+	<published>2009-11-15T12:08:17Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;thanks&lt;br /&gt;
+&lt;a href=&quot;mailto:joakim.eriksson@gmail.com&quot; rel=&quot;nofollow&quot;&gt;joakim.eriksson@gmail.com&lt;/a&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_10/"/>
+
+	<author><name>Marek (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:18Z</updated>
+	<published>2009-11-16T12:08:18Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hi,&lt;br /&gt;
+I have the Tor software, But of course it now doesn&#39;t work. How do I go about using a mirror.&lt;br /&gt;
+Thanks very much for your help.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_11/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:19Z</updated>
+	<published>2010-01-04T12:08:19Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Is mirror similar to setting up a bridge?&lt;br /&gt;
+if so, all you need to do to be assigned&lt;br /&gt;
+one is to send a blank email with &quot;get bridges&quot;&lt;br /&gt;
+in the title of the email to &quot;bridges@torproject.org&quot;&lt;/p&gt;
+
+&lt;p&gt;a few seconds later you will get an email with 3 bridge numbers.&lt;/p&gt;
+
+&lt;p&gt;It is advised you do this every so often as bridges are constantly changing.&lt;/p&gt;
+
+&lt;p&gt;hope this was what you were looking for.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 12</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_12/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_12/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:20Z</updated>
+	<published>2010-01-02T12:08:20Z</published>
+
+	<content type="html" xml:lang="en">
+	It seems Tor is blocked in Vietnam! I could not access Torproject.org from 2010-01-02.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 13</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_13/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_13/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:21Z</updated>
+	<published>2010-01-04T12:08:21Z</published>
+
+	<content type="html" xml:lang="en">
+	Perhaps the website is blocked, but it seems tor clients can connect from vietnam just fine.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 14</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_14/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_14/"/>
+
+	<author><name>Turtlewind (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:22Z</updated>
+	<published>2008-08-02T11:08:22Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;More commie shenanigans: this morning, Rising Antivirus claimed that Privoxy.exe (as installed in the Vidalia bundle) was a virus Trojan.PSW.Win32.Undef.adp , and promptly deleted it (Rising == 瑞星 , a Chinese antivirus software for WIndows).&lt;/p&gt;
+
+&lt;p&gt;I got Tor working again by switching to FoxyProxy instead of TorButton. But I just thought I&#39;d let you guys know about it. I&#39;m also making the assumption that Privoxy isn&#39;t really a virus, but that sounds pretty reasonable to me.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 15</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_15/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_15/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:23Z</updated>
+	<published>2008-08-05T11:08:23Z</published>
+
+	<content type="html" xml:lang="en">
+	Odd.  You&#39;re better off using Torbutton, or the Tor Browser Bundle which is pre-configured for you.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 16</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_16/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_16/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:24Z</updated>
+	<published>2008-08-10T11:08:24Z</published>
+
+	<content type="html" xml:lang="en">
+	So many people using Loband too, mostly journos I guess, that they blocked it. Jeesh is THAT going to look good when they file after the games? But I did get in here through TOR tonight.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 17</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_17/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_17/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:25Z</updated>
+	<published>2008-08-18T11:08:25Z</published>
+
+	<content type="html" xml:lang="en">
+	good to hear.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 18</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_18/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_18/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:26Z</updated>
+	<published>2008-10-17T11:08:26Z</published>
+
+	<content type="html" xml:lang="en">
+	Typical stupid China. You&#39;ll find that the first ones to criticize you trying to open the internet up to them will be the everyday citizens themselves. F*ck em, if they don&#39;t want the internet don&#39;t give it to them, let them have another cultural revolution and waste another 10 years, go to hell you stupid fascists.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 19</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_19/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_19/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:27Z</updated>
+	<published>2009-10-05T11:08:27Z</published>
+
+	<content type="html" xml:lang="en">
+	Hey man, please make the target clear.What&#39;s really stupid and need to be fucked is the chinese government, not the various majority. The grovernment DO NOT represent any majority in china.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 20</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_20/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_20/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:28Z</updated>
+	<published>2008-10-18T11:08:28Z</published>
+
+	<content type="html" xml:lang="en">
+	I use an RF &quot;Broadband&quot; connection, usually above 380K both ways with a burst three times higher.  It barely suffices for broadband, mostly because of a bit of latency.  The question is, can I help at all as a relay?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 21</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_21/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_21/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:29Z</updated>
+	<published>2008-10-18T11:08:29Z</published>
+
+	<content type="html" xml:lang="en">
+	Build one anyway, I figure everyone can help if even just a little. The more the merrier.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 22</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_22/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_22/"/>
+
+	<author><name>RIESTERVERGLEICH (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:30Z</updated>
+	<published>2008-10-24T11:08:30Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;ve tried logging in with a Chinese proxy and it works smooth.&lt;br /&gt;
+I don&#39;t suppose anyone from china tried using a US proxy, ha?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 23</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_23/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_23/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:31Z</updated>
+	<published>2009-01-26T12:08:31Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;a href=&quot;mailto:maxoverload91@yahoo.com&quot; rel=&quot;nofollow&quot;&gt;maxoverload91@yahoo.com&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 24</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_24/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_24/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:32Z</updated>
+	<published>2009-01-26T12:08:32Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Step One: Download Tor.  If blocked, there are mirrors and Google cache.  &lt;a href=&quot;https://www.torproject.org/finding-tor.html&quot; title=&quot;https://www.torproject.org/finding-tor.html&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/finding-tor.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Step Two:  Install Tor.&lt;/p&gt;
+
+&lt;p&gt;Step Three:  Browse the wiki, etc.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 25</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_25/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_25/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:33Z</updated>
+	<published>2009-02-21T12:08:33Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;For those who couldn&#39;t figure out how to use the google cache to look for tor mirrors,&lt;br /&gt;
+these are a few of the mirrors for the Tor Website..&lt;br /&gt;
+&lt;a href=&quot;http://tor.zdg-gmbh.eu/&quot; title=&quot;http://tor.zdg-gmbh.eu/&quot; rel=&quot;nofollow&quot;&gt;http://tor.zdg-gmbh.eu/&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://mirror.bjwonline.com/tor/&quot; title=&quot;http://mirror.bjwonline.com/tor/&quot; rel=&quot;nofollow&quot;&gt;http://mirror.bjwonline.com/tor/&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://www.theonionrouter.com/&quot; title=&quot;http://www.theonionrouter.com/&quot; rel=&quot;nofollow&quot;&gt;http://www.theonionrouter.com/&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://crypto.nsa.org/tor/&quot; title=&quot;http://crypto.nsa.org/tor/&quot; rel=&quot;nofollow&quot;&gt;http://crypto.nsa.org/tor/&lt;/a&gt;&lt;br /&gt;
+and these are a few mirrors for downloading the Tor software :&lt;br /&gt;
+&lt;a href=&quot;http://crypto.nsa.org/tor/dist/&quot; title=&quot;http://crypto.nsa.org/tor/dist/&quot; rel=&quot;nofollow&quot;&gt;http://crypto.nsa.org/tor/dist/&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://mirror.bjwonline.com/tor/dist/&quot; title=&quot;http://mirror.bjwonline.com/tor/dist/&quot; rel=&quot;nofollow&quot;&gt;http://mirror.bjwonline.com/tor/dist/&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://www.theonionrouter.com/dist/&quot; title=&quot;http://www.theonionrouter.com/dist/&quot; rel=&quot;nofollow&quot;&gt;http://www.theonionrouter.com/dist/&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://tor.zdg-gmbh.eu/dist/&quot; title=&quot;http://tor.zdg-gmbh.eu/dist/&quot; rel=&quot;nofollow&quot;&gt;http://tor.zdg-gmbh.eu/dist/&lt;/a&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 26</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_26/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_26/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:34Z</updated>
+	<published>2009-04-13T11:08:34Z</published>
+
+	<content type="html" xml:lang="en">
+	So many people using Loband too, mostly journos I guess, that they blocked it. Jeesh is THAT going to look good when they file after the &lt;a href=&quot;http://ebs-software.net&quot; rel=&quot;nofollow&quot;&gt;games&lt;/a&gt; ? But I did get in here through TOR tonight.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 27</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_27/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_27/"/>
+
+	<author><name>jol (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:35Z</updated>
+	<published>2009-09-24T11:08:35Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;25 Sep 2009&lt;br /&gt;
+I&#39;m in China &quot;tor-blocked.&quot; (Been using Tor here for over a year).&lt;br /&gt;
+Now, can&#39;t access Tor or Vidalia or Privoxy forums, so I&#39;m hoping someone here can help.&lt;/p&gt;
+
+&lt;p&gt;Using vidalia-bundle-0.1.2.19-0.0.16a-tiger.dmg&lt;br /&gt;
+Firefox 3.5.3 w/NoScript Add-on and TorButton&lt;/p&gt;
+
+&lt;p&gt;Vidalia panel settings: 127.0.1 9051&lt;br /&gt;
+(If I try to set to 9050 it says Tor or something is using it).&lt;/p&gt;
+
+&lt;p&gt;1. Question: Is Vidalia supposed to be 9050, the same as Tor? (I could sure use some help with some published default settings so I can try some custom ones).&lt;/p&gt;
+
+&lt;p&gt;Privoxy doesn&#39;t show what proxy/port it is using.&lt;/p&gt;
+
+&lt;p&gt;TorButton Prefs show in custom settings (but I&#39;m using Privoxy which doesn&#39;t indicate what proxy address/port it&#39;s using:&lt;br /&gt;
+HTTP and SSL: 127.0.0.1 Port 8118&lt;br /&gt;
+Socks Host: 127.0.0.1 Port 9050&lt;/p&gt;
+
+&lt;p&gt;2. Question: Tor configuration and data directory files have .directory addresses. Didn&#39;t notice this before. Is this correct? (/Users/me/.vidalia/torrc) and (/Users/me/.tor). Is there a default settings file I can use or do I have to track down invisible files to delete them?&lt;/p&gt;
+
+&lt;p&gt;- Torstatus in Vidalia shows connections as Path Empty/New and then they switch (quickly) to Path Empty/Failed. Some relay names show up as Open or Building.&lt;/p&gt;
+
+&lt;p&gt;3. Question: Help doesn&#39;t explain what it is supposed to look like when it is working. If I see an Open user (connection) is that the one I&#39;m supposedly using? If I see this &quot;user&quot; as Open, can I assume my problem is in my Browser (Firefox/Torbutton)?&lt;/p&gt;
+
+&lt;p&gt;- Tor test in TorButton fails (even after I completely uninstall Privoxy/Vidalia/Tor and all user preferences.&lt;br /&gt;
+&quot;[Javascript Application] Tor proxy test: Internal error&quot;&lt;/p&gt;
+
+&lt;p&gt;4. Question: Anyone have a real answer for that one?&lt;/p&gt;
+
+&lt;p&gt;Any help appreciated.&lt;br /&gt;
+Please reply here or via this site admin who has my email address.&lt;/p&gt;
+
+&lt;p&gt;Thanks. You folks are really peachy...&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 28</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_28/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_28/"/>
+
+	<author><name>Hoo (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:36Z</updated>
+	<published>2009-09-25T11:08:36Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;i am also in china and new for Tor too.&lt;br /&gt;
+i will answer the best i can.&lt;/p&gt;
+
+&lt;p&gt;1) port 9050 is used to listen as proxy server for internet application(ex. Firefox)&lt;br /&gt;
+port 9051 is for control Vidalia from distance, so you can config Tor from remote IP.&lt;/p&gt;
+
+&lt;p&gt;2) i use window.&lt;/p&gt;
+
+&lt;p&gt;3) After Tor connected to Tor Network and you set FireFox&#39;s proxy to 127.0.0.1:9050&lt;br /&gt;
+you will surf internet via Tor Network.&lt;br /&gt;
+(TorButton can help you set FireFox&#39;s proxy to 127.0.0.1:9050 when you turn it on)&lt;/p&gt;
+
+&lt;p&gt;4) don&#39;t know too.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 29</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_29/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_29/"/>
+
+	<author><name>jol (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:37Z</updated>
+	<published>2009-09-27T11:08:37Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Thanks for the help, Hoo. ;o)&lt;/p&gt;
+
+&lt;p&gt;I guess what I&#39;m wondering next is:&lt;/p&gt;
+
+&lt;p&gt;Can I use a different ports than 8118 and 9050? I was wondering if I can piggy-back on 8080 and others used for chat services (ports I know are not blocked). Apparently the Tor version I am using on Mac does not allow bridges, so i&#39;m kind of hooped there. (Sorry, I just had to use hoo and hooped. It&#39;s in my nature to joke around). ;o)&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 30</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_30/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_30/"/>
+
+	<author><name>Hoo (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:38Z</updated>
+	<published>2009-09-27T11:08:38Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;In Tor Bundle, there is privoxy program.&lt;br /&gt;
+as i understand, privoxy is middle between FF and Tor&lt;br /&gt;
+so you should set FF proxy to 8118 if you want to use privoxy.&lt;/p&gt;
+
+&lt;p&gt;Privoxy will help you to erase some HTTP header which Tor don&#39;t do it for you&lt;br /&gt;
+so it will more secure if you use privoxy.&lt;br /&gt;
+(for me,i don&#39;t care so much for secure so i use 9050 directly)&lt;br /&gt;
+-----&lt;br /&gt;
+you just make me notice, there is no config page in Vidalia to Tor port for else than 9050.&lt;br /&gt;
+so i don&#39;t know too.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 31</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_31/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_31/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:39Z</updated>
+	<published>2009-09-25T11:08:39Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor blocked in China as of 26th September 2009.&lt;br /&gt;
+It simply will not connect on two different computers.&lt;br /&gt;
+I only want Youtube and Facebook!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 32</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_32/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_32/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:40Z</updated>
+	<published>2009-09-25T11:08:40Z</published>
+
+	<content type="html" xml:lang="en">
+	other proxy tools blocked too...
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 33</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_33/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_33/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:41Z</updated>
+	<published>2009-09-25T11:08:41Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor blocked in China from 25th September 2009.&lt;br /&gt;
+I think the GFW blocked the tor directory server, because if you don&#39;t set a proxy in torrc, the tor status always like this:&lt;br /&gt;
+Bootstrapped 5%: Connecting to directory server.&lt;br /&gt;
+and then follow some warnings.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 34</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_34/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_34/"/>
+
+	<author><name>San (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:42Z</updated>
+	<published>2009-09-26T11:08:42Z</published>
+
+	<content type="html" xml:lang="en">
+	I hv same problem, tor just can not connect, how to solve it?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 35</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_35/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_35/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:43Z</updated>
+	<published>2010-03-29T11:08:43Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;https://bridges.torproject.org/&lt;/p&gt;
+
+&lt;p&gt;click above URL -- tor settings -- network -- check &quot;my ISP blocks connection to Tor network&quot; -- copy and paste bridges: you got from the above site (see sample blow) one by one and click add --- after add all, click ok. &lt;/p&gt;
+
+&lt;p&gt;123.45..678:9090 (sample - not an actual bridge)&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 36</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_36/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_36/"/>
+
+	<author><name>jol (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:44Z</updated>
+	<published>2009-09-27T11:08:44Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Any directions on how to set a proxy in torrc would be beneficial. ;o)&lt;/p&gt;
+
+&lt;p&gt;Thanks... I have lots of time to work on workarounds.&lt;/p&gt;
+
+&lt;p&gt;(I really only want facebook so my wife can play her FarmLife game and get off my case... I don&#39;t need YouTube or most others, though I would like to continue my winning streak on picking Premier League Games on the facebook app). ;o)&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 37</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_37/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_37/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:45Z</updated>
+	<published>2009-09-26T11:08:45Z</published>
+
+	<content type="html" xml:lang="en">
+	Both machines now working. Connection is much slower.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 38</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_38/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_38/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:46Z</updated>
+	<published>2009-09-26T11:08:46Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Here in South China Tor is still blocked (27th Sept. 2009)&lt;/p&gt;
+
+&lt;p&gt;Sep 27 07:13:48.887 [Warning] Problem bootstrapping. Stuck at 5%: Connecting to directory server. (Operation timed out; TIMEOUT; count 11; recommendation warn)&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 39</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_39/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_39/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:47Z</updated>
+	<published>2009-09-27T11:08:47Z</published>
+
+	<content type="html" xml:lang="en">
+	use bridges. see here: &lt;a href=&quot;http://cubiclemuses.com/cm/articles/2009/09/27/tor-blocked-in-china/&quot; title=&quot;http://cubiclemuses.com/cm/articles/2009/09/27/tor-blocked-in-china/&quot; rel=&quot;nofollow&quot;&gt;http://cubiclemuses.com/cm/articles/2009/09/27/tor-blocked-in-china/&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 40</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_40/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_40/"/>
+
+	<author><name>jol (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:48Z</updated>
+	<published>2009-09-27T11:08:48Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;m on a Mac and the Vidalia version says it does not support Bridges.&lt;/p&gt;
+
+&lt;p&gt;Vidalia ver. 0.0.16&lt;br /&gt;
+Tor ver. 0.1.2.19&lt;br /&gt;
+QT ver. 4.3.2&lt;/p&gt;
+
+&lt;p&gt;I tried the email (hotmail) on your link anyway... wasn&#39;t going to set up a gmail (fail) or yahoo (fail) account just to get facebook... ;o)&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 41</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_41/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_41/"/>
+
+	<author><name>hotspot not stable too (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:49Z</updated>
+	<published>2009-09-28T11:08:49Z</published>
+
+	<content type="html" xml:lang="en">
+	fuck gov!!
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 42</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_42/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_42/"/>
+
+	<author><name>kookak (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:50Z</updated>
+	<published>2009-09-28T11:08:50Z</published>
+
+	<content type="html" xml:lang="en">
+	the bridge worked here in Beijing...many thanks!
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 43</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_43/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_43/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:51Z</updated>
+	<published>2009-09-30T11:08:51Z</published>
+
+	<content type="html" xml:lang="en">
+	I&#39;m new to Xiamen on the coastal of china and I started using Vidalia Tor. I thought it ws pretty good until exactly on the 27th Sept, it stopped working. I then got a Mac so now i&#39;m wondering .. does it work from mac? because my Tor is connected.. I just don&#39;t know how to connect it to firefox:S help?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 44</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_44/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_44/"/>
+
+	<author><name>Hoo (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:52Z</updated>
+	<published>2009-10-01T11:08:52Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor open proxy server port on your machine&lt;br /&gt;
+so let set proxy to 127.0.0.1 port 9050&lt;/p&gt;
+
+&lt;p&gt;I also recommend you to use FoxyProxy and&lt;br /&gt;
+tell it use proxy only on blocked website&lt;br /&gt;
+(ex. *.facebook.com/* and *.fbcdn.net/*)&lt;/p&gt;
+
+&lt;p&gt;so FF will fast and directly download from normal website(ex. hotmail)&lt;br /&gt;
+and browse slow via Tor for blocked website.&lt;br /&gt;
+this will help Tor network to lower traffic too.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 45</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_45/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_45/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:53Z</updated>
+	<published>2009-10-07T11:08:53Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hi&lt;/p&gt;
+
+&lt;p&gt;I&#39;m in Beijing, and was using hotspot shield until it got blocked for the 60th Anniversary.&lt;/p&gt;
+
+&lt;p&gt;Now I&#39;m trying TOR, but i&#39;m having problems.&lt;/p&gt;
+
+&lt;p&gt;I managed to get connected to the TOR network using Vidalia and bridges (The TOR onion is green).&lt;/p&gt;
+
+&lt;p&gt;I also downloaded torbutton for FireFox, and enabled the torbutton, which added some proxy settings  - 127.0.0.1:8118 for HTTP proxy, and 127.0.0.1:9050 for Socks.&lt;/p&gt;
+
+&lt;p&gt;However, i&#39;m still unable to browse the the restricted websites. In fact, i&#39;m not able to browse anything after enabling torbutton.&lt;/p&gt;
+
+&lt;p&gt;Can anyone please help me?&lt;/p&gt;
+
+&lt;p&gt;Thanks&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 46</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_46/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_46/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:54Z</updated>
+	<published>2009-10-23T11:08:54Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hi,&lt;br /&gt;
+the hint with the bridges was great and worked for me!&lt;br /&gt;
+(&lt;a href=&quot;http://cubiclemuses.com/cm/articles/2009/09/27/tor-blocked-in-china/&quot; title=&quot;http://cubiclemuses.com/cm/articles/2009/09/27/tor-blocked-in-china/&quot; rel=&quot;nofollow&quot;&gt;http://cubiclemuses.com/cm/articles/2009/09/27/tor-blocked-in-china/&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;Only thing strange is, that you have to ask from a yahoo or gmail account...?&lt;/p&gt;
+
+&lt;p&gt;tor rocks!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 47</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_47/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_47/"/>
+
+	<author><name>billix (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:55Z</updated>
+	<published>2009-12-02T12:08:55Z</published>
+
+	<content type="html" xml:lang="en">
+	thx 4 sharing m8, cheers.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 48</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_48/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_48/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:56Z</updated>
+	<published>2010-02-01T12:08:56Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;The upgrade of Tor (Vidalia bundle) is causing me problems. I do not like or want Polipo, I prefer Privoxy but I&#39;m not given the choice? Why?&lt;/p&gt;
+
+&lt;p&gt;For instance, the notice that my version is obsolete lists a number of versions as being safe, not just the latest...but, I cannot find them for downloading. Why?&lt;/p&gt;
+
+&lt;p&gt;It seems to me that the same rules will have to be followed (by me) with regard to Tor as I follow with other security progs - stay with the older ones because who knows what governments or the money of Google etc have convinced the programmers to add into the newest versions.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 49</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_49/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_49/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:57Z</updated>
+	<published>2010-02-28T12:08:57Z</published>
+
+	<content type="html" xml:lang="en">
+	Tor IS working in China, but you need to find a good HTTP proxy first to bootstrap. Not all proxies will do the trick (I dunno why, maybe high anonymous proxies only). I tried many proxies for hours until found one from France allowing me to bootstrap for the first time, and next times tor seems getting info from it&#39;s cache and starts normally without a proxy. 
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 50</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_50/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_50/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:58Z</updated>
+	<published>2010-06-03T11:08:58Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;pls help. I&#39;m in Shanghai, I use mac and I&#39;m not able to use Tor, I have a message &quot;problem bootstrapping. stuck at 5%...&quot;&lt;br /&gt;
+TNKS&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 51</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_51/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_51/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:08:59Z</updated>
+	<published>2010-05-21T11:08:59Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I downloaded Tor in order to use it to access facebook in my school&lt;br /&gt;
+I am a teacher and there is a firewall in our school so ı can not get anywhere&lt;br /&gt;
+do you think Tor can solve this? and how?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 52</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_52/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_52/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:09:00Z</updated>
+	<published>2010-06-05T11:09:00Z</published>
+
+	<content type="html" xml:lang="en">
+	l downloaded tor in order 4 me 2 access Facebook network connection wit Meebo.com, cos my yahoo messenger is not working so that l can talk 2 people on order id, do u  think Tor can solve this problem?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 53</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_53/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_53/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:09:01Z</updated>
+	<published>2010-06-26T11:09:01Z</published>
+
+	<content type="html" xml:lang="en">
+	Tor is not working here in Nigeria, Please send us new proxy that work.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 54</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_54/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_54/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:09:02Z</updated>
+	<published>2010-07-26T11:09:02Z</published>
+
+	<content type="html" xml:lang="en">
+	Sorry that I cannot help censored users with a bridge. I&#39;m on a Mac w/ Airport and a wireless mesh ISP, no router to manually configure. I am willing to learn if anyone knows how to help me help others.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 55</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_55/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_55/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:09:03Z</updated>
+	<published>2010-08-03T11:09:03Z</published>
+
+	<content type="html" xml:lang="en">
+	The latest bridges I got from bridges@torproject.org didn&#39;t work in China. I think the Tor is totally blocked out by GFW.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 56</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_56/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torproject_org_Blocked_by_GFW_in_China_Sooner_or_Later/comment_56/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:09:04Z</updated>
+	<published>2010-08-08T11:09:04Z</published>
+
+	<content type="html" xml:lang="en">
+	Well, not totally.  Just most of the bridges are blocked because the Chinese Government, we suspect, is actively hunting for Tor bridges.  We&#39;re working on a better bridge distribution scheme and want to get it right before releasing it.
+
+	</content>
+
+
+
+</entry>
+
+</feed>

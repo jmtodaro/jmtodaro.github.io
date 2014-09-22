@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Tor Browser Bundle 1.2.2 Released</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:29:08Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_1/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:29:02Z</updated>
+	<published>2009-06-25T11:29:02Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Guys,&lt;/p&gt;
+
+&lt;p&gt;Given what happened in Iran:&lt;br /&gt;
+- Twitter used to organize resistance&lt;br /&gt;
+- Twitter users tracked down and arrested&lt;/p&gt;
+
+&lt;p&gt;Thinking a Tor enabled Twitter client would be a good tool for folks living in oppressive states, particularly if it could run off an encrypted (TrueCrypt) thumb drive.&lt;/p&gt;
+
+&lt;p&gt;Looks like this I guess:&lt;/p&gt;
+
+&lt;p&gt;Tor/Twitter Client &amp;lt;-&amp;gt; Tor network &amp;lt;-&amp;gt; Twitter Server&lt;/p&gt;
+
+&lt;p&gt;Perhaps it already exists ...&lt;/p&gt;
+
+&lt;p&gt;-g&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_2/"/>
+
+	<author><name>Thistle (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:29:03Z</updated>
+	<published>2009-06-26T11:29:03Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Shortly after I attempted to run the Tor bundle, my system blue-screened and crashed.&lt;br /&gt;
+My McCaffey antivirus program found a Trojan in the temp/SKYNETxxxxx and quarantined it.  No damage done, but please check your downloads for embedded viruses.  I would really like to help the Iran protest by running a TOR bridge, but if it takes out my computer, I won&#39;t even be able to tweet to support them.&lt;/p&gt;
+
+&lt;p&gt;Thistle&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_3/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:29:04Z</updated>
+	<published>2009-07-01T11:29:04Z</published>
+
+	<content type="html" xml:lang="en">
+	Firefox 3.5 now support HTML5 (audio, video, offline resources, drag and drop, etc). Can these feature affect anonymity? How torbutton manages them?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_4/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:29:05Z</updated>
+	<published>2009-07-01T11:29:05Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Potential problems with Firefox 3.5:&lt;/p&gt;
+
+&lt;p&gt;1) geolocation&lt;br /&gt;
+2) XMLHttpRequest isn&#39;t subject to same origin policy anymore&lt;br /&gt;
+3)drag and drop feature for file, image, document, etc.&lt;br /&gt;
+4)offline resources&lt;br /&gt;
+5)DNS prefetching&lt;br /&gt;
+6)Firefox Worker&lt;br /&gt;
+7)audo, video, and others multimedia html 5 tag&lt;br /&gt;
+8)custom protocol handlers&lt;br /&gt;
+9)possible new CSS attack vectors, such as font-face, media queries.&lt;br /&gt;
+Is there something else?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_5/"/>
+
+	<author><name>swisstorexit (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:29:06Z</updated>
+	<published>2009-07-02T11:29:06Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;hello,&lt;/p&gt;
+
+&lt;p&gt;I will say to wait before install 3.5 while actualy it&#39;s tested about privacy and resistance...&lt;/p&gt;
+
+&lt;p&gt;I don&#39;t know about torbutton and 3.5 but at end of this week i can give a more presice answer.&lt;/p&gt;
+
+&lt;p&gt;my best&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_6/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:29:07Z</updated>
+	<published>2009-07-04T11:29:07Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Any news?&lt;br /&gt;
+I don&#39;t think Firefox 3.5 is safe for anonymous browsing.&lt;/p&gt;
+
+&lt;p&gt;Is possible for Tor developers to make a new safest browser based on Firefox or Chromium source code?&lt;br /&gt;
+I&#39;ve read about the next release of xerobank browser. It will be embedded in a OpenWRT self-contained virtualized environment, with OpenVPN connection.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_2_Released/comment_7/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:29:08Z</updated>
+	<published>2010-11-20T12:29:08Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Is there a mobile version of Tor? Unfortunately, due to an insane and vindictive ex...and who by the way is an extremely brilliant computer engineer, has hacked his way back into my life and made it a living nightmare! He has successfully demobilized 1 desktop, 2 laptops, and my Blackberry so at the moment the only internet access I have is on this crappy little phone that is soon going to be taking a trip to the toilet if I dont have a nervous breakdown first! Not only has he made it impossible for me to work...he downloaded $5000 worth of music and made it look like I did it! Now my service has been cut off because I refuse to pay the bill!&lt;/p&gt;
+
+&lt;p&gt;Can anyone help me?&lt;/p&gt;
+
+&lt;p&gt;Shelby&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+
+</feed>

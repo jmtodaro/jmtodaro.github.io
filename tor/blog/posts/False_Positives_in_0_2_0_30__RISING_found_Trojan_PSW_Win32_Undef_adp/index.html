@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>False Positives in 0.2.0.30:  RISING found Trojan.PSW.Win32.Undef.adp</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FFalse_Positives_in_0_2_0_30__RISING_found_Trojan_PSW_Win32_Undef_adp&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">False Positives in 0.2.0.30:  RISING found Trojan.PSW.Win32.Undef.adp</a>
+
+</span>
+
+
+<div id="content">
+<p>I've noticed a <a href="https://blog.torproject.org/blog/june-2008-progress-report#comment-154" rel="nofollow">few comments</a> about a Chinese anti-virus program, RISING, reporting that Vidalia.exe and Privoxy.exe are infected with Trojan.PSW.Win32.Undef.adp.    In both cases, I suspect that RISING is reporting false positives.  These executables as packaged and available on the Tor download page are not infected.</p>
+
+<p>I've looked at the MD5 and SHA-1 sums of these programs as included in the Vidalia bundle and they match what the source packages produce as executables.  The privoxy.exe included in the bundles is the exact same one as found at the <a href="http://downloads.sourceforge.net/ijbswa/privoxy_setup_3_0_6.exe?modtime=1164015760&amp;big_mirror=0" rel="nofollow">Sourceforge Privoxy Download Page</a>.</p>
+
+<p>The Vidalia.exe is the same as the one included in the <a href="http://www.vidalia-project.net/dist/vidalia-0.1.7.exe" rel="nofollow">Vidalia Download Page</a>.</p>
+
+<p>Feel free to confirm this is true for you.  Better yet, let us know if these individual packages (Vidalia.exe from Vidalia and Privoxy.exe from Sourceforge) also show up as infected.</p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/false_positives/" rel="tag">false positives</a>
+
+<a href="../../tags/privoxy/" rel="tag">privoxy</a>
+
+<a href="../../tags/trojan/" rel="tag">trojan</a>
+
+<a href="../../tags/vidalia/" rel="tag">vidalia</a>
+
+<a href="../../tags/virus/" rel="tag">virus</a>
+
+<a href="../../tags/windows_bundles/" rel="tag">windows bundles</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-af51ad3f85b6a026fb4db3497bb40590">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+Can you fix the tor nodes to use a newer version of TOR because many are using old versions that generating weak keys.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 06 Aug 2008 06:10:34 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bd41e141493575e8b6ac15896bc25f18">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>an old version of tor doesn't mean they have weak keys.  Only debian systems which were installed during the period of vulnerability are risky.  We believe we've blacklisted all bad keys, so those servers would have dropped off the network long ago.</p>
+
+<p>Old versions of tor may have other bugs, however.  Anyone running 1.1 is probably vulnerable.  0.2.0.30 is the new stable, 0.2.1.x is the new alpha.</p>
+
+<p>Here are all the versions I currently see as tor nodes:</p>
+
+<p>0.1.1.19-rc<br />
+0.1.1.20<br />
+0.1.1.21<br />
+0.1.1.22<br />
+0.1.1.23<br />
+0.1.1.24<br />
+0.1.1.25<br />
+0.1.1.26<br />
+0.1.2.10-rc<br />
+0.1.2.12-rc<br />
+0.1.2.13<br />
+0.1.2.14<br />
+0.1.2.15<br />
+0.1.2.16<br />
+0.1.2.17<br />
+0.1.2.18<br />
+0.1.2.19<br />
+0.1.2.2-alpha<br />
+0.1.2.3-alpha<br />
+0.2.0.12-alpha<br />
+0.2.0.18-alpha<br />
+0.2.0.20-rc<br />
+0.2.0.21-rc<br />
+0.2.0.22-rc<br />
+0.2.0.23-rc<br />
+0.2.0.24-rc<br />
+0.2.0.25-rc<br />
+0.2.0.26-rc<br />
+0.2.0.27-rc<br />
+0.2.0.28-rc<br />
+0.2.0.29-rc<br />
+0.2.0.2-alpha<br />
+0.2.0.30<br />
+0.2.0.4-alpha<br />
+0.2.0.5-alpha<br />
+0.2.0.6-alpha<br />
+0.2.0.7-alpha<br />
+0.2.0.8-alpha<br />
+0.2.0.9-alpha<br />
+0.2.1.0-alpha-dev<br />
+0.2.1.1-alpha<br />
+0.2.1.2-alpha<br />
+0.2.1.2-alpha-dev<br />
+0.2.1.3-alpha<br />
+0.2.1.4-alpha<br />
+0.2.1.4-alpha-dev</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 06 Aug 2008 06:10:35 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6015b7fce8ba068d3d0b45baf73a01b2">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+ah, RISING anti-virus, always miss true virus but report false positives, no one should be surprised about this. it even reports the open source edition of Qt4.4.1 installer has some trojan/malware downloader. really, it'd be abnormal if RISING don't report false positives all the time.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 13 Aug 2008 06:10:36 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d835e1750c5a0672bb1812dd61625d08">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<p>The Chinese government is most likely not a fan of Tor, so imagine their pressure to domestic Chinese anti-virus companies include false positives on Tor software. It perhaps would be an effective way to stop the new Chinese dissident from using Tor to discover uncensored news beyond China's "Great Firewall".</p>
+
+<p>Just a little conspiracy theory for you all. It happens all the time.</p>
+
+<p>I bid you all adieu!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 14 Aug 2008 06:10:37 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e304a56b3beb8cb925524bf2c2d65f13">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+On my school antivirus, the TOR program is found as a virus...
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 16 Feb 2011 06:10:38 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FFalse_Positives_in_0_2_0_30__RISING_found_Trojan_PSW_Win32_Undef_adp&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:10:34 AM CDT</span>
+<!-- Created <span class="date">Tue 05 Aug 2008 10:09:46 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged peer_to_peer</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/peer_to_peer/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: five minutes to speak</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/five_minutes_to_speak/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/five_minutes_to_speak/</link>
+
+
+	<category>/tags/censorship_circumvention</category>
+
+	<category>/tags/cyberutopian</category>
+
+	<category>/tags/peer_to_peer</category>
+
+	<category>/tags/policy</category>
+
+	<category>/tags/policy_makers</category>
+
+	<category>/tags/technology</category>
+
+
+	<pubDate>Sun, 13 Feb 2011 08:52:43 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:15:03Z</dcterms:modified>
+
+	<description>&lt;p&gt;I was asked to give a five minute speech to open a panel in front of a number of policy makers and advisors in Washington, DC in the past few weeks.  The discussion was under &lt;a href=&quot;https://secure.wikimedia.org/wikipedia/en/wiki/Chatham_House_Rule&quot; rel=&quot;nofollow&quot;&gt;Chatham House Rule&lt;/a&gt;.  A number of people have encouraged me to publish the speech notes as a blog post, it is as follows.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Here I am, a technologist in a room full of policy people.  I&#39;ll stick&lt;br /&gt;
+to what I know and try not to put anyone to sleep in the next five&lt;br /&gt;
+minutes.&lt;/p&gt;
+&lt;p&gt;Technology is agnostic, who uses and how they use it matters.  Roads,&lt;br /&gt;
+cars, phones, email, websites are all technologies used for good and bad.&lt;br /&gt;
+In the 1930s, the feds and police warned of mass chaos if the interstate&lt;br /&gt;
+highway system was built in the US.  The ability for criminals to quickly&lt;br /&gt;
+transit between cities was of grave concern. Crime would spread faster,&lt;br /&gt;
+further, and this would hasten the breakdown of the very fabric of the&lt;br /&gt;
+American society, community. Time has shown the benefits vastly outweighed&lt;br /&gt;
+the costs.  This same principle has shown to be true of the internet&lt;br /&gt;
+and computer technology.  Sure, we may have new kinds of crime with botnets,&lt;br /&gt;
+zombies, phishing, but do we really?  Lying, impersonation, and tricking&lt;br /&gt;
+someone into doing your work are the same crimes they have been for the&lt;br /&gt;
+past few millenia.  It&#39;s just that the substrate that is used, has changed.&lt;br /&gt;
+What are some of the largest companies in the world?  GE, IBM, Apple,&lt;br /&gt;
+Microsoft, Google.  What one should or should not do is policy and law,&lt;br /&gt;
+what one can actually do or not do is technology.&lt;/p&gt;
+&lt;p&gt;Circumvention, anonymity, and privacy tools used in a free world can be&lt;br /&gt;
+a minor annoyance, i.e. wikileaks used wikis, ssl, email, and yes, tor,&lt;br /&gt;
+but in the end, it&#39;s an annoyance.  We don&#39;t have people in the streets&lt;br /&gt;
+rioting trying to overthrow our govt. Wikipedia uses the same technology&lt;br /&gt;
+in wikis, ssl, and email. Everyone loves Wikipedia and considers it a net positive.&lt;/p&gt;
+&lt;p&gt;The same circumvention, anonymity, and privacy tools are deadly to&lt;br /&gt;
+repressive regimes.  The free flow of information and education are of&lt;br /&gt;
+great concern to a regime trying to control the horizontal and vertical&lt;br /&gt;
+of every day life. The tactics a regime can use are legal, technical,&lt;br /&gt;
+and physical.  The regime can switch between tactics, generally&lt;br /&gt;
+depending upon what&#39;s economical and most effective.&lt;/p&gt;
+&lt;p&gt;Roughly 1 billion people are online in some way.  Berkman did a study&lt;br /&gt;
+that found roughly 2% of that billion know what a proxy is, or even that&lt;br /&gt;
+technology exists to circumvent internet censorship.  98% of the world&lt;br /&gt;
+accepts that facebook, google, cnn, and the bbc, are blocked and doesn&#39;t&lt;br /&gt;
+try to find ways around it. This doesn&#39;t even broach the topic of online&lt;br /&gt;
+privacy relating to commercial entities nor law enforcement and&lt;br /&gt;
+intelligence agencies trying to learn the who, what, where, and how of your Internet activities.&lt;/p&gt;
+&lt;p&gt;Arguing about which proxy technology should get all of the funding and&lt;br /&gt;
+attention is silly.  The budgets and adversaries vastly outweigh the&lt;br /&gt;
+funding and research into proxies.  It&#39;s not a zero-sum game, and&lt;br /&gt;
+the different technologies take very different approaches to success;&lt;br /&gt;
+freegate/ultrasurf, vpns, psiphon, and web proxies play a game of cat&lt;br /&gt;
+and mouse with ip addresses and sometimes encryption; tor uses the&lt;br /&gt;
+strategy of R&amp;amp;D and protecting ones anonymity and privacy first, the&lt;br /&gt;
+secondary effects of this are well-suited to circumvention too.  Tor,&lt;br /&gt;
+freegate, psiphon, and vpns sum up to roughly $50m in funding from the US govt&lt;br /&gt;
+of the past few years.  Only a very small fraction of that total has made it to actual technology.  Compare that to the billions spent on snakeoil&lt;br /&gt;
+black box technology by the DoD and intelligence agencies preparing for&lt;br /&gt;
+a cyberwar arms race, much like the nuclear arms race, to deter other&lt;br /&gt;
+nations from attacking us.&lt;/p&gt;
+&lt;p&gt;I talked to a member of a terrorist organization in Vietnam.  He&#39;s been&lt;br /&gt;
+stalked, harassed, and had everything confiscated multiple times by his&lt;br /&gt;
+government.  You know his organization as Deutsche Welle.  He&#39;s a&lt;br /&gt;
+reporter.  He had no idea how his plans, documents, and contacts were&lt;br /&gt;
+being discovered and used against him. His ability to understand the&lt;br /&gt;
+differences between Tor, JAP, and Freegate was like asking which tires&lt;br /&gt;
+are best for gravel, snow, or tarmac.  The question he didn&#39;t even know&lt;br /&gt;
+to ask is, &quot;What are safe and secure computing and online practices?&quot;&lt;br /&gt;
+to use my analogy, &quot;what car do I want for those tires?  the answer is&lt;br /&gt;
+a rally car.&quot;   I spent 4 hours going over how the internet works,&lt;br /&gt;
+how to think about adversaries online, what is ssl, what it means, what&lt;br /&gt;
+are phishing, viruses, botnets, and state-sponsored malware.  By the&lt;br /&gt;
+end of the 4th hour, he understood how tor is different than a simple&lt;br /&gt;
+vpn or proxy server, and when to use tor and when it isn&#39;t needed. 3.5h&lt;br /&gt;
+of that discussion was basic operational, computer, and online security&lt;br /&gt;
+and safe practices.&lt;/p&gt;
+&lt;p&gt;So where does this leave us?  It leaves us with a mix of education,&lt;br /&gt;
+technology, and many, many unanswered questions.  This is a young field&lt;br /&gt;
+overall.  As the censorship providers and technologies get better, so&lt;br /&gt;
+will those circumvention technologies.  Educating users about internet&lt;br /&gt;
+safety, risks, and making the tools vastly easier and safer to use&lt;br /&gt;
+should be a goal.&lt;/p&gt;
+&lt;p&gt;Tor published a &quot;10 things to think about circumvention tools&quot; paper to&lt;br /&gt;
+try to distill what we&#39;ve learned over the past 10 years of doing this.&lt;br /&gt;
+In a few of these areas, tor is not the best choice, for now.&lt;/p&gt;
+&lt;p&gt;What about technology?  Isn&#39;t it going to save us all?  Currently,&lt;br /&gt;
+freegate/ultrasurf, vpns, and web proxies are looking for money to fund&lt;br /&gt;
+their growing infrastructure costs. The more users you have, the more&lt;br /&gt;
+servers, more bandwidth, and more costs you incur.  Its a quick way to&lt;br /&gt;
+spend lots of money and get lots of users.  However becoming the ISP for&lt;br /&gt;
+the world gets very expensive, very quickly as you scale up to hundreds&lt;br /&gt;
+of millions of users.  Look at the infrastructures of google, facebook,&lt;br /&gt;
+yahoo, and microsoft to see the challenges that lie ahead for these tools.&lt;/p&gt;
+&lt;p&gt;Tor and &quot;distributed tools&quot; look to improve the research and development&lt;br /&gt;
+and rely on the scaling of users to both provide the circumvention and&lt;br /&gt;
+grow to become a self-sustaining ISP to the world.  We have only begun&lt;br /&gt;
+to see the power and effects of these technologies with bittorrent, jap,&lt;br /&gt;
+skype, freenet, i2p, and tor.&lt;/p&gt;&lt;/blockquote&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/five_minutes_to_speak/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

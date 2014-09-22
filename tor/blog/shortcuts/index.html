@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>shortcuts</title>
+
+<link rel="stylesheet" href="../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=shortcuts&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../">The Tor Blog</a>/ 
+
+</span>
+<span class="title">
+<a href="">shortcuts</a>
+
+</span>
+
+
+<div id="content">
+<p>This wiki has shortcuts <strong>enabled</strong>.</p>
+
+<p>Some examples of using shortcuts include:</p>
+
+<pre><code>[[!google  foo]]
+[[!wikipedia  War_of_1812]]
+[[!debbug  12345]]
+Check the [[!cia  ikiwiki desc="CIA page for %s"]].
+</code></pre>
+
+<p>This page controls what shortcut links the wiki supports.</p>
+
+<ul>
+<li>shortcut google points to <i>http://www.google.com/search?q=%s</i></li>
+<li>shortcut archive points to <i>http://web.archive.org/*/%S</i></li>
+<li>shortcut gmap points to <i>http://maps.google.com/maps?q=%s</i></li>
+<li>shortcut gmsg points to <i>http://groups.google.com/groups?selm=%s</i></li>
+<li>shortcut wikipedia points to <i>http://en.wikipedia.org/wiki/%s</i></li>
+<li>shortcut wikitravel points to <i>http://wikitravel.org/en/%s</i></li>
+<li>shortcut wiktionary points to <i>http://en.wiktionary.org/wiki/%s</i></li>
+<li>shortcut debbug points to <i>http://bugs.debian.org/%S</i></li>
+<li>shortcut deblist points to <i>http://lists.debian.org/debian-%s</i></li>
+<li>shortcut debpkg points to <i>http://packages.debian.org/%s</i></li>
+<li>shortcut debpkgsid points to <i>http://packages.debian.org/sid/%s</i></li>
+<li>shortcut debpts points to <i>http://packages.qa.debian.org/%s</i></li>
+<li>shortcut debmsg points to <i>http://lists.debian.org/msgid-search/%s</i></li>
+<li>shortcut debrt points to <i>https://rt.debian.org/Ticket/Display.html?id=%s</i></li>
+<li>shortcut debss points to <i>http://snapshot.debian.net/package/%s</i>
+<ul>
+<li>Usage: <code>[[!debss  package]]</code>, <code>[[!debss  package#version]]</code>, or <code>[[!debss  package/version]]</code>.  See http://snapshot.debian.net for details.</li>
+</ul></li>
+<li>shortcut debwiki points to <i>http://wiki.debian.org/%s</i></li>
+<li>shortcut fdobug points to <i>https://bugs.freedesktop.org/show_bug.cgi?id=%s</i></li>
+<li>shortcut fdolist points to <i>http://lists.freedesktop.org/mailman/listinfo/%s</i></li>
+<li>shortcut gnomebug points to <i>http://bugzilla.gnome.org/show_bug.cgi?id=%s</i></li>
+<li>shortcut linuxbug points to <i>http://bugzilla.kernel.org/show_bug.cgi?id=%s</i></li>
+<li>shortcut mozbug points to <i>https://bugzilla.mozilla.org/show_bug.cgi?id=%s</i></li>
+<li>shortcut gnulist points to <i>http://lists.gnu.org/mailman/listinfo/%s</i></li>
+<li>shortcut marcmsg points to <i>http://marc.info/?i=%s</i></li>
+<li>shortcut marclist points to <i>http://marc.info/?l=%s</i></li>
+<li>shortcut gmane points to <i>http://dir.gmane.org/gmane.%s</i></li>
+<li>shortcut gmanemsg points to <i>http://mid.gmane.org/%s</i></li>
+<li>shortcut cpan points to <i>http://search.cpan.org/search?mode=dist&amp;query=%s</i></li>
+<li>shortcut ctan points to <i>http://tug.ctan.org/cgi-bin/ctanPackageInformation.py?id=%s</i></li>
+<li>shortcut hoogle points to <i>http://haskell.org/hoogle/?q=%s</i></li>
+<li>shortcut iki points to <i>http://ikiwiki.info/%S/</i></li>
+<li>shortcut ljuser points to <i>http://%s.livejournal.com/</i></li>
+<li>shortcut rfc points to <i>http://www.ietf.org/rfc/rfc%s.txt</i></li>
+<li>shortcut c2 points to <i>http://c2.com/cgi/wiki?%s</i></li>
+<li>shortcut meatballwiki points to <i>http://www.usemod.com/cgi-bin/mb.pl?%s</i></li>
+<li>shortcut emacswiki points to <i>http://www.emacswiki.org/cgi-bin/wiki/%s</i></li>
+<li>shortcut haskellwiki points to <i>http://haskell.org/haskellwiki/%s</i></li>
+<li>shortcut dict points to <i>http://www.dict.org/bin/Dict?Form=Dict1&amp;Strategy=<em>&amp;Database=</em>&amp;Query=%s</i></li>
+<li>shortcut imdb points to <i>http://imdb.com/find?q=%s</i></li>
+<li>shortcut gpg points to <i>http://pgpkeys.mit.edu:11371/pks/lookup?op=vindex&amp;exact=on&amp;search=0x%s</i></li>
+<li>shortcut perldoc points to <i>http://perldoc.perl.org/search.html?q=%s</i></li>
+<li>shortcut whois points to <i>http://reports.internic.net/cgi/whois?whois_nic=%s&amp;type=domain</i></li>
+<li>shortcut cve points to <i>http://cve.mitre.org/cgi-bin/cvename.cgi?name=%s</i></li>
+<li>shortcut cia points to <i>http://cia.vc/stats/project/%s</i></li>
+<li>shortcut ciauser points to <i>http://cia.vc/stats/user/%s</i></li>
+<li>shortcut flickr points to <i>http://www.flickr.com/photos/%s</i></li>
+<li>shortcut man points to <i>http://linux.die.net/man/%s</i></li>
+<li>shortcut ohloh points to <i>http://www.ohloh.net/projects/%s</i></li>
+<li>shortcut cpanrt points to <i>https://rt.cpan.org/Ticket/Display.html?id=%s</i></li>
+<li>shortcut novellbug points to <i>https://bugzilla.novell.com/show_bug.cgi?id=%s</i></li>
+</ul>
+
+<p>To add a new shortcut, use the <code>shortcut</code>
+<a href="../ikiwiki/directive/">directive</a>. In the url, "%s" is replaced with the
+text passed to the named shortcut, after <a href="http://en.wikipedia.org/wiki/url%5Fencoding">url encoding</a>
+it, and '%S' is replaced with the raw, non-encoded text. The optional
+<code>desc</code> parameter controls the description of the link.</p>
+
+<p>Remember that the <code>name</code> you give the shortcut will become a new
+<a href="../ikiwiki/directive/">directive</a>.  Avoid using a <code>name</code> that conflicts
+with an existing directive.  These directives also accept a <code>desc</code>
+parameter that will override the one provided at definition time.</p>
+
+<p>If you come up with a shortcut that you think others might find useful,
+consider contributing it to the <a href="http://ikiwiki.info/shortcuts/">shortcuts page on the ikiwiki
+wiki</a>, so that future versions of
+ikiwiki will include your shortcut in the standard underlay.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+<div id="backlinks">
+Links:
+
+<a href="../ikiwiki/formatting/">ikiwiki/formatting</a>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Fri 02 Apr 2010 03:05:14 PM CDT</span>
+<!-- Created <span class="date">Fri 02 Apr 2010 03:05:14 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

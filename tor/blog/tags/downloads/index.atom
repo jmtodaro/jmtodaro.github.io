@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged downloads</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/downloads/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/downloads/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/downloads/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:15:45Z</updated>
+<entry>
+	<title>February 2011 Progress Report</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/February_2011_Progress_Report/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/February_2011_Progress_Report/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/censosrhip_circumvention" />
+
+	<category term="/tags/downloads" />
+
+	<category term="/tags/improvements" />
+
+	<category term="/tags/incentives" />
+
+	<category term="/tags/progress_report" />
+
+	<category term="/tags/research" />
+
+
+	<updated>2011-04-05T12:15:45Z</updated>
+	<published>2011-03-15T17:11:15Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;strong&gt;New hires&lt;/strong&gt;&lt;br /&gt;
+We contracted Runa Sandvik to work on moving the torouter project forward, &lt;a href=&quot;https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/Torouter&quot; title=&quot;https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/Torouter&quot;&gt;https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/Torouter&lt;/a&gt;, translations, and integration of tor web server log analysis and publication.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;New Releases&lt;/strong&gt;&lt;br /&gt;
+On February 23rd, we released an updated Tor -stable.  Tor 0.2.1.30 fixes a&lt;br /&gt;
+variety of less critical bugs. The main other change is a slight tweak to Tor&#39;s TLS handshake that makes relays and bridges that run this new version reachable from Iran again. We don&#39;t expect this tweak will win the arms race long-term, but it&lt;br /&gt;
+buys us time until we roll out a better solution.  Full announcement at&lt;br /&gt;
+&lt;a href=&quot;https://lists.torproject.org/pipermail/tor-announce/2011-February/000000.html&quot; title=&quot;https://lists.torproject.org/pipermail/tor-announce/2011-February/000000.html&quot;&gt;https://lists.torproject.org/pipermail/tor-announce/2011-February/000000...&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Censorship resistance&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Arm development has stayed relatively on track, with the revised&lt;br /&gt;
+connection panel very nearly achieving parity with its predecessor&lt;br /&gt;
+(and in most respects surpassing it). Most of what remains are&lt;br /&gt;
+refinements and tasty new features. Arm has also been added to Debian&lt;br /&gt;
+(Sid) and Ubuntu (Natty) with backports pending. Many thanks to Peter&lt;br /&gt;
+for his help.&lt;/li&gt;
+&lt;li&gt; Tom spent some time assisting Jacob with a satellite test.  The test wound&lt;br /&gt;
+up breaking due to flaky hardware, however they were able to collect some usable&lt;br /&gt;
+data.&lt;/li&gt;
+&lt;li&gt;Created the trac ticket around hidden service improvements,&lt;br /&gt;
+&lt;a href=&quot;https://trac.torproject.org/projects/tor/ticket/2552&quot; title=&quot;https://trac.torproject.org/projects/tor/ticket/2552&quot;&gt;https://trac.torproject.org/projects/tor/ticket/2552&lt;/a&gt;. We need to focus on&lt;br /&gt;
+improving hidden services and fixing some of the performance and reliability&lt;br /&gt;
+issues within.&lt;/li&gt;
+&lt;li&gt;Mike fixed a bunch of torbutton bugs.  His summary iteration results are&lt;br /&gt;
+at &lt;a href=&quot;https://trac.torproject.org/projects/tor/ticket/2591&quot; title=&quot;https://trac.torproject.org/projects/tor/ticket/2591&quot;&gt;https://trac.torproject.org/projects/tor/ticket/2591&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Mike helped fix the bandwidth authority on salsa that exploded due to a&lt;br /&gt;
+reinstall.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Architecture and Design Docs for better censorship resistance&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Karsten and Sebastian tried to improve the database schema in metrics-db&lt;br /&gt;
+to speed up relay search performance.  Unfortunately, the required updates&lt;br /&gt;
+from the old schema took forever, so we don&#39;t just need a better schema, but&lt;br /&gt;
+also a better migration strategy to go from one schema to the next. &lt;/li&gt;
+&lt;li&gt;Karsten started moving code from metrics-db to metrics-web to make the&lt;br /&gt;
+metrics website a self-contained unit that&#39;s independent of&lt;br /&gt;
+aggregating descriptors.  The idea is that people can take the metrics-web&lt;br /&gt;
+code and improve it or replace it with a better metrics website written in&lt;br /&gt;
+the web language of their choice.&lt;/li&gt;
+&lt;li&gt;Karsten started working on better visualizations of Tor data using the&lt;br /&gt;
+Thematic Mapping API together with Rachel Binx. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Hide Tor&#39;s network signature.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Collaborated with George K on obfsproxy, a generic protocol&lt;br /&gt;
+obfuscator.  It seems to work ok but needs more testing.&lt;/li&gt;
+&lt;li&gt;Nick worked on improving the pluggable-transport design.&lt;/li&gt;
+&lt;li&gt;Jacob did another revision on what is now prop 179,&lt;br /&gt;
+&lt;a href=&quot;https://gitweb.torproject.org/torspec.git/blob/HEAD:/proposals/179-TLS-cert-and-parameter-normalization.txt&quot; title=&quot;https://gitweb.torproject.org/torspec.git/blob/HEAD:/proposals/179-TLS-cert-and-parameter-normalization.txt&quot;&gt;https://gitweb.torproject.org/torspec.git/blob/HEAD:/proposals/179-TLS-c...&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Jacob looked at the EFF SSL data and have some improvements for how we can&lt;br /&gt;
+get better data for future research questions.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Outreach and Advocacy&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Jacob continued working on Egypt related issues.&lt;/li&gt;
+&lt;li&gt;Jacob did a training for people in Bahrain.&lt;/li&gt;
+&lt;li&gt;Tor, the ACLU and the OPC launched our privacy challenge:&lt;br /&gt;
+&lt;a href=&quot;http://www.develop4privacy.org/&quot; title=&quot;http://www.develop4privacy.org/&quot;&gt;http://www.develop4privacy.org/&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Jacob did a bit of looking at the Libyan Internet.&lt;/li&gt;
+&lt;li&gt;Jacob gave the keynote speech at the Ctrl-X-Ethics Workshop in Toronto on&lt;br /&gt;
+ethics of security research.&lt;/li&gt;
+&lt;li&gt;We ran a successful hackfest with the help of MITs Center for Future Civic&lt;br /&gt;
+Media, &lt;a href=&quot;https://blog.torproject.org/blog/tor-open-hackfest-february-19-2011&quot; title=&quot;https://blog.torproject.org/blog/tor-open-hackfest-february-19-2011&quot;&gt;https://blog.torproject.org/blog/tor-open-hackfest-february-19-2011&lt;/a&gt;&lt;br /&gt;
+and the followup at &lt;a href=&quot;https://blog.torproject.org/blog/hackfest-thanks&quot; title=&quot;https://blog.torproject.org/blog/hackfest-thanks&quot;&gt;https://blog.torproject.org/blog/hackfest-thanks&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Roger was the keynote speaker for Workshop on Free and Open Communication&lt;br /&gt;
+on the Internet (FOCI), &lt;a href=&quot;http://www.gtisc.gatech.edu/foci.html&quot; title=&quot;http://www.gtisc.gatech.edu/foci.html&quot;&gt;http://www.gtisc.gatech.edu/foci.html&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Andrew talked to the Wesleyan HFOSS team about Tor and classwork for their&lt;br /&gt;
+Summer 2011 session. &lt;a href=&quot;http://hfoss.org/&quot; title=&quot;http://hfoss.org/&quot;&gt;http://hfoss.org/&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Roger and Steven presented at Financial Crypto and the Workshop on the&lt;br /&gt;
+Ethics of Computer Security Research.&lt;/li&gt;
+&lt;li&gt;Andrew spoke at a few panels under Chatham House Rules.  He published his&lt;br /&gt;
+speech notes as a blog post,&lt;br /&gt;
+&lt;a href=&quot;https://blog.torproject.org/blog/five-minutes-speak&quot; title=&quot;https://blog.torproject.org/blog/five-minutes-speak&quot;&gt;https://blog.torproject.org/blog/five-minutes-speak&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Roger wrote a blog post about using our data archive as input to new&lt;br /&gt;
+safety metrics:&lt;br /&gt;
+&lt;a href=&quot;https://blog.torproject.org/blog/research-problem-measuring-safety-tor-&quot; title=&quot;https://blog.torproject.org/blog/research-problem-measuring-safety-tor-&quot;&gt;https://blog.torproject.org/blog/research-problem-measuring-safety-tor-&lt;/a&gt;&lt;br /&gt;
+network.&lt;/li&gt;
+&lt;li&gt;Roger talked to the Philly FBI for the Philadelphia Infragard chapter&lt;br /&gt;
+about Tor and anonymity online.&lt;/li&gt;
+&lt;li&gt;Roger taught a Tor lecture for Drexel&#39;s security class.&lt;/li&gt;
+&lt;li&gt;Andrew was interviewed by Discovery News about Tor&#39;s role in the unrest in&lt;br /&gt;
+Tunisia and Egypt,&lt;br /&gt;
+&lt;a href=&quot;http://news.discovery.com/tech/egypt-internet-online-protesters-110201.html&quot; title=&quot;http://news.discovery.com/tech/egypt-internet-online-protesters-110201.html&quot;&gt;http://news.discovery.com/tech/egypt-internet-online-protesters-110201.h...&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Andrew was interviewed by the Walpole Times about Tor and what we do,&lt;br /&gt;
+&lt;a href=&quot;http://www.wickedlocal.com/walpole/news/x95296113/Tor-Project-a-Walpole-&quot; title=&quot;http://www.wickedlocal.com/walpole/news/x95296113/Tor-Project-a-Walpole-&quot;&gt;http://www.wickedlocal.com/walpole/news/x95296113/Tor-Project-a-Walpole-&lt;/a&gt;&lt;br /&gt;
+based-company-helps-Egyptians-avoid-Internet-censorship-during-protests. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Preconfigured privacy bundles&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Jacob did some testing of Gibberbot&#39;s Tor and OTR integration. Gibberbot&lt;br /&gt;
+is an XMPP chat client for Android designed to work over Tor.&lt;/li&gt;
+&lt;li&gt;Jacob did a bunch of work on ttdnsd - some important (but not critical)&lt;br /&gt;
+bug fixes and he&#39;s planning on pushing out a release in the future. Jacob and&lt;br /&gt;
+Robert did some work on torsocks integration and in the process hammered out a&lt;br /&gt;
+reasonable torsocks API for people who want to have auto-magically Torified&lt;br /&gt;
+sockets without understanding Tor internals.&lt;/li&gt;
+&lt;li&gt;Jacob worked on OpenWRT packaging issues - as well as other work on the&lt;br /&gt;
+Torouter project.&lt;/li&gt;
+&lt;li&gt;Jacob worked on Tahoe (&lt;a href=&quot;http://tahoe-lafs.org/trac/tahoe-lafs&quot; title=&quot;http://tahoe-lafs.org/trac/tahoe-lafs&quot;&gt;http://tahoe-lafs.org/trac/tahoe-lafs&lt;/a&gt;) and&lt;br /&gt;
+Tor related Hidden Service documentation; after moderate amount of Tor testing&lt;br /&gt;
+with Tahoe now and it seems to be partially functional.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Bridge work&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Karsten prepared a patch for BridgeDB to export bridge pool assignments to&lt;br /&gt;
+a local file.  This patch needs some cleanup before being deployed on&lt;br /&gt;
+BridgeDB.&lt;/li&gt;
+&lt;li&gt;Karsten wrote a first draft of a BridgeDB specification that Nick&lt;br /&gt;
+commented on. The next step is to include Nick&#39;s comments and change the&lt;br /&gt;
+writing style, so that the specification describes what the current BridgeDB&lt;br /&gt;
+code does, not what a generic BridgeDB implemention should do.&lt;/li&gt;
+&lt;li&gt;Karsten extended the bridge descriptor sanitizing algorithm to include IP&lt;br /&gt;
+   address hashes in the sanitized descriptors.  Sanitized all existing&lt;br /&gt;
+   bridge descriptors using this new algorithm.  Instead of 127.0.0.1,&lt;br /&gt;
+   bridges now have 10.x.y.z addresses with x.y.z being stable for a given&lt;br /&gt;
+   bridge fingerprint in a given month.  This allows analyses of how often&lt;br /&gt;
+   bridges change their IP addresses in a given month.&lt;/li&gt;
+&lt;li&gt;Christian deployed a new version of BridgeDB, the one that&#39;s i18n enabled&lt;br /&gt;
+(#1613) and also can dump bridge pool assignments to files. We can now&lt;br /&gt;
+assign an amount of unassigned bridges to someone/something and dump&lt;br /&gt;
+them to file buckets. See #1612 for more infos. In theory, we can now&lt;br /&gt;
+have an amount of Twitter assigned bridges that we pump out over&lt;br /&gt;
+Twitter. &lt;/li&gt;
+&lt;li&gt;Christian also started writing a python script that is able to dump&lt;br /&gt;
+stuff to Twitter.&lt;/li&gt;
+&lt;li&gt;After deployment of the new BridgeDB, some issues came up that were fixed&lt;br /&gt;
+(#2556 and others). It seems to run smoothly now. We&#39;ll be even more&lt;br /&gt;
+happy about it when we have important (read: Chinese and Farsi)&lt;br /&gt;
+translations ready and deployed.&lt;/li&gt;
+&lt;li&gt;Christian and Karsten discussed about whether his planned &quot;dump bridge&lt;br /&gt;
+pool&lt;br /&gt;
+assignments to files&quot; feature can use the bucket mechanism of #1612.&lt;br /&gt;
+Turns out it can&#39;t since both have a different set of goals and would&lt;br /&gt;
+be to painful to sync with every change.&lt;/li&gt;
+&lt;li&gt;Mike helped Karsten with improving the output of Torperf for future&lt;br /&gt;
+experiments involving circuit build timeouts.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Scalability&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Improved Torperf and finally deployed it to collect data about used&lt;br /&gt;
+   paths and to measure performance with custom guard node selections.&lt;br /&gt;
+   This is still work in progress together with Mike and Tom as part of&lt;br /&gt;
+   our first Scrum iteration that ends on March 5.&lt;/li&gt;
+&lt;li&gt;Worked on Florian&#39;s and Björn&#39;s token bucket patch some more together&lt;br /&gt;
+   with Sebastian.  The current state of the patch is that it needs some&lt;br /&gt;
+   more love before it can be merged into 0.2.3.x.&lt;/li&gt;
+&lt;li&gt;Nick collaborated a little with two volunteers on what we&lt;br /&gt;
+think at this point must be the 5th generation of a &quot;launch a private&lt;br /&gt;
+network&quot; tool.  This one is called &quot;chutney&quot;. &lt;/li&gt;
+&lt;li&gt;Nick reviewed a bunch of patches, reviewed a bunch of bugs, fixed a&lt;br /&gt;
+bunch of bugs, merged many people&#39;s code, got 0.2.2.x closer to done.&lt;/li&gt;
+&lt;li&gt;Sebastian wrote a proposal for a safer voting process for consensus&lt;br /&gt;
+parameters, and wrote an implementation for it.&lt;br /&gt;
+&lt;a href=&quot;https://gitweb.torproject.org/torspec.git/blob/HEAD:/proposals/178-param-&quot; title=&quot;https://gitweb.torproject.org/torspec.git/blob/HEAD:/proposals/178-param-&quot;&gt;https://gitweb.torproject.org/torspec.git/blob/HEAD:/proposals/178-param...&lt;/a&gt;&lt;br /&gt;
+voting.txt&lt;/li&gt;
+&lt;li&gt;Damian started thinking about our various projects in a more streamlined&lt;br /&gt;
+and easy-to-understand way.  The results are at&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/getinvolved/volunteer.html.en#Projects&quot; title=&quot;https://www.torproject.org/getinvolved/volunteer.html.en#Projects&quot;&gt;https://www.torproject.org/getinvolved/volunteer.html.en#Projects&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Incentives&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Christian cleaned up the rather hackish installation of Weather on bahri.&lt;br /&gt;
+The stable installation now lives under `/home/weather/opt/current&#39; and actually&lt;br /&gt;
+is update-able through `git pull&#39;. There&#39;s also a testing installation to test&lt;br /&gt;
+stuff and play around at &lt;a href=&quot;https://weather2.torproject.org/&quot; title=&quot;https://weather2.torproject.org/&quot;&gt;https://weather2.torproject.org/&lt;/a&gt;. He&#39;s tried to&lt;br /&gt;
+update the documentation with all the stuff that is necessary to install and run&lt;br /&gt;
+Weather.&lt;/li&gt;
+&lt;li&gt;Christian tried looking into #2467. Some people complained that Weather&lt;br /&gt;
+didn&#39;t know their relay fingerprint. On Sebastian&#39;s and Mike&#39;s idea, Christian&lt;br /&gt;
+changed the torrc to include `FetchDirInfoEarly 1&#39; and `FetchUselessDescriptors&lt;br /&gt;
+1&#39;. Since that no one complained again about Weather not knowing a certain relay&lt;br /&gt;
+(except for one time, when the Weather process had silently crashed and&lt;br /&gt;
+therefore the database wasn&#39;t updated for a day). &lt;/li&gt;
+&lt;li&gt;After Tor 0.2.1.30 was tagged and made it to the recommended versions&#39;,&lt;br /&gt;
+people running 0.2.1.29 started complaining about getting &quot;Node out of date!&quot;&lt;br /&gt;
+emails from Weather. It turned out that Weather was actually doing the right&lt;br /&gt;
+thing, namely mailing them that they were not running the latest recommended&lt;br /&gt;
+stable version anymore. No one seemed to have read the text near the checkbox in&lt;br /&gt;
+the signup process. After discussing this intensely with Sebastian, we decided&lt;br /&gt;
+to go for a more simple solution: People now get email when they don&#39;t run one&lt;br /&gt;
+of the recommended versions or a more recent dev version of Tor.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;More reliable downloads&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Christian did a rather large GetTor overhaul. The way GetTor manages its&lt;br /&gt;
+packages is now much easier to understand and enhance. GetTor moved from a&lt;br /&gt;
+ini-style configuration file and parser to a more BridgeDB-like configuration&lt;br /&gt;
+management.  Also, packages are now configured rather than hard coded. In&lt;br /&gt;
+addition, he cleaned up the i18n management of GetTor to something similar to&lt;br /&gt;
+what we use in BridgeDB. Not only are the translation strings cleaner now, but&lt;br /&gt;
+the translation and installation is smoother. Also, the logging was simplified&lt;br /&gt;
+because it had too many features that no one used and generally was polluting&lt;br /&gt;
+the log file with too much useless information. Furthermore, the MakeStat.py&lt;br /&gt;
+script that&lt;br /&gt;
+creates GetTor&#39;s package statistics was simplified a lot.&lt;/li&gt;
+&lt;li&gt;Christian fixed #1586, users requesting non-existent split packages now&lt;br /&gt;
+are informed about that fact.&lt;/li&gt;
+&lt;li&gt;Nick worked on a thandy packaging spec with Erinn.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Translations&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Sebastian Started figuring out a way how translations can be pulled from&lt;br /&gt;
+transifex and used in their respective products in a more automated&lt;br /&gt;
+fashion.&lt;/li&gt;
+&lt;li&gt;New or updated website translations in French, Russian, Italian, Japanese,&lt;br /&gt;
+Spanish, Mandarin Chinese, and Greek.&lt;/li&gt;
+&lt;/ul&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/February_2011_Progress_Report/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/February_2011_Progress_Report/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Our three-year development roadmap is published</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/downloads" />
+
+	<category term="/tags/file_verification" />
+
+	<category term="/tags/hashes" />
+
+	<category term="/tags/sha-1" />
+
+
+	<updated>2011-04-05T11:16:14Z</updated>
+	<published>2008-12-19T13:11:53Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;We&#39;ve published our &lt;a href=&quot;https://svn.torproject.org/svn/tor/trunk/doc/roadmaps/2008-12-19-roadmap-full.pdf&quot; rel=&quot;nofollow&quot;&gt;three-year development roadmap&lt;/a&gt;.  There are two main goals in publishing this document: first to be more transparent in what we&#39;re doing; and second to ask for help in improving everything related to Tor.  &lt;/p&gt;
+
+&lt;p&gt;While we don&#39;t expect everyone will read through the roadmap start to finish, the Table of Contents provides a quick overview of the high-level goals.  Each high-level goal is fairly independent of another, so you can simply read about the goals that interest you.&lt;/p&gt;
+
+&lt;p&gt;And for the first time ever, we&#39;ve created a &lt;a href=&quot;https://www.torproject.org/press/2008-12-19-roadmap-press-release.html.en&quot; rel=&quot;nofollow&quot;&gt;press release&lt;/a&gt;.  This is our attempt to become more press friendly and provide a way for the media to start a conversation with us.  &lt;/p&gt;
+
+&lt;p&gt;We welcome your comments and feedback!&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Our_three-year_development_roadmap_is_published/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

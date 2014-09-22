@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged stable_release</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/stable_release/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/stable_release/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/stable_release/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:11:23Z</updated>
+<entry>
+	<title>Tor 0.2.1.27 is released.</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_27_is_released_/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_27_is_released_/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/directory_authorities" />
+
+	<category term="/tags/minor_features" />
+
+	<category term="/tags/openssl_fixes" />
+
+	<category term="/tags/stable_release" />
+
+
+	<updated>2011-04-05T12:11:23Z</updated>
+	<published>2010-11-26T13:45:31Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor 0.2.1.27 makes relays work with OpenSSL 0.9.8p and 1.0.0.b --yet another OpenSSL security patch broke its compatibility with Tor. We also took this opportunity to fix several crash bugs, integrate a new directory authority, and update the bundled GeoIP database.&lt;/p&gt;
+
+&lt;p&gt;If you operate a relay, please upgrade.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download/download&quot; title=&quot;https://www.torproject.org/download/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download/download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The original release announcement is at&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/announce/Nov-2010/msg00000.html&quot; title=&quot;http://archives.seul.org/or/announce/Nov-2010/msg00000.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/announce/Nov-2010/msg00000.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.27 - 2010-11-23&lt;br /&gt;
+&lt;strong&gt;Major bugfixes:&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02127-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Resolve an incompatibility with OpenSSL 0.9.8p and OpenSSL 1.0.0b: No longer set the tlsext_host_name extension on server SSL objects; but continue to set it on client SSL objects. Our goal in setting&lt;br /&gt;
+it was to imitate a browser, not a vhosting server. Fixes bug 2204; bugfix on 0.2.1.1-alpha.&lt;/li&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_27_is_released_/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_27_is_released_/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor 0.2.1.26-stable released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_26-stable_released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_26-stable_released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/connection_overload" />
+
+	<category term="/tags/stable_release" />
+
+	<category term="/tags/test_suite_fixes" />
+
+	<category term="/tags/v3_directories" />
+
+
+	<updated>2011-04-05T12:00:00Z</updated>
+	<published>2010-06-10T03:18:21Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor 0.2.1.26 addresses the recent connection and memory overload problems we&#39;ve been seeing on relays, especially relays with their DirPort open. If your relay has been crashing, or you turned it off because it used too many resources, give this release a try.&lt;/p&gt;
+
+&lt;p&gt;This release also fixes yet another instance of broken OpenSSL libraries that was causing some relays to drop out of the consensus.&lt;/p&gt;
+
+&lt;p&gt;Available for download at &lt;a href=&quot;https://www.torproject.org/easy-download&quot; title=&quot;https://www.torproject.org/easy-download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/easy-download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.26&lt;br /&gt;
+&lt;strong&gt;Major bugfixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Teach relays to defend themselves from connection overload. Relays&lt;br /&gt;
+      now close idle circuits early if it looks like they were intended&lt;br /&gt;
+      for directory fetches. Relays are also more aggressive about closing&lt;br /&gt;
+      TLS connections that have no circuits on them. Such circuits are&lt;br /&gt;
+      unlikely to be re-used, and tens of thousands of them were piling&lt;br /&gt;
+      up at the fast relays, causing the relays to run out of sockets &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02126-stable-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_26-stable_released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_26-stable_released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Vidalia 0.2.9 Released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/stable_release" />
+
+	<category term="/tags/vidalia_release" />
+
+
+	<updated>2011-04-05T11:57:55Z</updated>
+	<published>2010-05-27T03:05:19Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;On May 20, we released Vidalia 0.2.9.  Fixes include Qt 4.6.2 compatibility, new cert, and some new translations.&lt;/p&gt;
+
+&lt;p&gt;You can download it at &lt;a href=&quot;https://www.torproject.org/vidalia/&quot; title=&quot;https://www.torproject.org/vidalia/&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/vidalia/&lt;/a&gt;.  Packages are slowly being updated to include this version of Vidalia.  &lt;/p&gt;
+
+&lt;p&gt;The full changelog is: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/vidalia-029-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Remove the GoDaddy CA certificate bundle since we changed the    certificate used to authenticate connections to geoips.vidalia-project.net for downloading GeoIP information from a commercial GoDaddy certificate to a free CACert certificate.&lt;/li&gt;
+&lt;li&gt;Define -D_WIN32_WINNT=0x0501 on Windows builds so that MiniUPnPc will build with the latest versions of MinGW.&lt;/li&gt;
+&lt;li&gt;Modify miniupnpc.c from MiniUPnPc&#39;s source so that it will build on    Mac OS X 10.4.&lt;/li&gt;
+&lt;li&gt;Work around Qt&#39;s new behavior for the QT_WA macro so that Vidalia will&lt;br /&gt;
+    work correctly again on Windows with Qt &amp;gt;= 4.6.&lt;/li&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_9_Released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>New Stable Version 0.2.1.24 released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/New_Stable_Version_0_2_1_24_released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/New_Stable_Version_0_2_1_24_released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/apple_osx_love" />
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/enhancements" />
+
+	<category term="/tags/performance_enhancements" />
+
+	<category term="/tags/stable_release" />
+
+	<category term="/tags/tor_update" />
+
+
+	<updated>2011-04-05T11:50:51Z</updated>
+	<published>2010-03-03T20:14:34Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor 0.2.1.23 fixes a huge client-side performance bug, makes Tor work again on the latest OS X, and updates the location of a directory authority.&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.1.24 makes Tor work again on the latest OS X -- this time for sure!&lt;/p&gt;
+
+&lt;p&gt;The Windows and OS X bundles also come with a newer version of Polipo that fixes some stability and security problems.&lt;/p&gt;
+
+&lt;p&gt;People using Tor as a client should upgrade:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/easy-download&quot; title=&quot;https://www.torproject.org/easy-download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/easy-download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.23 - 2010-02-13&lt;br /&gt;
+&lt;strong&gt;Major bugfixes (performance):&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/new-stable-version-02124-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;We were selecting our guards uniformly at random, and then weighting which of our guards we&#39;d use uniformly at random. This imbalance meant that Tor clients were severely limited on throughput (and probably latency too) by the first hop in their circuit. Now we select guards weighted by currently advertised bandwidth. We also automatically discard guards picked using the old algorithm. Fixes bug 1217; bugfix on 0.2.1.3-alpha. Found by Mike Perry.&lt;/li&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/New_Stable_Version_0_2_1_24_released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/New_Stable_Version_0_2_1_24_released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor 0.2.1.22 Released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/performance_enhancements" />
+
+	<category term="/tags/security_critical" />
+
+	<category term="/tags/security_fixes" />
+
+	<category term="/tags/stable_release" />
+
+
+	<updated>2011-04-05T11:48:15Z</updated>
+	<published>2010-01-23T12:46:20Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor 0.2.1.22 rotates two of the seven v3 directory authority keys and&lt;br /&gt;
+locations, due to a security breach of some of the Torproject servers:&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Jan-2010/msg00161.html&quot; title=&quot;http://archives.seul.org/or/talk/Jan-2010/msg00161.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Jan-2010/msg00161.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It also fixes a privacy problem in bridge directory authorities -- it&lt;br /&gt;
+would tell you its whole history of bridge descriptors if you make the&lt;br /&gt;
+right directory request.&lt;/p&gt;
+
+&lt;p&gt;Everybody should upgrade:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/easy-download&quot; title=&quot;https://www.torproject.org/easy-download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/easy-download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.22 - 2010-01-19&lt;br /&gt;
+  o Directory authority changes:&lt;br /&gt;
+    - Rotate keys (both v3 identity and relay identity) for moria1&lt;br /&gt;
+      and gabelmoo.&lt;/p&gt;
+
+&lt;p&gt;  o Major bugfixes:&lt;br /&gt;
+    - Stop bridge directory authorities from answering dbg-stability.txt&lt;br /&gt;
+      directory queries, which would let people fetch a list of all&lt;br /&gt;
+      bridge identities they track. Bugfix on 0.2.1.6-alpha.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor Project infrastructure updates</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/alpha_release" />
+
+	<category term="/tags/security_updates" />
+
+	<category term="/tags/stable_release" />
+
+	<category term="/tags/tor" />
+
+
+	<updated>2011-04-05T11:47:35Z</updated>
+	<published>2010-01-22T15:51:45Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;You should upgrade to Tor 0.2.1.22 or 0.2.2.7-alpha:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/easy-download.html.en&quot; title=&quot;https://www.torproject.org/easy-download.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/easy-download.html.en&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In early January we discovered that two of the seven servers that run directory&lt;br /&gt;
+authorities were compromised (moria1 and gabelmoo), along with&lt;br /&gt;
+metrics.torproject.org, a new server we&#39;d recently set up to serve&lt;br /&gt;
+metrics data and graphs. The three servers have since been reinstalled&lt;br /&gt;
+with service migrated to other servers.&lt;/p&gt;
+
+&lt;p&gt;We made fresh identity keys for the two directory authorities, which is&lt;br /&gt;
+why you need to upgrade.&lt;/p&gt;
+
+&lt;p&gt;Moria also hosted our git repository and svn repository. We took the&lt;br /&gt;
+services offline as soon as we learned of the breach. It appears the&lt;br /&gt;
+attackers didn&#39;t realize what they broke into -- just that they had&lt;br /&gt;
+found some servers with lots of bandwidth. The attackers set up some ssh&lt;br /&gt;
+keys and proceeded to use the three servers for launching other attacks.&lt;br /&gt;
+We&#39;ve done some preliminary comparisons, and it looks like git and svn&lt;br /&gt;
+were not touched in any way. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-project-infrastructure-updates&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>New Stable released, Tor 0.2.1.21</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/New_Stable_released_Tor_0_2_1_21/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/New_Stable_released_Tor_0_2_1_21/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/exit_relays" />
+
+	<category term="/tags/openssl_fixes" />
+
+	<category term="/tags/stable_release" />
+
+
+	<updated>2011-04-05T11:45:14Z</updated>
+	<published>2009-12-30T14:21:46Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor 0.2.1.21 fixes an incompatibility with the most recent OpenSSL&lt;br /&gt;
+library. If you use Tor on Linux / Unix and you&#39;re getting SSL&lt;br /&gt;
+renegotiation errors, upgrading should help. We also recommend an&lt;br /&gt;
+upgrade if you&#39;re an exit relay.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/easy-download&quot; title=&quot;https://www.torproject.org/easy-download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/easy-download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.21 - 2009-12-21&lt;br /&gt;
+&lt;strong&gt;Major bugfixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt; Work around a security feature in OpenSSL 0.9.8l that prevents our&lt;br /&gt;
+      handshake from working unless we explicitly tell OpenSSL that we&lt;br /&gt;
+      are using SSL renegotiation safely. We are, of course, but OpenSSL&lt;br /&gt;
+      0.9.8l won&#39;t work unless we say we are.&lt;/li&gt;
+&lt;li&gt; Avoid crashing if the client is trying to upload many bytes and the&lt;br /&gt;
+      circuit gets torn down at the same time, or if the flip side&lt;br /&gt;
+      happens on the exit relay. Bugfix on 0.2.0.1-alpha; fixes bug 1150.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Minor bugfixes:&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/new-stable-released-tor-02121&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt; Do not refuse to learn about authority certs and v2 networkstatus&lt;br /&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/New_Stable_released_Tor_0_2_1_21/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/New_Stable_released_Tor_0_2_1_21/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor 0.2.1.18 and 0.2.1.19 released as stable</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_18_and_0_2_1_19_released_as_stable/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_18_and_0_2_1_19_released_as_stable/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/anonymity_fixes" />
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/deprecated_features" />
+
+	<category term="/tags/feature_enhancements" />
+
+	<category term="/tags/stable_release" />
+
+
+	<updated>2011-04-05T11:31:51Z</updated>
+	<published>2009-08-06T06:44:33Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor 0.2.1.18 lays the foundations for performance improvements, adds&lt;br /&gt;
+status events to help users diagnose bootstrap problems, adds optional&lt;br /&gt;
+authentication/authorization for hidden services, fixes a variety of&lt;br /&gt;
+potential anonymity problems, and includes a huge pile of other features&lt;br /&gt;
+and bug fixes.&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.1.19 fixes a major bug with accessing and providing hidden&lt;br /&gt;
+services.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/easy-download&quot; title=&quot;https://www.torproject.org/easy-download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/easy-download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.19 - 2009-07-28&lt;br /&gt;
+&lt;strong&gt;Major bugfixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;    Make accessing hidden services on 0.2.1.x work right again.&lt;br /&gt;
+      Bugfix on 0.2.1.3-alpha; workaround for bug 1038. Diagnosis and&lt;br /&gt;
+      part of patch provided by &quot;optimist&quot;.
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Minor features:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;    When a relay/bridge is writing out its identity key fingerprint to&lt;br /&gt;
+      the &quot;fingerprint&quot; file and to its logs, write it without spaces. Now&lt;br /&gt;
+      it will look like the fingerprints in our bridges documentation, &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02118-and-02119-released-stable&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_18_and_0_2_1_19_released_as_stable/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_18_and_0_2_1_19_released_as_stable/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor 0.2.0.35-stable bundles updated</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_bundles_updated/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_bundles_updated/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/stable_release" />
+
+	<category term="/tags/vidalia_release" />
+
+
+	<updated>2011-04-05T11:30:22Z</updated>
+	<published>2009-07-13T01:35:00Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Updated Vidalia-bundle packages with Tor 0.2.0.35 are released.  The only thing that&#39;s changed is the update of Vidalia from 0.1.14 to 0.1.15.  You can retrieve the updated packages from &lt;a href=&quot;https://www.torproject.org/easy-download&quot; title=&quot;https://www.torproject.org/easy-download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/easy-download&lt;/a&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_bundles_updated/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_bundles_updated/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Tor 0.2.0.35-stable released</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/bug_fixes" />
+
+	<category term="/tags/hidden_service_fixes" />
+
+	<category term="/tags/stable_release" />
+
+
+	<updated>2011-04-05T11:29:18Z</updated>
+	<published>2009-06-26T00:34:49Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor 0.2.0.35 fixes a big bug that was causing Tor relays with dynamic&lt;br /&gt;
+IP addresses to disappear from the network. It also fixes a rare crash&lt;br /&gt;
+bug on fast exit relays.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/easy-download&quot; title=&quot;https://www.torproject.org/easy-download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/easy-download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.0.35 - 2009-06-24&lt;br /&gt;
+&lt;strong&gt;Security fix:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Avoid crashing in the presence of certain malformed descriptors.&lt;br /&gt;
+      Found by lark, and by automated fuzzing.&lt;/li&gt;
+&lt;li&gt;Fix an edge case where a malicious exit relay could convince a&lt;br /&gt;
+      controller that the client&#39;s DNS question resolves to an internal IP&lt;br /&gt;
+      address. Bug found and fixed by &quot;optimist&quot;; bugfix on 0.1.2.8-beta.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Major bugfixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Finally fix the bug where dynamic-IP relays disappear when their&lt;br /&gt;
+      IP address changes: directory mirrors were mistakenly telling&lt;br /&gt;
+      them their old address if they asked via begin_dir, so they&lt;br /&gt;
+      never got an accurate answer about their new address, so they &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02035stable-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

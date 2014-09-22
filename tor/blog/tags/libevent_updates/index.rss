@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged libevent_updates</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/libevent_updates/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Tor Browser Bundle 1.2.10 Released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_10_Released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_10_Released/</link>
+
+
+	<category>/tags/bridges</category>
+
+	<category>/tags/libevent_updates</category>
+
+	<category>/tags/openssl_fixes</category>
+
+	<category>/tags/tor_browser_bundle</category>
+
+	<category>/tags/vidalia_updates</category>
+
+
+	<pubDate>Fri, 20 Nov 2009 22:43:26 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:42:40Z</dcterms:modified>
+
+	<description>&lt;p&gt;On November 20, we released an updated Tor Browser Bundle, version 1.2.10, which includes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt; updated Vidalia to 0.2.6&lt;/li&gt;
+&lt;li&gt; updated Pidgin to 2.6.3&lt;/li&gt;
+&lt;li&gt; updated Tor to 0.2.1.20&lt;/li&gt;
+&lt;li&gt; updated Firefox to 3.0.15&lt;/li&gt;
+&lt;li&gt; updated OpenSSL to 0.9.8l&lt;/li&gt;
+&lt;li&gt; updated libevent to 1.4.13&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can download the updated version at &lt;a href=&quot;https://www.torproject.org/torbrowser/&quot; title=&quot;https://www.torproject.org/torbrowser/&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/torbrowser/&lt;/a&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_10_Released/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Tor Browser Bundle 1.2.7 Released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/</link>
+
+
+	<category>/tags/firefox_updates</category>
+
+	<category>/tags/libevent_updates</category>
+
+	<category>/tags/tor_browser_bundle</category>
+
+
+	<pubDate>Thu, 06 Aug 2009 10:12:42 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:49Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor Browser Bundle 1.2.7 is released.  It is updated primarily due to Firefox 3.0.13 with its ssl fixes.&lt;/p&gt;
+
+&lt;p&gt;The full changelist is:&lt;/p&gt;
+
+&lt;p&gt;1.2.7: Released 2009-08-04&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;update Firefox to 3.0.13&lt;/li&gt;
+&lt;li&gt;add Polish translation&lt;/li&gt;
+&lt;li&gt;update libevent to 1.4.12&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

@@ -1,0 +1,1639 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tor 0.2.2.14-alpha released</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_2_14-alpha_released&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Tor 0.2.2.14-alpha released</a>
+
+</span>
+
+
+<div id="content">
+<p>Tor 0.2.2.14-alpha greatly improves client-side handling of circuit build<br />
+timeouts, which are used to estimate speed and improve performance. We<br />
+also move to a much better GeoIP database, port Tor to Windows CE,<br />
+introduce new compile flags that improve code security, add an eighth<br />
+v3 directory authority, and address a lot of more minor issues.</p>
+
+<p><a href="https://www.torproject.org/download" title="https://www.torproject.org/download" rel="nofollow">https://www.torproject.org/download</a></p>
+
+<p>Packages will be appearing over the next few days or weeks. (We've decided<br />
+to start announcing alpha versions when they're released, rather than<br />
+waiting for all the packages first.)</p>
+
+<p>Changes in version 0.2.2.14-alpha - 2010-07-12<br />
+  o Major bugfixes:<br />
+    - Tor directory authorities no longer crash when started with a<br />
+      cached-microdesc-consensus file in their data directory. Bugfix<br />
+      on 0.2.2.6-alpha; fixes bug 1532.<br />
+    - Treat an unset $HOME like an empty $HOME rather than triggering an<br />
+      assert. Bugfix on 0.0.8pre1; fixes bug 1522. <span class="read-more"><a href="http://blog.torproject.org/blog/tor-02214-alpha-released"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/alpha_release/" rel="tag">alpha release</a>
+
+<a href="../../tags/directory_authority/" rel="tag">directory authority</a>
+
+<a href="../../tags/geoip/" rel="tag">geoip</a>
+
+<a href="../../tags/performance_improvements/" rel="tag">performance improvements</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-40db7771106426885f59fdc4a7fcdf90">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>Will it become easier to install on ubuntu linux?</p>
+
+<p>Install on Windows: 1 step<br />
+Install on Linux: 10+ steps, manually edit text files, run commands at the shell, and no install instructions for making it work with Vidalia.</p>
+
+<p>Why is it so much harder to setup and use on Linux, when it's literally one step on Windows?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 19 Jul 2010 07:05:13 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-24b38fc772ed48fdc9df6d569f83cbd1">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>Linux assumes people know how their OS works.  You can download the individual deb files and simply install them without all of the other steps.</p>
+
+<p>You don't have to manually edit anything to use deb.torproject.org repositories.  Windows doesn't have a concept of repositories of software, therefore everything has to be self-contained.</p>
+
+<p>Do you have examples of non-Ubuntu projects that have 1 step installs with a repository?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 19 Jul 2010 07:05:14 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bf28a84bda8196fc2bc0d5218bcae290">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi!!!!!!!!!!!!!!!</p>
+
+<p>You may want to watch my videoclip about using FactorBee in Linux!!!!!!!!!!!</p>
+
+<p>http://honeybeenet.altervista.org/factorbee/?id=112100</p>
+
+<p>If you only need a Tor client to surf the Net, it's easy to use Tor in Linux, with my browser bundle, factorbee!!!!!!!!! Also the TorProject has made a Tor Browser Bundle for Linux!!!!!!! You may want to look at both, and decide which one is the best for you!!!!!!!!!</p>
+
+<p>The only <em>extra</em> software factorbee requires, though it's not mandatory to have, is EncFS!!! (apt-get install encfs) If you install it, it'll avoid unencrypted files writings on the disk!!!! although it's not even needed if you tell factorbee to run from the RAM and disable swap files!!!!!!! (like it's showed in the video!!!!!!!!!!)</p>
+
+<p>~bee!!!!!!!!!!!!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 19 Jul 2010 07:05:15 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-709060ac901b49766cf665c19aaac23a">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+You sure like exclamation marks, don't you?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 24 Jul 2010 07:05:16 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-94f5bcb4a2af4ee06b8ebf30329cff33">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+I have an idea of a way to securely speed up the fetching of sites on the internet, I would advise keeping the current  method for .onion sites, just because those aren't usually high powered servers that can handle a whole bunch of connections, but I want to know where should I sent the idea to? Using my method even cookies get securely to the same place to be able to use any site on the internet effectively, even while still using tor.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 19 Jul 2010 07:05:17 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-71067bb5e10843a6a910d7b89484ec7b">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+Can you say bye bye
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 19 Jul 2010 07:05:18 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-cb70e84e1aa997062627bcda5f9284b3">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+In China, tor GFW has been completely blocked, the latest bridge can not connect.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 19 Jul 2010 07:05:19 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-dc8c94daaf0a39b52ddb606610de3613">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+In China, tor GFW has been completely blocked, the latest bridge can not connect.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 19 Jul 2010 07:05:20 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-68abf2029a1a8f983c40187a3c1326cc">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+<p>It's not likely the truth!<br />
+In China, it's not easy to connect (for first time user or not-frequent-user) but it CAN connect to tor network actually.<br />
+See http://cnzhx.net/blog/articles/summary-on-being-unable-to-connect-to-tor...</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 23 Jul 2010 07:05:21 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0a83c24b02595fb597fd5cc4551ff184">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+no,mr. anonymous,it took me for almost a week to connect.i donnot know when the vidalia turn yellow again when i start my computer one day......
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 29 Jul 2010 07:05:22 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-753c934d3fa53aa4985fd210273d9950">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+<p>Download broken links?</p>
+
+<p>I'm browsing from Sao Paulo, downloading always gets a broken link, possibly few people here are downloading...</p>
+
+<p>Download page lands here -<br />
+http://www.torproject.org/download.html.pt</p>
+
+<p>Download link it gives is this -<br />
+http://www.torproject.org/torbrowser/dist/tor-browser-1.3.7_pt-BR.exe</p>
+
+<p>Browsing in http://www.torproject.org/torbrowser/dist/<br />
+There just seems to be no version for pt_BR in the directory. </p>
+
+<p>I'm starting to do some outreach here in Brazil about Tor, to raise questions, there is intense debate on a whole new Internet legislation here. Anonymity and the privacy-rights vs investigation-ability question, of course, is a big deal. </p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 20 Jul 2010 07:05:23 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-019233eb781dfb9e5d74a141508255d5">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+<p>There is no pt_BR, just a pt_PT, <a href="https://www.torproject.org/torbrowser/index.html.en" title="https://www.torproject.org/torbrowser/index.html.en" rel="nofollow">https://www.torproject.org/torbrowser/index.html.en</a> linked from that page.</p>
+
+<p>Whomever translated the download.html.pt page did it wrong.  I'll figure out how to fix it.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 30 Jul 2010 07:05:24 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-14fb8f5c69e69242ba616b07fa432ab5">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+<p>We modified the code of previous versions to introduce management of circuit build times and this was the key advantage of Tor - Black Belt Edition.</p>
+
+<p>We have looked at the code again and made the current management of timeouts more aggressive to get a little bit more performance out of it.</p>
+
+<p>You can pick up a copy, with changes to source code included (for scrutiny) here:<br />
+http://www.kickasstorrents.com/tor-black-belt-edition-2010-08-aug-2010-r...</p>
+
+<p>Be patient, we are seeding from a single server which is not up 24x7</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 20 Jul 2010 07:05:25 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-522e2fc4da7d5d88fa6566087af2a6b4">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi, before 0.2.2.14 was released we were modifying the code and adding circuitBuildTimeout management ourselves.</p>
+
+<p>It can be still be made more aggressive, which is what Tor - Black Belt Edition is about.</p>
+
+<p>We have included source code mods with the distro.</p>
+
+<p>You can pick up a copy here:http://www.kickasstorrents.com/tor-black-belt-edition-2010-08-aug-2010-release-t4249884.html</p>
+
+<p>This server is not 24x7, so please be patient with the torrent.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 20 Jul 2010 07:05:26 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f9c1c9e6ebd78e1eda5250552d2f10ec">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+<p>Why won't you let it run flash, shockwave etc? You can't do anything including playing videos. <img src="../../smileys/sad.png" alt=":(" /><br />
+email me answer: thetorious@yahoo.com</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 21 Jul 2010 07:05:27 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c6a19e30f677bb69d2b435d6544d033b">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+See <a href="https://www.torproject.org/torbutton/faq.html.en#noflash" title="https://www.torproject.org/torbutton/faq.html.en#noflash" rel="nofollow">https://www.torproject.org/torbutton/faq.html.en#noflash</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 21 Jul 2010 07:05:28 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-79554cbbe28acfb16e5854b565b5b575">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+<p>hi ive got a question about the version of firefox that is included with the tor bundle, it always seems to be wayy out of date, lots of firefox vulnerabilities have been found and patched since the version thats included in the bundle was released, but the version in tor bundle lags way behind and hence is extremely insecure...</p>
+
+<p>what im curious about is it ok to update the version of firefox that is bundled with Tor without having to wait for the official Tor bundle update release? for instance sometimes i get a popup message from the Tor bundle version of firefox saying an update is available, but im worried if i update to it, it might end up breaking something.. could someone please advise? cheers...</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 21 Jul 2010 07:05:29 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ff95b0792ab31b6ded4154067e5ad040">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+<p>Please define "way out of date".  Firefox 3.5.10 is in the tor browser bundle.  3.5.11 was released 1 day ago.  </p>
+
+<p>You're welcome to update firefox or build your own bundle.  We customize the prefs.js to set many anonymity-reducing settings, see  <a href="https://svn.torproject.org/svn/torbrowser/trunk/build-scripts/config/prefs.js" title="https://svn.torproject.org/svn/torbrowser/trunk/build-scripts/config/prefs.js" rel="nofollow">https://svn.torproject.org/svn/torbrowser/trunk/build-scripts/config/pre...</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 22 Jul 2010 07:05:30 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9e1c1cd2473429af29d5790f11c807d5">
+
+<div class="comment-subject">
+
+Comment 19
+
+</div>
+
+<div class="inlinecontent">
+<p>are you saying its ok to use the auto update mechanism and it wont break anything with regards to Tor?</p>
+
+<p>i think its an important issue as we do not know who the people running the exit nodes are, and hence cant trust them, so its important to have a fully patched browser at all times, but will having the latest patched browser destroy the anonymising features built into the bundled version?</p>
+
+<p>are you saying that the only customisations of the tor bundled firefox are in the prefs.js file? and if so i guess that means its ok to autoupdate firefox? am i correct in that assumption?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 23 Jul 2010 07:05:31 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c248bb49a15b913625d8e71a75b4af39">
+
+<div class="comment-subject">
+
+Comment 20
+
+</div>
+
+<div class="inlinecontent">
+<p>The auto-update runs over ssl over tor.  Very few exit nodes are found to modify traffic, and when they are we block them from the network.</p>
+
+<p>You should not trust the tor network, this is by design.  You shouldn't assume your isp, internet provider, or destination sites are any more trustworthy.</p>
+
+<p>The firefox in the TBB is the portable firefox from portableapps.com, and customized with prefs.js and other files at <a href="https://svn.torproject.org/svn/torbrowser/trunk/" title="https://svn.torproject.org/svn/torbrowser/trunk/" rel="nofollow">https://svn.torproject.org/svn/torbrowser/trunk/</a>.  The whole process is clearly documented.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 24 Jul 2010 07:05:32 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-30b0e976ddeb1c3631fa92e484cded09">
+
+<div class="comment-subject">
+
+Comment 21
+
+</div>
+
+<div class="inlinecontent">
+also with regard to my statement about way out of date, the current latest version of FF i am using is 3.6.7, i do not understand how 3.5.11 can be the latest... slightly confused...
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 23 Jul 2010 07:05:33 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-772e2eda7ded43d59720be55938a74e3">
+
+<div class="comment-subject">
+
+Comment 22
+
+</div>
+
+<div class="inlinecontent">
+Firefox has at least two active branches.  We stick with the 3.5 branch because the code changes in 3.6 have not be fully analyzed for anonymity and privacy leaks.  We believe torbutton is safe to use witih 3.6, but TBB is conservative and sticks with the fully analyzed 3.5 branch.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 24 Jul 2010 07:05:34 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7fb16cea9dcdab73250b06af244edf57">
+
+<div class="comment-subject">
+
+Comment 23
+
+</div>
+
+<div class="inlinecontent">
+thanks for answering my queries! <img src="../../smileys/smile.png" alt=":)" />
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 26 Jul 2010 07:05:35 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ab4364e9198d92195a148cbf170570a4">
+
+<div class="comment-subject">
+
+Comment 24
+
+</div>
+
+<div class="inlinecontent">
+What a mass! The GFW has fully banned the tor.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 22 Jul 2010 07:05:36 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b1d1ef7801dcd863f794b6ae8c3266bc">
+
+<div class="comment-subject">
+
+Comment 25
+
+</div>
+
+<div class="inlinecontent">
+<p>I have a question about tor:<br />
+i know the data between the links is encrypted, but when data hits the end link it is not encrypted, so if i goto a non-https site and enter my username and password, does that mean some punk kid running a tor relay can get my user/pass if he happens to be that last node?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 22 Jul 2010 07:05:37 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b97562ea92b6799a75f9721d90fdfac9">
+
+<div class="comment-subject">
+
+Comment 26
+
+</div>
+
+<div class="inlinecontent">
+If said punk kid is recording traffic, yes he can see your username and password sent over non-encrypted protocols.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 23 Jul 2010 07:05:38 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7c79ffc75705c3c4125a070fb3b0444f">
+
+<div class="comment-subject">
+
+Comment 27
+
+</div>
+
+<div class="inlinecontent">
+<p>can some punk kid who setup a relay server see my username/password if it was entered on a non-https site and he happened to be the end node?</p>
+
+<p>if that's the case i trust some large ISP like ATT or Verizon who yes can sniff my login/pass but at least wont release my username/pass or abuse it like some random kid setting up a tor relay</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 22 Jul 2010 07:05:39 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a71c042060feddedceb1bf07c7ba07bc">
+
+<div class="comment-subject">
+
+Comment 28
+
+</div>
+
+<div class="inlinecontent">
+<p>From experience, the risks of some punk kid sniffing and releasing the data are pretty slim.  You're just as likely to have the problem on free wifi at your local cafe or someone with access to the data at your ISP.</p>
+
+<p>The real problem is the lack of encryption support at the destination.  You shouldn't trust the network (ISP, wifi, dial-up, tor, etc) in the first place.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 23 Jul 2010 07:05:40 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-47b79579147ef079e44ab43bf6438506">
+
+<div class="comment-subject">
+
+Comment 29
+
+</div>
+
+<div class="inlinecontent">
+<p>well how hard is it to sniff data after setting up a relay?<br />
+can you use ethereal or something like that?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 23 Jul 2010 07:05:41 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3154fcdeca9ff589d4bd0bdb5f597df5">
+
+<div class="comment-subject">
+
+Comment 30
+
+</div>
+
+<div class="inlinecontent">
+<a href="https://www.torproject.org/eff/tor-legal-faq.html.en#ExitSnooping" title="https://www.torproject.org/eff/tor-legal-faq.html.en#ExitSnooping" rel="nofollow">https://www.torproject.org/eff/tor-legal-faq.html.en#ExitSnooping</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 24 Jul 2010 07:05:42 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0da6ca2bf7f95bb4401c824ba1b9a6ec">
+
+<div class="comment-subject">
+
+Comment 31
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi Anonymous!!!!!!!!!</p>
+
+<p>Good question your one!!!!!!!!!!!!!!</p>
+
+<p>I'm thinking about phobos's article and i'm thinking!!, but do people wear motorcycle helmets because it's required by Law!!!!!!!!!!!!? I think people using motorcycles should wear helmets for their own safety!!!!!! Who cares if there is a law telling you to wear one!!!!!!!!!!!!!!! It should make no difference for you!!!!!!!!!</p>
+
+<p>You have to do things (or avoid to do things) because you should know what's right and wrong, for you and the others!!!!!!!!!!!</p>
+
+<p>Intercepting the exit traffic of one's own TOR exit-node is very easy!!!!!!!!!!!!! Yeah, you're very right, Wireshark (http://en.wikipedia.org/wiki/Wireshark) is all you need to do it!!!!!!!!!!! it isn't a difficult task to accomplish!!!!!!!!!<br />
+If somebody only "reads" the passersby traffic without modifying it, nobody will notice what he's doing!!!!!!!!!!!! yeah, this is why you must presume all TOR exit-nodes are sniffing their own traffic!!!!!!! There is no way to know if a TOR exit node is intercepting its traffic!!!!!!!!!!! So, if you don't tell anybody what you're doing, nobody will ever catch you!!!!! but, that's not the point!!!!!! I think people don't need a law telling them how they should behave!!!!!!!!! <em>Wear an helmet for you yourself, not because it's what the law says</em>!!!!!!! Invading the privacy of the others is very wrong!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! even in places where wiretapping your own computer is legal, it's something of wrong to do!!!!!!!!!</p>
+
+<p>But of course, not all people are good people!!!!!!!!!!!!!!!!!!</p>
+
+<p>So, in the end, the best thing you can do is to think in the skeptical way, as if all tor exit nodes were compromised!!!!!!!!!! Never send your own personal details, login screenames and passwords in plain text through TOR!!!!!!!!!!!!!! nobody knows, perhaps, even if there is "only one" compromised exit node in the TOR network, well, if you're going to use it, then there is no differences between "one" or "all"!!!!!!!!!!!!!!</p>
+
+<p>In <strong>factorbee</strong>, i installed <strong>Certificate Patrol</strong>!!!!!!!! It's a super total great addon for firefox!!!!!!!!!!!!!!!!!!!!! With one click you'll be able to inspect SSL certificates, to avoid tor nodes to man-in-the-middle you with fake SSL certificates!!!! http://patrol.psyced.org/ (scroll to "Reviews" to read articles about SSL injection and factorbee!!!!!!) YEAH!!!!!!!!! It's a very useful addon to look at the fingerprints of SSL certs!!!!!!!!!!</p>
+
+<p>When all people will have the right knowledge.... !!!! sniffing the traffic out of Tor nodes will be useless!!! As nobody will send, ever again, anything of important in "plain text"(unencrypted!!)!!!!!!!!</p>
+
+<p>bye!!!!!!!!!!!!!!!!<br />
+~bee!!!!!!!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 25 Jul 2010 07:05:43 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-361a6484923fe8623446426e5696ac9d">
+
+<div class="comment-subject">
+
+Comment 32
+
+</div>
+
+<div class="inlinecontent">
+you don't understand, i am in a place where the site i want to goto is blocked, and i  must use tor to access it, however their login part is not SSL encrypted..
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 26 Jul 2010 07:05:44 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1d60be963b114b58ca0978f5001b5ca1">
+
+<div class="comment-subject">
+
+Comment 33
+
+</div>
+
+<div class="inlinecontent">
+<p>great, so tor is useless to me.<br />
+a site i want to use doesn't encrypt their login in SSL.<br />
+frankly i trust my large ISP (ATT) over TOR since anyone on TOR can sniff my user/pass.<br />
+ATT doesn't let punk kids sniff their traffic, and ATT isn't going to abuse my login/pass</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 26 Jul 2010 07:05:45 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b9101ff605c145f247c168ccc80beac0">
+
+<div class="comment-subject">
+
+Comment 34
+
+</div>
+
+<div class="inlinecontent">
+<p>a site i goto doesn't encrypt the login thru SSL, so therefore tor is useless to me..<br />
+i trust my large ISP rather than random people setting up tor nodes who can easily sniff traffic.<br />
+my ISP isn't going to reveal my login/pass or abuse it most likely.. and if they do they can get in trouble legally.. however pursuing individuals for setting up nodes will be much harder</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 27 Jul 2010 07:05:46 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-eb4aa888a4be97ad2491dec3be4869da">
+
+<div class="comment-subject">
+
+Comment 35
+
+</div>
+
+<div class="inlinecontent">
+<p>建议添加（add）：<br />
+虚拟IP（Virtual IP Address）机制（ Mechanism），使：</p>
+
+<p>提供中继（Relay）用户（User）A以虚拟的IP（Virtual IP Address）联网（# Network），使（Use）网络审查者（censor the Internet）查到（Found）虚拟IP（Virtual IP Address）后（After）要经过（To go through）反查（pegging ）才能（Can Be Found）and 屏蔽掉（ban the）用户（user）A的真实IP（True IP Address）。</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 22 Jul 2010 07:05:47 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4f766523715dbcc51a2025172a67ed74">
+
+<div class="comment-subject">
+
+Comment 36
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi,</p>
+
+<p>it's off topic, but I wanted to ask if firefox extension "Https Everywhere", developed by EFF and The Tor Project, is open source or not.<br />
+And if it is, where can I find the source?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 23 Jul 2010 07:05:48 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3488c2f6cba6f738a2e091c3680cdf15">
+
+<div class="comment-subject">
+
+Comment 37
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi!!!!!!!!!!!!!!</p>
+
+<p>This is funny!!!!!!!!! one day, i've got an user of my BeeFREE addon asking me the same question!!!!!!!!! I even wrote the answer in a page at BeeFree's website!!!! http://honeybeenet.altervista.org/beefree/?id=105200 </p>
+
+<p>Well yeah!!!!!!!!! The .XPI file of "HTTPS Everywhere", is the file within the source code of "HTTPS Everywhere"!!!!!!! Addons for firefox are written in a script language, so there is «<em>only the source</em>!!»!!!!!!!</p>
+
+<p>Rename "https-everywhere-0.2.1.xpi" to "https-everywhere-0.2.1.zip" and decompress the file to look at its source code!!!!!!!!!!</p>
+
+<p>bye!!!!!!!!!!!<br />
+~bee!!!!!!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 25 Jul 2010 07:05:49 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-26f0174be3b34fb5e12c173e7372295a">
+
+<div class="comment-subject">
+
+Comment 38
+
+</div>
+
+<div class="inlinecontent">
+bridges启用（use）动态更新（auto update）是慢性自杀（Suicide），建议（Suggest）停用（Disable）bridges的动态更新（auto update），除非（Unless）已经能够（Can）破解（Crack）网络审查（traffic analysis）的实时监控（Real-time monitoring）bridges。
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 04 Aug 2010 07:05:50 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d7d84ddb98cd7a380bdad92c819d9f6e">
+
+<div class="comment-subject">
+
+Comment 39
+
+</div>
+
+<div class="inlinecontent">
+使（use）bridges隐藏在(Hidden)隐匿服务（Hidden services）之后（After）
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 04 Aug 2010 07:05:51 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-88951382f572d57f288016505ba2583f">
+
+<div class="comment-subject">
+
+Comment 40
+
+</div>
+
+<div class="inlinecontent">
+<p>加密（Encryption）and 分发（distribute）bridges，Example ：<br />
+torrc：bridges 0.0.0.0→bridges x6d.15g4。m_8dds65'56〔zskuj 显示（Show）</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 21 Aug 2010 07:05:52 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-eb41e95c1aee172e32e52b1391da5185">
+
+<div class="comment-subject">
+
+Comment 41
+
+</div>
+
+<div class="inlinecontent">
+<p>I have been using the Linux Tor browser bundle and find it work's ok, I find it particularly useful when using LiveCD's. </p>
+
+<p>Recently I discovered http://www.portablelinuxapps.org/ and it would be good if the Linux Tor bundle used it's system of having a download of one uncompressed file that just needs to be clicked on. This is very similar to how people are use to and familiar with the one-click .exe windows program files.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 22 Aug 2010 07:05:53 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_2_14-alpha_released&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 07:05:13 AM CDT</span>
+<!-- Created <span class="date">Mon 19 Jul 2010 04:30:14 AM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

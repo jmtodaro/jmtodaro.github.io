@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Testing Tor Browser Bundle 1.2.7-dev</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:33:40Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/comment_1/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:33Z</updated>
+	<published>2009-08-16T11:33:33Z</published>
+
+	<content type="html" xml:lang="en">
+	Is Firefox 3.5.2 ok to use anonymously with the current Tor/Vidalia package?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/comment_2/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:34Z</updated>
+	<published>2009-08-18T11:33:34Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I have the very same question. I am using 3.5.x now and it seems to be working OK. TorButton passes the proxy tests and I seem to be anonymous even when executing some &quot;hard&quot; benchmarks on the internet like &lt;a href=&quot;http://www.cyscape.com/showbrow.aspx?bhcp=1&quot; title=&quot;http://www.cyscape.com/showbrow.aspx?bhcp=1&quot; rel=&quot;nofollow&quot;&gt;http://www.cyscape.com/showbrow.aspx?bhcp=1&lt;/a&gt; which in some older FF versions was able to see my timezone!!!&lt;/p&gt;
+
+&lt;p&gt;But I would like to hear some words from the devs on this. Is FF 3.5.x OK?&lt;/p&gt;
+
+&lt;p&gt;Thank you very much.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/comment_3/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:35Z</updated>
+	<published>2009-08-19T11:33:35Z</published>
+
+	<content type="html" xml:lang="en">
+	We&#39;re tackling FF3.5.x and torbutton over the next few weeks.  Firefox 3.5.x has been described as &quot;taking a shotgun to the codebase&quot; from people reading the source.  Expect to see a new torbutton that addresses many of the issues we find in the next month or so.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/comment_4/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:36Z</updated>
+	<published>2009-08-16T11:33:36Z</published>
+
+	<content type="html" xml:lang="en">
+	connections with the latest build are a ton more stable and connections seem 2-3x faster.  nice job!
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/comment_5/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:37Z</updated>
+	<published>2009-08-17T11:33:37Z</published>
+
+	<content type="html" xml:lang="en">
+	Recently,It&#39;s hard to build tor circuit successfully in China.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/comment_6/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:38Z</updated>
+	<published>2009-08-19T11:33:38Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;As in, just letting the Tor client idle, does it build circuits at all?&lt;/p&gt;
+
+&lt;p&gt;I&#39;m able to exit and extend circuits from nodes in china without an issue.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/comment_7/"/>
+
+	<author><name>iNsuRRecTiON (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:39Z</updated>
+	<published>2009-08-22T11:33:39Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hi there,&lt;/p&gt;
+
+&lt;p&gt;please keep an &quot;classic&quot; Tor Browser Bundle with the Firefox 3.0.x versions, because the new Firefox 3.5.x versions are slower on my computer.&lt;/p&gt;
+
+&lt;p&gt;My PC is old, 6 years, 1,4 GHz AMD CPU with only MMX and 3DNow, no SSE opcodes support, 512 MB of RAM, etc.&lt;/p&gt;
+
+&lt;p&gt;Firefox 3.0.13 for example, runs faster and more smooth/fluent than Fx 3.5.x, here.&lt;/p&gt;
+
+&lt;p&gt;So for people with no money and/or old PCs, you should keep old versions, besides the newer ones, thx.&lt;/p&gt;
+
+&lt;p&gt;regards,&lt;/p&gt;
+
+&lt;p&gt;iNsuRRecTiON&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_7-dev/comment_8/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:40Z</updated>
+	<published>2009-08-24T11:33:40Z</published>
+
+	<content type="html" xml:lang="en">
+	We&#39;re not planning on switching TBB to Firefox 3.5.x anytime soon.  FF 3.5.x needs a detailed code audit and thoughts about how to effectively mitigate anonymity and privacy leaks with Torbutton.
+
+	</content>
+
+
+
+</entry>
+
+</feed>

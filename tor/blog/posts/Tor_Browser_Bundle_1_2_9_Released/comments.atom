@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Tor Browser Bundle 1.2.9 Released</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:36:06Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_1/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:24Z</updated>
+	<published>2009-09-12T11:35:24Z</published>
+
+	<content type="html" xml:lang="en">
+	Sorry for offtopic, but i am using Vidalia 0.2.3, and i found that there is a lot requests to non mapped IP 69.164.192.183:443 (callisto.vidalia-project.net). What is this?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_2/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:25Z</updated>
+	<published>2009-09-12T11:35:25Z</published>
+
+	<content type="html" xml:lang="en">
+	It&#39;s the server we use to update the geoip database on your client.  You anonymously connect over Tor to the server, get database updates to download, and then locate servers around the world.  If you disable this feature, you&#39;ll notice the network map has no country flags next to the relays.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_3/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:26Z</updated>
+	<published>2009-09-14T11:35:26Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Why do you force people to update this database, in previous versions it worked with a non &quot;updated&quot; database.&lt;/p&gt;
+
+&lt;p&gt;My configuration is quite strict so newest version is not working as it should, have to use older ones until this new &quot;feature&quot; is fixed or clearly explained how to get it working !!!&lt;/p&gt;
+
+&lt;p&gt;What IPs do i have to enable in torrc for this to work with latest bundle ? &lt;/p&gt;
+
+&lt;p&gt;Do i have to enable this IP: 69.164.192.183:443(in TORRC, firewall or both?), do i have to do that only once, or every time i start vidalia or even every X hours ???&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_4/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:27Z</updated>
+	<published>2009-09-15T11:35:27Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;People like to see where the relays exist in the world.  The geoip lookups are completely anonymously over Tor.  You shouldn&#39;t have to allow anything in your firewall at all.&lt;/p&gt;
+
+&lt;p&gt;Perhaps we should have a config option in vidalia to disable geoip lookups of relays.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_5/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:28Z</updated>
+	<published>2009-09-23T11:35:28Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;My point is this:&lt;br /&gt;
+Previous versions of vidalia bundle works and shows country flags on map, this version is not working, not shownig any country flags on map and are allowing circuits that is blocked by my torrc configuration, so once again &lt;/p&gt;
+
+&lt;p&gt;&quot; My configuration is quite strict so newest version is not working as it should, have to use older ones until this new &quot;feature&quot; is fixed or clearly explained how to get it working !!!&lt;/p&gt;
+
+&lt;p&gt;What IPs do i have to enable in torrc for this to work with latest bundle ? &quot;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_6/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:29Z</updated>
+	<published>2009-09-12T11:35:29Z</published>
+
+	<content type="html" xml:lang="en">
+	hmm.. why is there no Tor Browser 0.2.2.1-alpha Bundle? &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/../../smileys/sad.png&quot; alt=&quot;:(&quot; /&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_7/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:30Z</updated>
+	<published>2009-09-12T11:35:30Z</published>
+
+	<content type="html" xml:lang="en">
+	Because it&#39;s already alpha enough?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_8/"/>
+
+	<author><name>Yoav (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:31Z</updated>
+	<published>2009-09-13T11:35:31Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;The torbutton is incompatible with this release of Firefox, nor does it work with firefox 3.5.3.&lt;/p&gt;
+
+&lt;p&gt;Question:&lt;br /&gt;
+why not use firefox 3.5.3 on the TOR browser?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_9/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:32Z</updated>
+	<published>2009-09-13T11:35:32Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;We don&#39;t recommend using torbutton with Firefox 3.5.x at all.  While it may appear to work, Firefox 3.5 is a major rewrite of the codebase.  We&#39;re in the middle of a month of analyzing the firefox 3.5 codebase and adapting torbutton to work with it.&lt;/p&gt;
+
+&lt;p&gt;Torbutton was designed for Firefox 3.0.x.  This is why we don&#39;t ship firefox 3.5.x in the Tor Browser Bundles, it&#39;s not safe to do so.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_10/"/>
+
+	<author><name>yoav (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:33Z</updated>
+	<published>2009-09-13T11:35:33Z</published>
+
+	<content type="html" xml:lang="en">
+	OK, thanks for the answer. Please note that the TOR button does not work with firefox 3.0.0.14 as well.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_11/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:34Z</updated>
+	<published>2009-09-15T11:35:34Z</published>
+
+	<content type="html" xml:lang="en">
+	torbutton works fine with 3.0.14.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 12</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_12/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_12/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:35Z</updated>
+	<published>2009-09-23T11:35:35Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Is the official statement still that you have to abandon the Firefox browser in the future when version 3.5.x is the only alternative/updated version because of the severe security issues that&#39;s impossible to solve with it&lt;br /&gt;
+Or is it that you are to completely rewrite your own version of it.&lt;/p&gt;
+
+&lt;p&gt;If so what alternative browser(s) that are considered safe if any to replace firefox with ?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 13</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_13/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_13/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:36Z</updated>
+	<published>2009-09-27T11:35:36Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;This is as official as it gets, &lt;a href=&quot;https://blog.torproject.org/blog/tor-browser-bundle-129-released#comment-2499&quot; title=&quot;https://blog.torproject.org/blog/tor-browser-bundle-129-released#comment-2499&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-browser-bundle-129-released#comment...&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It&#39;s a work in progress.  We realize that Firefox 3.0.x will be unsupported past January 2010.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 14</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_14/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_14/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:37Z</updated>
+	<published>2009-09-15T11:35:37Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&amp;gt;The torbutton is incompatible with this release of Firefox,&lt;/p&gt;
+
+&lt;p&gt;Hmmm.  The release of FF included with the copy of this bundle that I downloaded is 3.0.13 and it is working just fine.  Perhaps I misunderstood what you were trying to say?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 15</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_15/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_15/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:38Z</updated>
+	<published>2009-09-13T11:35:38Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;what? On your dowloads page it say &quot;Want Tor to really work?....We recommend you use Firefox with the Torbutton extension.&quot; and you link to mozilla&#39;s latest version of firefox (3.5.3) Now you say not to?&lt;br /&gt;
+And torbutton also say it works fine to firefox 3.6a1pre. some very unclear ambiguity going on here and worrying stuff too.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 16</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_16/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_16/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:39Z</updated>
+	<published>2009-09-15T11:35:39Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Re: &quot;On your dowloads page it say &quot;Want Tor to really work?....We recommend you use Firefox with the Torbutton extension.&quot; and you link to mozilla&#39;s latest version of firefox (3.5.3)&quot;&lt;/p&gt;
+
+&lt;p&gt;The url behind that link is &quot;http://www.mozilla.org/firefox&quot; which is obsolete (predates the restructuring of the Mozilla project and domains mozilla.org &amp;amp; mozilla.com)  Mozilla.org itself redirects that page request to &quot;http://www.mozilla.com/en-US/firefox/upgrade.html&quot; which will always (absent more restructuring in the future) have the downloads for latest production version(s) of FF.  The link on the Tor page should be fixed or deactivated, but it isn&#39;t as if Tor were intentionally linking you to an inappropriate version of FF.&lt;/p&gt;
+
+&lt;p&gt;Re: &quot;torbutton also say it works fine to firefox 3.6a1pre&quot; I am unable to find such a claim on the Tor download page.  Got link?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 17</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_17/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_17/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:40Z</updated>
+	<published>2009-09-15T11:35:40Z</published>
+
+	<content type="html" xml:lang="en">
+	Yes, you are correct.  I&#39;ll update this to link to Firefox 3.0.x.  Sorry for the confusion.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 18</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_18/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_18/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:41Z</updated>
+	<published>2009-09-15T11:35:41Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I never examined the Torbutton settings in the browser bundles until I saw allegations in this thread that it was not working.  Now that I have looked, I am a bit confused.  I recently read a statement dated 8/25/2009 by Andrew Lewman in a reply to a user question that &quot;The Tor Browser Bundle, aka the portable bundle, doesn&#39;t include&lt;br /&gt;
+Privoxy.  It includes Polipo instead.&quot;  (see: &lt;a href=&quot;http://www.mail-archive.com/or-talk@freehaven.net/msg11474.html&quot; title=&quot;http://www.mail-archive.com/or-talk@freehaven.net/msg11474.html&quot; rel=&quot;nofollow&quot;&gt;http://www.mail-archive.com/or-talk@freehaven.net/msg11474.html&lt;/a&gt;).  However (I am using TBB 1.2.9), on the Proxy tab of the Torbutton add-in, both &quot;use the recommended settings for my version of Firefox&quot; *and* &quot;Use Privoxy&quot; are selected.  Mr. Lewman&#39;s statement and the settings are confusing, and seem to be contradictory.  Is the &quot;Use Privoxy&quot; nomenclature in Torbutton deprecated or otherwise misleading?  If not, please enlighten me as to what important concept I have missed here.  Thank you.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 19</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_19/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_19/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:42Z</updated>
+	<published>2009-09-15T11:35:42Z</published>
+
+	<content type="html" xml:lang="en">
+	&quot;until I saw allegations in this thread that it was not working.&quot; - &quot;it&quot; being Torbutton, if that was unclear.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 20</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_20/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_20/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:43Z</updated>
+	<published>2009-09-15T11:35:43Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;It&#39;s a nomenclature bit.  The Tor Browser Bundle does not include Privoxy.  Torbutton could just as well state &quot;Use Fluffy Bunnies&quot; and point the browser at localhost:8118 correctly.&lt;/p&gt;
+
+&lt;p&gt;You do raise a fine point that torbutton needs to be updated.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 21</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_21/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_21/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:44Z</updated>
+	<published>2009-09-16T11:35:44Z</published>
+
+	<content type="html" xml:lang="en">
+	Thanks, I thought that might be the answer, but I thought it was worth asking.  With security and privacy tools, it really does seem to me that the only stupid questions are the ones that do not get asked &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/../../smileys/smile.png&quot; alt=&quot;:-)&quot; /&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 22</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_22/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_22/"/>
+
+	<author><name>sortanew (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:45Z</updated>
+	<published>2009-09-16T11:35:45Z</published>
+
+	<content type="html" xml:lang="en">
+	Can&#39;t give email because connection now fails.  Wikileaks submit also failed.  Added this latest update after being new at this and at least succeeding at getting to my anon email.  Doesn&#39;t seem to work so well for me.  No one here to help.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 23</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_23/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_23/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:46Z</updated>
+	<published>2009-09-16T11:35:46Z</published>
+
+	<content type="html" xml:lang="en">
+	What fails?  Tor?  Connections to hidden services?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 24</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_24/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_24/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:47Z</updated>
+	<published>2009-09-18T11:35:47Z</published>
+
+	<content type="html" xml:lang="en">
+	Tor was up and running, but would not connect to urls, today it did connect to email url that failed the other day.  For one site that failed I was told I need a US exit node, but don&#39;t know how to do that.  No one here to tell me how.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 25</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_25/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_25/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:48Z</updated>
+	<published>2009-09-17T11:35:48Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;thanks for changing your link to firefox 3.0 that was bad.&lt;br /&gt;
+You STILL link to the torbutton page which says &quot;tor button fine to 3.6a1pre&quot; link here which is obviously very confusing for people&lt;br /&gt;
+&lt;a href=&quot;https://addons.mozilla.org/en-US/firefox/addon/2275&quot; title=&quot;https://addons.mozilla.org/en-US/firefox/addon/2275&quot; rel=&quot;nofollow&quot;&gt;https://addons.mozilla.org/en-US/firefox/addon/2275&lt;/a&gt;.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 26</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_26/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_26/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:49Z</updated>
+	<published>2009-09-20T11:35:49Z</published>
+
+	<content type="html" xml:lang="en">
+	It is compatible.  If people want to shoot themselves in the foot, they can go right ahead and do so.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 27</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_27/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_27/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:50Z</updated>
+	<published>2009-09-22T11:35:50Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Whether it&#39;s FF 3.5x or previous versions, when enabling Tor Button, it automatically resizes my browser window to various sizes, usually bigger than my screen itself. To make it worse, when I&#39;m done using it and disable it, it doesn&#39;t revert back to it&#39;s original dimensions. I&#39;d prefer my browser size be left completely alone, and let me resize it myself if/when needed. Why does it do this? is there a logic behind it that I&#39;m unaware of?&lt;/p&gt;
+
+&lt;p&gt;Second question, I just read about it not being compatible with 3.5.x. What&#39;s unsafe? does it leak your real IP address? When I&#39;ve checked so far at ipchicken.com, it always seems to show an IP that isn&#39;t mine?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 28</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_28/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_28/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:51Z</updated>
+	<published>2009-09-23T11:35:51Z</published>
+
+	<content type="html" xml:lang="en">
+	Is is possible to update the Tor Browser Bundle (including Pidgin) without uninstalling and then installing the new version?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 29</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_29/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_29/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:52Z</updated>
+	<published>2009-09-24T11:35:52Z</published>
+
+	<content type="html" xml:lang="en">
+	is there anyway to use adobe while tor is enabled ?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 30</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_30/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_30/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:53Z</updated>
+	<published>2009-09-27T11:35:53Z</published>
+
+	<content type="html" xml:lang="en">
+	Using Flash with Tor isn&#39;t safe, you will lose some anonymity.  There are options to enable this, but you might as well not use Tor then, &lt;a href=&quot;https://www.torproject.org/torbutton/faq.html.en#noflash&quot; title=&quot;https://www.torproject.org/torbutton/faq.html.en#noflash&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/torbutton/faq.html.en#noflash&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 31</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_31/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_31/"/>
+
+	<author><name>Repressed Canadian (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:54Z</updated>
+	<published>2009-09-24T11:35:54Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;So... for some odd reason my Tor stopped working midway through loading a page today. It can now no longer connect. I&#39;m using the 0.1.15 Vidalia, 0.2.0.35 Tor, 4.3.5 QT, Tor button was a seperate tack on.&lt;/p&gt;
+
+&lt;p&gt;I know its an old version, but it took me 4 days last week to look for a working mirror for the browser bundle - since most sites link to the Tor Project. however, I&#39;m running a MAC, and unfortunately Torproject.org is blocked by China. *sighs*&lt;/p&gt;
+
+&lt;p&gt;What are my options?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 32</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_32/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_32/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:55Z</updated>
+	<published>2009-09-27T11:35:55Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;a href=&quot;https://blog.torproject.org/blog/tor-partially-blocked-china&quot; title=&quot;https://blog.torproject.org/blog/tor-partially-blocked-china&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-partially-blocked-china&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Get a bridge, you also may want to update to the latest -stable as bridges will work better and Tor is faster overall.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 33</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_33/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_33/"/>
+
+	<author><name>American in China (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:56Z</updated>
+	<published>2009-09-24T11:35:56Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I have the same problem as the previous poster.  As of 09-24-2009 at around 5PM, I can not connect to any TOR relays.  None at all - I&#39;m not sure what happened.  After the problem, I started looking on the net (Unfortunately I can not connect to torproject.org) and found that I may be using incompatible versions.  FF = 3.5.3 and Vidalia-bundle-0.2.0.35-0.1.15.  But it worked great until yesterday!&lt;/p&gt;
+
+&lt;p&gt;Can anyone give me any advice on how to connect again, and mirror sites to download the needed versions (or even e-mail me the versions that I need).&lt;/p&gt;
+
+&lt;p&gt;Any help would be greatly appreciated, especially if it were clear enough for a 5 year old to understand!  The only SOCKS I know about smell bad!  I don&#39;t really need to be anonymous because of anything I&#39;m doing on-line, I just want to get access to blocked websites like facebook.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 34</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_34/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_34/"/>
+
+	<author><name>Harmonized Frenchman in the &amp;#039;Jing (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:57Z</updated>
+	<published>2009-09-24T11:35:57Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Every popular breach in the GFW has been filled. Popular free and paid vpn and even tor&#39;s bridges are all but blocked in Beijing. Just a week before the 60th anniversary of China, the timing leaves no doubt that they want to have complete and utter control over the internet before the celebrations. Previous anniversaries and important national events are usually the occasion to tighten security measures, both on the street and online, but to date I think this is the first time that tor completely stopped working here in Beijing.&lt;br /&gt;
+This is not likely to change after oct. 8, so unless the TOR team can come up with a workaround, we people living in China will have to embrace censorship and enjoy harmonious web browsing with Chinese characteristics (or resort to those annoying web proxies).&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 35</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_35/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_35/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:58Z</updated>
+	<published>2009-09-27T11:35:58Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;We have confirmed reports that Tor is working for some people in China, and that bridges continue to work for the most part.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.torproject.org/blog/tor-partially-blocked-china&quot; title=&quot;https://blog.torproject.org/blog/tor-partially-blocked-china&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-partially-blocked-china&lt;/a&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 36</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_36/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_36/"/>
+
+	<author><name>Harmonized Frenchman in the &amp;#039;Jing (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:35:59Z</updated>
+	<published>2009-09-24T11:35:59Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Every popular breach in the GFW has been filled. Popular free and paid vpn and even tor&#39;s bridges are all but blocked in Beijing. Just a week before the 60th anniversary of China, the timing leaves no doubt that they want to have complete and utter control over the internet before the celebrations. Previous anniversaries and important national events are usually the occasion to tighten security measures, both on the street and online, but to date I think this is the first time that tor completely stopped working here in Beijing.&lt;br /&gt;
+This is not likely to change after oct. 8, so unless the TOR team can come up with a workaround, we people living in China will have to embrace censorship and enjoy harmonious web browsing with Chinese characteristics (or resort to those annoying web proxies).&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 37</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_37/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_37/"/>
+
+	<author><name>Dead in the Water (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:36:00Z</updated>
+	<published>2009-09-24T11:36:00Z</published>
+
+	<content type="html" xml:lang="en">
+	Can someone please post a new bridge here for me to use?  Tor isn&#39;t replying for my request for a bridge - plus I can&#39;t get to the published list of bridges on Tor&#39;s page.  If a couple people reply with new bridges, I think I&#39;d be in good shape.  E-mail might be better to keep them confidential - &lt;a href=&quot;mailto:dave7822@aol.com&quot; rel=&quot;nofollow&quot;&gt;dave7822@aol.com&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 38</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_38/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_38/"/>
+
+	<author><name>Hoo (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:36:01Z</updated>
+	<published>2009-09-27T11:36:01Z</published>
+
+	<content type="html" xml:lang="en">
+	to find public bridge addresses is to send mail to &lt;a href=&quot;mailto:bridges@torproject.org&quot; rel=&quot;nofollow&quot;&gt;bridges@torproject.org&lt;/a&gt; with the line get bridges by itself in the body of the mail.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 39</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_39/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_39/"/>
+
+	<author><name>gopu mathew (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:36:02Z</updated>
+	<published>2009-09-28T11:36:02Z</published>
+
+	<content type="html" xml:lang="en">
+	Can I replace the Firefox in the bundle with a portable Firefox 3.5.3?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 40</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_40/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_40/"/>
+
+	<author><name>Lilly (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:36:03Z</updated>
+	<published>2009-11-06T12:36:03Z</published>
+
+	<content type="html" xml:lang="en">
+	I followed the instructions on the site and I&#39;m not having any luck. Can someone please help me?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 41</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_41/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_41/"/>
+
+	<author><name>PETER (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:36:04Z</updated>
+	<published>2009-11-08T12:36:04Z</published>
+
+	<content type="html" xml:lang="en">
+	Nov 08 12:03:39.958 [Notice] No current certificate known for authority ides; launching request.Please fix this thing. Any updates for TBB?. if so when will be the other version is going 2 be released?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 42</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_42/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_42/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:36:05Z</updated>
+	<published>2010-09-03T11:36:05Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hi, I installed TOR last week and upon running it, it told me there is a newer version available. I downloaded it and attempted to uninstall the older version so as to install the newer version be the uninstall didn&#39;t complete the process and as such I couldn&#39;t install the new version as it keeps giving error messages.&lt;/p&gt;
+
+&lt;p&gt;Can I get an uninstaller to enable me complete the process or can I repair the damaged one?&lt;/p&gt;
+
+&lt;p&gt;Felix.  &lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 43</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_43/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_9_Released/comment_43/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:36:06Z</updated>
+	<published>2011-01-29T12:36:06Z</published>
+
+	<content type="html" xml:lang="en">
+	I have the same problem, was told to upgrade, couldn&#39;t uninstall the previous version, installed new version, now nothing works :((((.
+
+	</content>
+
+
+
+</entry>
+
+</feed>

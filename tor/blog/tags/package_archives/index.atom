@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged package_archives</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/package_archives/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/package_archives/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/package_archives/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:31:40Z</updated>
+<entry>
+	<title>archive.torproject.org is now live</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/archive_torproject_org_is_now_live/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/archive_torproject_org_is_now_live/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/directory_authority_archives" />
+
+	<category term="/tags/package_archives" />
+
+	<category term="/tags/releases" />
+
+
+	<updated>2011-04-05T11:31:40Z</updated>
+	<published>2009-07-29T17:32:51Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;By popular request, we&#39;ve created &lt;a href=&quot;http://archive.torproject.org/&quot; title=&quot;http://archive.torproject.org/&quot; rel=&quot;nofollow&quot;&gt;http://archive.torproject.org/&lt;/a&gt;.  It serves as an archive of all released versions of Tor since 2004.  And as a repository of all  relay descriptors and directory authority consensus files published since 2004.&lt;/p&gt;
+
+&lt;p&gt;This is the place to get current and past releases of:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;the Tor source code,&lt;/li&gt;
+&lt;li&gt;Vidalia itself,&lt;/li&gt;
+&lt;li&gt;vidalia bundles for Microsoft Windows and Apple OS X,&lt;/li&gt;
+&lt;li&gt;our various rpm packages,&lt;/li&gt;
+&lt;li&gt;the Tor Browser Bundle and Tor IM Browser Bundle,&lt;/li&gt;
+&lt;li&gt;TorVM,&lt;/li&gt;
+&lt;li&gt;published consensus files,&lt;/li&gt;
+&lt;li&gt;published server descriptors,&lt;/li&gt;
+&lt;li&gt;and, other Tor network related files like extra-info and statuses.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The files are offered via &lt;a href=&quot;http://archive.torproject.org/&quot; title=&quot;http://archive.torproject.org/&quot; rel=&quot;nofollow&quot;&gt;http://archive.torproject.org/&lt;/a&gt;, rsync (archive.torproject.org::), and hidden service, &lt;a href=&quot;http://7ofilo7lqgiub36u.onion&quot; title=&quot;http://7ofilo7lqgiub36u.onion&quot; rel=&quot;nofollow&quot;&gt;http://7ofilo7lqgiub36u.onion&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The package archive is around 20GB.  The directory authority archive is around 23GB.  We&#39;ll soon be listing mirrors of this site as well.&lt;/p&gt;
+
+&lt;p&gt;Enjoy.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/archive_torproject_org_is_now_live/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/archive_torproject_org_is_now_live/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

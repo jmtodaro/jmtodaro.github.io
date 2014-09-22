@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged packages</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/packages/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Major changes to OS X Vidalia Bundle with 0.2.2.1-alpha</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Major_changes_to_OS_X_Vidalia_Bundle_with_0_2_2_1-alpha/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Major_changes_to_OS_X_Vidalia_Bundle_with_0_2_2_1-alpha/</link>
+
+
+	<category>/tags/alpha_release</category>
+
+	<category>/tags/anonymity_fixes</category>
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/improvements</category>
+
+	<category>/tags/os_x</category>
+
+	<category>/tags/packages</category>
+
+	<category>/tags/safe_statistic_collection</category>
+
+	<category>/tags/security_fixes</category>
+
+	<category>/tags/vidalia_bundle</category>
+
+
+	<pubDate>Wed, 02 Sep 2009 20:15:42 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:34:55Z</dcterms:modified>
+
+	<description>&lt;p&gt;As highlighted in the &lt;a href=&quot;http://blog.torproject.org/blog/tor-0221alpha-released&quot; rel=&quot;nofollow&quot;&gt;0.2.2.1-alpha release notes&lt;/a&gt;, the Vidalia Bundle for OS X includes some major changes.  Many of these are for ease of use and user experience improvements.  The release of OS X 10.6 (Snow Leopard) gave me a fine excuse to release the improvements.&lt;/p&gt;
+
+&lt;p&gt;It&#39;s best to &lt;a href=&quot;https://www.torproject.org/docs/tor-doc-osx.html.en#uninstall&quot; rel=&quot;nofollow&quot;&gt;un-install Tor/Vidalia&lt;/a&gt; and then install this new bundle; rather than upgrade.  If you want to upgrade, you&#39;ll need to update the paths for Tor and Polipo in the Vidalia Settings window. &lt;/p&gt;
+
+&lt;p&gt;There has been a lot of testing since this &lt;a href=&quot;http://blog.torproject.org/blog/experimental-os-x-drag-and-drop-vidalia-bundle-installer&quot; rel=&quot;nofollow&quot;&gt;test release&lt;/a&gt; of the drag and drop installer for OS X in January.  The main goal was to make installation far easier, less error prone, and keep all of the bundle in a single directory for easier configuration and un-installation. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/major-changes-os-x-vidalia-bundle-0221alpha&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Major_changes_to_OS_X_Vidalia_Bundle_with_0_2_2_1-alpha/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Fun with build machines</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Fun_with_build_machines/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Fun_with_build_machines/</link>
+
+
+	<category>/tags/centos4</category>
+
+	<category>/tags/osx_10_4</category>
+
+	<category>/tags/osx_tiger</category>
+
+	<category>/tags/packages</category>
+
+
+	<pubDate>Tue, 05 Aug 2008 21:50:21 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:10:26Z</dcterms:modified>
+
+	<description>&lt;p&gt;Perhaps you&#39;ve noticed that the packages for CentOS 4 and OSX Tiger/10.4 haven&#39;t been updated lately. Welcome to dead hard drives.&lt;/p&gt;
+
+&lt;p&gt;For a long while, I used &lt;a href=&quot;http://www.vmware.com/products/server/&quot; rel=&quot;nofollow&quot;&gt;VMware Server&lt;/a&gt; for guest OSes to build the various rpm and windows packages.  This mostly worked well.  And then both drives in the physical server I used to host the vmware instance failed.  A two-drive RAID 1 array doesn&#39;t like it when both drives fail.  I replaced the drives, re-installed Debian, and attempted to install vmware server again.  The vmware kernel module refused to load.  I tried the old tricks to get it to work, nothing.  I finally looked at some script/patch that I found via Google, and got the module to load.  Then my license key didn&#39;t work anymore.  &lt;/p&gt;
+
+&lt;p&gt;In frustration, I gave up and installed &lt;a href=&quot;http://www.virtualbox.org/&quot; rel=&quot;nofollow&quot;&gt;VirtualBox&lt;/a&gt;.  CentOS 4 defaults to using an SMP kernel on install, which Virtualbox (aka qemu) doesn&#39;t like at all.  CentOS 4 installs just fine, it just won&#39;t boot after install.  I haven&#39;t had time to further fix the problem.  For the time being, there&#39;s no CentOS 4 (Redhat 4 rpms) for Tor.  &lt;/p&gt;
+
+&lt;p&gt;As for OSX, well, there was no raid array of any kind, just a single drive in a mac mini.  It died in a fit of 0xE0030005 (Undefined) errors and now won&#39;t boot at all.  A new drive is on the way.  I expect to have OSX Tiger/10.4 packages in a week or so.  The good news is that the &lt;a href=&quot;http://www.everymac.com/systems/apple/imac/stats/imac_se_dv_400.html&quot; rel=&quot;nofollow&quot;&gt;Panther Mac&lt;/a&gt; continues to work just fine.  &lt;/p&gt;
+
+&lt;p&gt;Perhaps it&#39;s time to start using Amazon&#39;s EC2 or something similar instead of messing with all this hardware and virtualization software.  Or maybe I should work on hacking OSX 10.4 and 10.5 into virtualbox.&lt;/p&gt;
+
+&lt;p&gt;** Update 2008-08-06:  new drive was DOA.  And it appears the logic board on the mac mini is fried.  Ugh.&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Fun_with_build_machines/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

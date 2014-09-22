@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged gsoc2010</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/gsoc2010/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>kjbbb: Tor Metrics - Google Summer of Code 2010</title>
+	<dcterms:creator>kjbbb</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Metrics_-_Google_Summer_of_Code_2010/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Metrics_-_Google_Summer_of_Code_2010/</link>
+
+
+	<category>/tags/gsoc</category>
+
+	<category>/tags/gsoc2010</category>
+
+	<category>/tags/metrics</category>
+
+
+	<pubDate>Thu, 14 Oct 2010 00:04:22 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:10:16Z</dcterms:modified>
+
+	<description>&lt;p&gt;Although it has been a while since GSoC ended, I want to give a quick run-down of my project and how everything went over the summer. The plan was to migrate the &lt;a href=&quot;https://metrics.torproject.org/index.html&quot; alt=&quot;tor metrics portal&quot; title=&quot;tor metrics portal&quot;&gt;Tor metrics portal&lt;/a&gt; from the file based system to a database driven one. This allows us to have a more dynamic website and a better interface to derive our statistics and visuals from. I spent most of my time designing the database schema (which had to be carefully optimized due to the amount of data we have), and the remainder of the time working on things such as &lt;a href=&quot;https://metrics.torproject.org/graphs.html&quot; alt=&quot;dynamic graphs&quot; title=&quot;dynamic graphs&quot;&gt;dynamic graphs&lt;/a&gt; and migrating the website to Java Server Pages. Thankfully, I finished almost everything I had planned to do, and it seems as though my work this summer is being put to good use! A significant amount of my metrics code has been merged, which is certainly a good feeling.  &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-metrics-google-summer-code-2010&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_Metrics_-_Google_Summer_of_Code_2010/#comments</comments>
+
+</item>
+<item>
+
+	<title>erinn: Tor 0.2.2.15-alpha released</title>
+	<dcterms:creator>erinn</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_15-alpha_released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_15-alpha_released/</link>
+
+
+	<category>/tags/gsoc2010</category>
+
+	<category>/tags/torbel</category>
+
+
+	<pubDate>Mon, 23 Aug 2010 03:44:28 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:06:54Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor 0.2.2.15-alpha fixes a big bug in hidden service availability, fixes a variety of other bugs that were preventing performance experiments from moving forward, fixes several bothersome memory leaks, and generally closes a lot of smaller bugs that have been filling up trac lately.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download&quot; title=&quot;https://www.torproject.org/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://gitweb.torproject.org/tor.git/blob_plain/eba3f37f17a2af4ff628dd5cbc653441e6dce6eb:/ChangeLog&quot; rel=&quot;nofollow&quot;&gt;Changes in version 0.2.2.15-alpha - 2010-08-18&lt;/a&gt;&lt;br /&gt;
+  o Major bugfixes:&lt;br /&gt;
+    - Stop assigning the HSDir flag to relays that disable their&lt;br /&gt;
+      DirPort (and thus will refuse to answer directory requests). This&lt;br /&gt;
+      fix should dramatically improve the reachability of hidden services:&lt;br /&gt;
+      hidden services and hidden service clients pick six HSDir relays&lt;br /&gt;
+      to store and retrieve the hidden service descriptor, and currently&lt;br /&gt;
+      about half of the HSDir relays will refuse to work. Bugfix on&lt;br /&gt;
+      0.2.0.10-alpha; fixes part of bug 1693. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02215-alpha-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_15-alpha_released/#comments</comments>
+
+</item>
+<item>
+
+	<title>karsten: Tor in Google Summer of Code 2010</title>
+	<dcterms:creator>karsten</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_in_Google_Summer_of_Code_2010/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_in_Google_Summer_of_Code_2010/</link>
+
+
+	<category>/tags/gsoc</category>
+
+	<category>/tags/gsoc2010</category>
+
+
+	<pubDate>Tue, 23 Mar 2010 13:23:32 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:53:22Z</dcterms:modified>
+
+	<description>&lt;p&gt;Interested in coding on Tor and getting paid for it by Google? If you are a student, we have good news for you: We have been &lt;a href=&quot;http://socghop.appspot.com/gsoc/program/accepted_orgs/google/gsoc2010&quot; rel=&quot;nofollow&quot;&gt;accepted&lt;/a&gt; as a mentoring organization for &lt;a href=&quot;http://socghop.appspot.com/gsoc/program/home/google/gsoc2010&quot; rel=&quot;nofollow&quot;&gt;Google Summer of Code 2010&lt;/a&gt; together with &lt;a href=&quot;https://www.eff.org/&quot; rel=&quot;nofollow&quot;&gt;The Electronic Frontier Foundation&lt;/a&gt;! Woo! &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-google-summer-code-2010&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_in_Google_Summer_of_Code_2010/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

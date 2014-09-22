@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>April 2008 Progress Report</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FApril_2008_Progress_Report&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">April 2008 Progress Report</a>
+
+</span>
+
+
+<div id="content">
+<p>Tor 0.2.0.24-rc (released Apr 22) adds dizum (run by Alex de Joode)<br />
+as the new sixth v3 directory authority, makes relays with dynamic IP<br />
+addresses and no DirPort notice more quickly when their IP address<br />
+changes, fixes a few rare crashes and memory leaks, and fixes a few<br />
+other miscellaneous bugs. Tor 0.2.0.25-rc (released Apr 23) makes Tor<br />
+work again on OS X and certain BSDs.<br />
+<a href="http://archives.seul.org/or/talk/May-2008/msg00014.html" title="http://archives.seul.org/or/talk/May-2008/msg00014.html" rel="nofollow">http://archives.seul.org/or/talk/May-2008/msg00014.html</a></p>
+
+<p>Torbutton 1.1.18 (released Apr 17) fixes many usability and interoperability<br />
+items, in an attempt to make the new Torbutton not so obnoxious in its<br />
+zeal to protect the user. It also includes new translations for French,<br />
+Russian, Farsi, Italian, and Spanish.</p>
+
+<p>We did a complete overhaul of the <a href="https://check.torproject.org/" title="https://check.torproject.org/" rel="nofollow">https://check.torproject.org/</a><br />
+page. Now it accepts a language choice,<br />
+e.g. <a href="https://check.torproject.org/?lang=fa-IR" title="https://check.torproject.org/?lang=fa-IR" rel="nofollow">https://check.torproject.org/?lang=fa-IR</a><br />
+Available languages are German, English, Spanish, Italian, Farsi,<br />
+Japanese, Polish, Portugese, Russian, and Chinese. The Tor Browser<br />
+Bundle automatically uses the appropriate language as its home page,<br />
+based on which language of the Browser Bundle was downloaded.</p>
+
+<p>Started on a documentation page to explain to users what bridges are,<br />
+how they can decide whether they need one, and how to configure their<br />
+Tor client to use them:<br />
+<a href="https://www.torproject.org/bridges.html" title="https://www.torproject.org/bridges.html" rel="nofollow">https://www.torproject.org/bridges.html</a></p>
+
+<p>We've also started working on a design proposal for making it easier<br />
+to set up a private or testing Tor network. With the advent of the v3<br />
+directory protocol, it currently takes up to 30 minutes before a test<br />
+network will produce a useful networkstatus consensus. Also, there are<br />
+a dozen different config options that need to be set correctly for<br />
+a Tor network running on a single IP address to not trigger various<br />
+security defenses. This approach should let more people set up their<br />
+own Tor networks, either for testing or because they can't reach the<br />
+main Tor network. <span class="read-more"><a href="http://blog.torproject.org/blog/april-2008-progress-report"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/progress_report/" rel="tag">progress report</a>
+
+<a href="../../tags/release_candidate/" rel="tag">release candidate</a>
+
+<a href="../../tags/torbrowser/" rel="tag">torbrowser</a>
+
+<a href="../../tags/torbutton/" rel="tag">torbutton</a>
+
+<a href="../../tags/translation/" rel="tag">translation</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-bd52df15d75d584364af7576f4cdb803">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+[…]Good site I “Stumbledupon” it today and gave it a stumble for you.. looking forward to seeing what else you have..later[…]
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fbattery%20%28not%20verified%29&amp;do=goto">battery (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 27 Jun 2008 06:07:12 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b5050c14d0275b0cae994bb95a676e56">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>the current plan is to write some instructions<br />
+for users to fetch the 7zip program, and then fetch a set of blocks,<br />
+and run a batch file to reconstruct them.<br />
+<a href="http://www.mustuniversity.com/Schools-Majors/Law-and-Legal-Studies.html" rel="nofollow">online law degree programs</a> | <a href="http://www.mustuniversity.com/Schools-Majors/Engineering.html" rel="nofollow">online engineering degree programs</a> | <a href="http://www.mustuniversity.com/Schools-Majors/Business-and-Management.html" rel="nofollow">online business administration degrees</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FHayden%20Panettiere%20%28not%20verified%29&amp;do=goto">Hayden Panettiere (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 06 May 2009 06:07:13 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3a449c1f375b4f33cdc7686e683f8000">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>So far there appear to be no free-software zip splitters that work<br />
+on Windows and produce self-contained exe files for automatically<br />
+reconstructing the file. <a href="http://waterproof-digital-cameras.org/" rel="nofollow">water proof camera review</a> and <a href="http://waterproof-digital-cameras.org/olympus-waterproof-digital-camera/" rel="nofollow">top rated waterproof cameras</a> and <a href="http://waterproof-digital-cameras.org/olympus-waterproof-digital-cameras/" rel="nofollow">olymbus waterproof</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FBrian%20%28not%20verified%29&amp;do=goto">Brian (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 24 Jul 2009 06:07:14 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ebd13f1b27f427e68031a068a498fa3f">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<p>Torbutton 1.1.18 (released Apr 17) fixes many usability and interoperability<br />
+items, in an attempt to make the new Torbutton not so obnoxious in its<br />
+zeal to protect the user. It also includes new translations for French,<br />
+Russian, Farsi, Italian, and Spanish.<a href="http://www.onlineflashgames.org" rel="nofollow">online games</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 22 Oct 2009 06:07:15 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FApril_2008_Progress_Report&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:07:11 AM CDT</span>
+<!-- Created <span class="date">Wed 14 May 2008 11:53:24 AM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

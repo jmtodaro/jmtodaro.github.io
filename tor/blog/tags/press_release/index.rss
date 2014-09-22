@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged press_release</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/press_release/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: November 2008 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2008_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2008_Progress_Report/</link>
+
+
+	<category>/tags/censorship_circumvention</category>
+
+	<category>/tags/development_roadmap</category>
+
+	<category>/tags/funding</category>
+
+	<category>/tags/press_release</category>
+
+
+	<pubDate>Wed, 24 Dec 2008 22:29:44 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:16:27Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;Bug Fixes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.1.7-alpha (released November 8) fixes a major security problem in Debian and Ubuntu packages (and maybe other packages) noticed by Theo de Raadt, fixes a smaller security flaw that might allow an attacker to access local services, adds better defense against DNS poisoning attacks on exit relays, further improves hidden service performance, and fixes a variety of other issues.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Nov-2008/msg00229.html&quot; title=&quot;http://archives.seul.org/or/talk/Nov-2008/msg00229.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Nov-2008/msg00229.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Tor 0.2.0.32 (released November 20) fixes a major security problem in Debian and Ubuntu packages (and maybe other packages) noticed by Theo de Raadt, fixes a smaller security flaw that might allow an attacker to access local services, further improves hidden service performance, and fixes a variety of other issues.&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/announce/Dec-2008/msg00000.html&quot; title=&quot;http://archives.seul.org/or/announce/Dec-2008/msg00000.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/announce/Dec-2008/msg00000.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Vidalia 0.1.10 (released November 2) fixes some presentation bugs and some bugs in the Windows installer. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/november-2008-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/November_2008_Progress_Report/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

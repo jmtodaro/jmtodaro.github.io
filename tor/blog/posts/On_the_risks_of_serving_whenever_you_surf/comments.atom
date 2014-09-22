@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>On the risks of serving whenever you surf</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_risks_of_serving_whenever_you_surf/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_risks_of_serving_whenever_you_surf/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>sjmurdoch</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/On_the_risks_of_serving_whenever_you_surf/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:45:12Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_risks_of_serving_whenever_you_surf/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_risks_of_serving_whenever_you_surf/comment_1/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:45:06Z</updated>
+	<published>2009-12-25T12:45:06Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&quot;For example, the default Tor configuration could be set to make Tor clients automatically a bridge if they are reachable from the Internet and sufficiently reliable.&quot;&lt;/p&gt;
+
+&lt;p&gt;This idea sounds good.Will it be put into practice soon? I&#39;m a Chinese user.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_risks_of_serving_whenever_you_surf/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_risks_of_serving_whenever_you_surf/comment_2/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:45:07Z</updated>
+	<published>2009-12-25T12:45:07Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;ve had a bridge running for a few months here but it looks to have gone quiet since the 24th December.  Maybe China has blocked my address, I don&#39;t know.  Is there a way I can test for that?  It looks like inbound connections are being reset on their end (DPI intercept?) before a connection can be established.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bridge &amp;lt; syn &amp;lt; user&lt;br /&gt;
+bridge &amp;gt; syn ack &amp;gt; user&lt;br /&gt;
+bridge &amp;lt; rst ack &amp;lt; user&lt;br /&gt;
+bridge &amp;lt; rst ack &amp;lt; user&lt;br /&gt;
+bridge &amp;lt; ack &amp;lt; user&lt;br /&gt;
+bridge &amp;gt; rst &amp;gt; user&lt;br /&gt;
+bridge &amp;lt; rst ack &amp;lt; user&lt;br /&gt;
+bridge &amp;lt; rst &amp;lt; user&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bridge &amp;lt; syn &amp;lt; user&lt;br /&gt;
+bridge &amp;gt; syn ack &amp;gt; user&lt;br /&gt;
+bridge &amp;lt; ack &amp;lt; user&lt;br /&gt;
+bridge &amp;lt; rst ack &amp;lt; user&lt;br /&gt;
+bridge &amp;lt; psh ack &amp;lt; user (ssl packet)&lt;br /&gt;
+bridge &amp;lt; rst ack &amp;lt; user&lt;br /&gt;
+bridge &amp;lt; rst &amp;lt; user&lt;br /&gt;
+bridge &amp;lt; rst &amp;lt; user&lt;br /&gt;
+bridge &amp;lt; rst ack &amp;lt; user&lt;br /&gt;
+bridge &amp;lt; rst &amp;lt; user&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;(etc...)&lt;/p&gt;
+
+&lt;p&gt;Not sure what to make of it really.  I don&#39;t think I&#39;ve changed anything this side... &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/On_the_risks_of_serving_whenever_you_surf/../../smileys/question.png&quot; alt=&quot;(?)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;* sorry it&#39;s a little off-topic *&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_risks_of_serving_whenever_you_surf/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_risks_of_serving_whenever_you_surf/comment_3/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:45:08Z</updated>
+	<published>2009-12-30T12:45:08Z</published>
+
+	<content type="html" xml:lang="en">
+	It seems on Dec 24, China updated the GFW with a list of new IP addresses to block.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_risks_of_serving_whenever_you_surf/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_risks_of_serving_whenever_you_surf/comment_4/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:45:09Z</updated>
+	<published>2009-12-26T12:45:09Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;The current stable release of Incognito has a related problem, where unplugging and plugging in the ethernet cord at eth0 will cause an unauthorized tor server to start leaking your IP onto the internet:&lt;/p&gt;
+
+&lt;p&gt;NOTICE   (1 of 1) Received reload signal (hup). Reloading config.&lt;br /&gt;
+NOTICE  (1 of 1) Opening OR listener on 0.0.0.0:9001&lt;br /&gt;
+NOTICE  (1 of 1) Opening Directory listener on 0.0.0.0:9030&lt;br /&gt;
+NOTICE  (1 of 1) Your Tor server&#39;s identity key fingerprint is &#39;REDACTED&#39;&lt;br /&gt;
+NOTICE  (1 of 2) Now checking whether ORPort REDACTED:9001 and DirPort REDACTED:9030 are reachable... (this may take up to 20 m&lt;br /&gt;
+NOTICE  (2 of 2) inutes -- look for log messages indicating success)&lt;br /&gt;
+WARN    (1 of 2) Your server (REDACTED:9001) has not managed to confirm that its ORPort is reachable. Please check your firewalls, p&lt;br /&gt;
+WARN    (2 of 2) orts, address, /etc/hosts file, etc.&lt;br /&gt;
+WARN    (1 of 2) Your server (REDACTED:9030) has not managed to confirm that its DirPort is reachable. Please check your firewalls,&lt;br /&gt;
+WARN    (2 of 2) ports, address, /etc/hosts file, etc.&lt;/p&gt;
+
+&lt;p&gt;It is contacting my real external IP from my exit node to see if my new unwanted server is reachable. This is a problem in any case, as it is unauthorized, but it is a very serious problem if I am using StrictExitNodes. I have just been completely identified and my potential anonymity drops to zero.&lt;/p&gt;
+
+&lt;p&gt;It appears that any hup will cause this behavior. And hups start to happen for various reasons after the system has been running for several hours or a day.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_risks_of_serving_whenever_you_surf/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_risks_of_serving_whenever_you_surf/comment_5/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:45:10Z</updated>
+	<published>2009-12-26T12:45:10Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;m not sure this is the place to be asking questions about Incog distro.&lt;/p&gt;
+
+&lt;p&gt;The Incog distro&#39;s message forum is at:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.linuxquestions.org/questions/incognito-85/&quot; title=&quot;http://www.linuxquestions.org/questions/incognito-85/&quot; rel=&quot;nofollow&quot;&gt;http://www.linuxquestions.org/questions/incognito-85/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I wish you the best of luck with any tor distro you use, especially from anonymous sources. I wouldn&#39;t trust any of them where closed binaries are used and where you personally didn&#39;t roll them. No disrespect to the honest and good intentioned distro maintainers out there but in today&#39;s world the philosophy is: trust no one unless you&#39;ve seen the source yourself, especially when it comes to privacy soft.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_risks_of_serving_whenever_you_surf/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_risks_of_serving_whenever_you_surf/comment_6/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:45:11Z</updated>
+	<published>2010-01-01T12:45:11Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;一月 02 13:24:44.031 [Notice] Now checking whether ORPort 220.170.52.39:443 and DirPort 220.170.52.39:9030 are reachable... (this may take up to 20 minutes -- look for log messages indicating success)&lt;br /&gt;
+一月 02 13:24:53.437 [Notice] Self-testing indicates your DirPort is reachable from the outside. Excellent.&lt;br /&gt;
+一月 02 13:26:18.671 [Notice] Your DNS provider gave an answer for &quot;bsk2xlrnxhi.invalid&quot;, which is not supposed to exist.  Apparently they are hijacking DNS failures. Trying to correct for this.  We&#39;ve noticed 1 possibly bad address so far.&lt;br /&gt;
+一月 02 13:26:19.187 [Notice] Your DNS provider has given &quot;222.246.129.82&quot; as an answer for 11 different invalid addresses. Apparently they are hijacking DNS failures. I&#39;ll try to correct for this by treating future occurrences of &quot;222.246.129.82&quot; as &#39;not found&#39;.&lt;br /&gt;
+一月 02 13:44:33.546 [Warning] Your server (220.170.52.39:443) has not managed to confirm that its ORPort is reachable. Please check your firewalls, ports, address, /etc/hosts file, etc.&lt;/p&gt;
+
+&lt;p&gt;ps:i run tor as a relay in China using a adsl internet conection.it seems that something don&#39;t work,i don&#39;t know...&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/On_the_risks_of_serving_whenever_you_surf/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/On_the_risks_of_serving_whenever_you_surf/comment_7/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:45:12Z</updated>
+	<published>2010-01-04T12:45:12Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;It seems your relay is not working because your orport is not reachable. If you&#39;re inside china, this is expected, since China is actively blocking public tor relays.&lt;/p&gt;
+
+&lt;p&gt;As for the dns errors, your ISP gives answers when it should give nxdomain responses.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+
+</feed>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged google</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/google/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/google/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/google/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:07:22Z</updated>
+<entry>
+	<title>Google Chrome Incognito Mode, Tor, and Fingerprinting</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Google_Chrome_Incognito_Mode_Tor_and_Fingerprinting/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Google_Chrome_Incognito_Mode_Tor_and_Fingerprinting/"/>
+
+	<author><name>mikeperry</name></author>
+
+
+
+
+
+
+	<category term="/tags/EFF" />
+
+	<category term="/tags/chrome" />
+
+	<category term="/tags/firefox" />
+
+	<category term="/tags/google" />
+
+	<category term="/tags/panopticlick" />
+
+	<category term="/tags/privacy" />
+
+	<category term="/tags/private_browsing" />
+
+	<category term="/tags/threat_models" />
+
+	<category term="/tags/torbutton" />
+
+
+	<updated>2011-04-05T12:07:22Z</updated>
+	<published>2010-09-14T14:08:02Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;A few months back, I posted that &lt;a href=&quot;https://blog.torproject.org/blog/firefox-private-browsing-mode-torbutton-and-fingerprinting&quot;&gt;we have been in discussion&lt;/a&gt; with Mozilla about improving their Private Browsing mode to resist &lt;a href=&quot;https://wiki.mozilla.org/Fingerprinting&quot;&gt;fingerprinting&lt;/a&gt; and the &lt;a href=&quot;https://wiki.mozilla.org/Security/Anonymous_Browsing&quot;&gt;network adversary&lt;/a&gt;. As I mentioned there, we have also been doing the same thing with Google for Google Chrome. Google has taken the same approach as Firefox for their Incognito mode, which means that it provides little to no protections against a network adversary.&lt;/p&gt;
+
+&lt;p&gt;This means that Chrome Incognito mode is not safe to use with Tor. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/google-chrome-incognito-mode-tor-and-fingerprinting&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Google_Chrome_Incognito_Mode_Tor_and_Fingerprinting/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Google_Chrome_Incognito_Mode_Tor_and_Fingerprinting/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Torbutton Release 1.2.5, Google Captchas, and addons.mozilla.org</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/"/>
+
+	<author><name>mikeperry</name></author>
+
+
+
+
+
+
+	<category term="/tags/captchas" />
+
+	<category term="/tags/data_retention" />
+
+	<category term="/tags/firefox" />
+
+	<category term="/tags/google" />
+
+	<category term="/tags/logging" />
+
+	<category term="/tags/mozilla" />
+
+	<category term="/tags/torbutton" />
+
+
+	<updated>2011-04-05T11:55:13Z</updated>
+	<published>2010-04-10T10:48:05Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Torbutton 1.2.5 has been released. You can download it from &lt;a href=&quot;https://www.torproject.org/torbutton/&quot;&gt;the torbutton homepage&lt;/a&gt;. It has also been submitted to &lt;a href=&quot;https://addons.mozilla.org/en-US/firefox/addon/2275/&quot;&gt;addons.mozilla.org&lt;/a&gt;, though it may take a while for Mozilla to review the addon.&lt;/p&gt;
+
+&lt;p&gt;In addition to the numerous bug fixes mentioned in the &lt;a href=&quot;https://gitweb.torproject.org//torbutton.git?a=blob;hb=HEAD;f=src/CHANGELOG&quot;&gt;changelog&lt;/a&gt;, one of the new features of this release is to provide the ability to automatically redirect to an alternate search engine when Google presents you with a captcha. The current options are &lt;a href=&quot;https://www.ixquick.com&quot;&gt;IxQuick&lt;/a&gt;, &lt;a href=&quot;http://www.bing.com&quot;&gt;Bing&lt;/a&gt;, &lt;a href=&quot;http://search.yahoo.com&quot;&gt;Yahoo&lt;/a&gt;, and &lt;a href=&quot;https://ssl.scroogle.org&quot;&gt;Scroogle&lt;/a&gt;. Since it supports SSL, and appears to have a &lt;a href=&quot;https://www.ixquick.com/eng/protect-privacy.html&quot;&gt;progressive stance on user privacy&lt;/a&gt;, IxQuick is the current default. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/torbutton-release-125-google-captchas-and-addonsmozillaorg&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Torbutton_Release_1_2_5_Google_Captchas_and_addons_mozilla_org/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>BitTorrent support for Thandy</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/BitTorrent_support_for_Thandy/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/BitTorrent_support_for_Thandy/"/>
+
+	<author><name>Sebastian</name></author>
+
+
+
+
+
+
+	<category term="/tags/BitTorrent" />
+
+	<category term="/tags/Google_Summer_of_Code" />
+
+	<category term="/tags/google" />
+
+	<category term="/tags/gsoc" />
+
+	<category term="/tags/thandy" />
+
+
+	<updated>2011-04-05T11:35:18Z</updated>
+	<published>2009-09-10T19:16:03Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;As a returning &lt;a href=&quot;http://socghop.appspot.com/org/home/google/gsoc2009/eff&quot; rel=&quot;nofollow&quot;&gt;Google Summer of Code&lt;/a&gt; student for the second year in a row, I was thrilled to hear that I had been accepted again.&lt;/p&gt;
+
+&lt;p&gt;My task was to add &lt;a href=&quot;http://www.bittorrent.com/&quot; rel=&quot;nofollow&quot;&gt;BitTorrent&lt;/a&gt; support to &lt;a href=&quot;https://git.torproject.org/checkout/thandy/master/&quot; rel=&quot;nofollow&quot;&gt;Thandy&lt;/a&gt;, the secure automated updater &lt;a href=&quot;http://google-opensource.blogspot.com/2009/03/thandy-secure-update-for-tor.html&quot; rel=&quot;nofollow&quot;&gt;developed&lt;/a&gt; by the Tor project, along with setting up and testing the necessary infrastructure. The goal is to better mitigate load spikes following the release of new software versions and allowing volunteers to easily help users to fetch Tor. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/bittorrent-support-thandy&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/BitTorrent_support_for_Thandy/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/BitTorrent_support_for_Thandy/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>Google funds an auto-update for Vidalia</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Google_funds_an_auto-update_for_Vidalia/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Google_funds_an_auto-update_for_Vidalia/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/auto-update" />
+
+	<category term="/tags/funding" />
+
+	<category term="/tags/google" />
+
+	<category term="/tags/tor" />
+
+	<category term="/tags/tor_software" />
+
+	<category term="/tags/vidalia" />
+
+
+	<updated>2011-04-05T11:07:28Z</updated>
+	<published>2008-06-07T02:13:30Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Google is funding a project to create an auto-update feature in Vidalia.  This &lt;a href=&quot;https://www.torproject.org/projects/google&quot; rel=&quot;nofollow&quot;&gt;auto-update feature&lt;/a&gt; will provide a better user experience for Tor users.  The goal is to create a system where Vidalia can detect when a new release is available, fetch the package, verify authenticity, and assist the user in upgrading the Vidalia/Tor package.  The auto-update feature preserves the user&#39;s privacy and anonymity.  Over the next six months we&#39;ll develop the auto-update system for general release around November 15, 2008.  &lt;/p&gt;
+
+&lt;p&gt;We&#39;re excited to work with Google on this project and look forward to the collaboration.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Google_funds_an_auto-update_for_Vidalia/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Google_funds_an_auto-update_for_Vidalia/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

@@ -1,0 +1,1431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Apple workaround for openssl issues on OS X 10.5 and 10.6</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FApple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Apple workaround for openssl issues on OS X 10.5 and 10.6</a>
+
+</span>
+
+
+<div id="content">
+<p>Apple responded to my bug report about a broken openssl.  I've since built test packages for OS X 10.5 and 10.6 users.  Their response is:</p>
+
+<blockquote><p>
+Thank you for your report of this issue with Tor.</p>
+<p>The issue you're seeing is because the current versions of the development tools were created before the OpenSSL security fix, and so do not include the "SSL3_FLAGS_ALLOW_UNSAFE_LEGACY_RENEGOTIATION" definition in the OpenSSL headers.</p>
+<p>You can work around this issue by supplying the definition to Tor directly, for example by compiling Tor using</p>
+<p>CPPFLAGS='-DSSL3_FLAGS_ALLOW_UNSAFE_LEGACY_RENEGOTIATION=0x0010' ./configure &amp;&amp; make</p>
+<p>This will work on both Leopard and Snow Leopard.
+</p></blockquote>
+
+<p>If you have an Intel (i386) Mac, use the normal i386 packages for Tor 0.2.2.8-alpha release at <a href="https://www.torproject.org/download" title="https://www.torproject.org/download" rel="nofollow">https://www.torproject.org/download</a>.</p>
+
+<p>If you have a PowerPC (ppc) Mac AND are running OS X 10.5 or 10.6, use these packages: <span class="read-more"><a href="http://blog.torproject.org/blog/apple-workaround-openssl-issues-os-x-105-and-106"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/10_3/" rel="tag">10 3</a>
+
+<a href="../../tags/10_4/" rel="tag">10 4</a>
+
+<a href="../../tags/10_5/" rel="tag">10 5</a>
+
+<a href="../../tags/10_6/" rel="tag">10 6</a>
+
+<a href="../../tags/confused_users/" rel="tag">confused users</a>
+
+<a href="../../tags/openssl/" rel="tag">openssl</a>
+
+<a href="../../tags/osx/" rel="tag">osx</a>
+
+<a href="../../tags/packaging_mess/" rel="tag">packaging mess</a>
+
+<a href="../../tags/tls_renegotiation/" rel="tag">tls renegotiation</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-240aee8d5098645819fe40ea7103cc44">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+It's working
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 31 Jan 2010 06:49:50 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-49bef388975049aee6af0aeb69bda33f">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>Maybe it's the wrong place here, but since you are talking about the Mac:<br />
+I'd really love to see the old "tor mac expert package" again.</p>
+
+<p>In former times the "expert package" included a launch script (/Library/StartupItems/Tor/tor) and also Privoxy with a launchscript (/Library/StartupItems/Privoxy/privoxy). This was such a wonderful package which just worked "in the background" - ready for action with any SOCKS compliant application or via Torbutton.</p>
+
+<p>The Vidalia Packages are unfortunately a pain in the a.. - and even worse I didn't archive the old startupItem scripts (otherwise i'd build the package myself).</p>
+
+<p>Please consider distribution the "expert package" like it was "in former times" again.<br />
+Vidalia sucks <img src="../../smileys/smile.png" alt=":-)" /></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 01 Feb 2010 06:49:51 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1ce647328976fe7e8639f6e61b59a427">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+It doesn't work. Tor 0.2.2.8-alpha crashes immediately after launch. I have Qt SDK 201001 installed on my Mac, is this the cause? 
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 01 Feb 2010 06:49:52 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3fc4f0693b13f0c12482bda064efe25b">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<p>Working for me.</p>
+
+<p>Thanks for jumping on this.  It was a bit awkward.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 01 Feb 2010 06:49:53 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-715224fa5144ba14e1d231a3fdb2e7bc">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+Crashes immediately after launch for me too (10.6).
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 02 Feb 2010 06:49:54 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-daa1ad15aadc6dc8c9b4f7575e035265">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>Thread 0 Crashed:  Dispatch queue: com.apple.main-thread<br />
+0   QtCore                          0x012a8d07 QObject::moveToThread(QThread*) + 39<br />
+1   QtCore                          0x0129987f QFactoryLoader::instance(QString const&amp;) const + 303<br />
+2   QtGui                           0x00605e76 createReadHandlerHelper(QIODevice*, QByteArray const&amp;, bool, bool) + 1814<br />
+3   QtGui                           0x00607175 QImageReaderPrivate::initHandler() + 773<br />
+4   QtGui                           0x00607b68 QImageReader::read(QImage*) + 1240<br />
+5   QtGui                           0x00607f59 QImageReader::read() + 41<br />
+6   QtGui                           0x0061c06f QPixmapData::fromFile(QString const&amp;, char const*, QFlags) + 63<br />
+7   QtGui                           0x00617d75 QPixmap::load(QString const&amp;, char const*, QFlags) + 1157<br />
+8   QtGui                           0x00618295 QPixmap::QPixmap(QString const&amp;, char const*, QFlags) + 149<br />
+9   net.vidalia-project.vidalia     0x000c70f9 Ui_MainWindow::setupUi(QMainWindow*) + 3403<br />
+10  net.vidalia-project.vidalia     0x000bf905 MainWindow::MainWindow() + 253<br />
+11  net.vidalia-project.vidalia     0x000b26dc main + 1952<br />
+12  net.vidalia-project.vidalia     0x00007252 _start + 216<br />
+13  net.vidalia-project.vidalia     0x00007179 start + 41</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 02 Feb 2010 06:49:55 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d519ed122174287e5eeee2586e206558">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+I installed the new security updates. Installed  0.2.2.8-alpha release and its tor buttons too. Still doesn't work, "The proxy server is refusing connections" message.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 03 Feb 2010 06:49:56 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-cb70b586cf64e9b7a60470bc62f97ceb">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+<p>I cant compile 0.2.2.8 on windows. I get the following error.</p>
+
+<p>"""<br />
+x:/MinGW/extend/local/ssl/lib/libssl.a(s3_srvr.o):s3_srvr.c:(.text+0x20fb): undefined reference to `_ECDH_compute_key'</p>
+
+<p>x:/MinGW/extend/local/ssl/lib/libssl.a(s3_srvr.o):s3_srvr.c:(.text+0x2384): undefined reference to `_X509_certificate_type'</p>
+
+<p>collect2: ld returned 1 exit status<br />
+make[3]: *** [tor.exe] Error 1<br />
+"""</p>
+
+<p>:-S</p>
+
+<p>Does anyone have any ideas ? This is with openssl 0.9.8l, which worked fine with tor 0.2.2.7.</p>
+
+<p>Im stumped....</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 03 Feb 2010 06:49:57 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-502197018a569e2dcb2a8fb718f031c6">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+What version of openssl is used to compile tor 0.2.2.8 ?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 03 Feb 2010 06:49:58 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b24af36590e08b0c0ab6e82d8573db4c">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi,<br />
+It's not about this subject, but i don't how can i send this notification.<br />
+I'm an new user of tor in Iran and today in "view the network" button of vidalia, i have saw someone relays traffic from Iran.<br />
+213/207.223.74<br />
+because of the lots of filters and traffics analysis from government, I'm not sure it's can be helpful and can cause some dangers OR it can be an dump connection that collect data and information about encryption s and protocols uses by tor to destroy connections from Iran.<br />
+I'm not sure but i just want to send an notification.<br />
+thank you tor for helping freedom in Iran.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 04 Feb 2010 06:49:59 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-dbef1420164e1f4a91a74dd52c34fb3d">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+I'm not surprised, the Cuban robberlutionary dis-government (i.e. murderous tyranny) is worse than the tyranny in Iran, good luck to you freedom loving Iranian people, you're at the cusp of regaining your lost freedoms, do not trust the Americans though, the plutocracy in power in the USA will stab you in the back at any opportunity, you would not be the first or the last to be betrayed by them.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 07 Feb 2010 06:50:00 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f5f7d865514c5a5f17ac23cd69e2ad94">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+<p>normal wersion not working, alpha 2.2.8 connecto to tor net.</p>
+
+<p>Many thanks (10.5.8 intel) </p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 06 Feb 2010 06:50:01 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d839edb9821f8fd15fcb17ac42ef931b">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+<p>Mac OS X 10.6 (intel)<br />
+Status: Working</p>
+
+<p>I felt so...naked before.</p>
+
+<p>Many thanks!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 08 Feb 2010 06:50:02 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-89b5492a9c24aa0da5e1cea1fd67cdd5">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi, Does anyone have a hint for the following problem, please? (Have 0.2.2.8-alpha bundle installed + included version of Torbutton, together with Firefox 3.6 and OS 10.6.2 intel):</p>
+
+<p>Vidalia connects to Tor network, but using Firefox with Torbutton enabled returns "The proxy server is refusing connections". Have tried out a couple of different proxy settings and searched various related blogs. Really don't know what else I could try. Many thanks in advance for any ideas!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 08 Feb 2010 06:50:03 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6882ea3e52a7310c7d5723b179bf3055">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+P.S.: Forgot to add that everything worked neatly before the openssl issue; so I reckon the problem must have to do with one of the modified components... Thanks!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 08 Feb 2010 06:50:04 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-539de20796578442183ec845c3bd939d">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+thanks, so far so good! appreciate your work <img src="../../smileys/smile.png" alt=":)" />
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 10 Feb 2010 06:50:05 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-39d6cd3145169c558c7853f82f624408">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+<p>I have two Macs, both are intel and both are running the latest patched version of 10.6. I followed the instructions on both. On the iMac, TOR works fine. On the MacBook, I get an error message:<br />
+Feb 10 20:28:24.630 [Notice] Tor v0.2.2.8-alpha (git-ff88bc7db8edeb29). This is experimental software. Do not rely on it for strong anonymity. (Running on Darwin i386)</p>
+
+<p>Feb 10 20:28:24.631 [Notice] Initialized libevent version 1.4.13-stable using method kqueue. Good.</p>
+
+<p>Feb 10 20:28:24.631 [Notice] Opening Socks listener on 127.0.0.1:9050</p>
+
+<p>Feb 10 20:28:24.632 [Warning] Could not bind to 127.0.0.1:9050: Address already in use. Is Tor already running?</p>
+
+<p>Feb 10 20:28:24.632 [Warning] Failed to parse/validate config: Failed to bind one of the listener ports.</p>
+
+<p>Feb 10 20:28:24.632 [Error] Reading config failed--see warnings above.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 10 Feb 2010 06:50:06 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-03571d46ea9256dab71eeeac797d344b">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+<p>I'm a novice Tor user.  I am running Tor on a MacBook Pro (Intel Core 2 duo).  After a long period of running Tor without difficulty, I started receiving the same error message reported in the message strings above:</p>
+
+<p>Feb 10 23:46:50.106 [Notice] Tor v0.2.1.22. This is experimental software. Do not rely on it for strong anonymity. (Running on Darwin i386)<br />
+Feb 10 23:46:50.107 [Notice] Initialized libevent version 1.4.13-stable using method kqueue. Good.<br />
+Feb 10 23:46:50.107 [Notice] Opening Socks listener on 127.0.0.1:9050<br />
+Feb 10 23:46:50.107 [Notice] Opening Control listener on 127.0.0.1:9051<br />
+Feb 10 23:46:50.534 [Notice] Bootstrapped 10%: Finishing handshake with directory server.<br />
+Feb 10 23:46:50.750 [Warning] TLS error: unexpected close while renegotiating<br />
+Feb 10 23:46:50.751 [Notice] No current certificate known for authority moria1; launching request.<br />
+Feb 10 23:46:50.751 [Notice] No current certificate known for authority gabelmoo; launching request.<br />
+Feb 10 23:46:50.751 [Notice] No current certificate known for authority dannenberg; launching request.<br />
+Feb 10 23:47:20.823 [Warning] TLS error: unexpected close while renegotiating</p>
+
+<p>From the blog post above, it appears there's a solution to this problem.  But I don't know how to "supply the definition to Tor directly, for example by compiling Tor using CPPFLAGS='-DSSL3_FLAGS_ALLOW_UNSAFE_LEGACY_RENEGOTIATION=0x0010' ./configure &amp;&amp; make"</p>
+
+<p>Can anyone explain to a newbie how to apply this fix?  Or is TorProject coming out with a new release to address it?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 10 Feb 2010 06:50:07 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-daf6a4171f6aa44b671d9e3bd3349309">
+
+<div class="comment-subject">
+
+Comment 19
+
+</div>
+
+<div class="inlinecontent">
+<p>I believe they meant to say:</p>
+
+<p>CPPFLAGS="$CPPFLAGS -DSSL3_FLAGS_ALLOW_UNSAFE_LEGACY_RENEGOTIATION=0x0010" ./configure &amp;&amp; make</p>
+
+<p>No reason to blow away your old CPPFLAGS...</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 11 Feb 2010 06:50:08 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0f410d44d6a429cfb92191099b8bd486">
+
+<div class="comment-subject">
+
+Comment 20
+
+</div>
+
+<div class="inlinecontent">
+I want to help Iranian people and other open a relay but on osx 10.6.2 vidalia crash........
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 12 Feb 2010 06:50:09 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-84dbdf81227b8ef5d2e7638ad21689b7">
+
+<div class="comment-subject">
+
+Comment 21
+
+</div>
+
+<div class="inlinecontent">
+and precisely wtf has this to do with tor i wonder ?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 12 Feb 2010 06:50:10 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b60b6fe31ad75edcf390cd6482e31839">
+
+<div class="comment-subject">
+
+Comment 22
+
+</div>
+
+<div class="inlinecontent">
+So has anyone noticed that the latest workaround for OS 10.6 doesn't seem to be working on laptops?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 14 Feb 2010 06:50:11 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c8bf3a7c8c0fff5ea916410bd284d0ce">
+
+<div class="comment-subject">
+
+Comment 23
+
+</div>
+
+<div class="inlinecontent">
+<p>It doesn't work for me either.<br />
+Intel Macbook, Mac OS 10.5.8, latest updates...</p>
+
+<p>Feb 14 21:07:43.564 [Warning] TLS error: unexpected close while renegotiating<br />
+Feb 14 21:07:43.572 [Notice] No current certificate known for authority dannenberg; launching request.<br />
+Feb 14 21:08:43.119 [Notice] No current certificate known for authority dannenberg; launching request.<br />
+Feb 14 21:08:43.273 [Warning] TLS error: unexpected close while renegotiating<br />
+Feb 14 21:09:44.300 [Warning] TLS error: unexpected close while renegotiating</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 14 Feb 2010 06:50:12 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6787d61bb4668d335b30c3044403b72f">
+
+<div class="comment-subject">
+
+Comment 24
+
+</div>
+
+<div class="inlinecontent">
+<p>Same here<br />
+TLS error: unexpected close while renegotiating</p>
+
+<p>Worked fine last week, but from this weekend on ... nothing.<br />
+at least noticed it this weekend first.</p>
+
+<p>thanks!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 15 Feb 2010 06:50:13 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-77b8ca7d3e15ed8ec628ed09f3fc5337">
+
+<div class="comment-subject">
+
+Comment 25
+
+</div>
+
+<div class="inlinecontent">
+<p>I'm having some difficulty here. I downloaded the file as advised above and keep getting the following errors to the point it won't even start up:</p>
+
+<p>Feb 15 21:48:59.430 [Notice] Tor v0.2.2.8-alpha (git-ff88bc7db8edeb29). This is experimental software. Do not rely on it for strong anonymity. (Running on Darwin Power Macintosh)<br />
+Feb 15 21:48:59.436 [Notice] Initialized libevent version 1.4.13-stable using method kqueue. Good.<br />
+Feb 15 21:48:59.438 [Notice] Opening Socks listener on 127.0.0.1:9050<br />
+Feb 15 21:48:59.439 [Notice] Opening Control listener on 127.0.0.1:9050<br />
+Feb 15 21:48:59.441 [Warning] Could not bind to 127.0.0.1:9050: Address already in use. Is Tor already running?<br />
+Feb 15 21:48:59.442 [Notice] Closing partially-constructed listener Socks listener on 127.0.0.1:9050<br />
+Feb 15 21:48:59.444 [Warning] Failed to parse/validate config: Failed to bind one of the listener ports.<br />
+Feb 15 21:48:59.445 [Error] Reading config failed--see warnings above.</p>
+
+<p>If I change the port it connects but other applications won't work it's almost like it's causing dual problems. How can I fix this? </p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 15 Feb 2010 06:50:14 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-40083b7578ac5863c5f6f7ca6728aa09">
+
+<div class="comment-subject">
+
+Comment 26
+
+</div>
+
+<div class="inlinecontent">
+This worked for a while, but as of Feb. 15 I am getting an error message: Reading config failed. Also, Little Snitch is telling me that TOR is trying to use the internet even when the app isn't running. What's up with that?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 16 Feb 2010 06:50:15 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-14dfa422f289ec88e2572ca3b39a5736">
+
+<div class="comment-subject">
+
+Comment 27
+
+</div>
+
+<div class="inlinecontent">
+Highly suspect.  Is something else starting Tor for you?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 18 Feb 2010 06:50:16 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7858b559b22ae3ad2f2151862238feca">
+
+<div class="comment-subject">
+
+Comment 28
+
+</div>
+
+<div class="inlinecontent">
+I have the same problem... feb 18 00:49:41.118 [Warning] TLS error: unexpected close while renegotiating... tor doesn't work... please help me... I'm a newbie... how can I fix the problem!?!?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 17 Feb 2010 06:50:17 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fed430196e49d6ed191cc6cbf8a0608f">
+
+<div class="comment-subject">
+
+Comment 29
+
+</div>
+
+<div class="inlinecontent">
+The latest 0.2.1.23 version of tor works fine, see <a href="https://torproject.org/easy-download" title="https://torproject.org/easy-download" rel="nofollow">https://torproject.org/easy-download</a>.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 18 Feb 2010 06:50:18 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b69d850e116a0134c71474dfe0c7561b">
+
+<div class="comment-subject">
+
+Comment 30
+
+</div>
+
+<div class="inlinecontent">
+<p>Hej,</p>
+
+<p>I had the same problem. So I downloaded the mentioned package and it worked. No problem. But the next start of Vidalia I get a new error:<br />
+Could not bind to 127.0.0.1:9050: Address already in use. Is Tor already running?</p>
+
+<p>Any solution for this?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 18 Feb 2010 06:50:19 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e701730176b9597f7b65c7c7a01d767d">
+
+<div class="comment-subject">
+
+Comment 31
+
+</div>
+
+<div class="inlinecontent">
+Still not working with either 0.2.1.23 or 0.2.2.28-alpha on 10.6.2. Same "TLS error: unexpected close while renegotiating". HELP!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 19 Feb 2010 06:50:20 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4d00c1755cab80a2acbd3844fdeaea06">
+
+<div class="comment-subject">
+
+Comment 32
+
+</div>
+
+<div class="inlinecontent">
+yes i confirm the same error with the same setup.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 19 Feb 2010 06:50:21 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ea3e44725087993edc2e1cffe605b229">
+
+<div class="comment-subject">
+
+Comment 33
+
+</div>
+
+<div class="inlinecontent">
+<p>Thanks for fixing Tor for OSX; 2.2.8 works like a charm and I am once again able to act as relay.<br />
+(OSX 10.6.2 on @G Core Duo)</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 26 Feb 2010 06:50:22 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-516ccdbc4bffdcd5f9c4290da2feb1bc">
+
+<div class="comment-subject">
+
+Comment 34
+
+</div>
+
+<div class="inlinecontent">
+<p>what about version of openssl can i safely upgrade 10.5.8 ppc ?</p>
+
+<p>it compiled right out of the box ./config --prefix=/usr</p>
+
+<p>is there any dangers of doing that ?<br />
+-j</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 08 Feb 2011 06:50:23 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FApple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:49:49 AM CDT</span>
+<!-- Created <span class="date">Sun 31 Jan 2010 09:10:14 PM CST</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

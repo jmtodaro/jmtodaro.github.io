@@ -1,0 +1,558 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>February 2008 Progress Report</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FFebruary_2008_Progress_Report&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">February 2008 Progress Report</a>
+
+</span>
+
+
+<div id="content">
+<p>Tor 0.2.0.20-rc (released Feb 24) is the first release candidate for the 0.2.0 series. It makes more progress towards normalizing Tor's TLS handshake, makes hidden services work better again, helps relays bootstrap if they don't know their IP address, adds optional support for linking in openbsd's allocator or tcmalloc, allows really fast relays to scale past 15000 sockets, and fixes a bunch of minor bugs reported by Veracode.<br />
+<a href="http://archives.seul.org/or/talk/Feb-2008/msg00279.html" title="http://archives.seul.org/or/talk/Feb-2008/msg00279.html" rel="nofollow">http://archives.seul.org/or/talk/Feb-2008/msg00279.html</a></p>
+
+<p>Tor 0.2.0.19-alpha (released Feb 9) makes more progress towards normalizing Tor's TLS handshake, makes path selection for relays more secure and IP address guessing more robust, and generally fixes a lot of bugs in preparation for calling the 0.2.0 branch stable.<br />
+<a href="http://archives.seul.org/or/talk/Feb-2008/msg00134.html" title="http://archives.seul.org/or/talk/Feb-2008/msg00134.html" rel="nofollow">http://archives.seul.org/or/talk/Feb-2008/msg00134.html</a></p>
+
+<p>Torbutton 1.1.13 (released Feb 1), 1.1.14 (released Feb 24), and 1.1.15 (released Feb 26) fix many more potential privacy and identity leaks, mostly based on exploits found by Greg Fleischer. They also add support for automatic updates via the usual Firefox extension upgrade approach.<br />
+<a href="https://torbutton.torproject.org/dev/CHANGELOG" title="https://torbutton.torproject.org/dev/CHANGELOG" rel="nofollow">https://torbutton.torproject.org/dev/CHANGELOG</a></p>
+
+<p>Work continued toward the upcoming Vidalia 0.1.0 release (which came out March 1): support for launching Firefox and Polipo as supporting applications; support for learning from Tor when the first circuit is ready so it can inform the user; and many other bugfixes including a few security fixes.<br />
+<a href="http://trac.vidalia-project.net/browser/vidalia/releases/vidalia-0.1.0/CHANGELOG" title="http://trac.vidalia-project.net/browser/vidalia/releases/vidalia-0.1.0/CHANGELOG" rel="nofollow">http://trac.vidalia-project.net/browser/vidalia/releases/vidalia-0.1.0/C...</a></p>
+
+<p>The Tor 0.2.0.19-alpha release contained many security-related cleanups based on an anonymously submitted code review from a static analysis tool.  The Tor 0.2.0.20-rc release contained even more security-related cleanups, based on an external security analysis and audit by Veracode. Hopefully cleanups at this stage will reduce the number of times we need to push out an urgent new stable "0.2.0" release for security reasons. <span class="read-more"><a href="http://blog.torproject.org/blog/february-2008-progress-report"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/progress_report/" rel="tag">progress report</a>
+
+<a href="../../tags/release_candidate/" rel="tag">release candidate</a>
+
+<a href="../../tags/tor/" rel="tag">tor</a>
+
+<a href="../../tags/torbrowser/" rel="tag">torbrowser</a>
+
+<a href="../../tags/torbutton/" rel="tag">torbutton</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-43f4c90c44cac51236e3276ebcbd6bba">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>torbutton 1.1.14 alpha 及以后版本(目前1.1.14-1.1.17)存在Locale switch问题<br />
+我使用的是英文版本的Firefox 2.0.0.12(en_US)+Locale switch，安装了zh_CN的locale，使用简体中文语言(zh_CN)的locale，但是安装了torbutton 1.1.14 alpha及以后版本，激活torbutton就会变成英文(en_US)的locale<br />
+1.1.13没问题</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fkeelort%20%28not%20verified%29&amp;do=goto">keelort (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 16 Mar 2008 06:06:05 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7e8e511d531d2ca6f0491f699637384b">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>what about Firefox 3 betas support ? , because the current stable version add-on isn't compatible with it</p>
+
+<p>tx,</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 21 Mar 2008 06:06:06 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3832e5c93848240e8f9cd8b02578ffbb">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>I found out a  post that claims  Tor can be hacked.<br />
+Check it please</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 24 Mar 2008 06:06:07 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bc11e291df8f7037a8d3a409de7cb360">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<p>The first is to read the set of Warnings for how to use Tor safely:<br />
+<a href="https://www.torproject.org/download#Warning" title="https://www.torproject.org/download#Warning" rel="nofollow">https://www.torproject.org/download#Warning</a></p>
+
+<p>The second is to use the new development version of Torbutton:<br />
+<a href="https://torbutton.torproject.org/dev/" title="https://torbutton.torproject.org/dev/" rel="nofollow">https://torbutton.torproject.org/dev/</a></p>
+
+<p>It protects against a lot of attacks, including the one you point to.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Farma&amp;do=goto">arma</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 11 Apr 2008 06:06:08 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b597539019e4c3771feb180b6d9e1d3e">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>OSX 10.4.11, via a Linksys router, static DSL.<br />
+It appears I can use Vidalia with Firefox (torbutton works, passes tests)<br />
+I can invoke Vidalia from the Dock; it runs a while then quits on its own.<br />
+It says I don't have the ORport and DIRport set -- true that.</p>
+
+<p>All I'd want to do -- I think -- is set the thing to relay but without offering any of the checkbox services, just to serve as a router within the system - the Help says that's useful.</p>
+
+<p>Is it safe, at this level of inexpertise?  OR should I just wait?</p>
+
+<p>Closest advice I've found online is for Linux, says:</p>
+
+<p>[open the web page for the router]<br />
+Go to the advanced tab -&gt; forwarding<br />
+set up two applications, ORport, DIRport<br />
+select TCP, select 9001 and 9030, and<br />
+point them to whatever IP you have on your linux box.<br />
+Make sure you tell TOR to advertise your external IP address via torc.</p>
+
+<p>Well, "whatever IP" and "torc" are mysteries.<br />
+--------------------</p>
+
+<p>Doesn't quite fit the Linksys.  Maybe this should be done in the "Port Range Forwarding" section?  I have the help info.  But I wonder if I'm not smart enough to be opening the machine up like this, til it's got more assurance of security.</p>
+
+<p>Got a "don't bother me yet trying to be helpful, we'll call you when ready" flag you can set somewhere for folks like me to know when to try to make our machines useful?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fhank%20%28not%20verified%29&amp;do=goto">hank (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 08 Apr 2008 06:06:09 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-30f7c5d55d0a5f4ced09dd116020d5e2">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>I THINK this is right -- not using the internal firewall, using the router.<br />
+The FAQ for that seems to be, in full:</p>
+
+<p>-----------begin-----</p>
+
+<p>   * If you just use an external NAT router as your firewall, you only need to do the port forwarding through that. </p>
+
+<p>Volunteers: please add advice for other platforms if you know how they work.</p>
+
+<p>----------end--------</p>
+
+<p>COMMENT:</p>
+
+<p>I usually have just the specific IP addresses of the machines attached to the router authorized.  So I gather I'd have to add two IP addresses, and in the setup, give a 'range' of only one port number each for ORport and DIRport?</p>
+
+<p>Here's what the Linksys BEFSR says about port forwarding.  I am open to advice whether this is what ought to be done:</p>
+
+<p>------LINKSYS_HELP---------</p>
+
+<p>Port Range Forwarding</p>
+
+<p>Port Range Forwarding can be used to set up public services on your network. When users from the Internet make certain requests on your network, the Router can forward those requests to computers equipped to handle the requests. If, for example, you set the port number 80 (HTTP) to be forwarded to IP Address 192.168.1.2, then all HTTP requests from outside users will be forwarded to 192.168.1.2. It is recommended that the computer use static IP address.</p>
+
+<p>You may use this function to establish a web server or FTP server via an IP Gateway. Be sure that you enter a valid IP address. (You may need to establish a static IP address with your ISP in order to properly run an Internet server.) For added security, Internet users will be able to communicate with the server, but they will not actually be connected. The packets will simply be forwarded through the Router.</p>
+
+<p>To add a server using forwarding:</p>
+
+<p>   1. Enter an Application name of the service you want to forward.<br />
+   2. Enter the Port Range Start and End of the service you want to forward.<br />
+   3. Select the protocol used by the services.<br />
+   4. Enter the IP Address of the server that you want the Internet users to access.<br />
+   5. Select Enabled for that entry.<br />
+   6. Click the Save Settings button to save the settings.</p>
+
+<p>To delete a service entry:</p>
+
+<p>   1. Enter a zero number in the Port Range number and IP Address fields.<br />
+   2. Uncheck the TCP and/or UDP check box and the Enable check box.<br />
+   3. Clear the Application field.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fhank%20%28not%20verified%29&amp;do=goto">hank (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 08 Apr 2008 06:06:10 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b2ce4d651b868a8d3fa32ef28e6793e3">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p>Checking, no contact ...</p>
+
+<p>I know you guys are busy, and since nobody's opened a new monthly thread since this February one, I may be asking in the wrong place.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fhank%20%28not%20verified%29&amp;do=goto">hank (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 11 Apr 2008 06:06:11 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FFebruary_2008_Progress_Report&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:06:04 AM CDT</span>
+<!-- Created <span class="date">Tue 11 Mar 2008 07:47:23 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

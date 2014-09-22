@@ -1,0 +1,974 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Apple workaround for openssl issues on OS X 10.5 and 10.6</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:50:23Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_1/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:50Z</updated>
+	<published>2010-01-31T12:49:50Z</published>
+
+	<content type="html" xml:lang="en">
+	It&#39;s working
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_2/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:51Z</updated>
+	<published>2010-02-01T12:49:51Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Maybe it&#39;s the wrong place here, but since you are talking about the Mac:&lt;br /&gt;
+I&#39;d really love to see the old &quot;tor mac expert package&quot; again.&lt;/p&gt;
+
+&lt;p&gt;In former times the &quot;expert package&quot; included a launch script (/Library/StartupItems/Tor/tor) and also Privoxy with a launchscript (/Library/StartupItems/Privoxy/privoxy). This was such a wonderful package which just worked &quot;in the background&quot; - ready for action with any SOCKS compliant application or via Torbutton.&lt;/p&gt;
+
+&lt;p&gt;The Vidalia Packages are unfortunately a pain in the a.. - and even worse I didn&#39;t archive the old startupItem scripts (otherwise i&#39;d build the package myself).&lt;/p&gt;
+
+&lt;p&gt;Please consider distribution the &quot;expert package&quot; like it was &quot;in former times&quot; again.&lt;br /&gt;
+Vidalia sucks &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/../../smileys/smile.png&quot; alt=&quot;:-)&quot; /&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_3/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:52Z</updated>
+	<published>2010-02-01T12:49:52Z</published>
+
+	<content type="html" xml:lang="en">
+	It doesn&#39;t work. Tor 0.2.2.8-alpha crashes immediately after launch. I have Qt SDK 201001 installed on my Mac, is this the cause? 
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_4/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:53Z</updated>
+	<published>2010-02-01T12:49:53Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Working for me.&lt;/p&gt;
+
+&lt;p&gt;Thanks for jumping on this.  It was a bit awkward.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_5/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:54Z</updated>
+	<published>2010-02-02T12:49:54Z</published>
+
+	<content type="html" xml:lang="en">
+	Crashes immediately after launch for me too (10.6).
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_6/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:55Z</updated>
+	<published>2010-02-02T12:49:55Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Thread 0 Crashed:  Dispatch queue: com.apple.main-thread&lt;br /&gt;
+0   QtCore                          0x012a8d07 QObject::moveToThread(QThread*) + 39&lt;br /&gt;
+1   QtCore                          0x0129987f QFactoryLoader::instance(QString const&amp;amp;) const + 303&lt;br /&gt;
+2   QtGui                           0x00605e76 createReadHandlerHelper(QIODevice*, QByteArray const&amp;amp;, bool, bool) + 1814&lt;br /&gt;
+3   QtGui                           0x00607175 QImageReaderPrivate::initHandler() + 773&lt;br /&gt;
+4   QtGui                           0x00607b68 QImageReader::read(QImage*) + 1240&lt;br /&gt;
+5   QtGui                           0x00607f59 QImageReader::read() + 41&lt;br /&gt;
+6   QtGui                           0x0061c06f QPixmapData::fromFile(QString const&amp;amp;, char const*, QFlags) + 63&lt;br /&gt;
+7   QtGui                           0x00617d75 QPixmap::load(QString const&amp;amp;, char const*, QFlags) + 1157&lt;br /&gt;
+8   QtGui                           0x00618295 QPixmap::QPixmap(QString const&amp;amp;, char const*, QFlags) + 149&lt;br /&gt;
+9   net.vidalia-project.vidalia     0x000c70f9 Ui_MainWindow::setupUi(QMainWindow*) + 3403&lt;br /&gt;
+10  net.vidalia-project.vidalia     0x000bf905 MainWindow::MainWindow() + 253&lt;br /&gt;
+11  net.vidalia-project.vidalia     0x000b26dc main + 1952&lt;br /&gt;
+12  net.vidalia-project.vidalia     0x00007252 _start + 216&lt;br /&gt;
+13  net.vidalia-project.vidalia     0x00007179 start + 41&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_7/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:56Z</updated>
+	<published>2010-02-03T12:49:56Z</published>
+
+	<content type="html" xml:lang="en">
+	I installed the new security updates. Installed  0.2.2.8-alpha release and its tor buttons too. Still doesn&#39;t work, &quot;The proxy server is refusing connections&quot; message.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_8/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:57Z</updated>
+	<published>2010-02-03T12:49:57Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I cant compile 0.2.2.8 on windows. I get the following error.&lt;/p&gt;
+
+&lt;p&gt;&quot;&quot;&quot;&lt;br /&gt;
+x:/MinGW/extend/local/ssl/lib/libssl.a(s3_srvr.o):s3_srvr.c:(.text+0x20fb): undefined reference to `_ECDH_compute_key&#39;&lt;/p&gt;
+
+&lt;p&gt;x:/MinGW/extend/local/ssl/lib/libssl.a(s3_srvr.o):s3_srvr.c:(.text+0x2384): undefined reference to `_X509_certificate_type&#39;&lt;/p&gt;
+
+&lt;p&gt;collect2: ld returned 1 exit status&lt;br /&gt;
+make[3]: *** [tor.exe] Error 1&lt;br /&gt;
+&quot;&quot;&quot;&lt;/p&gt;
+
+&lt;p&gt;:-S&lt;/p&gt;
+
+&lt;p&gt;Does anyone have any ideas ? This is with openssl 0.9.8l, which worked fine with tor 0.2.2.7.&lt;/p&gt;
+
+&lt;p&gt;Im stumped....&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_9/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:58Z</updated>
+	<published>2010-02-03T12:49:58Z</published>
+
+	<content type="html" xml:lang="en">
+	What version of openssl is used to compile tor 0.2.2.8 ?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_10/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:59Z</updated>
+	<published>2010-02-04T12:49:59Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hi,&lt;br /&gt;
+It&#39;s not about this subject, but i don&#39;t how can i send this notification.&lt;br /&gt;
+I&#39;m an new user of tor in Iran and today in &quot;view the network&quot; button of vidalia, i have saw someone relays traffic from Iran.&lt;br /&gt;
+213/207.223.74&lt;br /&gt;
+because of the lots of filters and traffics analysis from government, I&#39;m not sure it&#39;s can be helpful and can cause some dangers OR it can be an dump connection that collect data and information about encryption s and protocols uses by tor to destroy connections from Iran.&lt;br /&gt;
+I&#39;m not sure but i just want to send an notification.&lt;br /&gt;
+thank you tor for helping freedom in Iran.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_11/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:00Z</updated>
+	<published>2010-02-07T12:50:00Z</published>
+
+	<content type="html" xml:lang="en">
+	I&#39;m not surprised, the Cuban robberlutionary dis-government (i.e. murderous tyranny) is worse than the tyranny in Iran, good luck to you freedom loving Iranian people, you&#39;re at the cusp of regaining your lost freedoms, do not trust the Americans though, the plutocracy in power in the USA will stab you in the back at any opportunity, you would not be the first or the last to be betrayed by them.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 12</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_12/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_12/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:01Z</updated>
+	<published>2010-02-06T12:50:01Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;normal wersion not working, alpha 2.2.8 connecto to tor net.&lt;/p&gt;
+
+&lt;p&gt;Many thanks (10.5.8 intel) &lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 13</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_13/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_13/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:02Z</updated>
+	<published>2010-02-08T12:50:02Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Mac OS X 10.6 (intel)&lt;br /&gt;
+Status: Working&lt;/p&gt;
+
+&lt;p&gt;I felt so...naked before.&lt;/p&gt;
+
+&lt;p&gt;Many thanks!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 14</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_14/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_14/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:03Z</updated>
+	<published>2010-02-08T12:50:03Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hi, Does anyone have a hint for the following problem, please? (Have 0.2.2.8-alpha bundle installed + included version of Torbutton, together with Firefox 3.6 and OS 10.6.2 intel):&lt;/p&gt;
+
+&lt;p&gt;Vidalia connects to Tor network, but using Firefox with Torbutton enabled returns &quot;The proxy server is refusing connections&quot;. Have tried out a couple of different proxy settings and searched various related blogs. Really don&#39;t know what else I could try. Many thanks in advance for any ideas!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 15</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_15/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_15/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:04Z</updated>
+	<published>2010-02-08T12:50:04Z</published>
+
+	<content type="html" xml:lang="en">
+	P.S.: Forgot to add that everything worked neatly before the openssl issue; so I reckon the problem must have to do with one of the modified components... Thanks!
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 16</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_16/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_16/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:05Z</updated>
+	<published>2010-02-10T12:50:05Z</published>
+
+	<content type="html" xml:lang="en">
+	thanks, so far so good! appreciate your work &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 17</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_17/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_17/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:06Z</updated>
+	<published>2010-02-10T12:50:06Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I have two Macs, both are intel and both are running the latest patched version of 10.6. I followed the instructions on both. On the iMac, TOR works fine. On the MacBook, I get an error message:&lt;br /&gt;
+Feb 10 20:28:24.630 [Notice] Tor v0.2.2.8-alpha (git-ff88bc7db8edeb29). This is experimental software. Do not rely on it for strong anonymity. (Running on Darwin i386)&lt;/p&gt;
+
+&lt;p&gt;Feb 10 20:28:24.631 [Notice] Initialized libevent version 1.4.13-stable using method kqueue. Good.&lt;/p&gt;
+
+&lt;p&gt;Feb 10 20:28:24.631 [Notice] Opening Socks listener on 127.0.0.1:9050&lt;/p&gt;
+
+&lt;p&gt;Feb 10 20:28:24.632 [Warning] Could not bind to 127.0.0.1:9050: Address already in use. Is Tor already running?&lt;/p&gt;
+
+&lt;p&gt;Feb 10 20:28:24.632 [Warning] Failed to parse/validate config: Failed to bind one of the listener ports.&lt;/p&gt;
+
+&lt;p&gt;Feb 10 20:28:24.632 [Error] Reading config failed--see warnings above.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 18</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_18/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_18/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:07Z</updated>
+	<published>2010-02-10T12:50:07Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;m a novice Tor user.  I am running Tor on a MacBook Pro (Intel Core 2 duo).  After a long period of running Tor without difficulty, I started receiving the same error message reported in the message strings above:&lt;/p&gt;
+
+&lt;p&gt;Feb 10 23:46:50.106 [Notice] Tor v0.2.1.22. This is experimental software. Do not rely on it for strong anonymity. (Running on Darwin i386)&lt;br /&gt;
+Feb 10 23:46:50.107 [Notice] Initialized libevent version 1.4.13-stable using method kqueue. Good.&lt;br /&gt;
+Feb 10 23:46:50.107 [Notice] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+Feb 10 23:46:50.107 [Notice] Opening Control listener on 127.0.0.1:9051&lt;br /&gt;
+Feb 10 23:46:50.534 [Notice] Bootstrapped 10%: Finishing handshake with directory server.&lt;br /&gt;
+Feb 10 23:46:50.750 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Feb 10 23:46:50.751 [Notice] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+Feb 10 23:46:50.751 [Notice] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+Feb 10 23:46:50.751 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+Feb 10 23:47:20.823 [Warning] TLS error: unexpected close while renegotiating&lt;/p&gt;
+
+&lt;p&gt;From the blog post above, it appears there&#39;s a solution to this problem.  But I don&#39;t know how to &quot;supply the definition to Tor directly, for example by compiling Tor using CPPFLAGS=&#39;-DSSL3_FLAGS_ALLOW_UNSAFE_LEGACY_RENEGOTIATION=0x0010&#39; ./configure &amp;amp;&amp;amp; make&quot;&lt;/p&gt;
+
+&lt;p&gt;Can anyone explain to a newbie how to apply this fix?  Or is TorProject coming out with a new release to address it?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 19</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_19/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_19/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:08Z</updated>
+	<published>2010-02-11T12:50:08Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I believe they meant to say:&lt;/p&gt;
+
+&lt;p&gt;CPPFLAGS=&quot;$CPPFLAGS -DSSL3_FLAGS_ALLOW_UNSAFE_LEGACY_RENEGOTIATION=0x0010&quot; ./configure &amp;amp;&amp;amp; make&lt;/p&gt;
+
+&lt;p&gt;No reason to blow away your old CPPFLAGS...&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 20</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_20/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_20/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:09Z</updated>
+	<published>2010-02-12T12:50:09Z</published>
+
+	<content type="html" xml:lang="en">
+	I want to help Iranian people and other open a relay but on osx 10.6.2 vidalia crash........
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 21</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_21/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_21/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:10Z</updated>
+	<published>2010-02-12T12:50:10Z</published>
+
+	<content type="html" xml:lang="en">
+	and precisely wtf has this to do with tor i wonder ?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 22</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_22/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_22/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:11Z</updated>
+	<published>2010-02-14T12:50:11Z</published>
+
+	<content type="html" xml:lang="en">
+	So has anyone noticed that the latest workaround for OS 10.6 doesn&#39;t seem to be working on laptops?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 23</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_23/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_23/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:12Z</updated>
+	<published>2010-02-14T12:50:12Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;It doesn&#39;t work for me either.&lt;br /&gt;
+Intel Macbook, Mac OS 10.5.8, latest updates...&lt;/p&gt;
+
+&lt;p&gt;Feb 14 21:07:43.564 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Feb 14 21:07:43.572 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+Feb 14 21:08:43.119 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+Feb 14 21:08:43.273 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Feb 14 21:09:44.300 [Warning] TLS error: unexpected close while renegotiating&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 24</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_24/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_24/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:13Z</updated>
+	<published>2010-02-15T12:50:13Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Same here&lt;br /&gt;
+TLS error: unexpected close while renegotiating&lt;/p&gt;
+
+&lt;p&gt;Worked fine last week, but from this weekend on ... nothing.&lt;br /&gt;
+at least noticed it this weekend first.&lt;/p&gt;
+
+&lt;p&gt;thanks!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 25</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_25/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_25/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:14Z</updated>
+	<published>2010-02-15T12:50:14Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;m having some difficulty here. I downloaded the file as advised above and keep getting the following errors to the point it won&#39;t even start up:&lt;/p&gt;
+
+&lt;p&gt;Feb 15 21:48:59.430 [Notice] Tor v0.2.2.8-alpha (git-ff88bc7db8edeb29). This is experimental software. Do not rely on it for strong anonymity. (Running on Darwin Power Macintosh)&lt;br /&gt;
+Feb 15 21:48:59.436 [Notice] Initialized libevent version 1.4.13-stable using method kqueue. Good.&lt;br /&gt;
+Feb 15 21:48:59.438 [Notice] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+Feb 15 21:48:59.439 [Notice] Opening Control listener on 127.0.0.1:9050&lt;br /&gt;
+Feb 15 21:48:59.441 [Warning] Could not bind to 127.0.0.1:9050: Address already in use. Is Tor already running?&lt;br /&gt;
+Feb 15 21:48:59.442 [Notice] Closing partially-constructed listener Socks listener on 127.0.0.1:9050&lt;br /&gt;
+Feb 15 21:48:59.444 [Warning] Failed to parse/validate config: Failed to bind one of the listener ports.&lt;br /&gt;
+Feb 15 21:48:59.445 [Error] Reading config failed--see warnings above.&lt;/p&gt;
+
+&lt;p&gt;If I change the port it connects but other applications won&#39;t work it&#39;s almost like it&#39;s causing dual problems. How can I fix this? &lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 26</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_26/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_26/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:15Z</updated>
+	<published>2010-02-16T12:50:15Z</published>
+
+	<content type="html" xml:lang="en">
+	This worked for a while, but as of Feb. 15 I am getting an error message: Reading config failed. Also, Little Snitch is telling me that TOR is trying to use the internet even when the app isn&#39;t running. What&#39;s up with that?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 27</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_27/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_27/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:16Z</updated>
+	<published>2010-02-18T12:50:16Z</published>
+
+	<content type="html" xml:lang="en">
+	Highly suspect.  Is something else starting Tor for you?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 28</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_28/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_28/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:17Z</updated>
+	<published>2010-02-17T12:50:17Z</published>
+
+	<content type="html" xml:lang="en">
+	I have the same problem... feb 18 00:49:41.118 [Warning] TLS error: unexpected close while renegotiating... tor doesn&#39;t work... please help me... I&#39;m a newbie... how can I fix the problem!?!?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 29</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_29/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_29/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:18Z</updated>
+	<published>2010-02-18T12:50:18Z</published>
+
+	<content type="html" xml:lang="en">
+	The latest 0.2.1.23 version of tor works fine, see &lt;a href=&quot;https://torproject.org/easy-download&quot; title=&quot;https://torproject.org/easy-download&quot; rel=&quot;nofollow&quot;&gt;https://torproject.org/easy-download&lt;/a&gt;.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 30</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_30/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_30/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:19Z</updated>
+	<published>2010-02-18T12:50:19Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hej,&lt;/p&gt;
+
+&lt;p&gt;I had the same problem. So I downloaded the mentioned package and it worked. No problem. But the next start of Vidalia I get a new error:&lt;br /&gt;
+Could not bind to 127.0.0.1:9050: Address already in use. Is Tor already running?&lt;/p&gt;
+
+&lt;p&gt;Any solution for this?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 31</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_31/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_31/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:20Z</updated>
+	<published>2010-02-19T12:50:20Z</published>
+
+	<content type="html" xml:lang="en">
+	Still not working with either 0.2.1.23 or 0.2.2.28-alpha on 10.6.2. Same &quot;TLS error: unexpected close while renegotiating&quot;. HELP!
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 32</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_32/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_32/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:21Z</updated>
+	<published>2010-02-19T12:50:21Z</published>
+
+	<content type="html" xml:lang="en">
+	yes i confirm the same error with the same setup.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 33</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_33/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_33/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:22Z</updated>
+	<published>2010-02-26T12:50:22Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Thanks for fixing Tor for OSX; 2.2.8 works like a charm and I am once again able to act as relay.&lt;br /&gt;
+(OSX 10.6.2 on @G Core Duo)&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 34</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_34/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/comment_34/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:50:23Z</updated>
+	<published>2011-02-08T12:50:23Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;what about version of openssl can i safely upgrade 10.5.8 ppc ?&lt;/p&gt;
+
+&lt;p&gt;it compiled right out of the box ./config --prefix=/usr&lt;/p&gt;
+
+&lt;p&gt;is there any dangers of doing that ?&lt;br /&gt;
+-j&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+
+</feed>

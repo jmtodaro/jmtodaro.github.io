@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>April 2009 Progress Report</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:25:00Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_1/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:39Z</updated>
+	<published>2009-05-11T11:24:39Z</published>
+
+	<content type="html" xml:lang="en">
+	What on earth do you mean by &quot;better work with law enforcement&quot;? Unless you mean better educate the fruitlessness of going after Tor users/operators. Otherwise it is a scary thing to suggest as it implies Tor&#39;s node operators or developers are making it possible to penetrate Tor!
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_2/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:40Z</updated>
+	<published>2009-05-12T11:24:40Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;ll do a blog post about this, since people seem to assume the worst about us talking to law enforcement.  We talk to them to educate them.  If they know about Tor, it&#39;s capabilities and realities separate from the myths, it&#39;s better for everyone in the end.&lt;/p&gt;
+
+&lt;p&gt;For what people seem to think, no, there is not a backdoor in Tor, nor will we ever put one in.  Our FAQ clearly answers this as well, &lt;a href=&quot;https://www.torproject.org/faq#Backdoor&quot; title=&quot;https://www.torproject.org/faq#Backdoor&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/faq#Backdoor&lt;/a&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_3/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:41Z</updated>
+	<published>2009-05-11T11:24:41Z</published>
+
+	<content type="html" xml:lang="en">
+	How does CALEA (Communications Assistance for Law Enforcement Act) impact Tor users in the US? It doesn&#39;t seem like it actually makes it possible for the US government to locate a user in practice as is suggested by the wikipedia entry on Tor. If I&#39;m not mistaken this would require the simultaneous monitoring of all Tor entry nodes. Normally one might think this would require a search warrant. However the PATRIOT act Section 216 expanded the government&#39;s authority to conduct surveillance in criminal investigations using pen registers or trap and trace devices. No warrant is required so long as the government can show relevance to its investigation. Might that open up warrant-less monitoring to the extent a simple timing attack can be performed? Eventually a US Tor user is bound to end up connecting to a Tor entry node within the US that the government can monitor and so long as they monitor all entry nodes without a warrant Tor users are helpless against government spying. Maybe this is not something Tor is trying to protect against- but is it not oppressive governments Tor is trying to protect users from?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_4/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:42Z</updated>
+	<published>2009-05-11T11:24:42Z</published>
+
+	<content type="html" xml:lang="en">
+	*an overly broad search warrant that is.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_5/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:43Z</updated>
+	<published>2009-05-12T11:24:43Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tor is not a telco, therefore we&#39;re not subject to CALEA, at least as far as we&#39;ve been advised.  &lt;/p&gt;
+
+&lt;p&gt;There are no pen registers, trap, or trace devices that will work with Tor, so I suppose this is right out as well.  These terms are also telco terms, as I understand it, and Tor is not a telco.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_6/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:44Z</updated>
+	<published>2009-05-29T11:24:44Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;They don&#39;t have to monitor every entry node, they can monitor you at the ISP level.&lt;/p&gt;
+
+&lt;p&gt;your comuter - your ISP - Tor Entrynode - Tot Middlenode - Tor Exitnode - Internet&lt;/p&gt;
+
+&lt;p&gt;Then when your using an NSA controlled Exitnode they got a match.&lt;br /&gt;
+The NSA nodes(like nixnix....) are known for &quot;hijacking&quot; circuits witch gives you an increased chance of using one of there nodes if you don&#39;t block them in torrc&lt;/p&gt;
+
+&lt;p&gt;PS Admin why do you force people to use cookies, you shouldn&#39;t do such a thing.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_7/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:45Z</updated>
+	<published>2009-05-31T11:24:45Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Let me point you to: &lt;a href=&quot;https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#WhatProtections&quot; title=&quot;https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#WhatProtections&quot; rel=&quot;nofollow&quot;&gt;https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#WhatProtection...&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;and &lt;a href=&quot;http://git.torproject.org/checkout/tor/master/doc/design-paper/tor-design.html&quot; title=&quot;http://git.torproject.org/checkout/tor/master/doc/design-paper/tor-design.html&quot; rel=&quot;nofollow&quot;&gt;http://git.torproject.org/checkout/tor/master/doc/design-paper/tor-desig...&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;See Section 3.1, &quot;A global passive adversary is the most commonly assumed threat when analyzing theoretical anonymity designs. But like all practical low-latency systems, Tor does not protect against such a strong adversary. Instead, we assume an adversary who can observe some fraction of network traffic; who can generate, modify, delete, or delay traffic; who can operate onion routers of his own; and who can compromise some fraction of the onion routers. &quot;&lt;/p&gt;
+
+&lt;p&gt;If your adversary can observe the entire Internet at once, such as NSA is believed capable, Tor won&#39;t protect you.  I suspect the NSA&#39;s actual capabilities and what people believe they can do are highly divergent.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_8/"/>
+
+	<author><name>Anybody (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:46Z</updated>
+	<published>2009-07-15T11:24:46Z</published>
+
+	<content type="html" xml:lang="en">
+	Yes and no.  I have little doubt that if the NSA decided to concentrate a large fraction of it&#39;s resources (electronic and protoplasmic) on a single secured target (e.g., you or me), that target would fall quickly, no matter what security measures it employed.  The reality, though, is that while NSA resources are vast and of highest quality, they remain finite, and neither you nor I is likely to become a target at that level of interest - the organization has too many &quot;mandatory&quot; adversaries.  All security, information and otherwise, rests solely on the premise of making the compromise of a target more expensive than the value of the compromised results.  Period.  I worry more about DHS.  They don&#39;t (yet) have the resources of NSA, but they have been expanding what they have rapidly, their charter is schizophrenic, and unlike NSA their mission has been highly politicized from the inception.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_9/"/>
+
+	<author><name>Keir (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:47Z</updated>
+	<published>2009-05-15T11:24:47Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;After all the work I put into my sites, I wake up to find the Chinese fascists here have shut down Blogspot and my proxy.pac no longer works...&lt;br /&gt;
+Meanwhile youtube is STILL completely blocked!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_10/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:48Z</updated>
+	<published>2009-05-21T11:24:48Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;You can try setting up a I2P website, its safe the host is anonymous&lt;br /&gt;
+and its faster then Tor&#39;s hidden service, it also has mechanism against ddos.&lt;br /&gt;
+you can also share your stuff via bt/mule client over I2P.&lt;br /&gt;
+(i2p is not just a proxy, please use Tor for normal web browsing)&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_11/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:49Z</updated>
+	<published>2009-05-18T11:24:49Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I would just like to write a personal thank you for all your efforts. We, the always threatened Middle East human rights activists, could never work here without such software while keeping other technical security precautions in mind.&lt;/p&gt;
+
+&lt;p&gt;You job is amazing for &lt;em&gt;real democracy and freedom&lt;/em&gt; for us -- the people -- under the current Mideast oppressive regimes which are also ironically supported directly and indirectly by the United States. &lt;/p&gt;
+
+&lt;p&gt;That&#39;s the kind of freedom the people here are in urgent need for, not the Mcdonalds and CocaCola &quot;democracy&quot; kind.&lt;/p&gt;
+
+&lt;p&gt;I would just like to finally ask a small question: what is the level of security damage that can be caused if someone working in activism in hostile regions contributed to Tor using his &lt;em&gt;real&lt;/em&gt; identity?&lt;/p&gt;
+
+&lt;p&gt;Warm thanks, an NGO delegate.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 12</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_12/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_12/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:50Z</updated>
+	<published>2009-05-20T11:24:50Z</published>
+
+	<content type="html" xml:lang="en">
+	Thank for the kind comments.  As far as the security damage,  the risk is to the person, not the Tor network.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 13</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_13/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_13/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:51Z</updated>
+	<published>2009-05-26T11:24:51Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;If you would be at risk in your Country if you express your thoughts about democracy and freedom IRL then it would probably be safest for you to work under an alias when contributing to Tor.&lt;/p&gt;
+
+&lt;p&gt;It could be easier for your government to map/track/decrypt your other activities on the internet if they can link some of the traffic that they knew is yours back to you.&lt;br /&gt;
+Worst case for you would probably mean jail/death depending on what country &amp;amp; how serious these activist activitys are seen by your government.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 14</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_14/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_14/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:52Z</updated>
+	<published>2009-05-20T11:24:52Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;d love to get in touch with the current maintainer of the MacOS versions of TOR.&lt;br /&gt;
+A while back there was an &quot;expert version&quot; of TOR that included TOR &amp;amp; Privoxy (both including nice /Library/StartupItems/ launch scripts. Unfortunately recent &quot;expert versions&quot; only include TOR.&lt;/p&gt;
+
+&lt;p&gt;I think it would be great to add Privoxy (including a launchscript) again, because the Vidalia Packet really sucks, compared to the automatically launched TOR &amp;amp; Privoxy that just &quot;wait in the background&quot; until the user enables the firefox &quot;TOR-Button&quot;.&lt;/p&gt;
+
+&lt;p&gt;This was soooo much nicer.&lt;br /&gt;
+I&#39;d love to work with the current maintainer on such a package - unfortunately i couldn&#39;t find the old packages that included privoxy and the launchscripts.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 15</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_15/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_15/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:53Z</updated>
+	<published>2009-05-20T11:24:53Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;The change to just Tor in the expert package was to be consistent with the other packages we create, where Tor for experts is just Tor and nothing else.  Many people didn&#39;t like Tor and Privoxy in a package, they wanted just Tor.&lt;/p&gt;
+
+&lt;p&gt;You can always download the Vidalia bundle and just not install vidalia.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 16</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_16/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_16/"/>
+
+	<author><name>IranHelp (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:54Z</updated>
+	<published>2009-07-14T11:24:54Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;After some technical issues (with HTTP blocks) brought up the subject of Tor, my ISP sent this comment:&lt;/p&gt;
+
+&lt;p&gt;&quot;Using the TOR application opens yourself to multiple possible legal ramifications.  Child Porn, illegal downloading, etc.  It will not be a situation where the authorities come to us and tell us to tell the user to stop.  It will be a situation where it will be beyond our control filed with a  CALEA request, in which you will never even be able to tell that they are sniffing your traffic, and we will not be able to tell you either.  Encrypted or not, I don’t think I would let myself be open to anything that is beyond my control.&quot;&lt;/p&gt;
+
+&lt;p&gt;Discouraging, to say the least, regarding being an exit node.&lt;/p&gt;
+
+&lt;p&gt;1. Can I be thrown in jail because someone overseas in doing child porn using our network as an exit?&lt;br /&gt;
+2. Doesn&#39;t Tor itself police this?&lt;br /&gt;
+3. Doesn&#39;t the Tor client purposely avoid having the exit node and the entry node on the same subnet?  In other words, why would law enforcement think that we were at the beginning of the relay?&lt;br /&gt;
+4. On the other hand, how do I prove that the request for porn DIDN&#39;T come from my network?  After all, the last unencrypted hop did lead back to our network...&lt;/p&gt;
+
+&lt;p&gt;Our goal is to help oppressed people in Iran and elsewhere.  If we are attacked by law enforcement and saddled by huge legal bills while defending our innocence, what good has that done?  We are using virtual machines for Tor, so the law is likely to seize all our servers and destroy our ability to do business for an extended period, since they don&#39;t know where the virtual machine is.&lt;/p&gt;
+
+&lt;p&gt;Please pass on some answers.  Yes, I realize Tor isn&#39;t an ISP or Telco-- but the Tor exit traffic must pass through ours, and they will quietly tell the cops everything they know about me in a heartbeat.&lt;/p&gt;
+
+&lt;p&gt;Thank you.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 17</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_17/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_17/"/>
+
+	<author><name>IranHelp (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:55Z</updated>
+	<published>2009-07-15T11:24:55Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Things are getting worse.  Our ISP says our IP range is now on the DNSBL, and they have cut our bandwidth.  I assume this is because I had allowed e-mail exit, and jerks on the other end used our servers for SPAM.&lt;/p&gt;
+
+&lt;p&gt;We run a business here; I cannot afford this kind of issue.  I want to help the freedom fighters of Iran, not spam toads.  We will no longer run an exit, at least not until I am certain we can avoid having our reputation trashed by greedy jerks out there who don&#39;t have the guts to identify themselves.&lt;/p&gt;
+
+&lt;p&gt;Please advise; I assume the people running Tor read this blog.&lt;/p&gt;
+
+&lt;p&gt;Thank you.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 18</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_18/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_18/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:56Z</updated>
+	<published>2009-07-15T11:24:56Z</published>
+
+	<content type="html" xml:lang="en">
+	I cannot answer for the TOR team, but I can tell you that policing and making morality judgments on content piped over the TOR network is probably the very last thing that they would want to get involved in.  Not only are such judgments frequently highly debatable and disputable, but under some precedent in internet-related law, creating the ability to police content can create a legal obligation to do so, by the standards of the prevalent jurisdiction.  You appear to be in an unenviable position, and you have my sympathy, but you have been put in that position by authoritarian government (it isn&#39;t just for foreigners any more) and ISPs that willingly serve as its lackeys, not by TOR or its participants.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 19</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_19/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_19/"/>
+
+	<author><name>Not a legal advisor (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:57Z</updated>
+	<published>2009-07-16T11:24:57Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Your ISP is misguided.  Do they actively filter out all bad things on the Internet and vet all customers before they take a single payment?  Do they actively hunt down customers infected with trojans/botnets/zombies and help them clean it up?  Do they actively watch content looking for &#39;bad things&#39; and disconnect customers who do so?&lt;/p&gt;
+
+&lt;p&gt;I bet in every question, the answer is no.&lt;/p&gt;
+
+&lt;p&gt;1. Can I be thrown in jail because someone overseas in doing child porn using our network as an exit?&lt;/p&gt;
+
+&lt;p&gt;No.  Tor is an anonymizing layer on the Internet, it doesn&#39;t concern itself with content.  This is like a road system, does the M1 care if bank robbers or grandmothers drive on it?&lt;/p&gt;
+
+&lt;p&gt;2. Doesn&#39;t Tor itself police this?&lt;/p&gt;
+
+&lt;p&gt;See the answer to #1.  I don&#39;t want Tor to police anything.  I want raw, unfiltered access to the Internet.  I&#39;ll filter what I want, not the network.  I want the fat stupid pipe my ISP is supposed to be, but frequently isn&#39;t.&lt;/p&gt;
+
+&lt;p&gt;3. Doesn&#39;t the Tor client purposely avoid having the exit node and the entry node on the same subnet? In other words, why would law enforcement think that we were at the beginning of the relay?&lt;/p&gt;
+
+&lt;p&gt;Because they don&#39;t understand how Tor works.  Or they&#39;re just being stupid to scare you into compliance.  They should talk to the Tor people to find out more.&lt;/p&gt;
+
+&lt;p&gt;4. On the other hand, how do I prove that the request for porn DIDN&#39;T come from my network? After all, the last unencrypted hop did lead back to our network...&lt;/p&gt;
+
+&lt;p&gt;You can&#39;t prove a negative.  In most countries, you are innocent by default.  Quickly the world is moving to everyone is a criminal by default, which is a sad state of affairs.  Perhaps citizens will throw out the stupid politicians before they have no right to do so.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 20</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_20/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_20/"/>
+
+	<author><name>IranHelp (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:58Z</updated>
+	<published>2009-07-16T11:24:58Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Misguided or not, my ISP doesn&#39;t want a Tor relay anywhere on their large customer base.  They claim that we are violating their TOS, because the client allows inbound connections (on port 80 or whatever) which we do not originate.  In other words, we are running a web server (in the form of an open proxy) which they don&#39;t allow.&lt;/p&gt;
+
+&lt;p&gt;Based on several conversations, I think you are right about law enforcement-- they don&#39;t understand what Tor does, and therefore may confiscate every computer in the relay, even though there is nothing on it they can use unless they can seize the entire relay chain (and even that is questionable).  This greatly concerns the ISP.  In their defense, I can see that what we are doing could cause them headaches, which they don&#39;t get paid for.&lt;/p&gt;
+
+&lt;p&gt;We will not do Tor again except on a VSP, assuming we can find one that allows it.  I also wonder if there are settled court cases which back up your &quot;Tor relay innocent until proven guilty&quot; claim in the US.  In other words, I don&#39;t want to lose our business and spend $20K+ being the precedent setting case!&lt;/p&gt;
+
+&lt;p&gt;Thanks for the reply.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 21</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_21/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_21/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:59Z</updated>
+	<published>2009-07-17T11:24:59Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Depending how much you want to fight your ISP, ask them for the exact clause Tor violates in the ToS.  Some ToS clearly state &quot;no proxy servers of any kind&quot;, which technically includes ssh.  Perhaps you should re-think your choice of ISP if they&#39;re this heavy handed about something as simple as Tor.&lt;/p&gt;
+
+&lt;p&gt;Law enforcement will simply see an IP address show up in some log file somewhere.  Since they don&#39;t know what&#39;s behind that IP, they will go collect the machine to find out.  &lt;/p&gt;
+
+&lt;p&gt;To our knowledge, no one has gone to court over running a Tor node.&lt;/p&gt;
+
+&lt;p&gt;If you&#39;re concerned about losing business, then run the Tor node(s) on distinct hardware from your business servers.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 22</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_22/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/comment_22/"/>
+
+	<author><name>Traduceri legalizate    (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:00Z</updated>
+	<published>2009-07-27T11:25:00Z</published>
+
+	<content type="html" xml:lang="en">
+	Running the Tor nodes on distinct hardware is one of the solutions. I still don&#39;t understand why someone might have problems if they use Tor. It&#39;s the internet! The virtual land of freedom and all possibilities...
+
+	</content>
+
+
+
+</entry>
+
+</feed>

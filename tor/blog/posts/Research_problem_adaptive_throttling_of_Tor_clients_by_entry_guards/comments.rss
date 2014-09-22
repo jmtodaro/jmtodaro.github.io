@@ -1,0 +1,604 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Research problem: adaptive throttling of Tor clients by entry guards</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Anonymous: Comment 1</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_1/</link>
+
+	<pubDate>Sun, 19 Sep 2010 07:08:02 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:02Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hmmm... Seems to me that one could game the system by simply running a relay from the same IP as ones p2p program. Entry guards would then not throttle that connection. Compounding the issue, those added relays would likely run as non exit. While they would contribute to the network, they&#39;d still suck up rarer and more valuable exit bandwidth without providing any in return. There would need to be safe guards against this behavior, otherwise the proposal would create an incentive to run relays for enhanced bittorrent service. That&#39;s probably not they sort of incentive torproject wants to create.&lt;/p&gt;
+
+&lt;p&gt;Additionally, what happens to the Iranian user, unable to run a relay, who&#39;s trying to upload their protest video to youtube? From where I&#39;m sitting, I would attempt to isolate applications on circuits (via altered proposal 171), increase circuit lifetime, then simply continue to favor quieter circuits.&lt;/p&gt;
+
+&lt;p&gt;Relevant links:&lt;br /&gt;
+http://archives.seul.org/or/dev/Jul-2010/msg00021.html&lt;/p&gt;
+
+&lt;p&gt;http://archives.seul.org/or/dev/Sep-2010/msg00007.html&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 2</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_2/</link>
+
+	<pubDate>Mon, 20 Sep 2010 07:08:03 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:03Z</dcterms:modified>
+
+	<description>&lt;p&gt;Rate limiting is one solution - but it would need to be a reasonable rate.&lt;/p&gt;
+
+&lt;p&gt;BTW: Why not advertise? Obviously, more people acting as Tor hosts would improve service, but I&#39;ve never seen Tor actually advertised.&lt;/p&gt;
+
+&lt;p&gt;Letting the word slip out is one method. Pushing the word out is another. Rate limiting will help in cutting the traffic used by file sharing and CP downloads, but this can also effect the normal user too.&lt;/p&gt;
+
+&lt;p&gt;Why not get a few small ads in a few computer mags or even online.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 3</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_3/</link>
+
+	<pubDate>Mon, 20 Sep 2010 07:08:04 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:04Z</dcterms:modified>
+
+	<description>&lt;p&gt;We don&#39;t advertise by design.  We&#39;ve repeatedly watched a number of other circumvention tools make a huge press splash over the years.  They talk about &quot;for freedom&quot; or &quot;taking down the firewall&quot; or something along these lines.  Inevitably, they just gave the censors and the technology companies that supply them a reason to block them at all costs.  &lt;/p&gt;
+
+&lt;p&gt;Arguably, the world knows about Tor already.  We&#39;re an anonymity/privacy network first, circumvention second.  A growing number of people use a one-hop proxy system to bypass the firewall, and then use tor over that to protect themselves.  They realize the one-hop proxy can be run by the government or those friendly to the government to spy on those using it.  &lt;/p&gt;
+
+&lt;p&gt;There&#39;s an arms race we&#39;re trying to have as slow as possible.  Advertising and pushing Tor into the face of those that want to defeat us can only accelerate the arms race in our experience.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 4</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_4/</link>
+
+	<pubDate>Mon, 20 Sep 2010 07:08:05 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:05Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hi,&lt;/p&gt;
+
+&lt;p&gt;Thanks for that new paper and research, i would participate with pleasure if i can help you with my relay and so give my stats and hope so continue help to improve the Tor network &lt;/p&gt;
+
+&lt;p&gt;Best Regards&lt;/p&gt;
+
+&lt;p&gt;SwissTorExit &lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 5</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_5/</link>
+
+	<pubDate>Mon, 20 Sep 2010 07:08:06 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:06Z</dcterms:modified>
+
+	<description>please make this happen, I am so tried of slow Tor vs fast Tor years past.  I don&#39;t think some people who want Warz and to download movies and porn should get to hold Tor hostage...so, please, with a cherry on top, make this happen and stop of those gawd darn file sharers.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 6</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_6/</link>
+
+	<pubDate>Mon, 20 Sep 2010 07:08:07 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:07Z</dcterms:modified>
+
+	<description>I really like Tor and appreciate the work you put into it. That said, when are you going to start preventing Tor from building circuits with every node in the same city?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 7</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_7/</link>
+
+	<pubDate>Mon, 20 Sep 2010 07:08:08 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:08Z</dcterms:modified>
+
+	<description>TOR has become useless not because of speed issues but because every major site identifies TOR and effectively blocks it. TOR is shooting itself in the foot.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 8</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_8/</link>
+
+	<pubDate>Tue, 21 Sep 2010 07:08:09 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:09Z</dcterms:modified>
+
+	<description>&quot;Every major site&quot; you say? Tor works wherever I take it. What can&#39;t you get through to? Twitter works, Facebook works, Google works... 
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 9</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_9/</link>
+
+	<pubDate>Tue, 21 Sep 2010 07:08:10 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:10Z</dcterms:modified>
+
+	<description>&lt;p&gt;Youtube doesn&#39;t work (enters you into a practically infinite loop of CAPTCHA requests, till you give up).&lt;/p&gt;
+
+&lt;p&gt;Hotmail doesn&#39;t work (does the same thing as Youtube, but disconnects you after 5 CAPTCHA trial, despite typing the correct characters).&lt;/p&gt;
+
+&lt;p&gt;Gmail, BTW, identifies you coming from a TOR network and will let you register only if you provide a mobile phone number for a confirmation SMS. (did we say the Chinese government loves this?)&lt;/p&gt;
+
+&lt;p&gt;Wikipedia will not let you register via a TOR network...&lt;/p&gt;
+
+&lt;p&gt;Should I go on?&lt;/p&gt;
+
+&lt;p&gt;TOR is a wonderful idea (provided it&#39;s not used for illegal activities and/or piracy) but if all major websites identify TOR (those who have the resources to do so) and apply impractical usability measures against TOR users, what good is TOR for?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 10</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_10/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_10/</link>
+
+	<pubDate>Wed, 22 Sep 2010 07:08:11 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:11Z</dcterms:modified>
+
+	<description>&lt;p&gt;This is a known and intermittent problem; it does not mean that Google, Youtube, Hotmail, Yahoo, etc considers Tor to be spyware.&lt;/p&gt;
+
+&lt;p&gt;When you use Tor, you are sending queries through exit relays that are also shared by thousands of other users. Tor users typically see this message when many Tor users are querying Google in a short period of time. Google interprets the high volume of traffic from a single IP address (the exit relay you happened to pick) as somebody trying to &quot;crawl&quot; their website, so it slows down traffic from that IP address for a short time.&lt;/p&gt;
+
+&lt;p&gt;An alternate explanation is that Google tries to detect certain kinds of spyware or viruses that send distinctive queries to Google Search. It notes the IP addresses from which those queries are received (not realizing that they are Tor exit relays), and tries to warn any connections coming from those IP addresses that recent queries indicate an infection.&lt;/p&gt;
+
+&lt;p&gt;To our knowledge, Google is not doing anything intentionally specifically to deter or block Tor use. The error message about an infected machine should clear up again after a short time.&lt;/p&gt;
+
+&lt;p&gt;Torbutton 1.2.5 (released in mid 2010) detects Google captchas and can automatically redirect you to a more Tor-friendly search engine such as Ixquick or Bing.&lt;/p&gt;
+
+&lt;p&gt;Further, smarter sites already realize an IP address is not a person and have other methods to authenticate you.  gmail doesn&#39;t always require a sms authorization through Tor.  I&#39;ve registered a few accounts using Tor through gmail in the past week successfully.  Gmail is moving to two-factor authentication, one of those factors is sms. &lt;/p&gt;
+
+&lt;p&gt;Rather than complain about what Tor cannot do, provide specific steps, proven with research, that we can take to improve Tor.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 11</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_11/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_11/</link>
+
+	<pubDate>Wed, 22 Sep 2010 07:08:12 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:12Z</dcterms:modified>
+
+	<description>&lt;p&gt;phobos, thanks for your thoughtful reply, although it doesn&#39;t coincide with actual experience. Every TOR exit is easily identified as such (see http://www.geoiptool.com/ for example) and as long as this is the case, TOR cannot be fully effective.&lt;/p&gt;
+
+&lt;p&gt;I can&#39;t imagine Google not doing something against TOR as one of TOR&#39;s declared goals is to prevent traffic analysis. Why would Google cooperate with something on which its entire business model is based???&lt;/p&gt;
+
+&lt;p&gt;Again, if you can make TOR exits not identifiable as such, you may have a useful tool. Otherwise, TOR only works with small websites who are unable to analyse trafic effectively anyway. Look at http://www.geoiptool.com/ via TOR and see what I mean.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 12</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_12/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_12/</link>
+
+	<pubDate>Wed, 20 Oct 2010 07:08:13 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:13Z</dcterms:modified>
+
+	<description>The fact is Tor works for SOME and not others. Not everybody can use it effectively and there are things for those working on Tor to work on. All things considered none of the problems you&#39;ve mentioned are being ignored. As has been stated the the Google redirect to other search engines is one solution. It may not be ideal. It does work for those who really need Tor.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 13</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_13/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_13/</link>
+
+	<pubDate>Sun, 21 Nov 2010 07:08:14 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:08:14Z</dcterms:modified>
+
+	<description>&lt;p&gt;Quit lying and appeasing the press! Let&#39;s break it down shall we...&lt;br /&gt;
+No one above mentioned that google virus captcha, no one cares&lt;br /&gt;
+about it, NEWNYM, done.&lt;/p&gt;
+
+&lt;p&gt;It is NOT possible to sign up for Gmail or post on CraigsList personals.&lt;br /&gt;
+Both require SMS. OkCupid refuses both accounts and traffic. Facebook&lt;br /&gt;
+routinely pops up account verification if it see&#39;s you &#39;traveling&#39;. PlentyOfFish deletes the accounts of travelers. Gmail pops up &quot;give&lt;br /&gt;
+us your SMS&quot; on old accounts. I don&#39;t even remember what MySpace&lt;br /&gt;
+does. And so on, and on, need I continue?, seriously, the list is long...&lt;/p&gt;
+
+&lt;p&gt;Gmail [google] *is*/*claims to be* the &quot;smartest site&quot;, and they&#39;re broken, how ironic is that?!&lt;/p&gt;
+
+&lt;p&gt;Gmail especially doesn&#39;t need two factor auth, they&#39;ve got SSL for the&lt;br /&gt;
+parts that matter. And we&#39;ve got secure computers. If I wanted two&lt;br /&gt;
+factor, I&#39;d ask them for a kilo-login&#39;s worth of OPIE at sign up and&lt;br /&gt;
+print it out, or give them a pubkey. Give ME options, don&#39;t stuff&lt;br /&gt;
+crap ones down our throats.&lt;br /&gt;
+And users have pen and paper air gap for their damn forgotten&lt;br /&gt;
+and weak internet passwords.&lt;br /&gt;
+Sites are doing SMS primarily to database people [google is evil&lt;br /&gt;
+remember] and secondly to raise costs of abuse.&lt;br /&gt;
+Do NOT be the fools and think otherwise. Don&#39;t believe me? Look at the&lt;br /&gt;
+order in which the first SMS&#39;s came out. First, toss SMS wall up. Next the &#39;protecting malfeasance&#39; explanation, but that was evidenciary and thus&lt;br /&gt;
+poor PR. So third, it&#39;s now the &#39;we are giving you cool new two factor/recovery&#39; whitewash. Sly little twist, same BS.&lt;/p&gt;
+
+&lt;p&gt;You know why these sites are able to 100% detect and block Tor instantly,&lt;br /&gt;
+I&#39;d bet because TorProject provides that damn online tordnesexitlist&lt;br /&gt;
+checker. Care to cough up the query logs on that???&lt;br /&gt;
+Yes, they could run a node and scrape the descriptor list. But at least&lt;br /&gt;
+there&#39;d be a race condition whereby a legitimate user could get in on&lt;br /&gt;
+new exits.&lt;br /&gt;
+And sure, they could grok the node archives [oops] to nuke prior&lt;br /&gt;
+accounts.&lt;br /&gt;
+But some of these sites are run by such clueless morons (CL for example)&lt;br /&gt;
+that they&#39;d never get past the shebang in binsh to do it.&lt;/p&gt;
+
+&lt;p&gt;&quot;gmail doesn&#39;t always require a sms authorization through Tor. I&#39;ve registered a few accounts using Tor through gmail in the past week successfully&quot;&lt;/p&gt;
+
+&lt;p&gt;Ba.lone.y, I&#39;ve been trying to sign up for CL and gmail ever since SMS&lt;br /&gt;
+went up nearly a year ago. I gave up. Care to document your exits?&lt;/p&gt;
+
+&lt;p&gt;And for all the appeasement and tools Tor gives to these sites,&lt;br /&gt;
+Tor should at least be able to get corporate confirmation from&lt;br /&gt;
+them regarding: &quot;Yep, we suck, we&#39;re blocking Tor, lol.&quot;&lt;/p&gt;
+
+&lt;p&gt;Sorry for the rant, but I&#39;m getting physically ill with all these major&lt;br /&gt;
+sites pissing all over legitimate customers and users like us. Every&lt;br /&gt;
+month some site goes tits up for Tor, it&#39;s ridiculous and totally&lt;br /&gt;
+unnecessary.&lt;/p&gt;
+
+&lt;p&gt;Specific improvements? Tor&#39;s CEO can march into these site&#39;s CEO&#39;s&lt;br /&gt;
+offices and have a constructive, open, educative, chat.&lt;br /&gt;
+Do it on the record in panel at a con for all I care.&lt;br /&gt;
+The *chan/anonymous/i crowd is simply not that&lt;br /&gt;
+much load on their abuse, smartcoder and goodidea departments to&lt;br /&gt;
+warrant nuking all the other legitimate users of Tor along with it.&lt;br /&gt;
+And they&#39;re the one who are going to buy the prepaid cells just to&lt;br /&gt;
+screw around.&lt;br /&gt;
+So get back to nuking the bad accounts, not Tor.&lt;/p&gt;
+
+&lt;p&gt;Oh well, thanks for Tor anyways. Braindead corporate policies&lt;br /&gt;
+aren&#39;t really Tor&#39;s fault.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 14</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_14/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_14/</link>
+
+	<pubDate>Tue, 21 Sep 2010 07:08:15 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:15Z</dcterms:modified>
+
+	<description>If possible, could you provide the following: a plot of time elapsed between cells (i.e. differences in timestamps), over time? There may be a way to define &quot;loud&quot; using simple machine learning at the relay. Thanks. An interesting problem.
+</description>
+
+
+</item>
+<item>
+
+	<title>arma: Comment 15</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_15/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_15/</link>
+
+	<pubDate>Tue, 21 Sep 2010 07:08:16 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:16Z</dcterms:modified>
+
+	<description>&lt;p&gt;Which cells? You mean showing the distribution of when we send cells for a given circuit? Or for multiple circuits? Or for TLS connections (which multiplex circuits)?&lt;/p&gt;
+
+&lt;p&gt;Many of these are possible, but I need to know more about what you actually planned to look at before I can guess what data would help you most.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 16</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_16/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_16/</link>
+
+	<pubDate>Tue, 21 Sep 2010 07:08:17 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:17Z</dcterms:modified>
+
+	<description>&lt;p&gt;Sorry, I later realized it&#39;s probably not the simplest solution...&lt;/p&gt;
+
+&lt;p&gt;But what I meant was cell as in &quot;Tor packets.&quot; Whatever a unit of traffic is from the point of view of the relay, inbound -- and for individual circuits (this part I realized only now).&lt;/p&gt;
+
+&lt;p&gt;So, in a test, you could have a relay set up just for one test client. That client generates both types of traffic simultaneously, and the relay just logs time differences between cells (for each circuit).&lt;/p&gt;
+
+&lt;p&gt;A high number of short times between cells/packets would indicate a sustained transfer, i.e. &quot;loud.&quot; You can distinguish between loud and the rest by this measure of average time between cells. But you need a threshold, and this can be determined using simple machine learning.&lt;/p&gt;
+
+&lt;p&gt;So you end up with a plot of that delta vs time, for each circuit. Then superimpose them.&lt;/p&gt;
+
+&lt;p&gt;From the point of view of the relay: &quot;In the past hour or so, &#39;loud&#39; connections average x microseconds between inbound cells/packets, while everyone else averages y. So in the next hour, I will give traffic averaging less than (x+y)/2 a higher priority.&quot; The x and y are easy enough to determine automatically at each individual relay.&lt;/p&gt;
+
+&lt;p&gt;I hope that makes sense.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 17</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_17/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_17/</link>
+
+	<pubDate>Tue, 21 Sep 2010 07:08:18 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:18Z</dcterms:modified>
+
+	<description>&lt;p&gt;Well, i don&#39;t agree, depend of where you go, but i found Tor less blocked as a year ago, it&#39;s seem that&#39;s is better understand by some site ...&lt;/p&gt;
+
+&lt;p&gt;For my part i am quite never blocked and can use it on any site i need.&lt;/p&gt;
+
+&lt;p&gt;So keep your great work &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;SwissTorExit&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 18</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_18/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_18/</link>
+
+	<pubDate>Tue, 21 Sep 2010 07:08:19 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:19Z</dcterms:modified>
+
+	<description>&lt;p&gt;^^^ &quot;every major site&quot;?  Huh?  I have not those problems on major sites I visit.  You should contact those in charge of site you are referring to and explain Tor to them and why they should allow some scheme for Tor users (like SASL for IRC, or what Tor folks proposed for Wikipeida editing by Tor users).&lt;/p&gt;
+
+&lt;p&gt;And it&#39;s &quot;Tor&quot;, not &quot;TOR&quot;.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 19</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_19/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_19/</link>
+
+	<pubDate>Tue, 21 Sep 2010 07:08:20 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:20Z</dcterms:modified>
+
+	<description>Hats of to TOR for providing an uncensored gateway to the internet, it is just a matter of time, I believe, that TOR&#39;s performance and outreach is going to extend manifold. I hope the people funding TOR and those actually involved in research and development of TOR may always get enough financial, moral and research support that they need to keep TOR up and running. cheers
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 20</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_20/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_20/</link>
+
+	<pubDate>Tue, 21 Sep 2010 07:08:21 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:21Z</dcterms:modified>
+
+	<description>How about researching ways to best implement padding/morphing to prevent entry node/ISP content fingerprinting attacks using traffic classifiers set to compensate for Tor&#39;s packet sizes? I doubt those Chinese dissidents are going to be much concerned with network speed when they&#39;re lined up in front of a firing squad.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 21</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_21/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_21/</link>
+
+	<pubDate>Tue, 21 Sep 2010 07:08:22 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:22Z</dcterms:modified>
+
+	<description>The two problems are almost identical. A method that successfully prioritizes traffic as described can be adapted to what you describe.
+</description>
+
+
+</item>
+<item>
+
+	<title>arma: Comment 22</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_22/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_22/</link>
+
+	<pubDate>Thu, 23 Sep 2010 07:08:23 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:23Z</dcterms:modified>
+
+	<description>&lt;p&gt;It can? That would surprise me. Sounds like you have a really insightful paper waiting to be written.&lt;/p&gt;
+
+&lt;p&gt;My first reason for being surprised is that website fingerprinting should be able to work on even quite small traffic flows, like 50k or 100k. Whereas the client throttling mentioned in the blog post should ignore all flows under some much higher threshold. Unless I&#39;m wrong.&lt;/p&gt;
+
+&lt;p&gt;The trick to all these writeups is walking the reader through enough context with respect to the rest of the research field that you can answer all the &quot;but have you thought about foo?&quot; questions.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 23</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_23/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_23/</link>
+
+	<pubDate>Mon, 11 Oct 2010 07:08:24 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:24Z</dcterms:modified>
+
+	<description>&lt;p&gt;Yes, I suspect (as Herrmann, Wendolsky, and Federrath have confirmed) that packet/cell frequencies tell all -- whether the observer is a well-meaning entry guard looking to differentiate between traffic patterns, or an attacker matching fingerprints.&lt;/p&gt;
+
+&lt;p&gt;Bayesian analysis gives extremely high accuracy but is computationally intensive, much more than what is needed. I also look forward to papers on the subject, but will leave the (public) research to the experts. &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/../../smileys/smile4.png&quot; alt=&quot;;)&quot; /&gt;&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>arma: Comment 24</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_24/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/comment_24/</link>
+
+	<pubDate>Thu, 23 Sep 2010 07:08:25 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:25Z</dcterms:modified>
+
+	<description>&lt;p&gt;I agree: that&#39;s another good research topic that should be tackled.&lt;/p&gt;
+
+&lt;p&gt;See the list at &lt;a href=&quot;https://www.torproject.org/research.html.en#Ideas&quot; title=&quot;https://www.torproject.org/research.html.en#Ideas&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/research.html.en#Ideas&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The website fingerprinting question has been on the research list for years. I&#39;ve peddled it to a wide variety of researchers. They know about it. We&#39;ve funded research on it ourselves.&lt;/p&gt;
+
+&lt;p&gt;It turns out that getting useful results on the topic is harder than it seems like it should be. Please go out there and prove us wrong.&lt;/p&gt;
+
+&lt;p&gt;But if your logic is &quot;you must ignore x, because there is a topic y that matters a lot&quot;, that&#39;s going to make it tough to get any work done around here. &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Research_problem_adaptive_throttling_of_Tor_clients_by_entry_guards/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;&lt;/p&gt;
+
+</description>
+
+
+</item>
+
+</channel>
+</rss>

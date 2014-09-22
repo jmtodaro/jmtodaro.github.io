@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged gsoc_2009</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/gsoc_2009/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>karsten: Google Summer of Code 2009 Wrap-up</title>
+	<dcterms:creator>karsten</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Google_Summer_of_Code_2009_Wrap-up/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Google_Summer_of_Code_2009_Wrap-up/</link>
+
+
+	<category>/tags/gsoc</category>
+
+	<category>/tags/gsoc_2009</category>
+
+
+	<pubDate>Mon, 26 Oct 2009 20:13:06 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:40:43Z</dcterms:modified>
+
+	<description>&lt;p&gt;Attending the Google Summer of Code Mentor Summit feels like the perfect time to finally write the wrap up of this year&#39;s &lt;a href=&quot;http://socghop.appspot.com/program/home/google/gsoc2009&quot; rel=&quot;nofollow&quot;&gt;Google Summer of Code&lt;/a&gt;. So, what did we learn in our third year of participation?&lt;/p&gt;
+
+&lt;p&gt;We had 5 students funded by Google to work on Tor over this summer, plus 1 more for The &lt;a href=&quot;https://www.eff.org/&quot; rel=&quot;nofollow&quot;&gt;Electronic Frontier Foundation&lt;/a&gt;. We had to pick these 6 out of 32 applications, which was a pretty hard process for us. In retrospect, there were at least 2 more students that we&#39;d really have wanted to work on Tor but that we were not able to pick. Fortunately, they stuck with the project anyway, writing a neat &lt;a href=&quot;https://blog.torproject.org/blog/summer-conclusion-arm-project&quot; rel=&quot;nofollow&quot;&gt;relay monitor&lt;/a&gt; and helping reimplement Tor in Java for mobile devices. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/gsoc-wrapup-2009&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Google_Summer_of_Code_2009_Wrap-up/#comments</comments>
+
+</item>
+<item>
+
+	<title>chrisd: Polipo Portability Enhancements Summary</title>
+	<dcterms:creator>chrisd</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Polipo_Portability_Enhancements_Summary/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Polipo_Portability_Enhancements_Summary/</link>
+
+
+	<category>/tags/gsoc_2009</category>
+
+	<category>/tags/libevent</category>
+
+	<category>/tags/polipo</category>
+
+
+	<pubDate>Fri, 11 Sep 2009 18:25:21 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:35:22Z</dcterms:modified>
+
+	<description>&lt;p&gt;Over the summer for GSoC 2009, I worked on Polipo, Tor&#39;s favored Web proxy for bridging the gap between HTTP and SOCKS protocols. The proxy also provides an efficient memory cache to help speed up browsing. I had an opportunity to learn about Polipo and Libevent, and I had a chance to attend &lt;a href=&quot;http://petsymposium.org/2009/&quot; rel=&quot;nofollow&quot;&gt;PETS&lt;/a&gt;, a privacy conference, and meet some of the Tor folks in person. &lt;a href=&quot;http://www.pps.jussieu.fr/~jch/software/polipo/&quot; rel=&quot;nofollow&quot;&gt;Polipo&lt;/a&gt; is authored by Juliusz Chroboczek. &lt;a href=&quot;http://www.monkey.org/~provos/libevent/&quot; rel=&quot;nofollow&quot;&gt;Libevent&lt;/a&gt; is developed by Nick Mathewson and Niels Provos. Nick Mathewson also happens to work for the Tor Project and was my GSoC mentor over the summer. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/polipo-portability-enhancements-summary&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Polipo_Portability_Enhancements_Summary/#comments</comments>
+
+</item>
+<item>
+
+	<title>karsten: EFF and Tor in Google Summer of Code 2009</title>
+	<dcterms:creator>karsten</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/EFF_and_Tor_in_Google_Summer_of_Code_2009/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/EFF_and_Tor_in_Google_Summer_of_Code_2009/</link>
+
+
+	<category>/tags/Google_Summer_of_Code</category>
+
+	<category>/tags/gsoc</category>
+
+	<category>/tags/gsoc_2009</category>
+
+
+	<pubDate>Fri, 20 Mar 2009 21:30:25 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:21:39Z</dcterms:modified>
+
+	<description>&lt;p&gt;Great news! We have been accepted as a mentoring organization for &lt;a href=&quot;http://socghop.appspot.com/program/home/google/gsoc2009&quot; rel=&quot;nofollow&quot;&gt;Google Summer of Code 2009&lt;/a&gt; together with &lt;a href=&quot;https://www.eff.org/&quot; rel=&quot;nofollow&quot;&gt;The Electronic Frontier Foundation&lt;/a&gt;. Yay!&lt;/p&gt;
+
+&lt;p&gt;This will be our third Google Summer of Code after 2007 and &lt;a href=&quot;https://blog.torproject.org/blog/tor-project-google-summer-code-2008%21&quot; rel=&quot;nofollow&quot;&gt;2008&lt;/a&gt;. In our &lt;a href=&quot;http://code.google.com/soc/2007/eff/about.html&quot; rel=&quot;nofollow&quot;&gt;first year&lt;/a&gt; we had four students working on making relays work better (and not crash) on Windows, on a library and tool to try alternative path selection algorithms, on a fuzzing library to look for parsing problems, and on scalability and privacy for hidden services. In our &lt;a href=&quot;http://code.google.com/soc/2008/eff/about.html&quot; rel=&quot;nofollow&quot;&gt;second year&lt;/a&gt; we had seven students. One of our successful students of the 2008 program wrote a nice &lt;a href=&quot;https://blog.torproject.org/blog/google-summer-code-2008-review&quot; rel=&quot;nofollow&quot;&gt;blog post&lt;/a&gt; reviewing how GSoC went for him, for the other students, and for the project in general. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/eff-and-tor-google-summer-code-2009&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/EFF_and_Tor_in_Google_Summer_of_Code_2009/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

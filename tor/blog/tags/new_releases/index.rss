@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged new_releases</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/new_releases/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: December 2010 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/December_2010_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/December_2010_Progress_Report/</link>
+
+
+	<category>/tags/new_packages</category>
+
+	<category>/tags/new_releases</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/scalability</category>
+
+
+	<pubDate>Tue, 11 Jan 2011 11:14:17 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:12:01Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt; New Releases &lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/december-2010-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;
+On December 14, we released updated Tor Browser Bundles for Windows, OSX, and&lt;br /&gt;
+Linux, &lt;a href=&quot;https://blog.torproject.org/blog/new-tor-browser-bundle-packages-0&quot; title=&quot;https://blog.torproject.org/blog/new-tor-browser-bundle-packages-0&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/new-tor-browser-bundle-packages-0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;On December 17th, we released an updated -stable version of Tor, 0.2.1.28.&lt;br /&gt;
+Tor 0.2.1.28 does some code cleanup to reduce the risk of remotely exploitable&lt;br /&gt;
+bugs. Thanks to Willem Pinckaers for notifying us of the issue. The Common&lt;br /&gt;
+Vulnerabilities and Exposures project has assigned CVE-2010-1676 to this issue.&lt;br /&gt;
+We also took this opportunity to change the IP address for one of our directory&lt;br /&gt;
+authorities, and to update the geoip database we ship.&lt;br /&gt;
+&lt;a href=&quot;https://blog.torproject.org/blog/tor-02128-released-security-patches&quot; title=&quot;https://blog.torproject.org/blog/tor-02128-released-security-patches&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-02128-released-security-patches&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;On December 17th, we released an updated -alpha version of Tor,&lt;br /&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/December_2010_Progress_Report/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

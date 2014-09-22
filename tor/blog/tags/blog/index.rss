@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged blog</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/blog/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Welcome</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Welcome/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Welcome/</link>
+
+
+	<category>/tags/blog</category>
+
+	<category>/tags/first_post</category>
+
+	<category>/tags/tor</category>
+
+
+	<pubDate>Wed, 05 Dec 2007 19:59:32 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:05:41Z</dcterms:modified>
+
+	<description>&lt;p&gt;Welcome to the official Tor Project blog.  We post a few times a month to discuss topics such as Tor development, recent press, and other related memes.&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Welcome/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

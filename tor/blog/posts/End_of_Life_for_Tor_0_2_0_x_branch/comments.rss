@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>End of Life for Tor 0.2.0.x branch</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/End_of_Life_for_Tor_0_2_0_x_branch/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Anonymous: Comment 1</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/End_of_Life_for_Tor_0_2_0_x_branch/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/End_of_Life_for_Tor_0_2_0_x_branch/comment_1/</link>
+
+	<pubDate>Mon, 05 Apr 2010 06:55:04 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:55:04Z</dcterms:modified>
+
+	<description>&lt;p&gt;United Kingdom, Digital Economy Bill: An ISP perspective&lt;br /&gt;
+Monday 05 April 2010 09:33:53 by Trefor Davies, CTO of Timico&lt;br /&gt;
+http://www.thinkbroadband.com/news/4203-digital-economy-bill-an-isp-pers...&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 2</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/End_of_Life_for_Tor_0_2_0_x_branch/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/End_of_Life_for_Tor_0_2_0_x_branch/comment_2/</link>
+
+	<pubDate>Thu, 15 Apr 2010 06:55:05 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:55:05Z</dcterms:modified>
+
+	<description>Where can we get more info on the progress of packaging the new version on Debian?  I look at the PTS but all I see is new packages coming in experimental and unstable all the time.  What needs to be done for them to pass into stable?
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 3</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/End_of_Life_for_Tor_0_2_0_x_branch/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/End_of_Life_for_Tor_0_2_0_x_branch/comment_3/</link>
+
+	<pubDate>Sun, 18 Apr 2010 06:55:06 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:55:06Z</dcterms:modified>
+
+	<description>&lt;p&gt;debian stable ships with 0.2.0.x tor, which hit end of life a while ago.  Erinn could answer this better, but I don&#39;t believe debian stable will contain 0.2.1 or 0.2.2 until squeeze is released as stable.&lt;/p&gt;
+
+&lt;p&gt;Better to use our repositories for current versions of tor for Debian.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>arma: Comment 4</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/End_of_Life_for_Tor_0_2_0_x_branch/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/End_of_Life_for_Tor_0_2_0_x_branch/comment_4/</link>
+
+	<pubDate>Sat, 22 May 2010 06:55:07 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:55:07Z</dcterms:modified>
+
+	<description>&lt;p&gt;Actually, the Lenny deb is the one exception to &quot;end of life for 0.2.0.x&quot;. The Debian packager for Tor is also a Tor developer, and he&#39;s been working hard to keep Tor 0.2.0.x just barely still alive in Lenny.&lt;/p&gt;
+
+&lt;p&gt;So while it won&#39;t get you the best performance, it should still be safe to use.&lt;/p&gt;
+
+&lt;p&gt;If you&#39;re running Tor as a relay though, we&#39;d prefer that you use the 0.2.1.x or 0.2.2.x Tor debs. That&#39;s because they provide big performance improvements for *other* people on the network.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 5</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/End_of_Life_for_Tor_0_2_0_x_branch/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/End_of_Life_for_Tor_0_2_0_x_branch/comment_5/</link>
+
+	<pubDate>Sun, 18 Apr 2010 06:55:08 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:55:08Z</dcterms:modified>
+
+	<description>&lt;p&gt;I use Debian Lenny.  Since the big tor update at the time that the problem you mentioned was announced, I noticed that whenever I reboot (my tor client starts by default at boot time) tor seems to be trying to contact all the running Tor servers one by one.  That&#39;s supposed to happen, right?&lt;/p&gt;
+
+&lt;p&gt;Every now and then I see that my connections while using tor (I have torbutton in Iceweasel) are exiting via an apparently unauthorized tor exit server (not known to sites which maintain a list of known tor exit servers).  Should I be worried about that?&lt;/p&gt;
+
+&lt;p&gt;Many thanks for providing tor!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>arma: Comment 6</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/End_of_Life_for_Tor_0_2_0_x_branch/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/End_of_Life_for_Tor_0_2_0_x_branch/comment_6/</link>
+
+	<pubDate>Sat, 22 May 2010 06:55:09 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:55:09Z</dcterms:modified>
+
+	<description>&lt;p&gt;Yes, your Tor client will keep trying to connect to something until it can establish a connection. When your computer boots the network isn&#39;t up yet, and your Tor client thinks either it&#39;s just been heavily firewalled, or a bunch of Tor relays are down, or some other catastrophe occurred. Once network shows up, it should settle down.&lt;/p&gt;
+
+&lt;p&gt;As for &quot;unauthorized&quot; Tor exit servers, it&#39;s much more likely that the websites you use to give you the full list of Tor relays are actually just wrong or out of date.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 7</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/End_of_Life_for_Tor_0_2_0_x_branch/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/End_of_Life_for_Tor_0_2_0_x_branch/comment_7/</link>
+
+	<pubDate>Tue, 25 May 2010 06:55:10 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:55:10Z</dcterms:modified>
+
+	<description>&lt;p&gt;Has the issue raised in Feb 2009 by a chinaman I think he is a teacher/prof/educator&lt;br /&gt;
+regarding the black box/hat effect in tor been solved?&lt;/p&gt;
+
+&lt;p&gt;tim&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 8</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/End_of_Life_for_Tor_0_2_0_x_branch/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/End_of_Life_for_Tor_0_2_0_x_branch/comment_8/</link>
+
+	<pubDate>Tue, 25 May 2010 06:55:11 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:55:11Z</dcterms:modified>
+
+	<description>To what do you refer?  There is no black box/hat effect in tor that we know of.
+</description>
+
+
+</item>
+
+</channel>
+</rss>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged education</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/education/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/education/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/education/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:03:19Z</updated>
+<entry>
+	<title>Tips for Running an Exit Node with Minimal Harassment</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/"/>
+
+	<author><name>mikeperry</name></author>
+
+
+
+
+
+
+	<category term="/tags/anonymity_advocacy" />
+
+	<category term="/tags/distributed_trust" />
+
+	<category term="/tags/education" />
+
+	<category term="/tags/performance" />
+
+
+	<updated>2011-04-05T12:03:19Z</updated>
+	<published>2010-07-01T00:08:08Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;b&gt;Updated 06/30/2010&lt;/b&gt;: Mention Reduced Exit Policy, ISP Shopping Tips, and Abuse Response Templates&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Updated 08/30/2010&lt;/b&gt;: Update exit policy with svn, git, hg, Kerberos, remote admin panels, IRC, others&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Updated 01/12/2011&lt;/b&gt;: Suggest creation of LLC for large exit nodes, provide links to ARIN forms and process.&lt;br /&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;I have noticed that a lot of new exit nodes have recently appeared on the network. This is great news, since exit nodes are typically on the scarce side. Exits usually occupy 30-33% of network by capacity, but are currently at a whopping 38.5% (156 MBytes/sec out of 404 total).&lt;/p&gt;
+
+&lt;p&gt;However, I want to make sure that these nodes stay up and don&#39;t end up being shut down due to easily preventable abuse complaints. I&#39;ve run a number of exit nodes on a few different ISPs and not only have I lived to tell about it, I&#39;ve have not had one shut down yet. Moreover, I&#39;ve only received about 4 abuse complaints in as many years of running exit nodes. This is in stark contrast to other node operators following a &lt;a href=&quot;https://blog.torproject.org/blog/five-years-exit-node-operator&quot;&gt;more reactive strategy&lt;/a&gt;. I&#39;m convinced this is largely because I observe the following pro-active guidelines. This guide is primarily US centric. Operators in other countries may have slightly different best practices (such as registering with RIPE and not ARIN). &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tips-running-exit-node-minimal-harassment&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/comments.atom" type="application/atom+xml" />
+
+</entry>
+<entry>
+	<title>In praise of multiple options for circumvention</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/In_praise_of_multiple_options_for_circumvention/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/In_praise_of_multiple_options_for_circumvention/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/anonymity_advocacy" />
+
+	<category term="/tags/circumvention" />
+
+	<category term="/tags/education" />
+
+
+	<updated>2011-04-05T11:19:16Z</updated>
+	<published>2009-02-17T00:31:16Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I was asked the other day why we don&#39;t advocate for just Tor as the one tool to rule them all.  My glib answer is &quot;of course we do, however the larger the toolbox, the better off the world.&quot;  &lt;/p&gt;
+
+&lt;p&gt;Expanding on that notion, the various anonymity, privacy, and circumvention tools target different people and use cases.  Tor advocates for &lt;a href=&quot;https://blog.torproject.org/blog/circumvention-and-anonymity&quot; rel=&quot;nofollow&quot;&gt;Anonymity first, circumvention second&lt;/a&gt;.  It would be very naive of us to think that we can solve all use cases.  In fact, it would be silly of us to try to dictate the needs of any user.  The larger the ecosystem of privacy and anonymity tools, the more options for users, and the better off we are as a whole. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/praise-multiple-options-circumvention&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/In_praise_of_multiple_options_for_circumvention/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/In_praise_of_multiple_options_for_circumvention/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

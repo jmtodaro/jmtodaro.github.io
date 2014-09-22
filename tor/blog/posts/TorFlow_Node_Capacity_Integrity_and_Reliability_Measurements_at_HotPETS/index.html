@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TorFlow Node Capacity, Integrity and Reliability Measurements at HotPETS</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTorFlow_Node_Capacity_Integrity_and_Reliability_Measurements_at_HotPETS&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">TorFlow Node Capacity, Integrity and Reliability Measurements at HotPETS</a>
+
+</span>
+
+
+<div id="content">
+<p><a href="https://blog.torproject.org/blog/measuring-tor-network-public-directory-information" rel="nofollow">Like Karsten</a>, I too am presenting at <a href="http://petsymposium.org/2009/hotpets.php" rel="nofollow">HotPETS</a> in Seattle in August. My presentation will cover my work with my <a href="https://svn.torproject.org/svn/torflow/trunk/" rel="nofollow">TorFlow suite</a> - a python library and utility set to assist measuring and adjusting performance on the Tor network, and to scan the network for malfunctioning and misbehaving exits. <span class="read-more"><a href="http://blog.torproject.org/blog/torflow-node-capacity-integrity-and-reliability-measurements-hotpets"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/performance/" rel="tag">performance</a>
+
+<a href="../../tags/research/" rel="tag">research</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-bdc38c048463f7822161498293bda471">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>I've tried https://svn.torproject.org/svn/torflow/trunk and it haven't worked on my machine. Ubuntu/8.10/x64. Tor v0.2.1.21.</p>
+
+<p>1) ExitAuthority/soat_config_real.py is missing, I take it it soat_config.py should be used as the template.<br />
+2) ErrorReply: 515 Authentication failed: Wrong length on authentication cookie.</p>
+
+<p>It's 32 bytes.<br />
+-rw------- 1 debian-tor debian-tor      32 Jan 16 03:43 control_auth_cookie</p>
+
+<p><br><br />
+Here is the log file:<br />
+========================================<br />
+Jan 16 03:43:41.111 [notice] Tor v0.2.1.21. This is experimental software. Do not rely on it for strong anonymity. (Running on Linux x86_64)<br />
+Jan 16 03:43:41.112 [notice] Initialized libevent version 1.3e using method epoll. Good.<br />
+Jan 16 03:43:41.112 [notice] Opening Socks listener on 127.0.0.1:9210<br />
+Jan 16 03:43:41.112 [notice] Opening Control listener on 127.0.0.1:9211</p>
+
+<p># ./soat.py --ssl --html --http --dnsrebind<br />
+DEBUG [ Sat Jan 16 03:43:59 2010 ]: Read tor config. Got Socks proxy: 9210<br />
+INFO [ Sat Jan 16 03:43:59 2010 ]: Connecting to Tor at 127.0.0.1:9211<br />
+INFO [ Sat Jan 16 03:44:00 2010 ]: Hibernating router bmwanon is running, flags: HSDir Named Running Valid<br />
+INFO [ Sat Jan 16 03:44:00 2010 ]: No bandwidth for live router EmuWikiTORService, flags: Running Stable Unnamed V2Dir Valid<br />
+INFO [ Sat Jan 16 03:44:00 2010 ]: Hibernating router blablub is running, flags: Named Running Valid<br />
+INFO [ Sat Jan 16 03:44:00 2010 ]: No bandwidth for live router OhDannyBoy, flags: Exit Running V2Dir Valid<br />
+INFO [ Sat Jan 16 03:44:00 2010 ]: No bandwidth for live router DOBERMANN, flags: Exit Running V2Dir Valid<br />
+INFO [ Sat Jan 16 03:44:00 2010 ]: Hibernating router fuga is running, flags: HSDir Named Running Valid<br />
+INFO [ Sat Jan 16 03:44:01 2010 ]: Hibernating router ThinkPenguin is running, flags: HSDir Named Running Valid<br />
+INFO [ Sat Jan 16 03:44:01 2010 ]: Hibernating router Pegdymmiv2 is running, flags: HSDir Named Running Valid<br />
+NOTICE [ Sat Jan 16 03:44:01 2010 ]: Running router Key=9B301F461E54083C080825EE0E23298150B07DE1 has no descriptor<br />
+INFO [ Sat Jan 16 03:44:01 2010 ]: Hibernating router bingsFreeNet is running, flags: Named Running Valid<br />
+INFO [ Sat Jan 16 03:44:01 2010 ]: Hibernating router GravenTORServer is running, flags: HSDir Named Running Valid<br />
+INFO [ Sat Jan 16 03:44:01 2010 ]: Hibernating router agate is running, flags: Named Running Valid<br />
+INFO [ Sat Jan 16 03:44:01 2010 ]: Hibernating router CarlaB is running, flags: Named Running Valid<br />
+INFO [ Sat Jan 16 03:44:01 2010 ]: No bandwidth for live router Unnamed, flags: Exit Running V2Dir Valid<br />
+INFO [ Sat Jan 16 03:44:02 2010 ]: No bandwidth for live router DOK, flags: Exit Running V2Dir Valid<br />
+INFO [ Sat Jan 16 03:44:02 2010 ]: Hibernating router GoElephantGoGoGo is running, flags: Named Running Valid<br />
+INFO [ Sat Jan 16 03:44:02 2010 ]: Hibernating router JucHadCod8 is running, flags: Named Running Valid<br />
+INFO [ Sat Jan 16 03:44:02 2010 ]: Hibernating router saveprivacyde is running, flags: Named Running Valid<br />
+INFO [ Sat Jan 16 03:44:02 2010 ]: Hibernating router TorNode140 is running, flags: Running Valid<br />
+NOTICE [ Sat Jan 16 03:44:02 2010 ]: Running router PPrivComLuxembourg3=1ADABAC444018AB38B672F53E067EC9F3740D1FA has no descriptor<br />
+INFO [ Sat Jan 16 03:44:02 2010 ]: Hibernating router rwxrwxrwx is running, flags: HSDir Running Valid<br />
+INFO [ Sat Jan 16 03:44:02 2010 ]: No bandwidth for live router Infinity, flags: Exit Running Unnamed V2Dir Valid<br />
+INFO [ Sat Jan 16 03:44:03 2010 ]: Hibernating router q867401q is running, flags: Named Running Valid<br />
+INFO [ Sat Jan 16 03:44:03 2010 ]: Hibernating router ssnthnet is running, flags: HSDir Named Running Valid<br />
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 33261B47E7D35D3AD24073827CF167357E8E6513<br />
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 8CE47A57689199F3CB47BF798ABAB971BFA912A7<br />
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 0EF3B88271121837EAFA8DEF91923BF3CAF2A0E2<br />
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 9A356DA25A8D9DCF0865800A0DE863B21D1FCBEA<br />
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router C60AB5E1A17DD1597F4D05DA063A89104ACD8382<br />
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 8A05E6B624AE3494604726A7B99CD1C70A58D775<br />
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 1F689A58746D4A8E3BFFC46B2E92C27A31075715<br />
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 945D08433DEB34F0BA3954C625356FD860B9DC3E<br />
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router D91B26D377E00B78D43CFEC3053CB9143C8C8487<br />
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 079AF6C8558C5EEA6B81B3DA4F23498178A73ADC<br />
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router A620BA8FC8E9E4C2C0127FEA39194C2AFE736AA9<br />
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router A40C88E5ACDD01A6BA02F6F1DCBC8CC363CAE737<br />
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 371ED81C2EA31EE18C347BFC043E790A66C92334<br />
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router E8CA0174C05AEC05EDAB8C208F089DE84C32CE1F<br />
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router B3298ADED2385D9D28365F6620218C5BF978244A<br />
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 657CECEA84681DAE50BFB6FBAA7E0E4BF2DD0CE3<br />
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 54C452F119A859BA3C7C0E38288A36D15A182642<br />
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router D8DCC504908AD1D64076ACE4AB19FA5A3DC1E65B<br />
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 55C39AD47B3C8FA3A7FF876FCD97142FE93824C7<br />
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 01340C8CDF5E90B9D4FF1AEBDCA403CD2FF6E562<br />
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 5EF5A140C6DF64235E0CE6FCDC43CA178E968013<br />
+INFO [ Sat Jan 16 03:44:04 2010 ]: Expiring non-running router 984F2FB60447EAB1B473A44B8AE93A65337808A5<br />
+DEBUG [ Sat Jan 16 03:44:04 2010 ]: Reconfigure with consensus<br />
+DEBUG [ Sat Jan 16 03:44:04 2010 ]: E = 102561829, G = 181165749, T = 263302898, g_ratio = 0.688050721721, e_ratio = 0.389520319674, bw_per_hop = 131651449.0<br />
+DEBUG [ Sat Jan 16 03:44:04 2010 ]: Bw: 78480838/263302898. The exit-weight is: 0, guard weight is: 0.273309388079<br />
+DEBUG [ Sat Jan 16 03:44:04 2010 ]: E = 102561829, G = 181165749, T = 263302898, g_ratio = 0.688050721721, e_ratio = 0.389520319674, bw_per_hop = 131651449.0<br />
+DEBUG [ Sat Jan 16 03:44:04 2010 ]: Bw: 78480838/263302898. The exit-weight is: 0, guard weight is: 0.273309388079<br />
+INFO [ Sat Jan 16 03:44:04 2010 ]: Read 1455/1479 routers<br />
+DEBUG [ Sat Jan 16 03:44:04 2010 ]: SETEVENTS EXTENDED STREAM BW NEWCONSENSUS NEWDESC CIRC STREAM_BW</p>
+
+<p>INFO [ Sat Jan 16 03:44:04 2010 ]: Monitoring REMAP events for weirdness<br />
+ERROR [ Sat Jan 16 03:44:04 2010 ]: An unexpected error occured.<br />
+Traceback (most recent call last):<br />
+  File "./soat.py", line 2828, in <br />
+    main(sys.argv)<br />
+  File "./soat.py", line 2678, in main<br />
+    scanhdlr.check_dns_rebind()<br />
+  File "./soat.py", line 259, in check_dns_rebind<br />
+    c.authenticate()<br />
+  File "../../TorCtl/TorCtl.py", line 721, in authenticate<br />
+    self.sendAndRecv("AUTHENTICATE "%s"\r\n"%secret)<br />
+  File "../../TorCtl/TorCtl.py", line 710, in sendAndRecv<br />
+    raise ErrorReply("%s %s"%(tp, msg))<br />
+ErrorReply: 515 Authentication failed: Wrong length on authentication cookie.<br />
+INFO [ Sat Jan 16 03:44:04 2010 ]: Resetting __LeaveStreamsUnattached=0 and FetchUselessDescriptors=1<br />
+NOTICE [ Sat Jan 16 03:44:04 2010 ]: Tor closed control connection. Exiting event thread.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 15 Jan 2010 06:28:18 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTorFlow_Node_Capacity_Integrity_and_Reliability_Measurements_at_HotPETS&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:28:17 AM CDT</span>
+<!-- Created <span class="date">Sun 21 Jun 2009 04:32:49 AM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

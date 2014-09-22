@@ -1,0 +1,301 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Two incentive designs for Tor</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Two_incentive_designs_for_Tor/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>arma: Comment 1</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Two_incentive_designs_for_Tor/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Two_incentive_designs_for_Tor/comment_1/</link>
+
+	<pubDate>Sat, 17 Jan 2009 06:17:43 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:17:43Z</dcterms:modified>
+
+	<description>&lt;p&gt;&quot;BitBlender: Light-Weight Anonymity for BitTorrent&quot;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://freehaven.net/anonbib/#bauer:alpaca2008&quot; title=&quot;http://freehaven.net/anonbib/#bauer:alpaca2008&quot; rel=&quot;nofollow&quot;&gt;http://freehaven.net/anonbib/#bauer:alpaca2008&lt;/a&gt;&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 2</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Two_incentive_designs_for_Tor/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Two_incentive_designs_for_Tor/comment_2/</link>
+
+	<pubDate>Sat, 17 Jan 2009 06:17:44 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:17:44Z</dcterms:modified>
+
+	<description>&lt;p&gt;Why not just go the I2P route and enable relays by default?&lt;/p&gt;
+
+&lt;p&gt;Sure, there are downsides to doing this, but are they really greater then having to create an entire complex incentive system like the one you discuss?&lt;/p&gt;
+
+&lt;p&gt;I constantly run Tor on my laptop because I like for it to be readily available to me, but I don&#39;t run as a relay because I move between several LANs on a daily basis, and I don&#39;t want to harm the network.  It is my opinion that the goal should be to make it harmless for people to run relays on computers that aren&#39;t guaranteed to have high uptime, and then make that the default.  It seems like this would be a much more elegant solution.&lt;/p&gt;
+
+&lt;p&gt;This is just my opinion, of course.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>arma: Comment 3</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Two_incentive_designs_for_Tor/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Two_incentive_designs_for_Tor/comment_3/</link>
+
+	<pubDate>Sat, 17 Jan 2009 06:17:45 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:17:45Z</dcterms:modified>
+
+	<description>&lt;p&gt;It already is harmless to run a relay that isn&#39;t up all the time. Tor will&lt;br /&gt;
+automatically use it for cases that can handle unstable relays, and&lt;br /&gt;
+won&#39;t use it for the cases that need stable relays.&lt;/p&gt;
+
+&lt;p&gt;For your more general question, see&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/faq#EverybodyARelay&quot; title=&quot;https://www.torproject.org/faq#EverybodyARelay&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/faq#EverybodyARelay&lt;/a&gt;&lt;br /&gt;
+and also Section 4.2 of&lt;br /&gt;
+&lt;a href=&quot;https://svn.torproject.org/svn/tor/trunk/doc/roadmaps/2008-12-19-roadmap-full.pdf&quot; title=&quot;https://svn.torproject.org/svn/tor/trunk/doc/roadmaps/2008-12-19-roadmap-full.pdf&quot; rel=&quot;nofollow&quot;&gt;https://svn.torproject.org/svn/tor/trunk/doc/roadmaps/2008-12-19-roadmap...&lt;/a&gt;&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 4</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Two_incentive_designs_for_Tor/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Two_incentive_designs_for_Tor/comment_4/</link>
+
+	<pubDate>Thu, 22 Jan 2009 06:17:46 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:17:46Z</dcterms:modified>
+
+	<description>&lt;p&gt;Is there any option for a proxy to remain active for a certain period. Like if I want to remain connected to one proxy for 2 minutes or 5 minutes. Can it be set.&lt;br /&gt;
+loking forward for the answer&lt;br /&gt;
+Thanks&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Kilroy (not verified): Comment 5</title>
+	<dcterms:creator>Kilroy (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Two_incentive_designs_for_Tor/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Two_incentive_designs_for_Tor/comment_5/</link>
+
+	<pubDate>Thu, 14 May 2009 06:17:47 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:17:47Z</dcterms:modified>
+
+	<description>You could consider the coins more like an advanced bit bucket, and give them a lifetime of say, 1 week, Being that, the longer you maintain gold start status the more coins you accrue, or have it related to amount of bandwidth transferred,  but also allow some type of tag in router id so that you can have router &quot;groups&quot; this would allow for some interesting options, chiefly being, you could have people with tor processing &quot;groups&quot; to, as an rpg player would say &quot;farm coins&quot; where they will more likely setup a farm because coins have a short lifetime, instead of only contributing when they want high speeds. Setting up access control for this type of group could be tricky but it would also allow them to handle any coin \ cash exchange themselves to sell \ rent out their coins to others. Also you could have coins with a short lifespan and coins with a long lifespan, the latter being more so to add a &quot;ranking&quot; for their farm then for bandwidth, as nothing gets people working harder then competition.
+</description>
+
+
+</item>
+<item>
+
+	<title>swisstorexit (not verified): Comment 6</title>
+	<dcterms:creator>swisstorexit (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Two_incentive_designs_for_Tor/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Two_incentive_designs_for_Tor/comment_6/</link>
+
+	<pubDate>Sun, 14 Jun 2009 06:17:48 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:17:48Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hello,&lt;/p&gt;
+
+&lt;p&gt;The idea are interessant but will be not better to have : 1) become reward when give some bandwitch and GB to can be more speed , 2) with coins for peoples who have not the possibility to give enough speed .&lt;/p&gt;
+
+&lt;p&gt;I am impatient to can just a bit more speed, the problem are for me , when i use nx client for exemple, i need min 10 KB more to can run in remote...&lt;/p&gt;
+
+&lt;p&gt;For the moment i can&#39;t Torify it...&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 7</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Two_incentive_designs_for_Tor/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Two_incentive_designs_for_Tor/comment_7/</link>
+
+	<pubDate>Tue, 07 Jul 2009 06:17:49 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:17:49Z</dcterms:modified>
+
+	<description>People in countries that have more internet infrastructure would always win the gold status.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 8</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Two_incentive_designs_for_Tor/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Two_incentive_designs_for_Tor/comment_8/</link>
+
+	<pubDate>Tue, 10 Aug 2010 06:17:50 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:17:50Z</dcterms:modified>
+
+	<description>is that a bad thing? some people will contribute more to the network. they will be rewarded more. everybody already has free access to tor. some people need better service. why not give them the option of getting better service by making the network better for everybody?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 9</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Two_incentive_designs_for_Tor/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Two_incentive_designs_for_Tor/comment_9/</link>
+
+	<pubDate>Tue, 09 Feb 2010 06:17:51 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:17:51Z</dcterms:modified>
+
+	<description>&lt;p&gt;Here&#39;s my idea:&lt;br /&gt;
+-TorProject has a public key, and they RSA sign the current date/time; Anyone who has paid Torproject can *authenticate* (bear with me).. and obtain the latest key value.&lt;/p&gt;
+
+&lt;p&gt;-Due to this authentication, the value should be rounded, e.g. to the nearest hour, etc, so that many people will get the same key, and everyone is (fairly) anonymous.&lt;/p&gt;
+
+&lt;p&gt;-People who haven&#39;t paid Torproject can&#39;t get them directly, but can still sniff values *from the traffic they carry*, the more traffic you carry, the more likely you are to know a recent key.&lt;/p&gt;
+
+&lt;p&gt;-So having a recent key doesn&#39;t mean you have paid, you might have just sniffed it; but either way, a recent key proves you have been somehow helpful (i.e. if you sniffed it from traffic, then you carried traffic).&lt;/p&gt;
+
+&lt;p&gt;-Then, nodes can prioritize traffic based on the presence of a key, and on how recent the key is.&lt;/p&gt;
+
+&lt;p&gt;-Note that this still works even if you don&#39;t have any money involved, and you just have Torproject giving them out randomly to various nodes which are online.&lt;/p&gt;
+
+&lt;p&gt;-And, you can also include other organizations, e.g. some charity might also have a recognized key, and the charity gives out keys, too.&lt;/p&gt;
+
+&lt;p&gt;-It&#39;s along the lines of digital coins, except that everyone who sees a coin can copy it for themselves, and double spending is ENCOURAGED, but they eventually fade away to become worthless.&lt;/p&gt;
+
+&lt;p&gt;-also, by using the time, and RSA signing, it means anyone can verify them, without the need for a centralized server (except for the issuing, which can also be decentralized)&lt;/p&gt;
+
+&lt;p&gt;-To stop wide-spread replication (_post your latest value here_) maybe some kind of centralized revocation, etc might work, but it can also be decentralized: every time you see a particular key, it becomes less meaningful (i.e. if you see the 10pm key 100 times, but the 9pm key 3 times, then the 9pm actually becomes more prioritized even though it&#39;s older)&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 10</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Two_incentive_designs_for_Tor/comment_10/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Two_incentive_designs_for_Tor/comment_10/</link>
+
+	<pubDate>Mon, 29 Mar 2010 06:17:52 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:17:52Z</dcterms:modified>
+
+	<description>My primary concern is being able to successfully and consistently hide my ip address and login information at various sites without the risk that an attacker will be able to steal my information for the purpose of identity theft or any other kind of theft.I bring this up because recently my banking information was stolen and my account cleaned out. I&#39;m not exactly sure how it was done but I suspect spyware was used then it the gathered information to log into my account and perform an illegal transfer. I have since put a block on all transfers but it bothers me greatly that this person was able to steal my information so easily. I wasn&#39;t using TOR at the time because it was having trouble connecting to the network and perhaps this theft might not have happened if I had used TOR. What I want to see are faster connections , a debug feature and perhaps a compatability wizard to account for the various operating systems that are currently in use. The bottom line is that I want to be able to completely hide beyond all recognition my identity and any information that could potentially put me at risk for theft of any kind.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 11</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Two_incentive_designs_for_Tor/comment_11/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Two_incentive_designs_for_Tor/comment_11/</link>
+
+	<pubDate>Mon, 19 Apr 2010 06:17:53 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:17:53Z</dcterms:modified>
+
+	<description>&lt;p&gt;Major moment which must not be lost from attention -- it is consequences for a physical person, which is an operator of tor exit node.  There are precedents which logically cannot be explained ( http://news.cnet.com/8301-13739_3-9779225-46.html and linked article http://itnomad.wordpress.com/2007/09/16/tor-madness-reloaded/ ).  But nevertheless they take place and some operators of tor exit nodes will ANSWER by the OWN HIDEs in similar histories.  Which person in right mind will go for it, if he/she knows about possible consequences.  There is such &quot;phenomenon&quot; as lawlessness of guys in blue uniform.  It is not explainable from the point of view of logic and common sense.&lt;/p&gt;
+
+&lt;p&gt;While there is no protection from such events, when the operator of tor exit node remains one on one with lawlessness of official force, and he will not gain any help &amp;amp; use in that particular moment in life neither from transparent and honest relationships with the internet provider, nor from constitution or human rights, or other nonsense, there is no special sense to discuss expansion of tor network by means of commoners.&lt;/p&gt;
+
+&lt;p&gt;This is a REAL problem.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 12</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Two_incentive_designs_for_Tor/comment_12/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Two_incentive_designs_for_Tor/comment_12/</link>
+
+	<pubDate>Tue, 17 Aug 2010 06:17:54 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:17:54Z</dcterms:modified>
+
+	<description>Are any of you aware of the bitcoin project? www.bitcoin.org the idea is anonymous untraceable crypto-cash. So far it&#39;s in its infancy but worth thinking about for your digital coins.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 13</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Two_incentive_designs_for_Tor/comment_13/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Two_incentive_designs_for_Tor/comment_13/</link>
+
+	<pubDate>Thu, 24 Feb 2011 06:17:55 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:17:55Z</dcterms:modified>
+
+	<description>&lt;p&gt;If you&#39;re going to add digital cash to Tor, you should check out this software:&lt;/p&gt;
+
+&lt;p&gt;https://github.com/FellowTraveler/Open-Transactions/wiki&lt;/p&gt;
+
+</description>
+
+
+</item>
+
+</channel>
+</rss>

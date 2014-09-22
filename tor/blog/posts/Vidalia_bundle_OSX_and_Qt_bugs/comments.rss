@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Vidalia bundle, OSX and Qt bugs</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_bundle_OSX_and_Qt_bugs/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>peter (not verified): Comment 1</title>
+	<dcterms:creator>peter (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_bundle_OSX_and_Qt_bugs/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_bundle_OSX_and_Qt_bugs/comment_1/</link>
+
+	<pubDate>Tue, 11 Mar 2008 06:05:47 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:05:47Z</dcterms:modified>
+
+	<description>&lt;p&gt;thanks for the file&lt;br /&gt;
+my vidalia was keeping crash...&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Tom Sharpless (not verified): Comment 2</title>
+	<dcterms:creator>Tom Sharpless (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_bundle_OSX_and_Qt_bugs/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_bundle_OSX_and_Qt_bugs/comment_2/</link>
+
+	<pubDate>Fri, 31 Oct 2008 06:05:48 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:05:48Z</dcterms:modified>
+
+	<description>&lt;p&gt;HI, I&#39;m using Qt 4.4 (open source) to build a portable OpenGL panorama viewer.  It works great on Win32 and Linux, but badly on OSX.  The symptoms strongly suggest that the QGLWidget c&#39;tor and d&#39;tor are not correctly initializing/destroying something in the graphics context that relates to cube mapped texturing.&lt;/p&gt;
+
+&lt;p&gt;I am almost mac-illiterate and don&#39;t own one, so I can&#39;t just try a thousand hacks until I stumble on a solution -- I need the advice of an expert.  Can you help?&lt;/p&gt;
+
+&lt;p&gt;Thanks -- Tom&lt;/p&gt;
+
+</description>
+
+
+</item>
+
+</channel>
+</rss>

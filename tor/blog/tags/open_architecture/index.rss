@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged open_architecture</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/open_architecture/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Circumvention and Anonymity</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Circumvention_and_Anonymity/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Circumvention_and_Anonymity/</link>
+
+
+	<category>/tags/censorship_circumvention</category>
+
+	<category>/tags/distributed_trust</category>
+
+	<category>/tags/open_architecture</category>
+
+	<category>/tags/open_philosophy</category>
+
+
+	<pubDate>Mon, 12 Jan 2009 12:08:54 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:17:05Z</dcterms:modified>
+
+	<description>&lt;p&gt;We&#39;ve always argued that safe circumvention requires anonymity, even from the circumvention service itself.  There are many people wanting to record your Internet traffic and browsing patterns; from governments to commercial advertising networks.  There are many ways to defeat the threat of traffic analysis; from simple proxy providers, virtual private networks, and distributed peer to peer solutions.   Only some of these offer anonymity along with circumvention. Tor&#39;s open design and anonymity properties provide protections for the user from those watching the traffic and from us as an organization.&lt;/p&gt;
+
+&lt;p&gt;Our architecture and design don&#39;t force the user to assume trust in us.  Our code is &lt;a href=&quot;https://gitweb.torproject.org/tor.git/&quot; rel=&quot;nofollow&quot;&gt;accessible&lt;/a&gt; and &lt;a href=&quot;https://gitweb.torproject.org/tor.git/blob/HEAD:/LICENSE&quot; rel=&quot;nofollow&quot;&gt;licensed under an open license&lt;/a&gt;.  Our &lt;a href=&quot;https://gitweb.torproject.org/torspec.git&quot; rel=&quot;nofollow&quot;&gt;specifications&lt;/a&gt; are clearly detailed and published. Our &lt;a href=&quot;https://www.torproject.org/download/download&quot; rel=&quot;nofollow&quot;&gt;packages&lt;/a&gt; follow a defined build process so the user can create the same binaries we do. Independent researchers can and do test the properties Tor provides [and help us to improve].  Moreover, The Tor software runs on a distributed network, where a single operator cannot capture or be forced to capture all users&#39; traffic information, even under legal or coercive threat.&lt;/p&gt;
+
+&lt;p&gt;All of these should allow the user to trust The Tor Project as a &lt;a href=&quot;https://www.torproject.org/about/corepeople&quot; rel=&quot;nofollow&quot;&gt;not-for-profit company&lt;/a&gt; and to trust that Tor isn&#39;t surreptitiously watching the very information you&#39;re trying to protect and isn&#39;t gathering information we could be forced to disclose.&lt;/p&gt;
+
+&lt;p&gt;We&#39;re always willing to work with other organizations who understand that anonymity provides stronger circumvention protections than the alternatives.&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Circumvention_and_Anonymity/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

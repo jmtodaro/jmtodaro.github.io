@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged atagar</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/atagar/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Vidalia 0.2.4 Released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_4_Released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_4_Released/</link>
+
+
+	<category>/tags/arm</category>
+
+	<category>/tags/atagar</category>
+
+	<category>/tags/gsoc</category>
+
+
+	<pubDate>Mon, 07 Sep 2009 15:13:01 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:35:04Z</dcterms:modified>
+
+	<description>&lt;p&gt;Vidalia 0.2.4 is released.  The OS X -alpha bundles are updated to fix a bug in the default &quot;bootstrap&quot; vidalia.conf file that pointed to a non-existent Polipo configuration file, causing Polipo to fail on startup.&lt;/p&gt;
+
+&lt;p&gt;The Changelog for this release is: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/vidalia-024-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Split the message log into &quot;Basic&quot; and &quot;Advanced&quot; views. The&lt;br /&gt;
+    &quot;Advanced&quot; view contains standard log messages from Tor, while the new&lt;br /&gt;
+    experimental &quot;Basic&quot; view displays status events received from Tor.&lt;br /&gt;
+    (Ticket #265)&lt;/li&gt;
+&lt;li&gt;Apply an application-global stylesheet on OS X that forces all tree&lt;br /&gt;
+    widgets in Vidalia to use the 12pt font recommended by Apple&#39;s human&lt;br /&gt;
+    interface guidelines.&lt;/li&gt;
+&lt;li&gt;Add an OSX_FORCE_32BIT CMake option that can be used to force a 32-bit&lt;br /&gt;
+    build on Mac OS X versions that default to 64-bit builds (e.g., Snow&lt;br /&gt;
+    Leopard), if only 32-bit versions of the Qt libraries are available.&lt;/li&gt;
+&lt;li&gt;Fix a bug introduced in 0.2.3 that prevented Vidalia from correctly&lt;br /&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_4_Released/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

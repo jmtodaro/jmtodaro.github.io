@@ -1,0 +1,513 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>The Debian OpenSSL flaw: what does it mean for Tor clients?</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FThe_Debian_OpenSSL_flaw_what_does_it_mean_for_Tor_clients&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">The Debian OpenSSL flaw: what does it mean for Tor clients?</a>
+
+</span>
+
+
+<div id="content">
+<p>There have been a lot of questions today about just what <a href="http://lists.debian.org/debian-security-announce/2008/msg00152.html" rel="nofollow">the<br />
+recent Debian OpenSSL</a> flaw means for Tor clients. Here's an attempt to<br />
+explain it in a bit more detail. (Go read <a href="http://archives.seul.org/or/announce/May-2008/msg00000.html" rel="nofollow">the Tor security advisory</a> before<br />
+reading this post.)</p>
+
+<p>First, let's look at the security/anonymity implications for users who<br />
+aren't running on Debian, Ubuntu, or similar. These implications all<br />
+stem from the fact that some of the Tor relays and v3 directory authorities<br />
+have weak keys, so the Tor network isn't able to provide as much anonymity<br />
+as we would like.</p>
+
+<p>The biggest issue is that perhaps 300 Tor relays were running with<br />
+weak keys and weak crypto, out of the roughly 1500-2000 total running<br />
+relays. What can an attacker do from this? If you happen to pick three<br />
+weak relays in a row for your circuit, then somebody watching your local<br />
+network connection (or watching the first relay you pick) could break all<br />
+the layers of Tor encryption and read the traffic as if they were watching<br />
+it at the exit relay. <span class="read-more"><a href="http://blog.torproject.org/blog/debian-openssl-flaw%3A-what-does-it-mean-tor-clients%3F"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/openssl/" rel="tag">openssl</a>
+
+<a href="../../tags/security_advisory/" rel="tag">security advisory</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-1fb530111b00b2198afed060854ba8ec">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>"What can three v3 authorities do? If they could forge a new v3<br />
+networkstatus consensus, they could trick users into using their own<br />
+fabricated Tor network, which would totally ruin their anonymity. Worse,<br />
+they could do this in a way that would be very hard to detect, by just<br />
+giving out their forged consensus to a few target users and giving out<br />
+the "real" consensus the rest of the time. But fortunately, Tor clients<br />
+require a majority of signatures before they'll believe the consensus --<br />
+and that's four of six. (Whew, that was close!)"</p>
+
+<p>So if te attacker had control of one of the other v3 authorities ALSO this attack would definitely work.. not really *Whew* then is it, more of a - "we've been scuppered".</p>
+
+<p>This attack was done and was successful.</p>
+
+<p>Let **nobody** tell you different.</p>
+
+<p>Also the true IP address of **all* "hidden services" is being identified (by USA .edu ops), after less than 24hrs up time for a brand new "hidden service" (non-debian), when only 1 access (single page request) of the hidden service from the tor network in that time.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 16 May 2008 06:07:04 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c6d73e93a508db8e317216b5bc5912ed">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>"So if te attacker had control of one of the other v3 authorities ALSO this attack would definitely work.. not really *Whew* then is it, more of a - "we've been scuppered"."</p>
+
+<p>Could you expand upon how this is possible with just one?  One of seven does not a consensus make.</p>
+
+<p>"This attack was done and was successful."</p>
+
+<p>Proof of this?</p>
+
+<p>"Also the true IP address of **all* "hidden services" is being identified (by USA .edu ops), after less than 24hrs up time for a brand new "hidden service" (non-debian), when only 1 access (single page request) of the hidden service from the tor network in that time"</p>
+
+<p>Feel free to provide some proof of this actually working.  I'm happy to setup a hidden service and have it identified by IP address as a test.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 19 May 2008 06:07:05 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3cc9e20f6480ab4eb7e54d0b5671ecac">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>&gt; One of seven does not a consensus make.</p>
+
+<p>They're probably saying that if an attacker had broken into one of the unaffected machines and stolen its keys, and if that attacker had also known about the Debian OpenSSL vulnerability, they'd be able forge a consensus.  That much is possible.</p>
+
+<p>&gt;&gt; This attack was done and was successful.<br />
+&gt; Proof of this?</p>
+
+<p>Agreed.  Frankly, it doesn't seem very likely that somebody would report an actual authority compromise by saying "An authority has been compromised but I won't tell you when, how, how I know about it, or how you can confirm that I'm telling you the truth."  If somebody knew about a compromise and they wanted to help Tor, they would report it so it could be fixed.  If they knew about a compromise and wanted to attack Tor users, they would keep it secret so they could exploit it.  This looks like random FUD to me too.</p>
+
+<p>As for this hidden-service-identifying attack, could you maybe provide some kind of a link to what you're talking about?  When we speak anonymously, it's very important to provide evidence for contentious claims, since we can't very well expect people to accept them based on our reputation.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FNick%20Mathewson%20%28not%20verified%29&amp;do=goto">Nick Mathewson (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 20 May 2008 06:07:06 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6e89a24eb36022a76e3544f35fc3bd64">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+Even better would be to have published research on the topic.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 20 May 2008 06:07:07 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0f9f5754131f2722eda845ee709c483f">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>I send this question in the or-talk list before read here with care.</p>
+
+<p>Could you answer in or-talk?</p>
+
+<p>-----BEGIN PGP SIGNED MESSAGE-----<br />
+Hash: SHA1</p>
+
+<p>// Backward decryption of Tor traffic after Debian OpenSSL bug disclosure</p>
+
+<p>Let some passive adversary haves a records of traffic between users Debian<br />
+GNU/Linux tor-client and servers of Tor-network (a lot of Debian's too).<br />
+The records dated 2006-may 2008.</p>
+
+<p>Now Debian OpenSSL PRNG bug disclosed. All ~250000 "pseudorandom" values known.</p>
+
+<p>Is it possible to adversary use this data to backward partially decryption of<br />
+recorded and stored users traffic?</p>
+
+<p>- From predicted states of broken PRNG he can compute Diffie-Hellman params,<br />
+reconstructs ephemerial keys and extract session AES keys between nodes in circuit<br />
+if two of circuit has broken PRNG's.</p>
+
+<p>Is it real? Or openSSL PRNG used in tor for generating auth. keys only and not<br />
+for session keys material in the case of tor?<br />
+-----BEGIN PGP SIGNATURE-----</p>
+
+<p>iD8DBQFILcYLRkm9ZEvRLEARApaoAKCHz8Pk4H8jLI4xgzbCnK1EgRzH1gCffINB<br />
+tto9W39Qr3hb4cq978zBC0s=<br />
+=vUFM<br />
+-----END PGP SIGNATURE-----</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Funknown%20%28not%20verified%29&amp;do=goto">unknown (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 16 May 2008 06:07:08 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a46fd11ef9787e2bdb5ade58ad76be5b">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+Maybe the directory authorities should switch to OpenBSD or FreeBSD. They both do code audits, which should help prevent this sort of thing from happening. OpenBSD's code audits are more thorough than FreeBSD's code audits.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 20 Mar 2009 06:07:09 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FThe_Debian_OpenSSL_flaw_what_does_it_mean_for_Tor_clients&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:07:04 AM CDT</span>
+<!-- Created <span class="date">Tue 13 May 2008 08:22:24 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

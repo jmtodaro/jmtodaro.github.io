@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged relay_tracking</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/relay_tracking/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/relay_tracking/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/relay_tracking/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:13:44Z</updated>
+<entry>
+	<title>Weather Change</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Weather_Change/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Weather_Change/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/feature_enhancements" />
+
+	<category term="/tags/relay_tracking" />
+
+	<category term="/tags/weather" />
+
+
+	<updated>2011-04-05T12:13:44Z</updated>
+	<published>2011-01-29T13:58:00Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Announcing the vastly improved &lt;a href=&quot;https://weather.torproject.org/&quot; rel=&quot;nofollow&quot;&gt;Tor Weather&lt;/a&gt;!  &lt;/p&gt;
+
+&lt;p&gt;The new weather incorporates many new features designed to make it far more useful to relay operators new and old.  &lt;/p&gt;
+
+&lt;p&gt;The new Tor Weather now checks the current consensus and can notify the relay operators if:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;their node is offline for a specified period of time,&lt;/li&gt;
+&lt;li&gt;their node has been seeing very little usage,&lt;/li&gt;
+&lt;li&gt;their node&#39;s Tor version is out of date,&lt;/li&gt;
+&lt;li&gt;and if they&#39;ve passed the threshold to receive a free Tor t-shirt.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This complete re-write and enhancement of Tor Weather was done by &lt;a href=&quot;http://ndanner.web.wesleyan.edu/&quot; rel=&quot;nofollow&quot;&gt;Professor Danner&#39;s&lt;/a&gt; students during their summer &lt;a href=&quot;http://hfoss.wesleyan.edu/&quot; rel=&quot;nofollow&quot;&gt;The Humanitarian Free and Open Source Software at Wesleyan University&lt;/a&gt; course.  Thanks to Jeff, Kate, and Michael for designing, coding, and testing this new Tor Weather release.  Thanks to our own Kaner for mentoring the students and integrating their changes into the infrastructure.&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Weather_Change/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/Weather_Change/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

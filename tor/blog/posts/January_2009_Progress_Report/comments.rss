@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>January 2009 Progress Report</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/January_2009_Progress_Report/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>An (not verified): Comment 1</title>
+	<dcterms:creator>An (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/January_2009_Progress_Report/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/January_2009_Progress_Report/comment_1/</link>
+
+	<pubDate>Mon, 23 Feb 2009 06:20:05 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:20:05Z</dcterms:modified>
+
+	<description>&lt;p&gt;Nodoubt TOR is the best. But i would have liked it better if the TOR proxy rotations can be disabled. They change too frequently. Also it would have been better if we can select the end nodes of the proxy when connecting.&lt;/p&gt;
+
+&lt;p&gt;Is there a way to do it??&lt;/p&gt;
+
+&lt;p&gt;Let me know if there is way to tweak TOR because i didn&#39;t find it yet anywhere written.&lt;/p&gt;
+
+&lt;p&gt;Thanks.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 2</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/January_2009_Progress_Report/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/January_2009_Progress_Report/comment_2/</link>
+
+	<pubDate>Wed, 25 Feb 2009 06:20:06 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:20:06Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor rocks so much, that it is tweaked by default.&lt;/p&gt;
+
+&lt;p&gt;Why should someone give away software, which isn&#39;t configured/tweaked as good as possible?!&lt;/p&gt;
+
+&lt;p&gt;BTW: It&#39;s Tor not TOR. See the logos..&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 3</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/January_2009_Progress_Report/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/January_2009_Progress_Report/comment_3/</link>
+
+	<pubDate>Thu, 26 Feb 2009 06:20:07 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:20:07Z</dcterms:modified>
+
+	<description>&lt;p&gt;TOR or Tor or T-O-R, search engines take it the same way.&lt;/p&gt;
+
+&lt;p&gt;And anyway, In Tor i don&#39;t like that automatic tweak feature which changes the ip address randomly all the time. If i want to use a usa ip for some time, there is no way to have it fixed and working because the next moment it uses germany ip. And i get blocked again on the websites.&lt;/p&gt;
+
+&lt;p&gt;This is the only reason why i have limited my use of Tor.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 4</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/January_2009_Progress_Report/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/January_2009_Progress_Report/comment_4/</link>
+
+	<pubDate>Fri, 27 Feb 2009 06:20:08 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:20:08Z</dcterms:modified>
+
+	<description>&lt;p&gt;1) Use TrackHostExits, so that your IP doesn&#39;t change every so many minutes.  See more details at &lt;a href=&quot;https://www.torproject.org/tor-manual.html.en&quot; title=&quot;https://www.torproject.org/tor-manual.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/tor-manual.html.en&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;2) # Use exit nodes in GB.&lt;br /&gt;
+    ExitNodes {gb}&lt;/p&gt;
+
+&lt;p&gt;    # Use exit nodes in countries that have won the World Cup&lt;br /&gt;
+    # recently. Also use any exit node at MIT.&lt;br /&gt;
+    ExitNodes {it}, {br}, {fr}, 18.0.0.0/8&lt;/p&gt;
+
+&lt;p&gt;    # Don&#39;t use an exit node in any country that is sinking under&lt;br /&gt;
+    # water.&lt;br /&gt;
+    ExcludeExitNodes {mv}&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Mori (not verified): Comment 5</title>
+	<dcterms:creator>Mori (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/January_2009_Progress_Report/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/January_2009_Progress_Report/comment_5/</link>
+
+	<pubDate>Mon, 23 Feb 2009 06:20:09 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:20:09Z</dcterms:modified>
+
+	<description>&lt;p&gt;Dear Tor Project,&lt;br /&gt;
+First let me sincerely thank you for your continuous and tireless efforts to provide us with security and freedom of information on the Internet. I just love Tor, especially Tor VM that works great!&lt;br /&gt;
+I am an English teacher living in Iran. I have a BA in Farsi language and Literature from Yazd University. If you need any help with your Farsi translation, please do not hesitate to let me know. I would be glad to be of any assistance and play a small role in Tor success.&lt;br /&gt;
+Kind regards&lt;br /&gt;
+Mori&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 6</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/January_2009_Progress_Report/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/January_2009_Progress_Report/comment_6/</link>
+
+	<pubDate>Fri, 27 Feb 2009 06:20:10 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:20:10Z</dcterms:modified>
+
+	<description>We&#39;d love more Farsi translation.  You can read more about how to help at &lt;a href=&quot;https://www.torproject.org/translation-overview.html.en&quot; title=&quot;https://www.torproject.org/translation-overview.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/translation-overview.html.en&lt;/a&gt;
+</description>
+
+
+</item>
+<item>
+
+	<title>Aleph0 (not verified): Comment 7</title>
+	<dcterms:creator>Aleph0 (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/January_2009_Progress_Report/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/January_2009_Progress_Report/comment_7/</link>
+
+	<pubDate>Wed, 25 Feb 2009 06:20:11 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:20:11Z</dcterms:modified>
+
+	<description>&lt;p&gt;Would it be non-trivial to have the MapAddress option behave like TrackHostExits?&lt;br /&gt;
+That is, if an entry is like&lt;br /&gt;
+MapAddress .rapidshare.com .rapidshare.com.exitpoint.exit&lt;br /&gt;
+have it applied to rs1xx.rapidshare.com, rs223dt.rapidshare.com, rs28tl2.rapidshare.com... &lt;/p&gt;
+
+&lt;p&gt;I already have such a line in my TORRC file; on start TOR doesn&#39;t complain, but apparently it doesn&#39;t have any effect. The alternative would be to add 5000-odd MapAddress lines specifying every possible hostname given Rapidshare&#39;s current naming convention, but I don&#39;t know how TOR would handle it; my connections drop (flaky company proxy) often enough already...&lt;/p&gt;
+
+&lt;p&gt;I already have the TrackHostExits enabled for both rapidshare.com and .rapidshare.com, so when rapidshare.com redirects me to whatever.rapidshare.com TOR will reuse the existing circuit; however, if the connection drops and it takes longer than TrackHostExitsExpire to reestablish, TOR will open a new circuit with a different exit point (and Rapidshare will claim I&#39;ve shared my account and lock it...  T_T  ).&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 8</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/January_2009_Progress_Report/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/January_2009_Progress_Report/comment_8/</link>
+
+	<pubDate>Fri, 27 Feb 2009 06:20:12 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:20:12Z</dcterms:modified>
+
+	<description>this is a fine feature request for &lt;a href=&quot;https://bugs.torproject.org/&quot; title=&quot;https://bugs.torproject.org/&quot; rel=&quot;nofollow&quot;&gt;https://bugs.torproject.org/&lt;/a&gt;.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 9</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/January_2009_Progress_Report/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/January_2009_Progress_Report/comment_9/</link>
+
+	<pubDate>Sat, 25 Jul 2009 06:20:13 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:20:13Z</dcterms:modified>
+
+	<description>How to block the fuc.... rapidshare traffic? I&#39;m a exit node.
+</description>
+
+
+</item>
+
+</channel>
+</rss>

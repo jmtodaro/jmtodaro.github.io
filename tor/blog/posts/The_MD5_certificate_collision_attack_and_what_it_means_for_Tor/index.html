@@ -1,0 +1,506 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>The MD5 certificate collision attack, and what it means for Tor</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FThe_MD5_certificate_collision_attack_and_what_it_means_for_Tor&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">The MD5 certificate collision attack, and what it means for Tor</a>
+
+</span>
+
+
+<div id="content">
+<p>Today, a team of security researchers and cryptographers gave a talk at the <a href="http://events.ccc.de/congress/2008/" rel="nofollow">25th Chaos Communication Congress (25C3)</a>, about a <a href="http://www.win.tue.nl/hashclash/rogue-ca/" rel="nofollow">nifty attack against X.509 certificates generated using the MD5 digest algorithm</a>.  We figured that people will ask us about how this attack affects Tor, so I'm writing an answer in advance.</p>
+
+<p><strong>The short version:</strong> This attack doesn't affect Tor.</p>
+
+<p><strong>The medium version:</strong> This attack doesn't affect Tor, since Tor doesn't ever use MD5 certificates, and since Tor doesn't care what certificate authorities say.  On the other hand, this attack probably <em>does</em> affect your browser.  Check your browser vendor for updates over the next few days and weeks, and make sure you install them. <span class="read-more"><a href="http://blog.torproject.org/blog/md5-certificate-collision-attack%2C-and-what-it-means-tor"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/alpha_release/" rel="tag">alpha release</a>
+
+<a href="../../tags/bug_fixes/" rel="tag">bug fixes</a>
+
+<a href="../../tags/hidden_services/" rel="tag">hidden services</a>
+
+<a href="../../tags/progress_report/" rel="tag">progress report</a>
+
+<a href="../../tags/translations/" rel="tag">translations</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-21044f3ce3883a651cfbcc109580840d">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>SHA-3 is scheduled for 2012. Until then there will even better Attacks on SHA1/2. Oh and PS3s will be cheaper <img src="../../smileys/smile4.png" alt=";-)" /></p>
+
+<p>So what about trying a switch to an other algorithm?<br />
+Tiger and Whirlpool look good.<br />
+Or Skein, if you want to use a possible SHA-3 Function.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 03 Jan 2009 06:16:31 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8a1e8a019d663be6babadb98176dee93">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>I've heard good things about Whirlpool, but I'm no cryptographer.  If I understand correctly, the SHA-1 family (and the SHA-2) have gotten more analysis than any other not-totally-broken-in-practice digest functions.  By the time the SHA-3 competition is done, the SHA-3 candidates will also be heavily analyzed by the best cryptographers in the field.  I don't think that Tiger or Whirlpool has seen quite enough analysis to make me comfortable.</p>
+
+<p>Still, you're right that it would be really bad if Tor is still using SHA-1 when a practical chosen-prefix attack against it is found.  I'm hoping we can get the tools ready to migrate to SHA-256 in the meantime, since (a) the SHA-2 functions seem likely to last a while longer than SHA-1, and (b) doing one migration will make the Tor software more hash-agnostic, so that we can move to SHA-3 quickly once it's chosen. Alternatively, if SHA-256 is broken before SHA-3 is out (unlikely, it seems), we could then think about switching to whatever SHA-3 candidate(s) seem best.</p>
+
+<p>Unfortunately, this isn't trivial.  We need to maintain backward compatibility, since people would get mad if we made every Tor user and server upgrade their software all at once.</p>
+
+<p>If you want to help, we could use some design proposals here.  I've checked in a document to Tor svn at /tor/trunk/doc/spec/proposals/ideas/xxx-what-uses-sha1.txt .  It lists everywhere that Tor uses SHA-1 today.  If anybody wants to help think about how to design the migration safely, that will help lots whenever we wind up switching to SHA-256, Skein, MD6, or whatever.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fnickm&amp;do=goto">nickm</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 04 Jan 2009 06:16:32 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a0b10b0e613cab68e63340ea6b632b13">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+By the way, your certificate on <a href="https://blog.torproject.org" title="https://blog.torproject.org" rel="nofollow">https://blog.torproject.org</a> uses md5, guess it's time to get a new one...
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 04 Jan 2009 06:16:33 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-738906116c300b15a6991b0f9f85826a">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+it's coming as soon as people return from their travels.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 04 Jan 2009 06:16:34 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-502a18bf56e248b15d8253f80fedd47a">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+when they will be coming back? waiting  for tor browser bundle updates.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FPETER%20%28not%20verified%29&amp;do=goto">PETER (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 08 Jan 2009 06:16:35 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-050e73ad425b5b5c1c503bd6d75d40b7">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+Interesting.  I knew site like http://www.netmd5crack.com could use huge dictionaries to find hashes but this scares me!  Is it just certs or is md5 in general at risk?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 28 Jan 2010 06:16:36 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4be9c1a6e67c4fac3077b28a8fb4ecdc">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p>one typical method of installing/utilizing TWO versions of any software is to have the "STABLE" version (last great one) - and "LATEST VERSION" - typically indicated with a version 1.00, 1.01 (patch) 1.02 (patch) - and all 1 series work together - no major change - then when a new version - major change - i.e. change of certificates etc. - then a 2.00, 2.01, 2.02 etc.</p>
+
+<p>To integrate this with the TOR network, the program would need a dual set of libraries under the main program, such that a "LEADING PACKET" would contain an extra "BIT" or "INDICATOR" that says "S" (stable) or "N" (new) - and then the main program would know which library function to call for a "certificate" or other major changes in operations.</p>
+
+<p>By doing this, the STABLE/LAST STRONG VERSION becomes the "default" whenever anyone has failed to load the MAIN PROGRAM that has this indicator/switch function installed - and even then, it always "defaults" to the older stable version unless a successful handshake takes place (or some other indicator of success that doesn't slow traffic with bi-directional communication) - at which point LIBRARY-N (new) is used.</p>
+
+<p>It would take "a bit" of work to develop MAIN PROGRAM and LIBRARY-N - but generally not as much as you might think as long as you keep the INDICATOR SUBROUTINE in the MAIN program tight and try not to scatter variables everywhere in MAIN. Once you have MAIN talking to STABLE, then test MAIN with NEW and then put 5 - 10 - 50 PCs together and let them chatter away and see if it crashes - then (wise idea) add a module that REVERTS TO OLD VERSION (i.e. backs up from 2.0 to 1.99) in the event of a "panic wipe out" that can take place if everyone switches and a new fatal bug rears its ugly head.</p>
+
+<p>Otherwise, if bugs in the new MAIN / STABLE / NEW libraries are minimal, they become "patches" (2.01, 2.02, 2.03) etc. until you have developed a MAIN that works with both versions - a STABLE/OLD library and a NEW library. Then leave the stable one alone - stop changing it - and work on polishing NEW - and if it ever becomes a problem, back down one level (i.e. from 2.04 back to 2.03) and continue polishing 2.04 or 2.05 until MAIN likes the way it tastes.</p>
+
+<p>Once you've done that a few times, MAIN become tighter and very robust, you get a feel for testing NEW library, and STABLE is really tight - even if it has some "older certificate" feature or other "problem" that could be improved.</p>
+
+<p>Then the big challenge takes place (hold yer breath) when 3.0 is released. At that time, 2.XX (last good version) becomes STABLE (old) library, and 3.01 becomes NEW. This gives everyone months (or a year is really sweet) to gradually upgrade Firefox buttons etc.</p>
+
+<p>It is critical to retain backward compatibility through each version - i.e. (ahem - don't puke) - does it work on Windows 95 or some other legacy system that a prior STABLE version worked well on. I run Windows 2000 SP4 specifically because I'm an old main frame guy who needs reliability and nothing MS has put out since then is as robust (after adding things like a firewall etc.). The day I have to switch off this platform I'll "back down" to the rudimentary Linux/Unix world rather than "move ahead" with the MS spyware infected OS that (ahem) is generally known to be "spying" on behalf of MS: watch your firewall traffic some time and you'll see MS is the biggest spyware system on the net (don't faint either) creating all kinds of outbound traffic you never authorized (which my firewall slaps down in a blink).</p>
+
+<p>HOPEFULLY when TOR gets to around Version 5.XX it'll have a firewall built in as well, though that utility might best be kept separate, and eventually (God willing), a TOR browser. When THAT happens, life will be grand indeed and the only thing missing would be a TOR email server, then a TOR CO-LO Hosting Service (rack mounts and a premium service for all that well protected traffic) and then when we CLONE the CO-LO in various nations, with each site having its own TOR RELAY, this "TOR IS SLOW" problem will be a thing of the past.</p>
+
+<p>THAT is the vision of "TOR" that I see (or pray for) - and if/when I've got $100K - $500K, I'd be delighted to erect the first TOR - BASED CO-LO and Virtual Server service here in the Bay area where I live. I think the world deserves it and I am rather sure it'd be a grand slam money maker compared to other CO-LO sites.</p>
+
+<p>...my two cents (er three)</p>
+
+<p>and p.s. - I have a credit card web site I developed that relies on users to "come with TOR SHIELD DOWN (we record their IP) then TURN TOR ON (we record their IP) before they log in. In this manner we are assured that they have TOR working BEFORE they do any business - and by tracking their IP vs their physical known location - we can watch as their "TOR location" changes and adjust accordingly - and know in a second if they "DROP" their TOR shield - at which point we drop their session.</p>
+
+<p>I believe more sites should utilize this type of "verification" and in the future - when the TOR NETWORK is a bit larger and more robust, I am guessing they will.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 27 Nov 2010 06:16:37 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FThe_MD5_certificate_collision_attack_and_what_it_means_for_Tor&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:16:31 AM CDT</span>
+<!-- Created <span class="date">Tue 30 Dec 2008 10:53:04 AM CST</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

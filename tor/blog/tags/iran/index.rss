@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged iran</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/iran/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Update on Internet censorship in Iran</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Update_on_Internet_censorship_in_Iran/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Update_on_Internet_censorship_in_Iran/</link>
+
+
+	<category>/tags/great_potato_wall</category>
+
+	<category>/tags/internet_censorship</category>
+
+	<category>/tags/iran</category>
+
+	<category>/tags/ssl_man-in-the-middle</category>
+
+
+	<pubDate>Fri, 21 Jan 2011 01:11:28 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:12:08Z</dcterms:modified>
+
+	<description>&lt;p&gt;Here&#39;s a quick update on what we&#39;re seeing from Tor clients in Iran.  This is an update to &lt;a href=&quot;https://blog.torproject.org/blog/new-blocking-activity-iran&quot; title=&quot;https://blog.torproject.org/blog/new-blocking-activity-iran&quot;&gt;https://blog.torproject.org/blog/new-blocking-activity-iran&lt;/a&gt;.  It appears that one of the five Iranian ISPs is experimenting in blocking censorship circumvention tools; such as Tor, Freegate, Ultrasurf, and Hot Spot Shield.  There have been reports that this update to censorship technologies was coming soon, &lt;a href=&quot;https://www.azadcyber.info/articles/1560&quot; title=&quot;https://www.azadcyber.info/articles/1560&quot;&gt;https://www.azadcyber.info/articles/1560&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Previously, we had data suggesting that ssl-connections were being throttled or experiencing a forced reduced-throughput.  It seems this is no longer the case.  A simple IP address access list is used to stop access to the public Tor nodes, as well as many Tor bridges.   An example of this blocklist on the Iranian Tor users:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://blog.torproject.org/files/direct-users-2011-01-21-ir-2010-10-23.png&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://blog.torproject.org/files/bridge-users-2011-01-21-ir-2010-10-23.png&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;We are seeing success in users choosing to configure their Tor clients to use a &lt;a href=&quot;https://www.torproject.org/docs/proxychain&quot;&gt;socks or https proxy&lt;/a&gt; and then connecting to the public Tor network.  The trick here is that Iranian tor users now look to be coming from wherever the open proxy is located.  A few volunteers in Europe and SE Asia have setup &lt;a href=&quot;http://www.inet.no/dante/&quot;&gt;proxy servers&lt;/a&gt; restricted to Iranian IP space.&lt;/p&gt;
+
+&lt;p&gt;On a more technical level, here&#39;s what we were seeing last week for ssl manipulation, &lt;a href=&quot;https://blog.torproject.org/files/https-traffic-flow.txt&quot; title=&quot;https://blog.torproject.org/files/https-traffic-flow.txt&quot;&gt;https://blog.torproject.org/files/https-traffic-flow.txt&lt;/a&gt;.  What&#39;s interesting is the tor-server to client communication is with a TTL of 40.  The TLSv1 Encrypted Alert is from the tor-server, except the TTL is 39.  Unless the tor-server suddenly jumped one hop further from the client, something intercepted the connection and injected that packet on behalf of the tor-server.   &lt;/p&gt;
+
+&lt;p&gt;This week we&#39;re seeing straight IP blocking after the ssl handshake starts, &lt;a href=&quot;https://blog.torproject.org/files/ip-blocking.txt&quot; title=&quot;https://blog.torproject.org/files/ip-blocking.txt&quot;&gt;https://blog.torproject.org/files/ip-blocking.txt&lt;/a&gt;.  In both cases, this is to the same tor bridge from the same tor client as before.  &lt;/p&gt;
+
+&lt;p&gt;In a short few months, Iran has vastly improved the sophistication of their censorship technologies.  Right now, the best option is to use tor through open socks/https proxies.  A risk is the open proxies can see you are using tor, but cannot see the traffic passing through the open proxy, for everything is wrapped in layers of encryption by Tor.  However, it appears the Iranian Potato Wall can detect Tor or not in any case by analyzing the traffic on the wire.  We have reports this is true for other circumvention tools as well.&lt;/p&gt;
+
+&lt;p&gt;I thank the many people that have taken risks to share data with us.&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Update_on_Internet_censorship_in_Iran/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: New Blocking Activity from Iran</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Blocking_Activity_from_Iran/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Blocking_Activity_from_Iran/</link>
+
+
+	<category>/tags/censorship</category>
+
+	<category>/tags/deep_packet_inspection</category>
+
+	<category>/tags/great_persian_firewall</category>
+
+	<category>/tags/internet_censorship</category>
+
+	<category>/tags/iran</category>
+
+
+	<pubDate>Sun, 09 Jan 2011 21:58:30 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:11:48Z</dcterms:modified>
+
+	<description>&lt;p&gt;Over the past 48 hours it seems the Great Persian Firewall is updating to attempt to block a number of circumvention tools, including Tor. Iranians and their diaspora have been reporting to us that Tor, Hot Spot Shield, UltraSurf, and Freegate are all experiencing connectivity problems from inside Iran to the outside world.&lt;/p&gt;
+
+&lt;p&gt;Our research indicates that ssl-based communications are being throttled to 2 kilobit per second rates or simply blocked altogether.  This is inclusive of basic ssh, ssl, vpns, and other proxy technologies.  We&#39;re continuing to work on what&#39;s really happening and likely means to counter. The short answer is to &lt;a href=&quot;https://www.torproject.org/docs/bridges.html.en&quot;&gt;use bridges&lt;/a&gt; that are not on port 443.  &lt;/p&gt;
+
+&lt;p&gt;Some graphs to show the results on Tor from our &lt;a href=&quot;https://metrics.torproject.org&quot;&gt;Tor metrics portal&lt;/a&gt;.  &lt;/p&gt;
+
+&lt;p&gt;Bridge users from Iran:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://blog.torproject.org/files/bridge-users-2011-01-10-ir-2010-10-12.png&quot;&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/new-blocking-activity-iran&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/New_Blocking_Activity_from_Iran/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: September 2009 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/September_2009_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/September_2009_Progress_Report/</link>
+
+
+	<category>/tags/advocacy</category>
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/censorship_circumvention</category>
+
+	<category>/tags/china</category>
+
+	<category>/tags/doj</category>
+
+	<category>/tags/fbi</category>
+
+	<category>/tags/iran</category>
+
+	<category>/tags/performance_improvements</category>
+
+	<category>/tags/senators</category>
+
+
+	<pubDate>Sat, 10 Oct 2009 07:16:46 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:38:38Z</dcterms:modified>
+
+	<description>&lt;p&gt;Here&#39;s what the Tor Project accomplished in September 2009.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;New Hires&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/september-2009-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Carolyn Anhalt is our new Translation and Community Manager. Carolyn has years of experience managing and growing content translation, as well as wrangling online communities and developing volunteer moderators and support roles from the community. She’s fluent or conversant in a number of languages, such as: Russian, French, English, German, Italian, and Welsh. Carolyn’s initial goals are to grow the translator community to keep everything Tor translated, work out better translation tools for translators, and to generally assist translators.&lt;/li&gt;
+&lt;li&gt;Karen Reilly joins us as our Development Director. Karen has years of experience in growing both community-based and foundation-based funding, as well as helping to fulfill the mission of organizations through outreach and community-building. Karen’s initial goals are to further develop community funding, work with our current donors, help create an annual report, and expand Tor’s outreach efforts.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/September_2009_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: CIMA/NED Panel on Iran and New Media</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/CIMA-NED_Panel_on_Iran_and_New_Media/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/CIMA-NED_Panel_on_Iran_and_New_Media/</link>
+
+
+	<category>/tags/CIMA-NED</category>
+
+	<category>/tags/iran</category>
+
+	<category>/tags/panel</category>
+
+	<category>/tags/press</category>
+
+
+	<pubDate>Tue, 14 Jul 2009 07:10:05 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:31:07Z</dcterms:modified>
+
+	<description>&lt;p&gt;I was invited to join a panel discussion on Iran and New Media hosted by the Center for International Media Assistance and the National Endowment for Democracy.   The full 90 minute video is now online; as is my presentation.&lt;/p&gt;
+
+&lt;p&gt;The general overview of the panel is &lt;a href=&quot;http://cima.ned.org/events/new-media-in-iran.html&quot; title=&quot;http://cima.ned.org/events/new-media-in-iran.html&quot; rel=&quot;nofollow&quot;&gt;http://cima.ned.org/events/new-media-in-iran.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The direct link to the video on Vimeo is &lt;a href=&quot;http://www.vimeo.com/5496977&quot; title=&quot;http://www.vimeo.com/5496977&quot; rel=&quot;nofollow&quot;&gt;http://www.vimeo.com/5496977&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;A number of press people talked to me afterwards, including Al-Jazeera.  There were reporters from Xinhua and China Daily in the audience as well.  These reporters paid close attention to anything I said about China.&lt;/p&gt;
+
+&lt;p&gt;I spoke about what I knew and generally tried to avoid starting international incidents.  A few of my answers to questions rambled a bit.  &lt;/p&gt;
+
+&lt;p&gt;All in all it was a great panel and I learned more about what goes on inside Iran from the different panelists.&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/CIMA-NED_Panel_on_Iran_and_New_Media/#comments</comments>
+
+</item>
+<item>
+
+	<title>karsten: Measuring Tor and Iran (Part two)</title>
+	<dcterms:creator>karsten</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/</link>
+
+
+	<category>/tags/bridges</category>
+
+	<category>/tags/iran</category>
+
+	<category>/tags/metrics</category>
+
+
+	<pubDate>Wed, 01 Jul 2009 13:25:51 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:41Z</dcterms:modified>
+
+	<description>&lt;p&gt;Two weeks ago we posted early measurements about the &lt;a href=&quot;https://blog.torproject.org/blog/measuring-tor-and-iran&quot;&gt;growth of Tor usage in Iran&lt;/a&gt;. Since then we have improved our math, and used more data sources. This work is part of our &lt;a href=&quot;https://blog.torproject.org/blog/performance-measurements-and-blockingresistance-analysis-tor-network&quot;&gt;metrics project&lt;/a&gt;, where we&#39;re learning about the Tor network to improve its availability and performance while keeping our users safe. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/measuring-tor-and-iran-part-two&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran_-Part_two-/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Measuring Tor and Iran</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran/</link>
+
+
+	<category>/tags/directory_services</category>
+
+	<category>/tags/iran</category>
+
+	<category>/tags/tor</category>
+
+
+	<pubDate>Fri, 19 Jun 2009 03:35:08 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:27:17Z</dcterms:modified>
+
+	<description>&lt;p&gt;I&#39;ve been fielding some calls from the press about Tor and Iran.  Someone quoted me as saying &quot;double the clients from Iran over the past few days&quot;.  We wondered, what are the real numbers?  What does our network see from Iran?  Is port 443 or https:// really blocked?  Here&#39;s what we&#39;ve discovered in the past day of working with the &lt;a href=&quot;https://blog.torproject.org/blog/performance-measurements-and-blockingresistance-analysis-tor-network&quot;&gt;new metrics&lt;/a&gt; we&#39;ve developed to be safe to collect without compromising anyone&#39;s anonymity. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/measuring-tor-and-iran&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Measuring_Tor_and_Iran/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

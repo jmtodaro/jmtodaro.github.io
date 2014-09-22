@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged data_flood</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/data_flood/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Blog problems</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Blog_problems/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Blog_problems/</link>
+
+
+	<category>/tags/blog_overload</category>
+
+	<category>/tags/comment_apocalypse</category>
+
+	<category>/tags/data_flood</category>
+
+
+	<pubDate>Sun, 14 Mar 2010 08:54:00 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:53:21Z</dcterms:modified>
+
+	<description>&lt;p&gt;As you may have noticed, the blog is having problems keeping up with the load.  It seems the blog has become very popular over the past month.  Even with caching enabled, the blog can&#39;t keep up. Another reason for the issues is that we&#39;re caught in a tricky balance between making the CAPTCHA easy to pass for humans with legitimate comments versus automated comment spammers.  And then there are the human comment spammers which can pass any CAPTCHA we put up with varying degrees of success.  We&#39;re up to hundreds of spam comments per day.  We don&#39;t want to use a third party CAPTCHA or comment service because then we&#39;re giving up all our viewers to their tracking mechanisms.  There&#39;s already enough surveillance on the Internet.  Therefore, comments are disabled for the next day while we assess the load on the blog.  &lt;/p&gt;
+
+&lt;p&gt;We are working on forums, right now they are tied up in making sure they are functional without javascript.  We will announce and release them when they are ready. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/blog-problems&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Blog_problems/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

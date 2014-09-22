@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged research_results</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/research_results/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: July 2010 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/July_2010_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/July_2010_Progress_Report/</link>
+
+
+	<category>/tags/alpha_releases</category>
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/development</category>
+
+	<category>/tags/enhancements</category>
+
+	<category>/tags/orbot</category>
+
+	<category>/tags/performance_improvements</category>
+
+	<category>/tags/portable_bundles</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/research</category>
+
+	<category>/tags/research_progress</category>
+
+	<category>/tags/research_reports</category>
+
+	<category>/tags/research_results</category>
+
+	<category>/tags/tor_browser_bundle</category>
+
+
+	<pubDate>Thu, 12 Aug 2010 09:25:08 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:06:28Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New releases&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/july-2010-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;On July 4th, we released Tor Browser Bundle 1.3.7 for Microsoft Windows. This is a security update for Firefox and Pidgin. The changes are: update to Firefox 3.5.10 and Pidgin Instant Messenger 2.7.1r2 to fix some security issues.&lt;/li&gt;
+&lt;li&gt;On July 6th, we released Tor Browser Bundle 1.0.8 for GNU/Linux distributions. This fixes a number of security issues with included software. The updates include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Update libpng to 1.4.3 (see CVE-2010-1205)&lt;/li&gt;
+&lt;li&gt;Update Firefox to 3.5.10&lt;/li&gt;
+&lt;li&gt;Update HTTPS Everywhere to 0.2.1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/li&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/July_2010_Progress_Report/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

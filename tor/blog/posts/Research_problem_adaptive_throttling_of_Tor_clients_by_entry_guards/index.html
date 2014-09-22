@@ -1,0 +1,1140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Research problem: adaptive throttling of Tor clients by entry guards</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FResearch_problem_adaptive_throttling_of_Tor_clients_by_entry_guards&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Research problem: adaptive throttling of Tor clients by entry guards</a>
+
+</span>
+
+
+<div id="content">
+<p>Looking for a paper topic (or a thesis topic)? Here's a Tor research area that needs more attention. The short version is: if we prevent the really loud users from using too much of the Tor network, how much can it help?</p>
+
+<p>We've instrumented Tor's entry relays so they can rate-limit connections from users, and we've instrumented the directory authorities so they can change the rate-limiting parameters globally across the network. Which parameter values improve performance for the Tor network as a whole? How should relays adapt their rate-limiting parameters based on their capacity and based on the network load they see, and what rate-limiting algorithms will work best?</p>
+
+<p>We'd love to <a href="https://www.torproject.org/research">work with you</a> to help answer these questions. <span class="read-more"><a href="http://blog.torproject.org/blog/research-problem-adaptive-throttling-tor-clients-entry-guards"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/bandwidth_throttling/" rel="tag">bandwidth throttling</a>
+
+<a href="../../tags/research/" rel="tag">research</a>
+
+<a href="../../tags/research_progress/" rel="tag">research progress</a>
+
+<a href="../../tags/thesis_idea/" rel="tag">thesis idea</a>
+
+<a href="../../tags/torperf/" rel="tag">torperf</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-1d765873348692cbefdf4b6caa311a6b">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>Hmmm... Seems to me that one could game the system by simply running a relay from the same IP as ones p2p program. Entry guards would then not throttle that connection. Compounding the issue, those added relays would likely run as non exit. While they would contribute to the network, they'd still suck up rarer and more valuable exit bandwidth without providing any in return. There would need to be safe guards against this behavior, otherwise the proposal would create an incentive to run relays for enhanced bittorrent service. That's probably not they sort of incentive torproject wants to create.</p>
+
+<p>Additionally, what happens to the Iranian user, unable to run a relay, who's trying to upload their protest video to youtube? From where I'm sitting, I would attempt to isolate applications on circuits (via altered proposal 171), increase circuit lifetime, then simply continue to favor quieter circuits.</p>
+
+<p>Relevant links:<br />
+http://archives.seul.org/or/dev/Jul-2010/msg00021.html</p>
+
+<p>http://archives.seul.org/or/dev/Sep-2010/msg00007.html</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 19 Sep 2010 07:08:02 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-74b6fc3de3253e9b257256202b502fd2">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>Rate limiting is one solution - but it would need to be a reasonable rate.</p>
+
+<p>BTW: Why not advertise? Obviously, more people acting as Tor hosts would improve service, but I've never seen Tor actually advertised.</p>
+
+<p>Letting the word slip out is one method. Pushing the word out is another. Rate limiting will help in cutting the traffic used by file sharing and CP downloads, but this can also effect the normal user too.</p>
+
+<p>Why not get a few small ads in a few computer mags or even online.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 20 Sep 2010 07:08:03 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a6650189deb8010ba226ea6474b9f1e9">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>We don't advertise by design.  We've repeatedly watched a number of other circumvention tools make a huge press splash over the years.  They talk about "for freedom" or "taking down the firewall" or something along these lines.  Inevitably, they just gave the censors and the technology companies that supply them a reason to block them at all costs.  </p>
+
+<p>Arguably, the world knows about Tor already.  We're an anonymity/privacy network first, circumvention second.  A growing number of people use a one-hop proxy system to bypass the firewall, and then use tor over that to protect themselves.  They realize the one-hop proxy can be run by the government or those friendly to the government to spy on those using it.  </p>
+
+<p>There's an arms race we're trying to have as slow as possible.  Advertising and pushing Tor into the face of those that want to defeat us can only accelerate the arms race in our experience.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 20 Sep 2010 07:08:04 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-46afbb5f4ebe763edf56d7e4f0093ffb">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi,</p>
+
+<p>Thanks for that new paper and research, i would participate with pleasure if i can help you with my relay and so give my stats and hope so continue help to improve the Tor network </p>
+
+<p>Best Regards</p>
+
+<p>SwissTorExit </p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 20 Sep 2010 07:08:05 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fb1a5c909ffa106a2e4df79a2f111816">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+please make this happen, I am so tried of slow Tor vs fast Tor years past.  I don't think some people who want Warz and to download movies and porn should get to hold Tor hostage...so, please, with a cherry on top, make this happen and stop of those gawd darn file sharers.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 20 Sep 2010 07:08:06 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c1cef5b1a49bdf9d2cbb8e6ed902d55a">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+I really like Tor and appreciate the work you put into it. That said, when are you going to start preventing Tor from building circuits with every node in the same city?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 20 Sep 2010 07:08:07 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e79ef91e05ee2b0a75c95eaf6649369f">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+TOR has become useless not because of speed issues but because every major site identifies TOR and effectively blocks it. TOR is shooting itself in the foot.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 20 Sep 2010 07:08:08 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0743cf302e9a6737c37dea176c511612">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+"Every major site" you say? Tor works wherever I take it. What can't you get through to? Twitter works, Facebook works, Google works... 
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 21 Sep 2010 07:08:09 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5af1c923e810c72263af81a76b393385">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+<p>Youtube doesn't work (enters you into a practically infinite loop of CAPTCHA requests, till you give up).</p>
+
+<p>Hotmail doesn't work (does the same thing as Youtube, but disconnects you after 5 CAPTCHA trial, despite typing the correct characters).</p>
+
+<p>Gmail, BTW, identifies you coming from a TOR network and will let you register only if you provide a mobile phone number for a confirmation SMS. (did we say the Chinese government loves this?)</p>
+
+<p>Wikipedia will not let you register via a TOR network...</p>
+
+<p>Should I go on?</p>
+
+<p>TOR is a wonderful idea (provided it's not used for illegal activities and/or piracy) but if all major websites identify TOR (those who have the resources to do so) and apply impractical usability measures against TOR users, what good is TOR for?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 21 Sep 2010 07:08:10 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2bef8f1ec60fa20f591801c02d98c862">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+<p>This is a known and intermittent problem; it does not mean that Google, Youtube, Hotmail, Yahoo, etc considers Tor to be spyware.</p>
+
+<p>When you use Tor, you are sending queries through exit relays that are also shared by thousands of other users. Tor users typically see this message when many Tor users are querying Google in a short period of time. Google interprets the high volume of traffic from a single IP address (the exit relay you happened to pick) as somebody trying to "crawl" their website, so it slows down traffic from that IP address for a short time.</p>
+
+<p>An alternate explanation is that Google tries to detect certain kinds of spyware or viruses that send distinctive queries to Google Search. It notes the IP addresses from which those queries are received (not realizing that they are Tor exit relays), and tries to warn any connections coming from those IP addresses that recent queries indicate an infection.</p>
+
+<p>To our knowledge, Google is not doing anything intentionally specifically to deter or block Tor use. The error message about an infected machine should clear up again after a short time.</p>
+
+<p>Torbutton 1.2.5 (released in mid 2010) detects Google captchas and can automatically redirect you to a more Tor-friendly search engine such as Ixquick or Bing.</p>
+
+<p>Further, smarter sites already realize an IP address is not a person and have other methods to authenticate you.  gmail doesn't always require a sms authorization through Tor.  I've registered a few accounts using Tor through gmail in the past week successfully.  Gmail is moving to two-factor authentication, one of those factors is sms. </p>
+
+<p>Rather than complain about what Tor cannot do, provide specific steps, proven with research, that we can take to improve Tor.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 22 Sep 2010 07:08:11 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-760fd77c815ac6bb000234070d0fe633">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+<p>phobos, thanks for your thoughtful reply, although it doesn't coincide with actual experience. Every TOR exit is easily identified as such (see http://www.geoiptool.com/ for example) and as long as this is the case, TOR cannot be fully effective.</p>
+
+<p>I can't imagine Google not doing something against TOR as one of TOR's declared goals is to prevent traffic analysis. Why would Google cooperate with something on which its entire business model is based???</p>
+
+<p>Again, if you can make TOR exits not identifiable as such, you may have a useful tool. Otherwise, TOR only works with small websites who are unable to analyse trafic effectively anyway. Look at http://www.geoiptool.com/ via TOR and see what I mean.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 22 Sep 2010 07:08:12 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0e042a587c831e0c33af803eeb1039df">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+The fact is Tor works for SOME and not others. Not everybody can use it effectively and there are things for those working on Tor to work on. All things considered none of the problems you've mentioned are being ignored. As has been stated the the Google redirect to other search engines is one solution. It may not be ideal. It does work for those who really need Tor.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 20 Oct 2010 07:08:13 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9500e29099385089e99b0dac5de53674">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+<p>Quit lying and appeasing the press! Let's break it down shall we...<br />
+No one above mentioned that google virus captcha, no one cares<br />
+about it, NEWNYM, done.</p>
+
+<p>It is NOT possible to sign up for Gmail or post on CraigsList personals.<br />
+Both require SMS. OkCupid refuses both accounts and traffic. Facebook<br />
+routinely pops up account verification if it see's you 'traveling'. PlentyOfFish deletes the accounts of travelers. Gmail pops up "give<br />
+us your SMS" on old accounts. I don't even remember what MySpace<br />
+does. And so on, and on, need I continue?, seriously, the list is long...</p>
+
+<p>Gmail [google] *is*/*claims to be* the "smartest site", and they're broken, how ironic is that?!</p>
+
+<p>Gmail especially doesn't need two factor auth, they've got SSL for the<br />
+parts that matter. And we've got secure computers. If I wanted two<br />
+factor, I'd ask them for a kilo-login's worth of OPIE at sign up and<br />
+print it out, or give them a pubkey. Give ME options, don't stuff<br />
+crap ones down our throats.<br />
+And users have pen and paper air gap for their damn forgotten<br />
+and weak internet passwords.<br />
+Sites are doing SMS primarily to database people [google is evil<br />
+remember] and secondly to raise costs of abuse.<br />
+Do NOT be the fools and think otherwise. Don't believe me? Look at the<br />
+order in which the first SMS's came out. First, toss SMS wall up. Next the 'protecting malfeasance' explanation, but that was evidenciary and thus<br />
+poor PR. So third, it's now the 'we are giving you cool new two factor/recovery' whitewash. Sly little twist, same BS.</p>
+
+<p>You know why these sites are able to 100% detect and block Tor instantly,<br />
+I'd bet because TorProject provides that damn online tordnesexitlist<br />
+checker. Care to cough up the query logs on that???<br />
+Yes, they could run a node and scrape the descriptor list. But at least<br />
+there'd be a race condition whereby a legitimate user could get in on<br />
+new exits.<br />
+And sure, they could grok the node archives [oops] to nuke prior<br />
+accounts.<br />
+But some of these sites are run by such clueless morons (CL for example)<br />
+that they'd never get past the shebang in binsh to do it.</p>
+
+<p>"gmail doesn't always require a sms authorization through Tor. I've registered a few accounts using Tor through gmail in the past week successfully"</p>
+
+<p>Ba.lone.y, I've been trying to sign up for CL and gmail ever since SMS<br />
+went up nearly a year ago. I gave up. Care to document your exits?</p>
+
+<p>And for all the appeasement and tools Tor gives to these sites,<br />
+Tor should at least be able to get corporate confirmation from<br />
+them regarding: "Yep, we suck, we're blocking Tor, lol."</p>
+
+<p>Sorry for the rant, but I'm getting physically ill with all these major<br />
+sites pissing all over legitimate customers and users like us. Every<br />
+month some site goes tits up for Tor, it's ridiculous and totally<br />
+unnecessary.</p>
+
+<p>Specific improvements? Tor's CEO can march into these site's CEO's<br />
+offices and have a constructive, open, educative, chat.<br />
+Do it on the record in panel at a con for all I care.<br />
+The *chan/anonymous/i crowd is simply not that<br />
+much load on their abuse, smartcoder and goodidea departments to<br />
+warrant nuking all the other legitimate users of Tor along with it.<br />
+And they're the one who are going to buy the prepaid cells just to<br />
+screw around.<br />
+So get back to nuking the bad accounts, not Tor.</p>
+
+<p>Oh well, thanks for Tor anyways. Braindead corporate policies<br />
+aren't really Tor's fault.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 21 Nov 2010 07:08:14 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b30d31dc2a1ccded7e500766e742e8d4">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+If possible, could you provide the following: a plot of time elapsed between cells (i.e. differences in timestamps), over time? There may be a way to define "loud" using simple machine learning at the relay. Thanks. An interesting problem.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 21 Sep 2010 07:08:15 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-39b0b7a5196a3d8060372d6aaff736ec">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+<p>Which cells? You mean showing the distribution of when we send cells for a given circuit? Or for multiple circuits? Or for TLS connections (which multiplex circuits)?</p>
+
+<p>Many of these are possible, but I need to know more about what you actually planned to look at before I can guess what data would help you most.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Farma&amp;do=goto">arma</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 21 Sep 2010 07:08:16 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5bf5de982481e071a647b707e0fda5b1">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+<p>Sorry, I later realized it's probably not the simplest solution...</p>
+
+<p>But what I meant was cell as in "Tor packets." Whatever a unit of traffic is from the point of view of the relay, inbound -- and for individual circuits (this part I realized only now).</p>
+
+<p>So, in a test, you could have a relay set up just for one test client. That client generates both types of traffic simultaneously, and the relay just logs time differences between cells (for each circuit).</p>
+
+<p>A high number of short times between cells/packets would indicate a sustained transfer, i.e. "loud." You can distinguish between loud and the rest by this measure of average time between cells. But you need a threshold, and this can be determined using simple machine learning.</p>
+
+<p>So you end up with a plot of that delta vs time, for each circuit. Then superimpose them.</p>
+
+<p>From the point of view of the relay: "In the past hour or so, 'loud' connections average x microseconds between inbound cells/packets, while everyone else averages y. So in the next hour, I will give traffic averaging less than (x+y)/2 a higher priority." The x and y are easy enough to determine automatically at each individual relay.</p>
+
+<p>I hope that makes sense.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 21 Sep 2010 07:08:17 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-84d0c039396a90cb56fcfdf873b12927">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+<p>Well, i don't agree, depend of where you go, but i found Tor less blocked as a year ago, it's seem that's is better understand by some site ...</p>
+
+<p>For my part i am quite never blocked and can use it on any site i need.</p>
+
+<p>So keep your great work <img src="../../smileys/smile.png" alt=":)" /></p>
+
+<p>SwissTorExit</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 21 Sep 2010 07:08:18 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6d831105f3f0b62be6343f9f4e0d3646">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+<p>^^^ "every major site"?  Huh?  I have not those problems on major sites I visit.  You should contact those in charge of site you are referring to and explain Tor to them and why they should allow some scheme for Tor users (like SASL for IRC, or what Tor folks proposed for Wikipeida editing by Tor users).</p>
+
+<p>And it's "Tor", not "TOR".</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 21 Sep 2010 07:08:19 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c74e112da5bb220cdf7dab43df30bcd3">
+
+<div class="comment-subject">
+
+Comment 19
+
+</div>
+
+<div class="inlinecontent">
+Hats of to TOR for providing an uncensored gateway to the internet, it is just a matter of time, I believe, that TOR's performance and outreach is going to extend manifold. I hope the people funding TOR and those actually involved in research and development of TOR may always get enough financial, moral and research support that they need to keep TOR up and running. cheers
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 21 Sep 2010 07:08:20 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3df4e735b4cba5ffdd7245b4fd6bd8f7">
+
+<div class="comment-subject">
+
+Comment 20
+
+</div>
+
+<div class="inlinecontent">
+How about researching ways to best implement padding/morphing to prevent entry node/ISP content fingerprinting attacks using traffic classifiers set to compensate for Tor's packet sizes? I doubt those Chinese dissidents are going to be much concerned with network speed when they're lined up in front of a firing squad.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 21 Sep 2010 07:08:21 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4ef510de84272ae3769f767fa194d02a">
+
+<div class="comment-subject">
+
+Comment 21
+
+</div>
+
+<div class="inlinecontent">
+The two problems are almost identical. A method that successfully prioritizes traffic as described can be adapted to what you describe.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 21 Sep 2010 07:08:22 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a9c328b5efb951d346343b3592e8a989">
+
+<div class="comment-subject">
+
+Comment 22
+
+</div>
+
+<div class="inlinecontent">
+<p>It can? That would surprise me. Sounds like you have a really insightful paper waiting to be written.</p>
+
+<p>My first reason for being surprised is that website fingerprinting should be able to work on even quite small traffic flows, like 50k or 100k. Whereas the client throttling mentioned in the blog post should ignore all flows under some much higher threshold. Unless I'm wrong.</p>
+
+<p>The trick to all these writeups is walking the reader through enough context with respect to the rest of the research field that you can answer all the "but have you thought about foo?" questions.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Farma&amp;do=goto">arma</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 23 Sep 2010 07:08:23 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-94104c18ef3a6e3571a381668129c92d">
+
+<div class="comment-subject">
+
+Comment 23
+
+</div>
+
+<div class="inlinecontent">
+<p>Yes, I suspect (as Herrmann, Wendolsky, and Federrath have confirmed) that packet/cell frequencies tell all -- whether the observer is a well-meaning entry guard looking to differentiate between traffic patterns, or an attacker matching fingerprints.</p>
+
+<p>Bayesian analysis gives extremely high accuracy but is computationally intensive, much more than what is needed. I also look forward to papers on the subject, but will leave the (public) research to the experts. <img src="../../smileys/smile4.png" alt=";)" /></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 11 Oct 2010 07:08:24 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-85ae51c9f29bca6b59df08284d095034">
+
+<div class="comment-subject">
+
+Comment 24
+
+</div>
+
+<div class="inlinecontent">
+<p>I agree: that's another good research topic that should be tackled.</p>
+
+<p>See the list at <a href="https://www.torproject.org/research.html.en#Ideas" title="https://www.torproject.org/research.html.en#Ideas" rel="nofollow">https://www.torproject.org/research.html.en#Ideas</a></p>
+
+<p>The website fingerprinting question has been on the research list for years. I've peddled it to a wide variety of researchers. They know about it. We've funded research on it ourselves.</p>
+
+<p>It turns out that getting useful results on the topic is harder than it seems like it should be. Please go out there and prove us wrong.</p>
+
+<p>But if your logic is "you must ignore x, because there is a topic y that matters a lot", that's going to make it tough to get any work done around here. <img src="../../smileys/smile.png" alt=":)" /></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Farma&amp;do=goto">arma</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 23 Sep 2010 07:08:25 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FResearch_problem_adaptive_throttling_of_Tor_clients_by_entry_guards&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 07:08:01 AM CDT</span>
+<!-- Created <span class="date">Sun 19 Sep 2010 05:02:14 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

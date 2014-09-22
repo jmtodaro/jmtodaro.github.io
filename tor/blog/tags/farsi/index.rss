@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged farsi</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/farsi/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: October 2008 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/October_2008_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/October_2008_Progress_Report/</link>
+
+
+	<category>/tags/auto-updater</category>
+
+	<category>/tags/censorship_circumvention</category>
+
+	<category>/tags/china</category>
+
+	<category>/tags/crashes</category>
+
+	<category>/tags/farsi</category>
+
+	<category>/tags/torbutton</category>
+
+	<category>/tags/translations</category>
+
+	<category>/tags/vidalia</category>
+
+
+	<pubDate>Mon, 01 Dec 2008 18:43:12 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:15:19Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;Design&lt;/strong&gt;&lt;br /&gt;
+We continued enhancements to the Chinese and Russian Tor website translations. We also have a second Chinese translator for the website now, so hopefully we will get more prompt translations there. Our Farsi translation from this summer is slowly becoming obsolete; we should solve that at some point.&lt;/p&gt;
+
+&lt;p&gt;We added a new &quot;30 second summary&quot; web page for Tor:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/30seconds&quot; title=&quot;https://www.torproject.org/30seconds&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/30seconds&lt;/a&gt;&lt;br /&gt;
+and a new &quot;easy download&quot; page since the original is so complex:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/easy-download&quot; title=&quot;https://www.torproject.org/easy-download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/easy-download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In the upcoming Vidalia 0.2.0 development release:&lt;br /&gt;
+  - Support changing UI languages without having to restart Vidalia.&lt;br /&gt;
+  - Updated Czech, Polish, Romanian and Turkish translations.&lt;/p&gt;
+
+&lt;p&gt;In the upcoming Vidalia 0.1.10 stable release:&lt;br /&gt;
+  - Add a prettier dialog for prompting people for their control port password that also includes a checkbox for whether the user wants Vidalia to remember the entered password, a Help button, and a Reset button (Windows only).&lt;br /&gt;
+  - Fix a crash bug that occurred when the user clicks &#39;Clear&#39; in the message log toolbar followed by &#39;Save All&#39;.&lt;br /&gt;
+  - Uncheck the Torbutton options by default in the Windows bundle installer if Firefox is not installed.&lt;br /&gt;
+  - Add an Windows bundle installer page that warns the user that they should install Firefox, if it looks like they haven&#39;t already done so.&lt;/p&gt;
+
+&lt;p&gt;It looks like Australia is soon to be joining the ranks of countries with a nationwide filtering regime:&lt;br /&gt;
+&lt;a href=&quot;http://arstechnica.com/news.ars/post/20081016-net-filters-required-for-all-australians-no-opt-out.html&quot; title=&quot;http://arstechnica.com/news.ars/post/20081016-net-filters-required-for-all-australians-no-opt-out.html&quot; rel=&quot;nofollow&quot;&gt;http://arstechnica.com/news.ars/post/20081016-net-filters-required-for-a...&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Proposals&lt;/strong&gt;&lt;br /&gt;
+We finished the first iteration of our auto-updater spec:&lt;br /&gt;
+&lt;a href=&quot;https://svn.torproject.org/svn/updater/trunk/specs/thandy-spec.txt&quot; title=&quot;https://svn.torproject.org/svn/updater/trunk/specs/thandy-spec.txt&quot; rel=&quot;nofollow&quot;&gt;https://svn.torproject.org/svn/updater/trunk/specs/thandy-spec.txt&lt;/a&gt;&lt;br /&gt;
+We detail our current auto-updater progress below. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/october-2008-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/October_2008_Progress_Report/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

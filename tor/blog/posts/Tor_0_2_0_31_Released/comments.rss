@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Tor 0.2.0.31 Released</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_31_Released/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Anonymous (not verified): Comment 1</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_31_Released/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_31_Released/comment_1/</link>
+
+	<pubDate>Sun, 14 Sep 2008 06:11:31 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:11:31Z</dcterms:modified>
+
+	<description>&lt;p&gt;hi.&lt;/p&gt;
+
+&lt;p&gt;i&#39;ve blocked a tor node with ExcludeNode command in my torrc with it&#39;s fingerprint and name but the node keeps coming back.&lt;/p&gt;
+
+&lt;p&gt;is this a bug?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 2</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_31_Released/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_31_Released/comment_2/</link>
+
+	<pubDate>Sun, 21 Sep 2008 06:11:32 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:11:32Z</dcterms:modified>
+
+	<description>possibly.  please open a bug report at &lt;a href=&quot;http://bugs.torproject.org&quot; title=&quot;http://bugs.torproject.org&quot; rel=&quot;nofollow&quot;&gt;http://bugs.torproject.org&lt;/a&gt;.  Thanks!
+</description>
+
+
+</item>
+
+</channel>
+</rss>

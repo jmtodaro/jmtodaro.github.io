@@ -1,0 +1,1460 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Vidalia 0.2.5 Released</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:40:41Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_1/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:39:48Z</updated>
+	<published>2009-10-19T11:39:48Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&quot;Add support in the Network settings page for configuring the&lt;br /&gt;
+Socks4Proxy and Socks5Proxy* options that were added in&lt;br /&gt;
+Tor 0.2.2.1-alpha. Patch from Christopher Davis.&quot;&lt;/p&gt;
+
+&lt;p&gt;Thanks to Chris&#39; work and Matt&#39;s integration, Tor can now support nearly any proxy to get access to the Tor Network.  Using open proxies or other proxy tools is now possible to get access to the unfiltered Internet through Tor while keeping your communications private and anonymous.&lt;/p&gt;
+
+&lt;p&gt;In some dystopian future world where all Tor relays and bridges are blocked, so long as open proxies exist, you can still reach the Tor Network.&lt;/p&gt;
+
+&lt;p&gt;Your connection would be as such:&lt;/p&gt;
+
+&lt;p&gt;your client &amp;lt;---&amp;gt; open SOCKS/HTTP proxy &amp;lt;---&amp;gt; Tor network&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_2/"/>
+
+	<author><name>Soulmech (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:39:49Z</updated>
+	<published>2009-10-21T11:39:49Z</published>
+
+	<content type="html" xml:lang="en">
+	What does this mean about Tor and Polipo? Will this lead to a change from Polipo to something else?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_3/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:39:50Z</updated>
+	<published>2009-10-21T11:39:50Z</published>
+
+	<content type="html" xml:lang="en">
+	No, it just means you have more options for how you can use your Tor.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_4/"/>
+
+	<author><name>Aaron87747 (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:39:51Z</updated>
+	<published>2009-10-21T11:39:51Z</published>
+
+	<content type="html" xml:lang="en">
+	Okay, I downloaded this for my computer. But I have a problem, I use Google Chrome for my internet browser and not Firefox. Does anyone know how I can get it for Google Chrome??
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_5/"/>
+
+	<author><name>keb (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:39:52Z</updated>
+	<published>2009-11-05T12:39:52Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;showed some issues and testing people have done&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Sep-2008/msg00032.html&quot; title=&quot;http://archives.seul.org/or/talk/Sep-2008/msg00032.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Sep-2008/msg00032.html&lt;/a&gt;&lt;br /&gt;
+basically, Google Chrome was bad for privacy.&lt;br /&gt;
+you can try it and let us know if things got better.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_6/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:39:53Z</updated>
+	<published>2009-10-21T11:39:53Z</published>
+
+	<content type="html" xml:lang="en">
+	I cannot find this release in download page.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_7/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:39:54Z</updated>
+	<published>2009-10-22T11:39:54Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Bonjour!&lt;/p&gt;
+
+&lt;p&gt;&quot;Vidalia-0.2.5.tar.gz&quot; is still non-existant on &quot;https://www.torproject.org/vidalia/dist/&quot;, when would you be able to upload it ? all linux users need it for testing&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_8/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:39:55Z</updated>
+	<published>2009-10-22T11:39:55Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;a href=&quot;https://dist.vidalia-project.net/vidalia-0.2.5.tar.gz&quot; title=&quot;https://dist.vidalia-project.net/vidalia-0.2.5.tar.gz&quot; rel=&quot;nofollow&quot;&gt;https://dist.vidalia-project.net/vidalia-0.2.5.tar.gz&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://dist.vidalia-project.net/vidalia-0.2.5.tar.gz.asc&quot; title=&quot;https://dist.vidalia-project.net/vidalia-0.2.5.tar.gz.asc&quot; rel=&quot;nofollow&quot;&gt;https://dist.vidalia-project.net/vidalia-0.2.5.tar.gz.asc&lt;/a&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_9/"/>
+
+	<author><name>liaozd (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:39:56Z</updated>
+	<published>2009-10-26T11:39:56Z</published>
+
+	<content type="html" xml:lang="en">
+	when this can be back on use in China?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_10/"/>
+
+	<author><name>arma</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:39:57Z</updated>
+	<published>2009-10-26T11:39:57Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;a href=&quot;https://www.torproject.org/bridges&quot; title=&quot;https://www.torproject.org/bridges&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/bridges&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_11/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:39:58Z</updated>
+	<published>2009-11-02T12:39:58Z</published>
+
+	<content type="html" xml:lang="en">
+	hi ! if you want crash anything that disallow.you must be learn to mask behaviors,it is not only technique problems , but also sense-logical  problems.Remember forever,mask you as the Chameleon in china.even when you are surfing cross Tor.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 12</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_12/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_12/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:39:59Z</updated>
+	<published>2009-10-28T11:39:59Z</published>
+
+	<content type="html" xml:lang="en">
+	Qué debo hacer cuando Vidalia me pide pass ?  Dónde me registro?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 13</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_13/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_13/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:00Z</updated>
+	<published>2009-10-28T11:40:00Z</published>
+
+	<content type="html" xml:lang="en">
+	What must I make when Vidalia asks me for pass? Where do I get registered?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 14</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_14/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_14/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:01Z</updated>
+	<published>2009-10-28T11:40:01Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;a href=&quot;http://wiki.noreply.org/noreply/TheOnionRouter/TorFAQ#TorPasswordPrompt&quot; title=&quot;http://wiki.noreply.org/noreply/TheOnionRouter/TorFAQ#TorPasswordPrompt&quot; rel=&quot;nofollow&quot;&gt;http://wiki.noreply.org/noreply/TheOnionRouter/TorFAQ#TorPasswordPrompt&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 15</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_15/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_15/"/>
+
+	<author><name>jbtl (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:02Z</updated>
+	<published>2009-10-29T11:40:02Z</published>
+
+	<content type="html" xml:lang="en">
+	Hi to all. I&#39;m from Romania, from a student campus, we use yuor software every day (good job), Privoxy and Vidalia to connect to some sites, but for 3 days now, all the vidalia bundle versions i&#39;ve tryed do not connect any more, it shows me an error like: coulnd&#39;t find root host,or it just stops at the third part of the bar... some help?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 16</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_16/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_16/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:03Z</updated>
+	<published>2009-11-01T12:40:03Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;If you enable the info log setting, are there any errors or connection problems?&lt;/p&gt;
+
+&lt;p&gt;Have you tried a bridge or three?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 17</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_17/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_17/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:04Z</updated>
+	<published>2009-10-30T11:40:04Z</published>
+
+	<content type="html" xml:lang="en">
+	Off topic, but whatever happened to Incognito? Is it kaput?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 18</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_18/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_18/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:05Z</updated>
+	<published>2009-11-01T12:40:05Z</published>
+
+	<content type="html" xml:lang="en">
+	It still exists, just being reworked from gentoo to ubuntu I believe.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 19</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_19/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_19/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:06Z</updated>
+	<published>2009-11-09T12:40:06Z</published>
+
+	<content type="html" xml:lang="en">
+	thank you for that news.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 20</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_20/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_20/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:07Z</updated>
+	<published>2009-10-30T11:40:07Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;vidalia+skype＝&lt;br /&gt;
+&lt;a href=&quot;http://clip2net.com/clip/m13179/thumb640/1256720327-clip-30kb.png&quot; title=&quot;http://clip2net.com/clip/m13179/thumb640/1256720327-clip-30kb.png&quot; rel=&quot;nofollow&quot;&gt;http://clip2net.com/clip/m13179/thumb640/1256720327-clip-30kb.png&lt;/a&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 21</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_21/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_21/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:08Z</updated>
+	<published>2009-11-03T12:40:08Z</published>
+
+	<content type="html" xml:lang="en">
+	What happened to Privoxy? It doesn&#39;t seem to be included in the bundle anymore.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 22</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_22/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_22/"/>
+
+	<author><name>keb (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:09Z</updated>
+	<published>2009-11-05T12:40:09Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;polipo is now the preferred proxy.&lt;br /&gt;
+see &lt;a href=&quot;http://www.browserwire.com/?p=10289&quot; title=&quot;http://www.browserwire.com/?p=10289&quot; rel=&quot;nofollow&quot;&gt;http://www.browserwire.com/?p=10289&lt;/a&gt; for discussion and references&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 23</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_23/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_23/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:10Z</updated>
+	<published>2009-11-04T12:40:10Z</published>
+
+	<content type="html" xml:lang="en">
+	I say,will you Tor guys pay more attention to maimland China? Where you can enjoy Tor, only if you use bridge relays.But bridges can be blocked still,and you have to change bridges from time to time. Tor must Establish a stable encrypted directory connection by defaut.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 24</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_24/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_24/"/>
+
+	<author><name>keb (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:11Z</updated>
+	<published>2009-11-05T12:40:11Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;a href=&quot;https://blog.torproject.org/blog/picturing-tor-censorship-in-china&quot; title=&quot;https://blog.torproject.org/blog/picturing-tor-censorship-in-china&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/picturing-tor-censorship-in-china&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;you can also get bridges by querying an email address as documented at&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/bridges&quot; title=&quot;https://www.torproject.org/bridges&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/bridges&lt;/a&gt;&lt;br /&gt;
+but there may now be automated tools looking for bridges which are published by Torproject, so you could consider setting up an informal network among trusted people where you run private bridges using instructions shown at &lt;a href=&quot;https://git.torproject.org/checkout/tor/master/doc/spec/bridges-spec.txt&quot; title=&quot;https://git.torproject.org/checkout/tor/master/doc/spec/bridges-spec.txt&quot; rel=&quot;nofollow&quot;&gt;https://git.torproject.org/checkout/tor/master/doc/spec/bridges-spec.txt&lt;/a&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 25</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_25/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_25/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:12Z</updated>
+	<published>2009-11-07T12:40:12Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Thank you for your reply.I&#39;v got some bridges through e-mail,they work well,at least presently.&lt;/p&gt;
+
+&lt;p&gt;I have tried the new stable version(0.2.1.20),but the DOS window gave a notice: &lt;/p&gt;
+
+&lt;p&gt;（Day/Time） [notice] This version of Tor (0.2.1.20) is newer than any recommended version in its series, according to the directory authorities. Recommended versions are: 0.2.0.34,0.2.0.35,0.2.1.19,0.2.2.1-alpha,0.2.2.2-alpha,0.2.2.3-alpha,0.2.2.4-alpha,0.2.2.5-alpha&lt;/p&gt;
+
+&lt;p&gt;What does &quot;newer than any recommended version in its series&quot; mean? Dose it mean 0.2.1.20 is too new to be recommended? Is 0.2.1.20 not suitable for use in mainland China?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 26</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_26/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_26/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:13Z</updated>
+	<published>2009-11-17T12:40:13Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Suggest ways we can pay more attention and help out.&lt;/p&gt;
+
+&lt;p&gt;Heck, I was just in Hong Kong and got to experience the internet filtering first hand, and how to work around it.  &lt;/p&gt;
+
+&lt;p&gt;We have networks in china giving out bridge IPs.  We&#39;re monitoring blocking of relays and bridges.  We have translations into simplified chinese.  &lt;/p&gt;
+
+&lt;p&gt;We changed tor to be able to use any proxy, so if you find one that isn&#39;t blocked, use it to get to the rest of the internet via tor.&lt;/p&gt;
+
+&lt;p&gt;what more can we do to help?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 27</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_27/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_27/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:14Z</updated>
+	<published>2009-11-19T12:40:14Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&quot;We changed tor to be able to use any proxy&quot;&lt;/p&gt;
+
+&lt;p&gt;—— What do you mean by &quot;changed tor to be able to use any proxy&quot;? Use an &quot;outsaide&quot; proxy to accsse Tor network,instead of a bridge relay? That needs to edit the torrc file,for example,as:&lt;/p&gt;
+
+&lt;p&gt;HttpProxy host:port&lt;br /&gt;
+HttpsProxy host:port&lt;/p&gt;
+
+&lt;p&gt;I&#39;d rather use bridge relays,they work fine.&lt;/p&gt;
+
+&lt;p&gt;I&#39;v got many a way to by-pass the Great Firewall,but Tor is my favorite for years.&lt;/p&gt;
+
+&lt;p&gt;&quot;What more can we do to help?&quot; &lt;/p&gt;
+
+&lt;p&gt;—— I hope Tor &quot;just do it&quot;.And wish Tor ever young,and never old.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 28</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_28/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_28/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:15Z</updated>
+	<published>2009-11-05T12:40:15Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hi, I downloaded the latest mac bundle (0.2.6), but I can&#39;t get Vidalia to start.  Vidalia.app copies to the Applications folder fine, but when I click on it nothing happens.  It doesn&#39;t even appear in the dock.&lt;/p&gt;
+
+&lt;p&gt;I&#39;ve had previous versions of Tor installed on this computer and they worked fine.  I thought I removed them completely before installing the new version.  Can anyone help?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 29</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_29/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_29/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:16Z</updated>
+	<published>2009-11-05T12:40:16Z</published>
+
+	<content type="html" xml:lang="en">
+	By the way, please help if you can, I really need a proxy ASAP.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 30</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_30/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_30/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:17Z</updated>
+	<published>2009-11-19T12:40:17Z</published>
+
+	<content type="html" xml:lang="en">
+	Did you download the dmg for your cpu?  ppc or intel?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 31</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_31/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_31/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:18Z</updated>
+	<published>2009-12-06T12:40:18Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;m having the same problem (10.4.11 / Intel). Downloaded the Universal binary. Tried both the Alpha and the Stable and had the same problem.&lt;/p&gt;
+
+&lt;p&gt;Went back, nuked all tor-related things (includin prefs) from my harddrive, still the same issue.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 32</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_32/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_32/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:19Z</updated>
+	<published>2009-12-18T12:40:19Z</published>
+
+	<content type="html" xml:lang="en">
+	Have the same issue (Tiger 10.4.11), I was always fine with my old version, it said to upgrade and then the trouble began. When I got around the lib-error (with the bundle) I then used the alpha and the gui started but now it won&#39;t install tor and polipo and says that I should locate tor... Earlier version had a .pkg to install the tor deamon a.s.o. but now this seems to be handled by the .app. Also I tried to merge the contents of the two packages (bundle and working alpha gui) but my simple approach didn&#39;t work either. Of course I deleted all things related to older versions and restarted several times. Would be great if there&#39;s a solution.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 33</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_33/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_33/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:20Z</updated>
+	<published>2009-12-18T12:40:20Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;SOLVED!!!&lt;br /&gt;
+1. Delete /Library/Vidalia, ~/Library/Vidalia and ~/.vidalia&lt;br /&gt;
+2. Download the 0.2.6 alpha, and the vidalia bundle&lt;br /&gt;
+3. Move Vidalia.app from the bundle to /Applications ond view packages content&lt;br /&gt;
+4. Open package content of vidalia.app from the alpha and&lt;br /&gt;
+5. In both open packages go into the Contents dir&lt;br /&gt;
+6. Move From alpha to the bundle:&lt;br /&gt;
+    a) Frameworks dir&lt;br /&gt;
+    b) MacOS/Vidalia into corresponding folder (overwrite)&lt;br /&gt;
+7. Start the improved bundle (if it&#39;s not in the Application folder you shout alter the pathes to tor and proxy)&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 34</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_34/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_34/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:21Z</updated>
+	<published>2009-11-05T12:40:21Z</published>
+
+	<content type="html" xml:lang="en">
+	求禁止某个国家、地区、IP段的用户使用我的中继，禁止停用中继和和更新geoip的功能
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 35</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_35/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_35/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:22Z</updated>
+	<published>2009-11-10T12:40:22Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;When will be there an update for Tor Browser bundle ?&lt;br /&gt;
+- 1.2.9 has too old firefox with lot of security bugs&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 36</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_36/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_36/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:23Z</updated>
+	<published>2009-11-17T12:40:23Z</published>
+
+	<content type="html" xml:lang="en">
+	Yes, it&#39;s coming.  It&#39;s going to be a big update, so it&#39;s going through a lot of testing.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 37</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_37/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_37/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:24Z</updated>
+	<published>2009-11-10T12:40:24Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Good job guys, but my tor connection is pitifully too slow, pls how can i speed up?&lt;br /&gt;
+Do i need to work on my system, or simply upgrade to the new version???&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 38</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_38/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_38/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:25Z</updated>
+	<published>2009-11-10T12:40:25Z</published>
+
+	<content type="html" xml:lang="en">
+	去说服更多的人运行中继和说服开发组强制TOR后台中继。加油，相信自己的实力！运行中继的人越多速度越快！！
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 39</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_39/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_39/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:26Z</updated>
+	<published>2009-11-17T12:40:26Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;a href=&quot;https://www.torproject.org/faq#WhySlow&quot; title=&quot;https://www.torproject.org/faq#WhySlow&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/faq#WhySlow&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 40</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_40/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_40/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:27Z</updated>
+	<published>2009-11-11T12:40:27Z</published>
+
+	<content type="html" xml:lang="en">
+	Hello, may I ask Tor software support &quot;Windows 7&quot; operating system? Thank you
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 41</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_41/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_41/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:28Z</updated>
+	<published>2009-11-17T12:40:28Z</published>
+
+	<content type="html" xml:lang="en">
+	It&#39;s been reported to work under Win7 for a while now.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 42</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_42/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_42/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:29Z</updated>
+	<published>2009-11-13T12:40:29Z</published>
+
+	<content type="html" xml:lang="en">
+	Is there planned windows 7 x64 support?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 43</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_43/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_43/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:30Z</updated>
+	<published>2009-11-17T12:40:30Z</published>
+
+	<content type="html" xml:lang="en">
+	we lack a 64bit system for building binaries, and a license to run win7.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 44</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_44/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_44/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:31Z</updated>
+	<published>2009-11-13T12:40:31Z</published>
+
+	<content type="html" xml:lang="en">
+	Polipo does not allow downloads bigger than 30 megabytes. FAIL!
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 45</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_45/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_45/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:32Z</updated>
+	<published>2009-11-17T12:40:32Z</published>
+
+	<content type="html" xml:lang="en">
+	Yes it does.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 46</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_46/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_46/"/>
+
+	<author><name>joel (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:33Z</updated>
+	<published>2009-12-10T12:40:33Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;You guys are aware, of course, that all torproject pages for downloading Vidalia and tor files are blocked. Are you by any chance going to allow a mirror site for downloading?&lt;/p&gt;
+
+&lt;p&gt;And, just a note:  &quot;building bridges is unsupported on Mac&quot; and ISPs are effectively whacking bridges faster than most novices can build them, so it looks like China is a crap out for Tor.&lt;/p&gt;
+
+&lt;p&gt;Thanks for the effort. It was okay while it lasted.&lt;/p&gt;
+
+&lt;p&gt;Any other proxy suggestions welcome. Please reply to this thread. Thanks.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 47</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_47/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_47/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:34Z</updated>
+	<published>2009-12-11T12:40:34Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;bridges work fine on the mac, what do you mean?  people in china who use osx are using bridges just fine.&lt;/p&gt;
+
+&lt;p&gt;we have a number of mirror sites for downloading tor packages.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 48</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_48/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_48/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:35Z</updated>
+	<published>2010-01-26T12:40:35Z</published>
+
+	<content type="html" xml:lang="en">
+	Guys Vidalia is not able to connect to the Tor Network. It says &quot;Connecting to the Tor Network and It tries to connect but the connection freezes in the middle and that&#39;s all.First a start Privoxy then Vidalia.I have the Tor installed. I&#39;ve used this program since 2006 but now  it seems there are some problems.I downloaded the latest ver of Vidalia and tried again but the same result. Any ideas ? Thanks.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 49</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_49/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_49/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:36Z</updated>
+	<published>2010-01-29T12:40:36Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I have the same problem.&lt;/p&gt;
+
+&lt;p&gt;I have been using Tor for years with no problem.&lt;/p&gt;
+
+&lt;p&gt;Recently when Vidalia loads it freezes halfway and I get the following error message:&lt;/p&gt;
+
+&lt;p&gt;Vidalia was unable to apply your server&lt;br /&gt;
+settings to Tor.&lt;/p&gt;
+
+&lt;p&gt;Unrecognized option: Uknown option&lt;br /&gt;
+&#39;BridgeRelay&#39;. Failing.&lt;/p&gt;
+
+&lt;p&gt;To try and solve the problem I installed the latest version of Firefox and the latest version of the Vidalia/Tor package - no change.&lt;/p&gt;
+
+&lt;p&gt;Any ideas anyone?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 50</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_50/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_50/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:37Z</updated>
+	<published>2010-03-03T12:40:37Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;REMEDY:&lt;/p&gt;
+
+&lt;p&gt;New TOR Vidalia bundle version archives&lt;br /&gt;
+==&amp;gt; http://www.theonionrouter.com/dist/vidalia-bundles/&lt;/p&gt;
+
+&lt;p&gt;Direct link:&lt;br /&gt;
+http://www.theonionrouter.com/dist/vidalia-bundles/vidalia-bundle-0.2.1....&lt;/p&gt;
+
+&lt;p&gt;The last Mac OS security update screwed up previous Vidalia settings.&lt;br /&gt;
+This latest version 0.2.1.24-0.2.7 (released Feb 2010) fixes the problems.&lt;br /&gt;
+Reference ==&amp;gt; https://blog.torproject.org/&lt;/p&gt;
+
+&lt;p&gt;Install &amp;amp; replace your previous TOR Vidalia bundle version:&lt;br /&gt;
+* Double-click .dmg file and drag&amp;amp;drop into Applications.&lt;br /&gt;
+* Agree to replace the existing Vidalia.&lt;br /&gt;
+* Open Vidalia.&lt;br /&gt;
+* Inside Vidalia settings ADD bridges&lt;br /&gt;
+(recommended for folks in mainland China):&lt;br /&gt;
+~ 83.226.198.100:9443&lt;br /&gt;
+~ 92.41.50.141:443&lt;br /&gt;
+~ 69.60.117.34:9001&lt;br /&gt;
+* You should be able to see the connections being successful from the &quot;View the Network&quot; map.&lt;/p&gt;
+
+&lt;p&gt;Good Luck.&lt;/p&gt;
+
+&lt;p&gt;~ Tom&lt;br /&gt;
+(expat in Shanghai)&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 51</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_51/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_51/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:38Z</updated>
+	<published>2010-04-17T11:40:38Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Tried all the above and still nothing (Running OS X 10.5).&lt;br /&gt;
+Can someone PLEASE state if there is a fix and put it all in plain&lt;br /&gt;
+join the dots English for us simpler folk - thanks.&lt;/p&gt;
+
+&lt;p&gt;Have tried deleting everything and reinstalling etc etc  but same old non-connection problem.&lt;br /&gt;
+How soon before a full installation bundle we can just install and it all works again -  simples!&lt;/p&gt;
+
+&lt;p&gt;A thanks to all the guys that make this software work by the way - this isn&#39;t a moan at you - just frustration!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 52</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_52/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_52/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:39Z</updated>
+	<published>2010-05-20T11:40:39Z</published>
+
+	<content type="html" xml:lang="en">
+	pls whr can i get strong bridges,help me pls...
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 53</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_53/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_53/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:40Z</updated>
+	<published>2010-06-20T11:40:40Z</published>
+
+	<content type="html" xml:lang="en">
+	Im new to the whole idea of vidalia and Tor but what settings should i use to run Tor in vidalia it always resets it back to ProxyFirewall please help  thanks!
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 54</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_54/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_5_Released/comment_54/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:40:41Z</updated>
+	<published>2010-06-21T11:40:41Z</published>
+
+	<content type="html" xml:lang="en">
+	Use a tor browser bundle, it&#39;s preconfigured.  &lt;a href=&quot;https://torproject.org/torbrowser&quot; title=&quot;https://torproject.org/torbrowser&quot; rel=&quot;nofollow&quot;&gt;https://torproject.org/torbrowser&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+
+</feed>

@@ -1,0 +1,769 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Tor Project infrastructure updates</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Anonymous: Comment 1</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_1/</link>
+
+	<pubDate>Fri, 22 Jan 2010 06:47:35 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:47:35Z</dcterms:modified>
+
+	<description>&lt;p&gt;As of this posting, the link at the top has the 1.3.0 version of the Browser Bundle (which still has the 0.2.1.21 release of Tor)&lt;/p&gt;
+
+&lt;p&gt;What can TBB users do?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 2</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_2/</link>
+
+	<pubDate>Fri, 22 Jan 2010 06:47:36 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:47:36Z</dcterms:modified>
+
+	<description>You can wait, new tbb is coming today.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 3</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_3/</link>
+
+	<pubDate>Fri, 22 Jan 2010 06:47:37 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:47:37Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hmmm i noticed that torchat isn&#39;t connecting anymore for more than 24 hours now...&lt;/p&gt;
+
+&lt;p&gt;Maybe this could be in relationship with your messsage?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 4</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_4/</link>
+
+	<pubDate>Fri, 22 Jan 2010 06:47:38 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:47:38Z</dcterms:modified>
+
+	<description>&lt;p&gt;re torchat still not connecting. It is true here too,&lt;/p&gt;
+
+&lt;p&gt;Note this line from torchat&#39;s torcc file:&lt;/p&gt;
+
+&lt;p&gt;## the following is a dirty workaround for the 15 minutes problem:&lt;/p&gt;
+
+&lt;p&gt;## hidden service descriptors are cached 15 minutes, so after&lt;/p&gt;
+
+&lt;p&gt;## a restart of tor we are not reachable for 15 minutes.&lt;/p&gt;
+
+&lt;p&gt;## Using always the same introduction points makes even old &lt;/p&gt;
+
+&lt;p&gt;## and stale descriptors still work. I am still searching&lt;/p&gt;
+
+&lt;p&gt;## for a better solution.&lt;/p&gt;
+
+&lt;p&gt;HiddenServiceNodes moria1,moria2,tor26&lt;/p&gt;
+
+&lt;p&gt;At least 2 of the 3 hidden service node above were compromised.&lt;br /&gt;
+Are there new names for these servers and do they need to replace the 3 shown above?   If so, where are these server names to be found?&lt;/p&gt;
+
+&lt;p&gt;PS The captchas required to post here are VERY difficult for a human to read.  Please use something that is more legible and human friendly&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 5</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_5/</link>
+
+	<pubDate>Sat, 23 Jan 2010 06:47:39 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:47:39Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hi guys!&lt;br /&gt;
+This error appears every time since update. What&#39;s wrong? Does someone have the same problem?&lt;/p&gt;
+
+&lt;p&gt;Jan 23 13:01:33.166 [Notice] Tor v0.2.2.7-alpha (git-.......). This is experimental software. Do not rely on it for strong anonymity. (Running on Darwin i386)&lt;br /&gt;
+Jan 23 13:01:33.167 [Notice] Initialized libevent version 1.4.13-stable using method kqueue. Good.&lt;br /&gt;
+Jan 23 13:01:33.168 [Notice] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+Jan 23 13:01:33.168 [Notice] Opening Control listener on 127.0.0.1:9051&lt;br /&gt;
+Jan 23 13:01:35.206 [Notice] Bootstrapped 10%: Finishing handshake with directory server.&lt;br /&gt;
+Jan 23 13:01:35.328 [Warning] TLS error: unexpected close while renegotiating (SSL_ST_OK)&lt;br /&gt;
+Jan 23 13:01:35.340 [Notice] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+Jan 23 13:01:35.340 [Notice] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+Jan 23 13:01:35.341 [Notice] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+Jan 23 13:01:35.341 [Notice] No current certificate known for authority ides; launching request.&lt;br /&gt;
+Jan 23 13:01:35.341 [Notice] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+Jan 23 13:01:35.342 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+Jan 23 13:01:35.342 [Notice] No current certificate known for authority urras; launching request.&lt;br /&gt;
+Jan 23 13:01:35.487 [Warning] TLS error: unexpected close while renegotiating (SSL_ST_OK)&lt;br /&gt;
+Jan 23 13:01:36.042 [Warning] TLS error: unexpected close while renegotiating (SSL_ST_OK)&lt;br /&gt;
+Jan 23 13:01:36.184 [Warning] TLS error: unexpected close while renegotiating (SSL_ST_OK)&lt;br /&gt;
+Jan 23 13:02:36.193 [Notice] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+Jan 23 13:02:36.226 [Notice] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+Jan 23 13:02:36.227 [Notice] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+Jan 23 13:02:36.227 [Notice] No current certificate known for authority ides; launching request.&lt;br /&gt;
+Jan 23 13:02:36.228 [Notice] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+Jan 23 13:02:36.228 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+Jan 23 13:02:36.229 [Notice] No current certificate known for authority urras; launching request.&lt;br /&gt;
+Jan 23 13:02:36.331 [Warning] TLS error: unexpected close while renegotiating (SSL_ST_OK)&lt;br /&gt;
+Jan 23 13:02:36.384 [Warning] TLS error: unexpected close while renegotiating (SSL_ST_OK)&lt;/p&gt;
+
+&lt;p&gt;If you could help me, that would be great. &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/../../smileys/smile.png&quot; alt=&quot;:-)&quot; /&gt; Thanks guys!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 6</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_6/</link>
+
+	<pubDate>Sat, 23 Jan 2010 06:47:40 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:47:40Z</dcterms:modified>
+
+	<description>&lt;p&gt;Yes, we know, &lt;a href=&quot;https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=1225&quot; title=&quot;https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=1225&quot; rel=&quot;nofollow&quot;&gt;https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=1225&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;and &lt;a href=&quot;http://archives.seul.org/or/talk/Jan-2010/msg00157.html&quot; title=&quot;http://archives.seul.org/or/talk/Jan-2010/msg00157.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Jan-2010/msg00157.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Apple updated OS X and broke ssl.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 7</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_7/</link>
+
+	<pubDate>Sat, 23 Jan 2010 06:47:41 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:47:41Z</dcterms:modified>
+
+	<description>&lt;p&gt;well, I wouldn&#39;t say exactly that they &#39;broke&#39; it...the fact is rather that the ssl protocol is broken.&lt;/p&gt;
+
+&lt;p&gt;Btw that captcha is f*ing unreadable&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 8</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_8/</link>
+
+	<pubDate>Thu, 04 Nov 2010 06:47:42 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:47:42Z</dcterms:modified>
+
+	<description>thank you for posting . please do more good article.i like it so much .I will always follow it.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 9</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_9/</link>
+
+	<pubDate>Sat, 23 Jan 2010 06:47:43 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:47:43Z</dcterms:modified>
+
+	<description>After reading the bug reports I just wanted to add that this issue is not restricted to Snow Leopard (10.6). I experience it on Leopard 10.5.8 as well after application of Apple&#39;s latest security Update 2010-001.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 10</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_10/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_10/</link>
+
+	<pubDate>Sun, 24 Jan 2010 06:47:44 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:47:44Z</dcterms:modified>
+
+	<description>&lt;p&gt;I also use OS X Snow Leopard 10.6.2 and I must say, I have the same problem.&lt;/p&gt;
+
+&lt;p&gt;I get these error message everytime, weather I start Vidalia (TOR)&lt;/p&gt;
+
+&lt;p&gt;TLS error: unexpected close while renegotiating&lt;/p&gt;
+
+&lt;p&gt;Hope it comes a solution quickly. I don&#39;t know what I could do&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 11</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_11/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_11/</link>
+
+	<pubDate>Sun, 24 Jan 2010 06:47:45 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:47:45Z</dcterms:modified>
+
+	<description>It seems to come and go for me. Traffic-based?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 12</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_12/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_12/</link>
+
+	<pubDate>Mon, 25 Jan 2010 06:47:46 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:47:46Z</dcterms:modified>
+
+	<description>&lt;p&gt;My Torchat is essentially now broken by the recent changes to Tor. Upgrading to 19 Jan 2010 ver of Tor allows user to connect to himself but rarely with any others users even if they have upgraded to new Tor too.&lt;/p&gt;
+
+&lt;p&gt;Torchat uses Tor hidden services to communicate with others; something must still be broken in that respect.&lt;/p&gt;
+
+&lt;p&gt;PS  Tor for surfing in FireFox works fine.&lt;/p&gt;
+
+&lt;p&gt;Any other clients that use Tor hidden services affected by these changes to Tor?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 13</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_13/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_13/</link>
+
+	<pubDate>Sun, 31 Jan 2010 06:47:47 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:47:47Z</dcterms:modified>
+
+	<description>Tor/Firefox is fine.  Torchat remains broken despite attempts to insert updated tor.exe and/or tor.resolve.  Quite unfortunate.  Torchat was an excellent resource.  I suspect commie hackers are to blame, but that&#39;s just me.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 14</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_14/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_14/</link>
+
+	<pubDate>Tue, 26 Jan 2010 06:47:48 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:47:48Z</dcterms:modified>
+
+	<description>&lt;p&gt;I am using MacOSX Snow Leopard 10.6. I updated to intelMac Tor Bundle 0.2.1.22 as advised. I now find I cannot access the Tor Network. The following messages (repeating) appear in the log:&lt;/p&gt;
+
+&lt;p&gt;Warning: TLS error: unexpected close while negotiating&lt;br /&gt;
+Notice: No current certificate known for authority moria1&lt;/p&gt;
+
+&lt;p&gt;Same notice for authorities: moria1, tor26, ides, gabelmoo, dannenberg, urras.&lt;/p&gt;
+
+&lt;p&gt;I wish to use the previous  bundle (0.2.1.19 for intelMac and PPC)&lt;br /&gt;
+of Tor. I would be be grateful if someone could give me the address where previous versions of Tor bundles can be downloaded.&lt;/p&gt;
+
+&lt;p&gt;Thank you in advance. &lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 15</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_15/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_15/</link>
+
+	<pubDate>Tue, 26 Jan 2010 06:47:49 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:47:49Z</dcterms:modified>
+
+	<description>Still broken &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/../../smileys/sad.png&quot; alt=&quot;:(&quot; /&gt;
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 16</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_16/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_16/</link>
+
+	<pubDate>Thu, 28 Jan 2010 06:47:50 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:47:50Z</dcterms:modified>
+
+	<description>&lt;p&gt;I&#39;m getting the same &quot;TLS&quot; errors. I was also using an older version of Vidalia and just updated to the latest version to see if it would fix it, but no.&lt;br /&gt;
+So is it just Intel-Mac users with Snow Leopard having problems? I have ver. 10.6.2&lt;br /&gt;
+This sucks, Tor was working great a few days ago : (&lt;br /&gt;
+Fucking hackers - find them and cut off their balls!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 17</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_17/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_17/</link>
+
+	<pubDate>Thu, 28 Jan 2010 06:47:51 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:47:51Z</dcterms:modified>
+
+	<description>BTW, I realize the hackers had nothing to do with why Tor isn&#39;t working on Macs at the moment; I was just saying they were assholes. I realize Apple&#39;s latest security update screwed it up. Didn&#39;t want to be misread..
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 18</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_18/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_18/</link>
+
+	<pubDate>Fri, 29 Jan 2010 06:47:52 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:47:52Z</dcterms:modified>
+
+	<description>&lt;p&gt;To fix you need to replace the tor.exe and tor-resolve.exe in your TORchat folder.&lt;/p&gt;
+
+&lt;p&gt;DL the lastest TOR package and install what you need (min is TOR), then copy the new tor.exe (2110kb) and tor-resolve exe (118kb) into your TORchat bin/tor folder. &lt;/p&gt;
+
+&lt;p&gt;Start torchat and off you go.&lt;/p&gt;
+
+&lt;p&gt;or it did for me &lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 19</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_19/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_19/</link>
+
+	<pubDate>Sun, 31 Jan 2010 06:47:53 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:47:53Z</dcterms:modified>
+
+	<description>As noted in previous posting, I did exactly this with no improvement in Torchat performance.  Torchat is running as I write this.  The system has resolved only myself and one other user.  It is as though at least half of the previous relays have been taken off-line.  Perhaps someone can send an email to the Torchat developer and request a Torchat update to fix all issues.  Would be much appreciated.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 20</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_20/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_20/</link>
+
+	<pubDate>Mon, 01 Feb 2010 06:47:54 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:47:54Z</dcterms:modified>
+
+	<description>See fault report filed at torchat homepage: http://code.google.com/p/torchat/issues/detail?id=54   -----   And also see issue 53 there too,   ----  Unfortunately, the developer of torchat has not released any fixes or improvements in a very long time.  Too bad as it conceptually is an excellent software.  ----  I suspect that if there are any other clients which use tor Hidden Services that they are affected too,  Maybe somebody could report such clients here? ----Maybe this is not a torchat problem but a tor problem?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 21</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_21/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_21/</link>
+
+	<pubDate>Fri, 29 Jan 2010 06:47:55 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:47:55Z</dcterms:modified>
+
+	<description>Previous torchat folder did not contain a tor-resolve.exe.  It contained only the tor.exe.  On first attempt to fix, I did inport the new tor-resolve.exe into torchat and it had no effect over two days of testing.  So I removed it, leaving just the updated tor.exe.  I am able to see myself and (rarely) two other users of torchat only.  The system is still crippled.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 22</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_22/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_22/</link>
+
+	<pubDate>Fri, 29 Jan 2010 06:47:56 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:47:56Z</dcterms:modified>
+
+	<description>&lt;p&gt;Yes, torchat is still crippled as described above.  ---  &lt;/p&gt;
+
+&lt;p&gt;And this is true whether you are using the win or linux version. Replacing a previous tor version (and tor resolve if it is present, ie, win torchat portable) does NOT solve the problem. Clients who replace the relevant file(s) might be able to connect to each other for a short while but this restored facility quickly  disappears and they are unable to connect to each other again.   ---     &lt;b&gt;Tellingly, after  the tor file update, a user CAN reliably connect every time to herself, but NOT to any other torchat user &lt;/b&gt;----&lt;/p&gt;
+
+&lt;p&gt;We surmise this is a Hidden Services fault in tor.  Why? Identifiers, keys or what ever else it might be is beyond our ken. &lt;b&gt; One thing is for sure: this problem did not exist in torchat before the hack attacks and subsequent modifications to tor of  Jan 2010.&lt;/b&gt;&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 23</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_23/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_23/</link>
+
+	<pubDate>Sun, 31 Jan 2010 06:47:57 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:47:57Z</dcterms:modified>
+
+	<description>Easily, the article is in reality the sweetest on this valuable topic. I fit in with your conclusions and I think www.bestbootsale.com  is a good topic. will thirstily look forward to your approaching updates. A simple thanks will not just be complete for the exceptional lucidity in your writing. 
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 24</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_24/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_24/</link>
+
+	<pubDate>Mon, 01 Feb 2010 06:47:58 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:47:58Z</dcterms:modified>
+
+	<description>hmmm it takes some time, but i can connect to other TC users with updated tor.exe.. and chatting for many hours.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 25</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_25/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_25/</link>
+
+	<pubDate>Mon, 01 Feb 2010 06:47:59 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:47:59Z</dcterms:modified>
+
+	<description>running Linux or windows torchat?  Please give details. Have tried it with both to no benefit.  Of course it should not take hours to make connexion; it never did before Jan of 2010.  This suggests recent necessary security changes to tor itself have inadvertently created this torchat problem.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 26</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_26/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_26/</link>
+
+	<pubDate>Wed, 10 Feb 2010 06:48:00 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:48:00Z</dcterms:modified>
+
+	<description>&lt;p&gt;I am running Windows XP.&lt;/p&gt;
+
+&lt;p&gt;One day it is working pretty good and i can chat for a long time, the other day tc needs almost an hour to connect to others.. The question is: what&#39;s the fuckin reason for that????&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 27</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_27/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_27/</link>
+
+	<pubDate>Sun, 14 Feb 2010 06:48:01 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:48:01Z</dcterms:modified>
+
+	<description>&lt;p&gt;torchat is fine but you have to get the new tor files. easiest: get the new tor&lt;br /&gt;
+browser bundle and install it (just overwrite is fine, but backup if you like). then&lt;br /&gt;
+get the /Tor Browser/App/tor.exe and tor-resolve.exe (new file with this release) and&lt;br /&gt;
+overwrite/add them to torchat /bin/Tor directory. as long as you come on line within&lt;br /&gt;
+a few minutes you&#39;re connected, though other people may be offline.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 28</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_28/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_28/</link>
+
+	<pubDate>Fri, 26 Feb 2010 06:48:02 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:48:02Z</dcterms:modified>
+
+	<description>&lt;p&gt;Torchat is still broken. even with the newest tor files.  It takes days to connect with other torchat users even though we are all online 24/7. I can reliably connect to &#39;myself&#39; very quickly but that&#39;s all. &lt;/p&gt;
+
+&lt;p&gt;==&amp;gt;Is this a problem with Rendezvous Server related code? &lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 29</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_29/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_29/</link>
+
+	<pubDate>Sun, 28 Mar 2010 06:48:03 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:48:03Z</dcterms:modified>
+
+	<description>hey, i have tor, but i dont knoowhow to use the torchat, can anyone tell me how?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 30</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_30/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_30/</link>
+
+	<pubDate>Thu, 22 Apr 2010 06:48:04 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:48:04Z</dcterms:modified>
+
+	<description>TorChat is still broken. When is there going to be an update?
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 31</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_31/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_31/</link>
+
+	<pubDate>Thu, 22 Apr 2010 06:48:05 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:48:05Z</dcterms:modified>
+
+	<description>We don&#39;t develop torchat.  You should ask the torchat developers this question.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 32</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_32/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_32/</link>
+
+	<pubDate>Tue, 04 May 2010 06:48:06 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:48:06Z</dcterms:modified>
+
+	<description>&lt;p&gt;i have two copies of torchat running on the same computer in client mode.  they both turn &quot;green&quot; and connect to the outside with tor 0.2.1.22&lt;/p&gt;
+
+&lt;p&gt;and the two accounts won&#39;t talk to one another.  both sees the other as offline.&lt;/p&gt;
+
+&lt;p&gt;i guess the torchat developers are MIA.&lt;/p&gt;
+
+&lt;p&gt;if someone could explain to me conceptually what is the problem then i would be happy to fix the torchat code.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 33</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_33/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_33/</link>
+
+	<pubDate>Thu, 18 Nov 2010 06:48:07 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:48:07Z</dcterms:modified>
+
+	<description>&lt;p&gt; and connect to the outside with tor 0.2.1.22&lt;/p&gt;
+
+&lt;p&gt;and the two accounts won&#39;t talk to one another&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 34</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_34/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_34/</link>
+
+	<pubDate>Wed, 01 Dec 2010 06:48:08 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:48:08Z</dcterms:modified>
+
+	<description>if someone could explain to me conceptually what is the problem then i would be happy to fix the torchat code.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 35</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_35/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Project_infrastructure_updates/comment_35/</link>
+
+	<pubDate>Thu, 02 Dec 2010 06:48:09 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:48:09Z</dcterms:modified>
+
+	<description>Perhaps someone can send an email to the Torchat developer and request a Torchat update to fix all issues. Would be much appreciated
+</description>
+
+
+</item>
+
+</channel>
+</rss>

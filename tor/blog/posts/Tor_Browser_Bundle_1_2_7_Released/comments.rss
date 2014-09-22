@@ -1,0 +1,406 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Tor Browser Bundle 1.2.7 Released</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Anonymous (not verified): Comment 1</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_1/</link>
+
+	<pubDate>Thu, 06 Aug 2009 06:32:50 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:50Z</dcterms:modified>
+
+	<description>I wrote this in the other post, but I&#39;ll just say it here.  Are we supposed to allow Firefox to self-update?  It has it&#39;s own update feature.  And in the default settings for the Tor Bundle, it is clicked.  I&#39;m unsure of what to do.
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 2</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_2/</link>
+
+	<pubDate>Fri, 07 Aug 2009 06:32:51 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:51Z</dcterms:modified>
+
+	<description>&lt;p&gt;The prefs.js file we ship comes with:&lt;br /&gt;
+user_pref(&quot;app.update.auto&quot;, false);&lt;br /&gt;
+user_pref(&quot;app.update.enabled&quot;, false);&lt;/p&gt;
+
+&lt;p&gt;This means that firefox shouldn&#39;t be updating itself.  I can confirm that the Tor Browser Bundle we ship doesn&#39;t have any of the auto-update checked.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 3</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_3/</link>
+
+	<pubDate>Sat, 08 Aug 2009 06:32:52 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:52Z</dcterms:modified>
+
+	<description>&lt;p&gt;How is the TorVM going? why does n&#39;t anyone post something.&lt;br /&gt;
+Many people dont even know there is a TorVM.torproject.org&lt;br /&gt;
+please talk sth about it. Dont just say &quot;its not dead.&quot; or &quot;it hasn&#39;t been born&quot;  (dystocia? =/ )&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 4</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_4/</link>
+
+	<pubDate>Sun, 09 Aug 2009 06:32:53 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:53Z</dcterms:modified>
+
+	<description>Because the main developer on it has been sidetracked with other things.  He is working on an update that should be out later this month.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 5</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_5/</link>
+
+	<pubDate>Sun, 09 Aug 2009 06:32:54 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:54Z</dcterms:modified>
+
+	<description>how about a future ability to block/prevent usage of specific Relays.. I&#39;ve noticed a pattern of bad connection/timeouts using a specific relay (or three)
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 6</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_6/</link>
+
+	<pubDate>Sun, 09 Aug 2009 06:32:55 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:55Z</dcterms:modified>
+
+	<description>You can do this now.  You just have to edit the torrc file.  The option you want is ExcludeNodes or ExcludeExitNodes depending on what you think is overloaded.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 7</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_7/</link>
+
+	<pubDate>Tue, 11 Aug 2009 06:32:56 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:56Z</dcterms:modified>
+
+	<description>&lt;p&gt;I just downloaded this new version of Tor bundle. When I try to view the network map I can no longer see the lines on the map. I&#39;m referring  to the lines that go from country to country/city to city on the globe map itself. Everything else seems to be working just fine. &lt;/p&gt;
+
+&lt;p&gt;Does this mean that Tor is not working properly?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 8</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_8/</link>
+
+	<pubDate>Tue, 11 Aug 2009 06:32:57 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:57Z</dcterms:modified>
+
+	<description>Do you have country flags next to your relays?  If not, this is why you don&#39;t have lines on the map, because Vidalia doesn&#39;t know where the relays are located.  If you leave it running for a bit, you should see country flags appear.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 9</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_9/</link>
+
+	<pubDate>Wed, 12 Aug 2009 06:32:58 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:58Z</dcterms:modified>
+
+	<description>&lt;p&gt;No the country flags do not appear, instead I get question marks. And even after I let it run for a while I still have the same issue.&lt;/p&gt;
+
+&lt;p&gt;I even reinstalled the browser bundle but still no lines or flags on the map. I tested Tor on several sites and it appears to be working right. Still not sure if this issue affects security in any way.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Tor User (not verified): Comment 10</title>
+	<dcterms:creator>Tor User (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_10/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_10/</link>
+
+	<pubDate>Tue, 18 Aug 2009 06:32:59 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:32:59Z</dcterms:modified>
+
+	<description>&lt;p&gt;Just a follow-up to say I&#39;m having the same problem!&lt;/p&gt;
+
+&lt;p&gt;No country flags or network lines.&lt;/p&gt;
+
+&lt;p&gt;I would like these features to work, as they did on the previous Tor bundle.&lt;/p&gt;
+
+&lt;p&gt;The country flags in the Relay list won&#39;t populate; just have question marks.&lt;/p&gt;
+
+&lt;p&gt;Yes, for me Tor is working, by checking IP addresses on sites, but would love to have those flags and lines back so I can see the network.&lt;/p&gt;
+
+&lt;p&gt;I hope a Tor expert can fix this issue. It&#39;s such a great program, would be nice to have it working completely.&lt;/p&gt;
+
+&lt;p&gt;Thank you.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Tor User (not verified): Comment 11</title>
+	<dcterms:creator>Tor User (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_11/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_11/</link>
+
+	<pubDate>Tue, 18 Aug 2009 06:33:00 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:33:00Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hello,&lt;/p&gt;
+
+&lt;p&gt;I have the same problem as this anonymous poster.&lt;/p&gt;
+
+&lt;p&gt;And no matter how long I let Tor run, the country flags or network lines do not appear.&lt;/p&gt;
+
+&lt;p&gt;This has been a problem with the new Vidalia bundle.&lt;/p&gt;
+
+&lt;p&gt;Like this other poster, I have deleted and downloaded the bundle again, but still the same problem.&lt;/p&gt;
+
+&lt;p&gt;On the previous Tor bundle I was using, the country flags and network lines always appeared.&lt;/p&gt;
+
+&lt;p&gt;I miss these features. Is there anything you/we can do about this?&lt;/p&gt;
+
+&lt;p&gt;Thank you.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 12</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_12/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_12/</link>
+
+	<pubDate>Wed, 12 Aug 2009 06:33:01 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:33:01Z</dcterms:modified>
+
+	<description>Downloading and installing Tor Browser Bundle for Windows. Trying to start FirefoxPortable directly, i.e. connect to running Privoxy.  Works with file version 1.6.3.0 but not 1.6.6.0. Getting: Mozilla Firefox, Portable Edition cannot be started. You may wish to reinstall to fix this issue. (ERROR: firefox.exe could not be found).
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 13</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_13/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_13/</link>
+
+	<pubDate>Thu, 10 Mar 2011 06:33:02 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:33:02Z</dcterms:modified>
+
+	<description>Same here.
+</description>
+
+
+</item>
+<item>
+
+	<title>Tor Person (not verified): Comment 14</title>
+	<dcterms:creator>Tor Person (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_14/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_14/</link>
+
+	<pubDate>Tue, 18 Aug 2009 06:33:03 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:33:03Z</dcterms:modified>
+
+	<description>&lt;p&gt;And just one more comment to get everyone&#39;s attention:&lt;/p&gt;
+
+&lt;p&gt;I also do not have country flags or network lines in my &quot;View the Tor network&quot; window.&lt;/p&gt;
+
+&lt;p&gt;And I also had the flags and lines in the previous version/bundle working correctly.&lt;/p&gt;
+
+&lt;p&gt;I hope we can solve this problem.&lt;/p&gt;
+
+&lt;p&gt;Thanks to the Tor people.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 15</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_15/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_15/</link>
+
+	<pubDate>Wed, 19 Aug 2009 06:33:04 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:33:04Z</dcterms:modified>
+
+	<description>&lt;p&gt;The -dev bundle should address this issue.  It&#39;s related to how openssl dlls are dependent upon Visual C re-distributable dlls.  The openssl in 1.2.7-dev are based on openssl statically compiled with Visual C.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.torproject.org/blog/testing-tor-browser-bundle-127dev&quot; title=&quot;https://blog.torproject.org/blog/testing-tor-browser-bundle-127dev&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/testing-tor-browser-bundle-127dev&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If this doesn&#39;t work, respond here.  I&#39;d like to know what vidalia is doing when it fails to do a geoip lookup.  &lt;/p&gt;
+
+&lt;p&gt;Thanks.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>A Satisfied Tor Customer (not verified): Comment 16</title>
+	<dcterms:creator>A Satisfied Tor Customer (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_16/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_16/</link>
+
+	<pubDate>Mon, 24 Aug 2009 06:33:05 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:33:05Z</dcterms:modified>
+
+	<description>Thank you very much. In the new 1.2.8 bundle, the network map, lines, and country flags have reappeared!
+</description>
+
+
+</item>
+<item>
+
+	<title>Anthony Mouse (not verified): Comment 17</title>
+	<dcterms:creator>Anthony Mouse (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_17/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_17/</link>
+
+	<pubDate>Mon, 21 Sep 2009 06:33:06 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:33:06Z</dcterms:modified>
+
+	<description>&lt;p&gt;I am new to TOR and have decided to donate some of my unused monthly download bandwidth quota to the community by running a relay.&lt;br /&gt;
+I have AccountingMax enabled. The Tor Bandwidth Usage window shows fluctuating activity, totalling about 2GB each way after several days.&lt;br /&gt;
+The Vidalia Network Map has country flags, I am in the list of relays in the left side pane, and Zoom to my relay works.&lt;br /&gt;
+However, there are no lines on the map to/from me, but traffic is happening.&lt;br /&gt;
+There are usually only 2-3 entries in the Connections pane. My relay was in there when I first started Tor, but it soon disappeared. There are lines on the map joining the relays listed in the Connections pane, and right-click Zoom highlights them.&lt;br /&gt;
+Is this all normal and correct?&lt;br /&gt;
+Is there a document somewhere explaining the Network Map and Tor Bandwidth windows?&lt;br /&gt;
+[vidalia-bundle-0.2.1.19-0.1.15.exe (Windows)]&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Takak (not verified): Comment 18</title>
+	<dcterms:creator>Takak (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_18/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_2_7_Released/comment_18/</link>
+
+	<pubDate>Mon, 05 Oct 2009 06:33:07 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:33:07Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hi, &lt;/p&gt;
+
+&lt;p&gt;I&#39;m new to TOR and wondering how to set it so I can  access sites like if i was in the US? &lt;/p&gt;
+
+&lt;p&gt;Thanks in advance&lt;/p&gt;
+
+</description>
+
+
+</item>
+
+</channel>
+</rss>

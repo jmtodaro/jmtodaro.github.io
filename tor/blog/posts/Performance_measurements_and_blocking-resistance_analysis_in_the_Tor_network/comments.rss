@@ -1,0 +1,372 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Performance measurements and blocking-resistance analysis in the Tor network</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Anonymous (not verified): Comment 1</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_1/</link>
+
+	<pubDate>Thu, 21 May 2009 06:25:03 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:25:03Z</dcterms:modified>
+
+	<description>It may just be my computer, but I&#39;m in China and am at the moment unable to connect to the Tor network.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 2</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_2/</link>
+
+	<pubDate>Thu, 21 May 2009 06:25:04 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:25:04Z</dcterms:modified>
+
+	<description>&lt;p&gt;It worked well up until today. I am now receiving a message in the message log which states: &lt;/p&gt;
+
+&lt;p&gt;&quot;May 22 18:21:09.015 [Warning] No specified exit routers seem to be running, and StrictExitNodes is set: can&#39;t choose an exit.&quot;&lt;/p&gt;
+
+&lt;p&gt;Can anyone assist please?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>arma: Comment 3</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_3/</link>
+
+	<pubDate>Thu, 21 May 2009 06:25:05 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:25:05Z</dcterms:modified>
+
+	<description>&lt;p&gt;Check out&lt;br /&gt;
+&lt;a href=&quot;https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#ChooseEntryExit&quot; title=&quot;https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#ChooseEntryExit&quot; rel=&quot;nofollow&quot;&gt;https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#ChooseEntryExi...&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Especially the part where we suggest that you not use ExitNodes and&lt;br /&gt;
+StrictExitNodes. They&#39;re easy to screw up and leave yourself in a broken&lt;br /&gt;
+state.&lt;/p&gt;
+
+&lt;p&gt;So, &quot;stop doing that&quot; would be my suggestion. In the future we hope to&lt;br /&gt;
+have a better interface for choosing your path (and/or exit) by country.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 4</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_4/</link>
+
+	<pubDate>Fri, 22 May 2009 06:25:06 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:25:06Z</dcterms:modified>
+
+	<description>&lt;p&gt;What are you doing to increase security when nodes are chosen in anti privacy country&#39;s like Germany that starting on 1/1-2009 started to log information about from and to IPs and even worse 1/1-2009 Swedish espionage organization(FRA) started collecting &amp;amp; analysing a copy of all the data that passes the Swedish border !!!&lt;/p&gt;
+
+&lt;p&gt;Do you plan to use 4 nodes in these circuits in the future with a maximum of 1 node in these country&#39;s or how do you withstand these intrusions of the personal integrity these country&#39;s started with ?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 5</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_5/</link>
+
+	<pubDate>Fri, 22 May 2009 06:25:07 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:25:07Z</dcterms:modified>
+
+	<description>&lt;p&gt;For the record, 1/1/2009 was nearly 6 months ago.  We hope you&#39;re using secure protocols through Tor such that the risks are lessened.  Someone watching any node will only see you&#39;re using Tor, or what IP address you&#39;re visiting from an exit node.  If an entry node, they&#39;ll know your IP.  If an exit node, they&#39;ll know where you are going.  In either case, they can&#39;t put who and what together.&lt;/p&gt;
+
+&lt;p&gt;A better question is what to do if your first and last node are in the same country, and I don&#39;t think we have an answer for that yet.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 6</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_6/</link>
+
+	<pubDate>Sat, 23 May 2009 06:25:08 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:25:08Z</dcterms:modified>
+
+	<description>&lt;p&gt;&quot;For the record, 1/1/2009 was nearly 6 months ago.&quot;&lt;br /&gt;
+Yes i know that. I only mention this as i understand that Tor has still not made a good solution to solve this problem that needs fixing.&lt;br /&gt;
+&quot;We hope you&#39;re using secure protocols through Tor such that the risks are lessened.&quot;&lt;br /&gt;
+Yes of course i am.&lt;/p&gt;
+
+&lt;p&gt;&quot;A better question is what to do if your first and last node are in the same country, and I don&#39;t think we have an answer for that yet.&quot;&lt;/p&gt;
+
+&lt;p&gt;You do know that country&#39;s like Germany, USA, Sweden and so on are sending these data to the other country&#39;s even if it&#39;s against there own laws so stopping circuits with 3 nodes in the same country(does this work yet, it wasn&#39;t before) or even first &amp;amp; last node as you mention is not enough as a measure against these data retention &amp;amp; collecting they have started with.&lt;br /&gt;
+Tor&#39;s circuits needs to have at least 1 entry or exitnode out of there reach to be a safe solution.&lt;/p&gt;
+
+&lt;p&gt;If you would allow a maximum of 1 node from this group of country&#39;s who do this kind of things it would of cource improve security a lot for they who themselfs are not able to recofigure there torrc-file.&lt;br /&gt;
+I understand that this could be a problem because a country like Germany has such a large portion of the Tor networks total bandwidth.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 7</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_7/</link>
+
+	<pubDate>Sun, 24 May 2009 06:25:09 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:25:09Z</dcterms:modified>
+
+	<description>&lt;p&gt;Cannot connect here in Okinawa. Kinda irritating really.&lt;/p&gt;
+
+&lt;p&gt;Potentially could be wifi router settings blocking specific ports, but is highly unlikely.&lt;/p&gt;
+
+&lt;p&gt;Issue remains the same.&lt;/p&gt;
+
+&lt;p&gt;[Notice] We&#39;re missing a certificate from authority with signing key [gibberish key removed]: launching request.&lt;br /&gt;
+[Notice] We&#39;re missing a certificate from authority with signing key [gibberish key removed]: launching request.&lt;br /&gt;
+[Notice] We&#39;re missing a certificate from authority with signing key [gibberish key removed]: launching request.&lt;br /&gt;
+[Warning] 0 unknown, 3 missing key, 2 good, 0 bad, 0 no signature, 4 required&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>karsten: Comment 8</title>
+	<dcterms:creator>karsten</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_8/</link>
+
+	<pubDate>Mon, 25 May 2009 06:25:10 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:25:10Z</dcterms:modified>
+
+	<description>My first thought from the &quot;3 missing key&quot; part is that you are using a very old Tor version. Which Tor version is this? And can you post the [gibberish key removed] parts, too? There&#39;s nothing secret in them, and maybe they help us resolve the problem.
+</description>
+
+
+</item>
+<item>
+
+	<title>Stolen From (not verified): Comment 9</title>
+	<dcterms:creator>Stolen From (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_9/</link>
+
+	<pubDate>Sat, 11 Jul 2009 06:25:11 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:25:11Z</dcterms:modified>
+
+	<description>&lt;p&gt;Your program is actively being used to steal my internet band width to the point that we cannot operate our business.&lt;/p&gt;
+
+&lt;p&gt;I now have a timeswitch on the modem so the internet only runs during working hours.&lt;/p&gt;
+
+&lt;p&gt;I need you to provide me a program so I have control over the service that I am paying for.&lt;/p&gt;
+
+&lt;p&gt;Just remember this if you are not doing something wrong then you dont need to hide what you are doing.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 10</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_10/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_10/</link>
+
+	<pubDate>Sun, 12 Jul 2009 06:25:12 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:25:12Z</dcterms:modified>
+
+	<description>&lt;p&gt;Here&#39;s the email I sent you earlier:&lt;/p&gt;
+
+&lt;p&gt;Hello,&lt;/p&gt;
+
+&lt;p&gt;Thanks for contacting us.  Did you install Tor?  If so, Tor has many&lt;br /&gt;
+ways to control the amount of bandwidth consumed.  Many users donate&lt;br /&gt;
+their unused bandwidth to help others who need their privacy and&lt;br /&gt;
+anonymity online.&lt;/p&gt;
+
+&lt;p&gt;&amp;gt; &amp;gt; I need you to provide me a program so I have control over the service&lt;br /&gt;
+&amp;gt; &amp;gt; that I am paying for.&lt;/p&gt;
+
+&lt;p&gt;We can&#39;t provide you a program to control your ISP.  If you can tell me&lt;br /&gt;
+what you installed, assuming it&#39;s tor, I can help you from there.&lt;/p&gt;
+
+&lt;p&gt;&amp;gt; &amp;gt; Just remember this if you are not doing something wrong then you&lt;br /&gt;
+&amp;gt; &amp;gt; don&#39;t need to hide what you are doing.&lt;/p&gt;
+
+&lt;p&gt;This is a false dichotomy.  There are many reasons to protect your&lt;br /&gt;
+communications, or to provide some control over who collects information&lt;br /&gt;
+about you on the Internet without your permission.&lt;br /&gt;
+&lt;a href=&quot;https://torproject.org/torusers&quot; title=&quot;https://torproject.org/torusers&quot; rel=&quot;nofollow&quot;&gt;https://torproject.org/torusers&lt;/a&gt; provides a few examples of users who&lt;br /&gt;
+need their communications protected.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous Tor Person (not verified): Comment 11</title>
+	<dcterms:creator>Anonymous Tor Person (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_11/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_11/</link>
+
+	<pubDate>Sun, 12 Jul 2009 06:25:13 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:25:13Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hello,&lt;/p&gt;
+
+&lt;p&gt;I just installed the new Tor bundle with Firefox, and when I select &quot;View the Network&quot; from the Vidalia Control Panel, none of the country flags appear in the Relay column to the left.&lt;/p&gt;
+
+&lt;p&gt;I had the Tor bundle before the recent Vidalia update, and the flags always appeared normally. (I ended up removing that bundle, and replacing it with the brand new one.)&lt;/p&gt;
+
+&lt;p&gt;Do you know -- is this a bug, or a temporary error in the network? I would rather not delete this new Vidalia bundle and start all over again, adding the add-ons, etc., if there is a simple fix for it.&lt;/p&gt;
+
+&lt;p&gt;With thanks,&lt;/p&gt;
+
+&lt;p&gt;ATP&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>hii (not verified): Comment 12</title>
+	<dcterms:creator>hii (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_12/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_12/</link>
+
+	<pubDate>Fri, 13 Nov 2009 06:25:14 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:25:14Z</dcterms:modified>
+
+	<description>Thank you, you answered the question I have been searching for which was whether or not to place keywords when blog commenting. &lt;a href=&quot;http://www.hayda.net&quot; title=&quot;mirc, cinsel sohbet, cinsellik, chat&quot; rel=&quot;nofollow&quot;&gt;mirc&lt;/a&gt; . &lt;a href=&quot;http://www.hayda.net&quot; title=&quot;mirc, cinsel sohbet, cinsellik, chat&quot; rel=&quot;nofollow&quot;&gt;chat&lt;/a&gt; . &lt;a href=&quot;http://www.hayda.net/&quot; title=&quot;http://www.hayda.net/&quot; rel=&quot;nofollow&quot;&gt;http://www.hayda.net/&lt;/a&gt;
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 13</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_13/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_13/</link>
+
+	<pubDate>Tue, 26 Jan 2010 06:25:15 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:25:15Z</dcterms:modified>
+
+	<description>&lt;p&gt;Everything worked fine, till yesterday. Now I cant connect and keep getting these messages:&lt;br /&gt;
+Jan 26 12:36:19.710 [Notice] We&#39;re missing a certificate from authority with signing key 665711AF821C459DC59A8491FAD1B9D7A7800ECF: launching request.&lt;br /&gt;
+Jan 26 12:36:19.711 [Notice] We&#39;re missing a certificate from authority with signing key 6584DF098CFC68ACBF5E551532C8A58674586820: launching request.&lt;br /&gt;
+Jan 26 12:41:24.818 [Notice] We&#39;re missing a certificate from authority with signing key 665711AF821C459DC59A8491FAD1B9D7A7800ECF: launching request.&lt;br /&gt;
+Jan 26 12:41:24.820 [Notice] We&#39;re missing a certificate from authority with signing key 6584DF098CFC68ACBF5E551532C8A58674586820: launching request.&lt;br /&gt;
+Jan 26 12:41:25.081 [Warning] TLS error: unexpected close while renegotiating&lt;/p&gt;
+
+&lt;p&gt;What do I do?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 14</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_14/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_14/</link>
+
+	<pubDate>Tue, 26 Jan 2010 06:25:16 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:25:16Z</dcterms:modified>
+
+	<description>I am having the same issue, it just started happening today for pretty much no reason at all.  How can we fix this?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 15</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_15/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Performance_measurements_and_blocking-resistance_analysis_in_the_Tor_network/comment_15/</link>
+
+	<pubDate>Tue, 01 Feb 2011 06:25:17 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:25:17Z</dcterms:modified>
+
+	<description>I have the same problem!
+</description>
+
+
+</item>
+
+</channel>
+</rss>

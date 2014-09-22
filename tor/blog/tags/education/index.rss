@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged education</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/education/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>mikeperry: Tips for Running an Exit Node with Minimal Harassment</title>
+	<dcterms:creator>mikeperry</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/</link>
+
+
+	<category>/tags/anonymity_advocacy</category>
+
+	<category>/tags/distributed_trust</category>
+
+	<category>/tags/education</category>
+
+	<category>/tags/performance</category>
+
+
+	<pubDate>Wed, 30 Jun 2010 19:08:08 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:03:19Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;b&gt;Updated 06/30/2010&lt;/b&gt;: Mention Reduced Exit Policy, ISP Shopping Tips, and Abuse Response Templates&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Updated 08/30/2010&lt;/b&gt;: Update exit policy with svn, git, hg, Kerberos, remote admin panels, IRC, others&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Updated 01/12/2011&lt;/b&gt;: Suggest creation of LLC for large exit nodes, provide links to ARIN forms and process.&lt;br /&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;I have noticed that a lot of new exit nodes have recently appeared on the network. This is great news, since exit nodes are typically on the scarce side. Exits usually occupy 30-33% of network by capacity, but are currently at a whopping 38.5% (156 MBytes/sec out of 404 total).&lt;/p&gt;
+
+&lt;p&gt;However, I want to make sure that these nodes stay up and don&#39;t end up being shut down due to easily preventable abuse complaints. I&#39;ve run a number of exit nodes on a few different ISPs and not only have I lived to tell about it, I&#39;ve have not had one shut down yet. Moreover, I&#39;ve only received about 4 abuse complaints in as many years of running exit nodes. This is in stark contrast to other node operators following a &lt;a href=&quot;https://blog.torproject.org/blog/five-years-exit-node-operator&quot;&gt;more reactive strategy&lt;/a&gt;. I&#39;m convinced this is largely because I observe the following pro-active guidelines. This guide is primarily US centric. Operators in other countries may have slightly different best practices (such as registering with RIPE and not ARIN). &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tips-running-exit-node-minimal-harassment&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tips_for_Running_an_Exit_Node_with_Minimal_Harassment/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: In praise of multiple options for circumvention</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/In_praise_of_multiple_options_for_circumvention/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/In_praise_of_multiple_options_for_circumvention/</link>
+
+
+	<category>/tags/anonymity_advocacy</category>
+
+	<category>/tags/circumvention</category>
+
+	<category>/tags/education</category>
+
+
+	<pubDate>Mon, 16 Feb 2009 18:31:16 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:19:16Z</dcterms:modified>
+
+	<description>&lt;p&gt;I was asked the other day why we don&#39;t advocate for just Tor as the one tool to rule them all.  My glib answer is &quot;of course we do, however the larger the toolbox, the better off the world.&quot;  &lt;/p&gt;
+
+&lt;p&gt;Expanding on that notion, the various anonymity, privacy, and circumvention tools target different people and use cases.  Tor advocates for &lt;a href=&quot;https://blog.torproject.org/blog/circumvention-and-anonymity&quot; rel=&quot;nofollow&quot;&gt;Anonymity first, circumvention second&lt;/a&gt;.  It would be very naive of us to think that we can solve all use cases.  In fact, it would be silly of us to try to dictate the needs of any user.  The larger the ecosystem of privacy and anonymity tools, the more options for users, and the better off we are as a whole. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/praise-multiple-options-circumvention&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/In_praise_of_multiple_options_for_circumvention/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

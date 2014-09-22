@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged 10_4</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/10_4/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Apple workaround for openssl issues on OS X 10.5 and 10.6</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/</link>
+
+
+	<category>/tags/10_3</category>
+
+	<category>/tags/10_4</category>
+
+	<category>/tags/10_5</category>
+
+	<category>/tags/10_6</category>
+
+	<category>/tags/confused_users</category>
+
+	<category>/tags/openssl</category>
+
+	<category>/tags/osx</category>
+
+	<category>/tags/packaging_mess</category>
+
+	<category>/tags/tls_renegotiation</category>
+
+
+	<pubDate>Sun, 31 Jan 2010 21:10:14 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:49:49Z</dcterms:modified>
+
+	<description>&lt;p&gt;Apple responded to my bug report about a broken openssl.  I&#39;ve since built test packages for OS X 10.5 and 10.6 users.  Their response is:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;
+Thank you for your report of this issue with Tor.&lt;/p&gt;
+&lt;p&gt;The issue you&#39;re seeing is because the current versions of the development tools were created before the OpenSSL security fix, and so do not include the &quot;SSL3_FLAGS_ALLOW_UNSAFE_LEGACY_RENEGOTIATION&quot; definition in the OpenSSL headers.&lt;/p&gt;
+&lt;p&gt;You can work around this issue by supplying the definition to Tor directly, for example by compiling Tor using&lt;/p&gt;
+&lt;p&gt;CPPFLAGS=&#39;-DSSL3_FLAGS_ALLOW_UNSAFE_LEGACY_RENEGOTIATION=0x0010&#39; ./configure &amp;amp;&amp;amp; make&lt;/p&gt;
+&lt;p&gt;This will work on both Leopard and Snow Leopard.
+&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;If you have an Intel (i386) Mac, use the normal i386 packages for Tor 0.2.2.8-alpha release at &lt;a href=&quot;https://www.torproject.org/download&quot; title=&quot;https://www.torproject.org/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you have a PowerPC (ppc) Mac AND are running OS X 10.5 or 10.6, use these packages: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/apple-workaround-openssl-issues-os-x-105-and-106&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Apple_workaround_for_openssl_issues_on_OS_X_10_5_and_10_6/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

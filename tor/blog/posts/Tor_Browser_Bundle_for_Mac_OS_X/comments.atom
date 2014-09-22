@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Tor Browser Bundle for Mac OS X</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>erinn</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:07:47Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_1/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:07:29Z</updated>
+	<published>2010-09-27T12:07:29Z</published>
+
+	<content type="html" xml:lang="en">
+	For some reason, when I load it on to a usb, it quickly quits after launching or trying to connect with Tor. The onion icon appears and then quickly disappears before anything happens. Using Snow Leopard, but the warning above doesn&#39;t indicate that that&#39;s what happens, so perhaps its something else?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_2/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:07:30Z</updated>
+	<published>2010-12-07T13:07:30Z</published>
+
+	<content type="html" xml:lang="en">
+	Same. Runs fine on my regular disk, but not on a usb drive.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_3/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:07:31Z</updated>
+	<published>2010-09-29T12:07:31Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;When I use Firefox and Tor is on and Torbutton is enabled and I want to download a file, say .rar file, and I redirect download with FlashGot add-on to SpeedDownload manager - is this download goes via TOR and is really anonymous? Or only &quot;save as&quot; via Firefox downloader is anonymous?&lt;/p&gt;
+
+&lt;p&gt;Or another way - is there a right way to use SpeedDownload manager via TOR fully anonymously for ISP too.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_4/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:07:32Z</updated>
+	<published>2010-10-04T12:07:32Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Could anybody PLEASE respond to my question: I tried to setup TOR on my MacOSx Snow Leopard for hours and I could not manage. It was so easy on a Windows PC. All the bundles provided here don&#39;t even contain all the software. Everytime I set Vidalia up I get the message &quot;Could not connect to TOR&quot;. I changed the path - did not work. Polipo does not work either. It is all a big mess !&lt;br /&gt;
+Could anybody please provide detailed instructions how to set TOR up on my MAC? The Docs on this website are of no great help to be honest.&lt;br /&gt;
+Thanks &lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_5/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:07:33Z</updated>
+	<published>2010-10-07T12:07:33Z</published>
+
+	<content type="html" xml:lang="en">
+	What are you trying to setup?  It sounds like you need to remove all the tor, vidalia, polipo software and start over because your config is in some unknown state.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_6/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:07:34Z</updated>
+	<published>2010-10-08T12:07:34Z</published>
+
+	<content type="html" xml:lang="en">
+	that&#39;s probably right. i did it a few times. removed everything, tried to install it again. never worked. the install bundle for mac does not even contain tor nor polipo just vidalia. i find it all very confusing and don&#39;t understand why cause running it on a windows pc needs a two minutes setup. by the way - could not install it under openSUSE too. So probably i&#39;m just a total computer fool.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_7/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:07:35Z</updated>
+	<published>2010-10-06T12:07:35Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;To get it working in OSX, you have to make sure your USB stick is named something without spaces, like, for instance, &#39;Tor.&#39;&lt;/p&gt;
+
+&lt;p&gt;I found this after some messing around as my original &#39;NO NAME&#39; USB stick was resulting in a no-launch scenario.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_8/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:07:36Z</updated>
+	<published>2010-10-06T12:07:36Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;ok&lt;br /&gt;
+but how can i make it work without using a usb stick?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_9/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:07:37Z</updated>
+	<published>2010-10-19T12:07:37Z</published>
+
+	<content type="html" xml:lang="en">
+	Says i have an update to 3.6.11 should i or wait for you to put out update here?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_10/"/>
+
+	<author><name>erinn</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:07:38Z</updated>
+	<published>2010-10-27T12:07:38Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I just put out new bundles with 3.6.11 in them. See: &lt;a href=&quot;http://blog.torproject.org/blog/new-tor-browser-bundles-released&quot; title=&quot;http://blog.torproject.org/blog/new-tor-browser-bundles-released&quot; rel=&quot;nofollow&quot;&gt;http://blog.torproject.org/blog/new-tor-browser-bundles-released&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;And:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/download/download.html.en&quot; title=&quot;https://www.torproject.org/download/download.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download/download.html.en&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/projects/torbrowser.html.en&quot; title=&quot;https://www.torproject.org/projects/torbrowser.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/projects/torbrowser.html.en&lt;/a&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_11/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:07:39Z</updated>
+	<published>2010-10-25T12:07:39Z</published>
+
+	<content type="html" xml:lang="en">
+	There is no torbutton on 1.0.1. nor 1.0.2. Should i install it manually?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 12</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_12/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_12/"/>
+
+	<author><name>erinn</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:07:40Z</updated>
+	<published>2010-10-27T12:07:40Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Torbutton is installed and working, but because of some Firefox bizarreness, it doesn&#39;t look like it&#39;s installed.&lt;/p&gt;
+
+&lt;p&gt;Please see my comments here:&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Oct-2010/msg00197.html&quot; title=&quot;http://archives.seul.org/or/talk/Oct-2010/msg00197.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Oct-2010/msg00197.html&lt;/a&gt;&lt;br /&gt;
+And here:&lt;br /&gt;
+&lt;a href=&quot;http://archives.seul.org/or/talk/Oct-2010/msg00215.html&quot; title=&quot;http://archives.seul.org/or/talk/Oct-2010/msg00215.html&quot; rel=&quot;nofollow&quot;&gt;http://archives.seul.org/or/talk/Oct-2010/msg00215.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The short version is that the weirdness is fixed and won&#39;t appear in the 1.0.4 version, though it is still present in the 1.0.3 version.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 13</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_13/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_13/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:07:41Z</updated>
+	<published>2010-11-18T13:07:41Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I can confirm that the tor browser bundle for OSX does not start Firefox at first invocation on a x86 Mac with OSX10.6.5&lt;br /&gt;
+At second invocation, it works.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 14</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_14/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_14/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:07:42Z</updated>
+	<published>2011-01-17T13:07:42Z</published>
+
+	<content type="html" xml:lang="en">
+	I&#39;m on a MacBook running OSX 10.6.6. I&#39;ve have been using Vidalia regularly for the past few months with no problems, but past few weeks Tor seems to be running really really slow. I been getting 404s and all that crap, taking sevreal minutes to load a page (probably not a problem on my end - I dunno) but I noticed when I look at the network map no locations of the servers are displayed, the map shows no lines, no country flags appear and it seems I been getting the same two or three servers that pop up all the time. I used to get dozens. Anyway I decided to reinstall/update Tor. I removed every piece of Tor per the instructions on the TorProject.org page, then downloaded the latest stable release and installed it - simple drag and drop. Well now Tor will not open. It pops up and says it detected and &quot;unexpected quit&quot; and check the log for the problem. Well nothing comes up in the log - it&#39;s completely blank. I again deleted every bit of Tor from my system (per the instructions) thinking there must be some setting that&#39;s a problem. Reinstalled the same version again - it won&#39;t start up. I even tried installing the unstable version - same problem. What the hell is going on?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 15</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_15/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_15/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:07:43Z</updated>
+	<published>2011-01-17T13:07:43Z</published>
+
+	<content type="html" xml:lang="en">
+	I&#39;m on an Intel Mac, I recently installed the latest Tor Bundle stable release, but after starting Vidalia it says &quot;Vidalia was unable to start Tor. Check your settings to ensure the correct name and location of your Tor executable is specified.&quot; Under settings where it says &quot;Start the Tor software when Vidalia starts&quot; it just says &quot;tor&quot; and there is no directory listed. Where did the bundle install Tor and how do I link to it?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 16</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_16/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_16/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:07:44Z</updated>
+	<published>2011-01-30T13:07:44Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;m also on an Intel Mac, running OSX 10.6.4, and after deleting the torbrowser.app, it will not let me empty the Trash. It just states that the app is busy. &lt;/p&gt;
+
+&lt;p&gt;It worked the very first time I tried it. The second time, however, it gave me an unexpected error and would crash every time afterwords. It is completely uninstalled and sitting in my trash can. I just can&#39;t empty my trash! &lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 17</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_17/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_17/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:07:45Z</updated>
+	<published>2011-01-30T13:07:45Z</published>
+
+	<content type="html" xml:lang="en">
+	sounds like you have some part of tor still running. If you go into activity monitor, you can look for processes like tor and firefox that may still be running in the background.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 18</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_18/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_18/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:07:46Z</updated>
+	<published>2011-02-24T13:07:46Z</published>
+
+	<content type="html" xml:lang="en">
+	thannnnnnnnnnnnnnnnnnnnnnnnnnks
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 19</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_19/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_for_Mac_OS_X/comment_19/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:07:47Z</updated>
+	<published>2011-02-24T13:07:47Z</published>
+
+	<content type="html" xml:lang="en">
+	thank you very much
+
+	</content>
+
+
+
+</entry>
+
+</feed>

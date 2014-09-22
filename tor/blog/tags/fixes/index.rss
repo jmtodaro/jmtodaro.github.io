@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged fixes</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/fixes/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: November 2010 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/November_2010_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/November_2010_Progress_Report/</link>
+
+
+	<category>/tags/enhancements</category>
+
+	<category>/tags/fixes</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/translations</category>
+
+
+	<pubDate>Thu, 16 Dec 2010 16:16:17 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:11:39Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New Releases&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/november-2010-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;On November 16 we released the latest in the Tor -alpha series.  Tor 0.2.2.18-alpha fixes several crash bugs that have been nagging us lately, makes unpublished bridge relays able to detect their IP address, and fixes a wide variety of other bugs to get us much closer to a stable release. &lt;a href=&quot;https://blog.torproject.org/blog/tor-02218-alpha-available&quot; title=&quot;https://blog.torproject.org/blog/tor-02218-alpha-available&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-02218-alpha-available&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;On November 23, we released the latest in the Tor -stable series. Tor 0.2.1.27 makes relays work with OpenSSL 0.9.8p and 1.0.0.b --yet another OpenSSL security patch broke its compatibility with Tor. We also took this opportunity to fix several crash bugs, integrate a new directory authority, and update the bundled GeoIP database. &lt;a href=&quot;https://blog.torproject.org/blog/tor-02127-released&quot; title=&quot;https://blog.torproject.org/blog/tor-02127-released&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/tor-02127-released&lt;/a&gt;&lt;/li&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/November_2010_Progress_Report/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

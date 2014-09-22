@@ -1,0 +1,1563 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Vidalia 0.2.10 Released</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:09:36Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_1/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:39Z</updated>
+	<published>2010-09-28T12:08:39Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Mmm.... vidalia 0.2.10&lt;/p&gt;
+
+&lt;p&gt;I was running it here, but it was showing very few servers in the network map.&lt;br /&gt;
+I was using the September release of the GeoIP database.&lt;/p&gt;
+
+&lt;p&gt;I wonder if anyone else sees the same result ?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_2/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:40Z</updated>
+	<published>2010-09-29T12:08:40Z</published>
+
+	<content type="html" xml:lang="en">
+	Then something is wrong with your tor, not vidalia.  Does your successfully connect to the rest of the network?  You should see around 2000 servers on the left windows in Vidalia.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_3/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:41Z</updated>
+	<published>2010-09-29T12:08:41Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;hi phobos,&lt;/p&gt;
+
+&lt;p&gt;I see the servers in the list on the left hand side, but i dont see them rendered onto the map view.&lt;/p&gt;
+
+&lt;p&gt;Moving back to 0.2.9, they all get plotted on the map.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_4/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:42Z</updated>
+	<published>2010-09-30T12:08:42Z</published>
+
+	<content type="html" xml:lang="en">
+	That&#39;s odd.  If you&#39;re on linux, did you install tor-geoipdb?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_5/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:43Z</updated>
+	<published>2010-09-30T12:08:43Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Im on windows.Tor says its parsing the GeoIP db, but as I mentioned, the servers appear on the left hand side - but most of them that are in the USA don&#39;t appear in the map. &lt;/p&gt;
+
+&lt;p&gt;In the map view there only appears to be a couple servers in the USA. Europe shows quite a few servers and there are other dotted about. Strange,..&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_6/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:44Z</updated>
+	<published>2010-10-01T12:08:44Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I think i have worked out what is happening with vidalia 0.2.10 and the map view.&lt;br /&gt;
+The servers in the left hand pane are only showing the country that the server is in.&lt;/p&gt;
+
+&lt;p&gt;Previously, with Vidalia 0.2.9, the CITY was detected.&lt;/p&gt;
+
+&lt;p&gt;So, is it possible to integrate the CITY db into Tor, to get city detection back in place ?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_7/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:45Z</updated>
+	<published>2010-09-30T12:08:45Z</published>
+
+	<content type="html" xml:lang="en">
+	Hi! I have a non related to the article question, if you don&#39;t mind (if you do, please tell me, who can I ask - without using forums, where you have to log in and don&#39;t bother reading). I&#39;m using Ubuntu10.04 with tor (vidalia, torbutton). I&#39;ve installed torsocks and I&#39;m trying to make it work with claws mail client. I read that all you have to do, is to type in console &quot;usewithtor claws-mail&quot; and it should work, without by passing connection by claws. Then I got this error: &quot;The symbol res_send() was not found in any shared library.&quot;. So what I found about that error, is that it&#39;s just a warrning and there should be nothing to worry about. If I tried this, is there any chance to find out, if TOR is acctualy working on Claws?  BTW if you use the commend &quot;usewithtor&quot; with telnet, do you have to type it every second commend, or once started, TOR will always be on with the programm? Take care!
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_8/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:46Z</updated>
+	<published>2010-09-30T12:08:46Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;is it a good idea to use Tor with an email client ?&lt;br /&gt;
+Unless your email traffic (all of it) is encrypted, you will be sharing your email credentials with the exit node - which could be monitored.&lt;/p&gt;
+
+&lt;p&gt;Not a good idea ?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_9/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:47Z</updated>
+	<published>2010-10-02T12:08:47Z</published>
+
+	<content type="html" xml:lang="en">
+	Thank you, for your replay. The monitoring thing is not the issue here. I just can&#39;t reveal my location. So would it work? ...and how? While I&quot;m a newbie to both tor and linux, I&#39;m maintaining my question about telnet and &quot;usewithtor&quot; command. 
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_10/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:48Z</updated>
+	<published>2010-09-30T12:08:48Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;2.10 doesn&#39;t work properly for me. It doesn&#39;t remember relays between sessions, and takes forever to reload them, adding about one per second (with the Vidalia progress bar paused with a message &quot;Authenticating against Tor&quot;). Once the relays are eventually loaded, it works as expected. I am running Ubuntu 10.04. &lt;/p&gt;
+
+&lt;p&gt;Just saw phobos&#39;  comment: &quot;That&#39;s odd. If you&#39;re on linux, did you install tor-geoipdb?&quot; Maybe that has something to do with it.&lt;/p&gt;
+
+&lt;p&gt;Where is tor-geopipd?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_11/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:49Z</updated>
+	<published>2010-10-07T12:08:49Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Vidalia is just displaying what Tor is doing.  If you don&#39;t have a full list of relays, then tor doesn&#39;t have a full list of relays.&lt;/p&gt;
+
+&lt;p&gt;If you&#39;re on ubuntu, you should be using our repositories, &lt;a href=&quot;https://www.torproject.org/docs/debian.html.en&quot; title=&quot;https://www.torproject.org/docs/debian.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/docs/debian.html.en&lt;/a&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 12</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_12/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_12/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:50Z</updated>
+	<published>2010-10-01T12:08:50Z</published>
+
+	<content type="html" xml:lang="en">
+	Ok, but why i can&#39;t just refresh relays list without refreshing my connection? It&#39;s annoying.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 13</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_13/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_13/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:51Z</updated>
+	<published>2010-10-01T12:08:51Z</published>
+
+	<content type="html" xml:lang="en">
+	Hitting &quot;refresh&quot; at the tor map all displayed relays are purged and take minutes to rebuild one by one. Pre 0.2.10 the list was refresh instantly. Is this normal?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 14</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_14/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_14/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:52Z</updated>
+	<published>2010-10-01T12:08:52Z</published>
+
+	<content type="html" xml:lang="en">
+	Same problem here...
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 15</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_15/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_15/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:53Z</updated>
+	<published>2010-10-07T12:08:53Z</published>
+
+	<content type="html" xml:lang="en">
+	Because you told Vidalia to purge the relays and reload them through Tor.  Therefore, it&#39;s reloading the list of relays and doing a geoip resolution on each one.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 16</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_16/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_16/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:54Z</updated>
+	<published>2010-10-09T12:08:54Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;That was bugging me too, and I figured out what was causing it. See my comment below:&lt;/p&gt;
+
+&lt;p&gt;https://blog.torproject.org/blog/vidalia-0210-released#comment-7991&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 17</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_17/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_17/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:55Z</updated>
+	<published>2010-10-01T12:08:55Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;How can i make Vidalia show me also cities of relays instead only countries? Can i add some configuration file to make it?&lt;br /&gt;
+Thanks.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 18</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_18/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_18/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:56Z</updated>
+	<published>2010-10-05T12:08:56Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I have tried to download MaxMinds City DB in CSV format and then change the format for Tor. I then replaced the geoip file (on windows).&lt;/p&gt;
+
+&lt;p&gt;I then restarted Tor, whereupon it hung on startup, I guess it was unable to parse the file.&lt;/p&gt;
+
+&lt;p&gt;So, the problem remains.... in Vidalia 0.2.10 we have no god dammed way of getting Tor nodes rendered to Cities, rather than country.&lt;/p&gt;
+
+&lt;p&gt;How god dammed annoying that by &#39;upgrading&#39; Vidalia we have DOWNGRADED functionality.&lt;/p&gt;
+
+&lt;p&gt;I hope the Vidalia team sort this god dammed problem out and post the bloody solution somewhere.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 19</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_19/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_19/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:57Z</updated>
+	<published>2010-10-07T12:08:57Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Unclear on why you need city-level resolution.  Nothing in tor cares about cities, only countries.&lt;/p&gt;
+
+&lt;p&gt;You can&#39;t just add the citylevel db, you need to recompile vidalia with a special switch to do so.  read the release notes, &lt;/p&gt;
+
+&lt;p&gt;&quot;Add a -DUSE_GEOIP build option to enable building with MaxMind&#39;s GeoIP C library for using a local city-level or country-level database instead of Tor&#39;s database. See README.geoip for details on use.&quot;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 20</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_20/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_20/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:58Z</updated>
+	<published>2010-10-08T12:08:58Z</published>
+
+	<content type="html" xml:lang="en">
+	Some people prefer to close all circuits Tor creates with two or three nodes in a same city. I would prefer if Tor created circuits with nodes each in a different country (with possible exception of when linking your circuit to a hidden service circuit) but with increasing international cooperation even that may soon offer little protection.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 21</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_21/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_21/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:08:59Z</updated>
+	<published>2010-10-27T12:08:59Z</published>
+
+	<content type="html" xml:lang="en">
+	Assuming that only few users have the software, time and knowledge to compile the Tor Windows executable I suggest providing Tor executables for Windows that look at start up into the &quot;DataDirectory&quot; or &quot;GeoIPFile&quot; directory for the MaxMind GeoLite City database and use it if present.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 22</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_22/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_22/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:00Z</updated>
+	<published>2010-10-01T12:09:00Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;From where can i download the lastest version of Vidalia with Privoxy?&lt;/p&gt;
+
+&lt;p&gt;Tor+PoliSomething is not working for me too many bugs. I can&#39;t download files larger than 30MB and most of the time i have the timer error and tor won&#39;t connect.&lt;/p&gt;
+
+&lt;p&gt;Do you have link for old releases?&lt;/p&gt;
+
+&lt;p&gt;Thank you for helping.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 23</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_23/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_23/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:01Z</updated>
+	<published>2010-10-01T12:09:01Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;30mb download ? Via Tor... ?&lt;/p&gt;
+
+&lt;p&gt;I didnt think Tor was recommended for downloading with...&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 24</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_24/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_24/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:02Z</updated>
+	<published>2010-10-02T12:09:02Z</published>
+
+	<content type="html" xml:lang="en">
+	Just install the latest version there was with Privoxy, and then the latest version there is but without Polipo
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 25</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_25/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_25/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:03Z</updated>
+	<published>2010-10-07T12:09:03Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;There is no such thing anymore.  We ship polipo now.  You&#39;re welcome to uninstall polipo and install privoxy and configure it for Tor.&lt;/p&gt;
+
+&lt;p&gt;See &lt;a href=&quot;https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/TorFAQ#WhydoweneedPolipoorPrivoxywithTorWhichisbetter&quot; title=&quot;https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/TorFAQ#WhydoweneedPolipoorPrivoxywithTorWhichisbetter&quot; rel=&quot;nofollow&quot;&gt;https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/TorFAQ#Whyd...&lt;/a&gt; for more information.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 26</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_26/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_26/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:04Z</updated>
+	<published>2010-10-02T12:09:04Z</published>
+
+	<content type="html" xml:lang="en">
+	Vidalia 0.2.10 requires Windows XP and up, but I still use W2K. Why did you stop supporting W2K? Don&#39;t you know that Windows XP is one of the most horrible spyware ever created?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 27</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_27/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_27/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:05Z</updated>
+	<published>2010-10-04T12:09:05Z</published>
+
+	<content type="html" xml:lang="en">
+	Hve you tried to run it on w2k ? What happens when you do ? What appears in the logs etc ?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 28</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_28/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_28/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:06Z</updated>
+	<published>2010-10-04T12:09:06Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Yes, I tried. It refuses to run, asking for ws2_32.dll and also complaining with the following error:&lt;/p&gt;
+
+&lt;p&gt;``The procedure entry point RtlIpv4StringToAdressW could not be located in the dynamic library ntdll.dll.``&lt;/p&gt;
+
+&lt;p&gt;Don&#39;t know what this means.&lt;/p&gt;
+
+&lt;p&gt;Can you fix this?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 29</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_29/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_29/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:07Z</updated>
+	<published>2010-10-05T12:09:07Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;This cannot be &#39;fixed&#39; in Windows 2000.&lt;/p&gt;
+
+&lt;p&gt;Basically Tor is using XP specific networking calls in the operating system, which are not available in Win2K, hence the report that the method, RtlIpv4StringToAdressW, cannot be found in ntdll.dll (kernel).&lt;/p&gt;
+
+&lt;p&gt;ws2_32.dll is missing entirely from Windows 2000. This is an XP DLL that gives access to the registry.&lt;/p&gt;
+
+&lt;p&gt;For these reasons Tor is not going to run on Windows 2000.&lt;/p&gt;
+
+&lt;p&gt;The only way to make run is to download the code and rewrite the sections that use this XP functionality - thats not gonna be much fun.&lt;/p&gt;
+
+&lt;p&gt;Sorry...&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 30</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_30/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_30/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:08Z</updated>
+	<published>2010-10-06T12:09:08Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Oh well, it&#39;s good that I saved version 0.1.2.18 - at least it runs on Windows 2000.&lt;/p&gt;
+
+&lt;p&gt;I have no intention on &quot;upgrading&quot; to Spyware XP.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 31</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_31/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_31/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:09Z</updated>
+	<published>2010-10-07T12:09:09Z</published>
+
+	<content type="html" xml:lang="en">
+	I&#39;d be surprised if tor 0.1.2 even works on the current tor network.  It&#39;s old, exploitable, and end of life 2 years ago.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 32</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_32/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_32/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:10Z</updated>
+	<published>2010-10-07T12:09:10Z</published>
+
+	<content type="html" xml:lang="en">
+	Actually, tor runs fine I think it&#39;s vidalia that doesn&#39;t.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 33</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_33/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_33/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:11Z</updated>
+	<published>2010-11-16T13:09:11Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Actually the problem is with Vidalia, it does not support win2k anymore.&lt;/p&gt;
+
+&lt;p&gt;Here&#39;s the explanation and fix for Vidalia devs.&lt;/p&gt;
+
+&lt;p&gt;http://msdn.microsoft.com/en-us/library/ms737931(VS.85).aspx&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 34</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_34/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_34/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:12Z</updated>
+	<published>2010-10-05T12:09:12Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Correction....&lt;/p&gt;
+
+&lt;p&gt;ws2_32.dll contains the Windows Socket 2.0 32-Bit DLL.&lt;/p&gt;
+
+&lt;p&gt;If its missing in Windows 2000, then its again an XP only feature.&lt;/p&gt;
+
+&lt;p&gt;It is a shame it wont run on Windows 2000, I liked that OS a lot.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 35</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_35/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_35/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:13Z</updated>
+	<published>2010-10-07T12:09:13Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Vidalia doesn&#39;t work in Win2k because of a winsock dll bug in Win2K.  &lt;/p&gt;
+
+&lt;p&gt;The explanation for it here:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://msdn.microsoft.com/en-us/library/ms737931&quot; title=&quot;http://msdn.microsoft.com/en-us/library/ms737931&quot; rel=&quot;nofollow&quot;&gt;http://msdn.microsoft.com/en-us/library/ms737931&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If you don&#39;t want to recompile Vidalia yourself, this site offers a replacement&lt;br /&gt;
+dll (with source) that appears to work:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://codemagnet.blogspot.com/2007/10/winsock2-replacement.html&quot; title=&quot;http://codemagnet.blogspot.com/2007/10/winsock2-replacement.html&quot; rel=&quot;nofollow&quot;&gt;http://codemagnet.blogspot.com/2007/10/winsock2-replacement.html&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://martin.brenner.de/files/winsock2_getaddrinfo.rar&quot; title=&quot;http://martin.brenner.de/files/winsock2_getaddrinfo.rar&quot; rel=&quot;nofollow&quot;&gt;http://martin.brenner.de/files/winsock2_getaddrinfo.rar&lt;/a&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 36</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_36/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_36/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:14Z</updated>
+	<published>2010-10-04T12:09:14Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Can you let me know whose public key I need to verify signature?  And whether it makes a difference to get his key from a different server?  I think it was Matt&#39;s.  Either way, I downloaded his public key, and when I ran the verify command, the error message said I didn&#39;t have the public key.  I was able to properly verify the latest vidalia bundle, so I&#39;m not sure why I couldn&#39;t verify this Vidalia msi file.&lt;/p&gt;
+
+&lt;p&gt;Thanks.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 37</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_37/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_37/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:15Z</updated>
+	<published>2010-10-07T12:09:15Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;a href=&quot;https://www.torproject.org/verifying-signatures.html.en&quot; title=&quot;https://www.torproject.org/verifying-signatures.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/verifying-signatures.html.en&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 38</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_38/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_38/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:16Z</updated>
+	<published>2010-10-04T12:09:16Z</published>
+
+	<content type="html" xml:lang="en">
+	I am wondering why the signature on this installer couldn&#39;t be verified.  I used Matt&#39;s.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 39</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_39/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_39/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:17Z</updated>
+	<published>2010-10-07T12:09:17Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;a href=&quot;https://www.torproject.org/verifying-signatures.html.en&quot; title=&quot;https://www.torproject.org/verifying-signatures.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/verifying-signatures.html.en&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 40</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_40/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_40/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:18Z</updated>
+	<published>2010-10-05T12:09:18Z</published>
+
+	<content type="html" xml:lang="en">
+	Now the real question is how can one trust this tool when it&#39;s written so amateurishly with so many bugs and other problems.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 41</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_41/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_41/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:19Z</updated>
+	<published>2010-10-05T12:09:19Z</published>
+
+	<content type="html" xml:lang="en">
+	Write a better one then.  
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 42</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_42/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_42/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:20Z</updated>
+	<published>2010-10-08T12:09:20Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Bit of a shame that we don&#39;t get to see accurate locations anymore-- it looks funny to see all US relays mapped to somewhere in Kansas. But I guess I can live with it.&lt;/p&gt;
+
+&lt;p&gt;It&#39;s more annoying that Vidalia now uses 100% CPU for half a minute or so while it processes the list of relays. Not just at startup, either-- it does this every hour or half hour or so! Something in the implementation is very badly inefficient. (I assume it&#39;s a side effect of the geoip changes, perhaps?)&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 43</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_43/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_43/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:21Z</updated>
+	<published>2010-10-09T12:09:21Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I find this annoying too.&lt;/p&gt;
+
+&lt;p&gt;I really liked the city level resolution. It just gave a more comprehensive view of the network and revealed how much usage there in each country.&lt;/p&gt;
+
+&lt;p&gt;Im hoping this comes back in future versions of Vidalia ???&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 44</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_44/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_44/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:22Z</updated>
+	<published>2010-10-11T12:09:22Z</published>
+
+	<content type="html" xml:lang="en">
+	It didn&#39;t go away. You just need to compile Vidalia yourself, following the directions in README.geoip (or find someone to do this for you). That enables vidalia to use a city-level database that you have to download yourself (it&#39;s ~30MB, which I assume is the reason that it&#39;s not included in the official vidalia build).
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 45</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_45/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_45/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:23Z</updated>
+	<published>2010-10-09T12:09:23Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;[replying to myself]&lt;/p&gt;
+
+&lt;p&gt;I tracked down the CPU usage problem-- it&#39;s due to line 324 here:&lt;/p&gt;
+
+&lt;p&gt;https://trac.vidalia-project.net/changeset/4378/vidalia/trunk/src/vidali...&lt;/p&gt;
+
+&lt;p&gt;The call to QCoreApplication::processEvents() results in the router list being updated about 2000 times (once for each router) while the list is being refreshed. This takes about 25 seconds on my machine at 100% CPU. When I delete line 324, the update only takes 2 seconds. Although this freezes the GUI during the update, that&#39;s much preferable to having the GUI do tons of unnecessary work. (The list gets refreshed automatically once per hour, and I *really* don&#39;t like my CPU fan going crazy for a minute every hour just because I like to leave Vidalia&#39;s network map window open.)&lt;/p&gt;
+
+&lt;p&gt;So I was wrong about this having anything to do with the geoip changes. I vote that the call to QCoreApplication::processEvents() be removed in the next release. (I&#39;m also using libgeoip now so that my map has city-level resolution. Thanks to the developers for making it relatively easy to do that.)&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 46</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_46/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_46/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:24Z</updated>
+	<published>2010-10-11T12:09:24Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;[replying to myself again]&lt;/p&gt;
+
+&lt;p&gt;&quot;Web page addresses and e-mail addresses turn into links automatically.&quot; Hmm, looks like that&#39;s not actually the case. Even worse, long strings get truncated, making them completely useless. Well, here&#39;s that link again, split into two parts:&lt;/p&gt;
+
+&lt;p&gt;https://trac.vidalia-project.net/changeset/4378/&lt;/p&gt;
+
+&lt;p&gt;vidalia/trunk/src/vidalia/network/NetViewer.cpp&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 47</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_47/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_47/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:25Z</updated>
+	<published>2010-10-15T12:09:25Z</published>
+
+	<content type="html" xml:lang="en">
+	Why was that link truncated rather than automatically turning into a proper link?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 48</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_48/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_48/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:26Z</updated>
+	<published>2011-02-15T13:09:26Z</published>
+
+	<content type="html" xml:lang="en">
+	Vidalia does not appear in the Ubuntu Maverick (10.10) repository. It appears in Lucid (10.04) but not Maverick. Please correct this.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 49</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_49/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_49/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:27Z</updated>
+	<published>2011-02-18T13:09:27Z</published>
+
+	<content type="html" xml:lang="en">
+	Seconded - I would like 0.2.10 but can only install 0.2.9 which of course does not resolve server country
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 50</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_50/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_50/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:28Z</updated>
+	<published>2011-02-20T13:09:28Z</published>
+
+	<content type="html" xml:lang="en">
+	Correct, use our repositories.  &lt;a href=&quot;http://www.torproject.org/docs/debian.html.en&quot; title=&quot;http://www.torproject.org/docs/debian.html.en&quot; rel=&quot;nofollow&quot;&gt;http://www.torproject.org/docs/debian.html.en&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 51</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_51/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_51/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:29Z</updated>
+	<published>2011-02-24T13:09:29Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;This doesn&#39;t work. As stated in my original post, Vidalia does not appear in the Maverick (10.10) repository. &lt;/p&gt;
+
+&lt;p&gt;Will the binaries in the Lucid repository work on Maverick?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 52</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_52/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_52/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:30Z</updated>
+	<published>2011-02-24T13:09:30Z</published>
+
+	<content type="html" xml:lang="en">
+	Correct, Vidalia 0.2.10 does not appear in the ubuntu repositories.  Use the torproject.org repositories to get Vidalia 0.2.10.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 53</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_53/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_53/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:31Z</updated>
+	<published>2011-02-25T13:09:31Z</published>
+
+	<content type="html" xml:lang="en">
+	I must not be making myself clear. Let&#39;s try it this way. Vidalia does not appear in the torproject.org repository for Maverick. Therefore, if I follow the instructions at https://www.torproject.org/docs/debian.html.en (as you suggest) for Maverick, I cannot get Vidalia 0.2.10. Is the problem that Vidalia 0.2.10 is not available for Maverick? If so, can the binaries for Lucid at http://deb.torproject.org/torproject.org/pool/main/v/vidalia/ be used on Maverick?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 54</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_54/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_54/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:32Z</updated>
+	<published>2011-02-25T13:09:32Z</published>
+
+	<content type="html" xml:lang="en">
+	Yes, the lucid vidalia works in maverick.  I&#39;ll look into why we don&#39;t have a maverick vidalia yet.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 55</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_55/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_55/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:33Z</updated>
+	<published>2011-02-18T13:09:33Z</published>
+
+	<content type="html" xml:lang="en">
+	64 Bit Ubunti 10.10 here - followed instructions to add torproject to sources.list but can only install vidalia 0.2.9 - cannot install vidalia 0.2.10
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 56</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_56/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_56/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:34Z</updated>
+	<published>2011-02-20T13:09:34Z</published>
+
+	<content type="html" xml:lang="en">
+	Please open a ticket on our bug tracker, at &lt;a href=&quot;https://trac.torproject.org&quot; title=&quot;https://trac.torproject.org&quot; rel=&quot;nofollow&quot;&gt;https://trac.torproject.org&lt;/a&gt;.  The vidalia 0.2.10 binaries exist and work fine in ubuntu 10.10 64bit.  &lt;a href=&quot;http://deb.torproject.org/torproject.org/pool/main/v/vidalia/&quot; title=&quot;http://deb.torproject.org/torproject.org/pool/main/v/vidalia/&quot; rel=&quot;nofollow&quot;&gt;http://deb.torproject.org/torproject.org/pool/main/v/vidalia/&lt;/a&gt; shows the packages.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 57</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_57/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_57/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:35Z</updated>
+	<published>2011-02-22T13:09:35Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Thank you for the reply.&lt;br /&gt;
+Despite adding the required lines in sources.list, I won&#39;t bother with a ticket as the issue very well could have been my end - specifically where in the .list file I added the extra references - anyway, d/l the amd64 .deb and installing this way worked fine - vidalia 0.2.10 is up and running  with country resolution.&lt;/p&gt;
+
+&lt;p&gt;Thanks.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 58</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_58/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/comment_58/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:09:36Z</updated>
+	<published>2011-03-06T13:09:36Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;With  &quot;  Stable Vidalia Bundle works with Windows 7, Vista, XP &quot;&lt;br /&gt;
+&quot;  0.2.1.30-0.2.10.exe &quot; I have the problem of CPU 100% usage.&lt;/p&gt;
+
+&lt;p&gt;I downloded  &quot; Unstable Vidalia Bundles works with Windows 7, Vista, XP &quot;&lt;br /&gt;
+  &quot;  0.2.2.22-alpha-0.2.10.exe  &quot;&lt;/p&gt;
+
+&lt;p&gt;the cpu is low.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+
+</feed>

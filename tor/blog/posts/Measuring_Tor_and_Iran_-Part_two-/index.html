@@ -1,0 +1,807 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Measuring Tor and Iran (Part two)</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FMeasuring_Tor_and_Iran_-Part_two-&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Measuring Tor and Iran (Part two)</a>
+
+</span>
+
+
+<div id="content">
+<p>Two weeks ago we posted early measurements about the <a href="https://blog.torproject.org/blog/measuring-tor-and-iran">growth of Tor usage in Iran</a>. Since then we have improved our math, and used more data sources. This work is part of our <a href="https://blog.torproject.org/blog/performance-measurements-and-blockingresistance-analysis-tor-network">metrics project</a>, where we're learning about the Tor network to improve its availability and performance while keeping our users safe. <span class="read-more"><a href="http://blog.torproject.org/blog/measuring-tor-and-iran-part-two"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/bridges/" rel="tag">bridges</a>
+
+<a href="../../tags/iran/" rel="tag">iran</a>
+
+<a href="../../tags/metrics/" rel="tag">metrics</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-d49d1127339823067ce43861db66238d">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>hi there,<br />
+is it possible to have a special build only allowing my exit node for clients originating in china, iran etc.? unfortunately i don´t know very much about this software but am unwilling to hassle with problems from my isp. right now i´m running only in bridge mode.<br />
+i think there might be a lot more people out there like me that would install a special iran package without having to think about it anymore</p>
+
+<p>ftd</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 01 Jul 2009 06:29:41 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2c6d8715d8d6a86d9fcd981eee29a7f2">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+It is not possible for an exit node to know the originator of requests, without sniffing the data (violating user privacy and legally endangering yourself).
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fkeb%20%28not%20verified%29&amp;do=goto">keb (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 01 Jul 2009 06:29:42 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-15a8feb13fdb136c01f659f1a2620967">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+This is false: there's no *technical* way for the exit node to know the client except with collusion with other nodes in the circuit. If only legal consequences be the stopper for the exit node to figure out the client then Tor would be dead before birth.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FSATtva%20%28not%20verified%29&amp;do=goto">SATtva (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 02 Jul 2009 06:29:43 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2e2f022a8d7b4ad144a678388e430e24">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+Chinese people need tor to surf the internet freely indeed.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 03 Jul 2009 06:29:44 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-aec20a6273b4cf47f7bd08445708b82d">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+Tor is apparently blocked in Iran and nothing happens when you try to connect hrough Tor... the relays list is empty... even bridges do not work... disappointing... really disappointing.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 04 Jul 2009 06:29:45 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a48c8b6c2079ba53c399faf1cc1a6e51">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+seems the situation in Iran is worse than China....
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 04 Jul 2009 06:29:46 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8a8a95296629415c57a24d73878c0cb9">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+It depends upon your network.  Tor is working fine for me in Iran.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 05 Jul 2009 06:29:47 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a49c24a19b4d7b0305fc1f6f0dbed21a">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+Some user from China say can't connect the tor network these days, but it's work fine for me since the beginning.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 06 Jul 2009 06:29:48 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bba78326403de47907af77b0a055a1fb">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+i use tor in iran since the election and its working for me but it is really slow....another thing i use macos maybe this why...
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 09 Jul 2009 06:29:49 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-45cc98d951d7f6ad8c7e196a772a31ad">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+Please keep everyone updated about the status of TOR connection in Iran.  If demonstrations intensify again soon, it would be good to coordinate to provide them with more relays.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 10 Jul 2009 06:29:50 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a9b8af6c3f186805346401fd64464efd">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+<p>from now on tor doesnt work in iran...i there is no tor connection anymore and i used every bridge i could find..plz inform me what i have to do?<br />
+i have macosx and use tor network via vidalia<br />
+plz inform me</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Firanian%20boy%20%28not%20verified%29&amp;do=goto">iranian boy (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 22 Jul 2009 06:29:51 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-61610cb5b0b92a4f35c7e740cc1a2b60">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+You should some people running bridges, or follow the directions at <a href="https://www.torproject.org/bridges#UsingBridges" title="https://www.torproject.org/bridges#UsingBridges" rel="nofollow">https://www.torproject.org/bridges#UsingBridges</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 23 Jul 2009 06:29:52 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c206e201ab00f034d8ac907cd567358c">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+<p>Why there is no info on torproject.org about torchat?<br />
+It seems to me easier to quickly deploy for oppressed people.<br />
+Is't a bad project? (compared to trying to use tor+pidgin+pifgin-otr, not easy on *nix boxes?<br />
+<a href="http://en.wikipedia.org/wiki/TorChat" title="http://en.wikipedia.org/wiki/TorChat" rel="nofollow">http://en.wikipedia.org/wiki/TorChat</a><br />
+<a href="http://code.google.com/p/torchat/" title="http://code.google.com/p/torchat/" rel="nofollow">http://code.google.com/p/torchat/</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 09 Jul 2009 06:29:53 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4ba8ae750eaec02b054d236c2881566e">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+Because we don't produce torchat and no one has thoroughly analyzed the code.  Feel free to submit a detailed security analysis.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 11 Jul 2009 06:29:54 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-841e9dc040b25e4d3997c85a2e55ee9f">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+<p><a href="https://git.torproject.org/checkout/tor/master/doc/tor-win32-mingw-creation.txt" title="https://git.torproject.org/checkout/tor/master/doc/tor-win32-mingw-creation.txt" rel="nofollow">https://git.torproject.org/checkout/tor/master/doc/tor-win32-mingw-creat...</a>  &lt;--- check this out...<br />
+ i can't create a "tor-mingw" directory<br />
+please help me;;;;</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 10 Jul 2009 06:29:55 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fca0da055c5f7619ba8d8c32a3831c20">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+"mkdir tor-mingw"
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 10 Jul 2009 06:29:56 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-30e5da8befef4f24d99514871f77f75b">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+The tor nodes in China increase in recent months.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 14 Jul 2009 06:29:57 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-787e4d0926606bc2d1a50073fcd920dd">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+Thank you, you answered the question I have been searching for which was whether or not to place keywords when blog commenting. <a href="http://www.hayda.net" title="mirc, cinsel sohbet, cinsellik, chat" rel="nofollow">mirc</a> . <a href="http://www.hayda.net" title="mirc, cinsel sohbet, cinsellik, chat" rel="nofollow">chat</a> . <a href="http://www.hayda.net/" title="http://www.hayda.net/" rel="nofollow">http://www.hayda.net/</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FWerry%20%28not%20verified%29&amp;do=goto">Werry (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 13 Nov 2009 06:29:58 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FMeasuring_Tor_and_Iran_-Part_two-&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:29:41 AM CDT</span>
+<!-- Created <span class="date">Wed 01 Jul 2009 01:25:51 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

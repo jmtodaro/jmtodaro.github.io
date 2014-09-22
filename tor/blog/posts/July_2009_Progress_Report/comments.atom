@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>July 2009 Progress Report</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:33:19Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/comment_1/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:10Z</updated>
+	<published>2009-08-10T11:33:10Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Since 0.2.1.19 in the state-file a lot of &#39;EntryGuard&#39; entrys gets&lt;br /&gt;
+listed and unlisted. Additional these unlisted servers are NOT  EntryGuard&#39;s.&lt;br /&gt;
+Why??&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/comment_2/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:11Z</updated>
+	<published>2009-08-10T11:33:11Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&quot;[warn]  Requested exit node &#39;&#39;xxxxx&quot; is in ExcludeNodes or ExcludeExitNodes.. using anyway&quot;&lt;/p&gt;
+
+&lt;p&gt;Why &quot;using anyway&quot; ?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/comment_3/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:12Z</updated>
+	<published>2009-08-11T11:33:12Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;My guess is that its not used for circuits of General purpose.&lt;br /&gt;
+So its relatively safe.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/comment_4/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:13Z</updated>
+	<published>2009-08-15T11:33:13Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Could you perhaps give an update on when Tor will be available for Android&lt;br /&gt;
+(and perhaps other mobile platforms)?&lt;br /&gt;
+I could only find a passing mention in the January report,&lt;br /&gt;
+yet it seems an overwhelmingly important step.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/comment_5/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:14Z</updated>
+	<published>2009-08-15T11:33:14Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;You can compile tor on Android right now (same with iphone and winCE for that matter).  However, there still needs to be research into how safe it is to use Tor on a phone.  The phone environments and operating systems are sufficiently different from laptop/desktop/server operating systems that simply porting isn&#39;t so easy.  Getting Tor into the Android Market, or Apple App Store is an entirely different challenge.&lt;/p&gt;
+
+&lt;p&gt;Yes Tor may run on your phone now.  However, if your applications don&#39;t support SOCKS5, or leak data all over the place, you&#39;re no safer than before.&lt;/p&gt;
+
+&lt;p&gt;Getting Tor fully supported on Android, iPhone, and WinCE is on the roadmap for the next 3 years.  As this is an un-funded project, it&#39;s being done by volunteers with free time, so it&#39;ll get done when it&#39;s done.&lt;/p&gt;
+
+&lt;p&gt;As phones become more important, I&#39;m concerned that my cell provider can see, record, filter/censor all of my Internet traffic on the phone.  More and more people use their phone heavily, some as a near replacement for a netbook or laptop.  I agree that this is important, but right now it&#39;s a volunteer effort.  Feel free to join us.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/comment_6/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:15Z</updated>
+	<published>2009-08-16T11:33:15Z</published>
+
+	<content type="html" xml:lang="en">
+	Thanks for the quick answer - not being talented enough, I&#39;ll be patient, not rush my smartphone purchase, and consider a donation &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/comment_7/"/>
+
+	<author><name>Alastair Beresford (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:16Z</updated>
+	<published>2009-09-15T11:33:16Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;We&#39;ve recently released a pure Java implementation of Tor for the Android which is now available from the Android Marketplace. It makes extensive use of the OnionCoffee Tor implementation and could undoubtedly do with further improvements; we&#39;ve made the source code available for all under GPL v2 and are happy to accept updates. More info at:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.cl.cam.ac.uk/research/dtg/android/tor/&quot; title=&quot;http://www.cl.cam.ac.uk/research/dtg/android/tor/&quot; rel=&quot;nofollow&quot;&gt;http://www.cl.cam.ac.uk/research/dtg/android/tor/&lt;/a&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/comment_8/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:17Z</updated>
+	<published>2009-09-15T11:33:17Z</published>
+
+	<content type="html" xml:lang="en">
+	onioncoffee is a research project that is abandoned.  Consider it a proof of concept more than anything. One should not rely upon it for actual anonymity.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/comment_9/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:18Z</updated>
+	<published>2009-08-15T11:33:18Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;#Since 0.2.1.19 in the state-file a lot of &#39;EntryGuard&#39; entrys gets&lt;br /&gt;
+#listed and unlisted. Additional these unlisted servers are NOT #EntryGuard&#39;s.&lt;br /&gt;
+#Why??&lt;/p&gt;
+
+&lt;p&gt;Thats the difference between &quot;state&quot;-file 2.0.35 and 0.2.1.19. The same like at my pc.&lt;br /&gt;
+i dont know the reason for.&lt;br /&gt;
+Whats the reason for?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/July_2009_Progress_Report/comment_10/"/>
+
+	<author><name>hii (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:33:19Z</updated>
+	<published>2009-11-13T12:33:19Z</published>
+
+	<content type="html" xml:lang="en">
+	Thank you, you answered the question I have been searching for which was whether or not to place keywords when blog commenting. &lt;a href=&quot;http://www.hayda.net&quot; title=&quot;mirc, cinsel sohbet, cinsellik, chat&quot; rel=&quot;nofollow&quot;&gt;mirc&lt;/a&gt; . &lt;a href=&quot;http://www.hayda.net&quot; title=&quot;mirc, cinsel sohbet, cinsellik, chat&quot; rel=&quot;nofollow&quot;&gt;chat&lt;/a&gt; . &lt;a href=&quot;http://www.hayda.net&quot; title=&quot;mirc, cinsel sohbet, cinsellik, chat&quot; rel=&quot;nofollow&quot;&gt;cinsel sohbet&lt;/a&gt;. &lt;a href=&quot;http://www.hayda.net&quot; title=&quot;mirc, cinsellik sohbet, cinsellik, chat&quot; rel=&quot;nofollow&quot;&gt;cinsellik sohbet &lt;/a&gt; . &lt;a href=&quot;http://www.hayda.net/&quot; title=&quot;http://www.hayda.net/&quot; rel=&quot;nofollow&quot;&gt;http://www.hayda.net/&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+
+</feed>

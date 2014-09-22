@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>June 2010 Progress Report</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:05:11Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_1/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:04:51Z</updated>
+	<published>2010-07-13T12:04:51Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;«we removed all 512 nodes from the network consensus»&lt;/p&gt;
+
+&lt;p&gt;Why is it called &quot;consensus&quot; if you can decide it!?!!!!!!! hahaha!!!!! this is funny!!!!!!!! It reminds me of Sarkozy&#39;s three strikes proposal!!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;I ain&#39;t sure about this, but if it&#39;s possible to arbitrarily kick out network nodes, who controls the consensus controls the nodes too!!!!!!!!!!!! I did read something about directory authorities, and i feel like this is related!!, but i don&#39;t have yet got what they&#39;re useful for, nor how they do work!!!!!! It just seems me strange the TorProject is able to disconnect hundreds of nodes all at once!!!!!!!! How does it work?!!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;~bee!!!!!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_2/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:04:52Z</updated>
+	<published>2010-07-13T12:04:52Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Yes, you should read up on directory authorities.  It&#39;s a consensus because the the majority of DirAuths agree on the set of nodes seen.  &lt;/p&gt;
+
+&lt;p&gt;The full doc is at&lt;br /&gt;
+&lt;a href=&quot;https://gitweb.torproject.org/tor.git/blob_plain/HEAD:/doc/spec/dir-spec.txt&quot; title=&quot;https://gitweb.torproject.org/tor.git/blob_plain/HEAD:/doc/spec/dir-spec.txt&quot; rel=&quot;nofollow&quot;&gt;https://gitweb.torproject.org/tor.git/blob_plain/HEAD:/doc/spec/dir-spec...&lt;/a&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_3/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:04:53Z</updated>
+	<published>2010-07-13T12:04:53Z</published>
+
+	<content type="html" xml:lang="en">
+	This &quot;bee&quot; person seems to really not get Tor at all. It makes me wonder why he&#39;s even here.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_4/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:04:54Z</updated>
+	<published>2010-07-14T12:04:54Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I think he&#39;s here to cause drama, he offers just enough useful info so some people think he is helpful, but IMO he is really a troll trying to cause trouble.  He is rude, arrogant, and not the smart apparently as he makes incorrect assumptions about Tor operation and than makes wild conspiracy theory claims against Tor and Tor devs, he takes every opportunity to bash Tor and especially Tor Browser Bundle often calling it insecure and laughs at it, telling everyone how stupid they are and how smart he is, while spamming for his version of Tor Browser Bundle.&lt;/p&gt;
+
+&lt;p&gt;Bee needs to go away, I have been writing this for a while now.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_5/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:04:55Z</updated>
+	<published>2010-07-14T12:04:55Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Why couldn&#39;t we use the 512 nodes?&lt;/p&gt;
+
+&lt;p&gt;Were they Bad Exits?&lt;/p&gt;
+
+&lt;p&gt;We could have used them atleast as entry/middle nodes?&lt;/p&gt;
+
+&lt;p&gt;It was Free Bandwidth for the Tor Network!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_6/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:04:56Z</updated>
+	<published>2010-07-16T12:04:56Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hi!!!!!!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;I think you&#39;re right!!! Removing those 500 nodes was a waste!!!!!!!!!!!! They were useful nodes!!! but i think the TorProject had no ways to take advantages of the suspected relays!!!!!!&lt;br /&gt;
+Anyway, i know there is already a flags system to flag nodes!!! &quot;BadExit&quot; to disable exit-nodes and &quot;BadDirectory&quot; to disable directory caches!!!!! I even read of it, at phobos&#39;s suggested document!!!!&lt;br /&gt;
+I think somebody could add a new flag, &quot;BadNode&quot;!!!!! yeah, it seems not to exist!!!! but i think it could be useful to have!!!!&lt;br /&gt;
+A &quot;BadNode&quot; is a believed &quot;suspected relay&quot;!!!!!&lt;br /&gt;
+Every node flagged as BadNode should be only used as a middle relay!!!! If you had 500 &quot;suspected&quot; nodes, and if they all were flagged as &lt;em&gt;BadNode&lt;/em&gt;s, you couldn&#39;t use more than one of them at once!!!! Because if you&#39;ve circuits made of three nodes and BadNodes cannot be used as entry/exit nodes, then you can only have a BadNode in the middle!!!!!!! Timing attacks aren&#39;t possible to launch from BadNodes, because a &quot;BadNode&quot; will never be used as an entry node, neither as an exit-node!!!!!! If you&#39;re very paranoid, for four hops circuits, you may want to add a rule to use only &quot;one&quot; BadNode per circuit!!! So, as you&#39;ve got two nodes in the middle, only one of them can be a node flagged as &quot;suspicious node&quot;!!!!!!!&lt;br /&gt;
+Yeah!!! An adversary who controls 500 or 5000 nodes could use them for timing attacks, but think about those 5000 nodes if they were fagged as in my idea of &quot;BadNode&quot;s!!!! instead of disabling them!!!! YEAH!! What do you think about this!!!!?!!!!!!!!!!!!?!!!!!!!!!&lt;br /&gt;
+Hah yeah!!! i also know of &quot;entry guards nodes&quot; but i think my idea to be helpful to be used together!!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;bye!!!!!!!!!!!!!!!!&lt;br /&gt;
+~bee!!!!!!!!!!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_7/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:04:57Z</updated>
+	<published>2010-07-14T12:04:57Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;TOR dead in china now. Get new Bridge, ok couple days. Then blocked. even too much trouble for expert user, ordinary user no chance no way will make it work or want take all such big trouble. No matter if bridge from web or email they all already blocked. or blocked in few days time.&lt;/p&gt;
+
+&lt;p&gt;You saying here &quot;Bridge relays that have been seeded into various social networks in China as well as new bridge addresses continue to work well&quot; but never can having many users this way.&lt;/p&gt;
+
+&lt;p&gt;Read a minute the blogs, twitter, they all say same, TOR now finished in china, pay vpn now only solution.&lt;/p&gt;
+
+&lt;p&gt;GFW won. You having lost. Time to face reality and face facts.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_8/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:04:58Z</updated>
+	<published>2010-07-15T12:04:58Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;This is the next step in the arms race between censors and circumvention tools.  GFW appears to be 90% successful in blocking tor right now.  We&#39;re working on the next steps to push that back to 0%.  We don&#39;t want to roll out something that can be trivially blocked again.  Therefore, it takes time to make the changes correctly.  We only get one chance at it, and if we screw up, we may make the GFW admins job easier.&lt;/p&gt;
+
+&lt;p&gt;There&#39;s also a risk to using pay VPNs, see &lt;a href=&quot;https://www.torproject.org/faq.html.en#Torisdifferent&quot; title=&quot;https://www.torproject.org/faq.html.en#Torisdifferent&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/faq.html.en#Torisdifferent&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The alternative answer is to encourage people to run bridges.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_9/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:04:59Z</updated>
+	<published>2010-07-15T12:04:59Z</published>
+
+	<content type="html" xml:lang="en">
+	Yes I know it is not your blame. Thank you for the hard working! WIsh you good lucky with one new TOR version! We all are your benefit from your hard working!
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_10/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:05:00Z</updated>
+	<published>2010-07-16T12:05:00Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;LOL &quot;Face reality&quot;......I&#39;m sure Ghandi, Mandela, the Suffragettes, Rosa Parks, etc etc were all told that.....then look what happened. It&#39;s only 90% blocked, it can be unblocked especially if it&#39;s blocking IP address....you change them. &lt;/p&gt;
+
+&lt;p&gt;PS what&#39;s a Directory Fetch?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_11/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:05:01Z</updated>
+	<published>2010-07-15T12:05:01Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Question: close to a month ago this problem popped up https://trac.torproject.org/projects/tor/ticket/1572&lt;br /&gt;
+It still leaves Tor/Vidalia completely useless on my computer. I&#39;ve been trying to find previous vidalia bundles for Mac OSX but all I&#39;ve been able to find on the website are older versions of Tor on it&#39;s own. I know there are fine folks working on the problem in that ticket (and doing the best they can with limited resources) but if you could link to somewhere I could find the previous vidalia bundle, that would be wonderful.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 12</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_12/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_12/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:05:02Z</updated>
+	<published>2010-07-18T12:05:02Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;archive.torproject.org is what you&#39;re looking for.&lt;/p&gt;
+
+&lt;p&gt;However, updating the ticket with more information may help.&lt;/p&gt;
+
+&lt;p&gt;I can&#39;t replicate any of the issues you&#39;re having.&lt;/p&gt;
+
+&lt;p&gt;You could try to compile polipo yourself and see if it still has problems.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 13</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_13/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_13/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:05:03Z</updated>
+	<published>2010-07-16T12:05:03Z</published>
+
+	<content type="html" xml:lang="en">
+	Tor was working fine on my xp sp2 a few days ago. after that,i uninstalled firefox. now i&#39;ve reinstalled it and tor just doesn&#39;t connects to the network. It is stuck at the &#39;Loading Network Status&#39; in the progress bar. In the message log it shows that my clock is not configured correctly, and until it does, it won&#39;t start. Why the clock is important? Am i supposed to keep adjusting the time (not to mention calculating around 80,000 secs into exact minutes everytime) and it still doesn&#39;t do a thing. For some reason i can&#39;t even optimize my clock from microsoft site. What should i do?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 14</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_14/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_14/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:05:04Z</updated>
+	<published>2010-07-18T12:05:04Z</published>
+
+	<content type="html" xml:lang="en">
+	I think you should sync with an Internet time server.  Windows has this functionality built in.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 15</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_15/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_15/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:05:05Z</updated>
+	<published>2010-07-18T12:05:05Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Why is Tor so hard to install on Ubuntu?&lt;/p&gt;
+
+&lt;p&gt;In windows, I download one app (Vidalia), and everything works great.&lt;/p&gt;
+
+&lt;p&gt;On ubuntu, I have to enter a bunch of commands into the command prompt, manually configure files, and I have no visibility to what&#39;s going on... what the hell!?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 16</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_16/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_16/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:05:06Z</updated>
+	<published>2010-07-19T12:05:06Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;We pulled tor and vidalia out of the Ubuntu repositories because Ubuntu shipped a remotely exploitable tor for 18 months and refused to update it.  Therefore, we host our own repositories to keep everyone current with Tor and vidalia releases.&lt;/p&gt;
+
+&lt;p&gt;You could use the tor browser bundle for linux to avoid any installation issues, see &lt;a href=&quot;https://torproject.org/torbrowser/&quot; title=&quot;https://torproject.org/torbrowser/&quot; rel=&quot;nofollow&quot;&gt;https://torproject.org/torbrowser/&lt;/a&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 17</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_17/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_17/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:05:07Z</updated>
+	<published>2010-07-19T12:05:07Z</published>
+
+	<content type="html" xml:lang="en">
+	Oh, that is available for linux too? Nice. You should update the download page, as it only references a browser bundle for Windows.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 18</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_18/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_18/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:05:08Z</updated>
+	<published>2010-07-19T12:05:08Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hi!!!!!!!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;I also made a Tor Browser Bundle for Linux!!!!! It&#39;s FactorBee!!!!!!!!!! http://honeybeenet.altervista.org/factorbee/ in the screenshot page, there is also a pic of factorbee running in Ubuntu!!!!!!!!! haha yeah!!!!!!!!! It&#39;s similar to the official tor browser bundle belonging to the TorProject, but my one is better!!!!!! This is the support forum if you need to ask something: http://honeybeenet.altervista.org/forum/?board=factorbee !!!!!!&lt;/p&gt;
+
+&lt;p&gt;If you&#39;ve a 32 bit system, you can just download the precompiled version!!! but if you have a 64bit system, you must compile factorbee from the source code!!!!!! Because i don&#39;t have a precompiled 64bit version!!!! But if it&#39;s possible for you, download the source code and compile it either way!!!!!! When you&#39;ve done and you&#39;ve got the executable file, install EncFS (apt-get install encfs) and then, to use factorbee, just launch it from a terminal &quot;./factorbee&quot; (or also, with GNOME, doubleclick on the &quot;factorbee&quot; script and click on &quot;Run&quot;!!!!!!!!!). &lt;/p&gt;
+
+&lt;p&gt;FactorBee will give you some advantages over the official Tor Bundle!!!!! For example, all temporary files will be stored in the encrypted file system of EncFS and everything will be destroyed when the scripts terminate!!!!!!! This will prevent actual writings of plain-text files on your harddisk, but if you read the documentation you&#39;ll find more about factorbee!!!!!!!!! You could also write the files directly into the RAM memory instead of on the disk!!!!!!!! There is also a script to run firefox in a chroot!!!!! This is the comparison chart i wrote time ago http://honeybeenet.altervista.org/factorbee/?id=116000 it&#39;s a bit outdated already, because since then the official Tor Browser Bundle has improved pretty much!!!!!!!!!!!!!! (though factorbee still the number one!!!!!!!!!!!!!!!!!)&lt;/p&gt;
+
+&lt;p&gt;bye!!!!!!!!!!!!!&lt;br /&gt;
+~bee!!!!!!!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 19</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_19/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_19/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:05:09Z</updated>
+	<published>2010-07-20T12:05:09Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&lt;cite&gt;On June 2, updated the Vidalia bundle for OS X PowerPC to include Vidalia 0.2.9.&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;Only on unstable package?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 20</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_20/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_20/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:05:10Z</updated>
+	<published>2010-08-10T12:05:10Z</published>
+
+	<content type="html" xml:lang="en">
+	Weird - wonder if Tor is working properly: Max download speed via my ISP plan is close to 60KB/s. Previously, whenever using Tor (via Torbutton and Privoxy on Linux system), the download speed would max out at about 30 KB/s. Frequently however, with Tor running and verified at https://check.torproject.org/ and at http://ip-address.domaintools.com/, the max speed is ~60 KB/s - the maximum for my Internet plan. Is Tor working? Could it be as fast as the fastest non-Tor? Any way to check such as allowing Privoxy to log?  --thanks anyone
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 21</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_21/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/June_2010_Progress_Report/comment_21/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:05:11Z</updated>
+	<published>2010-08-17T12:05:11Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;7 days without answer...&lt;/p&gt;
+
+&lt;p&gt;Is there an active Tor or other privacy forum for questions such as these?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+
+</feed>

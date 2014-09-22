@@ -1,0 +1,1582 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Tor Browser Bundle 1.1.12 released</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:24:36Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_1/"/>
+
+	<author><name>Tsadik (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:41Z</updated>
+	<published>2009-04-13T11:23:41Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hey guys,&lt;br /&gt;
+I am having a really weird issue now since I installed the latest stable win32 version of the tor bundle on my windows vista laptop. IE and FF will not connect to any page, although I can connect via Google Chrome. This problem persists no matter if the software is running or not. I am totally at a loss as to what is going on, is there anything you can think of? I have turned the windows firewall on and off, that does not help. I have uninstalled/reinstalled the tor bundle and that did not help either.&lt;/p&gt;
+
+&lt;p&gt;Any help will be appreciated&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_2/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:42Z</updated>
+	<published>2009-04-15T11:23:42Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Did you setup &quot;Internet Options&quot; to use localhost:9050 per chance? &lt;/p&gt;
+
+&lt;p&gt;Does vidalia start up and successfully connect to the rest of the network and give you a green onion in the system tray?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_3/"/>
+
+	<author><name>PETER (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:43Z</updated>
+	<published>2009-04-13T11:23:43Z</published>
+
+	<content type="html" xml:lang="en">
+	hey Tsadik  i think u didnt install properly or u dont know how 2 install . it is working 4  me perfectly without any problems. iam also using windows vista in my laptop.I think u bette try it once  again or check the instructions which is shown in the above posted link. By the way phobosthanx 4 updating  new tbb bundle. Keep it going dont stop.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_4/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:44Z</updated>
+	<published>2009-04-15T11:23:44Z</published>
+
+	<content type="html" xml:lang="en">
+	I have downloaded the zero install and plain install bundles for Windows (XP) and tried to verify the signature of Andrew using GnuPG and receive a BAD verification warning.   Near as I can figure, the only difference appears to be the fact that the key installed from the server has a date of &quot;Created: 7/16/2003&quot; while on your site it says &quot;pub  1024D/31B0974B 2003-07-17&quot;, a one day mismatch.  Would that cause the Bad verification warning?.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_5/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:45Z</updated>
+	<published>2009-04-15T11:23:45Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;No, that should not cause a bad signature warning.  Are you sure you have the full bundle?  I&#39;ve noticed people seem to get 90% of the download sometimes, this will fail the signature check.&lt;/p&gt;
+
+&lt;p&gt;Are you using gpg in the Windows command prompt or via cygwin?&lt;/p&gt;
+
+&lt;p&gt;Feel free to open a bug, for I&#39;m very interested in how this is occurring.  &lt;a href=&quot;https://bugs.torproject.org/&quot; title=&quot;https://bugs.torproject.org/&quot; rel=&quot;nofollow&quot;&gt;https://bugs.torproject.org/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I&#39;ve heard from two people in China their signatures always read as bad, even when the sha1 files match.&lt;/p&gt;
+
+&lt;p&gt;I&#39;m glad people are checking gpg signatures!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_6/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:46Z</updated>
+	<published>2009-05-27T11:23:46Z</published>
+
+	<content type="html" xml:lang="en">
+	Where do one find a program to check these signatures with.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_7/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:47Z</updated>
+	<published>2009-05-27T11:23:47Z</published>
+
+	<content type="html" xml:lang="en">
+	look for &quot;openssl&quot;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_8/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:48Z</updated>
+	<published>2009-04-16T11:23:48Z</published>
+
+	<content type="html" xml:lang="en">
+	Vidalias memory footprint is always increasing and something needs to be done. Qt is probably the problem. Can you make the map and graph into dlls that can be deleted if they are the cause?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_9/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:49Z</updated>
+	<published>2009-04-22T11:23:49Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Vidalia&#39;s memory usage is generally due the bulk data structures it keeps for geoip location, active circuits, and then the map in Qt.&lt;/p&gt;
+
+&lt;p&gt;We welcome help in reducing memory usage without a similar reduction in functionality.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_10/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:50Z</updated>
+	<published>2009-04-16T11:23:50Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;a href=&quot;https://www.torproject.org/dist/vidalia-bundles/&quot; title=&quot;https://www.torproject.org/dist/vidalia-bundles/&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/dist/vidalia-bundles/&lt;/a&gt; only has 1.6
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_11/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:51Z</updated>
+	<published>2009-04-22T11:23:51Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;a href=&quot;https://www.torproject.org/vidalia/dist/vidalia-0.1.12.tar.gz&quot; title=&quot;https://www.torproject.org/vidalia/dist/vidalia-0.1.12.tar.gz&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/vidalia/dist/vidalia-0.1.12.tar.gz&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 12</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_12/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_12/"/>
+
+	<author><name>zorg (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:52Z</updated>
+	<published>2009-04-17T11:23:52Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hi all.&lt;br /&gt;
+I&#39;m a long time Opera user and I&#39;ve come accross this neat bundle called OperaTor.&lt;br /&gt;
+It uses Polipo as a web proxy.&lt;br /&gt;
+I wonder if it hides my browsing habbits from the network admin.&lt;br /&gt;
+Supposedly it does, but then my concern is those sites with javascript induced popup windows.&lt;br /&gt;
+Anyone know if enabling javascript in your browser will void anomimity?&lt;br /&gt;
+Thanx a bunch.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 13</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_13/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_13/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:53Z</updated>
+	<published>2009-04-18T11:23:53Z</published>
+
+	<content type="html" xml:lang="en">
+	Yes it will unless you use Firefox with Torbutton.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 14</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_14/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_14/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:54Z</updated>
+	<published>2009-04-24T11:23:54Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;JavaScript can be dangerous in a few different ways:&lt;br /&gt;
+* Poor JavaScript implementations often allow buffer overflow attacks. An advanced attacker might exploit these vulnerabilities to install spyware on your computer. The spyware can then compromise your anonymity.&lt;br /&gt;
+* Dangerous things like Java and Flash are often wrapped in JavaScript. If you enable JavaScript, you will have to ensure these things are blocked separately.&lt;br /&gt;
+* JavaScript will volunteer a wide variety of information about you, including your screen size, that will make you much less anonymous. This is potentially fixable, if JavaScript could be told to fake this information, but the above two problems remain. Fortunately the information disclosed in this way does not include your IP address.&lt;/p&gt;
+
+&lt;p&gt;The Torbutton FAQ says it protects you against scripts that continue running when you switch between using Tor and direct connection, not from all that.&lt;/p&gt;
+
+&lt;p&gt;JavaScript is really dangerous, but if you really need it, at least only enable it for specific websites (for Firefox you may use NoScript, built-in solutions exist for Konqueror and, I believe, Opera), and, if you are not using Torbutton, be careful about switching off Tor.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 15</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_15/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_15/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:55Z</updated>
+	<published>2009-04-25T11:23:55Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;torbutton does try to protect against that&lt;br /&gt;
+noscript is not safe for use with tor&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 16</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_16/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_16/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:56Z</updated>
+	<published>2009-04-25T11:23:56Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;JavaScript is not safe, period. NoScript is just a form of risk management. If I surf with JavaScript disabled, there may be once in a while a site I really need to use which requires me to use JavaScript. If I determine that my need of the feature is greater than my need for security and I believe the website is trustworthy, I may enable JavaScript only for that website using NoScript.&lt;/p&gt;
+
+&lt;p&gt;The JavaScript problem I am really most concerned about is buffer overflows or other vulnerabilities that might allow arbitrary code execution.&lt;/p&gt;
+
+&lt;p&gt;However, the Torbutton design document does not mention &quot;buffer overflow&quot; anywhere.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/torbutton/design/&quot; title=&quot;https://www.torproject.org/torbutton/design/&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/torbutton/design/&lt;/a&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 17</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_17/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_17/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:57Z</updated>
+	<published>2009-04-26T11:23:57Z</published>
+
+	<content type="html" xml:lang="en">
+	run the browser in a sandbox
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 18</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_18/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_18/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:58Z</updated>
+	<published>2009-05-03T11:23:58Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Is that true?&lt;/p&gt;
+
+&lt;p&gt;Why is the tor using only very few different circuits and most time all of the same country?&lt;br /&gt;
+How do I exclude countries completely?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 19</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_19/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_19/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:23:59Z</updated>
+	<published>2009-05-26T11:23:59Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Some of the NSA spynodes(nixnix....) is known to &quot;hijack&quot; circuits witch leeds to you end up using them very often.&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;First you have to be running the development version series = alpha(A)  or Release Candidate(RC)&lt;br /&gt;
+if you want to use countrycodes(like this:&lt;br /&gt;
+Excludenodes {US}, {CA},{BR},{AR}&lt;br /&gt;
+for example), you do need a file named geoIP, after installing you should have it in your tor directory here:&lt;br /&gt;
+C:\Documents and Settings{username}\Application Data\Tor\&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;If Vidalia somehow &quot;forgot&quot; to install the file you can find it here:&lt;br /&gt;
+&lt;a href=&quot;http://git.torproject.org/checkout/tor/master/src/config/geoip&quot; title=&quot;http://git.torproject.org/checkout/tor/master/src/config/geoip&quot; rel=&quot;nofollow&quot;&gt;http://git.torproject.org/checkout/tor/master/src/config/geoip&lt;/a&gt;&lt;br /&gt;
+You would then need version 0.2.1.6A-0.2.1.15RC&lt;/p&gt;
+
+&lt;p&gt;If you want to block the country by using IP adresses instead like this:&lt;/p&gt;
+
+&lt;p&gt;ExcludeNodes 1.0.0.0/8,2.1.0.0/16,4.111.111.111/32.....&lt;br /&gt;
+You would then need version 0.2.1.3A-0.2.1.15RC&lt;/p&gt;
+
+&lt;p&gt;If you have a good IPlist this is safer than using the countrycode option, because they have some errors(don&#39;t know if this is on purpose or not) in there list here and they don&#39;t block new IPranges given to a country which you can do by using your own IPlist.&lt;/p&gt;
+
+&lt;p&gt;By the way (admin) where is the download for version 0.2.1.3A can&#39;t find it anymore?&lt;br /&gt;
+And why do you force people to use cookies to post ?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 20</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_20/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_20/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:00Z</updated>
+	<published>2009-05-27T11:24:00Z</published>
+
+	<content type="html" xml:lang="en">
+	explain to me how you determined these are NSA spynodes?  If they&#39;re bad nodes modifying traffic, we can block them at the directory authorities.  If the NSA/CIA/FSB/etc named a node &quot;fluffy bunny of love&quot; would you think it&#39;s ok?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 21</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_21/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_21/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:01Z</updated>
+	<published>2009-05-29T11:24:01Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&quot;explain to me how you determined these are NSA spynodes?&quot;&lt;br /&gt;
+If you haven&#39;t figured this out yourself yet, i will have to leave you in the dark here, my information on that is classified.&lt;/p&gt;
+
+&lt;p&gt;&quot;If they&#39;re bad nodes modifying traffic, we can block them at the directory authorities.&quot;&lt;br /&gt;
+If you for example use a torrc file that doesn&#39;t give any node an advantage in the selecting process, let tor create let&#39;s say 100 000 000 circuits, record all created circuits, compare the likelihood for each node being chosen in each position with what it&#39;s &quot;true&quot; likelihood should have been according to tor&#39;s chosingpatern during the time the sample circuits were made taken into account the time each nodes been up during this test time and there respective exit configurations.&lt;br /&gt;
+If it&#39;s statistically certain that a node is chosen to often then this would confirm its &quot;hijacking&quot; the circuits/circuitbuildingprocess and giving itself an advantage.&lt;br /&gt;
+In the case of nixnix it has been confirmed to do so, and by that giving the NSA(who controlls this node) an higher percentage of the Tor traffic to monitor.&lt;/p&gt;
+
+&lt;p&gt;Im sorry to say so but you have no way to stop them, they just start up more nodes(witch people know even less about) in other country&#39;s if you start blocking there US nodes. You certainly must know that they uses foreign nodes too.&lt;/p&gt;
+
+&lt;p&gt;&quot;If the NSA/CIA/FSB/etc named a node &quot;fluffy bunny of love&quot; would you think it&#39;s ok?&quot;&lt;br /&gt;
+Of course not, it doesen&#39;t matter what the GRU/NSA/... is calling there nodes.&lt;br /&gt;
+lets take the famous bettyboop node(IP Address: 149.9.0.27), just because it&#39;s named bettyboop doesn&#39;t make it any less of an NSA node. It&#39;s still controlled by them no matter what they name it.&lt;/p&gt;
+
+&lt;p&gt;Every node that is not controlled by me or people that i personally know &amp;amp; trust has the potential of being a &quot;bad node&quot;.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 22</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_22/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_22/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:02Z</updated>
+	<published>2009-05-31T11:24:02Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&quot; Every node that is not controlled by me or people that i personally know &amp;amp; trust has the potential of being a &quot;bad node&quot;. &quot;&lt;/p&gt;
+
+&lt;p&gt;Well, clearly you should run a lot more nodes.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 23</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_23/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_23/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:03Z</updated>
+	<published>2009-04-22T11:24:03Z</published>
+
+	<content type="html" xml:lang="en">
+	Very little is known about OperaTor.  It appears to be Opera and Tor combined into a bundle with Polipo for http proxy caching.  However, it&#39;s unknown if the software is modified in any way.  At last check, there were no instructions for how to build your own OperaTor bundle from source packages or code.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 24</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_24/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_24/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:04Z</updated>
+	<published>2009-05-04T11:24:04Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;ve read about a new open source browser that will be released at Defcon 2009 by xerobank guys. They claim it will be more secure than firefox, and users will be immune to many side channel attacks.&lt;br /&gt;
+They also will release a DeAnonymizer that perform side channel attack, defeating all anonymity networks.&lt;br /&gt;
+What do you think?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 25</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_25/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_25/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:05Z</updated>
+	<published>2009-05-09T11:24:05Z</published>
+
+	<content type="html" xml:lang="en">
+	I think it&#39;s great marketing and grandiose claims.  We look forward to the details.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 26</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_26/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_26/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:06Z</updated>
+	<published>2009-05-08T11:24:06Z</published>
+
+	<content type="html" xml:lang="en">
+	Vidalia crashes constantly. It will barely get a Tor connection up before the app disappears and I get an error from Windows saying that it crashed.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 27</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_27/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_27/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:07Z</updated>
+	<published>2009-05-09T11:24:07Z</published>
+
+	<content type="html" xml:lang="en">
+	What does the log say?  Does Windows give you a reason for the crash?  Lots more details are needed.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 28</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_28/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_28/"/>
+
+	<author><name>comer (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:08Z</updated>
+	<published>2009-05-09T11:24:08Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Using lates tor bundle with FireFox for Win. When FF exits Vidalia crashes with exception in QtCore4.dll&lt;br /&gt;
+Tried replacing Vidalia with latest release (0.2.0) and Qt DLLs with 4.5.1. Still the same.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 29</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_29/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_29/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:09Z</updated>
+	<published>2009-05-10T11:24:09Z</published>
+
+	<content type="html" xml:lang="en">
+	Vidalia is dangerous, it can easily be crashed by fuzzing.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 30</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_30/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_30/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:10Z</updated>
+	<published>2009-05-11T11:24:10Z</published>
+
+	<content type="html" xml:lang="en">
+	Well, feel free to submit the bugs.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 31</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_31/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_31/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:11Z</updated>
+	<published>2009-05-10T11:24:11Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hi there.&lt;br /&gt;
+I&#39;d like to set up a tor relay.Unfortunately I&#39;m behind a firewall.I can make any outbound connections so I can connect to the tor network without a problem.Is there any way to open ports for the upcoming connections?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 32</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_32/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_32/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:12Z</updated>
+	<published>2009-05-11T11:24:12Z</published>
+
+	<content type="html" xml:lang="en">
+	Well, if you can&#39;t control the firewall, unlikely.  If it allows upnp, then possibly you can do it via vidalia.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 33</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_33/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_33/"/>
+
+	<author><name>presario (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:13Z</updated>
+	<published>2009-05-11T11:24:13Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Last Friday, my tor was not work. The error messages are&lt;/p&gt;
+
+&lt;p&gt;May 11 18:29:09.968 [notice] Tor v0.2.0.34 (r18423). This is experimental softwa&lt;br /&gt;
+re. Do not rely on it for strong anonymity. (Running on Windows XP Service Pack&lt;br /&gt;
+3 [workstation] {terminal services, single user})&lt;br /&gt;
+May 11 18:29:10.015 [notice] Configuration file &quot;C:\Documents and Settings\presario\Application Data\tor\torrc&quot; not present, using reasonable defaults.&lt;br /&gt;
+May 11 18:29:10.015 [notice] Initialized libevent version 1.4.9-stable using met&lt;br /&gt;
+hod win32. Good.&lt;br /&gt;
+May 11 18:29:10.015 [notice] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+May 11 18:29:10.343 [notice] No current certificate known for authority moria1;&lt;br /&gt;
+launching request.&lt;br /&gt;
+May 11 18:29:10.343 [notice] No current certificate known for authority tor26; l&lt;br /&gt;
+aunching request.&lt;br /&gt;
+May 11 18:29:10.343 [notice] No current certificate known for authority dizum; l&lt;br /&gt;
+aunching request.&lt;br /&gt;
+May 11 18:29:10.343 [notice] No current certificate known for authority ides; la&lt;br /&gt;
+unching request.&lt;br /&gt;
+May 11 18:29:10.343 [notice] No current certificate known for authority gabelmoo&lt;br /&gt;
+; launching request.&lt;br /&gt;
+May 11 18:29:10.343 [notice] No current certificate known for authority dannenbe&lt;br /&gt;
+rg; launching request.&lt;br /&gt;
+May 11 18:29:10.359 [notice] I learned some more directory information, but not&lt;br /&gt;
+enough to build a circuit: We have no network-status consensus.&lt;br /&gt;
+May 11 18:29:10.359 [notice] No current certificate known for authority moria1;&lt;br /&gt;
+launching request.&lt;br /&gt;
+May 11 18:29:10.359 [notice] No current certificate known for authority tor26; l&lt;br /&gt;
+aunching request.&lt;br /&gt;
+May 11 18:29:10.359 [notice] No current certificate known for authority dizum; l&lt;br /&gt;
+aunching request.&lt;br /&gt;
+May 11 18:29:10.359 [notice] No current certificate known for authority ides; la&lt;br /&gt;
+unching request.&lt;br /&gt;
+May 11 18:29:10.359 [notice] No current certificate known for authority gabelmoo&lt;br /&gt;
+; launching request.&lt;br /&gt;
+May 11 18:29:10.359 [notice] No current certificate known for authority dannenbe&lt;br /&gt;
+rg; launching request.&lt;/p&gt;
+
+&lt;p&gt;Please, someone can help me. Thank you very much.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 34</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_34/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_34/"/>
+
+	<author><name>mon (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:14Z</updated>
+	<published>2009-05-13T11:24:14Z</published>
+
+	<content type="html" xml:lang="en">
+	I have the same problem... &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/../../smileys/sad.png&quot; alt=&quot;:(&quot; /&gt; Any luck resolving this issue?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 35</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_35/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_35/"/>
+
+	<author><name>NDR (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:15Z</updated>
+	<published>2009-05-13T11:24:15Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;So ever since I got Vista I havent been able to get tor to work. My college has a filter  and stuff so sometimes even only certain programs will work. But Tor had worked fine b4 that. In the allowed ports after i checked the box named my firewall only lets me connect to certain ports, 80,443. But this is what it says in the message log.&lt;/p&gt;
+
+&lt;p&gt;May 13 10:17:02.022 [Notice] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+May 13 10:17:02.023 [Notice] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+May 13 10:17:02.023 [Notice] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+May 13 10:17:02.023 [Notice] No current certificate known for authority ides; launching request.&lt;br /&gt;
+May 13 10:17:02.023 [Notice] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+May 13 10:17:02.023 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+May 13 10:19:03.029 [Notice] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+May 13 10:19:03.029 [Notice] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+May 13 10:19:03.029 [Notice] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+May 13 10:19:03.029 [Notice] No current certificate known for authority ides; launching request.&lt;br /&gt;
+May 13 10:19:03.029 [Notice] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+May 13 10:19:03.029 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+May 13 10:24:08.029 [Notice] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+May 13 10:24:08.029 [Notice] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+May 13 10:24:08.030 [Notice] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+May 13 10:24:08.030 [Notice] No current certificate known for authority ides; launching request.&lt;br /&gt;
+May 13 10:24:08.030 [Notice] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+May 13 10:24:08.030 [Notice] No current certificate known for authority dannenberg; launching request.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 36</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_36/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_36/"/>
+
+	<author><name>montiff (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:16Z</updated>
+	<published>2009-05-13T11:24:16Z</published>
+
+	<content type="html" xml:lang="en">
+	I have the same problem...  &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/../../smileys/sad.png&quot; alt=&quot;:(&quot; /&gt;  Any luck resolving this issue?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 37</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_37/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_37/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:17Z</updated>
+	<published>2009-05-14T11:24:17Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;It sounds like you can&#39;t get a connection to the directory authorities at all.  Perhaps you need to configure bridges.  &lt;/p&gt;
+
+&lt;p&gt;Many people have tor working in Vista, so it&#39;s generally not Vista per se.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 38</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_38/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_38/"/>
+
+	<author><name>Dave Wavey (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:18Z</updated>
+	<published>2009-05-13T11:24:18Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I understand how the outgoing TOR connection works and is anonymous etc etc etc. What I would like some help understanding is how the return journey is anonymous.&lt;/p&gt;
+
+&lt;p&gt;Once the exit node has the response how does it get it back to the initial user in an anonymous way? The documentation i have read says that each node encrypts it with (presumably with its private key) and then sends it back along the same path. When it reaches the originating node they decrypt the lot and get the data out. I am sure there is something wrong in my undersatanding because anyone could decrypt the return data by churning through all the public keys for the known routers. Once someone has done this the last layer to be removed is the originator.&lt;/p&gt;
+
+&lt;p&gt;Any help would be much appreciated as this has stumped me and my friends for a while.&lt;/p&gt;
+
+&lt;p&gt;thanks for any help!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 39</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_39/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_39/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:19Z</updated>
+	<published>2009-05-14T11:24:19Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;It&#39;s a TCP connection, so the return path is the same as the forward path, through the same circuit.  It&#39;s highly unlikely anyone is going to decrypt the ephemeral keys before the circuit expires. &lt;/p&gt;
+
+&lt;p&gt;Reading through &lt;a href=&quot;https://www.torproject.org/documentation.html.en#DesignDoc&quot; title=&quot;https://www.torproject.org/documentation.html.en#DesignDoc&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/documentation.html.en#DesignDoc&lt;/a&gt; may better explain how this works.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 40</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_40/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_40/"/>
+
+	<author><name>Montiff (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:20Z</updated>
+	<published>2009-05-13T11:24:20Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hey guys I&#39;ve had tor working properly for a while.  Then recently I have got this error.&lt;/p&gt;
+
+&lt;p&gt;May 13 18:36:38.302 [Notice] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+May 13 18:36:38.302 [Notice] No current certificate known for authority ides; launching request.&lt;br /&gt;
+May 13 18:36:38.302 [Notice] No current certificate known for authority gabelmoo; launching request.&lt;/p&gt;
+
+&lt;p&gt;etc....&lt;/p&gt;
+
+&lt;p&gt;Any ideas on how to fix this??&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 41</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_41/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_41/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:21Z</updated>
+	<published>2009-05-19T11:24:21Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;downloaded tor-opera from &lt;a href=&quot;http://www.aplusproxy.com/opera.html&quot; title=&quot;http://www.aplusproxy.com/opera.html&quot; rel=&quot;nofollow&quot;&gt;http://www.aplusproxy.com/opera.html&lt;/a&gt;&lt;br /&gt;
+ into XP pro version 2002 service pack 2&lt;br /&gt;
+unzipped and clicked the &quot;run&quot; Batch file.&lt;/p&gt;
+
+&lt;p&gt;got this message: screen shot image at :&lt;br /&gt;
+&lt;a href=&quot;http://img38.imageshack.us/img38/8568/torerror.jpg&quot; title=&quot;http://img38.imageshack.us/img38/8568/torerror.jpg&quot; rel=&quot;nofollow&quot;&gt;http://img38.imageshack.us/img38/8568/torerror.jpg&lt;/a&gt;&lt;br /&gt;
+ repeated the dwnload and same thing.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 42</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_42/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_42/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:22Z</updated>
+	<published>2009-05-20T11:24:22Z</published>
+
+	<content type="html" xml:lang="en">
+	We know nothing about operaTor.  It&#39;s closed source, and no one has completed a security analysis of what it contains.  It may be Tor, it may be a modified Tor, it might be something else.  No one seems to know about it, so users beware.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 43</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_43/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_43/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:23Z</updated>
+	<published>2009-06-01T11:24:23Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hello,&lt;/p&gt;
+
+&lt;p&gt;To help to not use the nsa node, i block the rang with &quot;iplist&quot; for linux or PG2 for windows and create a list of banned exit node, so only a few time i am connected to there...&lt;/p&gt;
+
+&lt;p&gt;The last version 0.2.1.15 rc 1-1  help really to use exit with more different node it&#39;s appeare..&lt;/p&gt;
+
+&lt;p&gt;my best&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 44</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_44/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_44/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:24Z</updated>
+	<published>2009-06-02T11:24:24Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Yes using PG2(PeerGuardia 2) and creating a blocklist blocking the iprange 149.9.0.0-149.9.255.255 would stop tor from using the NSA nodes in that range(149.9.X.X) from becoming an entrynode, but there are ways to go around PG2 so you should also block that range in your firewall.&lt;/p&gt;
+
+&lt;p&gt;To block them from becoming middlenode or exitnode you have to block them in your torrc&lt;/p&gt;
+
+&lt;p&gt;If your using version 0.2.1.3A or later use IP&#39;s&lt;br /&gt;
+Excluenodes 149.9.0.0/16&lt;/p&gt;
+
+&lt;p&gt;If your using older 0.2.1.2A or earlier or the stable 0.2.0.34 series you have to use fingerprints of nicknames (nixnix,bettyboop....)&lt;br /&gt;
+Excludenodes nixnix,bettyboop, .........&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 45</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_45/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_45/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:25Z</updated>
+	<published>2009-06-02T11:24:25Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Thanks for your tip, that&#39;s why sometime it was able to connect to them with PG2, so i have write the command to block it...&lt;/p&gt;
+
+&lt;p&gt;Are Excluenodes 149.9.0.0/16 enough to block all rang from NSA? &lt;/p&gt;
+
+&lt;p&gt;I have another question, almost 20 node are blacklisted, need i accept it or just stay blocked?&lt;/p&gt;
+
+&lt;p&gt;In all case are enough other node and seem to be gouv ip, 66..... &lt;/p&gt;
+
+&lt;p&gt;I will be happy too when peoples know about the security of jondofox..&lt;/p&gt;
+
+&lt;p&gt;My best&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 46</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_46/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_46/"/>
+
+	<author><name>iwannahelpyou (torname) (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:26Z</updated>
+	<published>2009-06-02T11:24:26Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;im keen to be a volunteer but i monitored the bandwidth - theres nothing at all.&lt;br /&gt;
+i enabled relay traffic for the network, there no relays channeled to me.&lt;br /&gt;
+am i really being protected?i tracked my IP with the tor running but my IP is still the same always. should it change? are my packets being channeled throughout relays?&lt;/p&gt;
+
+&lt;p&gt;sorry if my question seemed obvious but i would like to know more.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 47</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_47/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_47/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:27Z</updated>
+	<published>2009-06-04T11:24:27Z</published>
+
+	<content type="html" xml:lang="en">
+	Are you seeing a log file entry that states your ORPort and/or DirPort are reachable from the Tor network?  If not, that&#39;s why your node isn&#39;t online.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 48</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_48/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_48/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:28Z</updated>
+	<published>2009-06-08T11:24:28Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I don&#39;t know a lot about computers so please have some patience with me. My problem is this: I start the tor browser bundle from my USB flash drive, everything works fine for a few seconds, then Vidalia shuts down. I can still use Tor and firefox, but I can&#39;t use the Vidalia start panel or change my IP anymore and so on. I can&#39;t even close tor when I&#39;m done. I&#39;m using a public computer if that matters. Is there a way to fix this?&lt;br /&gt;
+I have another question too: when I go to showmyip.com/torstatus, I get the message that I&#39;m not connected to the Tor network, but I have a new IP address. Is that something to worry about and if it is, what can I do about it?&lt;br /&gt;
+Any help would be very appreciated.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 49</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_49/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_49/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:29Z</updated>
+	<published>2009-06-08T11:24:29Z</published>
+
+	<content type="html" xml:lang="en">
+	I really want to enable java and flash while still using this great tool. is there a way around?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 50</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_50/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_50/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:30Z</updated>
+	<published>2009-09-04T11:24:30Z</published>
+
+	<content type="html" xml:lang="en">
+	hi, is it possible to get tor project for opera in debian ?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 51</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_51/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_51/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:31Z</updated>
+	<published>2009-09-04T11:24:31Z</published>
+
+	<content type="html" xml:lang="en">
+	You can install tor in debian, and then point opera socks5 at tor and see if that works.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 52</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_52/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_52/"/>
+
+	<author><name>Lilly (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:32Z</updated>
+	<published>2009-11-06T12:24:32Z</published>
+
+	<content type="html" xml:lang="en">
+	Sorry if this is a stupid request but I&#39;m new with computers and I need help. I downloaded the browser bundle and would now like to remove it. There&#39;s no uninstall right? The problem is my web browsing is so slow now. I followed the intstruction on the tor site and went to speedtest.net and it says I&#39;m in Russia when I&#39;m actually in the Philippines.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 53</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_53/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_53/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:33Z</updated>
+	<published>2010-05-29T11:24:33Z</published>
+
+	<content type="html" xml:lang="en">
+	pls what and how can i solve the problem I &#39;m expressing with tor browser it works today and fail tomorrow pls help me out thanks.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 54</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_54/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_54/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:34Z</updated>
+	<published>2010-06-07T11:24:34Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hey guys, Please what should I do? I just observe that Tor refuses to connect on my Windows 7, but when I use the same settings and configurations ofeither of Windows Vista or XP, it&#39;ll connect and browse. I later re-installed the Windows 7 and it worked just once and refuses to work again (with the same settings/configurations) Please what else could be wrong? What else should I do?&lt;br /&gt;
+Thanks in advance for your response and advices.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 55</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_55/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_55/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:35Z</updated>
+	<published>2010-06-23T11:24:35Z</published>
+
+	<content type="html" xml:lang="en">
+	hello,can i use only usa ip adress alone?and how
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 56</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_56/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_1_12_released/comment_56/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:24:36Z</updated>
+	<published>2010-06-23T11:24:36Z</published>
+
+	<content type="html" xml:lang="en">
+	See &lt;a href=&quot;https://www.torproject.org/faq#ChooseEntryExit&quot; title=&quot;https://www.torproject.org/faq#ChooseEntryExit&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/faq#ChooseEntryExit&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+
+</feed>

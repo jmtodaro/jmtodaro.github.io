@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged hidden_service_fixes</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/hidden_service_fixes/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Tor 0.2.0.35-stable released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/</link>
+
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/hidden_service_fixes</category>
+
+	<category>/tags/stable_release</category>
+
+
+	<pubDate>Thu, 25 Jun 2009 19:34:49 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:18Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor 0.2.0.35 fixes a big bug that was causing Tor relays with dynamic&lt;br /&gt;
+IP addresses to disappear from the network. It also fixes a rare crash&lt;br /&gt;
+bug on fast exit relays.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/easy-download&quot; title=&quot;https://www.torproject.org/easy-download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/easy-download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.0.35 - 2009-06-24&lt;br /&gt;
+&lt;strong&gt;Security fix:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Avoid crashing in the presence of certain malformed descriptors.&lt;br /&gt;
+      Found by lark, and by automated fuzzing.&lt;/li&gt;
+&lt;li&gt;Fix an edge case where a malicious exit relay could convince a&lt;br /&gt;
+      controller that the client&#39;s DNS question resolves to an internal IP&lt;br /&gt;
+      address. Bug found and fixed by &quot;optimist&quot;; bugfix on 0.1.2.8-beta.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Major bugfixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Finally fix the bug where dynamic-IP relays disappear when their&lt;br /&gt;
+      IP address changes: directory mirrors were mistakenly telling&lt;br /&gt;
+      them their old address if they asked via begin_dir, so they&lt;br /&gt;
+      never got an accurate answer about their new address, so they &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02035stable-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_0_35-stable_released/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Tor 0.2.1.16-rc Release Candidate now available</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_16-rc_Release_Candidate_now_available/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_16-rc_Release_Candidate_now_available/</link>
+
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/hidden_service_fixes</category>
+
+	<category>/tags/release_candidate</category>
+
+	<category>/tags/security_fixes</category>
+
+
+	<pubDate>Wed, 24 Jun 2009 09:32:45 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:29:10Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor 0.2.1.16-rc speeds up performance for fast exit relays, and fixes&lt;br /&gt;
+a bunch of minor bugs.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download&quot; title=&quot;https://www.torproject.org/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.16-rc - 2009-06-20&lt;br /&gt;
+&lt;strong&gt;Security fixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fix an edge case where a malicious exit relay could convince a&lt;br /&gt;
+      controller that the client&#39;s DNS question resolves to an internal IP&lt;br /&gt;
+      address. Bug found and fixed by &quot;optimist&quot;; bugfix on 0.1.2.8-beta.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Major performance improvements (on 0.2.0.x):&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Disable and refactor some debugging checks that forced a linear scan&lt;br /&gt;
+      over the whole server-side DNS cache. These accounted for over 50%&lt;br /&gt;
+      of CPU time on a relatively busy exit node&#39;s gprof profile. Found&lt;br /&gt;
+      by Jacob.&lt;/li&gt;
+&lt;li&gt;Disable some debugging checks that appeared in exit node profile&lt;br /&gt;
+      data.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Minor features:&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02116rc-release-candidate-now-available&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Update to the &quot;June 3 2009&quot; ip-to-country file.&lt;/li&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_16-rc_Release_Candidate_now_available/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

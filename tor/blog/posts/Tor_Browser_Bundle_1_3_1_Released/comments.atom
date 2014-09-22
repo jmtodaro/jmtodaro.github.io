@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Tor Browser Bundle 1.3.1 Released</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:49:14Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_1/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:40Z</updated>
+	<published>2010-01-24T12:48:40Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Thanks for having it out so soon after the Tor update.&lt;/p&gt;
+
+&lt;p&gt;Something strange I just found:&lt;/p&gt;
+
+&lt;p&gt;&quot;check.torproject.org&quot; brought me to the NON-SSL &quot;http://check.torproject.org&quot;&lt;/p&gt;
+
+&lt;p&gt;whereas in the past, entering the same always automatically brought me to the SSL &quot;https//check.torproject.org&quot;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_2/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:41Z</updated>
+	<published>2010-01-24T12:48:41Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I just upgraded to the latest Vidalia on OS X Snow Leopard and I can&#39;t connect to the network.  My message log looks like this:&lt;/p&gt;
+
+&lt;p&gt;Jan 24 13:55:35.495 [Notice] We&#39;re missing a certificate from authority with signing key B7A209B31ACDD633258D0F07715482BD04F88F4F: launching request.&lt;br /&gt;
+Jan 24 13:55:35.497 [Notice] We&#39;re missing a certificate from authority with signing key 665711AF821C459DC59A8491FAD1B9D7A7800ECF: launching request.&lt;br /&gt;
+Jan 24 13:55:35.507 [Notice] We&#39;re missing a certificate from authority with signing key 6584DF098CFC68ACBF5E551532C8A58674586820: launching request.&lt;br /&gt;
+Jan 24 14:05:45.555 [Notice] We&#39;re missing a certificate from authority with signing key B7A209B31ACDD633258D0F07715482BD04F88F4F: launching request.&lt;br /&gt;
+Jan 24 14:05:45.571 [Notice] We&#39;re missing a certificate from authority with signing key 665711AF821C459DC59A8491FAD1B9D7A7800ECF: launching request.&lt;br /&gt;
+Jan 24 14:05:45.571 [Notice] We&#39;re missing a certificate from authority with signing key 6584DF098CFC68ACBF5E551532C8A58674586820: launching request.&lt;br /&gt;
+Jan 24 14:05:45.922 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Jan 24 14:10:50.679 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Jan 24 14:15:55.708 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Jan 24 14:26:06.042 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Jan 24 14:36:15.740 [Notice] We&#39;re missing a certificate from authority with signing key B7A209B31ACDD633258D0F07715482BD04F88F4F: launching request.&lt;br /&gt;
+Jan 24 14:36:15.742 [Notice] We&#39;re missing a certificate from authority with signing key 665711AF821C459DC59A8491FAD1B9D7A7800ECF: launching request.&lt;br /&gt;
+Jan 24 14:36:15.765 [Notice] We&#39;re missing a certificate from authority with signing key 6584DF098CFC68ACBF5E551532C8A58674586820: launching request.&lt;br /&gt;
+Jan 24 14:36:16.185 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Jan 24 14:36:16.207 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (DONE; DONE; count 10; recommendation warn)&lt;br /&gt;
+Jan 24 14:51:00.307 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Jan 24 14:51:00.335 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (DONE; DONE; count 11; recommendation warn)&lt;br /&gt;
+Jan 24 14:51:44.793 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (Operation timed out; TIMEOUT; count 12; recommendation warn)&lt;br /&gt;
+Jan 24 14:52:32.235 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Jan 24 14:52:32.263 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (DONE; DONE; count 13; recommendation warn)&lt;br /&gt;
+Jan 24 14:57:37.432 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Jan 24 14:57:37.433 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (DONE; DONE; count 14; recommendation warn)&lt;br /&gt;
+Jan 24 15:07:47.306 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Jan 24 15:07:47.306 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (DONE; DONE; count 15; recommendation warn)&lt;br /&gt;
+Jan 24 15:37:15.168 [Notice] We&#39;re missing a certificate from authority with signing key B7A209B31ACDD633258D0F07715482BD04F88F4F: launching request.&lt;br /&gt;
+Jan 24 15:37:15.170 [Notice] We&#39;re missing a certificate from authority with signing key 665711AF821C459DC59A8491FAD1B9D7A7800ECF: launching request.&lt;br /&gt;
+Jan 24 15:37:15.170 [Notice] We&#39;re missing a certificate from authority with signing key 6584DF098CFC68ACBF5E551532C8A58674586820: launching request.&lt;br /&gt;
+Jan 24 15:37:15.596 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Jan 24 15:37:15.597 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (DONE; DONE; count 16; recommendation warn)&lt;br /&gt;
+Jan 24 15:39:30.781 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (Operation timed out; TIMEOUT; count 17; recommendation warn)&lt;br /&gt;
+Jan 24 15:50:28.659 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Jan 24 15:50:28.659 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (DONE; DONE; count 18; recommendation warn)&lt;br /&gt;
+Jan 24 15:50:28.758 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Jan 24 15:50:28.758 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (DONE; DONE; count 19; recommendation warn)&lt;br /&gt;
+Jan 24 15:51:29.765 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Jan 24 15:51:29.766 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (DONE; DONE; count 20; recommendation warn)&lt;br /&gt;
+Jan 24 15:56:34.766 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Jan 24 15:56:34.766 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (DONE; DONE; count 21; recommendation warn)&lt;br /&gt;
+Jan 24 16:06:44.712 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Jan 24 16:06:44.713 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (DONE; DONE; count 22; recommendation warn)&lt;br /&gt;
+Jan 24 16:38:15.660 [Notice] We&#39;re missing a certificate from authority with signing key B7A209B31ACDD633258D0F07715482BD04F88F4F: launching request.&lt;br /&gt;
+Jan 24 16:38:15.660 [Notice] We&#39;re missing a certificate from authority with signing key 665711AF821C459DC59A8491FAD1B9D7A7800ECF: launching request.&lt;br /&gt;
+Jan 24 16:38:15.661 [Notice] We&#39;re missing a certificate from authority with signing key 6584DF098CFC68ACBF5E551532C8A58674586820: launching request.&lt;br /&gt;
+Jan 24 16:38:15.755 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Jan 24 16:38:15.756 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (DONE; DONE; count 23; recommendation warn)&lt;br /&gt;
+Jan 24 16:38:29.374 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (Operation timed out; TIMEOUT; count 24; recommendation warn)&lt;br /&gt;
+Jan 24 16:50:27.628 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Jan 24 16:50:27.630 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (DONE; DONE; count 25; recommendation warn)&lt;br /&gt;
+Jan 24 16:50:28.011 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Jan 24 16:50:28.013 [Warning] Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server. (DONE; DONE; count 26; recommendation warn)&lt;/p&gt;
+
+&lt;p&gt;Is this a known problem or do I have something misconfigured?&lt;/p&gt;
+
+&lt;p&gt;Thanks.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_3/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:42Z</updated>
+	<published>2010-01-24T12:48:42Z</published>
+
+	<content type="html" xml:lang="en">
+	Did some research, apparently apples security patch patched out OpenSSL to not allow all renegotiation afaik.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_4/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:43Z</updated>
+	<published>2010-01-25T12:48:43Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Any fix for this? I&#39;m running 10.5.8 on a PPC platform and I think the update has also affected my ability to connect to the TOR network:&lt;/p&gt;
+
+&lt;p&gt;Jan 25 13:09:38.217 [Notice] We&#39;re missing a certificate from authority with signing key 6584DF098CFC68ACBF5E551532C8A58674586820: launching request.&lt;br /&gt;
+Jan 25 13:09:38.953 [Warning] TLS error: unexpected close while renegotiating&lt;/p&gt;
+
+&lt;p&gt;The program just hangs on the message &quot;Establishing an encrypted directory connection&quot; until it finally times out and fails.&lt;/p&gt;
+
+&lt;p&gt;I am running Vidalia 0.2.6, Tor 0.2.1.22 and Qt 4.3.5&lt;/p&gt;
+
+&lt;p&gt;Thanks!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_5/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:44Z</updated>
+	<published>2010-02-01T12:48:44Z</published>
+
+	<content type="html" xml:lang="en">
+	Same issue here. I&#39;m on the latest patched snow leopard OSX using Vidalia etc etc.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_6/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:45Z</updated>
+	<published>2010-01-24T12:48:45Z</published>
+
+	<content type="html" xml:lang="en">
+	Sorry about the formatting, it looked better in the comment box.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_7/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:46Z</updated>
+	<published>2010-01-24T12:48:46Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I am using the new TBB 1.3.1 and just got an Open DNS redirect and http://www.opendns.com/welcome/intro/ says &lt;/p&gt;
+
+&lt;p&gt;&quot;Your network is using open dns&quot;&lt;/p&gt;
+
+&lt;p&gt;I refreshed several times, after clicking &#39;new identity&#39; and it was the same.&lt;/p&gt;
+
+&lt;p&gt;Anyone else have this? Are a number of nodes now using Open DNS?&lt;br /&gt;
+_________&lt;br /&gt;
+There have been a number of other comments saying the formatting here is not working.&lt;/p&gt;
+
+&lt;p&gt;(This post was NOT written as one paragraph...)&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_8/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:47Z</updated>
+	<published>2010-01-25T12:48:47Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;m trying to get the browser bundle, but when I check the asc file I&#39;m constantly getting BAD result from Andrew&#39;s key&lt;/p&gt;
+
+&lt;p&gt;(I&#39;ve already tried 4 diffrent mirror&#39;s)&lt;/p&gt;
+
+&lt;p&gt;Is this common? &lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_9/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:48Z</updated>
+	<published>2010-01-25T12:48:48Z</published>
+
+	<content type="html" xml:lang="en">
+	 Toggling TorButton to disable Tor resulted in the &lt;b&gt;enabling&lt;/b&gt; of all automatic updates in Firefox. Toggling again to re-enable Tor did &lt;b&gt;not&lt;/b&gt; change this setting back to the default of having automatic updates &lt;b&gt;&lt;i&gt;dis&lt;/i&gt;abled&lt;/b&gt;. 
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_10/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:49Z</updated>
+	<published>2010-01-25T12:48:49Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Regarding verifying signatures, the TBB downloads page links to a page with information on verifying signatures but what about the (undoubtedly many) TBB users and potential users with no familiarity or understanding of PGP/GPG, keyrings and the like?  Wouldn’t it only make sense, therefore, to link to some introduction to these technologies? &lt;/p&gt;
+
+&lt;p&gt;Thanks for a great program!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_11/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:50Z</updated>
+	<published>2010-01-29T12:48:50Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;may be add hashes md5, sha-1... ?&lt;/p&gt;
+
+&lt;p&gt;And I agree that a small introduction to openPGP or gnuPG would be very useful with a few links to this kind of programs one can use.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 12</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_12/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_12/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:51Z</updated>
+	<published>2010-01-25T12:48:51Z</published>
+
+	<content type="html" xml:lang="en">
+	Also, barring DNS poisoning and if one was careful to check the download URL, how likely is it for a TBB download to be rogue?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 13</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_13/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_13/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:52Z</updated>
+	<published>2010-01-26T12:48:52Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Everything was fine till yesterday. Now I keep getting:&lt;br /&gt;
+Jan 26 12:36:19.710 [Notice] We&#39;re missing a certificate from authority with signing key 665711AF821C459DC59A8491FAD1B9D7A7800ECF: launching request.&lt;br /&gt;
+Jan 26 12:36:19.711 [Notice] We&#39;re missing a certificate from authority with signing key 6584DF098CFC68ACBF5E551532C8A58674586820: launching request.&lt;br /&gt;
+Jan 26 12:41:24.818 [Notice] We&#39;re missing a certificate from authority with signing key 665711AF821C459DC59A8491FAD1B9D7A7800ECF: launching request.&lt;br /&gt;
+Jan 26 12:41:24.820 [Notice] We&#39;re missing a certificate from authority with signing key 6584DF098CFC68ACBF5E551532C8A58674586820: launching request.&lt;br /&gt;
+Jan 26 12:41:25.081 [Warning] TLS error: unexpected close while renegotiating&lt;/p&gt;
+
+&lt;p&gt;What to do? &lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 14</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_14/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_14/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:53Z</updated>
+	<published>2010-01-26T12:48:53Z</published>
+
+	<content type="html" xml:lang="en">
+	I am having the same problem with &quot;missing a certificate from authority.&quot;  We need a fix for this!
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 15</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_15/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_15/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:54Z</updated>
+	<published>2010-01-26T12:48:54Z</published>
+
+	<content type="html" xml:lang="en">
+	Experiencing the same problem.  Awaiting additional information / fix.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 16</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_16/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_16/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:55Z</updated>
+	<published>2010-01-26T12:48:55Z</published>
+
+	<content type="html" xml:lang="en">
+	ditto. This is annoying. &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/../../smileys/sad.png&quot; alt=&quot;:(&quot; /&gt; Please help!
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 17</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_17/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_17/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:56Z</updated>
+	<published>2010-02-28T12:48:56Z</published>
+
+	<content type="html" xml:lang="en">
+	dont know
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 18</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_18/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_18/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:57Z</updated>
+	<published>2010-01-28T12:48:57Z</published>
+
+	<content type="html" xml:lang="en">
+	I do not think that the &quot;missing a certificate for authority&quot; error is directly related to the newest version - I have been getting this off and on with TBB 1.3.0 since I upgraded to that version. It comes and goes...
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 19</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_19/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_19/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:58Z</updated>
+	<published>2010-01-30T12:48:58Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Is anyone else getting Open DNS placeholders/ re-directs while using TBB?&lt;/p&gt;
+
+&lt;p&gt;Or typos like gogle.com automatically re-directing to google.com ?&lt;/p&gt;
+
+&lt;p&gt;(All other indications are that I am using Tor: Tor Button enabled, numerous IP checks)&lt;/p&gt;
+
+&lt;p&gt;NOTE: If this post appears as a single paragraph, then the formatting problem that has been mentioned in several other posts has not been solved. It would be much appreciated if it could at least be _acknowledged_.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 20</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_20/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_20/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:59Z</updated>
+	<published>2010-01-31T12:48:59Z</published>
+
+	<content type="html" xml:lang="en">
+	The problem is a mis-configured exit node, not TBB.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 21</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_21/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_21/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:00Z</updated>
+	<published>2010-01-31T12:49:00Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&quot;Is anyone else getting Open DNS placeholders/ re-directs while using TBB?&quot;&lt;/p&gt;
+
+&lt;p&gt;No, I get a proxy error: &quot;504 Connect to www.blablablacksheep.com:80 failed: SOCKS error: host unreachable&quot;&lt;/p&gt;
+
+&lt;p&gt;Do you have 208.67.222.222 (OpenDNS) as one of your configured DNS servers under non-Tor operations?&lt;/p&gt;
+
+&lt;p&gt;&quot;Or typos like gogle.com automatically re-directing to google.com ?&quot;&lt;/p&gt;
+
+&lt;p&gt;&quot;http:www.gogle.com&quot; *does* redirect to google.com. I imagine that Google has bought up a lot of the common typos for their domain. Once you own those domain names, it is trivial to point them to wherever you want - I do this myself.&lt;/p&gt;
+
+&lt;p&gt;If you are running Windows, it might be worth checking what is in your HOSTS and LMHOSTS files (in root\WINDOWS\System32\drivers\etc\ of all the unsane places), as those resolution entries trump all other settings. For example, in HOSTS I have a list of entries (ironically originally obtained from OpenDNS) that resolve domains that I don&#39;t like (for a variety of reasons) to 127.0.0.1 I have heard of some malware writing entries to these files, which can produce unexpected results.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 22</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_22/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_22/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:01Z</updated>
+	<published>2010-01-31T12:49:01Z</published>
+
+	<content type="html" xml:lang="en">
+	The problem is a mis-configured exit node, not TBB.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 23</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_23/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_23/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:02Z</updated>
+	<published>2010-02-03T12:49:02Z</published>
+
+	<content type="html" xml:lang="en">
+	Wouldn&#39;t it have had to have been _several_ exit nodes? (&#39;Live preview&#39; continued telling me I was using Open DNS, despite numerous changes of Tor ID and page refreshes)
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 24</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_24/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_24/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:03Z</updated>
+	<published>2010-02-03T12:49:03Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&quot;Do you have 208.67.222.222 (OpenDNS) as one of your configured DNS servers under non-Tor operations?&quot;&lt;/p&gt;
+
+&lt;p&gt;For _some_ of my dial-up networking connections (WIN 2K), yes.&lt;br /&gt;
+&lt;br /&gt;
+However,  whereas _previously_ even when I used those connections, TBB seemed to bypass Open DNS, what I described above happened _even when using connections that were configured to use &#39;server assigned DNS&#39; from my ISP (and NOT Open DNS).&lt;br /&gt;
+&lt;br /&gt;
+It&#39;s been a few days since I last tried TBB.&lt;br /&gt;
+--------&lt;br /&gt;
+(con&#39;td.- making multiple posts of broken formatting)&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 25</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_25/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_25/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:04Z</updated>
+	<published>2010-02-03T12:49:04Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&quot;&quot;http:www.gogle.com&quot; *does* redirect to google.com. I imagine that Google has bought up a lot of the common typos for their domain.&quot;&lt;/p&gt;
+
+&lt;p&gt;I hadn&#39;t realized this. Thanks.&lt;/p&gt;
+
+&lt;p&gt;............&lt;/p&gt;
+
+&lt;p&gt;Another thing I&#39;ve since learned is that the page at http://www.opendns.com/welcome/intro/ that says,&lt;/p&gt;
+
+&lt;p&gt;&quot;Your network is using Open DNS&quot; is actually _static_ and not of an indication of whether one is using OpenDNS or not.&lt;/p&gt;
+
+&lt;p&gt;(But the question remains how I got directed to that page in the first place)&lt;/p&gt;
+
+&lt;p&gt;Nonetheless, the &#39;live preview&#39; at&lt;br /&gt;
+http://www.opendns.com/about/share/&lt;br /&gt;
+_is_ supposed to be a live check that tells whether one is using Open DNS or not.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 26</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_26/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_26/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:05Z</updated>
+	<published>2010-02-03T12:49:05Z</published>
+
+	<content type="html" xml:lang="en">
+	AND, as I had noted, I had also gotten actual Open DNS placeholders.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 27</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_27/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_27/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:06Z</updated>
+	<published>2010-02-03T12:49:06Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Re: HOSTS and LMHOSTS:&lt;/p&gt;
+
+&lt;p&gt;1.) I had been checking the HOSTS (but not the LMHOSTS) file regularly (opening in NotePad) and had not noticed any sign of tampering.&lt;/p&gt;
+
+&lt;p&gt;###NEW PARAGRAPH###&lt;/p&gt;
+
+&lt;p&gt;2.) When I tried to open the LMHOSTS file, after reading your reply, something very strange happened. It automatically started and tried to open in Sandboxie and gave me some error message.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 28</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_28/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_28/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:07Z</updated>
+	<published>2010-02-03T12:49:07Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;After all I described above, I had the following bizarre experience. Wonder how related they could be.&lt;/p&gt;
+
+&lt;p&gt;Might the same mysterious exit nodes that appeared to be using Open DNS , have been responsible for what I describe below by way of some mysterious attack?&lt;/p&gt;
+
+&lt;p&gt;###NEW PARAGRAPH###&lt;br /&gt;
+Despite _appearing_ as if I had made (and kept) successful dial-up connections, I would be unable to connect to _any_ site- both in regular Firefox Portable (NOT TBB) as well as Internet Explorer. (No Tor or proxy configuration of any type). Tried several different access numbers as well as both with _as well_ as without Open DNS configured. Same thing with all of them. Completely dead connection.&lt;/p&gt;
+
+&lt;p&gt;###NEW PARAGRAPH###&lt;br /&gt;
+But that&#39;s not the half of it; were it not for what followed, I would have figured it was probably just corrupted DUN.&lt;/p&gt;
+
+&lt;p&gt;###NEW PARAGRAPH###&lt;br /&gt;
+I restored to a system image I had made well before this problem had started and still got the same completely &#39;dead connections&#39;!&lt;br /&gt;
+(I did not notice any other unusual behavior)&lt;/p&gt;
+
+&lt;p&gt;###NEW PARAGRAPH###&lt;br /&gt;
+Must have been my ISP, right? That&#39;s what I thought too but then I booted into a Linux live CD and, lo and behold, was able to connect just fine- same ISP, modem, etc.!&lt;/p&gt;
+
+&lt;p&gt;(I&#39;m actually using Simply MEPIS to post right now. antiX MEPIS seemed to work fine as well.)&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 29</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_29/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_29/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:08Z</updated>
+	<published>2010-02-03T12:49:08Z</published>
+
+	<content type="html" xml:lang="en">
+	I must admit that I cannot think of any single issue that would account for all of the symptoms that you are reporting (of course that assumes that Murphy is napping and it is a single issue). Having you considered running RootKitRevealer (Sysinternals) or a similar utility? In theory a root kit should also affect *nix, but I&#39;m not certain the symptoms would be identical. What about HijackThis! (TrendMicro) to examine suspicious Windows registry entries? 
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 30</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_30/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_30/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:09Z</updated>
+	<published>2010-02-24T12:49:09Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&quot;In theory a root kit should also affect *nix,&quot;&lt;/p&gt;
+
+&lt;p&gt;Wouldn&#39;t it have to be a _hardware_ rootkit (such as the BIOS exploit that was discovered last year) to affect the performance of a *LIVE* CD?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 31</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_31/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_31/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:10Z</updated>
+	<published>2010-02-01T12:49:10Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Any chance someone works in Flash support in the TBB? I think there are free alternatives that would give us moderate support of Flash standards while playing on the free-software side. Gnash or SWFdec, readily bundled with Tor Browser - wouldn&#39;t that be great? Or is this technically impossible?&lt;/p&gt;
+
+&lt;p&gt;(BTW: I do not advocate inclusion of the original Adobe Player, it&#39;s a privacy nightmare!)&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 32</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_32/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_32/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:11Z</updated>
+	<published>2010-02-03T12:49:11Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&quot;No, I get a proxy error: &quot;504 Connect to www.blablablacksheep.com:80 failed: SOCKS error: host unreachable&quot;&quot;&lt;br /&gt;
+&lt;br&gt;I&#39;ve gotten those errors too sometimes, even before the strange Open DNS behavior I described. When the site was valid (and up), it would usually load after no more than a few retrys. &lt;br /&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 33</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_33/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_33/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:12Z</updated>
+	<published>2010-02-05T12:49:12Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Same problem here on 10.6.2&lt;/p&gt;
+
+&lt;p&gt;Feb 05 13:56:05.162 [Notice] Bootstrapped 10%: Finishing handshake with directory server.&lt;br /&gt;
+Feb 05 13:56:05.377 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Feb 05 13:56:05.378 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+Feb 05 13:56:05.448 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Feb 05 13:56:05.771 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Feb 05 13:57:06.110 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+Feb 05 13:58:07.595 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+Feb 05 14:02:11.268 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+Feb 05 14:02:11.652 [Warning] TLS error: unexpected close while renegotiating&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 34</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_34/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_34/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:13Z</updated>
+	<published>2010-02-09T12:49:13Z</published>
+
+	<content type="html" xml:lang="en">
+	Not sure where to put this so putting it here.  Is is possible that tor screws up automatic updates on windows vista?  I had to reinstall my windows recently becuase it would no longer update.  The only reason I could think of was tor.  Is this possible.  I have changed to windows seven so hopefully this would take care of the problem...thanks!
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 35</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_35/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_1_3_1_Released/comment_35/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:49:14Z</updated>
+	<published>2010-02-11T12:49:14Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;GFW is too powerful.&lt;br /&gt;
+tor can&#39;t conact.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+
+</feed>

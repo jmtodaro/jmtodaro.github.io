@@ -1,0 +1,2936 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tor 0.2.1.20 Released</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_1_20_Released&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Tor 0.2.1.20 Released</a>
+
+</span>
+
+
+<div id="content">
+<p>Tor 0.2.1.20 fixes a crash bug when you're accessing many hidden services<br />
+at once, prepares for more performance improvements, and fixes a bunch<br />
+of smaller bugs.</p>
+
+<p>The Windows and OS X bundles also include a more recent Vidalia, and<br />
+switch from Privoxy to Polipo.</p>
+
+<p>The OS X installers are now drag and drop. It's best to un-install<br />
+Tor/Vidalia and then install this new bundle, rather than upgrade. If<br />
+you want to upgrade, you'll need to update the paths for Tor and Polipo<br />
+in the Vidalia Settings window.</p>
+
+<p><a href="https://www.torproject.org/easy-download" title="https://www.torproject.org/easy-download" rel="nofollow">https://www.torproject.org/easy-download</a></p>
+
+<p>Changes in version 0.2.1.20 - 2009-10-15<br />
+  o Major bugfixes:</p>
+
+<p>    - Send circuit or stream sendme cells when our window has decreased<br />
+      by 100 cells, not when it has decreased by 101 cells. Bug uncovered<br />
+      by Karsten when testing the "reduce circuit window" performance<br />
+      patch. Bugfix on the 54th commit on Tor -- from July 2002,<br />
+      before the release of Tor 0.0.0. This is the new winner of the <span class="read-more"><a href="http://blog.torproject.org/blog/tor-02120-released"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/bugfixes/" rel="tag">bugfixes</a>
+
+<a href="../../tags/bundle_upgrades/" rel="tag">bundle upgrades</a>
+
+<a href="../../tags/performance_enhancements/" rel="tag">performance enhancements</a>
+
+<a href="../../tags/vidalia_updates/" rel="tag">vidalia updates</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-4769789a3e29a5ede8f67539362331dc">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>Hello guys,</p>
+
+<p>I am really happy that Tor 0.2.1.20 are released as stable, now it will interesting to see the  new performance of the network since the new "circuit windows" are implemented <img src="../../smileys/smile.png" alt=":)" /></p>
+
+<p>I recommend to everyone to upgrade your client ...</p>
+
+<p>Well done Torproject :P</p>
+
+<p>Best Regards</p>
+
+<p>SwissTorExit</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FSwissTorExit%20%28not%20verified%29&amp;do=goto">SwissTorExit (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 13 Nov 2009 06:41:05 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fb614d4fbe4e33efd0c64c6e20ee7bd8">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+FAIL. Polipo does not allow downloads of files bigger than 30 megabytes. Back to the drawing board.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 13 Nov 2009 06:41:06 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8dd4351fef81761179607f076ff797de">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+I just downloaded a 4 GB DVD through polipo.  perhaps your circuit dropped.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 15 Nov 2009 06:41:07 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b05be61fcbc84d4b902e87bd73dc6ece">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+Will the Tor Browser Bundles be updated as well?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FSoulmech%20%28not%20verified%29&amp;do=goto">Soulmech (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 13 Nov 2009 06:41:08 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e20554185e262feab7e252ba8cafda8d">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>I liked Privoxy. The log window was helpful.</p>
+
+<p>Your captcha here is ridiculous...</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 13 Nov 2009 06:41:09 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-87b53c374c834a79e3bcf8147b40ca0a">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+yeah, the captcha is ridiculous, my bot can't parse it to spam the blog so I can get paid and not eat three week old rice.  please drop the captcha
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 15 Nov 2009 06:41:10 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bd1fb2df76813fe73320446bcc4271c5">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p>Yeah Privoxy rocks!! Simple conf, for better anonymity:<br />
+{ \<br />
++change-x-forwarded-for{block} \<br />
++client-header-filter{hide-tor-exit-notation} \<br />
++crunch-if-none-match \<br />
++hide-if-modified-since{-60} \<br />
++hide-from-header{block} \<br />
++hide-referrer{conditional-block} \<br />
++hide-user-agent{Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.5) Gecko/20091102 Firefox/3.5.5} \<br />
++limit-connect{1-} \<br />
++overwrite-last-modified{randomize} \<br />
++set-image-blocker{pattern} \<br />
+}<br />
+/</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 13 Nov 2009 06:41:11 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-93ba5ad5b1bbea4790e4821ccd72b8df">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+I had to uninstall polwhatever and go back to privoxy from the previous package. I wasted an hour on it. Changing two ports in it configuration renders it a dead duck. It listens on them but doesn't forward to tor. Maybe the ports are hardcoded in the binary? I disabled firewall, ran Wireshark, nothing going on.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FRon%20%28not%20verified%29&amp;do=goto">Ron (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 13 Nov 2009 06:41:12 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-dc7b9db6a5d117d94a6d18dd3908b9b6">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+Privoxy main configuration sample -&gt; <a href="http://textsave.de/?p=22574" title="http://textsave.de/?p=22574" rel="nofollow">http://textsave.de/?p=22574</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 13 Nov 2009 06:41:13 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d6497fb32258d2e9359978155f189495">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+<p>hello,</p>
+
+<p>About polipo, i have the same problem, if i load a few pages in same time, it hang on or really slow.. </p>
+
+<p>From privoxy 3.0.13 , i never have performance problem, no more timeout or like  early, no more message thatŝ it can't open a page.<br />
+I don't see any advantage with polipo actually. Anyway all must free to use what there like <img src="../../smileys/smile.png" alt=":)" /></p>
+
+<p>Actually i don't like the idea of polipo as preferred proxy for Tor since privoxy are more quick and don't do problem..</p>
+
+<p>It will interesting  to really compare both product but only from recent version and see if polipo are really better. All my tests put privoxy up the list <img src="../../smileys/smile4.png" alt=";)" /></p>
+
+<p>Best regards</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FSwissTorExit%20%28not%20verified%29&amp;do=goto">SwissTorExit (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 14 Nov 2009 06:41:14 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-db35c095ea832fb35c5e99d1becee234">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+This is CRAP. It is made of AiDz and FAIL.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 14 Nov 2009 06:41:15 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a84cf6d4f8789620d4a267862fb3d4c0">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+<p>The reason why Privoxy was used wasn't anonymity?<br />
+Developers please give a statetment why it is save not to use Privoxy any more.<br />
+(Or add Privoxy back again)</p>
+
+<p>If it's just performance what you want, simply don't use Tor! <img src="../../smileys/smile4.png" alt=";-)" /></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 14 Nov 2009 06:41:16 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-757ad0b84107f86eecf49678ca20800d">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+<p>privoxy and polipo have nothing to do with anonymity, merely work arounds to broken firefox socks layer,http://archives.seul.org/or/talk/Aug-2009/msg00188.html</p>
+
+<p>Andrew has stated at least THREE TIMES that if firefox socks wasn't broken, tor wouldn't ship polipo or privoxy.  firefox memory cache works just fine, including polipo and privoxy are KLUDGES to FIREFOX'S CRAPPY CODE.</p>
+
+<p>maybe chrome is better, or maybe chrome is laden with google spyware</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 15 Nov 2009 06:41:17 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-02418af8a4521bc9e1d3ac15b7a9d03c">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+Good to see that open source is just like closed source.  Bugs as old as time are left in with nobody to fix them.  lol...  Although, I guess those with some programming skillz should send in a patch because Mozilla sure as hell ain't gonna fix it.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 19 Nov 2009 06:41:18 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d39ca10cc567ca66094d7bbe23de6857">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+Some people have submitted patches over the years. Mozilla hasn't included them or accepted the patches for various reasons.  If we start to compile our own firefox, then we'll include the socks layer patches.  However, maintaining our own version of firefox isn't a task we can take on right now.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 19 Nov 2009 06:41:19 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-77e233454eec470a0192410221d7b0f0">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+Well, that blows.  Somebody is fixing your buggy software for free and they reject the offer?  Unless the code sucks, I see no reason why they would do this.  Better yet, if they don't like the submitted fixes, why don't they just fix it themselves?  Sends a bad message that they don't care about security.  Well, I kinda figure that since they allowed some addons to install without user intervention...
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 20 Nov 2009 06:41:20 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-564b5cb9566c922f4293f9b79451a36a">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+<p>How about an option to do away with the "basic" tab in the new Vidalia?</p>
+
+<p>I'm getting multiple time errors such as this.</p>
+
+<p>"Your Computer's Clock is Potentially Incorrect - Tor has determined that your computer's clock may be set to 1865 seconds in the past compared to the source "DIRSERV:81.169.183.122:9001".</p>
+
+<p>I update with pool.ntp.org so I think it's DIRSERV that has the problem, not me.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 14 Nov 2009 06:41:21 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9551bcf500ce5539103dc37e7bcacaa2">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+I have the exact same problem and i cant find any solutions so far
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 03 Jan 2010 06:41:22 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a8b43faa89cc2a3b71a1e53e6a866b90">
+
+<div class="comment-subject">
+
+Comment 19
+
+</div>
+
+<div class="inlinecontent">
+If your computer is synced to internet time servers, then the dir server is wrong.  it happens.  feel free to ignore the warnings.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 04 Jan 2010 06:41:23 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1695c85f1eaa8181397e06a82b0e7afb">
+
+<div class="comment-subject">
+
+Comment 20
+
+</div>
+
+<div class="inlinecontent">
+<p>Whatever you have done to TOR you have broken it.  I installed the new version with Polipo and let it run for several hours and it never connected to TOR.  I replaced the cache files with the ones from my old installation and it finally connected.  But I could not reach any hidden services other than the core.onion.  Half the time it could not find an exit node.  I uninstalled and reinstalled the older version with Privoxy and it connected with no problem</p>
+
+<p>Ever since the release, even the older version of TOR has problems finding hidden services, and exit nodes.  Plus it is slow to the point of useless now. My guess is that it's because you moved the directory/rendezvous servers, but I'm not a programmer so that's just a guess.</p>
+
+<p>I realize that it's free, but some of us have come to depend on it, and now are in a bind because it doesn't work any more.</p>
+
+<p>I've used TOR for many years now, and for the first time I'm very disappointed in it.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FStrider%20%28not%20verified%29&amp;do=goto">Strider (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 15 Nov 2009 06:41:24 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a6d752edafcce149eb86629041b5982d">
+
+<div class="comment-subject">
+
+Comment 21
+
+</div>
+
+<div class="inlinecontent">
+<p>perhaps you missed "It's best to un-install<br />
+Tor/Vidalia and then install this new bundle, rather than upgrade. If<br />
+you want to upgrade, you'll need to update the paths for Tor and Polipo<br />
+in the Vidalia Settings window."</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 15 Nov 2009 06:41:25 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2879380f1cc8d23c53ae881b04b31fee">
+
+<div class="comment-subject">
+
+Comment 22
+
+</div>
+
+<div class="inlinecontent">
+<p>We make Tor.  I don't know what is TOR. Our testing of the network from various clients shows Tor is getting faster with each release of 0.2.1.x and 0.2.2.x-alpha.  Perhaps you had a poor circuit.</p>
+
+<p>And for the record, I do 99.9% of my internet access through Tor, so I get to experience anything going wrong firsthand.</p>
+
+<p>If you disable the proxy, and simply went through browser to Tor directly, do you still have the same problems?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 17 Nov 2009 06:41:26 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4e0b16a8aadbdb045e714069f6c5a1db">
+
+<div class="comment-subject">
+
+Comment 23
+
+</div>
+
+<div class="inlinecontent">
+<p>I have the exact same issue. I've tried it on 2 Mac computers, one running 10.4 and one 10.5. I drop the package in after doing a full uninstall (even deleted .tor from my home folder), and I get absolutely nothing going on.</p>
+
+<p>Also, the Tor Firefox plugin doesn't seem to know about polipo's new port, which I guess has changed to 8123?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 13 Dec 2009 06:41:27 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-77bec5b7dcd19485afc0f9dc959ae450">
+
+<div class="comment-subject">
+
+Comment 24
+
+</div>
+
+<div class="inlinecontent">
+<p>The issue where our computers time may be off is shown to be known with  the program's auto announcement of it. I have never found my computer's time to be off so what does the problem tell the layman to do? </p>
+
+<p>What do I do and when does the announced possible tor will not work happen?</p>
+
+<p>Thanks for what you do.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Flayman%20%28not%20verified%29&amp;do=goto">layman (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 15 Nov 2009 06:41:28 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d637d683a6b47c972242927aca2c582b">
+
+<div class="comment-subject">
+
+Comment 25
+
+</div>
+
+<div class="inlinecontent">
+If your computer's time is correct, it's possible one of the relays has incorrect time and is causing the error to show up.  If you know your time is correct, ignore the warning.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 17 Nov 2009 06:41:29 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ec8f5bdc24f79ffd9708add65876f2db">
+
+<div class="comment-subject">
+
+Comment 26
+
+</div>
+
+<div class="inlinecontent">
+privoxy was better
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FDoor%20Handles%20%28not%20verified%29&amp;do=goto">Door Handles (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 16 Nov 2009 06:41:30 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bd336f29bcd75652e624f798760c05ce">
+
+<div class="comment-subject">
+
+Comment 27
+
+</div>
+
+<div class="inlinecontent">
+<p>Please define better.</p>
+
+<p>privoxy and polipo serve two different purposes.  As someone else commented, if firefox socks layer worked correctly, we wouldn't need a proxy at all.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 17 Nov 2009 06:41:31 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5a9b2d980a4c24cb32344a4875a8d876">
+
+<div class="comment-subject">
+
+Comment 28
+
+</div>
+
+<div class="inlinecontent">
+No portable update?  Download page links to the old version.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 17 Nov 2009 06:41:32 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1fedc3fe3a3b0feb831bc6f8449efe22">
+
+<div class="comment-subject">
+
+Comment 29
+
+</div>
+
+<div class="inlinecontent">
+still testing all of the changes that are going into 1.2.10, including openssl 0.9.8l
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 17 Nov 2009 06:41:33 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-43c2bd5c7b9ae1282ddc67ed8207df79">
+
+<div class="comment-subject">
+
+Comment 30
+
+</div>
+
+<div class="inlinecontent">
+Yet another download stalled out after 30 or 40 megs. HOUSTON WE HAVE FAIL!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 17 Nov 2009 06:41:34 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-673b6960f19756d2ad961ced8844f5ac">
+
+<div class="comment-subject">
+
+Comment 31
+
+</div>
+
+<div class="inlinecontent">
+<p>Polipo will stall after 32MB on a http download.<br />
+If your using SSL or torrents or some other protocol then polipo is just relaying the connection and not really doing any processing on it like it does with http so is unaffected.</p>
+
+<p>The bug is detailed here<br />
+<a href="https://bugs.torproject.org/flyspray/index.php?do=details&amp;id=1149" title="https://bugs.torproject.org/flyspray/index.php?do=details&amp;id=1149" rel="nofollow">https://bugs.torproject.org/flyspray/index.php?do=details&amp;id=1149</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 17 Nov 2009 06:41:35 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-93d5dff06cb96c42dd1c56662d536efe">
+
+<div class="comment-subject">
+
+Comment 32
+
+</div>
+
+<div class="inlinecontent">
+Thanks for filing an actual, useful bug report.  I've poked the polipo maintainer for his thoughts.  Thanks!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 19 Nov 2009 06:41:36 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-be67d4e76c68fc5f3512a3712f8d81d9">
+
+<div class="comment-subject">
+
+Comment 33
+
+</div>
+
+<div class="inlinecontent">
+<p>I've installed 0.2.1.20 cleanly on a brand new laptop.<br />
+What bothers me is kind of strange behavior which I never experienced with the earlier versions.<br />
+All the routs start with only 2 nodes. When you changed route, the nodes stayed the same.<br />
+If I excluded these nodes and re-started Tor, the same picture could be observed with other two: routes changed but the entry guards are stay the same.<br />
+Somehow, if I wiped out Tor cache (C:\Documents and Settings\%username%\Application Data\Tor\ or C:\Users\%username%\AppData\Roaming\Tor\), it's reinitialized normally.<br />
+What is it? Why 0.2.1.20 works such differently than previous version?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 20 Nov 2009 06:41:37 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7f1350b6049baed95d47487ae8350115">
+
+<div class="comment-subject">
+
+Comment 34
+
+</div>
+
+<div class="inlinecontent">
+<p>I thought the new Tor bundle was broken since I could no longer connect after installing it. It turned out that the problem were the bridges. I had to many bridges (7 out of 10 total) that were unreachable. After I removed the unreachable bridges, Tor worked again.<br />
+So, before you add a bridge, better do a ping before.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 20 Nov 2009 06:41:38 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-138807b894794ae502812678c21a984f">
+
+<div class="comment-subject">
+
+Comment 35
+
+</div>
+
+<div class="inlinecontent">
+<p>Hello,</p>
+
+<p>I installed the latest stable Vidalia bundle on mac os 10.6.2,<br />
+Tor starts but Torbutton's test fails.</p>
+
+<p>polipo is listening on port 8123, so i did replace 8118 by 8123 in Torbutton prefs, to no avail. Does it ring a bell ?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 24 Nov 2009 06:41:39 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-cf541fddd9e0489574fe5655605de5f8">
+
+<div class="comment-subject">
+
+Comment 36
+
+</div>
+
+<div class="inlinecontent">
+<p>Same...  uninstalled the old version, verified that no files existed from the old version, installed new version clean.  Torbutton test fails, torproject test page says I'm not using TOR, cannot reach any hidden services.  whatsmyipaddress.com shows that my ip address is changing, so it appears that traffic is going through the TOR network.</p>
+
+<p>Phobos, is this a known issue?  Is this a config option that we need to change?  Is it just me?  Come on you guys, help us!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 25 Nov 2009 06:41:40 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-49f81b45abfece711a6d23434a079c47">
+
+<div class="comment-subject">
+
+Comment 37
+
+</div>
+
+<div class="inlinecontent">
+<p>(I'm the OP)</p>
+
+<p>This reply covered my problem: </p>
+
+<p>I had leftovers from a previous version. Maybe it's important not to forget to remove ~/.tor and ~/.vidalia</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 26 Nov 2009 06:41:41 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d3a33d9a3e146339a21d69545cbd8126">
+
+<div class="comment-subject">
+
+Comment 38
+
+</div>
+
+<div class="inlinecontent">
+Ugh, I'm having the same problems. I've removed those directories, the .app, and even did a find / -name '*Tor*' and find / -name 'tor*' (plus the same for privoxy) to get rid of the cruft. The drop-in application bundle still isn't working for me at all.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 13 Dec 2009 06:41:42 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-22648e59932376ba83ab66d77f632e99">
+
+<div class="comment-subject">
+
+Comment 39
+
+</div>
+
+<div class="inlinecontent">
+<p>Sorry for the messy reply above:</p>
+
+<p>I meant to include this link:<br />
+<a href="http://permalink.gmane.org/gmane.network.onion-routing.general/671" title="http://permalink.gmane.org/gmane.network.onion-routing.general/671" rel="nofollow">http://permalink.gmane.org/gmane.network.onion-routing.general/671</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 26 Nov 2009 06:41:43 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-46e7c511ca25eb7f635f850c548892d0">
+
+<div class="comment-subject">
+
+Comment 40
+
+</div>
+
+<div class="inlinecontent">
+<p>This might not be the place for this, but I can't exclude nodes with ExcludeNodes or ExcludeExitNodes in torrc. My tor just won't do what it's told.<br />
+This comes up in the vidalia message log:</p>
+
+<p>[Warning] Requested exit node x is in ExcludeNodes or ExcludeExitNodes..  Using anyway.</p>
+
+<p>I think I've seen other ppl with this problem too. Do you know what causes this and are you doing something about it?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 27 Nov 2009 06:41:44 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3189dfb6fbc836da8c66c439718d178f">
+
+<div class="comment-subject">
+
+Comment 41
+
+</div>
+
+<div class="inlinecontent">
+That is certainly not an exclusive 0.2.1.20 issue. I remain on 0.2.1.19 for now and experience this using ExcludeExitNodes. I believe it to go back much further (forever maybe). I suspect that there is logic that Tor will only honor this request if enough nodes exists outside the excluded zones for it to carry on its normal business. Having said that, it +appears+ to me that the result is some prioritization, i.e., fewer nodes in the excluded zones utilized than without the argument, but that could be wishful thinking. If nothing else, it gives me an easy to read list in the message log showing me which nodes that I have tried to exclude are used, and that could ultimately have some value.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 01 Dec 2009 06:41:45 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1fb1ccda6735ddbcadd1dc025545175e">
+
+<div class="comment-subject">
+
+Comment 42
+
+</div>
+
+<div class="inlinecontent">
+It's a bug.  We're working on it.  You can track our progress at <a href="https://bugs.torproject.org/flyspray/index.php?do=details&amp;id=1090" title="https://bugs.torproject.org/flyspray/index.php?do=details&amp;id=1090" rel="nofollow">https://bugs.torproject.org/flyspray/index.php?do=details&amp;id=1090</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 02 Dec 2009 06:41:46 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-63d78fda737e38b7fb5268cd79c9443f">
+
+<div class="comment-subject">
+
+Comment 43
+
+</div>
+
+<div class="inlinecontent">
+I had downloaded and installed Tor Windows bundles before but the bundles always ran slower than Tor and Privoxy unbundled ( on my computer ). I uninstalled Tor ver.19 and downloaded and installed ver.20 but kept my Privoxy ver.12. No problems with Tor ver.20 with Privoxy ver.12, actually seems to run slightly faster than Tor ver.19. Privoxy hasn't had a new stable version since ver.12. Versions .13,.14 and .15 have all been betas. I have no complaints with Privoxy, but makes me wonder why so many betas and no new stable version? I run Tor on Win XP Pro. sp 3, using Firefox 3.5.5 and K-Meleon 1.5.3.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 28 Nov 2009 06:41:47 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2768dde0023fbb5b3cfb750c1230fac8">
+
+<div class="comment-subject">
+
+Comment 44
+
+</div>
+
+<div class="inlinecontent">
+I wouldn't expect there to be any problems with privoxy and tor.  They are two indepdent applications.  So long as privoxy is setup to forward to Tor, it should work.  You should ask the privoxy people why they have so many betas.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 30 Nov 2009 06:41:48 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3303d9fb4dd5b16902995aa214c63b81">
+
+<div class="comment-subject">
+
+Comment 45
+
+</div>
+
+<div class="inlinecontent">
+<p>I downloaded TOR, the bundled version with Polipo, which I then uninstalled Polipo and installed Privoxy v 3.0.15. on Windows Server 2008 Enterprise edition. TOR starts and is successful creating a circuit. Firefox 3.5 page shows TOR as enabled, but when I check my TOR configuration at www.check.torproject.org, it reads: " You Are Not Using TOR". When I test the settings in the options of the TOR button I get "  Local HTTP Proxy is unreachable. Is Polipo running properly? " I have Privoxy specified to start when TOR starts with the application directory path in the Vidalia interface settings. I've tried everything that I won't attempt to publish here and still no luck. What am I missing here?<br />
+Any feedback is greatly appreciated!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 08 Jan 2010 06:41:49 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-557cb4cf3e50dd7ce47395308299aff8">
+
+<div class="comment-subject">
+
+Comment 46
+
+</div>
+
+<div class="inlinecontent">
+<p>Here are the ingredients : Privoxy v3.0.15, TOR 0.2.1.21 and FireFox 3.5.6 being configured on Windows. Has anyone tried this recipe and if so, what addtl' spices are required to make this cook?<br />
+Are these ingredients any good or do I need to go back to the supermarket. </p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 08 Jan 2010 06:41:50 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ca66585ab1ab79aabbc927857616a719">
+
+<div class="comment-subject">
+
+Comment 47
+
+</div>
+
+<div class="inlinecontent">
+Can someone from the development team explain in technical terms why the proxy server (Privoxy or anyother) is/was needed to be used with tor? I remember it had something to do with the DNS request leaks, correct? Is it still a problem? If other than Firefox browser is used, let's say Opera, is it still necessary to  use proxy server (Privoxy, Polipo, etc.) to maintain true anonymity? Sorry, I could not find the definitive answer in the documentation.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 29 Nov 2009 06:41:51 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-87825b101344c108ca9c39d281e0c695">
+
+<div class="comment-subject">
+
+Comment 48
+
+</div>
+
+<div class="inlinecontent">
+<p>An http proxy is not needed between a web browser and Tor for functionality.  It's there to work around bugs in the Firefox SOCKS layer.  In modern firefox 3.0 and newer, there is an option called "network.proxy.socks_remote_dns" that is set by torbutton. This forces dns lookups over the configured socks proxy server, which with torbutton, is Tor.</p>
+
+<p>Other apps may leak dns requests, these can be captured by setting a DNSPort or iptables tricks, or using a proxy between the app and tor.  </p>
+
+<p>Polipo and Privoxy can be used to work around the hardcoded timeouts in the firefox socks layers.  If you don't use firefox, then feel free to configure your browser to talk directly to tor as a socks 5 proxy.  Just test to see if the browser leaks dns requests.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 30 Nov 2009 06:41:52 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d1135398336f004f1ef84a0fd3f9637e">
+
+<div class="comment-subject">
+
+Comment 49
+
+</div>
+
+<div class="inlinecontent">
+Is the socks layer problem particular to only Firefox? Or is it a problem with any browser that uses the Gecko Runtime Engine  ( Seamonkey, K-Meleon, Flock, Camino, Lunascape, etc. )?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 30 Nov 2009 06:41:53 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-62d2ea2c557396baac4a28605966c53b">
+
+<div class="comment-subject">
+
+Comment 50
+
+</div>
+
+<div class="inlinecontent">
+Unsure.  From what I understand of Gecko, no.  Gecko handles the html parsing, not the network interaction.  I may be wrong, feel free to correct me.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 30 Nov 2009 06:41:54 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4a382c036f53099e48a012b14142ec20">
+
+<div class="comment-subject">
+
+Comment 51
+
+</div>
+
+<div class="inlinecontent">
+<p>I have used the Tor Macosx bundle for two years+. I am<br />
+an ordinary user. I thank the Tor project managers for<br />
+ceaselessly trying to make this excellent software simpler<br />
+and usable by people like me. I try to learn about it all the<br />
+time by constantly referring to its documentation but I do<br />
+not understand the technical aspect of it.</p>
+
+<p>I am having difficulties with the latest bundle which has<br />
+replaced Privoxy with Polipo. At the moment I have Polipo,<br />
+tor, Vidalia located in Vidalia.app/Contents. I also have<br />
+Vidalia, tor, Torbutton, Privoxy folders in Macintosh HD/<br />
+Library. The tor version is 0.2.1.20, Qt 4.3.5. Vidalia 0.2.5.</p>
+
+<p>The Torbutton (excellent extension!) works well with Privoxy<br />
+- no problems but when I change to 'new proxy' by replacing<br />
+Port 8118 to 8123 (Polipo's port) to try it, tor does not work<br />
+because when I check my IP it is my real IP with info on my<br />
+default browser etc! When I use the Test Button in Torbutton<br />
+Preferences I get an 'Internal Error' or sometimes 'Test failed'.<br />
+It seems that the requests I make are not going tor.</p>
+
+<p>My OS is osx 10.5.8. I thank in advance anyone who is able to<br />
+help me try this new proxy - Polipo.</p>
+
+<p>My current 'tor settings' are:<br />
+/Applications/Vidalia.app/Contents/MacOS/tor<br />
+/Applications/Vidalia.app/Contents/MacOs/polipo</p>
+
+<p>and yet Torbutton is configured to use Privoxy.....and<br />
+it is working OK!</p>
+
+<p>Thanks again</p>
+
+<p>Uluru</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FUluru%20%28not%20verified%29&amp;do=goto">Uluru (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 05 Dec 2009 06:41:55 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-08cf75b0a053c4fa0bb76235dda89e91">
+
+<div class="comment-subject">
+
+Comment 52
+
+</div>
+
+<div class="inlinecontent">
+Having the exact same problem. Also wish to express my gratitude to the developers!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 13 Dec 2009 06:41:56 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fa3fd6e3255ceaaff5cec709ff8885ec">
+
+<div class="comment-subject">
+
+Comment 53
+
+</div>
+
+<div class="inlinecontent">
+If you are using our packages, we reconfigure polipo to work on port 8118. Look at the polipo config file installed on your system.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 14 Dec 2009 06:41:57 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1bd6b3513dc9fd6068c410553271dcda">
+
+<div class="comment-subject">
+
+Comment 54
+
+</div>
+
+<div class="inlinecontent">
+<p>thanx Tor team for your hard working to maintain the best for Tor as you can.</p>
+
+<p>i just download new version, but after reading these many complain comments, i will Install it later. </p>
+
+<p>Actaully iam clasic man and don't like speed change in my life. So i will stay with Privoxy.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 15 Dec 2009 06:41:58 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-658a910ae312576d8c05b9928e88f8b1">
+
+<div class="comment-subject">
+
+Comment 55
+
+</div>
+
+<div class="inlinecontent">
+you could always try it for yourself, rather than rely on some comments on some blog.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 16 Dec 2009 06:41:59 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-afdc626edebbc24efca07e1c48d64ded">
+
+<div class="comment-subject">
+
+Comment 56
+
+</div>
+
+<div class="inlinecontent">
+<p>Date/Time:      2009-12-15 14:05:03.869 -0800<br />
+OS Version:     10.4.11 (Build 8S2167)<br />
+Report Version: 4</p>
+
+<p>Command: Vidalia<br />
+Installed the new bundle and this is what I get. Broken tor.</p>
+
+<p>Isnt this a problem from a year ago?</p>
+
+<p>Path:    /Applications/Vidalia.app/Contents/MacOS/Vidalia<br />
+Parent:  WindowServer [65]</p>
+
+<p>Version: 0.2.6 (0.2.6)</p>
+
+<p>PID:    268<br />
+Thread: Unknown</p>
+
+<p>Link (dyld) error:</p>
+
+<p>Library not loaded: /usr/lib/libiconv.2.dylib<br />
+  Referenced from: /Applications/Vidalia.app/Contents/MacOS/Vidalia<br />
+  Reason: Incompatible library version: Vidalia requires version 7.0.0 or later, but libiconv.2.dylib provides version 5.0.0</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 15 Dec 2009 06:42:00 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-612251f426b20473b28607b6853eb95d">
+
+<div class="comment-subject">
+
+Comment 57
+
+</div>
+
+<div class="inlinecontent">
+Yes, it's an open bug.  You could run the PowerPC binary for now.  It seems the latest OS X update to leopard broke backwards compatibility.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 16 Dec 2009 06:42:01 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-920b417abaec73fb52b12e94472e7149">
+
+<div class="comment-subject">
+
+Comment 58
+
+</div>
+
+<div class="inlinecontent">
+I've installed 0.2.1.20 and can't log in account on some sites. return to privoxy.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 18 Dec 2009 06:42:02 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-caf0e14b2876c7652fec895c77b8a62f">
+
+<div class="comment-subject">
+
+Comment 59
+
+</div>
+
+<div class="inlinecontent">
+<p>hi,This is from china.<br />
+The new tor , which was realeased on Oct 10th,vidalia-bundle-0.2.1.20-0.2.5.exe, can not run in my pc. It seams that the browser  can not connect to any web site. so, I had to use the outdated one(version 0.2.0.34) .</p>
+
+<p>P.S.  Thanks very much for what torproject.org have done.  <img src="../../smileys/smile.png" alt=":)" /></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 18 Dec 2009 06:42:03 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d22c9965fd5afad0cf072c3874ebbc7d">
+
+<div class="comment-subject">
+
+Comment 60
+
+</div>
+
+<div class="inlinecontent">
+The same with me (Windows Vista Home Basic, Internet Explorer 8). The settings for the proxy server in Options are 127.0.0.1, port 8118, but I cannot connect to any site. The previous version works fine. It's the second time I'm trying to start working with the new version of Tor, the first time I have uninstalled it and returned to the previous version. Help, please.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 18 Dec 2009 06:42:04 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f5725f2f21a906c7d3bd78ca9bc78fa4">
+
+<div class="comment-subject">
+
+Comment 61
+
+</div>
+
+<div class="inlinecontent">
+<p>I am realy upset about there is no reason pointed by the developers why privoxy is removed. that policrap didn t work by default installation.<br />
+thx for nothing...</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 19 Dec 2009 06:42:05 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0c9e1c7a2a1904af3b9eb26fecb0bfed">
+
+<div class="comment-subject">
+
+Comment 62
+
+</div>
+
+<div class="inlinecontent">
+<p>We've responded at least 5 times as to why we switched.  Polipo is caching, supports http 1.1 pipelining, and is currently maintained.</p>
+
+<p>If you don't like polipo, don't use it.  Setup Firefox or your favorite browser to point directly at localhost:9050.  The default configuration is well-tested.  Sorry it didn't work for you as you expected.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 22 Dec 2009 06:42:06 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fd75b8c92f460ba828b08b708b51980d">
+
+<div class="comment-subject">
+
+Comment 63
+
+</div>
+
+<div class="inlinecontent">
+<p>Serious Problem: Tor 0.2.1.20 and Mac OSX 10.4.11</p>
+
+<p>I've been using the Tor bundle for the last year with no problem.  A couple of days ago I was prompted to upgrade to the the new version of the package.  I duly did the upgrade and replaced the existing Vidalia package with the new version in my Applications folder.  When I clicked to open the package, nothing at all happened.  I then read that it was better to uninstall the package before downloading the new one.  So I followed the uninstall instructions on the torproject website, deleting all trace of Tor, Vidalie etc on my system (applications, library).  I then downloaded the new version of the package again.  I dragged the package into the applications folder and then tried to open it.  Very briefly the onion icon flashed up on the dock but then immediately disappeared.  Then nothing else.  I cannot make the package work.  Can anyone help?  I live in a country where many normal websites are blocked including the BBC. So without Tor I am cut off.  Thanks.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 22 Dec 2009 06:42:07 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-425da9907adc1afbb4adf4985ee5282b">
+
+<div class="comment-subject">
+
+Comment 64
+
+</div>
+
+<div class="inlinecontent">
+<p>This is your problem:</p>
+
+<p><a href="https://bugs.torproject.org/flyspray/index.php?do=details&amp;id=1156" title="https://bugs.torproject.org/flyspray/index.php?do=details&amp;id=1156" rel="nofollow">https://bugs.torproject.org/flyspray/index.php?do=details&amp;id=1156</a></p>
+
+<p>This is the working solution:</p>
+
+<p><a href="https://bugs.torproject.org/flyspray/index.php?do=details&amp;id=1156&amp;area=comments#3540" title="https://bugs.torproject.org/flyspray/index.php?do=details&amp;id=1156&amp;area=comments#3540" rel="nofollow">https://bugs.torproject.org/flyspray/index.php?do=details&amp;id=1156&amp;area=c...</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 22 Dec 2009 06:42:08 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fa4ce61f539804f2a27e8110d7da2e4f">
+
+<div class="comment-subject">
+
+Comment 65
+
+</div>
+
+<div class="inlinecontent">
+<p>Regression: Tor 0.2.1.20 on OS X 10.6.2</p>
+
+<p>I had been using Tor 0.2.19 for more than half a year and it worked well. Then I upgraded to Tor 0.2.1.20 early this month. And then 0.2.1.20 worked fine for a while. Then it always failed with "Problem bootstrapping. Stuck at 10%: Finishing handshake with directory server." Then I downgraded to 0.2.1.19 by reinstalling the old package, and everything works again. Then I reinstall 0.2.1.20 and this time it works well for about three days and then "Stuck at 10%" again.</p>
+
+<p>Now I downgraded to 0.2.1.19 again and I think I am stuck with it until the problem is fixed in some later version.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 27 Dec 2009 06:42:09 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a726363c0e34497c862fc87ccd102e32">
+
+<div class="comment-subject">
+
+Comment 66
+
+</div>
+
+<div class="inlinecontent">
+Supplement: When I was and am using 0.2.1.19, I using bridges because of ISP's blocking of Tor. When I switched to 0.2.1.20 and during its normal first two or three days, it worked regardless whether the bridges are configured or not. So I suspect maybe some misconfiguration in 0.2.1.20 package (or Vidalia) make the bridge configuration disabled even when it is configured on the UI.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 27 Dec 2009 06:42:10 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9c6abaca23377785db728b53617975ce">
+
+<div class="comment-subject">
+
+Comment 67
+
+</div>
+
+<div class="inlinecontent">
+Depending upon where you're located, you may have to get new bridges.  China and Iran are doing IP address blocking on relays and some bridges.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 30 Dec 2009 06:42:11 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-20c67e0737fabe12507dbd5393b9bbfb">
+
+<div class="comment-subject">
+
+Comment 68
+
+</div>
+
+<div class="inlinecontent">
+No, it seems irrelative to the location, because everything on my MacBook Pro are the same except Tor version. I mean, the same environment, when upgrade to 0.2.1.20, fail, downgrade to 0.2.1.19, success. There are the same bridges, and the result is different by different Tor versions. It's hardly the problem of blocking.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 04 Jan 2010 06:42:12 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b50a0ac5e0e90aa8e10044af942633db">
+
+<div class="comment-subject">
+
+Comment 69
+
+</div>
+
+<div class="inlinecontent">
+I am experencing the same problem. I don't think it has anything to do with the tor bridge, since i have the same configuration of tor bridges on both my pc and mac. Tor works well on my pc (0.2.1.19) with bridges, but does not on my mac (0.2.1.21 or 0.2.1.22) with the same bridges set. I believe it's a bug in 0.2.1.20 and any newer versions of tor (mac osx)
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 22 Jan 2010 06:42:13 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ccfa894aea11210fa50264a32e8acb76">
+
+<div class="comment-subject">
+
+Comment 70
+
+</div>
+
+<div class="inlinecontent">
+I downloaded TOR, the bundled version with Polipo, which I then uninstalled Polipo and installed Privoxy v 3.0.15. on Windows Server 2008 Enterprise edition. TOR starts and is successful creating a circuit. Firefox 3.5 browser page shows that TOR is enabled, but when I check my TOR configuration at www.check.torproject.org, it reads, " You Are Not Using TOR". When I test the settings in the options of the TOR button I get "Local HTTP Proxy is unreachable. Is Polipo running properly?". I have Privoxy specified to start when TOR starts via the directory path in the Vidalia interface settings. I'm not sure why it keeps referring to Polipo.I'm not sure why TOR seems to being working but is not being used by my browser. When I check the status of Privoxy, it checks out as successful.What am I missing here? Any feedback is greatly appreciated!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 09 Jan 2010 06:42:14 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ce6e30bccc7dae3fa4f08b288a70bf2e">
+
+<div class="comment-subject">
+
+Comment 71
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi,<br />
+I am a brand new Tor user; I just downloaded and installed the Browser bundle for Firefox with Polipo.<br />
+I admit that I am quite ignorant of how it all works, but so far, It works excellent for me in all my browsing. Impressive and Fascinating to say the least!</p>
+
+<p>I am running Win XP home and of course the Firefox included in the bundle.<br />
+When I log on MyBrowserInfo.com, it reads my UserAgent String, although the IP address is random (So cool!)<br />
+Just one question: hopefully a simple one due to my ignorance:<br />
+How can I configure to hide my UserAgent String?</p>
+
+<p>Thanks for a Great Network and for an answer...</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 01 Feb 2010 06:42:15 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-75d8c874a747ebc4bb72ae1dc608a4c5">
+
+<div class="comment-subject">
+
+Comment 72
+
+</div>
+
+<div class="inlinecontent">
+<p>Oops, I broke it!</p>
+
+<p>So there are people that really know what they're doing, and then on the other side, there's me. <img src="../../smileys/ohwell.png" alt=":/" />   I installed Tor and Polipo in an attempt to attain some privacy. Specifically, I wanted to appear to have a different IP each time I visited a particular site (most votes win, IP tracking in use). Anyhow, I don't think I achieved what I was after and so I uninstalled both Tor and Polipo. I reinstalled privoxy and thought life would be back to normal. Now, my browser is incredibly slow. REALLY slow. So now I am humbled and am sheepishly asking for help as I realize I was medling where I didn't belong. Any suggestions toward restoring my previous browser speed would be very appreciated. Thanks</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 09 Jun 2010 06:42:16 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5aa4f7ee5f02b303683df66086ce552e">
+
+<div class="comment-subject">
+
+Comment 73
+
+</div>
+
+<div class="inlinecontent">
+You may want to put back the original privoxy config, or uninstall privoxy and reinstall it so you get the fresh configuration file.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 09 Jun 2010 06:42:17 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-077fe0ea0fe4d15029010694175f71dc">
+
+<div class="comment-subject">
+
+Comment 74
+
+</div>
+
+<div class="inlinecontent">
+I tried to use proxifier with TOR but it will always report "Potentially dangerous..." and i cant download a file completely from my mediafire because it will always close the connection. Pls what did i do wrong? Thank you
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 20 Jun 2010 06:42:18 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-684799fe697ef481fa322fd4c8f69987">
+
+<div class="comment-subject">
+
+Comment 75
+
+</div>
+
+<div class="inlinecontent">
+I installed Opera and TOR bundled, with Polipo included in the download archive. Installation required just one click on a button, was incredibly easy and OPERA &amp; TOR began working immediately without any problems, unlike Firefox &amp; TOR which just gave an http error message and stopped with a blank screen. 
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 15 Jul 2010 06:42:19 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5046c55fd7e1e701181ca64fcbfae1a1">
+
+<div class="comment-subject">
+
+Comment 76
+
+</div>
+
+<div class="inlinecontent">
+Good luck then.  The Tor Browser Bundle is designed to work the same way.  We're working on bringing this to all operating systems.  Microsoft Windows and Linuxes already exist.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 16 Jul 2010 06:42:20 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-42cb8c17e7acd46bfc94e3f3fb836489">
+
+<div class="comment-subject">
+
+Comment 77
+
+</div>
+
+<div class="inlinecontent">
+Polipo doesn`t support downloading more than 30mb.the reason i use tor is to enable downloading above 150mb which is blcoked in our firewall.Please reconsider about this and develop privoxy instead of polipo. now i am back to old version with privoxy.Hoping a good response in next update
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 28 Jul 2010 06:42:21 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f5b57aa14d1983df559693239dbc135f">
+
+<div class="comment-subject">
+
+Comment 78
+
+</div>
+
+<div class="inlinecontent">
+Polipo supports downloading gigabytes of data.  There's a bug where polipo will fill up the memory cache and stop the download, rather than continue on.  I've been able to download 10GBs of linux isos through polipo just fine.  It seems the bug shows up on Windows more than not.  Privoxy is too slow and doesn't support http 1.1 for two reasons why we switched.  The real question is why do we need a http proxy at all?  See <a href="https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/TorFAQ#WhydoweneedPolipoorPrivoxywithTorWhichisbetter" title="https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/TorFAQ#WhydoweneedPolipoorPrivoxywithTorWhichisbetter" rel="nofollow">https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/TorFAQ#Whyd...</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 29 Jul 2010 06:42:22 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6e075e63320f32a9c6aa40d551721efa">
+
+<div class="comment-subject">
+
+Comment 79
+
+</div>
+
+<div class="inlinecontent">
+Hello, I am running Tor v.0.2.1.22 with firefox 3.0.19 and Torbutton 1.2.5. I have been able to browse/download/upload fine with Tor enabled up until today, when I get firefox message 'proxy server refused connection'. Tor is able to establish circuit through c-prompt. Firefox connection setting is set to 'No Proxy'. I have tried changing this to 'auto-detect proxy', no difference. I have tried changing the Torbutton setting to 'use custom proxy settings' that did not work. I am fairly certain the only thing that could have changed was an updating of firefox. Any recommendations would be greatly appreciated. Thx.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 21 Aug 2010 06:42:23 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-cfb6829604600266201a77cb997ba23e">
+
+<div class="comment-subject">
+
+Comment 80
+
+</div>
+
+<div class="inlinecontent">
+<p>Hello ,<br />
+ I am new to tor and i really need some help i downloaded the bundle for windows and i did all the steps but tor does not appear on the start menu and when i want to open it i go to the tor browser folder and click on the onion and i can not see torcc.</p>
+
+<p>Thanks for your prompt reply</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 07 Oct 2010 06:42:24 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4f44c803239522a404d8953675fe1554">
+
+<div class="comment-subject">
+
+Comment 81
+
+</div>
+
+<div class="inlinecontent">
+what exactly did you download, the tor browser bundle or the vidalia bundle?  the tor browser bundle doesn't install anything, it's self-contained.  Just click "Start Tor Browser" and everything else works by default.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 08 Oct 2010 06:42:25 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_1_20_Released&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:41:04 AM CDT</span>
+<!-- Created <span class="date">Thu 12 Nov 2009 07:35:58 PM CST</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

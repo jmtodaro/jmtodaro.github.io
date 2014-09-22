@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Tor 0.2.1.17-rc released</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:30:41Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/comment_1/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:30:31Z</updated>
+	<published>2009-07-14T11:30:31Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;What do you think about this improved GUI for TOR?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://nemesis.te-home.net/Projects/AdvTor.html&quot; title=&quot;http://nemesis.te-home.net/Projects/AdvTor.html&quot; rel=&quot;nofollow&quot;&gt;http://nemesis.te-home.net/Projects/AdvTor.html&lt;/a&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/comment_2/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:30:32Z</updated>
+	<published>2009-07-18T11:30:32Z</published>
+
+	<content type="html" xml:lang="en">
+	Why do you write it correctly in the subject, but wrong in the comment itself?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/comment_3/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:30:33Z</updated>
+	<published>2009-07-14T11:30:33Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;This is actually a step backwards, the install is reported as successful but Vidalia doesn&#39;t appear in the Applications folder.&lt;/p&gt;
+
+&lt;p&gt;This is a freshly installed OS X 10.5.7 from DVD, no patches.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/comment_4/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:30:34Z</updated>
+	<published>2009-07-14T11:30:34Z</published>
+
+	<content type="html" xml:lang="en">
+	By the way, I did this install in a standard user account, and it didn&#39;t prompt for an administrator&#39;s username/password.  I&#39;ll try it under an admin account and report the results here.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/comment_5/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:30:35Z</updated>
+	<published>2009-07-14T11:30:35Z</published>
+
+	<content type="html" xml:lang="en">
+	See above.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/comment_6/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:30:36Z</updated>
+	<published>2009-07-16T11:30:36Z</published>
+
+	<content type="html" xml:lang="en">
+	This is fixed in the latest bundles that include Vidalia 0.1.15.  There&#39;s an issue when torbutton tries to get automatically installed into Firefox.  If you don&#39;t have admin permissions, it failed, and the Apple installer said the whole install failed.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/comment_7/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:30:37Z</updated>
+	<published>2009-07-14T11:30:37Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;The country flags in the left column (after selecting &quot;View the Network&quot; from the Vidalia Control Panel) are missing in the new Vidalia/Firefox bundle. Is this a new security measure, or a fault? The IPs would tell the country, anyway, so why not the flags?&lt;/p&gt;
+
+&lt;p&gt;Can I fix this, or is this intentional by Tor?&lt;/p&gt;
+
+&lt;p&gt;What should I do?&lt;/p&gt;
+
+&lt;p&gt;Thank you very much.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/comment_8/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:30:38Z</updated>
+	<published>2009-07-16T11:30:38Z</published>
+
+	<content type="html" xml:lang="en">
+	Leave tor running, it will connect to the vidalia geoip server and fill in the relays.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/comment_9/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:30:39Z</updated>
+	<published>2009-07-25T11:30:39Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Thank you for your reply.&lt;/p&gt;
+
+&lt;p&gt;No matter how long I have Tor running, the country flags of the computers on the network do not fill in (the window brought up by the &quot;View the network&quot; option on the Vidalia Control Panel).&lt;/p&gt;
+
+&lt;p&gt;Do you have any other suggestions? All I have is a series of question marks in place of the flags, and it&#39;s driving me a little nuts.&lt;/p&gt;
+
+&lt;p&gt;Thank you very much.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/comment_10/"/>
+
+	<author><name>himm (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:30:40Z</updated>
+	<published>2009-11-13T12:30:40Z</published>
+
+	<content type="html" xml:lang="en">
+	Thank you, you answered the question I have been searching for which was whether or not to place keywords when blog commenting. &lt;a href=&quot;http://www.hayda.net&quot; title=&quot;mirc, cinsel sohbet, cinsellik, chat&quot; rel=&quot;nofollow&quot;&gt;mirc&lt;/a&gt; . &lt;a href=&quot;http://www.hayda.net&quot; title=&quot;mirc, cinsel sohbet, cinsellik, chat&quot; rel=&quot;nofollow&quot;&gt;chat&lt;/a&gt; . &lt;a href=&quot;http://www.hayda.net&quot; title=&quot;mirc, cinsel sohbet, cinsellik, chat&quot; rel=&quot;nofollow&quot;&gt;cinsel sohbet&lt;/a&gt;. &lt;a href=&quot;http://www.hayda.net&quot; title=&quot;mirc, cinsellik sohbet, cinsellik, chat&quot; rel=&quot;nofollow&quot;&gt;cinsellik sohbet &lt;/a&gt; . &lt;a href=&quot;http://www.hayda.net/&quot; title=&quot;http://www.hayda.net/&quot; rel=&quot;nofollow&quot;&gt;http://www.hayda.net/&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_17-rc_released/comment_11/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:30:41Z</updated>
+	<published>2010-05-12T11:30:41Z</published>
+
+	<content type="html" xml:lang="en">
+	I have a similar question as to why Vidalia doesn&#39;t show all IP location in the list? It only show the question mark for some, been like this for weeks now. Does Tor, Vidalia or the bundle has a dedicated discussion forum so I can fix my geoip issues?
+
+	</content>
+
+
+
+</entry>
+
+</feed>

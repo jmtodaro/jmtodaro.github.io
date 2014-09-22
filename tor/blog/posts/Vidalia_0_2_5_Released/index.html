@@ -1,0 +1,2029 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Vidalia 0.2.5 Released</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FVidalia_0_2_5_Released&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Vidalia 0.2.5 Released</a>
+
+</span>
+
+
+<div id="content">
+<p>On October 14th we released Vidalia 0.2.5.  Changes are:</p>
+
+<p><ul>
+<li>Add support in the Network settings page for configuring the<br />
+    Socks4Proxy and Socks5Proxy* options that were added in<br />
+    Tor 0.2.2.1-alpha. Patch from Christopher Davis.</li>
+<li>Add a "Automatically distribute my bridge address" checkbox (enabled<br />
+    by default) to the bridge relay settings options. (Ticket #524)</li>
+<li>Add ports 7000 and 7001 to the list of ports excluded by the IRC<br />
+    category in the exit policy configuration tab. (Ticket #517)</li>
+<li>Add a context menu for highlighted event items in the "Basic" message<br />
+    log view that allows the user to copy the selected item text to the<br />
+    clipboard.</li>
+<li>Maybe fix a time conversion bug that could result in Vidalia<br />
+    displaying the wrong uptime for a relay in the network map.</li>
+<li>Stop trying to enforce proper quoting and escaping of arguments to be<br />
+    given to the proxy executable (e.g., Polipo). Now the user is on their <span class="read-more"><a href="http://blog.torproject.org/blog/vidalia-025-released"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/bug_fixes/" rel="tag">bug fixes</a>
+
+<a href="../../tags/usability_enhancements/" rel="tag">usability enhancements</a>
+
+<a href="../../tags/vidalia_release/" rel="tag">vidalia release</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-477343e2dedacdd8676a3c06833f1b22">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>"Add support in the Network settings page for configuring the<br />
+Socks4Proxy and Socks5Proxy* options that were added in<br />
+Tor 0.2.2.1-alpha. Patch from Christopher Davis."</p>
+
+<p>Thanks to Chris' work and Matt's integration, Tor can now support nearly any proxy to get access to the Tor Network.  Using open proxies or other proxy tools is now possible to get access to the unfiltered Internet through Tor while keeping your communications private and anonymous.</p>
+
+<p>In some dystopian future world where all Tor relays and bridges are blocked, so long as open proxies exist, you can still reach the Tor Network.</p>
+
+<p>Your connection would be as such:</p>
+
+<p>your client &lt;---&gt; open SOCKS/HTTP proxy &lt;---&gt; Tor network</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 19 Oct 2009 06:39:48 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b246cfa2cd26d53172813fc7e937ed1a">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+What does this mean about Tor and Polipo? Will this lead to a change from Polipo to something else?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FSoulmech%20%28not%20verified%29&amp;do=goto">Soulmech (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 21 Oct 2009 06:39:49 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-17a2e043e608715a628eed61f846f97d">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+No, it just means you have more options for how you can use your Tor.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 21 Oct 2009 06:39:50 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-34556672efa004eb891df5671fe44c81">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+Okay, I downloaded this for my computer. But I have a problem, I use Google Chrome for my internet browser and not Firefox. Does anyone know how I can get it for Google Chrome??
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAaron87747%20%28not%20verified%29&amp;do=goto">Aaron87747 (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 21 Oct 2009 06:39:51 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e87fc6339d00bad4b9b12a761862fe2a">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>showed some issues and testing people have done<br />
+<a href="http://archives.seul.org/or/talk/Sep-2008/msg00032.html" title="http://archives.seul.org/or/talk/Sep-2008/msg00032.html" rel="nofollow">http://archives.seul.org/or/talk/Sep-2008/msg00032.html</a><br />
+basically, Google Chrome was bad for privacy.<br />
+you can try it and let us know if things got better.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fkeb%20%28not%20verified%29&amp;do=goto">keb (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 05 Nov 2009 06:39:52 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c3a3f676b57ed2892f3e45f7de245231">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+I cannot find this release in download page.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 21 Oct 2009 06:39:53 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6b888b0047025037097ebc49dbbe562c">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p>Bonjour!</p>
+
+<p>"Vidalia-0.2.5.tar.gz" is still non-existant on "https://www.torproject.org/vidalia/dist/", when would you be able to upload it ? all linux users need it for testing</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 22 Oct 2009 06:39:54 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-085b18600003350af89f9d890874ae48">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+<p><a href="https://dist.vidalia-project.net/vidalia-0.2.5.tar.gz" title="https://dist.vidalia-project.net/vidalia-0.2.5.tar.gz" rel="nofollow">https://dist.vidalia-project.net/vidalia-0.2.5.tar.gz</a><br />
+<a href="https://dist.vidalia-project.net/vidalia-0.2.5.tar.gz.asc" title="https://dist.vidalia-project.net/vidalia-0.2.5.tar.gz.asc" rel="nofollow">https://dist.vidalia-project.net/vidalia-0.2.5.tar.gz.asc</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 22 Oct 2009 06:39:55 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7bc69f8025e34327cc24af319f0dd409">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+when this can be back on use in China?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fliaozd%20%28not%20verified%29&amp;do=goto">liaozd (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 26 Oct 2009 06:39:56 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4112d3058171ce1bdf65e1c988d2e409">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+<a href="https://www.torproject.org/bridges" title="https://www.torproject.org/bridges" rel="nofollow">https://www.torproject.org/bridges</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Farma&amp;do=goto">arma</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 26 Oct 2009 06:39:57 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a3e85b1f88408d455e5995bbcaf015cc">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+hi ! if you want crash anything that disallow.you must be learn to mask behaviors,it is not only technique problems , but also sense-logical  problems.Remember forever,mask you as the Chameleon in china.even when you are surfing cross Tor.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 02 Nov 2009 06:39:58 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5565607dec42f981726878a4c2355da2">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+Qué debo hacer cuando Vidalia me pide pass ?  Dónde me registro?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 28 Oct 2009 06:39:59 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-77f6a66c9afd952267999f3698499631">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+What must I make when Vidalia asks me for pass? Where do I get registered?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 28 Oct 2009 06:40:00 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-52263da56ee8d67c2a5979487f7bbe58">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+<a href="http://wiki.noreply.org/noreply/TheOnionRouter/TorFAQ#TorPasswordPrompt" title="http://wiki.noreply.org/noreply/TheOnionRouter/TorFAQ#TorPasswordPrompt" rel="nofollow">http://wiki.noreply.org/noreply/TheOnionRouter/TorFAQ#TorPasswordPrompt</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 28 Oct 2009 06:40:01 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-05fe9588969e71f9496021d9fdc0dab9">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+Hi to all. I'm from Romania, from a student campus, we use yuor software every day (good job), Privoxy and Vidalia to connect to some sites, but for 3 days now, all the vidalia bundle versions i've tryed do not connect any more, it shows me an error like: coulnd't find root host,or it just stops at the third part of the bar... some help?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fjbtl%20%28not%20verified%29&amp;do=goto">jbtl (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 29 Oct 2009 06:40:02 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4c0e55c08b58bcb287a215dac03e8fbb">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+<p>If you enable the info log setting, are there any errors or connection problems?</p>
+
+<p>Have you tried a bridge or three?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 01 Nov 2009 06:40:03 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3693590fe77e6af130bb49cb0724ba87">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+Off topic, but whatever happened to Incognito? Is it kaput?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 30 Oct 2009 06:40:04 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2988d5050dbc83851eed6617ae2a0edc">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+It still exists, just being reworked from gentoo to ubuntu I believe.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 01 Nov 2009 06:40:05 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7437f6d7ce97383476bab819ef9d4f31">
+
+<div class="comment-subject">
+
+Comment 19
+
+</div>
+
+<div class="inlinecontent">
+thank you for that news.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 09 Nov 2009 06:40:06 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ff8b0bd8f81cb931e455ce64f2b30bdf">
+
+<div class="comment-subject">
+
+Comment 20
+
+</div>
+
+<div class="inlinecontent">
+<p>vidalia+skype＝<br />
+<a href="http://clip2net.com/clip/m13179/thumb640/1256720327-clip-30kb.png" title="http://clip2net.com/clip/m13179/thumb640/1256720327-clip-30kb.png" rel="nofollow">http://clip2net.com/clip/m13179/thumb640/1256720327-clip-30kb.png</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 30 Oct 2009 06:40:07 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-12546be10ad4457574abac5dd48c4c2a">
+
+<div class="comment-subject">
+
+Comment 21
+
+</div>
+
+<div class="inlinecontent">
+What happened to Privoxy? It doesn't seem to be included in the bundle anymore.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 03 Nov 2009 06:40:08 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-18ef4d79eeeac841c0101078d27ae3e3">
+
+<div class="comment-subject">
+
+Comment 22
+
+</div>
+
+<div class="inlinecontent">
+<p>polipo is now the preferred proxy.<br />
+see <a href="http://www.browserwire.com/?p=10289" title="http://www.browserwire.com/?p=10289" rel="nofollow">http://www.browserwire.com/?p=10289</a> for discussion and references</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fkeb%20%28not%20verified%29&amp;do=goto">keb (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 05 Nov 2009 06:40:09 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-26df69d2832cbce428070eaf61762943">
+
+<div class="comment-subject">
+
+Comment 23
+
+</div>
+
+<div class="inlinecontent">
+I say,will you Tor guys pay more attention to maimland China? Where you can enjoy Tor, only if you use bridge relays.But bridges can be blocked still,and you have to change bridges from time to time. Tor must Establish a stable encrypted directory connection by defaut.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 04 Nov 2009 06:40:10 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b44c75c2ca95b87733bedb6107cb9cdd">
+
+<div class="comment-subject">
+
+Comment 24
+
+</div>
+
+<div class="inlinecontent">
+<p><a href="https://blog.torproject.org/blog/picturing-tor-censorship-in-china" title="https://blog.torproject.org/blog/picturing-tor-censorship-in-china" rel="nofollow">https://blog.torproject.org/blog/picturing-tor-censorship-in-china</a></p>
+
+<p>you can also get bridges by querying an email address as documented at<br />
+<a href="https://www.torproject.org/bridges" title="https://www.torproject.org/bridges" rel="nofollow">https://www.torproject.org/bridges</a><br />
+but there may now be automated tools looking for bridges which are published by Torproject, so you could consider setting up an informal network among trusted people where you run private bridges using instructions shown at <a href="https://git.torproject.org/checkout/tor/master/doc/spec/bridges-spec.txt" title="https://git.torproject.org/checkout/tor/master/doc/spec/bridges-spec.txt" rel="nofollow">https://git.torproject.org/checkout/tor/master/doc/spec/bridges-spec.txt</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fkeb%20%28not%20verified%29&amp;do=goto">keb (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 05 Nov 2009 06:40:11 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2f6ec64d92f9bfb22c04ab1201038450">
+
+<div class="comment-subject">
+
+Comment 25
+
+</div>
+
+<div class="inlinecontent">
+<p>Thank you for your reply.I'v got some bridges through e-mail,they work well,at least presently.</p>
+
+<p>I have tried the new stable version(0.2.1.20),but the DOS window gave a notice: </p>
+
+<p>（Day/Time） [notice] This version of Tor (0.2.1.20) is newer than any recommended version in its series, according to the directory authorities. Recommended versions are: 0.2.0.34,0.2.0.35,0.2.1.19,0.2.2.1-alpha,0.2.2.2-alpha,0.2.2.3-alpha,0.2.2.4-alpha,0.2.2.5-alpha</p>
+
+<p>What does "newer than any recommended version in its series" mean? Dose it mean 0.2.1.20 is too new to be recommended? Is 0.2.1.20 not suitable for use in mainland China?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 07 Nov 2009 06:40:12 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6f13ba2cdfc2cd0618b4e20aa7c9e36d">
+
+<div class="comment-subject">
+
+Comment 26
+
+</div>
+
+<div class="inlinecontent">
+<p>Suggest ways we can pay more attention and help out.</p>
+
+<p>Heck, I was just in Hong Kong and got to experience the internet filtering first hand, and how to work around it.  </p>
+
+<p>We have networks in china giving out bridge IPs.  We're monitoring blocking of relays and bridges.  We have translations into simplified chinese.  </p>
+
+<p>We changed tor to be able to use any proxy, so if you find one that isn't blocked, use it to get to the rest of the internet via tor.</p>
+
+<p>what more can we do to help?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 17 Nov 2009 06:40:13 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-04bdd0f17f6500290d3fe543fd03057c">
+
+<div class="comment-subject">
+
+Comment 27
+
+</div>
+
+<div class="inlinecontent">
+<p>"We changed tor to be able to use any proxy"</p>
+
+<p>—— What do you mean by "changed tor to be able to use any proxy"? Use an "outsaide" proxy to accsse Tor network,instead of a bridge relay? That needs to edit the torrc file,for example,as:</p>
+
+<p>HttpProxy host:port<br />
+HttpsProxy host:port</p>
+
+<p>I'd rather use bridge relays,they work fine.</p>
+
+<p>I'v got many a way to by-pass the Great Firewall,but Tor is my favorite for years.</p>
+
+<p>"What more can we do to help?" </p>
+
+<p>—— I hope Tor "just do it".And wish Tor ever young,and never old.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 19 Nov 2009 06:40:14 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-20dd63f58f3bb598b50ecdc9f71b8460">
+
+<div class="comment-subject">
+
+Comment 28
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi, I downloaded the latest mac bundle (0.2.6), but I can't get Vidalia to start.  Vidalia.app copies to the Applications folder fine, but when I click on it nothing happens.  It doesn't even appear in the dock.</p>
+
+<p>I've had previous versions of Tor installed on this computer and they worked fine.  I thought I removed them completely before installing the new version.  Can anyone help?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 05 Nov 2009 06:40:15 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e751268f1ad084233727907d04ef71b0">
+
+<div class="comment-subject">
+
+Comment 29
+
+</div>
+
+<div class="inlinecontent">
+By the way, please help if you can, I really need a proxy ASAP.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 05 Nov 2009 06:40:16 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b8a20ff5620161f7d119c19fea44ef2c">
+
+<div class="comment-subject">
+
+Comment 30
+
+</div>
+
+<div class="inlinecontent">
+Did you download the dmg for your cpu?  ppc or intel?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 19 Nov 2009 06:40:17 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7c9e0a8c2d62b63e436514e511c17074">
+
+<div class="comment-subject">
+
+Comment 31
+
+</div>
+
+<div class="inlinecontent">
+<p>I'm having the same problem (10.4.11 / Intel). Downloaded the Universal binary. Tried both the Alpha and the Stable and had the same problem.</p>
+
+<p>Went back, nuked all tor-related things (includin prefs) from my harddrive, still the same issue.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 06 Dec 2009 06:40:18 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f385fc0c8423ddfb1bc0f882409aa425">
+
+<div class="comment-subject">
+
+Comment 32
+
+</div>
+
+<div class="inlinecontent">
+Have the same issue (Tiger 10.4.11), I was always fine with my old version, it said to upgrade and then the trouble began. When I got around the lib-error (with the bundle) I then used the alpha and the gui started but now it won't install tor and polipo and says that I should locate tor... Earlier version had a .pkg to install the tor deamon a.s.o. but now this seems to be handled by the .app. Also I tried to merge the contents of the two packages (bundle and working alpha gui) but my simple approach didn't work either. Of course I deleted all things related to older versions and restarted several times. Would be great if there's a solution.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 18 Dec 2009 06:40:19 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a5d78872f1ab7d394d8f4f45f412e487">
+
+<div class="comment-subject">
+
+Comment 33
+
+</div>
+
+<div class="inlinecontent">
+<p>SOLVED!!!<br />
+1. Delete /Library/Vidalia, ~/Library/Vidalia and ~/.vidalia<br />
+2. Download the 0.2.6 alpha, and the vidalia bundle<br />
+3. Move Vidalia.app from the bundle to /Applications ond view packages content<br />
+4. Open package content of vidalia.app from the alpha and<br />
+5. In both open packages go into the Contents dir<br />
+6. Move From alpha to the bundle:<br />
+    a) Frameworks dir<br />
+    b) MacOS/Vidalia into corresponding folder (overwrite)<br />
+7. Start the improved bundle (if it's not in the Application folder you shout alter the pathes to tor and proxy)</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 18 Dec 2009 06:40:20 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c9069ce035fccafb2c915815004f14ef">
+
+<div class="comment-subject">
+
+Comment 34
+
+</div>
+
+<div class="inlinecontent">
+求禁止某个国家、地区、IP段的用户使用我的中继，禁止停用中继和和更新geoip的功能
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 05 Nov 2009 06:40:21 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ebcf3924b75ed9416c0de8fcf42916e0">
+
+<div class="comment-subject">
+
+Comment 35
+
+</div>
+
+<div class="inlinecontent">
+<p>When will be there an update for Tor Browser bundle ?<br />
+- 1.2.9 has too old firefox with lot of security bugs</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 10 Nov 2009 06:40:22 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bbd81a31ee2c4feae59d834837e5179b">
+
+<div class="comment-subject">
+
+Comment 36
+
+</div>
+
+<div class="inlinecontent">
+Yes, it's coming.  It's going to be a big update, so it's going through a lot of testing.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 17 Nov 2009 06:40:23 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bad4fe6935bf7d4d37fa46e0c2f0a190">
+
+<div class="comment-subject">
+
+Comment 37
+
+</div>
+
+<div class="inlinecontent">
+<p>Good job guys, but my tor connection is pitifully too slow, pls how can i speed up?<br />
+Do i need to work on my system, or simply upgrade to the new version???</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 10 Nov 2009 06:40:24 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4431abaa6ff930d486ce1df9194be96f">
+
+<div class="comment-subject">
+
+Comment 38
+
+</div>
+
+<div class="inlinecontent">
+去说服更多的人运行中继和说服开发组强制TOR后台中继。加油，相信自己的实力！运行中继的人越多速度越快！！
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 10 Nov 2009 06:40:25 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-73a80edba257b1ceb56e5515d2d7f317">
+
+<div class="comment-subject">
+
+Comment 39
+
+</div>
+
+<div class="inlinecontent">
+<a href="https://www.torproject.org/faq#WhySlow" title="https://www.torproject.org/faq#WhySlow" rel="nofollow">https://www.torproject.org/faq#WhySlow</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 17 Nov 2009 06:40:26 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-07c08dc10770b36cae7d1d8d127a6449">
+
+<div class="comment-subject">
+
+Comment 40
+
+</div>
+
+<div class="inlinecontent">
+Hello, may I ask Tor software support "Windows 7" operating system? Thank you
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 11 Nov 2009 06:40:27 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-82ec2cb03d589edc1cbd8a090d71aa01">
+
+<div class="comment-subject">
+
+Comment 41
+
+</div>
+
+<div class="inlinecontent">
+It's been reported to work under Win7 for a while now.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 17 Nov 2009 06:40:28 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-315dc9e4e95a28a8c74b5fdc35e140c2">
+
+<div class="comment-subject">
+
+Comment 42
+
+</div>
+
+<div class="inlinecontent">
+Is there planned windows 7 x64 support?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 13 Nov 2009 06:40:29 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a67b4ca19464285db8ec64bd6fcec6a2">
+
+<div class="comment-subject">
+
+Comment 43
+
+</div>
+
+<div class="inlinecontent">
+we lack a 64bit system for building binaries, and a license to run win7.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 17 Nov 2009 06:40:30 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6fab455697cda32e161a350b23656645">
+
+<div class="comment-subject">
+
+Comment 44
+
+</div>
+
+<div class="inlinecontent">
+Polipo does not allow downloads bigger than 30 megabytes. FAIL!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 13 Nov 2009 06:40:31 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9ada39935e2cca107ec552267bf8cdaf">
+
+<div class="comment-subject">
+
+Comment 45
+
+</div>
+
+<div class="inlinecontent">
+Yes it does.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 17 Nov 2009 06:40:32 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8e3d75b9dc153e4d1b0c80ed44308897">
+
+<div class="comment-subject">
+
+Comment 46
+
+</div>
+
+<div class="inlinecontent">
+<p>You guys are aware, of course, that all torproject pages for downloading Vidalia and tor files are blocked. Are you by any chance going to allow a mirror site for downloading?</p>
+
+<p>And, just a note:  "building bridges is unsupported on Mac" and ISPs are effectively whacking bridges faster than most novices can build them, so it looks like China is a crap out for Tor.</p>
+
+<p>Thanks for the effort. It was okay while it lasted.</p>
+
+<p>Any other proxy suggestions welcome. Please reply to this thread. Thanks.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fjoel%20%28not%20verified%29&amp;do=goto">joel (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 10 Dec 2009 06:40:33 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-78a25d28acb8e8ed61792b40d00f05d8">
+
+<div class="comment-subject">
+
+Comment 47
+
+</div>
+
+<div class="inlinecontent">
+<p>bridges work fine on the mac, what do you mean?  people in china who use osx are using bridges just fine.</p>
+
+<p>we have a number of mirror sites for downloading tor packages.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 11 Dec 2009 06:40:34 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d77b33a8c67612afa064ced26b26a657">
+
+<div class="comment-subject">
+
+Comment 48
+
+</div>
+
+<div class="inlinecontent">
+Guys Vidalia is not able to connect to the Tor Network. It says "Connecting to the Tor Network and It tries to connect but the connection freezes in the middle and that's all.First a start Privoxy then Vidalia.I have the Tor installed. I've used this program since 2006 but now  it seems there are some problems.I downloaded the latest ver of Vidalia and tried again but the same result. Any ideas ? Thanks.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 26 Jan 2010 06:40:35 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fc25129949b7afe022233a7ec10516cf">
+
+<div class="comment-subject">
+
+Comment 49
+
+</div>
+
+<div class="inlinecontent">
+<p>I have the same problem.</p>
+
+<p>I have been using Tor for years with no problem.</p>
+
+<p>Recently when Vidalia loads it freezes halfway and I get the following error message:</p>
+
+<p>Vidalia was unable to apply your server<br />
+settings to Tor.</p>
+
+<p>Unrecognized option: Uknown option<br />
+'BridgeRelay'. Failing.</p>
+
+<p>To try and solve the problem I installed the latest version of Firefox and the latest version of the Vidalia/Tor package - no change.</p>
+
+<p>Any ideas anyone?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 29 Jan 2010 06:40:36 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d7e79c5174b85c19630d338c23c80451">
+
+<div class="comment-subject">
+
+Comment 50
+
+</div>
+
+<div class="inlinecontent">
+<p>REMEDY:</p>
+
+<p>New TOR Vidalia bundle version archives<br />
+==&gt; http://www.theonionrouter.com/dist/vidalia-bundles/</p>
+
+<p>Direct link:<br />
+http://www.theonionrouter.com/dist/vidalia-bundles/vidalia-bundle-0.2.1....</p>
+
+<p>The last Mac OS security update screwed up previous Vidalia settings.<br />
+This latest version 0.2.1.24-0.2.7 (released Feb 2010) fixes the problems.<br />
+Reference ==&gt; https://blog.torproject.org/</p>
+
+<p>Install &amp; replace your previous TOR Vidalia bundle version:<br />
+* Double-click .dmg file and drag&amp;drop into Applications.<br />
+* Agree to replace the existing Vidalia.<br />
+* Open Vidalia.<br />
+* Inside Vidalia settings ADD bridges<br />
+(recommended for folks in mainland China):<br />
+~ 83.226.198.100:9443<br />
+~ 92.41.50.141:443<br />
+~ 69.60.117.34:9001<br />
+* You should be able to see the connections being successful from the "View the Network" map.</p>
+
+<p>Good Luck.</p>
+
+<p>~ Tom<br />
+(expat in Shanghai)</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 03 Mar 2010 06:40:37 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-af2c165cb4266e78d1eebb2015d3b28c">
+
+<div class="comment-subject">
+
+Comment 51
+
+</div>
+
+<div class="inlinecontent">
+<p>Tried all the above and still nothing (Running OS X 10.5).<br />
+Can someone PLEASE state if there is a fix and put it all in plain<br />
+join the dots English for us simpler folk - thanks.</p>
+
+<p>Have tried deleting everything and reinstalling etc etc  but same old non-connection problem.<br />
+How soon before a full installation bundle we can just install and it all works again -  simples!</p>
+
+<p>A thanks to all the guys that make this software work by the way - this isn't a moan at you - just frustration!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 17 Apr 2010 06:40:38 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-0abcc23ced1c6aca0c17e49d0a705f13">
+
+<div class="comment-subject">
+
+Comment 52
+
+</div>
+
+<div class="inlinecontent">
+pls whr can i get strong bridges,help me pls...
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 20 May 2010 06:40:39 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fa069c53a22dcfdfb78629bd392eb1ee">
+
+<div class="comment-subject">
+
+Comment 53
+
+</div>
+
+<div class="inlinecontent">
+Im new to the whole idea of vidalia and Tor but what settings should i use to run Tor in vidalia it always resets it back to ProxyFirewall please help  thanks!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 20 Jun 2010 06:40:40 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-544b75c4412d2ef295eed3ce14a08dfe">
+
+<div class="comment-subject">
+
+Comment 54
+
+</div>
+
+<div class="inlinecontent">
+Use a tor browser bundle, it's preconfigured.  <a href="https://torproject.org/torbrowser" title="https://torproject.org/torbrowser" rel="nofollow">https://torproject.org/torbrowser</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 21 Jun 2010 06:40:41 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FVidalia_0_2_5_Released&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:39:48 AM CDT</span>
+<!-- Created <span class="date">Sat 17 Oct 2009 07:21:56 AM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

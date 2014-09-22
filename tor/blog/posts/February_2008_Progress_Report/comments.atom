@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>February 2008 Progress Report</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/February_2008_Progress_Report/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/February_2008_Progress_Report/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/February_2008_Progress_Report/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:06:11Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/February_2008_Progress_Report/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/February_2008_Progress_Report/comment_1/"/>
+
+	<author><name>keelort (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:06:05Z</updated>
+	<published>2008-03-16T11:06:05Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;torbutton 1.1.14 alpha 及以后版本(目前1.1.14-1.1.17)存在Locale switch问题&lt;br /&gt;
+我使用的是英文版本的Firefox 2.0.0.12(en_US)+Locale switch，安装了zh_CN的locale，使用简体中文语言(zh_CN)的locale，但是安装了torbutton 1.1.14 alpha及以后版本，激活torbutton就会变成英文(en_US)的locale&lt;br /&gt;
+1.1.13没问题&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/February_2008_Progress_Report/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/February_2008_Progress_Report/comment_2/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:06:06Z</updated>
+	<published>2008-03-21T11:06:06Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;what about Firefox 3 betas support ? , because the current stable version add-on isn&#39;t compatible with it&lt;/p&gt;
+
+&lt;p&gt;tx,&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/February_2008_Progress_Report/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/February_2008_Progress_Report/comment_3/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:06:07Z</updated>
+	<published>2008-03-24T11:06:07Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I found out a  post that claims  Tor can be hacked.&lt;br /&gt;
+Check it please&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/February_2008_Progress_Report/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/February_2008_Progress_Report/comment_4/"/>
+
+	<author><name>arma</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:06:08Z</updated>
+	<published>2008-04-11T11:06:08Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;The first is to read the set of Warnings for how to use Tor safely:&lt;br /&gt;
+&lt;a href=&quot;https://www.torproject.org/download#Warning&quot; title=&quot;https://www.torproject.org/download#Warning&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download#Warning&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The second is to use the new development version of Torbutton:&lt;br /&gt;
+&lt;a href=&quot;https://torbutton.torproject.org/dev/&quot; title=&quot;https://torbutton.torproject.org/dev/&quot; rel=&quot;nofollow&quot;&gt;https://torbutton.torproject.org/dev/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It protects against a lot of attacks, including the one you point to.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/February_2008_Progress_Report/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/February_2008_Progress_Report/comment_5/"/>
+
+	<author><name>hank (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:06:09Z</updated>
+	<published>2008-04-08T11:06:09Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;OSX 10.4.11, via a Linksys router, static DSL.&lt;br /&gt;
+It appears I can use Vidalia with Firefox (torbutton works, passes tests)&lt;br /&gt;
+I can invoke Vidalia from the Dock; it runs a while then quits on its own.&lt;br /&gt;
+It says I don&#39;t have the ORport and DIRport set -- true that.&lt;/p&gt;
+
+&lt;p&gt;All I&#39;d want to do -- I think -- is set the thing to relay but without offering any of the checkbox services, just to serve as a router within the system - the Help says that&#39;s useful.&lt;/p&gt;
+
+&lt;p&gt;Is it safe, at this level of inexpertise?  OR should I just wait?&lt;/p&gt;
+
+&lt;p&gt;Closest advice I&#39;ve found online is for Linux, says:&lt;/p&gt;
+
+&lt;p&gt;[open the web page for the router]&lt;br /&gt;
+Go to the advanced tab -&amp;gt; forwarding&lt;br /&gt;
+set up two applications, ORport, DIRport&lt;br /&gt;
+select TCP, select 9001 and 9030, and&lt;br /&gt;
+point them to whatever IP you have on your linux box.&lt;br /&gt;
+Make sure you tell TOR to advertise your external IP address via torc.&lt;/p&gt;
+
+&lt;p&gt;Well, &quot;whatever IP&quot; and &quot;torc&quot; are mysteries.&lt;br /&gt;
+--------------------&lt;/p&gt;
+
+&lt;p&gt;Doesn&#39;t quite fit the Linksys.  Maybe this should be done in the &quot;Port Range Forwarding&quot; section?  I have the help info.  But I wonder if I&#39;m not smart enough to be opening the machine up like this, til it&#39;s got more assurance of security.&lt;/p&gt;
+
+&lt;p&gt;Got a &quot;don&#39;t bother me yet trying to be helpful, we&#39;ll call you when ready&quot; flag you can set somewhere for folks like me to know when to try to make our machines useful?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/February_2008_Progress_Report/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/February_2008_Progress_Report/comment_6/"/>
+
+	<author><name>hank (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:06:10Z</updated>
+	<published>2008-04-08T11:06:10Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I THINK this is right -- not using the internal firewall, using the router.&lt;br /&gt;
+The FAQ for that seems to be, in full:&lt;/p&gt;
+
+&lt;p&gt;-----------begin-----&lt;/p&gt;
+
+&lt;p&gt;   * If you just use an external NAT router as your firewall, you only need to do the port forwarding through that. &lt;/p&gt;
+
+&lt;p&gt;Volunteers: please add advice for other platforms if you know how they work.&lt;/p&gt;
+
+&lt;p&gt;----------end--------&lt;/p&gt;
+
+&lt;p&gt;COMMENT:&lt;/p&gt;
+
+&lt;p&gt;I usually have just the specific IP addresses of the machines attached to the router authorized.  So I gather I&#39;d have to add two IP addresses, and in the setup, give a &#39;range&#39; of only one port number each for ORport and DIRport?&lt;/p&gt;
+
+&lt;p&gt;Here&#39;s what the Linksys BEFSR says about port forwarding.  I am open to advice whether this is what ought to be done:&lt;/p&gt;
+
+&lt;p&gt;------LINKSYS_HELP---------&lt;/p&gt;
+
+&lt;p&gt;Port Range Forwarding&lt;/p&gt;
+
+&lt;p&gt;Port Range Forwarding can be used to set up public services on your network. When users from the Internet make certain requests on your network, the Router can forward those requests to computers equipped to handle the requests. If, for example, you set the port number 80 (HTTP) to be forwarded to IP Address 192.168.1.2, then all HTTP requests from outside users will be forwarded to 192.168.1.2. It is recommended that the computer use static IP address.&lt;/p&gt;
+
+&lt;p&gt;You may use this function to establish a web server or FTP server via an IP Gateway. Be sure that you enter a valid IP address. (You may need to establish a static IP address with your ISP in order to properly run an Internet server.) For added security, Internet users will be able to communicate with the server, but they will not actually be connected. The packets will simply be forwarded through the Router.&lt;/p&gt;
+
+&lt;p&gt;To add a server using forwarding:&lt;/p&gt;
+
+&lt;p&gt;   1. Enter an Application name of the service you want to forward.&lt;br /&gt;
+   2. Enter the Port Range Start and End of the service you want to forward.&lt;br /&gt;
+   3. Select the protocol used by the services.&lt;br /&gt;
+   4. Enter the IP Address of the server that you want the Internet users to access.&lt;br /&gt;
+   5. Select Enabled for that entry.&lt;br /&gt;
+   6. Click the Save Settings button to save the settings.&lt;/p&gt;
+
+&lt;p&gt;To delete a service entry:&lt;/p&gt;
+
+&lt;p&gt;   1. Enter a zero number in the Port Range number and IP Address fields.&lt;br /&gt;
+   2. Uncheck the TCP and/or UDP check box and the Enable check box.&lt;br /&gt;
+   3. Clear the Application field.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/February_2008_Progress_Report/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/February_2008_Progress_Report/comment_7/"/>
+
+	<author><name>hank (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:06:11Z</updated>
+	<published>2008-04-11T11:06:11Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Checking, no contact ...&lt;/p&gt;
+
+&lt;p&gt;I know you guys are busy, and since nobody&#39;s opened a new monthly thread since this February one, I may be asking in the wrong place.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+
+</feed>

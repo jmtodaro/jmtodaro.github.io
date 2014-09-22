@@ -1,0 +1,1515 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Recent events in Egypt</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FRecent_events_in_Egypt&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Recent events in Egypt</a>
+
+</span>
+
+
+<div id="content">
+<p>The current state of affairs in Egypt looks quite bleak for people using Vodafone, Orange, TE Data, and other well-known service providers. It is reported that each of those companies was ordered by the Egyptian government to turn down their internet services. The nature of the order and its legality is of course very unclear at this time. What is known is that nearly in perfect unison many Egyptian ISPs turned down their BGP route announcements to countries outside of Egypt and from what we've been able to gather they're also not peering with each other. The cables connecting (<a href="http://en.wikipedia.org/wiki/FALCON_(cable_system)">FLAG</a> and <a href="http://www.seabone.net/">SEABONE</a>) Egypt to the world are still  <i>physically</i> intact.</p>
+
+<p>The impact of de-peering is significant; even if someone is able to get packets directly to the edge routers of TE Data or another ISP, no response will be forthcoming. <a href="http://www.renesys.com/blog/2011/01/egypt-leaves-the-internet.shtml">Renesys</a>, <a href="http://stat.ripe.net/egypt/">RIPE</a>, and <a href="http://bgpmon.net/blog/?p=450">BGPmon</a> have fantastic technical details for those without access to an active BGP router.</p>
+
+<p>At this point it is also well-known that the ISP Noor has been up through the entire event. With access to systems inside of Egypt, we have discovered that it appears to be entirely unfiltered - Tor works perfectly, controversial websites are not blocked, and it is even quite fast compared to our systems on other Egyptian networks. As of very late last night, systems from Noor were still unable to reach systems on TE Data or other networks in Egypt. Early this morning it appears that another ISP, Etisalat (AS36992), returned to the Internet (via nileonline.palermo7.pal.seabone.net) and we're working with contacts in Egypt to test any possible filtering and to ensure that Tor is functional on their network.</p>
+
+<p>In our tests of the TE Data network before it disconnected, we found very heavy handed but sloppy filtering. Tests of popular websites revealed that TE Data filtered based on IP blocklists, they did not tamper with DNS queries, they did not trigger TCP resets on keywords, nor did they attempt to perform any kind of Man-In-The-Middle attacks on SSL or SSH connections. While it is possible that TE Data may have layer seven filtering or Deep Packet Inspection capabilities, it does not appear to have used any advanced filtering methods.</p>
+
+<p>While the seemingly unfiltered nature of Noor's network is a positive development and sharply contrasts with the heavy filtering of TE Data's network, we have no methods for discovering data retention policies or wiretapping capabilities of any of the available networks in Egypt. We urge all people in Egypt to consider that any ISP may log data and depending on political outcomes, it may not be favorable to have easy to trace records of your online activities.</p>
+
+<p>Many Egyptians are also using dial up services that route through the Egyptian controlled state telecommunications systems. While on the face this seems safe and it may very well be safer than a known filtered or probably wiretapped network, it's certainly not outside of the capabilities of the Egyptian authorities to decode or analyse these kinds of communications. We urge people who are using dial up systems or leased lines, VSAT or even BGAN connections to be cautious. The nature of any internet connection has a variable difficulty for monitoring but it is by no means impossible. That's why we're working so hard on Tor because the world needs software for traffic analysis resistance; the internet doesn't have this for free and certainly not in a country with a highly centralized internet architecture.</p>
+
+<p>There is a serious trade off to be made by users in hostile network environments with major political instability: Tor usage is possibly detectable with a skilled adversary. Connections made with questionable "privacy" or "security" proxy services are certainly easier than detecting Tor because of their static nature. The same is true of VPN services: all of these things are probably detectable with the right understanding and the proper equipment. It goes without saying that entirely unprotected connections to known unfavorable sites or services is detectable and well within the reach of the Egyptian network operators.</p>
+
+<p>Please understand that while we make no promises, we believe that Tor is currently the best option for people in this situation. It's what we use when we're in Egypt and it's what we think will serve people the best in Egypt when they have a network connection to the rest of the internet.</p>
+
+<p>The number of users in Egypt in the last week has skyrocketed:<br />
+<img src="https://blog.torproject.org/files/eg-users2-2011-01-28.png"></p>
+
+<p>The number of bridges run around the world has increased remarkably:<br />
+<img src="https://blog.torproject.org/files/running-bridges-2011-01-28.png"></p>
+
+<p>Most impressively, the number of fully public Tor relays has increased:<br />
+<img src="https://blog.torproject.org/files/relays-diff-2011-01-28.png"></p>
+
+<p>It appears that the Tor network itself has gained bandwidth capacity and geographical scope thanks to people concerned with the situation in Egypt. If you'd like to get involved, we'd love it if you could help by <a href="https://www.torproject.org/getinvolved/volunteer.html.en">running a Tor relay or a Tor bridge</a>.</p>
+
+<p>Update: As of late January 30th, most of Egypt's BGP routes for residential access has been pulled from the Internet.</p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/bridges/" rel="tag">bridges</a>
+
+<a href="../../tags/censorship/" rel="tag">censorship</a>
+
+<a href="../../tags/egypt/" rel="tag">egypt</a>
+
+<a href="../../tags/internet_access/" rel="tag">internet access</a>
+
+<a href="../../tags/relays/" rel="tag">relays</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-c558fed7aaa6e10be3ab4f24fc39a354">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+I am currently in China and I just want to say thank you from the bottom of my heart. I can easily comunicate with my whole family via. facebook. Whem I get home to Canada I will set up a relay network to help others.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 29 Jan 2011 07:13:51 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-028daf836c749bd3cb18455c073a97e7">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>Thanks for the update.</p>
+
+<p> -Kat</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 29 Jan 2011 07:13:52 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1f6cd3603039d73580fd953d0c176542">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+Who'd have thought nerds would enable the revolution, good job
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 29 Jan 2011 07:13:53 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-06bce46bff31bdd93426a9fffdddf568">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+We all learned how to dodge spitballs in school and turned that experience into dodging other things. lol
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 01 Feb 2011 07:13:54 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c2520101023596269643d545d98a73f2">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>Read "Litle Brother" http://craphound.com/littlebrother/, http://craphound.com/littlebrother/download/ or "For the Win" http://craphound.com/ftw/, http://craphound.com/ftw/download/ by Cory Doctorow. </p>
+
+<p>In "Someone Comes to Town, Someone Leaves Town" http://craphound.com/someone/, http://craphound.com/someone/download.php, there's food for another idea: Imagine WiFi routers reprogrammed to route everything in encrypted (twice, using two different algorithms, autochange at least once a week) form and anonymously, maintaining sessions by means of randomly generated throwaway session IDs and perhaps GPG signatures rather than using IPs and MAC addresses. Either no logs or even log memory, frequent log purging or well encrypted logs/completely encrypted system internally). Add a mechanism for reducing/managing redundancy and let them run on mobile phone batteries + solar charging. Now you can build truly free local Internets. There are surely ways of making uplinks to other geographical locations or outside a country's borders Cantennas, lasers or old-fashioned radio carriers (from longwave to shortwave, digital and encrypted signal) for long-distance links, or even satellite uplinks. On the user side, encrypted combo USB WiFi dongles (same anonymous way of operation as the routers) with all the necessary software and TOR ready-to-use inside. </p>
+
+<p>With a simple gyro device and parachutes (think plastic bags + cord), an area could be showered with such devices, automatically turning into correct operating position upon landing. Umbrella type satellite dishes is just one option for providing some satellite uplinks or the like.</p>
+
+<p>If possible, the WiFi signal could be made to look like signal noise, making detection and homing in for elimination difficult. The technology is known, just a matter of having the knowhow and programming it.</p>
+
+<p>All of the above can be applied to mobile phone networks too. Technology (software) making every cell phone a cellular network router/repeater already exists (Swedish invention) and just needs tweaking.</p>
+
+<p>Not only the oppressed would benefit from such technology, everyone in both the developing world and the rich countries would, ensuring true Internet freedom and Internet access.</p>
+
+<p>//GA</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 05 Feb 2011 07:13:55 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5a1b98e94cf5641929acb65572e45ec2">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi, and Thank You!</p>
+
+<p>Any links to info about these ideas?  I've been wondering about whether this might be possible, after watching Egypt, and hearing that Mr. Obama was looking for an "internet kill-switch" in the USA.  We need a new internet that is more distributed, robust, and - dare I say it? - democratic.  </p>
+
+<p>What I don't personally have is the tech expertise.  I wouldn't even know where to start.  -But I'm willing to learn.  I'm starting to Google your terms, but if you know of sources for good, concentrated knowledge on these subjects, please share.</p>
+
+<p>//MI</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 08 Feb 2011 07:13:56 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9a2f01547c98acb990e0505b3294a10a">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p>You inspired me!<br />
+I've setup a tor exit node on my debian VPS. Hope the provider doesn't mind. <img src="../../smileys/smile4.png" alt=";)" /></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 29 Jan 2011 07:13:57 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ad0ff718f209291e04ea66ea4ca6f2a2">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+set up a Tor bridge yesterday; however can't tell if it's being used; bandwidth graph doesn't show much activity, some, but not much...hope i am doing everything right!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 29 Jan 2011 07:13:58 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a59df54d6ab26c95a29f026d09a45114">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+<p>Probably you're doing everything right.</p>
+
+<p>Tor relays (bridges ^= dark relays) need "a little" time to come up to speed.</p>
+
+<p>I think this might be to protect the network, you need to be stable enough to get traffic.<br />
+My Tor relay was restarted 24h ago with a limit of 20MBit, it took &gt;8h  to get over 10kBit of traffic, after 16h it was at about 600kBit, currently it has about 8Mbit. and rising.</p>
+
+<p>I had to learn the hard way that you have a long wait for traffic when you restart to make changed parameters active, it is possible to change torrc and send SIGHUP to reload it.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 30 Jan 2011 07:13:59 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ceb1ff4c2b9a169ae1ab404c4c8f781b">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+<p>The same "problem" for me, my bridge has nearly 0.00 KB/s (up &amp; down) , the msg in log say it's up and all ok, but ...</p>
+
+<p>Hope that in some extra time it get more traffic.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 01 Feb 2011 07:14:00 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-dfd1edba12f84407d9095173806f867c">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+<p>I've run bridges on and off for years though one I configured recently is receiving zero incoming.  Nothing at all.  TORRC looks fine, same as I've always used, inbound ports are open, nothng is blocking, just there hasn't been even a single (client) packet inbound to the ORPort yet since I started it 2 days ago.  The only inbound seen has been immediately after startup where what I gather are a selection of Tor servers out there momentarily check bridge connectivity (I see around 4 inbound connections pull ~150KB shortly after firing the service up, and then that's it).</p>
+
+<p>I'm wondering what's going on.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 02 Feb 2011 07:14:01 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fba31ce57b5a20a2108b4362b1128d8a">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+<p>Day 3.  Still zero clients inbound, only the occasional Tor relay/exit/node popping in momentarily for a quick chat.</p>
+
+<p>Not much demand for bridge relays then?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 04 Feb 2011 07:14:02 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e6ac1870c251282eb4e8c8c98893f743">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+Now 7 days later.  Number of bridge clients: 0
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 06 Feb 2011 07:14:03 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a7886a8180e558dd62c9d7bb7e998924">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+Gosh it feels good to be able to help other people, even though I live in Australia halfway across the other side of the world. I've been running my Tor Bridge for a few days now and notice that the vast majority of users are from China. Haven't seen any from Egypt yet...
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 29 Jan 2011 07:14:04 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1d9656df4db274a60b2a11ff7420e701">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+<p>The fast pace of mankind is showing up all around the globe. We are people of the earth and the sooner we realize that the better off we will be. I hope the government realizes that and gets the internet up and running again.<br />
+Scary thought how easy a country can shut down information.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 29 Jan 2011 07:14:05 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e7a201622ae1a466380a8d3219e56d10">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+<p>Pirate Party of New York is currently running Tor bridges 24/7 among numerous members and getting more people to do so everyday.  Thank you for giving us the power to help others and keep up the great work!</p>
+
+<p>&lt;3 PPNY</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 29 Jan 2011 07:14:06 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-46e0d958a504be049de7abad443604de">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+<p>I'm intrigued as to why the "number of active bridges" chart is nearly a perfect sine wave. Connections only available in the daytime?</p>
+
+<p>-- abadidea</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 29 Jan 2011 07:14:07 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2a3d4cf03175f6192566622d00d7026b">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+Excellent work.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 29 Jan 2011 07:14:08 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-649cc76be0a8e549c641a47e1177bf1d">
+
+<div class="comment-subject">
+
+Comment 19
+
+</div>
+
+<div class="inlinecontent">
+Just hope my bridge helps someone access information freely.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 29 Jan 2011 07:14:09 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-678a1abce4d5cb6f52b1112c567a3ad5">
+
+<div class="comment-subject">
+
+Comment 20
+
+</div>
+
+<div class="inlinecontent">
+This is heartening to learn. Thanks, Jacob and the Tor team.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 30 Jan 2011 07:14:10 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a5116ef4efde7e93cb65d9ffc8a88dd5">
+
+<div class="comment-subject">
+
+Comment 21
+
+</div>
+
+<div class="inlinecontent">
+<p>Possibly how they did it.<br />
+I am in Egypt and using Noor DSL<br />
+All blocked networks are routed through AFRINIC http://www.afrinic.net/<br />
+Machines can connect to local routers and free dial-up numbers such as 07777777 or 07770777 but if you do trace-rout all traffic ends at AfriNIC., This was tested for TE Data, Itisalat, Link<br />
+Noor DSL is routing through a google IP 72.14.198.229 and is getting through.<br />
+I don't know if this information can be used to help the people being blocked.<br />
+I leave this to the tech savy<br />
+Best of luck</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 30 Jan 2011 07:14:11 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-17347618c8f116eaf272f54cd0cd6b86">
+
+<div class="comment-subject">
+
+Comment 22
+
+</div>
+
+<div class="inlinecontent">
+As of yesterday, Noor has also gone dark, as Mubarak commits Egypt to financial suicide. What little traffic is still getting out is apparently via asynch dial-up (POTS) to ISPs in other countries. With proposals afoot to give "kill-switch" authority to POTUS, I think I'll hold on to my last USR 56K brick, instead of throwing it away as planned...
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 01 Feb 2011 07:14:12 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bfe66a562bca222fd11e727f7f642e0f">
+
+<div class="comment-subject">
+
+Comment 23
+
+</div>
+
+<div class="inlinecontent">
+Glad that you are here!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 30 Jan 2011 07:14:13 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1831d98bcd2db260363678b0f506f2d6">
+
+<div class="comment-subject">
+
+Comment 24
+
+</div>
+
+<div class="inlinecontent">
+<p>Ok first of all i know this isn't the right place for this.</p>
+
+<p>Is there a way for a exit node to decide which sites it allows exits to? Something like facebook, twitter and some newspapers?</p>
+
+<p>This way i could participate as a exit node without having to worry about the police accusing me of being a pedophile. Or is there a good reason why this shouldn't be done?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 30 Jan 2011 07:14:14 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1669091cf5385a7d1a44029ed8a3056a">
+
+<div class="comment-subject">
+
+Comment 25
+
+</div>
+
+<div class="inlinecontent">
+Yes, but by IP address only.  See <a href="https://www.torproject.org/docs/faq.html.en#ExitPolicies" title="https://www.torproject.org/docs/faq.html.en#ExitPolicies" rel="nofollow">https://www.torproject.org/docs/faq.html.en#ExitPolicies</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 30 Jan 2011 07:14:15 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ed31ca8a9b26d10e1bb29b22686f6e8d">
+
+<div class="comment-subject">
+
+Comment 26
+
+</div>
+
+<div class="inlinecontent">
+Good stuff! I installed and set up bridge. Even though it's arm chair assistance, the fact that the world can get involved is tremendous. Perhaps we should prepare for wider shutdowns in other nations north-south-east-west as governments become more alienated from their people. The "leaders" just don't get it and in many instances, the "public" just goes along. People in Egypt, Tunisia, Yemen, Jordan (and those in France and UK that rebelled against budget cuts) show us all that real change does not happen until the street is occupied. Thanks TOR and to the US Navy for initial funding.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 30 Jan 2011 07:14:16 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a42e76d55363126e3316b85c81ea5829">
+
+<div class="comment-subject">
+
+Comment 27
+
+</div>
+
+<div class="inlinecontent">
+Very interesting, am pleased to see that freedom still exists in the face of those trying to stop it.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 30 Jan 2011 07:14:17 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5151bd95593956d307b001b87cf147b2">
+
+<div class="comment-subject">
+
+Comment 28
+
+</div>
+
+<div class="inlinecontent">
+http://technorati.com/politics/article/egypts-protests-stop-oppressing-y...
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 30 Jan 2011 07:14:18 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4a360ca9e45e2b613dae9ab2ef36fdac">
+
+<div class="comment-subject">
+
+Comment 29
+
+</div>
+
+<div class="inlinecontent">
+<p>What's interesting to me about the internet is that the "free frontier" aspect of it is, inevitably, going to fall to corporations and the government. However, once it does, I see stuff like this liberating it again, causing what could possibly be termed as an internet revolution. Glad to find out that projects like this exist, and glad to see that, even though they may try and have some measure of success, no one country can COMPLETELY sever its people's connection to the internet overnight.</p>
+
+<p>- Locke</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 31 Jan 2011 07:14:19 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6d7c2d033295c643e17b3160414ee4af">
+
+<div class="comment-subject">
+
+Comment 30
+
+</div>
+
+<div class="inlinecontent">
+can i browse the internet for free using gprs my fone working as a modem on my computer
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 31 Jan 2011 07:14:20 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-32a1a6fa582ed5d59c7dcbe1e3397957">
+
+<div class="comment-subject">
+
+Comment 31
+
+</div>
+
+<div class="inlinecontent">
+As has been the case in the past, radio amateurs aka 'hams' have made emergency communications available when normal channels are cut.  In the United States of America they are represented by the American Radio Relay League 'ARRL'.  There must be a comparable group in Egypt.  I do not know whether they are able to operate as ISP's, but they can at least provide communication more basic levels. 
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 01 Feb 2011 07:14:21 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-13a8895f54ef64e4c9a3f8b0e2929dc0">
+
+<div class="comment-subject">
+
+Comment 32
+
+</div>
+
+<div class="inlinecontent">
+<p>Ive got 3 vps in an egypt telecom data centre that have just come back online.</p>
+
+<p>OpenVz/Linux/Solus.</p>
+
+<p>Sadly, I suck at installing things like tor very quickly, if someone with quicker/better skills wants to have a go and get tor running while its all working mail me.</p>
+
+<p>treeist - at  - gmail </p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 02 Feb 2011 07:14:22 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-45eb84e4811050030b64af5c1d619b9e">
+
+<div class="comment-subject">
+
+Comment 33
+
+</div>
+
+<div class="inlinecontent">
+situations like these highlight the value of tor. I do have a question i am not sure if this is the right place to ask it but from what i see there is no forum, so hopefully someone will be able to answer. It's not clear to me who can be a TOR entering node, my concern is in case of ISPs who want to monitor  users, if they are able to provide an entering TOR node, all they need to do is to forbid for their users access to the rest of TOR nodes resulting the use of their node to entering TOR network and by that gain total access on the traffic of their users. Is that correct or i am misunderstanding something?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 02 Feb 2011 07:14:23 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a232813dc7f13ca6abe11ad8fa49319f">
+
+<div class="comment-subject">
+
+Comment 34
+
+</div>
+
+<div class="inlinecontent">
+<p>With expansion, sorting out the rotten apples in the network becomes a rising priority. The damage a single corrupt node can do is worse than all those Echelon domes on the face of the planet, and once corrupt nodes can remain a permanent part of the network it will only be a matter of time until they might obtain a legal monopoly in some places, turning it all into a worse than useless farce.</p>
+
+<p>In the recent weeks the indymedia network is doing just that - international activist communications have been polluted by secret police for quite a while, and with the increase in common sensitivity brought about by Wikileaks now there is rollback. European nodes reported a number of successes in dissassembling infiltration and entrapment cases, and that part of the network has begun rearranging itself. Arizona indymedia was crucial for bringing about the spiritual paralysis of the global surveillance regime which gave breath to the insurrection in North Africa. Australia indymedia has better in depth analysis of the events than any diplomatic cable. In the past, indymedia has lost some nodes in West Asia to secret police totalitarianism, and would be enriched by a new node with a fresh spirit.</p>
+
+<p>Mubar(a)k is only the currently most annoying high profile CIA proxy. We'll shut the entire circus down, and by helping a fellow human being unwind government minders you can be a part of it.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 03 Feb 2011 07:14:24 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-05ebecfa00a802422adc928b06232083">
+
+<div class="comment-subject">
+
+Comment 35
+
+</div>
+
+<div class="inlinecontent">
+<p>I am in Egypt and work in the IT Sector as a foreigner I have a point of view that is much different from those who are looking from the outside in... The system is very broken here when it comes to data and internet. I work with all providers for years and years. The idea that they are capable of advanced packet filtering at any level is interesting. </p>
+
+<p>TE Data is reliant with outsourcing of the high end capacities of there network and that is the primary reason the shut down was so sloppy on their side. Silly pride will not allow them to make the phone call to have the outsourced technical support team help them to shut things down properly.</p>
+
+<p>To me it is amazing that they were even capable to do rudimentary DNS Filtering. TE Data uses Open DNS as their Primary DNS Servers and uses the advanced features of the Pro Service to filter as they like. The ADSL and Dedicated users are mostly on DHCP for IP Addressing and when Static IP are assigned the give the Open DNS server as the DNS the client should use.</p>
+
+<p>The population is not informed enough to understand DNS so it is an easy FREE way to do base filtering. As I said when this started the only to stop the access is by flipping the power switch at Ramses. Shutting down the Core routers is the only way because those who have rudimentary knowledge will by pass the measures. </p>
+
+<p>They spent days trying to manage a controlled shutdown and then it came down to a power breaker! Kill the core and it all falls down! No BGP4 - No Internet!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 12 Feb 2011 07:14:25 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d58528a808fcea48ec6a8531493f5f78">
+
+<div class="comment-subject">
+
+Comment 36
+
+</div>
+
+<div class="inlinecontent">
+<p>Leaving the sms system down is only for one reason! Phone calls can be tracked by increased volume and the looked at to see who was calling who. Then they can be linked to internal spy data of people of interests.</p>
+
+<p>The mass sms will not so much point to the ring leaders of the opposition groups... So at the time that retribution and or payback goes into play... those who spearheaded the coordination of the people for the revolution will be easy to find...</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 12 Feb 2011 07:14:26 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7376b98cf68614542ea71691ecb3d3d6">
+
+<div class="comment-subject">
+
+Comment 37
+
+</div>
+
+<div class="inlinecontent">
+<p>I have just downloaded and begun to use Tor after a suggestion from an IT Security friend. I love it, I love its mission and purpose.</p>
+
+<p>I am forever going to be a a relay and exit-node. This service is valuable in this day when governments and those with power want to shut down the common man.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 17 Feb 2011 07:14:27 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c625f46ac87976056dd20389567ccf3d">
+
+<div class="comment-subject">
+
+Comment 38
+
+</div>
+
+<div class="inlinecontent">
+This user wants intelligent exit enclaving. If there are no exit nodes with the same IP as the website target, there should be some in the same country or continent. A reasonable balance between minimising the distance (especially the presence of network bottlenecks) between exit node and target, and minimising the predictability which exit node might be used to reach a certain website might be the best defence against the echelon datamining + last mile wiretap correlation attack method.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 23 Feb 2011 07:14:28 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FRecent_events_in_Egypt&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 07:13:50 AM CDT</span>
+<!-- Created <span class="date">Sat 29 Jan 2011 04:54:45 PM CST</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

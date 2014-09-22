@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Tor 0.2.1.22 Released</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:48:23Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/comment_1/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:15Z</updated>
+	<published>2010-01-23T12:48:15Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Downloaded and installed v 0.2.1.22 (expert package Tor for Windows). Starts and runs slightly faster than version .21. Thanks for the improvement! Running Win XP Pro sp3 with Privoxy 3.0.12 (stable).&lt;/p&gt;
+
+&lt;p&gt;Used Scroogle search engine &quot;Scroogle Scraper&quot; and got this notice:&lt;/p&gt;
+
+&lt;p&gt;&quot;It appears that you arrived at Scroogle from Tor.&lt;/p&gt;
+
+&lt;p&gt;To use Scroogle with Tor, you should use the SSL version of Scroogle.&lt;br /&gt;
+This will prevent rogue Tor exit nodes from sniffing your search terms.&lt;/p&gt;
+
+&lt;p&gt;Thank you.&quot;&lt;/p&gt;
+
+&lt;p&gt;I never saw this notice until this week. Any ideas why Scroogle would post this notice?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/comment_2/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:16Z</updated>
+	<published>2010-01-24T12:48:16Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I downloaded Mac vidalia-bundle-0.2.1.22-0.2.6-i386, here is what i get:&lt;/p&gt;
+
+&lt;p&gt;janv. 24 13:00:57.786 [Notice] Tor v0.2.1.22. This is experimental software. Do not rely on it for strong anonymity. (Running on Darwin i386)&lt;br /&gt;
+janv. 24 13:00:57.798 [Notice] Initialized libevent version 1.4.13-stable using method kqueue. Good.&lt;br /&gt;
+janv. 24 13:00:57.798 [Notice] Opening Socks listener on 127.0.0.1:9050&lt;br /&gt;
+janv. 24 13:00:57.799 [Notice] Opening Control listener on 127.0.0.1:9051&lt;br /&gt;
+janv. 24 13:00:57.997 [Notice] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+janv. 24 13:00:57.998 [Notice] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+janv. 24 13:00:57.999 [Notice] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+janv. 24 13:00:57.999 [Notice] No current certificate known for authority ides; launching request.&lt;br /&gt;
+janv. 24 13:00:58.000 [Notice] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+janv. 24 13:00:58.000 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+janv. 24 13:00:58.001 [Notice] No current certificate known for authority urras; launching request.&lt;br /&gt;
+janv. 24 13:00:58.002 [Notice] Bootstrapped 5%: Connecting to directory server.&lt;br /&gt;
+janv. 24 13:00:58.006 [Notice] I learned some more directory information, but not enough to build a circuit: We have no network-status consensus.&lt;br /&gt;
+janv. 24 13:00:59.948 [Notice] Bootstrapped 10%: Finishing handshake with directory server.&lt;br /&gt;
+janv. 24 13:01:02.945 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+janv. 24 13:01:07.250 [Warning] TLS error: unexpected close while renegotiating&lt;br /&gt;
+janv. 24 13:01:27.129 [Notice] No current certificate known for authority moria1; launching request.&lt;br /&gt;
+janv. 24 13:01:27.130 [Notice] No current certificate known for authority tor26; launching request.&lt;br /&gt;
+janv. 24 13:01:27.131 [Notice] No current certificate known for authority dizum; launching request.&lt;br /&gt;
+janv. 24 13:01:27.131 [Notice] No current certificate known for authority ides; launching request.&lt;br /&gt;
+janv. 24 13:01:27.163 [Notice] No current certificate known for authority gabelmoo; launching request.&lt;br /&gt;
+janv. 24 13:01:27.164 [Notice] No current certificate known for authority dannenberg; launching request.&lt;br /&gt;
+janv. 24 13:01:27.165 [Notice] No current certificate known for authority urras; launching request.&lt;/p&gt;
+
+&lt;p&gt;Should we wait for another update ?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/comment_3/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:17Z</updated>
+	<published>2010-01-24T12:48:17Z</published>
+
+	<content type="html" xml:lang="en">
+	I have Mac OS and I have the same problem as Anonymous upstairs. Anyone can help?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/comment_4/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:18Z</updated>
+	<published>2010-01-24T12:48:18Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I am running Snow Leopard 10.6.2 and am having the same problem.  I suspect the problem was created by Apple in security update 2010-001.  The following description of one &quot;fix&quot; from Apple&#39;s website makes me suspicious because it says they have disabled renegotiation in SSL and TLS.  How to fix this, assuming it is the problem, is beyond my expertise.&lt;/p&gt;
+
+&lt;p&gt;OpenSSL&lt;/p&gt;
+
+&lt;p&gt;CVE-ID: CVE-2009-3555&lt;/p&gt;
+
+&lt;p&gt;Available for: Mac OS X v10.5.8, Mac OS X Server v10.5.8, Mac OS X v10.6.2, Mac OS X Server v10.6.2&lt;/p&gt;
+
+&lt;p&gt;Impact: An attacker with a privileged network position may capture data or change the operations performed in sessions protected by SSL&lt;/p&gt;
+
+&lt;p&gt;Description: A man-in-the-middle vulnerability exists in the SSL and TLS protocols. Further information is available at http://www.phonefactor.com/sslgap A change to the renegotiation protocol is underway within the IETF. This update disables renegotiation in OpenSSL as a preventive security measure. The issue does not affect services using Secure Transport as it does not support renegotiation. Credit to Steve Dispensa and Marsh Ray of PhoneFactor, Inc. for reporting this issue.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/comment_5/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:19Z</updated>
+	<published>2010-01-24T12:48:19Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;As mentioned on the or-talk mailing list, the bug can be followed here:&lt;br /&gt;
+https://bugs.torproject.org/flyspray/index.php?do=details&amp;amp;id=1225&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/comment_6/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:20Z</updated>
+	<published>2010-01-27T12:48:20Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Skipping invalid argument &#39;%s&#39; to MapAddress&lt;br /&gt;
+Changed to using entry guards, or changed preferred or excluded node lists. Abandoning previous circuits.&lt;br /&gt;
+Worker-related options changed. Rotating workers.&lt;br /&gt;
+Previously validated Bridge line could not be added!&lt;br /&gt;
+MapAddress &#39;%s&#39; has too few arguments. Ignoring.&lt;br /&gt;
+Couldn&#39;t parse internal dirserver line %s&lt;br /&gt;
+Ignoring extra arguments to MapAddress.&lt;br /&gt;
+Previously validated client authorization for hidden services could not be added!&lt;br /&gt;
+State file &quot;%s&quot; is not a file? Failing.&lt;br /&gt;
+Loaded state from &quot;%s&quot;&lt;br /&gt;
+DirPortFrontPage file &#39;%s&#39; not found. Continuing anyway.&lt;br /&gt;
+Configured to measure directory request statistics, but no GeoIP database found!&lt;br /&gt;
+Configured to measure entry node statistics, but no GeoIP database found!&lt;br /&gt;
+Bridge status changed.  Forgetting GeoIP stats.&lt;br /&gt;
+%s\geoip&lt;br /&gt;
+Unable to parse state in &quot;%s&quot;. Moving it aside to &quot;%s&quot;.  This could be a bug in Tor; please tell the developers.&lt;br /&gt;
+Uh oh.  We couldn&#39;t even validate our own default state. This is a bug in Tor.&lt;br /&gt;
+Initialized state&lt;br /&gt;
+Unparseable bandwidth history state: %s&lt;br /&gt;
+Unable to parse state in &quot;%s&quot;; too many saved bad state files to move aside. Discarding the old state file.&lt;br /&gt;
+Bridges cannot be configured to measure additional GeoIP statistics as entry guards.&lt;br /&gt;
+Unable to read state file &quot;%s&quot;&lt;br /&gt;
+Error in accounting options&lt;br /&gt;
+Error loading rendezvous service keys&lt;br /&gt;
+Error creating cookie authentication file.&lt;br /&gt;
+Error parsing already-validated policy options.&lt;br /&gt;
+Previously validated hidden services line could not be added!&lt;br /&gt;
+Weirdly, I couldn&#39;t even move the state aside. The OS gave an error of %s&lt;br /&gt;
+Error initializing keys; exiting&lt;br /&gt;
+set_options&lt;br /&gt;
+set_options&lt;br /&gt;
+options_act_reversible&lt;br /&gt;
+options_act_reversible&lt;br /&gt;
+Closing old %s on %s:%d&lt;br /&gt;
+%s\cached-status&lt;br /&gt;
+Failed to bind one of the listener ports.&lt;br /&gt;
+DisableAllSwap failure. Do you have proper permissions?&lt;br /&gt;
+Problem with User value. See logs for details.&lt;br /&gt;
+Unix domain sockets (ControlSocket) not supported on this OS/with this build.&lt;br /&gt;
+Closing partially-constructed listener %s on %s:%d&lt;br /&gt;
+Function not implemented&lt;br /&gt;
+Couldn&#39;t access/create private data directory &quot;%s&quot;&lt;br /&gt;
+Failed to init Log options. See logs for details.&lt;br /&gt;
+BAD_LIBEVENT VERSION=%s METHOD=%s BADNESS=%s RECOVERED=NO&lt;br /&gt;
+Problem with ConnLimit value. See logs for details.&lt;br /&gt;
+Acting on config options left us in a broken state. Dying.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/comment_7/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:21Z</updated>
+	<published>2010-02-06T12:48:21Z</published>
+
+	<content type="html" xml:lang="en">
+	I&#39;m a bit new to this so I apologize in advance... I upgraded Vidalia to it&#39;s newest version for Mac 10.5.8 (PPC), but when I run it, the log says my version of Tor is 0.2.1.19.  Where did I go wrong???  Thanks to anyone for your help ^^ !!!
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/comment_8/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:22Z</updated>
+	<published>2010-02-07T12:48:22Z</published>
+
+	<content type="html" xml:lang="en">
+	very slow :S why?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_22_Released/comment_9/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:48:23Z</updated>
+	<published>2010-02-11T12:48:23Z</published>
+
+	<content type="html" xml:lang="en">
+	because tor depended of the number users connecting`s ans the number of Repeaters. for the tor is more fast you can configured your tor how Repeater and if many people make the same think. 
+
+	</content>
+
+
+
+</entry>
+
+</feed>

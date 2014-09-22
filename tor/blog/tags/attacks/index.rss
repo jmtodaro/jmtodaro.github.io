@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged attacks</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/attacks/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>arma: &#x22;&#x22;One</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/-One_cell_is_enough_to_break_Tors_anonymity-/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/-One_cell_is_enough_to_break_Tors_anonymity-/</link>
+
+
+	<category>/tags/attacks</category>
+
+	<category>/tags/research</category>
+
+	<category>/tags/tagging</category>
+
+
+	<pubDate>Thu, 19 Feb 2009 00:51:21 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:19:41Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tomorrow there&#39;s a talk at Black Hat DC by Xinwen Fu on an active attack that can allow traffic confirmation in Tor. He calls it a &quot;&lt;a href=&quot;http://www.cs.uml.edu/~xinwenfu/paper/ICC08_Fu.pdf&quot; rel=&quot;nofollow&quot;&gt;replay attack&lt;/a&gt;&quot;, whereas we called it a &quot;tagging attack&quot; in the original Tor paper, but let&#39;s look at how it actually works.&lt;/p&gt;
+
+&lt;p&gt;First, remember the basics of how Tor provides anonymity. Tor clients &lt;a href=&quot;https://www.torproject.org/images/htw2.png&quot; rel=&quot;nofollow&quot;&gt;route their traffic&lt;/a&gt; over several (&lt;a href=&quot;https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#VariablePathLength&quot; rel=&quot;nofollow&quot;&gt;usually three&lt;/a&gt;) relays, with the goal that no single relay gets to learn both where the user is (call her Alice) and what site she&#39;s reaching (call it Bob).&lt;/p&gt;
+
+&lt;p&gt;The Tor design &lt;a href=&quot;https://www.torproject.org/svn/trunk/doc/design-paper/tor-design.html#subsec:threat-model&quot; rel=&quot;nofollow&quot;&gt;doesn&#39;t try to protect&lt;/a&gt; against an attacker who can see or measure both traffic going into the Tor network and also traffic coming out of the Tor network. That&#39;s because if you can see both flows, some &lt;a href=&quot;http://freehaven.net/anonbib/#danezis:pet2004&quot; rel=&quot;nofollow&quot;&gt;simple statistics&lt;/a&gt; let you decide whether they match up. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/one-cell-enough&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/-One_cell_is_enough_to_break_Tors_anonymity-/#comments</comments>
+
+</item>
+<item>
+
+	<title>sjmurdoch: &#x22;Media</title>
+	<dcterms:creator>sjmurdoch</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Media_coverage_of_-Covert_channel_vulnerabilities_in_anonymity_systems-/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Media_coverage_of_-Covert_channel_vulnerabilities_in_anonymity_systems-/</link>
+
+
+	<category>/tags/attacks</category>
+
+	<category>/tags/covert_channels</category>
+
+	<category>/tags/media_coverage</category>
+
+	<category>/tags/tor</category>
+
+
+	<pubDate>Sun, 03 Feb 2008 17:07:14 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:05:51Z</dcterms:modified>
+
+	<description>&lt;p&gt;Over the past few days there has been some coverage of my &lt;a href=&quot;http://www.lightbluetouchpaper.org/2007/12/10/covert-channel-vulnerabilities-in-anonymity-systems/&quot; rel=&quot;nofollow&quot;&gt;PhD thesis&lt;/a&gt;, and its relationship to Tor, on blogs and online news sites. It seems like this wave started with a &lt;a href=&quot;http://mcpmag.com/columns/article.asp?editorialsid=2470&quot; rel=&quot;nofollow&quot;&gt;column&lt;/a&gt; by Russ Cooper, which triggered articles in &lt;a href=&quot;http://www.pcworld.com/article/id,142094-pg,1/article.html&quot; rel=&quot;nofollow&quot;&gt;PC World&lt;/a&gt; and &lt;a href=&quot;http://www.darkreading.com/document.asp?doc_id=144606&amp;amp;WT.svl=news2_3&quot; rel=&quot;nofollow&quot;&gt;Dark Reading&lt;/a&gt;. The media attention came as a bit of a surprise to me, since nobody asked to interview me over this. I&#39;d encourage other journalists writing about Tor to contact someone from the project as we&#39;re happy to help give some context.&lt;/p&gt;
+
+&lt;p&gt;My thesis is a fairly diverse collection of work, but the articles emphasize the impact of the attacks I discuss on users of anonymity networks like Tor. Actually, my thesis doesn&#39;t aim to show that Tor is insecure; the reason I selected Tor as a test case was that it&#39;s one of the few (and by far the largest) low-latency system that aims to stand up to observation.  Other, simpler, systems have comparatively well understood weaknesses, and so there is less value in researching them.&lt;/p&gt;
+
+&lt;p&gt;Quantifying the security of anonymity systems is a difficult question and still being actively worked on. Comparing different systems is even harder since they make different assumptions on the capabilities of attackers (the &amp;#8220;threat model&amp;#8221;). The mere chance of attacks doesn&#39;t indicate that a system is insecure, since they might make assumptions about the environment that are not met, or are insufficiently reliable for the scenario being considered.&lt;/p&gt;
+
+&lt;p&gt;The actual goal of my thesis was try to better understand the strengths and weaknesses of systems like Tor, but more importantly to also to suggest a more general methodology for discovering, and resolving flaws. I proposed that the work from the well-established field of &lt;a href=&quot;http://en.wikipedia.org/wiki/Covert_channel&quot; rel=&quot;nofollow&quot;&gt;covert channels&lt;/a&gt; could be usefully applied, and used examples, including Tor, to justify this.&lt;/p&gt;
+
+&lt;p&gt;There remains much work to be done before it&#39;s possible to be sure how secure anonymity systems are, but hopefully this framework will be a useful one in moving forward. Since in September 2007 I joined the Tor project, I hope I&#39;ll also help in other ways too.&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Media_coverage_of_-Covert_channel_vulnerabilities_in_anonymity_systems-/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

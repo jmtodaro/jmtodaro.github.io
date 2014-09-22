@@ -1,0 +1,1505 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Testing Tor Browser Bundle 1.2.0-dev</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:26:04Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_1/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:19Z</updated>
+	<published>2009-05-23T11:25:19Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Suggestion:&lt;/p&gt;
+
+&lt;p&gt;disable javascript (i.e., with this: &lt;a href=&quot;http://controledescripts.mozdev.org&quot; title=&quot;http://controledescripts.mozdev.org&quot; rel=&quot;nofollow&quot;&gt;http://controledescripts.mozdev.org&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;disable mime type&lt;/p&gt;
+
+&lt;p&gt;disable XMLHttpRequests (with Configurable Security Policies: &lt;a href=&quot;http://www.mozilla.org/projects/security/components/ConfigPolicy.html&quot; title=&quot;http://www.mozilla.org/projects/security/components/ConfigPolicy.html&quot; rel=&quot;nofollow&quot;&gt;http://www.mozilla.org/projects/security/components/ConfigPolicy.html&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;about:config (or pref.js/user.js) tweak:&lt;/p&gt;
+
+&lt;p&gt;browser.sessionstore.privacy_level 2&lt;br /&gt;
+browser.chrome.site_icons false&lt;br /&gt;
+browser.chrome.favicons false&lt;br /&gt;
+browser.chrome.image_icons.max_size 0&lt;br /&gt;
+plugin.scan.4xPluginFolder false&lt;br /&gt;
+plugin.scan.Acrobat  set high value (i.e., 30)&lt;br /&gt;
+plugin.scan.Quicktime set high value (i.e., 30)&lt;br /&gt;
+plugin.scan.SunJRE set high value (i.e., 30)&lt;br /&gt;
+plugin.scan.WindowsMediaPlayer set high value (i.e., 30)&lt;br /&gt;
+extensions.blocklist.enabled false&lt;br /&gt;
+extensions.blocklist.url delete value&lt;br /&gt;
+network.prefetch-next false&lt;br /&gt;
+network.hosts.pop_server delete value&lt;br /&gt;
+browser.bookmarks.max_backups 0&lt;br /&gt;
+browser.microsummary.updateGenerators false&lt;br /&gt;
+network.http.pipelining  true&lt;br /&gt;
+network.http.proxy.pipelining true&lt;br /&gt;
+network.http.max-persistent-connections-per-proxy 16&lt;br /&gt;
+network.http.pipelining.maxrequests 8&lt;br /&gt;
+network.http.keep-alive.timeout 600&lt;br /&gt;
+browser.identity.ssl_domain_display 2&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_2/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:20Z</updated>
+	<published>2009-05-23T11:25:20Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Thanks for the suggestion. I&#39;ve sent it on to our torbutton wizard to see if these help, hurt, or won&#39;t change the risks to users of TBB.&lt;/p&gt;
+
+&lt;p&gt;Torbutton mitigates all known javascript attacks.  Sure, there could be new ones we don&#39;t know about, but the benefit vs. risk of javascript being enabled seems to be an acceptable balance for now.&lt;/p&gt;
+
+&lt;p&gt;Thanks for the hints about Adobe and Quicktime plugin scanners.  TBB already disables SunJRE, WindowsMediaPlayer, and 4xPluginFolder.&lt;/p&gt;
+
+&lt;p&gt;I&#39;ll think about the rest too.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_3/"/>
+
+	<author><name>mikeperry</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:21Z</updated>
+	<published>2009-05-23T11:25:21Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Hi Anonymous, &lt;/p&gt;
+
+&lt;p&gt;You&#39;ve got a lot a lot of prefs there.. Some of them seem useful, but others I&#39;m not quite sure if they matter or even improve the situation. For example:&lt;/p&gt;
+
+&lt;p&gt;extensions.blocklist.enabled false&lt;br /&gt;
+extensions.blocklist.url delete value&lt;/p&gt;
+
+&lt;p&gt;seem like bad ideas. My firefox fetches the blocklist over https. Is there a reason why you think this is bad?&lt;/p&gt;
+
+&lt;p&gt;Also, what about the various http options? Are they just performance I take it? Do they work ok with privoxy?&lt;/p&gt;
+
+&lt;p&gt;Do you think you could repost the list with a brief description of why each option is a good idea?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_4/"/>
+
+	<author><name>PETER (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:22Z</updated>
+	<published>2009-05-23T11:25:22Z</published>
+
+	<content type="html" xml:lang="en">
+	it is working fine phobos but the plugin problems. i cant c the you tube videos, it says flash player not installed .so i installed flash player still it is not working.i also disable tor plugins in tor button but still no chance. i have done this thing in previous versions &amp;amp; it worked  fine .i thinkit is not scanning 4 plugins or not allowing 2 install it..P lease fix it
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_5/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:23Z</updated>
+	<published>2009-05-23T11:25:23Z</published>
+
+	<content type="html" xml:lang="en">
+	See this FAQ entry, &lt;a href=&quot;https://www.torproject.org/torbutton/faq.html.en#noflash&quot; title=&quot;https://www.torproject.org/torbutton/faq.html.en#noflash&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/torbutton/faq.html.en#noflash&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_6/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:24Z</updated>
+	<published>2010-04-17T11:25:24Z</published>
+
+	<content type="html" xml:lang="en">
+	If you have installed Firefox on you computer, install Flash player to this one,  replace with tor&#39;s firefox
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_7/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:25Z</updated>
+	<published>2009-05-23T11:25:25Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Flash Player is a dangerous plugin.&lt;br /&gt;
+If you care about anonymity don&#39;t use it!!!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 8</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_8/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_8/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:26Z</updated>
+	<published>2010-05-08T11:25:26Z</published>
+
+	<content type="html" xml:lang="en">
+	I DON&#39;T care about anonymity, and I want to have Flash enabled so I can watch videos outside of my country. I can not get a straight answer anywhere.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 9</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_9/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_9/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:27Z</updated>
+	<published>2010-05-09T11:25:27Z</published>
+
+	<content type="html" xml:lang="en">
+	Do not use tor.  Tor is designed for privacy and anonymity.  If this is not what you want, go elsewhere.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 10</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_10/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_10/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:28Z</updated>
+	<published>2010-07-02T11:25:28Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Privacy and anonymity, yes, but what about censorship pass through?&lt;/p&gt;
+
+&lt;p&gt;I&#39;m 49 y/o and work in Qatar. Here only one ISP exist and they block contents as they like, regardless of  worldwide recognized human rights (right to free information access, in particular). In Saudi Arabia is even worse. One friend told me they even block christian videos.&lt;/p&gt;
+
+&lt;p&gt;Anyone can tell how to watch youtube video (from here) about, for example, new testicle dysfunction treatments?&lt;/p&gt;
+
+&lt;p&gt;From your home country and your home ISP it&#39;s easy for you.&lt;/p&gt;
+
+&lt;p&gt;&quot;Do not use Tor...&quot; ???&lt;/p&gt;
+
+&lt;p&gt;If you&#39;re so smart, tell me what to use, then.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 11</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_11/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_11/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:29Z</updated>
+	<published>2010-07-02T11:25:29Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Flash can completely de-anonymize you.  See &lt;a href=&quot;https://www.torproject.org/torbutton/faq.html.en#noflash&quot; title=&quot;https://www.torproject.org/torbutton/faq.html.en#noflash&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/torbutton/faq.html.en#noflash&lt;/a&gt;  The 2nd paragraph tells you how to destroy your anonymity and use flash over Tor.  Don&#39;t say we didn&#39;t warn you.&lt;/p&gt;
+
+&lt;p&gt;We&#39;ve actually been to Qatar and I&#39;ve spoken to a number of people in KSA.  They use Tor just fine for what you&#39;re trying to do.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 12</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_12/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_12/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:30Z</updated>
+	<published>2009-05-23T11:25:30Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;&quot;Switch to launching Firefox directly from Vidalia to allow multiple instances of Firefox&quot;&lt;br /&gt;
+This sounds like a great improvement.&lt;/p&gt;
+
+&lt;p&gt;1 Does this mean that one can run 2 different versions of Firefox simultaneus for example the default 3.0.10 and 2.0.0.20&lt;br /&gt;
+or only 2 of the same version 3.0.10&lt;/p&gt;
+
+&lt;p&gt;2 Can one have different settings in them for example in one have javascript and cookies on and the other have javascript and cookies off&lt;/p&gt;
+
+&lt;p&gt;3 Is this automatically configured safely, meaning that things like the phone home for updates, live bookmarks, RSSfeeds, javascript, cookies and so on, are turned off.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 13</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_13/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_13/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:31Z</updated>
+	<published>2009-05-23T11:25:31Z</published>
+
+	<content type="html" xml:lang="en">
+	It should mean that TBB firefox and other non-TBB firefox instances are unique and separate from one another.  So, I think &quot;yes&quot; to 1 and 2 above.  And 3, it&#39;s as safe as the other TBB configurations.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 14</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_14/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_14/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:32Z</updated>
+	<published>2009-05-27T11:25:32Z</published>
+
+	<content type="html" xml:lang="en">
+	have you noticed that the download does not work for the windows bundle? I have been trying for weeks to get it and get a &#39;file or server unavailable&#39; message
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 15</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_15/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_15/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:33Z</updated>
+	<published>2009-05-27T11:25:33Z</published>
+
+	<content type="html" xml:lang="en">
+	What&#39;s the URL you&#39;re getting when trying to download the windows bundle? This, &lt;a href=&quot;https://www.torproject.org/dist/vidalia-bundles/vidalia-bundle-0.2.0.34-0.1.10.exe&quot; title=&quot;https://www.torproject.org/dist/vidalia-bundles/vidalia-bundle-0.2.0.34-0.1.10.exe&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/dist/vidalia-bundles/vidalia-bundle-0.2.0.34-...&lt;/a&gt;, works fine for me from many locations in the world.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 16</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_16/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_16/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:34Z</updated>
+	<published>2009-05-27T11:25:34Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Noticed two bugs:&lt;/p&gt;
+
+&lt;p&gt;(1) &#39;FirefoxPortable.ini&quot; in the FirefoxPortable folder still contains the executable name &quot;firefox.exe&quot;, looks like you forgot to change it to &quot;tbb-firefox.exe&quot;.  (I know not to start Firefox this way for normal use.  Only point of executing firefoxportable.exe directly is for testing, and that&#39;s what I was doing when I found this.)&lt;/p&gt;
+
+&lt;p&gt;(2) Verified at least with &lt;a href=&quot;http://www.torproject.org/torbrowser/dist/tor-browser-1.2.0_en-US.exe&quot; title=&quot;http://www.torproject.org/torbrowser/dist/tor-browser-1.2.0_en-US.exe&quot; rel=&quot;nofollow&quot;&gt;http://www.torproject.org/torbrowser/dist/tor-browser-1.2.0_en-US.exe&lt;/a&gt; ... for some reason, after the first execution of &quot;Start Tor Browser.exe&quot;, an &quot;invalidprefs.js&quot; file appears in the FirefoxPortable\Data\profile directory ... containing user_pref lines DIFFERENT than, or MISSING from, FirefoxPortable\Data\profile\prefs.js ... INCLUDING the new anti-plugin scanning options you added with this release.  Thus, the new anti-plugin scanning config options you added (and possibly other stuff) are having no effect.  (My environment: XP SP2)&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 17</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_17/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_17/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:35Z</updated>
+	<published>2009-05-27T11:25:35Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;1) nice catch, but it doesn&#39;t seem to affect functionality.  I&#39;ll work on fixing it.&lt;/p&gt;
+
+&lt;p&gt;2) Yes, ff does create an invalidprefs.js file, but as far as I can tell, it&#39;s been doing this for a while.  The plugin scanning options still work, even though it appears they show up in invalidprefs.js.  Firefox has a few ways to display the plugins, so looking at about:plugins shows none, but going to Tools, Addons, Plugins, looks like there are some active.  They aren&#39;t.  In fact, if you try to test the plugins, they&#39;ll all fail.&lt;/p&gt;
+
+&lt;p&gt;I&#39;m still reading through the firefox 3.0.10 source to figure out how to best disable the plugin scanning, and to see when/why invalidprefs.js is created.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 18</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_18/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_18/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:36Z</updated>
+	<published>2009-05-28T11:25:36Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;1) Changing the executable name (&quot;firefox.exe&quot;) in FirefoxPortable.ini to &quot;tbb-firefox.exe&quot; solved the problem here.  Without this change, FirefoxPortable.exe, if directly executed (without the rest of TBB already running) says &quot;Mozilla Firefox Portable Edition cannot be started. You may wish to re-install to fix this issue. (ERROR: firefox.exe could not be found)&quot;.  And no, I didn&#39;t mean to say this bug interfered with the normal operation of TBB, only that it prevents firefoxportable.exe from being directly executed if someone wants to start the TBB bundle&#39;s copy of Firefox Portable all by itself for various testing purposes.&lt;/p&gt;
+
+&lt;p&gt;2) By &quot;the plugin scanning options still work&quot;, did you mean to say that the user_pref() options being stripped from prefs.js still have an effect on Firefox because they remain in &quot;invalidprefs.js&quot;?  If so, I beg to differ.  &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here&#39;s what happens, according to filemon, the very first time &quot;start tor browser.exe&quot; is executed (after a fresh unpacking of the 7Z executable):&lt;/p&gt;
+
+&lt;p&gt;(a) VIDALIA queries FirefoxPortable\App\DefaultData\Profile\prefs.js (result: SUCCESS/FOUND)&lt;br /&gt;
+(b) VIDALIA queries FirefoxPortable\Data\profile\prefs.js (result: NOT FOUND)&lt;br /&gt;
+(c) VIDALIA opens FirefoxPortable\App\DefaultData\Profile\prefs.js&lt;br /&gt;
+(d) VIDALIA creates FirefoxPortable\Data\profile\prefs.js&lt;br /&gt;
+(e) VIDALIA copies all 5545 bytes of FirefoxPortable\App\DefaultData\Profile\prefs.js to FirefoxPortable\Data\profile\prefs.js&lt;br /&gt;
+(f) VIDALIA closes FirefoxPortable\App\DefaultData\Profile\prefs.js&lt;br /&gt;
+(g) VIDALIA closes FirefoxPortable\Data\profile\prefs.js&lt;/p&gt;
+
+&lt;p&gt;So it&#39;s clear the intent so far is making a verbatim copy of prefs.js from the App locale to the Data locale.  With that in mind, later on in the &quot;start tor browser.exe&quot; startup process, Firefox gets executed and this is observed by filemon:&lt;/p&gt;
+
+&lt;p&gt;(h) TBB-FIREFOX queries FirefoxPortable\Data\profile\prefs.js&lt;br /&gt;
+(i) TBB-FIREFOX opens FirefoxPortable\Data\profile\prefs.js&lt;br /&gt;
+(j) TBB-FIREFOX reads all 5545 bytes of FirefoxPortable\Data\profile\prefs.js&lt;br /&gt;
+(k) TBB-FIREFOX closes FirefoxPortable\Data\profile\prefs.js&lt;br /&gt;
+(l) TBB-FIREFOX opens FirefoxPortable\Data\profile\prefs.js&lt;br /&gt;
+(m) TBB-FIREFOX creates FirefoxPortable\Data\profile\invalidprefs.js&lt;br /&gt;
+(n) TBB-FIREFOX reads all 5545 bytes of FirefoxPortable\Data\profile\prefs.js&lt;br /&gt;
+(o) TBB-FIREFOX writes 5545 bytes to FirefoxPortable\Data\profile\invalidprefs.js&lt;br /&gt;
+(p) TBB-FIREFOX closes FirefoxPortable\Data\profile\prefs.js&lt;br /&gt;
+(q) TBB-FIREFOX closes FirefoxPortable\Data\profile\invalidprefs.js&lt;/p&gt;
+
+&lt;p&gt;And based upon continuous filemon observation, that is the ONLY time &quot;invalidprefs.js&quot; is EVER accesssed for the entire life of the TBB installation.  (I.e. it&#39;s never touched again for the remainder of the first execution of &quot;start tor browser.exe&quot;, and it&#39;s not touched even once during any later executions thereof.)&lt;/p&gt;
+
+&lt;p&gt;And because only &quot;invalidprefs.js&quot; contains your anti-plugin-scanning options (i.e. because Firefox is stripping them out of the new &quot;prefs.js&quot; it creates after creating &quot;invalidprefs.js&quot; itself), those options are literally thrown away, permanently, the instant TBB starts for the first time.&lt;/p&gt;
+
+&lt;p&gt;In fact, more than just your anti-plugin-scanning options are being thrown away.  Here is what IS NOT in FirefoxPortable\Data\profile\prefs.js (but IS in invalidprefs.js and in FirefoxPortable\App\DefaultData\profile\prefs.js) after the very first execution of Firefox in TBB:&lt;/p&gt;
+
+&lt;p&gt;user_pref(&quot;urlclassifier.tableversion.goog-black-enchash&quot;, &quot;1.55536&quot;);&lt;br /&gt;
+user_pref(&quot;urlclassifier.tableversion.goog-black-url&quot;, &quot;1.23256&quot;);&lt;br /&gt;
+user_pref(&quot;urlclassifier.tableversion.goog-white-domain&quot;, &quot;1.481&quot;);&lt;br /&gt;
+user_pref(&quot;urlclassifier.tableversion.goog-white-url&quot;, &quot;1.371&quot;);&lt;br /&gt;
+user_pref(&quot;plugin.scan.SunJRE&quot;, 99.0);&lt;br /&gt;
+user_pref(&quot;plugin.scan.WindowsMediaPlayer&quot;, 99.0);&lt;br /&gt;
+user_pref(&quot;plugin.scan.4xPluginFolder&quot;, false);&lt;br /&gt;
+user_pref(&quot;security.enable_java&quot;, false);&lt;br /&gt;
+user_pref(&quot;signon.rememberSignons&quot;, false);&lt;br /&gt;
+user_pref(&quot;general.useragent.locale&quot;, &quot;en-US&quot;);&lt;/p&gt;
+
+&lt;p&gt;[Additionally, user_pref(&quot;general.productSub.override&quot;, &quot;20080404&quot;) gets changed to &quot;user_pref(&quot;general.productSub.override&quot;, &quot;2009021910&quot;)]&lt;/p&gt;
+
+&lt;p&gt;Now that&#39;s quite bad.  You may be right that torbutton thwarts *activation* of those plug-ins regardless of the plugin.scan.* options, but you&#39;re still losing the extra protection acquired by having them (having them = Firefox fails to realize they even exist and thus never *tries* to activate them), and even worse, you&#39;re losing several other critical options like the disabling of Java and remember-signons.  Ouch!  And of course, this can be confirmed just by starting TBB and looking in &quot;Tools &amp;gt; Options &amp;gt; Content &amp;gt; Enable Java&quot;, where you will see it CHECKED.  And in Tools &amp;gt; Add-Ons &amp;gt; Plugins, where you will see that Firefox is detecting Java, WMP, and NN4x plugins.  (I&#39;m not sure what security implications are involved in the loss of the urlclassifier and general.useragent options, and in general.productSub.override being changed, but yeah, they&#39;re toasted/altered too.)&lt;/p&gt;
+
+&lt;p&gt;So this is a serious problem.  As far as why &quot;invalidprefs.js&quot; is being created and why the aforementioned options are being stripped from the new &quot;prefs.js&quot; Firefox creates at the same time, check this out:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://bugzilla.mozilla.org/show_bug.cgi?id=361102&quot; title=&quot;https://bugzilla.mozilla.org/show_bug.cgi?id=361102&quot; rel=&quot;nofollow&quot;&gt;https://bugzilla.mozilla.org/show_bug.cgi?id=361102&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://bugzilla.mozilla.org/attachment.cgi?id=245907&amp;amp;action=edit&quot; title=&quot;https://bugzilla.mozilla.org/attachment.cgi?id=245907&amp;amp;action=edit&quot; rel=&quot;nofollow&quot;&gt;https://bugzilla.mozilla.org/attachment.cgi?id=245907&amp;amp;action=edit&lt;/a&gt;  (relevant source code)&lt;/p&gt;
+
+&lt;p&gt;This seems to be a newish function designed to backup your prefs.js (to &quot;invalidprefs.js&quot;) if your prefs.js contains unparseable lines -- and then discard all non-parseable lines from your prefs.js.  That in mind, I looked through your FirefoxPortable\App\DefaultData\profile\prefs.js file, and did in deed find two unparseable lines:&lt;/p&gt;
+
+&lt;p&gt;user_pref(&quot;plugin.scan.SunJRE&quot;, 99.0);&lt;br /&gt;
+user_pref(&quot;plugin.scan.WindowsMediaPlayer&quot;, 99.0);&lt;/p&gt;
+
+&lt;p&gt;Those should have quotes around the values, like this:&lt;/p&gt;
+
+&lt;p&gt;user_pref(&quot;plugin.scan.SunJRE&quot;, &quot;99.0&quot;);&lt;br /&gt;
+user_pref(&quot;plugin.scan.WindowsMediaPlayer&quot;, &quot;99.0&quot;);&lt;/p&gt;
+
+&lt;p&gt;So here&#39;s what I tried.  I completely deleted my TBB folder from my HDD.  Then I re-extracted TBB fresh from the 7Z executable.  But before running &quot;start tor browser.exe&quot; for the first time, I manually notepad-edited FirefoxPortable\App\DefaultData\profile\prefs.js and added the necessary quotes as shown above.  THEN I ran &quot;start tor browser.exe&quot; for the first time.  The results?  No &quot;invalidprefs.js&quot; file was generated, AND absolutely NO options went missing from the FirefoxPortable\Data\profile\prefs.js file (not the plugin.scan.* options, not the security.enable_java option, not the signon.rememberSignons optin -- NONE were lost)!&lt;/p&gt;
+
+&lt;p&gt;So that&#39;s the fix.  &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Which I suppose means there are actually two bugs here:&lt;/p&gt;
+
+&lt;p&gt;* You simply need to fix your FirefoxPortable\App\DefaultData\profile\prefs.js file (add those quotes) and everything will be fine.&lt;/p&gt;
+
+&lt;p&gt;* Someone needs to tell Mozilla that Firefox has a bug which deletes some uncorrupted lines from prefs.js when removing corrupted ones.&lt;/p&gt;
+
+&lt;p&gt;Anyway.  Thanks for listening and thanks for all your hard work on this great bundle.&lt;/p&gt;
+
+&lt;p&gt;~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&lt;br /&gt;
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&lt;/p&gt;
+
+&lt;p&gt;Incidentally, I second some of the first commenter&#39;s suggested additions to your master FirefoxPortable\App\DefaultData\profile\prefs.js file.  Specifically these:&lt;/p&gt;
+
+&lt;p&gt;user_pref(&quot;network.prefetch-next&quot;, false); - Definitely a good one.  Disables Firefox downloading web pages the user didn&#39;t explicitly request.  On the onion network, any unnecessary traffic can only be detrmimental, after all.&lt;/p&gt;
+
+&lt;p&gt;user_pref(&quot;plugin.scan.Acrobat&quot;, &quot;99.0&quot;);&lt;br /&gt;
+user_pref(&quot;plugin.scan.Quicktime&quot;, &quot;99.0&quot;); - Yup, these definitely should&#39;ve been included when the 4x/WMP/SunJRE options were themselves added.  Just don&#39;t forget the quotes.  &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/../../smileys/smile4.png&quot; alt=&quot;;)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;user_pref(&quot;browser.microsummary.updateGenerators&quot;, false); - Stops spontaneous microsummary-type phone-home-to-update-your-bookmarks traffic.  The danger here is these phone-outs could happen when tor is enabled and again when tor is disabled (linking anonymous to non-anonymous identities through cookies set/read in each case).  (See &lt;a href=&quot;http://kb.mozillazine.org/Browser.microsummary.updateGenerators&quot; title=&quot;http://kb.mozillazine.org/Browser.microsummary.updateGenerators&quot; rel=&quot;nofollow&quot;&gt;http://kb.mozillazine.org/Browser.microsummary.updateGenerators&lt;/a&gt; for more information.)&lt;/p&gt;
+
+&lt;p&gt;user_pref(&quot;network.hosts.pop_server&quot;, &quot;&quot;); - Good idea in general to blank this (the default hostname is &#39;mail&#39;).  I would also blank these other two: network.hosts.smtp_server and network.hosts.nntp_server.&lt;/p&gt;
+
+&lt;p&gt;user_pref(&quot;extensions.blocklist.enabled&quot;, false);&lt;br /&gt;
+user_pref(&quot;extensions.blocklist.url&quot;, &quot;&quot;); - These two are also a good idea.  The blocklist feature downloads a list of extensions considered malicious by Mozilla from addons.mozilla.org.  So we encounter the same danger as with browser.microsummary.updateGenerators -- linking anonymous and non-anonymous identities could happen through this.&lt;/p&gt;
+
+&lt;p&gt;user_pref(&quot;browser.sessionstore.privacy_level&quot;, 2); - Another good idea, because I believe Firefox gives you the choice whether to save your tabs (i.e. current browsing state) to disk when closing it normally but does *not* offer you that choice if FF crashes (i.e. it immediately writes said info to disk so your next session will open with your previous tabs).  Disabling the session restore feature entirely seems to be the only way to make sure unrequested writes-to-disk of browsing state information won&#39;t happen upon a FF crash.&lt;/p&gt;
+
+&lt;p&gt;user_pref(&quot;browser.chrome.site_icons&quot;, false);&lt;br /&gt;
+user_pref(&quot;browser.chrome.favicons&quot;, false);&lt;br /&gt;
+user_pref(&quot;browser.chrome.image_icons.max_size&quot;, 0); - Not sure why he suggested these, unless the favicon.ico files Firefox caches in its bookmarks file are ever updated at any time OTHER than when the user intentionally clicks one of those bookmarks.  If they *are* updated at any other times, then the same anonymous/non-anonymous identity association problem previously mentioned would occur.  Original commenter: do you know something I don&#39;t?  TBB: In either case, if you do decide to implement these, be sure to also take &lt;a href=&quot;http://kb.mozillazine.org/Browser.chrome.load_toolbar_icons&quot; title=&quot;http://kb.mozillazine.org/Browser.chrome.load_toolbar_icons&quot; rel=&quot;nofollow&quot;&gt;http://kb.mozillazine.org/Browser.chrome.load_toolbar_icons&lt;/a&gt; into account (whose value can override these three).&lt;/p&gt;
+
+&lt;p&gt;I&#39;m also confused by what the original commenter meant by &quot;disable mime type&quot; (huh?), and what the danger of having XMLHttpRequests enabled could be.  Does Firefox not send XMLHttpRequests through the user-selected SOCKS/HTTP/FTP/Gopher proxies?  Or maybe he was just concerned about XMLHttpRequests being used as &quot;web bugs&quot; for tracking)?  Anyway, seems to me XMLHttpRequests is a fairly vital feature in the Web 2.0 world.  Maybe the original poster can explain his reasoning behind suggesting it be turned off?&lt;/p&gt;
+
+&lt;p&gt;~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&lt;br /&gt;
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~&lt;/p&gt;
+
+&lt;p&gt;And now a couple suggestions of my own (derived from comparing my personal prefs.js settings with TBB&#39;s):&lt;/p&gt;
+
+&lt;p&gt;user_pref(&quot;browser.download.manager.retention&quot;, 1); - Your current setting is 0.  Changing this to &quot;1&quot; would make the DL manager list clear upon browser exit instead of immediately when each file stops downloading (which is what &quot;0&quot; causes).  Reason I suggest &quot;1&quot; is, immediate clearing stops you from seeing &quot;successful/done&quot; vs. &quot;failed&quot; style messages for downloads that have stopped.  So as long as changing to &quot;1&quot; causes no data to be written to disk (not confirmed by me), &quot;1&quot; would be the most user-friendly IMO.&lt;/p&gt;
+
+&lt;p&gt;user_pref(&quot;browser.send_pings&quot;, false); - A privacy risk (in the sense of web bugs) if enabled.  Also a security risk if enabled (hovering your mouse over a link doesn&#39;t show you the URL your browser will hit as the &quot;ping&quot; itself).  See &lt;a href=&quot;http://kb.mozillazine.org/Browser.send_pings&quot; title=&quot;http://kb.mozillazine.org/Browser.send_pings&quot; rel=&quot;nofollow&quot;&gt;http://kb.mozillazine.org/Browser.send_pings&lt;/a&gt; for more info.&lt;/p&gt;
+
+&lt;p&gt;user_pref(&quot;dom.event.contextmenu.enabled&quot;, false); - Stop various right-click hijacking/denial/alteration.&lt;/p&gt;
+
+&lt;p&gt;user_pref(&quot;plugin.expose_full_path&quot;, true); - VERY handy (makes exact full paths of each plugin filename firefox is detecting visible in about:plugins)&lt;/p&gt;
+
+&lt;p&gt;user_pref(&quot;extensions.getAddons.showPane&quot;, false); - Prevents the &quot;Get Add-ons&quot; pane from appearing in the Tools &amp;gt; Add-Ons dialogue.  If this is enabled, Firefox phones out to Mozilla as soon as you bring this pane into view.  Which poses yet another anonymous/non-anonymous identity association risk (via cookies) if accessed when tor is on and again when tor is off, or vice versa.&lt;/p&gt;
+
+&lt;p&gt;user_pref(&quot;xpinstall.whitelist.add&quot;, &quot;&quot;);&lt;br /&gt;
+user_pref(&quot;xpinstall.whitelist.add.103&quot;, &quot;&quot;); - In the current version of TBB, you have &quot;xpinstall.whitelist.required&quot; set to its default (&quot;true&quot;), which is what makes Tools &amp;gt; Options &amp;gt; Security &amp;gt; &quot;Warn me when sites try to install add-ons&quot; appear checked.  However, the [Exceptions] button right next to that option contains &quot;addons.mozilla.org&quot; and &quot;update.mozilla.org&quot;.  Hence, no warning from those sites.  Even though \FirefoxPortable\Data\profile\permissions.sqlite is where the list of those [Exceptions] is stored, &quot;permissions.sqlite&quot; is only generated when Firefox first runs, and its initial content (&quot;addons.mozilla.org&quot; and &quot;update.mozilla.org&quot;) comes from the default values of these xpinstall.whitelist.add.* options.  So, setting these xpinstall.whitelist.add.* options to blank strings prevents &quot;addons.mozilla.org&quot; and &quot;update.mozilla.org&quot; from becoming default entries in [Exceptions].  (FYI: once &quot;permissions.sqlite&quot; is generated for the first time, all future user changes to the Exceptions list are stored there; the xpinstall.whitelist.add.* options are apparently never altered again in prefs.js, even if the user adds &quot;addons.mozilla.org&quot; and &quot;update.mozilla.org&quot; themselves back to his/her Exceptions list.)&lt;/p&gt;
+
+&lt;p&gt;user_pref(&quot;browser.safebrowsing.malware.enabled&quot;, false); - I noticed you have &quot;browser.safebrowsing.enabled&quot; set &quot;false&quot; (which unchecks Tools &amp;gt; Options &amp;gt; Security &amp;gt; &quot;Tell me if the site I&#39;m visiting is a suspected forgery.&quot;  But you have &quot;Tell me if the site I&#39;m visiting is a suspected attack site&quot; checked.  I&#39;m assuming you don&#39;t want any &quot;safe browsing&quot; stuff enabled at all?  If so, then adding &quot;browser.safebrowsing.malware.enabled&quot;, and set false, will uncheck the &quot;is a suspected attack site&quot; option too.&lt;/p&gt;
+
+&lt;p&gt;user_pref(&quot;network.protocol-handler.external-default&quot;, false);&lt;br /&gt;
+user_pref(&quot;network.protocol-handler.external.mailto&quot;, false);&lt;br /&gt;
+user_pref(&quot;network.protocol-handler.external.news&quot;, false);&lt;br /&gt;
+user_pref(&quot;network.protocol-handler.external.nntp&quot;, false);&lt;br /&gt;
+user_pref(&quot;network.protocol-handler.external.snews&quot;, false); - Might be good to have these in addition to your existing &quot;network.protocol-handler.warn-external.*&quot; settings, as extra Firefox hardening.  These (via &quot;false&quot;) tell Firefox to handle those protocols exclusively internally (no external launching).  And since Firefox can&#39;t handle these internally, these options effectively /dev/null these protocols (at least according to &lt;a href=&quot;http://kb.mozillazine.org/Network.protocol-handler.external-default&quot; title=&quot;http://kb.mozillazine.org/Network.protocol-handler.external-default&quot; rel=&quot;nofollow&quot;&gt;http://kb.mozillazine.org/Network.protocol-handler.external-default&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;user_pref(&quot;privacy.sanitize.sanitizeOnShutdown&quot;, true); - Forces Ctrl+Shift+Del (Clear Private Data) to happen on FF shutdowns.  If you decide to implement this, be sure to note the &quot;privacy.item.*&quot; prefs.js options explained at &lt;a href=&quot;http://kb.mozillazine.org/About:config_entries&quot; title=&quot;http://kb.mozillazine.org/About:config_entries&quot; rel=&quot;nofollow&quot;&gt;http://kb.mozillazine.org/About:config_entries&lt;/a&gt; (cache/cookies/downloads/formdata/history/offlineApps/passwords/sessions/siteprefs) ... because you&#39;ll want to add them (set true) so Firefox knows which ones to clear when the auto-sanitize happens.&lt;/p&gt;
+
+&lt;p&gt;user_pref(&quot;browser.history_expire_days&quot;, 0);&lt;br /&gt;
+user_pref(&quot;browser.history_expire_days.mirror&quot;, 0); - These I think used to be in TBB but aren&#39;t now.  Any reason why?  (I see TBB still keeps no history info, but still, this is kind of concerning.)&lt;/p&gt;
+
+&lt;p&gt;Guess that&#39;s it.  Pfew.  &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 19</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_19/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_19/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:37Z</updated>
+	<published>2009-05-31T11:25:37Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Wow, I wish all comments were as detailed and researched.  I&#39;m going to test out some of your suggested changes.  Some of them are taken care of by torbutton already.  In general, we&#39;re trying to balance a usable firefox when torbutton is disabled with a strongly anonymous firefox when torbutton is enabled.  The anonymous vs. non-anonymous profiling could be a larger concern than we first expected.&lt;/p&gt;
+
+&lt;p&gt;i&#39;m finding lots of people use TBB on a cd rom, , in Asia for instance, since usb ports are blocked in most internet cafes.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 20</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_20/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_20/"/>
+
+	<author><name>mark strendin (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:38Z</updated>
+	<published>2009-05-29T11:25:38Z</published>
+
+	<content type="html" xml:lang="en">
+	Is vidalia is safe?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 21</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_21/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_21/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:39Z</updated>
+	<published>2009-05-31T11:25:39Z</published>
+
+	<content type="html" xml:lang="en">
+	I sure hope so.  Why wouldn&#39;t it be safe?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 22</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_22/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_22/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:40Z</updated>
+	<published>2009-06-28T11:25:40Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;hi, I tried re-installing the most updated latest flash player, and made the modification with tor disabled, to uncheck in security --&amp;gt; contents tab, and enabled, javascript in the Firefox options.&lt;/p&gt;
+
+&lt;p&gt;However, I&#39;m still having a large problem with flash player not being detected&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 23</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_23/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_23/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:41Z</updated>
+	<published>2009-08-31T11:25:41Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;a href=&quot;https://www.torproject.org/torbutton/faq.html.en#noflash&quot; title=&quot;https://www.torproject.org/torbutton/faq.html.en#noflash&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/torbutton/faq.html.en#noflash&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 24</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_24/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_24/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:42Z</updated>
+	<published>2009-08-31T11:25:42Z</published>
+
+	<content type="html" xml:lang="en">
+	I tried to restore them with the latest *.json, but apparently it is just a blank file created by TOR.  My book marks are completely gone.  Not the least bit happy about this.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 25</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_25/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_25/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:43Z</updated>
+	<published>2009-08-31T11:25:43Z</published>
+
+	<content type="html" xml:lang="en">
+	Tor doesn&#39;t touch your bookmarks, neither does torbutton.  What browser?  Which package did you install?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 26</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_26/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_26/"/>
+
+	<author><name>bookmarkoverride (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:44Z</updated>
+	<published>2009-08-31T11:25:44Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;wow, I just installed the tor browser package....and it destroyed my local install as well. like 4 years worth of bookmarks is gone. backup file and everything.&lt;br /&gt;
+I did read through first before launching the portable app, was under impression it could be run as a stand alone. maybe needs to be more clear?&lt;br /&gt;
+Any ideas on file recovery....I can&#39;t believe I just lost this.. heh&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 27</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_27/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_27/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:45Z</updated>
+	<published>2009-09-01T11:25:45Z</published>
+
+	<content type="html" xml:lang="en">
+	There is nothing to install, you extract the exe and run it.  The 2 firefoxes never learn about each other and don&#39;t touch each other&#39;s information.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 28</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_28/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_28/"/>
+
+	<author><name>mack (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:46Z</updated>
+	<published>2009-09-13T11:25:46Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;the website &lt;a href=&quot;https://www.torproject.org/torbutton/faq.html.en#noflash&quot; title=&quot;https://www.torproject.org/torbutton/faq.html.en#noflash&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/torbutton/faq.html.en#noflash&lt;/a&gt; doesnt seem to work..what does it say..?&lt;br /&gt;
+is there a way to fix the issue of tor not being able to play flash on that page because i cant view it for some reason ?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 29</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_29/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_29/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:47Z</updated>
+	<published>2009-09-15T11:25:47Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Perhaps torproject.org is blocked from where you are.  Here&#39;s the text:&lt;/p&gt;
+
+&lt;p&gt;I can&#39;t view videos on YouTube and other Flash-based sites. Why?&lt;/p&gt;
+
+&lt;p&gt;YouTube and similar sites require third party browser plugins such as Flash. Plugins operate independently from Firefox and can perform activity on your computer that ruins your anonymity. This includes but is not limited to: completely disregarding proxy settings, querying your local IP address, and storing their own cookies. It is possible to use a LiveCD or VMWare-based solution such as Tor VM or Incognito that creates a secure, transparent proxy to protect you from proxy bypass, however issues with local IP address discovery and Flash cookies still remain.&lt;/p&gt;
+
+&lt;p&gt;If you are not concerned about being tracked by these sites (and sites that try to unmask you by pretending to be them), and are unconcerned about your local censors potentially noticing you visit them, you can enable plugins by going into the Torbutton Preferences-&amp;gt;Security Settings-&amp;gt;Dynamic Content tab and unchecking &quot;Disable plugins during Tor usage&quot; box. If you do this without Tor VM, Incognito or appropriate firewall rules, we strongly suggest you at least use NoScript to block plugins. You do not need to use the NoScript per-domain permissions if you check the Apply these restrictions to trusted sites too option under the NoScript Plugins preference tab. In fact, with this setting you can even have NoScript allow Javascript globally, but still block all plugins until you click on their placeholders in a page. We also recommend Better Privacy in this case to help you clear your Flash cookies.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 30</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_30/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_30/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:48Z</updated>
+	<published>2009-10-15T11:25:48Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;i looked at &lt;a href=&quot;https://www.torproject.org/torbutton/faq.html.en#noflash&quot; title=&quot;https://www.torproject.org/torbutton/faq.html.en#noflash&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/torbutton/faq.html.en#noflash&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;However, for some website like youtube, i dont care about anonymity. So i went going into the Torbutton Preferences-&amp;gt;Security Settings-&amp;gt;Dynamic Content tab and unchecking &quot;Disable plugins during Tor usage&quot; box. But i still cant watch my fav sites!!&lt;/p&gt;
+
+&lt;p&gt;What am i not doing?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 31</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_31/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_31/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:49Z</updated>
+	<published>2009-11-15T12:25:49Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I am doing the same for flash and all I want to do is view UK Tv from europe&lt;br /&gt;
+ I have unchecked options Security Settings-&amp;gt;Dynamic Content tab and unchecking &quot;Disable plugins during Tor usage&quot; box&lt;/p&gt;
+
+&lt;p&gt;I do not have a preferences option when I look at add ons but I have an options tab where I have changed it version 1.2.2&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 32</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_32/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_32/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:50Z</updated>
+	<published>2009-11-30T12:25:50Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I have unchecked the disable plugins buttun. Despite having flash loaded on ff, when using Tor i get message flash not installed.&lt;br /&gt;
+if i toggle tor off, i have flash again.&lt;/p&gt;
+
+&lt;p&gt;I am trying to watch bbc iplayer from USA. once i initiate the connection, i woudl switch off tor so wouldnt overload circuit, but I cant get flash to work with tor enabled.&lt;br /&gt;
+I am not the only one, this is a commonly posted problem on the net, but there are no answers anywhere, except &quot;uncheck disable plugins&quot; which doesnt help&lt;br /&gt;
+HELP!&lt;br /&gt;
+PLease!&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 33</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_33/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_33/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:51Z</updated>
+	<published>2009-12-08T12:25:51Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Is there no solution? no replies on here since 15 september.&lt;br /&gt;
+I really appreciate the hard work needed to get this going, and the idea behind it is top rate, but I&#39;d love a little support and an idea of how to get flash working in tor, just long enough to log in to the BBC iplayer, then I;d be off of the circuit.&lt;br /&gt;
+Anyone found a solution??&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 34</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_34/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_34/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:52Z</updated>
+	<published>2009-12-08T12:25:52Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I can&#39;t view those flash in Firefox, so I use the IE to view it.&lt;/p&gt;
+
+&lt;p&gt;If your IE or chrome can browse flash pages.  I suggest u to add a script to the IE / Chrome browser.&lt;/p&gt;
+
+&lt;p&gt;1. Use notepad to contain following script and save it as &quot;ieproxy.pac” in anywhere you want.&lt;/p&gt;
+
+&lt;p&gt;**********************************************&lt;br /&gt;
+function FindProxyForURL(url, host){&lt;br /&gt;
+host=host.toLowerCase();&lt;br /&gt;
+if (&lt;br /&gt;
+dnsDomainIs(host,&quot;youtube.com&quot;)&lt;br /&gt;
+||dnsDomainIs(host,&quot;ytimg.com&quot;)&lt;br /&gt;
+||dnsDomainIs(host,&quot;twitter.com&quot;)&lt;br /&gt;
+||dnsDomainIs(host,&quot;facebook.com&quot;)&lt;br /&gt;
+||dnsDomainIs(host,&quot;fbcddn.net&quot;)&lt;br /&gt;
+)&lt;br /&gt;
+return &quot;PROXY 127.0.0.1:8118&quot;;&lt;br /&gt;
+else&lt;br /&gt;
+return &quot;DIRECT&quot;;&lt;br /&gt;
+}&lt;/p&gt;
+
+&lt;p&gt;**********************************************&lt;/p&gt;
+
+&lt;p&gt;If you want to add more sites, you just duplicate &quot;||dnsDomainIs(host,&quot;fbcddn.net&quot;)&quot;, place it in next line and change the site name from &quot;fbcddn.net&quot; to the domain name you want.&lt;br /&gt;
+Example:&lt;br /&gt;
+||dnsDomainIs(host,&quot;bbc.co.uk&quot;)&lt;/p&gt;
+
+&lt;p&gt;2. Open the IE Internet option, click the &quot;connection&quot; tag and click LAN setting.  Please check the &quot;use the auto-configured script&quot;  (I don&#39;t have the exact wording in English, I am using a Chinese version IE) and add a ieproxy.pac file address (file:\\d:ieproxy.pac) where you saved to to the text box. &lt;/p&gt;
+
+&lt;p&gt;3. Save the setting and exit all the IE tag / window &lt;/p&gt;
+
+&lt;p&gt;4. Restart the IE again&lt;/p&gt;
+
+&lt;p&gt;Good Luck...&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 35</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_35/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_35/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:53Z</updated>
+	<published>2009-12-08T12:25:53Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Typo in previous post&lt;/p&gt;
+
+&lt;p&gt;file:\\d:ieproxy.pac  &amp;gt; file://D:\ieproxy.pac&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 36</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_36/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_36/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:54Z</updated>
+	<published>2009-12-10T12:25:54Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;that looks good, I&#39;d like to try that but can you clarify first-what does that do?&lt;br /&gt;
+Is that a UK located server?&lt;br /&gt;
+I&#39;m a little new to this, but have managed to get Tor so close to working, the above solution is the first time i&#39;ve seen that remarkably straightforward method mentioned, and I&#39;d like to know what it does before I set it up on my pc&lt;br /&gt;
+many thanks&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 37</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_37/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_37/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:55Z</updated>
+	<published>2009-12-18T12:25:55Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Well I found a solution, very easy actually...&lt;/p&gt;
+
+&lt;p&gt;The fact that I didn&#39;t use Firefox before is a part of the problem.&lt;/p&gt;
+
+&lt;p&gt;Even though I followed the rules and unchecked the boxes in the Tor Add-on menu it still didn&#39;t work.&lt;br /&gt;
+You&#39;ll have to start Firefox without Tor first, install the Flash player, restart Firefox and then only then, launch Tor with your Firefox session still open. Enable Tor, the flash player being installed and recognized before, it&#39;s all fine and it will work.&lt;/p&gt;
+
+&lt;p&gt;Of course for most of the code lovers that are behind Tor, this is ridiculously simple, at the point that they don&#39;t really care to inquire or even think we poor things only used IE or some other Microsoft interface to surf before to be saved (just kidding, nothing serious)&lt;/p&gt;
+
+&lt;p&gt;I must say that some answers that provoke your deep admiration with all the code implied (see this &lt;a href=&quot;https://blog.torproject.org/blog/testing-tor-browser-bundle-120dev&quot; title=&quot;https://blog.torproject.org/blog/testing-tor-browser-bundle-120dev&quot; rel=&quot;nofollow&quot;&gt;https://blog.torproject.org/blog/testing-tor-browser-bundle-120dev&lt;/a&gt; ), just make me laugh out loud (now that I can acess youtube and others)&lt;br /&gt;
+But I do acknowledge your deep concern for our freedom. So big and warm thank you [dear nerds]&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 38</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_38/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_38/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:56Z</updated>
+	<published>2009-12-22T12:25:56Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;m still not getting it!&lt;br /&gt;
+I launch FF via the vidalia control panel, so have the Torbutton appear immediately. I  set it to &quot;disabled&quot;, then i try installing Flash, and Shockwave, both of which say they are installed.&lt;br /&gt;
+Then I enable Tor via the tor button.&lt;br /&gt;
+But when i try to access BBC Iplayer, I get a notice saying I need Flash!&lt;br /&gt;
+SO the Tor is doing its stuff and getting me access to the UK, but the browser bundled with Vidalia seems to prevent me from using flash!(I am deselectign the plugin box)&lt;/p&gt;
+
+&lt;p&gt;Is there a sepereate Tor exe file I can use somehow?&lt;br /&gt;
+That is, can I open a FF browser, set up flash/shockwave there, then &quot;start&quot; Tor somehow WITHOUT going via Vidalia, which automatically opens a new browser?&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 39</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_39/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_39/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:57Z</updated>
+	<published>2009-12-22T12:25:57Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;The Tor Browser Bundle does not use plugins installed on the system.  It lacks all plugins and disables them in the Firefox configuration.  If you want to try using Flash, and other dynamic remote execution technologies, try Tor VM, &lt;a href=&quot;https://torproject.org/torvm/&quot; title=&quot;https://torproject.org/torvm/&quot; rel=&quot;nofollow&quot;&gt;https://torproject.org/torvm/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;TorVM is very much alpha code, but it we believe it works well enough for public testing.&lt;/p&gt;
+
+&lt;p&gt;And of course, you can reconfigure other applications to use the SOCKS 5 proxy part of Tor once it&#39;s running.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 40</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_40/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_40/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:58Z</updated>
+	<published>2010-01-06T12:25:58Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Many thanks for that-I&#39;ll have to try it in the next day or so.&lt;br /&gt;
+Can I configure the tor network to exit in the UK? &lt;/p&gt;
+
+&lt;p&gt;That&#39;s what I&#39;m aiming for, so i can use the bbc iplayer.&lt;br /&gt;
+I&#39;d disconnect from Tor once running so as not to lean heavily on other people&#39;s good nature.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 41</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_41/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_41/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:25:59Z</updated>
+	<published>2010-01-10T12:25:59Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;i get an erro on the VM starting-@failed to set hardware to promiscuous mode@&lt;br /&gt;
+so can&#39;t get beyond that...&lt;br /&gt;
+any help stilll ratefully accepted!!&lt;br /&gt;
+thanks&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 42</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_42/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_42/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:00Z</updated>
+	<published>2010-02-06T12:26:00Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;After many unhappy hours trying many different permutations, I can confirm that TorVM does not let me watch BBC Iplayer in the USA&lt;br /&gt;
+Thanks for the effort guys-I appreciate it-it just doesn&#39;t work.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 43</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_43/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_43/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:01Z</updated>
+	<published>2010-02-11T12:26:01Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I&#39;ve got as far as setting up firefox with Uk dedicated exit nodes, and can get bbc iplayer on my pc here in the USA, but it says I must install flash. I do that and unclick disable plugins, I have torbutton 1.2.4, but still iplayer insists I install flash!&lt;br /&gt;
+I just need to use the tor network long enough to start my iplayer stream, then toggle it off so i can watch a UK program-is that possible?&lt;br /&gt;
+Why does the preferences button, to enable plug ins use, not work?!&lt;/p&gt;
+
+&lt;p&gt;I&#39;m so close to getting it, there must be a solution-and i&#39;ve already tried the torVM, I also get the promiscuous mode failure as above.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 44</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_44/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_44/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:02Z</updated>
+	<published>2010-02-21T12:26:02Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I have seen lot of people asking the question &quot;Flash is not playing with TOR Browser&quot;, or that they are unable to install Flash Player etc..etc...It seems strange that nobody has provided a solution. &lt;/p&gt;
+
+&lt;p&gt;I am the CEO of http://www.learnerstv.com and we have thousands of Free streaming video lecture courses on our website. we do receive lot of queries from Chinese visitors unable to view the video lectures due to governmental restrictions in China. We offer TOR Browser as a solution to the issue.&lt;/p&gt;
+
+&lt;p&gt;Here is my solution to the issue. What I am talking about is the portable &quot;Browser Bundle Pack&quot; and Firefox included in it. &lt;/p&gt;
+
+&lt;p&gt;Remember that TOR Browser Bundle Pack, includes the portable version of Firefox. You need to enable Flash Plugin for Firefox. Here is how. &lt;/p&gt;
+
+&lt;p&gt;If you have the latest Adobe Flash Player installed in your system, search for 2 files:&lt;br /&gt;
+1. flashplayer.xpt&lt;br /&gt;
+2. NPSWF32&lt;/p&gt;
+
+&lt;p&gt;These will be in Windows ==&amp;gt;System 32 ==&amp;gt;Macromed==&amp;gt;Flash&lt;/p&gt;
+
+&lt;p&gt;Copy the above files to the following TOR folder:&lt;br /&gt;
+Firefox Portable==&amp;gt;App==&amp;gt;Firefox==&amp;gt;plugins&lt;br /&gt;
+=========&lt;/p&gt;
+
+&lt;p&gt;1. Click the &quot;Start Tor Browser&quot;. Once you start it a control panel opens&lt;br /&gt;
+called &quot;Vidalia Control panel&quot;. It will open a Firefox Browser too.&lt;/p&gt;
+
+&lt;p&gt;2. On the bottom right you will be able to view &quot;Tor Enabled&quot; in green&lt;br /&gt;
+letters.&lt;/p&gt;
+
+&lt;p&gt;3. Right click and choose preferences on  &quot;Tor Enabled&quot;. It will open a&lt;br /&gt;
+preferences window.&lt;/p&gt;
+
+&lt;p&gt;4. Choose &quot;security settings&quot; tab and uncheck &quot;Disable plugins during Tor&lt;br /&gt;
+Usage (crucial)&quot;. This step is to display the Flash Player window.&lt;/p&gt;
+
+&lt;p&gt;6. Click &quot;OK&quot; and close the Tor Browser. Closing the browser will close the&lt;br /&gt;
+Vidalia control panel too.&lt;/p&gt;
+
+&lt;p&gt;7. Start the program again by clicking  &quot;Start Tor Browser&quot;.&lt;/p&gt;
+
+&lt;p&gt;8. Visit http://www.learnerstv.com using TOR Firefox browser for thousands of Free streaming video lecture courses.&lt;/p&gt;
+
+&lt;p&gt;Hope this helps everyone.&lt;/p&gt;
+
+&lt;p&gt;Regards&lt;/p&gt;
+
+&lt;p&gt;Shelley&lt;br /&gt;
+CEO&lt;br /&gt;
+http://www.learnerstv.com&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 45</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_45/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_45/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:03Z</updated>
+	<published>2010-02-24T12:26:03Z</published>
+
+	<content type="html" xml:lang="en">
+	FFS will someone fix this? its ubber sad the way it wont work
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 46</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_46/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Testing_Tor_Browser_Bundle_1_2_0-dev/comment_46/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:26:04Z</updated>
+	<published>2010-02-25T12:26:04Z</published>
+
+	<content type="html" xml:lang="en">
+	Did you read the post above by Shelley of Learnerstv.com ???? It is the solution to the Flash Issue.
+
+	</content>
+
+
+
+</entry>
+
+</feed>

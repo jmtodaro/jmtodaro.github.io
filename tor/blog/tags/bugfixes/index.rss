@@ -1,0 +1,351 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged bugfixes</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/bugfixes/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Vidalia 0.2.10 Released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/</link>
+
+
+	<category>/tags/bugfixes</category>
+
+	<category>/tags/geoip_fixes</category>
+
+	<category>/tags/osx_fixes</category>
+
+	<category>/tags/vidalia</category>
+
+
+	<pubDate>Tue, 28 Sep 2010 10:31:45 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:08:39Z</dcterms:modified>
+
+	<description>&lt;p&gt;The latest version of the graphical controller for tor, Vidalia, is now available.  The main change is the use of Tor&#39;s native geoip database to map relay IP addresses to country.  This removes the remote geoip resolution that occurred over Tor in previous versions of Vidalia.&lt;/p&gt;
+
+&lt;p&gt;Vidalia can be found at &lt;a href=&quot;https://www.torproject.org/vidalia/&quot; title=&quot;https://www.torproject.org/vidalia/&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/vidalia/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The full changelog is: &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/vidalia-0210-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Drop remote GeoIP lookups. Instead, the default behavior now is to use the country-level GeoIP database that ships with Tor to map an IP address to a country code, and then map the country code to latitude and longitude with a separate database built into Vidalia.&lt;/li&gt;
+&lt;li&gt;Add a -DUSE_GEOIP build option to enable building with MaxMind&#39;s GeoIP C library for using a local city-level or country-level database instead of Tor&#39;s database. See README.geoip for details on use.&lt;/li&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_2_10_Released/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Tor 0.2.1.20 Released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_20_Released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_20_Released/</link>
+
+
+	<category>/tags/bugfixes</category>
+
+	<category>/tags/bundle_upgrades</category>
+
+	<category>/tags/performance_enhancements</category>
+
+	<category>/tags/vidalia_updates</category>
+
+
+	<pubDate>Thu, 12 Nov 2009 19:35:58 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:41:04Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor 0.2.1.20 fixes a crash bug when you&#39;re accessing many hidden services&lt;br /&gt;
+at once, prepares for more performance improvements, and fixes a bunch&lt;br /&gt;
+of smaller bugs.&lt;/p&gt;
+
+&lt;p&gt;The Windows and OS X bundles also include a more recent Vidalia, and&lt;br /&gt;
+switch from Privoxy to Polipo.&lt;/p&gt;
+
+&lt;p&gt;The OS X installers are now drag and drop. It&#39;s best to un-install&lt;br /&gt;
+Tor/Vidalia and then install this new bundle, rather than upgrade. If&lt;br /&gt;
+you want to upgrade, you&#39;ll need to update the paths for Tor and Polipo&lt;br /&gt;
+in the Vidalia Settings window.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/easy-download&quot; title=&quot;https://www.torproject.org/easy-download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/easy-download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.20 - 2009-10-15&lt;br /&gt;
+  o Major bugfixes:&lt;/p&gt;
+
+&lt;p&gt;    - Send circuit or stream sendme cells when our window has decreased&lt;br /&gt;
+      by 100 cells, not when it has decreased by 101 cells. Bug uncovered&lt;br /&gt;
+      by Karsten when testing the &quot;reduce circuit window&quot; performance&lt;br /&gt;
+      patch. Bugfix on the 54th commit on Tor -- from July 2002,&lt;br /&gt;
+      before the release of Tor 0.0.0. This is the new winner of the &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02120-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_20_Released/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Vidalia 0.1.15 Released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_1_15_Released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_1_15_Released/</link>
+
+
+	<category>/tags/bugfixes</category>
+
+	<category>/tags/vidalia_releases</category>
+
+
+	<pubDate>Sun, 12 Jul 2009 20:32:54 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:30:19Z</dcterms:modified>
+
+	<description>&lt;p&gt;Vidalia 0.1.15 is released.  It contains fixes for:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Bump the minimum required Qt version to 4.3.0.&lt;/li&gt;
+&lt;li&gt;Remove USE_QSSLSOCKET as a build option. If your Qt doesn&#39;t support !OpenSSL, then you don&#39;t get GeoIP lookups.&lt;/li&gt;
+&lt;li&gt; Fix the TorPostFlight portion of the OS X bundle installer so it doesn&#39;t fail when installing Torbutton.&lt;/li&gt;
+&lt;li&gt;Include libeay32.dll in the Windows installers. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It can be obtained at &lt;a href=&quot;https://www.torproject.org/vidalia/&quot; title=&quot;https://www.torproject.org/vidalia/&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/vidalia/&lt;/a&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Vidalia_0_1_15_Released/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: June 2009 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/June_2009_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/June_2009_Progress_Report/</link>
+
+
+	<category>/tags/anonymity_advocacy</category>
+
+	<category>/tags/bugfixes</category>
+
+	<category>/tags/censorship_circumvention</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/releases</category>
+
+
+	<pubDate>Sat, 11 Jul 2009 21:06:32 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:30:13Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New releases&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;On June 20th we released Tor 0.2.1.16-rc.&lt;br /&gt;
+On June 21st, we released Tor Browser Bundle 1.2.1.&lt;br /&gt;
+On June 23rd, we released Tor Browser Bundle 1.2.2.&lt;br /&gt;
+On June 24th, we released Tor 0.2.0.35-stable.  We expect that this release is the last of the 0.2.0.x -stable series, soon to be replaced with the 0.2.1.x series.&lt;br /&gt;
+On June 30th, we released Vidalia 0.1.14.  &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Censorship circumvention&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Packaged rpms for Red Flag Linux version 6.  Red Flag Linux is reported to be the new operating system for all Internet cafe&#39;s in China.  So far, no one has seen this conversion actually happen, but now we&#39;re ready if it does.&lt;/p&gt;
+
+&lt;p&gt;Our email autoresponder, gettor , received a number of patches to deal with dkim issues, including finding a dkim bug that prevented yahoo email users from fetching Tor. This bug has been fixed. Additionally, we&#39;ve whitelisted some domains where we &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/june-2009-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/June_2009_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: April 2009 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/</link>
+
+
+	<category>/tags/bugfixes</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/tor_browser_bundle</category>
+
+
+	<pubDate>Mon, 11 May 2009 21:27:48 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:24:38Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt;New releases&lt;/strong&gt;&lt;br /&gt;
+On April 12, we released 0.2.1.14-rc.  Read the details &lt;a href=&quot;http://blog.torproject.org/blog/tor-02114rc-released&quot; rel=&quot;nofollow&quot;&gt;in the announcement&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Outreach&lt;/strong&gt;&lt;br /&gt;
+Roger attended an ITSG conference in Chicago.&lt;/p&gt;
+
+&lt;p&gt;Roger, Nick, Jacob, and Mike attended the CodeCon conference in San Francisco, &lt;a href=&quot;http://www.codecon.org/2009/&quot; title=&quot;http://www.codecon.org/2009/&quot; rel=&quot;nofollow&quot;&gt;http://www.codecon.org/2009/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Andrew met with the Center for Democracy and Human Rights in Saudi Arabia to discuss using Tor for their mission, &lt;a href=&quot;http://cdhr.info&quot; title=&quot;http://cdhr.info&quot; rel=&quot;nofollow&quot;&gt;http://cdhr.info&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Roger and Andrew met with the Department of Justice CyberCrime Division to give an overview of how Tor works and how we could better work with law enforcement.&lt;/p&gt;
+
+&lt;p&gt;Wendy, Roger, and Andrew had a dinner with Internews Central Asia media development staff.&lt;/p&gt;
+
+&lt;p&gt;Andrew attended the CIMI/NED panel on World Press Freedom, &lt;a href=&quot;http://cima.ned.org/860/world-press-freedom-day-2009.html&quot; title=&quot;http://cima.ned.org/860/world-press-freedom-day-2009.html&quot; rel=&quot;nofollow&quot;&gt;http://cima.ned.org/860/world-press-freedom-day-2009.html&lt;/a&gt;. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/april-2009-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/April_2009_Progress_Report/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Tor 0.2.1.11-alpha released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_11-alpha_released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_11-alpha_released/</link>
+
+
+	<category>/tags/alpha_release</category>
+
+	<category>/tags/bugfixes</category>
+
+	<category>/tags/security_fixes</category>
+
+
+	<pubDate>Thu, 22 Jan 2009 13:08:54 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:17:57Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor 0.2.1.11-alpha finishes fixing the &quot;if your Tor is off for a week it&lt;br /&gt;
+will take a long time to bootstrap again&quot; bug. It also fixes an important&lt;br /&gt;
+security-related bug reported by Ilja van Sprundel. You should upgrade.&lt;br /&gt;
+(We&#39;ll send out more details about the bug once people have had some&lt;br /&gt;
+time to upgrade.)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download.html.en&quot; title=&quot;https://www.torproject.org/download.html.en&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download.html.en&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.11-alpha - 2009-01-20&lt;br /&gt;
+&lt;strong&gt;Security fixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fix a heap-corruption bug that may be remotely triggerable on&lt;br /&gt;
+      some platforms. Reported by Ilja van Sprundel.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Major bugfixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Discard router descriptors as we load them if they are more than&lt;br /&gt;
+      five days old. Otherwise if Tor is off for a long time and then&lt;br /&gt;
+      starts with cached descriptors, it will try to use the onion&lt;br /&gt;
+      keys in those obsolete descriptors when building circuits. Bugfix&lt;br /&gt;
+      on 0.2.0.x. Fixes bug 887.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Minor features:&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-0.2.1.11-alpha-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_11-alpha_released/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Tor 0.2.1.8-alpha is now available</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_8-alpha_is_now_available/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_8-alpha_is_now_available/</link>
+
+
+	<category>/tags/alpha_release</category>
+
+	<category>/tags/bugfixes</category>
+
+
+	<pubDate>Wed, 10 Dec 2008 06:53:21 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:15:40Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor 0.2.1.8-alpha fixes some crash bugs in earlier alpha releases,&lt;br /&gt;
+builds better on unusual platforms like Solaris and old OS X, and fixes&lt;br /&gt;
+a variety of other issues.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download&quot; title=&quot;https://www.torproject.org/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.8-alpha - 2008-12-08&lt;br /&gt;
+&lt;strong&gt;Major features:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;New DirPortFrontPage option that takes an html file and publishes&lt;br /&gt;
+      it as &quot;/&quot; on the DirPort. Now relay operators can provide a&lt;br /&gt;
+      disclaimer without needing to set up a separate webserver. There&#39;s&lt;br /&gt;
+      a sample disclaimer in contrib/tor-exit-notice.html.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Security fixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;When the client is choosing entry guards, now it selects at most&lt;br /&gt;
+      one guard from a given relay family. Otherwise we could end up with&lt;br /&gt;
+      all of our entry points into the network run by the same operator.&lt;br /&gt;
+      Suggested by Camilo Viecco. Fix on 0.1.1.11-alpha.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Major bugfixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fix a DOS opportunity during the voting signature collection process&lt;br /&gt;
+      at directory authorities. Spotted by rovv. Bugfix on 0.2.0.x.&lt;/li&gt;
+&lt;li&gt;Fix a possible segfault when establishing an exit connection. Bugfix&lt;br /&gt;
+      on 0.2.1.5-alpha.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Minor bugfixes:&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-0.2.1.8-alpha-now-available&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Get file locking working on win32. Bugfix on 0.2.1.6-alpha. Fixes&lt;br /&gt;
+      bug 859.&lt;/li&gt;
+&lt;li&gt;Made Tor a little less aggressive about deleting expired&lt;br /&gt;
+      certificates. Partial fix for bug 854.&lt;/li&gt;
+&lt;li&gt;Stop doing unaligned memory access that generated bus errors on&lt;br /&gt;
+      sparc64. Bugfix on 0.2.0.10-alpha. Fix for bug 862.&lt;/li&gt;
+&lt;li&gt;Fix a crash bug when changing EntryNodes from the controller. Bugfix&lt;br /&gt;
+      on 0.2.1.6-alpha. Fix for bug 867. Patched by Sebastian.&lt;/li&gt;
+&lt;li&gt;Make USR2 log-level switch take effect immediately. Bugfix on&lt;br /&gt;
+      0.1.2.8-beta.&lt;/li&gt;
+&lt;li&gt;If one win32 nameserver fails to get added, continue adding the&lt;br /&gt;
+      rest, and don&#39;t automatically fail.&lt;/li&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_8-alpha_is_now_available/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

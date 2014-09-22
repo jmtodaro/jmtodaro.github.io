@@ -1,0 +1,421 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AntiVir, Tor Browser Bundle, and trojan Dropper.Gen false positive</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FAntiVir_Tor_Browser_Bundle_and_trojan_Dropper_Gen_false_positive&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">AntiVir, Tor Browser Bundle, and trojan Dropper.Gen false positive</a>
+
+</span>
+
+
+<div id="content">
+<p>A number of people are reporting that AntiVir's latest update is reporting trojan Dropper.Gen in the Tor Browser Bundle version 1.1.11, specifically the "Start Tor Browser.exe" program.  </p>
+
+<p>This appears to be a false positive from AntiVir.  No one has confirmed they've checked the pgp signature with their download of TBB.  You may want to confirm you've actually downloaded our package, <a href="https://www.torproject.org/verifying-signatures" title="https://www.torproject.org/verifying-signatures" rel="nofollow">https://www.torproject.org/verifying-signatures</a>.</p>
+
+<p>False positives occurs often enough we have a FAQ entry about it, <a href="https://www.torproject.org/faq#VirusFalsePositives" title="https://www.torproject.org/faq#VirusFalsePositives" rel="nofollow">https://www.torproject.org/faq#VirusFalsePositives</a></p>
+
+<p>You can read more about the trojan at <a href="http://www.avira.ro/en/threats/section/details/id_vir/3647/tr_dropper.gen.html" title="http://www.avira.ro/en/threats/section/details/id_vir/3647/tr_dropper.gen.html" rel="nofollow">http://www.avira.ro/en/threats/section/details/id_vir/3647/tr_dropper.ge...</a></p>
+
+<p>I'm building a VM to specifically test this AntiVir version against Start Tor Browser.exe to see what inside the executable is triggering the false positive.</p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/anti-virus/" rel="tag">anti-virus</a>
+
+<a href="../../tags/false_positive/" rel="tag">false positive</a>
+
+<a href="../../tags/tor_browser_bundle/" rel="tag">tor browser bundle</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-109c6293caf227e74fd4eb326c96c3f0">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>An easier way to test for FPs is by using services like VirusTotal. I just uploaded the executable, and indeed, as the scan log shows ( <a href="http://www.virustotal.com/analisis/27caf4312ace0cf8036bc6d0cbf05f64" title="http://www.virustotal.com/analisis/27caf4312ace0cf8036bc6d0cbf05f64" rel="nofollow">http://www.virustotal.com/analisis/27caf4312ace0cf8036bc6d0cbf05f64</a> ), Avira detects the file (in addition to the gateway version of McAfee).</p>
+
+<p>I also reported it directly to Avira trough their web interface ( <a href="http://analysis.avira.com/samples/index.php" title="http://analysis.avira.com/samples/index.php" rel="nofollow">http://analysis.avira.com/samples/index.php</a> ) and it said that: "The file 'Start Tor Browser.exe' has been determined to be 'FALSE POSITIVE'. In particular this means that this file is not malicious but a false alarm. Detection is removed from our virus definition file (VDF) with the version: 7.1.3.25. ", so hopefully this will be resolved.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FCd-MaN%20%28not%20verified%29&amp;do=goto">Cd-MaN (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 08 Apr 2009 06:22:16 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-f7fada3768982d226544b87cb7cfaa6a">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+hey phobos there is aproblem with the tor-project  starting page in TBB. It is not showing this message "Congratuations  you are using tor, your ip address is so on..... wat is the probem? Plesse fix this.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FPETER%20%28not%20verified%29&amp;do=goto">PETER (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 09 Apr 2009 06:22:17 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e3595741d068eda58a0145bc084096be">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+The reason check.torproject.org stopped working was due to the fiber cut in California affecting the datacenter:  <a href="http://www.unitedlayer.com/show.html?id=37" title="http://www.unitedlayer.com/show.html?id=37" rel="nofollow">http://www.unitedlayer.com/show.html?id=37</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 13 Apr 2009 06:22:18 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b3a6e9d218a6c07fe81254c5b81dfeab">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<p>I have downloaded the Vidalia software as I need to show myself in different geographic locations than where I am.  (Family member doing some cyber stalking of me and I want to lead them a merry dance and as I travel for business all sorts of locations are totally believable and drives them nuts.... Although why it irritates them I have no idea, but it is such a hot button and they are such an ass I want to do this).</p>
+
+<p>My Google research indicated this software could do this and I downloaded it.   BUT....</p>
+
+<p>I am not a techie and I cannot seem to even find if I have a Proxy, (I have a home laptop on a wireless network connected to ISP via a DSL service, that is all I know) and couldn't work out if I actually have the software working or how do I use it??  Yes I have the green onion, but....  The help file, er didn't really help me.  Sorry Vidalia guys!  I know how do I manage to walk and breathe at the same time.... <img src="../../smileys/smile.png" alt=":-)" /></p>
+
+<p>Can someone give me a real non technical idiots guide?  Push this button, then the screen will look like this, now push that button etc etc.</p>
+
+<p>Greatly appreciate any help.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FMike%20%28not%20verified%29&amp;do=goto">Mike (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 24 Oct 2009 06:22:19 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e4dde343449fa2a104e57717c64364d8">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+I installed Tor on my Macbook Pro and initially had no problems running it. When I upgraded to Leopard I deleted and shredded Firefox and Vidalia, then reinstalled them. The Vidalia bundle works fine in that it connects to the Tor Network but when I open Firefox I cannot toggle the Torbutton to turn it on. When I click on it, it will not switch from Disabled to Enabled. It's as if it's frozen. I checked my Tor settings and proxy settings in Firefox and everything seems to be setup right. What could be causing this and how can I change it?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 19 Nov 2009 06:22:20 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FAntiVir_Tor_Browser_Bundle_and_trojan_Dropper_Gen_false_positive&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:22:16 AM CDT</span>
+<!-- Created <span class="date">Tue 07 Apr 2009 09:53:30 AM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

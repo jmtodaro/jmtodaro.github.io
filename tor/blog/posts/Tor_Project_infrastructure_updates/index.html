@@ -1,0 +1,1449 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tor Project infrastructure updates</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_Project_infrastructure_updates&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Tor Project infrastructure updates</a>
+
+</span>
+
+
+<div id="content">
+<p>You should upgrade to Tor 0.2.1.22 or 0.2.2.7-alpha:<br />
+<a href="https://www.torproject.org/easy-download.html.en" title="https://www.torproject.org/easy-download.html.en" rel="nofollow">https://www.torproject.org/easy-download.html.en</a></p>
+
+<p>In early January we discovered that two of the seven servers that run directory<br />
+authorities were compromised (moria1 and gabelmoo), along with<br />
+metrics.torproject.org, a new server we'd recently set up to serve<br />
+metrics data and graphs. The three servers have since been reinstalled<br />
+with service migrated to other servers.</p>
+
+<p>We made fresh identity keys for the two directory authorities, which is<br />
+why you need to upgrade.</p>
+
+<p>Moria also hosted our git repository and svn repository. We took the<br />
+services offline as soon as we learned of the breach. It appears the<br />
+attackers didn't realize what they broke into -- just that they had<br />
+found some servers with lots of bandwidth. The attackers set up some ssh<br />
+keys and proceeded to use the three servers for launching other attacks.<br />
+We've done some preliminary comparisons, and it looks like git and svn<br />
+were not touched in any way. <span class="read-more"><a href="http://blog.torproject.org/blog/tor-project-infrastructure-updates"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/alpha_release/" rel="tag">alpha release</a>
+
+<a href="../../tags/security_updates/" rel="tag">security updates</a>
+
+<a href="../../tags/stable_release/" rel="tag">stable release</a>
+
+<a href="../../tags/tor/" rel="tag">tor</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-23b17c1cbaf31f273a833c40ff72a55e">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>As of this posting, the link at the top has the 1.3.0 version of the Browser Bundle (which still has the 0.2.1.21 release of Tor)</p>
+
+<p>What can TBB users do?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 22 Jan 2010 06:47:35 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-371b1205ddccf45abe5ff6cab4b7eada">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+You can wait, new tbb is coming today.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 22 Jan 2010 06:47:36 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7f5ee543b0ae38d8748765d831698d35">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>Hmmm i noticed that torchat isn't connecting anymore for more than 24 hours now...</p>
+
+<p>Maybe this could be in relationship with your messsage?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 22 Jan 2010 06:47:37 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b8a7d37ea1192fdde44c67fd20dc57c7">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+<p>re torchat still not connecting. It is true here too,</p>
+
+<p>Note this line from torchat's torcc file:</p>
+
+<p>## the following is a dirty workaround for the 15 minutes problem:</p>
+
+<p>## hidden service descriptors are cached 15 minutes, so after</p>
+
+<p>## a restart of tor we are not reachable for 15 minutes.</p>
+
+<p>## Using always the same introduction points makes even old </p>
+
+<p>## and stale descriptors still work. I am still searching</p>
+
+<p>## for a better solution.</p>
+
+<p>HiddenServiceNodes moria1,moria2,tor26</p>
+
+<p>At least 2 of the 3 hidden service node above were compromised.<br />
+Are there new names for these servers and do they need to replace the 3 shown above?   If so, where are these server names to be found?</p>
+
+<p>PS The captchas required to post here are VERY difficult for a human to read.  Please use something that is more legible and human friendly</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 22 Jan 2010 06:47:38 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-219211ea6b67a3d4043008704212d45f">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi guys!<br />
+This error appears every time since update. What's wrong? Does someone have the same problem?</p>
+
+<p>Jan 23 13:01:33.166 [Notice] Tor v0.2.2.7-alpha (git-.......). This is experimental software. Do not rely on it for strong anonymity. (Running on Darwin i386)<br />
+Jan 23 13:01:33.167 [Notice] Initialized libevent version 1.4.13-stable using method kqueue. Good.<br />
+Jan 23 13:01:33.168 [Notice] Opening Socks listener on 127.0.0.1:9050<br />
+Jan 23 13:01:33.168 [Notice] Opening Control listener on 127.0.0.1:9051<br />
+Jan 23 13:01:35.206 [Notice] Bootstrapped 10%: Finishing handshake with directory server.<br />
+Jan 23 13:01:35.328 [Warning] TLS error: unexpected close while renegotiating (SSL_ST_OK)<br />
+Jan 23 13:01:35.340 [Notice] No current certificate known for authority moria1; launching request.<br />
+Jan 23 13:01:35.340 [Notice] No current certificate known for authority tor26; launching request.<br />
+Jan 23 13:01:35.341 [Notice] No current certificate known for authority dizum; launching request.<br />
+Jan 23 13:01:35.341 [Notice] No current certificate known for authority ides; launching request.<br />
+Jan 23 13:01:35.341 [Notice] No current certificate known for authority gabelmoo; launching request.<br />
+Jan 23 13:01:35.342 [Notice] No current certificate known for authority dannenberg; launching request.<br />
+Jan 23 13:01:35.342 [Notice] No current certificate known for authority urras; launching request.<br />
+Jan 23 13:01:35.487 [Warning] TLS error: unexpected close while renegotiating (SSL_ST_OK)<br />
+Jan 23 13:01:36.042 [Warning] TLS error: unexpected close while renegotiating (SSL_ST_OK)<br />
+Jan 23 13:01:36.184 [Warning] TLS error: unexpected close while renegotiating (SSL_ST_OK)<br />
+Jan 23 13:02:36.193 [Notice] No current certificate known for authority moria1; launching request.<br />
+Jan 23 13:02:36.226 [Notice] No current certificate known for authority tor26; launching request.<br />
+Jan 23 13:02:36.227 [Notice] No current certificate known for authority dizum; launching request.<br />
+Jan 23 13:02:36.227 [Notice] No current certificate known for authority ides; launching request.<br />
+Jan 23 13:02:36.228 [Notice] No current certificate known for authority gabelmoo; launching request.<br />
+Jan 23 13:02:36.228 [Notice] No current certificate known for authority dannenberg; launching request.<br />
+Jan 23 13:02:36.229 [Notice] No current certificate known for authority urras; launching request.<br />
+Jan 23 13:02:36.331 [Warning] TLS error: unexpected close while renegotiating (SSL_ST_OK)<br />
+Jan 23 13:02:36.384 [Warning] TLS error: unexpected close while renegotiating (SSL_ST_OK)</p>
+
+<p>If you could help me, that would be great. <img src="../../smileys/smile.png" alt=":-)" /> Thanks guys!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 23 Jan 2010 06:47:39 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9f64a302ccb801140c403235a5802547">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>Yes, we know, <a href="https://bugs.torproject.org/flyspray/index.php?do=details&amp;id=1225" title="https://bugs.torproject.org/flyspray/index.php?do=details&amp;id=1225" rel="nofollow">https://bugs.torproject.org/flyspray/index.php?do=details&amp;id=1225</a></p>
+
+<p>and <a href="http://archives.seul.org/or/talk/Jan-2010/msg00157.html" title="http://archives.seul.org/or/talk/Jan-2010/msg00157.html" rel="nofollow">http://archives.seul.org/or/talk/Jan-2010/msg00157.html</a></p>
+
+<p>Apple updated OS X and broke ssl.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 23 Jan 2010 06:47:40 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-818e6c3d456a214f4bcedad4560ddb1e">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p>well, I wouldn't say exactly that they 'broke' it...the fact is rather that the ssl protocol is broken.</p>
+
+<p>Btw that captcha is f*ing unreadable</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 23 Jan 2010 06:47:41 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8fc26fa1007bd865945f3df1e6cb641e">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+thank you for posting . please do more good article.i like it so much .I will always follow it.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 04 Nov 2010 06:47:42 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d29281d71e241d599077e7728a4d7faf">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+After reading the bug reports I just wanted to add that this issue is not restricted to Snow Leopard (10.6). I experience it on Leopard 10.5.8 as well after application of Apple's latest security Update 2010-001.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 23 Jan 2010 06:47:43 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7b70872344ac236d435864b196631104">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+<p>I also use OS X Snow Leopard 10.6.2 and I must say, I have the same problem.</p>
+
+<p>I get these error message everytime, weather I start Vidalia (TOR)</p>
+
+<p>TLS error: unexpected close while renegotiating</p>
+
+<p>Hope it comes a solution quickly. I don't know what I could do</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 24 Jan 2010 06:47:44 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-28fce8f490b21b3628a81fe233c01ebc">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+It seems to come and go for me. Traffic-based?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 24 Jan 2010 06:47:45 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-032f8f90e2fa494e72d118d83ab65199">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+<p>My Torchat is essentially now broken by the recent changes to Tor. Upgrading to 19 Jan 2010 ver of Tor allows user to connect to himself but rarely with any others users even if they have upgraded to new Tor too.</p>
+
+<p>Torchat uses Tor hidden services to communicate with others; something must still be broken in that respect.</p>
+
+<p>PS  Tor for surfing in FireFox works fine.</p>
+
+<p>Any other clients that use Tor hidden services affected by these changes to Tor?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 25 Jan 2010 06:47:46 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ea2f3c95048e8bee604e8b22d5499f04">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+Tor/Firefox is fine.  Torchat remains broken despite attempts to insert updated tor.exe and/or tor.resolve.  Quite unfortunate.  Torchat was an excellent resource.  I suspect commie hackers are to blame, but that's just me.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 31 Jan 2010 06:47:47 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bcfc8c074cfb63097798ae278ed0b028">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+<p>I am using MacOSX Snow Leopard 10.6. I updated to intelMac Tor Bundle 0.2.1.22 as advised. I now find I cannot access the Tor Network. The following messages (repeating) appear in the log:</p>
+
+<p>Warning: TLS error: unexpected close while negotiating<br />
+Notice: No current certificate known for authority moria1</p>
+
+<p>Same notice for authorities: moria1, tor26, ides, gabelmoo, dannenberg, urras.</p>
+
+<p>I wish to use the previous  bundle (0.2.1.19 for intelMac and PPC)<br />
+of Tor. I would be be grateful if someone could give me the address where previous versions of Tor bundles can be downloaded.</p>
+
+<p>Thank you in advance. </p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 26 Jan 2010 06:47:48 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4cf6d53f341684cba09afe81d4b0b81c">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+Still broken <img src="../../smileys/sad.png" alt=":(" />
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 26 Jan 2010 06:47:49 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-42ce1655c4c213e3cfab499110e1d5b8">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+<p>I'm getting the same "TLS" errors. I was also using an older version of Vidalia and just updated to the latest version to see if it would fix it, but no.<br />
+So is it just Intel-Mac users with Snow Leopard having problems? I have ver. 10.6.2<br />
+This sucks, Tor was working great a few days ago : (<br />
+Fucking hackers - find them and cut off their balls!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 28 Jan 2010 06:47:50 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-152bc7009ed3a3fcaa1f03953638a514">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+BTW, I realize the hackers had nothing to do with why Tor isn't working on Macs at the moment; I was just saying they were assholes. I realize Apple's latest security update screwed it up. Didn't want to be misread..
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 28 Jan 2010 06:47:51 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5c86e3c0f7f9fce2ac56ef074eee0e6d">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+<p>To fix you need to replace the tor.exe and tor-resolve.exe in your TORchat folder.</p>
+
+<p>DL the lastest TOR package and install what you need (min is TOR), then copy the new tor.exe (2110kb) and tor-resolve exe (118kb) into your TORchat bin/tor folder. </p>
+
+<p>Start torchat and off you go.</p>
+
+<p>or it did for me </p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 29 Jan 2010 06:47:52 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d030e6bd8035dae3fe8adf2173336486">
+
+<div class="comment-subject">
+
+Comment 19
+
+</div>
+
+<div class="inlinecontent">
+As noted in previous posting, I did exactly this with no improvement in Torchat performance.  Torchat is running as I write this.  The system has resolved only myself and one other user.  It is as though at least half of the previous relays have been taken off-line.  Perhaps someone can send an email to the Torchat developer and request a Torchat update to fix all issues.  Would be much appreciated.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 31 Jan 2010 06:47:53 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b7cff6fe65deaa3ccbe329b856c5d24a">
+
+<div class="comment-subject">
+
+Comment 20
+
+</div>
+
+<div class="inlinecontent">
+See fault report filed at torchat homepage: http://code.google.com/p/torchat/issues/detail?id=54   -----   And also see issue 53 there too,   ----  Unfortunately, the developer of torchat has not released any fixes or improvements in a very long time.  Too bad as it conceptually is an excellent software.  ----  I suspect that if there are any other clients which use tor Hidden Services that they are affected too,  Maybe somebody could report such clients here? ----Maybe this is not a torchat problem but a tor problem?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 01 Feb 2010 06:47:54 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-45261c24597045391f467721f99fffe2">
+
+<div class="comment-subject">
+
+Comment 21
+
+</div>
+
+<div class="inlinecontent">
+Previous torchat folder did not contain a tor-resolve.exe.  It contained only the tor.exe.  On first attempt to fix, I did inport the new tor-resolve.exe into torchat and it had no effect over two days of testing.  So I removed it, leaving just the updated tor.exe.  I am able to see myself and (rarely) two other users of torchat only.  The system is still crippled.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 29 Jan 2010 06:47:55 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c77288a7a729ea4b2f9ca404eb77df35">
+
+<div class="comment-subject">
+
+Comment 22
+
+</div>
+
+<div class="inlinecontent">
+<p>Yes, torchat is still crippled as described above.  ---  </p>
+
+<p>And this is true whether you are using the win or linux version. Replacing a previous tor version (and tor resolve if it is present, ie, win torchat portable) does NOT solve the problem. Clients who replace the relevant file(s) might be able to connect to each other for a short while but this restored facility quickly  disappears and they are unable to connect to each other again.   ---     <b>Tellingly, after  the tor file update, a user CAN reliably connect every time to herself, but NOT to any other torchat user </b>----</p>
+
+<p>We surmise this is a Hidden Services fault in tor.  Why? Identifiers, keys or what ever else it might be is beyond our ken. <b> One thing is for sure: this problem did not exist in torchat before the hack attacks and subsequent modifications to tor of  Jan 2010.</b></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 29 Jan 2010 06:47:56 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-dd2c1b437d048981c795cf8f20d37208">
+
+<div class="comment-subject">
+
+Comment 23
+
+</div>
+
+<div class="inlinecontent">
+Easily, the article is in reality the sweetest on this valuable topic. I fit in with your conclusions and I think www.bestbootsale.com  is a good topic. will thirstily look forward to your approaching updates. A simple thanks will not just be complete for the exceptional lucidity in your writing. 
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 31 Jan 2010 06:47:57 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-976e4e8679b0ff9139161f6450df1e92">
+
+<div class="comment-subject">
+
+Comment 24
+
+</div>
+
+<div class="inlinecontent">
+hmmm it takes some time, but i can connect to other TC users with updated tor.exe.. and chatting for many hours.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 01 Feb 2010 06:47:58 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c347e5d58cc0032ef209791873ee41c1">
+
+<div class="comment-subject">
+
+Comment 25
+
+</div>
+
+<div class="inlinecontent">
+running Linux or windows torchat?  Please give details. Have tried it with both to no benefit.  Of course it should not take hours to make connexion; it never did before Jan of 2010.  This suggests recent necessary security changes to tor itself have inadvertently created this torchat problem.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 01 Feb 2010 06:47:59 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-82b23c10197a1653360e5a1d310731be">
+
+<div class="comment-subject">
+
+Comment 26
+
+</div>
+
+<div class="inlinecontent">
+<p>I am running Windows XP.</p>
+
+<p>One day it is working pretty good and i can chat for a long time, the other day tc needs almost an hour to connect to others.. The question is: what's the fuckin reason for that????</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 10 Feb 2010 06:48:00 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2e4dbba848f075faccbb9b8deaf32329">
+
+<div class="comment-subject">
+
+Comment 27
+
+</div>
+
+<div class="inlinecontent">
+<p>torchat is fine but you have to get the new tor files. easiest: get the new tor<br />
+browser bundle and install it (just overwrite is fine, but backup if you like). then<br />
+get the /Tor Browser/App/tor.exe and tor-resolve.exe (new file with this release) and<br />
+overwrite/add them to torchat /bin/Tor directory. as long as you come on line within<br />
+a few minutes you're connected, though other people may be offline.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 14 Feb 2010 06:48:01 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e7d273fc4874889da725ddf277aa691f">
+
+<div class="comment-subject">
+
+Comment 28
+
+</div>
+
+<div class="inlinecontent">
+<p>Torchat is still broken. even with the newest tor files.  It takes days to connect with other torchat users even though we are all online 24/7. I can reliably connect to 'myself' very quickly but that's all. </p>
+
+<p>==&gt;Is this a problem with Rendezvous Server related code? </p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 26 Feb 2010 06:48:02 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-27fd7d6a2a00245753a60eb6910b4f84">
+
+<div class="comment-subject">
+
+Comment 29
+
+</div>
+
+<div class="inlinecontent">
+hey, i have tor, but i dont knoowhow to use the torchat, can anyone tell me how?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 28 Mar 2010 06:48:03 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-072f7ea301b050999b218b1490ebf9a3">
+
+<div class="comment-subject">
+
+Comment 30
+
+</div>
+
+<div class="inlinecontent">
+TorChat is still broken. When is there going to be an update?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 22 Apr 2010 06:48:04 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-29c617260bfed2d77c20bd092f3f874e">
+
+<div class="comment-subject">
+
+Comment 31
+
+</div>
+
+<div class="inlinecontent">
+We don't develop torchat.  You should ask the torchat developers this question.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 22 Apr 2010 06:48:05 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-19ef80a0dfbca0a853a2148a713796cd">
+
+<div class="comment-subject">
+
+Comment 32
+
+</div>
+
+<div class="inlinecontent">
+<p>i have two copies of torchat running on the same computer in client mode.  they both turn "green" and connect to the outside with tor 0.2.1.22</p>
+
+<p>and the two accounts won't talk to one another.  both sees the other as offline.</p>
+
+<p>i guess the torchat developers are MIA.</p>
+
+<p>if someone could explain to me conceptually what is the problem then i would be happy to fix the torchat code.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 04 May 2010 06:48:06 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2c7e2e836107bba7da24b849edd37404">
+
+<div class="comment-subject">
+
+Comment 33
+
+</div>
+
+<div class="inlinecontent">
+<p> and connect to the outside with tor 0.2.1.22</p>
+
+<p>and the two accounts won't talk to one another</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 18 Nov 2010 06:48:07 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8f1877214fcfbb56b94c7e5e2cc8cb10">
+
+<div class="comment-subject">
+
+Comment 34
+
+</div>
+
+<div class="inlinecontent">
+if someone could explain to me conceptually what is the problem then i would be happy to fix the torchat code.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 01 Dec 2010 06:48:08 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1baa5296e494cfb3ae313aae9d65d9cb">
+
+<div class="comment-subject">
+
+Comment 35
+
+</div>
+
+<div class="inlinecontent">
+Perhaps someone can send an email to the Torchat developer and request a Torchat update to fix all issues. Would be much appreciated
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 02 Dec 2010 06:48:09 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_Project_infrastructure_updates&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:47:35 AM CDT</span>
+<!-- Created <span class="date">Fri 22 Jan 2010 09:51:45 AM CST</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

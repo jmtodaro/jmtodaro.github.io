@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>October 2008 Progress Report</title>
+<link href="http://localhost/jmtodaro/tor/blog/posts/October_2008_Progress_Report/"/>
+<link href="http://localhost/jmtodaro/tor/blog/posts/October_2008_Progress_Report/comments.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>phobos</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/posts/October_2008_Progress_Report/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:15:24Z</updated>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/October_2008_Progress_Report/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/October_2008_Progress_Report/comment_1/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:15:20Z</updated>
+	<published>2008-12-14T12:15:20Z</published>
+
+	<content type="html" xml:lang="en">
+	I don&#39;t know why you&#39;re bothering to update Torbutton at all.  It completely disables Firefox, and is therefore completely worthless.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/October_2008_Progress_Report/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/October_2008_Progress_Report/comment_2/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:15:21Z</updated>
+	<published>2008-12-14T12:15:21Z</published>
+
+	<content type="html" xml:lang="en">
+	it disables anonymity attacks.  if you&#39;re life and job depend on being anonymous, torbutton is fantastic.  if you just want to browse privately, use relakks or anonymizer or some other thing to hide traffic.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/October_2008_Progress_Report/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/October_2008_Progress_Report/comment_3/"/>
+
+	<author><name>reddog (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:15:22Z</updated>
+	<published>2009-02-11T12:15:22Z</published>
+
+	<content type="html" xml:lang="en">
+	downloaded the new version of tor 2.0.34. but it insists on asking for a password that i don&#39;t have. What do I do?
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 4</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/October_2008_Progress_Report/comment_4/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/October_2008_Progress_Report/comment_4/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:15:23Z</updated>
+	<published>2009-02-15T12:15:23Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;a href=&quot;https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#TorPasswordPrompt&quot; title=&quot;https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#TorPasswordPrompt&quot; rel=&quot;nofollow&quot;&gt;https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#TorPasswordPro...&lt;/a&gt;
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/October_2008_Progress_Report/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/October_2008_Progress_Report/comment_5/"/>
+
+	<author><name>Anonymous (not verified)</name></author>
+
+
+
+
+
+	<updated>2011-04-05T11:15:24Z</updated>
+	<published>2009-03-18T11:15:24Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Is there any chance of syncing TorButton and JonDoFox headers (user agent, etc.)?&lt;/p&gt;
+
+&lt;p&gt;Possible benefits:&lt;br /&gt;
+* Tor users could choose whether they prefer to use TorButton or JonDoFox, but still get the same headers either way. JonDoFox already includes a Tor setting in its proxy switcher.&lt;br /&gt;
+* JonDoFox is fully Firefox 3 compatible.&lt;br /&gt;
+* The JonDos team does not change their settings very often, which makes it easier for a user of an alternate browser, such as Lynx or Konqueror, to attempt to duplicate the headers without constant maintenance.&lt;br /&gt;
+* Collaboration on deciding what the optimum settings are.&lt;br /&gt;
+* Anyone who uses both Tor and JonDo would be able to securely use the same settings for both - aside from the proxy setting, of course.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+
+</feed>

@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged bugs</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/bugs/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>nickm: New OpenSSL vulnerability; Tor not affected</title>
+	<dcterms:creator>nickm</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_OpenSSL_vulnerability_Tor_not_affected/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_OpenSSL_vulnerability_Tor_not_affected/</link>
+
+
+	<category>/tags/analysis</category>
+
+	<category>/tags/bugs</category>
+
+	<category>/tags/openssl</category>
+
+	<category>/tags/security</category>
+
+
+	<pubDate>Tue, 16 Nov 2010 09:12:00 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:11:06Z</dcterms:modified>
+
+	<description>&lt;p&gt;There&#39;s a new buffer overflow vulnerability in versions of OpenSSL from 0.9.8f through 0.9.8o, and 1.0.0 through 1.0.0a.  You can read &lt;a href=&quot;http://openssl.org/news/secadv_20101116.txt&quot;&gt;the security advisory&lt;/a&gt; for the whole story.&lt;/p&gt;
+
+&lt;p&gt;So far as we can tell from our current analysis, Tor is &lt;b&gt;not&lt;/b&gt; affected.  Here&#39;s why:&lt;/p&gt;
+
+&lt;p&gt;The advisory says:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Any OpenSSL based TLS server is vulnerable if it is multi-threaded and uses OpenSSL&#39;s internal caching mechanism. Servers that are multi-process and/or disable internal session caching are NOT affected.
+&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Tor qualifies for &lt;b&gt;both&lt;/b&gt; of the safe cases: Tor &lt;em&gt;does&lt;/em&gt; disable OpenSSL&#39;s internal session caching.  This happens in the file src/common/tortls.c, when we call &lt;tt&gt;SSL_CTX_set_session_cache_mode(result-&amp;gt;ctx,SSL_SESS_CACHE_OFF)&lt;/tt&gt;. Tor has done this since since version 0.0.2pre6 back in 2003. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/new-openssl-vulnerability-tor-not-affected&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/New_OpenSSL_vulnerability_Tor_not_affected/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Tor 0.2.1.7-alpha released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_7-alpha_released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_7-alpha_released/</link>
+
+
+	<category>/tags/alpha_release</category>
+
+	<category>/tags/bugfix</category>
+
+	<category>/tags/bugs</category>
+
+
+	<pubDate>Thu, 20 Nov 2008 18:09:13 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:14:54Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor 0.2.1.7-alpha fixes a major security problem in Debian and Ubuntu&lt;br /&gt;
+packages (and maybe other packages) noticed by Theo de Raadt, fixes&lt;br /&gt;
+a smaller security flaw that might allow an attacker to access local&lt;br /&gt;
+services, adds better defense against DNS poisoning attacks on exit&lt;br /&gt;
+relays, further improves hidden service performance, and fixes a variety&lt;br /&gt;
+of other issues.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download&quot; title=&quot;https://www.torproject.org/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.7-alpha - 2008-11-08&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Security fixes:&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-0.2.1.7-alpha-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The &quot;ClientDNSRejectInternalAddresses&quot; config option wasn&#39;t being&lt;br /&gt;
+      consistently obeyed: if an exit relay refuses a stream because its&lt;br /&gt;
+      exit policy doesn&#39;t allow it, we would remember what IP address&lt;br /&gt;
+      the relay said the destination address resolves to, even if it&#39;s&lt;br /&gt;
+      an internal IP address. Bugfix on 0.2.0.7-alpha; patch by rovv.&lt;/li&gt;
+&lt;li&gt;The &quot;User&quot; and &quot;Group&quot; config options did not clear the&lt;br /&gt;
+      supplementary group entries for the Tor process. The &quot;User&quot; option&lt;br /&gt;
+      is now more robust, and we now set the groups to the specified&lt;br /&gt;
+      user&#39;s primary group. The &quot;Group&quot; option is now ignored. For more&lt;br /&gt;
+      detailed logging on credential switching, set CREDENTIAL_LOG_LEVEL&lt;br /&gt;
+      in common/compat.c to LOG_NOTICE or higher. Patch by Jacob Appelbaum&lt;br /&gt;
+      and Steven Murdoch. Bugfix on 0.0.2pre14. Fixes bug 848.&lt;/li&gt;
+&lt;li&gt;Do not use or believe expired v3 authority certificates. Patch&lt;br /&gt;
+      from Karsten. Bugfix in 0.2.0.x. Fixes bug 851.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_7-alpha_released/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Vidalia bundle, OSX and Qt bugs</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Vidalia_bundle_OSX_and_Qt_bugs/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Vidalia_bundle_OSX_and_Qt_bugs/</link>
+
+
+	<category>/tags/bugs</category>
+
+	<category>/tags/crashes</category>
+
+	<category>/tags/osx</category>
+
+	<category>/tags/qt</category>
+
+	<category>/tags/vidalia</category>
+
+	<category>/tags/vidalia_bundle</category>
+
+
+	<pubDate>Sun, 20 Jan 2008 12:50:53 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:05:46Z</dcterms:modified>
+
+	<description>&lt;p&gt;It appears Qt-4.3.3 has &lt;a href=&quot;http://trolltech.com/developer/task-tracker/index_html?method=entry&amp;amp;id=155700&quot; rel=&quot;nofollow&quot;&gt;a bug&lt;/a&gt; that is causing Vidalia to crash when the list of Tor nodes refreshes and is sorted.  The current 0.1.2.19-stable and 0.2.0.17-alpha bundles for OSX are built against Qt-4.3.3.  &lt;/p&gt;
+
+&lt;p&gt;I&#39;ve downgraded the build hosts to Qt-4.3.2.  The rebuilt OSX vidalia-bundle packages for both 0.1.2.19-stable and 0.2.0.17-alpha are available as:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.torproject.org/dist/vidalia-bundles/vidalia-bundle-0.1.2.19-0.0.16a-tiger.dmg&quot; rel=&quot;nofollow&quot;&gt;Bundle with 0.1.2.19-stable and Vidalia 16a&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.torproject.org/dist/vidalia-bundles/vidalia-bundle-0.2.0.17-alpha-0.0.16a-tiger.dmg&quot; rel=&quot;nofollow&quot;&gt;Bundle with 0.2.0.17-alpha and Vidalia 16a&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These bundles contain Vidalia compiled with Qt-4.3.2.  This makes Vidalia happy again.&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Vidalia_bundle_OSX_and_Qt_bugs/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

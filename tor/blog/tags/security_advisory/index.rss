@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged security_advisory</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/security_advisory/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Tor 0.2.2.20-alpha is out (security patches)</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_20-alpha_is_out_-security_patches-/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_20-alpha_is_out_-security_patches-/</link>
+
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/enhancements</category>
+
+	<category>/tags/security_advisory</category>
+
+
+	<pubDate>Mon, 20 Dec 2010 10:10:39 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:11:41Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor 0.2.2.20-alpha does some code cleanup to reduce the risk of remotely&lt;br /&gt;
+exploitable bugs. Thanks to Willem Pinckaers for notifying us of the&lt;br /&gt;
+issue. The Common Vulnerabilities and Exposures project has assigned&lt;br /&gt;
+CVE-2010-1676 to this issue.&lt;/p&gt;
+
+&lt;p&gt;We also fix a variety of other significant bugs, change the IP address&lt;br /&gt;
+for one of our directory authorities, and update the minimum version&lt;br /&gt;
+that Tor relays must run to join the network.&lt;/p&gt;
+
+&lt;p&gt;All Tor users should upgrade.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download/download&quot; title=&quot;https://www.torproject.org/download/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download/download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.2.20-alpha - 2010-12-17&lt;br /&gt;
+&lt;strong&gt;Major bugfixes:&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02220-alpha-out-security-patches&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Fix a remotely exploitable bug that could be used to crash instances&lt;br /&gt;
+      of Tor remotely by overflowing on the heap. Remote-code execution&lt;br /&gt;
+      hasn&#39;t been confirmed, but can&#39;t be ruled out. Everyone should&lt;br /&gt;
+      upgrade. Bugfix on the 0.1.1 series and later.&lt;/li&gt;
+&lt;li&gt;Fix a bug that could break accounting on 64-bit systems with large&lt;br /&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_20-alpha_is_out_-security_patches-/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Tor 0.2.1.28 is released (security patches)</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_28_is_released_-security_patches-/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_28_is_released_-security_patches-/</link>
+
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/enhancements</category>
+
+	<category>/tags/security_advisory</category>
+
+
+	<pubDate>Mon, 20 Dec 2010 10:05:03 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:11:40Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor 0.2.1.28 does some code cleanup to reduce the risk of remotely&lt;br /&gt;
+exploitable bugs. Thanks to Willem Pinckaers for notifying us of the&lt;br /&gt;
+issue. The Common Vulnerabilities and Exposures project has assigned&lt;br /&gt;
+CVE-2010-1676 to this issue.&lt;/p&gt;
+
+&lt;p&gt;We also took this opportunity to change the IP address for one of our&lt;br /&gt;
+directory authorities, and to update the geoip database we ship.&lt;/p&gt;
+
+&lt;p&gt;All Tor users should upgrade.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download/download&quot; title=&quot;https://www.torproject.org/download/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download/download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.1.28 - 2010-12-17&lt;br /&gt;
+&lt;strong&gt;Major bugfixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fix a remotely exploitable bug that could be used to crash instances of Tor remotely by overflowing on the heap. Remote-code execution hasn&#39;t been confirmed, but can&#39;t be ruled out. Everyone should  upgrade. Bugfix on the 0.1.1 series and later.
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Directory authority changes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Change IP address and ports for gabelmoo (v3 directory authority).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Minor features:&lt;/strong&gt; &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02128-released-security-patches&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_1_28_is_released_-security_patches-/#comments</comments>
+
+</item>
+<item>
+
+	<title>arma: The Debian OpenSSL flaw: what does it mean for Tor clients?</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/The_Debian_OpenSSL_flaw_what_does_it_mean_for_Tor_clients/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/The_Debian_OpenSSL_flaw_what_does_it_mean_for_Tor_clients/</link>
+
+
+	<category>/tags/openssl</category>
+
+	<category>/tags/security_advisory</category>
+
+
+	<pubDate>Tue, 13 May 2008 20:22:24 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:07:04Z</dcterms:modified>
+
+	<description>&lt;p&gt;There have been a lot of questions today about just what &lt;a href=&quot;http://lists.debian.org/debian-security-announce/2008/msg00152.html&quot; rel=&quot;nofollow&quot;&gt;the&lt;br /&gt;
+recent Debian OpenSSL&lt;/a&gt; flaw means for Tor clients. Here&#39;s an attempt to&lt;br /&gt;
+explain it in a bit more detail. (Go read &lt;a href=&quot;http://archives.seul.org/or/announce/May-2008/msg00000.html&quot; rel=&quot;nofollow&quot;&gt;the Tor security advisory&lt;/a&gt; before&lt;br /&gt;
+reading this post.)&lt;/p&gt;
+
+&lt;p&gt;First, let&#39;s look at the security/anonymity implications for users who&lt;br /&gt;
+aren&#39;t running on Debian, Ubuntu, or similar. These implications all&lt;br /&gt;
+stem from the fact that some of the Tor relays and v3 directory authorities&lt;br /&gt;
+have weak keys, so the Tor network isn&#39;t able to provide as much anonymity&lt;br /&gt;
+as we would like.&lt;/p&gt;
+
+&lt;p&gt;The biggest issue is that perhaps 300 Tor relays were running with&lt;br /&gt;
+weak keys and weak crypto, out of the roughly 1500-2000 total running&lt;br /&gt;
+relays. What can an attacker do from this? If you happen to pick three&lt;br /&gt;
+weak relays in a row for your circuit, then somebody watching your local&lt;br /&gt;
+network connection (or watching the first relay you pick) could break all&lt;br /&gt;
+the layers of Tor encryption and read the traffic as if they were watching&lt;br /&gt;
+it at the exit relay. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/debian-openssl-flaw%3A-what-does-it-mean-tor-clients%3F&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/The_Debian_OpenSSL_flaw_what_does_it_mean_for_Tor_clients/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

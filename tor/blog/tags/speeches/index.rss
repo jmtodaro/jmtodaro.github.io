@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged speeches</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/speeches/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: May 2010 Progress Report</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/</link>
+
+
+	<category>/tags/advocacy</category>
+
+	<category>/tags/conferences</category>
+
+	<category>/tags/progress_report</category>
+
+	<category>/tags/speeches</category>
+
+	<category>/tags/tor_releases</category>
+
+
+	<pubDate>Wed, 16 Jun 2010 12:55:48 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:01:08Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;strong&gt; New releases &lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;On May 26, Tor Browser Bundle for Microsoft Windows is updated to include the newer Vidalia 0.2.9. This ﬁxes some issues with character set handling, and adds Vietnamese as a new language.&lt;/p&gt;
+
+&lt;p&gt;On May 31, we released Tor Browser Bundle for Linux 1.0.6. It contains the following updates:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add arch to tarball name so there&#39;s no collision&lt;/li&gt;
+&lt;li&gt;Add libpng for Arch Linux&lt;/li&gt;
+&lt;li&gt;Add HTTPS Everywhere extension&lt;/li&gt;
+&lt;li&gt;Update Qt to 4.6.2&lt;/li&gt;
+&lt;li&gt;Update Vidalia to 0.2.9&lt;/li&gt;
+&lt;li&gt;Update NoScript to 1.9.9.80&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;On June 1st, we released Tor Browser Bundle for Linux 1.0.7. It uses an older glibc for better compatibility with older linux distributions.&lt;/p&gt;
+
+&lt;p&gt;On May 20, we released Vidalia 0.2.9. Fixes include Qt 4.6.2 compatibility, new cert, and some new translations.  You can download it at &lt;a href=&quot;https://www.torproject.org/vidalia/&quot; title=&quot;https://www.torproject.org/vidalia/&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/vidalia/&lt;/a&gt;. Packages are slowly being updated to include this version of Vidalia.&lt;br /&gt;
+The full changelog is:  &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/may-2010-progress-report&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/May_2010_Progress_Report/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged blog_status</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/blog_status/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>jmt: todo</title>
+	<dcterms:creator>jmt</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/todo/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/todo/</link>
+
+
+	<category>/tags/blog_status</category>
+
+
+	<pubDate>Sat, 02 Apr 2011 13:54:14 -0500</pubDate>
+	<dcterms:modified>2011-04-05T23:52:08Z</dcterms:modified>
+
+	<description>&lt;h2&gt;Blog Project Status&lt;/h2&gt;
+
+&lt;h3&gt;Phase I&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Base blog design/integration&lt;/li&gt;
+&lt;li&gt;Scrape posts&lt;/li&gt;
+&lt;li&gt;Scrape comments&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Phase II&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Design approval&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Subpage design adjustments (login page, etc)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Unconfirmed:&lt;/em&gt; Add page enhancements ( identi.ca, event calendar, etc.)&lt;/li&gt;
+&lt;li&gt;Update any hardlinks if needed. (i.e. author url)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Reminder to self&lt;/em&gt;: Remove or replace ga code &lt;em&gt;before&lt;/em&gt; final rebuild&lt;/li&gt;
+&lt;li&gt;Hand off files/ arrange setup of live blog&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+
+</item>
+
+</channel>
+</rss>

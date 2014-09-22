@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged directory_authority</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/directory_authority/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Tor 0.2.2.14-alpha released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_14-alpha_released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_14-alpha_released/</link>
+
+
+	<category>/tags/alpha_release</category>
+
+	<category>/tags/directory_authority</category>
+
+	<category>/tags/geoip</category>
+
+	<category>/tags/performance_improvements</category>
+
+
+	<pubDate>Mon, 19 Jul 2010 04:30:14 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:05:13Z</dcterms:modified>
+
+	<description>&lt;p&gt;Tor 0.2.2.14-alpha greatly improves client-side handling of circuit build&lt;br /&gt;
+timeouts, which are used to estimate speed and improve performance. We&lt;br /&gt;
+also move to a much better GeoIP database, port Tor to Windows CE,&lt;br /&gt;
+introduce new compile flags that improve code security, add an eighth&lt;br /&gt;
+v3 directory authority, and address a lot of more minor issues.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/download&quot; title=&quot;https://www.torproject.org/download&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Packages will be appearing over the next few days or weeks. (We&#39;ve decided&lt;br /&gt;
+to start announcing alpha versions when they&#39;re released, rather than&lt;br /&gt;
+waiting for all the packages first.)&lt;/p&gt;
+
+&lt;p&gt;Changes in version 0.2.2.14-alpha - 2010-07-12&lt;br /&gt;
+  o Major bugfixes:&lt;br /&gt;
+    - Tor directory authorities no longer crash when started with a&lt;br /&gt;
+      cached-microdesc-consensus file in their data directory. Bugfix&lt;br /&gt;
+      on 0.2.2.6-alpha; fixes bug 1532.&lt;br /&gt;
+    - Treat an unset $HOME like an empty $HOME rather than triggering an&lt;br /&gt;
+      assert. Bugfix on 0.0.8pre1; fixes bug 1522. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/tor-02214-alpha-released&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_14-alpha_released/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Thanks to Shinjiru</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Thanks_to_Shinjiru/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Thanks_to_Shinjiru/</link>
+
+
+	<category>/tags/directory_authority</category>
+
+	<category>/tags/donated_services</category>
+
+	<category>/tags/outside_EU</category>
+
+	<category>/tags/outside_US</category>
+
+
+	<pubDate>Sun, 29 Nov 2009 08:01:43 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:43:25Z</dcterms:modified>
+
+	<description>&lt;p&gt;Earlier this year, we started looking for a new hosting location for a directory authority &lt;a href=&quot;https://blog.torproject.org/blog/time-directory-authority-outside-useu&quot; rel=&quot;nofollow&quot;&gt;outside the US and EU&lt;/a&gt;.  After talking to a few ISPs, &lt;a href=&quot;http://www.shinjiru.com/&quot; rel=&quot;nofollow&quot;&gt;Shinjiru Technology&lt;/a&gt; donated a high-bandwidth server to us.  The server has been up and running for a few months now without issues.  The staff has been great to work with and we&#39;ll soon turn this into a public directory authority for the public Tor Network.&lt;br /&gt;
+This is a public thank you to Shinjiru for supporting online privacy and anonymity with Tor.&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Thanks_to_Shinjiru/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Tor 0.2.2.5-alpha released</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_5-alpha_released/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_5-alpha_released/</link>
+
+
+	<category>/tags/alpha_release</category>
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/code_refactoring</category>
+
+	<category>/tags/directory_authority</category>
+
+
+	<pubDate>Mon, 12 Oct 2009 10:04:49 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:39:00Z</dcterms:modified>
+
+	<description>&lt;p&gt;On October 11, we released Tor 0.2.2.5-alpha.  &lt;/p&gt;
+
+&lt;p&gt;It can be downloaded from &lt;a href=&quot;https://www.torproject.org/download/&quot; title=&quot;https://www.torproject.org/download/&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/download/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It contains:  &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Major bugfixes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Make the tarball compile again. Oops. Bugfix on 0.2.2.4-alpha.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;New directory authorities:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Move dizum to an alternate IP address.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Code simplifications and refactorings&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Numerous changes, bugfixes, and workarounds from Nathan Freitas&lt;br /&gt;
+      to help Tor build correctly for Android phones.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_0_2_2_5-alpha_released/#comments</comments>
+
+</item>
+<item>
+
+	<title>phobos: Time for a Directory Authority outside US/EU</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Time_for_a_Directory_Authority_outside_US-EU/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Time_for_a_Directory_Authority_outside_US-EU/</link>
+
+
+	<category>/tags/argentina</category>
+
+	<category>/tags/directory_authority</category>
+
+	<category>/tags/isp</category>
+
+	<category>/tags/japan</category>
+
+	<category>/tags/malaysia</category>
+
+	<category>/tags/panama</category>
+
+	<category>/tags/singapore</category>
+
+	<category>/tags/south_africa</category>
+
+
+	<pubDate>Fri, 10 Jul 2009 22:03:51 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:30:00Z</dcterms:modified>
+
+	<description>&lt;p&gt;I&#39;m researching where to host one or two Directory Authorities outside&lt;br /&gt;
+the US and EU.&lt;/p&gt;
+
+&lt;p&gt;It&#39;s been suggested to me that Argentina, South Africa, Panama,&lt;br /&gt;
+Singapore, Malaysia, and Japan are fine locales for a well-connected,&lt;br /&gt;
+dedicated server.  I&#39;m looking for a relatively low end dedicated server&lt;br /&gt;
+that can transit 2-4 TB a month at relatively cheap prices (say&lt;br /&gt;
+US$200/mo or less).&lt;/p&gt;
+
+&lt;p&gt;If you have experience and contacts at various providers, I&#39;m all ears.&lt;/p&gt;
+
+&lt;p&gt;Thanks!&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Time_for_a_Directory_Authority_outside_US-EU/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

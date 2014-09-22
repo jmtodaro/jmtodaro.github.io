@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>pages tagged cyber_defamation</title>
+<link href="http://localhost/jmtodaro/tor/blog/tags/cyber_defamation/"/>
+<link href="http://localhost/jmtodaro/tor/blog/tags/cyber_defamation/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/tags/cyber_defamation/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T11:13:14Z</updated>
+<entry>
+	<title>OS X Vidalia Bundle Thoughts</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+
+	<category term="/tags/cyber_defamation" />
+
+	<category term="/tags/democracy" />
+
+	<category term="/tags/online_anonymity" />
+
+	<category term="/tags/south_korea" />
+
+	<category term="/tags/whistleblowers" />
+
+
+	<updated>2011-04-05T11:13:14Z</updated>
+	<published>2008-10-30T02:43:41Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;A few weeks ago, I watched some non-technical OS X users attempt to install the Vidalia-Tor Bundle.  Many of them tried to drag the installation package to Applications.  A few were surprised it required an installation at all.  &lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&quot;http://trac.vidalia-project.net/browser/vidalia/trunk/pkg/osx&quot; rel=&quot;nofollow&quot;&gt;Vidalia trunk&lt;/a&gt; I committed a different way to install Vidalia, Tor, and Polipo.  In this new dmg, you just open it up and drag the Vidalia icon into Applications.  You now have Tor, Vidalia, and Polipo pre-configured and running completely out of Applications.  While this works well for users that never installed Tor/Vidalia before, it doesn&#39;t work so well for existing installations. &lt;/p&gt;
+
+&lt;p&gt;Is it smart to think users will un-install their existing Vidalia/Tor bundle before using the drag and drop installation method?  My inclination is that it isn&#39;t smart.  This installation method also removes the ability to automatically install Torbutton for Firefox. &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/os-x-vidalia-bundle-thoughts&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+	</content>
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/#comments" type="text/html" />
+
+
+	<link rel="comments" href="http://localhost/jmtodaro/tor/blog/posts/OS_X_Vidalia_Bundle_Thoughts/comments.atom" type="application/atom+xml" />
+
+</entry>
+
+</feed>

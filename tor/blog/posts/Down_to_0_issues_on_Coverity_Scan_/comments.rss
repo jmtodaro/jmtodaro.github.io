@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>Down to 0 issues on Coverity Scan.</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Anonymous (not verified): Comment 1</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_1/</link>
+
+	<pubDate>Sun, 11 Jan 2009 06:16:55 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:16:55Z</dcterms:modified>
+
+	<description>AM I blind? I can&#39;t find Tor on that website.
+</description>
+
+
+</item>
+<item>
+
+	<title>nickm: Comment 2</title>
+	<dcterms:creator>nickm</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_2/</link>
+
+	<pubDate>Sun, 11 Jan 2009 06:16:56 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:16:56Z</dcterms:modified>
+
+	<description>I asked them the same question back in December.  It turns out they hadn&#39;t updated the official list (or most of the website) in a while.  I wish they would, but I am glad that they are better at adding projects than updating their website.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 3</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_3/</link>
+
+	<pubDate>Mon, 12 Jan 2009 06:16:57 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:16:57Z</dcterms:modified>
+
+	<description>I&#39;m confused about something: The Tor network reveals the IP addresses of all its relay nodes (look at the &quot;View the Network&quot; button in your Vidalia control panel). Doesn&#39;t this reveal all the nodes running Tor, and therefore any Tor client and their IP address? It would seem to me that any person or organization with the ability to track down each IP address in the Tor network would still be able to find the user that they are looking for. Am misunderstanding something?
+</description>
+
+
+</item>
+<item>
+
+	<title>nickm: Comment 4</title>
+	<dcterms:creator>nickm</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_4/</link>
+
+	<pubDate>Mon, 12 Jan 2009 06:16:58 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:16:58Z</dcterms:modified>
+
+	<description>&lt;p&gt;Clients aren&#39;t nodes.  Nodes are volunteer-operated relays.  Clients do not relay traffic by default.&lt;/p&gt;
+
+&lt;p&gt;There are about 1200 nodes, give or take.  That&#39;s the list you see in Vidalia.[*]  There are hundreds of thousands of clients.  That list, you don&#39;t see.&lt;/p&gt;
+
+&lt;p&gt;[*] There are also nodes you don&#39;t see.  Read up on &quot;bridges&quot; to learn more about these.  The idea is to give people the option to run nodes that aren&#39;t advertised publicly in order to help people in censored countries.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>arma: Comment 5</title>
+	<dcterms:creator>arma</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_5/</link>
+
+	<pubDate>Tue, 13 Jan 2009 06:16:59 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:16:59Z</dcterms:modified>
+
+	<description>&lt;p&gt;&lt;a href=&quot;http://scan.coverity.com/&quot; title=&quot;http://scan.coverity.com/&quot; rel=&quot;nofollow&quot;&gt;http://scan.coverity.com/&lt;/a&gt; points to &quot;rung 0&quot;, &quot;rung 1&quot;, &quot;rung 2&quot;. We have made it&lt;br /&gt;
+to the end of rung 0. Now they&#39;ve upgraded us to their newer scanning algorithm.&lt;/p&gt;
+
+&lt;p&gt;So, I suppose that means you should expect two more of these blogs posts,&lt;br /&gt;
+sometime in the future! &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/../../smileys/smile.png&quot; alt=&quot;:)&quot; /&gt;&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 6</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_6/</link>
+
+	<pubDate>Wed, 14 Jan 2009 06:17:00 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:17:00Z</dcterms:modified>
+
+	<description>I wasn&#39;t aware Coverity was an mmorpg. &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/../../smileys/smile4.png&quot; alt=&quot;;)&quot; /&gt;
+</description>
+
+
+</item>
+<item>
+
+	<title>AnonymousCoward (not verified): Comment 7</title>
+	<dcterms:creator>AnonymousCoward (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_7/</link>
+
+	<pubDate>Thu, 15 Jan 2009 06:17:01 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:17:01Z</dcterms:modified>
+
+	<description>&lt;p&gt;lol &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/../../smileys/smile4.png&quot; alt=&quot;;)&quot; /&gt;&lt;br /&gt;
+gz anyway, well done, keep up the good work !&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous (not verified): Comment 8</title>
+	<dcterms:creator>Anonymous (not verified)</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Down_to_0_issues_on_Coverity_Scan_/comment_8/</link>
+
+	<pubDate>Wed, 04 Feb 2009 06:17:02 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:17:02Z</dcterms:modified>
+
+	<description>&lt;p&gt;Changes in version 0.2.0.33 - 2009-01-21&lt;br /&gt;
+  o Security fixes:&lt;br /&gt;
+    - Fix a heap-corruption bug that may be remotely triggerable on&lt;br /&gt;
+      some platforms. Reported by Ilja van Sprundel.&lt;/p&gt;
+
+</description>
+
+
+</item>
+
+</channel>
+</rss>

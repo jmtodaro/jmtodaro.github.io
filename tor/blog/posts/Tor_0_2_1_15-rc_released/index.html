@@ -1,0 +1,1917 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tor 0.2.1.15-rc released</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_1_15-rc_released&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Tor 0.2.1.15-rc released</a>
+
+</span>
+
+
+<div id="content">
+<p>Tor 0.2.1.15-rc marks the second release candidate for the 0.2.1.x<br />
+series. It fixes a major bug on fast exit relays, as well as a variety<br />
+of more minor bugs.</p>
+
+<p>This is a release candidate! That means that we don't know of any<br />
+remaining show-stopping bugs, and this will become the new stable if<br />
+there are no problems. Please test it, and tell us about any problems<br />
+that you find. <span class="read-more"><a href="http://blog.torproject.org/blog/tor-02115rc-released"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/bug_fixes/" rel="tag">bug fixes</a>
+
+<a href="../../tags/malloc_fixes/" rel="tag">malloc fixes</a>
+
+<a href="../../tags/release_candidate/" rel="tag">release candidate</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-997bd04f37716deaad0b6e223835b36d">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+<p>Hello,</p>
+
+<p>I have intstalled this version from 2 days and it seem to be stable and exit on more various exit node...</p>
+
+<p>the only error i obtain sometime with all version are : eventdnd: all namesserveur failed</p>
+
+<p>but it never cut or make problem just i found this message in log vidalia...</p>
+
+<p>Thanks for all great work...</p>
+
+<p>i have a question about browser.. i use the plugin for firefox "jondofox" for firefox 3 and are the button to enable TOR, JOndo or custom proxy, after test on different site it never send headers and make no leaks data.. Are for anti script and all important plugins inclus..</p>
+
+<p>what do you mean about the security with it and tor?</p>
+
+<p>my best</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 01 Jun 2009 06:26:09 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9872211dfce00537e716138fcc6d97c9">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+I don't think anyone has tested these two extensions with one another.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 04 Jun 2009 06:26:10 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-eb3be4e9678ae457afdec1faa879a9f3">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>You still haven't fixed the problem with values below 30 for CircuitBuildTimeout that no longer have is working since version 0.2.1.8A.</p>
+
+<p>About the command CircuitBuildTimeout, before version 0.2.1.9 in the torrc one has been able to change this to lower values than 30, thats no longer the case, I think this is bad for one's privacy and bad for the overall speed of Tor, example:</p>
+
+<p>If 2 of the 3 nodes in the circuit build fast (less than 2 sec) and the 3rd takes up to 28 sec then it's obviously either<br />
+1 overloaded, and it would be better if some people(that change this value in torrc) waited less than 30 sec to try to build another circuit)or<br />
+2 even worse it's doing some bad thing like an timing attacks(and you do absolutely not want use it then.).</p>
+
+<p>It would of course not be good for ones privacy to use values like 2, 3 or similar(if that leads to that only 50 nods is fast enough) but one should definitely be able to use values like 5-29, the choice should really be up to people them selfs, not be forced upon them to use these high values.</p>
+
+<p>Why do you make changes to Tor that purposely decreases peoples security &amp; speed ?<br />
+Are you going to implement this bad thing in the coming stable versions too ?</p>
+
+<p>According to Figure 5 in the performance.pdf around 85-90% of the whole circuits(all 3 nodes) are created within 7 seconds, and around 70% within 5 seconds, so could you please allow people to choose values of 5-10 seconds for CircuitBuildTimeout in coming Tor versions.</p>
+
+<p>People who needs higher security needs to lower this value to decrease the ability to illegally monitor them from organizations(like the NSA) that controls large parts the internet &amp; Tor's traffic.</p>
+
+<p>Otherwise you would create an unnecessary security risk for people that either would have to accept higher risk for timing attacks and similar (using version 0.2.1.9A-0.2.1.15RC).<br />
+or be forced to use an old(version 0.2.1.8A or earlier) insecure(?) version of Tor, both a bad thing of course.</p>
+
+<p>Please allow CircuitBuildTimeout values of 5-29.<br />
+This should be allowed at least until you fix this new approach in the coming 0.2.2.x or later versions.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 01 Jun 2009 06:26:11 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b881c659f84be9d6d91b5081c454a1c6">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+This was released in 0.2.1.9-alpha, <a href="https://blog.torproject.org/blog/tor-0.2.1.9-alpha-released" title="https://blog.torproject.org/blog/tor-0.2.1.9-alpha-released" rel="nofollow">https://blog.torproject.org/blog/tor-0.2.1.9-alpha-released</a>.  It's a bugfix and designed to better protect your anonymity. If you have more recent research that shows a lower circuitbuildtimeout improves anonymity, we're happy to review it.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 04 Jun 2009 06:26:12 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-732f443c38f4b11f43b5a5fa2df59b68">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>If a couple of % of tor's users needs higher security against timing attacks and change there settings to 5-10 seconds instead of 120(earlier standard value), 60(standard value) or 30 lowest possible now with latest versions, it won't be a problem if:</p>
+
+<p>According to Figure 5 in the performance.pdf around 85-90% of the whole circuits(all 3 nodes) are created within 7 seconds, and around 70% within 5 seconds, so could you please allow people to choose values of 5-10 seconds for CircuitBuildTimeout in coming Tor versions.</p>
+
+<p>By taking away that possibility for the people who needs higher protection against timing attacks you give the bad guys who monitors &amp; modifies traffic an helping hand.</p>
+
+<p>By having all circuits in an smaller timespan(for example 0-5 sec),  compared to 0-30 or even worse 0-60 or 0-120 sec you make it harder for the bad guys who does timing attacks(on Tor network) to be able to isolate a particular persons circuits from other persons.</p>
+
+<p>It's sad to see that the Tor project by this change has actively started to help NSA and similar organization to break peoples anonymity.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 08 Jun 2009 06:26:13 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a27dae05a63ca08f67b422d450dd4a91">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+<p>I have reverted to 0.2.1.8 specifically because it supports low value for circuit time-out.<br />
+Interestingly I still get a good variety of nodes being used from all over the planet - so I am happy with a small time-out.</p>
+
+<p>I wont be upgrading to the newer Tor version for this reason. If at some point 0.2.1.8 becomes a version that is extinct in terms of connecting to Tor then I will drop Tor altogether and stop hosting an exit node for others too.</p>
+
+<p>I hate it when software designers make choices for us. We are grown up and adult to make those choices ourselves. </p>
+
+<p>There is no point having fantastic anonymity if pages take 1 to 2 minutes to load - which they can on the newer Tor version with CircuitBuildTimeout set too low.</p>
+
+<p>Also - for those who want more and more speed - i recommend on using the latest beta of Vidalia and Privoxy (on windows)</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 25 Jul 2009 06:26:14 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-30aa18c549252d470837ef1e777df564">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p>Here's a better answer:</p>
+
+<p><a href="http://blog.torproject.org/blog/tor-02114rc-released#comment-1124" title="http://blog.torproject.org/blog/tor-02114rc-released#comment-1124" rel="nofollow">http://blog.torproject.org/blog/tor-02114rc-released#comment-1124</a></p>
+
+<p>"You're right that in the older versions you could configure it to prefer the<br />
+circuits that completed faster. Letting users set it too low is a bug: if<br />
+everybody did that, the relays would get overwhelmed with circuit creation<br />
+requests, making everything slower, and leading all the Tor clients to<br />
+unwittingly launch DoS attacks on the network. We can't allow that.</p>
+
+<p>The right answer is to have every Tor client automatically track how long it<br />
+takes to build circuits, and then discard circuits that take more than a<br />
+standard dev above the mean. For more details, check out Section 5.2 of the<br />
+performance.pdf document I posted about here:<br />
+<a href="https://blog.torproject.org/blog/why-tor-is-slow" title="https://blog.torproject.org/blog/why-tor-is-slow" rel="nofollow">https://blog.torproject.org/blog/why-tor-is-slow</a><br />
+and also proposal 151:<br />
+<a href="https://git.torproject.org/checkout/tor/master/doc/spec/proposals/151-pa" title="https://git.torproject.org/checkout/tor/master/doc/spec/proposals/151-pa" rel="nofollow">https://git.torproject.org/checkout/tor/master/doc/spec/proposals/151-pa</a>...</p>
+
+<p>We hope to have this dynamic-timeout-calculation feature in the Tor 0.2.2.x<br />
+series. In the mean time, let's all try not to make the Tor network fall over."</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 04 Jun 2009 06:26:15 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bf057dc27acc983cf4433b430b67914d">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+<p>Is this possible to do in windows XP ?</p>
+
+<p><a href="http://img300.imageshack.us/img300/636/torprivoxysquid.png" title="http://img300.imageshack.us/img300/636/torprivoxysquid.png" rel="nofollow">http://img300.imageshack.us/img300/636/torprivoxysquid.png</a></p>
+
+<p>What programs do i use instead of squid then ?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 02 Jun 2009 06:26:16 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e0053e86d83e4347c9d85e9c9f381525">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+<p>Hello,</p>
+
+<p>i have try to make my full DNS , like exclude node and rendez-vous but it seem to not take in vidalia and work not so....</p>
+
+<p>What can we do to fix that? That's will be great when we can accept more port, and all torrec config accepted...</p>
+
+<p>thanks in advance for the answer <img src="../../smileys/smile.png" alt=":)" /></p>
+
+<p>my best</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 02 Jun 2009 06:26:17 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-af97371e1039b41baec10a3afb2a808b">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+<p>Hello,</p>
+
+<p>I have found how force vidalia to accept the TOR config modified from us, i have only create a new right and file for the config torrc and change the path in vidalia to use mine...</p>
+
+<p>now it accept the name full DNS and i have use the command: excludeexitnodes (ip to block) and excludenodes too and seem to block the bad exit and node...</p>
+
+<p>The version 02.1.15 are really more performant and run well... </p>
+
+<p>i think that's will be good to accept another buildtimecircuit under 30 ...</p>
+
+<p>For the best security i block spammer, hacker, hijacked, faker, pedophile , troyan and only very bad thinks with blocklist... </p>
+
+<p>i don't know when that's really help against attack on TOR but the performance are very good and my speed are almost always good speed for the web...</p>
+
+<p>Thanks to all devloper and staff for all great work and viva our privacy <img src="../../smileys/smile4.png" alt=";)" /></p>
+
+<p>my Best</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fswisstorexit%20%28not%20verified%29&amp;do=goto">swisstorexit (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 03 Jun 2009 06:26:18 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-988da3137d8716d15a1ff0d2c8f804c7">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+<p>hello,</p>
+
+<p>I have block a few exit and node with ip and work perfect, i have try to add a country too but the problem are it will exit or use the country as it don't use...</p>
+
+<p>I think country are only for choose exit or node you want but not too block it.. </p>
+
+<p>it's that's so or have i do something wrong? </p>
+
+<p>excludenodes 127.00.00,235.125.12.0,SE,DE    for exemple and without the country it block and with it use...</p>
+
+<p>i work with the last geoip and this version tor 0.2.1.15-1 jaunty 64 bits</p>
+
+<p>so i can confirm the country are reconize well by me , just not what i want <img src="../../smileys/smile4.png" alt=";)" /></p>
+
+<p>maybe need ip or country ?  Are somebody with same problem?</p>
+
+<p>my best</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fswisstorexit%20%28not%20verified%29&amp;do=goto">swisstorexit (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 04 Jun 2009 06:26:19 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6d6db64459a2327f3398055046af43ce">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+ExcludeNodes {de}, {se}
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 08 Jun 2009 06:26:20 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-931d691966d912ad71f276360c57949e">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+<p>Thanks very much for your answer, i have try so but with big letter like {SE]  i will try next time like you siad...</p>
+
+<p>At time i have only block ip and work very well , it's always excludes <img src="../../smileys/smile.png" alt=":)" /></p>
+
+<p>my best</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fswisstorexit%20%28not%20verified%29&amp;do=goto">swisstorexit (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 08 Jun 2009 06:26:21 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-165a46948c59a6a61b9450a8312286fa">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+<p>thanks, with little letter work fine like you have told me, super...</p>
+
+<p>have a good time <img src="../../smileys/smile.png" alt=":)" /></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fswisstorexit%20%28not%20verified%29&amp;do=goto">swisstorexit (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 09 Jun 2009 06:26:22 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4cf0b5839cd4eafbb493bb7ab33df06c">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+<p>Steve Topletz, a Xerobank guy, claims:</p>
+
+<p>"It will quickly do an IP scan for network detection (instant) and can ban based on proxy detection, then it loads up about 25 proxy-breaking tests which take a half second to 3 seconds or so to complete each but can be run concurrently.</p>
+
+<p>The point is not to be some evil tool but to demonstrate to everyone that they aren't as anonymous as they are being led to believe. This will change the game and put nearly all "anonymity" (privacy) services and networks to shame."</p>
+
+<p>source:<br />
+<a href="http://www.wilderssecurity.com/showpost.php?p=1480717&amp;postcount=24" title="http://www.wilderssecurity.com/showpost.php?p=1480717&amp;postcount=24" rel="nofollow">http://www.wilderssecurity.com/showpost.php?p=1480717&amp;postcount=24</a></p>
+
+<p>Is there a big trouble?<br />
+What are these 35 tests?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 05 Jun 2009 06:26:23 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2d40e4290001bfed89a9d8531d8f094c">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+<p>I'm going to wait and see.  Every defcon/blackhat/usenixsec there is some presentation that claims to break Tor.  Most researchers talk to us in advance and offer suggestions to fix Tor, or explain how they broke Tor.  It's easy to break Tor in a lab environment, when you can control variables.  Attacking the OS is far easier than Tor itself. See <a href="http://decloak.net/" title="http://decloak.net/" rel="nofollow">http://decloak.net/</a>.</p>
+
+<p>We know nothing more than you about this supposed proxy-breaking tool.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 08 Jun 2009 06:26:24 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1c3d1e9d56c859cc3b114be62482d939">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+<p>In this thread you link to, SteveTX is lying here:</p>
+
+<p>"  Tor nodes are not "allowed" to keep logs. If they find out you keep logs or do injecting, they put you in a "badnode" list. So presumably, if every link in your circuit (3) kept logs they could find out who you are.  "</p>
+
+<p>Since the 1 jan 2009 all tor nodes in Germany have to log all traffic from ip, to ip,......<br />
+If they don't, the police close them down &amp; bring criminal charges against them.<br />
+And as far as i know all the German nodes are not marked as bad and banned.<br />
+Is this a feature you will implement soon ???<br />
+It sounds like this guy(SteveTX) doesn't have a clue what he's talking about.....</p>
+
+<p>Then you have the USA &amp; Greatbritain that monitors all traffic going between euroupe &amp; north america, the sweedes saves all data that passes throu sweden and so on, so a lot of the data is both logged and saved for later examination.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 08 Jun 2009 06:26:25 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-cf075be48e2591bb23d6730ac8f4d74b">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+<p>As author of that site, I can answer your question validity.</p>
+
+<p>Deanonymizer is a on going project since new bugs/vulnerablities are found frequently. It attempts to make your browser use third-party apps that are already installed on your system.  Yes, I know about HD's decloak(.net), and his test also address the same issue of bad security compromising your privacy.  I have initially chosen not include java or flash during the initial launch of the site because it's been done over and over already, but I may add it later...we'll see.</p>
+
+<p>If you follow good security practices, use things like Torbutton and Noscript, then you should be good.  Some people will not be affected, some will.  If you make a decent attempt to secure your browser, then you should be alright.  NEVER USE INTERNET EXPLORER.</p>
+
+<p>The point of the site is to point out bad security implementations in various different privacy/anonymity solutions or products; this is not affecting just Tor.</p>
+
+<p>So to answer the question of this subject, no, Tor is not broken, but your web browsers security might be.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 31 Jul 2009 06:26:26 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-30504d1ade772583fd77c5a24f2bb45e">
+
+<div class="comment-subject">
+
+Comment 19
+
+</div>
+
+<div class="inlinecontent">
+<p>haha, I just saw that I posted that last post anonymously.<br />
+Good times in vegas....</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FKyle%20%28not%20verified%29&amp;do=goto">Kyle (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 31 Jul 2009 06:26:27 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-301ce2ba75648ef0fc92396734f724a3">
+
+<div class="comment-subject">
+
+Comment 20
+
+</div>
+
+<div class="inlinecontent">
+<p>topletz is an attention whore, maybe people will stop paying attention to these press release attacks some day.</p>
+
+<p><a href="http://www.wilderssecurity.com/showthread.php?t=249426" title="http://www.wilderssecurity.com/showthread.php?t=249426" rel="nofollow">http://www.wilderssecurity.com/showthread.php?t=249426</a></p>
+
+<p>people are finally starting to realize this crap is just crap</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 01 Aug 2009 06:26:28 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-524d80e43143990895d59f856af85351">
+
+<div class="comment-subject">
+
+Comment 21
+
+</div>
+
+<div class="inlinecontent">
+<p>7 june '09</p>
+
+<p>hello, phobos, and from the outset, thank you</p>
+
+<p>sorry if this post is in an incorrect spot, but</p>
+
+<p>i recently installed tor and used some email accounts to do a rudimentary test.<br />
+with my browser opened conventionally i went to an one email acct(a) and sent a message to a different acct(b). i then deleted all cookies/history when closing my browser (recently updated firefox.)</p>
+
+<p>i then started vidalia, and connected to the tor network, reopened the browser and sent a second message from acct(a) to acct(b). I was surprised upon opening the full headers of the separate emails that they both contained the same originating ip.</p>
+
+<p>when i view the message log it says, "we now have enough directory information to build circuits" and then "tor has successfully opened a circuit. looks like client functionality is working."</p>
+
+<p>yet the email headers/path would seem to indicate otherwise.<br />
+what have i done incorrectly?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fpietro%20%28not%20verified%29&amp;do=goto">pietro (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 07 Jun 2009 06:26:29 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d2459c282dfcf0d4753277e0c9f8590d">
+
+<div class="comment-subject">
+
+Comment 22
+
+</div>
+
+<div class="inlinecontent">
+If this was a mail client on your machine, tor doesn't clean content.  If this was a web mail account, was the IP address your IP address?  Or was it the exit node IP address?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 08 Jun 2009 06:26:30 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-01be511ff6311483d1580c17b4a84e0f">
+
+<div class="comment-subject">
+
+Comment 23
+
+</div>
+
+<div class="inlinecontent">
+<p>thanks for your reply.</p>
+
+<p>it was my actual ip. i have since backtracked and done some more research on my own, sorry for being a neophyte.<br />
+even though the control panel and the message log say connected, the checktpo url said no. i believe the problem is i may not have the network settings in either, or both, vidalia/tor and my mac (yes, i installed the mac bundle) vis-a-vis proxies/ports set/id'ed correctly.<br />
+i lazily thought that privoxy as part of the bundle was going to automatically detect and prescribe these connections. embarrassingly i may not be enough of a systems admin sort a guy to accomplish this, yet  (i know its really just a dialogue box, but i don't understand the architectural references.) even though i remember elements of -ancient- ms-dos, and know some basic (X)HTML i am not facile enough in the terminal x environment, i.e., at the command line.<br />
+plus i'm connecting mostly through wifi, i assume that involves some more proxy voodoo.  i got some learnin' to do...</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fpietro%20%28not%20verified%29&amp;do=goto">pietro (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 08 Jun 2009 06:26:31 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ec43dd84ef42b68d7fd31474784bbf67">
+
+<div class="comment-subject">
+
+Comment 24
+
+</div>
+
+<div class="inlinecontent">
+<p>Hello,</p>
+
+<p>i see are the livevent 1.4.2 with tor experimental 0.2.1.15 rc and in my reposery jaunty 64 bits i have the 1.3e automatic when i will install tor from it, to work with 1.4.2 i need intsall the package from the site and intsall the geoip after and so it work with the 1.4.2..</p>
+
+<p>What's the better for me stay with 1.4.2 or return with the normal 1.3e from my reposery?</p>
+
+<p>thanks in advance for your answers</p>
+
+<p>my best</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fswisstorexit%20%28not%20verified%29&amp;do=goto">swisstorexit (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 07 Jun 2009 06:26:32 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ba00528476f39f02b5f24185470531e7">
+
+<div class="comment-subject">
+
+Comment 25
+
+</div>
+
+<div class="inlinecontent">
+Either works fine.  libevent just released 1.4.11.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 08 Jun 2009 06:26:33 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5436dfa3e3f92a6a65eefd75f82b4487">
+
+<div class="comment-subject">
+
+Comment 26
+
+</div>
+
+<div class="inlinecontent">
+<p>thanks very much, while i have not see a big deal and not many explain about change.. i see only it support other format...</p>
+
+<p>i stay with the new so i will see when are bug... </p>
+
+<p>to now are always the eventdns error : allnamesserveur failed..</p>
+
+<p>but i see are many with same message .. excpet this log , i have never a error on linux jaunty 64 bits intel</p>
+
+<p>my best</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fswisstorexit%20%28not%20verified%29&amp;do=goto">swisstorexit (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 08 Jun 2009 06:26:34 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6840117850a492d03a2c7c57bf28487d">
+
+<div class="comment-subject">
+
+Comment 27
+
+</div>
+
+<div class="inlinecontent">
+Can governments control Tor nodes on net?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 08 Jun 2009 06:26:35 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-869126408187dde084fe7007f3d05536">
+
+<div class="comment-subject">
+
+Comment 28
+
+</div>
+
+<div class="inlinecontent">
+Tor is designed so that anyone can run a Tor node.  This includes governments.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 10 Jun 2009 06:26:36 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-273dd61199fc12acd497f991ffbe4fac">
+
+<div class="comment-subject">
+
+Comment 29
+
+</div>
+
+<div class="inlinecontent">
+<p>Hi phobos.</p>
+
+<p>I've been one of tor users for some time. I read a news before on the net. It said that governments or organizations in some contries control the underlying telcom or internet connection. Will tor nodes or networks be limited, controlled or blocked by those governments or organizations? Can tor immune to those interfaces?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 10 Jun 2009 06:26:37 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-146fa6a4c2285898f8820073b5317d8d">
+
+<div class="comment-subject">
+
+Comment 30
+
+</div>
+
+<div class="inlinecontent">
+I can't tell you what governments or organizations will do in the future.  I can tell you that to date, Tor works in every country.  Perhaps it does work in North Korea, but no one has reported back to us from there, so we don't know.  If Tor becomes a threat to the organization trying to control the Internet in a country, they will try to block Tor.  The arms race will continue where they try to block us, we respond, they try something else, we respond, etc.  Our goal is to have an arms race as slow as possible.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 11 Jun 2009 06:26:38 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-54be0a4584747b736207f79ca375e55b">
+
+<div class="comment-subject">
+
+Comment 31
+
+</div>
+
+<div class="inlinecontent">
+Yes, I get it. Tor works in Mainland China up to now.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 11 Jun 2009 06:26:39 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-60ca9f02b1913f69d818086d262373cb">
+
+<div class="comment-subject">
+
+Comment 32
+
+</div>
+
+<div class="inlinecontent">
+<p>Herllo,</p>
+
+<p>i have tested with some exploit the system and in all case with accept java and flash, are never find DNS true ip of me , it's said always no info except external ip <img src="../../smileys/smile.png" alt=":)" /></p>
+
+<p>my problem are in external NAT flash are found sometime my true ip but not always...</p>
+
+<p>i will know what i can do to fix that?</p>
+
+<p>With what i have read seem very good when the DNS are never my true ip and no info about external NAT...</p>
+
+<p>Is that possible are while a torrent program work in external or are upnp option?</p>
+
+<p>thanks for answer in advance..</p>
+
+<p>my best</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fswisstorexit%20%28not%20verified%29&amp;do=goto">swisstorexit (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 09 Jun 2009 06:26:40 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b405dcbfc21f4d737a2140de5650742e">
+
+<div class="comment-subject">
+
+Comment 33
+
+</div>
+
+<div class="inlinecontent">
+<p>I don't fully understand your question.  Flash and Java can be used to bypass your proxy settings in the browser.  In fact, neither flash nor java have to honor any proxy settings you configure in their settings.  Applets can simply ignore the proxy settings.</p>
+
+<p>As for torrent programs, using Tor for a tracker is probably ok, but doing bulk data transfer over Tor simply overloads the network.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 10 Jun 2009 06:26:41 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1dafadccb9e7c868d1de40be0281ec5d">
+
+<div class="comment-subject">
+
+Comment 34
+
+</div>
+
+<div class="inlinecontent">
+<p>hello,</p>
+
+<p>sorry for my english,</p>
+
+<p>my system block all plugins in basic to have no problem with that but i have try the test found in this blog to see with all accepted what was found for info of me...</p>
+
+<p>After many test only the flash from external NAT was bypass, all others programms or plugins don't was bypass and give info... so the security are really great ..</p>
+
+<p>in all case my browser and system don't accept and use flash ect....</p>
+
+<p>So i have ask when you think was from a extern programm, like bittorent or a device who have give the true ip in test...</p>
+
+<p>now with your answer, i know are the proxy bypassed from the flash only <img src="../../smileys/smile4.png" alt=";)" /></p>
+
+<p>For torrent , that's sure i will never use TOR for the peer connections, what i take are many linux but i like to be connected to the tracker anonyme too. Trackers work great ! need only use a program who can resolve the host in proxy , so i never have more a leak data or ip...</p>
+
+<p>Thanks for your answer, i have mean maybe i have forget to config something.... </p>
+
+<p>my best<br />
+Thanks</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fswisstorexit%20%28not%20verified%29&amp;do=goto">swisstorexit (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 11 Jun 2009 06:26:42 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b20f1effb272655cf2599c50f94cced9">
+
+<div class="comment-subject">
+
+Comment 35
+
+</div>
+
+<div class="inlinecontent">
+<p>Does Torbutton protect us from this issue?<br />
+<a href="http://www.trusteer.com/temporary-user-tracking-in-major-browsers" title="http://www.trusteer.com/temporary-user-tracking-in-major-browsers" rel="nofollow">http://www.trusteer.com/temporary-user-tracking-in-major-browsers</a></p>
+
+<p>If no, can you add this protection? Please</p>
+
+<p>Thanks</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 12 Jun 2009 06:26:43 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d0d352b203aede1189f325078beb535b">
+
+<div class="comment-subject">
+
+Comment 36
+
+</div>
+
+<div class="inlinecontent">
+you can use noscript
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 12 Jun 2009 06:26:44 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-fb98e49618a45c0e89090a58c342bdf0">
+
+<div class="comment-subject">
+
+Comment 37
+
+</div>
+
+<div class="inlinecontent">
+<p>hello,</p>
+
+<p>Yesterday the TOR crash and said was 120 sec difference in the time and that's impossible! I have control the time and all was right..</p>
+
+<p>Are someone with the same case?  After restart that's good but i have one more time lost my positon in statut of exit node....</p>
+
+<p>my best</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fswisstorexit%20%28not%20verified%29&amp;do=goto">swisstorexit (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 16 Jun 2009 06:26:45 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9811f7d10ffbb0daaad6ed4614b3ccd3">
+
+<div class="comment-subject">
+
+Comment 38
+
+</div>
+
+<div class="inlinecontent">
+<p>Btw, it's Tor, not TOR.  </p>
+
+<p>If you have info or debug level logs, can you open a bug report at <a href="https://bugs.torproject.org" title="https://bugs.torproject.org" rel="nofollow">https://bugs.torproject.org</a>?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 17 Jun 2009 06:26:46 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b539b00772f7f3bebca7078d63572366">
+
+<div class="comment-subject">
+
+Comment 39
+
+</div>
+
+<div class="inlinecontent">
+<p>Hello phobos,</p>
+
+<p>i have not send in bugs, while was nothing write about that in logs....</p>
+
+<p>only was on the vidalia logs when it was crashed at night... </p>
+
+<p>So i have just say here when someone have same case ...</p>
+
+<p>The last error sighaled on log are on 7 june....</p>
+
+<p>sorry to cannot give more infos, have a good journey</p>
+
+<p>my best</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fswisstorexit%20%28not%20verified%29&amp;do=goto">swisstorexit (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 17 Jun 2009 06:26:47 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-81aebb4c582d90c2cd67ddb6a0bc4329">
+
+<div class="comment-subject">
+
+Comment 40
+
+</div>
+
+<div class="inlinecontent">
+<p>At least one of the fastest Tor nodes are constantly using wrong times , maby this is done on purpose to take advantage of some wonerability.<br />
+I would recommend that you block(in torrc) this node &amp; the other nodes from there nodefamily in case they do some nasty stuff to break your(&amp; others) privacy.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 18 Jun 2009 06:26:48 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-27fe298a64701cfdf3e6d94fa17c5995">
+
+<div class="comment-subject">
+
+Comment 41
+
+</div>
+
+<div class="inlinecontent">
+<p>China government is going to ask manufactories to preinstall an internet censorship software green dam on pcs in the whole contry. They may break tor and similar proxies.</p>
+
+<p>China Holds Firm on Software Filter, U.S. Firms Say<br />
+<a href="http://www.nytimes.com/2009/06/19/business/global/19censor.html?ref=global-home" title="http://www.nytimes.com/2009/06/19/business/global/19censor.html?ref=global-home" rel="nofollow">http://www.nytimes.com/2009/06/19/business/global/19censor.html?ref=glob...</a><br />
+Published: June 18, 2009</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 18 Jun 2009 06:26:49 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-1d6a258adcf26d95f932d33d1d906e1a">
+
+<div class="comment-subject">
+
+Comment 42
+
+</div>
+
+<div class="inlinecontent">
+<p><a href="http://www.reuters.com/article/rbssTechMediaTelecomNews/idUSPEK12189520090623" title="http://www.reuters.com/article/rbssTechMediaTelecomNews/idUSPEK12189520090623" rel="nofollow">http://www.reuters.com/article/rbssTechMediaTelecomNews/idUSPEK121895200...</a></p>
+
+<p>China sticks to Internet filter plan -Reuters,<br />
+BEIJING, June 23 (Reuters) - China will not revoke its controversial plan requiring all new personal computers to be sold with "Green Dam" Internet filtering software from July 1..</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 22 Jun 2009 06:26:50 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c8cd1bba59e991388026eb4cdfd3effe">
+
+<div class="comment-subject">
+
+Comment 43
+
+</div>
+
+<div class="inlinecontent">
+<p><a href="http://news.google.com/news/url?sa=t&amp;ct2=us%2F3_0_s_0_0_t&amp;usg=AFQjCNHFvW6aHzdPxU5Bm8duMa1AeHyCFg&amp;cid=1377925846&amp;ei=l0dDSuDoJpfzmQeU4v2kAQ&amp;rt=HOMEPAGE&amp;vm=STANDARD&amp;url=http%3A%2F%2Fwww.washingtonpost.com%2Fwp-dyn%2Fcontent%2Farticle%2F2009%2F06%2F25%2FAR2009062500727.html" title="http://news.google.com/news/url?sa=t&amp;ct2=us%2F3_0_s_0_0_t&amp;usg=AFQjCNHFvW6aHzdPxU5Bm8duMa1AeHyCFg&amp;cid=1377925846&amp;ei=l0dDSuDoJpfzmQeU4v2kAQ&amp;rt=HOMEPAGE&amp;vm=STANDARD&amp;url=http%3A%2F%2Fwww.washingtonpost.com%2Fwp-dyn%2Fcontent%2Farticle%2F2009%2F06%2F25%2FAR2009062500727.html" rel="nofollow">http://news.google.com/news/url?sa=t&amp;ct2=us%2F3_0_s_0_0_t&amp;usg=AFQjCNHFvW...</a></p>
+
+<p>US urges China to scrap Internet filter plan<br />
+Washington Post - Chris Buckley, Doug Palmer - ‎1 hour ago‎<br />
+BEIJING (Reuters) - China on Thursday stepped up accusations that Google is spreading obscene content, a day after US officials urged Beijing to abandon plans for controversial filtering software on new computers.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 25 Jun 2009 06:26:51 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4d471e5a2a273dc892074da405db6b61">
+
+<div class="comment-subject">
+
+Comment 44
+
+</div>
+
+<div class="inlinecontent">
+<p>Hello,</p>
+
+<p>I have updated to 2.1.16 rc in jaunty 64 bits and at install, with package, source ect... are not possible for TOR to find the library for livevent 1.4!</p>
+
+<p>So it accept only the libevent 1.3e on it...</p>
+
+<p>Thanks to look to make a change in the linux reposery to have no more the 1.3e and update to 1.4 or , change the path in TOR to can reconize libevent 1.4e</p>
+
+<p>Thanks in adavance</p>
+
+<p>my best</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fsiwsstorexit%20%28not%20verified%29&amp;do=goto">siwsstorexit (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 21 Jun 2009 06:26:52 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-96c1f8489f531217205f9bfd5aeff959">
+
+<div class="comment-subject">
+
+Comment 45
+
+</div>
+
+<div class="inlinecontent">
+hi i am new to tor , i would like to know if i can use specific country ips instead of random addresses?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 14 May 2010 06:26:53 AM CDT</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTor_0_2_1_15-rc_released&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 06:26:08 AM CDT</span>
+<!-- Created <span class="date">Sun 31 May 2009 08:04:49 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

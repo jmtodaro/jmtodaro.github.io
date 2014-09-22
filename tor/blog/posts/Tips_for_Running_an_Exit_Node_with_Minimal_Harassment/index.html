@@ -1,0 +1,1813 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tips for Running an Exit Node with Minimal Harassment</title>
+
+<link rel="stylesheet" href="../../style.css" type="text/css" />
+
+<link rel="stylesheet" href="../../local.css" type="text/css" />
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTips_for_Running_an_Exit_Node_with_Minimal_Harassment&amp;do=edit" />
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16297059-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<div class="page">
+<div id="wrap">
+<div class="pageheader">
+<div id="header">
+    <h1 id="logo"><a href="https://torproject.org/index.html.en">Tor</a></h1>
+      <div id="nav">
+        <ul>
+        <li><a class="active" href="http://torproject.org/index.html.en">Home</a></li>
+<li><a href="https://torproject.org/about/overview.html.en">About Tor</a></li>
+<li><a href="https://torproject.org/docs/documentation.html.en">Documentation</a></li>
+<li><a href="https://torproject.org/projects/projects.html.en">Projects</a></li>
+<li><a href="https://torproject.org/press/press.html.en">Press</a></li>
+<li><a href="https://blog.torproject.org/blog/">Blog</a></li>
+<li><a href="http://printfection.com/torprojectstore">Store</a></li>
+        </ul>
+      </div>
+      <!-- END NAV -->
+      <div id="calltoaction">
+        <ul>
+          <li class="donate"><a href="https://torproject.org/download/download.html.en">Download</a></li>
+<li class="donate"><a href="https://torproject.org/donate/donate.html.en">Donate</a></li>
+<li class="donate"><a href="https://torproject.org/getinvolved/volunteer.html.en">Get Involved</a></li>
+        </ul>
+      </div>
+      <!-- END CALLTOACTION -->
+  <!-- END HEADER -->
+
+
+</div>
+
+
+</div>
+
+<div id="pagebody">
+
+
+<span class="parentlinks">
+
+<a href="../../">The Tor Blog</a>/ 
+
+<a href="../">posts</a>/ 
+
+</span>
+<span class="title">
+<a href="">Tips for Running an Exit Node with Minimal Harassment</a>
+
+</span>
+
+
+<div id="content">
+<p><b>Updated 06/30/2010</b>: Mention Reduced Exit Policy, ISP Shopping Tips, and Abuse Response Templates</p>
+
+<p><b>Updated 08/30/2010</b>: Update exit policy with svn, git, hg, Kerberos, remote admin panels, IRC, others</p>
+
+<p><b>Updated 01/12/2011</b>: Suggest creation of LLC for large exit nodes, provide links to ARIN forms and process.<br />
+<br></p>
+
+<p>I have noticed that a lot of new exit nodes have recently appeared on the network. This is great news, since exit nodes are typically on the scarce side. Exits usually occupy 30-33% of network by capacity, but are currently at a whopping 38.5% (156 MBytes/sec out of 404 total).</p>
+
+<p>However, I want to make sure that these nodes stay up and don't end up being shut down due to easily preventable abuse complaints. I've run a number of exit nodes on a few different ISPs and not only have I lived to tell about it, I've have not had one shut down yet. Moreover, I've only received about 4 abuse complaints in as many years of running exit nodes. This is in stark contrast to other node operators following a <a href="https://blog.torproject.org/blog/five-years-exit-node-operator">more reactive strategy</a>. I'm convinced this is largely because I observe the following pro-active guidelines. This guide is primarily US centric. Operators in other countries may have slightly different best practices (such as registering with RIPE and not ARIN). <span class="read-more"><a href="http://blog.torproject.org/blog/tips-running-exit-node-minimal-harassment"><strong>read&nbsp;more&nbsp;&raquo;</strong></a></span></p>
+
+
+
+
+
+
+<div class="tags">
+Tags:
+
+<a href="../../tags/anonymity_advocacy/" rel="tag">anonymity advocacy</a>
+
+<a href="../../tags/distributed_trust/" rel="tag">distributed trust</a>
+
+<a href="../../tags/education/" rel="tag">education</a>
+
+<a href="../../tags/performance/" rel="tag">performance</a>
+
+</div>
+
+
+
+
+<div id="comments">
+<div id="feedlink">
+
+<a class="feedbutton" type="application/rss+xml" href="comments.rss">RSS</a>
+
+
+<a class="feedbutton" type="application/atom+xml" href="comments.atom">Atom</a>
+
+</div>
+<div class="comment" id="comment-12df66701dd32298945628277e3b15e2">
+
+<div class="comment-subject">
+
+Comment 1
+
+</div>
+
+<div class="inlinecontent">
+Thanks so much for this post.  I was running an exit node a few days ago and ended up using ~20GB in 24 hours!  I had to shut it down because my ISP (Comcast, bastards) was checking my ports and seemed to be cutting me off, as the traffic on my circuits dropped WAY off.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 21 Jun 2009 07:03:20 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-611dfe04a58d5c20b62469543e77edf8">
+
+<div class="comment-subject">
+
+Comment 2
+
+</div>
+
+<div class="inlinecontent">
+<p>If comcast cut you off entirely because of the volume of traffic, you can rate limit to help with that problem:<br />
+<a href="https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#LimitBandwidth" title="https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#LimitBandwidth" rel="nofollow">https://wiki.torproject.org/noreply/TheOnionRouter/TorFAQ#LimitBandwidth</a></p>
+
+<p>In fact, I'd recommend that all Tor relays add in rate limiting, for the reason that Mike gives in this blog post.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Farma&amp;do=goto">arma</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 23 Jun 2009 07:03:21 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-46579fbfd85f1fbe6bc317bfa2acc048">
+
+<div class="comment-subject">
+
+Comment 3
+
+</div>
+
+<div class="inlinecontent">
+<p>Yeah, it's likely you weren't discovered by port scanning and more likely by the total bandwidth use. However, if you're sure that is port scanning, you can put your Tor server on an unused high-numbered port (check /etc/services for blank ranges) and then customize your firewall rules to DROP as opposed to REJECT packets to your unused port ranges on your machine. DROP rules greatly increase the time it takes to port scan your machine, because scanner's packets need to be retransmitted many times to differentiate between normal packet loss and DROP rules. Also, choosing an infrequently used port will often completely escape scanners' notice, because they typically scan frequently used ports to save time. You probably also want to disable your DirPort in this case too, as that is plain text http, often contains strings that say "Tor" and easily seen by filters at *your* ISP.</p>
+
+<p>There are also rumors that some of Iran is blocking port 443, so putting your Tor server on strange ports is actually helpful for that too.</p>
+
+<p>Note this likely only makes sense for middle and bridge nodes. Exit nodes will be so noisy you'll eventually get some sort of abuse complaint if you don't follow Mike's steps (and possibly sometimes even if you do, it sounds like).</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 23 Jun 2009 07:03:22 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8da267ea9e2d520f071b152f0213340b">
+
+<div class="comment-subject">
+
+Comment 4
+
+</div>
+
+<div class="inlinecontent">
+The rationale here is understandable, but #1 &amp; 2 appear to have the undesirable side effect of making exit point surveillance by Government Organizations easier, assuming that the ISP in question is colluding with them (frequently the case, and in many nations, mandated by law or regulation).  Is my conclusion in error?  This might be less of a problem if a TOR user could whitelist or blacklist specific exit point countries (this rests on a presumption that authorities in Venezuela, for example, would likely be relatively uninterested in issues that are locally "sensitive" in Iran, for another example, and vice versa).  Is there any tool in TOR that allows this?  I do understand that the trade-off for wide use of such a capability would be a potential net reduction of bandwidth in an already constrained network.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 24 Jun 2009 07:03:23 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8273d6d0886b2a0ffa4ceb71d577f483">
+
+<div class="comment-subject">
+
+Comment 5
+
+</div>
+
+<div class="inlinecontent">
+<p>Exits are already listed in the Tor directory that clients use, which is public. The Tor project also provides a DNSRBL with Tor exit nodes to prevent incorrect blocking of Tor nodes that do not actually exit: <a href="https://www.torproject.org/tordnsel/" title="https://www.torproject.org/tordnsel/" rel="nofollow">https://www.torproject.org/tordnsel/</a></p>
+
+<p>So the additional threat of government monitoring is not really a valid argument.<br />
+However, it might be the case that your ISP doesn't figure it out until you till them, but that will only last until your first abuse complaint if you are running an exit.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 24 Jun 2009 07:03:24 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6ab311e65fa8a4868aab264b5501822b">
+
+<div class="comment-subject">
+
+Comment 6
+
+</div>
+
+<div class="inlinecontent">
+Another useful tactic might be to register your reverse DNS domain name with a top level country code that is not the same as the jurisdiction for your IP address. It might be the case that the "copyright cartels" (lol) and others will give up if they see a .se domain name, or similar <img src="../../smileys/smile.png" alt=":)" />
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 24 Jun 2009 07:03:25 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9dfad8c84400a640d0a77f341224aa09">
+
+<div class="comment-subject">
+
+Comment 7
+
+</div>
+
+<div class="inlinecontent">
+<p>We've run an exit node in the past.  Currently not running, will be again soon, I hope...</p>
+
+<p>We had an excessively simple strategy for reducing entanglements:  being based in the US, we only allowed exit to IP space delegated to Europe, Asia, etc.</p>
+
+<p>Reducing the chances that any local TLA would want to come knocking is a good thing.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 24 Jun 2009 07:03:26 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-437db982fa0b9c3d8b44cbcc618d68fa">
+
+<div class="comment-subject">
+
+Comment 8
+
+</div>
+
+<div class="inlinecontent">
+<p>Excessively simple perhaps, but arguably effective, for parties at both ends of the pipe.  Now if there was a mechanism for clients in a given location to select an exit node that only exited to IP space in some defined elsewhere, a user in that location could have a little bit more comfort (never guaranties!) in his or her privacy.from the snooping noses of das Heimatland Sicherheit and ilk.</p>
+
+<p>&gt;We had an excessively simple strategy for reducing entanglements: being based in the &gt;US, we only allowed exit to IP space delegated to Europe, Asia, etc.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 25 Jun 2009 07:03:27 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5263d8aa62d0b894d7694f699cfc19e0">
+
+<div class="comment-subject">
+
+Comment 9
+
+</div>
+
+<div class="inlinecontent">
+Re the subject and previous comments.  Apparently this is possible, see TOR FAQ 3.15.  However, it is not recommended, for several reasons.  In that same FAQ item, there is a reference to using Blossom for this purpose.   Has anyone here tried this?  Is it possible to just run the Blossom client service that allows this option with an existing TOR client, or are the two clients mutually exclusive?  Also, my intent was not to hijack this thread; it might be best if someone could fork this into a separate topic.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 27 Jun 2009 07:03:28 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9fc428d5268a5a35bbc34e8046142466">
+
+<div class="comment-subject">
+
+Comment 10
+
+</div>
+
+<div class="inlinecontent">
+<p>Our non-US exit strategy was the outgrowth of an idea that seems to have been largely ignored by Tor developers.</p>
+
+<p>IPv4 space is largely (not completely reliably) delegated to entities called Regional Internet Registries (RIR's) in large swaths.  The RIR is then responsible for passing out space to the entities in its region.  There are entanglements, such as multinationals, or legacy delegations, but in large part, you can wave your hands a bit and know that any IP address between 77.0.0.0 and 95.255.255.255 is handled by the European RIR, RIPE, IP addresses between 110.0.0.0 and 126.255.255.255 are handled by Asia Pacific's APNIC, etc.  You can fairly readily break down large chunks of space by RIR based on the first octet, sorting unknown or mixed use stuff into a different category.</p>
+
+<p>This means that it would be fairly easy to generate "buckets" that roughly categorize IP space.  Tor nodes could be separated into each of these buckets, and you could have a rough idea that you'd likely be crossing political boundaries anytime you went from one bucket to another, simply because most countries do not exist in multiple geographic regions.</p>
+
+<p>So you categorize Tor nodes into buckets while indexing them: this is a 256-entry database plus a half page of code.</p>
+
+<p>Now, you can do things with that data.  Rather than just "randomly" picking Tor nodes for a circuit, you could prefer a first hop outside your own bucket, a second hop in neither of those buckets, and a completely random third hop.  So when your US-based PC goes to Amsterdam for the first hop, Taiwan for the second, and ends up exiting in Canada, you've done a lot to make it more difficult for any one country to track back to you.</p>
+
+<p>Perhaps we don't have to worry about this in the US, but looks like the Iranians do.</p>
+
+<p>Getting back to the previous comment, however ----</p>
+
+<p>For those of you who would like to allow exit to non-local space, I suggest looking at</p>
+
+<p><a href="http://www.iana.org/assignments/ipv4-address-space/" title="http://www.iana.org/assignments/ipv4-address-space/" rel="nofollow">http://www.iana.org/assignments/ipv4-address-space/</a></p>
+
+<p>Determine your own RIR (ARIN, APNIC, etc) and then generate a list of prefixes that are served by *other* RIR's.  Allow exit to those prefixes.  For example, a host in America can probably more safely offer exit to 41.*, 51.*, 58-62.*, etc.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 28 Jun 2009 07:03:29 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-8871289e5254915e416eabdc75000cea">
+
+<div class="comment-subject">
+
+Comment 11
+
+</div>
+
+<div class="inlinecontent">
+It would be great to be able to choose the country of the exit node to overpass the IP filtering of some websites.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 17 Jul 2010 07:03:30 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-b8e003ba23768b8aba1d7ad08c0d8d7f">
+
+<div class="comment-subject">
+
+Comment 12
+
+</div>
+
+<div class="inlinecontent">
+You can, it's just not easy, <a href="https://www.torproject.org/faq#ChooseEntryExit" title="https://www.torproject.org/faq#ChooseEntryExit" rel="nofollow">https://www.torproject.org/faq#ChooseEntryExit</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 30 Jul 2010 07:03:31 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-939463f478de2b0dcc8ed956db4bfb49">
+
+<div class="comment-subject">
+
+Comment 13
+
+</div>
+
+<div class="inlinecontent">
+I am running a TOR Bridge here in Darwin Australia for the Nedanet i am under constant heavy network hacking attacks originating in china you name it and there trying it !! I think a good tip for anyone running Tor is to make sure you have a better than average firewall setup ... i also run a DMZ  from the router to a locked down  linux box ... i have noticed also no network scanning or attacks from iran .... makes me wonder if China helps Iran with their IT security ?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FOldSpewy%20%28not%20verified%29&amp;do=goto">OldSpewy (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 28 Jun 2009 07:03:32 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-4337e3cd35babeba3570584b4c6ea0bb">
+
+<div class="comment-subject">
+
+Comment 14
+
+</div>
+
+<div class="inlinecontent">
+<p>If you are dealing with a box that is running other services besides Tor, simply assign it a second IP and firewall in a manner that puts on the the Tor service on that IP and disallow anything else.</p>
+
+<p>Worked for me.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 28 Jun 2009 07:03:33 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-235800926e543170823e74bd3a3ab7f1">
+
+<div class="comment-subject">
+
+Comment 15
+
+</div>
+
+<div class="inlinecontent">
+<p>I've followed mikeperry's advice and sent my ISP a heads-up, suggested URLs and all.  And, somewhat to my surprise, instead of some e-mail boilerplate in 48-hours or so, I got a phone call from "Steve" in within three hours.  Suffice to say, 1) I shall call him tomorrow and ask him to respond exclusively via e-mail from now on, as I'm severely deaf, and 2) determine what level of service I can can be to Tor which is within the ambit of CableOne's AUP, savvy?</p>
+
+<p>To wit:  "This is to inform you that given the situation in Iran (and of course, China!) I shall be running Tor exit node kencf0618 mostly but not entirely from midnight to 5 a.m. I'm still tweaking my settings with your AUP in mind, as it is not my intention to degrade anyone's service. <a href="https://www.torproject.org/torusers.html.en" title="https://www.torproject.org/torusers.html.en" rel="nofollow">https://www.torproject.org/torusers.html.en</a> <a href="https://www.torproject.org/overview.html.en" title="https://www.torproject.org/overview.html.en" rel="nofollow">https://www.torproject.org/overview.html.en</a> <a href="https://www.torproject.org/eff/tor-legal-faq.html.en" title="https://www.torproject.org/eff/tor-legal-faq.html.en" rel="nofollow">https://www.torproject.org/eff/tor-legal-faq.html.en</a> <a href="https://www.torproject.org/faq-abuse.html.en" title="https://www.torproject.org/faq-abuse.html.en" rel="nofollow">https://www.torproject.org/faq-abuse.html.en</a><br />
+Submission Date:    6/29/2009 2:43:39 PM"       </p>
+
+<p>I rather suspect that inasmuch as I had for a day or so checked off everything on Vidalia's exit node configuration, "Steve" shall play the Moral Panic card.  My usage was 1.5G in in March, 3.0 in in April, and 2.4 in May, but 8.0 in June due to Tor, so I figured that I might've raised a red flag somewhere.</p>
+
+<p>Any and all advice would be appreciated.  Basically, I want a stable state of whatever it is I can get away with re Tor within my ISP's AUP.   Think Venn diagram.</p>
+
+<p>Thanks, folks!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fkencf0618%20%28not%20verified%29&amp;do=goto">kencf0618 (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 29 Jun 2009 07:03:34 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-00e5094afbc7376eff90e212837dd84b">
+
+<div class="comment-subject">
+
+Comment 16
+
+</div>
+
+<div class="inlinecontent">
+<p>hi there,<br />
+is it possible to have a special build only allowing my exit node for clients originating in china, iran etc.? unfortunately i don´t know very much about this software but am unwilling to hassle with problems from my isp. right now i´m running only in bridge mode.<br />
+i think there might be a lot more people out there like me that would install a special iran package without having to think about it anymore</p>
+
+<p>ftd</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous%20%28not%20verified%29&amp;do=goto">Anonymous (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 01 Jul 2009 07:03:35 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-088d051b51d795642264fce58739e321">
+
+<div class="comment-subject">
+
+Comment 17
+
+</div>
+
+<div class="inlinecontent">
+<p>This wouldn't work.  The exits don't know where the client resides.  If this was possible, it would quickly turn the users into a special set which may be easier to track down.  Fragmenting the Tor network into a series of partitions makes everyone less anonymous.  </p>
+
+<p>See "Anonymity Loves Company" at <a href="http://freehaven.net/anonbib/cache/usability:weis2006.pdf" title="http://freehaven.net/anonbib/cache/usability:weis2006.pdf" rel="nofollow">http://freehaven.net/anonbib/cache/usability:weis2006.pdf</a></p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 29 Jul 2009 07:03:36 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-cea6b1ed5150ee341c2964fea1031c0b">
+
+<div class="comment-subject">
+
+Comment 18
+
+</div>
+
+<div class="inlinecontent">
+<p>Despite the local CableOne tech telling me in the morning that Tor wasn't a problem and that bandwidth wasn't an issue (especially between midnight and noon), that afternoon I came home after work to a nasty DMCA take-down notice and a frozen ISP account.  I could receive mail, but that was it, and so perforce had to deal with the sanction by phone...  Apparently someone had sent a bit torrent through my machine.  Some game... I'm no gamer.</p>
+
+<p>Well!  I steered everyone and their dog to the EFF's legal boilerplate, but it was only today that I finally reached someone who knew what they were talking about, Tech No. 2, and he informed me that Tor on a residential account was in itself a no-no.  And by then I no longer had the nous to contest the matter.  I had acted in good faith &amp; received bad information, and that was that.  Time to move on.  (He was very interested in the identity of Tech No. 1!)  </p>
+
+<p>You learn by doing.  Knowing then what I know now, I probably would have stuck with a humble relay or bridge node and stayed under the radar.  Parse your TOS's and AUP's well!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fkencf0618%20%28not%20verified%29&amp;do=goto">kencf0618 (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 01 Jul 2009 07:03:37 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-26384f86a7c83fa37f52da8426f1de89">
+
+<div class="comment-subject">
+
+Comment 19
+
+</div>
+
+<div class="inlinecontent">
+A local CableONE executive has admitted that their AUP is deliberately vague, but inasmuch as he hasn't told me what of Tor if anything I can run, I am currently running a bridge relay on occasion.  My reading of their AUP is that so long as I'm not degrading anyone's service or doing anything illegal, I'm good.  If I'm wrong, there's always Qwest!
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fkencf0618%20%28not%20verified%29&amp;do=goto">kencf0618 (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 11 Jul 2009 07:03:38 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d425ecbd61cb806ea91fa695578554ef">
+
+<div class="comment-subject">
+
+Comment 20
+
+</div>
+
+<div class="inlinecontent">
+<p>I truely believe what you did say here because I read most of the things you write.<br />
+But sometimes it just doesn't work for me.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FRunning%20%28not%20verified%29&amp;do=goto">Running (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 26 Jul 2009 07:03:39 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-e351b5bf5f73b5ed1951b6e871898c24">
+
+<div class="comment-subject">
+
+Comment 21
+
+</div>
+
+<div class="inlinecontent">
+<p>"Our non-US exit strategy was the outgrowth of an idea that seems to have been largely ignored by Tor developers."</p>
+
+<p>I may yet have to try that strategy.  I thought I had found a viable alternative by using the "excludeexitnodes" directive in torrc, but experimentation indicates that even after paring the excluded jurisdictions down to just one, the directive is still ignored more often than honored in the interests of building what tor considers to be a viable network.  That is not a complaint, just a results report from one experiment.  More to follow.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fbullwinkle%20the%20nouny%20moose%20%28not%20verified%29&amp;do=goto">bullwinkle the nouny moose (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 26 Jul 2009 07:03:40 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-d1d56b7f177675fd1bb4631b6cc16ea9">
+
+<div class="comment-subject">
+
+Comment 22
+
+</div>
+
+<div class="inlinecontent">
+Did you set ExitNodes {country code} and StrictExitNodes 1?  Also, was there an exit node that allowed exit to the ports you wanted at the time?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 29 Jul 2009 07:03:41 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-456da9900791b335c0fec002c3817d3a">
+
+<div class="comment-subject">
+
+Comment 23
+
+</div>
+
+<div class="inlinecontent">
+I may have taken the documentation of "StrictExitNodes" in the manual too literally, as it mentions its use only in conjunction with "ExitNodes", not "ExcludeExitNodes" (and yes, I do have that one coded correctly <img src="../../smileys/smile.png" alt=":-)" />  Thank you, that is worth a try.  Be right back...
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fitsmeagainamargaret%20%28not%20verified%29&amp;do=goto">itsmeagainamargaret (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 29 Jul 2009 07:03:42 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-bd51ef79919cf986f96c367f6493f0ae">
+
+<div class="comment-subject">
+
+Comment 24
+
+</div>
+
+<div class="inlinecontent">
+Unfortunately my first impression was correct.  Using "StrictExitNodes 1" with "ExcludeExitNodes {XX}" produces a log message "[Warning] StrictExitNodes set, but no ExitNodes listed."  Of course there is an obvious, if ludicrous alternative - use "StrictExitNodes 1" with "ExitNodes", passing the entire list of country codes except those to be excluded.  I've already coded the list (good thing that wasn't tedious <img src="../../smileys/smile.png" alt=":-)" />  It occurs to me to wonder if ExitNodes/torrc will accept an 800 char parameter string (246 each ISO 3166-1 alpha-2 codes x 4 chars [code + comma + space]).  I further wonder just how rigorously that part of teh code has been tested for bounds checking and buffer overflows :-0  I will learn at least some of those answers, I believe...
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fobsess%20much%3F%20%28not%20verified%29&amp;do=goto">obsess much? (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 29 Jul 2009 07:03:43 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-2c082d9d3f120e297dad7c4e8fdc5596">
+
+<div class="comment-subject">
+
+Comment 25
+
+</div>
+
+<div class="inlinecontent">
+No joy.  With 238 country codes specified on ExitNodes, the log message is "[Notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up."  Restoring the redacted country codes and/or changing "StrictExitNodes 1" to "StrictExitNodes 0" produces the same message.  Evidently it is choking on too long a parameter string, or the process is timing out while it attempts to process it (probably the latter).  I needed to try it though - thanks for the help.  I'm back to "ExcludeExitNodes {XX}" - at least Tor takes that one "under advisement" <img src="../../smileys/smile.png" alt=":-)" />
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FSquare%202%20%28not%20verified%29&amp;do=goto">Square 2 (not verified)</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 29 Jul 2009 07:03:44 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-14606dffd543d0e47e6555e17d828256">
+
+<div class="comment-subject">
+
+Comment 26
+
+</div>
+
+<div class="inlinecontent">
+<p>I used to run an exit node on a server hosted by intergenia (server4you), germany.</p>
+
+<p>I first got notified of a complaint they received reagrding botnet activity, so I restricted the outgoing ports to HTTP and a few similar only, as well as told them the usual (its running a TOR exit node, links to the FAQ and legal disclaimer, etc...)</p>
+
+<p>It went well for a couple of month, when they contacted me again, after receiving another complaint from a corporation that complained about "spying out information by electronic means" which is a crime since a couple of years ago.<br />
+the HTTP request in question was something like GET /internal/search?*.* HTTP/1.1<br />
+on port 80</p>
+
+<p>The ISP informed me that "regardles of who or what caused that traffic originally, I'd be legally responsible for traffic originating from my IP, and if they'd get any more complains they'd take the entire server of line at my cost, and terminate the contract."</p>
+
+<p>I am no lawyer, though this sounds pretty much like bullshit to me.<br />
+Nevertheless the TOR is no longer running as an exit node.<br />
+Does anyone know a hosting provider in germany that will accept open proxies and the like in their IP range?</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 07 Jan 2010 07:03:45 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-aadbda70b0fd3eced21267b12868f592">
+
+<div class="comment-subject">
+
+Comment 27
+
+</div>
+
+<div class="inlinecontent">
+I think the solution to the problem is simple. Use prepaid debit cards, pay monthly, and don't use your real name! They won't be able to come after you then. Nobody would have enough information to go after you at least. At least nobody with enough interest to. It wouldn't be a criminal matter. Setup the thing via a wifi connection at a coffee shop too because trying to go through Tor to sign-up for the ISP/host with get your account suspended from the get-go. Everybody thinks a foreign IP and/or changing IP means fraud.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 02 Aug 2010 07:03:46 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ab21bfe0c845b18e267f2235ce65f462">
+
+<div class="comment-subject">
+
+Comment 28
+
+</div>
+
+<div class="inlinecontent">
+Another option is to contact the CCC in Germany and see if the ISP's legal thoughts are correct.  In most countries, Tor is like a common carrier, where you are not responsible for the traffic it carries.  ISPs generally bend this into "your fault, not ours" and people accept it.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Sun 08 Aug 2010 07:03:47 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-54130a4d9a8a96550f2246c0a683d840">
+
+<div class="comment-subject">
+
+Comment 29
+
+</div>
+
+<div class="inlinecontent">
+Perhaps this will help, <a href="https://wiki.torproject.org/noreply/TheOnionRouter/GoodBadISPs" title="https://wiki.torproject.org/noreply/TheOnionRouter/GoodBadISPs" rel="nofollow">https://wiki.torproject.org/noreply/TheOnionRouter/GoodBadISPs</a>
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 07 Jan 2010 07:03:48 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a70ab357bd4ed6893099ab5455ec36cc">
+
+<div class="comment-subject">
+
+Comment 30
+
+</div>
+
+<div class="inlinecontent">
+Great tips. Tor is a traffic routing network. I personally have never experienced problems using the Tor Network. Generally, most computers that join Tor are good ones and have the intent to help others. Security is very important especially when it comes to your computer.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 20 Jan 2010 07:03:49 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-a85018adb29ccdcc86e9c9d5563c579f">
+
+<div class="comment-subject">
+
+Comment 31
+
+</div>
+
+<div class="inlinecontent">
+<p>Nice one..<br />
+I completely agree but I also think experimentation indicates that even after paring the excluded jurisdictions down to just one, the directive is still ignored more often than honored in the interests of building what tor considers to be a viable network.<br />
+online games </p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 13 Feb 2010 07:03:50 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-ab6d31bf1b660ce66bf259cfe603cd68">
+
+<div class="comment-subject">
+
+Comment 32
+
+</div>
+
+<div class="inlinecontent">
+<p>I have a question for you ExitNode experts.  There are only a few people who run ExitNodes for the whole of the UK.  So, as a tor user,  if I always exit through one of those, say, 10 nodes does that mean that I always appear to have one of 10 ip addresses to programs that would check for my ip address ?</p>
+
+<p>If the above is true then I would be surprised how easy it would be to ban those specific IPs as 'not really being trusted to only have people from the UK'.  Or is there some IP trickery built into tor that keeps the IPs more random ... </p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 24 Feb 2010 07:03:51 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-90bab00adf5ca230b639ba91fde94283">
+
+<div class="comment-subject">
+
+Comment 33
+
+</div>
+
+<div class="inlinecontent">
+The ExitNode sends the final request, so the ExitNode's IP is what is seen. If they are all blocked you're out of luck.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Wed 24 Feb 2010 07:03:52 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-580ff617dbcc233683e2a0c773950302">
+
+<div class="comment-subject">
+
+Comment 34
+
+</div>
+
+<div class="inlinecontent">
+<p>Good article!!!!!!! Also the port 8088 is sometimes used for HTTP!!!!!</p>
+
+<p>However, and i wrote this to the TorProject, there is the threat of ACTA on coming!!!! remember!?!!! «If it'll pass, you won't have anymore a safe harbor nor anything to protect tor nodes whenever they're used to download copyrighted things!!!!! It isn't something like the DMCA!!!!! It's a world-wide law (or almost!!) so it'll apply in the USA, Europe (Sweden and Germany included!!), Australia, Japan, and so on!!!!!!<br />
+What's also funny, is that criticizing the pro-copyright (or anti-piracy) laws will be "illegal" too!!!!!!!!!!!!! It's the freedom of speech, as seen from lobbyists!!!!!<br />
+Yeah!!! Say goodbye to the TorProject, if ACTA will go through!!!!!»</p>
+
+<p>http://honeybeenet.phpbb3now.com/viewtopic.php?f=8&amp;t=285</p>
+
+<p>~bee!!!!!!!</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 01 Jul 2010 07:03:53 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-7adda887300ec8147341830337679955">
+
+<div class="comment-subject">
+
+Comment 35
+
+</div>
+
+<div class="inlinecontent">
+Tor won't go away.  The Tor Project, inc as a non-profit may have to cease to exist in the USA, but Tor won't go away.  Just like I2P, FreeNet, etc won't go away either.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 01 Jul 2010 07:03:54 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-55c75b4a0a60709bbf64ffe3633a7761">
+
+<div class="comment-subject">
+
+Comment 36
+
+</div>
+
+<div class="inlinecontent">
+Is it normal for an exit node to only use 1/3rd of the bandwidth available? What would prevent tor from using all the available bandwidth?
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 01 Jul 2010 07:03:55 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-c7a57d40c19be33123d5aa27ea45503c">
+
+<div class="comment-subject">
+
+Comment 37
+
+</div>
+
+<div class="inlinecontent">
+Give it time, clients will find it and use it.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fphobos&amp;do=goto">phobos</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 02 Jul 2010 07:03:56 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-9a1ffa798af045f57244f60f0c47bdfb">
+
+<div class="comment-subject">
+
+Comment 38
+
+</div>
+
+<div class="inlinecontent">
+For we Windows uses that are not high tech as opposed to lazy --- How do we tell if the IP provider might be a problem? I have been running two bridges for a year and every so often the just stop showing any traffic. I have found the only way to get them going again is to uninstall the program and reinstall it. Yes I know I have been told I shouldn't have to do that but for now it that or just quit.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 03 Jul 2010 07:03:57 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-be217692af85dc9650c2d84518c974ad">
+
+<div class="comment-subject">
+
+Comment 39
+
+</div>
+
+<div class="inlinecontent">
+Suffice to say, the EFF runs a relay, and so do I; CableOne has a three-strikes policy, and furthermore at the second and third strikes you have to deal, not with help desk morons by phone, but with lawyers by snail mail.  I wish I had had some of the fresher salient information in this thread a year ago, but as it is, a tip of the hat to those running exit nodes...!   (kencf0618)
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 03 Jul 2010 07:03:58 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-6c50bb2197d367c15f6b34538a72d769">
+
+<div class="comment-subject">
+
+Comment 40
+
+</div>
+
+<div class="inlinecontent">
+How do we tell if the IP provider might be a problem? I have been running two bridges for a year and every so often the just stop showing any traffic. I have found the only way to get them going again is to uninstall the program and reinstall it.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Thu 08 Jul 2010 07:03:59 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-36d61987c5d6b4989856aebd659f3817">
+
+<div class="comment-subject">
+
+Comment 41
+
+</div>
+
+<div class="inlinecontent">
+It's not the IP provider. And you meant to say ISP. It's something with your computer that is screwy it would appear most likely. Even if it isn't and it does haves something to do elsewhere it isn't the ISP. That's about the only thing you can be sure of. 
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 02 Aug 2010 07:04:00 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-586742aa4e82ed78a96dbe17a77dd445">
+
+<div class="comment-subject">
+
+Comment 42
+
+</div>
+
+<div class="inlinecontent">
+you should check your provider list. some of them forbid the use of their servers for tor and other anonymization systems.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 09 Aug 2010 07:04:01 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-3c8ce604265de50dec99faec07522cbb">
+
+<div class="comment-subject">
+
+Comment 43
+
+</div>
+
+<div class="inlinecontent">
+That thing about the separate IPs is helpful. It would also mean that you wouldn't experience slow-down.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Sat 11 Sep 2010 07:04:02 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-00831dae352100b3fdc92f6f499b6929">
+
+<div class="comment-subject">
+
+Comment 44
+
+</div>
+
+<div class="inlinecontent">
+I just had to shut down my exit node due to DMCA complaints for bittorrent traffic. My exit node received 7 DMCA complaints within two months. After the first two, I restricted my exit policy just slightly more open than what's listed in this article, but still pretty limited. That delayed the next couple complaints, but they kept coming. The provider was very understanding, but were getting pressure from their upstream provider. I know it's a necessary evil, but the bittorrent traffic really hurts the tor network.
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 17 Sep 2010 07:04:03 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-381cc8180ef7378b877960f383349ec0">
+
+<div class="comment-subject">
+
+Comment 45
+
+</div>
+
+<div class="inlinecontent">
+<p>The key thing about the ports listed here is that there are only ~60 of them, which represent the 60 most commonly used ports. This drastically reduces the odds that a bittorrent user will select your node. </p>
+
+<p>Since bittorrent clients can be run on any port, and most of them pick random ports, every port you add to your exit policy increases the probability of a bittorrent client using your exit node to connect to a monitored peer that is listening on that port. This means that enabling ranges of ports is especially bad, unfortunately. Each new port adds 1/65535 to your risk of getting DMCA takedowns.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2Fmikeperry&amp;do=goto">mikeperry</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 29 Nov 2010 07:04:04 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-889cf4508931d186ce66f0909081d428">
+
+<div class="comment-subject">
+
+Comment 46
+
+</div>
+
+<div class="inlinecontent">
+can someone help me in how use ExcludeExitNode and ExitNode in my toorc file..??StrictExitNode???? 
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Mon 07 Feb 2011 07:04:05 AM CST</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-82a14a0977981b83657907244fe0c2f7">
+
+<div class="comment-subject">
+
+Comment 47
+
+</div>
+
+<div class="inlinecontent">
+<p>I too am in the same situation.  There is very little documentation on the subject.  From what I can see, one simply adds ExcludeExitNodes 255.255.255.2,255.255.255.3 ... to thier torrc config file.  No matter what I do I just cant get this to work.  Tor continues to use the Excluded Exit nodes.  </p>
+
+<p>Here's what I do,<br />
+Add ExcludeExitNode XXX.XXX.XXX.XXX to my torrc file.<br />
+Restart Tor<br />
+run SIGNAL NEWNYM<br />
+Check my external IP</p>
+
+<p>Nothing say 1 in every 5 goes, TOR will use the IP I specified in ExcludeExitNode.  WTF?  Any help on this would be greatly appreciated.</p>
+
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Tue 15 Mar 2011 07:04:06 AM CDT</span>
+</div>
+
+
+
+</div>
+<div class="comment" id="comment-5522617ca27ef6631684bcc019b66877">
+
+<div class="comment-subject">
+
+Comment 48
+
+</div>
+
+<div class="inlinecontent">
+I've been running a relay and a bridge relay continually since my last comment (in July 2010) without any trouble whatsoever.  Not a peep from anyone.  Given that my ISP  doesn't want to deal with the DMCA legal paper overhead, and just cuts you off at the knees if they get a take-down notice, I'm sticking with what works.  I'm not front line, exit node troop, I'm a stable segment in the logistical tail. (kencf0618)           
+
+</div>
+
+<div class="comment-header">
+
+Comment by
+
+<span class="author" title="Signed in">
+
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=%2Fhome%2Fjmt%2Fblog%2Fusers%2FAnonymous&amp;do=goto">Anonymous</a>
+
+</span>
+
+
+&mdash; <span class="date">Fri 18 Feb 2011 07:04:07 AM CST</span>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="addcomment">
+<a href="http://localhost/jmtodaro/tor/blog/ikiwiki.cgi?page=posts%2FTips_for_Running_an_Exit_Node_with_Minimal_Harassment&amp;do=comment">Add a comment</a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<div id="footer" class="pagefooter">
+
+<div id="pageinfo">
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="pageinfo2">
+<div class="pagedate">
+Last edited <span class="date">Tue 05 Apr 2011 07:03:19 AM CDT</span>
+<!-- Created <span class="date">Wed 30 Jun 2010 07:08:08 PM CDT</span> -->
+</div>
+<div class="iki">This blog is powered by <a href="http://ikiwiki.info">ikiwiki</a>.</div>
+</div>
+
+<!-- from The Tor Blog -->
+
+    	<div class="onion"><img src="http://torproject.org/images/onion.jpg" alt="Tor" width="78" height="118"></div>
+      <div class="about">
+	<p>"Tor" and the "Onion Logo" are registered trademarks of
+	<a href="docs/trademark-faq.html.en">The Tor Project, Inc.</a>
+
+	Content on this site is licensed under a <a
+	href="http://creativecommons.org/licenses/by/3.0/us/">Creative
+	Commons Attribution 3.0 United States License</a>, unless
+	otherwise noted.</p>
+<!--
+        Last modified: Fri 01 Apr 2011 13:31:50 -0400
+        Last compiled: Fri Apr 01 2011 16:05:07 -0400
+-->
+      </div>
+      <!-- END ABOUT -->
+      <!-- WE HAVE NO NEWSLETTER SO REMOVE THIS
+      <div class="newsletter">
+        <form action="">
+          <input class="textfield" type="text" name="email" value="Sign up for our newsletter! Enter email." onClick="clearDefault(this);">
+          <input class="signup" type="submit" name="submit" value="Sign Up">
+        </form>
+      </div>
+      END NEWSLETTER -->
+      <div class="col first">
+      	<h4>About Tor</h4>
+
+        <ul>
+          <li><a href="about/overview.html.en">What Tor Does</a></li>
+          <li><a href="about/torusers.html.en">Users of Tor</a></li>
+          <li><a href="about/corepeople.html.en">Core Tor People</a></li>
+          <li><a href="about/sponsors.html.en">Sponsors</a></li>
+          <li><a href="about/contact.html.en">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+      <div class="col">
+      	<h4>Get Involved</h4>
+        <ul>
+          <li><a href="donate/donate.html.en">Donate</a></li>
+          <li><a href="docs/documentation.html.en#MailingLists">Mailing List</a></li>
+
+          <li><a href="getinvolved/mirrors.html.en">Mirrors</a></li>
+          <li><a href="docs/hidden-services.html.en">Hidden Services</a></li>
+          <li><a href="getinvolved/translation.html.en">Translations</a></li>
+          <li><a href="getinvolved/open-positions.html.en">Careers</a></li>
+        </ul>
+      </div>
+      <!-- END COL -->
+
+      <div class="col">
+      	<h4>Documentation</h4>
+        <ul>
+          <li><a href="docs/tor-manual.html.en">Manuals</a></li>
+          <li><a href="docs/documentation.html.en">Installation Guides</a></li>
+          <li><a href="https://trac.torproject.org/projects/tor/wiki/">Tor Wiki</a></li>
+          <li><a href="docs/faq.html.en">General Tor FAQ</a></li>
+
+        </ul>
+      </div>
+      <!-- END COL -->
+	<!-- List available languages -->
+	<div class="col wider">
+	<h4>Languages</h4>
+		<p>
+		This page is also available in the following languages:
+		<a href="index.html.ar">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</a>, <a href="index.html.it">Italiano</a>, <a href="index.html.pl">polski</a>.<br>
+
+		How to set <a href="http://www.debian.org/intro/cn#howtoset">the default document language</a>.
+		</p>
+	</div>
+<!-- LANGUAGE SWITCH CGI
+      <div class="col wider">
+      	<h4>Languages</h4>
+        <form action="./cgi-bin/languageswitch.cgi">
+          <select name="Language" id="lang">
+          <option value="./index.html.ar" onclick="window.location='index.html.ar'">&#1593;&#1585;&#1576;&#1610;&#1577;&nbsp;(Arabiya)</option>
+<option value="./index.html.en" onclick="window.location='index.html.en'">English</option>
+<option value="./index.html.pl" onclick="window.location='index.html.pl'">polski</option>
+<option value="./index.html.it" onclick="window.location='index.html.it'">Italiano</option>
+          </select>
+          <input class="go" type="submit" name="submit" value="Go">
+        </form>
+        <p>Questions on this? Visit <a href="http://www.debian.org/intro/cn#howtoset">how to set the default document language</a>.</p>
+      </div>
+-->
+
+
+</div>
+
+</div>
+
+</body>
+</html>

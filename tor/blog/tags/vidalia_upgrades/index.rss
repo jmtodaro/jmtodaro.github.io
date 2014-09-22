@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged vidalia_upgrades</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/vidalia_upgrades/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Tor Browser Bundle Updates</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_Updates/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_Updates/</link>
+
+
+	<category>/tags/bug_fixes</category>
+
+	<category>/tags/tor_browser_bundle</category>
+
+	<category>/tags/vidalia_upgrades</category>
+
+	<category>/tags/zero_install_bundle</category>
+
+
+	<pubDate>Tue, 01 Jun 2010 14:11:31 -0500</pubDate>
+	<dcterms:modified>2011-04-05T11:58:14Z</dcterms:modified>
+
+	<description>&lt;p&gt;On May 26, Tor Browser Bundle for Microsoft Windows is updated to include the newer Vidalia 0.2.9.  This fixes some issues with character set handling, and adds Vietnamese as a new language.&lt;/p&gt;
+
+&lt;p&gt;On May 31, we released Tor Browser Bundle for Linux 1.0.6.  It contains the following updates:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add arch to tarball name so there&#39;s no collision&lt;/li&gt;
+&lt;li&gt;Add libpng for Arch Linux&lt;/li&gt;
+&lt;li&gt;Add HTTPS Everywhere extension&lt;/li&gt;
+&lt;li&gt;Update Qt to 4.6.2&lt;/li&gt;
+&lt;li&gt;Update Vidalia to 0.2.9&lt;/li&gt;
+&lt;li&gt;Update NoScript to 1.9.9.80&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;On June 1st, we released Tor Browser Bundle for Linux 1.0.7.  It uses an older glibc for better compatibility with older linux distributions.&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Tor_Browser_Bundle_Updates/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

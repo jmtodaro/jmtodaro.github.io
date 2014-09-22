@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>pages tagged tor_is_benign</title>
+<link>http://localhost/jmtodaro/tor/blog/tags/tor_is_benign/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>phobos: Five Years as an Exit Node Operator</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/Five_Years_as_an_Exit_Node_Operator/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/Five_Years_as_an_Exit_Node_Operator/</link>
+
+
+	<category>/tags/exit_node</category>
+
+	<category>/tags/exit_relay</category>
+
+	<category>/tags/hugging_dmca_notices</category>
+
+	<category>/tags/operator_experiences</category>
+
+	<category>/tags/tor_is_benign</category>
+
+
+	<pubDate>Mon, 10 Nov 2008 23:50:57 -0600</pubDate>
+	<dcterms:modified>2011-04-05T11:14:26Z</dcterms:modified>
+
+	<description>&lt;p&gt;The official version of &lt;a href=&quot;https://www.torproject.org/faq-abuse.html.en#TypicalAbuses&quot; rel=&quot;nofollow&quot;&gt;&quot;What to expect&quot;&lt;/a&gt; when running a Tor exit relay is fairly brief.  This post will be verbose.  &lt;/p&gt;
+
+&lt;p&gt;I&#39;ve been running a node since 2003.  I first started off running a node in Xen on a server at a colocation datacenter with an un-metered line.  The dual Xeon kept up with the demands fairly well.  I ran it with the default exit policy with open irc ports.  Things went smoothly for many months until my ISP called.  The Abuse Department said my IP was reported in a mass irc bot attack against &lt;a href=&quot;http://www.dal.net/&quot; rel=&quot;nofollow&quot;&gt;DalNet&lt;/a&gt;.  I spent some time on the phone  explaining Tor, explaining how it&#39;s an anonymizing proxy, and how it&#39;s used for good in the world.  I highlighted that of the megabits of bandwidth it provided 7x24 for many months, this was the first issue.  They asked that I block irc ports, and all would be well.  I modified the exit policy to block irc ports.  &lt;/p&gt;
+
+&lt;p&gt;Many more months passed without issue.  Apparently, given the lax bandwidth controls, many other customers ran Tor exit nodes as well.  The ISP updated their Terms of Service, and notified all of us that running any proxy was now in violation of the ToS.  This meant I was at risk of disconnection.  I switched to a non-exit configuration.  I ran this way for months. I knew full well I was violating the ToS.  If I was disconnected, it was my fault. Then the ISP was bought; and the new owners demanded I shut off my Tor node or be disconnected.  It was fun while it lasted.&lt;/p&gt;
+
+&lt;p&gt;Welcome to 2005.  New ISP, same nickname, different server, same non-exit Tor configuration.  Tor loved the dual opteron cpus.  The difference in cpu load was dramatic.  The load before was 40-50% cpu for &quot;NumCPU 2&quot; on the dual Xeons.  On the dual Opterons, the load was 5-10%.  Same non-exit config.  Same version of Tor.  Different hardware, newer version of the OS (Redhat 4 as opposed to CentOS 3). &lt;span class=&quot;read-more&quot;&gt;&lt;a href=&quot;http://blog.torproject.org/blog/five-years-exit-node-operator&quot;&gt;&lt;strong&gt;read&amp;nbsp;more&amp;nbsp;&amp;raquo;&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+
+
+	<comments>http://localhost/jmtodaro/tor/blog/posts/Five_Years_as_an_Exit_Node_Operator/#comments</comments>
+
+</item>
+
+</channel>
+</rss>

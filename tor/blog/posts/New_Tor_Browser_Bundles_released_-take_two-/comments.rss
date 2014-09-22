@@ -1,0 +1,699 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/" >
+<channel>
+<title>New Tor Browser Bundles released (take two)</title>
+<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/</link>
+<description>The Tor Blog</description>
+<item>
+
+	<title>Anonymous: Comment 1</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_1/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_1/</link>
+
+	<pubDate>Fri, 29 Oct 2010 07:10:32 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:10:32Z</dcterms:modified>
+
+	<description>&lt;p&gt;Linux bundle issue is still not fixed. &lt;/p&gt;
+
+&lt;p&gt;Launching Tor Browser Bundle for Linux in /home/.../&lt;br /&gt;
+No protocol specified&lt;br /&gt;
+vidalia: cannot connect to X server :0.0&lt;/p&gt;
+
+&lt;p&gt;Exited cleanly. Goodbye.&lt;/p&gt;
+
+&lt;p&gt;Then error while trying to start vidalia:&lt;br /&gt;
+error while loading shared libraries: libssl.so.0.9.8: cannot open shared object file: No such file or directory - This is reason propably. Vidalia can&#39;t find libssl included in this bundle and libssl in my system is 1.0.0. Please fix it.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 2</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_2/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_2/</link>
+
+	<pubDate>Fri, 29 Oct 2010 07:10:33 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:10:33Z</dcterms:modified>
+
+	<description>Are you guys going to fix the problem with the Mac Tor Browser Bundle not always opening the browser (only Vidalia opens)? Half the time the browser opens, the other half not. I have to relaunch it several times to get the browser to open. It is rather annoying. Note that if you install a new extension and click the &quot;restart firefox to use this extension&quot; (or however they phrase it), it also does not re-open most (all?) of the time. These are some pretty big oversights... in any case, thanks for supporting the Mac platform, and I hope it Tor improves on it! [I&#39;m using 10.6.4 w/ all updates on a 2010 Macbook Pro]
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 3</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_3/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_3/</link>
+
+	<pubDate>Sat, 30 Oct 2010 07:10:34 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:10:34Z</dcterms:modified>
+
+	<description>it can not be used in china
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 4</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_4/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_4/</link>
+
+	<pubDate>Sat, 30 Oct 2010 07:10:35 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:10:35Z</dcterms:modified>
+
+	<description>&lt;p&gt;I just tested Windows Tor Browser (non-IM) bundle v1.3.11 and v1.3.12, along with double checking two older versions of Tor Browser v1.3.5 and 1.3.9 and an installed version of Firefox v3.6.12.  The result is at last one glaring configuration error in NoScript Firefox extension and at least three possible problems of the Firefox add-on variety:&lt;/p&gt;
+
+&lt;p&gt;Tor Browser v.1.3.11 and 1.3.12:&lt;/p&gt;
+
+&lt;p&gt;A). NoScript Firefox extension: it is shipping in Tor Browser with global setting of allowing all scripts!&lt;/p&gt;
+
+&lt;p&gt;B). The three following Firefox add-ons are all *not* disabled:&lt;/p&gt;
+
+&lt;p&gt;1. Extension: Java Quick Starter v1.0&lt;br /&gt;
+2. Extension: Microsoft .Net Framework Assistant v0.0.0&lt;br /&gt;
+3. Plugin: Mozilla Default Plugin 1.0.0.15 (npnul32.dll)&lt;/p&gt;
+
+&lt;p&gt;In previous Tor Browser releases (e.g. 1.3.5, 1.3.9, and others) the Java Quick-Starter extension has been disabled by default.  In the two most recent versions of Tor Browser (v1.3.11 and v1.3.12) the Firefox extensions Java Quick Starter and .Net Framework are not disabled.  When loading the extensions under &quot;Tools &amp;gt; Add-ons&quot;, the buttons &quot;options&quot; and &quot;uninstall&quot; are grayed-out, but the button &quot;disable&quot; is not grayed-out.  If I click the &quot;disable&quot; button of either extension the extension is disabled and the button changes to &quot;Enable&quot;.&lt;/p&gt;
+
+&lt;p&gt;IIRC the Java Quick Starter extension was the only local system-installed extension Tor Browser used to disable by default.  The .Net Framework extension is new with the newest version of .Net Framework I think, because I just installed and updated .Net Framework a few days ago. &lt;/p&gt;
+
+&lt;p&gt;I am not sure about the Mozilla Default Plugin.  I looked under &quot;about:plugins&quot; (in Firefox) and nothing was listed; thus I am wondering why it&#39;s listed under the add-on&#39;s window.&lt;/p&gt;
+
+&lt;p&gt;C). The extensions NoScript and BetterPrivacy are not listed under &quot;Tools &amp;gt; Add-ons &amp;gt; Extensions&quot;.  This is not the behavior of Tor Browser 1.3.5 or 1.3.9 (and other versions), and is not the behavior of installed Firefox 3.6.12 (and other versions).  That means one can not uninstall an extension, or easily configure them, or update them (apparently).&lt;/p&gt;
+
+&lt;p&gt;D). The current version of NoScript at Mozilla as of 2010-10-30 is 2.0.4, but the current versions of Tor Browser (v1.3.11 and v1.3.12) are shipping with NoScript 2.0.3.2 that released last month (2010-9-22).&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 5</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_5/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_5/</link>
+
+	<pubDate>Mon, 08 Nov 2010 07:10:36 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:10:36Z</dcterms:modified>
+
+	<description>&lt;p&gt;This is the same person who wrote the message above.  Will no one (psst. Erinn) answer me?  &lt;/p&gt;
+
+&lt;p&gt;Why is NoScript set to globally allow all scripts!?!  Why include it if it&#39;s neutered!?!&lt;/p&gt;
+
+&lt;p&gt;Also, what about the extensions and add-on&#39;s I wrote about that should *not* be enabled by default!?!&lt;/p&gt;
+
+&lt;p&gt;It&#39;s been enough time (days) for me to get a response, and yet...nothing.  Why no response to these very valid concerns?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>erinn: Comment 6</title>
+	<dcterms:creator>erinn</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_6/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_6/</link>
+
+	<pubDate>Fri, 12 Nov 2010 07:10:37 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:10:37Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hi, apologies for not responding to this sooner. I&#39;ve been traveling and the blog software doesn&#39;t notify authors of replies to their posts. If you want faster replies to bugs you should file them on our bug tracker (&lt;a href=&quot;https://trac.torproject.org&quot; title=&quot;https://trac.torproject.org&quot; rel=&quot;nofollow&quot;&gt;https://trac.torproject.org&lt;/a&gt;) rather than on the blog.&lt;/p&gt;
+
+&lt;p&gt;To be honest, I&#39;m not sure why those plugins are not disabled. I&#39;m not doing anything differently, but maybe FirefoxPortable is. That is extremely worrying, so I&#39;ll look into it. I need to put out a new Windows bundle soon with some other fixes too. &lt;/p&gt;
+
+&lt;p&gt;NoScript might be worth kicking out of the Windows bundle altogether. It seems like a lot more trouble than it&#39;s worth. It was originally added to allow users to toggle JavaScript and to provide click-to-play placeholders for when users want to set Torbutton to enable plugins. But mostly it just seems to be pissing everyone off. &lt;/p&gt;
+
+&lt;p&gt;In any case, thanks for your very thorough report and I apologize again for not seeing it sooner.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 7</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_7/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_7/</link>
+
+	<pubDate>Tue, 02 Nov 2010 07:10:38 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:10:38Z</dcterms:modified>
+
+	<description>You need a better changelog than that.  I was mighty confused when NoScript was added and I didn&#39;t remember being the one to add it.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 8</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_8/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_8/</link>
+
+	<pubDate>Mon, 08 Nov 2010 07:10:39 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:10:39Z</dcterms:modified>
+
+	<description>&lt;p&gt;I agree 100%.  I am not sure why TBB has gone down hill in the past two releases...&lt;/p&gt;
+
+&lt;p&gt;Erinn, please respond to us.  Letting us sit here without a response to valid points/questions is not polite at all.  &lt;/p&gt;
+
+&lt;p&gt;FWIW, I am the same person who wrote the issues about NoScript globally allowing all scripts and issues with Java Quick Starter, etc.&lt;/p&gt;
+
+&lt;p&gt;Erinn, or Phobos, *please* respond to us!&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 9</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_9/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_9/</link>
+
+	<pubDate>Wed, 03 Nov 2010 07:10:40 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:10:40Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hello,&lt;/p&gt;
+
+&lt;p&gt;both Avira and Kaspersky report a trojan here:&lt;br /&gt;
+\Tor Browser\PidginPortable\App\Pidgin\plugins\libaim.dll&lt;br /&gt;
+    [DETECTION] Is the TR/Swisyn.apoj Trojan&lt;/p&gt;
+
+&lt;p&gt;False positive ?&lt;/p&gt;
+
+&lt;p&gt;Thank you.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 10</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_10/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_10/</link>
+
+	<pubDate>Thu, 04 Nov 2010 07:10:41 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:10:41Z</dcterms:modified>
+
+	<description>FYI, the OSX bundles appear to be missing.
+</description>
+
+
+</item>
+<item>
+
+	<title>erinn: Comment 11</title>
+	<dcterms:creator>erinn</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_11/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_11/</link>
+
+	<pubDate>Fri, 12 Nov 2010 07:10:42 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:10:42Z</dcterms:modified>
+
+	<description>I checked this and they are there for me. What link are you trying?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 12</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_12/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_12/</link>
+
+	<pubDate>Thu, 04 Nov 2010 07:10:43 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:10:43Z</dcterms:modified>
+
+	<description>what hapend with onionforum?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 13</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_13/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_13/</link>
+
+	<pubDate>Fri, 05 Nov 2010 07:10:44 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:10:44Z</dcterms:modified>
+
+	<description>Is possible to write net driver to VirtualBox. All connections trought tor?
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 14</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_14/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_14/</link>
+
+	<pubDate>Fri, 05 Nov 2010 07:10:45 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:10:45Z</dcterms:modified>
+
+	<description>I have a big problem when I do use TOR to access  my YouTube  account since Wednesday night . I can access my Inbox but I cannot see my PMs , friend invites &amp;amp;...  , also I cannot comment &amp;amp; I cannot change my channel BG &amp;amp;... since wednesday night because those buttons don&#39;t work! , I had no problem with youtube &amp;amp; Tor before wednesday night . I have no problem with other websites . this problem is not from YouTube because I have no problem with YT when I use ultrasurf , but I like to use TOR .  Please Help me 
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 15</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_15/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_15/</link>
+
+	<pubDate>Sun, 07 Nov 2010 07:10:46 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:10:46Z</dcterms:modified>
+
+	<description>I&#39;m having same problem on youtube since last 3 or 4 days at least. I can sign IN and OUT, but that&#39;s all. Can&#39;t even get the drop down menu from my (upper right) channel button to get INto my inbox. Explorer, mozilla browsers both work, but with Tor activated, I have this trouble on You Tube.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 16</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_16/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_16/</link>
+
+	<pubDate>Fri, 21 Jan 2011 07:10:47 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:10:47Z</dcterms:modified>
+
+	<description>Same with me, I am using Tor browser and I cant even watch youtube videos it says upgrade to higher flash or install missing plug-ins I did those but same results. No yahoomails and no messenger. I really am a newbie with tunneling, but the only thing I am enjoying is that I have free net without paying bills using Tor browser.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 17</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_17/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_17/</link>
+
+	<pubDate>Fri, 05 Nov 2010 07:10:48 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:10:48Z</dcterms:modified>
+
+	<description>&lt;p&gt;Hello,&lt;br /&gt;
+question for the Website:&lt;br /&gt;
+Why is the new Download-site so ugly confused?&lt;br /&gt;
+Only for me ?&lt;/p&gt;
+
+&lt;p&gt;Why have the manual, manual-dev no change-date ?&lt;/p&gt;
+
+&lt;p&gt;Greetings&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 18</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_18/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_18/</link>
+
+	<pubDate>Fri, 05 Nov 2010 07:10:49 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:10:49Z</dcterms:modified>
+
+	<description>&lt;p&gt;&quot;I had no problem with youtube &amp;amp; Tor before wednesday night .&quot;&lt;/p&gt;
+
+&lt;p&gt;If that&#39;s true, there was &lt;i&gt;probably something wrong in the first place,&lt;/i&gt; but the addition of NoScript (as noted above) will block flash, for sure. Right-click on the (S) icon on your status bar for options. It will let you disable all sorts of protection there. Might as well use Chrome for that matter.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 19</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_19/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_19/</link>
+
+	<pubDate>Tue, 09 Nov 2010 07:10:50 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:10:50Z</dcterms:modified>
+
+	<description>No dear , it doesn&#39;t work . also I have older tor browsers ( from 1.3.0 to 1.3.12 ) but the problem still exists!!!
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 20</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_20/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_20/</link>
+
+	<pubDate>Sat, 06 Nov 2010 07:10:51 -0500</pubDate>
+	<dcterms:modified>2011-04-05T12:10:51Z</dcterms:modified>
+
+	<description>&lt;p&gt;I downloaded it, started, ran portable Firefox and?&lt;/p&gt;
+
+&lt;p&gt;504 Connect to www.l6nvqsqivhrunqvs.onion:80 failed: General SOCKS server failure&lt;/p&gt;
+
+&lt;p&gt;How to fix it?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 21</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_21/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_21/</link>
+
+	<pubDate>Mon, 08 Nov 2010 07:10:52 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:10:52Z</dcterms:modified>
+
+	<description>Just try again.  504 is a temporary error you can get if the site isn&#39;t responding.  It&#39;s not Tor&#39;s fault.  
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 22</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_22/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_22/</link>
+
+	<pubDate>Mon, 08 Nov 2010 07:10:53 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:10:53Z</dcterms:modified>
+
+	<description>&lt;p&gt;Sugestion:&lt;br /&gt;
+Make DuckDuckGo the default search engine:&lt;br /&gt;
+http://3g2upl4pq6kufc4m.onion/&lt;/p&gt;
+
+&lt;p&gt;Also works without JavaScript:&lt;br /&gt;
+http://3g2upl4pq6kufc4m.onion/html&lt;/p&gt;
+
+&lt;p&gt;And even as lite (=fast) version:&lt;br /&gt;
+http://3g2upl4pq6kufc4m.onion/lite&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 23</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_23/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_23/</link>
+
+	<pubDate>Wed, 10 Nov 2010 07:10:54 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:10:54Z</dcterms:modified>
+
+	<description>&lt;p&gt;Several issues same as above.  Latests script for Tor Browser falls down just as previous one did and as reported in Oct 29th comment.  Because of this I installed Tor and Polipo as per installation instructions and achieved successful operation of Torbutton in Firefox with test link successful.&lt;/p&gt;
+
+&lt;p&gt;Noscript appeared to be running at the same time.  &lt;/p&gt;
+
+&lt;p&gt;Following shut down and start up the next day and I cannot connect to wan with torbutton enabled.  I get Proxy error 504 connection refused.  Any ideas what is wrong please.&lt;br /&gt;
+BTW why is there no forum for Tor?&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 24</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_24/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_24/</link>
+
+	<pubDate>Thu, 11 Nov 2010 07:10:55 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:10:55Z</dcterms:modified>
+
+	<description>I have the same problem with Youtube too, all those button does not works anymore. At first I thought it was my TOR that was outdated (ver 1.3.9) and came here to get the latest out of it, but i was wrong.. the problem still persist.. I even tried to mess up with polipo config with no luck
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 25</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_25/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_25/</link>
+
+	<pubDate>Sat, 13 Nov 2010 07:10:56 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:10:56Z</dcterms:modified>
+
+	<description>&lt;p&gt;I posted this comment &quot; I have a big problem when I do use TOR to access my YouTube account since Wednesday night ... &quot;&lt;/p&gt;
+
+&lt;p&gt;but I solved the problem . this problem is because of firefox&#39;s new versions . I unistalled firefox 3.6.12 then I downloaded this old version &lt;/p&gt;
+
+&lt;p&gt;http://www.oldapps.com/firefox.php?old_firefox=59?download&lt;/p&gt;
+
+&lt;p&gt;you can download 3.0.19 too but disable update for firefox&lt;/p&gt;
+
+&lt;p&gt;then I downloaded &quot;tor button&quot; &amp;amp; dragged it into the firefox browser , then I started TOR using vidalia before starting the old version of firefox with its TOR button . my problem has been solved . also I can watch youtube videos &amp;amp; other videos with TOR just like before . Go to tools - add-ons - torbutton options - security settings - dynamic content then uncheck disable plugins , isolate dynamic &amp;amp; hook dangerous  then restart firefox , now you can watch youtube videos &amp;amp; other videos too! &lt;img src=&quot;http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/../../smileys/smile.png&quot; alt=&quot;:-)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;TOR is the BEST&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 26</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_26/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_26/</link>
+
+	<pubDate>Thu, 11 Nov 2010 07:10:57 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:10:57Z</dcterms:modified>
+
+	<description>&lt;p&gt;My experience has been that after one successful session using torbutton in Firefox it no longer works as described:  If I tor enable using tor button this turns green but I get the connection refused error message.  &lt;/p&gt;
+
+&lt;p&gt;I have now installed vidalia and if I start Tor using vidalia before starting Firefox I can toggle the torbutton and, when enabled, tor works fine.&lt;/p&gt;
+
+&lt;p&gt;Strange because it did work once without vidalia being installed.  Any ideas? &lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 27</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_27/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_27/</link>
+
+	<pubDate>Fri, 12 Nov 2010 07:10:58 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:10:58Z</dcterms:modified>
+
+	<description>The issues with Youtube was actually cause by Polipo. I tried Tor with Privoxy and it works flawlessly. There might be some reencoding bugs with Polipo when it come to some new scripting web interface like Youtube etc.
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 28</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_28/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_28/</link>
+
+	<pubDate>Mon, 15 Nov 2010 07:10:59 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:10:59Z</dcterms:modified>
+
+	<description>&lt;p&gt;no longer works as described: If I tor enable using tor button this turns green but I get the connection refused error message.&lt;br /&gt;
+Youtube was actually cause by Polipo.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 29</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_29/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_29/</link>
+
+	<pubDate>Sun, 28 Nov 2010 07:11:00 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:11:00Z</dcterms:modified>
+
+	<description>Can I download tor and only use it with firefox and not internet explorer. I have xp and both browsers installed, and watch a lot of tv online. I heard tor could slow streaming down.. Thanks
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 30</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_30/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_30/</link>
+
+	<pubDate>Tue, 07 Dec 2010 07:11:01 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:11:01Z</dcterms:modified>
+
+	<description>&lt;p&gt;Intel Mac, OSX 10.6.5&lt;br /&gt;
+Tor bundle works fine from anywhere on my local disk. However, I want it to run off a usb drive. From the drive, Vidalia shuts down as soon as it opens, without any sort of error message. The usb drive has no spaces in its name.&lt;/p&gt;
+
+</description>
+
+
+</item>
+<item>
+
+	<title>Anonymous: Comment 31</title>
+	<dcterms:creator>Anonymous</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_31/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_31/</link>
+
+	<pubDate>Tue, 01 Mar 2011 07:11:02 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:11:02Z</dcterms:modified>
+
+	<description>:(:(:( Tor browser works fine in browsing and search but yYoutube wont work,everytime i open the browser it says flash player upgade.then i upgrade it and nothing.Again it asks for flash player upgrade again i download and install and still no youtube :(:(:(.what do i do? help me
+</description>
+
+
+</item>
+<item>
+
+	<title>phobos: Comment 32</title>
+	<dcterms:creator>phobos</dcterms:creator>
+
+
+	<guid>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_32/</guid>
+
+	<link>http://localhost/jmtodaro/tor/blog/posts/New_Tor_Browser_Bundles_released_-take_two-/comment_32/</link>
+
+	<pubDate>Wed, 02 Mar 2011 07:11:03 -0600</pubDate>
+	<dcterms:modified>2011-04-05T12:11:03Z</dcterms:modified>
+
+	<description>The answer is at &lt;a href=&quot;https://www.torproject.org/torbutton/torbutton-faq.html.en#noflash&quot; title=&quot;https://www.torproject.org/torbutton/torbutton-faq.html.en#noflash&quot; rel=&quot;nofollow&quot;&gt;https://www.torproject.org/torbutton/torbutton-faq.html.en#noflash&lt;/a&gt;, especially &quot;The Tor Browser Bundle does not work with Flash or other plugins by design. If you wish to run these plugins over Tor, you need to install Tor and configure your own instance of Firefox.&quot;
+</description>
+
+
+</item>
+
+</channel>
+</rss>

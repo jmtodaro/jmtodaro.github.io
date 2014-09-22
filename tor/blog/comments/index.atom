@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>comments</title>
+<link href="http://localhost/jmtodaro/tor/blog/comments/"/>
+<link href="http://localhost/jmtodaro/tor/blog/comments/index.atom" rel="self" type="application/atom+xml"/>
+<author>
+
+<name>The Tor Blog</name>
+
+</author>
+
+
+
+
+<id>http://localhost/jmtodaro/tor/blog/comments/</id>
+
+<subtitle type="html">The Tor Blog</subtitle>
+<generator uri="http://ikiwiki.info/" version="3.20100722ubuntu1">ikiwiki</generator>
+<updated>2011-04-05T12:18:15Z</updated>
+<entry>
+	<title>Comment 6</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Web_Developers_and_Firefox_Hackers_Help_us_with_Firefox_4/comment_6/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Web_Developers_and_Firefox_Hackers_Help_us_with_Firefox_4/comment_6/"/>
+
+	<author><name>mikeperry</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:53Z</updated>
+	<published>2011-04-04T12:17:53Z</published>
+
+	<content type="html" xml:lang="en">
+	Ok, I&#39;ve updated the design doc bug list to take care of this. The list also needs another update to cover TLS issues, and new fingerprinting issues introduced in FF4.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 3</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Windows_Bridge-by-Default_Bundle/comment_3/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Windows_Bridge-by-Default_Bundle/comment_3/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:18:15Z</updated>
+	<published>2011-04-03T12:18:15Z</published>
+
+	<content type="html" xml:lang="en">
+	Yes arma, i wonder too, because most of end non-advanced users are using Skype, without ticking out &quot;User 80,443 ports for connections&quot; box in Skype settings. This realy breaks &quot;just Setup&amp;amp;Use&quot; mode.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 2</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Windows_Bridge-by-Default_Bundle/comment_2/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Windows_Bridge-by-Default_Bundle/comment_2/"/>
+
+	<author><name>arma</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:18:14Z</updated>
+	<published>2011-04-01T12:18:14Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;Vidalia picks port 443 by default on Windows, and port 9001 by default on OS X and Linux (since in those cases it can&#39;t pick a privileged port without permissions).&lt;/p&gt;
+
+&lt;p&gt;You can go into the Vidalia &quot;sharing&quot; settings window and change the port. But that defeats some of the point of a preconfigured bundle. I wonder how much of an issue this conflict is in practice.&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 1</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Windows_Bridge-by-Default_Bundle/comment_1/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Windows_Bridge-by-Default_Bundle/comment_1/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:18:13Z</updated>
+	<published>2011-04-01T12:18:13Z</published>
+
+	<content type="html" xml:lang="en">
+	Great stuff, but which bridge port will be used by default? 443? Remember that Skype on windows uses 443, 80 ports for relaying.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 14</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_14/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_14/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:18:09Z</updated>
+	<published>2011-04-01T12:18:09Z</published>
+
+	<content type="html" xml:lang="en">
+	There isn&#39;t one.  These browser bundles do not support PowerPC macs.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 12</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_12/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_12/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:18:07Z</updated>
+	<published>2011-04-01T12:18:07Z</published>
+
+	<content type="html" xml:lang="en">
+	These bundles do not support powerpc macs.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 7</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_7/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_7/"/>
+
+	<author><name>phobos</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:18:02Z</updated>
+	<published>2011-04-01T12:18:02Z</published>
+
+	<content type="html" xml:lang="en">
+	While ghostery sounds decent, it seems no one has analyzed the codebase to see what it actually does or reports back to the ghostery servers.
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 102</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_102/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Detecting_Certificate_Authority_compromises_and_web_browser_collusion/comment_102/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:32Z</updated>
+	<published>2011-04-01T12:17:32Z</published>
+
+	<content type="html" xml:lang="en">
+	I don&#39;t understand sth. Why has the industry chosen to &#39;ignore&#39; returned errors on the crl queries? Are there a lot of false positives? And is it i.a. a calculated risk they are willing to take? 
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 16</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_16/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Firefox_4_Tor_Browser_Bundles_for_OS_X/comment_16/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:18:11Z</updated>
+	<published>2011-03-31T12:18:11Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;I ended up getting this report after trying the newer package. I also tried the original package and it crashed as well... I&#39;m running Mac OS X 10.5.8 &lt;/p&gt;
+
+&lt;p&gt;is there anything I can do?&lt;/p&gt;
+
+&lt;p&gt;Process:         Vidalia [13859]&lt;br /&gt;
+Path:   /Downloads/TorBrowser_en-US.app/Contents/MacOS/Vidalia.app/Contents/MacOS/Vidalia&lt;br /&gt;
+Identifier:      net.vidalia-project.vidalia&lt;br /&gt;
+Version:         ??? (???)&lt;br /&gt;
+Code Type:       X86 (Native)&lt;br /&gt;
+Parent Process:  launchd [1505]&lt;/p&gt;
+
+&lt;p&gt;Interval Since Last Report:          37 sec&lt;br /&gt;
+Crashes Since Last Report:           4&lt;br /&gt;
+Per-App Interval Since Last Report:  0 sec&lt;br /&gt;
+Per-App Crashes Since Last Report:   1&lt;/p&gt;
+
+&lt;p&gt;Date/Time:       2011-04-01 03:08:54.281 -0400&lt;br /&gt;
+OS Version:      Mac OS X 10.5.8 (9L30)&lt;br /&gt;
+Report Version:  6&lt;br /&gt;
+Anonymous UUID:  73DB4BA5-E98F-4BAB-B4AB-27552E0699B0&lt;/p&gt;
+
+&lt;p&gt;Exception Type:  EXC_BREAKPOINT (SIGTRAP)&lt;br /&gt;
+Exception Codes: 0x0000000000000002, 0x0000000000000000&lt;br /&gt;
+Crashed Thread:  0&lt;/p&gt;
+
+&lt;p&gt;Dyld Error Message:&lt;br /&gt;
+  unknown required load command 0x80000022&lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+<entry>
+	<title>Comment 5</title>
+
+	<id>http://localhost/jmtodaro/tor/blog/posts/Web_Developers_and_Firefox_Hackers_Help_us_with_Firefox_4/comment_5/</id>
+
+	<link href="http://localhost/jmtodaro/tor/blog/posts/Web_Developers_and_Firefox_Hackers_Help_us_with_Firefox_4/comment_5/"/>
+
+	<author><name>Anonymous</name></author>
+
+
+
+
+
+	<updated>2011-04-05T12:17:52Z</updated>
+	<published>2011-03-31T12:17:52Z</published>
+
+	<content type="html" xml:lang="en">
+	&lt;p&gt;It would help if you would Update the outstanding Torbutton-related bugs page:&lt;/p&gt;
+
+&lt;p&gt;=============&lt;/p&gt;
+
+&lt;p&gt;6.1. Bugs impacting security&lt;/p&gt;
+
+&lt;p&gt;2. Bug 280661 - RESOLVED FIXED &lt;/p&gt;
+
+&lt;p&gt;3. Bug 418986 - Bounty by someone else&lt;/p&gt;
+
+&lt;p&gt;&quot;JonDonym 2010-09-10 11:40:46 PDT&lt;br /&gt;
+We would pay 300 Euro for someone fixing this bug and putting it in the&lt;br /&gt;
+official Mozilla code. And another 300 Euro for fixing it with CSS media&lt;br /&gt;
+queries. Just contact me for further questions and discussions about the&lt;br /&gt;
+implementation.&quot;&lt;/p&gt;
+
+&lt;p&gt;=============&lt;/p&gt;
+
+&lt;p&gt;6.2. Bugs blocking functionality&lt;/p&gt;
+
+&lt;p&gt;1. Bug 445696 - RESOLVED DUPLICATE of bug 484832&lt;br /&gt;
+2. Bug 290456 - RESOLVED FIXED &lt;/p&gt;
+
+&lt;p&gt;============&lt;br /&gt;
+6.3. Low Priority Bugs&lt;/p&gt;
+
+&lt;p&gt;1. Bug 435151 - RESOLVED FIXED &lt;/p&gt;
+
+
+	</content>
+
+
+
+</entry>
+
+</feed>
