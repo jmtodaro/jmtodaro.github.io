@@ -12,7 +12,8 @@ body {
 
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight {
   margin-bottom:0px;
-  color: #88adca;
+/*  color: #88adca; */
+  color: #978ea4;
 }
 
 a {
@@ -26,7 +27,7 @@ a:visited {
 }
 
 a:hover {
-  color: #ada1b4;
+  color: #1a9aff;
   text-decoration: none;
   }
 
@@ -139,7 +140,7 @@ nav {
   }
 
 .page-content  {
-  padding: 20px 40px;
+  padding: 25px 40px;
     -moz-box-shadow: inset 0px 0px 10px rgba(125, 87, 153, 0.3);
     -webkit-box-shadow: inset 0px 0px 10px rgba(125, 87, 153, 0.3);
   box-shadow: inset 0px 0px 10px rgba(125, 87, 153, 0.3);
@@ -308,10 +309,13 @@ h2 span:after {
 }  
 
 p {
-  margin: 20px 15px 0px;
+  margin: 0px 0px 15px;
   text-align: justify;
-  font-size: 15px;
   }
+  
+.post-description p:last-child {
+  margin: 0px 0px;
+}
 
 .main p.footnote {
   text-align: right;
@@ -394,11 +398,9 @@ footer {
     }
 
   .last a {
-  color: #7ec6ff;
     }
 
   .last a:hover {
-    color: #ada1b4;
     }
 
   .last a.current {
@@ -475,9 +477,10 @@ img {
 }
 
 .post-title {
-    font-size: 28px;
+    font-size: 26px;
     letter-spacing: -1px;
     line-height: 1;
+    margin-bottom: 15px;
 }
 
 .footertop {
@@ -510,3 +513,17 @@ img {
     font-size: 10px;
     font-style: italic;
     }
+
+.rss-subscribe {
+  margin: 22px 0px 0px;
+  text-align: right;
+  color: #aaffe0;
+}
+
+.rss-subscribe a {
+  color: #ffe18c;
+}
+
+.rss-subscribe a:hover {
+  color: #1a9aff;
+}
